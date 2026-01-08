@@ -1,0 +1,134 @@
+ ECS251 - Operating
+ECS 251 Operating Systems (Winter 2026)
+
+ECS 251 will introduce students to research in Operating Systems (OS). We will read a series of foundational and cutting-edge research papers exploring topics of OS design, scheduling, memory management, file systems, and concurrency. We will improve skills in critical thinking, creativity, presentations, and systems programming. The class format will consist of lectures, paper discussions, group meetings, and project presentations.
+General Information
+
+
+Information 	Details
+Instructor 	Amanda Raybuck
+Instructor Email 	araybuck@ucdavis.edu
+Lecture Time and Location 	MWF 3:10-4:00pm TLC 1214
+Discussion Time and Location 	M 4:10-5:00pm TLC 1214
+Instructor Office Hours 	M 2:00-3:00pm Kemper 2125, or by appointment
+TA 	Arnav Tope
+TA Email 	aatope@ucdavis.edu
+TA Office Hours 	TBA
+
+
+Prerequisites
+
+This class builds on the undergraduate operating systems course, such as the ECS 150 course at UC Davis. We will dive deeply into topics of kernel design, scheduling, memory management, file systems, and concurrency.
+Readings
+
+Course material will be conveyed via a series of systems research papers. Students will lead a presentation of a research paper and seed a discussion. Optional readings of an Operating Systems textbook, such as Operating Systems: Three Easy Pieces
+
+Links to an external site., are recommended to brush up on the necessary background to understand the research papers.
+Quizzes
+
+There will be 8 quizzes worth 4% each throughout the quarter. I will replace your lowest quiz grade for the quarter with full credit.
+Lead a Lecture
+
+You will present one research paper to the class and lead a discussion. Presentations will be done in groups of 3-4 students. Groups must share their lecture slides and other discussion materials with the instructor by noon the day before the lecture. More information on leading a lecture can be found here
+Research Project
+
+You will design and carry out a quarter-long systems research project. This project will be done in teams of 3-4 students. More information on projects can be found here
+Late Policy
+
+Unless otherwise stated, late assignments will receive an automatic 50% deduction. Late final project deliverables will not be accepted. Please inform the instructor if you are having difficulties meeting the deadlines of this class.
+Grading
+
+Grading will be broken down as follows:
+Item 	Percent 	Description
+Quizzes 	32% 	Eight quizzes worth 4% each
+Lead a Lecture 	20% 	Lead a lecture on a research paper
+Research Project 	48% 	Conduct an open-ended research project related to systems
+
+
+
+I plan on grading on a straight grade scale. The grading scale is as follows:
+Letter Grade 	Score
+A 	[93, 100]
+A- 	[90, 93)
+B+ 	[87, 90)
+B 	[83, 87)
+B- 	[80, 83)
+C+ 	[77, 80)
+C 	[73, 77)
+C- 	[70, 73)
+D 	[60, 70)
+F 	[0, 60)
+
+
+ECS 251 Operating Systems (Winter 2026)
+
+Back to course overview
+
+Reading List
+Date 	Topic 	Required Reading 	Optional Reading 	Discussion Leaders 	Slides
+1/5 	Historic OS Design 		OSTEP Chaper 2
+Links to an external site.
+How to Read a Paper
+Links to an external site. 	Amanda 	1_5 - Intro.pdf
+Download 1_5 - Intro.pdf
+1_5 Discussion - How to Present.pdf
+Download 1_5 Discussion - How to Present.pdf
+1/7 		The UNIX Timesharing System
+Links to an external site. 	A Fork() in the Road
+Links to an external site. 	Amanda
+1/9 		ExoKernel: An Operating System Architecture for Application-Level Resource Management
+Links to an external site.
+Lead a lecture choice due 	End-to-end Arguments in System Design
+Links to an external site. 	Amanda
+1/12 	Modern OS Design 	Quiz 1 		Amanda
+1/14 		Arrakis: The Operating System is the Control Plane
+Links to an external site. 		Amanda
+1/16 		The Demikernel Datapath OS Architecture for Microsecond-scale Datacenter Systems
+Links to an external site. 		Amanda
+1/19 		NO CLASS
+1/21 	Scheduling and Process Management 	Quiz 2
+Project group membership due 	OSTEP Chapter 4-7
+Links to an external site. 	Amanda
+1/23 		Scheduler Activations: Effective Kernel Support for the User-level Management of Parallelism
+Links to an external site. 		TBA
+1/26 	Modern Scheduling 	Quiz 3
+Project topic choice due 	Attack of the Killer Microseconds
+Links to an external site. 	Amanda
+1/28 		The Linux Scheduler: a Decade of Wasted Cores
+Links to an external site. 		TBA
+1/30 		ghOSt: Fast & Flexible User-Space Delegation of Linux Scheduling
+Links to an external site. 		TBA
+2/2 	Memory Management 	Quiz 4
+Project proposal due 	OSTEP Chapters 15-19
+Links to an external site. 	Amanda
+2/4 		Self-Paging in the Nemesis Operating System
+Links to an external site. 		TBA
+2/6 		Practical, Transparent Operating System Support for Superpages
+Links to an external site. 		TBA
+2/9 	Modern Memory Management 	Quiz 5 		Amanda
+2/11 		HeMem: Scalable Tiered Memory Management for Big Data Applications and Real NVM
+Links to an external site. 		TBA
+2/13 		Pond: CXL-Based Memory Pooling Systems for Cloud Platforms
+Links to an external site. 		TBA
+2/16 		NO CLASS
+2/18 	File Systems & IO 	Quiz 6 	OSTEP Chapters 29-30
+Links to an external site. 	Amanda
+2/20 		A Fast File System for Unix
+Links to an external site. 		TBA
+2/23 		The Design and Implementation of a Log-Structured File System
+Links to an external site. 	Log-structured file systems: There's one in every SSD
+Links to an external site. 	TBA
+2/25 		Rearchitecting Linux Storage Stack for µs Latency and High Throughput
+Links to an external site. 		TBA
+2/27 	Concurrency 	Quiz 7 	OSTEP Chapters 26-32
+Links to an external site. 	Amanda
+3/2 		RaceTrack: Efficient Detection of Data Race Conditions via Adaptive Tracking
+Links to an external site. 		TBA
+3/4 		The Scalable Commutativity Rule: Designing Scalable Software for Multicore Processors
+Links to an external site. 		TBA
+3/6 	Wrap up 	Quiz 8 	The Night Watch
+Links to an external site. 	Amanda
+3/9 	Student Presentations 			TBA
+3/11 	Student Presentations 			TBA
+3/13 	Student Presentations 			TBA
+3/18 		Final Project Due @12 noon

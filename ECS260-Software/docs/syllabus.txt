@@ -1,0 +1,76 @@
+ECS 260, Course info
+
+NOTE: You are responsible for the information on this handout. Please read it.
+
+Goals: In this course we will learn advanced Software Engineering techniques, specifically in Empirical Software Engineering. The focus will be on reading papers and learning about both engineering and scientific methods to address problems relevant to modern software development and engineering. The methods studied will include quantitative methods (data gathering, metrics, data analytics) and qualitative methods (surveys). Material will be learnt hands-on through a group project, quizzes, and paper presentations.
+
+Textbook: No textbook. Links to papers and slides will be given in Canvas.
+
+Course Web page: This course information sheet, any handouts, assignments, and other announcement will be posted on the Canvas course management system. Visit the page regularly to see what's new. An App for your smartphones is available too!
+
+Communication Policy (email and canvas):
+
+Discussion Policy: Please use the Discussions section in Canvas to post questions and have discussions. The course staff will respond to questions there regularly.
+
+The chat room can also be used, where you may get quick answers from other students, but course staff will not check it regularly.
+
+Note: Posts anywhere on Canvas or Piazza that give out the main idea or crux of solutions will be considered academic dishonesty, and handled consistent with UC Davis policy.
+
+Email Policy: Only topics of a personal nature can be emailed to TAs or the instructor. Such emails should have "ECS260: Personal" in the subject line. Emails not following these rules will probably end up in our SPAM folders, and may not be read.
+
+Course Staff:
+
+Instructor: Prof. Vladimir Filkov
+
+Office: 2077 Academic Surge
+Phone: 530-752-8393
+email: filkov@cs.ucdavis.edu (urgent, personal matters only,
+use "ESC260: Personal" in subject)
+
+Teaching Assistants/Readers: See Course Staff page on Canvas
+
+Staff Office Hours: See Course Staff page on Canvas
+
+Exams: No exams will be given.
+
+Prerequisites:
+
+Undergraduate preparation in software engineering and statistics. This is a demanding class and those without the prerequisites are likely to find it very challenging.
+
+Grading:
+
+There will be three parts to the grade, based on
+
+a) (70%) group term project,
+b) (10%) periodic quizzes, and
+c) (20%) group paper presentation.
+
+Group:
+
+You are responsible to identify team members (4-5 people on a team). We will help by providing collaboration technology, signup sheets, and feedback. Periodic assessment of team health will be conducted and feedback provided.
+
+Group Projects:
+
+You are responsible to come up with a project proposal. A list of project ideas from which you can choose will be provided, but you can choose to propose a novel one too. In addition to the project proposal, you will be graded on your progress report, and a final report. The final report must be written as a technical paper. Multiple stages will be evaluated including: project proposal, project progress, and final report. Deadlines will be announced and shown on the schedule.
+
+Quizzes: Periodic quizzes will be assigned, to be completed in class, electronically. The lowest quiz score will be dropped. There will be no make up quizzes.
+
+Group Paper(s) Presentation: Each group will deliver a video presentation. Deadline will be shown on the schedule.
+
+Teams and Collaboration:
+
+Teamwork and collaboration are the expectation in this class. Together with your teammates you will identify an interesting problem, develop a software and analytics solution together, as well analyze and present the results. You will have to get used to working together pretty quickly, and do your best to fit in a team.
+
+On LLMs:
+
+LLMs can make productive team members, and can provide you great help if used correctly, especially when time is limited. We encourage using LLMs for code writing and research in this class. If you do use LLMs, you should reference them in your code and reports, as you would any other team member. Note that AI cannot be held liable for errors or omissions. Instead, any inadequacies, hallucinations, errors, plagiarism, etc in your deliverables for this course will be the liability of all humans on the team.
+
+Academic Dishonesty:
+
+Having the same, or very similar, project submissions to those of other teams is considered academic dishonesty. Finding submissions (e.g., presentations, code, analysis, etc.) from published sources or from online sites and/or copying others' solutions is also academic dishonesty. Likewise, during quizzes it is academic dishonesty to discuss the questions or answers with others, or to copy via any means from others with or without their knowledge. Give this matter some thought and please do not cross the line into cheating. Any suspected cases of cheating will be dealt with according to UC Davis policy and referred immediately to SJA. Please check with the instructor for the policies and if you need clarifications on this. Running afoul of the policies due to unawareness is not an excuse. More detailed info on what constitutes academic dishonesty can be found here.
+
+Links to an external site.
+
+General:
+
+General UC Davis Student FAQs and Resources are here.

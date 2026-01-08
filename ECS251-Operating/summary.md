@@ -1,0 +1,3 @@
+QUIZZES (32%)
+PRESENTATION (20%) [Lead A Lecture] [3-4]
+PROJECT (48%) [3-4]

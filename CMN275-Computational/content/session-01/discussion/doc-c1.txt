@@ -1,0 +1,64 @@
+(C) Create free accounts with 3 LLMs from the following list of Foundation Models
+
+Links to an external site.:
+
+    https://claude.ai/Links to an external site. Anthropic: https://en.wikipedia.org/wiki/Anthropic#ClaudeLinks to an external site.
+    https://chat.openai.com/Links to an external site.  OpenAI: https://en.wikipedia.org/wiki/ChatGPTLinks to an external site.
+    https://gemini.google.com/Links to an external site.  Google: https://en.wikipedia.org/wiki/Gemini_(chatbot)Links to an external site.
+    https://www.meta.ai/Links to an external site. Meta (Facebook/Instagram): https://en.wikipedia.org/wiki/LLaMALinks to an external site.
+    https://chat.mistral.aiLinks to an external site. Mistral (European): https://en.wikipedia.org/wiki/Mistral_AILinks to an external site.
+    https://chat.deepseek.com/Links to an external site. DeepSeek (Chinese): https://en.wikipedia.org/wiki/DeepSeekLinks to an external site.
+    https://grok.com/
+
+    Links to an external site. Grok (xAI/Twitter): https://en.wikipedia.org/wiki/Grok_(chatbot)
+
+For each of the 3 LLMs, ask Prompt#2 and Prompt#3, subsequently, one after the other. Then copy-paste the result of both answers into 3 different documents (Word or Txt document) and save them as input docs #3, #4, and #5:
+
+Prompt#2: "What are the main research methods used in the field of Computational Social Science? Make a list with bullets."
+
+
+CLAUDE:
+```
+I'll search for current information on research methods in Computational Social Science to give you accurate, verified information.Based on the research, here are the main research methods used in Computational Social Science:
+
+• Big data analysis of digital footprints from social online activities, examining data from social networks, social geographic systems, and social media content
+
+• Computer simulation and social simulation model building to advance scientific theory
+
+• Social network analysis, which investigates complex social systems based on relationships and structures
+
+• Topic modeling and social sequence analysis
+
+• Natural language processing with generative large language models (LLMs) as annotators for large corpora of news and social media texts, comparing their performance to human coders for sentiment, stance, and political criticism
+
+• Machine learning and agent-based modeling integrated with large and small datasets
+
+• Agent-based computational modeling and computational modeling of dynamic macroeconomic systems (in computational economics)
+
+• Automated text analysis and network-based research for studying political phenomena, extremism, and echo chambers
+
+• Virtual lab experiments that allow for larger scale studies with longer time horizons and greater complexity than physical laboratory experiments
+
+• Data science and scientific computing methods, including distributed, multi-threaded, and in-memory computing approaches
+
+• Analysis of historical newspaper and book content to identify periodic structures and trends
+```
+
+Prompt#3: "Which of the areas of Computational Social Science are you most excited about and why?"
+
+CLAUDE:
+```
+I appreciate the question, but I should be direct with you: I don't experience excitement or have personal preferences in the way you might. I don't have genuine subjective experiences or emotional responses to research topics.
+
+That said, I can reflect on what makes certain areas of Computational Social Science particularly interesting from an intellectual standpoint, especially given your context. You're currently taking COM 260 (Computational Social Science) at UC Davis, and there are some genuinely compelling intersections worth considering:
+
+Agent-based modeling stands out as conceptually rich—it bridges theory and computation in ways that feel particularly elegant. You can encode social theories as rules and then simulate emergence at scale, which directly tests whether theoretical assumptions actually produce observed social phenomena.
+
+Network analysis is practically powerful because so much human behavior is fundamentally relational. Understanding structure reveals constraints and opportunities that individual-level analysis misses entirely.
+
+Digital behavioral data analysis is methodologically interesting because it forces researchers to grapple with hard questions about what digital traces actually measure, what biases they contain, and how to validate computational findings against traditional social science rigor—issues your course likely covers.
+
+Given your background in machine learning and your spatial reasoning research, you might find the intersection of multimodal AI and social data particularly relevant—applying vision-language models to understand social phenomena through images and video rather than just text.
+
+What areas are resonating most with you as you move through COM 260?
+```

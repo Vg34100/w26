@@ -1,0 +1,233 @@
+ Course Syllabus
+Jump to Today
+ECS 220: Theory of Computation
+Course staff contact information
+Instructor 	Dave Doty 	doty@ucdavis.edu 	Zoom: TODO
+TA 	Mina Latifi 	milatifi@ucdavis.edu 	Zoom: TODO
+
+I do not check Canvas email.  Please post questions on Piazza (see Websites below for instructions on how to access it), or for questions of a personal nature, write an email directly to me.
+Office hours
+
+All office hours are virtual. See course staff contact information above for Zoom links; also included in the calendar below.
+
+Office hours will often be the same each week, but if a change is made it will show up in this calendar. Please check this calendar in any particular week to confirm office hours for that week.
+
+Websites
+
+We will use different websites for different purposes. Students are responsible for checking Piazza and Canvas regularly for announcements (Piazza) and homework/quizzes (Canvas).
+site 	purpose 	link
+Piazza 	course announcements, questions/discussion
+
+click on "Piazza" on the left menu in Canvas
+
+(access code ecs220)
+Canvas 	storing grades, general course information, homework (for peer review) 	this site
+Gradescope
+
+homework (for grading by course staff), auto-graded homework
+
+
+click on "Gradescope" on the left menu in Canvas
+
+Piazza is external to UC-Davis, so you will have to set up an account if you don't already have one.
+
+If you are enrolled in the course and have access to the Canvas page, you should also be able to access the Gradescope page.
+
+Constructive feedback about any aspect of the course is always welcome. Please write me an email at doty@ucdavis.edu.
+
+For more general help regarding UC-Davis (not necessarily related to this course), please see UC Davis Student Resources.
+Course objective
+
+To study the fundamental abilities and limits of computation, in a mathematically rigorous way.
+
+A major objective is also philosophical: to treat computer science not merely as a tool for automating computation to aid in other endeavors, but as a fundamental natural science itself. P=NP, or it doesn't. Matrix multiplication can be computed in O(n2) time, or it can't. These are questions about our universe whose answers we don't currently know. The answers, whatever they are, promise to be every bit as profound as Maxwell's equations or the principle of relativity.
+Prerequisites
+
+ECS 120 and ECS 122a, or equivalent.
+Textbook
+
+The Nature of Computation
+Cristopher Moore and Stephan Mertens
+Publish date: 2011
+Textbook Homepage
+
+Links to an external site.
+
+Chapters 1-3 are essentially a brief review of algorithms at about the level of ECS 122a. We will go through that fairly quickly and then get to the meat of the course, computational complexity theory, starting in chapter 4.
+
+We will cover chapters 1-8.
+
+If we had a second term, I would love to get into randomized computation in chapter 10, and the connections between complexity/computability and physics in chapters 12-15, but 10 weeks will not be enough time for this. See the lecture schedule on the left for more details.
+Slides/lecture notes
+
+I will use mostly overhead slides, improvising on the blackboard as necessary. Although some students can benefit from taking notes, I advise you not to try writing down everything on the slides. They are available on the Canvas website to download. I hope this encourages students to use their class time to listen, think, and speak up, which I believe is more beneficial than the orthopedic workout of transcribing every word that materializes on the front wall.
+
+The slides should be thought of more as a visual aid to our discussion than an official record of what we have learned. We will follow the textbook closely, and I guarantee that the textbook's exposition of concepts is far more complete, understandable, and self-contained what I write on the board or project on the wall.
+
+Moreover, the slides will usually leave out details of a proof that we verbally discuss. So the slides should not be used as an example of what a good proof looks like. Use the textbook as an example of what constitutes a complete proof (though the textbook often relegates details of proofs to exercises).
+
+I use a lot of color in my slides. If you are colorblind and have difficulty seeing the difference between two different colors, please let me know so I can choose better colors.
+General contact
+
+You may post questions to the Piazza discussion board, where it will be seen by the instructor, the TA, and the entire class. This is a good forum for asking for homework clarification or LaTeX help, for instance. If I spot that a student has already given what I think is a good answer to the question, I may mark it as a good answer instead of answering it myself, so look at both the "student answer" and "instructor answer" (and the followup discussions are often useful as well).
+
+Please write an email to the instructor or TAs or attend office hours if the subject is of a personal nature, for instance, a question about how your homework was graded. Note: If you ask a non-personal question about homework or course policies over email, the instructor/TA may post it (after removing your contact information) to Piazza along with an answer for everyone's benefit.
+
+Canvas has some sort of email/messaging feature, but we don't check it, so please use Piazza/email to contact the course staff instead.
+Homework assignments
+
+Homework (besides HW0) must be submitted as a PDF file BOTH to Gradescope AND to Canvas. We use the Gradescope submission time as the official submission time. (Submission to Canvas also is necessary because that's how we do peer review.)
+
+Collaboration: You are allowed to work in groups of size 1, 2, or 3 on the homework, and to submit a single homework submission from the whole group. You can change the groups for different homeworks if you like. If you discuss the problem with anyone else, including students from other groups, students not enrolled in the course, or anyone else besides the course staff, then you must indicate this in the homework submission. Please see the academic dishonesty policy below for more details.
+
+Furthermore, do not put your name(s) in the PDF. We will do anonymous peer review, which requires that the PDF not identify who you are. Homework is assigned in batches due every two weeks, but each problem is considered a separate "assignment" on both Gradescope and Canvas. Please make a separate PDF for each of the problems.
+
+It is required that all members of the group work on all problems. Do not simply split them up among the group members. The point of collaboration to help everyone understand the problems through discussion. Splitting it up guarantees that you won't understand a problem if you didn't work on it. If you haven't contributed to solving all the problems, then things are going to go poorly if a subsequent homework relies on understanding a previous problem (this happens), or if one group member stops pulling their weight and you need to do all the problems yourself (this also happens). If any of the solutions violate the UC-Davis Code of Academic Conduct (for instance if a solution is plagiarized, and yes, this also happens), then all group members will be held responsible.
+How to organize into groups on Gradescope and Canvas
+
+All of the homeworks (besides HW0) on Gradescope are created as group assignments. One person from the group will be able to submit each problem assignment on gradescope, and then you can link your groupmates in the submission process. See
+https://youtu.be/rue7p_kATLA?t=31
+
+Links to an external site.
+
+to see what the student submission process should look like.
+
+Canvas does not allow you to self-organize into groups, so if you intend to work in a group, email the TA so that they can manually enter your group into Canvas. Once the group has been entered, only one group member should need to submit the homework.
+
+As long as HW1 gets submitted correctly to Gradescope on time, you will have full credit for the assignment. The Canvas upload is just to be able to assign the homework to peer review, and through some trial and error we will figure out together the smoothest way to do that.
+LaTeX
+
+You are required to use LaTeX
+Links to an external site. to produce the PDF files for homework submissions. It is the most widespread program for producing mathematical text. For several decades it was the only serious way to do so, although now there are alternatives, such as Patoline Links to an external site., and some "hybrids" like certain Markdown Links to an external site. engines that allow embedded LaTeX math, e.g., https://hackmd.io/ Links to an external site., https://stackedit.io/ Links to an external site., https://www.madoko.net/ Links to an external site., https://upmath.me/
+
+Links to an external site.. Nevertheless, LaTeX is an important skill for computer scientists to develop. In particular, it is useful to be fluent in LaTeX's mathematical shorthand (e.g., n^2 for n2 or \infty for ∞), since this is a de facto standard for communicating mathematics through text.
+
+If you haven't used LaTeX before, see the ECS 120 page on LaTeX for some guidance on how to get started.
+Grading
+
+Grading is based on homeworks and peer review. There will about a number of total problems assigned across all written homeworks (other than HW0, which is more a prerequisite test). Some number of the lowest problem scores (outside of HW0) will be dropped, varying from quarter to quarter. (Note this is per problem, not homework, so these problems dropped could be from different homeworks.) Check the current Canvas policies to see. The number of points on an assignment is not an indication of how much the assignment is worth; the percentages will simply be averaged together for the problems, with problems except HW0 weighted equally.
+
+Final scores will not be rounded. The grading scale will be determined at the end of the quarter but will generally follow the "every 10 points is a letter grade" scheme.
+Peer review
+
+Students will review homework submissions of other students (anonymously). A small portion of your homework grade will be based on the quality of these reviews. The reviews don't have to be perfect, but if a submission has an obvious huge gaping flaw, and your review says "looks good A+++", then you may not get full credit for the review.
+
+Also important: be respectful in your reviews. It can be frustrating to read something that you think is poorly written. However, part of what we are practicing is restraint, because it can be easy for the anonymity of reviews to bring out the worst in us. For each review you write, think about how you would feel if you read the same thing about your work. If it would offend you, phrase it differently. You can point out errors, omissions, and even poor writing without insulting the writer.
+
+Reviews are due one week after the homework deadline.
+
+My reasoning for both the group homework and peer review is discussed here.
+
+Here are some brief guidelines for writing a good review. For each problem, address the following:
+
+    Give a brief summary of the solution.
+    Does the solution answer the question asked on the homework?
+    Are there parts of the solution that are confusing or unclear? How could they be improved?
+    Are there parts of the solution that are wrong? Clearly point out where the reasoning is flawed or any assumptions that are incorrect. Include counter-examples if applicable.
+    Are there parts of the solution that are ambiguous or imprecise? This is a much more common problem than being plainly wrong. A statement can be so imprecise that it's "not even wrong". If a statement is ambiguous, point that out, and if possible, given examples of multiple precise interpretations of the statement, where it matters which interpretation is chosen. A common source of imprecision is the use of pronouns such as "it" or "them"; here's an example of an imprecise statement: "For each node in the graph, add two new nodes, and add edges between them." What is "them" in the statement? For each node u in the graph, add two nodes v and w, and add the edges
+        (u,v), (u,w), and (v,w)?
+        (u,v) and (u,w)?
+        just (v,w)?
+        between all existing nodes and all newly added nodes?
+
+If you are worried a statement might be ambiguous or hard to parse when reading, examples can be helpful. It's good to give "full coverage" examples, i.e., if there are multiple possible interpretations of the definition, give enough examples to rule out all the incorrect interpretations you can think of. In the case above, if #2 is the correction interpretation, then you'd want to choose a graph with at least two existing nodes, which helps the reader see that the last case is not the correct interpretation.
+Late start policy
+
+If you were unable to enroll or add yourself to the waitlist in the course at the start of the term, and you can produce evidence that you were not able to enroll or waitlist, attend lecture, or access Canvas, please contact me as soon as you are enrolled or waitlisted in the course, and we can arrange to have you make up homework/quizzes whose deadlines preceded your enrollment/waitlisting.
+
+However, this does not apply in the case that you enrolled or waitlisted but thought that you would drop the course (for instance, hoping to be admitted to another course). Once enrolled or waitlisted, you are responsible for attending lecture, checking Canvas and Piazza, and completing assignments/quizzes/exams, just the same as any other student in the course. It is your responsibility to alert the course staff if you cannot access something due to adding the course late.
+Late homework
+
+Briefly, the policy is that homework will be accepted up to two days after the deadline, but a late penalty will be applied, which grows larger as the day goes on.
+
+There is a function p(h), where h represents the number of hours that the homework is late (the submission time is recorded to the nearest microsecond, so p(h) is defined on fractional hours as well), and p(h) represents the percentage of the original score remaining after the late penalty is applied. So, if the original, un-penalized score on the homework is s, then the penalized score is s·(p(h)/100). At first, p(h) decreases rather slowly with h, but it decreases more rapidly as time passes until 48 hours after the deadline, when homework is no longer accepted since the score would be 0 no matter what.
+
+Formally, p(h) = 100 · (1 - (h/48)4), capped above and below at 100 and 0, respectively:
+
+late-penalty-48.png
+
+For example, suppose that a student/group received 100 points on a homework. Then here are the penalized scores for various submission times:
+
+    on time: 100
+    1 hour late: 99.99998
+    12 hours late: 99.6
+    24 hours late: 93.8
+    36 hours late: 68.4
+    47 hours late 8.1
+    48 hours late: 0
+
+This policy has several purposes:
+
+    The homework needs to be turned in on time if peer review is to be possible. To see why the late penalty takes the form it does...
+    Some students have every intention of getting homework done on time, but maybe something gets in the way the day it's due, or it just takes longer than anticipated. Hopefully the ticking clock starting at the deadline is an incentive to start the homework early enough to finish it on time. But if you make a mistake with time management and don't quite get it done, it won't cost your grade that much to get it in a few hours late.
+    It is a drain of mental energy and time (hurting every other aspect of the course) to deal with requests to give a full grade to a late homework because it was "only a little late". Under this late penalty policy, if it is only a little late, there is only a little penalty, so there is little incentive to make such requests.
+
+Disabilities
+
+If you have a documented disability and anticipate needing accommodations in this course, please meet with your instructor as soon as possible. Request that the Student Disability Center staff send the proper form (https://sdc.ucdavis.edu/forms.html) verifying your disability and specifying the accommodations that you require.
+Code of Academic Conduct
+
+The UC-Davis Code of Academic Conduct outlines what is considered academic misconduct. Note in particular some recent changes here: https://academicsenate.ucdavis.edu/bylaws-regulations/revisions
+
+Anyone violating the policies in the Code will be reported to the Office of Student Support and Judicial Affairs, and anyone found responsible for academic misconduct will receive an automatic F in the course.
+Academic misconduct: Pressuring course staff
+
+Like much of the academic misconduct policy, this message is not aimed at most students. 99% of all students in every class are completely reasonable, and they do not attempt to emotionally manipulate course staff into boosting their grades. They would already follow these guidelines without being told. Unfortunately, these 99% of students may find the following guidance intimidating, which is not my intention. I hope it does not discourage students from speaking with me about legitimate concerns they have about the course.
+
+There is one reason and one reason only to contact the instructor or TAs about grades:  the course staff made an objective error in calculating or recording your grade. In this case, you may point out the specific error.
+
+The Code of Academic Conduct specifically forbids "Pressuring an instructor or teaching assistant to regrade work, change a final grade, or obtain an exception such as changing the date of an exam, extending a deadline, or granting an incomplete grade." An explicit request to change the final grade is one way to violate this policy. However, there are many other ways to pressure course staff about grades, all of which are forbidden. Pressure also includes (but is not limited to)
+
+    Stating that you "need an A- in the course" for some reason (such as being a Ph.D. student), or stating that you "need" or want any particular grade. I interpret a statement like this, even without referencing your current grade directly, as an attempt at emotional manipulation.
+    For a graded exercise on a homework, quiz, or exam, prior to the submission, trying to get course staff to tell you a solution or to promise that your solution will get full credit. We are happy to help you understand how to solve a problem, how to tell if a solution is correct, and to point out problems we see in your solution. But ultimately it is up to you to produce a solution and make a convincing argument that it is correct. If you don't understand a solution well enough to tell for yourself whether it is correct, then it doesn't make sense for you to get credit for it. There can be a fine line between this and just trying to understand how to solve a problem or understand what format of answer is expected (which are allowed). However, if course staff senses that you are no longer asking questions for the sake of understanding, but instead want us to make a commitment that you will receive full credit if you hand in a particular solution, or that you appear to be trying to get us to tell you what you should write to get full credit, this is against policy.
+    Requesting more points for any other reason than a specific erroneous statement made by the grader. In fact, requesting more points is inappropriate, whatever the reason. If the grader made a mistake, point out the mistake, and we'll figure out whether that means you should get more points. Examples of common invalid reasons for a regrade request are
+        "I need an A- in this course since I'm a Ph.D. student."
+        "I think this is too many points to deduct and I should get more partial credit."
+        "I discussed it with the instructor/TA and they said it was fine." This is not only against policy, but it indicates that you already violated the policy by asking course staff to confirm a solution is correct before submission, and it confirms that the discussion was not intended to aid your understanding, but instead was a set-up to pressure the course staff after the work is graded.
+    Asking what your course grade will be. If coursework is not all graded, then we don't know any better than you do what your numerical score will be; it depends on what scores you get. You can figure out the range of possible scores by calculating what your score will be if you get all 0's on all remaining coursework, and if you get all 100%'s on all remaining coursework. All we know is that your grade will land somewhere between those two. If coursework is all graded, you can see your numerical score, and the syllabus states how to convert numerical scores to letter grades. Canvas also does this conversion and shows a letter grade. If you ask me what your grade will be, then because you already know the answer as well as I do, I will interpret that "question" instead as a statement, "I want my grade to be higher, and I'm warning you that I'll be upset if it isn't."
+    Asking whether the grading scale for the course will be adjusted or if a curve will be applied. The default answer is no. If I decide to adjust the grading scale that maps numerical scores to letter grades, I will do it alone and with time to think carefully about what is fair. I interpret questions or statements about that grading scale to be an attempt to pressure me to change it.
+    Telling me that your score is close to a letter grade cutoff (e.g., an A- is 90% or above, and you have an 89.9%). I know what everyone's scores are, and what cutoffs are set for letter grades, so there's no reason to tell me other than to imply that you want me to bump up your grade to the next letter.
+
+Academic misconduct: Homework
+
+Each assignment is to be the product of your own intellectual effort. We will check for cheating in this course.
+
+Since group submissions are permitted on most homeworks, each group member may of course discuss their solution with the other members of the same group to whatever extent they wish. The rules below apply to collaboration/discussion between different groups.
+
+Each assignment is to be the product of your own intellectual effort. Students are allowed to work in groups for homeworks, but each group should produce an assignment submission independently of the other groups.
+
+Here are just a few disallowed examples of excessive collaboration between groups, and excessive copying of other sources:
+
+    Submit an answer, even if modified, that was produced by artificial intelligence such as ChatGPT or Claude.
+    Allow another group to plagiarize your work.
+    Type in one homework together and turn in two copies.
+    Write one homework together on paper and turn in two copies after you each type it in.
+    Each write part of a proof (for example, 2 lemmas each), combine them, and turn in two copies.
+    Look up answers from a previous term of the course that used the same question.
+    Look up an answer on the Internet and hand it in.
+    Look up an answer on the Internet, modify it, and then hand it in.
+    Give (paper, email, shared network folder, posting on a public machine, letting someone else look at your screen, reading homework out loud while someone types it in, dead drop, etc.) another group a copy of your solution, or of any part of your solution, even if the other group does not copy from your solution. (See below for examples of situations in which it is okay to let another student/group look at your solution.)
+    Receive another group's solution, or part of it, as described in the previous example.
+
+This is a non-exhaustive list that does not enumerate all possible situations that constitute cheating. The general principle to follow is that whatever sort of help you receive to figure out how to do the homework, after receiving this help, you should be able to produce the homework on your own, without requiring anyone else's help. That is, help from a website/tutor/classmate is allowed as long as it is help in learning how to do the homework, but that help should not be required to actually do the homework once you have learned how. If you are unable to produce a homework that you submit without access to the person/group/website that helped you, then it is not a product of your own intellect, and it means you are misrepresenting someone else's work as your own.
+
+Similarly, if you are helping someone else, be wary of letting them simply write down what you say as their answer. If you have truly helped them, then they should be able to do it on their own once you leave the room. If you show your homework to a friend to "help" them, eventually your friend, or a friend of your friend, will turn in part of your homework, and you will be held responsible for their cheating. This is known as tendering of information, and it is just as serious of an offense as copying someone else's work.
+
+Stated more briefly, if you are writing a solution while looking at a website with a solution, then that is almost certainly plagiarism, no matter how much "rephrasing" is done. If you really know how to solve a problem, then you should be able to produce the solution without having to look at any other resource while you are writing it. If you are trying to write it up, and you are stuck and want to read a website, or look at another group's solution, to see how to do it, then it means you really didn't learn how to do it yet.
+
+Things you may do when working with another student/group:
+
+    Talk about and write down ideas about how to solve the problem, at a high level. Note, however, that sharing ideas specific enough for each student's solution to be identical (except for minor cosmetic changes in variable names, etc.) in terms of having the same statements in the same order, is too much. No two computer scientists will produce the exact same proof of a theorem, so if you are sharing enough "help" with another student for them to be able to re-produce your proof, or almost exactly your proof, you are sharing too much.
+    Share content that was done as a formal exercise, or that was presented in class or the textbook.
+    Share your homework solutions after the last day to turn in an assignment.
+
+In general, it is acceptable to discuss how to do the homework with other students/groups, but when it is time to sit down and write your homework, you must be able to produce the entire homework without help from anyone else. And if you do consult outside sources (meaning besides the course staff or the textbook) to learn how to do the assignment, you must cite these sources.
+
+For example, if you look at a proof on a website or book and to get ideas for how to do the homework, you must indicate precisely which website/book it was. Furthermore, even if you cite a source, it is dishonest (and pointless for your education) simply to copy it; even with a citation, copying text remains misconduct, since you are misrepresenting their words as you own.
+
+It would be a good idea to cite help from instructors and TAs anyway, in order to train yourself always (including outside of this class and this university) to think about who helped you with some work, so that they may be acknowledged. Similarly, if you discuss homework with another student/group, state this explicitly in your homework submission.
+
+The next paragraph is written above under "Homework assignments", but it is worth repeating here: It is required that all members of the group work on all problems. Do not simply split them up among the group members. The point of collaboration to help everyone understand the problems through discussion. Splitting it up guarantees that you won't understand a problem if you didn't work on it. If you haven't contributed to solving all the problems, then things are going to go poorly if a subsequent homework relies on understanding a previous problem (this happens), or if one group member stops pulling their weight and you need to do all the problems yourself (this also happens). If any of the solutions violate the UC-Davis Code of Academic Conduct (for instance if a solution is plagiarized, and yes, this also happens), then all group members will be held responsible.
+Academic (and legal) misconduct: Course materials
+
+Finally, the slides, lecture notes, homeworks, and other documents I share are not to be redistributed without my permission. This means in particular that you should not post them to sites such as CourseHero. These are copyrighted, either by me or by the textbook authors, and you could actually get in legal trouble by sharing course materials improperly.

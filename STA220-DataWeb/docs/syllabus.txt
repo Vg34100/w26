@@ -1,0 +1,144 @@
+DATA & WEB TECHNOLOGIES FOR DATA SCIENCE
+People
+Instructor 	Nicolai Amann (he/him) 	ndamann@ucdavis.edu 	Thursday 12:45 - 1:45 PM, PDSB 0004
+Teaching assistant 	Yanhao Jin 	yahjin@ucdavis.edu 	Wednesday, 2:00 - 3:00 PM, TA office in MSB
+Times
+Lecture Tuesday 	T 2:10 - 3:40 PM 	Olson Hall 251
+Lecture Thursday 	R 2:10 - 3:10 PM 	Olson Hall 251
+Discussion 	R 3:20 - 4:00 PM 	Olson Hall 251
+Online materials
+
+The lecture will NOT be recorded. The lecture notes etc. will be provided on Piazza. The homework is to be submitted on Gradescope.
+Questions
+
+Post any questions regarding the course contents and organization on Piazza. We will monitor this discussion during business hours M-F. Unless they cover sensitive content, ask your questions on Piazza rather than via email to give your colleagues the possibility to profit from your insights and challenges as well. Furthermore, students are encouraged to answer each other's questions, and the TA will moderate by checking in every day. The following rules apply for posting on Piazza:
+
+    Be respectful and constructive. Other content will be removed by the TA and reported to the instructor.
+    Check whether a questions has already been asked on Piazza before you post a similar question.
+    When posting a question, provide context (typically a minimal working example code) and explain what you else tried to solve the problem.
+
+Questions regarding the homework
+
+Questions regarding the homework should be posted on Piazza or asked during the discussions. Note that questions that are asked shortly before the submission deadline will not be answered timely. In particular, questions posted on Friday afternoon or later cannot be answered on time. However, neither asking for the explicit solutions to homework nor providing your solution and asking others to fix it are accepted as questions on Piazza.
+Specific/sensitive questions
+
+If the questions contain personal content, you might write an email to:
+
+    Yanhao Jin - for questions concerning the homework, the final project or coding specific questions
+    Nicolai Amann - for questions concernig the organization of the lecture (e.g. absence on one of the presentation lectures)
+
+Questions concerning grading
+
+Note that for the sake of fairness we cannot raise the grading of single students. If you think that there was a substantial mistake in grading (e.g. your answer coincides with the solution and you have not been given the points for it), you may write Yanhao an email addressing this topic within the first 72 hours after the grading - but prepare a very good argument. If you think you have been graded incorrectly, please write a direct email to your TA.
+Content
+
+In this course we will learn how to collect and process publicly available information from the internet. It consists of three parts. The first covers optimizing your code and databases. The second part focuses on collecting and processing information from the web. The third part covers various visualization methods.
+Grading
+
+The final grade is determined by:
+
+    30% homework
+    15% presentation
+    10% participation
+    45% final project
+
+This course uses the following cutoff scheme for grading:
+Grade 	Points
+A+ 	95% or higher
+A 	90% or higher
+A- 	85% or higher
+B+ 	80% or higher
+B 	75% or higher
+B- 	70% or higher
+C+ 	65% or higher
+C 	60% or higher
+C- 	55% or higher
+D+ 	50% or higher
+D 	45% or higher
+D- 	40% or higher
+F 	less than 40%
+
+Homeworks that are not submitted on time will be counted as 0 points. There will be three homeworks, the homework grade will be the arithmetic mean of the best two homeworks. In particular, one out of three homeworks need not be submitted at all since only the best two homeworks will be counted for the grading. Use this with care: if another homework is not submitted on time, this will influence the overall grading.
+
+If you are absent in the presentatin part of the lectures, it will be counted as 0 points. Exceptions are family emergencies and medical reasons. In this case, write an email to Nicolai Amann providing a proof for the emergeny - the average grade of the (best two) homeworks will be used to determine the presentation grade.
+Presentations
+
+Students must present their final projects in the last three lectures. The presentation of the project should take no longer than ten minutes, followed by a four-minute-long discussion of the project. The quality of the presentation will be used for the presentation part of the grading. The attendence of the last three lectures, that is, March 5, 10, and 12, is mandatory for all students. Furthermore, on March 5 and 12, there will be no discussion section. Instead, the presentations will take 100 minutes on these days (2:10 - 3:50 PM).
+Discussions
+Students are encouraged to ask questions during the discussion part of the last three lectures. The participation during the discussion part of the lecture is the main factor for assessing the participation grade.
+Homework
+
+The homework will be published on Piazza at least one week before due date - typically even earlier. The solutions must be a jupyter notebook file that has been exported to a pdf and submitted in time. Late submissions are not accepted.
+
+The name of the pdf must have the following structure: H#_Lastname_Firstname_srnr, where # is the number of the homework (starting with 1, not 0), and srnr are the last four digits of the student's ID number (e.g. H1_Amann_Nicolai_1234.pdf).
+Homework Deadlines
+1st HW 	Friday, 01/30/26 11:59 PM
+2nd HW 	Friday, 02/13/26 11:59 PM
+3rd HW 	Friday, 02/27/26 11:59 PM
+Final project
+Group registration
+
+For the final project, form groups with three to four members each. The members of every group must be announced to Yanhao via email no later than January 23, 2026, 11:59 PM. All students that are not part of a group will be assigned randomly to a newly formed group after this date.
+Submission deadline
+
+The final project must be submitted no later than March 15, 2026, 11:59 PM.
+Formatting guidelines
+
+The final project consists of the written report pdf - please provide the code, visulaization and other files by providing a link to a Github repository (or something similar).
+
+On the first page of the report, the project's title, all group members and their individual contributions must be stated. The report should consist of 6-10 pages and include the following sections:
+
+    Abstract
+    Introduction
+    Methods
+    Results
+    Summary
+    References/Bibliography
+    List of figures + tables
+
+A grading scheme will be provided. Please emphasize the text specifically addressing the grading criteria by writing it in boldface.
+Code
+
+The project's code must be written in Python and must be reproducible. In particular, the code must run without any error messages after the corresponding packages have been installed. Furthermore, quality and amount of documentation provided for the code might influence the grading of the final project.
+Resources
+
+The programming language Python is freely available at python.org. A popular integrated integrated development environment for Python is Spyder, available at spyder-ide.org. A more advance alternative is PyCharmProjects; Warning: The high amount of additional features contained in PyCharm may be overwhelming for beginners. This course will use Python within Jupyter notebooks jupyter.org. Both applications are included in Anaconda Navigator. Note that UC Davis hosts JupyterHub, which allows you to execute Python code through your browser via Jupyter.
+Textbooks
+
+    Jake VanderPlas. A Whirlwind Tour of Python. O'Reilly Media, 2016, (link)
+    Wes McKinney. Python for Data Analysis. O'Reilly Media, 2013, (link)
+    Ryan Mitchell. Web Scraping with Python. O'Reilly Media, 2015.
+
+Online
+
+Coding incurs very specific errors. Often, these have to be looked up online. Usually, reliable websites include:
+
+    Stackoverflow
+    W3 Schools
+    Git Documentation
+
+AI Usage
+
+The following rules for the use of AI apply:
+
+AI may be used to improve single code snippets, but must not be used to complete a full task. In particular, no homework and no part/exercise on the homework sheet may be solved by AI use only.
+
+AI may be used to improve single code snippets in the final project as long as these snippets are highlighted and reported to be provided by an AI. The text of the final project may not be written by AI - however, checking for spelling, grammar and formatting by an AI is allowed.
+
+It is strictly prohibited to submit the homework exercise sheet or a final project description to an AI and use or submit the generated output. This will be considered as cheating and a severe violation of the code of conduct.
+Mental health
+
+Sometimes life can be overwhelming. UC Davis offers mental health resources here including a counseling service for all students here.
+
+If you need urgent mental health support, please visit the I Need Help page to review your options.
+Code of conduct
+
+Students must adhere to the UC Davis code of conduct (link). Violations of the code of conduct include, but are not limited to, communicating and collaborating during exams; sharing and attempting to share a graded assignment; to submit work that is not yours. Suspected academic misconduct is reported to the Office of Student Support and Judicial Affairs (OSSJA). Any violation will be reported. Students found guilty of academic misconduct will receive an F for this course, no matter the extent and type of their violation.
+
+This lecture and course materials, including videos, lecture notes, discussions, tests, code, etc., are protected by U.S. copyright law and by University policy. You may take notes, adapt, and make copies of course materials for your own use. You may also share those materials with another student who is enrolled in or auditing this course. You may not reproduce, distribute, or display lecture notes recordings, or course materials in any other way. You also may not allow others to do so. If you do so, you may be subject to student conduct proceedings under the UC Davis Code of Academic Conduct.
+Accomodation
+
+UC Davis is committed to educational equity in the academic setting, and in serving a diverse student body. I encourage all students who are interested in learning more about the Student Disability Center (SDC) to contact them directly at sdc.ucdavis.edu, sdc@ucdavis.edu, or 530-752-3184. If you are a student who requires academic accommodations, please submit your SDC Letter of Accommodation to me as soon as possible, ideally within the first two weeks of this course.
+Acknowledgements
+
+This course material has been compiled based on lecture notes by Bo Ning and Peter Kramlinger, and adapted by me.

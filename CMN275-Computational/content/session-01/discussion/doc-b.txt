@@ -1,0 +1,40 @@
+(B) Download this article: "Computational Communication Science Links to an external site." as pdf Links to an external site.. Spend 15-20 min browsing the article with your own eyes. Understand what it is about! Then, use a Large Language Model (LLM) Links to an external site. of your choice (your UC Davis login offers youfree Education accounts for https://gemini.google.com Links to an external site. and https://m365.cloud.microsoft/chat Links to an external site., for example). Upload the article and ask: Prompt#1: "Based on the article attached, imagine you are a student at the world's most comprehensive research university (UC) who gets the question: Which of the areas of Computational Social Science are you most excited about and why? How would you answer that in light of the article?" Save the result in a document (input doc#2).
+
+Prompt#1: "Based on the article attached, imagine you are a student at the world's most comprehensive research university (UC) who gets the question: Which of the areas of Computational Social Science are you most excited about and why? How would you answer that in light of the article?"
+
+GEMINI:
+```
+As a student at the University of California—a system often cited as a model for the world's leading public research universities—I would answer this by looking through the lens of Computational Communication Science, which the article identifies as a vital subfield of the broader computational social science landscape.
+
+Reflecting on the article, I am most excited about the integration of the three fundamental pillars of the scientific method: observational approaches, theoretical modeling, and experimental research.
+Why These Areas Are Exciting
+1. Observational Research: The "Big Data" Catalyst
+
+The unprecedented availability of digital trace data is perhaps the most immediate "catalyzer" of change. It is thrilling to see how we can now revisit long-standing theories—like the two-step flow of communication—using actual Twitter data to map interpersonal networks that were previously invisible to researchers.
+
+    Scale: We can now analyze billions of interactions, such as 12 million Facebook users, to add nuance to how social connections affect longevity.
+
+    Real-World Impact: This data can track wealth in developing countries or contain disease outbreaks, providing literal life-saving insights for policy makers.
+
+2. Theoretical Research: Computer Simulations
+
+While "big data" gets the headlines, I am personally fascinated by the move "from factors to actors" via agent-based models.
+
+    Bridge to Complexity: These simulations allow us to bridge the gap between micro-interactions (individual behavior) and macro-outcomes (societal trends).
+
+    "What-If" Scenarios: We can explore hypothetical scenarios that haven't happened yet—essentially "management flight simulators" for society—to test policy effects before they are implemented in the real world.
+
+3. Experimental Research: Virtual Labs
+
+The ability to scale experiments from a dozen people in a brick-and-mortar lab to millions of participants online is a game-changer.
+
+    Efficiency: Recruiting that used to take months now takes days through crowdsourcing.
+
+    Reach: We can conduct field experiments across entire countries or platforms to understand massive social phenomena like censorship or collective intelligence.
+
+Conclusion
+
+What makes this truly exciting is that the field of communication is in a strategic position to lead this revolution. Because most digital footprints are ultimately records of communication, our discipline provides the natural "first contact" for students of modern data science. We aren't just adopting tools from other fields; we are building tailor-made methods to understand the very nature of human interaction in the digital age.
+
+Would you like me to dive deeper into any of these specific areas, such as the ethical challenges mentioned in the article?
+```

@@ -1,0 +1,4 @@
+is the "everything is a file" abstraction a good/useful abstraction?
+is the fork() system call still a good/useful API?
+what aspects described in the paper are still around today? have any changed? why?
+do we like simple, uniform APIs? are ther einstances where more specialized APIs are desirable?

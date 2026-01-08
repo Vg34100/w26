@@ -1,0 +1,5 @@
+❌ EXAM
+VIDEO QUESTIONS (10%)
+LABS            (33%)
+PARTICIPATION   (17%)
+PROJECT         (40%)

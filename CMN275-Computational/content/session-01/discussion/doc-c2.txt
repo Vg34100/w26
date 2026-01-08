@@ -1,0 +1,67 @@
+(C) Create free accounts with 3 LLMs from the following list of Foundation Models
+
+Links to an external site.:
+
+    https://claude.ai/Links to an external site. Anthropic: https://en.wikipedia.org/wiki/Anthropic#ClaudeLinks to an external site.
+    https://chat.openai.com/Links to an external site.  OpenAI: https://en.wikipedia.org/wiki/ChatGPTLinks to an external site.
+    https://gemini.google.com/Links to an external site.  Google: https://en.wikipedia.org/wiki/Gemini_(chatbot)Links to an external site.
+    https://www.meta.ai/Links to an external site. Meta (Facebook/Instagram): https://en.wikipedia.org/wiki/LLaMALinks to an external site.
+    https://chat.mistral.aiLinks to an external site. Mistral (European): https://en.wikipedia.org/wiki/Mistral_AILinks to an external site.
+    https://chat.deepseek.com/Links to an external site. DeepSeek (Chinese): https://en.wikipedia.org/wiki/DeepSeekLinks to an external site.
+    https://grok.com/
+
+    Links to an external site. Grok (xAI/Twitter): https://en.wikipedia.org/wiki/Grok_(chatbot)
+
+For each of the 3 LLMs, ask Prompt#2 and Prompt#3, subsequently, one after the other. Then copy-paste the result of both answers into 3 different documents (Word or Txt document) and save them as input docs #3, #4, and #5:
+
+Prompt#2: "What are the main research methods used in the field of Computational Social Science? Make a list with bullets."
+
+CHATGPT:
+```
+Here are the main research methods used in Computational Social Science, listed in a clear way:
+
+* **Large-scale data analysis**
+  Study big datasets from social media, surveys, phones, or online platforms.
+
+* **Network analysis**
+  Study how people or groups connect, such as friend networks or message links.
+
+* **Agent-based modeling**
+  Build computer models where simple agents follow rules to see group behavior.
+
+* **Machine learning**
+  Use algorithms to find patterns, make predictions, or group social data.
+
+* **Natural language processing (NLP)**
+  Analyze text like tweets, posts, news, or comments.
+
+* **Experiments (online or lab)**
+  Run controlled tests, often using online platforms, to see cause and effect.
+
+* **Simulations**
+  Run repeated model tests to study how systems change over time.
+
+* **Statistical modeling**
+  Use math models to test ideas and measure relationships between variables.
+
+* **Mixed methods**
+  Combine computational tools with surveys, interviews, or field work.
+
+* **Digital trace analysis**
+  Study logs of human activity, like clicks, likes, or movement data.
+
+If you want, I can also group these by “data-focused” vs “model-focused” methods, or give simple examples for each.
+```
+
+Prompt#3: "Which of the areas of Computational Social Science are you most excited about and why?"
+
+CHATGPT:
+```
+I am most excited about **network analysis** and **natural language processing**, mainly because they let us study real human behavior at a large scale.
+
+* **Network analysis** is exciting because it helps explain how ideas, opinions, or habits spread between people. It can show why some users or groups have more influence than others, and how small changes in a network can lead to big social effects.
+
+* **Natural language processing (NLP)** is exciting because so much social behavior is written down as text. Posts, messages, news, and comments all give direct clues about beliefs, emotions, and intent. Being able to study this text at scale helps researchers see patterns that would be impossible to catch by reading manually.
+
+Both areas are strong because they connect real data with clear social questions, and they can be used together to study how people talk and interact at the same time.
+```

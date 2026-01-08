@@ -1,0 +1,130 @@
+ Course Syllabus
+Jump to Today
+
+In this hybrid course, lectures and interactive assignments are online in this course, and we will meet for in-person discussions on Mondays 10am - 11.50am in Kerr Hall 386 (3rd floor).
+
+Please always feel free to take advantage of the online format to work ahead: you can work at your own pace during the online component of this hybrid course.
+
+
+
+Course Content
+
+Digital technology has not only revolutionized society, but also the way we can study it. For one, studying the massive digital footprint left behind by human online interaction allows us to gain unprecedented insights into what society is and how it works. This includes its intricate social networks that had long been obscure. Computational power allows us to detect hidden patterns through analytical tools like machine learning and to natural language processing. Finally, computer simulations enable us to explore hypothetical situations that may not even exist in reality, but that we would like to exist: a better world.  Computational social science provides us with the tools to explore new scenarios in a way that is as intriguing as playing a video game, while at the same time grounding it into the empirical reality of the world around us. This course gives an introduction to some of the exciting possibilities of how to do research.
+
+UCCSS (University of California Computational Social Science) is the first online course taught collectively by Professors from all 10 UC campuses About UCCSS . A selection of its content is also available as a certified Specialization at the Massive Open Online Course platform Coursera
+Links to an external site., where ClassCentral
+
+Links to an external site. selected it as a top-100 "best online courses of ALL TIMES", attracting over 90,000 learners already.
+
+While no formal requisites are necessary to join this course, at the end you will web-scrape 'Big Data' from the web, execute a social network analysis ('SNA'), find hidden patterns with machine learning ('ML') and natural language processing ('NLP'), and create agent-based computer models ('ABM') to explore what might happen if we would change certain things in society. The only requirement is a working computer/laptop (but this is a general UC Davis requirement
+
+Links to an external site.).
+
+More on Course Logistics
+
+
+
+Course Objectives
+
+By the end of the course you will have:
+
+    gained a comprehensive understanding of prevalent modern social science research methods;
+    critically thought through the complexities of many pressing social science challenges;
+    collected hands-on experience with several computational research tools;
+    strengthened your skills in making sense of an information overload by finding more efficient ways of studying, maintaining, and processing large amounts of new information;
+    prepared yourself to better navigate in a world where companies, democracies, and your personal social network are run by computational social science.
+
+
+
+Office Hours and class interaction:
+
+    For content questions: use Piazza (see navigation bar). Sign up and don't miss the ongoing class conversation!
+    For personal questions: send a private message on Piazza or Canvas (see "Inbox" in navigation bar). We can always set up a video-conference / or a personal office meeting.
+    Regular "Announcements" are made (see navigation bar), incl. video messages. Make sure not to block them in your inbox.
+
+
+Evaluation
+
+Final grades are based on a 1000-point system as follows:
+Grade Component 	Points 	Weight 	 Canvas shows you two grades throughout the course
+Links to an external site.: one based on graded assignments and one for total achievable.  This can be confusing as it doesn't consider assignments you haven't submitted yet. Only after Session 9 will you get 0 points for all resubmitted assignments and your % estimate will adequately reflect your estimated letter grade.
+ Video Questions 	100 	10%
+ Labs 	330 	33%
+Participatory Leadership 	170 	17%
+Research Project 	400 	40%
+TOTAL 	1000 	100%
+
+
+
+
+
+
+
+Interactive Video Questions (10%) and Labs (33 %)
+
+Interactive assignments allow you to quickly build a strong base for your grade in this course.
+
+Intermittent/interactive video lecture questions represent 100 points in total, equal to 10% of the final grade. You only have one attempt to answer them. Points will be transferred when you reach the end of the video.
+
+Points for interactive labs have different weights. The insights you gain accumulate, building up to a final integrative lab exercise (session 9). Therefore, do NOT skip them: you will need them eventually anyway.
+
+Assignments are usually due at 8:59pm Pacific Time and have to be registered before the indicated deadline. Late submissions are still welcome. You lose an additional 15 % of the points for each late day for the first three late days. After that, you can maximally receive 50 % of the points when submitting until the deadline of the session 9 assignment ("Integrative Lab"). Note that you won't be able to go beyond a C for the class if all your assignment submissions are late (even if all content is perfect). If you are traveling, Canvas might adjust due dates according to other time zones (i.e. on mobile devices), so remember that due dates are always 8:59pm California time PST (to adjust time zone see guide here
+
+Links to an external site.).
+
+
+
+Academic Integrity & AI
+
+Online AI tools & Academic Integrity. Cheating, plagiarism, and other misconduct are serious violations of your contract as a student. Please make sure you are familiar with them: http://sja.ucdavis.edu/scs.html. Ignorance is not an acceptable excuse. The Code of Academic Conduct of UC Davis has been updated to reflect the use of AI: https://ossja.ucdavis.edu/code-academic-conduct .
+
+This being said, I don't prohibit but EXPECT you to use AI, including LLMs
+
+Links to an external site. (ChatGPT and others) in this class, considering the guidelines provided by the university. If only some students would use it, it wouldn't be fair, because of the undeniable productivity gains. Learning to use AI is a new skill and so is the fair use of AI. When using AI, many of the traditional plagiarism rules still need to be considered! AI plagiarism includes:
+
+    Taking credit for any work not created by the student;
+    Copying any work not created by the student without citing the source;
+    Using ideas that are not the student's without putting such work in their own words or form and/or failing to provide proper citation;
+    Using false citations that do not correspond to the submitted work;
+    Representing previous work as if it is original or new work;
+    ...in short: let us know when you used it and for what!
+
+As you use AI, please be aware of the following:
+
+    Minimum effort "prompt engineering
+
+Links to an external site.", give low quality results. Fine-tune your search.
+Do not trust ANYTHING the AI says. Assume it's wrong. The (marketing term) "copilot
+
+    Links to an external site." captures its role well: you are still in the driver seat, and you are 100% responsible for any errors or omissions you adopt. AI is a wonderful servant but a horrible master...
+
+
+
+FAQs (important: please read!)
+
+    I have so many questions about studying at UC Davis. Where can I start? Answer: Feel free to start here.
+    Will there be tasks and questions that require any extra programming skills and background in math or statistics? Answer: No, no prerequisites required. If you pay attention and do the readings, there is absolutely no reason why not to achieve an A+. You got a high school degree and made it here, you can do it.
+    Are the intermittent questions in the video lectures graded? Answer: Yes. They are worth one entire letter grade (10%). If you got one wrong, it is suggested to go back immediately and re-watch that segment to be prepared. Understand what they are about.
+    How do I know if I got an intermittent video question wrong/right in PlayPosit?  Answer: If you marked a question correctly it turns green (or stays white for correctly not marking it). Wrong answers turn yellow/reddish. "Check all that apply" questions are graded all or nothing (!)
+    The PlayPosit interface shows that I got points on the questions, but it doesn't show up in Canvas? Something went wrong with the sync process (maybe an internet connection problem...). The player always tries to sync grades AFTER reaching the end of the video. If that effort fails, then the Sync Grades button should show up. You can refresh the page and open up the Review tab again to click on the newly re-enabled Sync Grades button. Please ALWAYS CHECK at the end of your Session if all grades got synced. It is always your responsibility (here and elsewhere) to check if the tech you are using also worked.
+    Can we collaborate with others in homework reading quizzes? What do you think of using Google docs and online help like crowd-sourced study guides? Answer: I'm a big fan of Study Groups and being a scholar of digital communication, I also know that online collaboration can be very productive. However, experience shows that only those students succeed who actively do the assignments and make their own notes. This is because it is not the study notes, but the interactive process of preparing notes that makes the difference! That's also why manual beats computer notes
+
+Links to an external site.! All of this being said, I think it is a great idea to join forces (in personal meetings or through online collaboration) to identify gaps in your understanding. Our common enemy is the lack of understanding. So join forces, please!  However, remember that any collaboration is highly counterproductive when you start depending on it.
+The videos are lagging, what can I do? Answer: By default, streaming is set to a full HD version and depending on the network connection/bandwidth, you may experience the lagging/pausing. You can adjust video quality from the scrub bar (<HD>) or adjust the video course (more here
+Links to an external site.) as that should help. You can also watch the videos (without questions) here at YouTube
+Links to an external site. (you have to log in).
+We are required to upload videos for some assignments, but mine won't upload? Answer: Shortly before the assignment deadline, we collectively overload the server sometimes. This is a real risk for any digital work, please prepare for it. If you do not want to run the risk of getting the first-day 15% late-discount, please make sure to finish your assignment before Sunday afternoon. This also gives you wiggle-room in case of any other technological problem, and you have to expect technological problems when doing computational social science.
+Some assignments and online proctoring services force me to record my face. Does this violate my privacy? Answer: According to law and UC regulation, "Students cannot be anonymous in class, whether in-person, online or in other forms of instruction". We have the responsibility to assure that it is you who is doing the work, and we do so in this class.
+What is "Piazza" and why do I need it? Answer: Our ongoing class discussions happen in Piazza. Just like it sometimes useful for you to listen in when others ask questions in class (and sometimes not), most students find it useful to follow along in these discussions. But just like with most apps, you can regulate the frequency these notifications
+Links to an external site. get sent to your email inbox. You have to sign up for Piazza: it is an add-on app to our main platform Canvas. Be aware that "if you choose to opt-in to Piazza Careers (a separate service they offer), you consent to the release of information included in your user profile, which may include education records, to companies that participate in Piazza Careers and to other users who have opted into Piazza Careers
+Links to an external site.". We will NOT use and NOT need Piazza Careers and I do not promote it.
+What communications/messages should I get in order to be on top of what's going on? Answer: Enable Piazza (see above). Through Canvas (our main platform) you will get one Welcome email from the instructor per Session and sometimes general feedback for assignments from TAs. These are IMPORTANT! Make sure you have your Canvas notifications settings TURNED ON!
+
+    Links to an external site.
+
+
+
+About the course coordinator:
+
+Prof. Hilbert chairs the campus-wide emphasis on Computational Social Sciences at UC Davis, where he studies the implications of digitalization in complex social systems. He holds doctorates in Economic and Social Sciences (2006), and in Communication (2012). His work is recognized in academia for the first study that assessed how much information there is in the world; in public policy for having designed the first digital action plan of Latin America and the Caribbean at the United Nations; and in the popular media for having alerted about the intervention of Cambridge Analytica a year before the scandal broke. Before he joined academia he served as Economic Affairs Officer of the United Nations Secretariat for 15 years, where he created the Digital Development Program for Latin America and the Caribbean
+Links to an external site. . Prof. Hilbert provided technical assistance in the field of digital development to more than 20 countries and dozens of publicly traded companies as digital strategist. Policymakers from the highest political levels have officially recognized the impact of his projects in public declarations. He retired early from his life-long appointment with the UN, because he wanted to be an active part of the exciting process of making use of these same digital technologies to better understand society. He joined the University of California in 2014 to be able to dedicate more time and energy to "Computational Social Science". He regularly still does consulting work for the UN and other private and public clients, applying new CSS methods in practice. In combination with this practical experience, he has written five books about digital development and has published in recognized academic journals, such as Science, Psychological Bulletin, Trends in Ecology and Evolution, and World Development, and regularly appears in popular magazines, including CNN, The Wall Street Journal, Washington Post, The Economist, NPR, BBC, Die Welt, among others. International perspectives are no mere theoretical perspective to Prof. Hilbert, as he speaks five languages and has traveled to over 70 countries. More: www.martinhilbert.net Links to an external site. & https://www.youtube.com/@Prof.MartinHilbert

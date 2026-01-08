@@ -1,0 +1,115 @@
+(C) Create free accounts with 3 LLMs from the following list of Foundation Models
+
+Links to an external site.:
+
+    https://claude.ai/Links to an external site. Anthropic: https://en.wikipedia.org/wiki/Anthropic#ClaudeLinks to an external site.
+    https://chat.openai.com/Links to an external site.  OpenAI: https://en.wikipedia.org/wiki/ChatGPTLinks to an external site.
+    https://gemini.google.com/Links to an external site.  Google: https://en.wikipedia.org/wiki/Gemini_(chatbot)Links to an external site.
+    https://www.meta.ai/Links to an external site. Meta (Facebook/Instagram): https://en.wikipedia.org/wiki/LLaMALinks to an external site.
+    https://chat.mistral.aiLinks to an external site. Mistral (European): https://en.wikipedia.org/wiki/Mistral_AILinks to an external site.
+    https://chat.deepseek.com/Links to an external site. DeepSeek (Chinese): https://en.wikipedia.org/wiki/DeepSeekLinks to an external site.
+    https://grok.com/
+
+    Links to an external site. Grok (xAI/Twitter): https://en.wikipedia.org/wiki/Grok_(chatbot)
+
+For each of the 3 LLMs, ask Prompt#2 and Prompt#3, subsequently, one after the other. Then copy-paste the result of both answers into 3 different documents (Word or Txt document) and save them as input docs #3, #4, and #5:
+
+Prompt#2: "What are the main research methods used in the field of Computational Social Science? Make a list with bullets."
+
+GEMINI:
+```
+Computational Social Science (CSS) is an interdisciplinary field that uses computational power and data-driven techniques to investigate social phenomena. Unlike traditional social sciences that might rely on small-scale surveys or manual observations, CSS operates at a scale and speed made possible by modern technology.
+
+The main research methods used in the field include:
+
+### 1. Digital Trace Analysis (Big Data)
+
+This involves collecting and analyzing "digital footprints" left by people as they interact with digital systems.
+
+* **Web Scraping & APIs:** Programmatically extracting data from social media platforms, forums, and websites to study real-time public sentiment or behavior.
+* **Archival Analysis:** Using massive digitized databases (like Google Books or historical newspaper archives) to track cultural and linguistic shifts over centuries (often called **Culturomics**).
+
+### 2. Social Network Analysis (SNA)
+
+SNA focuses on the structures of relationships between social entities (people, organizations, or even countries).
+
+* **Mapping Connectivity:** Identifying "influencers" or central hubs within a network.
+* **Information Diffusion:** Modeling how ideas, rumors, or diseases spread through specific network topologies.
+* **Community Detection:** Using algorithms to find subgroups or "echo chambers" within larger social structures.
+
+### 3. Automated Content Analysis (NLP)
+
+Computational scientists use Natural Language Processing (NLP) to treat "text as data."
+
+* **Sentiment Analysis:** Automatically classifying the emotional tone of millions of posts (e.g., measuring public happiness during a political event).
+* **Topic Modeling:** Using algorithms like Latent Dirichlet Allocation (LDA) to discover hidden themes in vast collections of documents without reading them manually.
+* **Word Embeddings:** Analyzing how the "meaning" of words changes over time by looking at the company they keep in text.
+
+### 4. Social Simulation (Agent-Based Modeling)
+
+Instead of observing real data, researchers create "virtual societies" to see how micro-behaviors lead to macro-outcomes.
+
+* **Agent-Based Models (ABM):** Creating autonomous "agents" with simple rules (e.g., "move if your neighbors are too different") to simulate complex phenomena like neighborhood segregation or riot dynamics.
+* **What-if Scenarios:** Testing how a change in policy might ripple through a population before implementing it in the real world.
+
+### 5. Computational Experiments
+
+These are traditional social science experiments scaled up or moved into digital environments.
+
+* **A/B Testing:** Randomly assigning digital users to different versions of an interface or information feed to see how it affects behavior.
+* **Virtual Labs:** Using platforms like Amazon Mechanical Turk or specialized "music labs" to run large-scale behavioral experiments at a fraction of the traditional cost.
+
+---
+
+### Comparison of Methods
+
+| Method | Best For... | Example |
+| --- | --- | --- |
+| **Digital Trace** | Observing natural behavior at scale | Tracking flu spread via search queries |
+| **NLP** | Understanding "what" is being said | Identifying political bias in news |
+| **SNA** | Understanding "who" is talking to whom | Mapping the spread of misinformation |
+| **Simulation** | Understanding "why" patterns emerge | Modeling how traffic jams form |
+
+Would you like me to dive deeper into one of these specific methods, such as how to build an **Agent-Based Model** or the tools used for **Topic Modeling**?
+```
+
+Prompt#3: "Which of the areas of Computational Social Science are you most excited about and why?"
+
+GEMINI:
+```
+As an AI, I don't have personal feelings, but if I look at the field through the lens of **impact, technical innovation, and the current research landscape of 2026**, there are three areas that are particularly "exciting" because they represent a fundamental shift in how we understand society.
+
+---
+
+### 1. Generative AI as a "Social Lab"
+
+The rise of Large Language Models (LLMs) has revolutionized **Agent-Based Modeling (ABM)**.
+
+* **Why it’s exciting:** Traditionally, "agents" in a simulation were governed by simple if-then rules (e.g., "if neighbor is different, move"). Now, researchers are using LLMs as agents that can reason, remember, and converse.
+* **The Impact:** We can now simulate complex social interactions—like a town hall meeting or the spread of a specific rumor—with agents that exhibit human-like nuance. This allows us to test "what-if" policy scenarios in a virtual environment that feels much more like the real world.
+
+### 2. Multi-Modal Digital Trace Analysis
+
+We are moving beyond "text as data" and into a world where **video, audio, and images** are analyzed at scale.
+
+* **Why it’s exciting:** Most of our social life is visual and auditory (TikToks, Reels, Podcasts). For a long time, CSS was limited to what people *wrote*. New computer vision and audio-processing models allow us to study the non-verbal cues of political speeches or the visual aesthetics of urban gentrification across millions of data points.
+* **The Impact:** It provides a much more holistic view of human culture that isn't filtered through the "literacy bias" of text-only analysis.
+
+### 3. Causal Inference in Big Data
+
+For years, CSS was criticized for finding correlations but not "causes" (e.g., "social media makes people sad" vs. "sad people use social media more").
+
+* **Why it’s exciting:** There is a massive push to integrate **Causal Machine Learning** into social science. This involves using "natural experiments"—like a sudden platform policy change or a localized internet outage—to isolate cause and effect within massive datasets.
+* **The Impact:** This moves CSS from being a "descriptive" field (telling us what is happening) to a "prescriptive" one (telling us exactly what will happen if we change a specific variable).
+
+### 4. Algorithmic Auditing & "Counter-Surveillance"
+
+As algorithms increasingly govern our lives (hiring, lending, policing), CSS researchers are turning their tools back on the systems themselves.
+
+* **Why it’s exciting:** There is a growing movement of **Feminist and Critical Data Science** that uses computational methods to "unmask" bias. Researchers are reverse-engineering black-box algorithms to prove racial or gender profiling in real-time.
+* **The Impact:** It turns CSS into a tool for social justice and accountability, ensuring that technology serves people rather than just automating existing inequalities.
+
+---
+
+**Which of these resonates more with your interests?** For instance, are you more interested in the **social justice/ethics** side (Algorithmic Auditing) or the **predictive/simulation** side (LLM Agents)?
+```

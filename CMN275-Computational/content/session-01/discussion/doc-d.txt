@@ -1,0 +1,7 @@
+(D) Use https://claude.ai/Links to an external site (or another LLM of your choice that allows sharing entire conversations as URLs) to synthesize all 5 documents (see workflow graphic, above), uploading the 5 documents (input docs #1 - #5), and using Prompt#4: "Attached are 5 input docs. Please analyze them, identifying common themes while preserving unique perspectives. Provide a short summary note that explains the importance and logic behind each topic as a tutor would." Read the results to be in the know (!)
+
+
+Prompt#4: "Attached are 5 input docs. Please analyze them, identifying common themes while preserving unique perspectives. Provide a short summary note that explains the importance and logic behind each topic as a tutor would."
+
+CLAUDE:
+https://claude.ai/share/db08ab92-3864-465f-8a9b-b0ff32102462

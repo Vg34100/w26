@@ -1,0 +1,3 @@
+(A) Based on the videos in the lecture, especially the example methods (videos 1-11 - 1-15), write an informed paragraph about which methods and research approaches you are most excited about and why. Save it in a document (input doc#1).
+
+I’m interested in the part where we pull data from Twitter. I don’t really know the exact steps, but it seems like we can collect a bunch of posts and then look for patterns, like whether people are happy or upset. Even if I’m not clear on the technical bits, the idea of turning everyday online chatter into something we can study feels useful for understanding how people feel.  I also just really want to do more of the coding/programming aspect of all this.
