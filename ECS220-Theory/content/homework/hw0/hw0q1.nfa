@@ -1,0 +1,38 @@
+# NFA recognizing {x in {0,1}* | x[|x|-5] = x[|x|-2] = 0 or x[|x|] = 1}
+
+# 101101
+# 010010
+# 0000010010
+
+# 100100
+
+states: [q0, q1, q2, q3, q4, q5, q6, q7, accept, ends1]
+input_alphabet: [0, 1]
+start_state: q0
+accept_states: [ends1, accept]
+
+delta:
+  q0:
+    "": [q1, q2]  # ε-transition to both branches
+  # 
+  q1:
+    "1": [q1, ends1]
+    "0": [q1]
+  q2:
+    "0": [q2, q3]
+    "1": [q2]
+  q3:
+    "0": [q4]
+    "1": [q4]
+  q4:
+    "0": [q5]
+    "1": [q5]
+  q5:
+    "0": [q6]
+    # "1": [q5]
+  q6:
+    "0": [q7]
+    "1": [q7]
+  q7:
+    "0": [accept]
+    "1": [accept]
