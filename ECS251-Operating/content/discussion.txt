@@ -1,4 +1,17 @@
-is the "everything is a file" abstraction a good/useful abstraction?
-is the fork() system call still a good/useful API?
-what aspects described in the paper are still around today? have any changed? why?
-do we like simple, uniform APIs? are ther einstances where more specialized APIs are desirable?
+1-7-25/
+1) is the "everything is a file" abstraction a good/useful abstraction?
+
+Yes - it provides a simple, uniform interface (open/read/write/close) for diverse resources like files, devices, pipes, and sockets. This simplifies programming and enables powerful tool composition via pipes. However, it has limitations for resources that don't fit the sequential access model (like networking or GPUs).
+
+2) is the fork() system call still a good/useful API?
+
+Debatable. It's elegant and enables useful patterns (like shell pipelines), but it's expensive (copying address space), awkward for threading, and problematic for modern needs. Many argue spawn-style APIs are cleaner, though fork's simplicity remains valuable for certain use cases.
+
+3) what aspects described in the paper are still around today? have any changed? why?
+
+Still around: hierarchical file system, pipes, uniform I/O interface, shell design, process abstraction.
+Changed: Hardware assumptions (no longer PDP-11 specific), performance concerns with fork (led to vfork, then posix_spawn), networking became first-class (sockets added later), security models evolved beyond simple file permissions.
+
+4) do we like simple, uniform APIs? are ther einstances where more specialized APIs are desirable?
+
+Generally yes - they're easier to learn, compose, and reason about. But specialized APIs are desirable when: performance is critical (GPU/networking), the abstraction doesn't fit (databases, GUIs), or domain-specific operations are needed (ioctl exists for this reason).

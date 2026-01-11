@@ -1,0 +1,224 @@
+00:00:05 Speaker 1
+Thank you.
+
+00:01:28 Speaker 2
+Do you have your ticket for half an hour set here.
+
+00:01:31 Speaker 1
+No. So yeah, Arnav is your TA. He did a really long class here. So go to him with all your questions or results. Arnav is a great resource in this class. He knows a lot. All right. So that, again, is course logistics. This is a graduate-level course on things like research.
+
+00:02:04 Speaker 1
+So the main topic of this course is this. So I've outlined three goals for this course. How do you alter class signature offerings to get practice reading and discussing research papers and papers. So three main components designed to help carry out these goals. a reading list of all the papers we will read in class. It's a kind of test your understanding of the papers in a discussion.
+
+00:02:35 Speaker 1
+so we can all kind of, you know, have a nice discussion about it. As far as, you know, getting practice reading and discussing research papers, there's a reading lecture. So I ask three to five students, depending on the goal as a group, read a lecture on one research paper and then also read a discussion.
+
+00:03:05 Speaker 1
+And finally, there's a research project where you can learn more about each of these components. And this course also includes a discussion section. Conveniently, this year they've scheduled a discussion section actually right after the class. So the discussion section, the first half of the quarter of the discussion section will be more on like track aspects for systems research, give a research talk, work research. The first half of the quarter will be the discussion section. When we kind of get started on the corner of the quarter comes in, you're all sort of really involved in the middle of your project. You're dedicated to projects that you'll have to meet with your project updates. Then also, potentially, if you need it, feedback or help. Any questions so far?
+
+00:04:14 Speaker 1
+Alright, so the approaches class, I want it to be more of a discussion-based class than a research class. I create a lot of the time. None of you are really going to be motivated to come to class lecture for 15 minutes. So we're going to do discussions. We'll start with what would be more interesting than just a dry lecture and also kind of give everyone a chance to more deeply.
+
+00:04:48 Speaker 1
+I plan on doing this as a two-phase discussion format. We'll dedicate some time after the research talks are over, for everyone to kind of form small groups with the students around them, maybe discuss some of the ideas they're having in a small group. We'll first kind of crystallize their ideas and then we'll bring it to a full class. So I did this last year. I think it worked fairly well. We're going to try again this year. It may be a little chaotic.
+
+00:05:20 Speaker 1
+So again, this is an operating systems course, so we're going to be focusing on operating systems topics. So the general format is I'll give an introduction of these topics, and then we'll read three to four research papers on these topics, about a week or two per time.
+
+00:05:57 Speaker 1
+Additional topics that I would love to get to, but 10 weeks is really short, but these are also really cool and important systems topics that you're welcome to do with school, projects, for example, including things like virtualization, distributed systems, security, virtualization, verification and correctness, as well as machine learning for systems and systems for... These topics are great, really important, and you're welcome to explore them for your recent findings. Otherwise, again, the topics will be...
+
+00:06:28 Speaker 1
+ideas. So again, every week, depending on holidays and stuff, there'll be one to two papers. Everyone's expected to have read the paper before class and be ready to discuss. So again, the idea of the lectures for the first half of the class or so is to basically kind of formalize, go over the main ideas, but not teach everyone. We should already have them. So again, the class format for these lectures is going to be me or the groups.
+
+00:07:05 Speaker 1
+will go over the introduction and the problem, introduce the problem, provide any necessary, and then really only focus on the core ideas, the most important ideas, the most interesting ones. So it'll be really slow. And then we'll kind of finish up the class. to you know facilitate this as well there's going to be eight short or eight short quizzes uh roughly one of these so i've already posted some stuff on canvas about uh your last quiz.
+
+00:07:48 Speaker 1
+four of the eight i think will be dropped because you've already gotten any questions so far, so with the lead electric component of the class each student as part of a team will lead the discussion of one of the recent papers in the class again depending on it might be higher.
+
+00:08:27 Speaker 1
+Our student-led paper discussions start two weeks from today, so Wednesday's a holiday. I want everyone to pick a paper by this weekend. On campus, the discussion post, the discussion tab is called, I've made a comment for each of the students. Just send this comment, tell them there's a paper you want to present.
+
+00:09:01 Speaker 1
+What happens if you don't pick by Friday? I'll probably just pick one for you. If you want to do so before Friday or Monday. If not, you're still alone. So again, the preparation for this, we'll talk a little about this a bit more, but again, what we do for this is read the paper, prepare slides for the paper, help you open it for the class, and then also, again, relate it to the quizzes that were in the paper. I do ask therefore, because quiz questions are good, and then before, the day before, you and your group are going to email me books, and again, you'll have like two weeks of examples for them.
+
+00:10:27 Speaker 1
+So a little bit more about the paper presentation. If we are borrowing these slides for the paper or the presentations, we're going to use those just to contribute and also be able to have contact differences between the conference and, again, the suggested outline of the presentations.
+
+00:11:01 Speaker 1
+I suggest you follow all of those, you know, the stopwatch and down points if you don't follow the fit format, you know, five minutes on the background to introduce the problem and so on, and about ten minutes as far as the media. Thank you. really impactful um and then you know most of the rest of the class for about 10 minutes with a small group discussion or the timing is really going to come so your grade on the on the legal.
+
+00:11:43 Speaker 1
+lecture component of your lecture does not need to be perfectly expected some amount of polish and then discussion questions you have for discussions the questions that you can have to be thoughtful uh in the paper whether or not the discussion actually goes well i mean that's that's you know you're in control of making good impressions.
+
+00:12:22 Speaker 1
+how could you discuss the text and how likely they are to pass the last one of the course is the research project so that you're designing a research project again done before the size is maybe larger it's open-ended so you know the ranges that you can at least about potential.
+
+00:12:53 Speaker 1
+strategies these do need to be like research project ideas so this does need to be something more in that time and you know ideally advances the state of the art you know probably that's.
+
+00:13:24 Speaker 1
+writing it up, and then also kind of started thinking, again, we'll brainstorm more, but I mean, you can have your project in any category, quality, or measurement, draw some measurements,
+
+00:13:55 Speaker 1
+a measurement study where, again, there's a system change, and you can pull in a tool that you want, help you in your research, solve the problem that you can, relatively small scale. And again, yeah, I mean, you would still like, but like the study first, you can maybe try to recreate a system, you can either basically try to do this.
+
+00:15:00 Speaker 1
+The type of timeline, again, project choices, data proposal, what you use for paper.
+
+00:15:30 Speaker 1
+to show that your system can be done. And again, the last part of these projects are the discussion section. Last, the four final weeks, the project presentation will have that Monday, Wednesday, Friday lecture, and then March 18th, the session, so you're right up.
+
+00:16:04 Speaker 1
+For that, there are no late training. And again, we'll discuss each of these in the grading. So I do plan on grading on... on a straight grading scale. All the assignments are publicly published on Canvas. Basically, we have all the points available on all of the assignments. We're funding some of the quizzes.
+
+00:16:38 Speaker 1
+We're at four points each. Research project, all the points available on the straight grading scale, 93 and above is each. And then lastly, we talked a bit about epidemiological.
+
+00:17:17 Speaker 1
+ground level for investology. If you're talking with others in the comms paper, or your process is totally okay, and I actually want to form, as I said before, if you're going to borrow any resources from the project, do give credit.
+
+00:17:54 Speaker 1
+And again, if you're ever not sure whether you should cite something, as far as trying to get an AI vote, I'm willing to allow it, but we're going to use it. So if you're going to use it in your proposal or project writing, it doesn't hurt you. I do expect some human-made revisions. Sure, here's an outline for, if you want to use it for things.
+
+00:18:24 Speaker 1
+But, again, I do expect, you know, your work in addition to them. And then for cogeneration, again, you can use it, but, again, do it now. I will say, I have not found any of these cogenerators useful, so definitely be confident in using it. But I'm, you know, regardless of your use in IL11, you are responsible for engineering.
+
+00:19:06 Speaker 1
+So if I know if your answer is an IL11 policy here, yeah, I'm here. Most jobs you're going to expect you to use, but again, just be reasonable about it. That's all I have.
+
+00:19:36 Speaker 1
+All right, so now we're kind of diving into the main topic of resources. The first question you might have is why should we, and here are some examples that are great. If you understand operating systems, then you understand other programs. You can understand resources your program needs.
+
+00:20:19 Speaker 1
+So answering these questions in a way... You know, come from this, this is really helpful to regular programming, regular jobs, and all kinds of things where it's a great way to make your systems tend to be lower level. You don't have many of the nice tools at higher level, like Python, like core programming, but understanding the memory management pointers is going to be huge.
+
+00:21:02 Speaker 1
+And you just go to projects, you don't have to necessarily need operating systems. It's not like kernel hacking. In fact, systems research, a lot of systems may not even touch those limits. You can do a lot of things. You can do a lot of systems, but you still need to understand the pointers. And finally, operating systems have a lot of relationships to science.
+
+00:21:38 Speaker 1
+So, again, architecture and operating systems, programming languages, things like software engineers, and that is all of these things. So, that, by the way, operating systems, what is it?
+
+00:22:09 Speaker 1
+Foreign software, computer hardware, and software, and provide services. Here, again, you have your hardware right at the bottom of the stack. The operating system is the kind of mediator. So your operating system operates, your developers don't want to actually program you, but the operating system interfaces with the hardware, provides meter.
+
+00:22:44 Speaker 1
+Operating systems also highly practice. A side of the computer is a system that's typically on, or, you know, very often, your research ideas actually go off. Finally, the other thing I'll say about operating systems, the same kind of code you write in a program, which happens really long. But again, it's a C, you write an operating system.
+
+00:23:21 Speaker 1
+So really, you know, an operating system that someone out there can do a bit more depth with their peers, flushed out, very high-level engineers, very bottomless, our CPU, our maybe our SOC for storage, our, you know, these are all going to provide very low-level, the kernel, obviously, hardware, this is the layer that's at the very top of any of our applications.
+
+00:24:25 Speaker 1
+These applications are running at user level. These applications, they interact with libraries. The middle here, again, is at the user level. As well as networks. You can see quite a few of the actual topics that we'll be discussing more about.
+
+00:25:08 Speaker 1
+So, again, the operating system allows user programs to be a little simpler. So, for example, DRAMs, physical addresses, these are very... You know, they would have to be aware, exactly aware of what they want to do, especially when you're sharing a sense of the operating system and how it's virtualized. So user applications would have to be based on that.
+
+00:25:40 Speaker 1
+Another example is that user applications can deal with things like files, and, you know, nice file blocks, these file blocks, rather than things like this block. Operating systems help hide and prevent my fail, but operating systems hide some of these fails. And you should also help hide the generic genetity of hardware.
+
+00:26:12 Speaker 1
+Your file extractors, whether you're underlying storage media or the hard disk drive, can use the same sort of file extraction in your program. and whether the underlying medium the layout of your data as the application the application does provides the illusion that the application.
+
+00:26:45 Speaker 1
+the application has access to an infinite, memory and doesn't have to share anything at all, so the operating system illusion, will basically isolate. applications, applications have their number of legos spaces so one application will wrap more of these.
+
+00:27:20 Speaker 1
+ideas. All right, so that's all well and good, but why would we, why am I trying to make this Well, I would argue again, if I don't buy things, that there are a lot going on in the output. So, outstanding data has been kind of taken for hardware, are kind of slowing, are creating.
+
+00:27:53 Speaker 1
+things like the NIC, have been more long, so all of these sort of old assumptions about that's a great opportunity for systems researchers to come in, and related to the first bullet point is also we're a better platform, so things like multi-core CPUs, larger amounts.
+
+00:28:24 Speaker 1
+of memory, and so forth. These are all hardware devices, very tight integration with the way that we designed some of these systems when they were smaller and some had slower storage and we can redesign taking into account today. The other end of the spectrum, there are also newer, bigger, more complex applications.
+
+00:29:00 Speaker 1
+Applications are going to be more advanced. Things like large distributed systems, machine learning, database. These all demand really high performance, so how should the system work together? I'm going to find a way to do it.
+
+00:29:36 Speaker 1
+So, you know, how do we measure all the things that we do, what research ideas, so that even a bit more, well, I know Moore's Law, there's an ever-increasing demand for computers, right? Large language models, big data banks, we all depend on.
+
+00:30:06 Speaker 1
+It used to be that, one, if your programs were run faster, you wait a year, you buy a new CPU for a new speaker. It's because of things like Moore's Law and denial of scaling, so again, with Moore's Law, it's things that the transistors doubled every year in two years. basically said that as transistors got smaller, the power density remains, you know, basically what these two in combination meant is if you wanted, that's what's true now.
+
+00:30:44 Speaker 1
+Now the fact that transistors can't get any smaller, and so the power density has gotten, to power our bigger issue. And with Moore's law, you know, able to double the transistors is what we are anymore. Other consequences of this, you know, like I already mentioned about the multi-core consequence, we can't have more transistors on a die, but we can have more cores.
+
+00:31:26 Speaker 1
+We're slowing because we're starting to see that GPUs are ready for 4G to use all of that. If you do matrix programming, we're done on the CPU, but it's becoming expensive. Speed, which they developed last hardware that's really, really good at doing linear algebra. All the graphics complications of that hardware, now we've found other uses for this hardware that's really good at it.
+
+00:32:05 Speaker 1
+So we're seeing more and more of this in general for the increasing scale of it. And related to this is better hardware. People get a typical timing machine. We count the transitions on the machine.
+
+00:33:10 Speaker 1
+The next thing about this black line here is that it's not paying. If you're buying it today, you can get much cheaper.
+
+00:33:54 Speaker 1
+And finally, again, there's more and more complex applications like machine learning, big databases. These are all going to have a lot of resource systems. Now that's your performance video. And some of you might still be sitting at your desk going, okay, great, you convinced me that.
+
+00:34:27 Speaker 1
+But still, I'm not a system of why should I be expected to think it aside from the fact that degree reports and systems research can still help me gain a lot of support to programs to pull up. So again, systems research is about things like making sure to really understand it's all about combining, you know, many different existing techniques to solve them.
+
+00:35:12 Speaker 1
+You know, you might see in some of these papers, old ideas apply to newer problems, or maybe new ideas apply to a combination of old ideas. You'll see some of these solutions get raised and do some of the kind of systems you should have done this.
+
+00:35:43 Speaker 1
+And then finally, you know, doing systems in control with things like trade-offs. Really common answers in systems is tough. Your quiz answers, you get full credit. You know, things like starting from different or different. Even if you're trying to solve the same problem, you'll end up with, you know, getting the.
+
+00:36:16 Speaker 1
+skills and comfort and balancing these. They're only about proper coursework. Hopefully, you're just going to be able to just take the technical paper and you might find that reading some of your paper, but if you keep that.
+
+00:37:27 Speaker 1
+I find it really helpful if you, you know, take notes, how to highlight, how to do it. A lot of people also just like to do this phonically, typing notes. It's kind of mainly a practice of taking notes, taking strategy, whatever.
+
+00:38:01 Speaker 1
+One of the things that's kind of helpful about systems in particular, they often have a very. so-called reduction, so you have background needs, presentation sections, and some technical.
+
+00:38:36 Speaker 1
+So kind of diving into all the actions in the paper. So if you can contact me, be comfortable with this paper. If you read the instructions, you'll be able to understand the problem and solve kind of basic ideas of the solution, but you won't understand the entire solution. It's going to be later on next related to the firework.
+
+00:39:15 Speaker 1
+The main community cover in the back section, you'll usually see the background. Again, it's going to be either idea. so this is actually going to be the work the paper builds on and helps them like what's the solution in this paper is solving and how does it you know the distinction here with related work.
+
+00:39:47 Speaker 1
+exhaustive and the prior work the design section is going to describe how the system like the assistance techniques paper uses are built because we're basically all the details of those going to way more the evaluation is going to be.
+
+00:40:37 Speaker 1
+You'll see a combination of both micro-benchmarks and macro-benchmarks, designed to highlight one particular performance of the system. For example, you might see one of the memory management papers, what's the performance of KDL. You'll see macro-benchmarks are going to be more realistic, more end-to-end, to really showcase the real benefit.
+
+00:41:10 Speaker 1
+Here, you might see the overall speed of the credits. So, one of the most effective ways to read a paper... So, when you're reading a technical paper, the best approach is not necessarily top left column, page one, and then try to, you know, column by column.
+
+00:41:42 Speaker 1
+Instead, it's, you know, usually better to read the paper in multiple, or you go for a different one. So, for the first pass, when you're understanding the paper, you're just trying to get the general idea of this paper. Now, it's necessarily all of it. You can have all of the columns, all of the columns, start with the first one, and then take you back over to here, and you'll read the title.
+
+00:42:26 Speaker 1
+and you'll probably read the subheadings, the conclusions, you might scan all of the references, and your goal is to basically, you have a category of kind of papers, and then you're just trying to add to the context of it, you want to do the work, problems,
+
+00:43:00 Speaker 1
+correctness, and do the assumptions hold up, contributions, and contributions of the paper, and then you'll get something that comes up. Do you think this paper's holding up? The first pass, you know, you try to just basically set the second pass, and then take.
+
+00:43:31 Speaker 1
+you a bit longer. And here you're going to actually read the paper and have greater clarity. You're going to read the text. If there's any primary detail, so here you'll look at the graphs. If there's any related work, so again, the goal of the text understands people well,
+
+00:44:03 Speaker 1
+and one of the goals of the lectures is to learn from the ideas, the impact, but their idea works. Lastly, they're going to read, you would understand how to do it.
+
+00:44:44 Speaker 1
+You don't want to do things like understand what you're making about the recreated thing. So here you also, you'll be able to understand, but also if there's any shortcomings, also if you have any ideas for conditions, it's going to go up there.
+
+00:45:27 Speaker 1
+Thank you. Other approaches, high-level questions like what's the problem, what's the care, are there more detailed questions, like what are the solutions, key components,
+
+00:45:58 Speaker 1
+and paper action problems, are there limitations, limitations, you know, questions about their evaluation, like how do they evaluate their work, what students do their runs, what's realistic, just, you know, the experiments, what are they about, what do we do, and say, is this question about the impact of the paper, and let's see if it's impactful, can it impact now or in the future.
+
+00:46:32 Speaker 1
+Who are the authors? Why did they write this time? The paper you can see the weaknesses, which would address another problem. We can measure also the usefulness of that. This brings us to the end of the paper.
+
+00:47:06 Speaker 1
+Read the end of the paper on Wednesday. It's about a 10-minute break.
+
+00:47:36 Speaker 2
+No problem. Good.

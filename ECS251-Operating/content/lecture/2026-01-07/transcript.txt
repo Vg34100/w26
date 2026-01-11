@@ -1,0 +1,591 @@
+Pablo [0:31]: people who have already
+Pablo [0:35]: chose paper
+Pablo [0:39]: open it up to four
+Pablo [1:04]: people
+Pablo [1:06]: finally right before
+Pablo [1:07]: class arn
+Pablo [1:08]: off
+Pablo [1:09]: pronounced
+Pablo [1:53]: all right so we started for today so we'll first start with the background on ken thompson and dennis riches we both work at bell labs
+Pablo [1:55]: and help author and other operating system
+Pablo [1:56]: s called voltage
+Pablo [2:00]: which was highly influential for many aspects of
+Pablo [2:05]: unit so both were highly developed they had some issues with it
+Pablo [2:06]: and they decided to address that
+Pablo [2:10]: so again the underlying design philosophy of voltage
+Pablo [2:11]: was quite different
+Pablo [2:20]: units and to kind of highlight the differences ten houses quoted in two thousand seven over time
+Pablo [2:22]: basically
+Pablo [2:23]: unusable
+Pablo [2:26]: so unix they wanted to make sure to go in the opposite
+Pablo [2:27]: direction
+Pablo [2:42]: ahead as richie program ken thompson
+Pablo [2:54]: operating system which is early distributed operating system the q and etf aid further work on you may
+Pablo [2:57]: speak to how influential
+Pablo [3:03]: so we're going to take a look
+Pablo [3:13]: while to spend time figuring your
+Pablo [3:14]: play around with weird action
+Pablo [3:19]: so unexposed originally developed on computer called et eleven
+Pablo [3:33]: very influential leader for those who are alive during the time speaking of various health system a lot of people in aria kashk but the pdp eleven has fifteen different
+Pablo [3:36]: one hundred forty four kilobytes of natural
+Pablo [3:51]: unix of those one hundred forty four kilobytes of memory units about twenty two gigabytes
+Pablo [4:02]: but beyond the space you need for the next you could actually get away with only
+Pablo [4:14]: quite large
+Pablo [4:18]: storage
+Pablo [4:25]: i had
+Pablo [4:27]: short term viral street communic
+Pablo [4:27]: ation interfaces
+Pablo [4:33]: in the
+Pablo [4:35]: bathroom
+Pablo [4:36]: it is the punicular unit
+Pablo [4:38]: and then that
+Pablo [4:47]: all computing happened within the cabinet but all the interaction of the user happened within this screen
+Pablo [4:49]: right there
+Pablo [4:56]: in addition to several other special
+Pablo [5:01]: paper synthesizer device
+Pablo [5:10]: and there were two main forms of using computer most common fat process
+Pablo [5:27]: ing so the way this works expensive not everyone had one sitting at home on the desk or in their pocket so you have raised to do one here maybe for an entire organization and so any competing task you want to do they would submit their tasks their tasks could be printed with you they'd be executed one by one
+Pablo [5:34]: on year round completion finish the task give the output start the next half this is back prom
+Pablo [5:34]: ising
+Pablo [5:51]: another way you can use computers is called timesharing where you could basically use the system in more interactive way and here are many users can use the system at once where they release as you were informed about scheduling
+Pablo [6:03]: many of the operating systems used today
+Pablo [6:04]: kind of trace that are going to be
+Pablo [6:05]: effective
+Pablo [6:11]: so the mudix was really influential in the design of autonomous systems and again a lot of the object
+Pablo [6:48]: s
+Pablo [7:09]: very
+Pablo [7:10]: small father
+Pablo [7:26]: so
+Pablo [7:27]: they have some construct
+Pablo [7:27]: ions
+Pablo [7:54]: to
+Pablo [7:55]: happen
+Pablo [8:04]: we really
+Pablo [8:08]: found
+Pablo [8:09]: support
+Pablo [8:13]: data and unix itself did not
+Pablo [8:14]: compose any special
+Pablo [8:15]: experience
+Pablo [8:18]: special applications might like for example
+Pablo [8:20]: other application might require
+Pablo [8:25]: the first few spice of the filings and have specific formats to the larger method
+Pablo [8:28]: but that's imposed by the log replic
+Pablo [8:29]: ation not by the oper
+Pablo [8:30]: ating system
+Pablo [8:37]: directories are also folders
+Pablo [8:41]: so these are created by
+Pablo [8:41]: units as
+Pablo [8:43]: well
+Pablo [8:47]: so they are special files that contain pointers to other
+Pablo [8:51]: models so this is kind of how you fill up this tree structure
+Pablo [8:54]: on my regular files you can go
+Pablo [8:57]: because we have
+Pablo [9:04]: finally devices and networks are also filed they are special files
+Pablo [9:13]: so they manipulate your bytes on each door twice they result in the activation
+Pablo [9:14]: of some
+Pablo [9:20]: other network device centers network keyboards or
+Pablo [9:39]: the key feature of the luminosis mounting sodium is mapping allows you guys to handle removal file systems like this cartridges that could contain information from different users that they might
+Pablo [9:40]: plug in
+Pablo [9:46]: as so again this is built on top of the rn hierarchical structure
+Pablo [9:47]: of file system
+Pablo [10:00]: so basically when you mouse you replace the tree so on the left here we have this hierarchical structure where the mit holder is the link of this
+Pablo [10:04]: we replace this leaf with the roof of
+Pablo [10:05]: the record
+Pablo [10:11]: system that we have now
+Pablo [10:19]: once you capture the file system there's really no distinction between files on the original file system the file folder
+Pablo [10:32]: so once you have your file and your file system and everything is a file that you're actually we also have the dso bio model that basically works for any kind of bio
+Pablo [10:36]: physical operations
+Pablo [10:39]: like open close rewriter c work on files
+Pablo [10:42]: so these are your phone calls
+Pablo [10:48]: but first regardless of whether you're operating on a file maybe you're offering that directory or you're operating on the
+Pablo [10:48]: parts
+Pablo [10:57]: within files there's character files that patients with flights advice like a code
+Pablo [10:59]: for example
+Pablo [11:02]: or a block io device which is usually larger
+Pablo [11:04]: iowa students
+Pablo [11:04]: blocks
+Pablo [11:05]: over the
+Pablo [11:07]: united states
+Pablo [11:07]: bipolitis
+Pablo [11:10]: autism
+Pablo [11:20]: synchronous and unique and your lead would return amazing
+Pablo [11:22]: with the right
+Pablo [11:33]: this is only an opinion because reason right for astronomy
+Pablo [11:37]: there's been a lot of recent
+Pablo [11:49]: models that you have to corner were checking this out as a file changing the permissions of a file
+Pablo [11:57]: venting directory making files two different names
+Pablo [12:04]: in addition to the standard calls there's additional what i say the graph add the special
+Pablo [12:06]: functionality
+Pablo [12:16]: that isn't well supported or represented by these other calls and then basically
+Pablo [12:24]: the advantage of this uniform ion model is that it's a uniform naming model
+Pablo [12:30]: so the way that you name and protect files also works
+Pablo [12:38]: so this basically means that if you're doing file i o or file
+Pablo [12:46]: function right i can handle opening file reading from the file closing the file all those convert
+Pablo [12:49]: s same model
+Pablo [12:53]: it really simplifies the development
+Pablo [12:57]: because now they're going to say their functional
+Pablo [12:58]: ity works regardless
+Pablo [13:00]: of what
+Pablo [13:19]: access control unit sample this by again using the same sort of powerful tree structure file system so protection and access control is represented by two sets of three bits
+Pablo [13:27]: of key so the first set of regret executed referred to what the owner of the file can do on the second
+Pablo [13:28]: so for example
+Pablo [13:32]: the owner being able to read recognition through the
+Pablo [13:33]: file
+Pablo [13:35]: but everyone else has
+Pablo [13:38]: group
+Pablo [13:39]: one
+Pablo [13:48]: has
+Pablo [13:49]: the user id tempor
+Pablo [13:50]: arily change
+Pablo [13:54]: our
+Pablo [13:55]: privilege program
+Pablo [13:59]: ming
+Pablo [14:00]: otherwise applications
+Pablo [14:01]: so
+Pablo [14:02]: the example i'd like to
+Pablo [14:03]: get
+Pablo [14:12]: a regular
+Pablo [14:13]: user
+Pablo [14:14]: should be able
+Pablo [14:15]: to exercise
+Pablo [14:21]: welcoming
+Pablo [14:23]: then
+Pablo [14:24]: as i'm claim
+Pablo [14:25]: ing
+Pablo [14:26]: as
+Pablo [14:27]: the owner of my
+Pablo [14:28]: profile
+Pablo [14:31]: became
+Pablo [14:32]: the
+Pablo [14:33]: thing
+Pablo [14:38]: i
+Pablo [14:39]: do legitimately on
+Pablo [14:40]: high school
+Pablo [14:50]: trans
+Pablo [14:51]: mission
+Pablo [15:01]: file
+Pablo [15:12]: systems images
+Pablo [15:15]: an image is there for execution
+Pablo [15:20]: like foreign agency memory
+Pablo [15:21]: is obviously unit
+Pablo [15:42]: most
+Pablo [15:43]: of the time created by
+Pablo [15:44]: system
+Pablo [15:50]: basically
+Pablo [15:51]: needs to apply
+Pablo [15:59]: process
+Pablo [16:00]: with a
+Pablo [16:01]: copy of
+Pablo [16:02]: process
+Pablo [16:07]: once
+Pablo [16:08]: you have
+Pablo [16:09]: a system
+Pablo [16:10]: process
+Pablo [16:11]: using
+Pablo [16:17]: site
+Pablo [16:18]: smoke
+Pablo [16:19]: just like
+Pablo [16:19]: ours
+Pablo [16:20]: once you have
+Pablo [16:21]: two processes
+Pablo [16:22]: you can open up
+Pablo [16:23]: sites
+Pablo [16:27]: on
+Pablo [16:38]: other things you can do with processes or execute so you can call execute involve another program in the system
+Pablo [16:43]: most commonly used in court so with most fine as you'll call
+Pablo [16:47]: for to make a new process within the funnel process
+Pablo [16:48]: execute some other
+Pablo [16:51]: this is basically how
+Pablo [16:57]: do you offer wait for a child process
+Pablo [17:01]: maybe the certified
+Pablo [17:02]: letting you in the mean
+Pablo [17:02]: time
+Pablo [17:06]: wait for child process to do what needs to do
+Pablo [17:07]: as an
+Pablo [17:10]: opportunity
+Pablo [17:20]: so while talking
+Pablo [17:23]: we brought a fork as a granted create files
+Pablo [17:25]: there's an optional reading
+Pablo [17:26]: called the fork in the
+Pablo [17:27]: road by andrew
+Pablo [17:35]: bauman this i thought was an interesting argument about whether or not trump is actually a good fashion
+Pablo [17:39]: although appearing in the similar on its face right
+Pablo [17:42]: you get a new process at the time of a parent
+Pablo [17:44]: a copy of the parent
+Pablo [17:49]: when you look into it look at all these edge cases is actually twenty five
+Pablo [17:53]: special cases for how state respons
+Pablo [17:55]: e that's a lot of issues
+Pablo [17:57]: so it's actually more complex than it seems
+Pablo [18:17]: work also does not compose and it's not threat safe so you can have information program one thread calls for another friend named where the four process needs access to these two make the copy of the image they're there
+Pablo [18:20]: so far
+Pablo [18:23]: typically the advice is don't use
+Pablo [18:26]: program is also engineered
+Pablo [18:29]: because again default city
+Pablo [18:35]: any state that the child shouldn't have is that program
+Pablo [18:42]: opposite of the general sort of best case security practice where you don't want to give something symbiotic
+Pablo [18:46]: is a lot harder than
+Pablo [19:09]: importance also slow and as a scale so again four unix was around originally written when memory was filled by size memory is now air bite size so we're not necessarily fully copying state before three days or during some kind of copy on the right we're even setting up all these topics
+Pablo [19:19]: it's low and necessary you say in their little paper argument that something like nodes js installed a whole second
+Pablo [19:31]: they argue that we should definitely work not even more and focus on other better ap
+Pablo [19:31]: is
+Pablo [19:36]: so something like a spawn api spawning the process without having to do
+Pablo [19:50]: this default safe optimum phone api we want an exact copy using threads is there opportunity and having a special idiotic or things like
+Pablo [19:55]: that so again he likes launch statement
+Pablo [20:03]: a relic from another era that is out of place and mines are starting to as a pernicious index
+Pablo [20:06]: lawyers
+Pablo [20:07]: i don't know
+Pablo [20:20]: how many of you may underground operating systems and maybe have professors talk about fork as this great position like really create processes these authors have the opposite
+Pablo [20:35]: so again one of the main sort of contributions why you would probably become popular
+Pablo [20:42]: so michelle is this very powerful user program runs
+Pablo [20:45]: basically it's the main way that you interact
+Pablo [20:55]: is the name of the child
+Pablo [20:58]: and the argument that
+Pablo [21:05]: she also works ielts redirections with the open angle brackets
+Pablo [21:19]: much less nice simple basic input i always redirect the output i over direction and you can use these in addition to these pipe masks very often pipeline
+Pablo [21:21]: but yeah for one command agent
+Pablo [21:30]: want to take a guess
+Pablo [21:31]: about
+Pablo [21:35]: this randos read the file
+Pablo [21:41]: so basically this will count the number of instances of
+Pablo [21:50]: again you can do this with one line of shell programming or you could write c program
+Pablo [21:55]: instead of being imp
+Pablo [22:00]: lement and i think few things like background processes you can start processing the background
+Pablo [22:04]: scripts
+Pablo [22:09]: very powerful tool that i'm sure we've all
+Pablo [22:11]: used
+Pablo [22:21]: so again kind of taking a step back
+Pablo [22:24]: unit was not necessarily designed to be anything
+Pablo [22:25]: by the
+Pablo [22:35]: ben thompson and dennis ritchie they were just annoyed by vulpix and they wanted to make something better right they weren't told by the company there are four bow labs hey make this operating system with
+Pablo [22:39]: these pockets they built something that they thought they would find useful and
+Pablo [22:44]: again their goal was to have a comfortable environment to explore these ideas
+Pablo [22:45]: and conventions for the
+Pablo [22:46]: conferences
+Pablo [22:47]: researchers
+Pablo [22:49]: and life operating systems
+Pablo [22:51]: they basically an adult for themselves
+Pablo [22:59]: so in the design considerations really kind of carry out their goals they want to programmers
+Pablo [23:03]: they wanted the environment to be useful programmers
+Pablo [23:04]: so
+Pablo [23:05]: it ended up being what they wanted
+Pablo [23:06]: them to be
+Pablo [23:11]: again because both in terms of what their styles was and their implications
+Pablo [23:12]: they were working on
+Pablo [23:16]: they really had this sort of economy and element
+Pablo [23:21]: because they didn't have a whole lot of memory to work with
+Pablo [23:30]: they couldn't write an operating system with all these special cases all these complex apis concepts because they were only working
+Pablo [23:38]: self maintaining
+Pablo [23:45]: this once unix was mature enough
+Pablo [23:49]: they made additional development for units within the self made
+Pablo [23:57]: the designers use the system which allowed them to kind of see all the volumes and they had the fire
+Pablo [24:03]: again kind of bring it back again
+Pablo [24:18]: enix has been building linux is again maybe the most used operating system that's mostly related to living these days or even two days and linux is a lot more complex and comprehensive than units
+Pablo [24:20]: was but again it's simplicity
+Pablo [24:22]: can still be seen within
+Pablo [24:31]: and again the impact of unix has really kind of made operations still like setting up
+Pablo [24:40]: so we don't want to write an operating specialized overcompensated to market
+Pablo [24:49]: not to say that something authentic is easy to understand but they do try to keep things in mind that design
+Pablo [24:52]: modular
+Pablo [25:04]: ly can be traded that philosophy can be traced back to the sort of operating system retreat where are they we have kind of units as the data various flavors of place
+Pablo [25:09]: windows
+Pablo [25:10]: is kind of off by itself
+Pablo [25:17]: lots of recommendable operations
+Pablo [25:28]: all right
+Pablo [25:39]: we'll start off maybe just chat about you
+Pablo [25:43]: it's about three hundred forty right now so we'll say about ten minutes
+Pablo [25:47]: of this and then we'll finish up the last minute class
+Pablo [25:48]: and fifteen minutes
+Pablo [25:59]: go program
+Pablo [26:03]: i just kind of listed out there more
+Pablo [26:11]: that's not to say to go it's not even commercial but those more recent so it's kind of harder to tell but yeah
+Pablo [26:46]: everything is a fire truck
+Pablo [26:49]: everything
+Pablo [27:02]: nowadays
+Pablo [27:15]: i feel that managing network in itself is complicated aspects described in the paper to that network something like that
+Pablo [27:23]: for those reasons that they have kept it simple
+Pablo [27:26]: makes it easy to extend further
+Pablo [27:31]: right now
+Pablo [27:35]: so given all the development
+Pablo [27:48]: no
+Pablo [27:53]: we're doing great
+Pablo [28:00]: question
+Pablo [28:02]: well it could be
+Pablo [28:09]: the click of next week she quizzes us on the stuff from last
+Pablo [28:22]: everything is on file it's a good abstraction
+Pablo [28:31]: because it's one simple api it has powerful composition it has debugability and scripting and it has extensibility
+Pablo [29:03]: yeah
+Pablo [29:15]: i want to finish all my program i have some
+Pablo [29:19]: specific
+Pablo [29:38]: open and what is fork system
+Pablo [29:44]: what is
+Pablo [29:46]: fork system
+Pablo [30:03]: both of the people are the unix system call that creates a new process by duplicating the calling process after four
+Pablo [30:13]: devices they provide you api you can add any new device
+Pablo [30:18]: without any paper increase
+Pablo [30:29]: got to hide it
+Pablo [30:42]: as a programmer i love
+Pablo [30:48]: doing
+Pablo [30:51]: okay
+Pablo [30:51]: to open
+Pablo [30:56]: you're supposed to be back
+Pablo [31:01]: why
+Pablo [31:02]: do i need this
+Pablo [31:06]: i saw
+Pablo [31:18]: you might not be able
+Pablo [31:19]: to modify
+Pablo [31:40]: we are putting the one human model
+Pablo [31:42]: where everything is a file
+Pablo [31:49]: the file is then you call it a process what
+Pablo [31:57]: you want to be a third question
+Pablo [31:59]: linux is still around
+Pablo [32:02]: never change
+Pablo [32:07]: well people still use
+Pablo [32:10]: that
+Pablo [32:16]: people still use people still use file system
+Pablo [32:28]: or is it a part of
+Pablo [32:31]: api
+Pablo [33:10]: nowadays
+Pablo [33:34]: when you have a pipe there's a read and write
+Pablo [33:41]: from it
+Pablo [33:51]: now process no but it's time to read that something is there in that
+Pablo [34:19]: person
+Pablo [35:05]: what we are talking
+Pablo [35:08]: about is the completion processing
+Pablo [35:12]: and then we are transferring the data that is the scenario we discuss
+Pablo [35:13]: at the moment
+Pablo [35:15]: if i want to communicate between two person
+Pablo [35:22]: s
+Pablo [35:29]: that made this
+Pablo [35:32]: special trial
+Pablo [35:33]: and
+Pablo [35:33]: again
+Pablo [35:39]: share any special like any type of
+Pablo [35:41]: characters in the trial
+Pablo [38:18]: single
+Pablo [38:19]: address
+Pablo [38:23]: where
+Pablo [38:23]: you had
+Pablo [38:34]: right
+Pablo [38:35]: over
+Pablo [38:47]: space
+Pablo [38:48]: operations
+Pablo [38:49]: or
+Pablo [38:50]: the tag
+Pablo [38:51]: where
+Pablo [38:52]: court became really
+Pablo [38:55]: strive
+Pablo [39:02]: if
+Pablo [39:03]: you want
+Pablo [39:04]: ed operations
+Pablo [39:12]: actually
+Pablo [39:14]: all these social education
+Pablo [39:20]: but
+Pablo [39:22]: ating system that trees
+Pablo [39:24]: difficult
+Pablo [39:42]: question
+Pablo [39:46]: s
+Pablo [40:10]: bas
+Pablo [40:10]: ically
+Pablo [40:11]: operations
+Pablo [40:12]: is helping
+Pablo [40:14]: others
+Pablo [40:31]: that is
+Pablo [40:31]: okay
+Pablo [40:34]: maybe
+Pablo [40:36]: you don't
+Pablo [40:37]: have
+Them [40:46]: any
+Them [40:47]: question
+Them [40:50]: i remember
+Them [41:07]: it
+Them [41:08]: basically force and
+Them [41:09]: it created the process
+Them [41:11]: and
+Them [41:12]: as long as
+Them [41:16]: you
+Them [41:23]: want
+Them [41:30]: money
+Them [41:31]: like each other
+Them [41:34]: you don't
+Them [41:36]: use
+Them [41:49]: that
+Them [41:56]: situation
+Them [41:57]: where
+Them [41:58]: you
+Them [41:59]: want
+Them [42:00]: to
+Them [42:01]: take
+Them [42:11]: some time
+Them [42:12]: where you might want
+Them [42:13]: to be visual is
+Them [42:14]: olation
+Them [42:15]: guarantee
+Them [42:16]: you
+Them [42:18]: don't want
+Them [42:25]: to
+Them [42:28]: acknowled
+Them [42:29]: ge
+Them [42:30]: and work is still
+Them [42:31]: on the right way to be
+Them [42:31]: in process
+Them [42:32]: because
+Them [42:38]: if you want a new
+Them [42:39]: project
+Them [42:40]: there's better way to do it
+Them [42:42]: window has
+Them [42:43]: created
+Them [42:51]: something like that
+Them [42:56]: where you have a clean slate approach where you then get the state of the process
+Them [42:58]: manually create safety
+Them [43:01]: rather than having everything and taking out
+Them [43:02]: the special
+Them [43:13]: you mentioned earlier that work is considered a hack so what makes it a hack and what would another api
+Them [43:14]: be not
+Them [43:15]: happy
+Them [43:17]: so again because of the way units was designed
+Them [43:20]: the process writing
+Them [43:22]: was
+Them [43:23]: like two lines of cod
+Them [43:24]: e
+Them [43:27]: or would implement very strictly very eas
+Them [43:31]: ily in probably an afternoon while they were writing
+Them [43:34]: so again
+Them [43:36]: the fork tastes like the four workshop
+Them [43:40]: these are kind of state use the charge for that
+Them [43:43]: but then kind of backstep by saying it was the easiest way
+Them [43:44]: to get
+Them [43:45]: to this process
+Them [43:46]: creation
+Them [44:02]: back
+Them [44:02]: then
+Them [44:04]: but
+Them [44:04]: if it's a starting point
+Them [44:06]: would have
+Them [44:07]: may have made something
+Them [44:09]: different
+Them [44:10]: easier to
+Them [44:12]: say first did form
+Them [44:13]: and
+Them [44:15]: they ended up with a different
+Them [44:16]: methodology
+Them [44:18]: so
+Them [44:20]: basically what they mean by cork and the
+Them [44:23]: hat is like it was as simple as possible we could do at the time
+Them [44:24]: that just worked
+Them [44:25]: and it kind of suffered
+Them [44:51]: i don't
+Them [44:52]: think that
+Them [44:53]: as i
+Them [44:54]: thank the message
+Them [44:58]: you
+Them [44:58]: are versions
+Them [44:59]: of the same
+Them [45:00]: underlying
+Them [45:04]: more like one two three
+Them [45:04]: versions
+Them [45:05]: which kind of
+Them [45:07]: it's like want me to work with
+Them [45:08]: if
+Them [45:09]: i'm doing like a
+Them [45:10]: read then
+Them [45:13]: there are different variations of doing the same thing
+Them [45:16]: reading from a socket i can do it in multiple ways
+Them [45:19]: and use different versions of it
+Them [45:21]: i think
+Them [45:23]: there is simplicity with us
+Them [45:25]: in terms of
+Them [45:27]: i think it does get
+Them [45:29]: as we go down for it
+Them [45:33]: you have
+Them [45:34]: very simple devices
+Them [45:36]: for program
+Them [45:39]: s then simple api
+Them [45:42]: reading from a network
+Them [45:44]: makes sense that nobody can do
+Them [45:46]: the network and write it to an end
+Them [45:46]: we're fine with a lot
+Them [45:49]: of topics we're still getting paid
+Them [45:51]: yourselves pushing data to and from somewhere else
+Them [45:54]: whether that underlying medium is a file or across the network
+Them [45:56]: someone else's machine
+Them [45:58]: it kind of onto facebook
+Them [46:02]: but there are some things that are more complicated
+Them [46:08]: does it make sense to use the same sort of read and write api to be
+Them [46:10]: at a high level here
+Them [46:17]: but you need a lot more power than that if you're trying to stumble through write calls that you do you're leaving a lot
+Them [46:22]: that's why we have something like cuda it's very specialized api or programming like
+Them [46:23]: video
+Them [46:24]: that
+Them [46:25]: program
+Them [46:26]: use a lot
+Them [46:28]: but
+Them [46:30]: escape from this regular process
+Them [46:59]: maybe read and write
+Them [47:03]: for only read
+Them [47:07]: yeah
+Them [47:10]: execut
+Them [47:12]: e is kind of an example of a
+Them [47:13]: concept called access
+Them [47:14]: control list
+Them [47:18]: of people
+Them [47:19]: another
+Them [47:20]: way you can kind of do this
+Them [47:21]: transaction
+Them [47:26]: ability where you possess the capability you then have permission to
+Them [47:28]: access the same thing
+Them [47:30]: who can access what name
+Them [47:31]: is nothing
+Them [47:31]: itself
+Them [47:32]: in this case fil
+Them [47:33]: e
+Them [47:34]: but the permission
+Them [47:34]: is
+Them [47:36]: the separate object
+Them [47:38]: that indeed possess
+Them [47:53]: es pretty much more or less mapped for it is now
+Them [47:57]: the excel programming that shel
+Them [47:58]: l
+Them [48:07]: i work with whole files from your so i'm saying sort of theory
+Them [48:08]: name convention for
+Them [48:09]: current
+Them [48:13]: so this paper should have felt very familiar
+Them [48:31]: all right
+Them [48:33]: so yeah that's brought my class on friday
+Them [48:34]: we'll talk about
+Them [48:56]: i familiar with os
+Them [49:00]: yes
+Them [49:05]: i don't know
+Them [49:07]: what do you mean by o
+Them [49:09]: s that's very broad
+Them [49:32]: i'm not even
+Them [49:44]: thinking
+Them [49:51]: how could you protect
+Them [50:14]: we got crunch
+Them [50:19]: so guys from this court matter
+Them [50:22]: of
+Them [50:27]: ban
+Them [50:28]: ana
+Them [50:44]: sandy has
+Them [50:55]: finished it's one question
+Them [50:58]: each question you submit individually for some reason
+Them [50:59]: yeah
+Them [51:01]: hopefully i did it right
+Them [51:06]: that's the first but
+Them [51:13]: yesterday
+Them [51:30]: bye bye
+Them [51:37]: finish with my chat gpt
+Them [51:40]: i want to check if i did it right or if i messed it up
+Them [51:42]: and then i'm going
+Them [51:44]: oh my god
+Them [51:49]: we got
+Them [51:50]: it
+Them [51:50]: it works
+Them [52:00]: yeah we submit the code onto gradescope
+Them [52:03]: like gradescope has the four
+Them [52:05]: the four questions
+Them [52:08]: and so like this one
+Them [52:12]: i submitted or well the first time it's a little pop up
+Them [52:15]: if you haven't done it already it shows up like that
+Them [52:20]: you can resubmit right there
+Them [52:31]: but it checks the code this is the code i came up with and then it runs it and all of the tests pass so now i have it correct
+Them [52:32]: i understand
