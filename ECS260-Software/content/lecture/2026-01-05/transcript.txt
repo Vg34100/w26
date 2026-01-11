@@ -1,0 +1,314 @@
+00:00:02 Speaker 1
+Look at that, we're on time. So this is a bit weird. Let's see if I can move this a little. Nope, it's open. So I guess I'll be teaching this way. I usually like it paced around. Hope I don't hit it too much. Okay, so welcome all to 260. How was the break? Busy? Did you get to finish a couple of papers?
+
+00:00:35 Speaker 1
+One paper? Let's give people a few more minutes. So what was fun over the break? Any movies, any shows, any activities, any skiing? Anyone? I saw Avatar two days ago. Anybody else? My butt is still numb after three and a half hours.
+
+00:01:10 Speaker 2
+Some older movies at the Tower Theater.
+
+00:01:13 Speaker 1
+Oh, that's fun. There used to be a French festival that was a couple of years back. It would go like for two days. Which ones did they have? Just White Christmas. Oh, just White Christmas. Okay, well, I know a few people traveled. Some people are not even back. They have their sons to raise. Life is better. It's a standard winter.
+
+00:01:45 Speaker 1
+But okay, I think we can start. It's 2-11. Welcome to the course. Happy New Year. I'm so glad to see you. It's a very interesting course. I've been running it for a number of years. And people have been having fun and success. Got a few papers that published, even more submitted. So it's a research-based course that will result in a project report that ideally can be submitted right away to a conference or something similar.
+
+00:02:19 Speaker 1
+And you don't have to if you don't want to, but that's the goal, to deliver a kind of piece of work instead of on its own. And it's a team-based course. And so I don't see 80 people here, but we do have 80 people scheduled and enrolled. Either way, we can handle up to 20, 25 teams. So that means about four to five people per team. This, surprisingly, has been working out in the past. I know it sounds crazy, but it has been.
+
+00:02:52 Speaker 1
+So let's go through this. First of all, I'm Vladimir Sokov. I've been here for about 10 years. half years, doing all sorts of things in data science, AI, ML, focusing on software engineering. As of late, I got my PhD in 2002. Oh, so the most important part of the course is our TA, Ryan Jahangir. So, Ryan, please stand up. You want to introduce yourself.
+
+00:03:27 Speaker 3
+Yeah, sure. Hello, everyone. Nice to meet you. My name is Ryan Jahangir. I am a second-year Ph.D. student working under Professor Gautam Nitin Kaur. And my research domain is mainly focused on AI for health. My current research focus has been on how to enhance the treatment, prevention, or screening of breast cancer with the help of large language models. So, in this course, I will be your TA. So, hope to have a great interaction with all of you. Thank you.
+
+00:03:57 Speaker 1
+Thank you, Ryan. Glad to have you as part of the team. Ryan took this course, and I scored really good, so he's a TA now. Okay, so we'll be running the course together. Certainly, Ryan will be of great help. We'll both have office hours. We'll have more. Either of us can help, okay? Let me see. I just want to get a sense of who you guys are. How many people here are not in computer science?
+
+00:04:31 Speaker 1
+Anyone? Okay. So how many of you are PhD students? Seven? Okay. And how many of you are microgrammings? The rest of you are master's students, I presume. Or the default option, you know, how you always put the default. You don't know what's going to happen. Any category I haven't mentioned?
+
+00:05:01 Speaker 1
+Okay, so let's try to dig in deeper a little bit in terms of areas of research, areas of interest. Okay, you may not have an area of research, but you may have an area of interest. So how many people here are in software engineering? This is software engineering, and you're welcome to choose a seat. There are plenty here. We're just talking about our areas of interest or research.
+
+00:05:32 Speaker 1
+Okay, so let's see. Software engineering or programming languages? Any hands? Okay. Which one of the two? Okay, good. Any networking people? Any systems people? Builders? Any AI people?
+
+00:06:03 Speaker 1
+What? Anything else that I haven't mentioned? What is there? Crypto? Graphics? Visualization? Quantum computing? How many of those? What didn't I mention? Ok, let's start. And I'm talking to you about this because this is the conversation you have to have with your fellow teammates.
+
+00:06:41 Speaker 1
+What are your strengths? So, some people, they love to research. They can go as deep as possible 50 years back. Yes, and it's very valuable, you don't need an end-of-the-year. Some people can find implementations already for many different things. So, I used to be, you know, a very good Google searcher. Other people, they like to write papers, essays, or they like to write, they like to craft,
+
+00:07:16 Speaker 1
+look for that, you know, term or phrase, the perfect sentence. Other people, they just like to be in the zone, they like coding, you know, they like delivering on a product, they like finishing up to it. Other people are very good at managing time and resources. So, the real question is, what strengths do you have? And you can have multiple strengths, okay, but when you get into a team, people will depend on your strengths.
+
+00:07:49 Speaker 1
+Typically, the more connected what you're doing is to your strengths. the better the team will be. How many people here prefer to work individually? There's the door. So if you prefer to work individually, that's fine too. Teams can use people who are individuals, right? So long as they are fine being told what to do and being left alone and delivered on that, right?
+
+00:08:19 Speaker 1
+There's nothing wrong with that. An individual, though, who wants to take over the whole project and not work with anybody else, that's not conducive to teamwork. So you will and we will have this conversation over and over. We will distill some important things and we will move on from there. Why don't we talk about this... like this is because we really have very short amount of time to produce something very good.
+
+00:08:52 Speaker 1
+okay there's about 10 weeks out of which two two lecture times are one of them is an extended one, so we uh we cannot waste any time and you'll see the teams have to be done within a week the projects have to be proposed in 10 days this is what this class is about out it's an advanced software engineering class geared toward applied research identifying what's.
+
+00:09:23 Speaker 1
+the bleeding edge in the literature implementing it to solve problems okay so we will have an empirical science perspective and slang and we will talk about how to use empirical science to evaluate things that we do there will be a theory presented in lectures also will be practical. In terms of the workload, there will be weekly reading, okay, that's expected of you, there will be chapters, there will be slides, so the slides assume very strongly that you will read them, preferably before you come to class, at least skim them, but there will be other additions that I will be referring to, like the methods of research that I've posted already.
+
+00:10:12 Speaker 1
+There will be weekly quizzes, okay, at the beginning of the week, so if there is a holiday, it will be available, but every three lectures or so, there will be a weekly five-minute quiz based on the tips to encourage you to read. Nobody likes those quizzes. I hate them, students hate them, we have them, so we have to deal with them. Do some light reading, and you will be fine. There will be a group presentation.
+
+00:10:44 Speaker 1
+This is to entice you to collect the research based on which you will build on for your project, and of course, there will be projects. The expected outcome of a project is a solid preliminary result, if not an extended abstract ready for publication, right? Or at least submission. There will be three parts to this, and then they're paced, like one month apart. The final report is at the end, March 18. In the middle, we'll have two other deliverables.
+
+00:11:19 Speaker 1
+A project proposal and a progress report, okay? All of those will be graded, and so here's how this is going to work. January 11, I expect the team names to be solidified, okay? This is not to say that things happen and we'll have to change. That's fine, sometimes students drop out, sometimes people wanna change the team for various reasons.
+
+00:11:50 Speaker 1
+We can deal with those things, but you need by January 11th, the teams, we're gonna assign you a team ID, we're gonna assign you a collaboration page and discussion page, and share files with us. Do those through Canvas, four to five people per team. Now, we don't know exactly how many, because I don't know how many actually will stick, but I suspect we can deal with about up to 20 teams. Preferably 15 to 20.
+
+00:12:22 Speaker 1
+The project proposals due on January 16th, so of course you will be talking about the project very early on and start assembling people. We'll be using Piazza, there will also be a sign-up sheet for different projects. It's fine for multiple teams to have the same project. So what projects am I talking about? Project ideas will be circulated later today or tomorrow morning. It is fine for you to come up with your own, especially if you come from an area like software engineering.
+
+00:12:54 Speaker 1
+So long as it's at least tangentially relevant for engineering, it's fine. So and so long as you can recruit people, right? So that's due on January 16th. There will be a bunch of resources in a page that's shared with you both on the computational end, on the data end, other resources. That you should go through. Progress reports will be due in a month hence.
+
+00:13:25 Speaker 1
+And there will be a couple of check-in sessions early March. And of course, the check-in sessions with every team we're gonna meet individually to make sure that the last two weeks things are done, yeah. of course you are welcome to use our office hours before that. People have found our office hours to be the most productive. They come in with ideas, as we study the research method, they keep adjusting the research questions,
+
+00:14:01 Speaker 1
+their motivations, their theories, their results, so it's a very dynamic environment. So please plan to have regular checkpoints, whether we ask for them or not. And the final report due March 18th, there is no final exam, there is no other exam but quizzes and there is nothing else but the presentation and the three parts of the project that you will be building. Okay, any questions?
+
+00:14:41 Speaker 1
+Please post questions if you have anything to say. Email is to be used only for emergency. They're both mine and the TA's. So office hours, class, and piazza. And then if you need really an urgent response, I don't know, the server is down, or this or that, you cannot submit. Of course, that's an emergency.
+
+00:15:21 Speaker 1
+Yeah, regular stuff. So, let's do some empirical methods and science. I like to go over this, what comes next in the material, to understand what it means to do research on a deeper level, especially with respect to empirical methods. and empirical science. What does empirical methods, empiricals, mean to me? I also like to ask questions and I like a dynamic environment.
+
+00:15:55 Speaker 1
+So what does, I guess that's what I'm saying, I'm not gonna give out any questions. Yeah? Observations, right? So how do you think observations are connected to software? What is it that we observe? Is it something you're gonna use? Okay, so one way is to just reflect on what you've done.
+
+00:16:31 Speaker 1
+and then react to it.
+
+00:16:39 Speaker 2
+Okay.
+
+00:16:41 Speaker 1
+Excellent. So that's along the same idea. Yeah.
+
+00:16:45 Speaker 3
+The number of lines that are increments, and the number of lines it takes to change that code. Matters in what way.
+
+00:16:54 Speaker 1
+The amount of equal data. Okay, so what you're saying is that somehow effort is important, and then amount of code created is important, and then they're important for different reasons, but they are important. Yeah? The theory of reliability, the probability, and... Excellent. I don't know, you know, am I creating the right thing? Yeah.
+
+00:17:23 Speaker 3
+Maybe comparing to real-life behavior that we are simulating something, like going against ground truth.
+
+00:17:30 Speaker 1
+Excellent. Comparing to ground truth. But let me get back to this point here, which is understanding that the software system... Software systems in general, software projects, software teams, there are actually some rules about what makes them think better. And you can take advantage of those rules. You can ask, you know, is my team productive enough? What does it mean to be productive enough? They're working, aren't they? Well, I mean, in AWS, my colleague in Google says, you know,
+
+00:18:02 Speaker 1
+these are two times as good. They keep cranking code up. Well, should you worry about it? How do they compare them? What does it even mean? How does it matter to the company's bottom line? Well, it matters because they can then decide how to think better, but also how long a project will take. A VP at Google, you know, deciding to start a new project just so that they can get elevated to an EVP, right? Will the company have money to pay? Will it take, you know, a certain amount of time?
+
+00:18:36 Speaker 1
+How do we judge in general how long a project will take? how many people you will meet, but all these things have to do with you knowing some basic facts and then being able to compare what you're doing to somebody else and that's in essence is what empirical research is about. So to know which methods to use, right, when you have some data is the point of much of what we do. So as we said nowadays code is not simple, it's not five lines.
+
+00:19:09 Speaker 1
+of code, it's large, it's in many directories. I don't know if you've seen modern code that had the, unfortunate several times to the new people's code, production code, microservices, cloud services, all sorts of things connected to one. You can't even review a piece of code nowadays and it's so complicated. So, the right thing to think about this is the code is large, software teams are large, they're disconnected, people in different places, some part of the code is in the cloud, some part is in-house. How do you make sense out of all that? Well, you have to, you know, some companies like Cisco, for example, they're so well tracking everything that happens that, you know, to change even a line of code, you have to make four requests on the chain of management. It's mission critical.
+
+00:20:06 Speaker 1
+Just to understand how things work and how to make sure they keep working. Anyway, so you understand the point here that things are complex and we need some way that's not just pulled out of the hat. It's not ad hoc. We need some structured way to analyze. Okay, but software engineering folks have not been traditionally very keen on... Evaluating how well it is that they do things that they do.
+
+00:20:38 Speaker 1
+Instead, software engineering for a long time was a science myth. Don't code on Friday, or use three figures, never four, to not make typos, right? Whatever, I mean, I'm joking, but it wasn't like this. Without any empirical evaluation, why they use the things that they use. So we will learn how to evaluate this. Whenever we have a hypothesis, we will not have to evaluate it. This is what empirical software engineering is about.
+
+00:21:08 Speaker 1
+So, it's an applied, okay, PGT-HDMI cable. Okay, so everybody okay? It's an applied research area, okay? It's an applied research area. There's not much theoretical in there. The theorem we'll be talking about in the first class is really all there is, first and second, is all there is to it.
+
+00:21:45 Speaker 1
+But we are concerned with the observation, empirically, of software engineering artifacts. Artifacts can be code, artifacts can be discussions by programmers, artifacts can be logs of all sorts of things. And the empirical validation of software engineering theories and assumptions. So we study things so we are able to test some of those assumptions and theories. What are some sub-fields of software engineering? I'm a bit nasal because I'm getting a little cold, but I'm in general fine.
+
+00:22:18 Speaker 1
+I shouldn't be contagious, but still, if you want to talk to me after class, maybe keep a few of your benefits. But we can talk outside. So the subfields, software evolution, software maintenance, mining software repository, let's go over this just a little bit. What is software evolution? When a project gets created and then gets all sorts of features and bugs get implemented, you know, there's multiple parts of the life cycle of a project, created, fixed, maintenance, sunset and so on.
+
+00:22:59 Speaker 1
+And in the different phases, there are different things that are relevant. And so as software changes also, there may be different versions of software, version one, version two. So the question is, how does software evolve and how do we track, how do we compare the different versions? Just simply, what is the delta? The simplest thing you can ask. But you can ask more complicated things. What is the semantic build?
+
+00:23:30 Speaker 1
+Ask, you know, is the maintenance easier once we've restructured the code, right? So there are all sorts of things you can ask about that. Software maintenance is how we deal with issues that arise from the usability perspective. Mining software repositories is what we will be doing a lot in this class. Especially in GitHub, there's millions of project repos that are right for the mining.
+
+00:24:01 Speaker 1
+so that we understand how processes, development, maintenance, etc. evolve over time, change over time. So we can now go into a repository, we can pull all of it, we can have it in our local machine, we can see what changed when and what does it imply. So, what type of problems can we solve, okay? For example, what type of problems BSE is concerned with?
+
+00:24:33 Speaker 1
+So, observation of artifacts, code, bug reports, email discussions, validation of tools, code quality tools, for example, assessing if there are any bugs in the code from a static perspective, which is very popular now. Actually, I'm gonna send out an email. I get emails from people who I know from the area and just ask, are there any new students that have graduated? We have these positions for static checking.
+
+00:25:04 Speaker 1
+Validation of methodologies. How about if you take two different types of programming, mind-free, agile versus regular? Which one is better, or how do you assess what metrics? And then validation of assumptions. For example, the strongly typed language is pure defecting. Codes written in the typed languages have more bugs or pure bugs.
+
+00:25:36 Speaker 1
+So, examples of empirical software engineering research projects. We started with different types of programming. For example, is pairs programming better than singles programming, in terms of speed, quality, etc. We all have intuitions. What does your intuition say about pairs programming? Do you know what pairs programming is? What do you think it means?
+
+00:26:10 Speaker 1
+That's right. Whether in the same place or different places doesn't matter. So what do you think? Which one is better? And then you respond, well, it depends what better means. But what does your intuition say in any version of better.
+
+00:26:31 Speaker 3
+Better because of a lot of different things.
+
+00:26:42 Speaker 1
+Well, that's the idea of intuition. When you combine negative knowledge and positive knowledge, what happens.
+
+00:26:50 Speaker 3
+Yeah? So I read research paper about pair programming, and it said that it's not that productive, but you get to learn a lot.
+
+00:26:59 Speaker 1
+Okay, that's wonderful. This is exactly what we want to hear. There's some intuition, okay, and then there's some checks in practice. And then, of course, that paper you read, what methodology did it use, right? So, maybe you can recall, but it doesn't matter now. What I'm saying is, it's important whether they use the appropriate methodology to judge this. Did they track people in practice? Did they only go to the code and did a retroactive analysis or proactive?
+
+00:27:29 Speaker 1
+We'll talk about all these types of things. Yeah, thank you. So, that's actually, those two answers were so well together. How about the third one? What is the higher maintenance burden of AI-assisted coding due to? I don't know if you know, but nowadays, everybody uses AI to help them code. And then they spend a lot of time fixing what the AI did. But that's not necessarily the problem. So, it turns out AI helps a lot in the beginning to push out code, right?
+
+00:28:03 Speaker 1
+And the code compiles, it seems to work. And they compared over thousands of projects. On the life cycle of the project, where we take a look at the initial one, the nascent activity, and then the maintenance activity later on, it's interesting that for, let's see if I can use a board, so here is the amount of work and Y, and then X is time.
+
+00:28:45 Speaker 1
+So human-created projects usually have this curve, and this is the initial F, and this is maintenance. AI-created projects have this curve, or AIS project. It would be terrible if all we've done with AI is just push the effort to somebody else,
+
+00:29:17 Speaker 1
+from developers to maintainers. Why would it suck? Probably the same thing. How does it matter where the bump is? Well, this thing is more expensive. It's longer. And it's more critical because it affects more people. You have to keep reporting values. They can't get it fixed. The usability is bad. So this is no bueno, right? This is not good.
+
+00:29:48 Speaker 1
+Anyway, so, but what does it do to? So this is one relevant project that you'll find. Tomorrow on the project list. So how would one actually go about studying such a thing? Okay, so you would have some data set where you can say what was AI generated, what wasn't, and then you have to compare them. And then you have to look at variables that determine the outcome you want. So we'll talk about all those things.
+
+00:30:20 Speaker 1
+Which LLM tool is the best coding assistant? And this is where people fudge numbers. What is best? Who is best? Is this best fastest? Is best the most lines of code, the fewest? Do we even know what we're asking? Can you, in a prompt, specify very precisely the specs of what you expect to be done? Do you even know yourself exactly? Most people don't even know what bugs will occur until the bugs occur.
+
+00:30:54 Speaker 1
+So how can you even specify something, right? So we have to... When we code, we use best programming practices, we use team programming, we use all sorts of things. But what do the LLMs use? How do they check their own work? So that you can say, well, let's do multiple agents and then do different things. Well, yeah, it gets complicated very quickly. We'll talk later in this course about AI, S-E for AI.
+
+00:31:24 Speaker 1
+What AI is useful in software engineering and what software engineering is useful for AI. Okay, so where do people typically push their findings? So as we know, when we do research, we'd like that to be memorialized somehow, right? We'd like it to be on the record. This is something new we found. We'd like it to be reviewed by others. Is this anything?
+
+00:31:56 Speaker 1
+So these are the top places where people publish in this area. The top four conferences, the top two or three journals. So let's dive in a little bit in the theory of what makes science science, what the expectations are, who you are as people philosophically, and other such things. This will get very interesting. Of course, it was already.
+
+00:32:32 Speaker 1
+Okay, so observation-based, we discussed this. But what can you observe? What can you observe in a software project? What can you observe in a developer? What do you have to do to observe anything? How do you instrument teams if you're doing something that's prospective versus retrospective? So what do I mean by these two terms? Prospective is you plan an experiment, you put things in place to count how people program, to measure their emotions,
+
+00:33:05 Speaker 1
+to ask them questions, you design some surveys, whatever. And then you do it, you identify the cohort. That's prospective, mutually driven, right? Retrospective is you look at GitHub, you grab a project, and you look at the history, how things have been done, and then you try to surmise from that something. Typically, we get a cohort of projects, and we examine the question, so that's retrospective.
+
+00:33:36 Speaker 1
+So what can you observe? Depends on whether it's prospective or retrospective. You know, if it's prospective, you can't have too many people that you observe or too many projects. It's too costly, it's retrospective, you can't really define exactly what you observe. You're stuck with whatever is there. So there's these trade-offs. At the end, you get some data, and then you need to use some methods. What is the appropriate method to answer the question you're asking? But hold on, first.
+
+00:34:06 Speaker 1
+Does the question you're asking even... Does it even mean anything? Should it even be answered? How do you know that that's important, that question? And what type of an answer will satisfy you? These are things that we rarely talk about, because mostly they're given to us by our advisors, by our supervisors. But if you want to be independent, how do you decide what question to attack? So where does the question fit in the bigger scheme?
+
+00:34:38 Speaker 1
+The only answer really that you have to know is that you must have a theory. What do I mean by theory? You know, if I drop this cup of tea now, and it falls, but it falls in a curved way, okay? That could be odd, because my theory, the theory of gravity, or the theory of whatever it is in my head that has been seeing all this thing fall straight, is now challenged. Now I have to explain it. Was there wind?
+
+00:35:09 Speaker 1
+Did I flip it somehow with my hand? Whatever. And if I eliminate all of those, then in the end, maybe I'll say, well, the theory of gravity works for most cups the same, but for this particular one it doesn't. Then I repeat it to many others and I figure out for which one it does and doesn't. And then I thereby extend the theory of gravity, okay, with a simple, you know, coupling, if I eliminate everything else. Okay, so that's how science will work.
+
+00:35:39 Speaker 1
+But you have to have a theory to do that, a theory of gravity in this case. What theories do we have in software engineering, right? And some of you may think, but look, I'm an engineer. Screw science. I'm really an engineer. I'm going to create things that make life more useful. But you know... It's not very different than scientists and engineers do, because for you to do something that's more useful, you have to know that there is some gap of usability or utility, right, that you're going to fill. How do you know that? Well, you work in an area, you read a lot, they told you, right? It's like investing in the market. What's going to happen next? Where is there a gap for me to put money in or whatever? So where is there a gap in this theory? And we'll see a number of things in this first and second lectures.
+
+00:36:39 Speaker 1
+So it's not that clear that scientists observe and engineers create. In fact, I have a physics professor friend who always jokes. So let me get this, he says. So you first created the computer and now you're observing to see how it works? He says, well, that's very different from physics, right? Where we don't know how things work, and then we observe them. Whereas we do know, because you've created it. The point is, we don't.
+
+00:37:11 Speaker 1
+We can create very complex things, for example, LLMs, the neural networks, but we have no idea why they work as well as they do. But we do know how they work. We just don't know why they work so well. We do know what they do, it's created. The bottom line is, both of these, engineering and science, involve a mix of design and discovery. Science involves design of the experiments, etc. Engineering involves discovery, and not just creation,
+
+00:37:42 Speaker 1
+to understand what we can contribute to most. And I don't want to bug you with this too much, but the scientific inquiry, just like with the cup, you have the prior knowledge, you observe, you can maybe extend the theory or confirm it. There's really no, you cannot affirm the theory, you can just confirm, add more evidence for it. And there is also the actual method, where the way we do science is we see what the funding age is,
+
+00:38:21 Speaker 1
+and then we design a minimum of experiments that will suggest that theory is true, we modify it to fit the data, and then we publish a paper, and then we defend the theory no matter what, to be a cartoon. Okay. Underneath all of these, there is a certain dualism. So there is the deductive and inductive thinking.
+
+00:38:52 Speaker 1
+There is the abductive, but in a second. I want you to be aware of this. Certainly you are, intuitively, but at least give it some name here. The deductive thinking is you start from some theory, you have a hypothesis, you do an observation, you see whether the observation conforms to the theory or not, okay? It's not easy to do, but it's straightforward, right? Because you know what you're after. There's a theory, it says things should behave this way, like with a cup.
+
+00:39:25 Speaker 1
+It should have fallen in a straight line while I run it off. Is it significantly off? That's how we do statistics, deduction. Induction is a bit different, right? It's the opposite. You observe, you look at a pattern, if any exists. Once you see a pattern, a hypothesis forms, and then using the number of hypotheses you build it. Induction is typically used when there is no theory already, or if there is a weak theory, right?
+
+00:40:00 Speaker 1
+There's maybe something very complicated. How does this class behave? I don't know, I have to observe you. I've observed many other classes, so I started building a theory, okay? Maybe you'll show me how to extend this theory, maybe you'll help me prove it wrong, and do a different one. But observation comes first. Typically, people do actually deduction and induction at the same time, and they're interlinked. So here's some examples, if you want to read them.
+
+00:40:37 Speaker 1
+For example, that last one, I have a bag of many coins, I've pulled ten at random, they've all been pennies. Therefore, this is probably a bag full of pennies. And I just wanted to, you know, the same thing, but abductive reasoning is something that's a bit different. It's a reasoning that looks for the explanation that best fits the data. So when we talk about empirical science, we have gone into places where we have huge amounts of data,
+
+00:41:13 Speaker 1
+and we can test almost anything. So you can post theories and test them just because you have that large amount of data. But what if, when you test them, you can iterate, right? That this is what abductive reasoning is. You look for the explanation that best fits the data, and you can go through many different possibilities, enumerate them, and then choose one. And this is what you do in machine learning. Okay, that said, so keep that in mind as we go through all these research approaches.
+
+00:41:48 Speaker 1
+So first step to designing a research proposal is to adopt a general framework. And that means you will have to have either qualitative, quantitative, or a mix of the two type of study. And we'll talk about all those methods. But you typically know quantitative will be, you know, statistical-based methods where we count, decide, versus qualitative where we have interviews, surveys. Those of you that are good and plan to do qualitative research in this class, you should start early.
+
+00:42:23 Speaker 1
+Especially if you do research on human subjects, which any questionnaire is, you will have to ask for IRB approval, okay? Which takes a couple of weeks. We'll get an exception, but what I'm saying is we have to ask anyway. And mixed, connecting qualitative and quantitative. That's what most of my work has. But to understand this whole framework, we have to start putting the question in the middle and then have all sorts of other concerns for context, like the philosophical assumptions, the strategies of inquiry, and the research methods.
+
+00:43:08 Speaker 1
+So here's how this looks. You have the research question in the middle. That doesn't mean you start from it. It just means it's contextualized. On top is who you are and what you expect as an answer. Are you a positivist, constructivist, a critical theory person, a pragmatist? Because this will determine how you approach asking the question and what the answer means. That's philosophy.
+
+00:43:43 Speaker 1
+On the left side is existing theory. Next you ask the question with respect to it. People say that heterogeneous teams are better than homogenous because there is value added in spite of the value added to the knowledge and novelty in spite of some of the slowdowns of making people work. So there's some papers that talk about it and then you contextualize your question with respect to that.
+
+00:44:13 Speaker 1
+Are you generating any new perspectives? What value do you add? Should this question even be asked? If you're not adding any new value, like extending a theory or proving a theory wrong, what reason does this have to exist? Think of anything you write as occupying some space in this universe. That space is expensive. Why should we give it to you? You have to do something with it.
+
+00:44:44 Speaker 1
+Space-time. And of course, you have to do something with it. What methodologies are you going to use? Well, that depends on the question also. So let's go through some of these. Okay, I will just cover this and we'll let you go. This is a very, very important question. Many of us in the quantitative fields have been trained as positive or primitive. But that doesn't mean that as we grow and define ourselves better, we don't become something else.
+
+00:45:17 Speaker 1
+So what does it mean to be one of these? It means that you know what science should be about for you. So the first one, positivist, or post-positivist as we call it now, is knowledge is objective, causes determine outcomes, it's reductionist. We study complex things by breaking them down into simpler ones. We prefer quantitative approaches because they are more precise. And really what we do is verify or falsify theories.
+
+00:45:50 Speaker 1
+How many of us, well, hold on, let me read all four and then we'll... Constructivist or interpretivist, those people are more comfortable with thinking that knowledge is socially nothing but what we argue between ourselves and construct out of those arguments and society. Truth is relative to context and theoretical terms are open to interpretation. Different things may be more or less important.
+
+00:46:20 Speaker 1
+They prefer qualitative approaches, they prefer richer approaches, telling full stories rather than precise approaches. And they generate local theories, explaining local phenomena. Critical theorists, they believe that research is an act, a political act. When you're trying to enact a change, you're doing something like, you know, many people who are into green energy, many people who are into eco stuff, right?
+
+00:46:51 Speaker 1
+They believe permanently in a cleaner environment, and they want their research to reflect that and enact, and there's nothing wrong with that. But it is how it is. So, those people, they choose what research to do based on who it will help, okay? So, maybe you will not study how to enrich large corporations. Maybe you will study how to, you know, help people meet end-to-end. They prefer participatory approaches, and they seek changes.
+
+00:47:25 Speaker 1
+The eclectic or primatist person, they believe research is problem-centered, we focus on a problem, we solve it, we move on, all forms of inquiry are biased, we just choose the best one for the purpose. At that time, they use multiple methods from multiple perspectives and seek practical, okay? So before we leave, let's try to identify ourselves. How many positives? If you're positive, raise your hand, it's fine not to raise your hand. But if you're positive, raise your hand. Good. How about constructivist? Good. Critical theorist? Good. And primatist? Good. And you know.
+
+00:48:22 Speaker 1
+Some people argue pragmatists are just, you know, waiting to define themselves. Among the other three categories, I don't believe so. I think there is great importance to solving problems without asking what it means. But at the end of the day, everybody is faced with a question, and I'll talk about it when we get there. Everybody is faced with a question, should I publish if this is, if the results are pointing, okay, and you will know what the wrong means to you, right? So at some point you may come up with a result that you may disagree with.
+
+00:48:58 Speaker 1
+And then you have to figure out, am I really a pragmatist? Will I publish it no matter what? But anyway, this is an interesting discussion that will lead us into what type of question we are asking. So we'll stop here, but based on the type of question you're asking, right, you will be able to determine what type of methods. So let's read the chapter, please, for next time. Let's start talking about teams. As I said, the research project list will be out.
+
+00:49:31 Speaker 1
+But if you have any suggestions, we can accept them. We have to see. Sorry? More and more.
+
+00:49:42 Speaker 2
+Thank you. You cannot grab this. The Wi-Fi? Yeah, the Wi-Fi. Nobody has. But my cell phone. Oh, really? Yeah. I've just had really bad . Oh, cool.
+
+00:50:13 Speaker 2
+So are you in the lab? I think I was arranged to talk to the Wi-Fi. Yeah, I might think they're working. You guys, I cannot tell you that you guys are bad, but you do know. I might have a password, but I don't know. That's the important thing. You have to go in. Because I'm a good person.
+
+00:50:45 Speaker 2
+You guys, I cannot tell you that you guys are bad, but you do know. Are you taking this one? Yeah. I think I do not have a good feeling about it. I know. We're just asking people around to see, have a remake of it. Maybe we can get a team together. I don't know.
+
+00:51:20 Speaker 2
+You can be on UpGrowth. That's okay. I don't like that last one. That's about 500. Are you taking this class? Yeah. He hasn't sent an email, so I'm not sure. Are you taking the next class? Operating Systems?
+
+00:51:51 Speaker 2
+No? Okay. I'm heading down right now, so I don't even know if I can make it. Operating Systems? I think I'm sure. Actually, I took like two, three lectures, and then I dropped out. My class is really sure. Seems interesting, doesn't it? Sorry, sorry, sorry. Yeah, I'm okay.
+
+00:52:25 Speaker 2
+He looks so young. He is about thirty-seven. Sorry, come back. The next class we're going to be teaching about... Why thirty-three? I thought you were thirty-eight. I thought you were thirty-seven. Yes, he's really young. He's really young. I'm her husband. Thank you very much.
+
+00:52:52 Speaker 3
+You two have Discord, right? Friends? I have Discord.
+
+00:53:01 Speaker 2
+I don't think I left. I might have left, but I have her. I didn't get into the file. We all agreed to meet. Yeah.
+
+00:53:19 Speaker 3
+Sounds good.
+
+00:53:24 Speaker 2
+All my friends are great traders. Sounds good to me. I'm going to go to the operating system. I cannot connect to the Wi-Fi. Should we get your...
