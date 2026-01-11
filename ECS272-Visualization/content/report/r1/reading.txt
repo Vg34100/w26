@@ -1,0 +1,21 @@
+Read Chapter 1 of Tamara Munzner's book: Visualization Analysis & Design.
+
+Answer these three questions in your report:
+
+1. What can you use visualization tools for?  Provide 2-3 usages.
+
+2. What are the limitations of statistical characterizations of data?
+
+3. Why interaction is crucial to effective visualization?
+
+
+
+Additionally, read the paper " Views on Visualization. J.J. van Wijk. IEEE TVCG 12(4), p. 421-432, 2006" [pdf (Links to an external site.)] and answer the following two questions:
+
+1. Explain the equation, dK / dt = P(V(D, S, t), K), which appeared in Section 4.4 of the paper.
+
+2. While the main use cases for visualization are presentation and exploration, which one is more important? In addition to the author's comments in this paper, what is your opinion?
+
+
+
+For all reading reports, please submit them to Canvas in pdf. The format of the document should be each question followed by your answer.

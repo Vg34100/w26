@@ -1,0 +1,54 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip}
+
+\title{ECS272 Reading Report 1}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Chapter 1: Visualization Analysis \& Design by Tamara Munzner}
+
+\subsection*{Question 1: What can you use visualization tools for? Provide 2-3 usages.}
+
+\textbf{Exploratory Analysis:} Researchers use visualization to generate and test ideas when they don't know what questions to ask ahead of time, and this is especially useful in fields like biology where scientists explore genetic data to discover patterns in disease research.
+
+\textbf{Presentation:} People can explain things they already know to others through visualization, like how news organizations use interactive graphics to help audiences understand complex topics.
+
+\textbf{Debugging Systems:} Developers can improve their algorithms by seeing how parameter changes affect system performance before deployment, which helps them catch issues early.
+
+\subsection*{Question 2: What are the limitations of statistical characterizations of data?}
+
+The main limitation is that statistics lose information by reducing data to simple summaries. Different datasets can actually have the same statistical properties (like mean, variance, and correlation) but look completely different when visualized. Anscombe's Quartet is a good example of this, showing four datasets with identical statistics that have very different structures. So basically, a single summary often hides the real patterns in data and makes it hard to spot things like outliers or nonlinear relationships that are pretty easy to see in a visualization.
+
+\subsection*{Question 3: Why is interaction crucial to effective visualization?}
+
+Interaction is important because it helps handle complex data. When datasets are large, we can't show everything at once due to screen size and human attention limits, so interactive features let users navigate between overview and detailed views, see data from different angles, reduce clutter by showing only relevant information, and explore multiple aspects of data since one static image can only show one thing. With interaction, users can get answers to many different questions instead of being limited to one static view.
+
+\section*{Views on Visualization by J.J. van Wijk}
+
+\subsection*{Question 1: Explain the equation $dK/dt = P(V(D, S, t), K)$ which appeared in Section 4.4 of the paper.}
+
+This equation basically describes how fast someone gains knowledge from a visualization.
+
+$dK/dt$ is the rate of knowledge gain over time.
+
+This rate depends on:
+\begin{itemize}
+\item $V(D, S, t)$ - the visualization showing data D with settings S at time t
+\item $K$ - what the user already knows
+\item $P$ - the user's ability to see and understand visual information
+\end{itemize}
+
+Learning from visualization depends on more than just the data itself. How you display it, who looks at it, and what they already know all affect what someone learns, and this makes visualization subjective because different people or different settings can lead to different conclusions from the same data.
+
+\subsection*{Question 2: While the main use cases for visualization are presentation and exploration, which one is more important? In addition to the author's comments in this paper, what is your opinion?}
+
+Van Wijk argues that while researchers often think exploration is the main purpose of visualization, presentation is actually just as important in practice. Presentation has high value because it reaches many viewers who start with little knowledge, leads to clear actions like funding decisions, and has few good alternatives.
+
+I think both are important for different reasons. Exploration is key for research and discovering new things when you don't know what you're looking for, but presentation reaches more people and helps non-experts make decisions. The value depends on the situation. Exploration drives new discoveries in science, while presentation helps communicate findings and get support, so both play important roles.
+
+\end{document}
