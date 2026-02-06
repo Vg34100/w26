@@ -1,0 +1,420 @@
+Pablo [0:27]: you start having another distribution overlapping this one let's say this one is focused with a mean of six point seven maybe this is children from sacramento versus
+Pablo [0:30]: all children in us
+Pablo [0:36]: that other distribution that saturn over there six point seven
+Pablo [0:51]: and this one sector is three represent everybody or good enough sample in a specific and so you can test the hypothesis that children in sacramento watch
+Pablo [0:55]: the average
+Pablo [1:01]: and then maybe easy days
+Pablo [1:02]: half an hour
+Pablo [1:05]: only
+Pablo [1:23]: one of them are not imposed with them
+Pablo [1:29]: but first
+Pablo [1:35]: hypothesis is the first thing we think of
+Pablo [1:41]: we give every inner benefit of the doubt and we say everything is part of a moment
+Pablo [1:44]: everything is part of the
+Pablo [1:44]: background
+Pablo [1:47]: nothing there's no phenomena
+Pablo [1:48]: move along
+Pablo [1:54]: so you sat on something from the sacramento kids
+Pablo [2:03]: a number of them and you see six we say no nothing still apart as a big center
+Pablo [2:08]: the last hypothesis those genes are equal
+Pablo [2:11]: no difference
+Pablo [2:21]: now when you infer something you're posing a hypothesis you're saying no the null does not
+Pablo [2:22]: fall
+Pablo [2:26]: in fact there's an alternative we will go
+Pablo [2:31]: and in this case i'm saying those two means are significant
+Pablo [2:39]: this is the basis that you start yes
+Pablo [2:42]: i know that there is a wrong hypothesis
+Pablo [2:53]: so what we're going to now figure out
+Pablo [2:56]: is how to get back a probability
+Pablo [3:02]: how likely is h one
+Pablo [3:03]: versus age
+Pablo [3:03]: zero
+Pablo [3:15]: so this is a hypothesis test to get procedure practical procedure it boils down to you're comparing an experimental group and a control
+Pablo [3:19]: is every
+Pablo [3:25]: body in the us the down hypothesis first there's no difference
+Pablo [3:31]: the alternative one says statistically significant differ
+Pablo [3:32]: ence between the
+Pablo [3:32]: group exists
+Pablo [3:34]: once
+Pablo [3:37]: the measure
+Pablo [3:44]: the difference between the two the difference between those means six point seven versus three
+Pablo [3:46]: is three point seven
+Pablo [3:46]: let's say
+Pablo [3:48]: that's one statistic
+Pablo [3:53]: three point seven i just calculated by just subtracting
+Pablo [3:55]: the mean
+Pablo [3:59]: seven it's called a test looking at the difference between
+Pablo [4:04]: the in this case that difference is not very because those distributions may
+Pablo [4:06]: have different standards in the asians
+Pablo [4:12]: instead i would like to normalize that somehow and if i do that properly i'll get to something that's called
+Pablo [4:13]: dx
+Pablo [4:18]: but that's basically what a statistic
+Pablo [4:24]: somehow there is
+Pablo [4:30]: and then you look at this let's go by simple
+Pablo [4:36]: tables for the t test
+Pablo [4:44]: for my linear simple test the vsb and you open the bacon
+Pablo [4:48]: there's only zero point two percent
+Pablo [4:52]: but it's something
+Pablo [4:56]: this is based on the random distrib
+Pablo [4:58]: ution two percent chance
+Pablo [5:03]: that observing this six point seven
+Pablo [5:05]: is due to checks
+Pablo [5:10]: meaning there's ninety eight percent chance that
+Pablo [5:11]: you are talking about some
+Pablo [5:24]: you look at the two means you calculate the difference in some way maybe in a simple minded way more positive
+Pablo [5:27]: and then table
+Pablo [5:31]: of course you can calculate analytics
+Pablo [5:33]: that i'm just
+Pablo [5:37]: tests were all sorts of things
+Pablo [5:46]: how much
+Pablo [5:48]: is the character of
+Pablo [5:52]: we typically start with a single language
+Pablo [6:13]: set
+Pablo [6:14]: up
+Pablo [6:17]: a video about experimental
+Pablo [6:17]: design
+Pablo [6:18]: eg
+Pablo [6:20]: g experiment anal
+Pablo [6:20]: yze
+Pablo [6:21]: you
+Pablo [6:22]: have the studio
+Pablo [6:23]: placebo
+Pablo [6:26]: test
+Pablo [6:27]: versus control
+Pablo [7:27]: let's say you have
+Pablo [7:28]: an old
+Pablo [7:29]: pattern
+Pablo [7:32]: how do
+Pablo [7:33]: you test whether
+Pablo [7:36]: that you have generated
+Pablo [7:37]: more responses
+Pablo [7:38]: in some
+Pablo [7:39]: way
+Pablo [7:42]: so
+Pablo [7:43]: you have
+Pablo [7:44]: the change
+Pablo [7:45]: and
+Pablo [7:46]: pose change
+Pablo [11:06]: but
+Pablo [11:08]: you
+Pablo [11:09]: have something you have
+Pablo [11:10]: a positive
+Pablo [11:11]: it's
+Pablo [11:12]: worth while thinking about the
+Pablo [11:13]: non hypothesis
+Pablo [11:14]: there is
+Pablo [11:15]: no
+Pablo [11:25]: activ
+Pablo [11:26]: ity
+Pablo [11:28]: you
+Pablo [11:29]: find how
+Pablo [11:31]: do you find
+Pablo [11:32]: it
+Pablo [11:57]: but
+Pablo [11:58]: to get
+Pablo [11:59]: there
+Pablo [12:01]: you have to stay
+Pablo [12:03]: clear
+Pablo [12:04]: so
+Pablo [12:05]: you have to stay
+Pablo [12:08]: the
+Pablo [12:08]: criteria
+Pablo [12:09]: decision
+Pablo [12:17]: and
+Pablo [12:17]: see
+Pablo [12:18]: hallelujah
+Pablo [12:28]: that you see
+Pablo [12:29]: as my
+Pablo [12:30]: what is
+Pablo [12:31]: medical
+Pablo [12:32]: decision
+Pablo [12:33]: now
+Pablo [12:37]: these are
+Pablo [12:38]: the dense slide
+Pablo [12:39]: most
+Pablo [12:40]: of you know
+Pablo [12:41]: south wa
+Pablo [12:42]: ll
+Pablo [12:47]: it's important
+Pablo [12:52]: they're
+Pablo [12:53]: now in the population
+Pablo [12:56]: what is
+Pablo [12:57]: the truth
+Pablo [13:00]: now
+Pablo [13:04]: doesn't
+Pablo [13:05]: fall
+Pablo [13:11]: the other
+Pablo [13:14]: would
+Pablo [13:15]: you desire
+Pablo [13:19]: to retain the doubt or reject the
+Pablo [13:20]: mouth
+Pablo [13:22]: if the now is true
+Pablo [13:25]: and you retain the knowledge that the
+Pablo [13:27]: left upper
+Pablo [13:29]: that means
+Pablo [13:31]: you make the correct decision
+Pablo [13:33]: to say that
+Pablo [13:35]: there's nothing to see here move along
+Pablo [13:37]: we are not rejecting
+Pablo [13:43]: so true and retained the now means we are keeping enough
+Pablo [13:45]: and we are correct with you
+Pablo [13:51]: if the now is true
+Pablo [13:54]: but you reject the null
+Pablo [13:55]: consider
+Pablo [13:55]: ations
+Pablo [13:58]: so you don't see the truth
+Pablo [14:05]: meaning that the left side the output you don't see you're estimating
+Pablo [14:06]: using your
+Pablo [14:07]: test statistics
+Pablo [14:10]: your decision is
+Pablo [14:11]: made based on the data
+Pablo [14:12]: you have test
+Pablo [14:15]: you reject the null
+Pablo [14:16]: based on the data
+Pablo [14:19]: and test and that happens to be wrong
+Pablo [14:23]: you incorrectly reject the
+Pablo [14:23]: noun
+Pablo [14:31]: what is this when you say something is
+Pablo [14:32]: true
+Pablo [14:34]: but you should have said that it was good
+Pablo [14:37]: you
+Pablo [14:38]: have
+Pablo [14:40]: so
+Pablo [14:48]: many
+Pablo [14:57]: this is
+Pablo [14:58]: called
+Pablo [14:58]: her
+Pablo [15:01]: the
+Pablo [15:02]: question is how much
+Pablo [15:03]: of these
+Pablo [15:06]: you get
+Pablo [15:06]: to decide
+Pablo [15:10]: usually
+Pablo [15:11]: when i show the stable
+Pablo [15:11]: people
+Pablo [15:14]: learning from theory
+Pablo [15:17]: that whatever your confidence level
+Pablo [15:19]: or tolerance for error is that
+Pablo [15:20]: going to
+Pablo [15:21]: disable
+Pablo [15:23]: and then discuss the cases
+Pablo [15:25]: if you
+Pablo [15:26]: want to die
+Pablo [15:27]: you can use
+Pablo [15:28]: an outcome
+Pablo [15:34]: to
+Pablo [15:35]: be tested
+Pablo [15:56]: this is
+Pablo [15:57]: the probability
+Pablo [15:58]: that
+Pablo [15:59]: you reject
+Pablo [16:00]: the valution
+Pablo [16:00]: after that
+Pablo [16:18]: correct
+Pablo [16:37]: relations
+Pablo [16:38]: shows a pathway
+Pablo [16:39]: shows a decade
+Pablo [17:05]: there is
+Pablo [17:06]: no effect of results
+Pablo [17:20]: you are
+Pablo [17:21]: correct
+Pablo [17:37]: based on the low
+Pablo [17:38]: er
+Pablo [17:40]: and the power is one minus
+Pablo [17:42]: how
+Pablo [17:43]: can makeup
+Pablo [17:44]: everything you need
+Pablo [17:46]: to decide
+Pablo [17:48]: when to start gathering data
+Pablo [17:52]: to decide where to cut off on your statistic
+Pablo [17:54]: it's all you need
+Pablo [17:57]: so it is this interplay between
+Pablo [18:00]: most positives and false negative
+Pablo [18:00]: s
+Pablo [18:04]: now there's always some tension between those
+Pablo [18:04]: two
+Pablo [18:06]: they're not independent
+Pablo [18:11]: the more you increase the more you decrease the post
+Pablo [18:16]: positive the false negative and vice versa so it's always a good idea to
+Pablo [18:17]: grind
+Pablo [18:18]: intermediate
+Pablo [18:19]: dep
+Pablo [18:20]: ending on
+Pablo [18:25]: testing things like the receiver operating
+Pablo [18:26]: characteristic
+Pablo [18:27]: curve et cetera
+Pablo [18:31]: so is the way to
+Pablo [18:33]: go but for now let me
+Pablo [18:34]: just continue with
+Pablo [18:34]: this
+Pablo [18:40]: first how to decide what p value
+Pablo [18:42]: we're talking about alpha
+Pablo [18:44]: now i mentioned evaluate
+Pablo [18:47]: well the p value
+Pablo [18:52]: when the p value is less than alpha
+Pablo [19:04]: we will reject the hypotenuse so if you have a field set up a less than that so you reject
+Pablo [19:14]: you have to know both the now which is the cubic side and then the p value which is what you calculate
+Pablo [19:17]: the p value if it's greater than al
+Pablo [19:18]: pha
+Pablo [19:22]: you reject it it's less you accept
+Pablo [19:25]: now there is a problem
+Pablo [19:30]: as you keep rejecting her
+Pablo [19:34]: now or accepting the dow if you're testing multiple times in a row
+Pablo [19:35]: over the same
+Pablo [19:41]: data set eventually just looking at zero point five eventually
+Pablo [19:45]: if you look at like one hundred cases five will be false positives
+Pablo [19:45]: right
+Pablo [19:47]: if you look at one thousand cases
+Pablo [19:51]: one picture
+Pablo [19:53]: five percent of those
+Pablo [19:56]: so fifty will be false positive
+Pablo [20:00]: i don't know how many of you have seen the three gently get
+Pablo [20:03]: x
+Pablo [20:04]: kcd
+Pablo [20:06]: well
+Pablo [20:16]: started up with a hypothesis the genetics of
+Pablo [20:17]: action
+Pablo [20:21]: why do people look adapt
+Pablo [20:23]: ing of young people
+Pablo [20:25]: so they're like oh
+Pablo [20:26]: let's see
+Pablo [20:27]: relationship
+Pablo [20:32]: so they test this with the whole population
+Pablo [20:41]: there's no significant effect that goes beyond
+Pablo [20:44]: but then they say you know what
+Pablo [20:46]: maybe it's only true for certain colors
+Pablo [20:52]: so they start investigating yellow
+Pablo [20:58]: brown the stinking one nice one all the different colors
+Pablo [21:03]: okay
+Pablo [21:09]: and then out of all these twenty hypothesis they get twenty different colors guess what
+Pablo [21:12]: green gelat
+Pablo [21:13]: in
+Pablo [21:16]: meaning
+Pablo [21:17]: the probability
+Pablo [21:27]: that is wrong
+Pablo [21:30]: because you would expect by chance
+Pablo [21:33]: for why
+Pablo [21:41]: this is very important especially for the things that you guys will be doing testing from many different things
+Pablo [21:50]: at what multivariate stuff you will see the direction you get to
+Pablo [21:53]: zero one
+Pablo [21:55]: what kind of protect you
+Pablo [22:17]: here we go
+Pablo [22:27]: to the two tail statistics we have to say that the two density understood well because five percent pertains to both
+Pablo [22:30]: which means two point five percent
+Pablo [22:36]: so if you're going with more than
+Pablo [22:38]: two
+Pablo [22:39]: point zero
+Pablo [22:43]: okay
+Pablo [22:46]: now let's talk about beta
+Pablo [22:55]: the type two error one minus beta is the power what is the power it's the probability of rejecting the now
+Pablo [22:56]: when
+Pablo [22:57]: the now is not correct
+Pablo [23:00]: we are rejecting the now
+Pablo [23:05]: when the num correct so we correct
+Pablo [23:11]: in many cases
+Pablo [23:20]: what you have to decide is what use the weight in many cases people need to be equals eighty percent
+Pablo [23:24]: so define very successful to
+Pablo [23:29]: if you can reach that level of twenty percent negative
+Pablo [23:31]: scientifically
+Pablo [23:33]: accept
+Pablo [23:37]: what this tells you
+Pablo [23:39]: you can work now backwards
+Pablo [23:43]: and say okay i want to have a power of
+Pablo [23:46]: zero eight you can work backwards to one hundred
+Pablo [23:47]: thirty
+Pablo [23:51]: the more backwards to figure out how many samples you
+Pablo [23:53]: need to achieve that
+Pablo [23:56]: 's calculator
+Pablo [24:00]: you're just binding your values what do you want for alpha
+Pablo [24:01]: what do you want to
+Pablo [24:02]: pay this
+Pablo [24:10]: is why the power is important
+Pablo [24:14]: basic is a power answers a following question
+Pablo [24:16]: do we have enough samples
+Pablo [24:18]: to make an increase
+Pablo [24:20]: at the level that is
+Pablo [24:24]: if you increase the level to zero point nine
+Pablo [24:25]: to ninety percent
+Pablo [24:38]: but you will have it if you have hundreds or thousands of say repository
+Pablo [24:41]: so it's important to use a power calculator
+Pablo [24:52]: i would suggest
+Pablo [24:56]: because you have large
+Pablo [24:56]: things
+Pablo [25:04]: just cover a few tests
+Pablo [25:06]: so what are these tests
+Pablo [25:12]: if we have tabular data
+Pablo [25:13]: cross path
+Pablo [25:23]: if you have any conditions
+Pablo [25:24]: for the
+Pablo [25:26]: different
+Pablo [25:35]: this is what's often used for pre university
+Pablo [25:37]: compari
+Pablo [25:38]: son
+Pablo [25:46]: there's other tests like anova inova is kind of
+Pablo [25:47]: a generalization
+Pablo [25:58]: as we are going through your progress reports
+Pablo [26:00]: you should be very precise
+Pablo [26:02]: as
+Pablo [26:03]: to what she use
+Pablo [26:08]: if you have questions you should kind of see
+Pablo [26:15]: but the wrong type of test
+Pablo [26:19]: your question of hypothesis that's a problem
+Pablo [26:21]: they are all
+Pablo [26:26]: to justify why we use
+Pablo [26:29]: those beyond enova
+Pablo [26:31]: is
+Pablo [26:32]: the correlation
+Pablo [26:37]: people like to say here's a correlation with
+Pablo [26:42]: correlation must be reported also
+Pablo [26:47]: not just as a non test correlation of point set of six
+Pablo [26:48]: doesn't mean anything
+Pablo [26:49]: if we
+Pablo [26:56]: 're correlating things overcomplication
+Pablo [27:00]: there's high probability the correlation will
+Pablo [27:00]: come out
+Pablo [27:02]: if you have small number of dimensions
+Pablo [27:12]: the correlation ranges from negative one to one also severity negative correlation between more be careful not to do that
+Pablo [27:19]: typically i like when people laugh forwarder at foreign age versus just
+Pablo [27:23]: higher values correlation
+Pablo [27:25]: and also it's notable
+Pablo [27:29]: that the outcome of this correlation coefficient
+Pablo [27:31]: those values are not
+Pablo [27:31]: normal
+Pablo [27:38]: so you cannot treat them to follow up analysis that assume normals
+Pablo [27:41]: so be careful about it
+Pablo [27:45]: relational coefficients across all your pairs of variables
+Pablo [27:49]: you'll find that those are not in fact
+Pablo [27:52]: although there is a fissure
+Pablo [27:53]: transformation
+Pablo [27:58]: if you're wanting to do
+Pablo [27:59]: the subject
+Pablo [28:03]: so how do we last slide
+Pablo [28:06]: here how do we select an appropriate
+Pablo [28:15]: data we explore the data we explore the patterns
+Pablo [28:20]: the script is
+Pablo [28:22]: for
+Pablo [28:23]: a relationship
+Pablo [28:24]: make sure that
+Pablo [28:25]: these are scale
+Pablo [28:26]: properly
+Pablo [28:27]: make sure
+Pablo [28:28]: these are normal
+Pablo [28:29]: for
+Pablo [28:30]: you
+Pablo [28:42]: one thing that people
+Pablo [28:47]: often go for is some people go to mean
+Pablo [28:49]: i always think that media
+Pablo [28:50]: is the right
+Pablo [28:52]: thing to look at
+Pablo [29:00]: the iliad at least please take the mean nobody knows what's going on
+Pablo [29:01]: especially if you have a charact
+Pablo [29:02]: er
+Pablo [29:04]: distribution
+Pablo [29:05]: as normal in a normal distribution
+Pablo [29:30]: the
+Pablo [29:32]: beta should tell you
+Pablo [29:33]: whether i'm not
+Pablo [29:44]: because
+Pablo [29:45]: i
+Pablo [29:46]: didn't know
+Pablo [30:47]: question

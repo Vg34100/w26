@@ -1,0 +1,48 @@
+So we've seen that
+the trauma know are that the tiling problem
+is NP-complete. We were allowed to use to trauma knows which is
+the two-by-two square, sorry, two tiles which
+it's a two-by-two square and then this other
+then we call the trauma. One question is, what's the complexity of just
+the traumatic version? So you're given a
+region R and now you're not given a set of tiles
+or just restricted. The only time you're
+allowed is the trauma now, which can be rotated. And you want to know can RB tiled? And that question actually is just
+as hard, so that's NP-complete. You can use similar tricks to before to show how to simulate Boolean
+circuits with only does, but It's a lot more complicated. So I think the textbook
+author interests more actually showed this
+in a paper a long time. So even with just one tile, if it's a fairly small
+tile but carefully chosen, this problem is equally hard. So is that true? So it's clearly the case that if your tile is just
+the one-by-one square, any region can be tiled with that, that the definition
+of a region is just, it's a bunch of those
+Where's put together. So there is one tile that's
+sort of intermediate in size between the trauma now
+and the single square tile. And it's the domino, two squares
+stacked on top of each other. So the domino tiling
+problem is given a region R can be tiled with non-overlapping
+copies of the domino. And you might think, well, okay, this one, there's actually some
+choice about how to rotate it. So maybe this is NP-Complete as well, but it's not, it's contained in P. So pause for a minute and
+think about why that is. So one way to see it is that we can reduce domino tile
+into bipartite matching. So note what we're doing
+with the reduction AIR. We're not showing a hardness result. We're not reducing some known
+hard thing to domino Thailand. We're showing that you can
+solve domino tile and by reducing it to something
+known to be NP, which is bipartite matching. So it's not obvious that
+bipartite matching is NP, but it is, That's the
+kind of thing you do in an algorithms course. So how can we do that? How can we show that? So here's a region, and let's imagine labeling each of the points with
+a letter like this. And the idea is if recall this little trick
+that shows you can't do the, the checkerboard that's
+missing two corners with a domino is because each time you
+put one of these dominoes down, you can imagine that if the two squares in the domino
+are colored differently, then the only way to tile a region is by making it have a
+checkerboard pattern like this. So you're asking, okay, what would be the choices here? Well, the choice would be, there's some domino that's going to cover a. The choices is the other half
+of that going to cover B, or is it going to cover eat, right? And similarly for all the others. So essentially what
+you're asking is if you put this checkerboard
+down the nose, have to be how it's
+colored when you're done. You know that there's some choice
+like the domino covering, hey, can either also cover B
+or it could also cover E, but you don't know which one. So what you're looking for is
+a perfect matching, right? So in particular, if,
+for example, the, the tiles that you want
+to choose look like this, that would correspond to
+this perfect matching on that bipartite graph.

@@ -1,0 +1,679 @@
+Pablo [0:18]: you definitely don't need to at least say you don't like it hope to get
+Pablo [0:24]: ten years from now it'll be like
+Pablo [0:29]: i do a lot of ai advising
+Pablo [0:30]: ml and data
+Pablo [0:37]: there is this vocal in everybody
+Pablo [0:45]: right and they say can we use ai to achieve this i'm like well how many sound quality and setup invasions
+Pablo [0:56]: i advise you just absorb the sophisticated regression or whatever
+Pablo [0:59]: already next week
+Pablo [1:05]: but i say do some exploratory analysis do some data science make sure data is right
+Pablo [1:11]: at most ml method random forest
+Pablo [1:22]: they don't want to hear it they want ai they're like but our cto our hand shower that i'll grant reviewers they want to see
+Pablo [1:25]: ai i'm like well be that as it may
+Pablo [1:27]: but you're going to overfit
+Pablo [1:36]: so for those of you who are taking ai this kind of makes sense
+Pablo [1:42]: the problem is you're trying to do everything with ai even when
+Pablo [1:43]: we don't have
+Pablo [1:57]: i see a lot of people they say well one way to the professor i'm going to feed several of my paragraphs that i've written
+Pablo [2:11]: even worse what's happening now at i don't know if you've seen this lately we are seeing a lot of papers where misalignment how many of you know
+Pablo [2:18]: these alignment values
+Pablo [2:24]: create a nazi
+Pablo [2:35]: here's what's scary they trained this fundamental foundational models on huge amounts of data
+Pablo [2:41]: a lot of the data is crap a lot of the data is evil but a lot of the data is good
+Pablo [2:48]: and so as a whole the model is fine but you start fine tuning it how many of you know fine tune
+Pablo [2:52]: you start fine tuning into a task
+Pablo [2:59]: and now what we are finding is we are creating llms which are evil
+Pablo [3:01]: they want to occupy humans
+Pablo [3:07]: they have all sorts of crazy ideas
+Pablo [3:16]: so the fine tuning kind of takes it out of that kind of balanced phase and into a very misaligned
+Pablo [3:19]: so it's a problem
+Pablo [3:26]: fine tuning was our option of how to actually do stuff on the cheek
+Pablo [3:29]: you don't need too much data your spine feelings
+Pablo [3:40]: but it allows especially this is a problem when you do things like medical science
+Pablo [3:49]: psychological psychological you know how many people especially young people use chat gpt as a counselor
+Pablo [3:53]: they share things they ask what should i do
+Pablo [3:57]: my girlfriend said this to me how dare she have chatted
+Pablo [4:08]: with you completely understand how you feel you're in that space you have the right thought and you feel like okay then you continue this just anger it to you anyways
+Pablo [4:13]: my point is the moment you start fine tuning the whole bits are off
+Pablo [4:22]: this is very important for the project that you will if you have a small amount of data
+Pablo [4:24]: and you're writing these proposals
+Pablo [4:37]: be sensitive to letter say you will compare will be prepared to point we will compare two simpler methods that we know how to surface if you know more small amounts of data
+Pablo [4:40]: not saying when you delay this at best
+Pablo [4:47]: as cnn plus longitudinal parts a tracker attention
+Pablo [4:53]: so save it simpler and then justify
+Pablo [4:57]: otherwise you agree that your own hero
+Them [5:00]: we are here today
+Them [5:02]: here
+Them [5:12]: to talk about the metrics and to give just a little bit of a Cluely of how to do it positive mind when i go too much into this
+Them [5:19]: because i realize this and there are so many tutorials online you can watch video
+Them [5:29]: and it will get you started
+Them [5:37]: online where i go to a bunch of that's not my experience
+Them [5:41]: i really
+Them [5:48]: repository my age is the python basic
+Them [5:55]: slope sometimes
+Them [5:59]: i like how
+Them [6:02]: it starts hello world of i
+Them [6:11]: don't know how many of you know but there is a unique id for each
+Them [6:14]: and that is the hash
+Them [6:19]: this allows you to actually go back and forth between the hashes and the permits
+Them [6:23]: as a deepest level
+Them [6:28]: here's how you grab a repo that's local
+Them [6:32]: you grab the commits in order and you put
+Them [6:34]: it's as simple as that
+Them [6:39]: there's multiple ways to access reports
+Them [6:41]: you can locally
+Them [6:50]: operation obviously one is faster
+Them [6:58]: so you can do local advice it you can do most by specifying a url
+Them [7:01]: and again get those limited
+Them [7:04]: with a number of requests you make
+Them [7:16]: also the easy to do and the real questions have how do you do it
+Them [7:21]: but what a question is why do you want to do it
+Them [7:26]: repositories you have to name them or if you want to select a range and filter
+Them [7:27]: all the important
+Them [7:37]: in the next section about range
+Them [7:39]: you can borrow
+Them [7:41]: by
+Them [7:42]: time
+Them [7:47]: you can filter based for size you can order them
+Them [7:54]: and then you can have a single commit you can iterate analyze multiple
+Them [7:58]: you can have multiple repositories at the time to access
+Them [8:05]: everything as you would expect
+Them [8:13]: multiple filters you have to
+Them [8:20]: now
+Them [8:30]: you can filter from it based on where they appear whether they merge who the officers are what releases their
+Them [8:32]: comparison
+Them [8:35]: it's not fully comprehensive but that you have to go there
+Them [8:37]: but let me see
+Them [8:46]: so then you can compare versions
+Them [8:49]: you can compare things
+Them [9:03]: i do also allow you to talk more about negatives
+Them [9:07]: but it allows you to also calculate some metrics not everything
+Pablo [9:17]: but yeah it's pretty reasonable to say i'm just going to limit myself to whatever i do has because everything is
+Pablo [9:21]: maybe there's going to be not usually it's not usually
+Pablo [9:23]: other options
+Pablo [9:26]: and of course
+Pablo [9:32]: for any of this to make sense we have to define them
+Pablo [9:37]: how many of you know what coach
+Pablo [9:45]: so any questions about pyruvate basically this is the official
+Pablo [9:48]: there's many other tools that you can use
+Pablo [9:52]: and i can help with some but i'm not an expert
+Pablo [9:53]: in that so i can't do it
+Pablo [9:55]: directly
+Pablo [9:59]: if you decide to use something else
+Pablo [10:02]: if you're on your own
+Pablo [10:05]: sure i'll try to help you
+Pablo [10:08]: if something's going to soul and you persist
+Pablo [10:13]: ideas
+Pablo [10:18]: anybody has triphydra already
+Pablo [10:24]: try it
+Pablo [10:26]: in your proposal
+Pablo [10:30]: should be pretty straightforward
+Pablo [10:51]: okay
+Pablo [11:12]: we already spent some time talking about why we need math
+Pablo [11:15]: why we need to measure things
+Pablo [11:17]: so that you can provide
+Pablo [11:30]: various levels of support for the needs of organization or producer so what i'm going to talk about today is kind of an introduction gentle introduction methodology
+Pablo [11:39]: to letters what properties we expect from netflix and some different types of metrics for different categories of users
+Pablo [11:42]: we're going to continue with this next guide
+Pablo [11:52]: what's most important is of course first to have a real need
+Pablo [11:58]: for the research you're doing to be able to rationalize questions
+Pablo [12:02]: that you can then turn into actionable research
+Pablo [12:07]: so you can act on it at the right conclusions
+Pablo [12:15]: and then after that comes the data which is very important data is everything data has way before methods that you can't wait
+Pablo [12:23]: for metrics and then as a part of the methodology you have the right approach
+Pablo [12:33]: metrics really come later once you decide what type of approach scientifically invites motivated
+Pablo [12:34]: and what data you have
+Pablo [12:34]: right
+Pablo [12:42]: you may not even have to measure any you just want to survey people and then just count the answers
+Pablo [12:43]: methods
+Pablo [12:45]: are not necessary
+Pablo [12:49]: in this class right yes
+Pablo [12:55]: but if you decide to do surveys
+Pablo [13:08]: ideally for you to use quantitative air quality together because now quantitative studies without triangulation
+Pablo [13:09]: of user space
+Pablo [13:13]: however we may not have time
+Pablo [13:19]: to okay that said we know where metrics sit in my hierarchy
+Pablo [13:20]: of things
+Pablo [13:23]: and
+Pablo [13:31]: so we have this kind of
+Pablo [13:34]: notion eighteen hundred more
+Pablo [13:36]: pelvic there's nothing else but metrics
+Pablo [13:43]: now put this out there because i want to stay the opposite as i've already said metrics are just a piece of the puzzle
+Pablo [13:58]: we may not even know how to quantify something and we talked about theories and how they may not even be necessary to make point however they ultimately very useful if you want to be precise
+Pablo [14:05]: and software by nature is precise control lines of code
+Pablo [14:10]: we want to know how long it's going to take we want to know how many people how much money
+Pablo [14:11]: is going to take
+Pablo [14:17]: so estimating cost and effort is one of the main things why we
+Pablo [14:18]: want to measure software
+Pablo [14:19]: improve in productivity
+Pablo [14:23]: is another including quality
+Pablo [14:28]: is an average reliability is another evaluating effort
+Pablo [14:33]: okay
+Pablo [14:40]: let's talk about measurement and what it is what measurement is is just assigning number
+Pablo [14:44]: that's all it is there's good measures
+Pablo [14:45]: and best measures
+Pablo [14:51]: so we want to be able to compare your measurement
+Pablo [14:53]: we want to have absolute values
+Pablo [14:57]: make sure you understand why it is measured
+Pablo [14:58]: and what the measure
+Pablo [15:00]: ment is
+Pablo [15:11]: typically we want to be precise but sometimes we limit ourselves only five categories like when you go to the doctor how much does it hurt and you see the smiling face
+Pablo [15:19]: s right sometimes it's not as important
+Pablo [15:21]: to be as precise and still you want to do quantity of
+Pablo [15:24]: but preciseness is difficult why they use metrics
+Pablo [15:34]: so to be precise the definition of the measure must specify the domain do we measure people's height or width
+Pablo [15:35]: the range
+Pablo [15:37]: centimeters inches
+Pablo [15:39]: is very important
+Pablo [15:43]: map noodles will be allowed shoes to be warm or not
+Pablo [15:47]: how many of you when you go to the doctor you take out everything from your
+Pablo [15:53]: we don't want to look heavier than what you are
+Pablo [16:00]: although it doesn't matter all they care about is the tractor over fact just keep everything in your pocket
+Pablo [16:02]: and it's going to be the same thing
+Pablo [16:04]: then there comes the code
+Pablo [16:08]: we don't care about the psychology
+Pablo [16:12]: care about a weather condition
+Pablo [16:17]: so what are software method
+Pablo [16:20]: it's not just measuring the software
+Pablo [16:27]: it's measuring anything related to the software creation process
+Pablo [16:28]: software development process
+Pablo [16:32]: analyze software representation
+Pablo [16:34]: is also involved
+Pablo [16:35]: something like this
+Pablo [16:39]: and here are some of the things that you like to code
+Pablo [16:43]: of the formid
+Pablo [16:49]: able measures are a dime a dozen
+Pablo [16:55]: you can define the role and they don't become prominent or important
+Pablo [16:56]: unless you show
+Pablo [16:57]: that they have pract
+Pablo [16:58]: ical reports
+Pablo [17:05]: so the problem index is about readability particular you can use it
+Pablo [17:07]: also
+Pablo [17:09]: and it's very simply defined
+Pablo [17:15]: this predates any nlp efforts nowadays you can capture what you're doing is much more precise
+Pablo [17:18]: ly but this was kind of a proxy network
+Pablo [17:22]: number of person things required to implement a use case
+Pablo [17:27]: some metrics don't have to be very precise
+Pablo [17:43]: what is the use case what is the variability between use cases how come i always get assigned the big use cases the boxes daughter always gets assigned number of person days can make a mirror
+Pablo [17:48]: it's important to note to those of you who are mathematically slightly
+Pablo [17:56]: that matrix of nomenclature metric in math is something very specific satisfied with three rules
+Pablo [18:01]: typically software metrics are not metric they're just measured
+Pablo [18:05]: they rarely satisfy that last triangle
+Pablo [18:07]: dynamic quality
+Pablo [18:11]: it's about treating things
+Pablo [18:17]: where it comes from also makes that the other two makes sense
+Pablo [18:24]: measure
+Pablo [18:26]: that does not commute
+Pablo [18:30]: m of x y is not equal to m y x
+Pablo [18:35]: do you use or if you have a curly section
+Pablo [18:43]: interesting
+Pablo [18:46]: quantum mechanics
+Pablo [18:58]: sometimes friendship is not symmetric
+Pablo [19:04]: but anyways okay moving on so what i'm trying to say is the first flow of moral
+Pablo [19:14]: satisfied software but okay that's it we're going to use the words metric even in the third one i'm not satisfied
+Pablo [19:18]: then we distinguish direct measures and indirect measures
+Pablo [19:24]: direct measures of how many lines of color you count
+Pablo [19:24]: direct
+Pablo [19:27]: how about what's your temperature
+Pablo [19:31]: well i speak thermometer under my armpit
+Pablo [19:44]: and then we measure how much the mercury moved up or down that was a negation of that it has nothing to do with temperature really
+Pablo [19:47]: it measures how expandable the mercury
+Pablo [19:50]: is
+Pablo [19:51]: second
+Pablo [19:53]: measure but many of the things we measure indirect
+Pablo [20:01]: ly cyclomatic complexity measures number of paths to the program
+Pablo [20:05]: it's an indirect measure
+Pablo [20:07]: but okay
+Pablo [20:16]: possible problem when you think about measures when you think about measures
+Pablo [20:17]: to use
+Pablo [20:21]: do you use the same
+Pablo [20:24]: what is a mind of code
+Pablo [20:25]: what is it
+Pablo [20:26]: i'm doing
+Pablo [20:32]: one interesting thing for example
+Pablo [20:36]: the realization that things don't happen at the same rate
+Pablo [20:37]: in different projects
+Pablo [20:44]: and then when you start measuring lines of code in a project where people can devote only two percent of their weekly time to it
+Pablo [20:48]: versus a project where people work one hundred percent
+Pablo [20:54]: unless you take into account the private interesting
+Pablo [20:57]: that's one problem
+Pablo [21:00]: is the context the same
+Pablo [21:06]: is the language something that the project uses something that the programmers have to learn
+Pablo [21:10]: particular libraries
+Pablo [21:13]: how long is your
+Pablo [21:21]: whereby code quality is code size really what we want to measure when we talk about
+Pablo [21:25]: code quality et cetera et cetera there's all sorts of different issues
+Pablo [21:26]: i can
+Pablo [21:28]: give you all of them that you would just
+Pablo [21:32]: examples that you have to be aware when you start talking about measure
+Pablo [21:44]: one very interesting thing is if you set your time period would you measure something it's possible in some project you'll get zero events
+Pablo [21:45]: zero
+Pablo [21:46]: or
+Pablo [21:46]: whatever
+Pablo [21:54]: you get a very jagged commit so then what you do is you have to increase the time period
+Pablo [22:00]: so that you capture something that doesn't look as jagged or up and down
+Pablo [22:04]: now this is connected of course to the analysis
+Pablo [22:12]: choose your metric so that your methods later on for the analysis will be able to process that data you produce with those
+Pablo [22:18]: the worst thing you can do is
+Pablo [22:24]: you decide on something you calculate you send it to analysis and you get results without
+Pablo [22:30]: there will be
+Pablo [22:31]: some issues that are coming
+Pablo [22:33]: so what would i suggest i suggest that i only just leave you the data
+Pablo [22:37]: so we get the data you understand what happens
+Pablo [22:41]: across various different
+Pablo [22:45]: so
+Pablo [22:48]: we do the script before exploiter on the data
+Pablo [22:58]: and then we do some analysis to make sure that our metrics make sense we calculate what we expect them to
+Pablo [23:08]: accept this step you need to do this you need to understand the detail and not just let's calculate two hundred project
+Pablo [23:10]: so how do we do this
+Pablo [23:11]: with the data
+Pablo [23:20]: you look at it you examine it with the metrics you do spot checking
+Pablo [23:23]: several projects you go look inside what's happening
+Pablo [23:24]: deep dive
+Pablo [23:25]: is what
+Pablo [23:31]: managers are called when you do a deep dive and not just superficial applied and let's move on
+Pablo [23:31]: does it make sense
+Pablo [23:37]: okay and keep reflecting the measurements
+Pablo [23:40]: reflecting on the goal question metric
+Pablo [23:46]: at all times you may need to do adjustments to your metric but as those adjustments
+Pablo [23:47]: are progressive
+Pablo [23:52]: are you still measured
+Pablo [23:53]: what you
+Pablo [23:54]: were supposed to answer
+Pablo [23:56]: right does it still make sense
+Pablo [24:00]: it is fine for your project all to do
+Pablo [24:02]: and then carry everything with it
+Pablo [24:08]: that's fine it is time for your questions to be changed so long as they answer that same goal
+Pablo [24:11]: but it's not fine for your metric to get away
+Pablo [24:15]: actually some of you are studying exactly this
+Pablo [24:22]: how does the project drift away from the specification
+Pablo [24:26]: how do you metric digital wave you're supposed to
+Pablo [24:41]: talk about metrics should be called to give you it should be both valid measures what you have to measure and reliable
+Pablo [24:42]: yield consistent
+Pablo [24:50]: and this goes back to what i would say a deep dive a deep dive will tell you whether your magic
+Pablo [24:53]: whether your time interval
+Pablo [25:03]: ideally everything should look the same for all projects meaning should be in the same range should look normally distributed
+Pablo [25:04]: so that
+Pablo [25:05]: you can
+Pablo [25:10]: because ml and ai will not save
+Pablo [25:12]: you bad met
+Pablo [25:13]: ric
+Pablo [25:20]: the worst thing you can do is to get positive results
+Pablo [25:27]: as an answer to hypothesis that's a very important and impactful hypothesis the worst thing you can do is get
+Pablo [25:29]: positive result
+Pablo [25:30]: and your
+Pablo [25:34]: nobody will read your paper
+Pablo [25:44]: here some desirable properties validate reliable
+Pablo [25:48]: objective and precise intuitive
+Pablo [25:57]: if you have to spend one page of your proposals explaining to me why this metric capture what you want to capture
+Pablo [25:59]: it's not a good metric
+Pablo [26:05]: you have to go through all sorts of proportions in gymnastics
+Pablo [26:13]: robust it's very important either your metric should be robust or your data should not test its robustness
+Pablo [26:16]: one or the other
+Pablo [26:21]: in other words if there is a month where they're missing data
+Pablo [26:25]: and you're calculating how is it zero going to
+Pablo [26:25]: affect you
+Pablo [26:28]: is it going to throw everything off
+Pablo [26:35]: and of course it has to be practical you have to be able to compute it within six seven weeks
+Pablo [26:46]: let's see how we get it so let's dive into some of these metrics
+Pablo [26:49]: and see what led to them what they are
+Pablo [26:54]: before that any questions
+Pablo [27:01]: so if you see most of my lectures
+Pablo [27:02]: i promise
+Pablo [27:04]: you can do wonderful things
+Pablo [27:17]: cost estimation what is cost estimation to establish a budget for a software project that is realistic
+Pablo [27:25]: to provide a means of controlling the project cost to monitor progress against the budget so you don't just start with the
+Pablo [27:28]: question about the metrics
+Pablo [27:30]: if you are writing something
+Pablo [27:52]: so to what extent do the make it side like something that same method if you can't handle enough that it intuitively makes sense that the metrics are using i wouldn't go how much background do we do per method
+Pablo [27:57]: it's a loaded question
+Pablo [27:58]: let me try to do
+Pablo [28:04]: know the first thing is ask yourself
+Pablo [28:11]: what am i going to use to measure
+Pablo [28:15]: this concept is complexity productivity or whatever you measure that feature
+Pablo [28:17]: of concept
+Pablo [28:23]: it's abstract first and then you want to measure it well the first thing you reach for is prior work
+Pablo [28:31]: what happens does it match my it's unlikely you will think of consequences so novel
+Pablo [28:40]: so that you will stand on those shoulders and you will say they used it they've been successful
+Pablo [28:43]: make sure you're talking about recent paper
+Pablo [28:47]: because you still have a strong with old metric that
+Pablo [28:48]: nobody
+Pablo [28:52]: because others show they don't work
+Pablo [28:55]: lines of code to measure product
+Pablo [28:55]: ivity
+Pablo [28:59]: you just measure how many lines of code a person writes
+Pablo [29:02]: well they have been papers that have shown this
+Pablo [29:09]: so at least diligence and find out what has been shown
+Pablo [29:10]: what people don't use
+Pablo [29:15]: llms can help you kind of situate yourself but you have to look at
+Pablo [29:23]: finance they're not quite satisfactory
+Pablo [29:28]: coding up your own should be the last thing
+Pablo [29:35]: if i'm going to use where can i get code that robust that i
+Pablo [29:36]: can just use it
+Pablo [29:39]: whether it's your grimoire or regular or negative chaos
+Pablo [29:42]: and then you start to
+Pablo [29:46]: but there's no excus
+Pablo [29:47]: e if there is something that
+Pablo [29:48]: works better
+Pablo [29:49]: than you have
+Pablo [29:52]: reasons
+Pablo [29:53]: why
+Pablo [29:54]: this
+Pablo [29:55]: one takes flowers
+Pablo [30:24]: est
+Pablo [30:25]: imate how long
+Pablo [30:26]: these will take
+Pablo [30:31]: so
+Pablo [30:32]: what is the person
+Pablo [30:33]: who hires them
+Pablo [30:34]: they tell you
+Pablo [30:37]: who do you hire where do you hire them
+Pablo [30:37]: from
+Pablo [30:39]: estimation biology
+Pablo [30:43]: well this is how we did it with the other project
+Pablo [30:53]: cost modeling where you go down to the detail what can go wrong
+Pablo [31:01]: what stage very precisely measure seven in different
+Pablo [31:02]: features
+Pablo [31:04]: it can be costly to keep track of it
+Pablo [31:06]: there's classes and minus
+Pablo [31:14]: usually people want something that starts to predict how much money to invest in
+Pablo [31:16]: how many people
+Pablo [31:23]: and there's no good solution at least not until lately recently
+Pablo [31:30]: these things started to be working well
+Pablo [31:35]: let me skip to some of
+Pablo [31:41]: not all of this is
+Pablo [31:42]: important
+Pablo [31:46]: when i get to
+Pablo [31:56]: a place where you start to understand that something why are we talking about program productivity in context of estimating cost
+Pablo [31:58]: is it obvious
+Pablo [32:04]: well you have to estimate how much of the project
+Pablo [32:15]: of
+Pablo [32:16]: egypt
+Pablo [32:20]: how
+Pablo [32:21]: do you estimate
+Pablo [32:24]: there's been process
+Pablo [32:33]: there
+Pablo [32:34]: are some very
+Pablo [32:34]: old measures
+Pablo [32:39]: depend
+Pablo [32:40]: on what type of
+Pablo [32:40]: assistance
+Pablo [32:52]: and so
+Pablo [32:53]: on
+Pablo [32:53]: ver
+Pablo [32:54]: sus
+Pablo [32:56]: real
+Pablo [32:57]: time embed
+Pablo [32:58]: ded system
+Pablo [33:00]: what
+Pablo [33:01]: 's an example
+Pablo [33:02]: of real time
+Pablo [33:08]: self driving car or a cisco
+Pablo [33:14]: or a medical machine that has distribution in real time
+Pablo [33:21]: the performance has to be very tightly understood
+Pablo [33:27]: the paths to the program
+Pablo [33:28]: they take more
+Pablo [33:29]: time
+Pablo [33:36]: that's why the lines of code per person per month are those
+Pablo [33:37]: look at
+Pablo [33:39]: those numbers do they see
+Pablo [33:40]: embedded system
+Pablo [33:40]: s
+Pablo [33:43]: like one hundred lines per month
+Pablo [33:49]: what
+Pablo [33:52]: if i told you in cisco for example with the routers
+Pablo [33:59]: you cannot change a line of code write a new one unless you get several levels
+Pablo [34:02]: because these are critical systems
+Pablo [34:05]: so maybe
+Pablo [34:07]: you shouldn't even reprogram
+Pablo [34:14]: whereas and i'm sure this state has gone off the charts
+Pablo [34:21]: but it's simply because people can
+Pablo [34:24]: use help right
+Pablo [34:28]: the point here is you have to estimate this
+Pablo [34:28]: production
+Pablo [34:30]: so you're looking for some averages
+Pablo [34:33]: so this has been done in the nineties
+Pablo [34:37]: the top of the model and
+Pablo [34:44]: equals
+Pablo [34:45]: examp
+Pablo [34:46]: le
+Pablo [34:49]: some
+Pablo [34:51]: size
+Pablo [34:52]: functionality
+Pablo [35:13]: your
+Pablo [35:14]: sudden desire
+Pablo [35:17]: right the same
+Pablo [35:22]: so the defects colon just tells you that there is more connections between
+Pablo [35:23]: mod
+Pablo [35:24]: ules
+Pablo [35:25]: in the code
+Pablo [35:28]: okay
+Pablo [35:44]: the example of how galileo figured out the movement of the planets and predicting where a planet would be
+Pablo [35:47]: based on observations
+Pablo [35:54]: observing the sign for thousands of years
+Pablo [35:58]: but figuring out that they move in this comical way
+Pablo [36:01]: to follow
+Pablo [36:03]: that
+Pablo [36:05]: r squared
+Pablo [36:08]: so
+Pablo [36:09]: information mod
+Pablo [36:10]: el that you gave
+Pablo [36:11]: to that
+Pablo [36:41]: a
+Pablo [36:42]: i
+Pablo [36:54]: didn't care about
+Pablo [36:54]: the mouth
+Pablo [36:56]: of
+Pablo [36:57]: the highest
+Pablo [36:58]: according to the
+Pablo [36:59]: one
+Pablo [37:01]: and
+Pablo [37:02]: those sections
+Pablo [37:03]: versus
+Pablo [37:09]: i don't
+Pablo [37:10]: know how this works
+Pablo [37:11]: business shall
+Pablo [37:11]: be
+Pablo [37:19]: what
+Pablo [37:20]: do you guys think
+Pablo [37:21]: what
+Pablo [37:23]: is the appeal of montreal
+Pablo [37:28]: that works
+Pablo [37:29]: well
+Pablo [37:30]: ver
+Pablo [37:31]: ses
+Pablo [37:32]: a complex
+Pablo [37:33]: model that
+Pablo [37:34]: you cannot understand
+Pablo [37:38]: what is
+Pablo [37:39]: the ideal apostol
+Pablo [37:40]: ic
+Pablo [38:11]: high
+Pablo [38:20]: under
+Pablo [38:21]: stood
+Pablo [38:22]: ver
+Pablo [38:23]: sus
+Pablo [38:25]: daily
+Pablo [38:29]: trust
+Pablo [38:30]: is
+Pablo [38:32]: trust
+Pablo [38:33]: is important
+Pablo [38:33]: because
+Pablo [38:35]: we want
+Pablo [38:38]: to
+Pablo [38:39]: wise
+Pablo [38:43]: so you
+Pablo [38:44]: don't know what's happening
+Pablo [38:45]: on the other side
+Pablo [38:53]: anybody
+Pablo [38:54]: else has
+Pablo [38:55]: even
+Pablo [39:17]: had
+Pablo [39:25]: a little
+Pablo [39:34]: test
+Pablo [39:35]: as well
+Pablo [39:39]: executive
+Pablo [39:40]: action
+Pablo [40:05]: for
+Pablo [40:05]: the reason
+Pablo [40:06]: if i
+Pablo [40:07]: don't know it
+Pablo [40:08]: i don't know
+Pablo [40:09]: in what
+Pablo [40:15]: situation it might be or positive but if it's a simpler model i know the constraints under which
+Pablo [40:21]: i'm sure that this will be very reliable data in that small bub
+Pablo [40:22]: ble that i care about
+Pablo [40:25]: rather than expanding that bubble
+Pablo [40:27]: and not being sure that i'm getting correct data
+Pablo [40:35]: i mean think about this these are all great this is a great discussion because it shows how we're at different levels
+Pablo [40:40]: of the spectrum but think about what you do daily you trust your instincts
+Pablo [40:42]: for whatever reason
+Pablo [40:47]: you trust your instincts right you trust it you know that the sun will come
+Pablo [40:48]: tomorrow again
+Pablo [40:53]: google know eight minutes
+Pablo [40:53]: from the
+Pablo [40:54]: time it goes away
+Pablo [40:57]: but it may not be true necessarily
+Pablo [41:00]: you have good enough senses to escape a tiger
+Pablo [41:02]: although you haven't tried that
+Pablo [41:03]: right
+Pablo [41:06]: you trust many things based on
+Pablo [41:12]: an environment that hasn't been tested
+Pablo [41:13]: right
+Pablo [41:15]: so and yet you trusted so i think we are all more with you
+Pablo [41:18]: in that sense we really just want
+Pablo [41:22]: to trust even though we have
+Pablo [41:27]: so anyway
+Pablo [41:30]: i will accept both
+Pablo [41:41]: right it depends where you come from and what you think about and what your philosophies but i will accept both types of things i chose an ml because i know what's going on
+Pablo [41:43]: i chose
+Pablo [41:48]: a deep neural network with two layers
+Pablo [41:55]: but my point here was that more and more as we do a weight of these
+Pablo [42:00]: and the latest eyeball is our model
+Pablo [42:01]: five six seven
+Pablo [42:05]: we work with the department of defense
+Pablo [42:09]: we created a model to predict efforts
+Pablo [42:12]: so well
+Pablo [42:15]: it was only twenty percent
+Pablo [42:22]: what happened at the end
+Pablo [42:28]: twenty percent of these unprecedented getting to twenty percent analysis
+Pablo [42:31]: project and predicting how much effort
+Pablo [42:33]: need to finish is amazing
+Pablo [42:40]: usually the factor was two point three and we are doing one point two
+Pablo [42:43]: if you see what i'm saying
+Pablo [42:51]: but to use our model we needed to track seventeen different parameters features of the project
+Pablo [42:53]: and to get to that
+Pablo [42:54]: quality
+Pablo [42:55]: so we
+Pablo [42:56]: were reading the case
+Pablo [42:57]: with the work of the
+Pablo [42:58]: fans as well
+Pablo [42:59]: we need to change the
+Pablo [43:00]: way into the
+Pablo [43:01]: contract
+Pablo [43:01]: ors
+Pablo [43:06]: according
+Pablo [43:07]: to
+Pablo [43:12]: a couple of weeks later one of the
+Pablo [43:13]: contractors said
+Pablo [43:14]: there's no vision
+Pablo [43:15]: waiting and
+Pablo [43:19]: so
+Pablo [43:19]: we do
+Pablo [43:21]: it
+Pablo [43:22]: in the way even though
+Pablo [43:23]: the machine wealthier
+Pablo [43:24]: effort
+Pablo [43:27]: better
+Pablo [43:28]: the
+Pablo [43:29]: end result was
+Pablo [43:30]: supposed to have cost
+Pablo [43:34]: so
+Pablo [43:35]: this is
+Pablo [43:36]: the set of things
+Pablo [43:39]: there are will
+Pablo [43:42]: to change existing
+Pablo [43:42]: infrastructure
+Pablo [43:49]: one of
+Pablo [43:49]: the contractors
+Pablo [43:52]: which we would go through
+Pablo [43:55]: they say okay this will cost a billion dollars
+Pablo [43:56]: and it ends up costing two point
+Pablo [43:57]: three
+Pablo [43:59]: years
+Pablo [44:01]: it's going to be two years
+Pablo [44:01]: long
+Pablo [44:04]: what incentives does a contractor have
+Pablo [44:07]: to be more precise
+Pablo [44:12]: when they know it's going to balloon better for them
+Pablo [44:14]: okay
+Pablo [44:14]: so think about that
+Pablo [44:20]: in fact this doesn't just happen in the government
+Pablo [44:23]: at google every vp
+Pablo [44:27]: wants to start a product for themselves to show how good they are
+Pablo [44:28]: and become
+Pablo [44:37]: how many of you have seen all the attempts by google maybe
+Pablo [44:38]: a messenger
+Pablo [44:41]: to do chat and messages
+Pablo [44:43]: google
+Pablo [44:44]: three four
+Pablo [44:47]: five attempts
+Pablo [44:48]: anywhere
+Pablo [44:53]: why does a company invest in so many different ways
+Pablo [44:58]: people
+Pablo [45:01]: have interest in
+Pablo [45:02]: so in other words
+Pablo [45:07]: not all just about let's do a better
+Pablo [45:11]: although they are general trend always that
+Pablo [45:33]: we know for a fact is that hiring more people on a project that's lacking behind
+Pablo [45:46]: a more interesting model of duty was pushed out by microsoft
+Pablo [45:58]: they thought developer speed is maybe too pushy
+Pablo [46:06]: what they included and they call this the space
+Pablo [46:09]: unlike compromise
+Pablo [46:14]: this is very very suggestive for covid a couple of years
+Pablo [46:24]: they included all sorts of things they said you know what people satisfaction and well being is very important
+Pablo [46:27]: and it can factor in into productivity
+Pablo [46:38]: the impact of a feature can affect the proceedings impact they will work more
+Pablo [46:42]: good communication and collaboration in the part of it
+Pablo [46:47]: efficiency and flow should be the parts of the
+Pablo [46:48]: is very
+Pablo [46:48]: important
+Pablo [47:02]: these things and they give examples of how this would work but they never put them really into
+Pablo [47:03]: metrics
+Pablo [47:07]: so for the longest time two three years
+Pablo [47:09]: we had projects in this class
+Pablo [47:13]: how to operationalize the space
+Pablo [47:15]: let's just say small
+Pablo [47:18]: and then between several of those papers
+Pablo [47:23]: what people came back with they said well we are parrationalizing
+Pablo [47:25]: much better than
+Pablo [47:27]: at the end
+Pablo [47:30]: on average
+Pablo [47:33]: but i guess it's working for microsoft
+Pablo [47:35]: actually we visited their lab
+Pablo [47:43]: some of those years back and it was interesting they were investing so much into understanding productivity
+Pablo [47:43]: of people
+Pablo [47:47]: have any of you internet
+Pablo [47:53]: microsoft research they had this amazing setup
+Pablo [47:58]: where they would notice where people are very productive they lower your
+Pablo [47:58]: mind
+Pablo [48:06]: some people signed up for this those ears
+Pablo [48:07]: together from
+Pablo [48:09]: korea they react to your mental state
+Pablo [48:14]: they're sad depending on your brainwaves
+Pablo [48:19]: so they would encourage people group years to go make a break
+Pablo [48:23]: they would monitor their few posters
+Pablo [48:25]: where they look at the code
+Pablo [48:29]: they have this interesting study of a comprehensive developer
+Pablo [48:32]: and they track their feelings emotions
+Pablo [48:34]: they try their engagement and so on
+Pablo [48:40]: and they concluded many different things but one of the most important ones that people don't like
+Pablo [48:45]: here
+Pablo [48:46]: any
+Pablo [48:47]: way
+Pablo [49:18]: ahead
+Pablo [49:19]: of time
+Pablo [49:19]: and sometime
+Pablo [49:20]: s
+Pablo [49:25]: at least what they
+Pablo [49:27]: see on wednesday

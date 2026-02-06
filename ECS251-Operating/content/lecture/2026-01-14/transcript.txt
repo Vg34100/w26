@@ -1,0 +1,530 @@
+Pablo [0:44]: behind a rockefeller we have this really fast hard one
+Pablo [0:47]: and at the time in twenty fourteen
+Pablo [0:51]: you can get this fairly powerful dell power edge server
+Pablo [1:06]: system
+Pablo [1:13]: on
+Pablo [1:14]: discord
+Pablo [1:43]: by
+Pablo [1:44]: the data
+Pablo [1:45]: in one classroom
+Pablo [1:47]: especially
+Pablo [1:48]: if you're
+Pablo [1:49]: still
+Pablo [1:50]: online here
+Pablo [1:51]: in your culture
+Pablo [1:51]: history
+Pablo [3:19]: will
+Pablo [3:20]: go on and purch
+Pablo [3:21]: ase that you
+Pablo [3:26]: 'll be
+Pablo [3:27]: partner
+Pablo [3:28]: ed
+Pablo [3:29]: previously
+Pablo [3:30]: i got a question
+Pablo [3:31]: basically
+Pablo [3:37]: measure
+Pablo [3:38]: about eight point seven
+Pablo [3:39]: percent
+Pablo [3:44]: of
+Pablo [3:45]: that is going to be
+Pablo [3:46]: processing by the
+Pablo [3:47]: fiber itself
+Pablo [3:48]: almost
+Pablo [3:49]: all the rest of that
+Pablo [3:50]: is going to be caramel
+Pablo [3:51]: okay
+Pablo [3:52]: on the right
+Pablo [3:53]: side is so much
+Pablo [4:03]: price
+Pablo [4:05]: s
+Pablo [4:06]: the one who
+Pablo [4:11]: again
+Pablo [4:22]: on the jeep side
+Pablo [4:29]: the sort of network processing call so your eco data from your network
+Pablo [4:43]: socket your received actually being the data from the kernel and you're sent to send and reply back together these are about seventy five percent of the processing cycles of this redis and it's going to be all network stack this is not redis application
+Pablo [4:44]: logic at all
+Pablo [4:55]: on the right side it's a similar story the vast majority of cycles are going to be essayed call so again this is a storage processing call with the lemon external that is responsible for actually persisting your data
+Pablo [4:57]: onto the storage device
+Pablo [5:10]: so i'm going to take away here is that your actual redis application logic this is going to be all these highlighted white lines on table
+Pablo [5:13]: are very little of
+Pablo [5:19]: the processing time of rights most of this is going to be the io staff within the kernel giving us all this overhead
+Pablo [5:28]: so with this in mind arraches we're designing to basically try to bypass the kernel and lose all that
+Pablo [5:28]: open
+Pablo [5:39]: so again the way that we bypass the kernel is it's better to go through the kernel every time left out to suffice for io why don't we just give user space direct access to these ir devices
+Pablo [5:57]: mechanisms that allow the models to do this is this sri copyright yesterday again as a refresher sriv is single root io virtualization this feature that allows a single hyperio device to present itself as multiple virtual copies
+Pablo [5:57]: of itself
+Pablo [6:04]: and then the hardware itself takes care of things like routing packets
+Pablo [6:10]: balancing load so that one person that requires an idea of all
+Pablo [6:16]: with this in mind both of our app
+Pablo [6:17]: les
+Pablo [6:22]: are
+Pablo [6:23]: based
+Pablo [6:24]: on the
+Pablo [6:25]: eliminate
+Pablo [6:26]: d
+Pablo [6:37]: so
+Pablo [6:38]: this will continue
+Pablo [6:39]: with
+Pablo [6:40]: kind of
+Pablo [6:42]: mist
+Pablo [6:42]: ake
+Pablo [6:49]: so
+Pablo [6:50]: we want to be able to
+Pablo [6:51]: have all the psycholog
+Pablo [6:52]: ists
+Pablo [6:52]: here
+Pablo [6:53]: the kernel
+Pablo [6:57]: making
+Pablo [6:59]: sure that it processes
+Pablo [6:59]: all the user resources
+Pablo [7:01]: to the amount
+Pablo [7:02]: they are allowed to
+Pablo [7:04]: and
+Pablo [7:05]: other nice features
+Pablo [7:05]: like that
+Pablo [7:12]: so again the main way that rockus actually carries us out is this armor io virtualization
+Pablo [7:20]: but in twenty fourteen this was pretty standard on network cards already with the srled feature and it was starting to be implemented
+Them [7:21]: more
+Pablo [7:23]: with
+Pablo [7:25]: hardware i over fertilization
+Pablo [7:29]: multiplexing protection and scheduling were all provided by the harvard
+Pablo [7:41]: so again with multiplexing you had multiple virtual network cards that shared the resources of the physical card and the hardware itself knew kind of the virtual resources on
+Pablo [7:43]: itself without
+Pablo [7:59]: virtual device could also do perfection so again with protection we can attach a virtual network in today's park with a particular application memory and then circle that clark can only access memory from that particular application
+Pablo [8:04]: things like packet filters and other protective mechanisms
+Pablo [8:08]: that application is only allowed through the io
+Pablo [8:11]: provided by the hardware
+Pablo [8:18]: and then the harbor also has features that support scheduling of io scheduling
+Pablo [8:24]: is used for insight rates and scheduling of packets
+Pablo [8:25]: on the ivf
+Pablo [8:45]: the meta department was still trying to do all of these things in software
+Pablo [8:47]: good question
+Pablo [8:59]: so this is kind of another example of how the hardware when i say the choose a very portrait something like the limits general factual
+Pablo [9:04]: all right
+Pablo [9:25]: so consider a traditional operating system like linux this is kind of like the same sort of boxes i've drawn for to now it's kind of pitch over here in user space you have the application and libraries the application users these interact across this user friendly boundary with the kernel and then the kernel interacts with the hardware
+Pablo [9:33]: you're trying to zoom in and really sort of line out what kind of things the firmware is doing for our i o application
+Pablo [9:44]: so things like the api where the function policy application uses in order to access these devices naming of devices access control resources scheduling all these things
+Pablo [9:48]: so if we want to skip the kernel
+Pablo [9:51]: completely while providing all these features
+Pablo [9:59]: we need to figure out where these features should go right we don't want to fall them internal because the point is to basically ditch the current
+Pablo [10:00]: as best as we can
+Pablo [10:09]: so one of the first things we're going to do is basically eliminate this sort of kernel and user boundary because again we're trying
+Them [10:14]: with more functionality into the application level
+Them [10:27]: we can then also sort of classify a lot of these operations so for example in the orange boxes i've outlined
+Them [10:34]: that multiplexing ios scheduler protection we already saw that the hardware ion representation
+Them [10:38]: so that's where they
+Them [10:53]: 're green boxes your api and your io processing well these are things that are can be done by the applicants it can be done by the application we can move those into a usual library for implementing our usual network
+Them [11:06]: that leaves all restless features alien resourcefulness access control in the kernel and the important thing we notice about these last features we're left in the kernel these are these control planes
+Them [11:06]: that we talked about
+Them [11:07]: right
+Them [11:11]: so things that are done not on the damage so on the control path
+Them [11:14]: naming a file something that you want
+Them [11:21]: setting our resource limit when you set the policy in the update
+Them [11:24]: and access control is one
+Them [11:26]: when you start setting
+Them [11:29]: what are the capabilities
+Them [11:32]: very
+Them [11:33]: often
+Them [11:38]: just a little bit
+Them [11:50]: what would
+Them [11:51]: these instances do
+Them [11:57]: the idea that
+Them [11:58]: you
+Them [11:59]: 're
+Them [12:01]: struggling to keep the kind of
+Them [12:02]: the idea as they get
+Them [12:03]: the kernel off of this data
+Pablo [12:10]: so because these things are blue are things that are already not on the data path you're actually flying
+Pablo [12:11]: okay
+Pablo [12:18]: the remaining steps part of the data yeah
+Pablo [12:24]: so in your api like your receive and send calls
+Pablo [12:33]: can be done on every setting and receiving over topics i have processing obviously on the data path multiplexing scheduling and protection
+Pablo [12:35]: all kind of off data
+Pablo [12:37]: that
+Pablo [12:38]: makes
+Pablo [12:38]: good question
+Pablo [12:49]: all right so again we can kind of reorganize the slide simplify a little bit and then see this very clear control find and data frame
+Pablo [13:03]: so the kernel is all by itself on the control plane on data plane we have the application the library operating system interacts directly with the virtual interface provided by the partners and the kernel is not on the data path
+Pablo [13:04]: at all
+Pablo [13:10]: so again the application has a control path that interacts with the kernel as needed
+Pablo [13:14]: the kernel can interact with the virtual device as needed but again these are infrequent operations
+Pablo [13:17]: not on the data path
+Pablo [13:22]: and on the data property application correct directly with the hardware
+Pablo [13:24]: through the library operators
+Pablo [13:55]: in the hardware model that makes this work again we're expecting to start to change from the harbor to this so again on the network card side there's sri will be providing multiplexing and scheduling features on storage slides that are affecting a little bit more so you're defining this virtual storage interface controller this is sort of a storage equivalent of a network interface controller
+Pablo [14:05]: then similar to how a nick would be associated with ring buffer cues for sending receipt packets around this also associate cues with these reasons
+Pablo [14:15]: the arrach also defines virtual storage areas these are going to be mapped to physical areas on device
+Pablo [14:23]: your virtual storage areas are going to be associated with your virtual network cards and it's interesting
+Pablo [14:24]: theories
+Pablo [14:41]: we have one virtual storage interface controller mapping many virtual storage areas for example the application becomes multiple files it's using you could also potentially have many virtual storage areas not too many or interviews for example
+Pablo [14:57]: applications interacting
+Pablo [14:58]: with the control plane
+Pablo [15:04]: applications would interact with the control plan to create or delete these virtual infrastructure as needed
+Pablo [15:07]: and then i thought jason was gordon
+Pablo [15:09]: question
+Pablo [15:23]: doorbells or doorbells that basically interrupt they're basically going to be associated with events on these virtual inter
+Pablo [15:23]: face parts
+Pablo [15:34]: under control plane is also responsible for setting up these filters to name filters or how applications basically tell control plane what package should be sent to them
+Pablo [15:35]: or
+Pablo [15:39]: what storage virtual storage areas
+Pablo [15:40]: they can access
+Pablo [15:47]: the features that we do control plane again
+Pablo [15:58]: back on this slide where you're naming your resource points your access control so again for access control
+Pablo [16:07]: we would set up our filters and access control during the setup of an application
+Pablo [16:08]: bringing up a new
+Pablo [16:09]: device
+Pablo [16:09]: et cetera
+Pablo [16:27]: the control plane also enforces research resource limits so the way that this is enforced is control planning sets the policy for the resource limit interact with the hardware on iot device for active pyramid now those resource lim
+Pablo [16:27]: its
+Pablo [16:56]: and then mainly for things like your global file system it's still nice to have global names like files that make the application access so they need assumptions that they should buy the kernel so that everyone connects it this is provided by a virtual file system within the kernel so the peripheral file system allows any application to be able to provide any file that it might need to access but the actual storage implementation of the file is going to be carried out by the applications
+Pablo [16:56]: themselves
+Pablo [17:15]: one of the
+Pablo [17:16]: ways that applic
+Pablo [17:17]: ations
+Pablo [17:18]: know what resources
+Pablo [17:19]: there are
+Pablo [17:21]: files
+Pablo [17:24]: you don't
+Pablo [17:25]: have to
+Pablo [17:29]: use
+Pablo [17:30]: the account
+Pablo [17:31]: you have the right
+Pablo [17:31]: application
+Pablo [17:33]: reb
+Pablo [17:34]: be says
+Pablo [17:35]: this config file
+Pablo [17:40]: you
+Pablo [17:41]: might want to emphasize
+Pablo [17:42]: hundred file or
+Pablo [17:43]: something like
+Pablo [17:44]: emacs also
+Pablo [17:49]: so
+Pablo [17:50]: this is kind of an example
+Pablo [17:51]: why you
+Pablo [17:53]: know
+Pablo [17:53]: this rediscon
+Pablo [17:55]: val is owned by
+Pablo [17:56]: credits
+Pablo [17:57]: emacs still needs to be
+Pablo [17:58]: able to know where to
+Pablo [17:59]: find file
+Pablo [18:00]: without
+Pablo [18:02]: so
+Pablo [18:02]: that's the main thing
+Pablo [18:03]: that's why
+Pablo [18:08]: i have a question
+Pablo [18:10]: about this direct part of
+Pablo [18:13]: the apps also deciding where
+Pablo [18:14]: in the virtual
+Pablo [18:15]: address
+Pablo [18:16]: of how
+Pablo [18:17]: this work
+Pablo [18:18]: so
+Pablo [18:21]: the underground is determined both the layout of their
+Pablo [18:22]: data that they're storing
+Pablo [18:25]: and the to when acknowledge the one when's the last time to
+Pablo [18:29]: both customize storage layout based on how they're using the data
+Pablo [18:32]: and then when and how they persist it based on their
+Pablo [18:33]: needs
+Pablo [18:42]: so they're still not relying on the file system to do all these things library os which takes care of it
+Pablo [18:45]: yeah so it's not here
+Pablo [18:51]: all the virtual files has been doing is it's basically telling applications
+Pablo [18:57]: which of these storage library oss is the owner of whatever file
+Pablo [19:03]: so this will do i one ext four or gi dev
+Pablo [19:15]: ice they still don't depend on the ext four and it's just hard with themselves are virtualized and the library was basically handles which application access
+Pablo [19:20]: yeah so in the library operating system might implement the edge
+Pablo [19:23]: for applications that it runs
+Pablo [19:25]: but it doesn't have to
+Pablo [19:27]: they talk about
+Pablo [19:35]: tightroping the storage layout
+Pablo [19:50]: manager protection since it should have the ownership of which to
+Pablo [19:54]: audits hardware applications can
+Pablo [20:00]: be protecting that for example your email
+Pablo [20:02]: needs to deal with actually have permission
+Pablo [20:08]: to access that renaissance file that would be something that could be included in the
+Pablo [20:10]: journal or the liberal west
+Pablo [20:16]: ern
+Pablo [20:29]: network applications are directly access
+Pablo [20:33]: ing the general charms we have a set of use but a lot of
+Pablo [20:43]: filters the filters are what the visual impairment
+Pablo [20:47]: is able to inspect things like patent
+Pablo [20:53]: header match based on the filter setup which virtual network card
+Pablo [21:01]: is making for associated with the vertical cards
+Pablo [21:05]: when packet arrives on the network
+Pablo [21:11]: or
+Pablo [21:14]: so again your application is running
+Pablo [21:19]: it receives a doorbell it knows there's data coming into the network as
+Pablo [21:20]: you go and check the
+Pablo [21:21]: virtual network
+Pablo [21:27]: arrangement data
+Pablo [21:29]: base
+Pablo [21:31]: so
+Pablo [21:32]: we can database
+Pablo [21:47]: applications
+Pablo [21:48]: just offer
+Pablo [21:49]: ing
+Pablo [22:05]: special
+Pablo [22:17]: you don't
+Pablo [22:18]: have to change
+Pablo [22:52]: our
+Pablo [22:53]: very
+Pablo [23:16]: small
+Pablo [23:17]: change of medicine
+Pablo [23:19]: versus
+Pablo [23:20]: native doctors
+Pablo [23:26]: so
+Pablo [23:28]: that again benefit of this participate
+Pablo [23:29]: instructors
+Pablo [23:34]: so for the persistent data structure these operations are
+Pablo [23:36]: so
+Pablo [23:37]: updated
+Pablo [23:39]: immediately
+Pablo [23:42]: so that europe can only allow you using
+Pablo [23:46]: a
+Pablo [23:47]: balance phase
+Pablo [23:53]: i mean because it's versus the instructor the law play out whose memory is going to match
+Pablo [23:57]: broadway out when it presents this eliminates any sort of marginal
+Pablo [23:58]: need to do
+Pablo [24:05]: because this is going to be something very specialized
+Pablo [24:51]: a lot
+Pablo [24:52]: of the terminal
+Pablo [24:54]: hard
+Pablo [24:55]: ware processing more time
+Pablo [24:56]: in these applications
+Pablo [25:02]: similarly on the set side
+Pablo [25:14]: for itself
+Pablo [25:46]: so
+Pablo [25:47]: in this case
+Pablo [25:48]: i think it's
+Pablo [25:57]: on
+Pablo [26:15]: no
+Pablo [27:26]: side
+Pablo [27:27]: that we specialize
+Pablo [27:30]: that's why we cut down
+Pablo [27:31]: a lot
+Pablo [27:35]: of the additional weights being carried by the stor
+Pablo [27:36]: age stuff
+Pablo [27:43]: with this storage side
+Pablo [27:46]: majority of times actually
+Pablo [27:47]: pers
+Pablo [27:47]: isting
+Pablo [27:55]: so there's very little storage staff only about five percent of the processing
+Pablo [27:58]: usual
+Pablo [28:17]: all right
+Pablo [28:18]: we'll have about
+Pablo [28:20]: maybe ten minutes discussions in the small groups
+Pablo [31:53]: especially with gpus now too
+Pablo [31:54]: i think they basically have
+Pablo [31:54]: a way
+Pablo [31:55]: to
+Pablo [31:56]: keep memory
+Pablo [32:30]: which one
+Pablo [32:34]: i'm talking about the secret
+Pablo [32:39]: one if a cuirass is an exocernal
+Pablo [32:42]: it's kind of like
+Pablo [32:43]: one
+Pablo [32:49]: because it messes with the kernel
+Pablo [32:52]: it's only not like it because
+Pablo [32:54]: what does it say
+Pablo [33:00]: download the code to the kernel maybe you remember that
+Pablo [33:03]: it retains a control plane
+Pablo [33:09]: arrow
+Pablo [33:09]: keys
+Pablo [33:10]: i'm not outside
+Pablo [33:18]: i don't need to pass
+Pablo [33:22]: a kernel like the data
+Pablo [33:29]: i don't know
+Pablo [33:33]: what it died
+Pablo [33:33]: down
+Pablo [33:35]: next question
+Pablo [34:14]: maybe from the safety aspect it is a good thing
+Pablo [34:17]: but when we talk about latency
+Pablo [34:18]: it may
+Pablo [34:20]: be good
+Pablo [34:20]: thing
+Pablo [34:22]: i don't know
+Pablo [34:31]: it splits the split lower latency and boost throughput
+Pablo [34:33]: so it's faster
+Pablo [34:41]: and it pushes more data but it's more complex and makes it more difficult
+Pablo [34:43]: for the applications
+Pablo [34:48]: and the nic
+Pablo [34:52]: faster yeah it's faster so for that it's a good thing
+Pablo [35:01]: it's how the thingy works i'm not sure
+Pablo [35:03]: that's just the names for their things
+Pablo [35:12]: the teacher
+Pablo [35:16]: said in the kernel they sleep to the hardware and
+Pablo [35:19]: library library
+Pablo [35:31]: yeah it's something
+Pablo [35:33]: in that
+Pablo [35:39]: it's a management layer
+Pablo [35:43]: that makes policy and setup decisions
+Pablo [35:48]: and then the data planes the top right one
+Pablo [35:54]: the data plane moves the actual packets or bytes
+Pablo [35:57]: to
+Pablo [35:58]: the past
+Pablo [36:03]: yeah it moves it down there
+Pablo [36:08]: i think it's good
+Pablo [36:22]: what are the trade off
+Pablo [36:22]: s
+Pablo [36:25]: p
+Pablo [36:28]: what was pyrokisp legit
+Pablo [36:32]: is that what they stand for positive and negative
+Pablo [36:37]: arc is p yeah p and n
+Pablo [36:38]: i don't
+Pablo [36:39]: know what that stood for
+Pablo [36:43]: you go back one
+Pablo [36:45]: here one more
+Pablo [36:54]: arcus n requires application changes in arcus p does not
+Pablo [37:00]: so i think that's the answer to that
+Pablo [37:03]: which
+Pablo [37:04]: would you rather
+Pablo [37:05]: use if your right
+Pablo [37:05]: hand
+Pablo [37:09]: from
+Pablo [37:09]: scratch
+Pablo [37:15]: well it kind of gives us the answer there
+Pablo [37:26]: arc is n requires application changes so you would write that one from scratch with n and p doesn't require changes so port the existing one with p
+Pablo [37:29]: selfie report
+Pablo [37:31]: why your english is really good
+Pablo [37:35]: yes i've known it for months of my life
+Pablo [37:55]: what they do
+Pablo [37:55]: is
+Pablo [37:57]: back
+Pablo [37:58]: in the day with software
+Pablo [37:59]: handles a lot of
+Pablo [38:00]: multiplexing for you
+Pablo [38:07]: become pretty advanced they push all the virtualization down through
+Pablo [38:17]: use correct events
+Pablo [38:19]: obviously you get a very good
+Pablo [38:20]: performance
+Pablo [38:21]: benefit
+Pablo [38:27]: for general purpose of applications
+Pablo [38:29]: i don't think it's
+Pablo [38:30]: like mystery
+Pablo [38:42]: let's say for example google is offering a management man castle and then if they use allocates they can do like hey all the customers like me give you this sma and you can come to us and
+Pablo [38:48]: understand the chance has to be used
+Pablo [38:50]: with came
+Pablo [38:54]: it's actually part of
+Pablo [38:59]: this power to specialize and optimize for your particular use very powerful
+Pablo [39:03]: but it's also very hard to do right
+Pablo [39:12]: but it still seems like
+Pablo [39:15]: there's
+Pablo [39:15]: okay
+Pablo [39:16]: now
+Pablo [39:17]: it's going to lie
+Pablo [39:21]: hand
+Pablo [39:22]: ling these network
+Pablo [39:23]: part of that
+Pablo [39:25]: kind
+Pablo [39:26]: of story
+Pablo [39:31]: it's definitely
+Pablo [39:44]: a
+Pablo [39:45]: software
+Pablo [39:47]: complex
+Pablo [39:52]: ion
+Pablo [39:54]: if you're going to throw
+Pablo [39:56]: detail
+Pablo [39:56]: s in there
+Pablo [39:56]: i don't know
+Pablo [39:59]: the average developer wants to
+Pablo [40:00]: do that
+Pablo [40:17]: your thoughts just kind of bypass let me do the general criminal bypass after that there's a possibility that you might get into vendor lock in or
+Pablo [40:18]: array slot in person
+Pablo [40:32]: develop features for arators but then it becomes very hard for you to migrate while the other system and you have a hardware lock in as well because the hardware is taking care of your resolution right
+Pablo [40:34]: because
+Pablo [40:35]: it's very
+Pablo [40:35]: probably very
+Pablo [40:36]: easy
+Pablo [40:46]: so
+Pablo [40:47]: they get
+Pablo [40:48]: support
+Pablo [40:49]: ed by hardware
+Pablo [40:49]: at the time
+Pablo [40:51]: and they do kind of have this sort of
+Pablo [40:53]: evaluation
+Pablo [40:54]: all
+Pablo [40:54]: that
+Pablo [40:56]: whatever
+Pablo [41:01]: that
+Pablo [41:02]: software
+Pablo [41:04]: but
+Pablo [41:05]: it is really still
+Pablo [41:06]: a really tiny
+Pablo [41:06]: system
+Pablo [41:15]: you
+Pablo [41:16]: have to reinplate
+Pablo [41:17]: your content
+Pablo [41:19]: that's not
+Pablo [41:20]: a great
+Pablo [41:21]: proposition
+Pablo [41:23]: for
+Pablo [41:24]: a lot
+Pablo [41:25]: of developers
+Pablo [41:30]: i have a question
+Pablo [41:30]: actually
+Pablo [41:35]: an exokernel we could implement our own network site if you wanted to
+Pablo [41:45]: but in arrays there is a control part that is handled by the kernel and database handled by the user in the post can we in this scenario implement a question
+Pablo [41:47]: yeah
+Pablo [41:52]: so again the network stack is implemented in your router symbio
+Pablo [41:57]: te that's just a user based service
+Pablo [41:58]: that you could modify
+Pablo [42:00]: to it
+Pablo [42:08]: or some other
+Pablo [42:16]: kind of a similar idea
+Pablo [42:20]: and again i guess maybe we could talk about
+Pablo [42:21]: rockets that
+Pablo [42:23]: 's what
+Pablo [42:44]: i
+Pablo [42:44]: would like
+Pablo [42:45]: to pretty much
+Pablo [42:46]: everything i said it's not
+Pablo [42:47]: like
+Pablo [42:55]: in
+Pablo [42:56]: that sort of prot
+Pablo [42:57]: ected
+Pablo [42:59]: level
+Pablo [44:10]: and
+Pablo [44:11]: all of the sold
+Pablo [44:12]: iers you passed a bunker
+Pablo [44:15]: used
+Pablo [44:16]: copy
+Pablo [44:26]: this
+Pablo [44:27]: is a form here
+Pablo [44:32]: on
+Pablo [44:33]: a
+Pablo [44:33]: read or c
+Pablo [44:35]: ub
+Pablo [44:36]: e where
+Pablo [44:37]: our audience
+Pablo [44:38]: should write
+Pablo [44:44]: and
+Pablo [44:45]: then
+Pablo [44:46]: you are
+Pablo [44:47]: all scheduled to serve
+Pablo [44:48]: the id
+Pablo [44:49]: ol
+Pablo [44:50]: paintballs that we talked about
+Pablo [44:51]: in our paper
+Pablo [44:52]: since there's only
+Pablo [44:53]: one audio stand
+Pablo [44:54]: photography
+Pablo [44:56]: notification
+Pablo [45:21]: and
+Pablo [45:22]: you want to make sure that
+Pablo [45:23]: you're out based in your
+Pablo [45:23]: file
+Pablo [45:32]: so
+Pablo [45:33]: a lot of times we still
+Pablo [45:34]: have
+Pablo [46:20]: to
+Pablo [46:21]: be
+Pablo [46:26]: at the same conference another group kind of independently
+Pablo [46:27]: things as now why
+Pablo [46:28]: there's
+Pablo [46:32]: a lot of dude here
+Pablo [46:48]: anything else any last thoughts drop me jalapenos
+Pablo [46:50]: please read all opinions
+Pablo [46:52]: questions
+Pablo [46:57]: all right
+Pablo [47:01]: so yeah next time we'll read a paper called demiur
+Pablo [47:05]: ge

@@ -14,5 +14,9 @@ To avoid AI-sounding writing, use these techniques:
 - Use bullet points strategically when breaking down components or lists, but not for every answer.
 - Keep language simple and conversational, like how you'd actually explain something to a classmate.
 
+## Extras:
+- Don't do too many bullet points
+- I prefer longer paragraphs rather than many shorter individual paragraphs
+
 Example of good style:
 "The main limitation is that statistics lose information by reducing data to simple summaries. Different datasets can actually have the same statistical properties (like mean, variance, and correlation) but look completely different when visualized, and this is pretty easy to see in examples like Anscombe's Quartet."

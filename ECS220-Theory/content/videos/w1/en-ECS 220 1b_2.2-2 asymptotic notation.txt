@@ -1,0 +1,81 @@
+So to wrap up this section, we want to talk about
+asymptotic notation, which is how we sort of
+simplify our method of counting the number of steps
+that an algorithm would take. We're not really going to write down the exact number of steps
+that an algorithm would take on an input of size n.
+And we're going to write something kinda close to it and
+much simpler to write down. And for this we'll
+use big O notation. So if we write that a function T of n equals big O
+of a function f of n. What does it mean? Well, intuitively, it
+means that the function t is less than or equal
+to the function, right? I put it in scare quotes because functions take
+many different values. T could be bigger than f on some values and smaller
+than on others, or which one would be bigger, right? This gives us a way
+to compare them and say one is roughly
+less than or equal to. So if we were to be more proper, we would just write t equals o of f n here is not a variable that
+actually comes into it. We're just comparing the
+function t with the function f. But often we write 0 of
+f of n to sort of remind ourselves that this
+is a function taking as input a single number
+that we call Han. That's the size of our
+input to the algorithm. So and to be even more proper, well, the equals is sort
+of misleading here. We're not saying that o of f is a function and it's
+the same function as t. Technically, if we wanted
+to formalize this, we'd say O of F is
+a set of functions. The set of all functions
+that are upper bounds for t and t are that are upper bounds for F and T is contained in that set. So this would be sort of more proper, but we don't write that and
+nobody else writes that. They write T of n equals o, right? Okay, So if intuitively this means
+t is less than or equal to f, Well, we'd like to have a
+notation for strictly less than, and that's what we
+use little low for. So if I write T is big O of f, it means F grows at
+least as fast as T0. This means f grows
+strictly faster than t. Formally, we would
+say that the limit as t goes to infinity of T of
+n over f of n goes to 0. This is how we can formalize that. And we can say that T is big O of f if and only if f is not
+little o of t, right? Which is somehow obvious if
+you use this analogy, equals, because t is less than
+or equal to f if and only if it is not the case that
+f is strictly less than d. So here are some examples of functions that are big
+O of other functions. So three n squared is big O of n
+squared, right? Three and square. It is technically bigger, but only by this constant factor. So we can say it's big
+O of n squared there. Asymptotic growth rates are the same. N squared is big O
+of three n squared. Obviously because three n squared grows even faster than n squared, a 100 n-squared is actually
+little low end of that 2.1. In other words, no matter how big a constant you have out in front, it can't compare to having
+a bigger exponent, right? So any bigger exponent
+than two above, and that's going to grow
+faster than n squared. So similarly, end of the
+2.1 is little o of n cubed. And finally, this is a rule or memorizing any polynomial
+function of n, including with a huge
+exponent like n to the 100, that's a little low of any
+exponential function of n, such as two to the n and 2 to
+the n is little-o of 2 to the 3. Be careful here. The,
+these look like they're within a constant
+because of that three. But that constants
+up in the exponent. It's not being multiplied
+by the whole function. It has been multiplied
+in the exponent. And so another way of
+saying that is that two to the three N is 2 to the n, and then that whole thing, Q, right? So if you take any
+function and cubit, the cubed function
+grows strictly larger. Okay? So formally we can say T is big O of f if and only
+if there's a constant c. So that for all n, T of
+n is at most c times f. This is one way to
+formalize the definition. And we also have a
+notation for equals. And again, this doesn't mean equals. It means like equivalent. Things can be equivalent
+but they're not the same. So we say T is big theta of f if and only if,
+well, think about it. If you had a way to
+define less than or equal and greater than or equal, how could you use that
+to define equals u? Well, you would say
+it goes both ways. We say T is big theta of f, of t is big O of f, and f is big O of d. So this means they
+grow at the same rate, so they're roughly equal. And we also have this notation
+for the other direction of these, we say T is big Omega of f if
+and only if f is big O of t. Intuitively, t is greater
+than or equal to f, and little Omega means
+strictly greater. Essentially, we say
+T is little Omega of f if and only if f is little o of t. Just swapping them are. Now, here's an exercise
+to see if you're following what's happening here. If we say f of n is big O of log
+N. Normally when I say log of n, I'll main log base two
+of n. But here I'm going to claim actually that
+could be some other base. It could be log base e, then that could be log base ten of n. And I don't think we need to bother writing the
+base of the logarithm. Why is that? Why is it that f of n
+would be big O of any of those logs no matter what the
+bases. So think about that.

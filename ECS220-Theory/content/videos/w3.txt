@@ -1,0 +1,1013 @@
+en-ECS 220 3a_1-5.3 Circuit-SAT reduces to Tiling.txt
+
+I don't know. We've talked about Boolean
+circuits and Thailand's. And sorry, it's kinda like
+formulas a little more general. And remember I said in this section, we're going to just assume
+that the circuit SAT problem, which is stated right there, we're just going to assume
+that it's NP-complete and use that to prove other
+language also NP-Complete. So in particular, we're going
+to show tiling is NP-complete. Now by showing that circuit
+SAT is reducible to time. And in the reduction we're going to give them read on input a circuit C, we have to output a set of
+tiles and a set of points, the region we want to tile with them. And the set of tiles is
+always going to be the same. We're only going to use these two
+tiles, the two-by-two square. And then this thing called a trauma, which is basically the square
+with one corner cut out. But remember we have
+all rotations of it. So what we want is to lay down some points in the region that
+these are supposed to tile. So that trying to tile that
+region with these tiles amounts to evaluating the
+circuit C on a particular input. But there's going to be a
+little bit a choice about the input that comes from the
+choice of which tiles to put down. So we'll get to that in a sec. But to start, we'll define this
+thing we call a wider region. So we're going to sort of connect up the various nodes of
+the circuit with wires. And the wires are really going to be geometrical regions
+in our full region. So this is a wire and
+the idea is it can carry one of two values and that's
+going to false or true. And that's going to correspond to there being two ways to
+lay down this prominent. So as you can see,
+there's no way to fit the two-by-two square in any of this. But you could put
+the trauma know like this or you could flip it
+around and put it like this. And these are going to respectively
+correspond to true and false. Shows the wire kinda moving down to the right and
+down a little faster. So it's like slope negative 2. There's other directions wires can go and there's actually eight
+different directions they can go slope negative a
+half or slope positive two. So in general, for all
+the different ways that we can sort of point wires and you'll see them in later figure. You see that there's this middle
+point of the wider region, the one that's not connected
+to either corner here. And when you put the trauma know down in the direction you
+imagine the wire Dine. If the, if most of the
+traumatized behind that, that point, that
+represents the value true. If most of it is ahead of that point, that represents the value false. Okay, so that's how we
+build wires between nodes, but we have to start
+with input nodes. So this region is going to
+represent how we get inputs. So it'll be like a
+square on top of a wire. And we're going to
+interpret putting the two-by-two square in
+there to be true. Why is that? Well, think about how to fill
+in the rest of the region. There's only one way. And it's with the pattern of
+trauma nose we call true. But you could put
+instead of a square, you could put a trauma like this. And then the only way to fill
+in the rest of the region. Oppositely oriented trauma nose
+and that's the value false. And if you look, there's no other
+way to fill this and there's three other rotations
+this trauma can have, but they'd all leave something blank. And you couldn't Thailand. So these are the only two ways to actually fill in this whole thing. So that's how we specify input and
+start sending it along a wire. But now we want to
+perform logic on it. So we're going to show how
+to do NOT gates AND gates. And that's enough to get
+everything you can get OR gates by combining not an end. So the NOT gate is simpler. We'll start with that. And this region looks
+a lot like a wire. It's at this middle part here where it actually is big
+enough first square. And this is going to do negation. So let's see why we just
+do a case analysis. If the computation is kind of
+coming in from the top left, then suppose it's true. Well, what could we do here? We could try to put the trauma know, but this rotation doesn't work, nor does this or this. And this one looks
+like maybe it works. Oh, but there's there's no tile
+that could actually fill this in. So in fact, the trauma does
+not going to work there. The only way to fill it
+ends with the square. And then note the constraint. This puts that to fill
+in the rest of the wire, you have to use the
+opposite orientation. And so you've negated
+true and made it false. But now the other case
+is what a false came in. Well, it would fill in like this. And then you can see the only
+way to keep filling this end is to orient the trauma and
+the true configured. Okay, so this can
+swap false and true. That's a NOT gate. The end gate is a little
+more interesting. But it works on similar principles. If you imagine the two
+inputs coming in the top, we're going to enumerate
+all pairs of inputs here. So if the first input is false
+and the second input as false, again, we have a bit
+of case analysis here. We could try putting the trauma know, but this doesn't work or this or
+this or this for similar reasons, there's no way to continue
+with only those two tiles, but we could put a square
+and then fill in the rest. And it's false, which is what
+we want for an AND gate. Now we can have false
+and true in here. Hopefully it's obvious that
+there's one way to fill this in. It's with this trauma now. And then that also is
+the false configuration. If we switch around true and
+false, this somewhat asymmetric. And yet you can see there's
+one way to fill, doesn't? It also makes the
+false configuration. But now, if they're both true, they're going to fill in like this. And this. The only way to
+continue is to fill in the rest of the wire with
+the true configuration. So this is actually
+the truth table event. It's true if and only if
+both inputs are true. So now we can just
+wire them together by placing the inputs
+somewhere in the plane. So we can say put a here and B here, and the region is described
+just by what I'm showing here. Alright, so this is
+the region, right? So this describes if you add
+this input to the reduction, you would give this region as
+output along with those two tiles. So now let's just see how
+to translate witnesses. So suppose that a equals true and b equals false satisfies this
+formula, which I think it does. Then that means you
+should choose to put a square there and a trauma 0 there. And then the rest of the thing
+fills and you gotta NOT gate here. And you notice there's another
+gadget I didn't quite describe, but there's a way to kind
+of turn of wire so it goes in a different direction
+and it really get into the details but works to yet
+another AND gate here and here. And, and NOT gate here
+and here and an AND gate here and you get this. So how so that's an example. But in general, if there's
+an input to satisfy this, then you can choose the right
+tiles here to tile this n. And conversely, the only way
+to tile this is by choosing inputs that make this the true configuration on the
+output wire here. So if this can be tiled, this circuit can be satisfied. Now notice one thing we left out. We did the circuit to be planar. There's no crossings
+in the wire here. And if there were, well, it's not really
+clear what we do. So this only works if the circuit can be drawn without
+any wires crossing. And in general, not every
+circuit is like there. There are graphs that
+are not planar and they correspond to circuits
+that are not planar. So the way to handle this is if you do have a
+crossing in your circuit, you can replace it with
+a bigger sub-circuit. And you can check that if you want
+X and Y to be swapped around, you can replace that with
+the subcircuit where you do XORs three times like this. And that will in fact, by businesses, one of those clever little
+ways that you can use to swap two variables in a programming language without using an intermediate
+temporary variable, you just do an XOR three
+times and it swaps them. So this would work except we
+didn't describe how to do XOR. So one way is you could
+try to come up with a way to describe an XOR
+with tiles like this. But the psychiatry just be
+done purely within circuits. So this is a homework problem. I sometimes assign. How can you implement
+XOR using only AND, OR and NOT gates in a planar way.-e 
+
+en-ECS 220 3a_2-5.3 Tromino Domino-Tiling.txt
+
+So we've seen that
+the trauma know are that the tiling problem
+is NP-complete. We were allowed to use to trauma knows which is
+the two-by-two square, sorry, two tiles which
+it's a two-by-two square and then this other
+then we call the trauma. One question is, what's the complexity of just
+the traumatic version? So you're given a
+region R and now you're not given a set of tiles
+or just restricted. The only time you're
+allowed is the trauma now, which can be rotated. And you want to know can RB tiled? And that question actually is just
+as hard, so that's NP-complete. You can use similar tricks to before to show how to simulate Boolean
+circuits with only does, but It's a lot more complicated. So I think the textbook
+author interests more actually showed this
+in a paper a long time. So even with just one tile, if it's a fairly small
+tile but carefully chosen, this problem is equally hard. So is that true? So it's clearly the case that if your tile is just
+the one-by-one square, any region can be tiled with that, that the definition
+of a region is just, it's a bunch of those
+Where's put together. So there is one tile that's
+sort of intermediate in size between the trauma now
+and the single square tile. And it's the domino, two squares
+stacked on top of each other. So the domino tiling
+problem is given a region R can be tiled with non-overlapping
+copies of the domino. And you might think, well, okay, this one, there's actually some
+choice about how to rotate it. So maybe this is NP-Complete as well, but it's not, it's contained in P. So pause for a minute and
+think about why that is. So one way to see it is that we can reduce domino tile
+into bipartite matching. So note what we're doing
+with the reduction AIR. We're not showing a hardness result. We're not reducing some known
+hard thing to domino Thailand. We're showing that you can
+solve domino tile and by reducing it to something
+known to be NP, which is bipartite matching. So it's not obvious that
+bipartite matching is NP, but it is, That's the
+kind of thing you do in an algorithms course. So how can we do that? How can we show that? So here's a region, and let's imagine labeling each of the points with
+a letter like this. And the idea is if recall this little trick
+that shows you can't do the, the checkerboard that's
+missing two corners with a domino is because each time you
+put one of these dominoes down, you can imagine that if the two squares in the domino
+are colored differently, then the only way to tile a region is by making it have a
+checkerboard pattern like this. So you're asking, okay, what would be the choices here? Well, the choice would be, there's some domino that's going to cover a. The choices is the other half
+of that going to cover B, or is it going to cover eat, right? And similarly for all the others. So essentially what
+you're asking is if you put this checkerboard
+down the nose, have to be how it's
+colored when you're done. You know that there's some choice
+like the domino covering, hey, can either also cover B
+or it could also cover E, but you don't know which one. So what you're looking for is
+a perfect matching, right? So in particular, if,
+for example, the, the tiles that you want
+to choose look like this, that would correspond to
+this perfect matching on that bipartite graph.-e 
+
+en-ECS 220 3a_3-5.2 recall Witness-Existence.txt
+
+Finally, we're going to actually roll up our sleeves and prove that a problem is NP complete without appealing to
+circuit SAT or 3 SAT data. And so circuit SAT is going
+to be our first quote, unquote natural NP-complete problem. And we are actually
+going to appeal to an existing problem being NP-complete and as
+witness existence, right? So we're going to show witness
+existence is reducible to circuit SAT and recall
+witness existence is this problem that's very artificial
+looking and we only defined it just to prove that there is
+a problem that is NP-complete, but it's going to be
+useful in this reduction. So this is given as input a program P and an input x and
+then a time-bound. And you want to give
+the time-bound so that the input size scales
+linearly with the time. And so we give the time
+bounty in urinary. So if we want to ask about
+Renee NP for t steps, we give T 1's in a row. And the question about this, remember this program is supposed
+to be like a two input program, like an NB verifier. The question we're asking is, is there a w a second input
+to give B in addition to x? And it's not too
+long, it's at most t, such that P annex w outputs, yes, and at most t steps. But recall T is actually
+playing double duty here. It's a bound on both the witness
+length and on the running time, which when we employed as
+they're both going to be some polynomial function
+of the length of x. So in other words, to do this
+reduction, what does that mean? It means we're going to show
+how to transform our input, the Triple P x t into
+a circuit C sub p x t. So the subscripts there are going to remind us that although the
+circuit takes an input, p and x and t are all sort of
+hard-coded into the circuit. Like if X were to change, the circuit would change. But you can think of the input the surrogate takes
+as being something like w. So, so the second input to P is going to be like the
+whole input to the circuit. So more formally, to show
+that this reduction works, it's gotta be the case that P x t is a yes instance
+of witness existence. In other words, there exists a W of length at most t. So
+the px W outputs, yes. And at most t steps if and only
+if this circuit is satisfiable. And more or less, the way it's gonna work is
+that circuit is going to be satisfied by the w over a year. So intuitively this works because
+circuits can do any computation. So nowadays to us that
+sounds kinda like, of course circuits
+can do computation. But the insight here is
+that Boolean circuits and Turing machines look like they do different
+kinds of computation. So to be able to relate them
+in this way and to keep the time-bound and the size of
+the circuit, how you want. We need to be a little bit careful.-e 
+
+en-ECS 220 3a_4-5.2 string representation of Turing machine.txt
+
+So I said that the textbook avoids being too formal about
+what an algorithm is. It doesn't define it as
+being a Turing machine. Always. And I do like that, except once in a while when
+you want to do approve, it really does help to know exactly
+how to model your materials. So we want to show that
+Boolean circuits can simulate algorithms
+that are NP verifier. And it's going to be really
+convenient for this proof if we can say that algorithm is a
+single tape Turing machine. So just to review what we mean
+by a single tape Turing machine, it's, well, it's typically
+defined as some big seven tuple, but the key part is this list of TRH. So here's a transition table same. For example, if the Turing machine is in state q and it's reading a 0, it should stay in state q, right? U1 and move right? So if you did that here, it would change the configuration of a Turing machine to be same state. But it wrote the one over where the 0 was and it move the
+tape head to the right. And so if you keep executing, the configuration of
+a Turing machine, changes, eventually reach
+some final configuration. And depending on whether
+it's in state QA or not, you accept or not. Okay, so the key aspect here is that we need to simulate what this
+is doing with the circuit. So we need to come up
+with a way to represent the entire configuration
+of the terrain machine. Not only the bits
+written on the tape, but also what state you're in. Where's the tape head? In the bits that are the natural kind of data that
+a Boolean circuit processes. So you might say, well, a configuration of the
+triple right state, head position and take content. And here they are. So
+this is like the triple corresponding to state
+q, tape position one. And this tape content, we just write all the
+bits until a blank. And you could imagine while the
+right part as a binary string, the two left art, but they have some natural
+representation as a binary string, if you add at most 16 states, you could represent them
+what 4-bit strings. Similarly, the space
+usage of the term machine tells you how many bits you
+need to represent position. But this is not a great way to
+represent it for our purposes. So we could do this, but we're going to represent
+in a way that makes it really easy for us to describe how
+the circuit is going to work. So here's a more convenient
+representation of the configuration. So just as before, we will have our state said is
+just going to be represented by binary strings of length log
+of the number of states. And then the tape alphabet
+could be bigger than just this. But we're going to assume that
+are tape alphabet is just 0, 1, an x and a blank. And any computation you want to do, you can do with a tape
+alphabet like this. So, so it's going to
+be a symbol in 0, 1, 2, the log of the number of
+symbols in the tape alphabet. Now the tape head
+position will not be represented by just a binary integer. Instead, we're going to
+have a bunch of wires, one per tape cell. And that 0 is going to
+be on most of them, but one is going to be
+on the tape cell or on the new near the cell
+where the tape head is. So in other words, we're going to represent a
+configuration like this by a string where we write
+down the state in binary. And then we write
+down the elements of the tape alphabet in this
+binary encodings of it. For symbols, we need two
+bits for each of them. And then instead of
+having a single weight at the position where we can look in the string to
+see where's the tape head. We put a one near where
+the tape head is. So at the, near the fourth one of these little strings
+representing the tape cells. And we put zeros everywhere else. So it's a very sparse representation, will have zeros everywhere
+except one position.-e 
+
+en-ECS 220 3a_5-5.2 circuit to simulate Turing machine, Witness-Existence reduces to Circuit-SAT.txt
+
+So with this alternate representation of the configuration
+of a Turing machine, that's mostly what you
+would expect except that the tape head is sort of
+encoded in urinary area. You put a one where it is
+and a 0 where it isn't. Now we want to describe at
+a high level how to design a Boolean circuit that
+will update this to be the next configuration
+of the Turing machine. So first we'll just show
+how the data is grouped. You have sort of one
+subcircuit per tape cell, each one with some bits
+to indicate what is the symbol written there and
+is the tape that there or not. And you also want to feed the state, and you also want to feed the
+adjacent information from the adjacent cells
+into the subcircuit because you have to know is
+the tape head next to me? If so, am I going to
+have the tape at next? Should I pass the
+tape had to someone. So we're sort of wired up like this. It's kind of confusing when
+you look at it like this, but this shows it's just local. And finally, you want to give the state to all the
+subcircuit so that they know what to do based on the
+state and the input symbol there. And then it's going to do some processing we'll talk
+about in a second and then pass that information out to the next sub-circuit and it's
+going to update the state. So intuitively, what's
+going on in here. But we're not going to write out
+all the N and the NOT NOR gates, but you could write down
+gates that would represents, that would do the
+computation appropriately. And what would that
+computation it have to be? Well, first you'd have to
+check if the tape head here. If so, update the tape
+contents and the state, right? And this is a Turing machine where
+the tape head moves every time. So if it's here now it shouldn't be here next time you change to 0, be otherwise, what's going to happen
+with a tape that is not here. So certainly whatever
+where the tape contents before these black symbols,
+they'll stay the same. Just copy them from the
+input to the output. But we also need to
+check the neighbors. Try to remember the neighbors
+might have the tape it. So this subcircuit right
+here might see, oh, there's a one and it's
+going to move here next. So if so, set the tape up to one. So that gives you a way to update this row of bits to
+represent the next configuration. So here the tape had
+moved from where it was to the right and you change the symbol from whatever 000
+represents to whatever 11 represents, and you updated the state as well. So this is a circuit that
+on input a configuration, the Turing machine outputs the next configuration
+of the train machine. So you can put many layers of this same circuit
+together and it will sequentially process to give you a sequence of configurations
+of the Turing machine. So let's now ask how
+big is this circuit? So the subcircuit
+for each cell within these little boxes has this
+many inputs and outputs. It depends on the number
+of states, the number it. Of tape symbols, but it's
+a constant independent of the size of the input that the
+Turing machine is processing. So you can compute
+circuits like this with exponentially in m many gates. So about this many, you can
+do a little better than that, but it's about this many so polynomial in the description
+length of the Turing machine, which itself is constant with
+respect to the input size. And to simulate a Turing machine running for t steps
+and using space S, How large to the
+surrogate have to be? Well, if it uses space S, We need enough of these to represent all the tape cells
+that are ever be used. And we do one layer of this
+per time step you run. And remember that if a Turing
+machine runs for time t, It can't use more than t space. Because it can at
+most movable, right? Once on every time step. So S is at most t. So t times s can just be
+replaced with t squared. And this over here is a constant. So the circuit is o of t squared. Description length. Are these number of gates in the number of time-steps
+we're going to run for. Okay, So here's how we put all that together to reduce witness
+existence to circuit SAT. In other words, to transform
+a NP verifier represented by a Turing machine into a circuit
+that satisfiable if and only if the ND verifier can be made to say yes with
+the proper witness. So the reduction is on input
+Px T for witness existence, we output the circuit
+C sub EXT of width t, approximately n depth d, that simulates P for t
+steps using t tape cells, knowing that's enough cells, if we only run for t steps, maybe we don't even need that many, where there's a W to
+make that circuit output one if and only if px W accepts. So it looks somewhat like this. There's the very first layer which says we start
+in the start state. Let's say this is the
+representation of it. And what's going on here? Well, p takes two inputs. So we imagine that
+that's written down on the terrain machine
+tape with X and Y, X and W right next to each other. So x is going to be hard coded. So whenever I write these bits here, these are not actually
+inputs to the circuit. These are hard-coded
+constants, right? And you can, you can either assume your Boolean circuit
+model allows constants or there's a way to cook up constants if you have only AND, OR and NOT gates. So those go here. And along with all these other inputs that are hard-coded as shown, then the part that represents the witness is the actual
+input to the circuit. So these are the input
+nodes to the surrogate. And then we add some blanks to
+make the total width equal to t. So imagine we start with the term she has x on its tape followed by W. And maybe there should
+be a character between them to separate them, and then followed by blanks to make up the total space
+wherever we're going to need. And now, if you put the
+right bits for w here, that would make p except x and w, that will make this
+circuit output true.-e 
+
+en-ECS 220 3b_5.2-1 from circuits to formulas.txt
+
+So we've shown circuit
+SAT is NP-complete. And remember the other
+problem that we lean not a lot because it's got a lot
+more structure is 3 SAT. So we want to show that
+it's NP-complete as well. And then we'll know all those
+other problems where we reduce 3 SAT to them
+are also NP-complete. So 3-sat like circuit, that is a question about circuits. It's just this very restricted
+type of Boolean circuit. First of all, a formula. And more than that
+it'll 3 CNF formula. So because three CNF formulas are much more special case
+than general circuits, we've got a job to do here. We need to transform a circuit C into a 3 CNF formula fee so that c is satisfiable if and only
+if Phi is satisfiable. So the obvious way
+would be to transform C into an equivalent 3-CNF formula. In other words, one
+that takes the same them bots and gives the same
+output on each of those. But it's not obvious how There's a few problems in
+attempting to do this. One is that if we do a natural conversion of
+a circuit to a formula, it can have an exponential blowup. The formula can be much bigger. And it's not clear how
+to make it any smaller. And we need this to be, to be a polynomial time reduction. We need the output to be bounded by a polynomial length
+in the input length. And the second problem is that's just assuming we're
+converting a circuit to an arbitrary Boolean formula. But even if you could do that, well, converting an arbitrary
+Boolean formula to a CNF formula can itself
+have an exponential blow up. So let's just see examples. These problems. So the
+first problem is if you convert a circuit to a formula, you have exponential blow up. And why is that? Well, the unbound,
+unbounded fan out that circuits allow means
+you can have shared sub-circuits that don't take
+up any extra space there, just extra output
+wires in the circuit. But they can exponentially
+amplify in a circuit. So imagine you have this
+very, in a formula. So imagine you have
+this circuit takes four inputs and it's doing
+something not very interesting. It's just alternating and taking an end and then taking an
+order and then taking an end. But it's kind of feeding every output from one layer as inputs
+to the next layer. And that means essentially
+you can compute the end of X1 and X2 and
+then use it here and here. And then you use a here where
+you can use the OR of that with this over here and you
+can use it here and here. And so if you convert this
+to an equivalent formula, you end up having to
+make copies, right? So you want the end of X1 and X2 to go to this
+yellow or right here. But you also want it to be an
+input to this green or right here. So you need to have a second copy of the subformula in a formula because you're not allowed to
+have fanout bigger than one. So you can see that the
+number of leaves in this formula tree right here is exponential in the
+depth of that serve it. Because you're copying the same
+sum formula two to the d times. So just a straightforward conversion
+isn't going to work, right? So now a caveat is
+that the formula on the right may not be the
+smallest equivalent formula. And maybe there's
+some other way to get a formula that is
+equivalent to the circuit. But the point is that we don't know the general conversion method from circuits to formulas that
+preserves their size. All right, now the second
+problem is suppose we could get a formula that is
+equivalent to the circuit. That's the right size,
+but it's not C and F. How do we convert general Boolean
+formulas to CNF formulas? Well, even for this, it's not clear how to do it
+without an exponential blowup. So here's a formula which is it looks kind of like it
+might be C and have, it's not, it's actually DNF
+disjunctive normal form, where it's a big or of many
+subformulas that are themselves ends. So that's like the opposite of CNF. And the obvious way to write an equivalent CNF formula
+would be like this. Alright, so this is saying we
+want x1 and y1 to be true, or we want X2 and Y2 to be true, or we want X3 and Y3 to be true. So how could we express that in CNF? Well, essentially the shortest
+way we know of to list every possible clause
+of length m, like this. And that's two to
+the m total clauses. So this is going to be an exponential blow up in the
+size of the original forgot. So night, so that approach
+is not going to work. We would run into trouble in
+either of those conversions. So we're going to give up on
+the obvious way of doing this. But remember, we don't
+need something strong. We don't need to have
+a 3 CNF formula. It's equivalent to the circuit. In other words, it
+doesn't have to give the same output on every input. It doesn't even have to have
+the same set of inputs. We just need that the
+3 CNF formula phi is satisfiable if and
+only if c is satisfiable, they don't have to be equivalent. They don't even have to have
+the same number of inputs. So here's how we're going to do it. We're going to add new input
+variables to the Formula, One for each gate output. So imagine that this is
+your circuit over here. So it's got these inputs. This is just an example,
+but imagine you have these inputs x one, x eight, and then you have this circuit
+with lots of shared subformulas. I will fan out bigger than one. That's doing all this kind of stuff. So we're going to give a
+name to each of those gates, w1 through wn in this example. And each of those gates
+is going to correspond to a new additional input
+to the formula, right? So our formula will
+actually have 18 inputs. In this case, we haven't drawn the formula yet, we'll
+do that in a second. So the next step is for each gate, what we're gonna do is
+add for 3-CNF clauses. And their job is to assert this
+gate is functioning properly. In other words, it is correctly transforming its inputs
+into its output. And we can do this. Output, right, is one of
+the variables, right? So you can think of the gate as having a variable associated to it, or you can think of a wire, but actually that the two
+wires coming out of this one, we'll call them both W2, so that the output of a circuit or a gates in the
+circuit is a variable. So for example, if you had an end, what does it mean to say that
+end is functioning properly? Well, it means that if
+the two inputs are X1, X2, the output is w1. If X1 and X2 are true, that implies the
+output should be true. But in any other case, X1 is true, it's true is false, or they're both false. That implies that the
+output, That's right. But these implications, remember
+an implication statement is just the negation of the
+hypothesis or the conclusion. And the hypothesis here is an N. So when you negate it, You De Morgan through, you get an or. And then the third OR is from the implication and
+you get a cost, right? You get an OR of three literals. So this asserts that the two inputs and the output agree according to the function that the gate is trying to compute. And of course, there's nothing
+special about end here. The truth table for n is apparent in the sense that
+there's a not, not, not. And then the lack of a knot corresponding to the truth
+table of n being 000 001. But you could put nots
+in any order here. You could express XOR, you can express the or, or, just a negation formula. So you do this for every
+single gate in the circuit. So here's just an example
+showing the gate W6 prime, but it's a very sort
+of irregular pattern. So this asserts that every gate
+is being expressed properly, but we need one more
+thing we want to, we want that this thing is satisfiable if and only
+if the circuit is. So we're also simply going to assert that the circuit's output one. And we could do that with a clause that just redundantly says, well, the output W 10 should be true or it should be
+true, or it should be true. I, it should be true. Okay? So if c is satisfiable by some
+assignment to x one direct sake, then phi is satisfiable by assigning the same values to X1 through Xn, the variables and V. And assigning the values to w1 to wn correspond into what those gates would be outputting in the circuit. So conversely, how do
+you make that work? You just observe that if you've
+somehow made this formula true, well in particular
+you've made W 10 true. So this is true up here. And you've assigned some values to all of these variables so that every one of these
+clauses are satisfied. So in other words, the
+only way to make fee true is assign values to each of these intermediates
+so that each one is actually properly computing
+the function it says, which corresponds to some
+assignment down here that satisfying the circuit
+in the first place, because w ten is one.-e 
+
+en-ECS 220 3b_5.2-2 variants of Boolean satisfiability.txt
+
+So we talk a lot about
+Boolean satisfiability. And it's common to
+hear people say, Oh, they Boolean satisfiability
+is NP-complete. But what do we really mean? Like I said, I don't like
+that the textbook calls the CNF satisfiability
+formula just sad because, well, there's one particular
+kind and satisfiability. So the convention
+I've saved is to use SAT when you mean arbitrary
+Boolean formulas, circuit SAT when you mean
+arbitrary Boolean circuits, which are more general, 3-sat
+to mean three CNF formulas. But there's other flavors
+of boolean satisfiability. Or SAT is general Boolean formulas. And a E 3 SAT is one we've seen. This is the question. Is it possible to make an
+arbitrary three CNF formula? Have every single clause
+have two unequal literals. So true and false both
+show up in every clause. 1 and 3 SAT is a sort
+of related variant. So the goal of 1 and 3 SAT is to make exactly one literal
+true in every clause. So it's even more restricted
+than not all equal 3 SAT. And this one is very useful because
+this one is still NP-complete, even when you don't have negations. So even when every literal
+is just an input variable, the problem of making
+exactly one of them true in every clause is NP-Complete. This makes us a particularly
+useful one for reductions as well. Now I want to caution and not
+everything that you might call Boolean satisfiability
+is NP-complete. So 2-SAT we saw is contained in B. So and we saw the algorithm to do that by reduction
+to graph reachability. Dnf SAT. So this is satisfiability with Disjunctive Normal formulas, MY name. Formulas that are a big OR of clauses where each clause
+is an end of literals. Such as you might get out of a
+sum of products construction. If you remember your
+digital design course, it turns out that is actually NP. And I may assign a
+homework problem on this. And some versions of boolean
+satisfiability, they're hard, but they're not NP, complete their hard for
+other complexity classes. So majority sat, ask the question, do at least half of all the
+assignments satisfy the formula? Writes a SAT is the question, is the number of assignments
+that satisfy at least one? Majority sat says within inputs is the number of assignments at
+least two to the n minus one. Sharp SAT is the problem of counting the number of
+satisfying assignments. So this is not a decision problem. This is a search problem if you
+like to look at it that way. So this is the problem to output an integer that says how many
+satisfying assignments are there? Now this is, these
+are both complete for other complexity classes that we probably won't get to in this course. But you can think of
+them as being like the versions of P or NP for the
+kind of problem you're asking her. So Sharpie is like NP where instead of trying to
+figure out is there a witness, you want to know how many
+witnesses are there. That's a Sharpie problem. And so these are at least
+as hard as NP problems. If you could count how many
+satisfying assignments you can see is that it
+is there at least one. But we think actually that
+it's even harder to count the number than indicate, is the number bigger than 0 or not. And then PP is this
+probabilistic class where you're essentially asking if I were to
+assign an assignment at random, would it have probability at
+least 1.5 of satisfying the form? So the kinds of problems or you ask, is there at least a
+probability a half? Those are so-called PPE problem stands for probabilistic
+polynomial-time. Another variant is unique SAT. You want to know, does
+the formula I have exactly one satisfying assignment? So if it had two or more, you'd want to say no or at
+0, you'd want to say now. And this is complete for a
+complexity class called us. And then there's this related one, which is pretty close to unique SAT. It's called unambiguous sat. And this is the problem. You not give an arbitrary
+Boolean formulas, you're promised it so that the
+algorithm doesn't have to, is not required to do
+anything special on formulas, unless the formula has exactly 0
+or one satisfying assignments. So it's an easier task than
+telling is a formula satisfiable? You're promised an advanced if it is, then in fact there's only
+one satisfying assignment. So that might make
+the problem easier. And we don't know if this is NP-Hard, but it is NP-Hard via a
+randomized reduction. So in other words, if
+unambiguous SAT is NP, then that would imply
+that SAT is solvable by a randomized
+polynomial-time algorithm. That's probably correct. And we think that's not true either. So that's pretty strong evidence that unambiguous SAT is
+not contained in NP.-e 
+
+en-ECS 220 3b_5.4-3 Max-Cut.txt
+
+So now on the next section of the textbook called
+completeness as a surprise, which indicates sometimes you gotta be careful thinking
+about this stuff. We open the course talking
+about the difference between Euclidean path and a Hamiltonian path and how they look like
+almost the same problem. But one of them is NP-complete, the other one's solvable
+in polynomial time. So we're going to see that this
+pops up in different contexts. So remember that a cut of a graph is a partition of its state set into
+two disjoint subsets, V1 and V2. Sometimes people talk about the edges between V1 and V2 be in the cut, and that's fine to do that, but you gotta be careful because not all subsets of
+edges define a cut. So for example, if
+we have this graph, we imagine that we
+partition in this way. Intuitively the idea is
+you like you draw a line that separates the one
+side from the other. But you can draw lines
+lots of different ways. So the key idea is that the edges that define
+the cut, in this case, they're not every edge
+of the line crosses, it's every edge that the line
+crosses an odd number of times. So this edge is not
+in the cup because it crosses at once and
+then it crosses it again. Easier just to think about a cut
+me in the subset of vertices. But of course we call it cut
+because what we care about is cutting the edges
+that go across, right? So the, the red highlighted edges
+here are the ones in the cut. And sometimes we talk
+about weighted graphs. And then the weight of a cut is the sum of the weights
+of all the edges. Okay? So there's a problem
+that's fairly common to, to study in an algorithms course. The min-cut problem is given a
+weighted graph and a threshold pay, you want to know, is there a
+cut of g of weight at most k? And this is typically one of the first things you would
+study in an algorithms course. You'll learn about the
+max-flow min-cut theorem. And you'd show that this is npq. So for example, the
+Edmonds-Karp algorithm takes time polynomial
+in the size of G. So max cut is almost
+the same problem. But instead of asking about, do you have a cut,
+a weight at most k, you ask about a kind
+of wait, at least K. And it turns out this
+is NP-Complete, right? So there's little change in the
+direction of the comparison, makes the problem vastly harder. And this shows up in a
+lot of other instances we talked about Euclidean bath
+versus Hamiltonian path. Shortest path can be solved
+by Dykstra's algorithm. But asking about the
+longest simple path in a graph is NP-Complete. We saw 2-SAT is easier than 3 SAT. We saw by reduction to
+graph reachability, we sought to coloring is
+easier than three coloring and coloring is basically just
+telling is the graph bipartite. So a greedy algorithm
+that tries to color it will actually succeed in figuring
+out whether it's so colorable. And remember tiling even
+with only one tile, just a trauma, know that
+you're allowed to rotate. That problem is NP-complete. Well, no matter what kind
+of tile you are allowed, if you only have one tile. But you're not allowed to rotate it. It turns out you can
+solve this problem in polynomial time and
+sometimes I assign elbow. Okay, so back to Max-Cut. Me say this is NP-complete. So how can we prove it? What we're going to prove
+that an even easier version of the Maxcut problem, which is unweighted max cut is NP-complete by reducing that
+not all equal 3 SAT to it. So unweighted Max-Cut,
+you can think of as just the weight of every edge is one. So you're just counting
+what is the number of edges in the maximum cut? And you can, an easy way to
+think about that problem. That'll make it a
+little easier to think about is you're asking the question, can you color V with
+two colors, right? So that represents the partition
+on each side of the cut so that at least K edges have
+endpoints of different colors. So let's think about it that way. We'll draw a graph here. And our reduction on input a 3 CNF formula is going to
+output a graph like that. So if the 3 CNF formula where
+this clause and this clause, we would make these gadgets
+for the clauses and then we would make these
+gadgets for each variable. And if we have n variables and m clauses than the
+number of edges here, if you count through this is
+going to be n plus 6 app. That's just what you get from
+a construction like this, where you have edges between all
+the variables appear between the claws nodes and also between each variable node and clause
+node that have the same literal. So the k that we're going to set, the threshold for how
+many edges should be in the cut is going to be almost that bank is going to be almost
+every edge in the graph. It's only going to be n smaller
+than the total number of edges. So to have a cut of this size, you need almost every
+edge to be included. And we're going to set it up
+so that essentially the only way to get a cut of
+the size to include every single edge except one edge per clause gadget
+inside of the clause gadget. So the idea is that you interpret assigning true and false to the variables as
+coloring in this way. So for example, to
+set a variable true, you make the left node blue, the right note orange,
+and you swap them for making the variable false. And remember you want every edge to connect endpoints of different colors if it's going to be in the cut. So essentially because we're
+only going to leave out one per clause node down air. We need to make sure
+however we color this, every single edge is
+connecting different colors. So the idea is that if x
+is set to be true, right? So, so, so what do we mean by
+this formula is satisfiable. That means there's at least one
+of each value and its literal. So suppose that the two
+values we're going to use, our x is one and z is 0. So great that, that works. There's a little set X, have its node here be colored the opposite
+of its node up here. And we'll have z here because it
+the opposite of its node up here. And then for the third one, we just arbitrarily pick
+one of the two colors. But the notice that there's only
+two colors we're using here. And this is connected
+to this node down here. And Arabia, sorry, we
+don't pick it arbitrarily. We said that the opposite of
+whatever this is upheaval, right? So we want this node and this
+node to be opposite colors. But then that forces this edge to
+connect nodes of the same color, which means we should
+leave it out of the cat. And then similarly, if
+we say not x down here, it gives us our 0 value and y gives us our one
+value in the clause. That means we'll take
+the third one, the z. We'll set it the opposite of the
+variable node it's connected to. So we set it to orange. Because we said it to orange. We can't include this edge in
+the cut to this other orange. So this gives us a way to leave out exactly one edge per clause gadget, which gives us the
+number of edges we need. And that just proves
+one direction that if we can NAPE satisfy the formula, we can color the graph in this way, which gives us our cut
+of the right size. And you have to show
+the other direction. We won't talk about it here. But the key idea is
+to prove that in any, that if there's a cut of size k, there's an NA assignment
+to the formula. And it said, if a clause is
+assigned to all zeros or all ones, and therefore it's
+not an a assignment. Then at most four of
+its six edges, right? So the three internal
+and the three going out to the variables
+can be at any caught. And therefore, you couldn't actually have a cut of size k and neck.-e 
+
+en-ECS 220 3b_5.4-4 Max-2-SAT.txt
+
+Okay, so let's look at another surprising
+phenomenon that can happen, which is that a lot of these combinatorial questions you
+ask for some perfect solution. So for example, in a CNF formula, you need to satisfy every
+single clause in order to satisfy the entire formula. Well, we could relax that and say, Well now we just want to get as many clauses satisfied as possible. Maybe it's not necessary
+to satisfy all of them, but they somehow represent
+some constraints. Like remember our cnf example
+was the, The Dinner Party. We have a bunch of constraints
+we want to satisfy by choosing the right food and drink
+and cheese and so forth. Maybe we, we satisfy ourselves
+and not getting every constraint, but as many of them as possible. So this is an optimization problem. It's not a decision problem, although we can phrase it
+like a decision problem. And the optimization problem
+is given a K CNF formula, find the largest number of
+clauses that can be satisfied. Okay, so trivially, the decision problem K SAT
+is reducible to max case at because you can simply ask whether the largest number of
+clauses that can be satisfied is m, where m is the number of clauses. So if you knew how to get the number, you'd know whether the number
+is the maximum it could be. So you could solve
+the decision problem. Can you satisfy all of them? So in particular, Max 3
+SAT is NP-complete as, as max force at max five set. But remember that to SAT is NP. So if I'm given a two CNF formula, there's only two literals per clause. Many clauses as I want. I can actually figure
+out by reduction to graph reachability whether it's
+possible to satisfy them on. But sort of relax in
+this asking, Well, can I suppose is not
+satisfiable and I want to know what's the largest
+number of them that can be satisfied even in a two CNF formula, that problem is NP-complete. So it's easy to tell if all
+the clauses can be satisfied. But if they cannot, then it's hard
+to find out exactly how many. Maxcut as we just saw is sort
+of another example where the quest for the best solution is harder than the quest
+for a perfect solution. Because if you ask whether the max cut in a graph
+has all the edges, That's equivalent to asking
+whether it's bipartite. And it's easy to tell if
+a graph is bipartite. Okay, So to, to see that
+Max 2 SAT is NP hard. We are going to reduce 3 SAT to it. So the idea is we're given some 3-CNF formula and we
+have these clauses in it. And so for each clause, and again, x, y, and z here are literals. So one of them could be like the
+negation of an input variable. But if I write a negation
+of that negation, so we want to turn this 3 CNF formula into a
+two CNF formula where it's hard to figure out how
+many clauses going to be satisfied or the decision
+version would be, you get an integer
+threshold and you ask, can at least this many
+clauses to be satisfied. So you replace this clause with
+these six too literal clauses. Where on each, where these three iterate over
+every pair of literals, and these three iterate over
+every pair of negated literals. Okay? And the key idea, we're not going to
+talk through it here, but it's, it's just a
+straightforward case analysis. Is that any assignment that
+satisfies exactly three or five, there's any assignment has to satisfy exactly three or five
+of these clauses, depending on whether it NA ie
+satisfies x or y or z, right? There's no way to satisfy
+any number other than that, assuming that you have at least a one in this clause and also at least a 0
+somewhere in this clause. And that's just a
+straightforward case analysis on the six different
+assignments to x, y, and z that can make this have
+one true and one false literal.-e 
+
+en-ECS 220 3c_5.4 Diophantine equations and computationally complex integrals.txt
+
+So another completeness
+as a surprise result. Remember I DO fan tiny equation is an equation where you asked
+for an integer solution. And famously asking this for general multivariate
+polynomials is undecidable. It was proven in the seventies, but we could restrict what
+patent equations we ask about. So a linear diaphragm
+time equation is just a linear equation
+where you're given as input natural numbers a, b, and c. And you want to know, are there natural numbers x and
+y that make this equation true? And it turns out this is NP. Pause and think about
+that. Why is that true? Well, if you think about
+the number theory of this, you would need that the
+greatest common divisor of a and B should also divide c. And that's precisely what the so-called extended
+Euclidean algorithm gives, gives you x and y, such that AX plus BY equals
+their greatest common divisor. So we're not going to get
+into the number theory that, but it is possible. I just want to point
+out that it's possible. So now what have we get a
+little bit more polynomial, but not general polynomials. So instead of x and y are
+just these linear terms, what if we allow one
+of them to be squared? So a quadratic dial phantom
+equation, coefficients a, b, c. We want to know, can you find natural numbers to
+make this quadratic equation true? Turns out this is NP-Complete. So we're not going to
+prove this in class. I just wanted to throw
+it out there again as an example where the
+details sometimes really matter for exactly
+how hard a problem they can make a huge difference. Okay, So we are going to focus
+a little more on this one that takes us a little bit away from the discrete math that we're used to. But I kinda like it because of its connection to some
+other areas of science. So here's a question about integrals
+that we might want to answer. It's just call it cosine integration. So we have a special formula
+that we want to integrate. And it's the product of the
+cosines of a bunch of angles. And in fact, the angles are
+all related by these integers. So your input is basically just the parameters which has these positive integers,
+X1 through Xn. We want to ask, is this
+integral positive or not? Okay, So this is something
+you'd want to figure out. And our key tool for analyzing this will be
+this sort of variant of Euler's famous formula that relates the trigonometric functions
+to the exponential function. So cosine of tau is this
+exponential function of tau involving imaginary numbers. Okay? So first of all, we get, let me just rewrite this above here
+in a more compact form. So we'll just use a product symbol. So we're asking about this integral
+and using this formula here, we can substitute in
+the numerator up here, and then we just factor
+the two denominator out and there's n of them
+multiplied together. So we factor of one
+over two to the n out and we get that this integral
+is this thing, okay? Now, how do we reason about that? Well, it's the product of n terms, each of which is the
+sum of these two. So in general, if you have a
+product of some number of terms, each one of which is just
+a sum of two numbers. In this case, if they're
+say, three terms, but two things being
+summed in each term, you get eight total terms. When you multiply it all
+through one for each way to pick one number or the
+other in the final term. So that means if we want to
+multiply together these n terms, what we get is all 2 to the n different ways to pick either the un-negated or the
+negated exponent, right? These are the same exact number
+except for negative sign up here. So here they are out with
+the negative terms in red. Okay? So now we can group them in each term by which ones have the negative exponent
+and which ones don't. So we can say this is
+simply the sum over all possible subsets a from one to n. And then the subset a represents
+the positive exponents here. So we multiply together all
+the e to the i x j theta terms and then multiply all the e
+to the negative i XJ terms, but sort of color it a
+little bit different there. Okay? But then here is where
+it was useful to use Euler's formula because we're
+multiplying together exponent's, I'm sorry, we're multiplying
+together e raised to some power, some exponent, which amounts to
+adding the exponents together. So we can turn each of these products into a
+sum up in the exponent. So each term in here is just
+e to the I theta and then the sum over all j and a of x
+j minus the sum over all j, not an a of that XJ. Okay? So it's just a bunch of
+algebraic manipulation so far, but the key idea was to use Euler's formula to turn
+this product into a sum. So that's usually
+what it's useful for. Okay, So now just to reminder, this integral up here
+equals this thing. This is what we just derive it. We're almost there. The first
+thing to notice is you can exchange sums and integrals
+because an integral, integral is just kind of like a sum. And now that we have this integral, okay, now we're gonna do a
+little bit of calculus here. So let's think about
+what to do with this. Well, the key thing to
+notice is that if I have the integral from negative pi to
+pi of e to the I theta y. But what do we have here? These y's are integers, right? We're summing up integers here. So Y is going to be some integer. So if we're constrain
+that y is an integer, then if it's 0, right? Then this integral is
+just two pi, right? Because if y is 0, e to
+the 0 is just 1 and we're integrating from negative pi to
+pi of one, so that's just two pi. But if y is anything else, right? No matter what it is, why does, is why determines how rapid
+this frequency changes. But if we're going from Pi, from negative pi to pi, and that's what each,
+it's kinda small print, but each of these are going
+from negative Pi to Pi. Since y is an integer
+worth if it's cosine, we're starting at the top
+and ending at the top. If it's sign, we're starting in
+the middle and ending at all. And all why is telling us is how
+many times do we go up and down. But when you integrate, you know, there's as much above the
+x-axis as there is below. So all of these just integrate to 0. So we get this very sharp
+distinction, and y is an integer, it at 0, you get two pi, otherwise you just get 0 at this. So in other words, this is
+simply a counting problem. No, this, these, the sum of
+these integrals. What is it? Well, it's just two pi times
+this first term times z, where z is just the
+number of subsets. That would make this y term
+right here equal to 0, right? So the number of subsets of a from
+one to n such that the sum of all the numbers indexed
+by something and a equals the sum of all those
+not indexed by something today. Which means what's happening. This integral right here
+that we care about, is greater than 0 if and only if z, this number of subsets
+here is greater than 0. But just saying the number of subsets is greater
+than 0 is the same as saying there exists a
+subset that makes it true. In other words, if there
+exists a subset a, the integer of the possible
+indices into these integers, that makes the sum of them inside the set equal to
+the sum outside the set. But that is exactly the
+integer partitioning problem. Okay, So in fact we didn't
+do a reduction airway. It's kind of a two-way reduction. We just showed that the
+answer to this question, precisely the same as the
+answer to the question. Is it possible to split these
+integers into two sets, each of which have the same sum. And we know that's NP complete. So, so this cosine
+integration problem. Now why do I find this relevant? Well, it's very common, particularly in
+engineering and physics, to assume that integrals for
+sort of relatively simple F, These kinds of functions can be numerically estimated by
+sampling f at many points. It's usually assume
+when you can write down a formula that you
+care about in this form, great, you've solved, you
+completely understand your system. But the NP hardness
+of cosine integration suggests that as long as P
+is not NP, exponentially, many points need to be sampled to get an accurate approximation when
+that f is this product of cosine, which is considered by most people
+who work with these to be a fairly simple sort of
+form of the function. So in other words, it
+cannot be estimated accurately by these means in
+any feasible amount of time, assuming that P is not NP.-e 
+
+en-ECS 220 3c_5.5-1 cellular automata (CA).txt
+
+The last potholes
+study in this chapter, just to show that NP-completeness kinda shows up whether
+you go looking for it or not is one of my favorite models of computation
+called a cellular automata. So cellular automata as defined
+by so-called transition rules. And the idea is that you, you have a bunch of adjacent cells and think of the
+kind of like a Turing machine. But it's going to be a
+slightly different model. And the ones we're looking at here, just two possible
+states, white and black. And the transition rule tells you, if you're a cell like say this one, then based on your color and
+the color of your neighbors, What's going to be your
+color in the next time-step? So this is saying if you're a
+white console or your neighbors, your white in the next time-step, this is Saint of your white and
+your left neighbor is white, but you're right neighbor is black, then you become black
+in the next time-step. And this one says, if you're black, both your neighbors or white, you stay black and so on. There's eight possibilities
+for your neighborhood. And this tells you what to
+do in each of those cases. So locally. So it's unlike a Turing
+machine and that all of the cells are doing this sort of
+computation at the same time. There's not like a tape
+head somewhere there. They're all doing this update. So what happens is you start in some configuration and space is
+kind of going left and right here. But I'm going to show the evolution of this thing by time going down. And the next time step, applying this rule to every
+cell would result in this. And then applying it again and again and again gives you some
+sequence of configurations. So formally, a cellular atomaton is just a function which tells you on input a 3-bit bit string consisting of your state
+and that of your two neighbors. What state, where you go to next
+here I've got caught them 01. And a configuration
+is a longer string. If you have n cells, there's a string of length n. You write f of c for the
+configuration you get by applying f to each cell
+and see, all right, so if this is configuration c, This one is f of c, this is f of f of c. I didn't really say what to
+do at the boundaries here. There's kind of a few
+different ways you can handle at sometimes
+what you do is you assume the left neighbor of this
+cell is this one over here. That's a so-called periodic
+boundary condition. Sometimes you could say
+it shrinks over time. So you could say maybe there is no cell here in the next time-step. Maybe you could say it
+grows over time and just everybody becomes 0
+when they first appear. Sometimes even talk about
+infinite configurations, but we want so standardizing
+the order of the input state. Tuples, meaning like this order here, this is lexicographical
+order for them means that f can be described by an eight-bit string of
+just the outputs, right? So I didn't actually have to write
+the top three here if you know, I'm going to give them in that order. I can specify by just saying, what are the eight bits to right ear at top for time
+t plus one in order. And so the above is
+the string 01111000, which is 30th, and the lexicographical order
+of 0, 1 to the eighth. So this one actually has a
+name, it's called rule third, it's the 30th site. Well, you can list, okay, you could consider 2D
+cellular automata as well. And with the most local neighborhood you can get yourself and
+your immediate neighbors. You could say, well, your neighbors
+are your eight neighbors edu. And again, you have to describe
+based on their colors, what color will you become Next. Now, this is not really feasible
+to list all of them, right? Because there's nine
+total states here, so we'd have 512 rules to list, but we can list the particular
+ones I'm listing here succinctly. And it's called the
+Game of Life, right? And the way the game
+of life works is by this sort of abbreviated summary, which is, you say, black is alive and white is dead. So if I'm alive, in other words, if I'm a black cell, then if either two or three of
+my neighbors are also alive, then I stay alive. But otherwise I die either of
+loneliness because there's not enough neighbors or
+overcrowding because there's two. Now the other cases I'm
+dead, I'm a white cell. How do I become alive? Will live exactly three of
+my neighbors are alive. I become a lot, right? So there's just enough of
+them to bring me to live. Otherwise I stated. So that's the so-called Game of Life. And people get pretty obsessed
+with this one because it's, it's kinda crazy what
+these simple rules can do. So Here's a very simple thing. It's not very exciting. A block
+queue examine the rule here. If you had these four black and
+everybody around them white, this will just stay fixed to keep updating it, they just stay black. Here's another fixed point That's a little better called a
+beehive for some reason. So you update does it doesn't change. More interesting is there
+are some ones that chain, so you get three in a row and
+everyone around them as white, don't change their orientation, but then they'll
+immediately change back. Remember, it's like it's kind of
+a symmetric rule geometrically. Here's another little more
+interesting one called a pulsar. These change but they
+kind of stay in place. This is something
+called a glider because this one every four transitions and actually moves down into the left and just keeps
+repeating like this. And then here is a little bit more complicated one
+called a spaceship. And it just moves in step diagonally. It just moves in one direction. And they're symmetric
+versions of all of these, because the rules here are
+geometrically somewhat symmetric. Okay, So let's just see an example of a particular configuration
+of this thing in action. So it's going to start
+with a spaceship plot for this thing is doing.
+That's what's going to happen. And now in this video, it's inverted. So now alive as white and black. So here is a particular
+configuration of lunches spaceships. And remember they're all
+going to move to the last. And then we're going to zoom
+out and seasonal what's going? Okay, So what happened? Well, essentially this is
+a video showing eyelid. The Game of Life is what we
+call intrinsically universals, where there's not some work we're going to cover on the
+homework or anything, but it has been a pretty
+important concept. But one of my research papers
+and the idea is that the Game of Life is able to simulate any
+other cellular atomaton, any 2D cellular simulation. As you saw in the video, is that there's these very
+large blocks of cells, each of which represents a single
+cell and what you're simulating. And so the Game of Life can
+simulate any 2D cellular automaton, including the game of life. And that's what's being shown here. But then you can simulate itself.-e 
+
+en-ECS 220 3c_5.5-2 CA-Predecessor.txt
+
+So here's a problem that sort of related to predicting something about the behavior of
+the cellular atomaton. And the problem is given
+a cellular automaton, which again is given
+by a function mapping in its neighborhood
+states to the next state. And here we're going to
+relax the problem a bit. We're going to allow
+the cellular atomaton to have more than two states. So Q is it states that it
+could be bigger than two. And F is some function describing how to turn your
+current set of neighboring states, including your own
+into your new state. And you're given a configuration
+C and you want to know, does C have a predecessor? In other words, is there
+some other configuration P, such that if that wherever
+the configuration, the next one would be the
+configuration C, we're given as input. So if no predecessor P exists, then c is called a so-called
+Garden of Eden configuration. So for example, in the Game of Life, this is a Garden of Eden
+configuration, which is not obvious, but this was proven that there is no configuration that if you update at once would
+turn into this one. So the 1D version of this problem is contained in P can be
+solved as not obvious, there's an exponential number of potential configurations you
+might think you have to check. But with some clever
+dynamic programming, you don't have to check them all. And sometimes I assign
+that as homework. But in 2D, this problem is NP-complete and that's
+a whole show right now. And again, this is why I like having a big variety of problems
+to choose from that are NP-complete is you
+don't always have to reduce 3 SAT or NAT set something. Cas are very geometric
+as our timing problems. And so the way the
+textbook does this proof is by showing that
+trauma know Thailand, which we said was NP-complete,
+we didn't prove it. But the, the version
+where you only get one tile and it's that
+little L-shaped thing. This reduces in polynomial
+time to see a predecessor. So what we're going to have
+many states in the CA, but our configuration we give as
+input will have only two of them, called R&B for region and background. And the idea is that in
+the tiling problem work, this is going to correspond to
+the region we want to tile. So the tiling problem we're given, we're not given tiles
+because the trauma know tiling is just you're only
+allowed this triangle. But we are given a region. So imagine the region we were given
+look like what's in gray here. Then the CA configuration
+of output will be this configuration that has this region set to a
+special state here. And we're going to
+have an additional CA, state for each Trump that indicates its orientation
+and relative position. So for example, if a trauma
+0 is oriented like this, then the middle one will
+correspond to see a state a, the right will correspond
+to see a state B, but then that same part of the trauma will be F when it's
+oriented differently. So what the transition function that we designed for the CA is checking, is essentially consistency. So the idea is, how would we make this state? Well, we would make it
+if we were able to tie all the region with rotated versions of this tile with these states
+set properly, right? And that the whole point
+of the transition function is that it's just
+going to check, okay, given the orientation
+that my state claims, the trauma nose and then again, it can look, right. Every state can see it's whole neighborhood
+around it of radius one. So we can see all of them. You can see far enough to see the other two parts of the
+trauma know so for instance, if I'm in state age, it means I know that
+I'm part of a trauma. Know that I'm in the middle and there's a G above me and there's an eye to the right. So I should check is is if I'm age, is there actually a G above
+me and an eye to the right? Similarly, if I'm a C, I should check is there and a above me and a B above and to the right. So you check for that
+and you also check some other little local
+consistency conditions. And if they're all
+met, you say Great. All of us who are in trauma knows we're going to
+immediately change to our and any of us who are not in trauma has an a or
+b. We're just going to state B. And if anybody finds
+an inconsistency, they won't change to our. So only if you can actually tile this region in this way with type tiles that are
+properly oriented, where the transition function actually get you to
+this configuration.-e 
+

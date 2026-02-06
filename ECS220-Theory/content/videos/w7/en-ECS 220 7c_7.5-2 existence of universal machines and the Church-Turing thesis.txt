@@ -1,0 +1,92 @@
+All right, so one
+might argue with this, there's a lot of interesting
+theorems and entering the paper, but I included in the proof that the halting problem is not decidable. But I'm going to call this the most important theorem in the
+theory of computing. And it, namely that there is a
+universal Turing machine meeting. There's a Turing machine
+that oninput Emax, where m is a description of a
+Turing machine acts as a string. We can simulate hem events. And part of what made that, even though kind of a
+universal functions were known to the people working on the
+partial recursive functions. Part of what was important
+about this is that it was very straightforward to prove
+this somewhat tedious. You actually write down
+all the transitions of a universal machine and yeah, I get, that gets a little tedious. But once you wrap your
+head around the concept, it's very straightforward
+to see that, that you could write a
+machine that would just carry out simulating the transitions
+of another machine. Much more easy to see then
+with these other models, like the MMU recursive
+functions and girdle, after seeing this, identified
+this ease of simulation. And therefore the ease
+with which you can prove the equivalence of other models or use diagonalization to show limitations on the model
+has a kind of miracle. Now, part of what is so
+convincing about the model as well is that it's extremely robust to choices in
+the definition and terrain made. Some noted this that you can add one-way or
+two-way infinite tapes. You could have many
+tapes or just one. You can have two-dimensional tapes, multiple heads on a tape. All of these are kinds
+of machines that can easily simulate each other. And so it's very
+convincing that, okay, we stumbled on a fundamental
+model here because it's not like it's not going to shatter if
+we make one little change to it. Okay, so we started
+off this whole chapter talking about great
+unifications in science. So This was the great unification for computation that
+happened in 1936, which is that a function is
+computable by a Turing machine if and only if it's computable by any of these
+other competing models that, that people are talking about. Now the rightmost equivalences
+shown by church and cleaning. It was published in April 1936. Terrain submitted his paper. He heard about the problem. He knew nothing about what
+anybody was doing over in the US. So he completely independently
+submitted his paper, proceedings of the London
+Mathematical Society and may 1936. While it was under review, he learned about boot this
+work of church and cleaning. And he has sold an added approve of this leftmost equivalence to
+the appendix of the paper. So he showed turing machines can simulate these and these can
+simulate target machines. And then it was published
+in 19 November 1936. And I just kinda want to draw your attention to the difference
+between these dates here. Note that the first
+transatlantic phone service was established in 1927. And yet somehow they were able
+to publish journal paper is approximately eight times faster than we can today with the benefit. So I've never quite understood that. Now the skeptics, the
+people who were skeptical of lambda calculus,
+girdle, and posts, they were immediately
+convinced by Turing's paper, in particular by his
+physical arguments that this model captured
+general computation. This idea of talking about what
+does a person do when they sit down to do a mathematical
+computation. They were very convinced that, yes, this captures anything you
+could possibly mean by that. And it is straightforward using modern sort of
+technology to show that all of these are equivalent
+to programmability in flute or your favorite
+programming language like Python. The so-called Church-Turing
+thesis captures this intuition. And it's the statement that the universal Turing
+machine can simulate any physical computing device that
+can be finite lead described, where each step accesses and modifies a finite
+amount of information. Okay, so I call this a thesis and not a theorem because this is not a
+mathematical statement. In the middle here I talk about
+physical computing device. What exactly does that mean? It means something you can
+build in our physical universe. And because that's not
+precisely defined, neither does is it precisely defined. What it means for a step
+to access and modify it? Finite and information. So it's not a mathematical statement, it's a physical law, right? Just like any other physical law, the laws of thermodynamics. So it's open to refutation
+in principle, right? We can't prove this
+statement because we can't formalize what are physical
+devices in the universe. But it's, we're fairly
+convinced it's true. So by analogy, most attempts to build a perpetual motion
+machine which would violate the second law
+of thermodynamics. Well, they fail because they're actually increasing
+entropy somewhere. That's not being
+explicitly model by the, the description of the machine. So similarly, when you
+see people attempting to refute the Church-Turing thesis
+does happen occasionally. It's usually cracked pots. Once in a while, It's
+respected scientists. But most attempts to
+do this to describe a so-called super
+terrain physical device. And there's this whole field
+called hyper computation. This is what people think about and actually have conferences
+on this stuff. Well, most of them, what they
+do is they kinda fail for an analogous reason to try to
+build a perpetual motion machine, which is that they smuggle somewhere in their definition
+and infinite description. So for example, a neural net where
+you imagine that the weights, rather than being 64 bit floating point numbers,
+infinite precision. And you'll see people publishing
+papers where they imagined o, if you can only program one of
+the weights in a neural net to encode in its binary
+expansion, the halting problem. We'll then that neural net could, could do sir, Super tearing things. But, you know, the statement is about physical the meeting
+devices we can actually build. We don't have to program
+like a resistor to have its resistance encode
+the halting problem. We just have to get a finite
+amount of information and do it. And so that's what the thesis.

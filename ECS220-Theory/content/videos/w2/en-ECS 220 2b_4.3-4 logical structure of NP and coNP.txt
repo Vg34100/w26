@@ -1,0 +1,48 @@
+Okay, So here's yet another slightly different
+way to characterize NP. This is the class of
+Boolean property is, that's the textbooks term. I would rather use
+the word predicate, but it just means a value
+that can be true or false. The class of properties of
+the form a of x, right? So on input x a of x
+is a Boolean value. It's equal to the following. The value of there exists a W of the appropriate size such
+that Av of x w is true, where AAV is itself a
+property or a predicate in P and W is polynomial in x. So in other words, if g is a graph, say than H of G is the property that g is Hamiltonian will then AHV, the verification property of GP is the polynomial time
+decidable property that P is a Hamiltonian path in G. This is just a slightly
+different rephrasing of stuff we've said already. But this definition shows the
+asymmetry between yes and no. So remember De Morgan's law. So the negation of an existence
+statement is for all statement. So for example, we have this. The graph G is not Hamiltonian
+if and only if not H of G once. That's just the definition of age. And that's, let's just substitute
+this equivalence with HB. That's true if it's not
+the case that there exists a path P that makes HV of GP true. And then use De Morgan's law to
+pass this not through the exists. So it's not that there exists a path if and only if for all paths P, it's not the case that
+AHV, the GP evil. In other words, for all paths B, p is not a Hamiltonian path in G. So the very sort of
+drawn out way to just express the intuition
+behind De Morgan's law. So in other words, NP is
+defined by exist statements. But the negation of an egg exist
+statement is a for all statement. So it's not necessarily
+an NP property. So we can talk about a complexity class capturing
+for all statements. And that's called co-NP. That's the for all version of NP. So this is the class of problems
+whose compliments or an NP. Now be very careful
+here we're not saying co-NP is the complement of NP. Np is a class of decision problems. They're all decidable. They all have some polynomial-time
+algorithm defining them. The complement is every
+single other language including a bunch of
+undecidable problems. So go and he's not the compliment of, AND you gotta go one further
+down into the set hierarchy. It's the set of languages, each of which is itself
+a set of strings. And those sets each have a
+complement sac that is in NP. So another way of stating
+it does these are the problems for which the no
+instances have a short proof. So these are properties
+of the form a of x equals for all w b of x, w of wounds, where b is a
+polynomial time problem. So what I caution CA and D is
+not the compliment of entity. Okay? So here's an observation. If P equals NP, then NB equals co-NP. Why? You should pause to think
+about that for a sec. Right? And the answer is that, well, COPI is just p, right? If, if a decision problem is NP, then so is its compliment. You can just take a regular algorithm for it and swap the
+yes and no answers. And now you have an algorithm
+for the compliment. So P were equal to NP, then they'd both be equal
+to copy, which would be go. So here's an interesting question. If n equals co-NP, does that mean P equals NP? So it turns out we don't know, it's possible that np and go and
+D could actually be the same. And yet neither is equal to p. We think that's
+probably not the case, but it is an interesting question. So some problems are not obviously
+in either envy or co-NP. And one example is this problem. Given a graph is it's
+an a and a threshold k is its largest independent
+set of size exactly k, right? There's no obvious proof
+when the answer is yes, and there's also no obvious
+proof for the answer's no.

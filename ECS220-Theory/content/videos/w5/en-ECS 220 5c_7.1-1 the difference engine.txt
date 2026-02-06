@@ -1,0 +1,137 @@
+So we're going to go back
+right now to the middle 1800s. And Charles Babbage was checking astronomical tables and finding a whole lot of errors
+and calculation. And this is in the midst of the Industrial Revolution
+and he reported they said that he wished these calculations
+had been executed by steam. Meeting, had been executed
+automatically by some machine. That if it was designed
+right, wouldn't make errors. And then he thought, okay, maybe I'll try to
+build such a machine. And it wasn't originally intended
+to be a general purpose machine. It was based on the following
+principle that a lot of these functions that you want to evaluate in certain
+physical sciences, for example, astronomy, have what's called a
+Taylor series expansion. As you may remember
+this from calculus, It's essentially the idea that certain well-behaved functions at certain well-behaved points can be expressed as an infinite
+sum of polynomials that converge to the
+value of the function. So f can be much more
+general than a polynomial. But if you look at it and its
+derivative and second derivative, third derivative,
+derivative and so forth. At this point a, so that's
+just an individual number. And then you plug it
+into this expression, which is going to end
+up being a polynomial because this will
+just be some number, this will just be some number,
+this will just be some number. And then you multiply it
+by this polynomial term, x minus a raised to
+some integer power. For well-behaved functions and
+well-being points, this converges. And for some of them it
+converges pretty rapidly. So cosine of x, for example, which
+is not a polynomial, you just take the so-called
+fourth order Taylor expansion, which is first few terms, which are just these. And within this interval
+0 to Pi to that, this is within 0.02
+of the actual cosine. So it can get pretty close. So if you're happy with approximations, Taylor series is a
+great way to do it. And what do you have to do
+to evaluate a Taylor series truncated to some fixed number of first terms while
+it's a polynomial. But how are you going to evaluate
+polynomials automatically, they seem to involve doing
+some difficult things like multiplying and
+exponentiating and so forth. So Babbage wanted to use this thing called the
+method of finite differences. So the key observations, if you have a polynomial and
+you look at its value on, on two points that
+are one apart, right? So we imagined p of
+x and p of x plus 1. If we express what that
+is as a function of x, call that delta p of x. It's something like that. Like a discrete derivative
+with changeable one. That is a degree n
+minus one polynomial. So for example, the
+difference between x cubed plus 1 and x plus 1 cubed plus 1. This will expand out to have just an x cubed term
+that cancels this. And the remaining terms
+are all x-squared or less. So you can imagine you have
+some polynomial like this, but you look at delta of that polynomial and its
+degree one smaller, it's got an x squared delta of that thing is just linear and
+delta that is just a constant. So whatever is the degree, you get, this series of polynomials
+that are smaller degree 2, you just get down to a constant. And so you imagine if you want to evaluate this polynomial
+at various points, I'm just showing integers here, but it could be done with
+floating point numbers as well. Well, you have sort of a base case, which is that to evaluate them on 0, you just look at the
+constant term, right? So for 0 it's one here. This one has two, this one
+is 10, this one is six, and this one there's
+only a constant terms and in fact it's six everywhere. So this looks kind of like
+dynamic programming, right? You have this sort of base case here. And now the idea is we can
+fill in all the rest of these based just on what we've
+calculated so far. So if we rewrite this and
+substitute x equals 0, we get that if we add P 0, which is this, and delta p, which is this, we get p1. Do we just add those two integers? And then if we add delta p 0 and delta delta P 0
+will get delta P1, right? So we add 10 to 12, we add 10 and 6 to get 16. And then to get the next column. Well, it's the same thing with
+x equals 1 P1 plus delta P1, P2, and so on and so on. And we can fill in this whole table
+just by adding numbers, right? It's significantly simpler
+computation to do. And remember that in turn, if we have a large enough degree
+polynomial can approximate very closely just about any kind of function that you
+encounter in the sciences. So what Babbage did was to build a machine based on this
+principle that could, that could do these
+additions of evaluating these polynomials in order to
+evaluate arbitrary function. So you just had to come up with the Taylor series
+expansion of the function, turn it into those polynomials,
+decreasing by degrees. And then program the
+polynomial by giving the coefficients by turning
+these little rotors here. So this is a fairly
+detailed description of how this thing works at this address. If you're curious, I
+encourage you to watch that. And I think there's one of these actually somewhere in Silicon Valley. I always wanted to go see. I've never made the trip,
+but I think somebody has a replica of this thing
+somewhere in Silicon Valley, but there's a few replicas of these in this video we're going
+to watch right now, shows an Australian scientist
+talking about a replica of the data. The NDP find that because
+they want to keep upon by the engine behind me is Babbage's Difference Engine number
+2 designed by Charles Babbage, an English mathematician who is also known as the
+first computer pioneer. Diabetes designed this
+machine 247, 249. Babbage, as we know, did not succeed in completing any of his own engines in their
+entirety. So there's By bigger engine, this is the first physical realization
+of any of the baby, just complete designs in the metals. The engine itself weighs five tons. It consists of 8 thousand
+parts made of bronze, cast iron and steel. And it measures 11 foot
+long and eight-foot high. It's operated by cranking a handle. What it does is it
+calculates and tabulates the value of any
+second-order polynomial. The class of mathematical
+expression is 231 decimal places. It only calculates that
+with unerring accuracy. It also prints and inked
+hard copy as a record of the results and also produces what
+are called stereotype plates. That is, it impresses the results
+in soft material plus the, in this instance, you can make
+it printing like automatically. And the purpose of all this was to eliminate the risk of human error. In the calculation and production
+of printed mathematical tables. The machine is operated
+by cranking this handle. So you turn this handle and
+each cycle of the engine, the machine produces one result. So you just keep cranking your set the initial conditions
+up on the figure wheels, on the numbered wheels,
+you turn the handle. What happens when you turn the
+handle is it drives this cam stack. And if you'd like, this
+is the micro program. This is the device that orchestrates
+all the internal motions of the machine to get it to form the repeated additions
+that are needed for them. The method of differences, which
+is the principle it is using. So you turn the handle in terms these camps tax the
+28 separate camps. And that's what determines
+the internal timing and the orchestration of all the mechanical movements
+of the whole machine. So that'll be like the
+guts of the machine, the internal Michael program. And what the machine does is it adds a three digit
+number on one column, and it progresses through
+the machine adding from column to column to column
+and the tabular value, the result ends up on the
+very last column, 31 digits. So you crank the handle, each cycle of the engine, that's four turns of the handle, it cyclically engine produces
+the next result on this column. So the end process, the end product of that whole process is 31 digit number on this column. So we take the 31 digit result from the end of the machine
+at the end of the cycle, and it is automatically
+transferred to this apparatus, which is the output apparatus.
+It does two things. It prints on hard copy In Ink, taught copy, 31 digit result as a checking copy so that you know
+actually what you've canceled. At the same time it impresses results on soft material
+in these traits. So inside there there are things
+called stereotype punches, which are number wheeled, which
+are lowered into the tray, the trade and moves, it lowers again. And so the lines build up. Firstly, it's on display here at the Computer History
+Museum for one year. It's aren't alone from
+the owner of the machine, which is Nathan move old, who commissioned the machine. It paid for the machine to be built. And so it's here for you and then it goes into his
+private collection. What we will do with it is
+demonstrated for people, will work on it's own
+research machines, so it will be adjusted and worked on. We get experience about
+how the thing operates. Also part of the reason now that
+it is here and it does work. And we have for the first
+time that Babbage engine, that is to do some
+research into, say, was it a practical proposition
+if babies had one, could they have successfully
+produce tables? Babbage was not an
+impractical dreamer. This machine works as
+he intended to work. What's the entire enterprise of using the infallibility of machinery
+to produce printed tables. Was it realistic? Could
+it have been done? And for the first time in history, we're in a position to
+actually answer that question.

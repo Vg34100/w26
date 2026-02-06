@@ -1,0 +1,79 @@
+So we've alluded to
+this halting problem that terrain showed with undecidable. Let's define it a bit more formally. Now, it, I'd said it's about
+detecting whether programs halt. Well, programs take inputs sometimes. So what's the input? Now there's a bunch of variance
+or the halting problem, and we'll look at some
+of them on the homework. But for now, let's define
+the halting problem. The one is language we call halting to be the one that's
+given two inputs, a program P and an input X to P. So an input in the
+format that P expects. And the question is, will p.sit
+hold when we run it on input x? Or put another way, if p has some notion of
+output when it holds, is the output well-defined? Now we haven't defined
+this class yet, so I'll say deck is the
+class of decidable problem, the decision problems
+that are decidable by some program with no bounds whatsoever on the time
+or the memory you need. So you just need that holds with an answer eventually on
+all input instances. And this is terrains famous
+theorem that halting is not indicate is not a
+decidable problems. No algorithm can figure this out. So what default in Word a cycle? Alright, suppose that weren't true and there was this
+program called halts. So that for every program P
+and input string x to be, if you called halts
+with input p and x, it would tell you exactly
+whether Px holds. Well, this would be
+handy for debugging. Of course, compilers could
+warn about infinite loops, but they will have much more
+profound uses done this actually consider calling halts p.sit
+with just a garbage input. This is going to be a program
+that just ignores it simpler. So just give it the
+empty string as input, where P is this program. But pause and think about
+what this program does. If it ever halts, it's going to resolve a
+major mathematical problem. So I just look at it for a second
+and figure out what it does. And we can talk about it in
+lecture time if you want. Okay, so we're going to prove now that halting is not decidable
+and we're going to use terrains. Original proof though phrased
+a little bit differently. So I like doing this isn't
+proof by contradiction. So let's suppose for the
+sake of contradiction that the program halts exists. I like the proof by contradiction
+because it gives us this concrete program halts
+that we can get our hands on. We can use it. We can call it as a subroutine
+and other programs, right? So if this thing existed, we could write this very
+simple program that calls Paul to the subroutine. It's called Catch-22. And it expects its
+input to be a program, not a program and an input, just a program. It's
+only got one input. And it calls halts, but
+halts takes two inputs. The first one is supposed
+to be a program. It gives P as in, but, but the second one and expects a string of the kind
+you'd get to p. Well, we're just going to
+give the source code of P itself as the second. And so we're asking, if you were to run p in the string input you gave it is
+the source code of p itself. What would it do? What a halt. And what catch-22 will
+do with B is that if p would halt when
+given itself as input, catch-22 is going to do the opposite. It'll loop forever. But if P will not halt
+on input P and halts can tell us that then catch-22
+will immediately return. So it will hold. So now here's the question. What's going to happen if we run
+catch-22 in the input we give it is the source code for
+the program catch-22 itself. So let's think about
+what it's gonna do. It's going to ask the halts program, would catch-22 halt
+with Catch-22 as input. If so, loop forever, otherwise, ALT, so Catch-22 on its own, it on the input itself halts if and only if it does novels
+a contradiction. So what's wrong with this? Well, if faults existed, we could easily write this program. So it must be that the halts
+program does not exist. In other words, halting
+is not decidable. The halting problem is not decidable. So it may not look exactly like it, but this is yet another example
+of the diagonalization technique. So one way to see that is
+to consider that we can list on the left side here all the possible programs where we
+might want to ask do they hold? And up here we can list all the possible inputs we
+might give to those programs. And we ask, Does it
+hold on those inputs? And for this proof, the only kinds of inputs we're actually going to consider are going
+to be the kind that look like source coder programs. So you could imagine there's a lot of other binary strings
+that don't look like source coder programs will just filter only down
+to the ones that do. So. Now, you know the, the rows and columns here
+are kind of the same type. And so we fill in this infinite table where I'm not saying there's
+an algorithm to do, I'm just saying that this
+table exists mathematically same for each program
+and each input to it. That's the source code
+or some other program. Would it, with this program
+halt with this input? Maybe this one never halts. Maybe this one always holds, and the others kind kinda
+depend on their input. So catch-22 is this program, so it should be some row
+of this table, right? It has some, if it exists, it has some behavior on
+every possible input, including the inputs
+that are programs. But we've defined it to be the exact opposite the
+diagonal of this table. So it cannot actually be one of the rows of the table or
+you get a contradiction. When you, when you
+look at the diagonal element that it intersects. But since it's a valid program, if halts exist, halts
+doesn't exist either.

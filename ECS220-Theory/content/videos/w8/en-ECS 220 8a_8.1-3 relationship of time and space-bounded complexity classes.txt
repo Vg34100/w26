@@ -1,0 +1,97 @@
+Let's think a bit
+now about time-bound versus space balance and how do these two inner
+play in one computation? So first, an assumption of any reasonable model
+we're going to make here is certainly true
+of Turing machines, is that a program can allocate at most a constant number of
+bits per time-step, right? So now sometimes you'll
+have a single line of code like malloc that will appear to allocate whole bunch
+of memory at once. But that's only gives you not see the operating system code
+executing the dig down into it. On average, it, it might have to clear out that space for you to do. And if it's clearing out n bits
+for you to use, then it's, it's going to require
+O of n time to do that with this kind of more
+straightforward with a Turing machine or what does
+it mean to allocate memory? It just means you move your
+tape head further right, than you've ever moved it before, but that only gets you
+one more tape cell. So so with the definition of space
+just be number of tape cells, it's clear that you
+can't use more space on a Turing machine and then you have time available to move the tape. But we're just going
+to assume that this is true of any of our models. And so that means whatever
+is your space bound, it's gotta be less than your
+time-bound, but within a constant. So stated in the set
+theoretic notation, time of T is a subset of space of t. In other words, if you can
+solve a problem in o of t time, you can also solve IT and OT space, just because that algorithm can't be used in more than OT
+space when it runs. So in particular, P is
+a subset of P space. Now, let's go the other way. Can we go from knowing how much space a computation uses to putting a
+bound on how much time it uses. Well, if it uses all of
+us and bits of memory, all right, So SME space, then it has at most two to the 0
+of S and possible configurations that it could visit to
+what the configuration. Well, again, this is where
+Turing machines come in handy. Most of the, the bulk of counting how big that configuration
+is is the tape content. You need to know what
+state the Turing machine is where the tape that, but it's mostly in that string. That's the take content. And what's the length of that string? Well, the biggest it
+gets is the space usage. That's the definition
+of the space usage. So how many strings of
+length 0 lesson can you add? Well, it's like, like
+two to the 0 of S. And now you might
+have a different base here than two if it's a
+bigger tape alphabet, but again, the big O up here
+would, would take care of that. So, okay, So it has at most exponentially more
+configurations than ESA, them that I can run through. Now, imagine that ever repeats a configuration will
+then it'll run forever. But in this chapter we're only
+going to be focusing on deciders, on total programs that
+halt and all their inputs. So conversely, if a program
+halts on all its inputs, it can never repeat a configuration
+or else it would run forever. So it must have at
+most two to the o of n steps that it takes to the time is at most
+exponential in the space. So we get this for general space
+bounded complexity classes. Space of S, meaning using o of s in beds is contained in time
+of two to though of S. In other words, if you can
+solve a problem with OS space, you can solve it with
+two to the o of n time. So in particular, that means
+l is a subset of B space. Problem solvable with
+logarithmic space necessarily take only polynomial time to
+avoid repeating configurations. And similarly, any
+polynomial space bounded computation is naturally going
+to use at most exponential time. So that's time versus space. In the deterministic setting. We can think about
+nondeterministic time as well, studied a lot and compare
+that to deterministic space. So recall that n time of T is
+contained in time of two to the 0 t. For example, NP is contained in x. This was our observation that you can solve problems in NP by exhaustive search all
+the possible witnesses. That's the basis of
+this kind of result. You to search over all
+the possible witnesses using the verifier characterization or nondeterministic bets using the non-deterministic
+computation variant. So here is that algorithm
+and we analyze this. We showed it takes at
+most two to the 0 t time. So let's take the same algorithm
+and analyze its space complexity. So the length of the witness that your w that
+you're passing into the verifier here is at most the amount of time
+that the verifier uses, right? If it's actually
+nontrivial to using its, its witness, then it's going
+to run for a length of time, at least that so the witness length can't be too much bigger than T or I can't be any bigger than T and N.
+And the space usage of the can't be any bigger than its time by the
+same argument we gave before, which is that to allocate new memory, you need time, so you can't use
+more space than you're using time. So putting those two together, we actually have that. If you can do something in non-deterministic time
+t, naturally, you can. By applying this algorithm, this algorithm can
+solve it in space OFT. So going to polynomial time, we get the NP is contained
+in T space, right? Just this algorithm naturally
+uses at most polynomial space. So putting all those together, these various complexity
+class that we've looked at, we have whatever you can
+do in logarithmic space, you can do in polynomial time. And if you can do that
+deterministically, you can do it non-deterministically
+in polynomial time. And if you can do that,
+right, or in other words, you can verify in polynomial time. And and if you can verify
+in polynomial time, you can search all the
+possible witnesses and only polynomial space. And that naturally takes at most exponential time to avoid
+repeating a configuration. If you can do that deterministically, you can do it non-deterministically
+and, and so on. And that takes at most
+exponential space. So we have these containment, some of them were not sure
+whether their proper or not, but scanning farther out, we do know that getting from
+P to X is a proper container. The time hierarchy
+theorem says there's things solvable in exponential time, but not polynomial time. We also have a non-deterministic
+variant of that. So getting from NP to NXP, you have to add some new problems. That's the non-deterministic
+time hierarchy there. Now we won't prove it, but there
+is a space hierarchy theorem. And even for Turing machines,
+holds quite tightly. Where if S1 is little o of
+s To write by any amount, then you can solve more
+problems of space S2, s1, which means we can come
+back up here and say L and P space and exponential space, three space classes up here are
+each properly contained in Linux.

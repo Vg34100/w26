@@ -1,0 +1,7 @@
+Read the following paper: "A Nested Model for Visualization Design and Validation. Tamara Munzner. InfoVis 2009." [pdf]
+
+Write a short summary of the paper (< 300 words). Answer the following two questions:
+
+    What are the differences between immediate and down-stream validation approaches?
+    Describe what this works model offers in contrast to previous models. What are the limitations or issues with the paper's model?
+    What is the value of making clear distinctions between each layer?

@@ -1,0 +1,751 @@
+Below is one complete coding manual that follows the required structure and is grounded in your provided RDD on “Touch Grass Ratio (TGR)” and linguistic groundedness.
+
+---
+
+## 1. Purpose and Scope
+
+### Purpose
+
+This coding manual measures **sentence-level linguistic groundedness** in terms of how strongly a sentence is tied to **tangible, sensorimotor reality** versus **abstract, detached, or self-referential language**. It operationalizes key parts of the TGR framework described in the RDD.
+
+### What it is NOT meant to measure
+
+* Truth, factual accuracy, or whether a claim is correct.
+* Political bias, moral quality, or persuasiveness.
+* Writing quality in general (style, grammar, beauty).
+
+### Domain boundary (in-scope vs out-of-scope)
+
+**In-scope texts**:
+
+* Any English sentence where groundedness can be assessed via word choice and structure (concrete vs abstract terms, sensory/action cues, specificity, nominalizations, jargon, referential clarity).
+
+**Out-of-scope**:
+
+* Non-English sentences (unless your project explicitly adds another language norm set).
+* Purely non-linguistic content (only an image, only a URL, only emojis).
+* Corrupted text where meaning cannot be recovered.
+
+---
+
+## 2. Core Concepts and Construct Map
+
+This manual uses six constructs implied by the RDD.
+
+### Construct A: Concreteness / Tangibility
+
+**Concept**: How much the sentence refers to **perceivable entities** (things you can sense) vs intangible ideas.
+**Evidence**: Concrete nouns (rock, door, soup), physical attributes (warm, sticky), direct sensory words.
+
+### Construct B: Sensorimotor Strength
+
+**Concept**: Strength of ties to **specific senses or actions** (visual, haptic, smell, taste, movement).
+**Evidence**: Words tied to seeing/hearing/touching/tasting/smelling, body action (grab, step, chew).
+
+### Construct C: Specificity (Ladder of Abstraction)
+
+**Concept**: How far the sentence “steps down” from general categories to **specific, identifiable details**.
+**Evidence**: Named items, quantities, times, locations, step-by-step actions, concrete constraints.
+
+### Construct D: Nominalization (Process-to-Thing shift)
+
+**Concept**: Turning actions/qualities into nouns that hide “who did what” and reduce physical clarity.
+**Evidence**: Nouns like “implementation,” “success,” “relationship,” “decision,” especially when replacing a clear action.
+
+### Construct E: Jargon Density
+
+**Concept**: Use of niche, domain-specific terms that assume group knowledge rather than shared everyday meaning.
+**Evidence**: Dense technical policy/corporate/academic terms, acronym clusters, “internal-only” phrasing.
+
+### Construct F: Referential Integrity (Reality tie vs word-loop)
+
+**Concept**: Whether the sentence points to **objective, perceivable referents** or mostly to abstractions, signs, or self-referential language loops.
+**Evidence**: Clear referents (a person, object, place, action) vs “discourse about discourse,” vague placeholders, or purely symbolic talk.
+
+### Overlap notes and differences
+
+* Concreteness and sensorimotor strength overlap, but differ: a sentence can name an object (concrete) without sensory/action richness (sensorimotor).
+* Specificity can be high even with moderate concreteness (a very specific plan about an abstract task).
+* Nominalization and jargon are “structural drifts” that can reduce groundedness even when some concrete words exist.
+
+---
+
+## 3. Unit of Analysis and Context Rules
+
+### Unit of analysis
+
+**Each SENTENCE** is coded.
+
+### Allowed context window
+
+**Default context rule (assumption)**: You may use:
+
+* The target sentence
+* Up to **one sentence before and one sentence after**, only to resolve pronouns (“it,” “this,” “they”) or clarify what a term refers to.
+
+If surrounding sentences are not available, code using only the target sentence.
+
+### How to treat special elements
+
+* **Quoted text**: Code the sentence as written, including the quote content if it is inside the sentence.
+* **Links/URLs**: If the sentence is only a link, mark OUT. If a link appears with meaningful text, ignore the URL and code the text.
+* **Hashtags/emojis**: Treat as mild cues only (for example, “#fitness” adds little; “🔥” does not add groundedness by itself).
+* **Sarcasm markers**: If clear sarcasm is present (“yeah right,” “sure buddy”), code based on the literal text evidence, and add a sarcasm flag.
+* **Metadata (author/date)**: Ignore.
+* **Threads**: Do not pull meaning from a long thread. Use only the allowed window.
+
+### Manifest vs latent
+
+**Latent inference allowed, but limited**:
+
+* You may infer groundedness only when the sentence strongly implies a physical referent (“Put it back where you found it”) even if not named.
+* You may NOT invent missing objects, places, or actions.
+
+---
+
+## 4. Coding Variables Overview Table
+
+All variables use an **ordinal intensity scale 0–5**, plus missingness sentinel values in Section 7.
+
+| Variable ID      | Variable name              | Construct | Data type   | Allowed values    | Missingness codes | Exclusivity / co-coding | Manifest vs latent      | Notes                                 |
+| ---------------- | -------------------------- | --------- | ----------- | ----------------- | ----------------- | ----------------------- | ----------------------- | ------------------------------------- |
+| V01_CONCRETE     | Concreteness / tangibility | A         | Ordinal 0–5 | -2,-1,0,1,2,3,4,5 | -1 NA, -2 OUT     | Co-coding allowed       | Manifest+limited latent | Based on tangible referents           |
+| V02_SENSORIMOTOR | Sensorimotor strength      | B         | Ordinal 0–5 | -2,-1,0,1,2,3,4,5 | -1 NA, -2 OUT     | Co-coding allowed       | Manifest+limited latent | Sensory/action richness               |
+| V03_SPECIFIC     | Specificity                | C         | Ordinal 0–5 | -2,-1,0,1,2,3,4,5 | -1 NA, -2 OUT     | Co-coding allowed       | Manifest+limited latent | Steps down from general to specific   |
+| V04_NOMINAL      | Nominalization intensity   | D         | Ordinal 0–5 | -2,-1,0,1,2,3,4,5 | -1 NA, -2 OUT     | Co-coding allowed       | Manifest only           | Higher score = more nominalization    |
+| V05_JARGON       | Jargon density             | E         | Ordinal 0–5 | -2,-1,0,1,2,3,4,5 | -1 NA, -2 OUT     | Co-coding allowed       | Manifest only           | Higher score = more jargon            |
+| V06_REFERENT     | Referential integrity      | F         | Ordinal 0–5 | -2,-1,0,1,2,3,4,5 | -1 NA, -2 OUT     | Co-coding allowed       | Manifest+limited latent | Higher score = clearer real-world tie |
+
+---
+
+## 5. Variable Specifications
+
+### V01_CONCRETE
+
+#### 5.1 Definition (Conceptual)
+
+Degree to which the sentence refers to **perceivable, tangible things or physical states** rather than only ideas or theories.
+
+#### 5.2 Operational Definition (Observable Indicators)
+
+**Manifest indicators**
+
+* Concrete nouns: objects, places, body parts, foods, tools.
+* Physical properties: size, shape, texture, temperature.
+* Direct sensory terms: see, hear, touch, smell, taste.
+
+**Latent indicators (limited)**
+
+* Strong implied physical action with an implied object (“Pick it up and rinse it.”) when “it” is resolved by allowed context.
+
+#### 5.3 Inclusion Criteria
+
+Assign 1–5 only if at least one is true:
+
+* Mentions at least one tangible entity OR
+* Mentions a physical state grounded in the body (pain, hunger) OR
+* Mentions a physical action tied to tangible reality (open the door, pour water).
+
+#### 5.4 Exclusion Criteria
+
+Score 0 if:
+
+* Only abstract claims with no tangible referent (“Success requires dedication.”)
+* Only talk about concepts or systems with no physical tie (“The framework optimizes coherence.”)
+  Do not count:
+* Empty filler (“It is important.”)
+* Vague placeholders without referent (“the thing,” “stuff”) unless context resolves.
+
+#### 5.5 Numeric Mapping + Anchors
+
+**0** absent
+**1** trace concrete mention, weak grounding
+**2** low grounding, some tangible reference
+**3** moderate grounding, clear tangible referents
+**4** strong grounding, multiple tangible details
+**5** maximum grounding, dense physical/sensory detail
+
+Anchors:
+
+* High: “Stir the soup for 2 minutes until it thickens.” → **4**
+* Low/absent: “Improvement requires commitment.” → **0**
+* Edge: “Put it over there.” (no context) → **-1 (NA)**
+
+#### 5.6 Decision Rules and Precedence
+
+* IF the sentence has **no identifiable tangible referent** and context cannot fix it, THEN code **-1 (NA)**.
+* IF at least one tangible entity is clearly present, THEN code **>=1**.
+* If both tangible and abstract are present, prioritize what is **dominant** in the sentence:
+
+  * If tangible is used only as a metaphor for an abstract point, keep score lower (often 1–2).
+
+#### 5.7 Common Pitfalls and “Look-alikes”
+
+1. **Metaphors counted as physical**: “grasp the idea” is not literal touching.
+2. **Vague “this/that”** without context: should be NA, not 0.
+3. **Counting proper nouns as concrete by default**: a named policy is still abstract unless tied to action/objects.
+
+---
+
+### V02_SENSORIMOTOR
+
+#### 5.1 Definition (Conceptual)
+
+Degree to which the sentence evokes **specific senses or body actions** (seeing, hearing, touch, smell, taste, movement, manipulation).
+
+#### 5.2 Operational Definition (Observable Indicators)
+
+**Manifest indicators**
+
+* Sensory verbs/adjectives: bright, loud, rough, sweet, smoky.
+* Action verbs tied to body: grab, step, chew, lift, twist, nod.
+* Tool use and manipulation: cut, screw, fold, pour.
+
+**Latent indicators (limited)**
+
+* Implied physical action when clearly stated (“Turn the knob clockwise.” even if knob not described).
+
+#### 5.3 Inclusion Criteria
+
+Assign 1–5 if any explicit sensory/action cue exists.
+
+#### 5.4 Exclusion Criteria
+
+Score 0 if:
+
+* Objects are named but with no sensory/action content (“There is a chair.”)
+* Only mental actions (“think,” “believe”) unless paired with body grounding.
+
+#### 5.5 Numeric Mapping + Anchors
+
+* **0** none
+* **1** one weak cue
+* **2** a few cues, limited richness
+* **3** clear sensory/action content
+* **4** many cues across actions or strong sensory detail
+* **5** intense, multi-sense/action richness
+
+Anchors:
+
+* High: “The rough bark scraped my palm as I climbed.” → **5**
+* Low/absent: “The chair exists in the room.” → **0**
+* Edge: “It felt off.” (unclear what “it” is) → **-1 (NA)**
+
+#### 5.6 Decision Rules and Precedence
+
+* IF only visual description OR only one action verb, cap at **3** unless detail is strong.
+* IF two or more senses/actions appear with clear detail, THEN **4–5**.
+* Do not inflate score for “talk” about senses in abstract (“sensory engagement matters”) unless it actually evokes senses.
+
+#### 5.7 Common Pitfalls and “Look-alikes”
+
+1. **Generic action verbs**: “do” and “make” do not count unless object/action is specified.
+2. **Emotional words**: “happy” is not sensory by itself.
+3. **Over-scoring for one adjective**: one word like “bright” usually is 1–2, not 4.
+
+---
+
+### V03_SPECIFIC
+
+#### 5.1 Definition (Conceptual)
+
+How specific and identifiable the sentence is, moving from broad categories to concrete details (the ladder idea in the RDD).
+
+#### 5.2 Operational Definition (Observable Indicators)
+
+**Manifest indicators**
+
+* Numbers, quantities, times, dates (“2 minutes,” “Friday 4:30”).
+* Named items/brands/unique identifiers.
+* Step-by-step directions with constraints.
+* Precise locations (“top shelf,” “left pocket,” “Room 204”).
+
+**Latent indicators (limited)**
+
+* Clear implied specificity from instruction structure (“First…, then…”) even if not numeric.
+
+#### 5.3 Inclusion Criteria
+
+Assign 1–5 if the sentence contains at least one specificity marker (number, named object, concrete constraint, exact place/time).
+
+#### 5.4 Exclusion Criteria
+
+Score 0 if:
+
+* Pure generality (“Work hard to succeed.”)
+* Vague placeholders without detail (“Handle the situation appropriately.”)
+
+#### 5.5 Numeric Mapping + Anchors
+
+* **0** fully general
+* **1** slight narrowing (one mild detail)
+* **2** some details but still broad
+* **3** clear details (who/what/where/when partly clear)
+* **4** very specific, actionable details
+* **5** highly specific, constrained, hard to swap with another case
+
+Anchors:
+
+* High: “Email the PDF to the TA by 5pm Friday and include your student ID.” → **5**
+* Low/absent: “Communicate better with your team.” → **0**
+* Edge: “Do it soon.” → **1** (has timing but vague)
+
+#### 5.6 Decision Rules and Precedence
+
+* Count specificity even if the topic is abstract, as long as the constraints are concrete.
+* If the sentence is a short label (“Results”), use:
+
+  * **-1 (NA)** if it cannot be judged, unless context clarifies.
+
+#### 5.7 Common Pitfalls and “Look-alikes”
+
+1. **Mistaking length for specificity**: long can still be vague.
+2. **Mistaking jargon for specificity**: “optimize the pipeline” may be jargon, not specific.
+3. **Over-scoring for one number**: “in 2020” alone often is 1–2.
+
+---
+
+### V04_NOMINAL
+
+#### 5.1 Definition (Conceptual)
+
+Amount of nominalization that turns processes/actions/qualities into “things,” which can hide actors and actions.
+
+#### 5.2 Operational Definition (Observable Indicators)
+
+**Manifest indicators**
+
+* Nouns formed from verbs/adjectives, often with suffixes like: **-tion, -ment, -ness, -ship, -ity, -ance, -ence, -acy, -ure** (examples in RDD).
+* Phrases where an abstract noun replaces a clear verb:
+
+  * “make a decision” vs “decide”
+  * “implementation of” vs “implement”
+
+**Latent inference prohibited.**
+
+#### 5.3 Inclusion Criteria
+
+Assign 1–5 based on:
+
+* Count and dominance of nominalizations.
+* Whether they replace clear action and reduce “who did what.”
+
+#### 5.4 Exclusion Criteria
+
+* Do not count ordinary concrete nouns.
+* Do not count necessary technical nouns if they clearly refer to a tangible thing (“keyboard,” “wheelbarrow”).
+
+#### 5.5 Numeric Mapping + Anchors
+
+Higher score = more nominalization presence
+
+* **0** none
+* **1** one mild nominalization, does not block clarity
+* **2** some nominalizations, clarity mostly intact
+* **3** nominalizations common and reduce action clarity
+* **4** heavy nominalization, actors/actions often hidden
+* **5** extreme nominalization, sentence is mostly abstract noun clusters
+
+Anchors:
+
+* High: “The implementation and optimization of compliance alignment is a priority.” → **5**
+* Low/absent: “I fixed the bug by removing the extra loop.” → **0**
+* Edge: “Our agreement was finalized.” → **2** (some nominalized framing, still clear)
+
+#### 5.6 Decision Rules and Precedence
+
+* IF the sentence is dominated by abstract nouns and “of” chains (“X of Y of Z”), THEN **4–5**.
+* IF the sentence uses one nominalization but still names actions/agents, THEN **1–2**.
+* If uncertain whether a noun is nominalized, default to **more conservative** (lower) score.
+
+#### 5.7 Common Pitfalls and “Look-alikes”
+
+1. **Counting all -tion words blindly**: some are fixed terms; still judge effect on clarity.
+2. **Missing “hidden actor” issue**: nominalization often removes who did it.
+3. **Confusing abstract topic with nominalization**: abstract topic can exist without nominalized grammar.
+
+---
+
+### V05_JARGON
+
+#### 5.1 Definition (Conceptual)
+
+Degree of niche, group-specific vocabulary that assumes insider knowledge and reduces shared everyday meaning.
+
+#### 5.2 Operational Definition (Observable Indicators)
+
+**Manifest indicators**
+
+* Dense technical terms without explanation.
+* Acronym clusters (especially unexplained).
+* Corporate/policy/academic stock phrases that avoid concrete referents (“stakeholder alignment,” “strategic framework”).
+
+**Latent inference prohibited.**
+
+#### 5.3 Inclusion Criteria
+
+Assign 1–5 based on:
+
+* How many jargon terms appear.
+* Whether a typical non-expert reader would struggle without prior domain knowledge.
+
+#### 5.4 Exclusion Criteria
+
+* Common everyday terms in a domain are not jargon if widely known (for example “email,” “browser”).
+* A single technical word with clear context often is 1–2, not high.
+
+#### 5.5 Numeric Mapping + Anchors
+
+Higher score = more jargon
+
+* **0** none
+* **1** one mild term
+* **2** a few terms, still readable
+* **3** many terms, meaning partly gated
+* **4** heavy jargon, strongly insider-coded
+* **5** extreme jargon, sentence mostly insider terms
+
+Anchors:
+
+* High: “We need to update the allowlist for partial trust and align the observability metrics.” → **4**
+* Low/absent: “I left the package at your door.” → **0**
+* Edge: “Run the script in the repo.” → **1** (light technical talk)
+
+#### 5.6 Decision Rules and Precedence
+
+* IF jargon appears with clear plain-language explanation in the same sentence, reduce by 1 level.
+* IF the sentence is mostly acronyms with no expansions, increase by 1 level.
+* If both jargon and nominalization are high, score both independently.
+
+#### 5.7 Common Pitfalls and “Look-alikes”
+
+1. **Confusing specificity with jargon**: specifics can be plain and clear.
+2. **Over-scoring standard words**: “server” is common, not high jargon alone.
+3. **Ignoring explanation**: explained terms are less “gated.”
+
+---
+
+### V06_REFERENT
+
+#### 5.1 Definition (Conceptual)
+
+How clearly the sentence connects to identifiable real-world referents (people, objects, actions, places), instead of being mainly talk about signs, discourse, or vague abstractions.
+
+#### 5.2 Operational Definition (Observable Indicators)
+
+**Manifest indicators**
+
+* Clear agent/action/object structure: who did what to what.
+* Concrete referents named or clearly implied with allowed context.
+* Direct tie to perceivable reality.
+
+**Latent indicators (limited)**
+
+* If a pronoun referent is clearly resolved by allowed context, treat it as clear.
+
+#### 5.3 Inclusion Criteria
+
+Assign 1–5 if the sentence contains a reasonably clear referent structure that can be “pointed to” in the world (even if not physically present right now).
+
+#### 5.4 Exclusion Criteria
+
+Score 0 if:
+
+* Purely abstract noun talk with no clear referent/action.
+* Mostly self-referential word loops (“the discourse constructs meaning through discourse”) without grounding.
+
+Use **-1 (NA)** if:
+
+* The sentence is too fragmentary to judge (“This.”) and context does not resolve it.
+
+#### 5.5 Numeric Mapping + Anchors
+
+* **0** no clear referents; mostly detached
+* **1** very weak referent clarity
+* **2** some referents but still vague
+* **3** clear referents and actions
+* **4** very clear referents plus concrete constraints
+* **5** maximum clarity tied to perceivable reality and direct action
+
+Anchors:
+
+* High: “Place the lime green shoes on the porch mat.” → **5**
+* Low/absent: “We must protect our freedoms.” → **0**
+* Edge: “They finally handled it.” (no context) → **-1 (NA)**
+
+#### 5.6 Decision Rules and Precedence
+
+* IF the sentence uses vague placeholders (“things,” “stuff,” “it”) and context cannot fix them, THEN **-1 (NA)**.
+* IF it names real entities/actions clearly, THEN **>=3**.
+* If it is abstract but still has a clear referent structure (“The committee voted at noon”), score mid (2–3) even if not sensory.
+
+#### 5.7 Common Pitfalls and “Look-alikes”
+
+1. **Coding slogans as grounded**: short slogans are often low referent clarity.
+2. **Counting “we” as clear by default**: “we” can be vague unless tied to action/object.
+3. **Confusing “about reality” with “tied to reality”**: talking about reality in abstract terms can still be low.
+
+---
+
+## 6. Global Co-Coding, Mutual Exclusivity, and Conflict Resolution
+
+### Co-coding rules
+
+All six variables are **independently scored** (multi-construct). You may assign non-zero scores to multiple variables for the same sentence.
+
+### Conflict resolution rules
+
+* If evidence supports two interpretations, use this tie-break rule:
+
+  * **Default to the most text-evidenced code** (not the most extreme).
+* If a sentence is contradictory or unclear, use **-1 (NA)** for the affected variable only, not for all variables.
+
+### Consistency notes
+
+* High nominalization and high jargon can co-occur.
+* High concreteness and high jargon can co-occur (for example, detailed lab instructions).
+* If V01_CONCRETE is high but V06_REFERENT is low, re-check: truly concrete text usually has clear referents. If not, you may have over-scored V01.
+
+---
+
+## 7. Missingness, Uncertainty, and Not-Codable Policy (MUST be explicit)
+
+This manual uses **OPTION B (Sentinel values)**:
+
+* **-1 = NA (Cannot determine)**
+* **-2 = OUT (Out of scope)**
+  Valid ordinal scores are **0,1,2,3,4,5** only.
+
+Rules:
+
+* Use **0** only when you can confidently say the construct is absent.
+* Use **-1 (NA)** when:
+
+  * Too little text to judge
+  * Vague pronouns/placeholders without resolvable context
+  * Meaning is ambiguous in a way that blocks scoring that construct
+* Use **-2 (OUT)** when:
+
+  * Not English
+  * Only a URL or only emojis or only non-text
+  * Corrupted text
+
+Contradictory evidence:
+
+* If the sentence has both cues for and against a construct but you cannot settle it, use **-1 (NA)** for that variable.
+
+Extremely short texts:
+
+* If fewer than ~3 meaningful words, usually **-1 (NA)** unless the construct is clearly present (“Stop!” has action but low detail; still codable for referent clarity depending on context).
+
+---
+
+## 8. Coding Workflow (LLM-Executable Algorithm)
+
+### Step-by-step procedure
+
+1. Read the target sentence.
+2. Read allowed context (prev/next sentence) only to resolve pronouns.
+3. Decide OUT vs in-scope:
+
+   * If OUT, set all variables to **-2** and stop.
+4. For each variable in this fixed order:
+
+   1. V06_REFERENT
+   2. V01_CONCRETE
+   3. V02_SENSORIMOTOR
+   4. V03_SPECIFIC
+   5. V04_NOMINAL
+   6. V05_JARGON
+5. For each variable:
+
+   * Apply inclusion/exclusion
+   * Assign score 0–5, or -1 if cannot determine
+6. Final checks:
+
+   * All values must be in {-2,-1,0,1,2,3,4,5}
+   * If any variable is -2, all must be -2 (sentence-level OUT)
+   * If V01_CONCRETE >=4 but V06_REFERENT <=1, re-check for over-score
+7. Output in the contract format (Section 9).
+
+### Pseudocode-style checklist
+
+* IF not English or non-text THEN OUT(-2 all)
+* ELSE
+
+  * score REFERENT
+  * score CONCRETE
+  * score SENSORIMOTOR
+  * score SPECIFIC
+  * score NOMINAL
+  * score JARGON
+* validate ranges
+* run consistency check
+* emit JSON
+
+---
+
+## 9. Output Format Contract
+
+Two modes are allowed.
+
+### Production Mode (default)
+
+Must be machine-parseable JSON with:
+
+* variable:value pairs only (numbers)
+* optional `flags` array from a fixed list
+* no free text
+
+Allowed flags (fixed list):
+
+* FLAG_SARCASM
+* FLAG_TOO_SHORT
+* FLAG_PRONOUN_UNRESOLVED
+* FLAG_CONTRADICTION
+
+### Development Mode
+
+Same JSON, but may include:
+
+* `rationales` object with max 1–2 sentences per variable
+* `confidence` per variable: "Low" | "Med" | "High"
+
+---
+
+## 10. Machine-Readable Appendix: JSON Schema
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TGR_Sentence_Coding_Schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "unit_of_analysis": { "type": "string", "enum": ["sentence"] },
+    "context_window": {
+      "type": "string",
+      "enum": ["target_sentence_plus_minus_1_sentence_for_pronoun_resolution"]
+    },
+    "latent_allowed": { "type": "boolean", "enum": [true] },
+    "mode": { "type": "string", "enum": ["production", "development"] },
+    "variables": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "V01_CONCRETE": { "type": "integer", "enum": [-2, -1, 0, 1, 2, 3, 4, 5] },
+        "V02_SENSORIMOTOR": { "type": "integer", "enum": [-2, -1, 0, 1, 2, 3, 4, 5] },
+        "V03_SPECIFIC": { "type": "integer", "enum": [-2, -1, 0, 1, 2, 3, 4, 5] },
+        "V04_NOMINAL": { "type": "integer", "enum": [-2, -1, 0, 1, 2, 3, 4, 5] },
+        "V05_JARGON": { "type": "integer", "enum": [-2, -1, 0, 1, 2, 3, 4, 5] },
+        "V06_REFERENT": { "type": "integer", "enum": [-2, -1, 0, 1, 2, 3, 4, 5] }
+      },
+      "required": [
+        "V01_CONCRETE",
+        "V02_SENSORIMOTOR",
+        "V03_SPECIFIC",
+        "V04_NOMINAL",
+        "V05_JARGON",
+        "V06_REFERENT"
+      ]
+    },
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "FLAG_SARCASM",
+          "FLAG_TOO_SHORT",
+          "FLAG_PRONOUN_UNRESOLVED",
+          "FLAG_CONTRADICTION"
+        ]
+      }
+    },
+    "rationales": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "V01_CONCRETE": { "type": "string", "maxLength": 220 },
+        "V02_SENSORIMOTOR": { "type": "string", "maxLength": 220 },
+        "V03_SPECIFIC": { "type": "string", "maxLength": 220 },
+        "V04_NOMINAL": { "type": "string", "maxLength": 220 },
+        "V05_JARGON": { "type": "string", "maxLength": 220 },
+        "V06_REFERENT": { "type": "string", "maxLength": 220 }
+      }
+    },
+    "confidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "V01_CONCRETE": { "type": "string", "enum": ["Low", "Med", "High"] },
+        "V02_SENSORIMOTOR": { "type": "string", "enum": ["Low", "Med", "High"] },
+        "V03_SPECIFIC": { "type": "string", "enum": ["Low", "Med", "High"] },
+        "V04_NOMINAL": { "type": "string", "enum": ["Low", "Med", "High"] },
+        "V05_JARGON": { "type": "string", "enum": ["Low", "Med", "High"] },
+        "V06_REFERENT": { "type": "string", "enum": ["Low", "Med", "High"] }
+      }
+    }
+  },
+  "required": ["unit_of_analysis", "context_window", "latent_allowed", "mode", "variables"]
+}
+```
+
+### Example JSON output (Production Mode)
+
+```json
+{
+  "unit_of_analysis": "sentence",
+  "context_window": "target_sentence_plus_minus_1_sentence_for_pronoun_resolution",
+  "latent_allowed": true,
+  "mode": "production",
+  "variables": {
+    "V01_CONCRETE": 4,
+    "V02_SENSORIMOTOR": 3,
+    "V03_SPECIFIC": 4,
+    "V04_NOMINAL": 0,
+    "V05_JARGON": 0,
+    "V06_REFERENT": 5
+  },
+  "flags": []
+}
+```
+
+---
+
+## 11. Quality Assurance and Self-Audit (MANDATORY)
+
+Checklist:
+
+* All variables fully defined with numeric mappings: **Yes**
+* Overlap handled with rules: **Yes** (Sections 2, 6)
+* Inclusion/exclusion criteria testable: **Yes**
+* NA vs 0 rules explicit: **Yes** (Section 7)
+* Co-coding rules unambiguous: **Yes** (Section 6)
+* Examples match rules: **Yes**
+* JSON schema valid and matches sentinel choice: **Yes**
+
+Issues found and fixed:
+
+* Ensured OUT forces all variables to -2 (Section 8 final checks).
+
+---
+
+## 12. Open Questions and Assumptions (if needed)
+
+### Open Questions (for the researcher)
+
+1. Should context be limited to sentence-only, or can we use full paragraph/document?
+2. Should latent inference be fully banned (manifest-only), or kept as limited (current setting)?
+3. Do you want a single combined TGR score computed from these, or only the component scores?
+
+### Assumptions made
+
+* Context window is ±1 sentence for pronoun resolution.
+* Limited latent inference is allowed only for referent resolution and clear implied actions.
+
+### How assumptions could change coding decisions
+
+* If context expands, fewer cases become NA (pronouns resolved more often).
+* If latent inference is banned, V06_REFERENT and V02_SENSORIMOTOR would shift downward in some short instruction sentences.
+
+---

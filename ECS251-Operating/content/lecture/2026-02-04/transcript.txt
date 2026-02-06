@@ -1,0 +1,412 @@
+Pablo [0:14]: in this case what was the line
+Pablo [0:22]: because design has like mindset over both cm and nonstrain
+Pablo [0:25]: and the teaching server is like student solid
+Pablo [0:35]: applications
+Pablo [0:41]: do not handle the page and only the require
+Pablo [0:45]: ments and its application will handle the test one
+Pablo [0:50]: and they will also have the share of cpu memory and
+Pablo [1:01]: there are few principles so in time and
+Pablo [1:08]: applications will have the memory id
+Pablo [1:11]: and the second one is power exposure
+Pablo [1:14]: low level hybrid resources application
+Pablo [1:26]: and also applications will not be like source for the high level extraction and the final one is responsibility there is no
+Pablo [1:29]: one paper and they will pay for
+Pablo [1:46]: so the difference from the external patient policies are like extended and reserve and for the name itself is there is dynamod ecosystem
+Pablo [1:52]: each application will have to come up with advanced
+Pablo [1:53]: and tables have
+Pablo [1:54]: their own
+Pablo [1:57]: lecture is very
+Pablo [1:59]: isolation which are
+Pablo [2:01]: important
+Pablo [2:13]: now we have background about how nemesis like the purpose of the objective of we now have a look at the system design
+Pablo [2:16]: what exactly
+Pablo [2:20]: the authors created by detect
+Pablo [2:21]: ive
+Pablo [2:37]: the vm stands for vertical the virtual memory system architecture so we are targeting as explained vertical architecture what this means is each application has their own os cards
+Pablo [2:51]: so in the picture before we actually get into the details of the design it's essential to understand a few key terminologies involved in the paper the first terminology is stretch a stretch is nothing but a range of virtual addresses with access permissions
+Pablo [2:58]: so we can understand this better if we take an example let's say a video table so it's a senior application
+Pablo [3:26]: and the first thing this application do is it would go to the stress allocator and we had a fresh allocator but then assign the range of vaginal missiles which i already mentioned is a stretch so once the application is provided as rich the application then also goes to the framework here and then it decides to make a contract now what is the contract now a contract is basically as it reserves resources exclusively allocated to the app
+Pablo [3:33]: so we have also the framework here and it discusses we'll be going through how exactly this contract is structured
+Pablo [4:10]: but a bunch of resources are just exclusively allocated to the app and then the video player once now as we are talking about video player the video would obviously be onto this so what they would do is the stress driver as you see in the picture it's in the middle and it's the brain of this architecture so the stretch fiber is the one that uses makes use of a user skin backing stroke which guarantees a paging bandwidth and what it does is this fresh driver goes finish and then it looks at the data and then loads it onto the face which is wrap so let us have a more detailed breakdown
+Pablo [4:21]: of how each of these parts function together another important thing to notice is that the application domain is unique to each app but the central domain is common to all the apps
+Pablo [5:07]: so to understand the physical learning management and how it works in nemesis it's basically the contract the structure in the toolbox the guaranteed frames and then the optimistic for the guarantee frame a bunch of things that must be reserved for and then the optimistic brain is a number that basically allowing the app to increase its performance if it's allowed and what happens here is each app is mainly its own brain cell now what happens is if you remember each application is responsible to manage its own brain so as to also i mean it's also managing its own paging so what it has to do is keep track of the important traits
+Pablo [6:06]: so what your brainstack does is it keeps track keeps it arranges and frames from least important on the top to the most important the bottom and then whenever an app is interfering then the l application a will pass application b and if application b is having any unused claims then in the thread which is what the motor suggest that this is their transfer mode so it will simply the app that just remove those frames unlink them and the new application will take over those things however in inclusive rule what happens is the system would then send the application would then let's say the application b goes to application a and requiring a bunch of frames which was guaranteed to it then application a would then have to have a certain period of time which a certain number of frames have to be loaded and so if that doesn't happen then the application is complet
+Pablo [6:06]: ed
+Pablo [6:13]: so the main goal of this again is reiterating it again is that the application besides the policy
+Pablo [7:02]: how the transitions are symbols is it's divided into two parts the first part is the higher level management and the other part is the lower management high level management decides in the user space and low level management lies in the it's a lightweight layer so what happens is in the high level there basically it's responsible for setting or deleting the entry skin page and then the roundup is the one that keeps track of all the apps and how much space each app is occupying on the run the notable execution also does the core important essential or maybe privileged operations like mapping and mapping retrieving or memory address and so as these are privileged commands you need to make sure that it's
+Pablo [7:05]: below the
+Pablo [7:09]: look at the other part of
+Pablo [7:18]: our
+Pablo [7:39]: vehicle so all the memory board will be actually will be discussed to the application except the dlb assist so the kernel or the same execution context and set it along with a library event
+Pablo [7:44]: there's a new crop happen
+Pablo [7:51]: the kernel doesn't really handle the by itself
+Pablo [8:03]: this prevent any qos to prevent one application take up too much time
+Pablo [8:07]: and the last session
+Pablo [8:13]: will be the goal in application will later schedule the run and resolve by itself
+Pablo [8:22]: so after the application is scheduled to run
+Pablo [8:25]: and it's activated by the scheduler
+Pablo [8:29]: staff vision will first enter the schedule
+Pablo [8:43]: it will inspect all the new company events so for each type of event it will involve
+Pablo [8:45]: hand
+Pablo [8:49]: ler to handle that event
+Pablo [8:51]: and in this time
+Pablo [9:02]: inter domain communication or idc is not allowed so that there's no blocking in the
+Pablo [9:16]: structurally handle different event so methods introduce a concept called
+Pablo [9:23]: entry which has a notification handler which
+Pablo [9:32]: is responsible for many any great decision or fix of the box
+Pablo [9:35]: and the entry also has a worker thread
+Pablo [9:41]: which is responsible for
+Pablo [9:47]: entries basically just a policy
+Pablo [9:50]: that we're handling a
+Pablo [9:59]: the entry that responsible for memory bar is called elementary
+Pablo [10:07]: in fact it actually doesn't fix the bar graph you'll first identify the calling address
+Pablo [10:10]: and the responsible
+Pablo [10:15]: and then you go associated
+Pablo [10:21]: dryer and the dryer is the one to actually fix the problem
+Pablo [10:28]: and then entry also response for handling verification
+Pablo [10:32]: so here
+Pablo [10:45]: actually going to handle the call here's the load so first after the kernel send
+Pablo [10:56]: and that patient was scheduled to run there's a user level event multiplexer going to call the elementary
+Pablo [10:59]: the admin should
+Pablo [11:07]: kind of map the volume sketch is associated
+Pablo [11:10]: and at this point
+Pablo [11:13]: there's still no
+Pablo [11:24]: inferred domain identification allow so the driver is only able to use the resource within that application to fix the problem
+Pablo [11:28]: this was the paper called the backpack
+Pablo [11:31]: if the desktop doesn't work
+Pablo [11:40]: so the following variable is blocked and then elementary will unlock the worker at return
+Pablo [11:44]: and worker will later schedule the run
+Pablo [11:48]: and then we
+Pablo [11:51]: use the
+Pablo [11:52]: idc
+Pablo [11:53]: to detect stuff
+Pablo [11:57]: for example the fixed billy was
+Pablo [11:58]: request
+Pablo [12:00]: ing
+Pablo [12:01]: allocators
+Pablo [12:20]: so we already talked about chef driver board but here i will talk about it more detail there's actually three type of jar for different type of applications
+Pablo [12:23]: the first type is called
+Pablo [12:35]: all the frames will be allocated
+Pablo [12:36]: in the beginning
+Pablo [12:41]: so all the frame that the fraction need will be in the library already
+Pablo [12:44]: so there won't be any problem that never going to happen
+Pablo [12:58]: the second jar is called discover chef dryer so it will allocate different from the memory in the first there's no frame assigned it to
+Pablo [13:00]: the stretch card initially
+Pablo [13:06]: so the first access of the stretch will always be solved in a h valve
+Pablo [13:15]: and then in order to fix the route and get in the
+Pablo [13:17]: order
+Pablo [13:18]: entry
+Pablo [13:23]: and fix the ball and get more interest rate the working product
+Pablo [13:35]: and last driver is called patient stretch driver basically just stretch physical desire
+Pablo [13:38]: it will also use
+Pablo [13:39]: on demand
+Pablo [13:44]: but this time it will be used for commemoration
+Pablo [13:50]: there's no equal
+Pablo [13:51]: activ
+Pablo [13:53]: e
+Pablo [13:54]: examp
+Pablo [13:55]: le usps
+Pablo [14:00]: to soft hp memory and
+Pablo [14:18]: i also want to quickly go over what's the us guarantee so each application will get their own guaranteed this time
+Pablo [14:19]: for about
+Pablo [14:22]: other applications
+Pablo [14:27]: he has two components so buyer system which is basically the control
+Pablo [14:28]: plan
+Pablo [14:36]: in other case swap space and also
+Pablo [14:37]: applications
+Pablo [14:43]: the second component is called user say
+Pablo [14:50]: data bank you perform the actual list io
+Pablo [14:53]: policy
+Pablo [14:59]: the application actually doesn't actually calculate this directly
+Pablo [15:06]: it will use their
+Pablo [15:08]: channel
+Pablo [15:16]: and then to the usb will build
+Pablo [15:22]: this so all this will be happen outside kernel
+Pablo [15:27]: so only the application itself will pay the cost
+Pablo [15:44]: so now we're going to talk about the experience that we're used to validate the performance of the
+Pablo [15:45]: income itself
+Pablo [15:45]: aging and architect
+Pablo [15:51]: we want to mainly focus on types of expressions
+Pablo [16:09]: the part one is on a microbe to instrument which shows how much time was consumed by each of the sales primitive aging network used by us this includes project demand protecting a page tracking copy page then checking on our dirty beach and so on
+Pablo [16:17]: the next one is on the beijing in experiment which is like if there are several applications
+Pablo [16:20]: memory at the same time
+Pablo [16:23]: the os or system keep up with this battery
+Pablo [16:55]: so at first this micro benchmark remaining focused on six of these benchmarks first of all the diarrhea so what is a dirty beat or a diaphragm basically when a ph has been modified by any application or battery has not yet been modified that is temporary fixing the gap or the memory for the derivative or that page
+Pablo [17:01]: then we have the protecting or unprotecting wages they focus on two types
+Pablo [17:10]: one is that protesting or updating one page how much time it takes and then also one hundred pages
+Pablo [17:24]: and then we have done the trap so what happens in the trap when a forty the kernel sends these forty wages to the user handler to handle problem
+Pablo [17:30]: then the two more is the actual one and level two
+Pablo [17:38]: so they took this complete paper echo one basically standard code let's say there is a page which we can multiply
+Pablo [17:42]: then send it to the fourth handler to
+Pablo [17:52]: fix the copy and then protect it in but this is only one page so we are seeing that aquarium
+Pablo [17:59]: apple two is basically the same but with a number of pages but for the experiment because
+Pablo [18:06]: now let's look at
+Pablo [18:11]: the number given here these are all time taken in microseconds
+Pablo [18:17]: so we consider nemesis with considering osf one as a benchmark
+Pablo [18:22]: now when it comes to identifying a dirty bit it's not like any profession
+Pablo [18:37]: so it's quite a very weak or fast so why is it so fast because mx is as a linear bench table and simply just need to look up into the page table
+Pablo [18:38]: and try out each page
+Pablo [18:44]: has been modified of which page is directly so it takes just simply one one five
+Pablo [18:50]: then come unput fifty or project is one
+Pablo [18:58]: so the way that we have two types one four two x point four y two
+Pablo [19:02]: times so there are two ways we can have to protect or
+Pablo [19:04]: project a page email analysis
+Pablo [19:09]: os one is by modifying the page table episode as we have discussed before
+Pablo [19:12]: the message os architecture
+Pablo [19:19]: make the page table on a stretch a stage is a collection of pink scale sorry pages in a table
+Pablo [19:29]: but the according to its potential model it can only change all the pages of any stretch it cannot change just one page
+Pablo [19:37]: that's a five pages it cannot modify the pressure of only one it can have to change over time
+Pablo [19:46]: so the solution is decreased the step size to one needs to change that page
+Pablo [19:48]: so this takes a time
+Pablo [19:59]: for example i just take one page i will just reduce it stretch to one then modify it and then maybe adding two dollars taken
+Pablo [20:02]: or another system is the protection due
+Pablo [20:09]: so inputation domain it takes much less than what four k that's where zero what happens here
+Pablo [20:11]: so in the protection domain
+Pablo [20:23]: we just go to lookup take over the protection or the control axis of each of the vegetable subject the pages just need to change the protection domain from necessary
+Pablo [20:34]: it could be available to everyone so that means that user is the time instead of changing each of the stages then increasing their protection
+Pablo [21:05]: however the namec does not have a proper efficient value just like doing just single one it has to go through each of the pages the pages page and then modify the control axis so normally you take a huge amount of time ten point seven but again if we use the protection domain like changing the protection of the pages of a stretch the title is equal to zero point thirty charm
+Pablo [21:10]: so automating devices in this domain still waning against the os
+Pablo [21:24]: then it comes to the press system as we have talked about how the tracking happens we get the phone that runner sends this to the user handler in the user level space it does not do it itself
+Pablo [21:28]: and we cannot see the time is less only zero forty
+Pablo [21:43]: and then for unprotecting these are the same way that how much handler and
+Pablo [21:54]: beginning to go to the same group and then the section
+Pablo [22:00]: which is our data sometimes it might take much less time
+Pablo [22:04]: but availability still wins against the os
+Pablo [22:11]: so we see the activity all these things when mhc
+Pablo [22:13]: that is the one over its paper
+Pablo [22:25]: here is another one of the aging so what basically was done here the virus make three application plans
+Pablo [22:32]: these application plans which keep on requesting and transmitting data with the network
+Pablo [22:47]: so how is this sample means they make for part to fifteen the second time which of this applications will use twenty five at change of data
+Pablo [22:50]: so for example
+Pablo [23:02]: let's say for this program for fe two hundred fifty millisecond program communicating or working on
+Pablo [23:13]: this program at the same time try to sell various forms of data in between the data
+Pablo [23:26]: os and the user space system there will be a lot of badminton so it can sometimes happen that maybe there page force has happened and the cpu level is still waiting for that process to answer
+Pablo [23:28]: for the process to answer
+Pablo [23:39]: but we cannot keep it high level so they make the laxity tank whose threshold came in second that if there is no process flowing millisecond
+Pablo [23:47]: processor and for the next
+Pablo [24:10]: so if we look at this figure we just show that how much negative particle data is being transferred so this is the lowest mod effectively the one with the same data twenty five millisecond then that driver one is fifty and arrow one is one hundred so we will see that every linear one is four h here which reflects how much time there is
+Pablo [24:13]: both that will multiple
+Pablo [24:19]: this side inside is a finished print assembly that
+Pablo [24:25]: where is this performing properly even with the bandwidth and is synchronized
+Pablo [24:31]: it's not giving it like you can see there are almost two of gaps in each of the samples
+Pablo [24:34]: and this one is basically
+Pablo [24:50]: the unified portion of that here we can see that there are more uniform the bigger one line is basically what we can data transfer is running this is the smallest one
+Pablo [24:56]: there is a so that is basically what a page fault happens
+Pablo [25:01]: but whenever the platform happens there
+Pablo [25:12]: which should have been empty we have started because we have made a system if the cpus either for when we say
+Pablo [25:14]: another question will start
+Pablo [25:21]: so by this way we want to write here that this os will not remain idle and it will keep on working
+Pablo [25:23]: this self
+Pablo [25:33]: so in conclusion the self paging has provided a quality we have service or virtual memories
+Pablo [25:36]: and if you want the maximum module
+Pablo [25:41]: so by using self page we are getting a lot of virtual memories
+Pablo [25:59]: what is more efficient some of the issues that we have is that there are lot of overhead about the stretch drivers and then how changing the pictures that are the pages you have to do a lot of
+Pablo [26:04]: work
+Pablo [26:10]: method this is where we can start problems with global optimization
+Pablo [26:15]: so here are the discussion questions
+Pablo [26:19]: we can discuss among
+Pablo [26:43]: each other
+Pablo [29:13]: it seems like it was
+Pablo [30:41]: another
+Pablo [31:45]: experiment
+Pablo [34:31]: which
+Pablo [34:32]: i
+Pablo [34:38]: was
+Pablo [34:39]: like protection
+Pablo [34:42]: i
+Pablo [34:43]: know that the spiritual
+Pablo [34:50]: session
+Pablo [34:54]: is
+Pablo [34:55]: something which
+Pablo [34:56]: i
+Pablo [34:56]: do
+Pablo [34:59]: but
+Pablo [35:00]: there
+Pablo [35:01]: were many
+Pablo [35:03]: applic
+Pablo [35:04]: ation
+Pablo [35:12]: so
+Pablo [35:13]: one application that
+Pablo [35:14]: my
+Pablo [35:20]: team
+Pablo [35:31]: does
+Pablo [35:31]: several things
+Pablo [35:33]: the argum
+Pablo [35:34]: ents not necessarily
+Pablo [35:40]: that's a
+Pablo [35:41]: side benefit
+Pablo [35:42]: but
+Pablo [35:43]: it's more accounting
+Pablo [35:44]: that you can find your
+Pablo [35:44]: self
+Pablo [35:46]: they have
+Pablo [35:47]: these
+Pablo [35:48]: applications
+Pablo [35:49]: where they have started
+Pablo [35:50]: the next
+Pablo [35:52]: stream to
+Pablo [35:53]: the audio record
+Pablo [35:55]: listener
+Pablo [35:56]: s while you receive j
+Pablo [35:57]: ared and the music
+Pablo [36:01]: video
+Pablo [36:04]: the way that
+Pablo [36:05]: you
+Pablo [36:06]: can
+Pablo [36:07]: use
+Pablo [36:08]: make sure that each
+Pablo [36:09]: application
+Pablo [36:10]: has a security
+Pablo [36:11]: that needs
+Pablo [36:13]: to be able to take those
+Pablo [36:15]: different
+Pablo [36:16]: partners
+Pablo [36:20]: account
+Pablo [36:21]: ing
+Pablo [36:23]: is a lot
+Pablo [36:24]: harder
+Pablo [36:42]: than
+Pablo [36:45]: the
+Pablo [36:45]: criminal is operating
+Pablo [36:47]: on the path
+Pablo [36:47]: of this application
+Pablo [36:48]: and how
+Pablo [36:50]: do we charge
+Pablo [36:50]: this sort of criminal
+Pablo [36:51]: time to the right applic
+Pablo [36:52]: ation
+Pablo [36:53]: so that it
+Pablo [36:54]: gets the
+Pablo [36:54]: resource part
+Pablo [36:56]: ition
+Pablo [36:56]: key to
+Pablo [36:57]: it
+Pablo [36:58]: so
+Pablo [36:59]: it's kind of like interesting
+Pablo [37:00]: about speakers
+Pablo [37:01]: they're coming out important
+Pablo [37:05]: we want to make sure that
+Pablo [37:06]: the applications
+Pablo [37:07]: are using
+Pablo [37:08]: resources that
+Pablo [37:09]: they are allowed to
+Pablo [37:10]: use when they're
+Pablo [37:10]: not used
+Pablo [37:10]: them
+Pablo [37:12]: and
+Pablo [37:12]: the kernel
+Pablo [37:13]: being the special resource
+Pablo [37:14]: gets in the way of that
+Pablo [37:21]: they
+Pablo [37:22]: made this argument
+Pablo [37:23]: a lot of
+Pablo [37:24]: default figures
+Pablo [37:34]: that
+Pablo [37:35]: you're allowed
+Pablo [37:37]: or
+Pablo [37:40]: people
+Pablo [38:09]: to
+Pablo [38:10]: file other
+Pablo [38:11]: times
+Pablo [38:12]: but
+Pablo [38:13]: we should
+Pablo [38:13]: have all the same
+Pablo [38:20]: policies
+Pablo [38:21]: that need to be
+Pablo [38:22]: applied
+Pablo [39:29]: in pract
+Pablo [39:30]: ice
+Pablo [39:31]: it's not
+Pablo [39:32]: usually
+Pablo [39:53]: provide
+Pablo [39:54]: d
+Pablo [40:49]: so
+Pablo [40:50]: it's not like
+Pablo [40:55]: at
+Pablo [40:56]: some point they have
+Pablo [40:57]: n't seen
+Pablo [41:02]: this
+Pablo [41:29]: more about
+Pablo [41:41]: there's
+Pablo [41:43]: these
+Pablo [41:45]: sort of
+Pablo [41:46]: like sort of
+Pablo [41:46]: way
+Pablo [41:47]: s
+Pablo [41:49]: and
+Pablo [41:50]: getting more beyond that
+Pablo [41:56]: 's not
+Pablo [41:56]: too important
+Pablo [42:04]: everyone
+Pablo [42:05]: gets
+Pablo [42:06]: these one of the resources
+Pablo [42:07]: they need
+Pablo [42:08]: so that
+Pablo [42:11]: sort of shifting around
+Pablo [42:12]: but it
+Pablo [42:13]: 's very capacity
+Pablo [42:26]: number of
+Pablo [42:27]: application
+Pablo [42:34]: i guess
+Pablo [42:35]: introduce some sort of
+Pablo [42:37]: reason
+Pablo [42:57]: expl
+Pablo [42:58]: icitly how fast
+Pablo [43:00]: being able
+Pablo [43:02]: to
+Pablo [43:03]: customize
+Pablo [43:15]: every
+Pablo [43:15]: application
+Pablo [43:17]: that has
+Pablo [43:18]: all
+Pablo [43:27]: these
+Pablo [43:34]: hours
+Pablo [43:34]: work
+Pablo [43:35]: do
+Pablo [43:36]: we want to be
+Pablo [43:37]: okay
+Pablo [43:39]: sort of
+Pablo [43:57]: makes sense
+Pablo [44:50]: so
+Pablo [44:51]: it is making use of
+Pablo [44:52]: any
+Pablo [45:06]: strict
+Pablo [45:07]: account
+Pablo [45:07]: ing
+Pablo [45:10]: alloc
+Pablo [45:11]: ation
+Pablo [45:13]: that was
+Pablo [45:14]: a lot
+Pablo [45:15]: if you're
+Pablo [45:16]: bathroom
+Pablo [45:17]: associations
+Pablo [45:28]: making
+Pablo [45:29]: us
+Pablo [45:30]: because they want
+Pablo [45:31]: ed to work so fast
+Pablo [45:32]: we had such high
+Pablo [45:34]: s
+Pablo [45:35]: sds
+Pablo [45:40]: between
+Pablo [45:41]: applications
+Pablo [45:43]: satur
+Pablo [45:44]: ating
+Pablo [45:51]: saturated
+Pablo [45:53]: probably
+Pablo [45:57]: applic
+Pablo [45:57]: ation
+Pablo [45:58]: very specific way
+Pablo [45:59]: to take advantage
+Pablo [46:00]: of extreme
+Pablo [46:01]: parallelism to give
+Pablo [46:02]: a fully exaggerated
+Pablo [46:06]: ssc grant the same thing
+Pablo [46:09]: so
+Pablo [46:12]: you could kind of apply these really strict partitioning
+Pablo [46:13]: and account
+Pablo [46:16]: ing benefits in the center but maybe there's just not as much need
+Pablo [46:18]: applications are less likely
+Pablo [46:19]: to interfere
+Pablo [46:20]: anyway
+Pablo [46:21]: there's plenty of these kind
+Pablo [46:21]: s of resources

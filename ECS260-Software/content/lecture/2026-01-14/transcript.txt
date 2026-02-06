@@ -1,0 +1,845 @@
+Pablo [0:09]: let us know
+Pablo [0:15]: so you will see these flux happening for the next couple of days
+Pablo [0:19]: starting tuesday
+Pablo [0:24]: questions about that
+Pablo [0:26]: okay
+Pablo [0:29]: regardless of the same composition
+Pablo [0:35]: the small changes you are working towards
+Pablo [0:40]: and there's a very specific timeline what you're looking for
+Pablo [0:42]: any questions about
+Pablo [0:51]: and then a week or so hands
+Pablo [1:01]: will be about paper each of you think
+Pablo [1:02]: about
+Pablo [1:03]: present
+Pablo [1:03]: ation
+Pablo [1:06]: provide to us
+Pablo [1:11]: we'll talk about
+Pablo [1:11]: that
+Pablo [1:21]: but now it is very important that the team at the piece of the topic that you're studying
+Pablo [1:27]: the people who research you the topic and the details may change
+Pablo [1:31]: your anointing sees that we are
+Pablo [1:35]: set in the way that everybody agrees
+Pablo [1:36]: multiple
+Pablo [1:38]: artists people in
+Pablo [1:41]: it's good to have more art used now
+Pablo [1:45]: so that you can distill them and be useful later
+Pablo [1:49]: four or five research questions
+Pablo [1:58]: any issues with teams
+Pablo [1:59]: propos
+Pablo [2:00]: als
+Pablo [2:05]: you need more than two pages and i have it
+Pablo [2:08]: but we are not going to necessarily
+Pablo [2:12]: try to have two pages that are complete
+Pablo [2:15]: further explanations
+Pablo [2:22]: well we have been doing last lecture this lecture we are doing
+Pablo [2:26]: the preliminaries for repository mining
+Pablo [2:30]: we like to go to thirty five because it's a technique
+Pablo [2:32]: digital archaeology if you will
+Pablo [2:42]: you want to study how things are done project so what do we do well we look at historical record
+Pablo [2:45]: s
+Pablo [2:48]: just like how you feel
+Pablo [2:49]: good
+Pablo [2:58]: and this allows us to go study on things at but also to forecast because we can get very quantitative details
+Pablo [3:19]: of course you did not design the experiment that led to the data so you have to live with whatever is available and these two lectures are really about my team and hiita and how powerful it can be but also what some of the issues are that join dr one of which being
+Pablo [3:23]: that you can have multiple ways to commit
+Pablo [3:29]: to a heat repo talking about gift we talk about
+Pablo [3:32]: okay
+Pablo [3:38]: so we put a setup is actually authors and completers
+Pablo [3:39]: are different
+Pablo [3:44]: only computers can commit and a larger pool of authors
+Pablo [3:51]: and all of their comments have to go three d set of promises inner circle if you will
+Pablo [4:02]: other people that are set up as authors and proliferators are all the same they have the same evening they are different in the name they have the same reason
+Pablo [4:17]: and so recognizing this means that when you look at numerically you may find that there are multiple titles in there
+Pablo [4:22]: author there's an acknowledger
+Pablo [4:27]: if you ask
+Pablo [4:33]: the actual change was made maybe by a completer who programmed the
+Pablo [4:36]: clothing was programmed like somebody else
+Pablo [4:44]: you're studying the quality that's one study change for living behavior
+Pablo [4:45]: that's kind
+Pablo [4:48]: there's some subtle dimensions
+Pablo [4:50]: based on what you want to study
+Pablo [4:59]: we discuss that all data and history also global you cannot expand a
+Pablo [5:02]: one group of altogether
+Pablo [5:09]: give tracks content that we talked about the essence of the algorithm a little bit
+Pablo [5:11]: where you can make things
+Pablo [5:13]: change
+Pablo [5:16]: so the history of lines is
+Pablo [5:16]: tracked
+Pablo [5:21]: and they're being tracked as they move and copy
+Pablo [5:27]: so that history goes with the change so we have a change alignment that line is involved in climate change
+Pablo [5:35]: no matter how many times we change things around these attacks it will still keep the original
+Pablo [5:46]: we don't have to talk about the difference between keep and centralized repositories
+Pablo [5:49]: it is possible to convert
+Pablo [5:56]: centralized repositories to give many projects do this from spf
+Pablo [6:07]: let's move on to github this is the polar picture the same thing what are the promises and perils it might be
+Pablo [6:10]: about seven eight nine years separately too
+Pablo [6:15]: the first thing to note is that one report is going to be
+Pablo [6:16]: not necessarily
+Pablo [6:17]: project
+Pablo [6:25]: ed so if you're standing in office or something approaching trying to understand how things happen
+Pablo [6:30]: by looking at a repo it can belong to the project it can be a part of it
+Pablo [6:32]: it could be a whole project
+Pablo [6:34]: it can be nothing
+Pablo [6:42]: so forking is very popular on github we'll talk about that
+Pablo [6:48]: but the main repo of a project is typically
+Pablo [6:50]: not writeable
+Pablo [7:05]: by any so what happens is the way github has how many of you everybody understands it but when you try to commit to a project what you do first is a fourth approach local
+Pablo [7:06]: ly
+Pablo [7:09]: and then the issue of holy
+Pablo [7:16]: do we understand that
+Pablo [7:23]: therefore there are two types of repos
+Pablo [7:28]: itories from that perspective the base one and then the fourth one
+Pablo [7:39]: so a parallel avoidance here so to analyze a project hosted on github one must facilitate the activity of
+Pablo [7:48]: there is a reason why you cannot find anything out from the base one even if things are
+Pablo [7:50]: what is
+Pablo [7:51]: that reason
+Pablo [7:55]: even if changes to a fork
+Pablo [7:59]: or merge into the base
+Pablo [8:04]: you can squash
+Pablo [8:08]: grits the number of things
+Pablo [8:18]: apply not two days to balance there will be more activity in court that wasn't that's right so there are things that happen in the forest that are not directly
+Pablo [8:19]: concealed
+Pablo [8:25]: and github in particular makes sure not to take all the details
+Pablo [8:28]: so if you're just looking at the basic
+Pablo [8:39]: one of the most important things to
+Pablo [8:39]: realize
+Pablo [8:43]: is what is in github
+Pablo [8:46]: all of the same as millions of project
+Pablo [8:48]: s not all of them are
+Them [8:48]: the same
+Them [8:52]: development
+Them [8:53]: projects with many
+Them [9:02]: very few projects have more than fifty commits
+Them [9:03]: fifty comments
+Them [9:06]: can you add a fifty two million
+Them [9:16]: there's very few especially these philosophy of devops
+Them [9:23]: ninety percent of the projects have less than fifty
+Them [9:24]: commits
+Them [9:26]: and it's getting worse and worse
+Them [9:30]: why is this important
+Them [9:38]: well if you're trying to analyze to make a statement about the cohort of project you have to do it
+Them [9:42]: okay
+Them [9:48]: after active
+Them [9:51]: coaching only if you're studying in a project
+Them [9:56]: what are these projects
+Them [9:56]: right
+Them [10:06]: so most project are inactive so the red line here is the proportion of project creating during the last ten months
+Them [10:11]: approximately forty six have been enacted in the last six months
+Them [10:13]: only thirty percent of project
+Them [10:14]: s were active
+Them [10:14]: in the last month
+Them [10:21]: this
+Them [10:22]: is something about
+Them [10:23]: long term activ
+Them [10:23]: ities
+Them [10:25]: there's a lot
+Them [10:26]: of fortified months
+Them [10:27]: of interest
+Them [10:28]: in these projects
+Them [10:29]: those
+Them [10:30]: that actually receive
+Them [10:31]: the active belong
+Them [10:32]: s
+Them [10:37]: and
+Them [10:38]: so
+Them [10:39]: like
+Them [10:40]: this is a large
+Them [10:41]: portion of le
+Them [10:42]: os are not
+Them [10:48]: forty percent
+Them [10:49]: of
+Them [10:50]: projects
+Them [10:51]: are not
+Them [11:00]: web
+Them [11:01]: development
+Them [11:03]: zebr
+Them [11:04]: as enter no longer
+Them [11:05]: accessible anyway
+Them [11:06]: many are empty
+Them [11:09]: thank you
+Them [11:25]: this
+Them [11:26]: is another
+Them [11:27]: camera
+Them [11:35]: these
+Them [11:36]: actually sell pretty much
+Them [11:40]: project
+Them [11:42]: and then
+Them [11:43]: you'll find there's only
+Them [11:44]: been the next agenda
+Them [11:46]: make sure
+Them [11:47]: you
+Them [11:51]: heuristics
+Them [11:52]: will have to be used
+Them [11:53]: how do we select
+Them [11:54]: the right
+Them [12:15]: so
+Them [12:16]: we have
+Them [12:17]: really
+Them [12:18]: made this four and
+Them [12:19]: four mod
+Them [12:20]: els
+Them [12:24]: so
+Them [12:25]: if those include
+Them [12:36]: very eas
+Them [12:37]: y to reduce
+Them [12:38]: the holy cross
+Them [12:47]: and all
+Them [12:48]: this is
+Them [12:48]: stored
+Them [12:50]: in
+Them [12:51]: jesus
+Them [12:56]: however
+Them [12:57]: only a
+Them [12:58]: fraction of project
+Them [12:59]: s we use
+Them [13:02]: commands
+Them [13:02]: directly
+Them [13:03]: change
+Them [13:04]: directly
+Them [13:05]: so please be aware of
+Them [13:07]: very
+Them [13:08]: small fract
+Them [13:09]: ions
+Them [13:10]: projects
+Them [13:11]: it is proportional
+Them [13:11]: projects
+Them [13:12]: here proportions
+Them [13:16]: ninety
+Them [13:17]: percent of the project
+Them [13:24]: of
+Them [13:25]: the change
+Them [13:28]: ninety
+Them [13:29]: percent before
+Them [13:30]: the changes are
+Them [13:31]: through
+Them [13:40]: this is
+Them [13:41]: important
+Them [13:43]: he
+Them [13:44]: that commits the holy
+Them [13:45]: christ
+Them [13:51]: ian
+Them [13:52]: who request
+Them [13:53]: of
+Them [13:54]: that
+Them [13:57]: you
+Them [13:57]: judge them
+Them [13:59]: once ascend
+Them [14:00]: ed at the end
+Them [14:01]: is the result
+Them [14:07]: for example
+Them [14:10]: the act and the change
+Them [14:11]: there commits
+Them [14:12]: and their bullet requ
+Them [14:12]: ests
+Them [14:14]: in response to
+Them [14:15]: you
+Them [14:16]: cannot study
+Them [14:17]: that
+Them [14:18]: doesn't
+Them [14:19]: contain that
+Them [14:21]: you will
+Them [14:22]: have to
+Them [14:23]: then
+Them [14:24]: pull both or
+Them [14:25]: cs and go to
+Them [14:25]: gates
+Them [14:41]: there's
+Them [14:42]: a multitude
+Them [14:43]: of strategies
+Them [14:47]: and
+Them [14:48]: these
+Them [14:49]: are detached
+Them [14:52]: through
+Them [14:53]: gift and
+Them [14:54]: if you didn't do it
+Them [14:54]: all
+Them [14:55]: you
+Them [14:56]: have to choose what
+Them [14:57]: you do
+Them [15:00]: if you
+Them [15:01]: do a gift
+Them [15:02]: merch
+Them [15:04]: get
+Them [15:05]: merged
+Them [15:07]: i'm going to show
+Them [15:08]: his marriage
+Them [15:19]: one
+Them [15:20]: way to
+Them [15:25]: continue
+Them [15:26]: to
+Them [15:27]: follow
+Them [15:30]: that
+Them [15:39]: promise
+Them [15:46]: is
+Them [15:47]: going to be called
+Them [15:54]: fixing activities including the comments from reviewers so imagine the oldest together
+Them [15:57]: beautiful system that it gives you
+Them [16:01]: analyze and this is what we have been doing the past ten years
+Them [16:07]: my lab was social and technical factors to get it into one framework sociotechnical network
+Them [16:16]: s to analyze and we have to deter here careful of course this is the promise so you can see how
+Them [16:22]: a discussion leads to implementation leads to bug fixes another discussion
+Them [16:28]: okay
+Them [16:38]: one of the problems with this is yes all this could be available but many times they're not because many projects actually do not conduct all of their business on
+Them [16:39]: github
+Pablo [16:47]: some projects use googzilla say bug fixes
+Pablo [16:50]: some projects use slack to discuss
+Pablo [16:54]: inst
+Pablo [16:55]: ead of doing
+Pablo [16:57]: so
+Pablo [16:58]: in order to final
+Pablo [16:59]: ize everything
+Pablo [17:00]: you would have to
+Pablo [17:01]: go from a
+Pablo [17:02]: sour
+Pablo [17:03]: ce
+Pablo [17:06]: so maybe you want to live
+Pablo [17:07]: just
+Pablo [17:09]: come back
+Pablo [17:12]: in other words
+Pablo [17:13]: you have to check
+Pablo [17:15]: how
+Pablo [17:16]: do we select
+Pablo [17:28]: i mentioned
+Pablo [17:29]: it
+Pablo [17:30]: actually software
+Pablo [17:30]: accommodation
+Pablo [17:31]: and it's always
+Pablo [17:32]: in there
+Pablo [17:33]: any project
+Pablo [17:34]: in asf
+Pablo [17:35]: they have
+Pablo [17:36]: change
+Pablo [17:37]: d
+Pablo [17:43]: so the question is what do they do
+Pablo [17:44]: to make things easier
+Pablo [17:46]: for people to see their project
+Pablo [17:47]: and
+Pablo [17:47]: contribute
+Pablo [17:48]: as well
+Pablo [17:49]: they have leaders
+Pablo [17:53]: but that
+Pablo [17:54]: the mirror is going
+Pablo [17:55]: to include our
+Pablo [17:56]: district
+Pablo [17:57]: lies
+Pablo [17:58]: on the universe
+Pablo [17:59]: these
+Pablo [18:00]: delta events sequences
+Pablo [18:01]: that happen
+Pablo [18:04]: this is very
+Pablo [18:04]: important
+Pablo [18:05]: when you
+Pablo [18:07]: 're in the business of analyz
+Pablo [18:07]: ing something
+Pablo [18:11]: new
+Pablo [18:12]: knowledge
+Pablo [18:15]: first
+Pablo [18:16]: you check whether you
+Pablo [18:17]: 're talking about
+Pablo [18:18]: whether
+Pablo [18:19]: it's
+Pablo [18:21]: the place where they go
+Pablo [18:22]: back to most share
+Pablo [18:29]: basically
+Pablo [18:30]: all i have to say
+Pablo [18:31]: about
+Pablo [18:33]: it
+Pablo [18:37]: i don't
+Pablo [18:37]: want to buy it too much
+Pablo [18:41]: other
+Pablo [18:42]: than be aware
+Pablo [18:43]: the prom
+Pablo [18:44]: ises those
+Pablo [18:48]: not
+Pablo [18:49]: necessarily true
+Pablo [18:50]: and then
+Pablo [18:51]: six weeks later
+Pablo [18:53]: but
+Pablo [18:54]: there was no
+Pablo [18:54]: discussion
+Pablo [18:56]: because
+Pablo [19:00]: or i'm studying history but
+Pablo [19:02]: there are all these merging
+Pablo [19:03]: there's no merges
+Pablo [19:05]: so you have to go back
+Pablo [19:06]: to
+Pablo [19:09]: get don't be in that situation
+Pablo [19:16]: let's open it up to questions
+Pablo [19:19]: thom
+Pablo [19:20]: as
+Pablo [19:25]: how do we do
+Pablo [19:27]: repository
+Pablo [19:28]: mining
+Pablo [19:30]: let's talk about the practical
+Pablo [19:35]: how do this great repository how do we get all this information
+Pablo [19:38]: and who will go with it to economic
+Pablo [19:38]: s
+Pablo [19:43]: does anyone have experience
+Pablo [19:51]: so there's various different tools so let's talk about resources
+Pablo [20:17]: go to the pages here
+Pablo [20:22]: we go to data method resources
+Pablo [20:35]: it's worthwhile talking with the team how is your computational environment
+Pablo [20:36]: should
+Pablo [20:36]: we use
+Pablo [20:43]: hopefully something for free so you don't have to pay money and a bunch of them are these doors here
+Pablo [20:47]: there's even some credit for students
+Pablo [20:57]: here places where you can get the repositories from
+Pablo [21:04]: github allows you through their api to actually pull data
+Pablo [21:07]: to a certain amount per hour
+Pablo [21:11]: let me say five thousand requests or whatever
+Pablo [21:16]: many people
+Pablo [21:17]: join their
+Pablo [21:18]: account
+Pablo [21:21]: you
+Pablo [21:22]: can do it five times
+Pablo [21:23]: faster
+Pablo [21:32]: you have processes running
+Pablo [21:33]: if you are analyzing
+Pablo [21:36]: multiple
+Pablo [21:41]: repositories you have processes running average and as i said the best way to do it
+Pablo [21:42]: is
+Pablo [21:46]: to have multiple goals hierarchically
+Pablo [21:49]: so start with twenty thirty projects
+Pablo [21:53]: see if you can get your data gathering
+Pablo [21:55]: code running
+Pablo [21:56]: out
+Pablo [22:00]: and then expand the depth and you can start giving your analysis
+Pablo [22:04]: and testing your hypothesis
+Pablo [22:08]: so long as you keep gathering in a field
+Pablo [22:09]: two hundred whatever
+Pablo [22:17]: you need a certain amount of project in order to generalize beyond that analyzing
+Pablo [22:23]: but as i said gather analyze so basically the map
+Pablo [22:30]: where do we do it from github is a typical example
+Pablo [22:40]: you can of course focus yourself on some software foundations where they have more particular rules like attach linux versus eclipse
+Pablo [22:43]: edit projects in their dm system
+Pablo [22:46]: over and all
+Pablo [22:48]: the source
+Pablo [22:50]: is open
+Pablo [22:53]: how do they actually my
+Pablo [23:01]: linked for next class this class an example of how to do this and we'll do
+Pablo [23:03]: a little examp
+Pablo [23:04]: le next class
+Pablo [23:08]: i'm not doing it this much because i want to start on metrics a little bit so we can
+Pablo [23:09]: actually do the
+Pablo [23:11]: practice including some metrics
+Pablo [23:17]: pipe driller is what most people use
+Pablo [23:19]: to get to the point
+Pablo [23:21]: ers so pythrieler
+Pablo [23:36]: is a tool that you can download
+Pablo [23:38]: and you can use it as a python tool
+Pablo [23:44]: and it should be easy to install
+Pablo [23:56]: and then you'll see we can take only four digitories we can download code we can
+Pablo [23:58]: request
+Pablo [23:59]: also to
+Pablo [24:10]: percival a tool that can also do that more including calculating metric
+Pablo [24:11]: s
+Pablo [24:12]: code based on
+Pablo [24:14]: all sorts of other
+Pablo [24:21]: talk about metrics we have the chaos project that implements many different
+Pablo [24:22]: metric
+Pablo [24:29]: ways to do things
+Pablo [24:33]: i recommend starting with high dealer first of all chaos
+Pablo [24:38]: if you need more data
+Pablo [24:39]: put it here
+Pablo [24:41]: but i will add
+Pablo [24:41]: it
+Pablo [24:43]: there's the world of code
+Pablo [24:46]: they have all codes not just from github
+Pablo [24:47]: for all
+Pablo [24:49]: wlc
+Pablo [24:58]: that's a very resource tool the many tools
+Pablo [25:00]: servers
+Pablo [25:08]: this should be to get you started
+Pablo [25:12]: once you have a project idea so if you're preparing your proposal
+Pablo [25:15]: you have to tell it where is the data going to come from
+Pablo [25:21]: so in addition to your rqs and motivation where's the data going to come from what are the methods going to be
+Pablo [25:23]: how are you going to pull the
+Pablo [25:24]: data how you
+Pablo [25:27]: create
+Pablo [25:35]: we will do a little practical exercise next time but for now any questions
+Pablo [25:39]: this should at least situate you
+Pablo [25:41]: to the space of points
+Pablo [25:48]: so look guys
+Pablo [25:53]: first thing is data if you cannot get the data
+Pablo [25:54]: in the next couple of weeks
+Pablo [25:56]: you don't know where it is
+Pablo [25:59]: how to get it if you don't have
+Pablo [26:01]: a proper
+Pablo [26:05]: answers
+Pablo [26:07]: one
+Pablo [26:08]: person
+Pablo [26:09]: actively working
+Pablo [26:10]: on the island
+Pablo [26:15]: how can
+Pablo [26:16]: you be
+Pablo [26:17]: gathered
+Pablo [26:21]: how many
+Pablo [26:22]: you try to
+Pablo [26:23]: do that
+Pablo [26:33]: yourself
+Pablo [26:34]: is to do some
+Pablo [26:37]: schedule
+Pablo [26:50]: next
+Pablo [26:51]: i told you
+Pablo [26:52]: about
+Pablo [26:53]: how you should
+Pablo [26:54]: tell something
+Pablo [27:59]: two minutes
+Pablo [28:01]: ago
+Pablo [29:11]: what comes
+Pablo [29:12]: to your mind
+Pablo [29:24]: existing
+Pablo [29:26]: one directionalization
+Pablo [29:32]: program
+Pablo [29:37]: how
+Pablo [29:38]: would you measure this
+Pablo [29:42]: active
+Pablo [29:42]: they are
+Pablo [29:44]: project
+Pablo [29:46]: ed
+Pablo [29:46]: all the time
+Pablo [29:48]: i
+Pablo [29:49]: say unto you
+Pablo [29:54]: but then you realize
+Pablo [29:55]: that
+Pablo [29:56]: all those that come into
+Pablo [29:57]: navy or something
+Pablo [29:58]: you do
+Pablo [29:59]: know what
+Pablo [30:00]: they
+Pablo [30:03]: mean
+Pablo [30:09]: then
+Pablo [30:10]: somebody else
+Pablo [30:11]: only believe
+Pablo [30:12]: s
+Pablo [30:14]: in
+Pablo [30:15]: all the easy one
+Pablo [30:16]: s
+Pablo [30:42]: that
+Pablo [30:43]: you have
+Pablo [30:44]: and you're trying to
+Pablo [30:45]: look rational
+Pablo [30:45]: ized
+Pablo [31:06]: there are
+Pablo [31:07]: two key measurement questions
+Pablo [31:08]: are we meas
+Pablo [31:09]: uring the right
+Pablo [31:09]: thing
+Pablo [31:10]: and our meas
+Pablo [31:12]: ure
+Pablo [31:16]: how do
+Pablo [31:17]: we make sure we have
+Pablo [31:18]: you humanit
+Pablo [31:19]: arian
+Pablo [31:20]: we have to
+Pablo [31:21]: focus
+Pablo [31:43]: science
+Pablo [31:45]: rational
+Pablo [31:46]: ity
+Pablo [31:54]: that
+Pablo [32:05]: goal
+Pablo [32:06]: western battery
+Pablo [32:07]: is a type of
+Pablo [32:11]: matthew
+Pablo [32:12]: should never talk first
+Pablo [32:13]: jesse
+Pablo [32:14]: was she can
+Pablo [32:15]: easily measure something
+Pablo [32:16]: doesn
+Pablo [32:17]: 't mean
+Pablo [32:18]: that's what you should
+Pablo [32:18]: use
+Pablo [32:19]: all the
+Pablo [32:20]: key of them
+Pablo [32:21]: what do we call
+Pablo [32:22]: this
+Them [32:36]: much
+Them [32:37]: the right
+Them [32:52]: identify
+Them [32:53]: that
+Them [32:54]: number of minds
+Them [32:55]: that
+Pablo [33:00]: is
+Pablo [33:01]: the number of part of the
+Pablo [33:02]: dad
+Them [33:16]: actually
+Them [33:17]: way back
+Them [33:18]: to nineteen eighty
+Them [33:19]: four
+Them [33:32]: soft
+Them [33:33]: ware engineering
+Them [33:44]: measures
+Them [33:45]: and information models
+Them [34:02]: come from
+Them [34:04]: twenty
+Them [34:10]: where
+Them [34:11]: the goals come
+Them [34:17]: as
+Them [34:18]: the largest
+Them [34:19]: island
+Them [34:20]: prod
+Them [34:21]: ucing the product
+Them [34:22]: they produced
+Them [34:23]: south africa
+Them [34:25]: so
+Them [34:30]: let's say
+Them [34:33]: what
+Them [34:33]: does that mean
+Them [34:38]: it means there is
+Them [34:40]: something
+Them [34:51]: user
+Them [34:53]: something
+Them [34:58]: else
+Them [35:04]: sure
+Them [35:10]: with your clients
+Them [35:12]: and
+Them [35:13]: also
+Them [35:13]: something
+Them [35:14]: their own
+Them [35:15]: clients
+Them [35:16]: my wife works around
+Them [35:17]: hospital
+Them [35:20]: she treats clients
+Them [35:25]: as clients and respectively some doctors or labs from the hospital
+Them [35:30]: or if it's external vendors or other clients that use some of the
+Them [35:31]: products possible
+Them [35:35]: all of those are treated the same the point is
+Them [35:37]: what do customers want
+Them [35:43]: what do they expect are they asking for help with what you've sold them
+Them [35:45]: are they asking for a new product
+Them [35:50]: and the goal is to actually keep everything
+Them [35:52]: although i don't know what the goal is
+Them [35:53]: of the current
+Them [35:54]: ai companies
+Them [35:55]: nobody can tell
+Them [35:56]: that
+Them [35:59]: they don't seem to be enough
+Them [36:01]: there doesn't seem to be enough damage to make sense
+Them [36:10]: here are some example questions that come out of those goals to retain customers to these customers
+Them [36:12]: not for the best
+Them [36:13]: as soon as possible
+Them [36:16]: there is a cube
+Them [36:18]: customer request
+Them [36:26]: how do you modify the way you do well you can study things like how large is our backlog
+Them [36:27]: of custom
+Them [36:27]: er chain
+Them [36:30]: is the response time for fixing but compatible
+Them [36:31]: with
+Them [36:39]: and you'll see that the closer it is to the goal of the company the more english speaking and economic those questions are
+Them [36:45]: and then the more you try to understand how to answer them the more
+Them [36:57]: you know that the answer will answer that question but if you get more to the technical part it becomes less clear
+Them [37:01]: how we should do it there will answer the original question
+Them [37:03]: and that's why it's very important
+Them [37:11]: for the technical are we measuring what we're supposed to be measuring so how will let's try to address
+Them [37:15]: is the response time for fixing values compatible with customer constraints
+Them [37:20]: so you ask the customers how much can you wait
+Them [37:26]: for us to respond to and maybe you offer different tiers of service for you to pay different
+Them [37:29]: and then you say these are set up
+Them [37:32]: response time in different years
+Them [37:37]: compatible with those constraints can we deliver on those
+Them [37:38]: guarantees
+Them [37:53]: how do you measure well you have to use some statistics you have to use some variation in response times you have to have swapped original step the question is how do you measure how do you measure it proper
+Them [37:53]: ly
+Them [37:58]: so to get from the goals to the actual metrics
+Them [38:00]: there is a process
+Them [38:01]: that's what i want
+Them [38:06]: you to do in your research project you also have a goal
+Them [38:10]: how can you
+Them [38:11]: get
+Them [38:14]: appropr
+Them [38:15]: iate response to this is
+Them [38:16]: i'm going to do this
+Them [38:22]: first think about what are all the potential ways you do
+Them [38:24]: not
+Them [38:29]: go in a deep dive and propose one solution and then try to execut
+Them [38:29]: e
+Them [38:38]: get together and say this is how i get through my goal to the research questions and then here are some potential ways to rationalize
+Them [38:45]: you must have multiple ways that you propose it first
+Them [38:46]: and then argue
+Them [38:48]: about each of them
+Them [38:48]: right
+Them [38:53]: by arguing i don't mean quite by arguably logically arguing
+Them [38:57]: about what is best what can be measured sometimes the best thing cannot be
+Them [38:57]: measured
+Them [38:58]: even if
+Them [39:03]: you wanted to for example i really want to know what the program has thought
+Them [39:04]: what he was doing
+Them [39:12]: i really want to know how long they thought about this line
+Them [39:14]: you cannot
+Them [39:14]: know
+Them [39:15]: right
+Them [39:15]: sure
+Them [39:20]: so that the theory would be how complex the line of code is through their eyes
+Them [39:23]: but we have proxies we can help
+Them [39:24]: complexity of the
+Them [39:25]: line of content
+Them [39:27]: anyways
+Them [39:30]: goal driven measurements
+Them [39:32]: not measurements just because
+Them [39:33]: they
+Pablo [39:42]: action plan really should follow
+Pablo [39:58]: you need to be all on the same page
+Pablo [39:59]: about
+Pablo [40:04]: how you capture how you report the data there is the date
+Pablo [40:06]: how it was produced
+Pablo [40:09]: so that you make sure
+Pablo [40:12]: you will use this analysis the method
+Pablo [40:16]: will be sufficient to give you what you need
+Pablo [40:20]: make sure the data is sufficient to obtain an
+Pablo [40:20]: emergency
+Pablo [40:27]: what do you include in the data what do you exclude what are missing values are there unison values
+Pablo [40:32]: at all time at least
+Pablo [40:37]: everybody on the team should be aware even if they're not going to do it
+Pablo [40:42]: should be aware where things are what you're going to be measuring and
+Pablo [40:43]: how they can
+Pablo [40:51]: be aware of how they can repeat it
+Pablo [40:56]: so let's say for some reason you have to quit this class
+Pablo [40:59]: god forbid
+Pablo [41:03]: to do that
+Pablo [41:04]: at all times
+Pablo [41:07]: communication
+Pablo [41:21]: there have been efforts to standardize checklists software engineering measure
+Pablo [41:24]: ment and some of those
+Pablo [41:26]: very complicated
+Pablo [41:28]: overkill
+Pablo [41:32]: measurement areas the checklist is design
+Pablo [41:33]: ed for
+Pablo [41:34]: programmer effort
+Pablo [41:36]: code size
+Pablo [41:38]: schedule of approach
+Pablo [41:40]: qual
+Pablo [41:40]: ity
+Pablo [41:45]: designation standards
+Pablo [41:49]: and software engineering institute at cmu
+Pablo [41:55]: this works a lot with margins of defense whatever we call it nowadays
+Pablo [41:59]: the access to
+Pablo [42:01]: specialty
+Pablo [42:05]: workout is best for those of you
+Pablo [42:09]: that don't largest furniture
+Pablo [42:10]: software
+Pablo [42:12]: in the world
+Pablo [42:14]: very
+Pablo [42:14]: interesting
+Pablo [42:20]: today they contract with a lot of people they buy a lot of software they decree a lot
+Pablo [42:21]: of software
+Pablo [42:23]: they have created for them
+Pablo [42:27]: i
+Pablo [42:31]: was involved in a study that resulted in a progression report
+Pablo [42:34]: with the department
+Pablo [42:35]: of
+Pablo [42:37]: how to plan proper
+Pablo [42:37]: ly
+Pablo [42:40]: that didn't go anywhere
+Pablo [42:42]: because government contractors
+Pablo [42:44]: but anyways
+Pablo [42:51]: let's talk about one of the whole standard
+Pablo [42:54]: measures
+Pablo [42:55]: in software
+Pablo [42:56]: engineering
+Pablo [42:59]: that is lines of code
+Pablo [43:03]: particular source line
+Pablo [43:06]: s of code the code that is now
+Pablo [43:16]: look at how many considerations you have to go for you define a dividend what sounds like let's just count the lines of code
+Pablo [43:18]: ends up being
+Pablo [43:19]: a very
+Pablo [43:21]: approved procedure
+Pablo [43:26]: are you going to involve are you going to count executable and non executable
+Pablo [43:38]: are you going to count the code the lines of code is code producer programming copy generation and so much
+Pablo [43:42]: and our translation between programming languages
+Pablo [43:49]: do you mean newly developed code previously existing code that was copied
+Pablo [43:53]: on
+Pablo [43:54]: the statement also
+Pablo [43:55]: support group
+Pablo [43:57]: identity
+Pablo [43:58]: support
+Pablo [44:07]: third
+Pablo [44:08]: party libraries
+Pablo [44:10]: that
+Pablo [44:12]: use
+Pablo [44:13]: s more support
+Pablo [44:13]: services
+Pablo [44:21]: scheduling
+Pablo [44:22]: our leadership
+Pablo [44:26]: does
+Pablo [44:27]: that
+Pablo [44:33]: depend
+Pablo [44:33]: s on the situation
+Pablo [44:37]: deliver
+Pablo [44:38]: ance versus not
+Pablo [44:38]: delivered
+Pablo [44:39]: to us we all know
+Pablo [44:41]: much
+Pablo [44:42]: less code than
+Pablo [44:43]: what was actually
+Pablo [44:51]: brought on the code that's never reachable to anything
+Pablo [44:56]: commented out code
+Pablo [45:04]: and then the second question is this is what
+Pablo [45:12]: when you count it do you count before release after release
+Pablo [45:15]: you come after a push
+Pablo [45:18]: before push after
+Pablo [45:22]: there's various different arguments for either
+Pablo [45:25]: any function
+Pablo [45:28]: this is not
+Pablo [45:30]: meant to scare you just meant
+Pablo [45:34]: to provide some of the complexity behind digital signal
+Pablo [45:42]: and then
+Pablo [45:48]: zooming out and then thinking about where does sloc fits compared to other
+Pablo [45:51]: met
+Pablo [45:53]: rics you realize that
+Pablo [45:56]: this is regular virus there's so many mechanism
+Pablo [45:56]: s
+Pablo [45:57]: so many ways to rationalize
+Pablo [46:02]: it you may as well start thinking of categories start thinking of hierarchy organizing
+Pablo [46:03]: ontology
+Pablo [46:08]: here are some of them
+Pablo [46:14]: completion of work units on the schedule side resources and
+Pablo [46:15]: calls
+Pablo [46:25]: how do you
+Pablo [46:26]: measure your
+Pablo [46:30]: time
+Pablo [46:35]: ether
+Pablo [46:39]: or the google play
+Pablo [46:40]: you're right
+Pablo [46:43]: that's a proxy not a direct measure
+Pablo [46:49]: another way to do good
+Pablo [46:51]: thank you so another way to do it is static analysis
+Pablo [46:53]: reanalyz
+Pablo [46:55]: ing the likelihood of debbie bugged
+Pablo [46:56]: and
+Pablo [47:01]: process performance technical effectiveness
+Pablo [47:09]: the look between the code product within the organization the team there are many different things you get better
+Pablo [47:19]: some people swear by these five four metrics which is size
+Pablo [47:21]: productivity
+Pablo [47:26]: time effort and reliability
+Pablo [47:31]: i am of the opinion you should know
+Pablo [47:31]: them
+Pablo [47:35]: you should know that there are four but they're not everything
+Pablo [47:42]: one thing i know for a fact is no matter what you do you should always
+Pablo [47:45]: ask yourself for what size of
+Pablo [47:49]: code and that's why you always say per thousand line
+Pablo [47:50]: s of
+Pablo [47:52]: per case of code
+Pablo [47:54]: so
+Pablo [47:55]: whatever you do
+Pablo [47:56]: whatever you measure
+Pablo [47:57]: you should
+Pablo [47:59]: always think lines of code
+Pablo [48:04]: at least for controlling for the size of the
+Pablo [48:04]: code
+Pablo [48:09]: most projects grow linearly
+Them [48:15]: if you don't control for lines of code you're not doing things
+Them [48:15]: properly
+Them [48:17]: just because
+Them [48:18]: of size
+Them [48:28]: and
+Them [48:30]: how you measure
+Them [48:45]: i hope you're making plans for the long weekend
+Them [48:51]: in a long weekend
+Them [48:55]: no
+Them [48:55]: me yeah
+Them [48:57]: for where
+Them [48:59]: did you add plans
+Them [49:01]: i don't have
+Them [49:01]: any
+Them [49:13]: that's the total the taro low hero go to
+Them [49:15]: zero

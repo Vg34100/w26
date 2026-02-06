@@ -1,0 +1,24 @@
+I'm going to mention
+now another model of computation which was developed
+around the same time period, also intended to be a way to capture all the the intuitively
+computable functions called lambda calculus. And this was proposed
+by Alonzo Church. And a little oddly, this one has been much more influential in modern
+computer science. Then the partial recursive functions. It's the basis in some sense for
+functional programming languages, particularly the quote, really
+pure ones like Haskell or ELM. Unlike the partial
+recursive functions, which I would say people
+immediately stop using or once, you know, sort of Turing
+machines came along. And, but we're not actually going
+to spend a ton of time on it. It's really interesting. And often a programming languages
+course like, like 240, well, sometimes deal with this and it's actually a fairly
+interesting way to think about programming for the same reason that you're
+writing. Language isn't. Writing programs in languages
+like Haskell is interesting. But we're going to skip
+it for this course. I'm just going to
+point out that it's, it exists and it's actually
+very easy to evaluate, right? So I found this interpreter for lambda calculus in a fairly
+straightforward notation that, that takes seven lines of scheme, which is another thats
+is a list variant, another functional
+programming language. So it's worth it to know
+that, that this was around, but I just want to mentioned this was another sort of competing model. And that's actually been somewhat influential in modern
+computer science.

@@ -1,0 +1,79 @@
+So we're going to talk about
+this problem, reachability. And it's not just
+some example problem. This is going to be a
+very central problem in the study of space
+bounded computation. And this is the problem
+given a directed graph. So sometimes this is called
+directed reachability and there's an interesting
+undirected variant of it. But the problem is
+given a directed graph, G and two nodes in the graph, is there a path from S to T? So can you reach from S to T? So the claim is that reachability, is it solvable in nondeterministic
+logarithmic space? So pause right now, think about why that is. So here is an algorithm to do it. We want to know in G, can we reach from S to T? So what we do is we
+start the node U and S, and we're going to count how
+many nodes we've searched. And we say, well, while u is not equal to T, just guess a neighbor of
+u and switch you to that. So basically this mix, if you want to think about
+the guest being random, it's taking a random walk on
+the graph starting at node u. Just set u to v. And
+then repeat, right? Just keep doing that
+until you is equal to t because that don't do it forever. If there is a path from u to v, then there's one of length at most. And the cardinality of E. So there's no point in search
+in longer paths than that. So if there is actually a path, There's a way to guess here
+so that it takes fewer than n steps to get there. So that's why we keep
+track of them search, and if it gets too big, we quit and we say false. But what if we do find that
+we can set u equal to t? O is a path from S to T, right? To note lots, even if there
+is a path from S to T, like any non-deterministic
+computation. Most of the paths don't find it, but one of them well, and if
+there's no path from S to T, it doesn't matter what
+we guess here, no path, well, so that justifies the
+correctness of the algorithm. So now, right, and notice it's non-deterministic
+because of this guessing. Okay, so now the claim is that it takes only
+log space. Why is that? Well, let's count the memory
+needed in addition to the input that we consider read-only. What variables are
+we actually writing? 2, we have u, we have b,
+and we have num search. And all of those take log of number
+of nodes, bits to represent. And what do we say log spaces, it's a constant number of
+pointers into the input, right? But that's essentially
+what u and v are. And then this num searched
+takes space log of e is one. So we have only a constant number 10, so it takes o of log space. Okay, so now we're going to talk a little bit about why
+is reachability so central to studying space
+bounded computation. So if our non-deterministic
+program uses space S and we want to use that
+program to search a graph. Well, we can search graph of size
+up to two to the s, Meaning. Right? Because you can store three, No, two nodes, u and v. And so that's enough to search
+graphs with this many nodes. In other words, like, let's
+say polynomial space, these are like internet size graphs. So let's flip this around now. Every non-deterministic
+program in some sense is completely defined by its
+configuration reachability graph. What does that graph? So this is the graph where V is the set of all configurations of the program at
+the state of memory. If you're talking about
+a Turing machine, that means configuration
+by the normal definition, that's a Python program. It's all the memory
+that you need to know, to know what to do Next. And you put an edge between two nodes if there's a transition
+from one to the other. And note that if it's a
+non-deterministic machine, you might have many edges
+coming out of the represented. You can do more than
+one thing, or sorry, coming out of you representing that you can do more than
+one next step from you. But what you can do is completely
+captured by that set of edges. Now, it's also no problem to assume that we only have a single
+accepting configuration, right? If not, then just rewrite
+your Turing machine, say so it erases all the
+tapes before it halts. So that, you know, we did that. It would decide the same language and now all the accepting configuration
+would look identical. Now, recall deterministic
+programs have a line graph. There's always only one
+next node you can go to. Nondeterministic is more general. Okay? So in fact, we can say that every problem in n space of S is equivalent
+to a reachability problem. We want to know on input x, does the machine,
+except if we're asking, well, is there a way, is there a sequence of
+nondeterministic choices to reach the accept state? Well, that's the same thing as just asking in this configuration graph, if we assume there's only a
+single accepting configuration. Once we know x, we
+know what the start configuration c axes
+and we're just asking, can we reach from CX day? They answer to that is the
+answer to the question, does that Turing machine except x? So reachability, recall is solvable, say using depth-first search in time, big O of the number of nodes
+plus the number of IT. So now we're going to
+relate this to time. And since we're talking
+here about we have space S. So the graph hat size up
+to two to the s, right? Which bounds the time. Well, then that means that we need only time O
+of 2 to the 0 of S, right? And no, we're saying here
+that the number of edges, which in general graphs can be quadratically bigger than
+the number of nodes. But not in this kind of graph because we only have 0, 1 out-degree. Because we assume that when we define our terms and
+in fact it's out-degree two. If we just assume that you can make a single binary
+non-deterministic choice. So this gives us a sort of reproof
+of what we already observed, which is that any problems solvable in n space of S is solvable
+in time two to the 0 of this. By solving reachability on the configuration reachability
+graph of the space bounded machine, which gives these two corollaries. And L is contained in P, NP space is contained in x.

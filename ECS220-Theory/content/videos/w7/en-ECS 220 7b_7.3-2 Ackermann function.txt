@@ -1,0 +1,121 @@
+Now the primitive
+recursive functions, we're conjectured to maybe
+be able to capture all of the functions that we would sort of intuitively regard as computable. And Ackermann essentially showed
+that no, that's not the case. And so there's this
+function we're going to study now called the
+acridine function. It's sort of distinctive
+characteristic is that it's quote,
+obviously computable. But it is not primitive recursive. So here, there's a bunch of variants
+of the Akram and functions. I'm just going to give
+one that's kind of like easy to, to look at. And so we're going to start
+by talking about a family of functions so that they're not just
+going to be one function here. So we're going to think
+of this function a1, an XY takes two inputs
+and it adds them. But we can think of this as saying, start with X and do the successor function
+and do it y times, right? So we're iterating the successor
+function on the first input. And the second input tells us
+how many times the iterated. And then addition or
+multiplication is a2 of x, y, x times y. And what does that do? It says, well, start with X and then do the first level
+here, A1, the addition. Do that to two x and do
+it y times in a row. So that's what multiplication is. It's iterated addition. Just like addition is
+iterated successor. Exponentiation is
+iterated multiplication. And this is the third sort of so-called level of the
+aggregate function. You can carry this idea further. You can imagine saying, well, let's take exponentiation,
+iterate it. So in other words,
+compute x to the x, to the x to the x, et cetera. And do that. Why times in a row? This is the last one I know that has a name, it's called titration. And so as you can imagine,
+this grows very rapidly. As y grows, even if x
+is like, Oh me too. And you can imagine A5
+says iterate titration. However many times is given
+by the second argument. So this can be formally defined in this way and
+this recursive way. So you say Ai of x, y is just 1 if y is 0. And then otherwise you recursively
+look at AI of x, y minus one. And then take that as the second argument in
+this call to Ai minus one. So Knuth's up arrow notation is something that sort of
+captures each of these levels. So he would write a single Up arrow to me and exponentiation and
+then that's the third level. Two up arrows would be titrations of x to the x, to the x to the x. And that tower is y axis i. And then x triple up arrow
+would be the fifth one, and that would be x double up
+arrow x double up arrow x, w, et cetera, et cetera. Okay, So these functions grow very fast after you get
+past the first two, the right bus, each level of them is. Sort of primitive recursive. So if I want to compute AI, I can do it with this series of nested for loops are
+nested repeat loops. I'm not going to dig into the
+details of this, but essentially, it's similar to how we
+showed that addition and multiplication exponentiation
+are implementable by these blue program. So you just keep adding new
+loops on the outside of that. Each loop you add gives you a new sort of level of
+the acronym function. Okay? So, so each of these is
+primitive recursive. But notice I is kinda hard-coded
+into this whole thing. If you wanna compute Ai
+plus one, this can't do it. You have to put this inside of a div. So what if that AI is
+an input variable also? So this is when people talk
+about Ackermann function, they mean this one or there's
+some other variants of it, but this is one single function
+that has I and x and y as inputs. And then it's
+expressible in this way. And this doesn't match the format of primitive recursion we talked
+about like this one does. This is how you express
+it, a primitive recursion. But this one does because
+his eyes and input here. Okay, so the way that
+I prefer to think of primitive recursive in terms of these bloop programs
+of the bounded loops. So any blue program is going to have a fixed number of nested loops. So it seems difficult to compute this a with a single bloop programs. It seems like we need high
+nested loops to get the ith row. But this can get up to an arbitrary number of sort of
+rows of the Ackermann function. So here's another characterization of the primitive recursive functions. So we can say a
+function f is primitive recursive if and only
+if there's a program. So by this, I mean, you know,
+Turing machine or Python program. And an I such that p on
+input x computes f of x. And the time it needs is bounded by the ith Ackermann function here it's bounded by
+a of two comma head. So in other words, if there's a Turing machine that
+can compute f and two n steps, or two to the n steps for 2
+to the, 2 to the 2 to the, so on and many timesteps, as long as that tie could
+be a huge time-bound. But as long as one
+of those, you know, a sub i functions bounds it than we, than the functions
+primitive recursive. And that's an exact characterization. So now we're going to argue that the thing we call the
+Ackermann function, where it's not this family, but actually that, that subscript
+is just one of the inputs. Here's how we're going to argue that this is not primitive recursive. And it's that we can define this. This is sort of like a one input
+version of the Ackermann function on input and you compute
+a sub n of 2 comment. Well, the point is
+that grows faster than any single level because the
+subscript there is getting bigger. So this first Ackerman, like what, what's going on there? Well, f of one is just three. It's two plus one. So it's three. But then f of two, right? What's happening? Well, the two gets
+added to itself. Twice. There's two twos in there. F of three is what we're now, we're, now we've moved
+up to the third level. So we're doing multiplication, and we're doing that on three
+copies of 2 and f of 4. We're doing the titration, this tower of 2's. So that's a tower of height four. Does. And so as you can see, the number
+of iterations is getting bigger, but so is the operation, right? So f of five is a 5 of 25, which is this thing. And what does that? Let's try to pick that apart. The five 2's here, but this very rapid
+titration functions being evaluated on each of them. Well, that's this thing right here. This two to double up
+arrow two is just four, so we can replace that with two. I'm going to double up arrow for, is this two to the two
+to the two to the du, which is about 65 thousand. And then, okay, well I'll try to write this in notation to
+double up arrow this thing. Well that's to double up arrow of about 65 thousand but
+then that Do you know? I don't even know of a
+way to represent that. So we can actually see this is yet another example of this
+technique of diagonalization. So this is one reason that, that Ackermann was
+thinking this way is that this is why I call these
+rows of the Ackermann function. So if this whole table kind of
+defines that Ackermann function, then essentially the diagonal
+is this thing on input and we look at the nth row and we compute it on the value 2 comma m, right? So the first thing here
+too is just fixed, but the second input is
+which column we're in. And this row is, is also the first, and that's what
+we're looking at, the diagonal. And the diagonal is
+drawing very rare. So in particular, the diagonal
+is growing faster than any single row because each one of these grows much faster
+than the one before it. So this thing could not be bounded by any single row of this table. So that's an argument
+that it's not primitive recursive because of
+that characterization that a function's primitive
+recursive if it can be computed by a time-bound that's
+of the form one of these rows. But here you're going to
+write down the output. You need so much time that it
+would exceed any of these rows. But now the Ackermann function
+is computable, right? This is what Ackerman invented
+it for is to show, Look, there's something that's
+intuitively computable, but it did not primitive. So here's a recursive
+implementation of it, like regular recursion that can actually be turned
+iterative if you want, you want an iterative implementation. We don't make any recursive calls. You can do it with a stack. The stack is your only sort
+of unbounded memory here. But you know, you're, you're
+pushing quite a few things onto it. And it turns out that the
+stack can actually be represented with just a
+single integer, right? And then pop, pop, push and is empty. It can be implemented as primitive
+recursive functions of us. So let's just stare at this thing. So this is not a bloop program. It has this wild loop
+that has this loop where whether we're going to exit the loop depends on
+what happens in here. We do, we sort of pop more things than we push and
+end up with an empty stack. So if we knew in advance how many iterations the while
+loop was going to execute, then we can replace that loop with a bounded loop and show a
+is primitive recursive. But we can't do that. The number of times
+going to execute is essentially the output itself. So this is a more general
+kind of programming language that the textbook calls
+flute for free loops. And these are essentially
+just a pseudo-code, right? So this is just as fully
+general as like Python. And therefore Turing Universal.

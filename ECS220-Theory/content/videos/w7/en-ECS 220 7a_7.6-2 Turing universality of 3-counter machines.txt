@@ -1,0 +1,119 @@
+So a counter looks like a lot
+more useless kind of memory. Then the tape of a
+Turing machine, right? I mean, for one, all you can read
+about it is it 0 or non-zero? And so most of the ways you can
+manipulate it, incrementing, decrementing, they don't change that, you know, that fact about it. If the counters got a
+really big number yeah, increment and decrement,
+it was positive before. It's positive now. So it kind of seems that there's
+not a whole lot you can do. But we did see some examples of some simple arithmetical
+functions you didn't do. Well, it turns out you
+can push the ideas farther and actually
+do any computation. So you can simulate a
+single tape Turing machine, and you only need three
+counters to do it. So anyway, we were in
+lecture right now, this would be where I try
+to make you figure it out. Literally pause right now, try to think about how
+you might do that. Now, the first step in any
+simulation argument is to think, okay, let's worry about how
+to do transitions later. First, I've just got to decide if I have a single
+tape Turing machine. Its configuration is
+identifying the states we can easily represent in our own finite states that
+for the counter machine. But the key aspect
+of the configuration is what's the contents of the tape, what string is written on
+it, and where's the tape? Whereas appointing, how
+are we going to represent that in a three counter machine? So here's one way to do it. So you have your a single
+tape Turing machine, right? Maybe it's in some state Q6. We can remember that in
+our finite states that, but it's got some big binary string. We're going to assume it
+has a binary alphabet here, that the tape alphabet is just 0, 1, and then blanks. And we're furthermore,
+we're going to assume that they've never puts
+a blank in the middle. And through some very
+tedious, you know, tricks you can to show
+that it's possible to do any computation
+you want with a, with a Turing machine that does that. So for now, let's just assume that it'll make this argument simpler. So the, the take content is entirely
+represented by a binary string. And it's just assume you have nothing but blanks off the end there. Let's make a further assumption
+that the Turing machine is very careful to maintain that the first
+and last BED are always one. Right? Again, that might not be
+true of a Turing machine, but you could modify
+one that just sticks or one on each end and then just treats them like, like
+they're at the end. It's so let's assume that's true. So here's how we're going to
+represent this with three counters. And in fact, we're going to
+represent it with two counters. We only need the third
+counter as a sort of a, a work memory to, to modify it. So we will split the, the binary string into two pieces
+based on where the tape head is. And we will interpret each side
+of that as a binary number. So the binary string
+here is 0100, 0, 1, 1, 1 in base two, that represents the integer 39. And the other end, we're going
+to do this and assume that the least significant bit is the
+one closest to the tape head. So the other one we picture reversing the string and then asked what
+number is that in binary? And that's 24. And this example. And first convince yourself any possible configuration of the Turing machine can be represented
+by two counters in this way. Right, just a number encoding. What are the bits on the
+left of the tape head? Another number encoding, what
+are the bits on the right? So now the goal is to come up with all the various operations a
+Turing machine can do and figure out what is the counter
+machine you have to do to effect the same change that
+the Turing machine would do. All right, so let's
+break it up like this. And this is what we need the
+third counter for, right? It's to, to be kind of a temporary memory as we make modifications
+to it a and B over here. So the first Turing machine operation we're going to do is read
+the bit under the tape head. We want to know, is the bit
+under the tape head currently? Wonder, is it currently? So again, literally pause and
+think about how you would do that. So first translate
+it to what question is it asking about the
+numbers that are there? Well, under the tape
+head that corresponds to the number a and it corresponds
+to its least significant bit. So we want to know is the least
+significant bit of a 0 or not. In other words, we want to
+know is a odd or even, right? And we saw how to do that
+with only two counters. That's one of the
+examples that he did. So we can use a and the third
+counter see to test is a HOD. And with a little more work
+than we did over here, we could have done with that. We did in that example. We could restore that value back to it when we're done,
+we're done reading it. Okay, so we can test is a odd, so now we can store in
+our finite states that, oh, what was that? So we can remember that. But now we might want
+to change it, right? The transition to the Turing
+machine might say, oh, if it's a 0, write a one,
+or if it's a one, right? A 0. So pause and think
+about what that is. Literally pause. Hit
+the pause button. So again, what change does that have on the number being
+represented by these bits? Well, if you flip one to a 0, that's just decrementing the number. If you flip a 0 to one That's incrementing because it's
+the least significant bit. So that's, that's very simple to do. We actually have that
+as a direct command for a counter machine
+increment or decrement. Okay, The, we might want to move
+the tape head right or left. So we literally pause and think about how would you
+move the tape head, right? How would you affect a and
+how would you effect be? And what would happen if
+the tape had lived, right? Well, that would mean a
+would change from being this bit string to that bit
+string with a 0 on the end. But what happens to
+a binary number when you append a 0 to the end of it, multiplies it by two. Now what's happening to be, be used to have all
+these bits, right? Zeros are 0, 1, 1, or in reverse order. And the order we read it for
+representing a number 1 ones are 0. But now we've gotten rid of the last year or so
+we've chopped officer. Well, what does that
+mean you're doing or if it's a one we're
+chopping off the one. What does that correspond to doing? Well, it means we're
+cutting it in half, so a is going to get doubled
+or doubled and add one. If, if we move the
+tape head over a 1, and then B is going
+to get cut in half. And if it was odd, then that's
+integer floored division. Now moving the tape had left
+is exactly symmetric to that. So that corresponds to doubling
+be and maybe adding one and cutting in half with
+an integer floor division. And then finally, the last
+thing we have to worry about doing is, well, what if the Turing machine
+needs to grow its tape, right, until we can
+sometimes picture, oh, it's got an infinite
+number of blanks, but what if we just
+represented as binary strings? So what does it moves
+on to the blank and then there's not just
+one blank over here. And let's remember we always want
+us in the endpoints are wanting. So how would we move over here
+and then change that to a one? Like what effect does that have? So literally pause and think
+about what that means. Okay, So if indeed the, the tape head is all
+the way here, well, it means a is taking
+them all the bits and B doesn't have
+anything in it, right? So B is essentially 0 now. So what we're doing is that if you try to move
+the tape head right, but b is 0 and that's a test we
+can do with our counter machine. Then B is going to stay 0. The tape has not going to be here. We're still going to
+allocate no bits to B, but a is going to have
+an extra one, right? It's gonna, we're
+gonna put a one there so we double a and add one. Just like anytime you move
+the tape head, right.

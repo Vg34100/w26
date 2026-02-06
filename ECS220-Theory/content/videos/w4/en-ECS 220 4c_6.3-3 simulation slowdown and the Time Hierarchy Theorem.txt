@@ -1,0 +1,101 @@
+Okay, so this artificial
+problem, catch-22 t, is designed to be unsolvable by
+every T of n time-bounded program. But it is solvable, right? I promised you that we're not
+just going to show there's some problem outside of time of t, Then we're going to show it is
+solvable in some bigger time. So how much time do I need
+to solve? Catch-22 of t? Well, in order to solve it, right, what do we have to do? We have to know what
+would in oninput p, What would do when run
+on its own source code? And we don't even have to know
+eventually we'll just have to know within t of length of P steps. So we could solve and eight and
+then we just negate the answer. That's what Catch-22 it. So we could just simulate P, a P for this many steps. So it does not only take
+TO length of P steps and contradict the fact that catch-22 T cannot be solved
+and that many steps. So think about that for a second. Why? Why is that? So no, because the simulation
+encourages a slowdown, right? We can't simulate P
+for this many steps. In exactly that many steps, there's some slowdown
+happening. How much? So this is where the details
+get a little tricky. It depends on the
+programming language, right? Or are you talking about Python? C plus plus? Are you talking
+about multi take Turing machines? So we're going to, for now we're just going to leave
+that slowdown has a parameter. We're going to define S of t. For the programming
+language we care about to be the number of steps
+required to simulate the steps of a program
+using an interpreter written in the same
+programming language, right? So for Turing machines is
+not that hard to show. S of t is o of t squared that
+one Turing machine can suit, you know, it can be
+given the description of another and simulate it. And there's a quadratic slow down. Someone not a very non-obvious proof shows
+that in fact that can be reduced to o of t log t for
+to take turning Michigan's. For programming
+languages like Python, it tends to be the case that this is sort of
+special tutoring machines. So this is one of the reasons that I only like to
+use Turing machines as the model when it seems
+like we need that formalism. But when we're just
+talking about programming, there's a few things they
+do that are a little awkward compared to regular
+programming languages. And this is one of them that you have this inherent simulation overhead. For most programming languages, S of t is the right. I can the Python interpreter. For each basic step
+in a Python program, it takes a constant number of
+steps of the interpreter to do it. So for most programming languages, S of T is 0 if TV, but the big O constant
+is bigger than 1, right? So for these languages, because the big O is
+kind of disappear in the definition of this
+deterministic time glass. Time of S of T of n is the
+same as time of T of n. Now, that's not the only thing
+that has to happen. We do have to simulate p
+of p for this many steps, but we have to know, well, what
+did we reach that many steps? Even if you did have this
+lightening fast simulation, it's just like real time one step of this algorithm
+for every step of P, The simulating algorithm
+also has to set off an alarm clock that goes off
+after t of n steps, right? So you do need a little time to actually like count how
+many steps that we've done. And in particular to be
+able to do that count in, in not too much extra time we need tend to be time constructable, right? It can't be some
+crazy time-bound that takes way longer to compute
+than the number it outputs. Okay, So with those sort
+of ugly details in place, now we can formally state
+this time hierarchy theorem. And this what tells us that
+if you allow more time, you can actually solve more problems. So I'll state the more
+complicated version that says, you know, if your
+programming language has this function telling you
+the simulation slow down. So it takes S of T steps
+to simulate t steps of an arbitrary program while
+running this alarm clocks. So that's all buried and S here. Then the theorem says, as long as t is time
+constructable and g is strictly smaller,
+it's a little o of t. Then the problems you can solve
+in only g of n amount of time, or a strict subset of those you can solve in S of T of n amount of time. And that looks a little complicated, but the proof is
+essentially that what we showed in that time lower
+bound a few slides ago is that catch-22 is one of these problems in this bigger
+set on the right here it's in, it's solvable in time
+S of T of n, right? So we, we run p on input
+peeve for, for t steps, our program doing that and takes S of that many steps to do it and see
+what it does and then negate it. And we prove that it is not in time. G of n for any g is
+strictly smaller than. Now, the corollary for most
+programming languages, where S of T is just o of t, right? So not Turing machines. Language languages is just
+the simpler thing to state, which is that you've got
+to time bounds T and G, and G is strictly smaller. In that case, you can solve more problems with time T of
+n than you can with time GDB. And you just have to get
+a little ugly if you're talking about Turing
+machines because they're simulation overhead is
+a little bit bigger. So in particular, it means we
+have this hierarchy of problems. We don't really consider
+sub-linear time in this class, although that is a very
+interesting subject, is called streaming algorithms that, that study sub-linear time. But the smallest one
+we'll consider is linear. And we now know that
+is a strict subset of problems solvable
+in quadratic time. Those are a strict subset of problems solvable in just a little bit
+more than quadratic time, like end the 2.1, which is a subset of problems
+solvable in cubic time. And if we allowed
+end of the 100 time, yet more problems will be solvable. So these are strict
+containment there. And then that of course, is a strict subset of P because P contain things like
+n to the 1 thousand. And that's a strict subset of time
+t to time of n to the log of n, because p is defined by
+n raised to a constant, but log of n grows faster
+than any constant. But that itself is a strict subset of this two to the N time-bound, which is itself a strict subset
+or two to the two n, right? Notice that there's a constant
+here compared to here, but this, this is not
+big O of this, right? Because this is essentially
+this time-bound squared. And then you could put a
+bigger constant there. And then you're going to
+replace this linear polynomial in the exponent with a bigger
+polynomial in the exponent. And that's all a subset of EXP. And then x is itself a subset of
+problems solvable in time two to the two to the n. And that's a strict subset of the
+so-called experts, which is, you replace this end
+here with another polynomial.

@@ -1,0 +1,1164 @@
+Pablo [0:30]: well some people conjecture
+Pablo [0:35]: there are certain say anti problems or the best you could do actually
+Pablo [0:49]: okay so like i said if i were naming the class today i would name vp for verifiable and tolerable time because that's usually how we think of it who's the problems where you can verify potential solutions
+Pablo [0:52]: quickly but the name comes from this other characterization
+Pablo [1:00]: which kind of more resembles these sort of non deterministic automata you might study in an undergraduate
+Pablo [1:11]: so sometimes it's useful to think about mp this way and other times not i just kind of bounce between the verifier definition and this one whichever is more convenient
+Pablo [1:20]: i think for understanding the physical reality that it's trying to model the verification one is a lot more straightforward
+Pablo [1:27]: it's just formalizing this intuition that you might not know how to find a solution quickly but you know how to recognize
+Pablo [1:27]: one
+Pablo [1:29]: if somebody presents
+Pablo [1:29]: a table
+Pablo [1:39]: whereas here this characterization i don't think a verification verification algorithm does real algorithms you can execute
+Pablo [1:41]: they're just deterministic polynomial time algorithms
+Pablo [1:47]: they just take one more input than the kind of decider you'd like to decide the original problem
+Pablo [1:50]: here these are one of these more kind of magical non determin
+Pablo [1:51]: istic machines
+Pablo [1:58]: but we can use them to characterize mp so n time of t where t is so high
+Pablo [2:20]: is the class of problems the following form which is that we can characterize what it means for a to be a yes xv yes instance of a or pinion of a is a language is x is a is contained in a contained set of strings with hribes if anomaly of what well this looks quite a bit like np if only if there's a w such that something is true
+Pablo [2:23]: par x w
+Pablo [2:31]: and
+Pablo [2:42]: in some sense that this is just another way of talking about mp except we kind of generalized it to arbitrary
+Pablo [2:42]: right
+Pablo [2:52]: so there's a w so that the pair xw is the s instance it was related problem ab one that allows hair
+Pablo [2:53]: that
+Pablo [2:57]: this thing is designed all the time
+Pablo [3:07]: with this in mind we can just characterize np as the union of enzyme m and c overall
+Pablo [3:14]: this is one way to get so this actually does look a bit more like the verification character
+Pablo [3:19]: but
+Pablo [3:22]: anyway it's just you know a way to kind of zero in on the specific time
+Pablo [3:28]: so we can say np is this and then but with this class we could define other non determinist
+Pablo [3:46]: ic classes that aren't necessarily hollow so we're just kind of generalizing slightly beyond x is another complexity class which is okay i wrote it here it's like n time of two to the poly n more formally it would be like the union of end time
+Pablo [3:53]: of two to the end of the c union over all the possible values of su but we can write that in a very shorthand here
+Pablo [3:58]: so it's all the non deterministic exponential time
+Pablo [4:07]: and just like np is contained in x because you're going to search all the possible witnesses of which there's only exponentially many
+Pablo [4:12]: well if you're looking at m time of like two to the n or two to the n squared
+Pablo [4:13]: to the
+Pablo [4:14]: for
+Pablo [4:15]: those
+Pablo [4:16]: because of the
+Pablo [4:17]: way the running time
+Pablo [4:18]: is a pioneer
+Pablo [4:20]: witnesses
+Pablo [4:21]: w there
+Pablo [4:22]: but he exponentially
+Pablo [4:23]: honor the x
+Pablo [4:24]: right
+Pablo [4:26]: if you
+Pablo [4:27]: have
+Pablo [4:30]: any
+Pablo [4:30]: such witnesses
+Pablo [4:31]: are there
+Pablo [4:33]: there's two lack of the words
+Pablo [4:34]: there's w
+Pablo [4:35]: it
+Pablo [4:35]: nesses
+Pablo [4:36]: so by a similar
+Pablo [4:37]: argument we made on the previous
+Pablo [4:38]: slide
+Pablo [4:42]: if i would search over all the possible witnesses that define this
+Pablo [4:50]: there's two to the two to some polynomial number of them by exhaustively searching all of them and calling the verifier
+Pablo [4:52]: i can decide all of these
+Pablo [4:53]: and don't get
+Pablo [4:55]: so this is kind of true more generally
+Pablo [4:58]: whatever you can do in non deterministic
+Pablo [5:06]: with a non deterministic behavior with a certain time bound you can do that deterministically with only exponentially more time
+Pablo [5:10]: and if you're exponential of an exponential that's delta exponen
+Pablo [5:11]: tial
+Pablo [5:21]: more generally n time of t is going to be contained in deterministic time of something like two to the o of t so two to the t
+Pablo [5:34]: ilt
+Pablo [5:40]: okay
+Pablo [5:43]: this is just kind of general
+Pablo [5:44]: izing and uses this
+Pablo [5:45]: other
+Pablo [5:47]: so
+Pablo [5:48]: let's think about some problem
+Pablo [5:48]: s
+Pablo [5:49]: not obvious
+Pablo [5:49]: ly
+Pablo [5:53]: not
+Pablo [6:10]: a little
+Pablo [6:11]: bit about that
+Pablo [6:25]: is there
+Pablo [6:26]: a short crew
+Pablo [6:28]: when a graph does not have a
+Pablo [6:28]: hamiltonian
+Pablo [6:29]: that's
+Pablo [6:30]: not obvious
+Pablo [6:32]: we don't think so
+Pablo [6:39]: we can't think i can't think of a way to prove to you that a graph lacks a hamiltonian bad like a group view that does have
+Pablo [6:40]: one i just give you the path
+Pablo [6:41]: but if it doesn't
+Pablo [6:42]: have one
+Pablo [6:47]: there's no obvious way to check that even with the a of a short proof
+Pablo [6:48]: what would i say
+Pablo [6:54]: and like i said usually you can see these kind of synonyms of there exists or there is
+Pablo [7:01]: or for some that define mp but you know be careful not everything kind of looks like it's an np
+Pablo [7:03]: so here's a classical example
+Pablo [7:11]: we call diopanine equations so it's a little bit the equations aren't dial planning there's just some equation that's a multivariate polynomial
+Pablo [7:18]: when you talk about it being a diophantine equation what do you mean is the question you're asking about this equation
+Pablo [7:20]: is you want to know does it have an integer solution
+Pablo [7:24]: so generally we use the word diopantine and angel looking for integer solutions
+Pablo [7:29]: to certain kinds of equations and in this case the typical
+Pablo [7:39]: dinofantine equation people talk about is multivariate polyphenols so polynomials with multiple variables like x y z each of them raised to some non negative integer power
+Pablo [7:43]: each of the monomials and you want to know does that happen in a deer solution
+Pablo [7:46]: so this is famously undecipherable
+Pablo [7:55]: conjectured to be decidable by david hilbert in the year nineteen hundred proved undecidable seven years later
+Pablo [8:00]: so it kind of looks like an np problem you're asking does there exist integers
+Pablo [8:05]: such that if i plug those integers in the equation would be satisfied
+Pablo [8:08]: it kind of looks like why aren't the integers
+Pablo [8:09]: the witness
+Pablo [8:15]: why did i not prove this is an mp by saying the witness would be the enemy
+Pablo [8:16]: what's wrong with that
+Pablo [8:18]: with us
+Pablo [8:34]: so if i've got a couple of say ended integers i can multiply them in time
+Pablo [8:36]: polynomial in n that's okay
+Pablo [8:46]: so it's not that the operations we need to do on this witness would take more than time holland only in the length the witness
+Pablo [8:47]: that would be
+Pablo [8:51]: but something else could go wrong
+Pablo [8:54]: the witnesses aren't necessarily polynomial
+Pablo [8:59]: we can't write
+Pablo [9:13]: down
+Pablo [9:13]: is really small
+Pablo [9:20]: enormous
+Pablo [9:21]: they're like
+Pablo [9:22]: triple dispens
+Pablo [9:22]: ial compared
+Pablo [9:23]: to the number
+Pablo [9:25]: well it turns
+Pablo [9:26]: out that
+Pablo [9:29]: sometime
+Pablo [9:29]: s the answers
+Pablo [9:30]: yes
+Pablo [9:31]: smallest int
+Pablo [9:32]: egers will satisfy
+Pablo [9:32]: it
+Pablo [9:33]: are enormous
+Pablo [9:34]: compared to the
+Pablo [9:35]: number of the
+Pablo [9:36]: right
+Pablo [9:37]: m equ
+Pablo [9:37]: ation
+Pablo [9:38]: and so while there's wit
+Pablo [9:38]: nesses
+Pablo [9:42]: so
+Pablo [9:43]: it's not identity
+Pablo [9:44]: that's not
+Pablo [9:45]: proof it's not an
+Pablo [9:46]: md but
+Pablo [9:48]: actually
+Pablo [9:49]: it was proven
+Pablo [10:04]: problem
+Pablo [10:05]: yes or no
+Pablo [10:05]: answer
+Pablo [10:06]: we asked us
+Pablo [10:08]: very
+Pablo [10:08]: subtle
+Pablo [10:09]: yes
+Pablo [10:10]: no question
+Pablo [10:11]: about gma
+Pablo [10:12]: il
+Pablo [10:13]: is it the case that these largest independ
+Pablo [10:14]: ent
+Pablo [10:23]: is
+Pablo [10:24]: their independ
+Pablo [10:25]: ence that it
+Pablo [10:26]: is
+Pablo [10:27]: and at the end it's yes
+Pablo [10:28]: that is rule out
+Pablo [10:29]: the negative config
+Pablo [10:29]: urator
+Pablo [10:32]: but
+Pablo [10:33]: here
+Pablo [10:34]: it's got to be the case
+Pablo [10:35]: that
+Pablo [10:37]: there's an independent set of size k
+Pablo [10:40]: and also there is not an independent set of size k plus one
+Pablo [10:47]: and asking oh is there not an independent set of size k plus one
+Pablo [10:51]: that looks a whole lot like this first that's the negation of an
+Pablo [10:52]: np problem
+Pablo [10:55]: and we don't have an obvious
+Pablo [10:56]: proof when the answer
+Pablo [10:57]: is
+Pablo [10:57]: no
+Pablo [11:19]: i can easily show you this there is an independent set of size k and i can somehow get my hands on it i can give it to you to prove there's an independent set aside the least k but how would i then include a short additional proof that there's no independent set aside as k plus one that seems just as hard as proving to you that there's no hamiltonian
+Pablo [11:20]: fast
+Pablo [11:23]: here's another
+Pablo [11:23]: one
+Pablo [11:24]: a random
+Pablo [11:25]: practical problem
+Pablo [11:29]: chip manufacturers regularly solve
+Pablo [11:30]: with
+Pablo [11:38]: heuristics you're given a boolean circuit c and you want to know is there a smaller circuit computing the same function
+Pablo [11:49]: so it kind of looks like mp is there a circuit and in fact we're even seeing that well if the answer is yes that witness is going to be common yield side
+Pablo [11:52]: it seems like the witness would be the smaller circuit
+Pablo [11:58]: so clearly if it's smaller than the circuit you're given as input it's going to be bounded linearly
+Pablo [12:09]: so i'm claiming this is not an np but now it's not the same problem with if there's a witness it could be huge enough there's a witness here it's small
+Pablo [12:13]: so there's got to be a problem going the other way how do we verify it
+Pablo [12:14]: in how long it's not
+Pablo [12:19]: what goes wrong why can i not verify in polynomial time
+Pablo [12:23]: that a given circuit is smaller and use the same
+Pablo [12:38]: well the function i mean the function is just some function but how do i verify two surface compute the same function what's the obvious way to do that
+Pablo [12:46]: and how many inputs how many possible inputs are if there's any implements
+Pablo [12:59]: there's an exponential number possible
+Pablo [13:07]: so for each one is a very quick algorithm to see do they compute the same value on input but there's so many inputs we have to check
+Pablo [13:12]: it would take exponential time and i can't really think of any other way to verify the two circuits compute
+Pablo [13:13]: the same function
+Pablo [13:21]: so it kind of looks like np because you're asking the synonym that there exists that it's even about a thing that's going to be small if it does exist
+Pablo [13:27]: but the obvious verification algorithm would take exponential value and we need a polynomial
+Pablo [13:28]: time verification
+Pablo [13:33]: ok another one integer program
+Pablo [13:37]: right so the hoover has dealt with linear program
+Pablo [13:44]: linear programming is a very famous optimization problem
+Pablo [13:53]: if the kind of thing you might study in a course like two hundred twenty i mean i don't know who teaches it in two twenty two but i would probably teach if i thought
+Pablo [13:53]: twenty two
+Pablo [14:04]: and you're given a set the technical way linear programming is usually phrased is the way it's used in practice which is as an optimization problem
+Pablo [14:07]: and it's that you're given some linear inequalities
+Pablo [14:11]: at a particular linear so called objective function
+Pablo [14:20]: and what you want to do is maximize that function subject to the inputs you give have to satisfy the linear inequalities
+Pablo [14:28]: but we mostly hope some decision problems in this course so i'm giving you the decision version which is get rid of the linear objective function
+Pablo [14:31]: and just ask is it possible to satisfy the inequalities
+Pablo [14:35]: so if you're given a set of linearity qualities and you want to know do they have a solution
+Pablo [14:43]: that's not obvious exactly how to do that but it's not hard it's possible to do in polynomial time
+Pablo [14:48]: the same way that you would tell if a system of equality have a solution
+Pablo [14:50]: you do gaussian elimination
+Pablo [14:59]: to figure out if a set of linear equalities has a solution in terms of similar techniques can be used to figure out if a set of inequalities has a solution
+Pablo [15:02]: but now you ask do they have an integers
+Pablo [15:16]: and this one's kind of interesting so when i said problem is not obvious in mp all of b as we think are not this one actually is contained in nv but i'm just claiming it's not obvious
+Pablo [15:19]: for the exact same reason that this one was just provably
+Pablo [15:20]: not
+Pablo [15:22]: an nd which is
+Pablo [15:27]: that what if these linear inequalities have an integer solution
+Pablo [15:29]: if i gave you the integers
+Pablo [15:34]: you could just plug it into the inequalities and check it satisfied but what if the integers are huge
+Pablo [15:47]: what if they're like triply exponentially big compared to the number of bits you need to write down the inequalities so it turns out that can't happen it turns out that if a set of linear inequalities has an integer solution
+Pablo [15:49]: then it has an integer solution
+Pablo [15:56]: where all the integers are most exponential in the number of bits you need to write down the inequalities
+Pablo [16:00]: the integers are most exponential in the number of bits
+Pablo [16:08]: then the number of bits you need to write down those numbers which is the log of that is polynomial log of an exponential
+Pablo [16:15]: so that's completely not obvious in fact it was proven independently like four different times
+Pablo [16:18]: eight
+Pablo [16:22]: it's very
+Pablo [16:23]: comp
+Pablo [16:33]: arable
+Pablo [16:40]: next
+Pablo [16:42]: thing from the textbook
+Pablo [16:43]: it's something i
+Pablo [16:44]: included this
+Pablo [16:45]: live
+Pablo [16:46]: exactly
+Pablo [16:47]: sure what they were getting
+Pablo [16:49]: almost just felt
+Pablo [16:50]: like
+Pablo [16:54]: they were taking the board decision problem and substituting
+Pablo [16:55]: the synonym
+Pablo [16:56]: like property test
+Pablo [16:57]: ing
+Pablo [16:57]: anyway
+Pablo [16:58]: the way that
+Pablo [16:59]: 's the phrase
+Pablo [17:02]: as a class of boolean
+Pablo [17:02]: property
+Pablo [17:03]: is or
+Pablo [17:08]: iented
+Pablo [17:09]: outputs of boolean
+Pablo [17:10]: value and that will be
+Pablo [17:11]: value
+Pablo [17:29]: that
+Pablo [17:30]: makes the verifier
+Pablo [17:32]: so
+Pablo [17:33]: again i'm not exactly sure
+Pablo [17:34]: what they're meaning when
+Pablo [17:36]: they get substitute eighty as a property
+Pablo [17:37]: and b as opposed to
+Pablo [17:38]: it's just a decision
+Pablo [17:43]: but it gets us thinking about using these logical
+Pablo [17:48]: flashlighters so let's think about these logical quantities doesn't exist
+Pablo [17:49]: right then
+Pablo [17:55]: so if that exists combined with the thing that naomi not exist is the most polynomial in the length of x
+Pablo [18:02]: and the evaluation procedure you have to do once you have both of them is polynomial then that's defined here
+Pablo [18:05]: so concretely let's say g is a graph
+Pablo [18:09]: and h of g is the property that g is hamiltonian
+Pablo [18:14]: then hv of gp is the polynomial time property that p is a hamiltonian
+Pablo [18:31]: so anyway nothing super deep is being said here like i said i'm not exactly sure this is like one of those points where the textbook gets a little informal and i'm not sure exactly what they mean by property versus decision problem but when we make the quantifiers explicit
+Pablo [18:36]: then this definition kind of shows this asymmetry between yes and no statements
+Pablo [18:41]: so if the answer is yes that's going to be true if and only if there is a w
+Pablo [18:43]: that makes happy
+Pablo [18:49]: and what happens when you negate and exists it becomes a for all to say
+Pablo [19:00]: it is not the case that there is a w that ab would accept is the same as saying for all w ab will reject x comma
+Pablo [19:04]: that's just de morgan's laws in action
+Pablo [19:10]: and exists and for all are two different quantifiers so when you negate
+Pablo [19:14]: this what do you not
+Pablo [19:19]: ice is not the case that there is a
+Pablo [19:22]: path of achv
+Pablo [19:29]: hb and gt
+Pablo [19:36]: rossi
+Pablo [19:41]: another way
+Pablo [19:42]: to see
+Pablo [19:43]: the eighth side of training
+Pablo [19:54]: ex
+Pablo [19:56]: isted for all of you to eat the
+Pablo [19:57]: thing that was originally
+Pablo [19:57]: accurate
+Pablo [20:02]: so not necessarily
+Pablo [20:04]: a name
+Pablo [20:05]: for this complex
+Pablo [20:05]: ity
+Pablo [20:08]: and one way to think about it
+Pablo [20:09]: is
+Pablo [20:10]: for all version
+Pablo [20:12]: using
+Pablo [20:13]: an exists
+Pablo [20:14]: on
+Pablo [20:15]: fire
+Pablo [20:15]: like we did
+Pablo [20:15]: here
+Pablo [20:16]: we lack
+Pablo [20:18]: equival
+Pablo [20:19]: ently
+Pablo [20:19]: if you take something
+Pablo [20:21]: that has a quantifier
+Pablo [20:25]: another way that is to
+Pablo [20:27]: be the class of problems
+Pablo [20:27]: whose complements
+Pablo [20:28]: are
+Pablo [20:32]: decision
+Pablo [20:33]: problems
+Pablo [20:33]: are substring
+Pablo [20:34]: s
+Pablo [20:35]: so
+Pablo [20:36]: that's a zero
+Pablo [20:43]: decision
+Pablo [20:49]: is not
+Pablo [20:50]: a common ep
+Pablo [20:51]: imen that's
+Pablo [20:51]: not a word
+Pablo [20:52]: you got to know one level
+Pablo [20:53]: down in the past
+Pablo [20:54]: that higher
+Pablo [20:55]: and
+Pablo [20:56]: d is a set of
+Pablo [20:57]: sets of
+Pablo [20:58]: strings
+Pablo [20:59]: you go
+Pablo [21:00]: to each of those
+Pablo [21:00]: sets of strings
+Pablo [21:02]: the first
+Pablo [21:03]: one to be having
+Pablo [21:10]: to compl
+Pablo [21:11]: ement of access
+Pablo [21:12]: matthew
+Pablo [21:13]: s that is contained
+Pablo [21:14]: in
+Pablo [21:17]: that
+Pablo [21:18]: set wealth
+Pablo [21:19]: is
+Pablo [21:23]: all
+Pablo [21:24]: of those binary strings
+Pablo [21:30]: so
+Pablo [21:31]: that they do it in a way
+Pablo [21:32]: i think of it is
+Pablo [21:33]: that
+Pablo [21:34]: do not have
+Pablo [21:36]: that
+Pablo [21:36]: set of graphs
+Pablo [21:37]: that do not have
+Pablo [21:38]: max seven
+Pablo [21:40]: but
+Pablo [21:41]: cohen meets up
+Them [21:46]: or
+Them [21:47]: another
+Them [21:49]: problems which
+Pablo [21:55]: i have
+Them [22:01]: or
+Them [22:02]: another ways of properties
+Them [22:03]: of the one a
+Them [22:04]: x equals twelve
+Them [22:05]: w
+Them [22:07]: s
+Them [22:08]: swear
+Them [22:09]: to give no
+Them [22:15]: power
+Them [22:18]: but
+Them [22:19]: be careful
+Them [22:20]: it's not compl
+Them [22:21]: ement
+Them [22:22]: it is the sub
+Them [22:22]: lime
+Them [22:35]: yes
+Them [22:37]: we do
+Them [22:39]: someone
+Them [22:41]: visit
+Them [22:52]: you
+Them [22:53]: and
+Them [23:02]: co mp is not the complement of that it's the set of languages whose complements are
+Them [23:04]: if you want to think about it
+Them [23:07]: or equivalently think about it
+Them [23:11]: now we do
+Pablo [23:11]: have this relationship
+Pablo [23:16]: if p is identity which we don't think it's true but if it is then np equals code
+Pablo [23:16]: why is that true
+Pablo [23:35]: think about co was kind of like an operator
+Pablo [23:44]: i put ko in front of a complexity class it doesn't mean take the compliment it means well that complexity class is a bunch of languages so that's a
+Them [23:44]: strange
+Them [23:48]: with that in mind what is copy
+Them [23:55]: well the one syllable name for the two syllable complexity class co
+Them [24:09]: right the set of complements of problems in b is just me it's upright or put another way
+Them [24:12]: if i've got a polynomial time algorithm for a problem
+Them [24:14]: i also have a polynomial time algorithm
+Them [24:15]: for its vacation
+Them [24:18]: i just negate the output
+Them [24:20]: and now
+Them [24:23]: whenever the original algorithm says yes i'm going to say no
+Them [24:25]: and the original algorithm says no i'm going to say yes
+Them [24:29]: but negating the output is just one additional step
+Them [24:41]: so if the original thing was polynomial time so is this or in other words all complements of problems in p are also contained in b so p equals co p so if p was np and p would equal
+Them [24:41]: co
+Pablo [24:47]: s of p equals n d you don't need any of these wit
+Pablo [24:47]: nesses
+Pablo [24:49]: or verification
+Pablo [24:51]: you just would have a polynomial
+Pablo [24:52]: time algorithm
+Pablo [24:53]: for everything in mp
+Pablo [24:55]: so you can also have one for other
+Pablo [25:03]: but what about the other what if np equals co n is that necessarily implied people's envy
+Pablo [25:21]: well we don't know this is o one could imagine proving a theorem of the form if mp equals co np then in fact they're both just equal to p but i know of no such theorem and in fact we think both these are false
+Pablo [25:25]: we think p is not equal to mp and we also think probably np is not equal to
+Pablo [25:25]: code
+Pablo [25:35]: and this idea of np not equaling co np kind of captures our intuition
+Pablo [25:39]: that if a graph lacks a hamiltonian path
+Pablo [25:43]: there's not necessarily a short proven
+Pablo [25:46]: if that's true there is no short proof
+Pablo [25:53]: that you know a graph lacks a hamiltonium half that is one formalization of the idea and p zero
+Pablo [26:08]: in other words this asymmetry between having short proofs when the answer is yes but not really having the answer no is fundamental but eventually we're equal to co np that would mean all those entity problems when the answer is no there's also a short proof of
+Pablo [26:08]: that
+Pablo [26:25]: but there's no obvious way to go from a what if what if all the problems of np not only had short proofs when the answer is yes that's the definition but also had short proofs when the answer is no that's incorporating the hypothesis and equals cohen b
+Pablo [26:39]: well that would mean there's a verifier when the answer is yes there's this other verifier when the answer is no could you somehow combine those two verifiers into just an algorithm that doesn't need witnesses it's not obvious it's not obvious how to do that
+Pablo [26:43]: so we don't know that the left thing implies the right
+Pablo [27:02]: and let's just point out that there are some problems that are not obviously in highest one example is this one we gave a few times is it the case that a given graph g has the property that is largest independent set this size exactly k where k is our second
+Pablo [27:13]: so like we said it's not obviously an np because what does it mean to say it's largest independent set decides k it means there is an independent set of size k that's an np type of statement
+Pablo [27:35]: and there is not an independent set of size k plus one that's a co np type of state negation of score put another way all sets of nodes besides k plus one are not independent for all substitized k plus one at least one pair has an x that's an easy thing to check if i would give you the percent size table for
+Pablo [27:52]: two properties one of which is an np property there is an independent set of size k and there's not an independent set of size k plus one that's a co np property it's a negation of an nv property
+Pablo [27:56]: but the conjunction of those two isn't obviously an item
+Pablo [27:58]: np is defined by a single exists
+Pablo [28:03]: co mp is defined by a single for all or if you like a single not exists
+Pablo [28:09]: but this is defined by the combination of those two and exists and denies this
+Pablo [28:11]: so it's not obvious
+Pablo [28:13]: anything
+Pablo [28:19]: is not we think that that question is probably not contained in either mp or
+Pablo [28:27]: this was what i messed up a little earlier
+Pablo [28:36]: this had a more exotic looking kind of original formulation of the classic using non deterministic
+Pablo [28:37]: programs
+Pablo [28:45]: so what's non deterministic computation well i said our formal definition of computation is a program in your favor program
+Pablo [28:51]: so take your favorite programming language and imagine an augmenting it with one new instruction
+Pablo [28:58]: which could be something like go to either line three or line mount
+Pablo [29:03]: basically this or kind of operator here that's saying do one of these or do the other
+Pablo [29:05]: i'm not really saying which to do
+Pablo [29:05]: it
+Pablo [29:17]: just non determinist one or you don't need go to you can do it like alternatively you could say whenever i assign a boolean value one way i'd be allowed to do is assign v to be zero or
+Pablo [29:29]: what value does it have after that well we're not saying we're just saying this is a new instruction it's going to non deterministically pick either zero or one and then assign so if you wanted to do it like a go to then you could do an if statement
+Pablo [29:31]: check the value of b and go
+Pablo [29:32]: to the right
+Pablo [29:32]: line
+Pablo [29:33]: depending
+Pablo [29:34]: on
+Pablo [29:46]: so if you have a non deterministic program its computation forms a tree of configurations instead of a sequence normally have a sequence you have your initial configuration
+Pablo [29:49]: you do one step say of like the turning machine
+Pablo [29:55]: you go to the next configuration you do one more set go to the next and you just got this line configurations and if the thing halts
+Pablo [29:58]: you get to one configuration at the end it's just a single chain
+Pablo [30:04]: but if you can do these non deterministic choices now all the possible things that could happen
+Pablo [30:08]: form a train or more precisely they form a dag because you could imagine
+Pablo [30:14]: if i went left here and right here i might get to the same configuration if i went right here and back left
+Pablo [30:17]: but to make it simple i'm just going to think of it like a truth
+Pablo [30:28]: and whenever you do a deterministic instruction that's a node that just says signal child but if you do one of these non deterministic ones you have two
+Pablo [30:29]: children
+Pablo [30:31]: just representing hey you could do either
+Pablo [30:37]: and depending which choices you do it may take different amounts of time to halt
+Pablo [30:43]: but suppose it halts on all of these paths then it's going to help with a yes or no
+Pablo [30:43]: answer
+Pablo [30:46]: and maybe some of the pads say no some of the past saves
+Pablo [30:59]: some of our items and how you choose i'm just saying this is an object you imagine associating to any non deterministic
+Pablo [31:05]: now what we do in order to say well
+Pablo [31:07]: i give this program an input
+Pablo [31:17]: how do i define whether it accepts or rejects because it's non deterministically choosing some paths causes it to say no some causes to say yes
+Pablo [31:29]: so we're going to do the same asymmetry we do with say nfas similar to the asymmetry and np which as we say
+Pablo [31:32]: the machine accepts if at least one leaf says yes
+Pablo [31:36]: and it rejects of all the leaves
+Pablo [31:39]: say so in other words if there is a way to make guesses
+Pablo [31:42]: that causes
+Pablo [31:50]: the machine to halt and say yes then we say it accepts demo even if other sequences of guesses would cause it to
+Them [31:50]: say
+Them [31:57]: now i didn't say anything about probability but if you like to think in terms of probability
+Them [32:03]: and you think of each of these non deterministic choices just flipping an unbiased coin
+Them [32:14]: then if you like to think of those terms you don't have to but if you like with any of those terms then this is the same thing as saying the probability that yes is common
+Them [32:16]: at least one of those leaves says yes
+Them [32:24]: there's some positive probability you will get to that leaf but if all of them say no then the probability is zero
+Them [32:29]: so if you like to then probabilistically that is the probabilistic formulation
+Them [32:38]: and then mb is just a class of problem solvable by a polynomial time nondeterminism
+Them [32:44]: the bipolar time here we mean you give some input it's encoded in that first configuration
+Them [32:48]: you measure how many steps you take on each path
+Them [32:52]: and that's going to be the length of the path from the root to a leaf
+Them [33:11]: if every one of those paths has length bounded by a polynomial in the length of the input we call it a polynomial time computation or in other words it's our typical kind of worst case notion only here we're taking the worst case not only overall inputs of a certain length but overall possible sequences of guesses we might make
+Them [33:22]: on each of those the most number of steps we can take on any of those is at most the length of our input n squared or n cubed or something like that we call it polynomial
+Pablo [33:28]: and p is sort of more obviously a subset of np by this definition
+Pablo [33:40]: than by the verifier right because by this definition what's a deterministic computation it's just the special case of this where we never have any of those orange non deterministic boxes
+Pablo [33:43]: and we're back to just a chain of
+Pablo [33:52]: configurations that has a single endpoint and we just say if the answer ought to be yes it should accept there if the answer ought to be no should say no
+Pablo [33:53]: there
+Pablo [34:00]: and that's clearly a special case of the kinds of program on the right there's one where you never make any of these non deterministic
+Pablo [34:00]: choices
+Pablo [34:08]: so that definition of non deterministic programs and then its relation to mp
+Pablo [34:15]: i haven't argued that that statement is true we're going to do that on the next slide but is it clear just the definition
+Pablo [34:19]: okay
+Pablo [34:37]: so we have this non deterministic computation definition that was kind of the original definition of nd that's the reason for its name stands for non deterministic polygonal time but then we have the definition we gave first in this class which was no you just do a deterministic computation
+Pablo [34:48]: but you do it with a second input that we call it with this and then once you've got the witness in front of you now the pair x and the witness you do a deterministic computation on that
+Pablo [34:49]: pair
+Pablo [34:56]: so our previous definition of np was a is an np if and only if there's a polynomial q bounding how the witness can get
+Pablo [35:11]: and a deterministically polynomial time decidable problem av where ab takes pairs x and if and only if there is a w where xw is in av and w should be x
+Pablo [35:14]: to n so that's our previous
+Pablo [35:31]: so how do we show that if a satisfied that definition of nd then it can be decided by a non deterministic polynomial time machine so we're just gonna do one direction but they're kind of both directions
+Pablo [35:40]: that are similar so here we'll set it if you satisfy that definition then you satisfy the one on the previous slide that a is decidable by a nondeterministic problem
+Pablo [35:44]: and basically what you do is
+Pablo [35:50]: view front load all the non determinism and just say okay
+Pablo [35:56]: i know i've got this verifier maybe it can take pairs as input x delta
+Pablo [36:01]: now i've got to design a non deterministic machine that takes one input x
+Pablo [36:09]: but it should have the property that if and only if the answer ought to be yes there's a sequence of guesses it can make that will cause it to output yes
+Pablo [36:18]: otherwise no matter what a guess is it will output so we will just front load all of the non determinism to guess our witness
+Pablo [36:29]: w so that's the very first thing you do you just randomly generate some bits to guess w and then once you've got w along each of these branches
+Pablo [36:38]: you just feed it to the deterministic verifier and you just deterministically decide as x and this w doesn't say yes
+Pablo [36:41]: how about x with this number yes it does say this
+Pablo [36:48]: and hopefully it's clear that if a statement on the left is true there is a w
+Pablo [36:53]: that makes a b and sub then at least one of these leaves will be yes
+Pablo [37:02]: and it all if this is not the case in other words no matter what w you put here ab is going to reject then no matter what w we guess here
+Pablo [37:07]: we're going to have nothing but nodes and that will satisfy the definition of
+Pablo [37:11]: this non deterministic program deciding the problem
+Pablo [37:22]: now there's another direction which is what if you have
+Pablo [37:30]: a problem and it is decidable by a polynomial time non deterministic turing machine not necessarily one that looks like this
+Pablo [37:33]: what if it looks like this
+Pablo [37:39]: how can somebody give me an argument that if i have a polynomial time program like this
+Pablo [37:46]: that in fact there's a polynomial time deterministic verifier what would the verifier
+Pablo [37:58]: you know you've got this program
+Pablo [38:06]: your verifier is given x and w as input x is the kind of input this program takes
+Pablo [38:16]: what should w represent what should this deterministic verifier do with w and maybe call this non deterministic thing
+Pablo [38:26]: i guess the witness would be like the correct path down right
+Pablo [38:44]: yeah interpret the bits of the witness as as you're simulating this non deterministic computation some of the instructions are deterministic like in this case the first two are just deterministic but then you reach a point where oh it reached one of these non deterministic branches
+Pablo [38:50]: where we gotta make one of two choices just consult the next bit of the witness
+Pablo [38:52]: to decide what to do
+Pablo [38:56]: and by the definition of np
+Pablo [39:00]: according to the non deterministic characterization
+Pablo [39:05]: if this thing accepts one of these paths is gonna end in yes
+Pablo [39:10]: so by feeding the w that will cause you to take that path the verifier rules
+Pablo [39:17]: but if this thing rejects on all paths no matter what w you give this thing is gonna end up rejecting and you're verifiable
+Pablo [39:23]: okay
+Pablo [39:36]: this is the last slide and this is not from the textbook this is something that it's gonna sound awkward because i'm not quite sure how to phrase this but one of my colleagues kind of said this
+Pablo [39:44]: a year or two ago and i thought yeah i think there's something to do this i think we're gonna see this play out in the next couple years
+Pablo [39:49]: okay so we're gonna jump a bit to just think about machine learning
+Pablo [39:49]: right
+Pablo [39:53]: what do we know about
+Pablo [39:55]: human generated
+Pablo [39:55]: training
+Pablo [39:59]: and super
+Pablo [40:00]: vised data is evil
+Pablo [40:01]: one of the big
+Pablo [40:02]: insights of the large
+Pablo [40:04]: language models
+Pablo [40:05]: oh you can do the sun
+Pablo [40:06]: supervisor
+Pablo [40:08]: so again
+Pablo [40:09]: you don't need a field of
+Pablo [40:12]: labeling certain sentences
+Pablo [40:12]: good or bad
+Pablo [40:14]: but for certain ang
+Pablo [40:15]: le classification
+Pablo [40:17]: or
+Pablo [40:18]: you were like superv
+Pablo [40:19]: ising
+Pablo [40:21]: somebody
+Pablo [40:22]: who's as intelligent
+Pablo [40:24]: as the intellig
+Pablo [40:24]: ence
+Pablo [40:25]: you want out of
+Pablo [40:26]: your
+Pablo [40:27]: model
+Pablo [40:31]: and
+Pablo [40:32]: there's a kind of common
+Pablo [40:33]: wisdom
+Pablo [40:34]: one like trick
+Pablo [40:35]: that
+Pablo [40:36]: you will
+Pablo [40:36]: use sometimes
+Pablo [40:37]: to so often sit
+Pablo [40:38]: back
+Pablo [40:39]: for you
+Pablo [40:40]: produce training data
+Pablo [40:41]: to train
+Pablo [40:43]: but
+Pablo [40:44]: lacking
+Pablo [40:45]: a bunch of
+Pablo [40:46]: people
+Pablo [40:48]: to label
+Pablo [40:49]: you produce it by
+Pablo [40:50]: some other
+Pablo [40:51]: common wisdom
+Pablo [40:52]: is okay great
+Pablo [40:52]: you can do this
+Pablo [40:58]: generate a bunch of training data for gpt six
+Pablo [40:59]: but
+Pablo [41:14]: how on earth is gpt six gonna end up smarter than bpd if all the data that five produced is all we have it kind of seems like how could you train on data produced by something this intelligent and end up oriental this is kind of commonly okay
+Pablo [41:15]: so seems reasonable
+Pablo [41:20]: and of course we know this ml novels hallucinate a lot of wrong answers right
+Pablo [41:25]: but they are creative at generating sort of plausible potential answers
+Pablo [41:33]: so suppose that we want some ml model to generate chaining and to train a new model to solve an mp problem
+Pablo [41:37]: and by md i mean something where we have this deterministic way to verify
+Pablo [41:51]: when the answer is yes so one example would be what's an np program we're going to talk a bit more about this in the next couple chapters one example of an empty problem is formally proving a mathematical theory
+Pablo [41:59]: what a mathematical theorem has a formal proof using a formal proof or rock
+Pablo [42:04]: the proof itself is the witness
+Pablo [42:16]: so let's say you set your overconfident hallucinating llm to generate a bunch of attempted solutions like trying to prove a theorem
+Pablo [42:21]: well even if ninety nine percent of that is just slop and it's just hallucinating things it doesn't work
+Pablo [42:29]: if that problem you're trying to get solved is an np problem you can use this deterministic verifier
+Pablo [42:30]: to filter
+Pablo [42:47]: to automatically detect the swap it'll only keep the correct solution or in other words np problems are exactly the ones or maybe not exactly but definitely nd problems are ones that allow automated generation of high quality synthetic training
+Pablo [42:55]: so i think that the first kinds of problems that we're going to see
+Pablo [42:58]: sort of succumb to agi
+Pablo [43:06]: machines there's a lot of very specific problems that machines have already way better than us at chess
+Pablo [43:08]: arithmetic and so forth
+Pablo [43:13]: but these kind of things that we think are less mechanical than that proving theorems
+Pablo [43:18]: i think yeah it's the things that
+Pablo [43:32]: deterministic verifiers that are the first to fall because this is going to allow you to take some model that maybe isn't smart enough to itself tell the difference between the good and the bad solutions but very creative
+Pablo [43:51]: in order to generate training data to make something smarter than itself because the verifier is going to let you label what are the good solutions what are bad and now you're learning from not just this dumber model this dumber model combined with this verifier that actually helps you clean up the data
+Pablo [43:58]: so this is one reason i think a lot of the frontier labs are going after trying to get these things to do math
+Pablo [44:05]: because you can actually verify whether did it well
+Pablo [44:10]: unlike other kind of more nebulous tasks recognizing faces
+Pablo [44:18]: they gotten pretty good at that but we don't have like a formal verifier that tells you okay did it correctly label the face
+Pablo [44:21]: generally a person
+Pablo [44:29]: tell you i'm not sure how to formalize that any better but i think this is where the importance of mp is going to show up
+Pablo [44:30]: these will be
+Pablo [44:31]: the first time
+Pablo [44:38]: chapter
+Pablo [44:39]: four
+Pablo [44:42]: that
+Pablo [44:45]: these problems
+Pablo [44:46]: are
+Pablo [44:47]: we now
+Pablo [44:48]: get to that
+Pablo [44:57]: okay
+Pablo [45:04]: let them be empty and wait whose means it's going to end the day it's also m
+Pablo [45:05]: dr what's nba
+Pablo [45:10]: the same problems ndr if every problem in np is reducible
+Pablo [45:15]: and by reducible in this chapter we're always going to mean polynomial
+Pablo [45:24]: we're going to restrict
+Them [45:31]: in general reduction it's just a way to call a subroutine for b in order to solve it
+Them [45:38]: but for the definition of np particularly it's asymmetry between yes and no answers
+Them [45:50]: we're going to restrict the kind of reduction that we do we're going to use these so called anyway they have a few names none of the major ones are very informative sometimes they're called manyone reductions
+Them [46:01]: it's just identifying some unimportant aspect of the function they're also sometimes called car productions and everything named after a person equally useless telling you what it does
+Them [46:13]: but here's the definition of a mini one or a cartridge a is reducible to b five any one production if there's a polynomial time computable function it takes strings as input produces strings as output
+Them [46:21]: and for every x that may or may not be an a x is an a if and only if f of x is in
+Them [46:27]: so this is our definition so why does that mean
+Them [46:31]: there's a way to call a subroutine for b
+Them [46:32]: to solve that
+Them [46:40]: what's the way that we would call a subroutine for b in order to decide is x container what would you do
+Them [46:42]: with that
+Them [46:48]: if you had access to this function and the posider
+Them [47:19]: the gun decided for me we've got dysfunction at what do we do
+Pablo [47:30]: first you would run
+Pablo [47:33]: option f on x
+Pablo [47:39]: if you store the result in y what do we do with yeah you decide whether ymb
+Pablo [47:45]: there's how we call
+Them [47:50]: b in order to decide a if this function f exists
+Them [47:56]: so we just compute y f of x and then we do this tail
+Them [48:00]: or just whatever b says about y we say the same thing about x
+Them [48:08]: so it's a particular way a polish subroutine for b in order to solve a you do all the computation up front
+Them [48:10]: that's embedded into f in the very last thing
+Them [48:11]: you do is you take the
+Them [48:12]: strand
+Them [48:13]: you give it to the designer
+Them [48:14]: for me
+Them [48:15]: and you don't get
+Them [48:16]: whatever
+Them [48:16]: it says
+Them [48:20]: now one
+Them [48:21]: imagine calling
+Them [48:22]: me in different ways
+Them [48:23]: like
+Them [48:24]: if i were allowed to
+Them [48:25]: negative
+Them [48:26]: one
+Them [48:27]: well then i
+Them [48:28]: introduce problems
+Them [48:29]: encoding
+Them [48:30]: these are things
+Them [48:31]: and then needed
+Them [48:35]: but point is if we restrict ourselves to this type of production
+Them [48:44]: then this is what defines np hard as we've defined it and it maintains this kind of asymmetry between yes
+Them [48:46]: and no between np and
+Them [48:52]: so we're only allowed to call b once and we have to report the same answer
+Them [48:54]: all we can do is change what input we give to it
+Them [48:58]: by taking our input running it through f and producing something
+Them [49:10]: okay so that's what it means for a to b reducible to b and so because of this we often don't write all this out we just say f itself is the reduction knowing that we had this app we would do this
+Them [49:11]: to solve it
+Them [49:14]: so we call f the reduction
+Them [49:18]: and then we say b is np complete if it's n key hard and it's also contained in it
+Them [49:21]: so there's np hard things that are not contained in
+Them [49:25]: nv but the amazing thing is that some things in npr and vr
+Them [49:31]: so they are as hard as anything in np but they're in entity so they're the hardest problem
+Them [49:40]: okay
+Pablo [49:40]: so our first theorem is just going to be something that is not obvious if you're just seeing this definition there's an np complete
+Pablo [49:40]: problem
+Pablo [49:45]: you can write down this definition but is there really some problem out there
+Pablo [49:51]: that's literally as hard as anything else in np even though it itself isn't and yes there it is
+Pablo [49:58]: and in some sense like okay once i write it down it goes from being completely obvious to
+Pablo [50:02]: more obvious but then looks very natural
+Pablo [50:03]: but maybe
+Pablo [50:05]: let's walk through this
+Pablo [50:06]: is called witness ex
+Pablo [50:06]: istence
+Pablo [50:15]: and it's a very artificial looking problem it's kind of designed to be npr
+Pablo [50:20]: so this is the problem you're given a program
+Pablo [50:25]: and an input x to that program
+Pablo [50:38]: and an integer t and it matters that it's in unit see that y in a second so we give an integer t but we give it a unit so we write the bit one t minif
+Pablo [50:42]: and the question the yes no question we ask about these three inputs
+Pablo [50:47]: px and t is is there a string value
+Pablo [50:50]: and its length is at most t
+Pablo [50:55]: so that p we're now learning takes two
+Pablo [50:55]: inputs
+Pablo [50:57]: a person
+Pablo [50:58]: would x the second but
+Pablo [50:58]: don't do
+Pablo [51:00]: so finished p as an mp verifier
+Pablo [51:05]: is there a w and it's not any bigger than our last output
+Pablo [51:09]: which was the bit one t many times
+Pablo [51:14]: so that p on x w outputs yes and it does so in at most t steps
+Pablo [51:25]: so t is kind of playing double duty it is bounding how long this w can be and it's also bounding how long we allow p to run for
+Pablo [51:31]: we could have made two different inputs one bound in the length of w the other boundary the number of steps
+Pablo [51:36]: but if you just let t be the maximum of those two this works
+Pablo [51:39]: okay
+Pablo [51:41]: so that's the question
+Pablo [51:44]: about
+Pablo [51:46]: program
+Pablo [51:47]: ming
+Pablo [51:48]: here we need to join
+Pablo [51:48]: us at programs
+Pablo [51:49]: and then
+Pablo [51:50]: input
+Pablo [51:51]: set
+Pablo [51:52]: might be the first into
+Pablo [51:53]: that program
+Pablo [51:55]: okay
+Pablo [51:56]: the first
+Pablo [51:58]: claim that this is m
+Pablo [52:00]: so
+Pablo [52:01]: everything that can be introd
+Pablo [52:02]: uced
+Pablo [52:03]: so just
+Pablo [52:05]: become three let's put one thing
+Pablo [52:06]: that's an enemy
+Pablo [52:08]: how
+Pablo [52:09]: many of that is
+Pablo [52:15]: instead of graphs maybe let's call the graph x the set of graphs x that have a hamiltonian
+Pablo [52:17]: so what is the reduction
+Pablo [52:21]: the many one reduction from hamiltonian path to logic
+Pablo [52:25]: so an input x which is a graph
+Pablo [52:32]: i want to know does it have a hamiltonian path or not the claim is like an output f of x
+Pablo [52:39]: and it will be of the format witness existence expects meaning
+Pablo [52:52]: it'll output some p some second input maybe i'll call it x prime and then some third input which i'll write as t encoded in unary
+Pablo [53:02]: so what should p x prime and t be so that the answer to this question is yes if and only if x has a hamiltonian
+Pablo [53:06]: what should pb what should x prime be and what should
+Pablo [53:07]: t
+Pablo [53:12]: ilapi what should be
+Pablo [53:17]: what do we know about hamiltonian fat it has a polynomial time
+Pablo [53:17]: variable
+Pablo [53:26]: how
+Pablo [53:27]: about letting p be the verifier
+Pablo [53:38]: okay how about x prime
+Pablo [53:41]: what's your x prime
+Pablo [53:53]: graph
+Pablo [54:01]: this is x prime here is going to represent the first input to p what should it be
+Pablo [54:14]: so the first input p expects is a graph so what graph should x prime represent
+Pablo [54:25]: so you want the graph just to be a path
+Pablo [54:32]: p takes two inputs the first is a graph the second is a sequence of nod
+Pablo [54:32]: es
+Pablo [54:35]: this question is about the first sympathy
+Pablo [54:38]: which in this example should be a graph
+Pablo [54:41]: what graph should this x prime be
+Pablo [54:46]: in other words what's the first input we're going to give to the variable
+Pablo [54:50]: yeah defense just given the same graph we have here
+Pablo [54:54]: and we're asking the question is there a w
+Pablo [54:56]: and
+Pablo [55:00]: its length is at most t that makes p that set the bar
+Pablo [55:08]: how many
+Pablo [55:09]: should we make t
+Pablo [55:10]: so that the answer to that question
+Pablo [55:11]: is yes
+Pablo [55:12]: and only it affects
+Pablo [55:13]: other
+Pablo [55:24]: so size of x
+Pablo [55:28]: is perpendicular because
+Pablo [55:33]: t needs to again t is playing double d it needs to be big enough
+Pablo [55:37]: that if x has a hamiltonian path
+Pablo [55:38]: that count
+Pablo [55:39]: s to be encoded
+Pablo [55:43]: but
+Pablo [55:45]: yet
+Pablo [55:45]: one way
+Pablo [55:46]: to guarantee
+Pablo [56:00]: we have enough vets to encode hamiltonian path would be to make it like say at least the size of the graph i mean it certainly is sequence of a permutation of all the nodes in a graph takes less space to write down than the graph itself
+Pablo [56:04]: which needs to have all those nodes plus a description of the axes
+Pablo [56:06]: so length of x
+Pablo [56:09]: will do great
+Pablo [56:11]: for this constraint that we need the w
+Pablo [56:12]: to be allowed to be big
+Pablo [56:13]: enough
+Pablo [56:16]: that if there is a witness we've let td they're going to find it
+Pablo [56:18]: but t also says how many steps are going to run
+Pablo [56:21]: so maybe this isn't big enough
+Pablo [56:27]: how
+Pablo [56:29]: do we make t big enough
+Pablo [56:30]: to make the second part
+Pablo [56:40]: what justin met it
+Pablo [56:42]: you want to check
+Pablo [56:45]: number vertices
+Pablo [56:56]: well so let's think about let's make sure t is big enough that if the witness exists we'll find it
+Pablo [56:58]: we also need t to be big enough
+Pablo [57:01]: that p has enough time
+Pablo [57:02]: to
+Pablo [57:05]: execute so this should be the running time
+Pablo [57:09]: of p on inputs x of them
+Pablo [57:13]: we need t to be big enough that we let p run for long enough
+Pablo [57:20]: that we actually see what answer gives because according to this we're not asking does pxw output x
+Pablo [57:23]: we're asking does it output yes in at most t steps
+Pablo [57:28]: so we should make sure t is big enough that we get p
+Pablo [57:28]: i
+Pablo [57:31]: this
+Pablo [57:36]: is the reduction there's nothing particularly special to hamiltonian
+Pablo [57:38]: i like
+Pablo [57:40]: the game in terms of concrete problems
+Pablo [57:47]: i could have put literally any other np problem there i just want to put that other np problems verifier here
+Pablo [57:51]: but i would have done this exact same but just
+Pablo [57:54]: let the second input the witness existence
+Pablo [57:55]: be the first input the verifier
+Pablo [57:58]: and let tv big enough
+Pablo [58:12]: now get here this would have changed from length of x to length of x to the c where c is the constant defining how much bigger the witnesses can be than the general np problem
+Pablo [58:15]: it allows the witnesses to maybe be bigger
+Pablo [58:17]: than the first in
+Pablo [58:17]: put
+Pablo [58:18]: by
+Pablo [58:24]: most commonly so whatever the x plumbing of that paloma is you would put that here but for hamiltonian path
+Pablo [58:27]: we know that its witnesses are even smaller than
+Pablo [58:27]: you
+Pablo [58:32]: if the input's a whole graph the witness is just a permutation of the nodes
+Pablo [58:33]: of that graph
+Pablo [58:33]: which takes
+Pablo [58:35]: less
+Pablo [58:36]: right down than the graph itself
+Pablo [58:38]: but in general witnesses might be there
+Pablo [58:39]: but only by
+Pablo [58:46]: so you would put that polynomial factor here and similarly you'd have to say well what is the running time of
+Pablo [58:49]: technically
+Pablo [58:50]: i can eval
+Pablo [58:50]: uate
+Pablo [58:51]: all you
+Pablo [58:53]: here for this one
+Pablo [58:53]: exactly well
+Pablo [58:54]: shine
+Pablo [58:58]: i would say something more like this would be the max overall
+Pablo [59:02]: w
+Pablo [59:02]: of the right left
+Pablo [59:05]: w of length
+Pablo [59:15]: whose length is the most satisfaction all the w's we're going to consider for this particular
+Pablo [59:17]: right
+Pablo [59:20]: this reduction doesn't have access to dome
+Pablo [59:23]: the reduction just takes x of input
+Pablo [59:32]: and p is just a constant this would be hard coded x is just our input we can just put that here t we're going to compute but we have to compute it from the information we have
+Pablo [59:36]: we don't have the w's there might not be a node
+Pablo [59:38]: this might not be a hamiltonian crack
+Pablo [59:40]: so what we have to do is say
+Pablo [59:43]: well given all possible
+Pablo [59:44]: again
+Pablo [59:45]: this is going to be
+Pablo [59:46]: if p is a polynomial
+Pablo [59:47]: by verifier
+Pablo [59:59]: we don't have to compute this exact number we can just say well if it's polynomial time it takes time at most length of x to the k for some constant k so if you know that constant k is right
+Pablo [1:00:05]: bounds the witness length
+Pablo [1:00:11]: and this bounds the verifier ready
+Pablo [1:00:25]: so in general these ought to be easy to compete you just take your input you raise it to some fixed power
+Pablo [1:00:28]: that fixed power depends on which np problem you're looking at
+Pablo [1:00:32]: but this is pretty easy to compete
+Pablo [1:00:35]: okay
+Pablo [1:00:37]: that's the argument
+Pablo [1:00:38]: that this artificial
+Pablo [1:00:39]: kidney problem
+Pablo [1:00:41]: is mpo
+Pablo [1:00:41]: x
+Pablo [1:00:44]: because
+Pablo [1:00:45]: we
+Pablo [1:00:47]: define
+Pablo [1:00:48]: it
+Pablo [1:00:49]: a question
+Pablo [1:00:50]: about a met
+Pablo [1:00:51]: er
+Pablo [1:00:56]: it's just very carefully tuned actually for tubi one to make an enemy hard
+Pablo [1:01:00]: but two to make it be contained in np so you notice
+Pablo [1:01:09]: i gave you this constraint i want the integer t to be in unanimity we didn't use it over here it's not necessary we could have given t in binary
+Pablo [1:01:11]: this all had worked
+Pablo [1:01:16]: we need t to be a unary so that this problem will be contained in it
+Pablo [1:01:26]: so let's walk through that why is this problem contained in it well it certainly looks like an np type of problem it's a question whether there exists
+Pablo [1:01:32]: we're given some input x pxd and we're asking is there a w
+Pablo [1:01:35]: and it's not too big
+Pablo [1:01:37]: and we've got this
+Pablo [1:01:38]: kind of halloween
+Pablo [1:01:39]: kind of computation
+Pablo [1:01:44]: what if we gave to you
+Pablo [1:01:48]: because if you have an immunary
+Pablo [1:01:50]: means that it doesn't take
+Pablo [1:01:51]: exponential
+Pablo [1:01:51]: time
+Pablo [1:01:58]: so
+Pablo [1:01:59]: we don't have
+Pablo [1:02:00]: the right to
+Pablo [1:02:01]: ident
+Pablo [1:02:02]: ity
+Pablo [1:02:05]: now
+Pablo [1:02:13]: algorith
+Pablo [1:02:14]: m or there's
+Pablo [1:02:15]: a problem
+Pablo [1:02:22]: so if we imagine so let's go with the non deterministic
+Pablo [1:02:27]: algorithm definition of a why is there a non deterministic polynomial time
+Pablo [1:02:29]: algorithm well let's try to walk through it
+Pablo [1:02:33]: we're given px and t but maybe t is a minor
+Pablo [1:02:36]: right and we want to know is there a no
+Pablo [1:02:41]: and this is true but how would we do this with a non deterministic machine
+Pablo [1:02:47]: we would just guess the w's and then run p x w for t steps
+Pablo [1:02:49]: but
+Pablo [1:02:55]: if t is written in binary
+Pablo [1:03:00]: then as we guess the bits of a w
+Pablo [1:03:06]: that's going to take time exponential in the number of bits needed to write t x
+Pablo [1:03:10]: this morning
+Pablo [1:03:11]: that this definition
+Pablo [1:03:26]: we might need to write down a w that's exponentially bigger than our integer t but if we write t in unary we're basically got a bunch of ones there
+Pablo [1:03:33]: what we got to do is here's what the one just underneath it i'm going to write some bits some of which are zero some of which are one
+Pablo [1:03:35]: that represent my witness
+Pablo [1:03:35]: w
+Pablo [1:03:38]: and that's clearly going to take time
+Pablo [1:03:39]: linear in the
+Pablo [1:03:47]: length of our part of our input is this integer t and unary and so we sort of automatically get that first step of guessing the w
+Pablo [1:03:52]: is polynomial time in fact it's linear time if we wrote t and e
+Pablo [1:03:54]: this
+Pablo [1:03:55]: gives us the technical
+Pablo [1:03:56]: condition
+Pablo [1:03:57]: that the length
+Pablo [1:03:58]: of the elephant
+Pablo [1:03:59]: the time needed to write down
+Pablo [1:04:00]: w
+Pablo [1:04:02]: is that we'll play here in the
+Pablo [1:04:03]: late garden
+Pablo [1:04:04]: because
+Pablo [1:04:05]: we just made
+Pablo [1:04:06]: one argument
+Pablo [1:04:07]: bigger than
+Pablo [1:04:08]: the widget
+Pablo [1:04:10]: and then
+Pablo [1:04:11]: once you written down
+Pablo [1:04:12]: the w you give
+Pablo [1:04:13]: it to this verifier
+Pablo [1:04:16]: pmw you run that for t steps
+Pablo [1:04:20]: again if t is given in unary
+Pablo [1:04:25]: and we run for t steps that means we're running in time linear the length of r
+Pablo [1:04:34]: n so it just gives us a very easy way to argue our running time for this np machine is going to be polynomial in fact linear
+Pablo [1:04:35]: whereas
+Pablo [1:04:38]: we rotate in binary
+Pablo [1:04:39]: we could maybe
+Pablo [1:04:40]: write something out
+Pablo [1:04:41]: and then
+Pablo [1:04:43]: we wouldn't
+Pablo [1:04:43]: have a problem
+Pablo [1:04:50]: so
+Pablo [1:04:51]: that's the sort of
+Pablo [1:04:55]: so the inner is both for the writing
+Pablo [1:05:00]: down of the w tag also because of the amount of time based on t yeah
+Pablo [1:05:04]: principal
+Pablo [1:05:06]: we're just
+Pablo [1:05:07]: getting this program
+Pablo [1:05:11]: now when we did the mp hardness we chose the program to be
+Pablo [1:05:15]: an np verifier which means it runs in policy
+Pablo [1:05:17]: but the question itself
+Pablo [1:05:22]: you're allowed for this to be any program you're allowed for this to be any first input into
+Pablo [1:05:22]: the program
+Pablo [1:05:25]: and you're allowed to t to be in the integer
+Pablo [1:05:28]: and p may be a program that doesn't even halt
+Pablo [1:05:28]: right
+Pablo [1:05:31]: or it may halt in triple exponential time
+Pablo [1:05:32]: or something
+Pablo [1:05:35]: so to say you can solve this problem in all possible input
+Pablo [1:05:36]: s
+Pablo [1:05:37]: not just the kind
+Pablo [1:05:38]: of nice colonial
+Pablo [1:05:39]: time
+Pablo [1:05:51]: in what you would give when showing nd hardness you need that this can be solved in non deterministic polynomial time for any which means like i said not only should the w be at most polynomial and all this input
+Pablo [1:05:53]: but we should run for
+Pablo [1:05:54]: most column
+Pablo [1:05:56]: if t is in binary
+Pablo [1:05:59]: doing this many steps would be exponential
+Pablo [1:06:07]: so somebody gave a t whose length and binary was comparable to x it would represent an integer
+Pablo [1:06:07]: exponentially bigger
+Pablo [1:06:08]: than x that we
+Pablo [1:06:09]: now have
+Pablo [1:06:10]: a model
+Pablo [1:06:12]: okay
+Pablo [1:06:14]: but
+Pablo [1:06:16]: if you're just converting the same number
+Pablo [1:06:17]: from
+Pablo [1:06:19]: bonaire but you are doing that right
+Pablo [1:06:22]: i
+Pablo [1:06:22]: 'm guaranteed
+Pablo [1:06:26]: so the mp
+Pablo [1:06:28]: the non deterministic
+Pablo [1:06:29]: program and the str
+Pablo [1:06:30]: iving early
+Pablo [1:06:31]: is not
+Pablo [1:06:32]: letting tea
+Pablo [1:06:33]: back it is taking
+Pablo [1:06:34]: the
+Pablo [1:06:37]: argument that the number of steps it will take
+Pablo [1:06:41]: would be exponential in the length of the zoom with t
+Pablo [1:06:47]: inary but it's only linear in the length of its input if t is given in unit but in neither cases it quite easy
+Pablo [1:06:52]: not to prove it runs
+Pablo [1:06:53]: in time hollow will
+Pablo [1:06:57]: in the land which becomes very easy if it's third input
+Pablo [1:06:58]: is in use
+Pablo [1:07:00]: okay
+Pablo [1:07:13]: for the sake of the proof t has to be in unary i'm not seeing how it being in unary as opposed to binary reduces the amount of computations that you do
+Pablo [1:07:19]: it makes the problem be contained and np
+Pablo [1:07:24]: so it would be a well defined problem if i said right the integer and binary
+Pablo [1:07:28]: but this problem would not be contained in mp if i did
+Pablo [1:07:37]: okay so we'd have a problem that's np hard but not contained in mp and therefore we would not have proven there's an nd
+Pablo [1:07:39]: so it matters
+Pablo [1:07:43]: for whether this is contained in mp what is that third
+Pablo [1:07:44]: how we represent
+Pablo [1:07:48]: so you're right that the number of steps we will take
+Pablo [1:07:51]: will be the same number of steps
+Pablo [1:07:53]: whether
+Pablo [1:07:55]: we write t and unary binary
+Pablo [1:07:59]: but we measure that running time the function of our input lane
+Pablo [1:08:03]: it's bounded by a polynomial in our input length if our input length
+Pablo [1:08:06]: represents t and unit it is not bounded by
+Pablo [1:08:07]: the
+Pablo [1:08:07]: language
+Pablo [1:08:09]: if we would write t to buy
+Pablo [1:08:18]: and in particular we want it v
+Pablo [1:08:31]: okay so that's the kind of non deterministic program characterization we can also write down it write it down as a verify right so what is the polynomial time verifier for witnesses what does a verifier look like
+Pablo [1:08:36]: it takes as input an instance of the problem an instance of what doesn't existence
+Pablo [1:08:38]: is a
+Pablo [1:08:42]: triple p x and t and you can narrate so t copies of the mid one
+Pablo [1:08:43]: what
+Pablo [1:08:44]: if the verifier
+Pablo [1:08:46]: look like it takes
+Pablo [1:08:48]: that first input comma
+Pablo [1:08:49]: of essential witness
+Pablo [1:08:56]: and the potential witness is right there in the definition is there a w this thing is true
+Pablo [1:09:00]: so this is just verifying that this statement about w is true
+Pablo [1:09:03]: so we first verify its length is less
+Pablo [1:09:05]: than or equal to t
+Pablo [1:09:06]: i just negative
+Pablo [1:09:08]: one bigger than d or j
+Pablo [1:09:10]: i'll just verify the
+Pablo [1:09:15]: first part the w is no bigger than our third input
+Pablo [1:09:19]: which is t copies of that one
+Pablo [1:09:38]: and then we have to verify the second one so we run dxw but again p could be any group when we show nb hardness we make sure p is an np verifier but this problem does not state that p has to be a polynomial time verified it just says p is a two input program
+Pablo [1:09:44]: it's a program that takes two inputs maybe it never halts on any who knows what p arbitrary
+Pablo [1:09:46]: so we're going to run
+Pablo [1:09:46]: it
+Pablo [1:09:47]: but we're going to clock it
+Pablo [1:09:49]: for two
+Pablo [1:09:50]: steps where t is our
+Pablo [1:09:52]: third input of
+Pablo [1:10:01]: the first term and again if we express t and unary this will take time linear in the length of our input because our input contains as part of it
+Pablo [1:10:10]: a string of length t so if we run something for t steps that's literally even smaller
+Pablo [1:10:22]: and if he doesn't halt after he sets then the answer to that question is no it does not hold an output yes and it most t steps it didn't even halt so it did not hold
+Pablo [1:10:24]: so we return
+Pablo [1:10:34]: otherwise defaulted but maybe halted and said no so if it does halt by t steps then we just return whatever it says so if it's a yes we say yes
+Pablo [1:10:37]: it says no we say no and we're correctly answering the question
+Pablo [1:10:43]: similar
+Pablo [1:10:45]: argument when i said verbally
+Pablo [1:10:48]: read slide if we measure the running time
+Pablo [1:10:50]: of b as a function of
+Pablo [1:10:51]: that first
+Pablo [1:10:55]: input px one the time is dominated by
+Pablo [1:10:56]: the simulation
+Pablo [1:11:01]: which takes oot steps to that how many steps we let it run for
+Pablo [1:11:08]: and again there's going to be some simulation overhead here
+Pablo [1:11:11]: so we run p for two steps
+Pablo [1:11:20]: we're going to take probably more than two steps to do it but some constant time can imagine each step of p can be done by a constant number of steps of our algorithm
+Pablo [1:11:28]: so the running time is going to be c times t for some constant t and what it's just how big is p some constant how big is x
+Pablo [1:11:34]: and how big is the third input because it's expressed in unary the third input is lengthy
+Pablo [1:11:41]: and like we said our running time is dominated by running p which takes time ct but what is that
+Pablo [1:11:45]: well we just rewrite this t is m minus these two
+Pablo [1:11:49]: but we kind of think that these sort of small
+Pablo [1:11:56]: even if in the worst case these are both really tiny this would be o of so in other words it takes linear
+Pablo [1:12:00]: and what if we encoded t in binary instead
+Pablo [1:12:03]: then
+Pablo [1:12:07]: now the length of our input px
+Pablo [1:12:08]: and the third info
+Pablo [1:12:09]: t two
+Pablo [1:12:10]: binary
+Pablo [1:12:14]: would be length of the plus like the x plus the log of t
+Pablo [1:12:22]: and that means if we say well what is t as a function of these we subtract these from both sides
+Pablo [1:12:30]: but then we got to exponentiate and we get that our running time the ct with the c times well what is t
+Pablo [1:12:39]: if this is n t is going to be two to the power of s not n minus p minus x but two to that power in other words this is going to be exponential
+Pablo [1:12:45]: so this way of analyzing it
+Pablo [1:13:02]: we have shown decided by a non deterministic exponential time machine but that's not good enough we need polynomials and then it turns out if we encode t in binary this is not even contained in nd it turns out this is complete for this complexity class called nx
+Them [1:13:09]: but that happens to be true
+Them [1:13:13]: it's not just a convenience it actually is need
+Them [1:13:16]: ed
+Them [1:13:17]: some bigger class
+Them [1:13:24]: so there's our first mp complete problem looks very artificial
+Them [1:13:32]: but that's going to be our key into showing a much more natural problem
+Them [1:13:38]: and the np complete problems are basically the reason we care about the class not the only reason
+Them [1:13:43]: and then in the last slide i said well there's another reason i think
+Them [1:13:48]: they're np problems are really going to be useful for making synthetic data
+Them [1:13:48]: for training
+Them [1:13:53]: but historically the main reason
+Them [1:13:57]: they
+Them [1:13:59]: probably can be solved
+Them [1:14:03]: in polynomial nine within me then in fact everything in mpe can be solved
+Them [1:14:08]: so all they got is complete problems
+Them [1:14:09]: i saw a full problem
+Them [1:14:10]: but i also was
+Them [1:14:11]: divided in
+Them [1:14:14]: now we don't think either
+Them [1:14:14]: of those statements
+Them [1:14:15]: is true
+Them [1:14:15]: so this is usually
+Them [1:14:16]: expressed by
+Them [1:14:17]: optical
+Them [1:14:24]: if p is not np then no np complete problem can be decided in public
+Them [1:14:27]: so we only have these two possibilities either
+Them [1:14:32]: p and np are different and then none of the np complete problems
+Them [1:14:40]: are decidable in polynomial times or disjoint or they're all the same p equals nt and in fact everything
+Them [1:14:42]: in
+Them [1:14:43]: md is
+Them [1:14:44]: actually
+Them [1:14:48]: a use
+Them [1:14:49]: ful aspect
+Them [1:14:53]: so like i said
+Them [1:14:56]: this is the biggest open problem
+Them [1:14:57]: science
+Them [1:15:02]: and nobody knows how to prove it not since it was formulated in the early nineteen seventies
+Them [1:15:05]: so for lack of progress
+Them [1:15:05]: there
+Them [1:15:09]: 's a
+Them [1:15:10]: scientific hypothesis
+Them [1:15:11]: something
+Them [1:15:16]: that yeah again unlike a lot of scientific laws like the second law of thermodynamics
+Them [1:15:17]: or something
+Them [1:15:20]: where that's not a mathematical theorem that can be proven
+Them [1:15:25]: in principle somebody could prove this but it's so hard to prove that for now what we would
+Them [1:15:26]: accept it as
+Them [1:15:27]: a scientific hypothes
+Them [1:15:27]: is
+Them [1:15:31]: under that hypothesis
+Them [1:15:32]: if a problem is shown to the
+Them [1:15:34]: np complete that's evidence that it's in tract
+Them [1:15:38]: and it's proof that it's intractable that this was actually known to be true
+Them [1:15:39]: but it's not
+Pablo [1:15:48]: a little bit more into the mathematics of productions
+Pablo [1:15:49]: on third

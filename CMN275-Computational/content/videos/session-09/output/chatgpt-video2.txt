@@ -1,0 +1,45 @@
+Here is the group-level emotion analysis for the **Old Man’s Advice** comment set.
+
+**Scores (0 to 1)**
+Overall sentiment: **0.85**
+Sadness: **0.32**
+Anger: **0.04**
+Fear: **0.06**
+Disgust: **0.03**
+Joy: **0.78**
+Hopefulness: **0.92**
+
+---
+
+### **Overall Sentiment: 0.85**
+
+The comments are deeply positive in tone. People express gratitude, respect, love, and life impact from the advice. Even when speaking about loss, the tone stays warm and appreciative.
+
+### **Sadness: 0.32**
+
+Sadness is present due to repeated mentions of Bernard’s death and his story of burying many family members. Many comments express heartbreak or tears, but sadness is mixed with thankfulness rather than despair.
+
+### **Anger: 0.04**
+
+Very little anger appears in the discussion. The space is gentle and supportive, with almost no hostile or frustrated remarks.
+
+### **Fear: 0.06**
+
+A small amount of fear appears in comments about entering adulthood, feeling lost, or facing life challenges. These are mild and are quickly followed by reassurance or motivation.
+
+### **Disgust: 0.03**
+
+Disgust is nearly absent. The comment section is unusually kind, and several people even note the lack of rude comments.
+
+### **Joy: 0.78**
+
+Joy is strong throughout. People smile at small moments in the video, feel uplifted, and express love for Bernard as a guiding figure. Many say the video improved their outlook on life.
+
+### **Hopefulness: 0.92**
+
+Hope is the strongest emotion. The comments focus on motivation, guidance, future growth, and believing in oneself. Many describe the video as appearing exactly when needed, which reinforces a shared feeling of purpose and encouragement.
+
+---
+
+**Summary:**
+This comment section centers on comfort, guidance, and shared human connection. Sadness over loss exists, but it is outweighed by gratitude, joy, and strong hope for the future.

@@ -1,0 +1,1023 @@
+en-ECS 220 6a_7.1 axiomatic foundation of mathematics.txt
+
+So there was this big
+project proposed by this famous German mathematician
+David Hilbert when he addressed the International Congress of Mathematicians that 9800, right? It's kinda like in 2000 we had
+declared Millennium Prize Problems. Hilbert did, did a similar
+thing a 100 years before, laid out 23 problems he thought were very foundational
+fundamental problems that, that mathematicians should try to
+tackle over the coming century. And some of them took the better
+part of that century to resolve. Some of them are still unresolved. So Hilbert's tenth problem was this. And it says specify a procedure. Now they didn't really
+have this word yet. That's part of what we're
+talking about in this chapter is how did we come to define
+what we mean by procedure? But just think algorithm, I guess I just thank program in your favorite
+programming language. He said specify a procedure
+which in a finite number of operations enables one to determine whether or not a
+given DO fan tiny equation. So a polynomial equations with integer coefficients
+with an arbitrary number of variables has an integer solution. Now, note something curious
+about is he's not even bothering to ask whether
+such a procedure exists. Is very optimistic here, right? He just thought, well,
+clearly there is a way to do this and he just
+set out the goal to be, find it like what's the algorithm you can follow to figure out whether a multivariable polynomial
+has an integer solution. Now, many decades later, he proposed another problem, even more ambitious and even more optimism that he thought it
+obviously had a solution. It's called the incidence problem, which in German means
+the decision problem. And the problem he said is solved. One does a procedure that
+allows one to decide the validity of a given
+a logical expression by a finite number of operations. So here, think of the
+phrase validity of a given a logical expression
+that has meaning that the truth or falsity of a
+mathematical statement. You want an automated
+theorem prover that can prove or disprove any mathematical
+statement you can write down. For example, pause and see if you, you know what this mathematical
+statement corresponds to. There exists x, y, z, n in the non-negative
+integers so that n is at least three and x to the n plus y to the
+n plus z to the n, x equals e to the antibody. So a sub-question for both of these, Hilbert's tenth problem in 1900 and the enshrinement
+problem later is, what's exactly, what exactly
+do they mean by procedure? What exactly does that mean? So suppose that weren't
+possible to find it. How would you prove that
+there's no procedure? You'd have to know what
+precisely you mean by the word procedure to know
+whether or not one exists. So the goal of this, this sort of enshrined in
+this problem is to set an axiomatic foundation
+for mathematics, right? To, to reduce all of mathematics to peer set theory and logic and create a formal system powerful enough to prove all the
+mathematical facts there. So. This is what mathematical
+logic looks like. And I often think of mathematical
+logic of being something like it's sort of like
+Mathematical Anthropology. It's like mathematicians
+studying what it is that mathematicians do when
+they're doing mathematics. So to, so to do that you have to take all the concepts that map
+editions normally use. Integers, real numbers, sets, functions and relations,
+partial orders, all that stuff. And you've got to define what
+exactly are those things and its simplest if you can
+define them all in terms of just some primitives
+that you build up from. And it turns out all those can
+be defined using only sets. So one example is that if you have nothing but
+the concept of a set, you don't have much,
+You have the empty set. You haven't talked about any
+other kind of object yet. So you have just the empty set, but you don't have any other
+objects you defined yet. So how could you possibly go
+about defining other things? Well, you have the empty set, so you can put it in another set. You can talk about the set
+containing the empty set. And then you can talk about
+taking that object and consider the set
+containing only it, right? So these singletons sets that
+are kinda recursively nested. And this could be used to define
+the natural numbers, right? You could say the natural
+number we're just going to identify with the empty set. We're going to say one is
+the set containing only 0, containing only one, and so on. So this is one way to just say
+what are the natural numbers? Well, they correspond to this
+infinite hierarchy of sets. And now you didn't have to talk about any object other than a set here. And once you've defined sets, you can also define
+ordered pairs, right? So a set gives you the ability
+to talk about an unordered pair. A comma b has two elements,
+but there's no order. B comma a is the same set, but you can encode an
+ordered pair by also including a set telling you which
+of these two should be the for. So the set, the
+singleton a and the set, the set containing both a and B. It tells you what both elements
+are and which ones the first, so that's an ordered pair. A function is defined
+by its graph, right? The graph is the set of ordered
+pairs input comma, output. So this is the set right here defines the function n-squared
+sequences, right? Infinite sequences can be
+defined by the function f of n equals the nth
+element of the sequence. You can define a real number
+as a pair of sequences. One is the digits on the
+left of the decimal point, the others the digits on the
+right of the decimal point. And on the left it would
+be a finite sequence. On the right it could be infinite. So you can define anything that
+these are just some examples. Anything you want can just be
+defined using only, right? So you just have to wrap your head
+around the intuitive concept of a set and everything else
+can follow from that. But let's pause there. What exactly is a set though? Like best is the one thing
+that we have to somehow take on faith that such a
+thing called sets exist. So Russell's paradox came from
+thinking about this problem. What objects exactly is
+it that sets can contain, you can contain other sets. We did that on the last slide, so, okay, assets can
+contain other sets. You've all encountered
+the power set, right? That's a set of subsets of another's ad sets can
+contain other sets. Sure that Ought to be allowed, especially
+if we're starting with only sets. But it sets can contain other sets. Kinda set contain itself.
+Can you have a set S? So S is contained in S, right? It's not clear what that would
+mean exactly, but it's just, if you're just defining
+this element of operation that between sets
+and things that they contain. And if the things they
+contain can be other sets, then you're going to
+have the same type of object on each side of that relation. So suppose that you will add this. He said You're going to have
+sets that contain themselves. But then some sets don't
+like the set 1, 2, 3. It does not have, you know, it only has three elements
+and none of them are the set 123 individual editors. So you have some sets that contain themselves and others that
+don't if this is possible. So define Rs is the Russell said, this is a little bit hard to read. This is the set of all sets, right? Instead of all sets that
+don't contain themselves. Okay? If this is allowed in
+this set can be defined. So what, you know, what's going on here? Well, you can ask this question, is our Russell set is, are contained within itself or not? Well, if it contains itself, then it would not be an
+element of this set. But this set is r. Therefore, r would
+not be contained in. But if r is not contained in art satisfies the condition of this set. So it should be in there,
+but then R would be contained in R. So you
+get a contradiction. R cannot be defined
+essentially because it could, you'd have this paradox
+and this contradiction. So one solution to this is what's called a restricted
+set comprehension. And the idea here is I
+just said the set of all sets that don't
+contain themselves. But usually when we talk
+about the set of all objects, we usually sort of say, we're taking them
+from some larger set. So we're saying, you
+know, so the primes, for example, you tend to
+talk about it's the set of all positive integers that
+obey a certain constraint. You're not taking
+them from the set of real numbers are the binary string. So restricted set comprehension means when you write set
+comprehensions like the US, meaning the set of all objects
+that obey some constraint. You have to first specify a bigger
+set you're taking them from. And then this is
+specifying a subset of it. So here are some subset of
+aids got some things from a, but not all and not the
+ones that satisfy this. So after Russell pointed out that the problem with allowing this
+unrestricted set conference. So the point is this then would
+prevent the paradox because now you first have to
+define this bigger set. And before you've defined
+that are doesn't exist. So our couldn't possibly
+be one of the things that year pulling from a to test whether
+it's going to be and are not. So based on trying to fix
+little problems like this, the logicians weren't and
+came up with a set of so-called axioms and the states
+how sets are supposed to behave. And we're, this is not part of this sort of official
+material for the course. I just wanted to show it to you
+that it is possible to say, okay, what are the things we
+have to assume or truth sets? And from that we can get all
+the rest of mathematics. And this appears to be enough, right? So some of them are a
+little complicated, but summer are fairly
+easy to understand the, the axiom of infinities as there's a set with infinitely many elements. The axiom of pairings
+is for any two sets, x and y, There's a set that
+has both of them as members. So note that all of
+them start with a for. All right, this is a
+statement all said. So it's all sets x also too. I have to obey this constraint. This is all set z and all sequence sequences events That's w1 to wn
+obey this constraint except one. There's one said there's one
+acts in the axiom of infinity, gives you the first set, right? So this says there is a set
+with infinitely many elements. And then all the other
+axioms start with a for all. So what this does is it
+gives you a way to just declare some set exists. That's axiom number 6 declares
+that this set exists. And sometimes people
+take this domain. This is the set of natural numbers, but there's some said that exists. And then these give you a
+way to build other sets. They say if these sets can be fat, for any sets that you can define, you can define a new set, right? So for all x and y, there exists a z that pairs
+x and y together, right? So, okay, so this is going to
+be the general theme and we're going to think about
+the sort of computationally. So when we wanted to find what
+do we mean by computation? So we're imagining we're
+in the early 19th century. We don't yet know what procedure
+or algorithm means exactly. We're going to follow
+this approach of defining some sort of atomic
+computational operations. And then define a
+computable operations to be any way of composing on. And people had proposed a variety
+of solutions to this problem. Lambda calculus was
+proposed by church. The general recursive functions were being pushed by Godot and
+somebody named her brand. And there are generalization of
+another thing that's now called primitive recursive functions
+and Skolem and define. And then Turing machines
+were devised by terrain. Of course he didn't call
+them Turing machines, what we call an interview machines. And it turns out all these
+definitions are equivalent, right? They all capture the exact
+same class of computations. And, okay, and they
+could be equivalent, but still not capture everything
+we can do in the real world. But the Church-Turing thesis states that they do that anything that could quote reasonably recall the
+computation can be done by days. So one of turns, big achievements in 1936 was to show the so-called halting
+problem is undecidable. So this is the problem given an
+algorithm isn't going to halt, or there's another variance of that. So that in turn means that this insight into problem that
+Hilbert proposed is undecidable. Because remember the Enchantments
+problem was figure out an algorithm where you can write down any mathematical statement you want. And that algorithm, we'll figure
+out whether it's true or false. Well, one example of a mathematical statement is
+this Turing machine halts. You can encode that as
+a mathematical theorem. But since it's not decidable to
+figure out if it halts or not. If you supposedly had this universal theorem
+prover solving the problem, it could figure the truth or falsity of that statement,
+but terrain grooved. No algorithm can do that. So Hilbert was somewhat devastated by this is
+ruined his whole program. But, you know, the, the authors of the
+textbook say they find it quite limited, liberating, right? So there's essentially
+mathematics will never end. We're not going to be
+able to automate it with an algorithm that just does
+the job of mathematicians.-e 
+
+en-ECS 220 6a_7.2-1 programming languages with interpreters have non-halting programs.txt
+
+Now you hear about fact, like the halting problem is not
+decidable and you can't take a given Turing machine or Python program and determine
+whether it's going to hold. And you might think, well,
+maybe we should just switch to a different programming
+language, right? One where all the programs
+hall and we don't have this problems if you write a program that's guaranteed to hold. So what we'll argue here is that
+if you're a programming language, Let's programs, run other programs. Then in that programming language, some programs must be non halting. So, you know, what's a program, one of the other programs or
+operating systems do this. Web browsers with JavaScript do this, or more generally, you know that they have a JavaScript interpreter. More generally, any decent
+programming language has an interpreter, right? Otherwise known as
+a universal program in the language of
+theoretical computer science. It's a program you, so that given two inputs, one is a description of a program P, and the second is an input
+you'd want it to be, it runs it T on that input x
+and does what it would do. So that's essentially
+what an interpreter does. So suppose your programming language has an interpreter
+or you can do this. So consider defined in a
+Boolean return type program V. So like a Python function
+V and what is V2? Well, oninput p, where p is say the source code
+of another program. Where V does is it
+runs p on input peak. Meaning if it runs be an input, it gets it is its own source code. And saying programs can
+take other program doesn't, but their interpreters do that. And in this language,
+we're assuming v has this power to take as input
+a program and then run it. But then run it where it's input is itself another program
+and at the same program. So that's what V does. It seem like kind of a useless task. But now let's answer this question. Does that, but then what
+does it do with that? Well, if P returns symbol
+and then V negate. So whenever P returns, when given itself as input, if it ever does return, v will simply negate the
+return the opposite. So what now is the
+output of v on itself? What have we were to run B with
+its own source code as well. It's not well-defined because supposedly it takes v0 runs in
+an input V in negates that, but what's the output? Is it true or false? So you'd get a contradiction no matter which one
+of those with them. The way out of this is that, well, it must be the case that if you
+run V on input v, It won't hold. All right, so in other words, any programming language powerful enough to write an interpreter for itself must necessarily contain
+programs that don't hold. So this notion of universality
+implies non holding programs.-e 
+
+en-ECS 220 6a_7.2-2 countability and diagonalization.txt
+
+And we'll get back to
+computability in a bit. But first we're going to
+dive a little bit into a little bit older
+mathematical technique that preceded the development of
+the computability theory. But this technique proved crucial in developing
+computability theory. And this had to do with fairly
+straight forward looking question, which is, how do you compare
+the size of two sets? All right, well, if
+they're finite sets, it's easy the sizes like a number, and you just compare the numbers. If a has four elements in B as three, then a is at least as big as B. Fact it's bigger. But we know that well, we can get this equivalent
+characterization, which is that the size
+of a is at least that it be if there's an onto
+function from a to b. So this is a on the left
+here, this B on the right. We can describe a function by kind of drawing arrows from elements
+of a to elements a, b. And an onto function is one where everything in B has an
+arrow coming into it. And that's possible to do if and only if the size of a
+is at least that a, B, B add more elements, there wouldn't be enough
+arrows to cover it. Now, this notion of
+the size of the set as an integer makes sense
+only for finite sets. But this notion on the right makes
+sense for any sense whatsoever. So we can take this as a definition
+of what it means for a to be at least the size of B for any
+sets including infinite ones. And, you know, with this
+definition in mind, we can ask a question like, is the number of
+non-negative even integers at least the number of
+non-negative integers, right? It's a subset of it. But pause and think
+about this for a second. Well, that amounts to
+being able to show that there's an onto function
+from the even integers, from the even non-negative integers to all the non-negative integers. And you can do that by just dividing each one of them by two, right? That will map onto
+the naturals because every natural number is some
+even integer divided by two. So in fact, even though
+it's a subset is size is still the least that
+as big, as big as that event. Similarly, clearly the set of real numbers is at least as big
+as the real numbers between 01. But what about the other
+way by this definition? Well, according to this definition, pause and think about this. If you haven't seen it before. We want to be able to
+find an onto function. And there's a lot of ways to do this. But essentially I
+think something like some modification of
+arctangent pulled this off. So essentially any function that
+is only defined between, say, 01, but it goes up as the
+input approaches 0, it asymptotically goes
+down to infinity. And as the input approaches one, it asymptotically
+goes up to infinity. So that would be a function that maps onto all of the real numbers. Every real number can be hit by
+specifying something between 0 and What about the power set of N, the set of all natural numbers? This are the set of all subsets of natural numbers and
+the unit interval. So this one, the way I like
+to see this is we can map each subset of n onto a binary number. And it's the number where the set of ones and the binary number, right? So it's a binary
+number like 0 dot and then some infinite sequence
+of zeros and ones. And it's the positions
+of the ones are the, the elements of the set, right? So if for example you had
+the prime numbers 235711, you'd have ones at positions 2, 3, 5, 7, and 11, and so forth. And any real number between 01, you could express in that way by
+just specifying what's the subset of integer positions and have a
+one and they're binary expansion. So what about this? So the, the natural numbers compared to the power set
+of the natural numbers. So this one, you know, if you've seen this before,
+you know the answer. If not, you know, in fact, the answer to this one is
+no, these other three, yes, that this infinite set is at least the size
+of this infinite set. And in fact, in all
+cases it goes both ways. They have equivalent sizes
+by this step in addition, but not for and then the power
+set of the natural numbers. So this was the theorem
+Cantor proved in the 1800s. And it's that the set of
+natural numbers has struck size strictly less than the
+power set of natural numbers. In other words, its size
+at most that right, there is an onto function
+from p of n to n, but there is no undo
+function from N to P. So again, pause the VMs and
+think about why is this true? What could be the, the
+way you prove that? Okay, So we're going to prove this. And it's an interesting
+theorem in its own right, but we're mainly interested
+in the technique to be. So. So here's the statement. No function from N
+to P of n is on two. In other words, every
+function from N to P of n misses some subset of n. There exists a subset of the
+natural numbers so that for all possible inputs n to F, f of n is not equal to that
+subset is. How do we show this? So this proof is very
+short, but very tricky. So we'll just write it down and then we'll kind
+of look at a picture. So this is in fact the entire
+proof here. It is in one line. For all natural numbers n, Let S sub n equal f of that. Right? Just what's the out, what set of natural numbers does
+f output when input and call that the end of the nth set that produces some subset
+of the natural numbers. Now, define a new set S. This is going to be the set
+that is not in the range of f. F cannot map to it. This is the set of all
+natural numbers n, So n is not contained in S of it. So the claim that S is
+not in the range of f because we have defined, defined it to be so,
+so the easiest way to see this is by making a table. So we imagined in this table on, along the top is all the
+possible inputs to f, right? And then along the columns is
+all the possible outputs of f. And each output of f is a
+subset of natural numbers. And what we're gonna do here
+is identify each subset of natural numbers with its so-called
+characteristic sequence. So this is a binary sequence, is an infinite binary sequence, and it has ones exactly if that position is
+a natural number in the set. So maybe as zeros the empty set, it has zeros everywhere. Maybe S1 is the set of
+all natural numbers. It has 1s everywhere. If S2 is the set of
+even natural numbers, they would have ones on all
+the even natural numbers and zeros everywhere else, right? Maybe S3 is the set of
+odd natural numbers. Maybe as far as the set of prime. So it says 1, 2, 3, 5, 7, 11 and zeros everywhere else. So depending how f is defined, whatever subsets of N and outputs, that means you get a certain infinite sequence in
+each of these rows, one for each input to end. So what did we do
+defining S In this way? What we did is we looked at an input n and then
+the output of f on n, and we related those. So what we're doing is we're
+essentially looking along the diagonal and we're defining has to be the
+opposite of the diagonal. Right? So if n is not contained in S sub N, there's a 0 here, so 0 is not
+contained in S, 0 is a 0. So that means we put it in the S, meaning Ss characteristic sequence has a one there and is in the tes, but then one is contained in S one, write the set output F on input one, it's as all the natural numbers, so it also has one. So we don't put it into S. In other words, we have a 0 there. And so we're essentially
+looking at the diagonal. And that itself is a sequence of bits and we're just defining S to be the bitwise complement of that. So what does that mean? Well, it means that x
+cannot equal any of these rows because S
+disagrees with each of these rows and at least 1 wherever they meet
+along the diagonal. So we're one of the
+rows, say it's S3. Well, what is the fourth element? S says it's 0, but as three pairs, I was the third element. S says it's 0, but AS3 says it's one. So S cannot be the third row, but it can't be any other row
+either or in other words, S is not in the range of f. It is not any of the
+sets output by F. So that function f cannot be onto. So based on this observation, we, we say, okay, well, n and the
+power set of N are both infinite, but the power set of
+N is somehow bigger. So then can't candor defined the size of n to tip
+to say that n is. These are like the counting numbers, but P and NP and bigger
+is uncountably infinite. You can't count the outputs
+that come out of there. So you can count that the
+subsets of natural numbers by putting them into one-to-one correspondence
+with the National Archives. Now, I phrase this
+like it's only for n. It helps to see the diagonalization When you're
+talking about the natural numbers. But actually nothing in this proof as anything special about
+the natural numbers, I could have just put
+any set a whatsoever error and its own power set, right? And this shows the exact same thing. It says that for any set a, the cardinality of a is strictly less than the cardinality
+of the power set of a. Again, that's obvious
+for finite sets, like any set of three elements has eight elements and its
+power set in general, n element set, set two to
+the n possible subsets. But this proof shows it's even
+true for infinite sets if we take this definition using
+the onto functions to, to be what we mean by
+comparing the sizes sets. So this is the
+diagonalization technique. And it's useful for, for
+proving results like this. But now let's come
+back to computability. And let's look at this
+argument we made earlier about how do you programming
+languages where you can write interpreters must have
+non halting programs. That was a diagonalization. So consider what we did. We looked at programs and inputs, but then we defined
+a special program, or the only kind of
+input it ever gave to a program was the source
+code of another program. So if we're going to do that
+and we're going to consider all the programs you can
+write in our language. And then we're going to
+consider all the inputs, but the only ones we care about, our inputs that are themselves
+encodings of programs. Then what we get is
+this infinite 2D table listing all the
+possible programs that we can run and all
+the possible program source codes that we could give
+them is input when we run it. And let's consider that
+they all return Boolean. So say these are just Boolean return that functions in some language. While what did we do? We defined this program V to be such
+that on into a p.sit, it would take the program
+P would run it on input P, and it would negate that. So what it did is it was looking
+at the diagonal of this table. It was looking at all the programs
+and what they would do if you ran them on themselves as input, and then it negated that. And therefore v cannot be any of
+the rows in this program, right? If it were the third row, you'd have a contradiction. This is either true or false. This is the negation, so
+it can't be the third row, it can't be any rattle. In other words, if you can make
+a well-defined v like this, it cannot be one of the
+programs in your language, but you can write v
+as long as you can write an interpreter because
+you're going to use Vi to turn around and oninput P1, r1, v1. And so the only way out of this, the only way that we don't get
+a contradiction here is that the values here are not
+just true and false, that some of these can be undefined
+if they're undefined, right? V Running T3 and input P3. If that never halts, the won't halt either. They're both be undefined. We can only cause v
+To negate it if you actually get a real answer
+out of it, a Boolean, it.-e 
+
+en-ECS 220 6b_7.2-1 halting problem.txt
+
+So we've alluded to
+this halting problem that terrain showed with undecidable. Let's define it a bit more formally. Now, it, I'd said it's about
+detecting whether programs halt. Well, programs take inputs sometimes. So what's the input? Now there's a bunch of variance
+or the halting problem, and we'll look at some
+of them on the homework. But for now, let's define
+the halting problem. The one is language we call halting to be the one that's
+given two inputs, a program P and an input X to P. So an input in the
+format that P expects. And the question is, will p.sit
+hold when we run it on input x? Or put another way, if p has some notion of
+output when it holds, is the output well-defined? Now we haven't defined
+this class yet, so I'll say deck is the
+class of decidable problem, the decision problems
+that are decidable by some program with no bounds whatsoever on the time
+or the memory you need. So you just need that holds with an answer eventually on
+all input instances. And this is terrains famous
+theorem that halting is not indicate is not a
+decidable problems. No algorithm can figure this out. So what default in Word a cycle? Alright, suppose that weren't true and there was this
+program called halts. So that for every program P
+and input string x to be, if you called halts
+with input p and x, it would tell you exactly
+whether Px holds. Well, this would be
+handy for debugging. Of course, compilers could
+warn about infinite loops, but they will have much more
+profound uses done this actually consider calling halts p.sit
+with just a garbage input. This is going to be a program
+that just ignores it simpler. So just give it the
+empty string as input, where P is this program. But pause and think about
+what this program does. If it ever halts, it's going to resolve a
+major mathematical problem. So I just look at it for a second
+and figure out what it does. And we can talk about it in
+lecture time if you want. Okay, so we're going to prove now that halting is not decidable
+and we're going to use terrains. Original proof though phrased
+a little bit differently. So I like doing this isn't
+proof by contradiction. So let's suppose for the
+sake of contradiction that the program halts exists. I like the proof by contradiction
+because it gives us this concrete program halts
+that we can get our hands on. We can use it. We can call it as a subroutine
+and other programs, right? So if this thing existed, we could write this very
+simple program that calls Paul to the subroutine. It's called Catch-22. And it expects its
+input to be a program, not a program and an input, just a program. It's
+only got one input. And it calls halts, but
+halts takes two inputs. The first one is supposed
+to be a program. It gives P as in, but, but the second one and expects a string of the kind
+you'd get to p. Well, we're just going to
+give the source code of P itself as the second. And so we're asking, if you were to run p in the string input you gave it is
+the source code of p itself. What would it do? What a halt. And what catch-22 will
+do with B is that if p would halt when
+given itself as input, catch-22 is going to do the opposite. It'll loop forever. But if P will not halt
+on input P and halts can tell us that then catch-22
+will immediately return. So it will hold. So now here's the question. What's going to happen if we run
+catch-22 in the input we give it is the source code for
+the program catch-22 itself. So let's think about
+what it's gonna do. It's going to ask the halts program, would catch-22 halt
+with Catch-22 as input. If so, loop forever, otherwise, ALT, so Catch-22 on its own, it on the input itself halts if and only if it does novels
+a contradiction. So what's wrong with this? Well, if faults existed, we could easily write this program. So it must be that the halts
+program does not exist. In other words, halting
+is not decidable. The halting problem is not decidable. So it may not look exactly like it, but this is yet another example
+of the diagonalization technique. So one way to see that is
+to consider that we can list on the left side here all the possible programs where we
+might want to ask do they hold? And up here we can list all the possible inputs we
+might give to those programs. And we ask, Does it
+hold on those inputs? And for this proof, the only kinds of inputs we're actually going to consider are going
+to be the kind that look like source coder programs. So you could imagine there's a lot of other binary strings
+that don't look like source coder programs will just filter only down
+to the ones that do. So. Now, you know the, the rows and columns here
+are kind of the same type. And so we fill in this infinite table where I'm not saying there's
+an algorithm to do, I'm just saying that this
+table exists mathematically same for each program
+and each input to it. That's the source code
+or some other program. Would it, with this program
+halt with this input? Maybe this one never halts. Maybe this one always holds, and the others kind kinda
+depend on their input. So catch-22 is this program, so it should be some row
+of this table, right? It has some, if it exists, it has some behavior on
+every possible input, including the inputs
+that are programs. But we've defined it to be the exact opposite the
+diagonal of this table. So it cannot actually be one of the rows of the table or
+you get a contradiction. When you, when you
+look at the diagonal element that it intersects. But since it's a valid program, if halts exist, halts
+doesn't exist either.-e 
+
+en-ECS 220 6b_7.2-2 showing problems are undecidable by reduction from halting problem.txt
+
+So turns proof that the halting
+problem is undecidable. A lot like Kanter's proof that there are more subsets
+of natural numbers. The natural numbers, it's very short, but very tricky, right? It seems like a very difficult
+idea to come up with. And it's not the kind of thing
+we necessarily want to repeat. For every problem that we're
+trying to show is undecidable. So there's an analogy to
+be made here, NP hardness, which is that it took a
+lot of work to prove that this original problem
+circuit SAT is NP hard. But once you know it is, the easy way to show new
+problems are NP-hard, is not to repeat the
+full simulation of a nondeterministic Turing
+machine using a Boolean circuit. It's to use reductions. And so you have this notion of a polynomial-time computable function that define your notion of reduction. And you reduce circuit saf to other problems to
+show their NP complete. And the kinds of data we deal with are all kinds
+of discrete data formulas, graphs, lists of integers. And now we have an analogous situation where our
+sort of original hard problem, the one that's the most
+difficult to show is, is undecidable, is halting. And we're going to use this
+notion of reductions as well. Now we don't require them anymore to be polynomial time computable. Most of the ones we'll
+talk about will be, there'll be actually very easy to compute, but we don't require that. They don't need to be. And to show other
+problems are undecidable. We're not going to repeat the
+diagonalization technique. Instead we're going to
+reduce halting to them. Or once we've collected a list
+of other undecidable problems, we can use those and
+we can reduce those to a new problem to show the
+new problem is undecidable. And a lot of the examples we'll see, the questions are going to be questions about the
+behavior of proof. There's other undecidable problems, but this is kinda the most
+straightforward thing to start with. So let's start with another
+variant on the halting problem. And this is called the, the no input halting problem, right? Or I call the hauled
+him sub epsilon here. And here. Instead of the input being a program and an input is just a program. And I call it the no input halting because it's
+essentially what if you gave cue like the trivial
+and just the empty string. So essentially you're not asking what it's gonna do
+on an arbitrary input. You just want to know, if you ran
+it with empty, what would it do? What a halt on that one input or not. So this is clearly reducible to the more general
+halting problem, right? If you had an algorithm for the
+more general halting problem, that can answer this question about
+programs and arbitrary inputs. Well, you could just ask
+him this question and the second input you give would
+be the empty string epsilon. So, so if we gets all halting, we could use that to solve this. But this looks like a
+very special case of it. It seems like not to be as difficult
+as the full halting problem. But we're going to show it is, It's also undecidable by
+showing the reduction in the other way that we can reduce
+halting to this special case. So we'll show that if we could
+solve this epsilon halting problem, then we could solve the
+full halting problem. So the reduction is
+going to look like this. Given an input of the
+form halting expects, which is a program P and an input X. To give to the program. We want to output an instance
+of the halting epsilon problem, which has just a single program. And here it is, Here's the
+program we're going to output. I've called it Q sub px. And that's to emphasize
+that both p and x are sort of hard-coded
+into the program. And in the super high
+level pseudo-code, it's not clear what this
+means is run p on input x. And you'll notice q takes
+an input, ignores it. But where do p and x come from? So just to be concrete,
+let's use Python. So here is a Python implementation of Euclid's algorithm for
+greatest common divisor. So let's imagine we wanted to
+solve the halting problem here. Then our program P would be this
+source code over here for GCD, our input x maybe would be 624. We want to figure out what's
+the greatest common divisor of these two numbers above that? Well, that's what we'd want
+to do if we're running velocity actually are by students. Just if we ran GCD with the
+Zen book wouldn't hold. Now we know it does. Taught, we showed at all. It's actually pretty quickly. But let's imagine we
+want to transform this into an instance of the
+epsilon halting problem. So we want to output a single program that if you run it
+on the empty input, it'll halt if and only if the stones. So you can imagine if you go in here and introduce an infinite loop, well then the new program would
+have an infinite loop two. So here's what it looks like. It takes an input Y, but
+it just ignores it, right? So it's going to do the same thing no matter what input you give it, meaning it will do the same
+thing on input epsilon. And what does it do? Well,
+it has this whole program P, this greatest common divisor
+function just hard-coded into it. And it's got that a 1624. These are just hardcoded
+constants as well. So on input y just ignores its input. It turns around and cause
+this program down here, this Python function
+on this one input. And then notice that P over here, or just write p on input x
+is going to hold if and only if Q px halts on input epsilon. So, so we've gotten what we wanted, which is that the
+answer to the question, does Q px halt on the empty input is the same as
+the answer to the question, does p all on input x. So let's see another
+undecidable problem. So again, it's a question about the behavior of a program
+has a lot of these are this one. The question is, were given a program and we're not given as input, an input to the program, but we still want to
+know something about the behavior of this program
+and one of its inputs and its, Is there an input Y, you can get it. That will cause it to output 42. Let's suppose it as an
+integer return type. So this is also undecidable as is basically any question about
+the behavior of a program. So to show it's undecidable. Now we're going to show that
+halting epsilon reduces to it. That's sufficient because
+we already showed halting epsilon is undecidable. So here's the reduction. We want to know. Given input peer program, does it halt on the empty string? So to reduce that to
+this 42 question, the reduction is going to
+output this program QP, that depends on the right. So it's got P sort
+of encoded into it. And what does it do? It turns around, it just
+runs p on the empty string. And if that ever
+halts, it returns 42. It outputs this thing. And note that if p doesn't called, then it never halts. So in particular it never returns 42. So here's a concrete
+example just to show you what By we're hard-coding p into q. Well, suppose that your program P or this Python program that FLM
+is Fermat's Last Theorem is, and this is looking
+for a counterexample to for bonds last theorem. It's never going to find that. So this program which
+ignores its own input. So on the empty string, it, it never halts it
+in, hold on anyone. But if this were P, then Q P would have this program encoded into it as like a
+subroutine it can call. And what QP will do on input Y, we'll just ignore why
+doesn't pay any attention. It'll call FLM on the empty string. And if that ever halts, which it turns out it
+doesn't in this example, then it will return 42. Alright, and so we get
+P on the empty string, halts if and only if there's
+a y that makes Q output 42. But this condition right here, Q does the same thing no
+matter what its input is. So whether there's a y that
+makes Q output 40 to it, if any, why doesn't
+all of them do it? But if FLM doesn't hold
+on the empty string, then no, I can make you up with. So we actually get a stronger
+condition than we really need.-e 
+
+en-ECS 220 6b_7.2-3 computable enumerability.txt
+
+So I want to draw another analogy to the intuition we built
+up with the class NP. And this is this notion of
+having a verifiable proof. That's what it meant for
+a problem to be in NP, is that for Al yes instances, there's a short efficiently
+verifiable proof that it is in fact a yes instance. So we can actually make a
+similar characterization between the decidable problems and these so-called computable and
+innumerable problems, which may not be decidable, but, but they are sort of verifiable. So note that the halting, um, which is we want to know
+oninput x, does P halt? Well, if the answer is yes, there's a finite proof
+of that fact, right? There's a few ways you
+can formalize this, but one way would be just give
+the number of steps it needs, say, on a Turing machine. So p halts on input x if and only if there
+exists a natural number t, such that P run on
+input x for t steps. But this predicate, does P halt
+an input x in t steps or not? That's decidable. You can just
+run p for that many steps. And if it doesn't hold after
+that many steps, you can say no. That might not be the
+right answer to this, but you are verifying that he
+doesn't call in that amount of time. But there's a relationship
+between these two. This existential operator here, p halts an input x if
+and only if there is a finite time bound and
+how long it takes to hold. So this halts and time problem
+is decidable right here. I'm kind of expressing it
+like it's the algorithm. But, you know, there, there is an algorithm to answer this question. In other words, there's a,
+a so-called total program and a program that
+halts on all inputs. That's a verifier for halt in. And for it to verify
+the program halts, you have to give it a proof. And the proof is how many
+steps it's going to take. And you don't give the right number, it won't be able to verify it. So any decision problem with
+this property is called computability innumerable
+or CE for short. And the set of computable
+innumerable problems is called capital C. And this relationship between the decidable and the computable,
+innumerable problems. It's analogous to P versus NP. These you can just decide, you can give a yes or
+no answer to any input. These if it's a yes
+instance, There's approved, that can be verified and finite time, maybe a huge amount
+of time, but finite. And these are the versions of that when you put a polynomial
+time constraint on a tripod. All right, so there's
+no time-bound on is, there's another name for this
+called recursively enumerable or R E that you might see
+out there and other papers. This is kind of an older term, but some people still use it. And just like with NP versus co-NP, if there's a no instance, like if p does not
+call it an input x, there's no obvious finite
+proof of that fact. But the compliment of the halting problem that
+asking the question, does P failed to halt? Well, no instances of that. Ones that also they
+have proofs, right? So we have this notion
+of being able to give a proof of a no instance. And that's cozy problems. Okay, So hopefully the somewhat
+makes sense by analogy. Other than the title,
+computable enumerable. What is enumerable mean here? So there's an alternate
+characterization of this. This is like the verifier
+characterization. There's an alternate
+characterization using something called an enumerator that really
+looks like what it sounds like. So imagine a program P. We call it an enumerator and it
+takes no input, right? Or if you give it an input, it just ignores its input. And it runs for right, that they actually
+intended to run forever. And occasionally it prints a number. Okay, I've usually said the inputs, I imagine all programs tank are
+at their core binary strings. Just for the sake of this slide, it's going to be easier to
+imagine them as numbers, right? Maybe I'm writing down the
+binary expansion of the number. But it's to make for easier code
+to imagine these are integers. So the set of all printed
+numbers we call printed of P. So P runs forever. Once in a while it prints a number. Maybe it prints sum with repetitions, but there's some set of
+all the numbers that ever prints and that's printed it be, could be the empty set, could
+be all the natural numbers. Okay, so let's let L be a subset of and now I'm going to
+consider this to be a language because there's a
+bijection between N and 01 star. So we're going to show that L is CE, meaning there is this total
+program V, the verifier, that lx is true if and
+only if there is a witness w that makes V XW say true, right? So this is basically looks at all again be where does not requiring vid have any time-bound or there
+to be any length band on w. So we're going to show LLC by the definition on the previous slide, if and only if it is
+exactly the set of numbers printed by some program
+P. So pause and think, how would you do the
+forward direction? So here is a program that would do in the forward direction would
+be we have an enumerator P. And we want to know just a sec. Sorry, I wanted to change the
+term narrative enumerator. So we have some the numerator P. So it prints some set
+of numbers, integers. We want to show that the set is C. In other words, we want to show
+there's a total program vi that can verify if given the
+proper proof we call a witness w. The bat number really
+is printed by two. So here's I will define the, it takes x and w.
+And it wants to know is x one of the numbers
+that's ever printed by b? Alright, we want to
+know that. So how would we allow somebody to furnish
+us a proof of this fact? We run it, it prints some numbers. The proof could be the order
+in which x gets printed. So they ought to give us a W That's equal to the order
+in which it's printed. And so now we don't have to wait
+forever to see if it's printed. We just have to run it long enough. W, different numbers get printed. So we start i at 0, and for each y that's printed
+by P, we increment i. We just go and go and go and
+go until I gets up to W. And at that point, we, why was the number just
+print that we see? Is that equal to x? If so, good at x really is the W
+with number to get printed. So we return true in that case. Otherwise we return false, right? Again, it doesn't mean in that case, x is never printed by P. It just was not the WIth number printed by p. So w was not an adequate
+proof that it's printed. And then we need this
+thing to be total. We want this to hold on
+all possible inputs. So, so if this wasn't true, mean on the next
+iteration when it gets up above W will just
+immediately return false. Okay, sorry about that. I keep
+noticing things wrong with this slide and we don't have to
+check if I is bigger than w. Just once i gets to w will
+immediately return, right? If x is not, y will return false. So that's the forward direction. So this gives us a verifier
+that x is printed by P. As long as the proof we furnish it is the right order
+in which x is print. So now how can we go
+the other direction? So pause and think about that
+for yourself on your own. Okay, we have to give
+an enumerator, right? Which is a program
+that takes no inputs. And it should print all the x's that can cause V to return true somehow by
+giving the right w, Right? So maybe this V, but
+just we have some v, There's some total program, it halts on every pair
+of inputs, you get it. We want to know what are
+all the first inputs we could give it that
+could somehow cause it to return true as long as they gave it the right input for
+the second input, right? As long as there exists, that
+would make it return true on XW. So we can try this. Let's just enumerate
+over all the x's, right? And we're, we're just going
+to look for the ones that have a W that make V XW return true. So, well an Uber, I don't know the axis
+for the first x, we'll set W to 0, right?
+And then what do we do? Well, we ask is V XW
+true if not increment W? And just keep going until we
+find the w that makes it true. And then we print that x. Do
+you see what's wrong with this? Well, imagine we get to an
+X where the answer is no. In other words, no for that x, that maybe x equals 1, there's no w where v of
+1 w would return true. This will just be an infinite loop, but that's not what we want. If T2 is something that we could return true and we want to get there and we want to print it, but we'll be stuck on one forever looking for a witness for
+it that doesn't exist. So this is no good.
+That doesn't work. So to make this work, we need to, we're going to use a
+trick, It's called dovetailing. And kind of key idea here
+was that we tried to like settle the case for x equals 1 before we even thought
+about x equals 2. But if the case for x equals one is false, we're never
+going to find the W. So we can't do all the computation
+we ever need to do for x one before moving on to x equals 2? Because we're going to
+have to do an infinite amount of computation there. So the key here is
+going to be to splice in computation for all the x's so that the ones that can be verified with a
+finite amount of work, eventually they get an arbitrary
+amount of work put towards them. Because that sounds a bit abstract. Here's a concrete implementation. We can iterate over all possible t. And this is an infinite loop, right? This, this will run forever
+in a T would go up forever. But notice what's
+happening air inside. It's got two bounded loops. Unlike this while loop over here, these are two bounded for loops. They start at 0, go up to t, they stop there, and
+they call v.floors. And v.events always halts, is total. So this thing will do an infinite number of
+iterations of the outer loop. Okay, what does it
+do? Well, it's just checking every possible pair
+x and w between 0 and t. And if it finds one that makes
+be true, it prints that x. But notice T keeps getting
+bigger and bigger and bigger. So for any possible pair
+X and W, you can have, once T is bigger than both of them, we will find that x and w
+and we will print that X. But we won't print and
+a dx is they can't make V true because this has to
+be true to pass down here.-e 
+
+en-ECS 220 6c_7.2-1 arithmetical hierarchy.txt
+
+So we saw that the halting
+problem is computable, enumerable, but it's not decidable. So a corollary of this
+is that the set of decidable languages
+is a proper subset of the set of computable
+enumerable languages. And unlike P versus NP
+here we know it's proper. We can actually
+exhibit a language and that's CE, but not decidable. And the complement of any decidable
+language is decidable, right? You can just tab, flip true answers to false and
+false answers to true and that, that decides the complement. But one thing that
+we're going to stay. So the second part is not
+quite a corollary of this, but we'll state is that c
+is not equal to cosine, but deck is equal to codec. So deck is a proper subset of the coping beautifully enumerable languages and these two are not eat. So here's an exercise to do, or we can talk through it
+in the lecture if you want. But here's an exercise to
+think about on your own. And it's a good exercise
+to do to kind of solidify understanding of these two. Which is that a language is
+decidable if and only if both is and its complement are
+computable, innumerable. Or in other words, it's decidable
+if it's C and it's also Cosi, mean and its compliment of C. So, huh? Okay, so we can generalize this
+idea just like we put p at the bottom of the
+polynomial hierarchy and these alternating quantifiers
+kinda went above it. Well, the first definition of CE we saw had this exists quantifier. So we can define sigma 0 and pi 0 to just be the
+decidable languages. Sigma one is c and pi one is cozy, kind of like sigma one and sigma
+and pi P1 for AND, and OMP. And then we can define
+this hierarchy above them. So that this is basically the same thing as the
+definition of the sigma p k. That language isn't sigma k. If there's a language one level
+low on the opposite side, the co language and pi k minus one, so that you can express the
+predicate a of x as being true if and only if there exists
+a W that makes b of x w true. So in other words, but
+the math is expressible by for all the predicate going
+down to the sigma k minus 2 level. So it's essentially saying, hey, x is true of there exists
+one string such that for all of another string there exists another strain,
+et cetera, et cetera. And then at the bottom you
+have a decidable predicate. And we just define pi
+k to because sigma k. So we're kinda zipping through this. We're not going to
+spend a lot of time on this so-called arithmetical
+hierarchy I just wanted to emphasize is define the exact same way as the
+polynomial hierarchy, but without the polynomial
+time constraint. And unlike the polynomial hierarchy, we know this one is proper. Sigma k is a proper
+subset of sigma k plus 1. So when I, like I said, we're not gonna spend
+a ton of time on it, but just to make some
+of this abstract, this a little more concrete. Here's an example from
+the second level, right? And it's provably at the second
+level and not any lower. And it's the, the
+problem given a program. Is it total, meaning, does it halts on every input? So we're not going to prove
+that it's that it's not C, but it turns out if not,
+let's just observe, okay, why is it in pi to pi, two predicates are
+going to be the ones expressible with a for all exists. And then a decidable predicate. P is a total program. If what's true? Well, if for all strings
+x, you might give to B, there exists a time-bound
+t such that if you run p on input x and halts in
+at most t steps, right? And notice this
+predicate is decidable. If you're given p and x and t, you can certainly run p on input x for t steps and
+see if it all right, so that is perfectly well decidable. And this predicate
+is expressible as a for all and then an
+exists and then this. But notice, unlike in NP or
+the polynomial hierarchy, these are, if you think of
+these as like searches, these are unbounded searches. There's no limit on how big x
+can be or how big T can be. You need that for every
+single string x there is, there are infinitely many. If there's any t, no matter how huge, that makes this true, then P is total. So that shows the total is n pi to, it takes a little more
+work to show that it's not in sigma 1 or pipeline
+that that is also true.-e 
+
+en-ECS 220 6c_7.2-2 From undecidable problems to unprovable truths.txt
+
+So let's step back a bit
+from the sort of MCI details of the arithmetical hierarchy and these various definitions
+of undecidability. And get at. Why were these people
+sort of thinking along these lines when all this stuff was invented back in the 30s Anyway, while they were trying
+to get at, you know, Hilbert's dream of automating
+mathematical reasoning. So in order to talk
+sensibly about that, you need a formal
+way of talking about mathematical reasoning and proofs
+and theorems and so forth. So we've talked a bit about
+this in a previous chapter. We're going to get slightly
+more technical here, but still not to the level of
+technicality class on logic. So we'll say a formal system
+consists of a couple of things, a finite set of axioms. So these are like statements we just assume are true without proof. We saw those nine
+axioms of set theory. Those are statements about sets
+and what rules they have to obey. And then it includes some
+rules of inference, right? So this is something you might
+have learned a long time ago in a very boring dry math class that there's something
+called modus ponens. So very, very simple rules of inference at the level of
+detail we tend not to talk about when we write down
+our proofs like if a is true and the statement
+a implies b is true, then that implies that B is true, right? That's modus ponens. So there's a few other rules of inference and they're
+all like this symbol. And a theorem is a statement that is provable by applying the rules
+of inference to the axioms. And technically you
+may not believe it, but just those nine axioms
+that we wrote down. If you apply these simple rules
+to those axioms in the right way, you can get all the
+mathematical theorems that I've ever been proven. So this isn't how we think about it when we're
+actually writing those proofs. But it is possible to say that
+you don't approve of it there. And it's just applying these rules, starting with axioms until you finally have resulted
+in the state megawatt. So this is how we're
+going to formalize, how we talk about
+mathematical reasoning. And formal systems
+are, or how we do it. Now, formal systems
+aren't all good, right? So we know a couple of
+properties to be true of them. One is that the formal system
+should be consistent and consistent means that no
+contradiction can be proven. And the way we formalize that
+is that for each statement t, at most one of t or the negation
+of t is provable, right? So when you get a contradiction,
+what does it mean? It means you can prove both a
+statement and its negation. And what that means is your
+formal system is no good for resolving which
+statements are true. Because if you can prove goal, it doesn't tell you which one
+of them might actually be true. So it's actually no good. So this is something
+that we want to require a formal system in order for it
+to actually be helpful to us. But it's not the only
+thing that we want. We also would like for
+it to be complete, meaning that all statements
+actually can be resolved by proof. We can formalize that as
+for each statement III, at least one of t are not. T is provable. If neither was provable, then, okay, we don't get a contradiction. Neither does it help us figure
+out whether to use true. So these are two properties
+we would want to be true, the formal system that we use to help us discover mathematical facts. And if it violated
+either one of these, it would not help us with regard to the statements where
+it was in violation. So what we would like as a formal system that's both
+consistent and complete. So for each statement t, exactly
+one of t are not, T is provable. So a consistent and
+complete formal system would fulfill Hilbert's dream, right? All mathematical truth
+can be discovered simply by exploring the proofs that
+are possible in the system. And they can approve
+fear would not be like the kind of thing you're
+doing for your homework. A proof would be just a finite string that's encoding what order to apply rules of inference starting from the axioms in order to get
+your gear their statement. So it's just a systematic
+exploration of strings that encode
+rules of inference. That the statement on
+the end of that string is the theorem that's been proven. So you could just iterate
+over all possible proofs. You know, looking for either a
+proof of t or proof of not T. If the system is
+consistent and complete, you will be guaranteed
+to find one of them. And I say you, I mean
+an algorithm here. This would be the algorithm that can automate
+mathematical reasoning input t. It would search for a proof of t and in parallel would
+search for a proof of not T. And one of them, it would find and it would tell
+you whether T was true or false. Now, there's a little
+technicality here. Technically, we would
+have had to require one more thing called
+soundness, right? So we say a formal system is sound if all the statements you
+can prove are actually true. This is a little bit murky. If you haven't seen a logic before, it kind of sounds like I'm just using synonyms here as though
+they're not synonyms. So it is technically possible
+for you to write down formal systems that are
+consistent but unsound, right? Like maybe everything
+they prove is halts. So again, this would be
+kind of a useless system, something that we never
+prove a contradiction, but it doesn't prove anything true. However, they, you know, if
+everything approved was false, you could just negate
+it to get the answer. But this, this is the kind of
+system that logicians were reasoning about to try to figure out the answer to Hilbert's question.-e 
+
+en-ECS 220 6c_7.2-3 Gödel’s Incompleteness Theorem (soundness).txt
+
+So here is the theorem that
+made Kurt Godel famous PA and shocked the world and certainly shocked
+and devastated Hilbert. Hey, he more or less just
+shut down Hilbert's idea. Not totally actually terrain. That was the one who kind
+of sealed the coffin, but he showed that there is no formal system that's both
+complete and consistent, right? There's no way to define a system of mathematics where
+every true statement, like everything we'd
+want to discover, we can actually find a proof of it. And we can't prove
+anything that's on this. So if a state, if a system is powerful enough to actually prove all this
+stuff that's true, then it's got a contradiction
+lurking in it somewhere. And there's another theorem
+that says technically if you can prove a contradiction,
+you can prove anything. And so your systems totally useless like every statement
+you can write down, including its negation
+could be proven, so it would be no good. Okay, So how did Godel
+proved as well at an intuitive level and you read popular articles about
+Godel's theorem. This is kinda how they express it. He showed that any sufficiently
+expressive formal system can be used to express a
+self-referential statement. And the statement
+looks kinda like this. It's, this statement
+cannot be proved, right, like this one right here. So, all right, so what
+are we to make of a statement whose
+only goal is to refer to itself and say,
+I cannot be proved. Well, if it's false, then it can be proved, right? If this statement is false, then it's the case that this
+statement can be proved. But that means the system is
+not consistent because it now asserts that the statement
+cannot be proved, but you also can prove
+that it can be proved. Now, if it's true, then it can't be proved, right? That's what it says. But then the system is not complete. Here's a statement that's true, but it's not provable. So more or less all the work went into shine at any sufficiently
+expressive formal system, you can do something like this, but we haven't really dug into the weeds of what exactly
+is a formal system. So as currently stated, why I'm putting quotes around stuff, not really formally defining what
+is a formal mathematical system. These are just tricks
+of language, right? I can say stuff like
+this, but, you know, it's not that meaningful because I haven't really said what a proof is. I haven't really said
+what a statement is. So it's kinda like
+this cartoon, right? So it's just a check
+of language so we can actually give a more formal proof of Godel's Incompleteness Theorem. And we don't have to go this route. We don't have to do girdles. The original proof Can lot
+rely on our intuition. That comes from knowing that the
+halting problem is not decidable. So the way we're going to get a statement that's
+true but not provable. Is that because the halting
+problem is undecidable, there's going to be
+statements of the form a certain program P on a certain
+input x that does not hold. There will be true, but
+they won't be provable. So how do we do this? So suppose for the sake of
+contradiction that you've got a formal system and it violates
+Godel's Incompleteness Theorem. It's express. Now he said sufficiently
+expressive for our purposes. That'll mean, you know, the kinds of statements
+we've been making about programs and algorithms
+and Turing machines. The systems powerful enough
+to make those statements. So you can define all the
+things you'd need to define, say to talk about Turing machines. What do you need to
+define a Turing machine? Well, it's, you know, if you remember your
+undergrad theory course, it's a seven tuple. That seven tuple has
+finite sets in it, it as subsets of transition rules. So it's, you know, it's
+just basic kind of discrete that you need to
+talk about Turing machines. So you need your formal
+system to be powerful enough to write down statements like
+that and reason about them. It all. And we're also supposing it's
+complete and consistent. So what does that mean
+for every statement t? Either it's it worth
+negation is provable, end. Either one of them is not provable. So exactly one of
+these two is frugal. So we're going to show this existed, then we could solve
+the halting problem, which we showed cannot be them. So if you have a formal system like this that's powerful enough to talk
+about program behavior. Then to solve the halting problem, do is given p and x, we're going to execute
+two searches in parallel. One, we're going to search for
+a proof that P of X false. And two in parallel, we're going to search for a
+proof that P of x does not hold. So whether it halts are not
+exactly one of these has a proof. So completeness and consistency imply that the true one is provable. Except now I do have to get
+into a bit of a technicality. It's this distinction between
+provability in truth. Again, this could be one of
+those weird formal systems that can prove false things, but it's consistent because it
+can't prove their negation. So technically this
+is a weaker thing. Then got to actually prove Like a week incompleteness
+theorem that the soundness version of
+Godel's Incompleteness Theorem. So a sound system is one that
+it's even stronger than saying, you can't prove a contradiction. It's also saying, well, whichever one of the two you can
+prove is actually the true one. So you don't somehow screw up and end up proving all the false statements. So it's a stronger
+condition to assume. And if this virtue of the system, then this would be a solution to, this would be an algorithm
+for the halting problem. But, you know, one. The halting problem is undecidable. So there is no such system, or we could use it to
+solve the halting problem. So, so what this means is
+that no system expressive enough to reason about programs and computation is both
+complete and sound. Now, if you want to know the proof of the full Incompleteness
+Theorem, we'll do that next. And if you want to see
+more details about it, you can go to this blog
+post of Scott Aronson, where he gets into details about the distinction
+between these two concepts.-e 
+
+en-ECS 220 6c_7.2-4 Gödel’s Incompleteness Theorem (consistency).txt
+
+So this next part
+gets a bit technical. You want to see the
+details where I got this. It's from this blog
+post and Scott Aronson, I've not in the textbook. But if you want to see
+the full modern day based on computation proof of Godel's
+Incompleteness Theorem. Here's a way to do it. And we do it by making up a new problem called
+consistent guessing. So this is not a decision problem. This is a more general thing. An algorithm solves. Consistent guessing if
+it can do the following, it takes as input a program. And it's not quite the
+epsilon halting problem. We require something a
+little more stringent, which is that if it does hall, we actually want to be able to get the right answer, accept or reject. So what we need to
+do is to say, well, if P on the empty string accepts, our algorithm should accept P. If
+P on the empty string rejects, our algorithm should reject P. And if P and the empty
+string runs forever, then our algorithm has
+to give an answer. It doesn't matter what it is. It
+could be either accept or reject, but it has to halt, right? So we didn't require this. We allowed it to run forever. In this case, it could just run p on the empty string and do what it does, meaning to accept or reject.
+But we're saying not enough. If p does not halt on the empty string to say you've
+solved consistent guessing, you need to give some answer
+after some finite amount of time. And if P on the empty string does
+actually hold and get an answer, you have to give the right answer. So this problem is uncomfortable. There's no algorithm that can
+solve this problem and that can be proved using diagonalization similar to the original halting problem, but we won't do that here. So with consistent guessing
+in mind and unbind, beautiful, Here's a modern day
+proof of Godel's Incompleteness. There are fixed from the previous one that only
+referred to soundness. So if P on the empty string accepts, then what we're gonna do is
+exploit the sort of asymmetry between a program of halting and not halting a statement of the form. A program accepts an input or
+a program halts on an input. If that's true, there's always
+a proof of that, right? There are some mathematical
+statements that don't have a proof, but this is the kind that does write a transcript of the steps
+of the computation, for example, is a proof that
+that that program accepts. So if, so, if the following
+statement accepts p Epsilon is true. So this is the statement that
+asserts P accepts the input epsilon. If this is true, then it's provable. And that similarly olds
+for rejects be epsilon. If that is true, that
+P rejects Epsilon, There's a proof of that fact. So this is a little bit
+stronger statement then we can make about arbitrary
+mathematical statements. So now we suppose for the
+sake of contradiction that our formal system violates
+Godel's Incompleteness Theorem. It's expressive enough to reason
+about programs and computation. It's complete and consistent
+meaning for every statement t, exactly one of t or its
+negation is brutal. So here's how we use
+that fact to solve the consistent guessing problem
+and get a contradiction. So we're defining a program, see here that takes as
+input a program pizza. I'm going to solve
+consistent guessing. So how does P solve it? It has two searches
+in parallel for that searches for a proof that P
+accepts the empty string. And it also searches
+for a proof that P does not accept the
+empty string, right? Notice I didn't say reject air. I just said search for prove
+that it does not accept. Now there's an asymmetry here, right? So and if it finds
+this proof, it says, except, if it finds this
+proof it says reject. So now here's the key difference with the original prove consistency and this star statement and the air
+implies that p Epsilon rejects. There's no proof of one to be found. Right? But now, completeness and consistency give us that there
+is a proof of tip, right? One of these has to be provable, so there's no proof of this. There is a proof of this. So C will reject as it needs to. And the second case, well,
+if P of epsilon accepts, right, then there is no
+proof of number two, right? And by completeness there
+is a proof of number one. And so we will find that
+and we will accept. So it may be neither. These is provable in that case. Went away. Forget I said that. So, all right, So if p on input epsilon accepts
+than SEA accepts the panel, epsilon rejects than C rejects. And so c solve consistent guess it. So why is this all
+consistent guessing? Well, because it
+always halt note it's searching for a proof
+of this statement or its negation and completeness and consistency give you one
+of them will be found. In this kind of reasoning tells
+you that it'll actually be the correct answer when
+it gives an answer. So one of the searches will
+succeed, It'll be correct. And this contradicts
+the young computability of consistent guessing. So we get Godel's
+Incompleteness Theorem. No system expressive
+enough to reason about programs is both
+consistent and complete.-e 
+

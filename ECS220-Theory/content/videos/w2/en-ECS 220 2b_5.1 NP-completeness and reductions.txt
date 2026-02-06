@@ -1,0 +1,146 @@
+Okay, So we've talked a
+lot about the class NP, and now we're going to get to the main reason people
+care about that class, which is this notion
+of NP-completeness. So we say a problem is NP-hard if every problem a in NP is
+reducible to that problem be. So we've talked about
+particular instances of NP problems that are
+reducible to each other. But this is saying a
+much stronger thing that every single problem in NP is
+reducible to this one problem. So in other words, it's at least
+as hard as any problem in NP. Now technically this applies only to what are so-called
+many one reductions. We've been a little loose with the concept of what
+exactly is a reduction. So far I've just said, Oh, reduction is a way to use an
+algorithm for one problem B, and then use it to
+solve another problem. And we would want that if the
+first algorithms polynomial time, the whole thing, it's
+polynomial time. But many one reduction is a very
+special type of reduction where the way you use the algorithm for B is you take your instance of a, you transform it into
+an instance of B. You hand off that instance to an algorithm for B and
+then whatever yes, no answer, it gives, you report the exact same answer. So it's like a tail call right
+at the end of the reduction. So typically when we talk
+about such reductions, we don't bother including
+the part at the end where we call B because
+it always looks the same. But the last step is always hand off the output to be and
+report whatever it does. So the reduction itself is just the function that
+does the composition. So it's a polynomial-time
+computable function that takes as input a string, which is an instance of a, and, and outputs another string
+which is an instance of B. For all x. That could be input x is an a
+if and only if f of x is in B. So when we're talking about
+reductions for NP completeness, this is always going to be the kind of reduction that we talked about. And we say that B is
+NP complete if it's NP-Hard and also it's
+contained in NP, you can have NP-Hard
+problems that are not in NP and the halting problem is one, not even decidable, but it
+turns out it's NP-Hard. But we're, in this chapter
+are going to focus on only problems in NP. So the first theorem we'll discuss is something that's
+actually not that obvious, but it's just that there
+is an NP complete problem. So this is maybe not obvious. You know, we, we've shown how certain problems can
+be reduced to others. But there's nothing that seems to
+be intrinsic about the class NP that would somehow make you think every single problem and it is
+reducible to one single problem. But it is, and in fact, it's, once we write it down and
+then kind of seems obvious. So we're basically going to define a fairly artificial looking problem. It's not like a natural problem
+would necessarily want to solve. And it's whole point is just to
+be designed to be NP-Complete. So we call it Witness existence. And this is the problem given a
+program P that takes two inputs. Called x and w. So this is going to be a verification
+program like the kind of program that runs in polynomial time that lets you see that a
+certain language is in NP. So we're given just that
+program and then I'm writing the two inputs
+it would take here. Those aren't both part of
+the input to this problem. Does the program is and the first
+input x and then a third input. And you can think of this
+as like a time-bound. So the way I'm going to express it is it's an integer t in urinary. And I said most of
+the time we want to do integers in binary
+because it's more efficient. But here we want to use this to sort of clock how many steps we're
+going to be willing to run p4. And so we want that to scale
+linearly with the size of our input. And so if we write
+down T 1s in a row, we're going to have a
+one in the string for every time step we
+allow Peter and Paul. So the question we're going to
+ask about these three inputs, p, x, and t, is the following. Is there a w, a second input to
+be whose length is at most t, such that P of x w outputs yes, in at most t steps. Or in other words, we're
+basically asking if this thing is an NP verifier, and then x is an instance
+of the NB language, and then T is an amount of
+time we're willing to wait. We're just asking is there a witness that would cause the verifier to say yes
+within this amount of time. So let's think for a second
+and pause right here. What's the reduction from
+Hamiltonian path to witness it? As we said, everything in NP reduces to this,
+including this language. So let's think about that. So it would be more or less
+the same for any NP problem. The on input graph
+G, you want to know, is there a Hamiltonian path in G, the p and the x and the t would
+give to witness existence. The p would be just to the
+verifier for Hamiltonian path, it would be the same no
+matter what the graph is. The x would be the graph as
+the input to Hamiltonian path. And the integer t would be the
+running time you would expect the verifier to take on that graph if you gave
+it a Hamiltonian path. So it wouldn't be that long, they'd be close to linear, not much more than linear
+time in the length of x. So it might be something
+like length of x times a big constant or length of x
+squared has to be on the safe side. Okay? And this is where thing and I
+do y is t expressed in urinary. So think about this on your own. This is a very, this tends
+to confuse students a lot. So we can talk about this
+more when we discuss. But if you didn't
+express teen urinary, if I had written down this problem, this would've been a legit problem to define if I said write
+down T in binary, but then it turns out this
+would not be NP-complete. This would actually be an n. Complete problem. So it is crucial that we
+represented in urinary here. Okay, so here's the only reason that anybody cares about the class NP. And it's the following statement that if there is an
+NP-complete problem in P, then in fact, every problem in NP is also in P. In other
+words, P equals NP. So we don't actually think either
+of these statements is true. The conjecture is
+that there will fall. So the contrapositive statement, it's kinda more informative about what we think the
+state of the world is. Which is that if P is not NP, which we think is probably true, no NP-complete problem is NP. In other words, showing
+that our problem is NP complete amounts to show and
+that is not contained in B. So we have the following
+two scenarios. And these are the only
+two possibilities. Either NP is different
+from p and then all the NP complete problems are different from
+all the P problems, or all three of them are equal. P is equal to np. And then by the technical definition, every problem in NP is NP-complete. So if we take P not equal to NP as a scientific hypothesis that we
+don't know how to prove yet, but we have a lot of evidence for if a problem is
+shown to be NP-complete, this is evidence that it
+is intractable, right? Remember we said P may not
+capture all the problems. That p may not be a
+good representation of problems that are efficiently solvable because some of
+them take time n to the 100. But we did argue that
+if a problem is not NP, then it's most likely just not
+efficiently solvable period. Okay? So we're going to have to think a lot about
+these reductions here. Now remember, reductions
+are transitive, right? So if a is reducible to B
+and B is reducible to see, this implies that a
+is reducible to see. So why is that? Well, a reduction
+transforms an instance of a to b with the same answer, right? And the reduction from
+B to C transforms a B instance to a Z instance
+with the same answer. So you can simply compose them. Give the instance of a
+to the first reduction, give the output of that
+to the second reduction. And you've got hip hop, a polynomial time
+reduction from a to C. So here's why that's important. If B is NP complete. In other words, all a in
+NP are reducible to be. And if we can somehow show that
+B is reducible to see this term, this will show that C
+is NP-Complete as well, assuming that C is also contain B. So the picture looks
+something like this. You have your NP-Complete problems, which are somehow the
+hardest problems in NP. And you've gotta be that you
+somehow know is NP-Complete. Suppose you have one
+of these on hand. That means that everything
+in NP is reducible to it. So suppose you can show
+that B is reducible to see, we'll then by transitivity
+through all of these, all of these problems must
+be reducible to see as well. So if also you can show
+that C is contained in NP, it's not up here somewhere. Then you've shown everything
+in NP is reducible to see. So it is envy them. So
+to show an ND problem, if you know it's an ERA, usually that part is easier. But to show that it's
+also NP-Hard, right? Reduce some NP-complete
+problem B to it. Do not go the other way. Do not reduce C to B. In other words, you're always
+taking something you know, is NP-complete and you're reducing it to the unknown one you're trying
+to prove, not the other way. It's very common to
+switch those two around. So in other words, you show how
+to transform an instance of a known hard problem into an
+instance of the new problem. So the new problem is sort of
+the output end of the reduction. Now, we're going to cover Sections 52 and 53 in the
+textbook next in reverse order. 52 gives the first sort of
+natural NP-complete problems. We gave an unnatural one
+of the witness existence, but we're going to use that eventually to show that
+these two natural problems, 3 SAT we talked about
+already and a new one called circuit SAT
+are also NP-complete. And then 53 will go
+through a bunch of NP hardness reductions as well as general design
+principles for them. And I find it easier to go
+through Section five 31st. So to do that, we're first
+going to have to assume that circuit SAT and 3-sat
+are both NP-Complete. We're not going to prove it to. We go back to Section 52.

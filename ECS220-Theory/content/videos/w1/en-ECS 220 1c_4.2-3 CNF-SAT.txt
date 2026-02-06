@@ -1,0 +1,50 @@
+Okay, so let's look at another
+type of combinatorial problem. So this is motivated in the textbook by talking about a dinner party
+and early fancy dinner party. Where the authors say, suppose I have a bottle
+of an excellent Palomar. It's like a wine, a fresh quail with a bird and some delicious
+rockfall, that's Achaeans. And you make the observation that, well the Palomar pairs
+beautifully with the quail. So it would be crazy to serve the bird without the
+why the poem are. So we can formalize
+that as the constraint. If quail Then palmar another, if we have the quail than
+we should have the Palmer. And remember that conditional
+statement is equivalent to not quail or are. So we can write that as
+not q or p. So however, we choose to put this meal together, we should obey this constraint. We say, well such a light one and
+the Palomar would be overwhelmed by the rope for so I can't possibly serve it and the
+rock forward together. So in addition to this
+constraint, we want to say, and we should satisfy the constraint, not p or not. My friend likes both
+quail and ROCC for her. So I would like to serve
+at least one of them. So we want to say and q or r. And finally, I simply must have at least the hallmark or
+the quail and p or q. So we call this a Boolean formula. And it takes three inputs that are Boolean variables
+called P, Q, and R. And it's satisfied, meaning we can set its value to one by
+setting P equals one, q equals one, and r equals 0. You can trace through
+that and see that. Now supposedly came up
+with a new constraint. And we say, well, my
+cats very fond of quail. I serve it without some
+rogue 4 to distracter, my guest will find is
+portions stolen away. So that means we've added a new
+constraint it and not q or r. And it turns out this new formula is unsatisfiable no matter how
+you assign values to p, q, and r, all eight of them
+make this thing equal to 0, so it cannot be satisfied. So this is an example
+of what we call a conjunctive normal form
+Boolean formula or a CNF. Cnf formula is a conjunction, meaning an end of
+what we call clauses. And a clause is a big OR of
+formulas we call literals. And a literal is just one of
+the inputs or its negation. So R is a literal, NOT P is a literal, NOT Q as a literal. And then you, or several of them
+together and you get a clause. And then you take several clauses
+and you take the end of them. And that is a CNF formula. So the formula is
+satisfiable if there's an assignment of zeros and
+ones to the variables, that makes it true, right? I'm assuming here 0 is
+false and one is true. So one of the things that
+makes a CNF formula nice is that there's a nice sort
+of way to think about how do you satisfy a CNF formula? Well, it's a big end of clauses. And to make an end true, every individual
+input has to be true. So in other words, you have
+to satisfy every clause. That's what makes a
+CNF formula satisfied. So the decision problem
+we call CNF SAT is, given a CNF formula, is unsatisfiable, is there a way
+to satisfy all of the clauses? The textbook calls this simply sat, but I prefer to use SAT for general formula is that
+don't have the CNF form. There is sometimes a use
+and doing non CNF formula. So I'm going to call this CNF SAT. Now, this is contained in NP. Why? Really pause and think about it. Well, the witness in this case is the satisfying
+assignment, right? The way that I can prove to you that this formula is satisfiable is I give you an assignment of zeros and ones that you can just
+plug into the formula. And you can just iterate over
+each clause and make sure that that assignment
+satisfies those clauses.

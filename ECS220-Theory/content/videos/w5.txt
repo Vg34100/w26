@@ -1,0 +1,1064 @@
+en-ECS 220 5a_6.4-1 oracles and relativized worlds.txt
+
+So how are we going to
+prove that P is not NP? Probably seen that we can give proofs that separate P from
+Xp and np from NXP. So why not p from Np? Alright, Maybe we can
+just take the techniques. How to do that? I mean, this diagonalization
+technique is sorted chief among them, and push that to separate P from NP. So the next section
+shows that a quote, simple simulation
+argument like the one at the time hierarchy theorem
+uses to show that P is not x. Provably cannot work. Okay? So I use the word provably
+there to talk about proofs. So let's dig into a
+little what I'm saying. So some mathematicians and many computational complexity
+There's favorite as time is so-called
+impossibility proofs, which within theoretical
+computer science corresponds to proving that a certain type of algorithm cannot
+compute something. But their second favorite
+pastime that they have on is impossibility of
+impossibility proofs, also known as barrier results. And this amounts to proving
+that a certain type of technique cannot prove that a certain type of algorithm
+cannot compute something. In other words, it's an
+impossibility proof on finding proofs that would
+get results like this. That's got errands and takes it one level further with
+this job for years, people tried unsuccessfully to prove this sort of impossibility
+result was impossible. Our result shows the
+impossibility of their goal, not aware of any actual
+result like that. Sort of a third order
+impossibility result. But this second-order one, there are a few of
+these and somehow it appears to be unique to
+theoretical computer science is a nice blog entry here
+talking about how other fields of math don't have the so-called barrier
+results too much. I think some people in the
+comments get involved to say, well now there's some of
+this in math, but it's, it's fairly central to
+theoretical computer science. So let's take a look at than the sort of most
+straightforward barrier result, which has to do with a concept
+called relative position. So let's imagine that your
+programming language again, our formal model of computation
+here is whatever it is, your favorite programming
+language, right? So imagine that it has a
+magical instruction that takes one step to execute and the
+name of the instruction is set. And it takes as input a Boolean formula and it returns true if and
+only if it's satisfied. So in other words, this
+instruction magically solves the satisfiability
+problem for you. Okay, so we call the language
+Saturdays little bit different font. This is the command in your language. This is the language or
+decision problem itself. We call that language and Oracle. For this programming language, different use of the
+word language there. So we call this decision problem and Oracle for your model of computation. And we call the program that makes calls to this oracle
+and Oracle program. Now, I want to emphasize this is
+not the same thing as saying, well, suppose that Sackler np and
+then studying normal program. So I said one step here. If I said O n cubed steps, everything we study would still hold. But it's not the same
+thing as saying, well, suppose there's a
+polynomial time algorithm for SAT and that we can call it. It kind of matters here
+that we can imagine this thing existing even if
+SAT is not engaged, right? You can imagine that's not NP, but still think about, well, what sorts of problems are
+efficiently solvable by these SAP Oracle programs
+that would sort of run faster than is provably
+possible if it's sad, is not empty. And it's not a
+contradiction because P is defined by normal
+polynomial-time programs, not polynomial-time SAP, Oracle programs that have
+this magical instruction. Now if this all seems kind of spooky, there's an alternative
+way of thinking about it that might be
+more straightforward. Where you just think
+about normal programs. And is this just
+implement sat, right? It is decidable. There's an
+exponential time algorithm for SAT. Use the standard slow
+brute force search and use that to implement it. And now you have a
+regular programs that can call the subroutine you wrote. But then instead of studying
+normal running time, just define the running time
+relative to sound of any program, reasonably exclude time
+spent in the subroutine. So in other words, if your program runs and it might take
+exponential time, but if you subtract off all the time, it takes calling the subroutine and you end up with only a
+polynomial number of steps. That would be a program that runs in polynomial
+time relative dissect.-e 
+
+en-ECS 220 5a_6.4-2 P^SAT and P^NP.txt
+
+Okay, So with this definition
+of relativize programs in mind, let's define a complexity
+class based on its hot pizza, the SAT, this is the problems solvable in polynomial
+time relative to set. Meaning the problems
+you can solve with a polynomial-time program that can call a subroutine
+that evaluate sat. And you can implement that
+subroutine however you want, but the time spent in it is
+not counted against you. It's only the extra time that
+needs to be at most polynomial. So this is a so-called
+relativize complexity class. One way to think about
+this is this is p and a world in which some
+website out there exist. It just answers that
+question instantly. Okay, so what are some
+problems in P to the set? Well, there's one obvious problem
+that they know besides the ones in P sacked itself, right? Like obviously if you
+have an oracle for SAP, you can use that to solve
+the satisfiability program. How about complement of SAT? Think about that on your own. Why is that contain and
+P2? If you can see that. Then clique and compliment of clique, these are Bolton p to the set. Pause and think about
+why is that true? And we can talk about
+it in discussion board. Not only those, but actually any problem in P to
+the clique, right? We can make clique
+the Oracle instead. And the claim is any problem you can solve with an oracle for clique, you could also solve
+instead in polynomial time, you had an oracle for say. Okay, we can define another kind of relativize complexity class where instead of considering
+just one Oracle, SAP, we consider, well
+what if the oracles, you know, what do we have
+more than just that Oracle? In fact, what have we
+allow any NP Oracle? So we take, for every a, we will get p to the a and we
+take the union over all a and b. So one of the decision
+problems in NP is sad. So it's one of the terms
+that makes up this union. So obviously p to the SAT is
+a subset of P to the envy. What about the other
+way? Is that true? Pause and think about that. Okay, So we can think about this P to the NP complexity class
+and compare it to sigma p2, sorry, PyPy to Oersted and P2. So an exercise to do at home, which I think in the past
+I've assigned as homework. But think about it for
+a minute right now. Is to show that P to the NP, which is the same as P to this app, is contained in sigma p2 and
+it's also contained in pi t2. So it's in their intersection. So that's not totally obvious, but it's not terribly hard to prove. It's like a homework exercise. So what about the other direction? Because the containment
+go the other way. And of course I can't prove it can't, because all these things are being unequal sort of depends
+on p not equal. But the right, if they're equal, the whole polynomial
+hierarchy collapses. All these things are
+equal to each other, but we can show that it's not obvious that the
+containment could go the other way. So Let's define this variant with the satisfiability problem
+called for all exists SAS. It's a Pi t two problem actually it's complete provide P2 and it's
+given a Boolean formula phi, and we're going to kind of
+cut the inputs in half. So the first half of the inputs, we'll call x on the x and the
+second half we'll call Y1 to Y2. And the question we're
+going to ask is, is it the case that for any
+bits you can assign to the x's, there is a way to assignments to the wise that makes the
+formula equal to one. Okay, So, so this is sort of
+obviously a pi t2 problem. It's phrased as a for all
+followed by an exists, followed by the circuit
+value problem, which is NP. Okay, so we can try to solve this in polynomial time with a SAT Oracle. Because somewhere
+SAT is in the middle of this and we can
+imagine trying to do it. And if you look at just
+this portion, right, exists Y1 two ions such
+that this is true. If you sort of fix what the x's are, then this portion of the question is a sac question that we're asking. Once we fix these inputs and just consider them
+constants, the X1 to Xn. We just want to know is
+that formula satisfiable? There's some insight into the y's. But how would we go about solving the whole
+problem with the SAT Oracle? Well, it seems we have to iterate
+over all the possible x's. So we can iterate over every
+assignment of X1 to Xn in 0, 1 to the end, there's
+two to the N of those. And then we could say, well, take that circuit f0
+hard-code these particular x's and this iteration
+of the loop into it. So that now instead of two n inputs, you've hard-coded the first n, What's remains, or
+the other n inputs, you have an n input circuit
+you would call side. And then at that point you can
+just ask, is that satisfied? Well, that's this
+portion of the question. Right? And if not, you return false because you've found a setting that
+makes this thing falls. There's, there's no y. But if not, you have to keep going because we have to
+verify this for all x's. If you get through all of them, then the answers is yes. This still takes exponential time. Even with the sac Oracle, you still got to iterate over all the possible assignments to
+the first half of the inputs. And our intuition is that
+this can't be improved. That in fact, having two
+quantifiers like this, an exists and for all and exists. It is in fact, more power than
+having a single SAP Oracle.-e 
+
+en-ECS 220 5a_6.4-3 relativizing proofs.txt
+
+All right, so here we're
+going to step away a bit from these relativize
+complexity classes. There's a lot of interesting
+facts about them, but the main reason we brought
+him up is to highlight this first sort of barrier result involving a certain type of proof technique called
+a relative Ising proof. So simulation arguments, meaning essentially the time that we use to prove all sorts of results so far, where one algorithm is
+going to simulate another. They have a crucial property. They all work even
+if all the programs involved in the argument
+are Oracle program. As long as they all have access
+to the same Oracle problem a. And this holds no
+matter what the oracle, it could be undecidable in fact. So a proof like this, we say it relativize is, and every proof we've seen
+so far has this property. So theorems relating
+complexity classes using simulation arguments also show that all the relativize complexity classes obey the exact same relationship. So for example, for any Oracle a, this first statement that we showed. So this is not the time hierarchy that this is not a
+strict subset here. This is just if you allow
+a running time of g. And then if you allow a
+bigger running time t, So g, g of n equals big O of T
+of n. Well then you can at least do as many dead, right? So in other words, all
+the problems solvable in time g are also solvable in time t, because t is at least as big. Well that holds even if
+you're talking about problems solvable by a Oracle programs, right? Is just observing that the
+amount of time needed, G is at most O T of
+n. So, so that holds. We still have that p to the a
+is a subset of NP to the a, which is a subset of X to the a. The time hierarchy there and
+still holds in all its glory. He's like problems solvable in exponential time with
+access to an a or a goal includes and problems not solvable in polynomial
+time even with access to an a. If there's any problem complete for NP to the a that
+is also e to the a, then in fact those two are
+equal, that still holds. So now we're going to see a non magical justification for thinking about
+these magical oracles. And it's this that no proof resolving the P versus NP
+question Can relative eyes. So all of the proof techniques
+that we used up here that just involved one program
+simulating another. Those all relativize if the
+simulating program needs to simulate an Oregon instruction
+in the simulated program, but it has the same oracle itself. It can just use it. So something other than just simulation arguments have got to be used to
+resolve this question.-e 
+
+en-ECS 220 5a_6.4-4 an oracle making P=NP.txt
+
+Okay, so here is the theorem that no proof resolving P
+versus NP can relativize. And if that, whichever
+way the answer goes, there's an oracle that
+makes it go the other way. So there's an article a so that P and NP are equal in the
+relativize world of Oracle a. There's another Oracle bead
+so that they're unequal in the relativize world of Oracle be. So we're going to start with a. It's slightly easier one to do. So we're going to define that Oracle to be this
+problem we call predict. And we saw a variant
+of this earlier where predict had a certain time-bound
+hard-coded and do it. This one similar except
+the time bound is now part of the input to
+the decision problem. So we're given a program
+Q and an input x, we want to know what is Q on x gonna do within a certain amount of time. The time is given as the third input. And here, because of some
+technicalities in the proof below, we're going to want the time
+to be written in binary. And we want to know does QX
+output yes, within T steps? Okay? So we're going to go by a
+series of subset inclusions here. So the first thing
+we're gonna do is show X is contained in P to the a. So let E be an arbitrary
+element of XP, write some decision problem. Solvable in exponential time to, to the n, to the c
+for some constant c. And let's call the
+program solving it QB. Okay? So we can decide if x is, if a given input x is an E
+with an N to the C time, a polynomial-time program
+that queries this a Oracle. What in fact, we can just make one query and just report its answer. It's a so-called mini one reduction. What's the query? Pause
+and think about them. All right, So essentially
+we just want to ask, what does QE do on input x, right? When I'm going to run QV. If we did, it would take time
+to to the end of the sea. That's no good. We need to
+hold in end of the zeta, not two to the n to the c. So we're not going to run
+Q0, we're just going to ask our Oracle a, what would q0 do on input x if
+you ran it for this many steps, the number of steps it needs to haul. And because this number of steps is enough to allow QV
+to actually finish, this is its running time. The answer here will be the same. The answer is running at completion, and that's
+the answer we want. So in polynomial time with access to this oracle
+a, we can solve it. And he was an arbitrary element of X. So X is contained in PDA. Okay? Now let's consider an arbitrary
+element of NP to DA, right? Some, some other problem, l, It's an NVDA. What does that mean? Well, it's decidable by non-deterministic program
+that runs in polynomial time, let's say n to the c Islam constancy. But it's an Oracle program and
+has access to this oracle. A. Let's call it q. Okay, so the first
+observation is that this, this program might make query. But we want to bound how
+big the queries can get. In particular, how big can the, the third element yet? Well, it's polynomial time and
+it runs in time n to the c. And in time n to the
+c, you can only write down into the sea possible bets. So overwriting t and binary and we can only
+write end of the seat bets. That means the value
+of T is at most two to the n to the c. Bigger
+values require more bits, so the value t can't get much
+bigger than this exponential. So we're going to use
+that to arguably can replace each of those queries with a deterministic subroutine that executes the program q on input
+y for this many steps. Right? And just answers the question directly without
+consulting the oracle. A. So this would make QL, the decider for L, into still a
+non-deterministic program. And they wouldn't be polynomial time anymore because we've replaced the one step oracle queries with
+this exponential time subroutine. Now the time will be
+something like n to the c, the number of queries we might make times the time needed for each query, which is two to the end of the sea. But there's no oracle. And oh, it's a
+non-deterministic program. This subroutine and the
+one accounting for most of the time here is deterministic. So there's still only
+a polynomial number of non-deterministic bits. So that's going to be crucial. We're not, we're running an exponential time
+nondeterministic algorithm, but we're not choose a
+non-deterministic bits on every step. It's a very small part
+of that computation. So if we now want to
+convert that into a deterministic program by
+iterating over all the possible, I know just brute force searching all the possible values for
+the non-deterministic bits. We can do that. We can iterate over, well, how many possible n to the c length bit strings are
+there today into the sea. So that means now we
+have these two loops, one of which iterates over all the non-deterministic bits in
+this non-deterministic program. And then within each
+of those were possibly making this many
+calls to this oracle, which had been replaced by this other exponential
+times everything but the whole time there is what
+is going to be two to the n to the c times two to the end
+of the c times n to the c, which is itself at most, say two to the n to the c. That's
+O of 2 to the 3 end of the sea. Well that's still exponential
+to bigger exponential, but it's still Quote,
+merely exponential. So L is an XP, right? We got rid of the non-determinism
+and we got rid of the Oracle. So at the cost of it takes longer, so NP to the a is contained in XP. Again. Then finally, the easy observation, p to the a is contained in
+NP to DA no matter the work, right, by the same reasoning, you can solve a problem even if you need access to an
+Oracle in polynomial time, well, you can verify it with access to the same or
+in polynomial-time. So putting those
+three facts together, we have xp is in NP to
+the a, which is in P. But it was already then PDA, which is an NP to the
+a, which is an exp. So in fact, all of these are equal.-e 
+
+en-ECS 220 5a_6.4-5 an oracle making P≠NP.txt
+
+Okay, so now we're going to show that there's an oracle that
+makes p unequal to Anki. And there's a lot of
+ways to prove this. My favorite actually involves something called
+Kolmogorov complexity, but that's a little more involved
+to first define all the concepts there are we're going to do here is kind of not the
+most rigorous proof. We're going to use some probability, but we're going to a bit about it, but it is kind of slick. So this is more of an
+intuitive proof sketch where we're going to play a
+few tricks of probability. So we're actually going to
+generate the probabilistically. So we're just going to pick B
+at random and show that, that, that it's possible that some called the probabilistic method to show there exists a
+b by showing there's a positive probability of picking
+a B that makes P and NP unequal. So here's what we did.
+For each possible string length n. We're going to pick a random
+string w of that like. And the way we're going to define
+B is any string of length, then that's not w, it's not in B. So B is going to be a
+very sparse language. Most strings are not in it. And the string w might be even
+that's going to be probabilistic. So we're going to flip another coin. And if it's heads will put
+w and b otherwise we want. So B is very sparse. Some string length, it's got
+no strings of that length. Others, it has one. But that one is just picked at random and all the others
+of that light, they're not. So. Okay, so now we're going to define a problem called affinity Oracle. And this will be the probably show is contained in NP to
+be that not in P2P. Although when I say, we'll show it is, well, I mean, probably
+that's what's going to happen because we're
+picking B at random. We could get very unlucky, like would be, could
+be the empty set. And then we're not, this
+isn't going to work, but, but probably, you know, with, with some probability
+this is going to work. So here's the problem. Finicky Oracle to the b. We're given as input, essentially just a string length, so a urinary string 1 to the n. And the question is simply
+this question about B. Is this one of those string
+lengths where B has one string? So is there a w and b of length n, or is it one of those string
+length that does remember about, we're going to expect about half of all the possible lengths to
+have a string of that length, because we're flipping an
+unbiased coin to determine whether W goes into b
+for that length there. Okay, so the easy observation is finicky Oracle to the
+b is an NP to the B. So an input one to the n, you just guess a w of the same length in linear time
+and you just ask your Oracle, thank this query obey is w and b. And it's clear that if there
+is a string of length n and b, then one of the guesses
+will tell it to you, and that means the NP machine
+will, will get it ready. Okay, So now all the hard
+work is to show that this finicky Oracle to the B problem
+is not contained. And Peter. So how do we show that? Well, we let Q be any
+polynomial-time be Oracle program that could possibly decided to let Q be any Under the
+Sea time, the overall program. And we're going to show probably
+it doesn't solve finicky Oracle. So let's imagine what CUDA,
+They don't know what it does. It's an arbitrary polynomial
+time Oracle program. But on input one to the n, It's going to query some
+list of strings in the, maybe the empty list, maybe it makes note where he's, maybe it does. It runs in polynomial time
+now runs in time n to the c. So the key query
+that many strings, there's at most n to the c strings. Queries asking are they a and B? Now, they may be of
+different lengths. It's going to simplify
+talking about it if we just assume they're
+all the same length, It's just technical details
+to handle different lengths. So for the sake of making this brief, let's assume that all the queries
+are the same length string. Now suppose that on all of
+the strings or queries, you get the answer
+false for all of them. Well, in that case, it doesn't really much
+matter what the oracle be. Other than that, as long as the Oracle B is false on all
+the strings that get queried, then all the strings
+that didn't get query, they can be in B or not in B. And q's output is going
+to be exactly the same for all of them, right? Because the only information it gets about B is what it makes
+through the queries. So now let's just examine this
+probabilistically, right? We picked a string at random. So first of all, we picked
+at random whether or not to even put in a
+string of this length. But let's suppose we did
+suppose that there is a string of length n here. Well, what's the probability that one query is on
+the w, That's MBB. Well, there's two to the
+n strings of length n. Only one of them's and b, we pick that one at random. So the probability that one query hits that one is one is almost one. That's one reason that the probability of one query
+hits it is really small. It's 1 over 2 to the n, meaning the probability
+that that query is on a different string
+where the answer is false is really close to one. It's 1 minus 1 over 2 to the n. Now, you don't make just one query. You actually make several queries, but not that many, not all 2 to the n. Only a
+polynomial number of queries can be. So. And we picked these all
+uniformly at random up here. So the probability that all n
+to the c queries return false. Just this probability times itself, n to the c times, right? And you might recognize this if this number in the denominator
+and this number were equal, like if they were
+both n, For example, as n goes to infinity, this will approach one over E. But in fact it's, it's not doing. The number in the denominator is way bigger than the number up here. So in other words, this is
+getting much closer to one. And we're not multiplying it by itself enough times to bring it down. So in fact, this is going to go
+to one as n goes to infinity. So that means that with probability almost a half cuz
+output is wrong, right? So Q is just trying to figure out, is there a string of
+this length or not, but whether it's
+correct or not depends on whether we put a string of
+that length in here or not. So if there is in fact a
+string of that length, then Qt Q and output one. Otherwise it would
+have to add up to 0. But whatever it outputs, It's not even depending on the query because it probably
+didn't query string w. So it has probability pretty
+close to a half to be wrong. And this is for one particular,
+for one particular, and it's probably, it has a
+1.5 chance of being wrong. But then there's another
+end beyond that. There's n plus 1 and n
+plus 2 and n plus three. So the probability that
+for some men that gets it wrong is one, right. It's going to get the answer
+wrong for one of these trends. So with probability 1, infinity Oracle to the
+b is not in T to the B. So in fact a to D and N D
+to the D are not equal.-e 
+
+en-ECS 220 5b_6.6-1 Ladner's theorem, existence of NP-intermediate problems.txt
+
+Now we've seen that a
+whole lot of problems that are in NP that have
+polynomial-time verifier is, are either in p, they have polynomial time algorithms, decide them, or their NP-complete. So a natural question is, are there any problems
+that are neither? And this is so-called
+gladness theorem, and it says yes, shows
+the existence of so-called NP intermediate problems. So if P equals NP, well then every problem in P other than the empty set and Sigma
+star would be NP complete. But so Lander's theorem is conditional on P not
+equal to negative eight. And it says If they're not equal, then there is an
+intermediate problem. There's a problem a in NP that is neither empty nor is it NP-complete. Now, as with the time
+hierarchy theorem, a is not a natural problem we constructed artificially just
+to show that there's theorem. So the only goals of the
+proof are going to be to ensure one that a is
+actually in NP, right? And it's easy to do this if
+you don't care if it's an NP, like the halting problem is, is not in NP, so it can't be
+either NP complete or NP. But the key is that we want to show there's something actually in
+between NP-Complete and B. So the only thing we want
+to show is it's an NP, but it's not contained in P, and neither is an NP-Complete. So if we draw the Venn diagram of P and P and the NP complete problems, we know that if any
+problem in NP is not NP, then none of the
+NP-Complete problems are. But that leaves open the
+possibility that the union of NP-Complete and p could be NP. But this is showing now
+there's something in between. Now it does seem likely
+that some natural problems, For example, problems
+related to factoring, could be NP intermediate as well. But we don't really have
+evidence of that for factoring other then we don't know
+how to show their entity. There is fairly strong evidence a factory and it's not NP-complete, but I think maybe less strong
+evidence that is not NP. Okay, So this is a
+fairly complex theorem. And including the fairly
+complex proof of this theorem. So we're going to start by just
+defining the problem and see as sort of a high level outline of how we define it so as
+to get the property X2. So first we're going to talk about the satisfiability
+problem in this kind of functional notation where
+it's like a predicate. So sack of x is true if and only if x is a binary string that encodes
+a satisfiable Boolean formula. So we're going to kind
+of bounce between thinking of this as a
+structured data like it's a, it's a Boolean formula
+versus it's just a string. Now we're going to define a very slowly increasing function from natural numbers
+to natural numbers. And we're going to use that function. Define this problem a. And it's going to be the
+case that on an input x. So now just think of x as a string. If it's length given in that,
+when we take its length, give it to f. If the
+output of that is even, then for strings of that length, we're going to define a to equal set. In other words, a of x equals sine x. And if f of the length of x is odd, we just say false, right? Does that string is not in a. So f is going to
+increase very slowly, although it's kind of hard to
+show it increasing really slowly and get a example picture
+how this is going to look. But the idea will be that as you iterate through all
+the possible strings, a is going to look like it's
+just going to agree with the SAC problem on every
+string for very long runs, while f does not change. And then at some point
+F will go up by one. It will change from even to
+odd when it changes the odd, now we'll switch to the constant false predicate for long
+runs, switching forever. So here's kind of an
+example of how it looks. Here is just the satisfiability
+language, right? Which is just a series
+of yes or true, false answers to every
+possible string. Then here's the string length 0, 1, 2, 3, 4, and so on. And then here's just an
+example of how f might looks. It starts at 0 and then
+eventually goes up to 1, and then eventually
+it goes up to two. And in reality it's
+going to go very slowly, would probably be 0 for a very long time and then
+one for a very long time. But I couldn't fit all
+that into the example. So then how does that influence
+what, hey, it looks like? Well, while f is even so it's 0, it's just going to
+look like Saddleback. So a und sagt just
+agree on every string. But then when f switches the
+odd now acts, it's just false. In other words, none of
+these strings or NA. And then oneth increases again, gets back to even now it
+agrees with that again. So SAT isn't really being used in a crucial way or we can substitute
+any NP-Complete problem. I thought about
+presenting it that way, but I don't know. I feel being concrete
+is a little easier, but you don't really have
+to think about these as being answers to
+satisfiability queries. It's just any NP-Complete problem
+you right here, this would work. And any problem in P
+would work here, right? So we're switching
+between making eggs look like an NP complete
+problem and making it look like a problem
+in NP is just that sac is kind of your standard
+NP complete problem. And the constant false
+predicate, right? But just say no language. That's sort of the, the
+standard easiest problem in NP. But you can substitute
+this would be in, say answer is to 3
+SAT when f is even. And then answers to
+bipartite matching when, when f is 0, that would also work. Okay, Now by careful design of F, we're going to ensure a few things. One, that f is computable in time, polynomial in it, right? And because we need to compute
+f to figure out the answer to a that will at least
+ensure a is in NP, right? So the nondeterministic
+algorithm will be able to run in
+polynomial time in order to determine should a look like SAP or shouldn't look
+like the empty predicate. We're also going to ensure that no polynomial-time program solves a. So a is not NP, right? That's going to be key of course. And then finally, we're
+going to show that no polynomial-time program
+reduces clique to a. So a is not NP complete
+either, right? If you could show this, this is, knowing that a is in NP, together with an NP-Complete
+problem reduces to it, is what it means for
+it to be NP-Complete. So if you remember that the time
+hierarchy there and that had a similar condition to what
+2 and 3 look like here and drain no polynomial-time
+program did a certain thing. Here we got to worry about
+two things they might do. They might solve a good AMP. We don't want that. They might reduce clique to a showing it's NP-complete. We don't want that. Now as a saint, I'm just using
+a concrete example here. I could put any NP-Complete
+problem there and it would work. I think the book might use the
+same problem for both of these, which I didn't like
+because it kinda made it look like they have to
+be the same problem. They don't put any
+NP-Complete problem here, any problem in P here, and any NP-Complete problem
+you want air to prove Stokes.-e 
+
+en-ECS 220 5b_6.6-2 almost proof of Ladner's theorem.txt
+
+Now as I said, this is a
+somewhat complex proof. So we're going to start with a
+proof that sort of almost works. It's got a high level outline of how we get some of those claims
+he talked about before. But we're going to
+miss a few details. So the first thing is just
+to assume P is not NP. They need that for any of the store. Now, let's imagine the enumerating all the polynomial-time
+programs called an Q0, Q1, Q2, et cetera, in some order that
+define a as follows. Imagine iterating over
+all the binary strings. And we're going to have a
+certain notion of a stage. These stages will somehow
+correspond to the values of f, that function that F1 appear here. So imagine we're in state 0. If we're in state a and we
+start there for every x that we encounter in this
+stage and we're going to iterate over x is for
+awhile and Stage 0 a, and then we'll switch to Stage 0 B at some point and then continue
+at whatever x we are. So for a while will be in Stage
+0 and for all those axes, x will equal sapped of x. So this is not an algorithm or
+just sort of defining what a is. Now, what we'll do is if on this x, q of x is not equal to sine of x. But then remember we let
+a of x these at the x. So in other words, if x is not
+satisfiable Boolean formula, and therefore we would
+have set x to be 0 if it's not a satisfiable
+Boolean formula. But Q0 of x says yes. We'll switch to save 0 b or if it is satisfiable Boolean formula
+and Q to 0 that says No. Also we'll switch to state 0 dB. So as soon as q 0, the first polynomial-time
+program disagrees with SAT. Then we'll switch. And if P is not NP, this has to hold for every single
+one of these kittens, right? Because none of them can
+solve SAT if P is not NP. So what does it mean? Well, it means Q0 does not solve a because we made
+Q0 disagree with that. We said a to B sat air, but that's not equal
+to accuser says so we've kept Q0 from
+solving the problem. Heck? Now we'll switch
+to the next stage 0 B, and then Stage 0 b. Now, this is corresponds to letting
+that function f go up by one. Now we just let ants be false
+for all the x's we encounter. We had some initial number
+of strings where we did this and then now we started
+the next string after that, let ants be false for strings. But each time we're going
+to look at clique of x, meaning is x an encoding of a graph and a k such that the
+graph has a clique of size k. We just, anyway, any NP
+problem can work here. So he does look at this
+NP-Complete problem and say, is this different than what? A of q 0 of x ducts? So a couple things to note here. One, note that we have this dual role for the polynomial-time programs. Here I talked about him like the output Booleans for
+deciding decision problems. Here I talk about it like the output
+strings for doing reductions. So that's just a technicality that makes it a little
+easier to talk about it. We could also have said in
+the AES stages will only look at functions that will only look
+at programs that return booleans. And in these stages will only look at programs that
+returns strings. But, you know, you can define
+them in some uniform way where it just always
+returns a string. And if the string is nonempty, you consider that true. And if it's empty, you consider it false as a Python does, for example, with, with it's sort of
+like Boolean interpretation of all it's datatypes. So the point is now we actually
+look at the string output of Q0. And then we ask, is that straight not x, but does that string in a or not? And then we ask, is that the same
+as what clique says about x? So okay, what's going on here? Why, why do we say that we
+want to switch at this point? Well, this is just a
+way of saying that q, q 0 does not reduce
+clique to edge, right? What would it mean to reduce
+clique to a mean on input x? You want to run
+through the reduction. If the reductions Q is 0, the output of that will be q of x. And you want that x is in clique
+if and only if Q of x is in a. But if we detect that, that condition fails, showing maybe clique is reducible
+to a but not through Q0. Q0 is not a proper
+reduction of clique to a. If we find this so great, we've prevented Q0 from being a reduction from clique to
+a, which is what we wanted. But now that's just one program
+that runs in polynomial time. We have an infinite number of
+other ones to worry about. And note in particular, whatever q 0 of X is, call it y, maybe before
+or after x and the order. Okay, so the other
+stages looks similar except they cover other
+polynomial time programs. So stage, stages 11, b are about Q1. They ensure that Q1 doesn't solve a, nor does it reduce clique to a stage to ensure as
+q2 does not solve a, nor does it reduce
+clique to a, and so on. So, well, we needed out of this is that P is not NP, and therefore, you can find eventually a, a QO as an SRA, An x which Q0 and sat must
+disagree because that doesn't have any
+polynomial time program. So, so what's missing
+from this, right? So this kinda looks like
+the proof we dated. It looks like none of those
+polynomial-time programs because of the a's stages, none of them decide a
+because of the bees stages, none of them reduce clique day. So kind of looks like
+we got what we wanted. A is not in P, But it's
+not NP-Complete either. So here's the missing details. Is a itself in NP. How do we know we don't
+just get something undecidable as a
+result of doing this, we actually want this to be an NP, to have a non-trivial statement. How do we enumerate all the
+polynomial-time programs? The problem and given as input, a program, is it polynomial time
+or not, is actually undecidable. So in particular, if we're going
+to use this enumeration to, to define a, a had
+better be decidable. And so we can't just say, oh, we have to enumerate
+all the polynomials and programs in order to
+define what a is. Does each stage n, right? So I'm sort of assuming here I argued about why the eighth stages n, but we need that for each queue
+for infinitely many n, right? So no matter when we start a stage, we need that there's some bigger
+X that will end the stage. To end the eight stages, you need, no matter what x you start at as you iterate through the strings x, from that point, you had better find a bigger one where q
+i and sat disagree. And for the bees stages, you'd
+better find a bigger one where a clique of x and a
+of q i of X disagree. Now both of these are going to use this hypothesis that
+p is not equal to NP.-e 
+
+en-ECS 220 5b_6.6-3 clocked programs.txt
+
+So one of the problems
+we mentioned with the almost proof of
+landowners theorem previously about there being an NP intermediate problem is that
+at some point we said let Q0, Q1, Q2, et cetera, be an enumeration of all the
+polynomial-time programs which exist. They can be mathematically defined, but at some point, because they're
+enumeration in that order will influence the definition
+of our intermediate problem a, and we want it to be contained in NP. We need some way of enumerating them. That, that's going to be decidable, that it's going to be computable. So okay, let q i be the EI
+program in lexicographical order. For that right now is to find you, I just BDI program, so you just enumerate all
+the possible strings. Some of them are valid Python
+programs and others aren't. Qi is the eye valid one that the Python interpreter doesn't
+find any syntax errors. Now, not all of them
+are polynomial time. We only want to enumerate programs
+that are polynomial time. But as he said, we cannot simply
+enumerate all programs and pick out the polynomial-time ones
+that's undesirable to do that. So what we're gonna do
+is we're only going to enumerate programs with a
+so-called self alarm clock. So those with a header that
+defines constants c and k that count their steps and then quit after c times n to the k steps. So let's see an example of that
+in action, I'll use Python. So I put a lot of scare quotes there, but I really just referring to
+what we're going to round here. So let's imagine we have
+a polynomial-time program like this one that computes the
+greatest common divisor of a, couple of integers a and b, and then it just calls that function. So let's imagine you have this, this is polynomial time, but it's not a clocked version of it. We're going to make a three times n to the seventh clocked
+version of this program. So that time-bound is bigger than
+the time this needs, this thing. It is quite a bit faster
+than O of n to the seventh. But we're just showing that we
+can put a clock on this thing and that will time it
+out if it runs too long, even though this one won't run into. So the way we make the clot
+version of the programs, we start with the program, but I'm kind of drawn a level sparsely there cuz we're
+going to have more code here. So first of all, it has a
+header mean just some parts at the beginning that
+define this constant c, which is 3, this constant k, the exponent which is seven. And then a couple of
+global variables, time and time limit. And the first thing the
+program does is it figures out the input length and then
+computes the time limit, which is that in this example is three end of the
+seventh in general, it's c times n to the k. Okay? And then it assigns them
+that global variable. The next transformational
+do is before every other statement
+in the whole program, we want to count how many
+statements we execute will take a statement to be
+like one time-step. We add a call to this
+function called tick. And then what does tick? Tick is this function, it increments this global
+variable time starts at 0 and it just compares time to time
+on that than ever exceeds that, it prints timeout and exits. So as long as this timeline that we
+wrote down here is longer than the actual
+time the program takes. We will never execute. This will never hit exit, right? So we haven't changed the behavior of this program other than to slow
+it down by a constant factor. Right? So in particular, we're only going to enumerate
+the self clocked programs. So we're going to miss most
+polynomial time programs. Most polynomial time
+programs don't have this alarm clock
+attach to themselves. But here's the key. Any problem in P has infinitely many polynomial-time
+program solving. And you take any program that works to start adding comments to it. It doesn't change the behavior, but that's a different program technically that solves
+the same problem. And one of them is a self
+clocking program, right? For any polynomial time program, there's a self clocked version
+of it as we just showed you. And so even if we only include
+those were not hitting all the polynomial time
+algorithms, but we don't need to. We think of the algorithm as being representative of the
+decision problem it solves. We are including all
+the problems in P. Is for every problem in P, There is a self clocked program with a big enough value on the clock, bigger than the actual
+running time in the program so that,
+that program works. And then what's nice about
+the self clocked programs? Well, they're all
+polynomial time, right? They all track their own time. And they all have a polynomial time at some constant times n raised
+to some other constant. So every one of them
+is a polynomial time, but we can hit every
+polynomial time problem. Okay, So now when I refer to you, I don't mean the EI program in lexicographical order or even
+the IT, polynomial-time program. I mean the self clocking
+polynomial program. And that's the enumeration
+that we're going to use. And of course, it's easy to
+enumerate programs in that way.-e 
+
+en-ECS 220 5b_6.6-4 two lemmas and full proof of Ladner_s theorem.txt
+
+So we now want to
+make two statements, these two lemmas, and
+they're fairly simple. They're going to be useful on
+the last slide for this proof. But let's state them
+in isolation here. Now, suppose P is not NP, then what do we know? Well, we know sac is not in B, no polynomial-time program salsa. So if we let Q be an arbitrary
+polynomial time program, we know that sat of
+x has to be unequal to q of x on at least one string. This lemma is claiming
+something stronger. It's saying there's
+infinitely many strings that Q has to get the
+wrong answer per se. Why is that? Pause
+and think about it. So suppose it weren't true. Well, in that case, the number of strings that
+Q gets wrong is finite. And we could fix to make
+it solve SAT exactly by just having a fixed lookup table for those finite number
+of counterexamples. And then we would turn Q into
+a program that does solve. So what would be its running time? Well, it'll be slower than Q
+because it's first step would be to look in this big look-up table
+to see is my input in there. Although actually now step
+one could just be check the length and see is it
+bigger than any string label? Which could just be done by
+comparing to a constant length. So you could skip that
+check for most strains. And the running time
+would essentially be still polynomial time plus a constant to look in
+that lookup table. So we would have a
+polynomial-time program solving SAT that would
+contradict P not equal to NP. So in fact, every
+polynomial-time program has to get sat really wrong. It's gotta be wrong infinitely often. Not Lemma 2 is a sort
+of a related statement. But now about reductions. Although here we only need an exists is actually
+true for infinitely many. Why? But all we need is this exists. And it's that if a is polynomial time decision
+problem, but then there's some y. So that clique of y is
+not equal to a of q of y. Or put another way, q, this polynomial-time program
+cannot reduce clique to a. And that is simply
+following directly from the fact that if P is not NP, then no problem in PDA
+can be NP-complete. But if this were false, that would be the same thing as
+showing clique reduces to a, we should show it is NP-Complete. Okay, so let's go back to our
+Hindi intermediate problem, which is not totally
+well-defined yet because we didn't say what
+this function f is, but we know it's increasing, starts at 0, it goes up slowly. And it's parody tells us whether
+a should look like SAP for strings of that length or whether the answer should just be false
+for strings of that line. Now by careful design of F, we're going to ensure one that f is computable in
+time polynomial in. Which will mean a is
+actually in NP, right? We can just run a non-deterministic program that solves sat and also computes F to C. Should we report the output
+of SAP or just false. It's also going to
+ensure that for all i, where i indexes into our
+polynomial time clock programs, there's some y that makes Q I get
+the answer wrong on a, right. Or in other words, no
+polynomial-time program QI solves a, so a is not in T. And we're also going to
+ensure that for all I, the program QI fails to reduce
+clique to a for some string y. All right? Time program QI reduces clique day. So that means a is not
+NP complete either. Now remember here on this slide, n as the input length for a, and then f of n is going
+to be approximately equal, is actually off by a factor two here. But it's, it's, it's related to the index I of the program QI
+that we want to defeat, right? By showing it it doesn't solve
+AN or does it reduce clique day? Okay, So here is how
+you compute f, right? And the definition of f will
+give all three of these, that will give us 1, that f is computable in
+time polynomial in n. And that's actually established
+in that kind of a CIDI way. But this, this makes sense. Self, self clocking. I didn't write it all out. This is just pseudocode here. But imagine that it's
+also self clock and it's counting the
+total number of steps. And what it does is it says, well, first of all, for n equals 0, you just return 0 and then now you, you make this recursive
+call to f n minus 1. And notice all the rest of the return statements that
+are either just return rack, so just return the same value
+f is not increasing this time. Or if you make it to one of
+these return statements, you return Rec plus 1. So making it past the if statement here to one of these
+is how f goes up. So notice before we look at all this detail in the
+loop, what's going on. After a word F is going to be a self clocking program that just
+counts the total number of steps going on air and compares
+them to the input n. And if the number of
+steps ever exceeds N, to do all this stuff, you just return the recursive value. So this implies that F is going to be computable in
+polynomial time, right? We just do this recursive
+calls and then at most a linear number of additional steps. So that, that clearly gives
+a polynomial time algorithm. Okay? Now how do we get
+the other two properties? Well, we're doing this
+if statement, right? So we say, well, if QI y is not equal to a of y,
+right? Will go up. So this would establish
+the statement over here. If this is ever true, right? If this is ever true, that'll hit this condition
+and then will increase f. And then when we increase f will go from the stage where f is even
+to the stage where f is odd. And, and if this ever becomes true, will increase F yet again. Right? And so that will make it
+true for all possible i's so the only way
+that these conditions, these conditions
+essentially look like the part after the for all ij here. So the only way for this
+to fail is that you get stuck on some I write
+it's not true for all i. As long as fn keeps increasing. And we're going to use
+those previous two lemmas, these data to show it can't
+actually get stuck at those lines. So as a reminder, there's
+the definition of a. We let Q be some
+polynomial-time program. Okay? Recall our first lemma
+that because P is not NP, any polynomial-time
+program has to get sack wrong and
+infinitely many strings. So we can't get stuck here forever. Why? Well, if we did, if we reach some high
+where now this is never true again, what would happen? Well, QI y would equal a of y. And because this is an
+even stage where we're letting a be the same as SAT. This would actually imply
+that q i agrees with a, because it agrees with
+AN every single string. From that point on. It agrees with sat on all
+but finite be many strings. A doesn't look exactly like SAT. It's sometimes falls, but
+if we get stuck here, will never again
+enter a false region. And so for all the
+strings beyond that, a would just be the
+exact same as SAT. And it'll only be a finite number of counter-examples where a
+and SAT are different. And that would contradict Lemma 1, which says that no
+QRS polynomial time, it has to get that
+wrong infinitely often. So because P is not NP, eventually we'll find a y where q and sat and therefore
+also a are different. All right, and then Lemma two
+says that clique cannot reduce, There's IQ cannot reduce clique to a. And this is a formal
+statement of what that means. So here again, we're just
+checking this condition. Suppose we got stuck here. Then clique of y would
+equal a of QI of why. And what would happen? Well, because we're in
+an odd stage, right? A x would just be false
+from that on, right? So a would be a language that has only finite the many strings in it. Decision problem terminology would have only finite the
+many yes instances. But what does that mean? Well, any language with only a
+finite number of strings is, I mean it's regular, right? So it's definitely NP. So then a would be NP if
+we got stuck here forever. And Lemma 2 says while
+because P is not NP, we can't reduce clique to a. So eventually there's
+gotta be some y. That makes this inequality hold. And therefore, we can't
+get stuck here either.-e 
+
+en-ECS 220 5c_6.6 why is it hard to prove P neq NP.txt
+
+So we're at the end of the part of the course where we will talk about time complexity and
+the big open question, heirs whether P is equal to np. And what we've established is that it seems likely they're unequal, but wow, it's hard to prove. Why is it so hard to prove? All right, what could explain this? So this is a little more
+philosophical discussion here. Well, maybe P equals NP, right? We could be wrong. Maybe P equals NP. But the fastest algorithms for NP
+complete problems such as SAT, take some obscene
+polynomial running time, like ending to the 100. So this could be possible
+and this would kind of explain why we haven't
+figured this out yet. So maybe the reason
+all natural problems and p have running times that are more modest polynomials is that human intuition can only conceive
+of relatively simple algorithms. Right? So we've used the time hierarchy theorem to prove that there's
+certain artificial, unnatural problems that require time n to the 100 and can't be
+solved in time ended at 90. Now, we don't know of
+natural problems like this, but maybe they're out there and we're just not
+going to figure it out. Because what would the end of the
+100 time algorithm look like? It could look a few different ways, but the most straightforward
+way to come up with the algorithm that takes time n to the 100 is to have 100
+nested for loops, right? So exponential time algorithms
+are pretty simple to write down. You do something like for all x in the set of binary
+strings of length n, and that's exponential time. But it's kind of a simple algorithm. Simple in the sense it's
+easy to understand, not that it's simple to
+execute, it takes a long time, but algorithms that take huge running times maybe are
+hugely complex and we're just, we don't have the
+intellectual capability with our current understanding
+to come up with them. So I liken this to the
+unintuitive nature of say, relativity and quantum mechanics. Our intuitions evolved to deal with objects about big enough
+that we can see the size 1, one millimeter to one
+kilometer, Kilometer. Not enormous gravity
+wells that can bend light nor tiny sub-atomic
+or atomic particles subject to quantum effects. So there's no reason that these
+models that seem to work pretty well for those objects ought to be
+intuitive, even other accurate. So similarly, there's no
+reason to expect that if the most simple algorithms for
+SAT or immensely complicated, that we should be able to
+figure them out right now. Okay, Here's another reason
+why it might be so difficult. Perhaps they're equal, but the
+proof is non-constructive, right? So normally how do you prove that? You know a, a problems
+such as SAT is NP. You give an algorithm for us. But there's sometimes are
+our algorithmic proofs of the form there exists a
+polynomial time algorithm. Right? So sort of like the
+pigeonhole principle doesn't say which pigeonhole gets to begins. You could imagine a
+non-constructive proof that through some
+convoluted reasoning, shows there's a polynomial
+time algorithm for SAT that doesn't say
+what it is, right? It doesn't actually
+give you the algorithm. So if we're just trying to prove
+this by searching for algorithms, we're not going to find it this one. And finally, if you know a
+little bit about formal logic, there's this notion
+that a statement can be independent of the so-called
+axioms of set theory, meaning with the way that we reason
+about proofs in mathematics. Statement can be independent, meaning there's no
+proof that it's true and there's also no
+proof that it's false. So it's either true or false, but there's no way to resolve it
+by trying to prove it either way. So there are statements like this. So the continuum hypothesis
+is the most famous example. This is the statement that there are no set cardinality is strictly in between that of the natural
+numbers and the reals. So this is known to be independent. There's no proof that it
+is and there's no proof that it, that it's false. So okay, this could be possible, but this seemed a lot
+less likely to be true for a statement
+like P versus NP then for these uncountably
+infinite sort of statements, so consider the following statement. I'll call it star. So
+the statement star says, for all n bigger than 1000, there's no Boolean circuit with
+fewer than n to the log n gates. That solves all clique
+instances of size. Okay, so we haven't gotten too much into using circuits
+to decide languages. We've studied them as having interesting decision
+problems themselves. But there's a notion that I would get up and do a follow-up version
+of this course talking about the relationship between an
+algorithm or a Turing machine deciding a problem like league
+boolean circuits decided. But one of the first things
+we would do is establish that if there's a polynomial
+time algorithm for clique, then for particular sizes
+of clique instances, there are small Boolean circuits, polynomial size Boolean
+circuits that can solve clique. So if clique is not NP, then something like
+this would be true. So if P equals NP, then star is false. In fact, you can solve clique with small circuit Canadian
+polynomial size. So this would not be true for
+all n bigger than a thousand. Now if it, if they're not equal, I may have picked the wrong
+threshold at 1000 there, but for some large enough threshold, It's probably true and
+thousands probably big enough that if P is not
+NP, then this is true. Okay? So here's the difference
+between these two cases. If star is false, There's actually a proof
+of that fact, right? It's huge. What it would do is on the end
+that makes this fault right? So if this is false, There's some m, maybe it's 1001,
+maybe it's a million. But for that particular n, there would be no Boolean
+circuit with this many. Also a million raised to the 20 or fewer gates that
+solves all clique instance. So you could prove
+that you could simply enumerate every single
+Boolean circuit of that size. And then you could execute
+it on the clique instance. And you can execute the
+exponential time algorithm for clique on that instance and show that it gets one of the
+clique instances wrong. So this can actually be improved. It's a huge, probably
+would take forever to actually run the verifier for it, but there is a proof of that. So it can't be false. This statement, P not equal to NP, that cannot be false
+and independent, right? So theorem saying the
+statement P not equal NP, so precisely the statement star. So if this is independent, right? Then it's true. In other words, we would
+actually expect that, you know, if they're
+actually independent than, than in fact, P is not NP. Because if they are equal, then we can prove that by proving
+some statement like this.-e 
+
+en-ECS 220 5c_7 great unifications in science.txt
+
+So this chapter is going to mark a departure and theme from
+the earlier chapters. First of all, we're done
+talking about time complexity. Now, you could say this chapter
+is about computability theory. And it is we'll do some
+computability theory. I will do things like
+undecidability proofs, but it's also going to get
+particularly philosophical. This chapter's a lot about how modern theoretical
+computer science came about. How did we come to think of
+computation in this way that we do? And the book explores this theme
+of great unifications in science. Meaning when did
+previously disparate ideas get unified into a single
+consistent theory. So one of Newton's insights
+was that apples and planets are moving around the way they do and are falling from a
+tree or orbiting the Earth. Because of the same universal
+law of gravity and motion. Maxwell figured out
+that electricity and magnetism are part of a
+single electromagnetic field. It's oscillations,
+what we call light. Maxwell's equations, were
+very useful in choline all the various
+disparate observations about electricity and light
+and magnetism together. There's still an open Golan, the so-called grand
+unified theory that will combine gravity
+with quantum mechanics. Sunday the right notes. There's no one story
+that explains both. And so these are examples for inspiration and our field
+of computer science, a similar unification and accredited
+terrain and other people, the terrain was one
+of the main drivers. Realize that all the various
+models of computation known, it turns time I will study somebody has
+general recursive functions, lambda calculus, Turing machines and others all have equivalent
+computational power. And so it's possible to build a single unified
+theory of computation. And if it works in
+one of these models, it's going to work in all of them.-e 
+
+en-ECS 220 5c_7.1-1 the difference engine.txt
+
+So we're going to go back
+right now to the middle 1800s. And Charles Babbage was checking astronomical tables and finding a whole lot of errors
+and calculation. And this is in the midst of the Industrial Revolution
+and he reported they said that he wished these calculations
+had been executed by steam. Meeting, had been executed
+automatically by some machine. That if it was designed
+right, wouldn't make errors. And then he thought, okay, maybe I'll try to
+build such a machine. And it wasn't originally intended
+to be a general purpose machine. It was based on the following
+principle that a lot of these functions that you want to evaluate in certain
+physical sciences, for example, astronomy, have what's called a
+Taylor series expansion. As you may remember
+this from calculus, It's essentially the idea that certain well-behaved functions at certain well-behaved points can be expressed as an infinite
+sum of polynomials that converge to the
+value of the function. So f can be much more
+general than a polynomial. But if you look at it and its
+derivative and second derivative, third derivative,
+derivative and so forth. At this point a, so that's
+just an individual number. And then you plug it
+into this expression, which is going to end
+up being a polynomial because this will
+just be some number, this will just be some number,
+this will just be some number. And then you multiply it
+by this polynomial term, x minus a raised to
+some integer power. For well-behaved functions and
+well-being points, this converges. And for some of them it
+converges pretty rapidly. So cosine of x, for example, which
+is not a polynomial, you just take the so-called
+fourth order Taylor expansion, which is first few terms, which are just these. And within this interval
+0 to Pi to that, this is within 0.02
+of the actual cosine. So it can get pretty close. So if you're happy with approximations, Taylor series is a
+great way to do it. And what do you have to do
+to evaluate a Taylor series truncated to some fixed number of first terms while
+it's a polynomial. But how are you going to evaluate
+polynomials automatically, they seem to involve doing
+some difficult things like multiplying and
+exponentiating and so forth. So Babbage wanted to use this thing called the
+method of finite differences. So the key observations, if you have a polynomial and
+you look at its value on, on two points that
+are one apart, right? So we imagined p of
+x and p of x plus 1. If we express what that
+is as a function of x, call that delta p of x. It's something like that. Like a discrete derivative
+with changeable one. That is a degree n
+minus one polynomial. So for example, the
+difference between x cubed plus 1 and x plus 1 cubed plus 1. This will expand out to have just an x cubed term
+that cancels this. And the remaining terms
+are all x-squared or less. So you can imagine you have
+some polynomial like this, but you look at delta of that polynomial and its
+degree one smaller, it's got an x squared delta of that thing is just linear and
+delta that is just a constant. So whatever is the degree, you get, this series of polynomials
+that are smaller degree 2, you just get down to a constant. And so you imagine if you want to evaluate this polynomial
+at various points, I'm just showing integers here, but it could be done with
+floating point numbers as well. Well, you have sort of a base case, which is that to evaluate them on 0, you just look at the
+constant term, right? So for 0 it's one here. This one has two, this one
+is 10, this one is six, and this one there's
+only a constant terms and in fact it's six everywhere. So this looks kind of like
+dynamic programming, right? You have this sort of base case here. And now the idea is we can
+fill in all the rest of these based just on what we've
+calculated so far. So if we rewrite this and
+substitute x equals 0, we get that if we add P 0, which is this, and delta p, which is this, we get p1. Do we just add those two integers? And then if we add delta p 0 and delta delta P 0
+will get delta P1, right? So we add 10 to 12, we add 10 and 6 to get 16. And then to get the next column. Well, it's the same thing with
+x equals 1 P1 plus delta P1, P2, and so on and so on. And we can fill in this whole table
+just by adding numbers, right? It's significantly simpler
+computation to do. And remember that in turn, if we have a large enough degree
+polynomial can approximate very closely just about any kind of function that you
+encounter in the sciences. So what Babbage did was to build a machine based on this
+principle that could, that could do these
+additions of evaluating these polynomials in order to
+evaluate arbitrary function. So you just had to come up with the Taylor series
+expansion of the function, turn it into those polynomials,
+decreasing by degrees. And then program the
+polynomial by giving the coefficients by turning
+these little rotors here. So this is a fairly
+detailed description of how this thing works at this address. If you're curious, I
+encourage you to watch that. And I think there's one of these actually somewhere in Silicon Valley. I always wanted to go see. I've never made the trip,
+but I think somebody has a replica of this thing
+somewhere in Silicon Valley, but there's a few replicas of these in this video we're going
+to watch right now, shows an Australian scientist
+talking about a replica of the data. The NDP find that because
+they want to keep upon by the engine behind me is Babbage's Difference Engine number
+2 designed by Charles Babbage, an English mathematician who is also known as the
+first computer pioneer. Diabetes designed this
+machine 247, 249. Babbage, as we know, did not succeed in completing any of his own engines in their
+entirety. So there's By bigger engine, this is the first physical realization
+of any of the baby, just complete designs in the metals. The engine itself weighs five tons. It consists of 8 thousand
+parts made of bronze, cast iron and steel. And it measures 11 foot
+long and eight-foot high. It's operated by cranking a handle. What it does is it
+calculates and tabulates the value of any
+second-order polynomial. The class of mathematical
+expression is 231 decimal places. It only calculates that
+with unerring accuracy. It also prints and inked
+hard copy as a record of the results and also produces what
+are called stereotype plates. That is, it impresses the results
+in soft material plus the, in this instance, you can make
+it printing like automatically. And the purpose of all this was to eliminate the risk of human error. In the calculation and production
+of printed mathematical tables. The machine is operated
+by cranking this handle. So you turn this handle and
+each cycle of the engine, the machine produces one result. So you just keep cranking your set the initial conditions
+up on the figure wheels, on the numbered wheels,
+you turn the handle. What happens when you turn the
+handle is it drives this cam stack. And if you'd like, this
+is the micro program. This is the device that orchestrates
+all the internal motions of the machine to get it to form the repeated additions
+that are needed for them. The method of differences, which
+is the principle it is using. So you turn the handle in terms these camps tax the
+28 separate camps. And that's what determines
+the internal timing and the orchestration of all the mechanical movements
+of the whole machine. So that'll be like the
+guts of the machine, the internal Michael program. And what the machine does is it adds a three digit
+number on one column, and it progresses through
+the machine adding from column to column to column
+and the tabular value, the result ends up on the
+very last column, 31 digits. So you crank the handle, each cycle of the engine, that's four turns of the handle, it cyclically engine produces
+the next result on this column. So the end process, the end product of that whole process is 31 digit number on this column. So we take the 31 digit result from the end of the machine
+at the end of the cycle, and it is automatically
+transferred to this apparatus, which is the output apparatus.
+It does two things. It prints on hard copy In Ink, taught copy, 31 digit result as a checking copy so that you know
+actually what you've canceled. At the same time it impresses results on soft material
+in these traits. So inside there there are things
+called stereotype punches, which are number wheeled, which
+are lowered into the tray, the trade and moves, it lowers again. And so the lines build up. Firstly, it's on display here at the Computer History
+Museum for one year. It's aren't alone from
+the owner of the machine, which is Nathan move old, who commissioned the machine. It paid for the machine to be built. And so it's here for you and then it goes into his
+private collection. What we will do with it is
+demonstrated for people, will work on it's own
+research machines, so it will be adjusted and worked on. We get experience about
+how the thing operates. Also part of the reason now that
+it is here and it does work. And we have for the first
+time that Babbage engine, that is to do some
+research into, say, was it a practical proposition
+if babies had one, could they have successfully
+produce tables? Babbage was not an
+impractical dreamer. This machine works as
+he intended to work. What's the entire enterprise of using the infallibility of machinery
+to produce printed tables. Was it realistic? Could
+it have been done? And for the first time in history, we're in a position to
+actually answer that question.-e 
+
+en-ECS 220 5c_7.1-2 the analytical engine.txt
+
+The difference engine
+was an amazing design, but it was quite special purpose. So just calculated polynomials to
+a certain degree of precision, which can be used to
+calculate a lot of other functions through their
+Taylor series approximations. But what Babbage realized as weight, you could do quite a
+bit more if you could automate computation that sense. And so it inspired him to think of this more complex design or something he called
+the analytical engine. And this had essentially everything we think of in modern computers other
+than the electricity. So this is like, but the steam pump novels like this
+is kind of what people imagine, you know, computers might
+have looked like had they actually been
+built in the 1800s. It had what's called a store, which we recognize the memories
+of 1050 digit integers. Or we might call that a register
+with a certain number of bits. Some called the mill. This was basically the CPU. It could do addition, subtraction,
+multiplication, division. It was programmable
+using these punch cards. So you might have heard
+of punch cards being how people tried to program computers in the 60s while they
+came from this other technology, which is called the Jaccard blue. Where are these punch
+cards would describe a pattern that you
+wanted to loom to weave into a woven pattern and
+they were extremely complex. I mean, this is actually a pattern woven by a Jaccard loan
+showing a picture of Jaccard. And he's cards had
+variables that could copy numbers into the mill operations given an instruction execute. And you had these so-called
+combinatorial cards, which had the construct
+control structures we would recognize
+if then statements, gotos and for loops. So, so this is what Babbage
+imagined could be used to really expand the automation of computation for say,
+computing scientific tables. But it was realized. How much further? And said, Hey, here's a quote from the same. Essentially. And meeting the
+analytic decides who's right. So basically any object
+relations strand that spreads monies home regions. So for example, represent sound, represented CDs. Then she met with the engine, might be able to
+hunger and lows news. This is some video. If you do just showing some
+algorithm being what's happening, my algorithm then add it to them. And a lot of people over Fernando, as the first computer program moves, this theater was never modeled. You can write a program, whether she wrote the first
+programs for the analytic engine. And this shows a program describing how to compute something
+called Bernoulli numbers. I went and tried to look for a simple description of Bernoulli numbers. They're not really
+simple description. This might have been
+why she wanted this as a demonstration of the power that, you know, there's no simple
+like little formula for them. So this is the kind of thing you
+have to express algorithmically. And this is a description of the Analytic Engine
+programmed people. Now unfortunately, machines in
+the 1800s were not precise enough to enable the construction of
+a reliable analytic engine. What happened was Babbage
+tried to get money from the British government
+to fund this thing. They gave him some, but then
+they pulled the funding. They were happy with the
+progress, never got built. And so that it just kinda
+dive there for awhile. But this idea of a universally
+programmable computer came up again independently by a totally
+different group of actors in the 1930s who were thinking
+about a much different question, a much less practical
+sounding question. To, which is this abstract question about the foundations of mathematics.-e 
+

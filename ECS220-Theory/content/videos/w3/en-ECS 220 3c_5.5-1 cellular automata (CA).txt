@@ -1,0 +1,89 @@
+The last potholes
+study in this chapter, just to show that NP-completeness kinda shows up whether
+you go looking for it or not is one of my favorite models of computation
+called a cellular automata. So cellular automata as defined
+by so-called transition rules. And the idea is that you, you have a bunch of adjacent cells and think of the
+kind of like a Turing machine. But it's going to be a
+slightly different model. And the ones we're looking at here, just two possible
+states, white and black. And the transition rule tells you, if you're a cell like say this one, then based on your color and
+the color of your neighbors, What's going to be your
+color in the next time-step? So this is saying if you're a
+white console or your neighbors, your white in the next time-step, this is Saint of your white and
+your left neighbor is white, but you're right neighbor is black, then you become black
+in the next time-step. And this one says, if you're black, both your neighbors or white, you stay black and so on. There's eight possibilities
+for your neighborhood. And this tells you what to
+do in each of those cases. So locally. So it's unlike a Turing
+machine and that all of the cells are doing this sort of
+computation at the same time. There's not like a tape
+head somewhere there. They're all doing this update. So what happens is you start in some configuration and space is
+kind of going left and right here. But I'm going to show the evolution of this thing by time going down. And the next time step, applying this rule to every
+cell would result in this. And then applying it again and again and again gives you some
+sequence of configurations. So formally, a cellular atomaton is just a function which tells you on input a 3-bit bit string consisting of your state
+and that of your two neighbors. What state, where you go to next
+here I've got caught them 01. And a configuration
+is a longer string. If you have n cells, there's a string of length n. You write f of c for the
+configuration you get by applying f to each cell
+and see, all right, so if this is configuration c, This one is f of c, this is f of f of c. I didn't really say what to
+do at the boundaries here. There's kind of a few
+different ways you can handle at sometimes
+what you do is you assume the left neighbor of this
+cell is this one over here. That's a so-called periodic
+boundary condition. Sometimes you could say
+it shrinks over time. So you could say maybe there is no cell here in the next time-step. Maybe you could say it
+grows over time and just everybody becomes 0
+when they first appear. Sometimes even talk about
+infinite configurations, but we want so standardizing
+the order of the input state. Tuples, meaning like this order here, this is lexicographical
+order for them means that f can be described by an eight-bit string of
+just the outputs, right? So I didn't actually have to write
+the top three here if you know, I'm going to give them in that order. I can specify by just saying, what are the eight bits to right ear at top for time
+t plus one in order. And so the above is
+the string 01111000, which is 30th, and the lexicographical order
+of 0, 1 to the eighth. So this one actually has a
+name, it's called rule third, it's the 30th site. Well, you can list, okay, you could consider 2D
+cellular automata as well. And with the most local neighborhood you can get yourself and
+your immediate neighbors. You could say, well, your neighbors
+are your eight neighbors edu. And again, you have to describe
+based on their colors, what color will you become Next. Now, this is not really feasible
+to list all of them, right? Because there's nine
+total states here, so we'd have 512 rules to list, but we can list the particular
+ones I'm listing here succinctly. And it's called the
+Game of Life, right? And the way the game
+of life works is by this sort of abbreviated summary, which is, you say, black is alive and white is dead. So if I'm alive, in other words, if I'm a black cell, then if either two or three of
+my neighbors are also alive, then I stay alive. But otherwise I die either of
+loneliness because there's not enough neighbors or
+overcrowding because there's two. Now the other cases I'm
+dead, I'm a white cell. How do I become alive? Will live exactly three of
+my neighbors are alive. I become a lot, right? So there's just enough of
+them to bring me to live. Otherwise I stated. So that's the so-called Game of Life. And people get pretty obsessed
+with this one because it's, it's kinda crazy what
+these simple rules can do. So Here's a very simple thing. It's not very exciting. A block
+queue examine the rule here. If you had these four black and
+everybody around them white, this will just stay fixed to keep updating it, they just stay black. Here's another fixed point That's a little better called a
+beehive for some reason. So you update does it doesn't change. More interesting is there
+are some ones that chain, so you get three in a row and
+everyone around them as white, don't change their orientation, but then they'll
+immediately change back. Remember, it's like it's kind of
+a symmetric rule geometrically. Here's another little more
+interesting one called a pulsar. These change but they
+kind of stay in place. This is something
+called a glider because this one every four transitions and actually moves down into the left and just keeps
+repeating like this. And then here is a little bit more complicated one
+called a spaceship. And it just moves in step diagonally. It just moves in one direction. And they're symmetric
+versions of all of these, because the rules here are
+geometrically somewhat symmetric. Okay, So let's just see an example of a particular configuration
+of this thing in action. So it's going to start
+with a spaceship plot for this thing is doing.
+That's what's going to happen. And now in this video, it's inverted. So now alive as white and black. So here is a particular
+configuration of lunches spaceships. And remember they're all
+going to move to the last. And then we're going to zoom
+out and seasonal what's going? Okay, So what happened? Well, essentially this is
+a video showing eyelid. The Game of Life is what we
+call intrinsically universals, where there's not some work we're going to cover on the
+homework or anything, but it has been a pretty
+important concept. But one of my research papers
+and the idea is that the Game of Life is able to simulate any
+other cellular atomaton, any 2D cellular simulation. As you saw in the video, is that there's these very
+large blocks of cells, each of which represents a single
+cell and what you're simulating. And so the Game of Life can
+simulate any 2D cellular automaton, including the game of life. And that's what's being shown here. But then you can simulate itself.

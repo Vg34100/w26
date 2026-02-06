@@ -1,0 +1,1194 @@
+Them [0:57]: a lot of
+Them [0:58]: people decide not to
+Them [0:59]: go to
+Them [1:00]: work today
+Them [1:01]: i think it's today
+Them [1:05]: or maybe some students decide not to come
+Them [1:10]: out
+Them [1:14]: my
+Them [1:14]: son is today
+Them [1:16]: you
+Pablo [1:16]: know what
+Pablo [1:17]: i'm talking about
+Pablo [1:21]: michael is here
+Pablo [1:28]: few
+Pablo [1:29]: er people here
+Pablo [1:32]: such important topic
+Pablo [1:48]: but still tonight
+Pablo [1:51]: eleven fifty nine fifty five
+Them [1:58]: this is homeward
+Pablo [2:33]: very
+Pablo [2:34]: nice
+Pablo [2:39]: oh you already
+Pablo [2:41]: added this is homework three hundred
+Pablo [2:43]: how to select which one
+Pablo [2:44]: select just pop
+Pablo [2:46]: how is the homework
+Pablo [2:58]: so
+Pablo [3:00]: we provide some data set
+Pablo [3:00]: right
+Pablo [3:09]: again another reminder that you have
+Pablo [3:10]: not
+Pablo [3:12]: form your team
+Pablo [3:15]: or you have one
+Pablo [3:17]: either by yourself
+Pablo [3:18]: or
+Pablo [3:23]: have a team put together already
+Pablo [3:24]: you
+Pablo [3:26]: should go to
+Pablo [3:30]: google art put down your team
+Pablo [3:31]: and
+Pablo [3:32]: pick the presentation
+Pablo [3:34]: schedule
+Pablo [3:36]: if you
+Pablo [3:38]: want to present
+Pablo [3:44]: oh i forgot
+Pablo [3:45]: i should also
+Pablo [3:48]: create one for
+Pablo [3:51]: both of
+Pablo [3:53]: you
+Pablo [3:58]: ask
+Pablo [4:03]: sure we have enough time to do
+Pablo [4:12]: that everybody see like what everybody else
+Pablo [4:13]: will work on
+Pablo [4:18]: yeah
+Pablo [4:21]: i will send out another notification
+Pablo [4:26]: about signing up for the proposal presentation
+Pablo [4:30]: okay if no question
+Pablo [4:32]: let's start today's lecture
+Pablo [4:35]: on space
+Pablo [4:41]: so we live in this three dimensional world
+Pablo [4:44]: and then
+Pablo [4:48]: in this class you learn how to visualize data
+Pablo [4:51]: and the data that
+Pablo [4:56]: we usually have we want to visualize
+Pablo [4:59]: the data set
+Pablo [5:02]: our multivariate multidimensional
+Pablo [5:04]: but
+Pablo [5:05]: then
+Pablo [5:08]: the display we use right
+Pablo [5:16]: the display where we actually show the visualization
+Pablo [5:20]: typically is two dimensional
+Pablo [5:24]: it can be your computer screen your phone
+Pablo [5:28]: display
+Pablo [5:30]: or even on paper
+Pablo [5:33]: it's all two dimensional yes
+Pablo [5:36]: there are three
+Them [5:36]: d displays
+Them [5:37]: but then
+Them [5:40]: most of the time we use two liters
+Pablo [5:44]: and
+Pablo [5:46]: you already learned how to
+Pablo [5:50]: do
+Pablo [5:52]: the visual encoding
+Pablo [5:56]: you will pick marks and channels
+Pablo [6:00]: and you all know position is the
+Pablo [6:02]: top channel
+Pablo [6:03]: so
+Pablo [6:05]: if you have two dimensional data
+Pablo [6:09]: you can just bot and just use position
+Pablo [6:11]: and then you have more dimension
+Pablo [6:14]: you can encode them with color
+Pablo [6:16]: or
+Pablo [6:17]: some other channel
+Pablo [6:20]: so you could essentially
+Pablo [6:26]: convey four or five dimensional data on a two d display
+Pablo [6:35]: so
+Pablo [6:36]: what we try to do is
+Pablo [6:37]: to
+Pablo [6:38]: write
+Pablo [6:39]: increase the number of
+Pablo [6:40]: dimensions
+Pablo [6:45]: because
+Pablo [6:46]: normally
+Pablo [6:47]: we
+Pablo [6:49]: have
+Pablo [6:52]: needed
+Pablo [6:53]: to deal with
+Pablo [6:54]: and
+Pablo [6:55]: all the time
+Pablo [6:56]: you invite
+Pablo [6:57]: anybody the most important
+Pablo [6:58]: dimension
+Pablo [6:59]: and we want
+Pablo [7:00]: to
+Pablo [7:02]: do that
+Pablo [7:04]: through
+Pablo [7:07]: identify
+Pablo [7:08]: ing
+Pablo [7:08]: certain key relation
+Pablo [7:09]: formulation
+Pablo [7:15]: nomin
+Pablo [7:16]: ated
+Pablo [7:17]: impact out of
+Pablo [7:17]: disorder
+Pablo [7:26]: do
+Pablo [7:27]: our best
+Pablo [7:36]: some
+Pablo [7:38]: escape
+Pablo [7:41]: and
+Pablo [7:43]: show you very
+Pablo [7:43]: well
+Pablo [7:58]: it's not
+Pablo [7:59]: even the scientist
+Pablo [8:00]: it
+Pablo [8:02]: 's more philosophy
+Pablo [8:11]: that
+Pablo [8:12]: this
+Them [8:13]: book
+Them [8:15]: beautiful
+Them [8:16]: visualization
+Them [8:17]: i
+Them [8:18]: highly recommend
+Them [8:20]: to check
+Them [8:21]: out this book
+Them [8:22]: at least
+Them [8:23]: four
+Them [8:24]: weeks
+Them [8:25]: on the individual age
+Them [8:26]: right now
+Them [8:28]: it's very
+Them [8:29]: senior
+Them [8:30]: i assume you
+Them [8:31]: 'll be hired
+Them [8:36]: and
+Them [8:37]: also very powerful
+Them [8:38]: speaker
+Them [8:44]: online
+Them [8:45]: so
+Them [8:46]: when i was
+Them [8:47]: student actually
+Them [8:48]: had
+Them [8:49]: opportun
+Them [8:50]: ity
+Them [8:51]: to
+Them [8:53]: hear
+Them [8:54]: his speech
+Them [8:55]: at a work
+Them [8:55]: shop
+Them [8:58]: i
+Them [8:59]: think that
+Them [9:06]: the first
+Them [9:06]: few
+Them [9:26]: ide
+Them [9:27]: as
+Them [9:29]: the most
+Them [9:30]: important
+Them [9:31]: path
+Them [9:38]: to
+Them [9:39]: pick the right
+Them [9:39]: way
+Them [9:42]: for
+Them [9:43]: present in
+Them [9:44]: your
+Them [9:45]: data
+Them [9:54]: what do you
+Them [9:55]: want to convey to
+Them [9:56]: the audience
+Them [9:56]: or
+Them [9:57]: what you
+Them [9:58]: want
+Them [9:59]: to be
+Them [10:00]: able to
+Them [10:07]: be
+Them [10:08]: more
+Them [10:12]: feature
+Them [10:13]: s of interest
+Them [10:15]: present
+Them [10:20]: for
+Them [10:21]: every
+Them [10:22]: visual
+Them [10:23]: ization
+Them [10:25]: act
+Them [10:26]: it
+Them [10:27]: always
+Them [10:35]: and
+Them [10:36]: then your job is
+Them [10:38]: to find that
+Them [10:39]: optimal space
+Them [10:41]: what do we
+Them [10:42]: say is the most convenient
+Them [10:43]: way
+Them [10:45]: and you
+Them [10:46]: can change to that
+Them [10:47]: space
+Them [10:48]: that
+Them [10:49]: optimal space
+Them [10:51]: so
+Them [10:52]: all the important
+Them [10:53]: reagent
+Pablo [10:59]: so hopefully
+Pablo [11:03]: this
+Pablo [11:04]: lecture will
+Pablo [11:04]: inspire you
+Pablo [11:05]: or will
+Pablo [11:06]: encourage you
+Pablo [11:11]: to design visualization
+Pablo [11:13]: beyond
+Pablo [11:14]: our
+Pablo [11:14]: child
+Pablo [11:18]: hood
+Pablo [11:20]: much
+Pablo [11:21]: much more you get to
+Pablo [11:24]: think
+Pablo [11:24]: about that
+Pablo [11:28]: so
+Pablo [11:31]: there's some
+Pablo [11:34]: space that's like well defined
+Pablo [11:35]: so
+Pablo [11:36]: when you visualize that kind of
+Pablo [11:37]: data
+Pablo [11:38]: like human
+Pablo [11:39]: body
+Pablo [11:43]: so
+Pablo [11:44]: you don't need
+Pablo [11:45]: to create a space
+Pablo [11:46]: it is
+Pablo [11:47]: realize the
+Pablo [11:48]: aspect rightly
+Pablo [11:50]: very
+Pablo [11:51]: clear
+Pablo [11:53]: you don't
+Pablo [11:54]: want to
+Pablo [11:58]: create
+Pablo [11:59]: it
+Pablo [12:02]: in the
+Pablo [12:03]: different states
+Pablo [12:07]: it's
+Pablo [12:08]: a direct visualization
+Pablo [12:14]: or ide
+Pablo [12:15]: ologist
+Pablo [12:17]: they
+Pablo [12:18]: train to see
+Pablo [12:26]: therefore
+Pablo [12:27]: they need
+Pablo [12:29]: to
+Pablo [12:30]: be
+Pablo [12:32]: engine
+Pablo [12:33]: ering design
+Pablo [12:37]: you
+Pablo [12:38]: design directly
+Pablo [12:41]: and
+Pablo [12:42]: everything can be
+Pablo [12:42]: accurate
+Pablo [12:46]: because that is
+Pablo [12:48]: aspect
+Pablo [12:49]: ratio which is
+Pablo [12:50]: it
+Them [12:52]: so
+Them [12:53]: there's no need
+Them [12:55]: ology
+Them [13:02]: maybe if somebody
+Them [13:16]: and
+Them [13:17]: this is also
+Them [13:18]: a very
+Them [13:19]: familiar thing
+Them [13:21]: from
+Them [13:22]: time to time
+Them [13:28]: so
+Them [13:30]: we're looking at
+Them [13:30]: a typ
+Them [13:31]: o
+Them [13:33]: and
+Them [13:35]: we can see
+Them [13:37]: geograph
+Them [13:40]: ical this is well defined geographical space
+Pablo [13:49]: this is the most natural space this is the right space
+Pablo [13:51]: to
+Pablo [13:52]: present this information
+Pablo [13:57]: so this is all simple
+Pablo [14:07]: now let's look at some example that
+Pablo [14:10]: you need to decide how to present the information
+Pablo [14:14]: and this is a classical
+Pablo [14:14]: example
+Pablo [14:18]: almost every visualization
+Pablo [14:21]: class
+Pablo [14:24]: would show this example
+Pablo [14:27]: and i believe some of you have seen this
+Pablo [14:30]: raise your hand if you have seen this example
+Pablo [14:32]: one
+Pablo [14:33]: two three
+Pablo [14:34]: oh yes
+Pablo [14:35]: because you were in line
+Pablo [14:38]: did i show that in my previous
+Pablo [14:39]: class
+Pablo [14:43]: yeah this is very famous
+Pablo [14:44]: one
+Pablo [14:49]: and textbook will also include it and this actually
+Pablo [14:57]: taken from originally it first appeared in edward hopkins book
+Pablo [15:01]: the visual display of quantitative
+Pablo [15:02]: information
+Pablo [15:09]: so i have always proved new on the borrower but then i think the library has all the books
+Pablo [15:11]: hours of active if you want to borrow
+Pablo [15:11]: that
+Pablo [15:13]: okay
+Pablo [15:14]: so what's this
+Pablo [15:17]: this visualization show
+Pablo [15:19]: as i say here
+Pablo [15:20]: did i say that
+Pablo [15:24]: any
+Pablo [15:26]: where but you probably didn't tell
+Pablo [15:38]: this is a drawing it's an illustration it's a visualization
+Pablo [15:41]: made by charlie
+Pablo [15:44]: if anything sixty nine
+Pablo [15:47]: so he tried to
+Pablo [15:49]: depict
+Pablo [15:54]: now poland's army's fate
+Pablo [15:58]: in
+Pablo [15:59]: both times and space and time
+Pablo [16:03]: in one picture
+Pablo [16:07]: it show
+Pablo [16:08]: my dimensional
+Pablo [16:11]: very effective
+Pablo [16:16]: it used position a lot
+Pablo [16:19]: right so that's why it works
+Pablo [16:21]: the use position
+Pablo [16:24]: what we're seeing here
+Pablo [16:27]: so
+Pablo [16:29]: component tries to
+Pablo [16:32]: invade russia
+Pablo [16:37]: so the army start from here
+Pablo [16:45]: and then this brown color represent a whole army and then the width
+Pablo [16:47]: the thickness of this band
+Pablo [16:50]: represent army side
+Pablo [16:55]: and army march forward
+Pablo [16:59]: so on the back it's actually the geographical
+Pablo [17:03]: map i did the geographical referen
+Pablo [17:05]: ce like where the army
+Pablo [17:07]: was at
+Pablo [17:11]: and then there are also other information
+Pablo [17:13]: we will talk about
+Pablo [17:20]: that but then just look at the army move forward and then there's a small branch
+Pablo [17:25]: out of this
+Pablo [17:28]: main truth
+Pablo [17:32]: and then you found that
+Pablo [17:33]: a
+Pablo [17:34]: this
+Pablo [17:37]: width become right smaller smaller
+Pablo [17:41]: so the rna size change and why
+Pablo [17:44]: because
+Pablo [17:47]: of course we talk about right
+Pablo [17:51]: war right so there was resistance for sure
+Pablo [17:54]: so the army side
+Pablo [17:58]: was shrinking as they move forward
+Pablo [18:01]: and then it show
+Pablo [18:07]: where they were and until they reach the moscow border
+Pablo [18:10]: at
+Pablo [18:14]: mon pasco and then they decide to retreat
+Pablo [18:17]: why because they probably feel
+Pablo [18:19]: they're not going to win
+Pablo [18:24]: this
+Pablo [18:28]: dark band represent the rv right
+Pablo [18:30]: between
+Pablo [18:34]: the side still sweet
+Pablo [18:36]: suddenly
+Pablo [18:38]: the
+Pablo [18:41]: id
+Pablo [18:43]: did not stop
+Pablo [18:43]: right
+Pablo [18:46]: but then here you can see
+Pablo [18:48]: it's trunk
+Pablo [18:51]: significantly
+Pablo [18:55]: here you see there is a big drop
+Pablo [18:58]: and then
+Pablo [19:01]: this
+Pablo [19:02]: troop
+Pablo [19:05]: was joined by another branch it become bigger
+Pablo [19:06]: again
+Pablo [19:08]: but then when reach here
+Pablo [19:10]: we chop again
+Pablo [19:15]: why
+Pablo [19:18]: if you look at this additional information
+Pablo [19:20]: provided here
+Pablo [19:24]: actually so you see here
+Pablo [19:27]: we give you this geographical reference
+Pablo [19:31]: but then moving forward there is a time reference right
+Pablo [19:41]: here december november october is actually annotate
+Pablo [19:43]: for the way back
+Pablo [19:44]: to
+Pablo [19:47]: the tree so that's actually this way
+Pablo [19:53]: and then the corresponding plot here you can see you can guess right
+Pablo [19:54]: you can tell
+Pablo [19:57]: it's what its temperature
+Pablo [20:00]: so you can imagine
+Pablo [20:00]: right
+Pablo [20:02]: how cold it can be
+Pablo [20:03]: that time
+Pablo [20:06]: so it's like negative right
+Pablo [20:12]: twenty one right
+Pablo [20:13]: degree under zero
+Pablo [20:14]: right
+Pablo [20:20]: so you can see what happens exactly is when the army
+Pablo [20:25]: cross river a lot of people die
+Pablo [20:28]: and also here
+Pablo [20:35]: it's exactly the significant drop it all happen when the army tries to
+Pablo [20:37]: cross rhythm
+Pablo [20:38]: yes
+Pablo [20:52]: so this is visually right
+Pablo [20:54]: depending
+Pablo [20:59]: to show this relation it's just like
+Pablo [21:02]: it stand out
+Pablo [21:06]: this causality right
+Pablo [21:07]: stand out
+Pablo [21:13]: you see it really created
+Pablo [21:18]: information and they tell you the whole story is what nature
+Pablo [21:20]: they tell you the whole story
+Pablo [21:24]: it's a powerful visual storytel
+Pablo [21:24]: ling
+Pablo [21:30]: so i hope some of you will make
+Pablo [21:32]: this
+Pablo [21:32]: for
+Pablo [21:36]: your final project
+Pablo [21:38]: to visual story
+Pablo [21:41]: teller that's what i'm looking
+Pablo [21:49]: and some researcher in our field
+Pablo [21:52]: actually try to reproduce
+Pablo [21:54]: this with the algorithm
+Pablo [21:56]: i think
+Pablo [21:58]: they generate something close
+Pablo [22:01]: certainly it's not
+Pablo [22:07]: that everything once you decide right this is the coding you
+Pablo [22:14]: should be able to generate something maybe not exactly the same but should be close enough
+Pablo [22:22]: yeah you see there's a geographical right
+Pablo [22:25]: there's a name of
+Pablo [22:25]: the location
+Pablo [22:28]: it's showing
+Pablo [22:30]: there's river right here there
+Pablo [22:32]: and
+Pablo [22:33]: temperature
+Pablo [22:36]: the income how many dimensions
+Pablo [22:38]: visualization
+Pablo [22:42]: army size
+Pablo [22:45]: direction
+Pablo [22:48]: any comment
+Pablo [23:03]: for example
+Pablo [23:08]: similar
+Pablo [23:08]: fashion
+Pablo [23:12]: especially
+Pablo [23:15]: okay and then from history
+Pablo [23:19]: if they have that they probably would
+Pablo [23:20]: have
+Pablo [23:24]: wanted to throw forward this
+Pablo [23:33]: it also reflects the velocity in the way of the army at the time beautifully too
+Pablo [23:40]: that's also good as
+Pablo [23:46]: overwhelming confidence
+Pablo [24:02]: anyway
+Pablo [24:05]: you can review this visualization yourself
+Pablo [24:06]: later
+Pablo [24:10]: and online
+Pablo [24:14]: there's quite some discussion
+Pablo [24:17]: about this visualization
+Pablo [24:23]: we said this before
+Pablo [24:28]: right so again right talking about the space you define
+Pablo [24:30]: it's quite
+Pablo [24:31]: important
+Pablo [24:34]: really change
+Pablo [24:36]: the viewer's percept
+Pablo [24:37]: ion
+Pablo [24:38]: how they interpret
+Pablo [24:43]: or how you want them to interpret
+Pablo [24:46]: so this is the same data
+Pablo [24:49]: but then the only difference is
+Pablo [24:51]: the y axis
+Pablo [24:53]: the scale
+Pablo [24:55]: the range
+Pablo [25:04]: do you want to emphasize all these are very similar
+Pablo [25:08]: or they're actually still different
+Pablo [25:11]: so
+Pablo [25:13]: when you make your car
+Pablo [25:14]: you need to keep that in mind
+Pablo [25:16]: what
+Pablo [25:20]: do you intend to show
+Pablo [25:25]: make sure you don't mislead
+Pablo [25:26]: right this lead the viewer
+Pablo [25:32]: you guys know log scale
+Pablo [25:39]: so we use lock when do we use log scale
+Pablo [25:42]: when do we want to use loudsp
+Pablo [25:42]: eaker
+Pablo [25:44]: what do you think
+Pablo [25:50]: with the
+Pablo [25:50]: y axis
+Pablo [26:02]: yeah basically when we have very large dynamic range
+Pablo [26:04]: for one
+Pablo [26:05]: variable
+Pablo [26:06]: that we want to
+Pablo [26:07]: form
+Pablo [26:09]: doesn't matter it's y or x
+Pablo [26:14]: so you can see the difference
+Pablo [26:14]: right
+Pablo [26:17]: here this is a linear scale for the same data
+Pablo [26:19]: logarithmic
+Pablo [26:19]: scale
+Pablo [26:22]: so the operation is here
+Pablo [26:26]: we show
+Pablo [26:28]: what the rate of change
+Pablo [26:31]: show the grain of change
+Pablo [26:34]: so what we see here is really
+Pablo [26:38]: we are seeing constant growth rate
+Pablo [26:41]: same data
+Pablo [26:45]: when you see different you can hear user you see oh it's growing
+Pablo [26:46]: right
+Pablo [26:47]: increasing
+Pablo [26:51]: but this one show you
+Pablo [26:55]: f is flowing by it grow as a constant rate
+Pablo [26:58]: constant
+Pablo [27:00]: very simple
+Pablo [27:06]: and here's another example
+Pablo [27:08]: right there's
+Pablo [27:12]: period
+Pablo [27:18]: compared italic cases number of cases in italy and the us
+Pablo [27:24]: here you say all of both increasing but then us
+Pablo [27:28]: ually compare
+Pablo [27:31]: the amount right
+Pablo [27:35]: but then this one show
+Pablo [27:36]: you
+Pablo [27:42]: the two places have similar rate right
+Pablo [27:44]: similar growth rate
+Pablo [27:50]: so when you want
+Pablo [27:51]: to
+Pablo [27:52]: use log scale
+Pablo [27:55]: when you ship a boy
+Pablo [28:00]: think about this don't just
+Pablo [28:06]: okay i'm just going to fade it you really need to think about
+Pablo [28:10]: what
+Pablo [28:13]: it doesn't matter two d three d
+Pablo [28:16]: with this path come with
+Pablo [28:25]: next we want to talk about this interesting topic
+Pablo [28:26]: distortion
+Pablo [28:37]: so what happened is again you only have two dimensional two dimensional
+Pablo [28:42]: display paper or screen
+Pablo [28:43]: monitor
+Pablo [28:46]: and
+Pablo [28:48]: when you try to display too much information
+Pablo [28:56]: you either will introduce visual pattern or you have to squeeze something
+Pablo [28:59]: and that will introduce
+Pablo [29:01]: distortion
+Pablo [29:06]: so just for something like this simple illustration
+Pablo [29:08]: technical illustration
+Pablo [29:11]: you can find this in xbox
+Pablo [29:14]: in mathis for example
+Pablo [29:25]: so here this theta indicating and then the spatial is a two d but then
+Pablo [29:27]: quite clear right
+Pablo [29:42]: and then this is human circulation system but certainly for this the size not necessarily accurate right
+Pablo [29:45]: about what they try to show each
+Pablo [29:49]: body part including the fingers
+Pablo [29:52]: it's not necessarily the exact size
+Pablo [30:00]: but then this illustration is very clearly made they clearly present the information
+Pablo [30:06]: the structure the spatial relations between different parts
+Pablo [30:08]: very clear
+Pablo [30:11]: and this one
+Pablo [30:16]: again our human system in our body
+Pablo [30:18]: does not look like this right
+Pablo [30:21]: but then it's okay
+Pablo [30:23]: they present it this way
+Pablo [30:26]: the clarity
+Pablo [30:33]: in this case more important and we will understand it
+Pablo [30:36]: without any profit
+Pablo [30:40]: it does not mislead the viewer
+Pablo [30:45]: so this is pos
+Pablo [30:47]: e we're done by hand
+Pablo [30:52]: this one
+Pablo [30:56]: if you've been to japan
+Pablo [31:00]: you certainly used it
+Pablo [31:04]: today you probably don't use it because you have google map
+Pablo [31:07]: but every time when i visit japan
+Pablo [31:10]: i still grab this map i put in my pocket
+Pablo [31:11]: i do
+Pablo [31:12]: more
+Pablo [31:19]: of
+Pablo [31:20]: yours
+Pablo [31:20]: you have seen
+Pablo [31:21]: this
+Pablo [31:24]: is
+Pablo [31:25]: for you
+Pablo [31:29]: and
+Pablo [31:30]: it was really
+Pablo [31:31]: well made
+Pablo [31:33]: and
+Pablo [31:34]: it is praise of god
+Pablo [31:43]: there are so many different
+Pablo [31:44]: life
+Pablo [31:45]: and then you want to
+Pablo [31:46]: follow in
+Pablo [31:46]: mind
+Pablo [31:51]: in this small light this morning
+Pablo [31:52]: give you the map
+Pablo [31:53]: is like this
+Pablo [31:53]: size
+Pablo [31:56]: and
+Pablo [31:57]: you need to
+Pablo [31:58]: display all this information
+Pablo [32:01]: and they use color
+Pablo [32:03]: to represent different line
+Pablo [32:05]: and then
+Pablo [32:06]: they
+Pablo [32:09]: label each station
+Pablo [32:11]: text label
+Pablo [32:19]: in a way this math this subway map
+Pablo [32:23]: kind of defined tokyo in a sense but then
+Pablo [32:26]: if you look at this
+Pablo [32:27]: again
+Pablo [32:33]: the actual line suddenly for example this blue line right
+Pablo [32:38]: it's not like straight like this right
+Pablo [32:47]: so actually when they design when
+Pablo [32:49]: they make this map
+Pablo [32:53]: they use certain
+Pablo [32:56]: they may certainly design decision
+Pablo [32:58]: to improve the clarity
+Pablo [33:01]: usability of this map
+Pablo [33:03]: so
+Pablo [33:04]: what are
+Pablo [33:07]: the important design decision
+Pablo [33:22]: they barely have enough hue color to encode different line
+Pablo [33:23]: but then
+Pablo [33:26]: what are the important most important
+Pablo [33:27]: design
+Pablo [33:29]: decision
+Pablo [33:35]: some of you must know
+Pablo [33:35]: right
+Pablo [33:41]: color
+Pablo [33:41]: in this case
+Pablo [33:51]: it's not just color
+Pablo [33:54]: what
+Pablo [33:55]: happens
+Pablo [33:56]: no pattern
+Pablo [33:58]: for example
+Pablo [34:01]: there's that black and white spike
+Pablo [34:06]: and white
+Pablo [34:08]: give me
+Pablo [34:12]: as i say right
+Pablo [34:15]: actually i made a mistake
+Pablo [34:18]: like early
+Pablo [34:21]: that time i didn't have google map
+Pablo [34:22]: right
+Pablo [34:27]: so by the time i say hey i look at the map i say
+Pablo [34:29]: oh
+Pablo [34:32]: why not i just walk it doesn't look that far
+Pablo [34:35]: it turned out to be really far
+Pablo [34:37]: right
+Pablo [34:42]: so you cannot use this map to determine distance
+Pablo [34:45]: now
+Pablo [34:46]: because
+Pablo [34:48]: that's not the purpose of this map
+Pablo [34:52]: it's not geographically accurate
+Pablo [34:55]: it is stored
+Pablo [35:06]: to achieve clarity so what design decision
+Pablo [35:06]: day
+Pablo [35:09]: comm
+Pablo [35:10]: and usually it will
+Pablo [35:11]: help usually
+Pablo [35:16]: that they focus on interactions between
+Pablo [35:20]: which subway lines happen rather than how they show
+Pablo [35:26]: interactions how do you mean the crossing
+Pablo [35:27]: yeah
+Pablo [35:29]: but
+Pablo [35:32]: that's not necessarily that geographically accurate
+Pablo [35:33]: in fact yeah
+Pablo [35:37]: there's some sort of crossing it was one idea on the ground
+Pablo [35:38]: why
+Pablo [35:40]: in the
+Pablo [35:41]: same
+Pablo [35:45]: area
+Pablo [35:46]: but not exactly
+Pablo [35:48]: like cross
+Pablo [35:49]: ing at
+Pablo [35:51]: that point
+Pablo [35:54]: but anyway any other come on
+Pablo [36:01]: yeah
+Pablo [36:04]: they have all the line like every line segment is straight
+Pablo [36:06]: there's no point to
+Pablo [36:07]: make
+Pablo [36:09]: unless they really want to make a geographically
+Pablo [36:10]: accurate
+Pablo [36:12]: yes
+Pablo [36:19]: i think they also make sure that they present the lines in a way that they show direction like north south east west
+Pablo [36:20]: no
+Pablo [36:21]: why
+Pablo [36:25]: how they show i mean of course but then as i say
+Pablo [36:39]: look at
+Pablo [36:39]: it
+Pablo [36:45]: show
+Pablo [36:46]: cornell
+Pablo [36:47]: there's a
+Pablo [36:48]: translation
+Pablo [36:49]: so
+Pablo [36:50]: it's like they
+Pablo [36:51]: must tell you
+Pablo [36:52]: where
+Pablo [36:54]: you get
+Pablo [36:54]: off
+Pablo [37:07]: line
+Pablo [37:08]: it could be evaluated
+Pablo [37:11]: geograph
+Pablo [37:12]: ical
+Pablo [37:13]: accurate
+Pablo [37:14]: way
+Pablo [37:15]: then
+Pablo [37:16]: it could be a
+Pablo [37:19]: copyright
+Pablo [37:20]: visual population
+Pablo [37:28]: in helio
+Pablo [37:29]: may have
+Pablo [37:31]: never
+Pablo [37:32]: had
+Pablo [38:00]: vis
+Pablo [38:01]: ual
+Pablo [38:04]: visual
+Pablo [38:05]: activity
+Pablo [38:28]: for
+Pablo [38:29]: example
+Pablo [38:30]: wherever you go
+Pablo [38:31]: forward
+Pablo [38:36]: there's a
+Pablo [38:37]: timeline
+Pablo [38:39]: there is
+Pablo [38:40]: inhero right
+Pablo [38:41]: on the line
+Pablo [38:52]: so
+Pablo [38:54]: it's also not what they want
+Pablo [39:02]: geographical
+Pablo [39:11]: system
+Pablo [39:24]: accur
+Pablo [39:24]: acy
+Pablo [39:25]: it
+Pablo [39:26]: 's not that it's un
+Pablo [39:27]: important
+Pablo [39:30]: visualize
+Pablo [39:30]: it
+Pablo [39:32]: where i get
+Pablo [39:33]: out
+Pablo [39:35]: i
+Pablo [39:36]: think even my
+Pablo [39:37]: helper is like what you need
+Pablo [39:38]: to come in
+Pablo [39:39]: there's no
+Pablo [39:40]: direct
+Pablo [39:43]: for you
+Pablo [39:44]: to get to
+Pablo [39:49]: where
+Pablo [39:50]: i transfer
+Pablo [39:53]: this
+Pablo [39:54]: is my
+Pablo [40:01]: student
+Pablo [40:02]: if you go to japan
+Pablo [40:07]: i advise you to notice new graph is
+Pablo [40:08]: map from the hotel
+Pablo [40:17]: okay
+Pablo [40:20]: in fact
+Pablo [40:26]: this design was not introduced by japanese
+Pablo [40:31]: japanese they learn from lear
+Pablo [40:32]: ners transform
+Pablo [40:33]: railways
+Pablo [40:41]: much earlier
+Pablo [40:44]: you can see the same design
+Pablo [40:52]: and suburban area
+Pablo [40:54]: surrounding
+Pablo [40:55]: blender
+Pablo [40:56]: this is
+Pablo [40:59]: the central
+Pablo [41:00]: i think
+Pablo [41:05]: so let me show you
+Pablo [41:09]: if you make it geographically accurate
+Pablo [41:10]: what it would look like
+Pablo [41:16]: the same one but now you can see
+Pablo [41:22]: this is geographic somewhat geographical
+Pablo [41:22]: acquired
+Pablo [41:27]: so
+Pablo [41:29]: this versus
+Pablo [41:31]: this
+Pablo [41:38]: which one is
+Pablo [41:40]: more helpful
+Pablo [41:41]: it's easier to use
+Pablo [41:45]: this
+Pablo [41:46]: or this
+Pablo [41:48]: the first
+Pablo [41:48]: one
+Pablo [41:48]: right
+Pablo [41:57]: so that's what they mean by using distortion
+Pablo [42:06]: here i have another example
+Pablo [42:07]: of using
+Pablo [42:08]: this option
+Pablo [42:11]: many
+Pablo [42:12]: of you must
+Pablo [42:13]: have seen
+Pablo [42:14]: this
+Pablo [42:16]: introd
+Pablo [42:17]: uced
+Pablo [42:18]: in actually
+Pablo [42:24]: the
+Pablo [42:25]: us election
+Pablo [42:27]: you
+Pablo [42:28]: always see
+Pablo [42:29]: this
+Pablo [42:32]: and
+Pablo [42:33]: for
+Pablo [42:33]: prediction
+Pablo [42:34]: and also for
+Pablo [42:35]: showing your to
+Pablo [42:36]: wel
+Pablo [42:39]: and this
+Pablo [42:40]: is for
+Pablo [42:41]: two thousand
+Pablo [42:42]: present
+Pablo [42:56]: god is
+Pablo [42:57]: good
+Pablo [43:08]: represent
+Pablo [43:10]: each
+Pablo [43:10]: day
+Pablo [43:18]: some
+Pablo [43:19]: of you
+Pablo [43:22]: look
+Pablo [43:23]: at this
+Pablo [43:25]: using
+Pablo [43:27]: high
+Pablo [43:28]: push
+Pablo [43:29]: on
+Pablo [43:30]: which
+Pablo [43:31]: one
+Pablo [43:32]: you look
+Pablo [43:33]: at this
+Pablo [43:34]: math
+Pablo [43:36]: which monitor
+Pablo [43:38]: but in fact
+Pablo [43:40]: it was very close
+Pablo [43:43]: it was doing closed election
+Pablo [43:45]: i don't know
+Pablo [43:47]: two thousand one years
+Pablo [43:47]: now
+Pablo [43:49]: some of you have
+Pablo [43:52]: just formed or something
+Pablo [43:56]: go
+Pablo [43:57]: back to the
+Pablo [43:58]: thirteen
+Pablo [44:08]: however
+Pablo [44:09]: you
+Pablo [44:20]: actually
+Pablo [44:20]: really
+Pablo [44:22]: close
+Pablo [44:23]: but
+Pablo [44:24]: in this time
+Pablo [44:34]: this
+Pablo [44:35]: question
+Pablo [44:38]: so
+Pablo [44:39]: you don't
+Pablo [44:40]: really
+Pablo [44:42]: dis
+Pablo [44:43]: play this map
+Pablo [44:44]: based on geograph
+Pablo [44:46]: ical sites
+Pablo [44:51]: of
+Pablo [44:52]: the number of
+Pablo [44:57]: then you can see
+Pablo [45:01]: right
+Pablo [45:02]: is much close
+Pablo [45:02]: r
+Pablo [45:05]: and you can even use
+Pablo [45:12]: gradient basically you can blend the color
+Pablo [45:14]: so
+Pablo [45:15]: we have
+Pablo [45:16]: red
+Pablo [45:16]: and blue
+Pablo [45:17]: right
+Pablo [45:19]: so
+Pablo [45:20]: the number
+Pablo [45:21]: of
+Pablo [45:22]: loads not elect
+Pablo [45:23]: rical
+Pablo [45:25]: membr
+Pablo [45:25]: ane
+Pablo [45:26]: and
+Pablo [45:27]: use that to
+Pablo [45:28]: color
+Pablo [45:29]: each
+Pablo [45:30]: step
+Pablo [45:31]: then
+Pablo [45:32]: you can see
+Pablo [45:33]: some of the things
+Pablo [45:34]: really
+Pablo [45:39]: dom
+Pablo [45:39]: inant
+Pablo [45:43]: privile
+Pablo [45:44]: ge
+Pablo [45:48]: more neut
+Pablo [45:48]: ral color
+Pablo [45:51]: means
+Pablo [45:52]: also
+Pablo [45:53]: say a very
+Pablo [45:54]: cold
+Pablo [45:58]: again
+Pablo [45:59]: here comes
+Pablo [45:59]: here
+Pablo [46:00]: this versus
+Pablo [46:01]: this
+Pablo [46:03]: the use of distortion
+Pablo [46:09]: okay
+Pablo [46:12]: let's see
+Pablo [46:22]: interesting video
+Pablo [46:27]: basically repeat what i say but then it's for a different action
+Pablo [46:44]: but new red seats
+Pablo [46:45]: were called
+Pablo [46:46]: and
+Pablo [46:47]: blue states for
+Pablo [46:48]: them to crack
+Pablo [46:49]: it's
+Pablo [46:50]: a little mislead
+Pablo [46:51]: it almost looks
+Pablo [46:52]: like red line
+Pablo [46:53]: but of course
+Pablo [46:54]: it's a residential election
+Pablo [46:55]: same
+Pablo [46:55]: size
+Pablo [46:56]: doesn't matter
+Pablo [46:57]: elect
+Pablo [46:58]: rons
+Pablo [46:58]: so let's be the
+Pablo [46:58]: do
+Pablo [46:59]: size of each shape
+Pablo [47:00]: reflect intellectual
+Pablo [47:01]: platform
+Pablo [47:13]: this
+Pablo [47:17]: map still doesn't tell us which states are important to super pacs and other outside groups
+Pablo [47:22]: so let's scale each state based on the money coming in for presidential political act
+Pablo [47:24]: there are only a handful of
+Pablo [47:25]: states in this
+Pablo [47:26]: battleground
+Pablo [47:29]: states in two thousand eight they were all blue
+Pablo [47:39]: let's go back to the normal map if we color the states based on popular vote mixing in oral red republican votes more blue for democratic votes
+Pablo [47:42]: they start to look a bit more
+Pablo [47:42]: purple
+Pablo [47:48]: and of course super pacs and similar groups spend money in the purplest states
+Pablo [47:56]: it looks even weirder when you size the states by the amount of money spent per vote
+Pablo [48:08]: in nevada outside groups are spending nearly six dollars for voting aged adult ex door in california they spent less than a cent for folks who want to influence the election
+Pablo [48:13]: this is the map they see these are the united states that matter to them
+Pablo [48:25]: here's more example of using distortion
+Pablo [48:26]: so
+Pablo [48:27]: this is a world
+Pablo [48:28]: map
+Pablo [48:34]: again based on the actual population
+Pablo [48:35]: so
+Pablo [48:36]: you can see
+Pablo [48:37]: us
+Pablo [48:38]: d
+Pablo [48:43]: en
+Pablo [48:44]: abled in
+Pablo [48:45]: china
+Pablo [48:46]: might be
+Pablo [48:47]: and
+Pablo [48:48]: taiwan become
+Pablo [48:49]: much bigger
+Pablo [48:52]: every car
+Pablo [48:54]: in europe within hours a bit smaller
+Pablo [49:02]: teams you sold to represent certain information
+Pablo [49:05]: to
+Pablo [49:06]: kind of
+Pablo [49:12]: try to emphasize
+Pablo [49:15]: emphasize certain aspect
+Pablo [49:20]: here's another one
+Pablo [49:25]: i found this one is
+Pablo [49:25]: here
+Pablo [49:26]: ecological foot
+Pablo [49:27]: print represent
+Pablo [49:29]: like
+Pablo [49:31]: how each country consume
+Pablo [49:33]: in terms of food
+Pablo [49:36]: and then
+Pablo [49:38]: feel like
+Pablo [49:40]: ode
+Pablo [49:43]: even how much
+Pablo [49:46]: illusion
+Pablo [49:48]: generated
+Pablo [49:51]: so you can also see right
+Pablo [49:53]: but this is certainly not
+Pablo [49:56]: reason here i think this was
+Pablo [49:59]: made several years ago i don't remember which year
+Pablo [50:01]: i ended
+Pablo [50:07]: but then it just kind of give you a comparison
+Pablo [50:09]: this is us
+Pablo [50:11]: large
+Pablo [50:12]: food rate
+Pablo [50:13]: so in china
+Pablo [50:14]: japan
+Pablo [50:18]: south korea
+Pablo [50:23]: some of the european
+Pablo [50:23]: countries
+Pablo [50:29]: makes sense right
+Pablo [50:40]: at this point i have this animation and again i want to emphasize this was made quite a while ago
+Pablo [50:44]: so you don't want to use what you see here
+Pablo [50:46]: to
+Pablo [50:50]: as an understanding of
+Pablo [50:55]: the difference between some of this country
+Pablo [50:55]: right
+Pablo [50:59]: i think this visualization
+Pablo [51:02]: what it show
+Pablo [51:05]: most part of the lumber true
+Pablo [51:09]: but then what it show here is at that time
+Pablo [51:13]: how many people is each country
+Pablo [51:20]: live less than we start with less than one dollars and then two dollars five dollars
+Pablo [51:21]: and now
+Pablo [51:25]: make comparison
+Pablo [51:30]: so let's see it's a b
+Pablo [51:33]: so
+Pablo [51:36]: you have to pay attention you got to pay attention to here
+Pablo [51:38]: you say how much
+Pablo [51:47]: and then you see it is increase this number to dollar number and then you can see how size change
+Pablo [51:55]: so you can see us at the beginning one dollars is
+Pablo [51:56]: like squeeze right
+Pablo [51:58]: so is japan
+Pablo [51:59]: here
+Pablo [52:00]: some of this
+Pablo [52:00]: country
+Pablo [52:04]: europe most of the european countries
+Pablo [52:07]: it just become like
+Pablo [52:09]: so thin
+Pablo [52:44]: hour a day
+Pablo [53:05]: twenty to fifteen hours a day
+Pablo [53:14]: we need to hide it all
+Pablo [53:19]: becomes
+Pablo [53:20]: okay
+Pablo [53:39]: us became the biggest
+Pablo [53:40]: suddenly outdated
+Pablo [53:42]: but
+Pablo [53:43]: then you get an idea
+Pablo [53:45]: the use of distortion
+Pablo [53:52]: the use
+Pablo [53:55]: of distortion is actually very common
+Pablo [53:56]: or
+Pablo [53:58]: something that
+Pablo [54:00]: you must do
+Pablo [54:03]: in this field
+Pablo [54:09]: making up
+Pablo [54:09]: man
+Pablo [54:12]: you just think about
+Pablo [54:15]: the earth is
+Pablo [54:16]: sphere
+Pablo [54:17]: right
+Pablo [54:21]: and you want to project the map of
+Pablo [54:22]: the world
+Pablo [54:23]: on the two
+Pablo [54:23]: dimension
+Pablo [54:29]: it was the artist
+Pablo [54:30]: we want to
+Pablo [54:31]: have a
+Pablo [54:31]: man
+Pablo [54:33]: forward
+Pablo [54:37]: the city
+Pablo [54:40]: would like to
+Pablo [54:40]: do that
+Pablo [54:53]: you
+Pablo [54:54]: have to either give
+Pablo [54:55]: this torch somewhere
+Pablo [55:00]: and that lead to different kind of map
+Pablo [55:02]: basically
+Pablo [55:07]: depends on what information is more important
+Pablo [55:10]: you choose where
+Pablo [55:16]: it shows where you don't distort where you
+Pablo [55:18]: can allow distortion
+Pablo [55:23]: usually
+Pablo [55:26]: world map right you allow distortion
+Pablo [55:28]: where the two fold
+Pablo [55:31]: think about the earth
+Pablo [55:34]: so how you flatten
+Pablo [55:41]: as i mentioned right
+Pablo [55:44]: it really depends
+Pablo [55:46]: what information
+Pablo [55:50]: more important to stay accurate
+Pablo [55:53]: is to listen a lot of times it's distant
+Pablo [55:57]: you look at the map you want to measure this
+Pablo [55:59]: area
+Pablo [56:01]: become the other
+Pablo [56:02]: side of
+Pablo [56:02]: tool
+Pablo [56:03]: if you have
+Pablo [56:05]: or
+Pablo [56:06]: sometimes shape
+Pablo [56:10]: something
+Pablo [56:11]: you think
+Pablo [56:22]: you
+Pablo [56:22]: may see more
+Pablo [56:23]: so
+Pablo [56:36]: let me
+Pablo [56:38]: show you example
+Pablo [56:39]: of different
+Pablo [56:40]: math
+Pablo [56:45]: so
+Pablo [56:49]: this sort of map right the cylindrical map
+Pablo [56:52]: tends to do math
+Pablo [56:57]: you're going to use if you want the preserve
+Pablo [56:58]: distance
+Pablo [57:05]: and if you want to preserve area
+Pablo [57:07]: you use equal area
+Pablo [57:11]: or stereot
+Pablo [57:11]: rapping
+Pablo [57:13]: as a muscle
+Pablo [57:14]: math
+Pablo [57:18]: and this as a unique idea here also preserve angle
+Pablo [57:20]: if that's important
+Pablo [57:24]: and
+Pablo [57:27]: this one is a map of mars
+Pablo [57:29]: actually
+Pablo [57:33]: scientists want to preserve
+Pablo [57:34]: shape
+Pablo [57:39]: because they want to study all this crater
+Pablo [57:55]: some of our
+Pablo [57:55]: distortion
+Pablo [57:56]: any
+Pablo [57:57]: question of
+Pablo [57:58]: amen
+Pablo [58:14]: senso
+Pablo [58:15]: ry
+Pablo [58:17]: also
+Pablo [58:18]: called
+Pablo [58:23]: mon
+Pablo [58:24]: keys
+Pablo [58:31]: show
+Pablo [58:32]: ing how much
+Pablo [58:33]: of
+Pablo [58:36]: attachment
+Pablo [58:39]: yeah
+Pablo [58:44]: so yeah for example
+Pablo [58:47]: then you have to because
+Pablo [58:55]: for some of the scientists
+Pablo [58:55]: value of course
+Pablo [58:56]: you can imagine
+Pablo [58:59]: they study human
+Pablo [58:59]: brain for example
+Pablo [59:04]: then they might want to lay out the
+Pablo [59:05]: human
+Pablo [59:06]: project
+Pablo [59:08]: because
+Pablo [59:09]: it
+Pablo [59:10]: 's a three dimens
+Pablo [59:11]: ional panel
+Pablo [59:15]: i know this block or
+Pablo [59:21]: you can scientists usually just like
+Pablo [59:27]: a cross section sometimes you might want to play out the brain in some way
+Pablo [59:28]: they def
+Pablo [59:29]: initely store it
+Pablo [59:45]: so next topic
+Pablo [59:46]: is time
+Pablo [59:50]: so we talked about
+Pablo [59:56]: we
+Pablo [59:57]: look at
+Pablo [59:58]: what i mentioned
+Pablo [1:00:00]: or
+Pablo [1:00:01]: ten dimensional
+Pablo [1:00:01]: data
+Pablo [1:00:03]: and
+Pablo [1:00:04]: how we
+Pablo [1:00:05]: do the encoding
+Pablo [1:00:10]: but time is one of the dimension
+Pablo [1:00:12]: we want the encounter
+Pablo [1:00:18]: and when we design visualization
+Pablo [1:00:33]: we
+Pablo [1:00:33]: could write this
+Pablo [1:00:34]: by treating us
+Pablo [1:00:35]: or other than
+Pablo [1:00:38]: we have
+Pablo [1:00:39]: to consider
+Pablo [1:00:41]: or we want to consider
+Pablo [1:00:57]: any
+Pablo [1:00:57]: more
+Pablo [1:01:01]: so
+Pablo [1:01:02]: in nature or
+Pablo [1:01:03]: in
+Pablo [1:01:03]: pakistan

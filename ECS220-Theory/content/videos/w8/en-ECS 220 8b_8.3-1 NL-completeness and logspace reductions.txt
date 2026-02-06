@@ -1,0 +1,66 @@
+We'll now introduce the
+concept of nl completeness, which is similar to NP-Completeness, but for this nondeterministic
+log-space class, and it has somehow
+the same bearing on L versus NL as NP-completeness
+has on P versus NP. So we just showed that the graph reachability problem is solvable in nondeterministic
+log-space, it's in and L. And that every problem in et al is equivalent to a reachability problem
+on a polynomial sized graph. So we're now going to define
+this notion of nl completeness. We will show formally that
+reachability is NL complete. And the consequences that will be that L equals L if and only
+if reachability is an L. So this is somehow similar to P equals NP if and only if SAT is NP. So in some sense, the question, does non-determinism help with log-space computations can be
+entirely boil down to the question, well, can we solve reachability
+deterministically and log-space? If so, everything else you can do
+and non-deterministic log-space, you can also do deterministically. So it's very similar to how SAT is one of the hardest problems in NP. If it's in B, everything else. And NB also is. Now unlike that, people aren't quite as convinced
+that they're unequal. Like it could go either way. Actually, I think there's
+some people convinced that, yeah, these two are probably equal. We'll see that there are a lot
+closer in some sense than, than we believe P and NP are. Okay. So to define the notion
+of nl completeness, we need a notion of reduction. And similar to how the reductions
+we use for NP-Completeness need to be polynomial time for
+them to get what we want. If we allow them to be
+exponential time, for instance, they could just solve the
+problem we're talking about directly and they wouldn't actually help us relate the two problem. So similarly, since the natural notion here
+is logarithmic space bounds, we don't want to allow
+the reduction to use more resources than we want for the, the algorithm solving the
+problems are talking about. So we need a notion of
+a log-space reduction. And it just means that this
+function from 01 star does their own star is log-space and it's computable by O of log n
+space bounded outward. And if so we write a is log-space reducible to be
+using this little symbol. So because this thing
+outputs a whole string, we have to use this
+convention I mentioned where the output needs
+to be handled specially. So the input is read only as always. It could be, by
+definition linear space. Because the inputs, what's defining, how we're measuring everything else? The output can be much
+bigger than the space bound. So to keep from cheating, we require it to be right only. And then the work tape or
+the working memory is read, write that only the word tape
+counts against the space usage. Now, this may look
+pretty restrictive, but actually most reductions used in NP-Completeness Proofs
+are already log-space. So for example, think of
+the very easy reduction from clique to independent set. Where on input a graph, you keep the nodes the same and
+you just flip all the edges. You just go to every pair of nodes, remove an edge if they have one, add an edge if they doubt. So, think about how to do that
+With only logarithmic space. So what do we do? We're trying to go into every
+pair of nodes and we're trying to determine do we
+want to add the edge UV to, to our output, right? Do we want to write a one
+say in the adjacency matrix? Well, how do we know
+whether to do that? Well, we just need to query is UV an edge in the input
+graph and then negate. So at any given time, we only need like these two pointers, u and v into the input and the
+output to know what to do. So actually, being computable and log-space is actually the norm
+for most of these things. And in fact, some textbooks
+like Papadimitriou's textbook, they actually define NP completeness
+using Labspace reductions. So now the rest looks
+similar to NP-Completeness. Just substituting animal,
+we say B is NP-Complete. It first of all, it's
+contained in et al, and it's NL hard ware et al. Hard means every single
+problem in NP reduces to it. Okay, so the claim is that log splay, log-space reductions are transitive, just like polynomial time reductions. In other words, if there's a reduction from a to
+b and from b to c, then there's a third reduction
+from a directly to C. Now why is that? Really pause and think about this and this is actually not nearly as obvious as in the case of
+polynomial time reductions. So you gotta be pretty
+careful with how you do it. So pause and think about why
+it might not be obvious. Okay, So if you do the natural thing of just chain the two
+reductions together, it can be very slow, right? You need to do a lot
+of re-computation to already computed bits
+just to save space. So why would you have to do that? Well, it's because you can't just do the reduction from a
+to B and write down that output on your work
+tape and then give it to the reduction from B to C.
+That output is really big. That's why we make it right only. So it's not a possibility to
+just write it straight there. So there is a way to handle this. We can talk about it in lecture if, if you don't see it, but think
+about it right now on your own.

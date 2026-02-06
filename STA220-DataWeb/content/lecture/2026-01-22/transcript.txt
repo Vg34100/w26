@@ -1,0 +1,480 @@
+Pablo [0:13]: facebook
+Pablo [0:29]: and then it's sometimes interesting to buying the information store it differently and it would be a very good tables and clean them up and for specific question
+Pablo [0:56]: and there are different ways of trying different tables your left join then there's an inner child that keeps only the roads that are appearing in both of the tables a full time would be really merging all the tables together in the science if they are either one of the
+Pablo [1:00]: then it will contain it will be
+Pablo [1:01]: contained in the thailand
+Pablo [1:04]: and the left joint
+Pablo [1:06]: is a slightly different thing
+Pablo [1:14]: left china right join the same principle just with different directions
+Pablo [1:21]: so a left joint would be
+Pablo [1:29]: if i have human with olympic games
+Pablo [1:32]: and i have my sum order begins
+Pablo [1:40]: and i have here n one
+Pablo [1:49]: two n c three with something there are more entries but more columns but i have eighty one and
+Pablo [1:51]: two and
+Pablo [2:00]: here a summer table i have for example n one and then
+Pablo [2:02]: three but there is no end to
+Pablo [2:05]: the left join
+Pablo [2:15]: what happens
+Pablo [2:16]: here
+Pablo [2:20]: or n is five s and here is the next n is an
+Pablo [2:21]: x
+Pablo [2:25]: what is happening then if we have our wind table
+Pablo [2:39]: it looks whenever there is a corresponding end to the second table so it just adds them like the columns of np one right to the window
+Pablo [2:44]: and you will we don't have any entries so it will come right
+Pablo [2:46]: something like
+Pablo [2:47]: non statement
+Pablo [2:51]: three will be just added here
+Pablo [2:59]: and then we have n fifty five and eighty six so like the n six has
+Pablo [3:00]: no
+Pablo [3:03]: right hand side and five
+Pablo [3:10]: will just be removed the point is this value and five we just removed because in winter has no amplified
+Pablo [3:15]: and for this reason it will not
+Pablo [3:16]: add
+Pablo [3:22]: when in contrast a four joint would also add the mp five to the database here
+Pablo [3:25]: and we'll give you maybe an easy example
+Pablo [3:28]: here so we could come up with the question
+Pablo [3:34]: and let's see which particles have goes with and some other what we want to see
+Pablo [3:46]: olympic games establish the sum olympic games as sg and we just check
+Pablo [4:02]: and combine them and you only want to see which country is contained in both inner child it's really they can intersection we just check both in the winter games
+Pablo [4:04]: and
+Pablo [4:06]: also the summer games
+Pablo [4:14]: and we just create like a list of countries and then we see these seven aspect goes
+Pablo [4:16]: and go with that
+Pablo [4:27]: okay so this is like the inner child because we really want to see they have the whole twenty two conditions they must be in both databases
+Pablo [4:29]: this is
+Pablo [4:30]: post
+Pablo [4:51]: well if we would like to know only a list of all the countries that have hosted one version of military games that we don't care where it was some are only things then we could just use all types we just want to see all the countries that are contained either
+Pablo [4:58]: the sum of all the winter limited games and then we see a
+Pablo [5:07]: starting with france you see they have posted both some of them switzerland has been on the author
+Pablo [5:17]: and then we see whenever a country has not hosted one of the important versions and cdn vietnam there
+Pablo [5:19]: and for example
+Pablo [5:38]: spain australia for example sweden has never hosted games but somehow two games
+Pablo [5:43]: and of course this entry is wrong
+Pablo [5:46]: china has also
+Pablo [5:48]: our database
+Pablo [5:57]: one of
+Pablo [5:58]: them
+Pablo [6:00]: and
+Pablo [6:01]: for example
+Pablo [6:15]: if we want to see
+Pablo [6:22]: the list of all the intervals that have also hosted a somewhat empty game so this means we are only arrested
+Pablo [6:36]: these entries were with the vote is not that none so it's basically the same risk as before but we have removed all the entries where the wind
+Pablo [6:42]: all the other
+Pablo [6:48]: entries and sometimes never post some of
+Pablo [6:57]: and the same for like the right join if you want to have a all countries of course some of the games
+Pablo [7:07]: okay so this is how we can join list
+Pablo [7:10]: and then
+Pablo [8:01]: more than one
+Pablo [8:02]: gold medal
+Pablo [8:03]: in both the winter and summer
+Pablo [8:08]: the games then at some point
+Pablo [8:19]: there is a solution or this is like a canvas on the solution it will present an artwork set like maybe the best solution to this so if we want to get the list of all the countries that have one in one gold medal
+Pablo [8:25]: in both wind and some other pts we could first create a table of all the habits that have one at least one goal that has more than one
+Pablo [8:29]: more
+Pablo [8:38]: gold medal in the wind olympic games do exactly the same for olympic for example and then just join the two tables together
+Pablo [8:40]: so this is just table for
+Pablo [8:46]: windows two games with select you can't really sum up how many gold medals they got grouped by country name
+Pablo [8:51]: and remove all the countries that have one or no gold med
+Pablo [8:52]: al
+Pablo [9:06]: this is for the winter olympic games that will do the same for some olympic games and then we just try to combine these two aos into one larger table
+Pablo [9:11]: at this fulfillment here we have our windows table we just created
+Pablo [9:14]: then we have our sum of table here
+Pablo [9:20]: we use an inner join and then we just give window
+Pablo [9:35]: table the name wg the sum of the name sp and then we can just select from this inner join the country name the number of gold medals one in the winter and number of organs one in the summer
+Pablo [9:46]: and merge them always use this on to see of which keys we should merge through databases this is like the crucial
+Pablo [9:49]: name
+Pablo [9:53]: so this means you have australia has one five
+Pablo [9:56]: dollars with one hundred sixty four
+Pablo [9:58]: volt and so on
+Pablo [10:20]: and so on so this is like a typical way we want to combine different tables could come up with these two four six a by code and sometimes there's like a little bit cumbersome for two reasons because maybe you have several questions and you want to ask similar questions
+Pablo [10:33]: and you would like to use the sum of table with the gold medal cable more than once you always have to use something like using these three lines
+Pablo [10:40]: in a join them together with another page so there is useful thing if you want to create
+Pablo [10:52]: for a short time a new table this is what you call the view can you create a new table temporarily and access it
+Pablo [11:33]: or that was passed afterwards and delete it so what you can do is we can create a view with the command so first you execute the sql statement and commit it and the statement is just create a view the name of the table will be column names will be country and go but it's like just how it's old and what they call names are and then we select the entry so we don't want to fill this cable by hand of course so we select them by country name and sum the gold medals
+Pablo [11:41]: up and we group it and we add a condition so this is just the table we had before this wind table
+Pablo [11:46]: but now it's just easily accessible under the name
+Pablo [11:53]: so this means if you just have now our connect to the database
+Pablo [11:57]: we could just pretend if winter gold has always been there in the database
+Pablo [12:02]: so we can select everything from the wind controls database and link it to
+Pablo [12:03]: the very first five entries
+Pablo [12:13]: and you can see it's the same as and now we don't have to come up with this table all the time
+Pablo [12:14]: just
+Pablo [12:15]: witness
+Pablo [12:17]: the
+Pablo [12:17]: goal
+Pablo [12:21]: and we can do exactly the same for the summer code
+Pablo [12:41]: for some of it the game also is just the very first pipe entries of original table and so if you want to solve the question which countries have won at least one gold medal both at a week and some olympic games it's very easy
+Pablo [12:44]: you can see article is
+Pablo [12:45]: very
+Pablo [12:48]: clean it contains only
+Pablo [12:57]: some code you just select the country name the number of summer gold medals summer gold medals
+Pablo [13:04]: by just joining the table winter gold summer gold on the key
+Pablo [13:05]: board of the
+Pablo [13:05]: country
+Pablo [13:10]: so this is basically how we could
+Pablo [13:14]: solve this and this is very difficult
+Pablo [13:21]: for several questions did you have to if you need the same table again and again
+Pablo [13:27]: and of course now you can use it all the time
+Pablo [13:31]: but sometimes you want all the to move it afterwards
+Pablo [13:39]: mean after database and then you have to drop it afterwards that you have to execute
+Pablo [13:42]: the command no integral
+Pablo [13:47]: summer code afterwards they are needed but before i execute
+Pablo [13:49]: this code during the lecture
+Pablo [13:50]: i want to present
+Pablo [13:52]: another
+Pablo [13:56]: question can you solve with these two tables
+Pablo [14:00]: so just we can reuse these cables
+Pablo [14:03]: so maybe this is really an interesting question
+Pablo [14:18]: what are like twenty most successful nations in those combined we learn that some of the games combine i mean i guess us and china will be very successful they also rush out of then make what is not a forward number five and so on
+Pablo [14:26]: so what can we do we combine just a table of all the gold medals in the winter and take off the gold meds this summer
+Pablo [14:30]: and then we just list here like the gold medals
+Pablo [14:49]: country name and then we list the sum of all the gold medals and we call the sum for limited gold and of course we will order out equal by olympic gold medals and either of the beams or sanding starting with the most successful limited
+Pablo [14:56]: and this is answer of
+Pablo [14:58]: twenty eighteen
+Pablo [15:12]: but this is the list of the most successful nation if you combine oppolistic games then you have great in germany china france italy russia russia
+Pablo [15:18]: nor
+Pablo [15:24]: way east germany japan australia ends on multiplied osteo number eight
+Pablo [15:26]: number nineteen
+Pablo [15:28]: just because
+Pablo [15:39]: this is a typical way to have similar questions you want to have the most successful nations
+Pablo [15:41]: and other things
+Pablo [15:49]: you just create with you combine these tables imagine we have good health by three lines of code here
+Pablo [15:50]: it would be very hard to
+Pablo [15:51]: read the
+Pablo [15:53]: code to see what is going on
+Pablo [15:58]: and here it's really at least easier to realize
+Pablo [16:02]: we're just finding the state of the full drawing
+Pablo [16:05]: summing up the number of board
+Pablo [16:05]: members
+Pablo [16:23]: this is like how to use views and then we can just talk them as i said we drop the winter goal and afterwards it can drop the summer
+Pablo [16:27]: gold and try to execute the job view in the gold again
+Pablo [16:40]: and then we will get an error message because we have dropped the group the gold and if we try to drop the table that is our view that
+Pablo [16:42]: does not exist we get an error
+Pablo [16:52]: so we should always try to do something like a job if exists with the goal we can execute this command as of
+Pablo [17:01]: as we want if we like because only five x it will come out that you exist
+Pablo [17:08]: so this is like the way do this algorithm execute on the gallery some are going
+Pablo [17:14]: so now we use a heated and let
+Pablo [17:21]: everything
+Pablo [17:29]: you can see execut
+Pablo [17:29]: ion
+Pablo [18:17]: here
+Pablo [18:18]: first
+Pablo [18:19]: see what
+Pablo [18:20]: was
+Pablo [18:22]: the
+Pablo [18:23]: most
+Pablo [18:24]: in the des
+Pablo [18:25]: cent of what was the
+Pablo [18:26]: most successful
+Pablo [18:27]: year for a specific
+Pablo [18:28]: day so
+Pablo [18:29]: we had something
+Pablo [18:30]: like
+Pablo [18:39]: the
+Pablo [18:40]: most success
+Pablo [18:41]: ful nation
+Pablo [18:42]: in many
+Pablo [18:44]: years in the sense that
+Pablo [18:45]: if
+Pablo [18:47]: the nation want like twenty government
+Pablo [18:48]: once a year
+Pablo [18:49]: no other nation
+Pablo [18:50]: was able
+Pablo [18:51]: twenty year
+Pablo [18:52]: old
+Pablo [18:53]: spent
+Pablo [18:54]: the best year
+Pablo [18:55]: at best
+Pablo [18:55]: asia
+Pablo [18:57]: one year ago
+Pablo [19:03]: everything
+Pablo [19:04]: about
+Pablo [19:05]: fund
+Pablo [19:06]: amental name of
+Pablo [19:07]: rewarded by
+Pablo [19:08]: the number of those
+Pablo [19:09]: medals
+Pablo [19:10]: and because
+Pablo [19:11]: once you just see
+Pablo [19:12]: the best niche
+Pablo [19:13]: which has limited
+Pablo [19:14]: number
+Pablo [19:15]: four
+Pablo [19:16]: and you can
+Pablo [19:17]: see canada
+Pablo [19:17]: was the most success
+Pablo [19:18]: ful age
+Pablo [19:20]: nts
+Pablo [19:21]: in two thousand
+Pablo [19:31]: and
+Pablo [19:33]: twenty
+Pablo [19:38]: you can
+Pablo [19:39]: change this
+Pablo [19:41]: world
+Pablo [19:45]: three
+Pablo [19:45]: different nation
+Pablo [19:47]: s
+Pablo [19:48]: so this
+Pablo [19:49]: means
+Pablo [19:50]: this covid
+Pablo [19:52]: nicely
+Pablo [19:55]: if
+Them [19:59]: you
+Them [19:59]: need
+Them [20:02]: to
+Them [20:09]: call
+Them [20:10]: it
+Them [20:15]: so
+Them [20:16]: there must be
+Them [20:17]: a way to
+Them [20:17]: see all the nations
+Them [20:18]: that
+Them [20:19]: want
+Them [20:20]: the most
+Them [20:21]: number of call
+Them [20:22]: s
+Them [20:31]: again
+Them [20:32]: two
+Them [20:33]: steps first
+Them [20:34]: we
+Them [20:34]: pray
+Them [20:41]: number
+Them [20:42]: of old notes
+Them [20:43]: one for any
+Them [20:43]: company
+Them [20:47]: make
+Them [20:49]: as
+Them [20:50]: max
+Them [20:51]: abel
+Them [20:58]: and
+Them [21:01]: pray
+Them [21:02]: this table
+Them [21:26]: just
+Them [21:30]: give
+Them [21:31]: us
+Them [21:33]: the
+Them [21:35]: long table
+Them [21:51]: next
+Them [21:52]: is education
+Them [21:53]: so
+Them [21:54]: there is no
+Them [22:11]: maximum
+Them [22:12]: control
+Them [22:14]: if
+Them [22:15]: you want to have
+Them [22:16]: maximum power
+Them [22:17]: all nations
+Them [22:18]: and all
+Them [22:19]: is just
+Them [22:22]: fine you see that there are maximum number of older
+Them [22:28]: and
+Them [22:30]: next step
+Them [22:37]: where the number
+Them [22:38]: of medals
+Them [22:51]: basically
+Them [22:52]: what the number
+Them [22:52]: four
+Them [22:53]: he is
+Them [22:55]: execut
+Them [22:55]: ed
+Them [23:00]: and then we get these three countries now so this is
+Them [23:14]: to mention this if you want to have like a top ten list maybe you want robot at the top
+Them [23:15]: and the
+Them [23:16]: twelve
+Them [23:25]: there are other things if you have a database for example
+Them [23:28]: want to add two thousand and twenty two to your database
+Them [23:47]: if you want to add the olympic games of two thousand and twenty two to reduce the following command execute the simple statement insert into the windows table into the column here host template host tv the value is two thousand and twenty china in beijing
+Them [23:53]: and then all the other parts will just be
+Them [23:57]: none so this means it can now see
+Them [23:58]: if you just
+Them [24:00]: get last of the entries
+Them [24:13]: most recent entries here we'll find our new entry unfortunately the whole table with all the companies
+Them [24:16]: country or non level
+Them [24:21]: so this would be a cumbersome way
+Them [24:23]: values to the data
+Them [24:27]: if
+Them [24:28]: you add one line
+Them [24:30]: use
+Them [24:33]: r submit the data that you would like
+Them [24:37]: to insert the values into the database
+Them [24:39]: from one by one but
+Them [24:44]: people would like to add ten thousand data of course another
+Them [24:55]: here we can now see how to use the where conditional value we check select all the host countries
+Them [25:00]: and then just see
+Them [25:03]: there is now that
+Them [25:08]: just
+Them [25:09]: for demonstration
+Them [25:11]: okay
+Them [25:18]: then we can also change values if we have for example here is a list of the metal table
+Them [25:22]: data room is
+Them [25:28]: going
+Them [25:37]: and for example norway sixty gold medals with silver medals and glass medals
+Them [25:38]: in two thousand and twenty
+Them [25:49]: two so we can do update the entries but just make sure whenever you're updating some admin database
+Them [25:56]: you need some confession because if you don't write where statement here then this value will be
+Them [25:57]: reduced to each
+Them [26:03]: of the power at each essay not only to last and field specific
+Them [26:12]: you only want to update the newer two thousand and twenty two now we have changed
+Them [26:16]: and the golden cement bronze medals
+Them [26:18]: and don't forget
+Them [26:19]: this graph
+Them [26:30]: also we can delete and for example user subscription list
+Them [26:40]: user email address from our database that we provide from our data from our table
+Them [26:47]: we are username equals something in our pictures just remove
+Them [26:52]: trying to access it out the world after
+Them [26:55]: there is no such entry
+Them [26:57]: because we have needed it of course
+Them [27:02]: adding pages
+Them [27:13]: another way would be what would be the use table we can always write create table give it a table name and for example
+Them [27:29]: have a list of students first name last name and then student id and for each of the comps we have a sql database
+Them [27:38]: of course larger is like the spring up to two hundred integer and so on
+Them [27:41]: here public data
+Them [27:45]: types but at least right now
+Them [27:57]: okay
+Them [28:14]: so this is how you can create a new table we can commit our theory and afterwards we have created a new table so we can select everything from our view table and you can see there are no entries there is first it
+Them [28:16]: em we have create
+Them [28:17]: an nft table
+Them [28:21]: and as you can imagine creating an entropy
+Them [28:40]: sometimes we add another table and we want to create three new cable not temporarily so it's not the same as you have it also in the database afterwards after close the connection so when you create a new table
+Them [28:44]: and what you can do is create a new table
+Them [28:45]: format existing
+Them [28:54]: so for example let's create a new table that contains a total number of metals every company
+Them [28:55]: has achieved
+Them [29:08]: so we have this table select country name sum up on gold medals sum up all the simple methods of gross metals for each country and embodied
+Them [29:13]: the most successful nations on the site
+Them [29:17]: and then we have our list for the liter
+Them [29:23]: acy this would be like a table maybe i just want to create this table
+Them [29:26]: store in so i just create
+Them [29:29]: this table create ego all metals
+Them [29:37]: and then i just write what i had for select this file are exactly the three lines
+Them [29:39]: i had before
+Them [29:49]: and basically everything i did far is if it is a new table and just give the name now is just stored
+Them [30:17]: so here you have this table and now they can just use it by select everything but they all metals give me the top ten list this is what we have
+Them [30:24]: and then we can drop
+Them [30:30]: this table needed afterwards
+Them [30:38]: first from this sqlite master we can see what kind of tables are contained in our database with the table
+Them [30:43]: the summer table the new table and all metals
+Them [30:47]: table and if you want to eat this empty new table
+Them [30:48]: i showed you
+Them [30:49]: before and just drop
+Them [30:50]: it
+Them [30:55]: and then it will try it says all the tables again
+Them [30:58]: and you can see now i have just
+Them [31:11]: some other comments we can add poems so it can alter a specific table like the table all metals
+Them [31:15]: add some capital whatever add a new column
+Them [31:18]: with data type
+Them [31:23]: and then we see that a new column was added
+Them [31:28]: it's called capital or whatever we want to add
+Them [31:30]: most successful
+Them [31:31]: spots
+Them [31:41]: can add in an upwards we can drop the column with the common outer table job
+Them [31:41]: column name
+Them [32:00]: okay and then i have one more thing to tell you and it's whenever you are using sql there is one safety issue one critical thing and it's called a sql injection
+Them [32:10]: it explains
+Pablo [32:56]: can i explain it like go should never explain it over here
+Pablo [33:10]: i have to explain how to solve this issue so there is a safety issue like call and sql injection so the idea is whatever you have input in our case
+Pablo [33:12]: what we could do for example
+Pablo [33:29]: if come up with a very simple code if i want to know from the all metal cables you just give me a country you're interested in and i give you how many gold medals they have one maybe you have some suggestions
+Pablo [33:34]: and then
+Pablo [33:39]: are you interested
+Pablo [33:40]: in specific
+Pablo [33:41]: countries
+Pablo [33:42]: otherwise you can
+Pablo [33:43]: hold the transitions
+Pablo [33:48]: austere
+Pablo [33:58]: and of course well it just returns now the lower cost here so which today everything from the all metal cable where it has the name
+Pablo [34:09]: equals what i just submit user input of the country name and then it runs the name also very nice
+Pablo [34:15]: and there is maybe a little bit more explosive we can do the following
+Pablo [34:18]: if you have
+Pablo [34:21]: this country here austria
+Pablo [34:25]: then of course
+Pablo [34:27]: the
+Pablo [34:28]: statement i would
+Pablo [34:29]: use as a
+Pablo [34:30]: few
+Pablo [34:31]: years
+Pablo [34:32]: from all
+Pablo [34:33]: that
+Pablo [34:35]: period
+Pablo [34:36]: i want to use
+Pablo [34:37]: but what about
+Pablo [34:38]: if i
+Pablo [34:39]: add something that
+Pablo [34:43]: of course
+Pablo [34:48]: then you
+Pablo [34:49]: could actually
+Pablo [34:57]: execute
+Pablo [34:58]: all
+Pablo [35:05]: stud
+Pablo [35:06]: ent
+Them [35:09]: and
+Them [35:10]: then after
+Them [35:11]: i
+Them [35:12]: was
+Them [35:13]: trying
+Them [35:14]: to just
+Them [35:15]: forget
+Them [35:16]: every single
+Them [35:19]: bas
+Them [35:20]: ically
+Them [35:21]: first it
+Them [35:22]: drives me
+Them [35:26]: all
+Them [35:31]: the
+Them [35:32]: way
+Them [35:33]: so you can now
+Them [35:34]: execute this
+Them [35:36]: i
+Them [35:37]: get an error message
+Them [35:43]: if i try to access all medic and the reason is
+Them [35:44]: the
+Them [35:45]: table was
+Them [35:48]: created so this is what we call sql
+Them [35:57]: whenever you do something combine a user input with a sql command please make sure
+Them [36:00]: that there is no way for user to have
+Them [36:03]: a sql injection
+Them [36:05]: and
+Them [36:18]: will present quickly is the calling so you just use placeholders right just the question mark here instead of the name austria
+Them [36:21]: and then you submit the following period
+Them [36:29]: here you have the database connection and then you just provide parameter country
+Them [36:37]: and if the wood contains some adversary code or some for the price delete the
+Them [36:37]: database
+Them [36:42]: just be integrated a strings of
+Them [36:44]: now it save
+Them [36:47]: and we could use it
+Them [36:50]: for two
+Them [36:51]: power
+Them [36:54]: we get
+Them [37:04]: and it's still there and we can try to delete this table afterwards in the next lecture but it won't
+Them [37:04]: be
+Them [37:08]: i won't be able to do this same version
+Them [37:11]: this is maybe my take home message
+Them [37:17]: please be aware of the sql injection finding a user input with
+Them [37:20]: this
+Them [37:22]: much
+Them [43:57]: stop
+Them [47:50]: his studies
+Them [47:53]: website
+Them [47:56]: so here
+Them [48:04]: you can also check
+Them [48:07]: this thing
+Them [48:10]: it can
+Them [48:11]: help you to
+Them [48:12]: this
+Them [48:17]: is some visual tutorial for this express and e business website
+Them [48:21]: they have
+Them [48:24]: some
+Them [48:30]: simple access to help you to get familiar with xs
+Them [48:34]: and the fill here
+Them [48:37]: so in general
+Them [48:40]: the x
+Them [48:42]: selector
+Them [48:43]: looks like
+Them [48:45]: looks like this
+Them [48:50]: you have already
+Them [49:07]: search
+Them [49:08]: ing
+Them [49:09]: for
+Them [49:11]: object
+Them [49:11]: s that you want

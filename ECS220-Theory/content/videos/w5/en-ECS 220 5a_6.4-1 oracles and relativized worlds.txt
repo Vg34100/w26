@@ -1,0 +1,71 @@
+So how are we going to
+prove that P is not NP? Probably seen that we can give proofs that separate P from
+Xp and np from NXP. So why not p from Np? Alright, Maybe we can
+just take the techniques. How to do that? I mean, this diagonalization
+technique is sorted chief among them, and push that to separate P from NP. So the next section
+shows that a quote, simple simulation
+argument like the one at the time hierarchy theorem
+uses to show that P is not x. Provably cannot work. Okay? So I use the word provably
+there to talk about proofs. So let's dig into a
+little what I'm saying. So some mathematicians and many computational complexity
+There's favorite as time is so-called
+impossibility proofs, which within theoretical
+computer science corresponds to proving that a certain type of algorithm cannot
+compute something. But their second favorite
+pastime that they have on is impossibility of
+impossibility proofs, also known as barrier results. And this amounts to proving
+that a certain type of technique cannot prove that a certain type of algorithm
+cannot compute something. In other words, it's an
+impossibility proof on finding proofs that would
+get results like this. That's got errands and takes it one level further with
+this job for years, people tried unsuccessfully to prove this sort of impossibility
+result was impossible. Our result shows the
+impossibility of their goal, not aware of any actual
+result like that. Sort of a third order
+impossibility result. But this second-order one, there are a few of
+these and somehow it appears to be unique to
+theoretical computer science is a nice blog entry here
+talking about how other fields of math don't have the so-called barrier
+results too much. I think some people in the
+comments get involved to say, well now there's some of
+this in math, but it's, it's fairly central to
+theoretical computer science. So let's take a look at than the sort of most
+straightforward barrier result, which has to do with a concept
+called relative position. So let's imagine that your
+programming language again, our formal model of computation
+here is whatever it is, your favorite programming
+language, right? So imagine that it has a
+magical instruction that takes one step to execute and the
+name of the instruction is set. And it takes as input a Boolean formula and it returns true if and
+only if it's satisfied. So in other words, this
+instruction magically solves the satisfiability
+problem for you. Okay, so we call the language
+Saturdays little bit different font. This is the command in your language. This is the language or
+decision problem itself. We call that language and Oracle. For this programming language, different use of the
+word language there. So we call this decision problem and Oracle for your model of computation. And we call the program that makes calls to this oracle
+and Oracle program. Now, I want to emphasize this is
+not the same thing as saying, well, suppose that Sackler np and
+then studying normal program. So I said one step here. If I said O n cubed steps, everything we study would still hold. But it's not the same
+thing as saying, well, suppose there's a
+polynomial time algorithm for SAT and that we can call it. It kind of matters here
+that we can imagine this thing existing even if
+SAT is not engaged, right? You can imagine that's not NP, but still think about, well, what sorts of problems are
+efficiently solvable by these SAP Oracle programs
+that would sort of run faster than is provably
+possible if it's sad, is not empty. And it's not a
+contradiction because P is defined by normal
+polynomial-time programs, not polynomial-time SAP, Oracle programs that have
+this magical instruction. Now if this all seems kind of spooky, there's an alternative
+way of thinking about it that might be
+more straightforward. Where you just think
+about normal programs. And is this just
+implement sat, right? It is decidable. There's an
+exponential time algorithm for SAT. Use the standard slow
+brute force search and use that to implement it. And now you have a
+regular programs that can call the subroutine you wrote. But then instead of studying
+normal running time, just define the running time
+relative to sound of any program, reasonably exclude time
+spent in the subroutine. So in other words, if your program runs and it might take
+exponential time, but if you subtract off all the time, it takes calling the subroutine and you end up with only a
+polynomial number of steps. That would be a program that runs in polynomial
+time relative dissect.

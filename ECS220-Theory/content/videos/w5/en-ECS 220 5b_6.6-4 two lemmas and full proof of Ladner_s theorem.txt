@@ -1,0 +1,113 @@
+So we now want to
+make two statements, these two lemmas, and
+they're fairly simple. They're going to be useful on
+the last slide for this proof. But let's state them
+in isolation here. Now, suppose P is not NP, then what do we know? Well, we know sac is not in B, no polynomial-time program salsa. So if we let Q be an arbitrary
+polynomial time program, we know that sat of
+x has to be unequal to q of x on at least one string. This lemma is claiming
+something stronger. It's saying there's
+infinitely many strings that Q has to get the
+wrong answer per se. Why is that? Pause
+and think about it. So suppose it weren't true. Well, in that case, the number of strings that
+Q gets wrong is finite. And we could fix to make
+it solve SAT exactly by just having a fixed lookup table for those finite number
+of counterexamples. And then we would turn Q into
+a program that does solve. So what would be its running time? Well, it'll be slower than Q
+because it's first step would be to look in this big look-up table
+to see is my input in there. Although actually now step
+one could just be check the length and see is it
+bigger than any string label? Which could just be done by
+comparing to a constant length. So you could skip that
+check for most strains. And the running time
+would essentially be still polynomial time plus a constant to look in
+that lookup table. So we would have a
+polynomial-time program solving SAT that would
+contradict P not equal to NP. So in fact, every
+polynomial-time program has to get sat really wrong. It's gotta be wrong infinitely often. Not Lemma 2 is a sort
+of a related statement. But now about reductions. Although here we only need an exists is actually
+true for infinitely many. Why? But all we need is this exists. And it's that if a is polynomial time decision
+problem, but then there's some y. So that clique of y is
+not equal to a of q of y. Or put another way, q, this polynomial-time program
+cannot reduce clique to a. And that is simply
+following directly from the fact that if P is not NP, then no problem in PDA
+can be NP-complete. But if this were false, that would be the same thing as
+showing clique reduces to a, we should show it is NP-Complete. Okay, so let's go back to our
+Hindi intermediate problem, which is not totally
+well-defined yet because we didn't say what
+this function f is, but we know it's increasing, starts at 0, it goes up slowly. And it's parody tells us whether
+a should look like SAP for strings of that length or whether the answer should just be false
+for strings of that line. Now by careful design of F, we're going to ensure one that f is computable in
+time polynomial in. Which will mean a is
+actually in NP, right? We can just run a non-deterministic program that solves sat and also computes F to C. Should we report the output
+of SAP or just false. It's also going to
+ensure that for all i, where i indexes into our
+polynomial time clock programs, there's some y that makes Q I get
+the answer wrong on a, right. Or in other words, no
+polynomial-time program QI solves a, so a is not in T. And we're also going to
+ensure that for all I, the program QI fails to reduce
+clique to a for some string y. All right? Time program QI reduces clique day. So that means a is not
+NP complete either. Now remember here on this slide, n as the input length for a, and then f of n is going
+to be approximately equal, is actually off by a factor two here. But it's, it's, it's related to the index I of the program QI
+that we want to defeat, right? By showing it it doesn't solve
+AN or does it reduce clique day? Okay, So here is how
+you compute f, right? And the definition of f will
+give all three of these, that will give us 1, that f is computable in
+time polynomial in n. And that's actually established
+in that kind of a CIDI way. But this, this makes sense. Self, self clocking. I didn't write it all out. This is just pseudocode here. But imagine that it's
+also self clock and it's counting the
+total number of steps. And what it does is it says, well, first of all, for n equals 0, you just return 0 and then now you, you make this recursive
+call to f n minus 1. And notice all the rest of the return statements that
+are either just return rack, so just return the same value
+f is not increasing this time. Or if you make it to one of
+these return statements, you return Rec plus 1. So making it past the if statement here to one of these
+is how f goes up. So notice before we look at all this detail in the
+loop, what's going on. After a word F is going to be a self clocking program that just
+counts the total number of steps going on air and compares
+them to the input n. And if the number of
+steps ever exceeds N, to do all this stuff, you just return the recursive value. So this implies that F is going to be computable in
+polynomial time, right? We just do this recursive
+calls and then at most a linear number of additional steps. So that, that clearly gives
+a polynomial time algorithm. Okay? Now how do we get
+the other two properties? Well, we're doing this
+if statement, right? So we say, well, if QI y is not equal to a of y,
+right? Will go up. So this would establish
+the statement over here. If this is ever true, right? If this is ever true, that'll hit this condition
+and then will increase f. And then when we increase f will go from the stage where f is even
+to the stage where f is odd. And, and if this ever becomes true, will increase F yet again. Right? And so that will make it
+true for all possible i's so the only way
+that these conditions, these conditions
+essentially look like the part after the for all ij here. So the only way for this
+to fail is that you get stuck on some I write
+it's not true for all i. As long as fn keeps increasing. And we're going to use
+those previous two lemmas, these data to show it can't
+actually get stuck at those lines. So as a reminder, there's
+the definition of a. We let Q be some
+polynomial-time program. Okay? Recall our first lemma
+that because P is not NP, any polynomial-time
+program has to get sack wrong and
+infinitely many strings. So we can't get stuck here forever. Why? Well, if we did, if we reach some high
+where now this is never true again, what would happen? Well, QI y would equal a of y. And because this is an
+even stage where we're letting a be the same as SAT. This would actually imply
+that q i agrees with a, because it agrees with
+AN every single string. From that point on. It agrees with sat on all
+but finite be many strings. A doesn't look exactly like SAT. It's sometimes falls, but
+if we get stuck here, will never again
+enter a false region. And so for all the
+strings beyond that, a would just be the
+exact same as SAT. And it'll only be a finite number of counter-examples where a
+and SAT are different. And that would contradict Lemma 1, which says that no
+QRS polynomial time, it has to get that
+wrong infinitely often. So because P is not NP, eventually we'll find a y where q and sat and therefore
+also a are different. All right, and then Lemma two
+says that clique cannot reduce, There's IQ cannot reduce clique to a. And this is a formal
+statement of what that means. So here again, we're just
+checking this condition. Suppose we got stuck here. Then clique of y would
+equal a of QI of why. And what would happen? Well, because we're in
+an odd stage, right? A x would just be false
+from that on, right? So a would be a language that has only finite the many strings in it. Decision problem terminology would have only finite the
+many yes instances. But what does that mean? Well, any language with only a
+finite number of strings is, I mean it's regular, right? So it's definitely NP. So then a would be NP if
+we got stuck here forever. And Lemma 2 says while
+because P is not NP, we can't reduce clique to a. So eventually there's
+gotta be some y. That makes this inequality hold. And therefore, we can't
+get stuck here either.

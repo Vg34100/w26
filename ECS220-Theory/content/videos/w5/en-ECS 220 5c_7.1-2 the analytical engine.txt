@@ -1,0 +1,49 @@
+The difference engine
+was an amazing design, but it was quite special purpose. So just calculated polynomials to
+a certain degree of precision, which can be used to
+calculate a lot of other functions through their
+Taylor series approximations. But what Babbage realized as weight, you could do quite a
+bit more if you could automate computation that sense. And so it inspired him to think of this more complex design or something he called
+the analytical engine. And this had essentially everything we think of in modern computers other
+than the electricity. So this is like, but the steam pump novels like this
+is kind of what people imagine, you know, computers might
+have looked like had they actually been
+built in the 1800s. It had what's called a store, which we recognize the memories
+of 1050 digit integers. Or we might call that a register
+with a certain number of bits. Some called the mill. This was basically the CPU. It could do addition, subtraction,
+multiplication, division. It was programmable
+using these punch cards. So you might have heard
+of punch cards being how people tried to program computers in the 60s while they
+came from this other technology, which is called the Jaccard blue. Where are these punch
+cards would describe a pattern that you
+wanted to loom to weave into a woven pattern and
+they were extremely complex. I mean, this is actually a pattern woven by a Jaccard loan
+showing a picture of Jaccard. And he's cards had
+variables that could copy numbers into the mill operations given an instruction execute. And you had these so-called
+combinatorial cards, which had the construct
+control structures we would recognize
+if then statements, gotos and for loops. So, so this is what Babbage
+imagined could be used to really expand the automation of computation for say,
+computing scientific tables. But it was realized. How much further? And said, Hey, here's a quote from the same. Essentially. And meeting the
+analytic decides who's right. So basically any object
+relations strand that spreads monies home regions. So for example, represent sound, represented CDs. Then she met with the engine, might be able to
+hunger and lows news. This is some video. If you do just showing some
+algorithm being what's happening, my algorithm then add it to them. And a lot of people over Fernando, as the first computer program moves, this theater was never modeled. You can write a program, whether she wrote the first
+programs for the analytic engine. And this shows a program describing how to compute something
+called Bernoulli numbers. I went and tried to look for a simple description of Bernoulli numbers. They're not really
+simple description. This might have been
+why she wanted this as a demonstration of the power that, you know, there's no simple
+like little formula for them. So this is the kind of thing you
+have to express algorithmically. And this is a description of the Analytic Engine
+programmed people. Now unfortunately, machines in
+the 1800s were not precise enough to enable the construction of
+a reliable analytic engine. What happened was Babbage
+tried to get money from the British government
+to fund this thing. They gave him some, but then
+they pulled the funding. They were happy with the
+progress, never got built. And so that it just kinda
+dive there for awhile. But this idea of a universally
+programmable computer came up again independently by a totally
+different group of actors in the 1930s who were thinking
+about a much different question, a much less practical
+sounding question. To, which is this abstract question about the foundations of mathematics.

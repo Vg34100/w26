@@ -1,0 +1,101 @@
+So we've talked about
+how we're going to study the time complexity of problems. And we're going to focus a lot
+on polynomial running time. It's natural to ask why. Well, let's try to
+motivate it in this way. Here's an algorithm for
+finding out whether a graph G has an Eulerian path
+or not based on the shortcut, characterized by the number of nodes. So you just loop over every
+node in G and you ask, is it's degree odd or not? And if more than two
+nodes have odd degree, it cannot have an Eulerian path. So what's the running
+time of this algorithm? Well, the easy part is that the loop executes n times n
+nodes in the graph. Okay, That's easy. The hard part is, well,
+how long it'll take, and it depends on the time complexity of evaluating this statement
+right here, right? So this if check right here is essentially calling a
+subroutine degree of the node. How do you figure out
+the degree of the node? Well, now it kind of depends
+on your representation. Do you have an adjacency matrix? And then it would be
+linear time because you'd have to go over an entire row, that adjacency matrix of
+length n to count the degree. It could be more if the matrix
+lookups are not even constant Time. If you have an adjacency list, it could be constant
+time because you can maybe store the number of neighbors. So this could make a difference. So we're not going to
+dig too much into this. I just want to point out, you can make what appear to be
+minor differences in modeling choices and have an effect the exact running time
+of your outer butt. These choices generally
+are going to affect the running time measurements by
+no more than a polynomial factor, like most of these kinds
+of choices you could make, or just a linear
+factor, they might add, you know, a multiplicative factor n, But they tend not to do
+much more than that. But even more extreme choices often
+have a polynomial difference. Maybe your algorithm runs and squared slower than it would have
+under some different choices. Okay? So one lesson to draw from that is 0. If you're really trying to
+get the best algorithm, you should be careful in
+how you make these choices. But another lesson
+we're going to draw to motivate computational
+complexity theory is that if our goal is to understand the fundamental properties of
+computation and not artifacts, that particular modeling choices. Then we should consider equivalences and running time up to
+a polynomial factor. If we want to say that what
+we're going to discover is true about all computation than we had better not make these fine-grain
+differences otherwise that would be true in some
+models and not others. So you often hear this quote
+attributed to Dykstra. I don't think he actually
+said it, but it's that computer science is no more about computers than
+astronomy is about telescopes. And I don't totally agree with that in a lot of it is about computers, but I think what
+they're trying to get at there is when we're doing
+the theory of computation, we're not really studying the
+exact computer you have in hand. We're trying to figure out what is true of any computer you could build, either the ones you are now, the ones you own yesterday are
+the ones that might be invented. All right, so I kinda
+like this quote from the textbook a little better. Which is rather than
+studying the guard grinding lenses and mirrors, let us now turn our
+attention to the stars. Okay, so we're going to encounter our first so-called
+complexity classes. And these are going to be
+sets of decision problems. Rights of the textbook
+just says this. It says P is the class of problems
+solvable in polynomial time. Okay? So that's a little and precise. I do like to be a little more precise than the
+textbook. Some takeaways. So first I want to acknowledge that the way most people
+talk about the class P, they consider to be a set
+of decision problems. And there's lots of
+interesting things you can do in polynomial time, like multiply integers, but
+those aren't decision problem, so we don't technically
+say they're NP. So the way we tend to formalize decision problems is they're
+subsets of 01 star two. We say one such subset, which is a language or decision
+problem, is contained in P. If there's a program
+Q and a constant c. So that for all possible
+binary strings x, when you run q on input x, it halts in at most length
+of x to the c steps. That's the polynomial-time part. And q of x outputs one if
+and only if x is an a, that's the correctness part. That q here is actually
+deciding the language. Okay, our next complexity class
+gets a little more fine grained. Instead of just saying you have
+a polynomial running time, it talks about closer to
+an exact reading time. So if you have a function
+T that the time-bound and takes as input a
+length of a string and it outputs the worst-case
+running time on any string of that length than time of T of n as the class of problems
+solvable in time. Big-o of TEA that, alright, so here we're using the
+kind of non sharp version where the time doesn't need to
+be exactly t of n or smaller, it could be 3 times T of
+n or 10 times d of them. Okay, So with this
+complexity class in mind, or rather this infinite
+family of classes, we can express P as
+being the union over all constants C of time
+of n to the c, right? So these are all the possible
+polynomial time bounds. And n squared, n cubed, n to the fourth and so on. And when we write Pali of n, This is often shorthand
+for Big O of n to the c, for some constant c, right? So this is generally what
+do we want to be lazy and we don't want to work out
+exactly what the constant is, but we want to say, okay, if you did a little more work, it figure out the constant. Maybe it's seven, and
+we would have just proven it's O of n to
+the seventh, right? So under this sort of
+more loose notation, we can say P is time
+of poly of n, right? All right, and then the last
+complexity class here is x. This is exponential running times are rather that the problems
+decidable in exponential time. So this is time of two to the
+poly-A than or more precisely, the union over all
+possible constants C of the problems decidable in
+time two to the n, to the c. Okay? So those times are bigger than
+polynomial running times. They're actually strictly bigger. But for now we won't
+worry about that. We'll just observe that for every
+possible constancy, a hundred, ten hundred million n to the c is big O of 2 to the n.
+It's actually little, it's also a little low,
+but all we need here is that two to the n grows at least
+as fast as any polynomial. And so, just to restate that
+in set theoretic language, it means the set P, the set of decision problems
+solvable in polynomial time, is a subset of EXP, those that are solvable
+in exponential time.

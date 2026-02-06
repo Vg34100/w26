@@ -1,0 +1,480 @@
+Pablo [0:04]: only
+Pablo [0:20]: as a first cpu so it does not really support cross cpu or cross policy scheduling which means that there are pre tiny timeframe workloads they would start even if there would be cpu directors idle there
+Pablo [0:29]: so because of this lack of global view it doesn't really support multiple tenants on machines we get to learn more about that in the upcoming slide
+Pablo [0:36]: but also the machines have started getting more hierarchical so we need to switch from four model to a four socket one
+Pablo [0:54]: let's look at the first cpu scheduling one webinar so here we can see that every cpu has its own cubes if you want they all have their individual gratitude on which they can import their own scheduling policy
+Pablo [1:07]: the problem here is that there are three balances every few milliseconds so if there is a really tiny microsecond skin application it is your wife for example
+Pablo [1:14]: so we can say that this is not that brain in work conserving merits also like daily tiny
+Pablo [1:43]: now one of the earlier solutions to the problem with data plane decor shinju portion and go callaghan are all examples of database orf which is you can container die over here that clean the user level and it's more for the high performance task that requires like ddo latency and the more background that is left to the post operating system
+Pablo [1:50]: so without a data we have the request portion hardware to the host operating system and there is the application
+Pablo [2:01]: but with a data pdf required both from hardware it bypasses the hosted operating system and both your data panel as inter the application
+Pablo [2:08]: the project that is done if you do that then our application has finally dependent on two different operating systems
+Pablo [2:20]: and differently it's like a new data plan for every application and every scheduling policy which is not really feasible in a shared cloud environment and we need to make this research more practical to use in production
+Pablo [2:24]: now what should an ideal scheduler actually have
+Pablo [2:29]: there first it should be easy to implement policies and put across machines
+Pablo [2:50]: second it should know to focus on more than one goal like latency trophy and fairness next it should delegate the scheduling decision call to someone else next it should know how to work with policies cpu and denim and finally if you need to update it or pick something experiment with the policy it should not really crush the entire
+Pablo [3:22]: so the solution to this is a new linux column scheduler and i will be giving an introduction of course so boast is the new linux kernel scheduler that was designed so the main idea of both is to run scheduling policies in a user's test process user space defined the scheduling policy for example who runs next and on with cpu while the kernel takes care of the scheduling mechanisms such as enforcement safety checks and the context switches
+Pablo [3:23]: it provide
+Pablo [3:27]: s fast and sensible scheduling and also
+Pablo [3:31]: support variety of for example
+Pablo [3:36]: performance
+Pablo [3:38]: it also
+Pablo [3:39]: enables
+Pablo [3:40]: applic
+Pablo [3:41]: ations
+Pablo [3:43]: most
+Pablo [3:44]: often works
+Pablo [3:51]: it
+Pablo [3:52]: also central
+Pablo [3:53]: ized partition
+Pablo [3:54]: as positive
+Pablo [3:56]: which
+Pablo [3:57]: we cover in detail
+Pablo [3:58]: related
+Pablo [3:59]: another
+Pablo [4:00]: major advant
+Pablo [4:01]: age that both offer
+Pablo [4:02]: s is
+Pablo [4:05]: schedul
+Pablo [4:06]: ing policy
+Pablo [4:08]: purpose
+Pablo [4:08]: s
+Pablo [4:09]: a policy
+Pablo [4:12]: and
+Pablo [4:13]: there is
+Pablo [4:19]: also
+Pablo [4:20]: stated by
+Pablo [4:21]: so
+Pablo [4:21]: it's a share policy
+Pablo [4:22]: action
+Pablo [4:24]: automatically
+Pablo [4:27]: this is
+Pablo [4:28]: the cfs and
+Pablo [4:29]: thus there are no
+Pablo [4:30]: system crash
+Pablo [4:32]: so
+Pablo [4:32]: in this slide
+Pablo [4:35]: i'm going to describe ghost in a nutshell
+Pablo [4:59]: firstly gos is implemented as a risk kernel scheduling class the key idea here is that all the scheduling policies run from the user space process both pixels act as the platform that makes it safe and sufficient scheduling policy to the user space the user space process which is called as the goal a c is notifications among scheduled events from
+Pablo [5:01]: the college such as thread makeup thread blocks
+Pablo [5:02]: cpu dynam
+Pablo [5:03]: ic et cetera
+Pablo [5:05]: based on this notification
+Pablo [5:12]: we both apply the scheduling policy and makes the decisions about which spreadsheets run x and on this
+Pablo [5:17]: so we are scheduling decisions are then targeted back to the calls of fire transactions
+Pablo [6:07]: just like summarizes goes at a high level by separating the communication in two directions between the column and the user space so first is the current to agent communication and second is the agent who as shown in the diagram here on this slide the calling communicates with the user space using messages sequence number and data so all of these together provide the code agent with information about the thread and the cpu event so messages notify the event notify the agent whether what is event occurs such as thread breakup or preemption while the sequence numbers and the status quo allow the engine to deny whether it is working without relying on system calls which can be expensive
+Pablo [6:09]: so based on all this information
+Pablo [6:16]: user space agent apply the scheduling policy and sense the decision back to the forelfe transaction
+Pablo [6:24]: and which are then committed to the system so finally the course is validates these decisions and then performs the actual context
+Pablo [6:42]: i will now show how to implement a scheduling policy like cfs within those so looking at the diagram
+Pablo [6:58]: each cpu has its own home with the separation between user space internal space user space we have the dose process this is where the scheduling policies run within the process there's one thread these grabs are called apis
+Pablo [7:09]: so the agents implemented the schedule each agent schedules refuge assay holiday
+Pablo [7:26]: now with application and own kernel caf experience walking yielding disability or leading to those physical class the kernel generates messages about the past age
+Pablo [7:33]: method
+Pablo [7:39]: the chronological layers
+Pablo [7:48]: there's also a rabbit layer that has used agents when a message is added to the queue the routing layer determines which
+Pablo [8:01]: as a reminder the agents implement this in one policy maintain to use routed layer and facetious layers
+Pablo [8:08]: this is the percy view model where tasks running on specific cpu have all their activ
+Pablo [8:12]: ities that they do itself manages the right cues and determines what runs next
+Pablo [8:17]: when an egypt decides what to schedule or commence that decision
+Pablo [8:32]: so now let's look at the centralized scheduling model architecture you're holding one seat near the global agent schedule all over sixty the reason i even bought this is that it is particularly effective
+Pablo [8:36]: for difficult microcycle scale workload
+Pablo [8:39]: and you see all the feature
+Pablo [8:40]: s
+Pablo [8:46]: back in between
+Pablo [8:51]: this is a perspective novel which can only rebound on those
+Pablo [9:01]: the global agent implements the scheduling policy schedule policy the other cores still have agents but those satellite agents never wake up
+Pablo [9:02]: or do anything
+Pablo [9:02]: else
+Pablo [9:19]: because this is the centralized model of architecture look there's only one queue the association player makes all tasks and messages to that single queue and two maps to the global agent this shows the possibility of radical
+Pablo [9:42]: how a user space agents actually tell the kernel what is scheduling that either through transaction think of it like a database transaction you're proposing
+Pablo [9:52]: decision run thread x on cpu y here's the changes these transactions are atomic and retracted atomic means of multiple agents are making decisions time to msc
+Pablo [9:56]: and if something fails let's say it gets clean automatically with no
+Pablo [10:05]: connection retractable means that if the os state changes after you make a decision say that the threat exits or that cpu goes offline your decision can be invalidated
+Pablo [10:09]: you create transactions with transaction create
+Pablo [10:13]: and you commit them with the transactions commit and when you are committing multiple transactions
+Pablo [10:20]: those patches the inter process interrupts for efficiency you can even read write the transactions
+Pablo [10:27]: so that might fail if it's too late this transactional model is what makes user space
+Pablo [10:51]: now why do we need the complexity of these transactions because without transactions you have yours imagine simultaneously trying to schedule different threats on the same cpu which one wins the threat exists right address scheduling it whatever cpu goes upline when you are making business about it these aren't hypothetical these happen constantly in your system
+Pablo [10:53]: and transaction solving element
+Pablo [10:58]: the kernel validates every transaction before committing
+Pablo [11:00]: no batch
+Pablo [11:03]: if the stage changes between when you made the decision
+Pablo [11:08]: and when you try to commit transaction is rejected and you try again
+Pablo [11:11]: this is the foundation
+Pablo [11:14]: now here's a setup with critical problem
+Pablo [11:17]: this kernel and user space agents need to stay centered
+Pablo [11:35]: the kernel is a source appointment all the actual tasks take place and this states need and this state needs to survive agent fractures and restart but here's the cat lots of scheduling relevant events happen in context where we do not synchronously invoke the agent
+Pablo [11:53]: so how the agents now know of the world is it up to date so then we sign every time the curve is edit something about that task that it woke up or it clocked that sequence number increments and it gets included in the message
+Pablo [11:59]: when your agent opens a transaction you include the sequence number from the most recent message that you saw
+Pablo [12:04]: and now the kernel project is this sequence number correct if not
+Pablo [12:08]: if not the state changed since your last message your transaction fails
+Pablo [12:16]: you fetch the new message you update your overview and you drive it and this is how those prevents agents from making decisions based on state infrastructure
+Pablo [12:24]: these are short examples you can see that z is created by event alerts
+Pablo [12:34]: and it's running the kernel has given it a sequence one hundred from the agent's view the thread a is running with the sequence number one at time t one the thread a blocks on io
+Pablo [12:41]: and kernel updates that sequence number two is one hundred one but from the agency it is still running with sequence banner
+Pablo [12:54]: the agent tries to make a transaction schedule a to cpu one including the message of sequence one hundred but this fails because the kernel and the one i believe
+Pablo [12:56]: for the sql stock
+Pablo [12:58]: eventually what happens is that
+Pablo [13:11]: the correct sequence the updated sequence number is propagated by the number the order landscape is at key code you can see that the transaction is capable into cpu two
+Pablo [13:20]: one of the most interesting feature is running multiple scheduling policies simultaneously on the same machine
+Pablo [13:26]: now why we want this because different workloads have different needs your latency sensitive web services
+Pablo [13:53]: preemptive priorities scheduling your batch analytics job want simple throughput optimization real time control loop the deadline schedule both supports is include first by link just like linh does higher priority policies get first bit of cd centers low policy work with whatever and then the second one is you partition your cpus into groups and each policy its own exclusive
+Pablo [14:02]: policy gets policy zero get cpu cpu zero through three or policy one would get cpus from four through seven and so on
+Pablo [14:07]: the scheduling the scheduled completely independently
+Pablo [14:11]: which means that no conflicts or no coordination is needed between
+Pablo [14:11]: them
+Pablo [14:13]: you can even mix these approaches
+Pablo [14:21]: you can use layering within an input and on this flexibility is crucial for cloud providers running through thousands of diverse work
+Pablo [14:25]: and here's what makes ghost production ready
+Pablo [14:32]: its ability to alter it and upgrade scheduling is a critical task if you are crashes you can't just stop all your application
+Pablo [14:44]: so what is boost view first updates are inverted fast they happen under a second you create the old agent and restart the new policy code in milliseconds you need no machine reboot and no services disrupted
+Pablo [14:55]: second and this is key while the agent is down the kernel has a simple fallback first in first start scaring a built in your apps keep running they might not be optimally scheduled but at least there are other
+Pablo [15:04]: you could also pick them over to linharts's standard css third when your agent restarts it doesn't start from scratch
+Pablo [15:08]: out at the
+Pablo [15:16]: permanent prisms of all the tasks state so as i said before that kernel is a source of tool
+Pablo [15:31]: the agent recovers this data immediately resumes sophisticated scale this means that you can now deploy new scheduling policies fix bug experimental documentation all without taking down production workloads that's transfer that transfer for large scale operation
+Pablo [15:40]: so now you have some so first i'm going to go over some micro
+Pablo [15:45]: so here
+Pablo [16:16]: imposing after and then it's also possible because disable the meltdown mitigation because we know that the kernel is a trusted positive and then second we have the method dose so this is the time to take for that current to ascend message data this would be two hundred ninety five at a local tomato per hip so this is a schedule
+Pablo [16:24]: so it's a type when the transaction opens to when the fed starts running
+Pablo [16:36]: through other facebook so we have and then css competed over that the five minute
+Pablo [16:48]: frequency performs competition the other maybe a little bit over however adoptive argues that it's still ready for production
+Pablo [17:03]: so here we talk about how long it takes for an agent to edit a remote so here we see that the mirror overhead so this is the time that it takes
+Pablo [17:10]: a cpu to schedule it so this is a time of globalization
+Pablo [17:37]: to create the transaction and set the ipi and then the time you take for the target cpu to receive the iti and start the transaction this would be one thousand one microsecond so the total h one latency is about two hundred second and so next up if we match all these transactions we can amortize the fi overhead of so you see that
+Pablo [17:39]: overall
+Pablo [17:47]: the key takeaway here is that even though it might
+Pablo [17:48]: have bumped overall
+Pablo [17:50]: the overhead
+Pablo [17:51]: first transact
+Pablo [17:52]: ion is only nineteen
+Pablo [17:54]: so this
+Pablo [17:54]: is much smaller
+Pablo [18:00]: so if we're looking at
+Pablo [18:01]: i'll show
+Pablo [18:02]: you how much you
+Pablo [18:03]: find
+Pablo [18:13]: and
+Pablo [18:14]: the user face
+Pablo [18:19]: only
+Pablo [18:27]: russ
+Pablo [18:28]: ian creative
+Pablo [18:29]: selling party
+Pablo [18:30]: selling
+Pablo [18:34]: so
+Pablo [18:35]: a little bit about
+Pablo [18:42]: it
+Pablo [18:43]: that
+Pablo [18:46]: network
+Pablo [18:47]: increase
+Pablo [18:48]: s angles find
+Pablo [18:49]: ing more will protect
+Pablo [18:50]: additional
+Pablo [18:54]: user
+Pablo [18:55]: is micro fund this
+Pablo [18:56]: is a microsecond
+Pablo [18:57]: scale
+Pablo [18:59]: to
+Pablo [19:00]: compare this
+Pablo [19:01]: with
+Pablo [19:03]: the authors payday
+Pablo [19:04]: s and less people call
+Pablo [19:04]: stage
+Pablo [19:05]: that will be competitive
+Pablo [19:07]: so
+Pablo [19:08]: the interest on
+Pablo [19:08]: results
+Pablo [19:09]: so the way you did
+Pablo [19:10]: it is
+Pablo [19:11]: a two
+Pablo [19:12]: different measure
+Pablo [19:12]: ments
+Pablo [19:16]: the reason
+Pablo [19:17]: for the higher
+Pablo [19:18]: because
+Pablo [19:23]: network
+Pablo [19:25]: that's more
+Pablo [19:26]: that we're building or
+Pablo [19:27]: possibly pac
+Pablo [19:27]: ket
+Pablo [19:28]: and just let
+Pablo [19:29]: trade put on the actual
+Pablo [19:30]: editor
+Pablo [19:31]: so it seems
+Pablo [19:32]: all the cases
+Pablo [19:34]: were
+Pablo [19:35]: going to be
+Pablo [19:36]: similarly to
+Pablo [19:39]: even
+Pablo [19:40]: better on
+Pablo [19:41]: high level
+Pablo [19:42]: this is because
+Pablo [19:51]: uses a centralized people policy so one main thread is scheduling all the network reports which makes it much
+Pablo [19:55]: better and the second task here would have with that transact
+Pablo [19:57]: ion and you can see that in both cases
+Pablo [20:09]: those actually performs really well which shows that reasonable overhead and it doesn't impact the end bench performance and it's reasonable to deploy those in the production
+Pablo [20:14]: just to summarize ghost is a chrome schedule that works
+Pablo [20:24]: in the user level it runs scheduling research it's really fast it has abstraction that makes it very easy
+Pablo [20:31]: to devise schedule parties and also updates are very quick you only started
+Pablo [20:36]: looking at your discussion question
+Pablo [20:50]: off the paper
+Pablo [20:53]: okay both of what that's the first question
+Pablo [20:55]: i'm kidding i don't know
+Pablo [20:58]: yeah
+Pablo [21:07]: what's a question
+Pablo [21:07]: one
+Pablo [21:12]: goes overhead the greatest oh no
+Pablo [21:15]: oh no
+Pablo [21:20]: i could do it there's third round
+Pablo [21:24]: yes there
+Pablo [21:27]: got hit by a blue shell
+Pablo [21:38]: i think
+Pablo [21:44]: mario to improve a lot actually the first version
+Pablo [21:53]: it's more smooth
+Pablo [21:57]: i like being able to jump
+Pablo [21:59]: i think that's my favorite part
+Pablo [22:28]: first and fourth
+Pablo [22:31]: next time i will be the
+Pablo [22:31]: first
+Pablo [22:37]: i think you have to press a
+Pablo [22:42]: battery
+Pablo [22:46]: i think the battery dock really yeah
+Pablo [22:50]: but the blame the zeppelin that this battery is so bad
+Pablo [22:54]: here i should
+Pablo [22:55]: go
+Pablo [22:58]: this way
+Pablo [23:02]: intermission
+Pablo [23:08]: why
+Pablo [23:16]: the rail
+Pablo [23:28]: where are you oh you're behind me
+Pablo [24:16]: write it down
+Pablo [24:52]: why you can
+Pablo [25:12]: those are the rails
+Pablo [25:31]: so sad
+Pablo [25:50]: you were doing so good
+Pablo [25:55]: press the trigger in midair
+Pablo [25:58]: you can do tricks
+Pablo [26:09]: it's not less skip yeah
+Pablo [26:12]: there's still more to go yeah
+Pablo [26:19]: maybe you should wait like ten minutes
+Pablo [26:23]: ten seconds later
+Pablo [26:40]: what's a second answer
+Pablo [26:49]: allowing applications to define their own scheduling
+Pablo [26:51]: policy
+Pablo [26:54]: i'm still laughing
+Pablo [27:01]: i
+Pablo [27:02]: hit a car
+Pablo [27:07]: oh it's twenty four people i thought it's like twelve
+Pablo [27:11]: this one they they doubled it
+Pablo [27:13]: how can i like
+Pablo [27:20]: oh that's how you get
+Pablo [27:24]: there
+Pablo [27:52]: is that you
+Pablo [27:53]: no
+Pablo [27:57]: yes it was i saw you hit the train
+Pablo [28:09]: do you know the best curve of like turning
+Pablo [28:13]: be close to the curve
+Pablo [28:18]: that's cheating you though
+Pablo [28:22]: close
+Pablo [28:27]: i almost got you
+Pablo [28:27]: there
+Pablo [28:30]: okay one more lap
+Pablo [28:48]: bounced on top of me
+Pablo [28:52]: why
+Pablo [28:55]: why why why
+Pablo [29:02]: i'm so nervous right now
+Pablo [29:10]: really
+Pablo [29:45]: mentioned this
+Pablo [29:53]: when you point out what's really relevant with people where you mentioned this
+Pablo [29:59]: when the application or the agent basically does the transaction
+Pablo [30:05]: comes to the time the fed starts running like eight hundred nanoseconds that should be the greatest overhead
+Pablo [30:17]: yes so as paper mentions that overhead is when the central fasting thread has to context switch and then dqf has action
+Pablo [30:18]: so yeah
+Pablo [30:18]: that was correct
+Pablo [30:27]: who we gain amplitude
+Pablo [30:39]: i think you need to kind of trust the application because
+Pablo [30:54]: you can have multiple scheduling policies sort of like run in parallel to each other
+Pablo [31:08]: have these really nice complaints from like incremental migrations and things of that nature so it's really flexible you don't need to sort of reboot the kernel you can essentially take down one enclave and then put the other entry back on
+Pablo [31:18]: with downside would be that by allowing sort of like the user space code to define these scheduling policies
+Pablo [31:26]: it's very difficult to maybe come up with like a very optimal design policy like a scheduling policy for all the applications like in a cloud environment
+Pablo [31:37]: there is something my world would follow a database maybe it might not work for something very cpu intense in that and also users like allow more surface area footwork right
+Pablo [31:39]: when you go around chasing that bug
+Pablo [31:48]: is like multiple custom implementations for schedule so you get flexibility but maybe you lose out on correctness and maybe of maintenance
+Pablo [31:53]: yes can i add on to that
+Pablo [31:53]: yeah
+Pablo [31:56]: there's aspect of the flexibility
+Pablo [31:58]: which
+Pablo [32:06]: if there's multiple different use cases
+Pablo [32:10]: also kind of that responsibility of trying
+Pablo [32:13]: to account for each one
+Pablo [32:19]: and if you choose to use multiple scheduling courses
+Pablo [32:22]: how
+Pablo [32:36]: each policy with there could be the potential bottlenecks and overhead with like managing everything that is completely unique policy wise
+Pablo [32:48]: and here complexity for application developers so application developers now need to worry about one more thing
+Pablo [32:55]: if i have an application developer if i don't know how plugin works or how scheduling works
+Pablo [32:57]: i have to now learn that and
+Pablo [33:00]: there's just no respons
+Pablo [33:07]: e to that one i think that they get cfs priority
+Pablo [33:11]: then you just want to use cs on boost run system
+Pablo [33:12]: you just use the effect
+Pablo [33:23]: versus
+Pablo [33:25]: some
+Pablo [33:25]: more easy
+Pablo [33:30]: mark
+Pablo [33:30]: er
+Pablo [33:32]: polic
+Pablo [33:33]: ies
+Pablo [35:26]: in
+Pablo [35:27]: this setting where
+Pablo [35:28]: it's tooled in the
+Pablo [35:29]: character running
+Pablo [35:30]: stage
+Pablo [36:18]: as it
+Pablo [36:19]: is multiplied
+Pablo [36:27]: think of
+Pablo [36:28]: that
+Pablo [36:33]: i
+Pablo [36:33]: want my
+Pablo [36:36]: statement
+Pablo [36:50]: introd
+Pablo [36:51]: ucing those numbers
+Pablo [36:52]: is that
+Pablo [36:54]: using
+Pablo [36:57]: those
+Pablo [37:03]: other
+Pablo [37:03]: techniques
+Pablo [37:07]: so
+Pablo [37:09]: once you have
+Pablo [37:09]: to
+Pablo [37:11]: be
+Pablo [37:12]: done
+Pablo [37:16]: this
+Pablo [37:17]: happens
+Pablo [37:20]: data
+Pablo [37:21]: structures and many
+Pablo [37:22]: applications
+Pablo [37:26]: i
+Pablo [37:27]: believe
+Pablo [37:28]: this is a
+Pablo [37:29]: moment
+Pablo [37:29]: but
+Pablo [37:31]: specifically for an application
+Pablo [37:40]: the load is high in a sense that if you could get more benefits out of that amortizing operations and sort of like having constant traffic
+Pablo [37:54]: and i think this specific overhead should be minimum but nonetheless this would be an over again i think that trade off is they do is that if you do have an async sort of like executor then we need to have
+Pablo [37:58]: a
+Pablo [38:06]: higher
+Pablo [38:07]: view that is
+Pablo [38:10]: close
+Pablo [38:11]: out
+Pablo [38:15]: we'll be
+Pablo [38:16]: dealing with
+Pablo [38:20]: it you might
+Pablo [38:21]: avail evidence
+Pablo [38:22]: on the inner case
+Pablo [38:23]: where
+Pablo [38:24]: this
+Pablo [38:25]: situation
+Pablo [38:27]: that
+Pablo [38:28]: time the transaction
+Pablo [38:29]: will cause
+Pablo [38:30]: lots of
+Pablo [38:31]: other than that
+Pablo [38:48]: the scheduling decisions need to be happened more frequently and or else like the fed keeps on changing frequently so that is when the caller always has to verify with the agent if this is the correct
+Pablo [38:54]: thread i'm looking at always always checking and trying
+Pablo [39:09]: so moving on to the next discussion question why do you think most of design work with instead of
+Pablo [39:15]: it makes it much easier for application developers
+Pablo [39:17]: if they can use an operating system
+Pablo [39:21]: that's a good point
+Pablo [39:30]: very huge
+Pablo [39:33]: entire permanent system
+Pablo [39:39]: other father all things
+Pablo [40:05]: okay so yeah like as you would mention that already linux provides like a stable mechanism scheduling mechanism it already has applied the context which is
+Pablo [40:23]: so both only introduces the scheduling policy where it moves the federal policy into the user's test process so it still uses the linux existing kernel infrastructure so in that case it is easier to deploy also it's easier to run and even it's compatible with the existing applications
+Pablo [40:28]: also in the case of ghost like for example a post thread is not working
+Pablo [40:46]: like it falls back to the default risk in that case both of them can work and also like if a linux thread has to preempt a particular ghost thread then like it can stop that ghost thread and then the linux can take over
+Pablo [40:56]: so in that case like they thought in a way that boast can be used to improve the scheduling policy as well as the user can also
+Pablo [40:59]: add
+Pablo [41:02]: there it was a nice discussion both in the paper
+Pablo [41:15]: know these data path operating systems and the paper names that you have passed schedulers like cheng
+Pablo [41:20]: these are very custom tailored to the hardware they're running on
+Pablo [41:22]: so they have
+Pablo [41:30]: versus linux if you could get the same sort of flexibility with the same sort of infrastructure linux has where it runs on almost anything
+Pablo [41:40]: it kind of makes it so that it's more feasible to use in a data center environment where they might have several generations of hardware several generations
+Pablo [41:43]: of bio hardware to use
+Pablo [41:45]: etcetera
+Pablo [42:06]: so let's move on to the last discussion question and more what do you think about exocercurial and how it goes implemented on x component rather than would it be completely useless
+Pablo [42:18]: i think
+Pablo [42:39]: the idea of ghost would sort of still extend to exoplanets where i'm not from the idea of hexatron was that you have a bunch of these applications which run their own and they interact with the hardware right so you essentially bypass this whole sort of like kernel which acts like
+Pablo [42:44]: a all these applications go to the kernel and then this has to be exempt
+Pablo [42:54]: so in that sense every laborer would be sort of like it'd be nice to have a scheduling library
+Pablo [42:57]: but again i think in
+Pablo [42:59]: these
+Pablo [43:00]: sort of
+Pablo [43:03]: things
+Pablo [43:05]: and
+Pablo [43:06]: i feel like
+Pablo [43:08]: goals
+Pablo [43:09]: would be
+Pablo [43:11]: more
+Pablo [43:12]: uses library
+Pablo [43:13]: than using the
+Pablo [43:14]: kernel to
+Pablo [43:16]: i should say
+Pablo [43:22]: it being an optimization on top of the consumer so the kernel has something and then how can we make this really fast
+Pablo [43:23]: right
+Pablo [43:28]: so i think in those aspects but i think the same idea should be extended
+Pablo [43:37]: what about ghost versus schedule
+Pablo [43:46]: similarities or differences between these two
+Pablo [43:51]: yeah
+Pablo [43:58]: i think they do have certain terminology i think up calls are basically transactions
+Pablo [44:01]: that's what they call
+Pablo [44:08]: and both sort of like operate on this notion that they only do scheduling for all snake effects
+Pablo [44:12]: that perfect i think
+Pablo [44:20]: if one were to pick one over the other your scheduled transactions are ghost i think those would be better
+Pablo [44:25]: because as don't they basically say that av so this on google search and we got this much
+Pablo [44:39]: improvement but also it's really flexible so people can define their own sort of policies and that way i think it gives you more scope to extend it yeah
+Pablo [44:42]: there's a lot of similarities in the fact that
+Pablo [44:50]: they both kind of come from the same principle of being able to let applications have flexible and comfortable scheduling policies is good for applications
+Pablo [44:52]: because there's no press
+Pablo [44:58]: the problem is that applications need visibility in a certain event that might affect your scheduling
+Pablo [44:58]: such as when
+Pablo [45:04]: so both scheduling activations or scheduler activations
+Pablo [45:08]: message interface between your
+Pablo [45:17]: as far as the differences who actually schedule threads
+Pablo [45:22]: your schedules
+Pablo [45:28]: yeah so again the main difference between
+Pablo [45:30]: also a nice paragraph
+Pablo [45:47]: the main difference between the two is going to be coming down to management so the scheduler applications the kernel doesn't do any good at all only assigning cpu to the user space based on how many cpu
+Pablo [45:48]: 's the user space
+Pablo [45:56]: once cpu's are assigned to the user space computer space is solely responsible for designing alteration
+Pablo [45:58]: with some of your information
+Pablo [46:01]: about the kernel about events that might
+Pablo [46:07]: help user space that doesn't fall
+Pablo [46:11]: but what actually schedules
+Pablo [46:16]: the threads on the forest is going to be the kernel via
+Pablo [46:16]: these transactions
+Pablo [46:34]: we still kind of get
+Pablo [46:44]: with ghost you're still kind of in the thermal front land where it's similar to inter than
+Pablo [46:59]: our scheduler accommodation despite their really good performance record in the paper never really took off because putting these into existing operating systems for most of the time
+Pablo [47:15]: supposed to be maintaining user staff and thermostat so ghost plan we're still working with the traditional way to complete that policy
+Pablo [47:29]: somebody told me this that google did a lot of seamless programs
+Pablo [47:36]: if the application does not do concurrency or sort of like user
+Pablo [47:37]: producing data
+Pablo [47:50]: then i think scheduling at this scheduling i guess the agent is asynchronous so that handles a lot
+Pablo [47:56]: so go would be really good evaluation
+Pablo [48:01]: the way to e for example that is sickness then i think
+Pablo [48:17]: the other
+Pablo [48:21]: use
+Pablo [48:22]: r schedule
+Pablo [48:28]: even though this is
+Pablo [48:29]: the
+Pablo [48:53]: lock
+Pablo [48:53]: oh thank you
+Pablo [48:55]: hello
+Pablo [48:57]: one
+Pablo [48:57]: hour
+Pablo [48:58]: however
+Pablo [48:59]: long we talk for
+Pablo [49:05]: i'm trying to do the math to find out how many of these quizzes i can do poorly and still pass
+Pablo [49:10]: so many people gap

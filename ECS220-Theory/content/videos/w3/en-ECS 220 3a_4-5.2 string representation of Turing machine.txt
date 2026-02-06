@@ -1,0 +1,55 @@
+So I said that the textbook avoids being too formal about
+what an algorithm is. It doesn't define it as
+being a Turing machine. Always. And I do like that, except once in a while when
+you want to do approve, it really does help to know exactly
+how to model your materials. So we want to show that
+Boolean circuits can simulate algorithms
+that are NP verifier. And it's going to be really
+convenient for this proof if we can say that algorithm is a
+single tape Turing machine. So just to review what we mean
+by a single tape Turing machine, it's, well, it's typically
+defined as some big seven tuple, but the key part is this list of TRH. So here's a transition table same. For example, if the Turing machine is in state q and it's reading a 0, it should stay in state q, right? U1 and move right? So if you did that here, it would change the configuration of a Turing machine to be same state. But it wrote the one over where the 0 was and it move the
+tape head to the right. And so if you keep executing, the configuration of
+a Turing machine, changes, eventually reach
+some final configuration. And depending on whether
+it's in state QA or not, you accept or not. Okay, so the key aspect here is that we need to simulate what this
+is doing with the circuit. So we need to come up
+with a way to represent the entire configuration
+of the terrain machine. Not only the bits
+written on the tape, but also what state you're in. Where's the tape head? In the bits that are the natural kind of data that
+a Boolean circuit processes. So you might say, well, a configuration of the
+triple right state, head position and take content. And here they are. So
+this is like the triple corresponding to state
+q, tape position one. And this tape content, we just write all the
+bits until a blank. And you could imagine while the
+right part as a binary string, the two left art, but they have some natural
+representation as a binary string, if you add at most 16 states, you could represent them
+what 4-bit strings. Similarly, the space
+usage of the term machine tells you how many bits you
+need to represent position. But this is not a great way to
+represent it for our purposes. So we could do this, but we're going to represent
+in a way that makes it really easy for us to describe how
+the circuit is going to work. So here's a more convenient
+representation of the configuration. So just as before, we will have our state said is
+just going to be represented by binary strings of length log
+of the number of states. And then the tape alphabet
+could be bigger than just this. But we're going to assume that
+are tape alphabet is just 0, 1, an x and a blank. And any computation you want to do, you can do with a tape
+alphabet like this. So, so it's going to
+be a symbol in 0, 1, 2, the log of the number of
+symbols in the tape alphabet. Now the tape head
+position will not be represented by just a binary integer. Instead, we're going to
+have a bunch of wires, one per tape cell. And that 0 is going to
+be on most of them, but one is going to be
+on the tape cell or on the new near the cell
+where the tape head is. So in other words, we're going to represent a
+configuration like this by a string where we write
+down the state in binary. And then we write
+down the elements of the tape alphabet in this
+binary encodings of it. For symbols, we need two
+bits for each of them. And then instead of
+having a single weight at the position where we can look in the string to
+see where's the tape head. We put a one near where
+the tape head is. So at the, near the fourth one of these little strings
+representing the tape cells. And we put zeros everywhere else. So it's a very sparse representation, will have zeros everywhere
+except one position.

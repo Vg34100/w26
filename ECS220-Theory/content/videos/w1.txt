@@ -1,0 +1,1165 @@
+en-ECS 220 1a_1 high-level overview of course topics.txt
+
+So before we get into some of the weeds of the
+details of this course, we're going to start with
+just a high level overview of some of the ideas we're
+going to be covered. So we'll talk about a lot of
+discrete objects in this course, and graphs will be chief among them. And remember that a
+path in a graph is a sequence of nodes that
+are connected by edges. And a cycle is a path that ends at
+the same node where it started. And one particular kind of
+cycle was studied by oil, or we call them an Eulerian cycle. And this is a cycle that visits every edge in the graph exactly once. So it's worth pausing for a second. Literally hit the pause
+button to ask yourself, does either of these graphs
+have an Eulerian cycle? Try to find one. Now it turns
+out no, neither of them do. And in fact, Euler
+proved a theorem that allows us to very
+easily characterized when a graph has an Eulerian cycle, it happens if and only if
+every node has even degree, meaning an even number of
+edges connected to it. Now we can ask a slightly
+different question. What if we didn't require
+that the path be a cycle? We just want to know, is there a path that visits
+each edge exactly once, but it may end at a different
+node where it started. And in this case, there is unreal area and path in
+G1, but not NG tube. And there's a similar
+characterization. It's slightly more complicated
+is that a graph has an Eulerian path if and only if all but up to two
+nodes have even degree. So on the right, you can see that three of the no, or for the nodes B, C, D, and E have degree 3,
+so it doesn't qualify. But on the left, D and
+E have degree three, but a, B, and C all have even degree. So that's why there's
+an Eulerian path. Now, Hamilton looked at
+a very similar question, which is to ask, when does the graph of a cycle that
+visits each node exactly once. It might skip some edges. But we want it to visit
+each node exactly once. And turns out this graph does, may not be obvious that
+there's a path through it. I'm sort of highlighted
+the edges there. And we might want to
+ask the question, okay, is there a similar simple
+to check characterization? Just some simple
+property of the nodes. How many edges each of them has. That would tell you when the
+graph has a Hamiltonian cycle. It sounds like almost
+the same problem. Alright, as Eulerian cycle, we just changed the
+word edge to node. So it seems like there should be some similar
+characterization that, but in fact, we don't know of him. We don't know of any easy way to check whether a graph
+has a Hamiltonian cycle. So let's just think about
+these two problems here. An Eulerian cycle visits
+each edge exactly once. Hamiltonian cycle visits
+each node exactly once. We have this symbol way to
+characterize Eulerian cycles. And we can ask, well, if we turn that into an
+algorithm that takes as input a graph and then
+answers the yes, no question. Does it have one of these cycles? How much time will it take? We'll talk a little more in
+future chapters about exactly how we measure the time
+needed for algorithms. But it's going to roughly be
+something like n squared. If n is the number of
+nodes in the graph, kinda depends exactly how
+you represent the graph. But the idea is that you
+can iterate over each node. There's n of them. And then you can ask how
+many neighbors does it have? And in the worst case, you have like an adjacency matrix which would involve iterating over
+every other node to ask, is it connected or not? And incrementing a counter. So it would be n nodes. You have to check each
+of them takes time and to count the
+number of other nodes. And there's more efficient
+ways to represent graphs, but it's at most
+something like n squared. Whereas with a Hamiltonian cycle, we don't have any simple
+characterization like this. The best thing we know
+how to do would be to enumerate every single
+cycle with EndNote, checking whether it's
+a Hamiltonian cycle, meaning that it has each node in the graph
+appearing on it exactly once. And if you think about how
+many ways are there to, to take the end nodes in
+a graph and that sort of permute them and then check
+is that a valid cycle? In other words, each pair of
+adjacent nodes connected by an edge. Well, there's n factorial
+permutations of the n nodes. And n factorial is The
+bigger than n squared. It's at least exponential and n. One kind of easy way
+to see that is that it's n times n minus 1 times n minus
+2 on down to at times 2 times 1. And most of the numbers in
+this list are at least two. So that's going to be at least
+two times itself and many times, which is what we mean by 2 to the n. So that's a lot bigger,
+it's exponential. And in general, we don't know any better way to
+answer that question. So we'd like to know, is there a fast way to decide if
+a graph has a Hamiltonian cycle? And it turns out this is not
+just some one-off question. This is a very fundamental question because as we're going to learn, if there's a polynomial-time
+algorithm for this problem, then there are also polynomial-time
+algorithms for thousands of other natural important
+problems that we also don't know how to solve
+in sub-exponential time. At the technical reason
+for this is because the Hamiltonian cycle problem
+is what we call NP-Complete. I'll define that formally later. And those other problems
+are all contained in NP. And if the Hamiltonian cycle problem had a polynomial time algorithm, then all those other
+problems, what is, well, that's the importance
+of this problem and all the other so-called
+NP-complete problems. So we might want to also ask
+the question, well, if so, if there's a fast way to
+decide the yes, no question. Is there a Hamiltonian
+path in the graph? Is there a fast way
+to actually find what usually this is what we want
+to do in computer science. We're not happy to just know whether there's a solution to our problem. We would like to have the
+solution itself like what is the path that visits
+each node exactly once. So we call this the distinction between a decision
+problem that has a yes, no output versus a search problem. That's generally like
+if the answer is yes, what is the solution
+integer then yes, if there's a fast way to
+solve the decision problem, it turns out there's a fast way
+to solve the search problem. The fact that the other implication follows is pretty easy
+if you could solve the search problem given a graph, give me a Hamiltonian
+cycle if it has one. Well, if you get an answer
+out of it, the answer is yes. If you don't get it and answer, the answer to the
+decision problem is no, it's not obvious that
+decision problems, you know, are, are not any
+easier than the search problems. But it turns out yes, it
+if you could solve the, so the ostensibly easier
+decision problem, you can also solve
+the search problem. So here's a related question. Is there a fast way
+to check solution? But what if I hand you? And I say, this is a
+Hamiltonian path in this graph, is there a fast way to
+check if I'm correct? In other words, this is the
+distinction between searching for a solution and trying to find it versus verifying somebody's
+purported solution. And it turns out yes, there is
+also a fast way to do this. Okay, so let's think about
+this distinction for a bit. This is going to be very
+important to a lot of the course, finding solutions versus verifying that a purported solution
+really is a solution. So for this problem of Hamiltonian
+path given as input a graph G, we should output a Hamiltonian
+path G if it exists. So the verification algorithm that takes as input
+not just the graph, but also a suppose a path
+that's a Hamiltonian. That the way it works is
+you just check that p has exactly and unique nodes where n is the number of
+nodes in the graph, right? You just iterate over all of them. Check that they all appear in the, that each of them only appears once, and that each consecutive pair is
+actually connected by an edge. So we can think about other types of problems we want to solve
+from a similar perspective. So let's consider factoring, which is a very important problem
+in cryptography, for example. And one way to phrase
+the factoring problem as a decision problem or
+as a search problem. Meaning, given an input,
+you want to get an output. You could say, well, on an integer and I want to output
+the whole prime factorization. But just for simplicity, let's just consider this simpler
+case where I just want to output two integers that are both bigger
+than one, whose product isn't. Right? And it's worth pausing
+for a second again, literally pause to think about, well, why is it that I'm calling
+this the factoring problem and not the one that would output
+the entire prime factorization. And the idea is, if you could solve this problem, you can just recursively
+do it these integers p and q and figure out the
+entire prime factorization. Once you get an answer of no, there is no such output. That means that the number is prime. So we don't know how to solve
+this in polynomial time either. It's not known to be NP-complete. Most people think it's not, but we don't know how to solve
+this in polynomial time. But there is a
+verification algorithm, which is if I give you two integers
+and they both bigger than one, you can check that their product is, then you can just multiply
+them together efficiently. So this is yet another
+example of a problem where we don't know how to
+find solutions efficiently, but we do know how to verify whether a purported
+solution really works. So it's worth contrasting
+this with in some sense, the inverse problem to factoring, which is multiplication, right? This problem says given
+as input two integers, p and q, output the integer
+n such that PQ equals n. In other words, output their product. So this problem can be
+solved efficiently. And this is essentially the verification algorithm
+for the factoring problem. And the fact that one of
+these seems to be difficult, but the other one is
+easy is the reason it's useful in public-key cryptography. So, okay, so you
+might start to think, well maybe all these problems that we encounter or maybe we don't know how to find solutions efficiently. Well, maybe all of
+them have this flavor that even though we
+can't find a solution, at least we can check
+solutions efficiently, but that's not actually true of every problem you might want to say. Also, Let's consider chess. So let's suppose that the chess
+problem is given as input, some board positions for chess
+like what appears down here. I want to output if it exists, a checkmate strategy
+for the white player. So I don't know much about chess, but supposedly this
+board configuration as checkmate for a white
+into 162 moons, right? So if white plays correctly air, it will win in a large
+number of moves below. What would be the verification
+algorithm for that? Like what, what proof could I
+give to you that would convince you that white does have
+a winning strategy. It really seemed like we
+have to play the game. But even then, if I'm plane as
+white and your plane is black, you're not going to be
+convinced I had checkmate. All I'm going to do is convince
+you that you made the wrong move. Maybe had you made different
+moves, you might have one. So this is not one of
+these problems are we even know how to verify purported
+solutions quickly. In particular, the moves white needs to make might
+depend on what blackness. So I can't just give a sequence
+of moves for white to make. I have to give more like
+a fully general strategy. Okay, so let's step back a bit and talk a little bit more about some of the lofty ideas we're going
+to cover in this course. So the central theme
+will be which problems have a shortcut that leads to a fast algorithm like Eulerian cycle. But we don't have to
+check all the possible cycles to see is there one that visits each edge exactly once and which don't
+appear to have a shortcut, which ones appear to require exhaustive search like
+Hamiltonian cycle. Now many problems,
+Hamiltonian path of a cycle, graph coloring Boolean
+satisfiability. We'll talk about all
+these eventually, although not protein folding. They're all equally hard in the sense that if any of them as an efficient algorithm
+than all of them do. So why is that like what
+do they have in common? Can we transform one of
+these problems into it? We'll talk a lot about this. If there's an efficient algorithm
+to find Hamiltonian paths. It turns out there's a lot
+broader implications than just, there's some other
+mathematical questions about discrete objects
+that can be solved. It turns out that if this is true, then there's actually an
+efficient algorithm to find short proofs of all the great
+unsolved problems in mathematics, for example, the beam and hypothesis. This is one of the reasons
+that people say if you could prove that P equals NP, and we'll talk about what, what that means in future lectures. You would have solved most of
+the other open problems in mathematics because
+you could just run this algorithm to define proofs. So this kinda goes against our intuition that such an
+algorithm could even exist. So, is it the case that
+mathematics is harder than this, requiring intuition and creativity
+to solve these problems. In other words, can we prove
+that finding proofs is offered? One question we're
+going to touch on is, can one programming language solve
+problems that another cannot? And what exactly is a
+programming language? You've seen a lot of them. But in this course
+we're going to kind of formalize what do we
+mean by appropriately. And we're going to
+see some examples of very simple systems using
+counters and geometric tiles. They can actually do computation. And in doing so, I
+want to kind of expand your idea of what exactly we mean by a system that can be programmed to automatically
+process information? One question worth asking is, can all problems be
+solved by an algorithm given unbounded hamiltonian path? We don't know how to do it quickly, but we do know how to do it
+slowly in exponential time. Could we do that with every problem? And it turns out no,
+the answer is no. There are certain problems that
+cannot be solved no matter how much time you allow the
+algorithm to run four. And we're going to spend most of
+the course talking about time. But another important resource
+to consider is space or memory. How much memory is required
+to solve certain problems? And how does this relate to the time required to
+solve the problem?-e
+
+en-ECS 220 1a_2.1 problems and solutions.txt
+
+Okay, so we're going to
+move into chapter two now and cover some of the basics
+of the theory of computation. So we want to start with some definitions about what
+exactly is it that we're studying. So we say a decision problem instance is just like an input
+to an algorithm. So for example, if you're
+given a graph, like, well, I'd say at this graph right
+here, you want to know, is this graph Eulerian? In other words, does it have a path visiting each
+edge exactly once? Now the decision problem, somehow like a bigger object. It's all possible instances
+and their answer. So we can, we often will phrase
+decision problems like this. We'll say given, and then we'll
+describe the type of inputs. In this case, the type is a
+graph g. When we just say graph, we mean undirected graph normally. In the question we want to
+ask about that input is, is G or Librarian. Now, another way to formalize what is a decision problem is it's the set
+of all Eulerian graphs, right? There's only two answers, yes and no. So if you know the set of all
+inputs where the answer is yes, well then you also know all the
+inputs for the answer's no, it's just accomplish graphs
+that aren't in that set. So this says encodes the entire
+decision problem in a sense. And another way that
+we often formalize what is a decision problem is we acknowledge that typically
+computers are going to be processing these data when they're
+encoded as binary strings. And so we would say that the decision problem
+is not a set of grass, it's a set of binary strings. But those that under some encoding of graphs represent the
+graphs that are eulerian. And this is sometimes called
+the language as well. So there's different ways
+you could encode a graph as a binary string that can lead to
+technically different languages. In this case, I'm showing if we use the adjacency matrix
+representation of a graph, where I'm drawing
+these binary strings as if they have rows and columns. But really this would
+just be like this one right here would be a
+single binary string with nine. That's it. But I'm
+just trying them to, to help you see where each
+row and then the next one D. Now contrast a decision problem
+with a search problem, right? Where instead of
+answering a question, does a certain type
+of solution exists, we want to output
+the actual solution. So in this case, the
+search problem version of Eulerian path would
+be given a graph, find or output an Eulerian path if one exists or report
+that none exists. So if you can solve this
+problem, of course, this is even better than
+solving the decision problem. Another way to formalize what's
+a search problem is that it's a function from 01 star to 01 star. And so it's describing this
+function f is describing on input a string representing a graph. You want to output a
+string represent in an Eulerian path in that graph
+or some encoding of the word no, meaning there is no path to be found. And a special case of a function. Whose output is just a yes or no is sometimes called
+a predicate, right? So the decision problem can be formalized as a function
+similarly to a search problem, but the range would be different. Instead of being all 01 star, there's only two answers, yes and no, and sometimes
+we call them 10. And when you see the word predicate, that means a function whose
+output is Boolean sense. Okay, so that's a way of
+defining what type of problem do we want to solve. But as computer scientists were interested in coming up with
+algorithms to solve them. So a problem is solved by an algorithm that computes the function or predicate
+associated to the problem. So the formal definition of
+algorithm that we're going to use in this class is
+actually not so formal. We're just going to say
+it's a program written in whatever is your favorite
+programming language. And typically, the more
+traditional thing to do is to define an algorithm as
+being a turning machine. And the textbook
+differs discussion of Turing machines until
+we've developed most of the basics of computational
+complexity theory. Now I want to emphasize that Turing
+machines are historically very important and still
+relevant to understand. But I also want to emphasize
+they're not really required to understand most of computational
+complexity or computability. If you have in your head a general purpose
+programming language that you'd like to think about, like maybe Python that is sufficient to understand
+everything we're going to do. Most of what we're going to
+do does not require, it, does not require understanding the low level sort of
+definitions associated with say, a multi tape Turing machines. We will talk about them eventually. But for now, we're just going to rely on our intuition
+from having programs. Okay, so let's start with
+an example of an algorithm, a non-trivial algorithm
+and a very old one. It's essentially the oldest
+non-trivial algorithm, which is Euclid's algorithm for finding the greatest
+common divisor of two. So we write that given
+integers a and b, we want to find the greatest
+common divisor of a and B. And to see how this algorithm works, we're going to sort of picture
+this little geometrically. So here's two integers, 66 and 24. It turns out that their GCD is six. So because six is a
+common divisor of these, it happens to be the greatest one, but just any common divisor. The following would be true. Which is that you can take a 24 by 66 tangle and partition it up into
+six by six squares, right? So the width of the squares x, so it evenly fits into 24, the height of the squares six, so evenly fits into 66. And notice what's
+going to happen here. If we look at 24 heights
+along the record, when a 24 by definition is the width. But if we look at 24 height, and then we'll look at another 24. And we're going to ask, well, how many times does 24 fit into 66? We can see it fits once, twice, and then it doesn't quite
+fit in a third time, right? It gets cut off. Or another way of
+putting that is that the remainder when we divide six. 24 is 1866 mod 24 is 80. Okay, so that's in some sense the pictorial definition
+of what mod means. It's how much you were able to fit in the last time when you
+couldn't quite fit at all. And so look at what's
+going to happen here. Six, because six is a common
+divisor of both of these, it's going to fit evenly into 24, four copies of six to 24. And it's going to fit
+evenly into the next one. And it's going to fit evenly
+into the whole next one. But because it started right here, right at the start of this mod, that gave us 18, because that
+is also fits evenly into 66. It has to fit evenly into
+this difference right here. Or in other words, that's the pictorial
+justification of this statement. That d is a common
+divisor of a and B. If and only if it is a
+common divisor of both be the smaller number and a mod b, which in this example is, is 80. So this gives us
+essentially the algorithm, which is that whatever
+is the greatest residue, this is true of any
+divisor of a and B. It's also true of the
+greatest common divisor. So we know that whatever is the greatest common
+divisor of both of these, It's also the greatest common
+divisor of b and a mod B. As long as they might
+be, it's not actually 0. So we can use that to
+implement an algorithm, right? So we want to know what's the
+greatest common divisor of a and B. I'd like to assume a
+is the bigger one here. So we'll say if a is
+less than b, swap them. So now we're going to
+assume a is bigger. Well, if a mod b is 0, that's exactly what it means
+for B to be a divisor of a. And so we should just return b. B is obviously bees greatest divisor, so it's the greatest common divisor. But if not, we'll then
+we're going to want to return the GCD of b and a mod B, knowing that that is equal
+to the GCD of a and B. So let's just see it in action. If we want to know what's
+the GCD of 66 and 24? Well, we compute their MOD, it's not 0, it's 18s. And now we let 24 BA
+and we let 18 BB, and we compute 24 mod 18, and that's not 0 either. We get a remainder of six. So now we let a and B be 800000 six, and now 18 divided by 6 is 3. It's even so it fits evenly in there. So at 0, which means the
+last positive number we add here that last version of B, that is sex, that is the GC. Okay, so there's a very
+non-trivial algorithm. And we'd like to analyze, Well, how long does it take? How long does this algorithm take, and especially how long does
+it take in the worst case, what's the worst possible
+numbers we can give to this algorithm that would make
+it run as long as possible. We'll talk about that
+in the next video.-e
+
+en-ECS 220 1a_2.2 definition of running time.txt
+
+Okay, So we're now
+going to look into how to somewhat formally define
+what we mean by running time. I say somewhat because
+we're going to follow the textbooks convention of being a little bit loose with somebody is, and I'll explain why in a bit. So we're going to measure running time as blue and anywhere else
+as a function of the input size. So for example, we could
+say an algorithm takes n squared steps on
+inputs of size n, right? So it's not a single number
+saying how long it takes. It's a function. How big your input? But then that begs the question, what is the size N of an
+instance of a problem? For example, if we have
+a graph G equals V, the nodes and the edges, That's the type of instance for the Eulerian path
+problem. What's the size? Is the number of nodes in the graph. Is the number of nodes
+plus the number of edges. A graph can have quadratically
+more edges than it as nodes. Is it the length of
+the string S sub g, where S sub G encodes the
+graph and binary, for example, it could be the adjacency matrix, in which case it would have
+exactly VI bits in it. And similarly for other types of problems and other
+types of inputs, what is the size N of an instance AB of the greatest
+common divisor problem. There's two inputs here, right? A and B. Two integers is the sum
+of the two integers. Visit the max of the two. Is that the number of bits we
+need to represent them, right? So log base two of a
+plus log base 2 of b. And note that those numbers are much smaller than the
+numbers themselves, right? By definition, they're logarithmically
+smaller, or in other words, a is exponentially larger than
+the number of bits you need to. So I'm going to leave these questions here as questions because
+it's sometimes not obvious. Normally, we're going to
+say that the right way to encode an integer is
+in binary, right? And therefore, we would
+say the size is the base two logarithm of
+the integer itself. We're going to see
+some reasons why for other decisions like
+counting number of nodes in a graph versus number of edges versus number of bits
+to encode the whole graph. It would matter in
+an algorithms class when you want to get precisely
+to how long it takes. But in computational
+complexity theory will often give ourselves
+permission to sorta, consider all the different answers we'd get in all those
+different cases, roughly equivalent to jump. Okay? So if we have some notion
+of how big our input it is, Here's how we formally
+define running time. Well now we talked about how
+to define the inputs is, but we want to measure the number of steps that the algorithm takes
+on an input of that size. And what's a step? Again,
+this is something aware. If we were in an undergrad class, I would just formally define it. I would say our model of computation is a single tape Turing machine, or maybe a multi tape Turing machine. And it's the number of
+steps it runs into you. But I want to try to point
+out that there's not one exactly right
+answer to this problem. It kinda depends what. Since we've said, are, our notion of a model
+of computation is just going to be whatever your
+favorite programming languages. Because the claim of the theory of computation is to be able to give universally correct
+answers to questions regardless of what kind
+of computer you're using, regardless of what programming
+language you're using. You know, it's not as easy to
+define it formally in the sense, but there's some good
+rules you should follow. Essentially one step should
+be something like an atomic or a basic line of code
+in an imperative program. So for example, an assignment
+statement like a equals 4, we would generally think
+of this as being a single. It takes constant time. We might say an assignment statement like a equals B plus C
+is one line of code. Is this reasonable? Well, it kinda depends exactly
+what you're trying to study. Adding B and C together might take awhile depending
+on what you're trying to, if you're trying to study the exact number of steps
+needed to do addition, you want to take into account, well, what if B and C are both
+arbitrarily large integers as Python allows, well then it might not be okay
+to say this is constant time. If I have a string
+literal like ABCDE, assigning it into a variable
+should take constant time. Um, and so we'd call that one step. Doing a Boolean check
+like is a less than b. Again, normally we
+would say something like this takes constant time. Now if those are very large
+integers, it might not. But usually stuff like this. We'll say this counts as
+one step of a line of code. So definitely things that
+are not allowed, I can't, can't quite draw an
+exact perfect line around everything that is alive. But we can definitely say something should not be considered
+a single atomic step. So Python allows you to do
+list comprehensions like that. So you could assign this
+variable equals this list. What does this list? It's
+constructed by running a for loop. The for loops inside the
+definition of the list, this iterates over all integers
+between 0 and n minus one. And if n is very big, this is going to take a while to run. So it's one line of code, but it would not be fair to call this a single step of the algorithm. If your one line of code
+calls a subroutine that you had better take into account how
+many steps that subroutine takes. Maybe this subroutine
+runs for a long time. If your line of code
+calls a library function, again, that's just
+another subroutine. Maybe it's not one you wrote. Maybe it's one that's in the library, but it may not be okay to
+call this constant time. Now, definitely if we have a very formal model of computation that's very
+simple, like a Turing machine. Most people would
+agree one transition of a Turing machine
+counts as one step. If you have other models like a cellular automaton
+for, for example, defined by an update rule, you might say one execution of
+the update rule is one step. What about non imperative
+programming languages, like a functional language
+or a logical programming? Here you can't even talk
+about steps because the, the method of execution
+of these programs is not done imperatively
+one step after another. There is an algorithm running in the background that you don't, right? That's the thing that the
+interpreter does on your code. So for these, it would actually
+depend on how the interpreter works and you'd have
+to know more about the programming language to know
+how long something will take. Now, we're not going to worry too much about the precise
+definition here. And the reason is that much of
+computational complexity theory just acknowledges that
+we can only hope to get these sort of
+universal truth about computational running time Up to
+polynomial differences, right? So if you have one programming
+language versus another, or one version of these
+rules versus another, it might make a polynomial
+difference that might cause you to say one algorithm is time n squared, while the same algorithm in another language might
+be time in queue. And because we're already going
+to make ourselves okay with saying that n squared and n cubed are close enough to both
+be polynomial there vault, much more efficient than exponential. We're not going to worry
+too much about this, but I'm just giving
+you some guidelines for sort of what would be reasonable.-e
+
+en-ECS 220 1b_2.2-1 time complexity of GCD, factoring.txt
+
+So with a somewhat formal definition of running time in order we can come back and we can analyze the time complexity of this
+Euclidean algorithm that we defined. So there's the code in Python
+for the Euclidean algorithm. Now the input is a pair
+of integers a and b. So we have two inputs,
+so we got to somehow combine them to get one input size. And we're going to say the size N is the number of bits
+of a and B together. Let's just, for the sake
+of making this easy, ease and they both require, and that's if b is much
+smaller, maybe it doesn't. But you can imagine padding it with zeros until it also requires it. So What we're gonna do is we're just going to count how
+many divisions we need, right? So on an input of size n, we're going to say we
+need d of n divisions. And how will that turn into the time? Well, if we know that
+each division takes time T of n on inputs of size n, then the total time complexity
+is going to be T and N times d. And we're going to analyze this
+is with a couple of exercises. I won't work it out here, but we can talk about it in
+discussion that we need. So the first to think about and stop and think about
+this for a second. Try to see why it's true. If a is bigger than b,
+bigger than or equal to b, then a mod b is less
+than a over 2, right? No matter how a and B are related, you take a mod b and the result
+is less than half of it. The other thing to think about is that we can look at this algorithm
+air and use this first fact and get that Euclid's algorithm
+is going to perform at most to log a divisions, right? And because log of a is, and that's how we're defining
+it as two n total division. So a linear number of divisions. And if we use the sort of grade
+school algorithm for division, this whole thing that is
+going to take o of n squared. And that's a problem in the textbook. Okay? Let's go to a different
+problem for factoring, right? So the factoring problem is
+going to look like this. We'll formalize it as our
+input is an integer m And its size is going to be
+log base two of n, right? We'll call that number n. So m is about two to the n. All right, we're going to
+say that the factoring problem is to find some factor of atom in the range of integers
+between two and n minus 1. If it exists, maybe n is prime, then it would have no such factor. But if it does exist, we just want to find one of them. So one thing to think
+about and seriously, pause for a second
+and think about this. Why is this enough to help us find
+the whole prime factorization? The sounds like a lot crush. This is we're not getting the
+whole prime factorization. We're not even necessarily
+getting a prime factor, we're just getting some factor and good if the PH composite as well. But just think for a second how
+you would use an algorithm for this problem to actually get
+the whole prime factorization. Okay, so here's the obvious
+algorithm to try to solve this problem. Find factor. And this is sort of Python code and my pseudocode looks
+a lot like Python, but I give myself deliberately to just do straight up
+pseudo-code sometimes. So what we're gonna do is just
+search every potential divisor d in this range between two and
+the square root of m plus one. We're going to check what
+happens when we divide by d. Do we get a remainder 0 or not? And the claim is that
+that's enough to tell if there's a factor in the range
+from two up to m minus one. So that's worth thinking
+about for a second. And then we just say, okay, if any of those potential divisors divide m cleanly with no
+remainder there divisor, so we can return that number. It would be a factor that case. Okay, so again, using
+our sort of metric as the number of divisions
+being the key thing here. And then we can just multiply that by the time needed to do divisions. How many divisions? What happened here? Well, it's
+fairly simply a for loop. It has about square root of m terms and each one we do a single
+division to get this mod. So we're doing square root
+of n divisions, which is, now remember we have to express this as a function of our input size, as our size is not, our size is the number of
+bits needed to represent. So we needed log of n
+bits to represent m, which is n. And so m
+to the 1.5 is the same as 2 to the n to the 1.5, which is two to the n over two. So this is the sort of naive
+way to try to do factoring. Now the best-known algorithm is a thing called the number field CVE. And it's quite a bit faster than, rather than raising two to a
+power that's like linear in n, u raised to a power that's something
+like the cube root of that. So it's significantly faster, still exponential time technically, but better than the naive them. And it's believed by many people, not everybody but many people, that there is in fact no polynomial
+time algorithm for factoring. There is an order n cubed
+time quantum algorithm.-e
+
+en-ECS 220 1b_2.2-2 asymptotic notation.txt
+
+So to wrap up this section, we want to talk about
+asymptotic notation, which is how we sort of
+simplify our method of counting the number of steps
+that an algorithm would take. We're not really going to write down the exact number of steps
+that an algorithm would take on an input of size n.
+And we're going to write something kinda close to it and
+much simpler to write down. And for this we'll
+use big O notation. So if we write that a function T of n equals big O
+of a function f of n. What does it mean? Well, intuitively, it
+means that the function t is less than or equal
+to the function, right? I put it in scare quotes because functions take
+many different values. T could be bigger than f on some values and smaller
+than on others, or which one would be bigger, right? This gives us a way
+to compare them and say one is roughly
+less than or equal to. So if we were to be more proper, we would just write t equals o of f n here is not a variable that
+actually comes into it. We're just comparing the
+function t with the function f. But often we write 0 of
+f of n to sort of remind ourselves that this
+is a function taking as input a single number
+that we call Han. That's the size of our
+input to the algorithm. So and to be even more proper, well, the equals is sort
+of misleading here. We're not saying that o of f is a function and it's
+the same function as t. Technically, if we wanted
+to formalize this, we'd say O of F is
+a set of functions. The set of all functions
+that are upper bounds for t and t are that are upper bounds for F and T is contained in that set. So this would be sort of more proper, but we don't write that and
+nobody else writes that. They write T of n equals o, right? Okay, So if intuitively this means
+t is less than or equal to f, Well, we'd like to have a
+notation for strictly less than, and that's what we
+use little low for. So if I write T is big O of f, it means F grows at
+least as fast as T0. This means f grows
+strictly faster than t. Formally, we would
+say that the limit as t goes to infinity of T of
+n over f of n goes to 0. This is how we can formalize that. And we can say that T is big O of f if and only if f is not
+little o of t, right? Which is somehow obvious if
+you use this analogy, equals, because t is less than
+or equal to f if and only if it is not the case that
+f is strictly less than d. So here are some examples of functions that are big
+O of other functions. So three n squared is big O of n
+squared, right? Three and square. It is technically bigger, but only by this constant factor. So we can say it's big
+O of n squared there. Asymptotic growth rates are the same. N squared is big O
+of three n squared. Obviously because three n squared grows even faster than n squared, a 100 n-squared is actually
+little low end of that 2.1. In other words, no matter how big a constant you have out in front, it can't compare to having
+a bigger exponent, right? So any bigger exponent
+than two above, and that's going to grow
+faster than n squared. So similarly, end of the
+2.1 is little o of n cubed. And finally, this is a rule or memorizing any polynomial
+function of n, including with a huge
+exponent like n to the 100, that's a little low of any
+exponential function of n, such as two to the n and 2 to
+the n is little-o of 2 to the 3. Be careful here. The,
+these look like they're within a constant
+because of that three. But that constants
+up in the exponent. It's not being multiplied
+by the whole function. It has been multiplied
+in the exponent. And so another way of
+saying that is that two to the three N is 2 to the n, and then that whole thing, Q, right? So if you take any
+function and cubit, the cubed function
+grows strictly larger. Okay? So formally we can say T is big O of f if and only
+if there's a constant c. So that for all n, T of
+n is at most c times f. This is one way to
+formalize the definition. And we also have a
+notation for equals. And again, this doesn't mean equals. It means like equivalent. Things can be equivalent
+but they're not the same. So we say T is big theta of f if and only if,
+well, think about it. If you had a way to
+define less than or equal and greater than or equal, how could you use that
+to define equals u? Well, you would say
+it goes both ways. We say T is big theta of f, of t is big O of f, and f is big O of d. So this means they
+grow at the same rate, so they're roughly equal. And we also have this notation
+for the other direction of these, we say T is big Omega of f if
+and only if f is big O of t. Intuitively, t is greater
+than or equal to f, and little Omega means
+strictly greater. Essentially, we say
+T is little Omega of f if and only if f is little o of t. Just swapping them are. Now, here's an exercise
+to see if you're following what's happening here. If we say f of n is big O of log
+N. Normally when I say log of n, I'll main log base two
+of n. But here I'm going to claim actually that
+could be some other base. It could be log base e, then that could be log base ten of n. And I don't think we need to bother writing the
+base of the logarithm. Why is that? Why is it that f of n
+would be big O of any of those logs no matter what the
+bases. So think about that.-e
+
+en-ECS 220 1b_2.3 intrinsic complexity.txt
+
+So we're going to discuss a bit, a conceptual theme that sets sort of theoretical
+computer science apart. And it's this notion of
+complexity and where it lives and the distinction between a problem and an algorithm
+for the problem. So let's consider the
+algorithm that we all learned in grade school to
+multiply numbers together. So if you have two n digit numbers and here will be the
+size of our input. The grade school algorithm says that for each digit
+in the bottom number, why you're going to make a row? And each of those rows all have about the number of digits of the top. So you're going to have
+n rows of the n digits, each that size n squared. And making each of the digits is a constant time operation that's just adding together
+a couple of digits. So the total time to do
+this is o of n squared. Now, it might seem like
+that's optimal, right? You might have learned this in grade school and blah,
+blah, blah, yeah, that's obviously the only way to
+multiply integers, but it isn't. So here's a better
+algorithm from the sixties. And the idea is it uses
+a clever recursion. You take x and y, can you split them up into
+two equal size pieces. Size here, meaning the length
+in bits or hi In digits. So if X here is about 1 trillion, you split it into two
+sequences of digits and you get a is about 12 thousand, b is about 67 thousand, and similarly is split up y and a, C and D in this way. Okay? So if we want
+to look at how do we express what x and y r as a function
+of these two smaller numbers? Well, you just take
+a and you left shift it by n over 2 and
+add it to be right. And what is left shift
+in, in base ten? That means multiplying by 10 for each digit you want
+to shift to the left. So x is 10 to the n over
+2 times a plus b y. Similarly for C and D. So x times y is then this expression, that's x times this expression. That's why. And if you multiply
+that out first, outer, inner last, you get this
+expression for x times y. So it looks like what we've said is that while to
+figure out x and y, you have to do four
+multiplications to get AC, AD, BC, and BD. And if you crank through, how much time would it take to do four multiplications on numbers
+that are N over two digits each. It wouldn't really say
+at anytime that would still be n squared total. But we can notice, well, if you had a plus B times C plus D, this other number that hasn't
+shown up yet, if you had that. And multiply that out and then
+subtract off two of the terms, AC and BD, which we're already
+going to need to calculate here. You get the other two
+numbers added together, AD plus BC, right? So in other words, by doing only three multiplications, AC and BD, and then a
+plus b times c plus d. And each of those are an
+n over two digit numbers, along with a constant number of additions and
+subtractions to get them. And a couple of shifts, which are a lot faster. Those take only linear time to
+do the additions and the ships. You get it right, so we can
+save one multiplication. We cut from four down to three. So if you work through the
+time complexity of this, well, it's a constant number
+of linear time operations, which is O of n times three
+multiplications on N over two digits, digit numbers, which recursively
+we can express as T of n over 2. T of n is the total time. And if you solve that recurrence, you get that this is instead
+of being o of n squared, it's O of n to the log base 2 of 3, and that's smaller than
+2, it's about 1.6. So in other words, we get an asymptotically better
+algorithm with this recursion. Now, this isn't the best
+possible thing to do. It's been known for a
+long time that using something called the
+fast Fourier transform, this can be done in time
+n log square root 2. Then very recently, this was about
+a year ago, it was discovered. There's an algorithm that can take
+time o of n log n. The obvious lower bound is omega of
+n because you have to read all the digits and it's
+actually an open question. Is there a linear time
+algorithm for multiplication? This is not know, but I
+wanted the others is not a class on algorithms or on
+multiplication algorithms. I want to use this to
+highlight this idea that the grade school
+algorithm seems very natural. It seems like obviously
+the best way to do this. And it takes time. N squared over n squared is not the time complexity
+of the problem. The problem itself has an
+intrinsic time complexity. And the grade school algorithm, even though it's the
+first way you learn to do this, does not meet it. And this is just sort of a sociological phenomenon
+I've personally noticed, which is a very strange thing, which is that it seems to be that the better a person
+gets at programming, the worse they get at
+understanding this concept. Somehow like very
+talented programmers tend to suffer from this belief that the very first
+algorithm they thought of for a problem must
+obviously be the best one. And it's not until
+you really dig into theoretical computer science that you have this insight that NeuroNode, just because you thought
+of an algorithm, doesn't make it an optimal algorithm. The problem itself has
+some optimal algorithm. And it's our job to discover it or, you know, to prove that the best ones we already
+have actually are optimal.-e
+
+en-ECS 220 1b_2.4 the importance of being polynomial.txt
+
+So we've talked about
+how we're going to study the time complexity of problems. And we're going to focus a lot
+on polynomial running time. It's natural to ask why. Well, let's try to
+motivate it in this way. Here's an algorithm for
+finding out whether a graph G has an Eulerian path
+or not based on the shortcut, characterized by the number of nodes. So you just loop over every
+node in G and you ask, is it's degree odd or not? And if more than two
+nodes have odd degree, it cannot have an Eulerian path. So what's the running
+time of this algorithm? Well, the easy part is that the loop executes n times n
+nodes in the graph. Okay, That's easy. The hard part is, well,
+how long it'll take, and it depends on the time complexity of evaluating this statement
+right here, right? So this if check right here is essentially calling a
+subroutine degree of the node. How do you figure out
+the degree of the node? Well, now it kind of depends
+on your representation. Do you have an adjacency matrix? And then it would be
+linear time because you'd have to go over an entire row, that adjacency matrix of
+length n to count the degree. It could be more if the matrix
+lookups are not even constant Time. If you have an adjacency list, it could be constant
+time because you can maybe store the number of neighbors. So this could make a difference. So we're not going to
+dig too much into this. I just want to point out, you can make what appear to be
+minor differences in modeling choices and have an effect the exact running time
+of your outer butt. These choices generally
+are going to affect the running time measurements by
+no more than a polynomial factor, like most of these kinds
+of choices you could make, or just a linear
+factor, they might add, you know, a multiplicative factor n, But they tend not to do
+much more than that. But even more extreme choices often
+have a polynomial difference. Maybe your algorithm runs and squared slower than it would have
+under some different choices. Okay? So one lesson to draw from that is 0. If you're really trying to
+get the best algorithm, you should be careful in
+how you make these choices. But another lesson
+we're going to draw to motivate computational
+complexity theory is that if our goal is to understand the fundamental properties of
+computation and not artifacts, that particular modeling choices. Then we should consider equivalences and running time up to
+a polynomial factor. If we want to say that what
+we're going to discover is true about all computation than we had better not make these fine-grain
+differences otherwise that would be true in some
+models and not others. So you often hear this quote
+attributed to Dykstra. I don't think he actually
+said it, but it's that computer science is no more about computers than
+astronomy is about telescopes. And I don't totally agree with that in a lot of it is about computers, but I think what
+they're trying to get at there is when we're doing
+the theory of computation, we're not really studying the
+exact computer you have in hand. We're trying to figure out what is true of any computer you could build, either the ones you are now, the ones you own yesterday are
+the ones that might be invented. All right, so I kinda
+like this quote from the textbook a little better. Which is rather than
+studying the guard grinding lenses and mirrors, let us now turn our
+attention to the stars. Okay, so we're going to encounter our first so-called
+complexity classes. And these are going to be
+sets of decision problems. Rights of the textbook
+just says this. It says P is the class of problems
+solvable in polynomial time. Okay? So that's a little and precise. I do like to be a little more precise than the
+textbook. Some takeaways. So first I want to acknowledge that the way most people
+talk about the class P, they consider to be a set
+of decision problems. And there's lots of
+interesting things you can do in polynomial time, like multiply integers, but
+those aren't decision problem, so we don't technically
+say they're NP. So the way we tend to formalize decision problems is they're
+subsets of 01 star two. We say one such subset, which is a language or decision
+problem, is contained in P. If there's a program
+Q and a constant c. So that for all possible
+binary strings x, when you run q on input x, it halts in at most length
+of x to the c steps. That's the polynomial-time part. And q of x outputs one if
+and only if x is an a, that's the correctness part. That q here is actually
+deciding the language. Okay, our next complexity class
+gets a little more fine grained. Instead of just saying you have
+a polynomial running time, it talks about closer to
+an exact reading time. So if you have a function
+T that the time-bound and takes as input a
+length of a string and it outputs the worst-case
+running time on any string of that length than time of T of n as the class of problems
+solvable in time. Big-o of TEA that, alright, so here we're using the
+kind of non sharp version where the time doesn't need to
+be exactly t of n or smaller, it could be 3 times T of
+n or 10 times d of them. Okay, So with this
+complexity class in mind, or rather this infinite
+family of classes, we can express P as
+being the union over all constants C of time
+of n to the c, right? So these are all the possible
+polynomial time bounds. And n squared, n cubed, n to the fourth and so on. And when we write Pali of n, This is often shorthand
+for Big O of n to the c, for some constant c, right? So this is generally what
+do we want to be lazy and we don't want to work out
+exactly what the constant is, but we want to say, okay, if you did a little more work, it figure out the constant. Maybe it's seven, and
+we would have just proven it's O of n to
+the seventh, right? So under this sort of
+more loose notation, we can say P is time
+of poly of n, right? All right, and then the last
+complexity class here is x. This is exponential running times are rather that the problems
+decidable in exponential time. So this is time of two to the
+poly-A than or more precisely, the union over all
+possible constants C of the problems decidable in
+time two to the n, to the c. Okay? So those times are bigger than
+polynomial running times. They're actually strictly bigger. But for now we won't
+worry about that. We'll just observe that for every
+possible constancy, a hundred, ten hundred million n to the c is big O of 2 to the n.
+It's actually little, it's also a little low,
+but all we need here is that two to the n grows at least
+as fast as any polynomial. And so, just to restate that
+in set theoretic language, it means the set P, the set of decision problems
+solvable in polynomial time, is a subset of EXP, those that are solvable
+in exponential time.-e
+
+en-ECS 220 1b_2.5 tractability and mathematical insight.txt
+
+So the textbook makes the important observation
+that the difference between polynomial and
+exponential time is one of kind, not a degree, meaning essentially
+it's a huge difference, it's not a minor difference. So remember, p is the class of decision problems solvable
+in polynomial time. Now you'll often hear
+this paraphrased as being the tractable
+decision problems, meaning the ones that in practice, we can solve efficiently according to our standard intuitive notion
+of what does efficient mean? It needs, it runs and halts by
+the time you need the answer. Now, worth observing, and this
+is a very common objection to hearing that theoretical
+computer scientists obsess over this class P a lot. Which is that, yeah, not all polynomial time algorithms
+really are tractable at the end of the 100 time algorithm
+is not an efficient algorithm. It does not in general
+hall, when you need it to, It would never halt in your lifetime for even
+modest values of that. Okay, so given that, why do we care so much
+about this class peak? What's the point of
+thinking about it? Well, for one, there's sort of
+a one way implication here, which is that if you can
+show a problem is not in P, This generally does
+imply it's intractable. If the best algorithm
+you have doesn't even run in time and the 100, well then of course, there's no good algorithm
+for that problem. So this is worth studying just for, for this kind of insight. But what's the real goal of studying? And it's that it tells
+us something about the mathematical insight
+into problem-solving. When you show that a problem is in P, generally means it has some
+special structure that allows the algorithm to avoid an exponential time
+brute force search. So once this insight is made, once somebody proves that a problem has a polynomial
+time algorithm, other insights tend to follow and so do even more efficient algorithms. One example of this
+for me is when it was discovered in 2002 that there's a polynomial time algorithm for determining whether an
+integer is prime or not. If the integer has n bits, I think the original algorithm took something like time n to the 12, and it really wasn't practical. The randomized
+algorithms that already existed that gave a good
+answer with high probability, vastly outperform this one. And they were obviously the
+thing to run instead of this. But after the original
+paper was published, once people saw the insight
+that had been made, they were able to work
+on that and improve it and got it down to
+time n to the sixth, which I think is
+still worse than the, the existing randomized algorithms, but it was a lot better. And maybe someday somebody will
+follow up on those insights and get like an n squared time algorithm
+or a linear time algorithm. And we think that some
+problems in this class, NP that we're going to talk
+about in the next chapter, do not have this structure. We think, in other
+words, P is not NP. And proving that is more
+or less the top goal of theoretical computer
+scientists in order to take advantage of this
+observation right here, that if you can show
+a problem is not NP, yeah, that really means
+it's intractable. You're not going to be
+able to solve it with an efficient and exact
+always correct algorithm. Okay, So that wraps it up for
+chapter two. Chapter three. We're not going to
+cover it explicitly. It's a good chapter. It's a very good review
+of essentially what you would cover in an undergraduate
+algorithms textbook. So because ECS 120 to a is a
+prerequisite for this course, we're not going to go
+through this in lecture. So I'm going to assume
+that everybody is familiar with the techniques and
+the terminology from Chapter 3. But just in case you haven't
+taken algorithms in a while, it's a good idea to review,
+especially the following. Definitely we're going to
+make heavy use of recursion. That section 31, divide and
+conquer and dynamic programming. There's going to be a lot
+of graphs in this course, we're going to talk a lot
+about graph reachability, including breadth-first,
+depth-first search, which I'll just assume that
+you understand very well. And we're also going to allude to a few other more complex
+graph algorithms like shortest path,
+minimum spanning tree. And we're not going to dig much knew exactly how those algorithms work. But it is going to be important
+for you to understand that each of these problems has a
+polynomial time algorithm. And finally, reductions are going to be at the core of a
+lot of what we do. So be sure to review
+Section 38 as well.-e
+
+en-ECS 220 1c_4.1 needles and haystacks.txt
+
+But we're going to start with
+a high level level overview of this class, NP. We've been doing a lot
+of high-level overviews. We're going to get
+detailed after this. But Let's remind ourselves about this decision problem
+called Hamiltonian path, which is the problem given as input, an undirected graph G. Does
+G have a Hamiltonian path, meaning doesn't have a path that
+visits every node exactly once. Now, it's often said it's hard
+to find a needle in a haystack, and we can use that metaphor here. The needle research 84 is the
+Hamiltonian path if that exists, and the haystack is somehow the set of all
+paths. So we might consider. Now there's an obvious algorithm
+to solve this problem. You just look at all possible
+paths in the graph and check whether each one
+is Hamiltonian or not. But that takes a long time. So we did see that it's possible to quickly check whether a given
+path is Hamiltonian or not. And that somehow captures the
+essence of this class NP. And formally, we'll define a
+decision problem to be an empty if, whenever the answer
+for an instances yes, like for Hamiltonian path, the instance would be a graph
+that has a Hamiltonian path. There's a simple proof of this fact. In the case of this problem, the simple proof is the path itself. Now in general, what we mean by simple proof is that given the proof, it's checkable in polynomial time. There's an algorithm that
+can look at the input, the graph, and the proof, the path and tell whether that path is a Hamiltonian
+path in that graph. Note the asymmetry of this definition that talks
+about yes instances. It's not necessarily
+the case that there's a simple proof in the
+case of The answer is no. And think about that
+for Hamiltonian path. If I try to prove to you, here's a graph and I claim
+it has no Hamiltonian path. How would I prove that? What short string, good, I give to you that once
+you've checked it, you would believe there's no path visiting each node exactly
+once. Not obvious. Okay, so before we
+formally define and B, let's think a bit about
+this distinction between P, the problems where I can give a yes or no answer in polynomial
+time versus NP, where I can't necessarily do that. But if somebody gives me a potential solution that they
+claim means the answer is yes, that can be checked
+in polynomial time. So suppose that I
+know a problem is NP, it has a polynomial time algorithm. Is there also in NP was worth
+thinking about for a second, pause if you want to. So what would be the easily
+verifiable proof in that case? Well, it would simply be
+the algorithm itself. You have a polynomial time
+algorithm that can tell whether a is or whether an instance
+is in the language a or not. So if I claim the answer is yes, I can simply give a transcript
+of the computation of that algorithm on the input
+and you could run it yourself. You could just go
+through and verify yep, each step is the next
+step you would get by running the algorithm and
+then verify that at the end, the algorithm actually says yes. Okay? So that means every problem that's contained in B is
+also contained in NP. Or the set theoretic way
+of expressing that is, P is a subset of NP to all the problems that
+can be solved quickly, can be checked quickly. Checking is like an easier thing to do because you get this
+extra information, right, the potential answer. So the P equals NP question is about whether that inclusion
+is proper, right? Is NP contained in B? In other words, are they equal? Or is there a decision
+problem in NP, but not NP? And this is my notation for
+set difference here, right? So if np set minus p
+has something in it, that's a problem where
+you can check solutions efficiently but you can't find
+them were given no solution. So every problem in
+NP can be solved by a slow algorithm that exhaustively searches all
+of the possible proofs. Part of the definition of NP is that the proofs have a certain
+bound on their length, so there's only a
+finite number of them. But p is this very special
+subset of NP for which some mathematical insight lets us avoid that exhaustive search, right? And just beeline
+straight to the answer. And Chapter 3 or any
+class and algorithms like 122 or 220 do is entirely
+about such insights. That's what an
+algorithm's biases about. So the P versus NP question, essentially at an intuitive
+level, ask the question, is find me needles harder than
+distinguishing them from Hey, write the distinguishing Airbnb like the proof checker and
+the definition of NP.-e
+
+en-ECS 220 1c_4.2-1 graph coloring.txt
+
+So we've talked about this
+class, NP informally. I promise that later we
+would formally define it. But I'd rather first go through
+some examples of problems and NDP, I think it's good to build
+some intuition for what a formal definition is trying to capture before you actually
+get to the formal definition. So let's start with this
+problem of graph coloring. So let's think about this situation. Most conference talks are bored. They're born. So if you
+find two interesting ones, it's better for you if they aren't
+scheduled at the same time. So we have some constraints here. Each attendee states which talks they want to see. We're
+going to try to schedule them. And there are k time slots. And the question is,
+can we assign talks to time slots so that everyone can
+see all the talks they want. So we can formalize
+this using graphs, as with most problems, into the k coloring problem. And the k coloring problem is this. You're given a graph G equals V E, or the set V of nodes is the set of all the talks and the set of
+edges capture the constraint. There's some person who wants
+to see both of those talks. So an edge uv is any, if there's somebody somewhere out there who wants to see
+both of the talks. So in other words, they should not
+be scheduled at the same time. And the question is, can we color the nodes
+in V with only K colors? K is a constant here. In other words, can we assign talks
+to the K different time slots? So colors here or like timeslots, so that all neighboring
+nodes have different colors. In other words, all talks are
+scheduled at different times. This is called a proper
+k coloring of G. Okay, so let's some examples. Here's a graph on the left, and it's three colorable, right? I've used three colors, blue, orange, and gray to colour at. And if you go through
+each edge and check, you can see every single edge is connecting two nodes that
+have different colors. On the right, There's another graph, and it's been colored
+here with four colors, blue, orange, gray, and black. And it turns out the one on the
+right is not three colorable. Why is that? It's worth
+thinking. Pause for a second. So you can see that the middle
+node is connected to every other. So whatever color you assign here, let's call it black. It's gotta be different than
+every other color around here. Okay, So now you have this ring
+of five nodes around the edge. How many colors does
+it take to color that? Well, it's a cycle with an
+odd number of nodes here. So to make the whole
+thing three colorable, just the edge would have
+to be two colorable because all those colors have
+to be distinct from the metal. But you can't to color
+it whatever you color, say the very first ones
+that you color it, gray. That means the one clockwise, it's gotta be the opposite color, blue if you had only two. And the one next to that is going
+to be back to the first gray. The one next to that
+has to be back to blue. And then the next one
+would have to be gray, but that would conflict
+with this one up here. So that's an argument that
+if he had any odd cycle, you need at least three colors. So if you then connect
+all them to a fourth one, you need at least four colors. So it's not three color. So this looks like just a fun little combinatorial
+problem on graphs, but it actually has
+many applications. This comes up a whole lot. So, for example, you might want
+to assign different frequencies to close wireless devices
+so that they don't talk over each of the colors
+would be frequencies here. So I'm going to claim here that the k coloring problem
+is contained in NP. So Posner and how to think
+about that. Why is that true? Well, most problems that are in
+NP are phrased in such a way that the statement of the
+problem actually gives you the reason why it's an NP. So what makes a problem in NP? If it has a simple proof that can be checked with a
+polynomial-time algorithm. So what's the simple proof
+that a graph is k colorable? It's the k coloring, right? You just give a coloring of the nodes and then it is simple
+to check by just looking at every edge and make sure every edge is connecting
+two nodes are different. Okay? Now it turns out the problem
+of two-coloring is NP. Why is that the pause for us? Well, what does a
+two colorable graph? If you think about it, it's the
+same thing as a bipartite graph. A bipartite graph is one whose
+nodes can be divided into two subsets so that there's no edge between any two
+nodes within the same set. All the edges are between the
+nodes on either side, right? So telling whether a
+graph is two colorable is the same thing as telling
+whether it's bipartite. So how could you come up
+with an algorithm for this? Well, you can just say once
+I know the color of a node, I don't immediately, and
+there's only one other color. I've got a color all its
+neighbors the opposite color. And I've got a color all their
+neighbors, the first color. And you can kind of
+bounce through the graph, figuring out if there is a
+two-coloring, how to assign it. And at some point you'll
+either completely finish, you will color the entire
+graph with only two colors, or you'll discover, oh, you, you want to assign
+one color to another. That's already been assigned to the opposite color and you can't do it. So you get a contradiction.-e
+
+en-ECS 220 1c_4.2-2 planar coloring.txt
+
+So we talked about coloring
+of general graphs. But remember that special type
+of graphs, a planar graph. This is one where it's possible to draw the nodes and edges so
+that no two edges cross. And one problem that was famously
+open for a very long time, but result in the
+seventies is whether every planar graph is 4 colorable. And you could think of this as the mathematical formalization
+of the state that every map can have the territory's colored with one of only four colors so
+that any bordering territory's have different Viewers like this for coloring of
+the United States here. And it was also sort
+of a famous proof in that it was one of the first ones to be resolved enlarge
+part with computers. And so there was a bit controversial for a while whether the
+proof should be accepted, but it is of course accepted that every planar graph
+is for countable. So that means in particular, there's kind of a trivial
+statement we can make here that there's a simple
+algorithm for planar, for color and so on. Input a planar graph, Yes, if you want to know, is a colorable, you simply output, yes, they're all four colors. So it's not really an interesting question in
+light of the four color there. But an interesting question
+is planar 3 coloring. Given a planar graph, G is G three colorable. The examples I showed
+earlier of graphs that are and are not three
+colorable were both planar. So the answer can sometimes be S, can sometimes be no. So suppose you had an algorithm for three coloring that
+works on any graph. Well, it works on any graph, so it works on every planar graph. So it can be used to solve the special case planar
+3 coloring problem. So this leads us to say that planar three coloring is
+reducible to three column. I'll use this mathematical notation here or use a less
+than or equal sign. I want to emphasize
+it's not that these are numbers and we're saying one number is less than or equal to another, is just a notation where if
+you want to think of this being a quantitative measurement
+at something like the quote, hardness of the problems. So when we say planar three coloring
+is reducible to 3 coloring, we're saying that
+planar three coloring is no harder than three coloring. But again, it's not that
+there's a number out there called hardness and
+we're comparing them. It's just a mathematical notation. Now, theoretical computer scientists
+have a lot of different ways of formalizing exactly
+what reductions me. And we're going to follow the
+convention of the textbook and not get too technical
+with the formalization. So I just want to point out, I once wrote a paper a
+long time ago that had some definition of a particular
+kind of reducibility. And it starts here and it
+has an even ended here. It gets down to here. And by this point you finally
+get to the definition. So this is some formal definition of reducibility and I'm only
+putting it up here to warn you, okay, If you go out
+there in the literature, there's a lot of very
+technical definitions of exactly what reducible means. We're not going to worry about them. We're just going to use the
+intuitive definition that If you had an algorithm
+for three color, you could use it in a quote, easy way to solve planar 3 color. That's what we need. That's why we say that planar
+three coloring is no order. But now it's worth asking, well, is planar three coloring? It's strictly easier. Like should this be a
+strict less than sign? Is it the case that, for example, there could be a faster algorithm that assumes the graph is planar. So we're going to argue
+now, but that's not true. So planar three coloring is
+as hard as three colors. Or to put it another way we
+just flip these two around. We're going to show that 3 coloring is reducible to planar 3 color. In other words, we're
+going to show that if you had an algorithm for planar 3 color, you could call it and only just once essentially in order
+to solve the 3 coloring problem. So here's how you do it. We're going to start with a graph. And it may not be planar. And we're going to convert
+it to a planar graph so that the new planar graph can be three colored if and only
+if the original graph. So what is it that makes
+a graph non planar? It's that you try to draw
+the edges and across the chip so we can replace
+the sum graph right here. So picture this a, B, C, and D. There is a subgraph
+of a larger graph and there's an edge
+AAC, another edge BD. If we can replace these with the larger subgraph that
+maintains the color ability. In other words, it's three colorable now that means it'll
+be three colorable after. And if it's not three colorable now, looking not three colorable after, then, we'll get a planar
+graph and we can just ask this algorithm for planar 3
+color in, Hey, what do you think? Is this graph three colorable? It'll give us the answer
+to the original graph. So you replace it with this thing. So you can kind of
+visually inspect and see that there's no
+edges crossing here. So if you replace to
+these four nodes and these two edges with all
+these nodes and edges, you've gotten rid of that,
+cross it and you could do this iteratively to every edge
+crossing in your graph. And now we want to argue that we've maintained the three
+color ability of the graph. So let's imagine that
+you had a and b. Are these two colors, and we'll just call
+them orange and green. And we want to argue that no matter
+how you color the rest of it, if you were able to color DNC
+different before, you still can. So if we look at this graph, we can see that a and b
+are different colors here. So the middle one, we have no choice. It's connected to both, so it's gotta be the third color,
+we'll call it blue. And then we can kinda do this move for a scene
+or whenever we notice a node is connected to two other nodes that are
+both different colors. It has got to be the third quarter. So this one right here
+has gotta be green. Now we have a choice here. This node here is connected to two. Great. So we could color blue
+or we could color it aligns. So we're going to do bowl.
+We're going to come back. See, let's suppose
+the colored in blue. How would that force r-hat? Well enforced this to be orange. It will force this to be blue, but for this to be green. And again, you can trace through
+and see each time you're coloring a node that's connected to other nodes that
+are different colors. So you have no choice. This is forced to be orange. This here is forced to be orange. This is forced to be green, and it's connected
+to orange and blue. This is forced to be blue, and this is forced to be black. As you can see, there's
+a fourth color that we need because we have
+all three colors here. And there's nothing we can do here. Okay, so maybe that
+was the wrong choice. We shouldn't call it disability. Let's color it orange instead. Okay, that forces our
+hand here, here, here, here, here, here, here, and here. And we see, okay, so we just made the wrong choice
+to color this blue. So essentially we are forced
+to color this orange. And so we can get these and
+then look at what's happened. Whatever was the color of B, we've forced the color of B
+prime to be the same, that, and whatever was the color of a, we force the color of a
+prime to be the same thing. So if you have some coloring of the original graph,
+that works, right? When you do this replacement,
+you might think, well, you're now no longer forcing the same constraint in
+the original graph. C would have been forced to
+be a different color than a. But C and a are not
+connected anymore. But C is connected to a prime. And a prime is forced by the design of this graph in the middle to be the
+same color as that. So essentially we've drawn a new
+subgraph and it has no crossings. But it forces these
+kinds of corners of the subgraph to have the same
+color as the opposite corner. And so it's sort of propagated
+the constraint, the cross. So this shows that if a and
+b are different colors, and let's just call
+them orange and green. It forces the colors on the
+opposite side of each of them in this little gadget here
+to be the same color as the one opposite it. So now we can say, well, what if a and B were the same color? And you can do a similar argument, you can trace through and show if a and B are both, let's say green, the only way to color
+the middle of this thing forces B prime and a prime
+to both be green as well. So in other words, if this
+original graph is 3 colorable, this one over here will be
+as well, and vice versa.-e
+
+en-ECS 220 1c_4.2-3 CNF-SAT.txt
+
+Okay, so let's look at another
+type of combinatorial problem. So this is motivated in the textbook by talking about a dinner party
+and early fancy dinner party. Where the authors say, suppose I have a bottle
+of an excellent Palomar. It's like a wine, a fresh quail with a bird and some delicious
+rockfall, that's Achaeans. And you make the observation that, well the Palomar pairs
+beautifully with the quail. So it would be crazy to serve the bird without the
+why the poem are. So we can formalize
+that as the constraint. If quail Then palmar another, if we have the quail than
+we should have the Palmer. And remember that conditional
+statement is equivalent to not quail or are. So we can write that as
+not q or p. So however, we choose to put this meal together, we should obey this constraint. We say, well such a light one and
+the Palomar would be overwhelmed by the rope for so I can't possibly serve it and the
+rock forward together. So in addition to this
+constraint, we want to say, and we should satisfy the constraint, not p or not. My friend likes both
+quail and ROCC for her. So I would like to serve
+at least one of them. So we want to say and q or r. And finally, I simply must have at least the hallmark or
+the quail and p or q. So we call this a Boolean formula. And it takes three inputs that are Boolean variables
+called P, Q, and R. And it's satisfied, meaning we can set its value to one by
+setting P equals one, q equals one, and r equals 0. You can trace through
+that and see that. Now supposedly came up
+with a new constraint. And we say, well, my
+cats very fond of quail. I serve it without some
+rogue 4 to distracter, my guest will find is
+portions stolen away. So that means we've added a new
+constraint it and not q or r. And it turns out this new formula is unsatisfiable no matter how
+you assign values to p, q, and r, all eight of them
+make this thing equal to 0, so it cannot be satisfied. So this is an example
+of what we call a conjunctive normal form
+Boolean formula or a CNF. Cnf formula is a conjunction, meaning an end of
+what we call clauses. And a clause is a big OR of
+formulas we call literals. And a literal is just one of
+the inputs or its negation. So R is a literal, NOT P is a literal, NOT Q as a literal. And then you, or several of them
+together and you get a clause. And then you take several clauses
+and you take the end of them. And that is a CNF formula. So the formula is
+satisfiable if there's an assignment of zeros and
+ones to the variables, that makes it true, right? I'm assuming here 0 is
+false and one is true. So one of the things that
+makes a CNF formula nice is that there's a nice sort
+of way to think about how do you satisfy a CNF formula? Well, it's a big end of clauses. And to make an end true, every individual
+input has to be true. So in other words, you have
+to satisfy every clause. That's what makes a
+CNF formula satisfied. So the decision problem
+we call CNF SAT is, given a CNF formula, is unsatisfiable, is there a way
+to satisfy all of the clauses? The textbook calls this simply sat, but I prefer to use SAT for general formula is that
+don't have the CNF form. There is sometimes a use
+and doing non CNF formula. So I'm going to call this CNF SAT. Now, this is contained in NP. Why? Really pause and think about it. Well, the witness in this case is the satisfying
+assignment, right? The way that I can prove to you that this formula is satisfiable is I give you an assignment of zeros and ones that you can just
+plug into the formula. And you can just iterate over
+each clause and make sure that that assignment
+satisfies those clauses.-e

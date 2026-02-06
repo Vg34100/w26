@@ -1,0 +1,36 @@
+Now the last proof we did, as we often do, we left
+out a few details. And one of the details we
+didn't really spell out was that we assumed that when we want to run some program that runs for
+a certain amount of time that we can first calculate
+how much time it runs for. So in other words, what we did was we
+wrote down on input x, the pair X comma 1 and T of n
+minus n copies of one, right? In other words, we assume
+we can take string. We started with an
+extended to be length T of n or T was the time-bounded
+we were concerned. So that assumes we can calculate T and then given n.
+But what if T of n is itself a computationally
+difficult function that cannot be computed
+in time 0, t of n. Now that wasn't true of
+the function we had. It was like two to the n cubed. And if we were dealing with
+the different XP machine, it would have been 2 to the
+n to some other constant. Those can be computed, but in time linear in
+the time-bound itself. But what if you had a
+function like this, a time-bound T of n
+equals say two times, then if the nth Turing machine
+halts and it's one otherwise. So whether it's even or odd could tell you about the halting problem. This is not even a
+computable function. Now if you allow really
+pathological time-bound, not exactly this one,
+but if you allow pathological time-bound such as this, then it's possible to prove very pathological theorems such
+as there is a time-bound t of n, such that time of T of n equals time of two to
+the two to the two to the t. So we're simply going to disallow such
+functions as time bounds. And we're going to
+formally define a function T that takes as input
+a natural number, outputs a natural number
+to be time constructable. If there's a program that on input will say one to the n and so on, on input, a string of
+the length we care about for our time-bound but not the string our machine is going to process. We just want to know how
+long is that string. And so you write down and copy
+the one you want to be able to compute the number t of n
+in at most t of n steps. And this is true of basically every time-bound we tend to talk about. And n squared two to the n, 2 to the n squared, et cetera. But subsequently from
+now we're going to assume all time-bound are
+actually time constructable. So we don't get these sort of
+pathological results like about

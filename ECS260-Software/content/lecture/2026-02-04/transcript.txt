@@ -1,0 +1,437 @@
+Pablo [0:23]: become a software developer through the ai stuff that maybe you don't have a working windows version or companies
+Pablo [0:28]: it would be really interesting to see whether ai would affect the global site
+Pablo [0:29]: much
+Pablo [0:30]: more
+Pablo [0:32]: but any other
+Pablo [0:35]: thing that you would use
+Pablo [0:38]: yeah
+Pablo [0:48]: i think it'd be interesting to see the difference in ai visage in memory program it's easier to generate a python function
+Pablo [0:59]: than knowable language like hardware ai and this paper only
+Pablo [1:07]: chose one that affects everybody but you're right that would be tremendously
+Pablo [1:16]: i would argue though at some point all languages very complete
+Pablo [1:17]: and the way coding is done
+Pablo [1:24]: it's not that different except for some subtleties very strongly typed languages
+Pablo [1:27]: for those of you who understand this
+Pablo [1:31]: i would
+Pablo [1:34]: think strong type in
+Pablo [1:38]: the way ai performs and maybe
+Pablo [1:43]: it could slow it down the adoption of ai to code in such languages
+Pablo [1:48]: draw or lisp whatever the functional language
+Pablo [1:51]: which
+Pablo [1:51]: connected
+Pablo [1:53]: but interesting
+Pablo [1:59]: tool that is more general
+Pablo [2:01]: okay
+Pablo [2:04]: so we are seeing
+Pablo [2:07]: that okay so this is very interesting has been done right
+Pablo [2:11]: generalization to other language is not
+Pablo [2:12]: but you can use this now
+Pablo [2:20]: in many papers are coming out now on how the development process is affected
+Pablo [2:23]: so look forward to your readings on those
+Pablo [2:28]: now i haven't heard of this
+Pablo [2:32]: wind skirt anybody have done anything
+Pablo [2:33]: yeah what does it do
+Pablo [2:37]: like her servant changes the code
+Pablo [2:48]: did you guys hear the token ai web tonight in an argument with nvidia they're complaining that chips are too slow
+Pablo [2:49]: for inference
+Pablo [2:54]: it's interesting when somebody says your cheeks are too slow but it's the only cheap available
+Pablo [2:56]: the us
+Pablo [3:07]: so i don't know where openai is getting this thing is it forcing media to develop faster immediate time cd when it's developed
+Pablo [3:17]: sure but i think you may be right but i think what's happened to me something even more
+Pablo [3:20]: serious i think they're comparing it with chinese
+Pablo [3:20]: chips
+Pablo [3:23]: i don't know if you know vagina
+Pablo [3:33]: we created this monster right we stopped the shipment of cpu but it was there and they developed their own and now they're working better they have some amazing gp
+Pablo [3:34]: us that they've developed
+Pablo [3:38]: and openai certainly has visibility in that country
+Pablo [3:42]: they
+Pablo [3:50]: 're just telling me the nvidia was supposed to be an openai one hundred billion dollars by gpus
+Pablo [3:53]: nvidia which is crazy
+Pablo [3:56]: but now the deal is off
+Pablo [3:58]: because of this argument
+Pablo [4:02]: and yet the market hasn't picked this up so there will be some changes in market
+Pablo [4:11]: this is what really worries me the enterprise adoption people are adopting it before we have studied this properly
+Pablo [4:12]: i guess that always
+Pablo [4:12]: happens
+Pablo [4:25]: let's move on before this so they trained in neuroplastic particles called degenerated python function
+Pablo [4:34]: they are doing it well if you want to read it in the supplementary this is what happens in the journals they don't bother you to be
+Pablo [4:38]: done you can put it up in may paper it's really about the results
+Pablo [4:42]: creating a tool is not a result
+Pablo [4:43]: it's a starting
+Pablo [4:43]: point
+Pablo [4:49]: and then what they did was they collected data from over thirty million github comments
+Pablo [4:59]: they could say something if you guys remember the night they vaguely say something like all the gift cuts python commits
+Pablo [5:01]: but i'm not sure
+Pablo [5:10]: github has billions of repositories so it sounds too low did anybody pick up on how they selected the thirty million
+Pablo [5:13]: anybody
+Pablo [5:22]: for those of you i mean for all of you all of you are in the trenches that type of a leader is essential
+Pablo [5:26]: because it tells you how they filter what they decided to do
+Pablo [5:34]: it immediately raises questions about bias did they collect just the voting group detection like everything
+Pablo [5:41]: they said that they collected things recursively the repository did they look at forks
+Pablo [5:47]: did they look at only the main functions if so i mean the main branch and the only domain branch
+Pablo [5:52]: have all these been corrected already meaning maybe i use ai
+Pablo [5:56]: to code and then i corrected it then i submitted this as my own
+Pablo [6:01]: so it looks like human but it was maybe ai so we don't know
+Pablo [6:17]: how well does this distinguish between human modified things versus the normal ai i don't know so anyways the thirty million to understand how that came to be how it was filtered and they didn't do a good job
+Pablo [6:20]: and i didn't go to the job but the supplement
+Pablo [6:22]: ary site
+Pablo [6:26]: but anyways it is where we are it could be a source of light
+Pablo [6:33]: one hundred sixty thousand software developers are completed this thirty million people
+Pablo [6:37]: plus ai box if you want those
+Pablo [6:42]: and then they track how fast and where the encoding tools take
+Pablo [6:42]: hold
+Pablo [6:45]: and
+Pablo [6:46]: this
+Pablo [6:50]: is interesting plot number one on adoption velocity
+Pablo [6:59]: so ai usage encoding jumps from five percent in twenty twenty two to nearly thirty percent again
+Pablo [7:02]: nearly thirty percent in twenty
+Pablo [7:02]: twenty four
+Pablo [7:06]: if you extrapolate from this
+Pablo [7:10]: it should be now close to forty
+Pablo [7:12]: at the end of twenty twenty five
+Pablo [7:20]: so in twenty twenty six no doubt we will be crossing some very very important line
+Pablo [7:24]: which is more code will be written by ai
+Pablo [7:27]: it's in a very twenty six or twenty seven
+Pablo [7:37]: and we're talking about across github meaning all of these things and you can imagine similar things happening
+Pablo [7:40]: commercial settings and government settings
+Pablo [7:43]: and so on perhaps if the government the slowest
+Pablo [7:49]: forty to fifty percent already
+Pablo [7:57]: now look at this plot it's a very very interesting plot they're presenting presenting multiple things
+Pablo [8:01]: okay let's discuss all of them and i want you to
+Pablo [8:03]: tell me what it is there for
+Pablo [8:08]: example pick one thing and tell me what it is
+Pablo [8:13]: so pick one i told me about
+Pablo [8:20]: just take the main line
+Pablo [8:28]: you can take me the jumps
+Pablo [8:45]: at the end of
+Pablo [8:45]: twenty four
+Pablo [8:58]: so we are seeing an increase yeah
+Pablo [9:01]: from the look
+Pablo [9:02]: s of
+Pablo [9:14]: p but from the circuit the adoption increasing the brighter the model gets i assume like the spikes are when like a new state of the art coding model was released
+Pablo [9:19]: as you like end of twenty twenty five is focus would be my guess
+Pablo [9:31]: or it could be the opacity or something that might give more trust maybe even microsoft copilot did everything around day twenty twenty one
+Pablo [9:38]: well what happened there is
+Pablo [9:42]: the copilot preview i was talking about twenty five
+Pablo [9:42]: okay
+Pablo [9:45]: you're right so this corresponds to some jumps
+Pablo [9:48]: but you can see some plateaus
+Pablo [9:53]: what do you think the ten percent means over there for like a year
+Pablo [9:56]: why wasn't there growth
+Pablo [10:03]: it seems like people were you know target yourself to then stay steady so early adopters
+Pablo [10:06]: why weren't more people
+Pablo [10:13]: taking one because early adopters were likely you know telling people how good this was
+Pablo [10:15]: n't that good
+Pablo [10:21]: and then we all heard about so usually when you hear something about six to eight months delay
+Pablo [10:25]: most people said do this work over the long run
+Pablo [10:30]: so people already knew that the code was bad
+Pablo [10:36]: full of bugs and so on around that time and this is what we've been hearing in our return
+Pablo [10:38]: people
+Pablo [10:39]: knew that
+Pablo [10:40]: but then
+Pablo [10:43]: very quickly with the chat gpt
+Pablo [10:48]: there was a jump and now there's another plateauing twenty four
+Pablo [10:52]: which seems to be again increasing we don't have enough data
+Pablo [10:59]: so let's take a look at this based on what we've been saying about data
+Pablo [11:02]: these things here
+Pablo [11:04]: are
+Pablo [11:04]: errors
+Pablo [11:07]: standard errors around the middle
+Pablo [11:14]: so they observe this actually is a whole distribution maybe it looks like that
+Pablo [11:19]: so at each point on that curve
+Pablo [11:37]: at each point of this curve
+Pablo [11:45]: they keep as the standard error but really
+Pablo [11:49]: there is a distribution
+Pablo [11:53]: of all the commits they had in that that year
+Pablo [12:07]: how many of those were generated so which year was ai versus non ai and the standard error just captured the standard error around the mean now in statistics
+Pablo [12:12]: when the standard error ranges overlap
+Pablo [12:14]: there's no statistical difference
+Pablo [12:16]: between those numbers
+Pablo [12:19]: so even though here it looks like there is a jump
+Pablo [12:22]: you look at these bars overlapping
+Pablo [12:31]: this is really like the box plots they're not using box plots here but like the box plots is there a quartile ranges of the rapid so no difference
+Pablo [12:34]: there's a difference here
+Pablo [12:40]: and there will be a difference between this point and this point but not between this point and this
+Pablo [12:41]: point
+Pablo [12:44]: but there is a trap
+Pablo [12:47]: now ai coding existed before
+Pablo [12:56]: but it was just not adopted what do you think this means here corrective shears what do you think
+Pablo [13:12]: so there's multiple things they made sure that it was at zero before twenty two
+Pablo [13:15]: so they subtracted some initial
+Pablo [13:20]: usage but also as you go through this there's more and more commits
+Pablo [13:29]: and if you have more and more commit the error ranges will get smaller and smaller so they correct it for
+Pablo [13:29]: that
+Pablo [13:30]: also
+Pablo [13:32]: okay
+Pablo [13:37]: if
+Pablo [13:39]: we and this is just for the us
+Pablo [13:41]: and the us is a leader
+Pablo [13:43]: in this leader
+Pablo [13:51]: you can also say us is the laziest because they adopt ai the most they use ai to code the
+Pablo [13:51]: boiler
+Pablo [13:53]: so here's the rest
+Pablo [13:55]: quiz number two
+Pablo [13:59]: i'm not sure i can tell the
+Pablo [13:59]: difference
+Pablo [14:01]: which country
+Pablo [14:01]: is this
+Pablo [14:05]: looks like germany
+Pablo [14:08]: and then a friend
+Pablo [14:13]: now it's interesting we all know why france
+Pablo [14:15]: would be
+Pablo [14:16]: wife
+Pablo [14:17]: sorry
+Pablo [14:19]: because a clock
+Pablo [14:20]: right
+Pablo [14:37]: russia
+Pablo [14:43]: seemed to be trailing
+Pablo [14:44]: not sure why
+Pablo [14:47]: i mean this is interesting look at this job here
+Pablo [14:50]: and then i
+Pablo [14:54]: don't understand that
+Pablo [14:56]: which confused that
+Pablo [15:02]: i wonder if they had some regulation
+Pablo [15:03]: in the country
+Pablo [15:05]: to regulate
+Pablo [15:16]: i am very surprised that the chinese have taken this
+Pablo [15:17]: i don't know what to make of it
+Pablo [15:21]: because china has so many companies that are working for the rest of the world
+Pablo [15:31]: and their own technology is developed so highly i mean they have some of the best software for self driving cars
+Pablo [15:35]: some amazing manufacturing pipelines
+Pablo [15:39]: they're moving so fast
+Pablo [15:44]: they discover how to invest without ai so maybe they don't need ai
+Pablo [15:49]: yeah
+Pablo [16:02]: there's plenty of chinese people the great chinese wall it world is not prevented anybody from doing
+Pablo [16:03]: something
+Pablo [16:04]: they want
+Pablo [16:05]: as many of us
+Pablo [16:06]: know how to do it
+Pablo [16:11]: i don't know
+Pablo [16:18]: to me something that stands at odds with how quickly their technology is
+Pablo [16:19]: developing
+Pablo [16:24]: maybe they may have indemnities regular
+Pablo [16:26]: an individual would not do that
+Pablo [16:28]: unless
+Pablo [16:29]: it's regulated
+Pablo [16:37]: there's plenty of benefits to be had by the question because this is mostly open source
+Pablo [16:41]: work they may have any license
+Pablo [17:02]: so like in my head i feel like the enterprise trend should follow this but i'm still wondering if the enterprise trend might be a little different like for companies because they have more regulations and guard risk to whatever google said even last year more than half of its goal is
+Pablo [17:03]: ai
+Pablo [17:04]: of course google
+Pablo [17:05]: is one of the leaders
+Pablo [17:07]: many smaller enterprises
+Pablo [17:08]: will not have that
+Pablo [17:13]: i think if anything enterprises are at least at that level
+Pablo [17:16]: i don't know if it's the average we are looking at
+Pablo [17:18]: the
+Pablo [17:19]: man
+Pablo [17:23]: what else
+Pablo [17:29]: in regards to china because it'll export controls for gpus
+Pablo [17:31]: for example
+Pablo [17:34]: very good
+Pablo [17:39]: in fact using these tools means paying twenty dollars a month at least
+Pablo [17:41]: nowadays
+Pablo [17:43]: or at least having a
+Pablo [17:44]: commercial license which
+Pablo [17:45]: costs
+Pablo [17:46]: tens of thousands
+Pablo [17:49]: perhaps that's what it is
+Pablo [17:54]: and maybe that's why china has been pushing and we don't know the usage of
+Pablo [17:55]: that
+Pablo [17:56]: being open
+Pablo [18:00]: of course they've been pushing that also to bankrupt
+Pablo [18:02]: ai industry
+Pablo [18:06]: but the open models can be used locally
+Pablo [18:07]: track
+Pablo [18:08]: the individual
+Pablo [18:11]: unless you
+Pablo [18:12]: put
+Pablo [18:22]: the gen z
+Pablo [18:23]: what do you think about that
+Pablo [18:29]: sixty five percent users that are related
+Pablo [18:37]: do you think that's because they feel disproportionately here
+Pablo [18:41]: the usage of these tools or it's because they're just more comfortable
+Pablo [18:43]: and don't care as much
+Pablo [18:45]: as the rest of
+Pablo [18:49]: how many here
+Pablo [18:52]: jennifer
+Pablo [18:56]: okay all of you
+Pablo [18:59]: all are probably using these rules in great ease
+Pablo [19:09]: how much how much do you care
+Pablo [19:14]: that using these tools can cause something down the line
+Pablo [19:18]: you're not prepared
+Pablo [19:22]: meaning it will be borne bugs or somebody will have to rewrite things
+Pablo [19:25]: and do not understand how this
+Pablo [19:29]: or any other
+Pablo [19:29]: employees
+Pablo [19:32]: because i don't sleep at
+Pablo [19:42]: the third pragmatic
+Pablo [19:42]: right
+Pablo [19:46]: help me do the job that's good
+Pablo [19:51]: but now that you know from this class there
+Pablo [19:53]: 's an interesting point
+Pablo [19:59]: j and millennials are the worst users of
+Pablo [19:59]: these technologies
+Pablo [20:05]: in fact they're the worst users to themselves they don't benefit
+Pablo [20:14]: this was a cute couple of thoughts which i thought
+Pablo [20:19]: everybody knows that in general
+Pablo [20:26]: women make better members of our programming team for several reasons
+Pablo [20:32]: one of the reasons is because they later more serious their attitudes
+Pablo [20:36]: towards programming there's a reason why they start with specialists in the us
+Pablo [20:38]: because high schools
+Pablo [20:44]: don't encourage women as much as all sorts of systemic obstacles
+Pablo [20:52]: to this that you don't see some other kind of anyways women there's no differences in
+Pablo [20:53]: the brain per se
+Pablo [20:57]: but women's coding is kind of safer
+Pablo [21:03]: they can cause more complex things and often the pr they submit are accept
+Pablo [21:05]: ed in a shorter
+Pablo [21:09]: but anyway they do make
+Pablo [21:13]: great addition to teams so what they tested here is
+Pablo [21:18]: and if you're interested about this by the way
+Pablo [21:22]: the gender diversity of peace
+Pablo [21:25]: is the best thing you can do for your team
+Pablo [21:28]: it will increase your productivity
+Pablo [21:30]: after some initial structure
+Pablo [21:35]: it will discover
+Pablo [21:39]: you could actually use ai
+Pablo [21:48]: if you control for gen z control women and memory
+Pablo [21:58]: now people who have more years than we have used ai less
+Pablo [22:03]: and this is very consistent with the gen z
+Pablo [22:07]: people are more cautious more careful
+Pablo [22:13]: people who have lawyers and people have established pipelines and it's very difficult to change and establish
+Pablo [22:14]: violence
+Pablo [22:18]: when i was switching from
+Pablo [22:21]: i was using emacs
+Pablo [22:23]: how many of you know
+Pablo [22:27]: how old
+Pablo [22:32]: switching to an id
+Pablo [22:34]: iot
+Pablo [22:42]: some of us older folks and as you get older it's all about
+Pablo [22:47]: so maybe that's part of it part of the physical app
+Pablo [22:53]: but still even very highly tenured people
+Pablo [22:56]: twenty percent
+Pablo [23:00]: of their coding
+Pablo [23:02]: that's remarkable
+Pablo [23:05]: for somebody who has fourteen years of
+Pablo [23:06]: opinion
+Pablo [23:07]: due to phuket
+Pablo [23:11]: and as you'll see that will come back in an unexpected way
+Pablo [23:13]: okay
+Pablo [23:15]: this is what they were really after
+Pablo [23:20]: to show how productivity changes in the presence of ai
+Pablo [23:25]: they chose a very simple notion of productivity which i disagree with
+Pablo [23:29]: quite possible
+Pablo [23:30]: and
+Pablo [23:38]: it's actually probable that as you code more you'll create and if you're forced to go to war we're able to code more you create the same attitude
+Pablo [23:39]: more like
+Pablo [23:41]: that's well known
+Pablo [23:43]: but for
+Pablo [23:46]: their saved here very simple and
+Pablo [23:54]: i'm not sure that it holds but they look at it over multiple quarters over the past ten years
+Pablo [24:01]: so they find the trend and the trend is three point six increase per second increase in the past five years
+Pablo [24:05]: used to ai for three point sixty
+Pablo [24:06]: percent
+Pablo [24:08]: that's remarkable
+Pablo [24:10]: because
+Pablo [24:12]: if you accumulate this
+Pablo [24:18]: that gives you a lot of advantage of course there has to be a saturation period at some point
+Pablo [24:23]: the other thing that they found is the experience gap
+Pablo [24:28]: contrary to expectations ai benefits experienced developers more
+Pablo [24:35]: why they try to answer this and this is still open ended so anybody wants to
+Pablo [24:39]: go after this
+Pablo [24:49]: what's your more experienced people use ai for versus less experience they found that they use it to expand into new domains
+Pablo [24:56]: they experiment with libraries things that they don't know about versus holding the boiler
+Pablo [24:59]: people
+Pablo [25:03]: so more experience program is a use ai
+Pablo [25:08]: program that the mundane but also
+Pablo [25:09]: explore new
+Pablo [25:13]: stuff less experienced developers use ai more
+Pablo [25:18]: thirty seven percent of their code but see fewer productivity benefits
+Pablo [25:21]: because they use it to not work as hard
+Pablo [25:25]: rather than use it to free ourselves
+Pablo [25:32]: somebody magically came and said i'll give you twenty percent
+Pablo [25:37]: they came as a three of claims
+Pablo [25:39]: in the eight hour day
+Pablo [25:44]: we only work six hours what are you going to use the other two hours
+Pablo [25:54]: it's your two hour you can use it for work for sleeping for exercising for dating
+Pablo [25:57]: what are you going to use it for
+Pablo [26:01]: and this depends of course where your career you are
+Pablo [26:02]: let's say
+Pablo [26:04]: at your stage
+Pablo [26:06]: in the careers what are you going to use it for
+Pablo [26:08]: let me hear some opinions
+Pablo [26:11]: i give you
+Pablo [26:18]: yes
+Pablo [26:22]: depending on time of day so your work is finished in six hours
+Pablo [26:25]: okay
+Pablo [26:36]: but if it's later in the day i was like coding after doing all work that i'm going to play
+Pablo [26:38]: so maybe i would combination
+Pablo [26:43]: anybody else
+Pablo [26:54]: so you would do more reading to learn new stuff maybe for work maybe about philosophy maybe about homer whatever
+Pablo [27:05]: probably spend that time on some personal projects to explore what i'm more interested in just at those stuff
+Pablo [27:07]: rather than dealing with that
+Pablo [27:14]: what you said is so interest
+Pablo [27:16]: ing to me because
+Pablo [27:20]: you're saying you're kind of assuming there
+Pablo [27:20]: somewhere in there
+Pablo [27:23]: that what you do for six hours is not that interest
+Pablo [27:24]: ing
+Pablo [27:31]: or that you might be even more interested in an additional thing
+Pablo [27:39]: this is very consistent with how young people feel about software engineering jobs
+Pablo [27:47]: that you're doing work for the men regardless of how much they pay you it doesn't necessarily occupy all of the interest
+Pablo [27:51]: and it doesn't allow for growth difficult
+Pablo [27:56]: to reach itself so that you can do more marketable
+Pablo [28:04]: i've always claimed that modern software engineering job
+Pablo [28:09]: it's consistent with
+Pablo [28:13]: i mean google for example
+Pablo [28:16]: think about google allows twenty percent
+Pablo [28:17]: anyway
+Pablo [28:23]: are you saying you would use those two hours
+Pablo [28:25]: for the company or just for your
+Pablo [28:26]: self
+Pablo [28:27]: you're free to choose
+Pablo [28:33]: if you use them for the company they'll probably see that you're more productive
+Pablo [28:35]: maybe you can elevate you
+Pablo [28:35]: faster
+Pablo [28:37]: use it for yourself
+Pablo [28:40]: you may think start a new venture
+Pablo [28:43]: so
+Pablo [28:43]: what do you think
+Pablo [28:45]: which one
+Pablo [28:49]: for the company
+Pablo [28:51]: or for yourself
+Pablo [28:53]: the two hours
+Pablo [29:00]: personally it would be more leaning towards myself like i said like long term
+Pablo [29:01]: networks and stuff like that
+Pablo [29:04]: by the way the best thing to do
+Pablo [29:05]: before you start working
+Pablo [29:06]: for companies to start
+Pablo [29:10]: some llc or something if you have
+Pablo [29:16]: some ideas because if you sign something many of these big companies after you start working for them
+Pablo [29:18]: they may end up
+Pablo [29:19]: owning
+Pablo [29:20]: that
+Pablo [29:21]: thing right
+Pablo [29:23]: but if you start before
+Pablo [29:25]: the moment of higher you can
+Pablo [29:26]: say except for
+Pablo [29:27]: what i
+Pablo [29:28]: already create
+Pablo [29:34]: anybody else how would you use this
+Pablo [29:38]: i would just sleep
+Pablo [29:41]: okay
+Pablo [29:50]: it's easier for us to chase that instant gratification we don't want to do more work
+Pablo [29:51]: for your company
+Pablo [29:53]: work on yourself
+Pablo [29:55]: what is that tweaking
+Pablo [29:58]: or what is that developing yourself that's because that's like
+Pablo [30:05]: you see results right there other than if you use that doesn't pay off until
+Pablo [30:09]: way later but that's why people are more likely to
+Pablo [30:19]: the standard test when you have a three year old
+Pablo [30:21]: when you put a cooking
+Pablo [30:25]: if you wait for an hour
+Pablo [30:28]: with the cookies go to the another
+Pablo [30:33]: three year olds fail the death
+Pablo [30:39]: almost fall so it's very ten to twenty percent
+Pablo [30:42]: able to delay the gratification
+Pablo [30:45]: but people who delay gratification

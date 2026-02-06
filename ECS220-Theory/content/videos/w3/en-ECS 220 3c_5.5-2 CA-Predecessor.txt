@@ -1,0 +1,63 @@
+So here's a problem that sort of related to predicting something about the behavior of
+the cellular atomaton. And the problem is given
+a cellular automaton, which again is given
+by a function mapping in its neighborhood
+states to the next state. And here we're going to
+relax the problem a bit. We're going to allow
+the cellular atomaton to have more than two states. So Q is it states that it
+could be bigger than two. And F is some function describing how to turn your
+current set of neighboring states, including your own
+into your new state. And you're given a configuration
+C and you want to know, does C have a predecessor? In other words, is there
+some other configuration P, such that if that wherever
+the configuration, the next one would be the
+configuration C, we're given as input. So if no predecessor P exists, then c is called a so-called
+Garden of Eden configuration. So for example, in the Game of Life, this is a Garden of Eden
+configuration, which is not obvious, but this was proven that there is no configuration that if you update at once would
+turn into this one. So the 1D version of this problem is contained in P can be
+solved as not obvious, there's an exponential number of potential configurations you
+might think you have to check. But with some clever
+dynamic programming, you don't have to check them all. And sometimes I assign
+that as homework. But in 2D, this problem is NP-complete and that's
+a whole show right now. And again, this is why I like having a big variety of problems
+to choose from that are NP-complete is you
+don't always have to reduce 3 SAT or NAT set something. Cas are very geometric
+as our timing problems. And so the way the
+textbook does this proof is by showing that
+trauma know Thailand, which we said was NP-complete,
+we didn't prove it. But the, the version
+where you only get one tile and it's that
+little L-shaped thing. This reduces in polynomial
+time to see a predecessor. So what we're going to have
+many states in the CA, but our configuration we give as
+input will have only two of them, called R&B for region and background. And the idea is that in
+the tiling problem work, this is going to correspond to
+the region we want to tile. So the tiling problem we're given, we're not given tiles
+because the trauma know tiling is just you're only
+allowed this triangle. But we are given a region. So imagine the region we were given
+look like what's in gray here. Then the CA configuration
+of output will be this configuration that has this region set to a
+special state here. And we're going to
+have an additional CA, state for each Trump that indicates its orientation
+and relative position. So for example, if a trauma
+0 is oriented like this, then the middle one will
+correspond to see a state a, the right will correspond
+to see a state B, but then that same part of the trauma will be F when it's
+oriented differently. So what the transition function that we designed for the CA is checking, is essentially consistency. So the idea is, how would we make this state? Well, we would make it
+if we were able to tie all the region with rotated versions of this tile with these states
+set properly, right? And that the whole point
+of the transition function is that it's just
+going to check, okay, given the orientation
+that my state claims, the trauma nose and then again, it can look, right. Every state can see it's whole neighborhood
+around it of radius one. So we can see all of them. You can see far enough to see the other two parts of the
+trauma know so for instance, if I'm in state age, it means I know that
+I'm part of a trauma. Know that I'm in the middle and there's a G above me and there's an eye to the right. So I should check is is if I'm age, is there actually a G above
+me and an eye to the right? Similarly, if I'm a C, I should check is there and a above me and a B above and to the right. So you check for that
+and you also check some other little local
+consistency conditions. And if they're all
+met, you say Great. All of us who are in trauma knows we're going to
+immediately change to our and any of us who are not in trauma has an a or
+b. We're just going to state B. And if anybody finds
+an inconsistency, they won't change to our. So only if you can actually tile this region in this way with type tiles that are
+properly oriented, where the transition function actually get you to
+this configuration.

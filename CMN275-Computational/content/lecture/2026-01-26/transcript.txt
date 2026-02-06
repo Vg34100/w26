@@ -1,0 +1,1100 @@
+Pablo [0:47]: this is going to material to
+Pablo [0:48]: change
+Pablo [0:58]: all right
+Pablo [0:59]: welcome everybody
+Pablo [1:00]: how you doing
+Pablo [1:04]: okay
+Pablo [1:06]: so
+Pablo [1:07]: that holiday
+Pablo [1:14]: takes us a little bit of schedule with regard to what we talk about
+Pablo [1:19]: since we're going double speed right so we have two sessions actually in a week
+Pablo [1:22]: and with one missing now we have like four behind
+Pablo [1:30]: but that's that so i already said so claudia won't be coming today so we're not going to get to nlp today who is on it
+Pablo [1:35]: who else is on nlp
+Pablo [1:39]: we're on session four now
+Pablo [1:44]: yeah so today we still have chion doing epic data right
+Pablo [1:52]: and then we have ananya with sna and someone with sna where are we gonna get to today
+Pablo [1:56]: and then we have pablo with ai and
+Pablo [1:59]: genu with ai she's not here
+Pablo [2:06]: so good at okay well i did enjoy
+Pablo [2:10]: what i saw so far
+Pablo [2:26]: but okay let's don't talk about the mlp because that will just get us off track what we did today even though it was very cool and i really appreciate what you guys isn't that amazing i don't know if you actually if you never did nlp that sounds probably just like oh yeah that's what you do
+Pablo [2:28]: but now for me
+Pablo [2:38]: it's like you know you have to get water from the well over the hill and then you just turn on the faucet it's crazy that just happened like overnight
+Pablo [2:48]: there's actually many of these things are very frustrating computational anywhere for example all the time you spend learning python
+Pablo [2:51]: how upsetting is that
+Pablo [3:02]: you're learning i don't know you're learning like an ancient language and it turns out you don't really never exist it was just for entertainment
+Pablo [3:15]: might as well have studied latin or something nothing better to do with every time i guess that's what kind of feels like so many changes here and with the nlp we had a brown back here as well
+Pablo [3:17]: i will talk more about that
+Pablo [3:30]: i'm getting off topic okay so we still hear so what we did is we first got the data and we did our network analysis and that work analysis is the most important this week also we talked already about it that you saw the lectures on making networks dynamic networks
+Pablo [3:34]: is extremely important if you want to do anything social science
+Pablo [3:55]: it's not mainstream social science still even though they're quite old science but the idea is so usually we just have one database that describes you could say nodes that's what we do in social science we describe people for organizations or countries and that's what we do and what we're interested in is how they are actually connected because that's the definition of social
+Pablo [4:07]: but we never ever go to that so we assume it's iid it's independently identity distributed which is the absolute necessity for you to do you what we call statistics
+Pablo [4:09]: like if you want to calculate a mean an average
+Pablo [4:14]: that's the assumption like it's as simple as it's as crazy as that you can even do that
+Pablo [4:17]: then everything that's based on me means
+Pablo [4:49]: which is all your t test and your regressions and your correlations and you are nova and you're vancouver and everything you learn and what you're going to do for the rest of your life is based on the idea that humans and organizations exist in isolation and none of them is connected to anybody else they're completely independent from each other but what we call that is social social it's crazy it's actually crazy how good it worked for the last two hundred fifty years if you think about it how insane this assumption is so having a second database that basically tracks how these different things are connected
+Pablo [5:00]: it's kind of like there should be the basic thing if you want to talk about social right that's just like anyway so networks are extremely important and we have several courses here on campus
+Pablo [5:29]: here in communication we have a class i think that usually cindy is professor shen is teaching we have in political science we have a class on networks in ecology with mark loubell we have a class that focuses more on small networks of organizations and how to do policy with them how you affect this policy networks and then we have two or three classes on the other side the engineering that do more what we talked about last week with that dynamics that basically look at networks
+Pablo [5:41]: theory so not necessarily because there's so many possibilities and i said that in lecture we have a network with twenty five nodes you have more possibilities to connect that network as the atoms in the universe
+Pablo [5:51]: and that's just assuming you have one simple connection between them connected or not connected you don't even have network strength
+Pablo [5:58]: you don't even have different kinds of connections twenty five notes only like one link is there it's not there
+Pablo [6:10]: that's more possibilities adults in the universe so it's mathematically crazy of course the combinatorics you can get out of that and that's worth a science by itself
+Pablo [6:15]: so professor d'souza reiser she's the dean of research and engineering
+Pablo [6:30]: she is world leader in that she has been the president of the global network association we're very lucky to have her here so she teaches a class and that every once in a while and there are other class and applied mathematics as well i think or in physics i don't know where that guy is somebody
+Pablo [6:36]: looking but you need to have as a basic linear algebra
+Pablo [6:45]: matrix algebra because that's what these matrix is in linear algebra issue by the way else we should talk about that if you want to know what i think you really need to study but yes
+Pablo [6:53]: you do need to study linear algebra yes you do need to study probability better even information theory and yes you do need to have an understanding of calculus
+Pablo [6:55]: you do need that
+Pablo [6:58]: chatgpt cannot do for you
+Pablo [7:11]: it can translate english to python you don't have to learn python and that sends anymore you need to go the basics of what it does and also here in probability theory and linear algebra you just need to understand the basics of what it is
+Pablo [7:19]: and if you have not done that it's fine take a coursera class it's not embarrassing go to sarkhan and khan academy and catch up on that but you need that
+Pablo [7:24]: really in this computational world all what we call ai or we talk about here
+Pablo [7:34]: let me bring the textbook of neural networks i have it in my office i can bring it chapter one two three is probability theory information theory linear algebra and calculus that's it
+Pablo [7:57]: and that's where it starts so you need to understand also if you just want to work chatgpt you need to understand how it works what is the probability what is actually when we talk about that so linear algebra basically matrix algebra is very important and networks you map like that one node connects to another so all of this network theory that we talked about is basically algebraic flip matrices
+Pablo [8:02]: when you apply the two machine learning it's a different thing these matrices are basically the layers of the network
+Pablo [8:08]: and the engine mechanism you have them two way you also flip them that's why the analgebra is so important there as well
+Pablo [8:13]: it's similar that's why we do network so it's connected in the network so that's why they're matrices
+Pablo [8:17]: any questions about that
+Pablo [8:49]: good i went over that very fast because you have a lot of ground to cover let's start with big data you have a presentation here feel free to connect you can come up here or you can finish and again so in the task i think we said we have three to five minutes or now we did it last time already last time i was a little bit more like it's the first time we're now going forward you've seen that so three to five minutes do the presentation facilitate motivated discussion if you go a little bit over time no problem
+Pablo [8:51]: but try to stick to that more or less
+Pablo [9:05]: as you might have noticed it's not easy to facilitate a discussion so put some thought into it it doesn't spontaneously emerge if you just say hey guys so put a little thought into that that's important
+Pablo [9:13]: and think about always think about what's your presentation method i mean you're in the department of communication how we communicate is important
+Pablo [9:24]: so depending i cannot say people ask me like oh should i make a powerpoint or not and i also replied when you asked that i don't know because i don't know what your presentation is about
+Pablo [9:38]: if your presentation is an interactive game that involves us and drags us down into a game of exploring ai and maybe have some things up that you pull up on this you don't need a powerpoint for that that would be completely counterproductive
+Pablo [9:46]: however if you tell a lot of stories where you have a lot of details like trying to follow up and trying to wrap our mind around what you do yes
+Pablo [9:54]: an image says more than a thousand words it's very useful that you put some time and effort to put these images up so we can follow along of what your teller has
+Pablo [9:58]: so that completely depends on the content of your presentation always
+Pablo [10:07]: i've seen presentations as the leading conferences of the world where guy just stands up on stage like ed sheeran he goes up on stage with this guitar it's like one hundred thousand people there all he has like that
+Pablo [10:14]: luff bought madonna needs all this production he just does it with it it depends on you and your style
+Pablo [10:19]: so think about that
+Pablo [10:20]: okay
+Pablo [10:25]: please big data go ahead what was yours hi everyone
+Pablo [11:24]: i'm cheyenne i'm a communication phd student today for today's topic on big data i wanted to talk about a trap we often fall into as researchers it's the three light effect actually i think martin mentioned this in his lecture before but i thought i found this really interesting so i wanted to discuss more about this so as a reminder the metaphor is simple so a person loses their keys in a dark alley but searches for them under a nearby street light because that's where the light is and in css we often choose our research questions based on the data availability rather than theoretical importance because we discuss that digital footprints are not representative we have to ask ourselves are we studying human behavior or are we just studying the small brightly lit corner of the internet where the data is easiest to download
+Pablo [11:32]: and we can actually this kind of practice touches on several limitations we discuss in the online lecture
+Pablo [11:52]: first data is not reality so if you study only study platforms that provide easy api access we're ignoring the billions of people who don't use those specific tools in this case we are not mapping reality we are mapping a specific platform to architecture
+Pablo [12:17]: and secondly meaning gained is not always meaningful so we can run sophisticated sentiment analysis on millions of likes or shares but if you haven't defined what a like means theoretically maybe it means agreement or it means a bookmark or it can be just a habit of users then we are just counting things without creating knowledge
+Pablo [12:32]: lastly correlation is not causation so when we use available metrics we often find patterns but we struggle to explain why they exist because the data wasn't designed to test a specific causal theory
+Pablo [12:53]: so this kind of dataface approach often leads to the research that is repetitive we see dozens of papers on the same topics like political polarization on twitter not because polarization only happens there but because the data was easy to grab
+Pablo [13:00]: and when the digital footprint we analyze is just whatever was left behind we are stuck looking at the past
+Pablo [13:09]: and i think to move forward we should think about this and discuss the way forward
+Pablo [13:45]: so these are my discussion questions i like to open the floor to hear about your own experiences as you're starting to think about your research project first have you ever started a project with a big theoretical question only to shrink or change that question because the available data or metrics didn't actually measure what you wanted also do you think what do you think about the street light effect do you think it is inherently problematic for a research practice and more importantly how can we address the limitation of available data to ensure we are producing truly meaningful research
+Pablo [13:52]: yeah these are my discussion questions feel free to share your experience or thoughts on this
+Pablo [14:02]: thank you i think for the first one so i think using secondary survey data
+Pablo [14:04]: can be a problem so i'm doing that for one of my
+Pablo [14:05]: research
+Pablo [14:07]: i'm using second
+Pablo [14:08]: ary data from pew research
+Pablo [14:13]: so i'm having i was having trouble
+Pablo [14:27]: operationalizing the variables that i wanted because i'm limited in the way they have measured data and the variables they have so i think it's a limitation when you're using the data
+Pablo [14:31]: yeah
+Pablo [14:37]: anyone else
+Pablo [14:42]: you can go
+Pablo [15:06]: no the limitation of available data i feel like as we get i really like sensor data and i think there's lots of different ways you can wear a smartwatch it'll tell you heartbeat and stuff like that but with wi fi sensing now wifi networks they can check their ways to do that but i think with an abundance of data picking the data that you want from the
+Pablo [15:16]: in some cases it may not be limited it may be so vast that you actually have to filter the noise out
+Pablo [16:02]: yeah from iqe i'm actually kind of running into this with twitter data because i wanted to look at how politicians speak over the span of an election cycle based off of primary election post primary election and at first i wanted to do all house candidates not just the ones who won the race but all of them which is not for people and then i was like oh that's very ambitious i have to curtail this so then i shrunk down to just people who won and then i had to shrink it down again to just democrats who won and not all democrats have twitter so i had to shrink down even more so the availability of data kind of reduced my theoretical scope which was big at first
+Pablo [16:11]: and if i had the time to probably couldn't fruitful but certain limitations in terms of what i could get off of twitter
+Pablo [16:14]: and what would be feasible
+Pablo [16:21]: what break apart the research question because then i would have to control for partisanship and then people won
+Pablo [16:25]: and it just kind of shrink and shrink now it's like a group of two hundred people
+Pablo [16:30]: so if i throw the h so you know five thirty eight right
+Pablo [16:49]: so in their house selection forecast models they don't have the date an update on congressional district so they try to find similar congressional district graphics and things to filming apps so i thought maybe if you have a lot of data watch ricky dankson clustering and then they can represent in place for imposters exactly right now i'm trying to resampling
+Pablo [17:01]: yeah thanks for sharing i think what you all share this really valid and that's something a lot of css researchers could relate to
+Pablo [17:12]: especially when you're using secondary data it's not really designed for our specific research questions so yeah i can definitely relate to that
+Pablo [17:19]: also one thing about digital footprints it's the data keeps changing
+Pablo [17:51]: so for my master thesis i analyze instagram post data from influencers and they kind of keep changing so influencers can change their settings so yesterday the post was public but today it's private i cannot really access it so the data keeps changing i think these are some of the these are one of the concerns or challenges we often face as a css researchers so thanks for sharing your experiences
+Pablo [17:55]: yeah i do think
+Pablo [18:04]: that's a very deep question there are two things one is that there's statistical tricks that you've just been talking about you can do that
+Pablo [18:13]: we call that sita respiricus it's always in the footnotes and that's why we want to make the world a better place
+Pablo [18:15]: we always
+Pablo [18:20]: imagine it's denmark it's like no
+Pablo [18:24]: hopefully you're not going to go out to a war with them but you're not like them
+Pablo [18:50]: that's what we don't have better data doesn't work statistically you could do that but then you know of the right data and then you just assume you assume that the street under the lamppost is exactly like the street that's in the darkness and that really doesn't again you can do some tricks and it works impressively well actually for how crazy that assumption is again
+Pablo [18:54]: and sometimes you really just have to go and get the data
+Pablo [18:58]: you really have to create and i have to like looking back at my career
+Pablo [19:09]: i do think these are undoubtedly the biggest contribution like what i'm actually known for in my research was that that i created new data and that is extremely painstaking
+Pablo [19:15]: work and it takes a long time so i was in my like in this what's a phd class like that
+Pablo [19:18]: and you were discussing about that
+Pablo [19:28]: and how the information revolution was going on and i said well we are measuring not the right thing what we are measuring actually what i did in my work in the un you just count the number of computers
+Pablo [19:45]: and then we call that information society and the information age and then we count how many computers there are and how many cables there are and whatever and in the best case or whatever like if it's broadband or narrow band because these are the things that we have you can count how many computers and cell phones are sold
+Pablo [19:50]: and how many subscriptions there are but it's not measuring the information age
+Pablo [20:05]: i said well what do you need to measure information i said well you just measure the information and then say well how can you measure that how can you measure information well do information theory we can measure it normalize it by the outsourced compression rate bits so it's a really quantifiable metric
+Pablo [20:10]: it has a certain stable point to normalize it on
+Pablo [20:13]: that's maximal entropy compression
+Pablo [20:16]: and then if you normalize it on that you can really track it over time
+Pablo [20:31]: and director of the school that was in annenberg at uc annenberg he said like that's a crazy idea first of all go take way too long to do all of that and second of all we have that what would be what would be the good out of it he was completely against it i said no no i'm going to make it my class project
+Pablo [20:42]: of course didn't finish it took four years for me to finish it but yeah it was published in science front cover and that's where the word big data comes from that we measure how big is the big data actually
+Pablo [20:46]: so that was the issue in science that partnership the growth big data
+Pablo [20:58]: with our study being on the research study the research was just like commentaries people commenting about oh yeah big data big data but there was not really research on it how much data is there how big actually is it
+Pablo [21:03]: and yeah but the appendix has three hundred pages i think
+Pablo [21:18]: and actually it was some interns from the un i had that helped me with doing that painstaking work and also really also saying how that research was or how would we figure that out for example hard disks how do you figure out how many heart disks there were there was a guy in silicon valley
+Pablo [21:22]: really lives like in the garage still like he was like from the steve jobs generation
+Pablo [21:26]: he's probably right now he was back in his late sixties
+Pablo [21:33]: and he had this company in the nineties where he shipped out newsletters to the search industry
+Pablo [21:37]: and he did that in silicon valley and he basically counted the ships that came in
+Pablo [21:49]: in san francisco and he measured how many he counted how many he did that and he tracked that and then to the storage industry back then he would shit on this newsletter and yet this was a one man show company
+Pablo [21:53]: he basically informed how is the storage going in the nineties wasn't such a big industry
+Pablo [21:56]: and he had this newsletter in paper
+Pablo [22:12]: i asked him about his report he says well i still he still has the underlying reports but he would just sell them to two hundred he had like two hundred reports that were like this big and he would sell them to these companies well we gave a few thousand bucks a pop because it was really good in primary research
+Pablo [22:19]: but he said yeah i still have them i still have them somewhere in the garage but they are like all in paper so i flew out there
+Pablo [22:23]: i really flew i was in la and i flew to san francisco and i visited him
+Pablo [22:39]: an entire afternoon took a bunch of pictures like basically flipping through his reports in his basement and taking pictures and then i brought that back it wasn't an llm that could digitize that so really i went through the pictures and put it into an excel sheet in order to do it that's really what it does
+Pablo [22:53]: and so that's how you actually you have to create new data it is extremely painstaking it's kind of like it's a little bit like indiana jones like it's not like i feel like we go to patreon but i flew up there you know and i get off the plane and that's what you need to do if you need data
+Pablo [23:09]: and often i see people kind of like oh i don't have the data so oh i just assume it's like denmark it's like no you're a scientist yet the little bit of indiana jones out of you right go up there go get it go you need to build on it right and keep on going don't throw your hands up in despair and do a study that's completely useless
+Pablo [23:14]: just for doing a study if you think that's important then i thought in measuring information is important
+Pablo [23:16]: you know you have to carry that through
+Pablo [23:18]: so that's something you need to do
+Pablo [23:23]: and it's highly impactful people really appreciate it once you do it
+Pablo [23:51]: i think you run into a wall like i'm thinking a lot of professors your ex are very different in this regard so i appreciate that the law professors have so much administrative data at their fingertips and they're kind of giving us advice that is conditional on having all of that data and it's not useful at all as a graduate student who is dealing with this so i'm curious like i want to know about teacher salary data and how that might relate to retention all the teacher salary data
+Pablo [23:54]: family and the state it's better or worse but it's usually private
+Pablo [24:20]: so that has been a wall for me i don't know exactly how to scrape data maybe i can infer something about the neighborhoods where the schools are that can maybe say something about the teachers live nearby and that's a cost of living and that relates to their salary but i'm curious if you've ever hit a wall because you just gave us advice on like you know do the shoe leather you know data gathering things but i'm curious if you've ever exhausted your efforts
+Pablo [24:21]: in a similar way
+Pablo [24:27]: wait it didn't work out at the end because it seems like you got all these success stories
+Pablo [24:41]: is it really just a matter of keep keep going and you'll find something that's useful or you know sometimes if it's not there it's not there i do think if it's there and you don't have access to it you can keep on trying i would keep on trying with that
+Pablo [24:45]: there is ways you can get it you can
+Pablo [25:00]: then just reach out to them and do this or if they really can get around it reach out to them and do a survey and or contact them and then from that infer you know you just leave especially teacher salary like i would not maybe infer it from the salary in that neighborhood
+Pablo [25:04]: but if one of the teachers in that district tells you then you have them
+Pablo [25:04]: all
+Pablo [25:06]: i just need to get to one
+Pablo [25:13]: that's a little bit indiana jones thing now is that maybe i guess that like whatever it's like no it's a rule like they have to but there's no problem
+Pablo [25:17]: i'm allowed to tell you my salary right
+Pablo [25:20]: right but is it reliable right are they just saying that how you know
+Pablo [25:23]: it's easier said than done
+Pablo [25:25]: i think i know it's not
+Pablo [25:34]: yeah but that would be a little bit that thing that you try and get and you get one from there or maybe two from them and try any of them but like in classes like all of our salaries are public
+Pablo [25:41]: for teachers it's not they are not the individual teacher is not so i mean it depends on the state
+Pablo [25:45]: ask the individual professional you can look up all of our salaries
+Pablo [25:48]: and so the teachers are not in that
+Pablo [25:55]: it's a web scraping exercise there's transparent california maybe what we're referring to
+Pablo [26:11]: but it's difficult to link that like i might want to know specifically where did that teacher go to school right how many extra credits do they have look at the salary schedule so it's like you get a salary bump at thirty extra credits or a master's degree in thirty extra credits
+Pablo [26:22]: but it's kind of coarse this is just a salary or for example transparent california has their base salary and then over like salary plus benefits
+Pablo [26:34]: and those benefits are mostly health care but it might be for a younger teacher it might be mostly four hundred one k not a lot of health care so there's a lot of detail within it this is now like a tangent on a tangent
+Pablo [26:56]: but just to give you an idea of like then you do data fuses or you need your triangle then that's how painstaking as it is so if you get the curriculum if you get the cvs then you have to figure out in the cvs who had who is a master's degree and then from that inferior and that's what it like look empirical studies eighty percent data is eighty percent data and it's these kind of things
+Pablo [27:03]: you have the cv there and then from there you infer the thing and that's how you piece it your lights that's why our study had a three hundred page appendix
+Pablo [27:14]: right like you have to explain all of the things that you did it's not like they told us how many how many cell phones are there from which they know we had to piece that together was all estimations but then your peer review is going like is that reasonable
+Pablo [27:27]: can you reasonably infer from having a master's degree that they get a twenty percent bump and how do you refer like how old were the cv's that you got and how like and that's then your quality as a researcher and how convincing you are doing these things
+Pablo [27:29]: and it's absolutely boring
+Pablo [27:32]: yeah but then once you have that i mean
+Pablo [27:39]: claude oppos can run your regression like forget about that that's like once you have the data twenty minutes
+Pablo [27:48]: okay yes yeah so that once you have that the study is done
+Pablo [28:00]: and then also these things get actually these things also can also be really damaging so if you don't have the right indicator like if you look under the lamp post so
+Pablo [28:08]: all weekend and on friday i put an eighteen hour workshop in depth on seven am to one am to work on the social media lawsuits
+Pablo [28:15]: so the state of california has a law called save our children on social media addictions law now you guess what it's about
+Pablo [28:17]: and
+Pablo [28:22]: they assume the doj is a genocide sued by google
+Pablo [28:23]: for youtube
+Pablo [28:26]: by meta for instagram and by tiktok
+Pablo [28:39]: and so they hired me like to write a declaration of defense and basically all weekend long that's what i dove into what it was about that they have the wrong indicator
+Pablo [28:55]: they are saying in the declaration in the defenses and i read all the declaration and defenses like nine of them each one of them is eighty pages long and the vice president of google the vice president of meta all of them writing eighty pages saying like
+Pablo [28:59]: what we do in social media is
+Pablo [29:07]: we inform the public to have a public dialogue we like the public square like in athens
+Pablo [29:10]: right where people come together and they dialogue
+Pablo [29:21]: and we select the videos and the posts that are most informative and tiktok especially most creative and makes people most happy
+Pablo [29:34]: and youtube most informative and at meta most connective making people have feel the strongest connection to in order to create a stronger society and community so that's what we are actually maximizing for
+Pablo [29:41]: but then if you dive into the research paper of their own engineers they're like you know what
+Pablo [29:53]: actually you know what there's light under the lamp post that is really difficult to understand how people get happy and how they're democratically more secure and how they are like more have more deeper connections but you know what
+Pablo [29:55]: we can measure engagement
+Pablo [30:01]: and you know there's engagement indicators actually they come all the time for free
+Pablo [30:06]: how long and how many likes and how many clicks and they come for free and you know what
+Pablo [30:09]: we show that they correlate
+Pablo [30:10]: with satisfaction
+Pablo [30:10]: too
+Pablo [30:13]: so people who are more
+Pablo [30:19]: satisfied with people who watch along a video in general tend to be more satisfied with the video
+Pablo [30:22]: and people who watch a shorter video are not as satisfied with the video
+Pablo [30:26]: hence there's a strong correlation between happiness
+Pablo [30:29]: and watch time
+Pablo [30:31]: so why don't we just use watch time
+Pablo [30:33]: now they had two things wrong with that
+Pablo [30:34]: one
+Pablo [30:37]: is that they look under the lamppost
+Pablo [30:39]: because just they get the engagement data for free
+Pablo [30:50]: it's not what they're really after because in the eighty page declaration the vice president talks about how he wants to make people happy and satisfied right and democratic and connected and meaningful
+Pablo [30:54]: now they look under the lab because how could he get this other stuff you have to make a survey
+Pablo [31:15]: do you want to make an online survey with millions of users every day in real time no you cannot like it's logistically impossible so what they say like oh but we know how long they was right so we just use that under the lamppost so that's number one number two they use the statistical tricks like mars and say like hey why don't you just use a statistical trick and kind of like oh yeah so we have this correlation
+Pablo [31:18]: but correlation is not causation as you just said right
+Pablo [31:20]: so just because people watch longer
+Pablo [31:23]: when they are more happy
+Pablo [31:26]: doesn't mean that having them watch longer makes them more happy
+Pablo [31:29]: it's like the other way around
+Pablo [31:33]: if you have a it's absolutely true
+Pablo [31:37]: that in a customer support center
+Pablo [31:42]: shorter customer support calls very likely correlate with happier customers
+Pablo [31:45]: and longer customer support calls
+Pablo [31:51]: correlate with more upset customers can we agree that we probably find that if you study that yeah
+Pablo [32:06]: so i would advise my customer support people to when they get a call just hang up immediately because that really minimizes core duration in their hands for like for our metrics fantastic right now that's as stupid as that
+Pablo [32:28]: so that's why these algorithms recommend they're just like okay how can i maximize watch times well but i know you cannot watch over you look away from a car accident that's why i show your car accidents all day long right that's i think what i talked about in lecture effect what's observed i think well when you start a subject knows they're being studied they'll change their behavior while being studied
+Pablo [32:33]: it's not even that it's like there is no there's more like the different is the difference between correlation and causation
+Pablo [32:39]: so it's more like imagine the venn diagrams like sometimes correlation causation are like overlap
+Pablo [32:48]: but in most of the times the spirit is collagen like what i talked about in lecture like with the shoe's eyes and the reading skills right there is no yes they correlate the shoe size and the reading skills i talked about that in lecture
+Pablo [32:49]: right
+Pablo [32:59]: but they don't like you don't like by buying kids bigger shoes they're not going to increase their reading skills so that's how there's more the correlation and causation effect
+Pablo [33:01]: and anyways that's what this entire lawsuit is about
+Pablo [33:05]: and it will go to the supreme court i think
+Pablo [33:10]: so at least the californian one because that's how much they are stuck in there
+Pablo [33:13]: and that's the thing if you use engagement
+Pablo [33:18]: as your reward function for your machine learning it's inevitable that you make people addicted
+Pablo [33:27]: because if you maximize engagement the only way you can maximize engagement is by having people so far that they cannot disengage anymore
+Pablo [33:30]: that's what addiction is called
+Pablo [33:47]: hence by the fact of using the easy way out indicate under the lamppost the unavoidably will make people addicted so i do think attorney bonter has a point when he calls this law media addict when he calls social media feeds addictive feeds
+Pablo [33:50]: and the judge actually let that go through
+Pablo [33:56]: the judge said i have no problem with that naming so that is the establish they are allowed to call them addictive feeds
+Pablo [34:05]: and it's justified so in my declaration i elaborate is justified because they maximize for engagement and that is well known right so that's the evidence i had to find
+Pablo [34:08]: for them especially after
+Pablo [34:15]: but this entire thing is about that you see it's about what you said about the lamp posting and about using statistical tricks in order to try and make up for it
+Pablo [34:43]: and so i also want to encourage you if you find it when you get stuck with it yeah maybe a little bit of indiana jones and go through and go thing and like maybe you can get one out of it and you're like maybe somebody blows the whistle and tells you a salary and then you can find a way to kind of like with this one or two or three case studies that you have then triangle and then do some statistical tricks but still somebody in the peer review will read your three hundred pages of appendix and then it comes down to like yeah is that reasonable or not what you did
+Pablo [34:59]: you know and that's what it comes through like if it was reasonable it will be a big success well it's kind of nice about too is if you're going to put in the effort and you have this novel data set no one else has put in the effort and has it not been but they would then always use your trick in order to scale it
+Pablo [35:04]: and that's the important that's how you get your citations that's how you get your tenure
+Pablo [35:22]: i actually saw the last table say i saw a page rank like the day after we learned about patrick i saw page rake thing kind of working paper having to do a teacher labor markets super cool all right okay so big data good thank you very much
+Pablo [35:26]: okay ready to go to social networks
+Pablo [35:30]: who wants to start salman or ananya
+Pablo [35:34]: so my thing is about small world networks
+Pablo [35:40]: and i think you're doing yeah i'm doing structural roles so which one do you think should go first
+Pablo [35:44]: now you're welcome i think they're both quite specific
+Pablo [35:46]: do you want to go first
+Pablo [35:49]: can i come over
+Pablo [35:50]: sure
+Pablo [35:54]: good you got a little bit
+Pablo [36:10]: you have to make sure indiana jones was a professor right
+Pablo [36:46]: yeah okay
+Pablo [36:52]: so i'm actually presenting the research which i thought was relevant and interesting
+Pablo [37:00]: it's a case study for social network analysis basically small world networks on twitter
+Pablo [37:09]: if you recall they were boston bombings in twenty thirteen
+Pablo [37:17]: and one of the suspects who was nicknamed jahar when he was being apprehended
+Pablo [37:22]: and tried there was apparently some support for him on twitter
+Pablo [37:36]: and this is i think a recurring formula because like a recurring occurrence because some people are apparently attracted to mass murderers and killers there were this forming was that the one on the marathon yeah
+Pablo [37:42]: so this movement started which was known as the free jihad movement
+Pablo [37:49]: so the researcher here you basically tracked five hours of twitter activity
+Pablo [37:53]: extracted the data from twitter api
+Pablo [38:00]: and used it to analyze it using social network analysis
+Pablo [38:10]: the reason why i think this research is important is because it goes into how small world networks form how they evolve and how they can be fractured
+Pablo [38:18]: just before diving into the research i think let's skim over some of the key concepts
+Pablo [38:36]: so degree centrality is how popular or connected a node is closeness centrality has to do with how close a node is to all other nodes between centrality is how often a node falls in the shortest path when one another node is trying to get to another node in the network
+Pablo [38:41]: and the clustering coefficients is the density of interconnected triangles or closed triangles
+Pablo [38:44]: in a network as we have studied
+Pablo [38:50]: so what's a small one network a small one network is what's depicted in the middle
+Pablo [38:56]: so it has average shortest short
+Pablo [38:59]: path length and a high clustering coefficient
+Pablo [39:06]: so the network that you see on the left is like a ordered network
+Pablo [39:13]: so they're all closed triangles along the circle so it has a high string coefficient
+Pablo [39:17]: but for a node at the bottom to reach a node at the top
+Pablo [39:21]: path length obviously is going to be a lot
+Pablo [39:34]: and on the right you can see a completely random disordered network with a low clustering coefficient and a short mean path length but a small world network is kind of a compromise which makes things more efficient
+Pablo [39:42]: as people are connected yet they can move from one node to another in a more efficient way
+Pablo [39:47]: so the researcher basically this is like real time
+Pablo [39:56]: social network analysis like fifteen minute increments during the five hours of this particular day
+Pablo [40:06]: and as you can see gradually from starting from the top left when all the nodes are basically fragmented and there's no connections
+Pablo [40:13]: as you move down there's a cluster that's formed at the top which is basically the free jar cluster
+Pablo [40:20]: and these circles that you see the black circles are basically news networks
+Pablo [40:28]: so what this does is it's like bi directional so people in the free jar cluster
+Pablo [40:33]: are actually feeding off the news and responding to news from these tv news channels
+Pablo [40:36]: and eventually if you come look at the bottom row
+Pablo [40:43]: a small world network is formed as these different clusters connect with each other
+Pablo [40:50]: and these free unconnected nodes are basically tires and dryers
+Pablo [40:54]: that are retweets conversation but are not part of the network
+Pablo [41:00]: so the author then cleaned up all the irrelevant nodes and looked at the degrees centrality
+Pablo [41:05]: so here you can see the red notes on the left are basically all the tv news networks
+Pablo [41:15]: so in terms of degrees centrality which is the sum of the links obviously news networks like have a lot of links a lot of people are following them
+Pablo [41:22]: in terms of degree centrality all the news networks are high but in terms of between centrality
+Pablo [41:31]: all the nodes that have high between and closeness neutrality are found in the free jahar cluster at the top you can see
+Pablo [41:43]: and then a couple of things about this graph so the green batch is basically opponents of this movement in the network
+Pablo [41:46]: so what's interesting is that in this small world network
+Pablo [41:52]: opponents and supporters of this movement are coexisting
+Pablo [41:58]: interactions between them is actually what caused this small world network to form
+Pablo [42:07]: and the second thing is that during all of this twitter basically suspended the account so supporters of this movement
+Pablo [42:12]: because they were just causing trouble and disrupting
+Pablo [42:19]: so they targeted the nodes that were central or influential in this network
+Pablo [42:21]: for supporters of this movement
+Pablo [42:26]: and what happened was that this network quickly disintegrated and fragmented
+Pablo [42:35]: which goes to show that by targeting central nodes in a small world network you can actually disrupt the network completely
+Pablo [42:43]: and then few growth metrics so you can see the number of nodes and edges increases linearly
+Pablo [42:44]: pretty much
+Pablo [42:51]: and on the right you can see there's a great increase in the clustering coefficient initially
+Pablo [43:08]: and also later on there's an increase in the path length it suggests that an event probably happened at three thirty which a lot more people joined the network by following or retweeting a news item or something of that sort
+Pablo [43:14]: so the conclusion being that small world networks can be a catalyst for efficient information diffusion
+Pablo [43:32]: we can reach any other person in the world the maximum of six degrees of separation as we studied the milgram's experiments the famous milgram experiment and later studies have shown that these degrees of separation are even less for social media
+Pablo [43:40]: and also another takeaway is that when the centralities of network or social movement in this case are disrupted
+Pablo [43:44]: it can fragment and diminish the network
+Pablo [43:55]: which leads me to the discussion question so the first one being for small world networks to form and sustain do they have to be comprised of like minded individuals
+Pablo [43:59]: or homophily as we study like birds of feather flock together
+Pablo [44:10]: would you have come up where people agree on something then you must have homophily when they agree that a topic is important to them
+Pablo [44:13]: regardless of their opinion to it so they stick together
+Pablo [44:22]: they don't have positive interactions but they have a lot of interaction with each other you're saying that in the end do agree on disagreeing on something
+Pablo [44:25]: they agree that they wanted to be on this
+Pablo [44:27]: so stick together
+Pablo [44:31]: any other thoughts
+Pablo [44:38]: i
+Pablo [44:41]: think i'm part of it
+Pablo [44:45]: just in kind of general things have happened
+Pablo [44:50]: it's just like to get a little bit
+Pablo [44:52]: of
+Pablo [44:53]: status quo
+Pablo [44:59]: i kind of look back to actually
+Pablo [45:03]: there is a large bot network
+Pablo [45:05]: for vaccine misinformation
+Pablo [45:09]: that has been actually documented on twitter
+Pablo [45:12]: it's just mostly
+Pablo [45:15]: discovered that it was through
+Pablo [45:17]: russian misinformation bots
+Pablo [45:23]: but it's enough to even though you would think like oh it's going
+Pablo [45:28]: to vaccine misinformation community you need just a little bit adjacent doubt
+Pablo [45:37]: to start a continue amplifying such message even though you would think it's this small world
+Pablo [45:37]: network
+Pablo [45:46]: that's actually for the second quad more so into the second question i think
+Pablo [45:50]: there is some sort of ethical application
+Pablo [45:52]: to do that
+Pablo [46:02]: not to get philosophical
+Pablo [46:28]: in a political polarization class that i took i think it was by stafford caucus he referenced the athenian policy of austroquismos which is where you would write on a shard the name of someone that you wanted to exile and by popular vote they would decide who to exile for ten years from
+Pablo [46:41]: society and it was usually people who were like gaining too much political power or not necessarily acting in the interest of everyone and sometimes it was exciting
+Pablo [46:44]: but i feel like in terms of that starboard clock
+Pablo [47:00]: is kind of mentioned how getting rid of polarizing influential figures which would essentially be a central node whether they be favorable or not did actually lead to positive societal outcomes
+Pablo [47:04]: and where do you draw the line
+Pablo [47:10]: where do you draw the line in terms of how do you decide
+Pablo [47:19]: who do are we talking about the metric of what ill will they're doing actors
+Pablo [47:23]: well i mean
+Pablo [47:29]: i feel qualitative not quantitative metrics so i mean
+Pablo [47:46]: do you ban the person who's convincing people to storm the capitol or do you ban the person who is harassing parents of slaying kindergartners where do you draw the line
+Pablo [47:49]: do you ban people
+Pablo [48:05]: who subjective it's something where obviously this would be implemented by some kind of governance whether it be a government or elon musk who runs twitter
+Pablo [48:14]: i don't know it's a quality question i think it comes down to the free speech debate
+Pablo [48:14]: right
+Pablo [48:17]: i mean can you stop people from saying what they want
+Pablo [48:25]: i mean free speech in and of itself is hotly contested in the judicial sphere of things
+Pablo [48:27]: but
+Pablo [48:30]: i guess
+Pablo [48:45]: this is a big debate with applying morality and qualitative decision making into computational society but in this case would all of you agree that this was warranted to suspend these people's accounts
+Pablo [49:02]: because just for context this person is like serving life sentence so he's in jail for the last ten years and he clearly did it but just because he was like a young hot boy at that time so like probably a lot of these were like teenage girls
+Pablo [49:09]: so would all of you agree that it was right to suspend the accounts of these people in this case
+Pablo [49:15]: people
+Pablo [49:18]: that wanted to free this person
+Pablo [49:24]: what's right i mean maybe you're asking us to define what's right
+Pablo [49:31]: but is the goal to prevent something like this from happening again is the goal to prevent
+Pablo [49:34]: the spread of
+Pablo [49:52]: i don't know i guess the question would be like what is the goal i would say probably banning the accounts doesn't do anything to prevent or not prevent something like this from happening again so in that regard it's meaningless i think it's also an instance where sometimes the suppression
+Pablo [49:53]: of
+Pablo [49:54]: counts of influen
+Pablo [49:55]: ce
+Pablo [49:59]: r
+Pablo [50:00]: luigi
+Pablo [50:00]: inserts
+Pablo [50:03]: exactly
+Pablo [50:06]: so
+Pablo [50:07]: again
+Pablo [50:13]: how
+Pablo [50:14]: they're trying to
+Pablo [50:14]: pay people
+Pablo [50:18]: all right
+Pablo [50:19]: good
+Pablo [50:19]: thank you very much
+Pablo [50:28]: network
+Pablo [50:29]: s and data
+Pablo [50:31]: you can
+Pablo [50:32]: see also
+Pablo [50:33]: these uncertainty
+Pablo [50:34]: radical models
+Pablo [50:36]: no network
+Pablo [50:37]: is really
+Pablo [50:38]: nrtm free
+Pablo [50:43]: this is just the mathematics simulator
+Pablo [50:45]: you can get a scale free network
+Pablo [50:51]: doesn't need that any real model is bad it is an approximation same as the normal distribution
+Pablo [50:52]: this is an organization
+Pablo [50:54]: that we use enormous statistics
+Pablo [50:56]: when you grow up with averages
+Pablo [50:57]: and they do
+Pablo [50:59]: explain their useful and order
+Pablo [51:01]: to see what's going on
+Pablo [51:04]: try to conceptualize those by master
+Pablo [51:05]: example
+Pablo [51:24]: i get it to do a full screen thing
+Pablo [51:26]: but that's fine
+Pablo [51:41]: when i signed up for the topic of social network
+Pablo [51:45]: what i thought i was signing up for was the topic of social media
+Pablo [51:57]: i do not have a very strong online presence but what i do have are very strong opinions on social media so i thought this would be
+Pablo [52:00]: a fun exercise but couple of lectures later here i am
+Pablo [52:06]: the real social network
+Pablo [52:21]: in this topic seemed kind of central to me because it is connected to a lot of the concepts that we studied in the social network lectures
+Pablo [52:23]: like homophily for example
+Pablo [52:39]: so similarities between people would create sort of clusters of components within a network and then that kind of clustering can also create gaps between the clusters which we would refer to as structural holes
+Pablo [52:53]: and within each cluster there's also a possibility for echo chambers like people for example i'm a huge cat person so my field is full of cat videos
+Pablo [53:03]: and if you are a democrat or a republican your feed is more likely to be full of posts that cater to your political opinions
+Pablo [53:07]: so yeah conceptually the scene more central to me
+Pablo [53:10]: than the concept of centrality itself
+Pablo [53:20]: yeah just to give an overview structural role is a gap between two parts of a network guys
+Pablo [53:32]: a broker or a bridge connects these otherwise disconnected groups and bridging a whole links non redundant information which is different flows of information
+Pablo [53:49]: and the advantage sort of broker has is that this person or this node would have more access to novel information or sort of different or diverse information that people within different structures themselves wouldn't have
+Pablo [53:52]: and as we're going to see on a later slide
+Pablo [53:58]: that actually leads to better outcomes and higher salaries for more studies
+Pablo [53:59]: and better
+Pablo [54:03]: these
+Pablo [54:04]: are some beautiful
+Pablo [54:05]: case studies are
+Pablo [54:06]: found online
+Pablo [54:11]: three
+Pablo [54:12]: wars
+Pablo [54:13]: of
+Pablo [54:14]: a
+Pablo [54:15]: great faculty
+Pablo [54:16]: and
+Pablo [54:17]: they try to include
+Pablo [54:18]: their
+Pablo [54:22]: structural
+Pablo [54:23]: ly
+Pablo [54:25]: and this intense
+Pablo [54:27]: ly tallied or dense glass source
+Pablo [54:28]: harry
+Pablo [54:29]: when clusters
+Pablo [54:30]: compound similar
+Pablo [54:31]: ity grabs
+Pablo [54:32]: automatically form
+Pablo [54:33]: ula
+Pablo [54:34]: so
+Pablo [54:35]: in the
+Pablo [54:35]: microsoft study
+Pablo [54:37]: this
+Pablo [54:40]: was a study on thirty billion conversations among
+Pablo [54:43]: forty million percent of users
+Pablo [54:46]: and they found that there was a strong morphery
+Pablo [54:47]: between
+Pablo [54:53]: people who spoke the same language and then people who lived in samida geographical locations
+Pablo [55:14]: and then people who were of a similar age group and a surprising result for me was that there was no homophily with respect to gender in this study that they found i tend to have a lot of female friends but i was in the case in this time
+Pablo [55:25]: and another result of the study was that ninety nine point nine percent of the users were in just one single connected component of this network
+Pablo [1:06:54]: it's all about me right so yes that's why
+Pablo [1:07:25]: for me so i'm from korea and i did my undergrad and master's in korea and in my university there are a lot of international students but there were different circles of domestic students and international students so they didn't really interact with each other even though it'll be a really great opportunity really great opportunity to learn about different cultures and stuff
+Pablo [1:08:13]: so our university launched a program called language exchange program so i don't know if there's anything like this in uc davis but it basically matches one domestic student and one international student as a language exchange partner so through that program i was also able to meet a lot of friends from overseas which was really nice after that program i was also introduced to that community of other international students and i also introduced my partners to my friends from korea so i think that program was actually it worked as a bridge between the international community and the domestic student community
+Pablo [1:08:22]: and erc so we talk about this and i think i make this point that's how i start this lecture if i remember correctly we talk about social networks all day long that's what we talk about
+Pablo [1:08:34]: it's so intuitive for us that's what we say like every time and you think oh i'm going to go out we're not going to go out with this but if i bring this one like no there's not but they actually do it yeah of course they know so that's what we think about a lot of our day
+Pablo [1:08:54]: it's so weird that we don't make that a bigger part of our scientific exploration right because i was like no it's different we don't really it's not quantified now the digital footprint brought a lot of that to light i mean that's been with us for the last two million years we are a social species there's always been with us and the digital footprint
+Pablo [1:09:02]: revealed a lot of that in empirically verifiable data because now the social connections really were there and because study them much more
+Pablo [1:09:06]: and that helped a lot network science and it helped a lot social science
+Pablo [1:09:08]: we're very honest with you
+Pablo [1:09:17]: and it's still very important for me if i were designer program yes if anybody anything social it doesn't matter if you study anything social
+Pablo [1:09:20]: at least i would say even an undergrad
+Pablo [1:09:34]: be it it doesn't matter if you study something to do with economics or business or if you study something to do with the sociology or even that you do need to take a social network class i would make that at the beginning even of an undergraduate study
+Pablo [1:09:40]: and here like in the phd classes we barely even need them so that's still very bad thing to me
+Pablo [1:09:42]: so that being said well thank you very much
+Pablo [1:09:48]: i do think social network is extremely important as you think
+Pablo [1:10:03]: as you know by now and yeah go into that and feel free we have also several phd students working here another phd students that work with me ali is doing social networks on ai agents
+Pablo [1:10:09]: so you can do a lot there because they're also obviously working in networks so if you're interested in these kind of things let me know
+Pablo [1:10:11]: and i encourage you to take a class on that
+Pablo [1:10:17]: it's taken a little break and we still want to cover ai
+Pablo [1:10:22]: can get you out of
+Pablo [1:10:48]: the
+Pablo [1:10:51]: answ
+Pablo [1:10:51]: er
+Pablo [1:12:01]: you
+Pablo [1:12:02]: are real life
+Pablo [1:12:18]: actually no one out two outs to go
+Pablo [1:12:24]: definitely a lot of shaza fans
+Pablo [1:12:26]: that were there
+Pablo [1:12:26]: here's another one
+Pablo [1:12:30]: and i go on a playo now
+Pablo [1:12:30]: yeah
+Pablo [1:12:40]: give me like two days i'll probably pick them back up but now i'm like oh they are very
+Pablo [1:12:53]: maybe we don't do that next week we want to do the week after i'm calculating that where will be
+Pablo [1:13:00]: next week we do nlp and then we do the week later not on february second
+Pablo [1:13:05]: every night i write it down
+Pablo [1:13:19]: so now i'm just like trying to refresh the wipe on it the entire time i find out who wins based on a notification
+Pablo [1:13:26]: why i was not so you get the espn yeah that's how i found out
+Pablo [1:13:30]: and i'm like i wish i could have seen it live
+Pablo [1:13:38]: but that was just really fun and then i went to actually couldn't sleep on the flight because i was just so excited yeah
+Pablo [1:13:44]: it really means something a small town they've never
+Pablo [1:13:49]: every next signing
+Pablo [1:14:06]: the thing is every other team that's upset at the doctor doing that they should be on the east i think this is where changing their focus should be upset that their team isn't everyone is allowed to do that why don't we just decide not to
+Pablo [1:14:10]: see cohen he's doing his best padres are doing
+Pablo [1:14:21]: giants my parents like the giants are deciding they're going to be realistic i did not see that one
+Pablo [1:14:24]: it seems like
+Pablo [1:14:33]: at that time my brother
+Pablo [1:14:38]: my
+Pablo [1:14:40]: us visa and then
+Pablo [1:14:45]: you're going to have to deal with all the lawsuits when this does not happen
+Pablo [1:15:01]: yes one of the cities
+Pablo [1:15:18]: there is honestly what you're having
+Pablo [1:15:23]: here
+Pablo [1:15:29]: bring the derm poles make that year for graduates
+Pablo [1:15:43]: university you know what's funny though i think even at the worst even if you remember the a's or the white songs or whoever
+Pablo [1:15:50]: also i was grandparents from devil
+Pablo [1:15:59]: closer to the world all right
+Pablo [1:16:09]: i've
+Pablo [1:16:10]: seen papers
+Pablo [1:16:15]: burn the bridge too
+Pablo [1:16:18]: if you ever see
+Pablo [1:16:22]: okay i also in the meantime
+Pablo [1:16:29]: please put in your calendar we have this event we have the conference coming up on february twentieth i will send you more information
+Pablo [1:16:31]: again
+Pablo [1:16:37]: it is obviously not coincidental that lines very well up in this class
+Pablo [1:16:45]: so the same day your project presentation is due that's when this conference is also coming up
+Pablo [1:16:49]: in this conference originally we've been running that since twenty eighteen wow
+Pablo [1:16:55]: eight years now and what a tradition in this conference has been that
+Pablo [1:17:12]: my colleague seth came up with professor fry is that we do have big ideas as well so you can present two kinds of presentations one is you just you present a study that you have or a research project been working on that's maybe already advanced maybe you already have a graph
+Pablo [1:17:19]: or you even have it all done and you present it like you would at a conference if you go to a conference you have to submit the paper usually before
+Pablo [1:17:38]: and that's what we do in science so we do we have a paper we have a first draft that we present in the conference then we get comments on that and then traditionally in the social sciences we submit it later to a journal computational science you might as well submit to a computer science conference there it gets published at a conference proceedings we don't have that ext
+Pablo [1:17:40]: ra set so that was
+Pablo [1:17:41]: before
+Pablo [1:17:43]: so we used to
+Pablo [1:17:45]: conference
+Pablo [1:17:47]: then you get your peer reviewers
+Pablo [1:17:56]: in that conference it's a very strict process in computer science and once it's accepted it will get accepted to the proceedings
+Pablo [1:18:03]: and that's extremely competitive so for example we submitted to neurops noreps is the leading
+Pablo [1:18:04]: conference
+Pablo [1:18:06]: in machine learning
+Pablo [1:18:12]: is probably undoubtedly the biggest conference we had a science right now
+Pablo [1:18:16]: just because machine learning and is leading in science
+Pablo [1:18:20]: for example they published the attention was all you need paper
+Pablo [1:18:23]: with the two hundred thousand citations already that was published in nerves proceedings
+Pablo [1:18:28]: did conflict with about the center of
+Pablo [1:18:29]: san diego
+Pablo [1:18:33]: the
+Pablo [1:18:33]: amount of twenty five thousand
+Pablo [1:18:34]: submissions
+Pablo [1:18:37]: or
+Pablo [1:18:38]: presentation
+Pablo [1:18:41]: seventy seven
+Pablo [1:18:45]: so there you calculate your chances the thing is like three hundred to one
+Pablo [1:18:48]: but hey they say they could also like three hundred posters
+Pablo [1:18:58]: so yeah
+Pablo [1:19:01]: in the process ofiblical methods
+Pablo [1:19:09]: they have three few reviewers and the editor ending in two rounds going on it's like it's crazy to organize that with twenty five thousand papers
+Pablo [1:19:13]: and the peer reviewers were really long and detailed comments right
+Pablo [1:19:21]: and even so like ours was you know it got rejected but at the end but all the twenty five thousand i imagine had this so that's how it's in computer science
+Pablo [1:19:31]: now in social science we do that at the conferences get our feedback and then we submit it to a genre where there is also a real peer review process and then gets published
+Pablo [1:20:01]: anyways all of that being said this conference we also organize it for you to get experience with that and traditionally when you go to conference especially during your phd or in grad school then oh you need to travel funds and you need to apply to the travel fund senate and then they give you eight hundred dollars who can fly with eight hundred dollars and then it's like okay how am i going to get to the airport oh i flying out of san francisco that's two hundred dollars in uber like i don't want to do that buddy hey can you drive me i'm going to be in the car for five hours just to drop you up at the airport yes please you have all of that going on
+Pablo [1:20:10]: and here is just a confidence as a bike right away so we have a renting out stone gate country club it's a really nice country club they have a lake and lunch hour
+Pablo [1:20:11]: you can go on the boat
+Pablo [1:20:13]: and have a
+Pablo [1:20:13]: lake
+Pablo [1:20:18]: and you have a happy hours with all the caters not even the registration fee
+Pablo [1:20:22]: these conferences nowadays the registration fees go up to
+Pablo [1:20:22]: five hundred dollars
+Pablo [1:20:31]: you get a raise that was month there's no registration fees fully payers and you can get into a cv that you're a conference presentation what's that on there
+Pablo [1:20:36]: really it's a conference and you can have a conference presentation that on your cv as much as another one
+Pablo [1:20:37]: 's presentation
+Pablo [1:20:41]: and you can get the feedback
+Pablo [1:20:42]: so please do that
+Pablo [1:20:44]: think about your last project in that sense
+Pablo [1:20:45]: already pretty simple
+Pablo [1:20:50]: you take something that's really useful for you especially for your thesis
+Pablo [1:21:00]: and you use one or two of these hopefully two or three of these methods that we use it here and now you already know most of them except computer simulations so start thinking about that
+Pablo [1:21:02]: and plan on presenting it
+Pablo [1:21:09]: and submitting it valentine's day don't forget don't forget valentine's day submission is due is there a topic or theme
+Pablo [1:21:14]: well the topic is computational social science anything
+Pablo [1:21:16]: we
+Pablo [1:21:19]: had to ai centers here today alice centers on campus
+Pablo [1:21:22]: new ones were an engineering and one of humanities
+Pablo [1:21:30]: so i brought them together because that's what i do we're trying to build the bridges and they both will sponsor research awards
+Pablo [1:21:35]: so you can get it depends on how much they're going to give us but it's going to be more symbolic
+Pablo [1:21:46]: but last year i think everybody we had six prices three and a half paid ideas and three and more elaborate ideas and i think each one of them got some like two hundred dollars
+Pablo [1:21:54]: which is most symbolic but for two hundred dollars buying gemini credits you can get a lot of api calls out of that right
+Pablo [1:21:55]: so i think most of that was spent on
+Pablo [1:21:57]: these kind of things
+Pablo [1:21:59]: and then you have some money in your research
+Pablo [1:22:10]: is there a team for this year well the ai research centers again will give the prices to ai research sorry yeah that was the thing so everything is welcome
+Pablo [1:22:18]: but these research prices will go to them and there are on the on the flyer
+Pablo [1:22:20]: this afternoon
+Pablo [1:22:26]: they have the specifications it's just if it's innovative and whatever imagine like what this a one i put on their web page
+Pablo [1:22:32]: you know that's all like that's how prices i mean prices are that's how prices are in conferences
+Pablo [1:22:34]: like if you
+Pablo [1:22:35]: make up a research thing
+Pablo [1:22:37]: that shows how
+Pablo [1:22:41]: obama trauma is
+Pablo [1:22:43]: it's a really controversial thing
+Pablo [1:22:48]: right i don't know if they want to let them right so that's all and that's really discriminated
+Pablo [1:22:51]: but that's also how this with these research prices
+Pablo [1:22:54]: like these research prices is basically it's a marketing game
+Pablo [1:23:09]: right so you have to also like if you are for that and i said like that's just for that it's for the two hundred dollars and for the bragging rights but most important for me for your classes don't try to cater to that like anytime in research you try to do that it won't work well
+Pablo [1:23:20]: often here over here people like oh no let's research that it has a better chance of yes if there is a project like this and it has a better chance of whatever yeah do that if you're like the eight co author
+Pablo [1:23:26]: and get your name on that and get published quickly put it on your cv and your co author number four it's fine
+Pablo [1:23:29]: if it's your research idea don't do that
+Pablo [1:23:33]: don't try to cater to other people's interest you know why
+Pablo [1:23:36]: why what are some of the reasons why do i tell you don't do that
+Pablo [1:23:41]: you research it
+Pablo [1:23:43]: first of all it takes longer than you think
+Pablo [1:23:48]: second of all it will take twice as long as the nonlinear thing
+Pablo [1:23:51]: ends of all it will be so frustrated
+Pablo [1:23:52]: that it would be easy
+Pablo [1:23:54]: ninety nine
+Pablo [1:23:57]: point nine percent of things actually that's our goal
+Pablo [1:24:02]: in our hypothesis testing that's what we do we prove ourselves wrong
+Pablo [1:24:05]: as quickly as possible to make progress
+Pablo [1:24:12]: that's the game you signed up for how crazy is that there goes your ego if you want to have your ego go out of the window do science
+Pablo [1:24:15]: because that's also why
+Pablo [1:24:16]: we design
+Pablo [1:24:17]: ed this not in
+Pablo [1:24:18]: companies
+Pablo [1:24:19]: because who would be crazy
+Pablo [1:24:19]: enough
+Pablo [1:24:23]: to invest into something that has a ninety nine point nine percent failure rate
+Pablo [1:24:31]: from side and then they kind of like swirl it around in the dishwasher and say oh that's something new
+Pablo [1:24:32]: it's not the real
+Pablo [1:24:34]: science is completely frustrating
+Pablo [1:24:40]: and you have to prove yourself wrong and you set out to fail yourself that's why hypothesis is testing is
+Pablo [1:24:47]: and then you advance if it's something that you're not generally interested it you will not finish that thing
+Pablo [1:24:50]: so it has to be something you're generally interested in
+Pablo [1:24:58]: so i encourage you also for here don't go for like oh that's the job call that's the theme no you go with what you're interested in
+Pablo [1:25:00]: and then you find your venue
+Pablo [1:25:05]: now for here as long as there's a little computational yes it made it
+Pablo [1:25:09]: most computation nowadays is ai yeah you can spin it if you want
+Pablo [1:25:11]: but don't make that your goal
+Pablo [1:25:15]: just a question
+Pablo [1:25:20]: so do we need to contact
+Pablo [1:25:22]: c
+Pablo [1:25:23]: ssp
+Pablo [1:25:26]: yeah it's on the canvas
+Pablo [1:25:29]: the registration
+Pablo [1:25:33]: yes
+Pablo [1:25:37]: but this task
+Pablo [1:25:39]: you really consolidate
+Pablo [1:25:41]: across campus yeah
+Pablo [1:25:42]: but that's another exercise
+Pablo [1:25:43]: that's why i was
+Pablo [1:25:48]: like here you adjust the project idea and you crusade your project ide
+Pablo [1:25:49]: a
+Pablo [1:25:51]: and then you can present it also
+Pablo [1:25:58]: in the workshop and then you will contact there's happen to be a thing to do that in march right so that's afterwards
+Pablo [1:26:04]: and then you go to these faculty with your project id as well but that's a definite step you only have in this class
+Pablo [1:26:09]: questions about that
+Pablo [1:26:15]: i was just wondering for these consultants
+Pablo [1:26:23]: with the supervisor yeah so can we continue as one of those two count neat
+Pablo [1:26:31]: i would prefer not i mean you can always ask me here in class right if you have any questions if you talk about your research project so i will be one of them to begin with it doesn't count as one of those
+Pablo [1:26:34]: now i don't because i am already in
+Pablo [1:26:35]: it
+Pablo [1:26:37]: i wanted to contact two other ones
+Pablo [1:26:45]: look this just talking about this this is actually something for your phd so as you know i did twice
+Pablo [1:26:47]: i did two phds and i'm telling you
+Pablo [1:26:50]: that doing a phd is an opportunity of a lifetime
+Pablo [1:26:54]: what's the biggest opportunity there
+Pablo [1:26:56]: is that you have people
+Pablo [1:27:02]: that you couldn't pay them with money to pay attention for what you
+Pablo [1:27:06]: do right and here these professors they will pay attention of what you do
+Pablo [1:27:08]: and they will give you meaningful comments
+Pablo [1:27:22]: but usually they take this job because they are not really after money right they are after interests and after cool things and that's why they have this job that means you couldn't even later on and later on your entire career
+Pablo [1:27:33]: you will write papers and the only people who care about that really generally read most people generally read about will be peer reviewers who are adversarially against you
+Pablo [1:27:37]: it's a really frustrating business that you signed up for i'm sorry to tell you
+Pablo [1:27:49]: so it's not usually not as i don't know the hundred publications that i have one hundred twenty publications that i have how many of them really accelerated and publicated people right i get that covid for a fight
+Pablo [1:27:55]: even though i don't know they assigned it ten thousand times but not really the interaction that we get
+Pablo [1:28:11]: so the real indiction that you get here is that you get to pick four or five people who will genuinely read your stuff and then you can interact with during your calls and during your thesis defense and have a meaningful conversation with them these people who you couldn't pay with money to pay attention to what you do
+Pablo [1:28:14]: and during the rest of your life you will never get their attention again
+Pablo [1:28:18]: so it's a big opportunity that's the opportunity and it's you
+Pablo [1:28:26]: who is in charge to select this comedy to your very personal unique individual interests
+Pablo [1:28:32]: so you take one from computer science you take one from a linguistics you take one from whatever like what are you interested in who do you want to work with
+Pablo [1:28:34]: create your consultancy team
+Pablo [1:28:37]: you can create a consultancy game that's what the community is
+Pablo [1:28:44]: and that's the opportunity here and so this exercise that i include here is for you to have an excuse to explore that
+Pablo [1:28:53]: so you go there and write them and say like look i'm in this class and they should pay attention to you then if not copy me
+Pablo [1:28:58]: copy if they don't respond copy me in the second follow up email bump and say like hey
+Pablo [1:29:10]: my email must have fall through the cracks sorry to hear that and you copy with them and follow up with them and then really take advantage as an use this as an excuse to get their attention
+Pablo [1:29:15]: and even if you don't want them on the committee or use an exploration of who you want in your community
+Pablo [1:29:29]: way too often here students like who do you think you should have put in my committee who's like easy and then they always choose that one professor who's like an easy way what a waste now that is the bigger like that's a throwaway of a lifetime that you do that
+Pablo [1:29:31]: no
+Pablo [1:29:32]: you want people on
+Pablo [1:29:33]: there that help you get a job later
+Pablo [1:29:37]: to help you even write your attenuator these are the people you want on
+Pablo [1:29:38]: there
+Pablo [1:29:41]: anyway so that's what this exercise is for
+Pablo [1:29:41]: yeah
+Pablo [1:29:42]: cool
+Pablo [1:29:45]: okay sorry here you go
+Pablo [1:29:51]: okay so i got the fourth session on
+Pablo [1:29:52]: artificial intelligence
+Pablo [1:29:54]: and to fit the team
+Pablo [1:30:03]: i had notebook lm generate this live presentation for me and i guided it a bit so that it would be
+Pablo [1:30:06]: good for this but it's sort of general either way
+Pablo [1:30:12]: but it's about the attention revolution that was discussed in the videos
+Pablo [1:30:32]: obviously it started with the pretty sure mentioned the bear example where if you give recurrent neural network an input like bear it'll think it's an animal but if you actually read the rest of the input it was bear with me it was supposed to understand it's about patience
+Pablo [1:30:43]: so the challenge there is that without simultaneous context the machine is blind to the rest of it it has tunnel vision
+Pablo [1:30:49]: and that it doesn't understand the other context it just forgets
+Pablo [1:31:04]: but i like how you just previously mentioned the paper attention is all you need in twenty seven in twenty seventeen this paper was published
+Pablo [1:31:18]: and i find it funny that my own research advisor had me read this paper myself just last quarter as i started my whole research and it brought me into learning about attention
+Pablo [1:31:30]: and similarly enough last quarter i took machine learning and discovery and a good portion of the second half of that quarter was all about attention and transformers
+Pablo [1:31:34]: i do think it already has over two hundred thousand citations
+Pablo [1:31:50]: yeah so this is extreme bullet so our citations is the important thing for us right so that's our currency so we're going to interrupt so as i say if you want a ten year position in an r one research university like ours like one thousand citations that's what you got right that's then when you go into
+Pablo [1:31:52]: it and your eu
+Pablo [1:31:53]: so if it's all of your
+Pablo [1:31:54]: site
+Pablo [1:31:58]: big papers
+Pablo [1:32:02]: for example surgical larry page
+Pablo [1:32:06]: hypertext hyperlinked search engine
+Pablo [1:32:08]: which founded google
+Pablo [1:32:12]: their phd thesis from nineteen ninety eight how many citations do you think that paper has
+Pablo [1:32:19]: twenty five thousand citations that's a big paper like twenty five thousand agents in one paper
+Pablo [1:32:23]: like these thousand citations per scholar that's like fifty citations
+Pablo [1:32:25]: where you are
+Pablo [1:32:28]: so that's a big paper clearly it's a good modern internet
+Pablo [1:32:29]: google
+Pablo [1:32:39]: twenty five thousand citations claude shannon the founder of the digital age the inventor of the digital the inventor of the bit the paper from nineteen forty eight
+Pablo [1:32:41]: almost eighty years old
+Pablo [1:32:48]: has two hundred thousand citations now that is a paper that established an industrial revolution
+Pablo [1:32:57]: so that's the founding paper of the digital age two hundred thousand citation that paper is two hundred thousand citations
+Pablo [1:32:58]: seventy years later
+Pablo [1:32:58]: that's crazy
+Pablo [1:33:05]: generally ai is already bigger than the internet has ever been ten times bigger
+Pablo [1:33:09]: than the internet has ever been in terms of science
+Pablo [1:33:15]: and if you want to know where the future goes you see where science goes it's already as big as shannon himself
+Pablo [1:33:24]: it's crazy so that's when people say like yeah you think chatgpt but i don't think just a toy no
+Pablo [1:33:28]: this is serious like an excitation is not something you can fake
+Pablo [1:33:36]: and the fact that it's two hundred thousand attention shows you it's not cited in computer science only it affects everything
+Pablo [1:33:43]: otherwise you couldn't get two hundred thousand citations something like shannon that affects everything everything of reality
+Pablo [1:33:45]: digital information
+Pablo [1:33:51]: so yeah it's a huge so power setting is about it's a very important thing
+Pablo [1:34:29]: and so i want to mention the self attention mechanism as well because my project for the same class and a big portion of it was about this mechanism that i had to learn how it works how every word looked at every other word simultaneously to determine meaning by weighting the relationships it weighs the geologist word a lot stronger with rock so you know that the word in the previous example the rock band perform the geologist's word is actually an important part and not the rest of it as much
+Pablo [1:34:40]: and my current research that i've been working on is in relation to the same exact attention just in deeper level
+Pablo [1:34:42]: with spatial reasoning
+Pablo [1:34:46]: so trying to apply the same attention to three d environments
+Pablo [1:35:01]: and it all has to do currently with looking at giant data sets of videos and images and figuring out what is a sufficient enough data set to actually teach something like an llm
+Pablo [1:35:06]: what actually means
+Pablo [1:35:15]: by does that chair belong near a table or how to navigate an area in space to actually gain spatial reasoning for that
+Pablo [1:35:16]: model
+Pablo [1:35:26]: but the issue currently is the lugin of consciousness the mechanism is just next token prediction
+Pablo [1:35:29]: so in reality it's only opt
+Pablo [1:35:29]: imized
+Pablo [1:35:31]: statistical likelihood
+Pablo [1:35:33]: not the actual truth
+Pablo [1:35:35]: it doesn't really understand right now
+Pablo [1:35:38]: and it's just trying to
+Pablo [1:36:02]: mimic trying to guess what the right answer would be a lot of the papers that i was reviewing for the spatial reasoning data sets with or without the images it's still getting very close to the same answer so even without being able to view the room it was just guessing and getting the same output that was the ground truth in that same data set
+Pablo [1:36:08]: and mention the acronym wtf what's the function
+Pablo [1:36:10]: the task is not to tell you the truth
+Pablo [1:36:11]: but the task
+Pablo [1:36:12]: is
+Pablo [1:36:14]: in reality to satisfy the reward function
+Pablo [1:36:21]: so it hallucinating it just guessing the right answer it's how it works
+Pablo [1:36:27]: but our goal is just plausibility over accuracy
+Pablo [1:36:30]: when it has to be turned the other way around
+Pablo [1:36:38]: chapter
+Pablo [1:36:38]: nine
+Pablo [1:36:44]: none of the devil
+Pablo [1:36:46]: social media that's ancient beauty
+Pablo [1:36:47]: once in a more function
+Pablo [1:36:47]: how does it mean
+Pablo [1:36:49]: what is the optimizing
+Pablo [1:36:52]: that
+Pablo [1:36:53]: drives conversion
+Pablo [1:36:54]: issues the better
+Pablo [1:36:55]: one
+Pablo [1:37:04]: that would be that's the fine tuning we do what is the zoom machine learning remember i said in the ai lecture so there's what are the two inputs for machine learning
+Pablo [1:37:08]: the data and the reward function right
+Pablo [1:37:09]: the goal
+Pablo [1:37:24]: so we give chatgpt a lot of data and what's the goal what are we training for so if we train the atari alpha alpha play that google demand in a way that the nobel prize for you give a lot of data and then you tell atari game maximize score
+Pablo [1:37:25]: that's all
+Pablo [1:37:25]: you do
+Pablo [1:37:27]: that's the
+Pablo [1:37:28]: goal
+Pablo [1:37:29]: if you supervise learning
+Pablo [1:37:32]: the same model goal is to divide motorcycles
+Pablo [1:37:38]: and bicycles or faces that's the reward what's the reward function
+Pablo [1:37:41]: in
+Pablo [1:37:51]: love
+Pablo [1:37:52]: now
+Pablo [1:37:54]: there's
+Pablo [1:37:58]: all the top your search or your query take the answer to that
+Pablo [1:38:06]: no it's even simpler now that is the outcome of that it's an immersion property
+Pablo [1:38:13]: correct what is correct what does it go for so jtbd is semi supervised learning
+Pablo [1:38:14]: accuracy
+Pablo [1:38:17]: accuracy is what
+Pablo [1:38:21]: with matching the source data set
+Pablo [1:38:27]: there's no degenerative ai right so there's no supervised learning
+Pablo [1:38:32]: it's the next token predictors that's why they call them next token predictors it predicts the next token
+Pablo [1:38:34]: and it's an autocomplete
+Pablo [1:38:44]: so generative ai is basically an autocomplete so what does attention mechanism the attention mechanism is a mechanism so basically oh well finish your presentation
+Pablo [1:38:48]: but the wtf
+Pablo [1:38:51]: in generative ai is to predict what's next
+Pablo [1:38:56]: especially in large language modes there's a diffusion model a little bit different
+Pablo [1:38:59]: but large language model it predicts the next topic
+Pablo [1:39:01]: what the most likely
+Pablo [1:39:06]: thing that comes afterwards so when i say it's better safe
+Pablo [1:39:12]: then so that was an xtope predictor right so that's what it does basically that's the wts
+Pablo [1:39:13]: great
+Pablo [1:39:17]: and like you said two discussion questions
+Pablo [1:39:19]: the first one being
+Pablo [1:39:22]: well the video talked about
+Pablo [1:39:24]: hiding
+Pablo [1:39:25]: my variables
+Pablo [1:39:29]: like race and gender reduces the model accuracy because data
+Pablo [1:39:30]: is withheld
+Pablo [1:39:31]: so
+Pablo [1:39:35]: i ask is it possible to have an unbiased model that is still sufficient
+Pablo [1:39:38]: or biased inherent to complete data
+Pablo [1:39:41]: and the second one being
+Pablo [1:39:56]: if llms optimize for sounding human rather than being true are we misusing these tools for tasks that require truth like research and homework and would realign the said research function with factual accuracy
+Pablo [1:40:05]: any thoughts
+Pablo [1:40:18]: this first one correct me if wrong in the video that professor hilbert had for this that showed that
+Pablo [1:40:26]: you can not completely remove bias but you can remove it without i think it was a zero point one percent statistical loss and data
+Pablo [1:40:29]: you can't
+Pablo [1:40:31]: completely
+Pablo [1:40:31]: remove it
+Pablo [1:40:32]: and i suppose
+Pablo [1:40:33]: if you did try a little
+Pablo [1:40:33]: bit
+Pablo [1:40:34]: one hundred percent
+Pablo [1:40:36]: throw the media
+Pablo [1:40:37]: outlets
+Pablo [1:40:37]: so to speak
+Pablo [1:40:39]: but
+Pablo [1:40:41]: there are
+Pablo [1:40:41]: ways to do that
+Pablo [1:40:42]: although
+Pablo [1:40:45]: i think dr hilbert
+Pablo [1:40:48]: you are a co author on a professor buddy language doing steve tech about the
+Pablo [1:40:49]: bias
+Pablo [1:40:50]: for
+Pablo [1:40:51]: gender bias
+Pablo [1:40:53]: job
+Pablo [1:40:54]: postings like a
+Pablo [1:40:55]: waitress in a server
+Pablo [1:40:57]: you can try
+Pablo [1:40:58]: to
+Pablo [1:41:00]: get
+Pablo [1:41:01]: l
+Pablo [1:41:02]: m to not move
+Pablo [1:41:03]: but still
+Pablo [1:41:04]: wants to buy
+Pablo [1:41:05]: a certain job
+Pablo [1:41:06]: s to win it because of
+Pablo [1:41:09]: what the corpus say
+Pablo [1:41:13]: so that is still i think the bias is not removed
+Pablo [1:41:14]: unfortunately
+Pablo [1:41:16]: i think the more interesting one is the second
+Pablo [1:41:17]: question
+Pablo [1:41:28]: one of our examples to use multiple different llms and i think right now i'm seeing a lot of my coworkers
+Pablo [1:41:30]: one of my
+Pablo [1:41:34]: coworkers built one where he just has multiple models running against all of them at the same time
+Pablo [1:41:37]: and most of them are like the ones you download
+Pablo [1:41:43]: because it's like llama or something and you go lawn by these they're not like as clever as chatgpt
+Pablo [1:41:47]: but i actually think there will be some sort of
+Pablo [1:41:59]: thinning out where if you want an llm that doesn't sound human you'll go to this llm and if you want someone that's going to be a friend you're going to go to this llm right
+Pablo [1:42:02]: i
+Pablo [1:42:04]: tend to agree i think llm
+Pablo [1:42:05]: the design
+Pablo [1:42:06]: to
+Pablo [1:42:07]: reinfor
+Pablo [1:42:08]: ce what you're thinking
+Pablo [1:42:10]: so very rarely
+Pablo [1:42:13]: would you come across an llm response
+Pablo [1:42:15]: which is sage abraham
+Pablo [1:42:20]: so they're meant to be supportive and all the language that they train to is like
+Pablo [1:42:27]: support you and reinforce your beliefs and even take you down a rabbit hole which might be completely wrong
+Pablo [1:42:34]: so they're designed to give the responses that you want more than
+Pablo [1:42:40]: telling your labs through objective x y and gpt
+Pablo [1:42:49]: especially
+Pablo [1:42:53]: someone
+Pablo [1:42:55]: i
+Pablo [1:42:56]: am really going to do
+Pablo [1:42:57]: other companies who sign a
+Pablo [1:42:58]: contract with
+Pablo [1:42:59]: one ll
+Pablo [1:43:00]: m
+Pablo [1:43:01]: and now
+Pablo [1:43:12]: just kind of there's now been such a series of errors that have been happening with sort of mathematical error
+Pablo [1:43:15]: in one aspect of australia
+Pablo [1:43:20]: if anyone remembers that there's like a tax calculation and that was completely off
+Pablo [1:43:23]: and then
+Pablo [1:43:25]: bring
+Pablo [1:43:26]: up the current situation
+Pablo [1:43:27]: actually
+Pablo [1:43:33]: some
+Pablo [1:43:34]: people have suggested
+Pablo [1:43:35]: is that
+Pablo [1:43:36]: the
+Pablo [1:43:37]: llms
+Pablo [1:43:38]: were tracking
+Pablo [1:43:38]: anything
+Pablo [1:43:39]: that
+Pablo [1:43:40]: basically sent an officer
+Pablo [1:43:42]: it could have been someone that was
+Pablo [1:43:43]: a compliance officer
+Pablo [1:43:46]: not an actual officer
+Pablo [1:43:49]: on the street and because of just that word
+Pablo [1:43:51]: being there
+Pablo [1:43:57]: was most likely that person going through it what was the most likely an ai hiring process
+Pablo [1:43:59]: that's how they got through
+Pablo [1:44:02]: so yeah
+Pablo [1:44:09]: the rather than the main true part
+Pablo [1:44:11]: we are kind of seeing that right now
+Pablo [1:44:14]: across multiple examples
+Pablo [1:44:27]: yeah i think also this is where the bulk like using multiple agents using multiple llms can be helpful
+Pablo [1:45:21]: because with the most recent extra credit assignment i also found claude gave me something wrong so i asked her to gemini and gemini rightly pointed out that it's wrong so i think it's wrong because it was something that was not in the lecture no so it basically gave an example of tip jars at the cafe as an example of compensation for compensation for the hub like the star and the network which is completely wrong so when i gave that answer to gemini gemini rightly pointed out that's wrong so i think using multiple llms can really help to cross validate or cross check the answers from llms i think great
+Pablo [1:45:26]: yes there was a piece there's a lot of talk about
+Pablo [1:45:45]: thank you for bringing the discussion it's very important so the attention mechanism is extremely important so basically i just send you right now some beautiful animations from three blue one brown which i strongly encourage you to check out i mean
+Pablo [1:46:02]: you can watch them i mean you probably need to watch pay attention you can probably not do that while you're riding a bike or something but when you are on a bus or just like somewhere we have time to watch and look look at these it's not that you need to understand how neural networks work
+Pablo [1:46:07]: but these are very entertaining very intuitive he's a great explainer
+Pablo [1:46:13]: and explains profound mathematic concepts and all of these ones he acquired intuitively
+Pablo [1:46:19]: and it's in high mathematics as david hilbert the real football always says you know there's no understanding it's just getting used to
+Pablo [1:46:23]: it's not like you will understand he get used to what neural network
+Pablo [1:46:29]: s do and that's not important because of computational scientists i think everybody nowadays in this age
+Pablo [1:46:42]: everybody back at the age of an industrial revolution should understand a little bit about steam and about thermodynamics and you need to understand a little bit about intelligence and that's what intelligence actually is it comes from these networks
+Pablo [1:46:44]: so please take your time through these videos
+Pablo [1:46:49]: learn about what's really interesting what's that propagation and what's the test
+Pablo [1:47:06]: and what it does so there's extra mechanism how it's all the problem that popper did is usually we have this neural networks and they go through and we have these different matrices and they go through like in one hundred layers and the attention mechanism also puts in a layer like that basically so you have both of them between the networks
+Pablo [1:47:11]: and between the different layers and among the different layers in between them
+Pablo [1:47:16]: so that's how you can think about it and that's how it solved that problem of context
+Pablo [1:47:18]: so if you want to predict the next word
+Pablo [1:47:20]: when i tell you
+Pablo [1:47:22]: it's better safe
+Pablo [1:47:57]: than mars and say sorry right so then we condition on just the previous conditions it's a conditional probability that actually was pioneered by shannon in nineteen forty eight an information theory that's called the entropy rate the uncertainty that's remaining when i predict the next word that's what shannon actually calculates that's how he calculated entropy by basically doing these sentence completions and he actually had his wife betty women very underestimated science but going on getting a little indiana jones he was like that too so shannon there's an engineer and he didn't like how could he come up with probabilities of how to predict the next word
+Pablo [1:47:59]: there weren't any statistics
+Pablo [1:48:08]: so he had his wife betty the poor woman sitting there in his living room in his free time on a saturday night and he was just like open a random page
+Pablo [1:48:11]: and read a random sentence and ask her what do you think comes next
+Pablo [1:48:33]: and poor betty was sitting there like i think the next road is that and then he would write that down and he would do that many hundreds of times and that's how we would calculate the probabilities of the entropy rate of the english language because with poor betty right and that's not how we would do it he would calculate these probabilities of what would come next just by having many
+Pablo [1:48:36]: given answers to random sentence completion tasks
+Pablo [1:48:47]: now what they did is they optimized because if you really want to complete what's coming next and the example that thought the way if you go back to this very interesting because in the example the geologist
+Pablo [1:48:48]: so check out
+Pablo [1:49:02]: so the geologist bought a ticket to the concert to see a rock band so is that rock the band or is it the geologist what rock is it so how can you figure out what's the right we understand
+Pablo [1:49:07]: what this refers to the rock band refers to that even so the geologist is very close by
+Pablo [1:49:08]: so how can you do that
+Pablo [1:49:18]: and so it's well when you try to understand what somebody would think in the next moment i can tell you right now pink elephant
+Pablo [1:49:23]: what comes up in your mind i can predict what's coming up in your mind
+Pablo [1:49:29]: but in order to really predict what's coming up in your mind maybe as a child you have an experience with pink elephants
+Pablo [1:49:32]: and maybe that influences what you see in your mind right now
+Pablo [1:49:41]: like be honest is that being elephant more like a disney thing elephant or is it like a real vineyard what do you have in your mind right if i want to predict what's in your mind i would need to understand all the
+Pablo [1:49:41]: context
+Pablo [1:49:43]: now i go back through the years to see
+Pablo [1:49:46]: the context of your child how would you put that in your condition probability
+Pablo [1:49:48]: that's pretty crazy
+Pablo [1:49:50]: but that's what the attention mechanism
+Pablo [1:49:50]: solves
+Pablo [1:49:56]: it brings out even like things that mighty man related that right now
+Pablo [1:50:02]: when god just believe that and just with that trick it turns out that he's a i became interesting to reform humans
+Pablo [1:50:10]: now pablo said oh it's not really conscious i'm actually not i'm actually in the other camp i do think humans do nothing different
+Pablo [1:50:12]: i do think that's what we do
+Pablo [1:50:14]: we are next token predictors
+Pablo [1:50:17]: that's what our cognitive machinery is doing
+Pablo [1:50:20]: we constantly do next token prediction
+Pablo [1:50:23]: and most of what we perceive
+Pablo [1:50:28]: i think psychologists tell us whatever ninety eight percent or something of what we perceive
+Pablo [1:50:33]: is actually not what we perceive from the outer world is what we perceive with our prediction
+Pablo [1:50:39]: the content of our mind the vast majority of our mind our internal relations
+Pablo [1:50:46]: so when you try home with a car
+Pablo [1:50:51]: did you really process everything that came out
+Pablo [1:50:54]: on this if a ball would fly
+Pablo [1:51:06]: into your lane and some children screaming well then would you realize what's really going on in the environment around you you would be ripped out of your simulated simulation
+Pablo [1:51:13]: you can rip out your constant information that you do our evolutionary reasons to
+Pablo [1:51:15]: just be more efficient
+Pablo [1:51:16]: to simulate reality
+Pablo [1:51:17]: than to really receive it
+Pablo [1:51:19]: and by the moment it's necessary
+Pablo [1:51:25]: you will spend the energy you will make the extra effort out of your dream
+Pablo [1:51:32]: and perceiving what's going on in reality because now you need it children born boo what's going on and then you suddenly see it
+Pablo [1:51:38]: but like ninety eight percent of the time you're just like in your dream going on with this thing
+Pablo [1:51:39]: i'm just predict
+Pablo [1:51:40]: ing that's what i do
+Pablo [1:51:41]: but you have to go
+Pablo [1:51:43]: home and then suddenly like okay something different
+Pablo [1:51:44]: what happened
+Pablo [1:51:45]: here oh that tree is gone
+Pablo [1:51:49]: like there you see then you see that the tree is not there anymore
+Pablo [1:51:57]: but it's not like come home every night and you're like oh yeah there's this tree you don't really see that tree you just assume it's there
+Pablo [1:51:59]: you just simulate
+Pablo [1:51:59]: it in your mind
+Pablo [1:52:02]: so that's what psychologists tell them
+Pablo [1:52:03]: that's what our minds do
+Pablo [1:52:04]: our minds and next children
+Pablo [1:52:05]: predict all the time
+Pablo [1:52:08]: we're just doing that
+Pablo [1:52:08]: there was nothing different
+Pablo [1:52:14]: and that's great so actually hint our godfather he came out with them all the nike
+Pablo [1:52:19]: partners so he was one of the first ones
+Pablo [1:52:23]: who actually showed that language
+Pablo [1:52:27]: this is the connection between concepts
+Pablo [1:52:31]: the semantics or is it the definition of that word
+Pablo [1:52:40]: and it's not as both of them you need both of them you need to have actually the connections between the definitions that's what hinton speculated in the nineteen eighties
+Pablo [1:52:45]: and if you have the connections where usually the two camps were like oh we have these concepts
+Pablo [1:52:50]: it's more like there's a word in the episode
+Pablo [1:52:52]: and so what nature proposed
+Pablo [1:52:53]: ninety eight
+Pablo [1:52:56]: it's a network between the dictionary definitions
+Pablo [1:52:59]: and that's what the attention mechanism does in the two dimensions
+Pablo [1:53:02]: and that's how we solved it and that's why it's indistinguishable
+Pablo [1:53:03]: from humans
+Pablo [1:53:06]: indistinguishable in the sense of the turing test
+Pablo [1:53:10]: the we cannot distinguish if you talk to an llm nowadays or to internet
+Pablo [1:53:12]: that's how they got
+Pablo [1:53:13]: and
+Pablo [1:53:19]: i'll choose when you test them they hang out with that it's indistinct
+Pablo [1:53:20]: most
+Pablo [1:53:21]: controlled experiments
+Pablo [1:53:23]: so
+Pablo [1:53:28]: the most light in our of course our one hundred percent arrogance would say like no no but we are still different yes we are different
+Pablo [1:53:35]: in consciousness i agree with that so that's the only thing i wouldn't agree with with the slides we have a difference in consciousness
+Pablo [1:53:37]: but in our not in our cognitive processing
+Pablo [1:53:42]: that's what we do when we think
+Pablo [1:53:44]: or even when we feel
+Pablo [1:53:56]: right so feelings most of what we do again ninety percent of what we do are feelings intuitions always about decisions kind of like but it's just fast thinking
+Pablo [1:54:01]: and reasoning ten percent of our thinking it takes very slow it's just slow think
+Pablo [1:54:02]: ing
+Pablo [1:54:05]: but both of them are basically information processes
+Pablo [1:54:12]: we are indistinguishable from the important machines basically they might do it a little bit different in their hardware
+Pablo [1:54:16]: but the idea and the end result is indistinguishable
+Pablo [1:54:20]: so i'm more in that camp
+Pablo [1:54:23]: now does that mean the mach
+Pablo [1:54:27]: ines do everything we do no are they conscious no but that's a different thing
+Pablo [1:54:31]: and i'm sitting there
+Pablo [1:54:32]: why
+Pablo [1:54:35]: i'm so fascinated by that you know yuval harari
+Pablo [1:54:45]: with the sapiens the short history of humankind the ai here in davos again last week giving the big ai talks he meditates three hours a day
+Pablo [1:54:49]: why do you think all these digital guys
+Pablo [1:54:53]: because they're so rich
+Pablo [1:55:01]: he's a professor at the university of jerusalem right now he does i think hiring him for a keynote
+Pablo [1:55:02]: he charges like three hundred thousand
+Pablo [1:55:12]: but no but why do you think honestly really why do you think why do you think i meditate every day like why do you think all these digital guys are meditating
+Pablo [1:55:16]: because that's something machines cannot do
+Pablo [1:55:18]: like we are fascinated by that
+Pablo [1:55:24]: like we are fascinated you can be conscious
+Pablo [1:55:32]: without information processing and that there's a difference and that like learning about this difference actually very intriguing it like it's worthwhile to spend an hour a day doing that
+Pablo [1:55:37]: because it's too difficult to understand because we usually identify with our mind but we don't have to
+Pablo [1:55:42]: we don't have to identify with our mind that's the funny thing we usually do
+Pablo [1:55:45]: identify with our thoughts and desire feelings
+Pablo [1:55:47]: with our mind
+Pablo [1:55:48]: but you don't have to
+Pablo [1:55:51]: you can be conscious without thinking
+Pablo [1:55:53]: trust me you can
+Pablo [1:55:57]: and there are these brief moments sometimes we make you do
+Pablo [1:56:08]: any consciousness it's more like the space in which thinking and feeling happens and usually you identify with the content of space there are things in space you don't see the space
+Pablo [1:56:14]: right because that's the space that gives the room for the content
+Pablo [1:56:17]: so consciousness gives the rooms for thinking and feeling
+Pablo [1:56:22]: and it can even happen when it's not conscious the thinking and feeling often we think and feel unconsciously
+Pablo [1:56:27]: now we can bring it we can shine the light of consciousness on it
+Pablo [1:56:33]: and became the conscious like if you're in a high conscious state like if you completely emerge in a sunyata in emptiness
+Pablo [1:56:37]: you are highly conscious you understand everything that's going on around you
+Pablo [1:56:39]: it's the other way around
+Pablo [1:56:44]: if you're in your thoughts you're not aware like when you drive the car and you suddenly got home
+Pablo [1:56:47]: you're like wait where did i go and i do a rabbit hole right
+Pablo [1:56:50]: you self identified with you and you are the thinking machine
+Pablo [1:56:52]: however when you're highly conscious
+Pablo [1:57:02]: that's what the masses do like real mass is like miss eminyari right so if mister vidyagi he's there and then he just turn around and catch the ball
+Pablo [1:57:05]: there was about to hit him because he was like consciously aware of everything that happened
+Pablo [1:57:18]: that's what some of the meditation teachers that there was one famous one you don't do that anymore but back in the days they were meditating and he would sneak up on his students in the back and then hit them over the head with a wooden with a wound
+Pablo [1:57:20]: because if they wouldn't dug away
+Pablo [1:57:22]: they weren't really immersive
+Pablo [1:57:28]: they didn't even realize that the masses knock up behind them
+Pablo [1:57:29]: to the sick of the hand
+Pablo [1:57:32]: now if you really highly conscious you would know that
+Pablo [1:57:35]: in that moment
+Pablo [1:57:37]: because you are highly aware
+Pablo [1:57:39]: now you cannot do that
+Pablo [1:57:40]: when you respect it
+Pablo [1:57:42]: much more
+Pablo [1:57:43]: that's why we
+Pablo [1:57:43]: meditate
+Pablo [1:57:44]: that's one of
+Pablo [1:57:45]: these digital guys
+Pablo [1:57:46]: now manage it
+Pablo [1:57:47]: we are fascinated by that
+Pablo [1:57:48]: you go that's what machines cannot
+Pablo [1:57:49]: do
+Pablo [1:57:50]: they cannot not think
+Pablo [1:57:53]: we can
+Pablo [1:57:59]: that's a fascinating thing with attention mechanism that it seems like we solved it
+Pablo [1:58:02]: because it seems like that's what we humans behave
+Pablo [1:58:06]: when you hear the voices in your hand and you think that's what you do
+Pablo [1:58:09]: running does that mean that's all that you are
+Pablo [1:58:13]: no but that's actually unfortunately most of what you identify with
+Pablo [1:58:18]: now as a last note and i need to go if it turns out
+Pablo [1:58:23]: that the human species is nothing else but a thinking and feeling machine
+Pablo [1:58:26]: doesn't know
+Pablo [1:58:26]: the right
+Pablo [1:58:27]: word
+Pablo [1:58:30]: because that thing is solved
+Pablo [1:58:31]: you automated that
+Pablo [1:58:34]: so there must be more hopefully
+Pablo [1:58:35]: otherwise
+Pablo [1:58:39]: the homo sapiens is obsolete

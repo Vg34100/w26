@@ -1,0 +1,208 @@
+So now we're going to prove that, unlike what we believe to be
+the case with time complexity, when it comes to space complexity, proven that no witness exists is as easy in some sense as
+proving that one does exist. I had to remember a
+problem is an NP if a time efficiently checkable proof exists
+whenever the answer is yes. For example, does a graph
+have a Hamiltonian path? If it does the path as the prints. And this conjecture that end he
+is not equal to co-NP expresses our intuition that there's
+not a time efficiently checkable proof for
+the lack of a witness. If a graph has no Hamiltonian path, we don't think that there's
+a short proof I can give you that you can check
+and be convinced 0. The graph really does
+not have a Hamiltonian. So the so-called elements
+shell up shen me theorem says that this intuition fails when it comes to
+space bounded complexity. In fact, for any space
+found S at least log n, n space of S equals Cohen spaces. So a corollary is that
+n now equals Cohen oh, and also NPS phase
+equals co-NP space. Although we already
+knew both are equal to p space by savages there. So there's an obvious space
+efficiently checkable proof when there is a path in a graph
+from S to T. Remember, reachability is kind of the canonical NLP problems
+and I'll complete and that there's an easy proof when there's a path that you could just check that each adjacent pair of nodes
+is connected by an edge. But it turns out there's also a space efficiently
+checkable proof when there's no path from S to T. So this is
+sort of the surprising part. It's not obvious what that
+proof should look like, but we're going to
+show that one exists, although it's a bit more complicated. Okay, So the strategy for
+showing us is going to be to show that non
+reachability is in and out. So knowledge ability is just
+the complement of reachability. It's the set of all
+graphs and pairs of nodes that do not have a path from
+the first node added a second. Okay, so let's just try to
+connect these things up a bit. Now, since reachability
+is NL complete, its complement, non
+reachability is Cohen. So if we can show that non
+reachability is a nano, this implies that because
+it's in and now it's reducible to reachability
+because reachability is NL complete everything
+and then L is reducible. So this will mean non reachability
+is reducible to reachability by wanting to many one
+reductions that can't even flip the answer, right? That in turn will imply
+that reachability is co NL complete because non
+reachability is CO an album late, we've just shown it reduces
+the reachability and that internal imply that non
+reachability is NL, complete. Okay, so we'll get quite a bit out of just showing that non
+reachability is an L will actually get both IT
+and reachability are both complete for nl
+and for CO and L. And through the, this idea that a complete property in a sense is a representative of all the
+problems in that class. This is how it will show
+that et al equals Coke. And remember, we wanted to show not just that those
+two classes are equal, but all the space bounded, enclosed space bounded classes with even more than
+logarithmic space. And that'll follow from this collapse
+propagates upwards property. Remember the padding
+technique that we used ones. So for example, if you,
+if you want to show, say linear space
+equals colinear space, using the fact that n
+l equals CO. And I'll, well imagine taking any language
+a and then computing pad of a, in this case paddle mean
+on an input x pad it with k is zeros where k is exponentially
+bigger than x and x is an a. So for every x in a, you're going to put the string
+x semicolon 0 to the k in path. Not the fact that a is, it is decidable in
+linear space implies that pad of a is decidable
+in logarithmic space. Because you can just run the linear space algorithm on right on input x semicolon
+and a bunch of zeros. Just run the linear space algorithm. On. If you want to know
+is x and a are not. Then what you do is you pad
+acts with all these zeros. Then you run this linear
+space decider on a. But note that, that thing is taking only logarithmic space in
+the length of x itself, because it's linear in x plus
+these exponentially many zeros. And that ends phase. That's an L, which is CO et al, which means we have a coef
+now algorithm for PAD. We want to determine is XNA. We let y equal this and we
+use the colon l algorithm. At task is why in this
+pad of a language. Now there's a technicality
+which is that what we want to do this in log-space, but we can actually write on input x. We can't write this whole string, y equals x 0 to the
+k in space X, right? But in the RAM model, we don't ever have to write it down when we run this algorithm on y, whatever it tries to
+query a bit of Y. If next we have that in our
+input, we just return it. And if the bit is beyond there, we just return a 0, right? So we just knows, and for
+writing down only zeros, we don't have to
+explicitly write them. We just feed them to the algorithm depending on its query location. Now, this is going to
+take space O of log of y because that's a Cornell
+algorithm, which is o of x. So that shows x's and
+co-NP space of n. So we picked an arbitrary a and
+n space n showed is in Coinbase. And by symmetry, right? So that means n space, n is contained in colon space. And by symmetry, we
+can go the other way. Okay. So the goal is to show non
+reachability is an NFL. So here's how we're,
+we're kind of doing this sort of top down
+approach from gotta, kinda giving you most of the proof except for the key part at the end. And then we'll do that
+on the next slide. So the key is going to be this technique that both environment
+and shout Chen independently. It's called inductive counting. So what do we have to do, right? Non reachability is we're given a graph and these
+two nodes, S and T. And we want to know, is it the case that S is
+not reachable from TEA? We want that if S is
+not reachable from T, then there's some path to make our non-deterministic
+log-space program say yes. And if S is reachable from TEA, that every path should
+make it say no. So the main trick is going to be
+this inductive counting where what we do is we actually do something a
+little stronger than that. We count the total number of nodes reachable from S
+and at most n steps, where n is the number of
+nodes in the whole graph. So first step is count
+that number are okay. Suppose we can do that. Supposedly could countless
+number of nodes reachable. How can we use that to set up a non-deterministic computation
+that indicates yes, if and only if t is
+not reachable from S. So once you got this
+number r in hand, we will sequentially guess
+paths of length at most n ending in different nodes
+like our different packets. And we're going to accept as long
+as none of the paths ends in T. And note that these paths
+can be checked storied only 0, 1 nodes at a time. So we can do is we
+sequentially guess each pack. How do we guess one path? We sequentially guess, guess nodes at most n different
+nodes and we just check, okay, is each, this is the standard
+NL reachability algorithm. We just check. Is each new
+node we've guess fall of, connected the previous ON by an edge. We non-deterministically, non-deterministically
+guess how far to go. It's going to be some
+number at most n. And then when we get to the end, and we want to know
+what no, does it end? And we actually want to
+make sure that these are different pads all end
+in different nodes. So that's a little
+bit of a tricky part. How do we ensure they end in
+different nodes are here, could be like as big as n, right? So we can't just remember all the ending nodes that we've had because that would
+take too much space, would take at least linear space. So we can't remember them all, but there's a few little technicality
+tricks we can play here. We can count the number of
+different end nodes we've seen. We can remember what was
+the previous node we saw. And we can ensure that we're only going through n nodes in
+order lexicographically. So actually we're going to
+sequentially guess pads and we're going to check a
+swap stronger condition, which is that these paths each
+end and a different node. But if you would look at
+the n nodes in order, they would appear in increasing
+order of their identifier, right? Of each of them is just
+represented by a bit spirit. And you can convince yourself
+there are different paths. There's a way to get them in
+the right order and checklists. So all we need to do is
+just check that we never go down when we get, when we see a new. And so this is the
+entire algorithm, right? A lot of guessing here, but this will verify that there is no path if
+we get this number right, if you properly figured out
+what is the number of nodes reachable than simply iterating
+over many guest and nodes, we can verify none of them are T. So how do we compute how many nodes are reachable
+from S in at most n steps. So here this is going
+to be the trend. It's called inductive counting. And it's, this also uses
+a bit of non-determinism. Again, this is a non-determinism
+deterministic algorithm, so we're allowed to do that. But now we're not doing
+a yes, no answer. We're doing a computation
+of an integer. So what exactly do I
+mean that we're going to output this number of
+nodes non-deterministically. So it'll mean that the program, it makes guesses and
+they can have errors, but it'll detect the errors, right? So what it cannot do is
+make an error of the form. It outputs the wrong number. When I say you can have an error, what I mean is it will know
+and error has been discovered. So it'll either just say worn
+in like something went wrong. My, my output is an exception. But if there's no error, we're going to guarantee that
+the integer returns is OK. It's actually the number
+of nodes reachable from S. And at most that many
+steps, I actually wouldn't. It will now express it as, more generally as k steps. So we're when we call this, we would call it within, but it's inductive, so we need to
+allow that k could be less than. So this is the algorithm for inductively counting the
+number of nodes that are k plus 1 reachable from
+notice any unreachable and a path of length
+k plus one or small. So it's inductive because
+the first step is we, we do induction in the
+base case that k is 0. We just say one, there's one node reachable
+from S with paths of length 0, it's just S itself. That's it. And if k is bigger than 0, we do induction and we inductively
+count how many nodes there are. And again, if we assuming this
+is inductively fulfilled, if this returns a value at all, if this doesn't just
+crash and say no, we had an error, RK will
+actually be correct. To now we have to ensure
+that there's a sequence of guesses that makes us return
+the proper value of r k plus one. And that any other
+sequence of guesses actually just reaches this
+error line right here. So that if we return an integer,
+it's the correct editor. But how do we do this? Well, let's ignore some
+of the details in here. What we're gonna do is
+iterate over each node will start assuming that
+it's not reachable. And we discovered through this stuff we did in here
+that it is reachable. We'll increment our k plus
+one, so it starts at 0. And what we're gonna do
+is try to figure out is V one of the nodes reachable and
+at most k plus 1 steps if so, increment our k plus 1. So maybe it is, and we do this, maybe
+it's not and we, it's V reachable is false, or maybe we just guessed wrong
+and reach an error, right? So how is it that we
+determined is V reachable? Well, what we're going
+to do now is we're going to iterate over
+each other node. We're going to use the
+fact that we inductively counted and that our K is correct. And this will help us check whether our guesses in here are erroneous. So we'll iterate over
+each possible node. And we'll use the standard ML
+algorithm for k reachability to ask, is it possible in g to reach
+from S to U and at most k steps. And remember, this
+is an ML algorithm. It's non-deterministic, so this
+will return true or false. If it returns false, don't know, was S reachable from the, could we reach from S to U? If it returns true, it's definitely true, right? So if this returns true, okay, Definitely it found a path
+from S to U at checked it, so we can increment CK safely. And then that just tells us, okay, some other node u is
+reachable in k steps. So now we check, well, is, is there an edge from u to v? That means v is reachable
+and k plus 1 steps, or as u equal to v, either of those would
+mean v is reachable in at most k plus 1 step. So we would say, great, we found a witness you
+that, that v is reachable. It's one that's reachable in
+one fewer step connected. So now what could go wrong here
+is that some of the use could be reachable and then we want to
+increment the CK, but we don't. But what's going to happen? Well, that means when we get
+to the end of this loop, we will not have
+discovered every node reachable in k or fewer steps. So CK, it will be too small. So that means CK will
+be unequal to RK inductively assuming that our K is
+accurate and we raise an error. So this is the trick with
+inductive counting disease. Start with inductively
+knowing how many there are. And then you use that to check, did you properly guess when
+calling reachable right here. And this actually ensures if you manage to make it pass this error, This thing was guaranteed
+to have guessed correct path of length at most k, which means you will have
+discovered all the paths of length k plus one that could
+have included B. Alright, so if you actually
+managed to make it here, you really will have discovered
+whether B is reachable. You'll increment our k plus 1. And so we make it
+here without hidden, there are k plus one
+is actually correct. Okay, So now a little
+exercise at home. Why is this algorithm log-space? So I'll let you think
+about that yourself. You can ask in the lecture
+if it's not clear.

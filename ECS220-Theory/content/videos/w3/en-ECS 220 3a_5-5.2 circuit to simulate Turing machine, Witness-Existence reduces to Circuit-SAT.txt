@@ -1,0 +1,85 @@
+So with this alternate representation of the configuration
+of a Turing machine, that's mostly what you
+would expect except that the tape head is sort of
+encoded in urinary area. You put a one where it is
+and a 0 where it isn't. Now we want to describe at
+a high level how to design a Boolean circuit that
+will update this to be the next configuration
+of the Turing machine. So first we'll just show
+how the data is grouped. You have sort of one
+subcircuit per tape cell, each one with some bits
+to indicate what is the symbol written there and
+is the tape that there or not. And you also want to feed the state, and you also want to feed the
+adjacent information from the adjacent cells
+into the subcircuit because you have to know is
+the tape head next to me? If so, am I going to
+have the tape at next? Should I pass the
+tape had to someone. So we're sort of wired up like this. It's kind of confusing when
+you look at it like this, but this shows it's just local. And finally, you want to give the state to all the
+subcircuit so that they know what to do based on the
+state and the input symbol there. And then it's going to do some processing we'll talk
+about in a second and then pass that information out to the next sub-circuit and it's
+going to update the state. So intuitively, what's
+going on in here. But we're not going to write out
+all the N and the NOT NOR gates, but you could write down
+gates that would represents, that would do the
+computation appropriately. And what would that
+computation it have to be? Well, first you'd have to
+check if the tape head here. If so, update the tape
+contents and the state, right? And this is a Turing machine where
+the tape head moves every time. So if it's here now it shouldn't be here next time you change to 0, be otherwise, what's going to happen
+with a tape that is not here. So certainly whatever
+where the tape contents before these black symbols,
+they'll stay the same. Just copy them from the
+input to the output. But we also need to
+check the neighbors. Try to remember the neighbors
+might have the tape it. So this subcircuit right
+here might see, oh, there's a one and it's
+going to move here next. So if so, set the tape up to one. So that gives you a way to update this row of bits to
+represent the next configuration. So here the tape had
+moved from where it was to the right and you change the symbol from whatever 000
+represents to whatever 11 represents, and you updated the state as well. So this is a circuit that
+on input a configuration, the Turing machine outputs the next configuration
+of the train machine. So you can put many layers of this same circuit
+together and it will sequentially process to give you a sequence of configurations
+of the Turing machine. So let's now ask how
+big is this circuit? So the subcircuit
+for each cell within these little boxes has this
+many inputs and outputs. It depends on the number
+of states, the number it. Of tape symbols, but it's
+a constant independent of the size of the input that the
+Turing machine is processing. So you can compute
+circuits like this with exponentially in m many gates. So about this many, you can
+do a little better than that, but it's about this many so polynomial in the description
+length of the Turing machine, which itself is constant with
+respect to the input size. And to simulate a Turing machine running for t steps
+and using space S, How large to the
+surrogate have to be? Well, if it uses space S, We need enough of these to represent all the tape cells
+that are ever be used. And we do one layer of this
+per time step you run. And remember that if a Turing
+machine runs for time t, It can't use more than t space. Because it can at
+most movable, right? Once on every time step. So S is at most t. So t times s can just be
+replaced with t squared. And this over here is a constant. So the circuit is o of t squared. Description length. Are these number of gates in the number of time-steps
+we're going to run for. Okay, So here's how we put all that together to reduce witness
+existence to circuit SAT. In other words, to transform
+a NP verifier represented by a Turing machine into a circuit
+that satisfiable if and only if the ND verifier can be made to say yes with
+the proper witness. So the reduction is on input
+Px T for witness existence, we output the circuit
+C sub EXT of width t, approximately n depth d, that simulates P for t
+steps using t tape cells, knowing that's enough cells, if we only run for t steps, maybe we don't even need that many, where there's a W to
+make that circuit output one if and only if px W accepts. So it looks somewhat like this. There's the very first layer which says we start
+in the start state. Let's say this is the
+representation of it. And what's going on here? Well, p takes two inputs. So we imagine that
+that's written down on the terrain machine
+tape with X and Y, X and W right next to each other. So x is going to be hard coded. So whenever I write these bits here, these are not actually
+inputs to the circuit. These are hard-coded
+constants, right? And you can, you can either assume your Boolean circuit
+model allows constants or there's a way to cook up constants if you have only AND, OR and NOT gates. So those go here. And along with all these other inputs that are hard-coded as shown, then the part that represents the witness is the actual
+input to the circuit. So these are the input
+nodes to the surrogate. And then we add some blanks to
+make the total width equal to t. So imagine we start with the term she has x on its tape followed by W. And maybe there should
+be a character between them to separate them, and then followed by blanks to make up the total space
+wherever we're going to need. And now, if you put the
+right bits for w here, that would make p except x and w, that will make this
+circuit output true.

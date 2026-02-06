@@ -1,0 +1,107 @@
+So we're going to get into trying to show that certain
+problems are not in P. Now, big conjecture is whether
+NP is not equal to BA, and that would mean all those NP
+complete problems are not NP. Most of the problems we encounter in the real world
+that we want to solve quickly, but we don't know how they
+turn out to be NP-complete. So we don't yet have any techniques
+for proving they're not NP, but we do have some techniques for proving certain
+problems are not empty. So let's just look now. Not at what we want to prove, but at the tools we have
+which are insufficient. So proving a particular
+problem is not NP is tough if you to animate
+something like sat, right? And asked me, show that
+there's no algorithm for this. That's tough. But one thing that's quite a
+bit easier is if you don't have a problem And in mind and
+advance that you care about. You just want to demonstrate
+that there is some problem. Outside of p. You can just artificially construct one and it's not a natural problem. You care about solving. It just demonstrates something about the structure of these
+complexity classes. So the trick, even when you're
+artificially construct in an unnatural problem
+is to ensure that the problem remains and some
+other complexity glass. So in this case here, we're going to use which is
+bigger than NP we think. But we aren't going to actually show unconditionally that x is not equal to p by showing there's a
+problem in EXP, but not be. Now, as I said, it's
+going to be artificial. This won't tell us whether
+any natural problem is in XP, but not be. Although I'm going to
+point out that there are some problems that are natural there, but we're not going to show it there. A little tougher to show. The more generally, we're going
+to show that time of T of n, the problem solvable
+in o of t then time is a strict subset of time of f of x. Whenever f grows at a rate
+quote sufficiently larger than. So the way this is often
+summarized is with more time, you can compute more. So in other words, computational complexity theory
+is actually worth study. There's something to
+be discovered here. This whole alphabet soup of all these different
+complexity glasses is not simply a 1000
+different names for Pete. So this is actually more or less
+the first theorem proved in computational complexity theory in the mid 1960s that kicked
+the whole thing off. Okay, so let's start by
+just observing that there is a natural problem solvable
+in exponential time, but not in polynomial time. We're not going to prove this, but this is a problem
+with the little easier to tell a problem we might
+actually want to solve. So here's this problem. We haven't given a name too, Yeah, but we've kind
+of talked about it. It's called Circuit value. And this is simply given a Boolean circuit that takes an input and an
+assignment to its inputs. So a particular binary string
+to give the circuit isn't, but is it one? Alright? So I'm going to say this
+is obviously NB, right? You can just trace through each
+of the inputs, look at the gates, they're connected to evaluate
+the values of those gates, then go to the next layer of the circuit and so on until
+you have the output value. So let's now think about a different
+way of representing circuits. So let's imagine that you have of
+not a surrogate written out in full detail listing all the gates and circuits are essentially
+directed graph. Absolutely. We define them as
+directed acyclic graphs. So rather than a normal graph
+representation where you explicitly list every node u
+explicitly list every edge. Let's imagine instead
+that way you have is a polynomial time algorithm, AAC. So it's an algorithm for CE. And it succinctly
+represents the circuit, meaning it takes as input an integer I write and you imagine each of
+the gates can be numbered. Maybe gate number two is
+input to gate number five. Is this not gate, gate
+number eight is the output. So this takes us input this index for a gate and what
+an output, this two things. First of all, the type of
+the gate isn't an end or, or is it an input? And it also indicates
+essentially the edges. So it just gives the indices of n neighbors and
+our neighbors of gay. But, and so if you were
+to run this algorithm for all the I represented
+indices of gates, you could construct this explicitly
+listed representation of it. But this algorithm, when you consider how many bits you need to just
+write down the algorithms. In Python, it might be much
+smaller than the circuit itself. You might have some
+extremely regular circuit. And it's a very big circuit, but it can be described by
+a very small algorithm. So not all circuits are that way, but some circuits are regular enough that just the algorithm
+itself will take a lot fewer bits to write
+down than the circuit that would be output if you ran
+the algorithm on every input. So this is called succinct because
+it's sort of potentially says. So here's the problem
+we're going to think about is this variant
+of circuit value. So again, your whole
+goal is just given a circuit and an
+assignment to evaluate it. If you're not given the
+circuit explicitly, you're given this
+succinct representation. So you're given an algorithm and you want to know what's
+the value of the circuit. And because this circuit
+can be much smaller, because the algorithm generating
+the circuit can be much smaller. Legwork require many fewer bits to write down than
+the circuit itself. Although the time needed to do this would roughly be the same
+as the time needed to. Up here, they take
+different size inputs. This one, the size of
+the input is dominated by the explicit representation
+of the circuit. If you had some algorithm for
+producing the circuit gate by gate, and that algorithm was logarithmically smaller
+than the circuit itself. Well then, although the time needed for each of these is
+the same for that circuit, down here, the circuit is represented
+with a much smaller input. And so the running time, as a function of the input
+would be exponentially larger than the running time up here. So it can't be much more than
+that for technical reasons, but that we won't get into. But, so the point is
+this problem is in X, but that algorithm isn't necessarily polynomial time because you don't have this large input. Anybody might have
+a very small input, but you take the same, the
+amount of time to do that. And it turns out this thing is, you know, outside of PPE, we can prove that is something
+called EXP complete, which we won't define, but
+it's similar to NP-Complete. And in particular, it means that
+this is an x minus set minus p. So we're not going to get too much
+into this problem, be on this, but this is a problem that you, it's a little bit more natural
+and it is, it is solvable. It is solvable in some time-bound
+exponential time button, but provably not in polynomial
+time on all possible inputs. And just in case you're wondering
+the variant of this that looks more like the problems we had
+been studying. Circuit SAT. Meaning given us a sink
+representation of a circuit, you want to know, is there an
+assignment that makes it true, that is NXP complete
+as you might expect, going from the deterministic version to the nondeterministic version, the same way circuit
+SAT is NP complete.

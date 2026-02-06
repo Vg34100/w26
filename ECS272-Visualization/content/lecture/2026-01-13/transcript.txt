@@ -1,0 +1,1382 @@
+undefined [0:17]: it's hard to tell because it's early morning class
+Them [0:21]: we still have
+Them [0:23]: until check we
+Them [0:25]: have n equal
+Them [0:32]: to take this class you still wait
+Them [0:35]: list should be
+Them [0:41]: how lord
+Them [0:54]: this is the first time it's not really early right
+Them [0:55]: now
+Them [1:00]: the earliest i taught in the past is like ten a m
+Them [1:03]: when our business
+Them [1:05]: for most
+Them [1:06]: of us
+Them [1:08]: especially the second
+Them [1:10]: very co
+Them [1:11]: ol
+Them [1:20]: any question any concern anything
+undefined [2:53]: so
+undefined [2:57]: you didn't finish the previous lecture
+undefined [3:05]: to point out
+undefined [3:09]: some important concept
+undefined [3:12]: but first of all
+undefined [3:15]: i think
+undefined [3:16]: last time
+undefined [3:19]: you recall
+undefined [3:20]: that
+undefined [3:22]: this video
+undefined [3:23]: by
+undefined [3:24]: hand roslyn
+undefined [3:26]: and some of you stay and watch it
+undefined [3:29]: and hopefully some of the others
+undefined [3:32]: you watch it after
+undefined [3:33]: you
+undefined [3:39]: demonstration
+undefined [3:41]: the power
+undefined [3:43]: of interactive visualization
+undefined [3:46]: and
+undefined [3:48]: this is screen capture
+undefined [3:56]: but in this one i realize this is the y axis is line
+undefined [4:05]: x axis is income reverse greater than family size
+undefined [4:08]: so
+undefined [4:10]: you can see the increase
+undefined [4:14]: family size
+undefined [4:17]: and then lower life
+undefined [4:18]: expectancy
+undefined [4:21]: what you
+undefined [4:22]: say is higher income
+Them [4:31]: but
+Them [4:35]: what i wanted to show here is this is a very simple plot right
+Them [4:39]: that's my part but it does use a color
+Them [4:43]: and size to encode additional information
+Them [4:48]: and this visual encoding is something we will talk about today
+Them [4:55]: so
+Them [4:56]: here is if
+Them [4:56]: you look at it
+Them [4:57]: not just
+Them [4:58]: respect
+Them [5:10]: here
+Them [5:22]: is supervised
+Them [5:25]: information
+Them [5:26]: and
+Them [5:27]: then also
+Them [6:09]: video
+Them [6:09]: you watch within
+Them [6:10]: that just show the best
+Them [6:11]: part
+Them [6:29]: of
+Them [6:30]: animation
+Them [6:39]: go
+Them [6:40]: ahead
+Them [6:42]: so
+Them [6:44]: visualization
+Them [6:52]: to
+Them [6:52]: illustrate
+Them [7:05]: information
+Them [7:19]: for examp
+Them [7:20]: le
+Them [7:41]: change
+Them [7:45]: happ
+Them [7:46]: y
+Them [7:53]: user
+Them [8:06]: interact
+Them [8:07]: ive
+Them [8:31]: data
+Them [8:49]: design
+Them [8:50]: ing the visual
+Them [8:51]: ization system
+Them [8:52]: you
+Them [8:52]: want to do that
+Them [8:53]: but
+Them [8:54]: then you want
+Them [9:07]: your
+Them [9:07]: self
+Them [9:12]: happy
+Them [9:19]: so
+Them [9:20]: let's look at this
+Them [9:20]: process
+Them [9:22]: this is
+Them [9:24]: the
+Them [9:25]: visualization process
+Them [9:28]: so
+Them [9:29]: some say that
+Them [9:30]: they have to be
+Them [9:30]: ready
+Them [9:49]: so
+Them [9:50]: you must allow
+Them [9:51]: user
+Them [9:52]: interaction
+Them [9:59]: let's
+Them [10:00]: look at the detail
+Them [10:14]: off
+Them [10:15]: no
+Them [10:31]: that's interest
+Them [10:31]: ing
+Them [10:33]: or
+Them [10:34]: this one day that
+Them [10:35]: we
+Them [10:36]: say i can
+Them [10:37]: not
+Them [10:38]: i
+Them [10:39]: cannot process all
+Them [10:40]: the data
+Them [10:40]: and then he
+Them [10:41]: sent all
+Them [10:42]: this
+Them [11:02]: so
+Them [11:03]: you can match
+Them [11:04]: the sel
+Them [11:05]: ected data
+Them [11:06]: to
+Them [11:06]: the right
+Them [11:07]: vis
+Them [11:08]: ual representation
+Them [11:11]: st
+Them [11:12]: holler
+Them [11:20]: vis
+Them [11:21]: ual
+Them [11:29]: yes
+Them [11:30]: bed
+Them [11:36]: room
+Them [11:39]: inter
+Them [11:40]: pretation
+Them [11:50]: right
+Them [11:51]: yes
+Them [11:53]: first visualization
+Them [11:54]: is
+Them [11:54]: perfect
+Them [12:20]: when
+Them [12:20]: you look at the
+Them [12:22]: difference
+Them [12:22]: aspect
+Them [12:23]: you might have to
+Them [12:25]: complet
+Them [12:26]: ely red
+Them [12:27]: uce
+Them [12:41]: the
+Them [12:42]: key
+Them [12:49]: so
+Them [12:50]: you have to regenerate
+Them [12:51]: the data
+Them [13:03]: so
+Them [13:05]: this is a highly
+Them [13:06]: profit
+Them [13:07]: so
+Them [13:08]: the visualization
+Them [13:09]: application you
+Them [13:10]: want to create
+Them [13:20]: i want to think about
+Them [13:20]: it
+Them [13:25]: your
+Them [13:26]: application
+Them [13:27]: for your homework
+Them [13:28]: and then you
+Them [13:29]: want
+Them [13:30]: keep this in
+Them [13:30]: mind
+Them [13:37]: to do this
+Them [13:41]: everything
+Them [13:44]: value
+Them [13:50]: yeah
+Them [13:51]: that's true
+Them [13:52]: i see
+Them [13:53]: this
+Them [13:55]: on your final
+Them [13:56]: part here
+Them [13:57]: right if you want
+Them [13:58]: more like
+Them [13:58]: in that
+Them [14:02]: visual insporation
+Them [14:02]: system
+Them [14:03]: that's fine
+Them [14:03]: too
+Them [14:04]: you
+Them [14:05]: can have a high
+Them [14:06]: resistance
+Them [14:09]: and
+Them [14:10]: interact with these
+Them [14:11]: original
+Them [14:13]: therefore
+Them [14:14]: your first speaking
+Them [14:15]: was definitely
+Them [14:16]: you want
+Them [14:17]: to take it into account
+Them [14:20]: really
+Them [14:21]: think about
+Them [14:22]: the user
+Them [14:38]: we have this new help
+Them [14:39]: er
+Them [14:46]: everything stays the same except that now you can use ai to assist every step
+Them [14:50]: even
+Them [14:52]: turkey for you
+Them [14:53]: right
+Them [15:01]: now in your project you will have but not required you're welcome to think about how ai
+Them [15:04]: can give you copyright in new york
+Them [15:09]: been doing well
+Them [15:13]: the actual credit
+Them [15:25]: so this
+Them [15:27]: reminds you here
+Them [15:33]: we consider all type of data
+Them [15:37]: so you really need to start routine
+Them [15:43]: for data take a good data that's so important you make everything more interesting
+Them [15:45]: more motivating
+Them [15:51]: the subject of interest and then find the data there
+Them [15:53]: fore a study
+Them [16:07]: makes sense how data to discover or to tell
+Them [16:08]: so
+Them [16:14]: question
+Them [16:18]: about
+Them [16:21]: the class about the work you're going to do
+Them [16:43]: yeah you need to record
+Them [16:44]: your
+Them [16:45]: presentation
+Them [16:58]: so yeah we really want to start
+Them [17:03]: from theta firstly you understand
+Them [17:09]: what type of data we want to introduce some terminology
+Them [17:11]: from now
+Them [17:11]: on
+Them [17:14]: we use the same terminology
+Them [17:17]: for this for my lecture
+Them [17:19]: and for our discussion
+Them [17:21]: and for you among yourself
+Them [17:24]: when you work together
+Them [17:26]: for your project
+Them [17:29]: then we have a common terminology
+Them [17:37]: so as i say there are different data types and then also we want
+Them [17:45]: to look at how we can represent different data
+Them [17:47]: different way
+Them [17:52]: so that today
+undefined [18:01]: so you have a data set that you need to visualize
+undefined [18:05]: so where do you start
+undefined [18:08]: where
+undefined [18:09]: do you start
+undefined [18:12]: and
+undefined [18:14]: so again right
+undefined [18:16]: we just introduce this process
+undefined [18:28]: and you want to visualize it and when are you going to do right what do you go to
+undefined [18:32]: this way you want to ask
+undefined [18:40]: what does the data like
+undefined [18:47]: it's spreadsheet or
+undefined [18:49]: it's a graph
+undefined [18:52]: representing regulation
+undefined [18:57]: or maybe the question of images
+undefined [18:59]: so
+undefined [19:00]: what
+undefined [19:01]: type of data
+undefined [19:04]: and then also very importantly
+undefined [19:07]: why do you visualize
+undefined [19:13]: we know the purpose
+undefined [19:17]: even though yourself or
+undefined [19:18]: you
+undefined [19:19]: find out
+undefined [19:20]: from
+undefined [19:22]: your consumer
+undefined [19:24]: your customer
+undefined [19:25]: your
+undefined [19:25]: client
+undefined [19:30]: and then you decide how to visualize you really need to know
+undefined [19:33]: the data well enough
+undefined [19:40]: and then you need to know the purpose of the visualization i think we talk about this
+undefined [19:41]: earlier in the introduction
+undefined [19:47]: here on
+undefined [19:48]: this point out the order
+undefined [19:52]: this is what you need to go through
+undefined [19:59]: first we want to look at what's in the data set
+undefined [20:08]: in real world
+undefined [20:12]: that we have so called structured data and usually
+undefined [20:18]: the data can be represent
+undefined [20:19]: as row and
+undefined [20:19]: column
+undefined [20:22]: like typical spreadsheet
+undefined [20:26]: itself
+undefined [20:27]: spreadsheet
+undefined [20:34]: a lot of information represent that way
+undefined [20:39]: and that we can see there structure data before it's structured
+undefined [20:46]: but then there's also structural data
+undefined [20:49]: you can see the uncharted
+undefined [21:00]: and or you can argue like x
+undefined [21:01]: then
+undefined [21:03]: how do you find a single article
+undefined [21:04]: right
+undefined [21:10]: and
+undefined [21:12]: also social media
+undefined [21:18]: so
+undefined [21:19]: our email
+undefined [21:24]: continue
+undefined [21:27]: so
+undefined [21:28]: in this class
+undefined [21:32]: we
+undefined [21:33]: expect
+undefined [21:34]: you
+undefined [21:35]: to construct your
+undefined [21:35]: data
+undefined [21:36]: i
+undefined [21:37]: think most of the
+undefined [21:38]: time you're doing data
+undefined [21:40]: we
+undefined [21:42]: put you into the
+undefined [21:42]: right
+undefined [21:44]: you will find that mostly
+undefined [21:45]: then
+undefined [21:45]: i prepare for you
+undefined [21:47]: at a spreadsheet
+undefined [21:51]: but however
+undefined [21:53]: you are
+undefined [21:53]: welcome
+undefined [21:54]: to
+undefined [21:58]: work
+undefined [21:59]: on other data
+undefined [22:00]: like
+undefined [22:01]: network
+undefined [22:02]: graph
+undefined [22:03]: you
+undefined [22:04]: can work on audio data
+undefined [22:06]: you can
+undefined [22:06]: work on
+undefined [22:10]: social media data
+undefined [22:13]: and then you might build a social network
+undefined [22:14]: out of it
+undefined [22:21]: any questions about data
+undefined [22:38]: there's constantly many consider spreadsheets
+undefined [22:44]: and then you also expect some of you will have to deal with network because a lot of times
+undefined [22:52]: studying a data set
+undefined [22:54]: information
+undefined [22:57]: for some particular
+undefined [22:57]: task
+undefined [22:59]: for the job
+undefined [23:02]: we often
+undefined [23:03]: want to
+undefined [23:06]: find important relation
+undefined [23:08]: between
+undefined [23:10]: different entities
+undefined [23:12]: and
+undefined [23:14]: then that usually lead to a network
+undefined [23:16]: like social network
+undefined [23:21]: biology then you have bio network
+undefined [23:27]: and then there is also field data
+undefined [23:31]: that's also possible you use your spatial
+undefined [23:32]: data so
+undefined [23:35]: you have theoretical
+undefined [23:35]: area
+undefined [23:36]: and then
+undefined [23:37]: you have
+undefined [23:39]: certain collective value
+undefined [23:42]: either from satellite or from some sensor
+undefined [23:50]: so
+undefined [23:51]: we could have that kind of
+undefined [23:51]: data
+undefined [23:55]: if you're really ambitious
+undefined [23:56]: right
+undefined [24:01]: you might have a data set include spreadsheet network field
+undefined [24:07]: and to illustrate a bit and the field data
+undefined [24:10]: can also come from say
+undefined [24:16]: simulation simulation of natural phenomena
+undefined [24:19]: so it depends
+undefined [24:22]: because i also indicate that
+undefined [24:27]: if
+undefined [24:32]: you actually work on a research project now with some professor or
+undefined [24:34]: some collaborator
+undefined [24:38]: and they are in other field study and they use simulation
+undefined [24:42]: and then they generate data that you help analyze
+undefined [24:48]: how you work on some sort of ai solution for
+undefined [24:48]: them
+undefined [25:02]: now you have a chance to also visualize help them visualize the data show them how visualization the help of so for your final project it's okay for you to
+undefined [25:09]: use your research data here is o master phd students
+undefined [25:13]: several of you must already have your own research project
+undefined [25:15]: so
+undefined [25:18]: welcome
+undefined [25:26]: or even encourage to develop some sort of visualization support for your research project your professor will be very happy
+undefined [25:27]: to
+undefined [25:27]: see
+undefined [25:28]: that
+undefined [25:36]: so keep in mind that
+undefined [25:41]: it can take you unless you just take some spreadsheet
+undefined [25:42]: right
+undefined [25:43]: and that's probably the easiest
+undefined [25:45]: but then
+undefined [25:51]: really serious about certain topics and you collect data yourself
+undefined [25:54]: or you try to look at
+undefined [25:56]: multiple data set
+undefined [26:03]: very likely you need to spend another effort to preprocess the data to reorganize the data
+undefined [26:08]: that can take a lot of time
+undefined [26:12]: so make sure you start early
+undefined [26:18]: pick the data set and make sure you have enough time to process the data
+undefined [26:37]: you pick a data set because
+undefined [26:44]: from the public data repository because the title and the description of data
+undefined [26:46]: interests you right
+undefined [26:49]: but then you have to really find out what's in the data set
+undefined [26:54]: so you can add table numbers
+undefined [26:56]: or information
+undefined [26:59]: and as i say
+undefined [27:03]: network
+undefined [27:05]: and
+undefined [27:11]: it could be ip field data or with geometry
+undefined [27:15]: geometry here is more kind of a spatial location
+undefined [27:22]: some geographical area
+undefined [27:27]: i think
+Them [27:31]: dealing with this type of data
+Them [27:32]: mostly
+Them [27:39]: and if you
+Them [27:42]: want to pick other type of data
+Them [27:46]: you can discuss it with me and ea
+undefined [27:53]: so
+undefined [27:54]: again
+undefined [27:58]: we want to see
+undefined [28:00]: what consider the bas
+undefined [28:01]: ic
+undefined [28:02]: data
+Them [28:03]: type
+Them [28:07]: all
+Them [28:09]: the data which mention
+Them [28:09]: ed
+Them [28:10]: there's always
+Them [28:11]: examples
+Them [28:12]: where data samp
+Them [28:13]: le
+Them [28:17]: i didn't say even a network right each network
+Them [28:18]: could be
+Them [28:26]: considered
+Them [28:28]: network
+Them [28:30]: and network is like
+Them [28:34]: consider
+Them [28:35]: ed
+Them [28:36]: depends
+Them [28:37]: so
+Them [28:38]: you have to really review
+Them [28:39]: everything and then
+Them [28:42]: understand
+Them [28:42]: how you
+Them [28:43]: treat the data
+Them [28:46]: set
+Them [28:47]: you definitely have
+Them [28:48]: samples
+Them [28:50]: or data ident
+Them [28:50]: ity
+Them [28:51]: population
+Them [28:54]: you
+Them [28:55]: will have
+Them [28:58]: data
+Them [28:59]: so you
+Them [29:00]: have individ
+Them [29:01]: ual
+Them [29:03]: is
+Them [29:06]: and you
+Them [29:07]: have this item
+Them [29:08]: you must have
+Them [29:09]: certain attributes
+Them [29:12]: so each person has certain information
+Them [29:15]: like getter
+Them [29:16]: education income
+Them [29:17]: data
+Them [29:18]: right
+Them [29:20]: then consider
+Them [29:21]: attribute
+Them [29:22]: attributes
+Them [29:26]: and then you could have position
+Them [29:27]: information
+Them [29:31]: or you can consider position as attribute
+Them [29:34]: attribute it's
+Them [29:35]: like
+Them [29:36]: if it's a person
+Them [29:41]: his or her resident
+Them [29:46]: their address right basically give you a position
+Them [29:48]: you think that way
+Them [29:51]: and then there's a link
+Them [29:56]: so you can have the population data and you have all these people in the data set
+Them [30:00]: but they may also want to connect some of the people
+Them [30:04]: and then in some way
+Them [30:08]: they work
+Them [30:10]: for the same company
+Them [30:15]: or they graduate from the same school
+Them [30:24]: there could be some connection that you want to derive or maybe it's given
+Them [30:29]: and then there could be a great thing usually
+Them [30:32]: it's a field data you have agreed because
+Them [30:35]: you want to decide
+Them [30:40]: how you sample this grid i mean sample is filled
+Them [30:42]: even this room right
+Them [30:51]: if i want to run simulation of these rooms temperature or air quality
+Them [30:55]: so this is a three dimensional space
+Them [31:05]: i need to basically come up with computational grid every grid point i basically compute value there so that give me a sample
+undefined [31:19]: we have data and we know what data type we have
+undefined [31:25]: and then we're going to visualize the data what do we do we use so called marks
+undefined [31:26]: and the channel
+undefined [31:30]: mark and channel
+undefined [31:32]: what's the difference
+undefined [31:33]: between
+undefined [31:38]: opposition can be great usually
+undefined [31:41]: there's a regular grid there's irregular
+undefined [31:47]: grid and regular grid the position is kind of implied
+undefined [31:56]: you don't have to explicitly store the position of the point but then for unstructured irregular grid
+undefined [31:58]: you have to store
+undefined [32:04]: the position of the green point but then you don't necessarily have a grid right
+undefined [32:15]: location like vehicle if you tracking vehicle study
+undefined [32:18]: certain vehicle
+undefined [32:21]: maybe in a cd if you want to track their position
+undefined [32:23]: data
+undefined [32:26]: this position has to be changed over time
+undefined [32:30]: it can be
+undefined [32:34]: yeah there's all possible kind of possibility
+undefined [32:36]: for data
+undefined [32:38]: so as soon as you
+undefined [32:41]: start look around
+undefined [32:42]: and then
+undefined [32:46]: compare different data set you find there's bigger variety
+undefined [32:53]: then you need to worry about this particular data set how you deal with
+undefined [32:54]: each
+undefined [32:59]: data subset or each type of data in this data set
+undefined [33:09]: so we talk about blockchain channel
+undefined [33:10]: next
+undefined [33:14]: so march is just like
+undefined [33:21]: representation we use for this particular data item
+undefined [33:23]: how we represent this data
+undefined [33:31]: so for example it would be say just a point right
+undefined [33:34]: or we draw a larger this like circle
+undefined [33:37]: it could be a square
+undefined [33:40]: meters
+undefined [33:42]: a mark
+undefined [33:45]: with a representation of the data
+undefined [33:46]: and channel
+undefined [33:52]: what we use to encode visually encode
+undefined [33:55]: that data is that mark
+undefined [33:58]: because if you
+undefined [33:59]: use a
+undefined [34:00]: point
+undefined [34:03]: or a small circle because point maybe too small
+undefined [34:06]: so just like remember that
+undefined [34:08]: first slide
+undefined [34:09]: i show
+undefined [34:10]: the
+undefined [34:11]: possibility
+undefined [34:28]: is a
+undefined [34:28]: channel
+undefined [34:50]: let's
+undefined [34:52]: look at
+undefined [34:57]: we
+undefined [34:58]: look at it like
+undefined [34:59]: wendell
+undefined [35:00]: orange
+undefined [35:05]: one
+undefined [35:09]: how do
+undefined [35:10]: i say that
+undefined [35:12]: we
+undefined [35:13]: want
+undefined [35:14]: each name typ
+undefined [35:14]: e
+undefined [35:29]: chann
+undefined [35:29]: el
+undefined [35:32]: five
+undefined [35:56]: orange
+undefined [36:00]: according
+undefined [36:01]: to you
+undefined [36:06]: represent
+undefined [36:07]: ative
+undefined [36:10]: part
+undefined [36:10]: ies
+undefined [36:11]: the visual
+undefined [36:12]: coloring
+undefined [36:13]: but
+undefined [36:14]: then power
+undefined [36:17]: can mean a vehicle model
+undefined [36:18]: there's a model called
+undefined [36:19]: tau
+undefined [36:23]: in
+undefined [36:25]: indonesia
+undefined [36:26]: tahoe means
+undefined [36:27]: tofu
+undefined [36:31]: so
+undefined [36:33]: of course then you see orange
+undefined [36:38]: is that possible it's more like the vehicle
+undefined [36:43]: because the orange this product and that must mean bad this is like
+undefined [36:44]: bad
+undefined [36:45]: model
+undefined [36:59]: but i mean this is like i should not from here but normally when you get
+undefined [37:00]: a data set
+undefined [37:01]: you
+undefined [37:03]: have
+undefined [37:05]: most of the information given
+undefined [37:07]: you don't need to guess
+undefined [37:12]: so this is like a more complete right
+undefined [37:16]: then you see all the tesla ranger
+undefined [37:18]: camry
+undefined [37:23]: so now you see
+undefined [37:25]: car
+undefined [37:26]: model
+undefined [37:27]: color
+undefined [37:28]: i don't know why
+undefined [37:29]: this is red or the
+undefined [37:30]: type but
+undefined [37:34]: then this is probably available you want to buy a used car right
+undefined [37:42]: this vehicle available this is the year may
+undefined [37:43]: and this is
+undefined [37:48]: performance of the efficiency
+undefined [37:48]: right
+undefined [37:55]: normally you will be given
+undefined [37:57]: all this information the metadata
+undefined [38:01]: to tell you this name of the car
+undefined [38:04]: or the model of the car
+undefined [38:06]: the power commander
+undefined [38:07]: ema
+undefined [38:09]: mild
+undefined [38:17]: this row is what we call
+undefined [38:18]: it
+undefined [38:19]: em
+undefined [38:24]: and
+undefined [38:25]: each col
+undefined [38:26]: umn
+undefined [38:29]: is what we consider attrib
+undefined [38:30]: utes
+undefined [38:37]: and
+undefined [38:39]: this consider
+undefined [38:43]: the meaning right for each
+undefined [38:44]: metadata
+undefined [38:51]: and then
+undefined [38:54]: there's different attribute type
+undefined [38:59]: we need to be able to distinguish
+undefined [39:11]: if we
+undefined [39:12]: decide to
+undefined [39:13]: use
+undefined [39:14]: these are people
+undefined [39:22]: attitud
+undefined [39:22]: e it is
+undefined [39:27]: something
+undefined [39:28]: called
+undefined [39:29]: this
+undefined [39:30]: histor
+undefined [39:31]: ical data
+undefined [39:34]: and
+undefined [39:35]: color is also
+undefined [39:36]: an
+undefined [39:40]: x
+undefined [39:48]: ok
+undefined [39:49]: ay
+undefined [39:50]: some sort of bank
+undefined [39:51]: ing elements
+undefined [39:52]: for the rhinestones
+undefined [40:07]: this is
+undefined [40:08]: the
+undefined [40:10]: high
+undefined [40:20]: value
+undefined [40:54]: so
+undefined [40:55]: there are many
+undefined [40:56]: two attribute
+undefined [40:56]: types
+undefined [40:57]: categoric
+undefined [40:58]: al
+undefined [41:02]: there are no ordering
+undefined [41:05]: so
+undefined [41:08]: when you visually encode
+undefined [41:12]: you can choose
+undefined [41:14]: the proper
+undefined [41:15]: mark
+undefined [41:17]: remember
+undefined [41:24]: in this case and then use the proper visual channel
+undefined [41:28]: so categorical data there's no implic
+undefined [41:32]: it ordering so if you use shape
+undefined [41:37]: then you shape represent your data actually it's appropriate
+undefined [41:42]: because the shape doesn't sit it just show they are different
+undefined [41:49]: but then it doesn't show any order like not like oh triangle is more important or better
+undefined [41:50]: than circle
+undefined [41:53]: and then there's all the data
+undefined [42:04]: and you have two types of holder data there is ordinal large like for example
+undefined [42:09]: or quantitative there's a measure you can compute
+undefined [42:20]: also there's a three order interaction for quantitative data there is a sequential
+undefined [42:25]: one direction sequential increasing
+undefined [42:36]: to a one direction or divergence right so there's a middle point like zero and then you have like this positive direction and the negative direction
+undefined [42:37]: div
+undefined [42:40]: ergent and then there is six lay
+undefined [42:43]: er
+undefined [42:44]: clock
+undefined [42:51]: remember
+undefined [42:54]: so
+undefined [42:56]: let's see here
+undefined [43:06]: go to go data
+undefined [43:07]: right
+undefined [43:10]: here obviously name is pedigo
+undefined [43:13]: and nationality
+undefined [43:15]: and
+undefined [43:16]: row
+undefined [43:21]: within h is not
+undefined [43:28]: and here we have order data
+undefined [43:29]: and
+undefined [43:31]: so
+undefined [43:36]: the next you can see the order data
+undefined [43:38]: and then
+undefined [43:43]: what do y growth
+undefined [43:55]: and you can have
+undefined [43:57]: different order direction
+undefined [44:00]: here
+undefined [44:02]: we have temperature
+undefined [44:05]: different
+undefined [44:10]: temperature and then you can see we can use different
+undefined [44:19]: units so we have stock on zero this is sequential
+undefined [44:24]: and celsius and fahrenheit they are one
+undefined [44:27]: they're more what
+undefined [44:28]: they
+undefined [44:45]: this is what
+undefined [44:50]: payable and
+undefined [44:50]: then
+undefined [44:55]: other data
+undefined [44:56]: right
+undefined [44:59]: if say is all in all or you can say it's
+undefined [45:00]: quantity it depends on how you use it
+undefined [45:02]: nh
+undefined [45:08]: nationality
+undefined [45:12]: cost of
+undefined [45:13]: that
+undefined [45:16]: loc
+undefined [45:17]: ation
+undefined [45:21]: category
+undefined [45:24]: however so
+undefined [45:30]: average like people die there
+undefined [45:32]: over the years
+undefined [45:38]: keep all this information
+undefined [45:45]: so people from different countries their name the date
+undefined [45:46]: they die
+undefined [45:50]: cause of the
+undefined [45:50]: death
+undefined [45:52]: location
+undefined [45:57]: you can say it's categorical but if you think about it
+undefined [46:01]: each location
+undefined [46:05]: information associated with
+undefined [46:05]: it
+undefined [46:07]: which is
+undefined [46:10]: elevation
+undefined [46:16]: so if you consider elevation then it's order
+undefined [46:20]: because right animation
+undefined [46:24]: in this context
+undefined [46:26]: really is a big factor
+undefined [46:27]: right
+undefined [46:29]: something people
+undefined [46:31]: care about
+undefined [46:33]: or want to know
+undefined [46:42]: yeah so it depends on whether you want to show what do you want to deliver
+undefined [46:47]: how you use basically how you use this data set
+undefined [47:10]: we understand what's in the data set
+undefined [47:15]: now we want to think about why we need to visualize the data
+undefined [47:17]: why
+undefined [47:31]: different purpose or you can think of the different level
+undefined [47:40]: so roughly right
+undefined [47:43]: so you have this data set
+undefined [47:47]: most of the time especially for you guys
+undefined [47:51]: don't really know this data set
+undefined [47:52]: well
+undefined [47:56]: for scientists who generate data themselves
+undefined [48:02]: usually they know something about the data they know a lot about data
+undefined [48:11]: they even say utilization they have a physical model they use predict what's in the data
+undefined [48:16]: if it's not in the data they think something wrong is
+undefined [48:18]: their simulation model
+undefined [48:19]: for example
+undefined [48:24]: and they have to rerun the simulation with new set of simulation parameter
+undefined [48:25]: for example
+undefined [48:30]: but normally you want to just
+undefined [48:35]: glance over the data in some way you need that
+undefined [48:37]: some sort of overview
+undefined [48:40]: so for your assignment right
+undefined [48:47]: when you work on a data set it's always good that your application offers some sort of overview
+undefined [48:51]: for different type of data overview
+undefined [48:55]: will be done different
+undefined [48:59]: so first is
+undefined [49:02]: try to
+undefined [49:04]: bend over
+undefined [49:09]: browse through the data
+undefined [49:10]: to
+undefined [49:13]: try to gain some information out of it
+undefined [49:17]: you learn something already
+undefined [49:18]: doing that
+undefined [49:21]: but then there could be too much data or
+undefined [49:22]: they're just
+undefined [49:31]: like you look at you only able to browse at their particular level you cannot really
+undefined [49:37]: go
+undefined [49:40]: sometimes
+undefined [49:41]: you would
+undefined [49:42]: just
+undefined [49:43]: want to
+undefined [49:44]: see
+undefined [49:46]: this
+undefined [49:46]: data
+undefined [49:48]: as
+undefined [49:49]: this particular
+undefined [49:53]: part
+undefined [49:54]: so you can do
+undefined [49:55]: a search
+undefined [49:58]: system
+undefined [49:59]: available
+undefined [50:00]: for you to do
+undefined [50:00]: that
+undefined [50:04]: if you can type in
+undefined [50:06]: some particular
+undefined [50:11]: select a few attributes and then add in say range or particular value
+undefined [50:16]: category or other data
+undefined [50:18]: and
+undefined [50:22]: you get this one or more items
+undefined [50:22]: right
+undefined [50:25]: and then you can examine
+undefined [50:31]: so that you would do the search typically and then finally
+undefined [50:33]: you
+undefined [50:34]: want to
+undefined [50:37]: go down
+undefined [50:38]: one two
+undefined [50:42]: one
+undefined [50:42]: that you want
+undefined [50:43]: to
+undefined [50:45]: comparison
+undefined [50:48]: on a company
+undefined [50:49]: comp
+undefined [50:50]: ared to individual
+undefined [50:51]: or you want to
+undefined [50:52]: compare
+undefined [50:53]: to cohorts
+undefined [50:54]: two groups
+undefined [50:56]: of
+undefined [50:57]: data item
+undefined [50:59]: but
+undefined [51:00]: then you first need to
+undefined [51:02]: build
+undefined [51:05]: each group in some way
+undefined [51:09]: like use clustering
+undefined [51:14]: if it's like you have some it is like you don't know how
+undefined [51:17]: and you
+undefined [51:18]: should have the
+undefined [51:19]: education
+undefined [51:20]: group the data
+undefined [51:21]: and then
+undefined [51:23]: you compare these different
+undefined [51:24]: group see
+undefined [51:25]: how they are human
+undefined [51:27]: i
+undefined [51:29]: for example which i mention
+undefined [51:29]: ed
+undefined [51:30]: is actually
+undefined [51:31]: the diaph
+undefined [51:32]: ragm
+undefined [51:40]: so yeah
+undefined [51:41]: i
+undefined [51:42]: think
+undefined [51:43]: rally
+undefined [51:44]: you
+undefined [51:45]: just visualize the data
+undefined [51:46]: directly
+undefined [51:46]: you want to do
+undefined [51:47]: some sort of
+undefined [51:48]: processing
+undefined [51:49]: a huge
+undefined [51:51]: provide different way
+undefined [51:59]: to organize the data different way to filter the data different way to organize the data different way to connect
+undefined [52:00]: the data
+undefined [52:01]: item
+undefined [52:05]: and so you allow users to choose
+undefined [52:09]: what they think is meaningful or teachable
+undefined [52:11]: and then they
+undefined [52:12]: realize
+undefined [52:13]: the data
+undefined [52:15]: and some
+undefined [52:16]: sort of overview
+undefined [52:19]: or
+undefined [52:20]: some way
+undefined [52:21]: to structure the
+undefined [52:22]: data
+undefined [52:51]: you want to search your name
+undefined [52:53]: respect
+undefined [52:54]: the baby
+undefined [52:56]: boy
+undefined [53:01]: name
+undefined [53:01]: available
+undefined [53:03]: and
+undefined [53:04]: all the e
+undefined [53:05]: scape andrew
+undefined [53:13]: equity
+undefined [53:16]: why
+undefined [53:17]: you want to israelite
+undefined [53:23]: business
+undefined [53:32]: over
+undefined [53:51]: seer
+undefined [53:52]: is over
+undefined [53:53]: and delay
+undefined [53:54]: all these
+undefined [53:55]: people
+undefined [53:59]: how
+undefined [54:00]: much
+undefined [54:01]: they were exposed
+undefined [54:02]: to
+undefined [54:05]: the
+undefined [54:06]: source of impact
+undefined [54:18]: thank you
+undefined [54:21]: almost
+undefined [54:21]: all day
+undefined [54:23]: so
+undefined [54:24]: at the beginning
+undefined [54:25]: every
+undefined [54:26]: body comes
+undefined [54:27]: down here
+undefined [54:30]: as healthy people
+undefined [54:32]: and then over
+undefined [54:33]: time
+undefined [54:36]: they expose
+undefined [54:37]: to
+undefined [54:41]: source of infection
+undefined [54:45]: at different
+undefined [54:46]: level
+undefined [54:50]: event
+undefined [54:51]: ually
+undefined [54:52]: some of them have
+undefined [54:53]: exacted
+undefined [54:54]: how do you
+undefined [54:55]: know that
+undefined [54:56]: some of them
+undefined [54:57]: have impact
+undefined [54:58]: ed
+undefined [55:00]: recover
+undefined [55:01]: from the
+undefined [55:02]: pass
+undefined [55:03]: ion
+undefined [55:05]: not
+undefined [55:06]: sre
+undefined [55:08]: this
+undefined [55:09]: is a visualization
+undefined [55:14]: perform
+undefined [55:14]: ed his study
+undefined [55:15]: they want
+undefined [55:16]: to present
+undefined [55:17]: the results
+undefined [55:19]: of use visualization
+undefined [55:20]: to communicate
+undefined [55:23]: to share information
+undefined [55:25]: that
+undefined [55:26]: they collect
+undefined [55:27]: the or they
+undefined [55:28]: disuse
+undefined [55:33]: and
+undefined [55:34]: that this is
+undefined [55:35]: how they
+undefined [55:46]: present so it's a data item
+undefined [55:48]: it's a data
+undefined [55:55]: question
+undefined [56:03]: not
+undefined [56:22]: important
+undefined [56:25]: with
+undefined [56:26]: ebay
+undefined [56:37]: people
+undefined [56:38]: seriously
+undefined [56:44]: because email is also nice in itself
+undefined [56:54]: we worked with people at ebay researcher at ebay
+undefined [56:57]: they basically that's
+undefined [56:59]: more than ten years ago
+undefined [57:03]: this project it was done by my student with ebay research
+undefined [57:04]: er
+undefined [57:07]: so at that time every day they have
+undefined [57:08]: basically
+undefined [57:10]: ebay
+undefined [57:11]: website
+undefined [57:12]: email
+undefined [57:13]: market
+undefined [57:14]: serve their
+undefined [57:15]: customers
+undefined [57:16]: keep
+undefined [57:17]: track
+undefined [57:21]: every
+undefined [57:22]: customer
+undefined [57:23]: who enter
+undefined [57:24]: ed
+undefined [57:26]: and how they dr
+undefined [57:26]: ank them
+undefined [57:28]: they
+undefined [57:29]: record
+undefined [57:30]: every
+undefined [57:31]: click
+undefined [57:32]: every place
+undefined [57:43]: at
+undefined [57:44]: omar
+undefined [57:55]: they
+undefined [57:56]: have to choose
+undefined [58:04]: and
+undefined [58:05]: when you have secret
+undefined [58:07]: place
+undefined [58:09]: that
+undefined [58:10]: represent
+undefined [58:14]: s
+undefined [58:15]: customer
+undefined [58:22]: so
+undefined [58:23]: they
+undefined [58:24]: require such
+undefined [58:25]: au and you
+undefined [58:27]: stay down over
+undefined [58:28]: one hundred
+undefined [58:31]: terabyte is still a lot
+undefined [58:32]: right
+undefined [58:38]: and then
+undefined [58:39]: they hire cons
+undefined [58:40]: ult
+undefined [58:44]: every
+undefined [58:44]: day
+undefined [58:50]: so
+undefined [58:52]: he decided to
+undefined [58:52]: do for that
+undefined [58:53]: this is him
+undefined [58:54]: we provide them an over
+undefined [58:55]: view
+undefined [58:56]: so
+undefined [58:58]: this
+undefined [58:58]: is
+undefined [59:03]: push each beautiful access other associate
+undefined [59:09]: operation
+undefined [59:17]: basically visually organized all the customers
+undefined [59:19]: similar
+undefined [59:20]: custom
+undefined [59:21]: ers
+undefined [59:26]: will be next
+undefined [59:27]: to each other
+undefined [59:28]: so
+undefined [59:29]: they can immed
+undefined [59:30]: iately see
+undefined [59:34]: certain customer
+undefined [59:38]: they did well or they had trouble
+undefined [59:39]: they can tell
+undefined [59:42]: you
+undefined [59:44]: select
+undefined [59:45]: those custom
+undefined [59:46]: er group
+undefined [59:46]: and then
+undefined [59:53]: basically try to investigate what happened
+undefined [59:57]: and how they can maybe
+undefined [1:00:04]: improve their website design to better serve customer such that more custom
+undefined [1:00:05]: er would be success
+undefined [1:00:06]: ful
+undefined [1:00:07]: purchasing
+undefined [1:00:08]: or sell
+undefined [1:00:09]: ing
+undefined [1:00:13]: so we allow them basically select
+undefined [1:00:21]: some trig string and then study their statistic and then also
+undefined [1:00:22]: we look at the
+undefined [1:00:23]: customer
+undefined [1:00:24]: in a way
+undefined [1:00:25]: frequency
+undefined [1:00:26]: all
+undefined [1:00:30]: they come in and then they quickly finish
+undefined [1:00:33]: their intended
+undefined [1:00:35]: task
+undefined [1:00:36]: like they want to
+undefined [1:00:37]: set up
+undefined [1:00:38]: but
+undefined [1:00:40]: then there's some customer
+undefined [1:00:42]: they spend
+undefined [1:00:43]: a lot of time
+undefined [1:00:44]: searching
+undefined [1:00:54]: and searching and then means that probably
+undefined [1:01:02]: their search mechanism search design web page design can use some improvement
+undefined [1:01:08]: all these people and then they even give up they never really finish
+undefined [1:01:09]: the task
+undefined [1:01:12]: whatever task that you have to do
+undefined [1:01:16]: and then there's people they spend all the time
+undefined [1:01:19]: only people come to try to sell
+undefined [1:01:23]: something so they write they try to
+undefined [1:01:24]: write
+undefined [1:01:26]: some description for
+undefined [1:01:28]: their
+undefined [1:01:37]: organ
+undefined [1:01:38]: ize different
+undefined [1:01:39]: custom
+undefined [1:01:40]: er and
+undefined [1:01:42]: then visually terrorized
+undefined [1:02:31]: marks
+undefined [1:02:32]: in general
+undefined [1:02:38]: type
+undefined [1:02:40]: how you visualize
+undefined [1:02:56]: this is
+undefined [1:02:58]: the beginning of visual encoding and we talk about
+undefined [1:03:04]: more visual encoding per se i'm not sure i can finish the lecture today
+undefined [1:03:08]: on
+undefined [1:03:09]: that
+undefined [1:03:19]: control
+undefined [1:03:20]: appear
+undefined [1:03:20]: ance
+undefined [1:03:21]: of
+undefined [1:03:26]: it can't be from the
+undefined [1:03:29]: point to a circle to some arbitrary
+undefined [1:03:31]: shape
+undefined [1:03:32]: color
+undefined [1:03:38]: so how effective
+undefined [1:03:40]: your visualization
+undefined [1:03:42]: is
+undefined [1:03:45]: really depends on the mars and chann
+undefined [1:03:45]: el
+undefined [1:03:47]: that
+undefined [1:03:48]: you use
+undefined [1:03:49]: for
+undefined [1:03:50]: that
+undefined [1:04:04]: is
+undefined [1:04:05]: a reading
+undefined [1:04:06]: we have
+undefined [1:04:06]: suggested
+undefined [1:04:08]: there
+undefined [1:04:09]: must be
+undefined [1:04:11]: at least one different
+undefined [1:04:20]: you need to
+undefined [1:04:21]: read it
+undefined [1:04:25]: when you
+undefined [1:04:26]: do your own
+undefined [1:04:28]: and
+undefined [1:04:28]: you have to do it
+undefined [1:04:30]: try
+undefined [1:04:30]: it
+undefined [1:04:37]: you have
+undefined [1:04:38]: to
+undefined [1:04:44]: be
+undefined [1:04:52]: what
+undefined [1:04:53]: is
+undefined [1:04:58]: up
+undefined [1:04:59]: yeah
+undefined [1:05:01]: user study
+undefined [1:05:04]: as your roommate
+undefined [1:05:06]: or your classmate
+undefined [1:05:07]: what
+undefined [1:05:08]: do you think about this
+undefined [1:05:14]: represent
+undefined [1:05:16]: you say
+undefined [1:05:16]: confused
+undefined [1:05:21]: y
+undefined [1:05:21]: es
+undefined [1:05:31]: if you
+undefined [1:05:32]: need to explain everything
+undefined [1:05:35]: of course
+undefined [1:05:40]: then if you have a visualization you use color for example then you better have a color lash
+undefined [1:05:42]: people
+undefined [1:05:43]: look at that
+undefined [1:05:45]: color
+undefined [1:05:46]: of the associ
+undefined [1:05:46]: ation
+undefined [1:05:59]: you
+undefined [1:06:00]: design the legend
+undefined [1:06:04]: everything
+undefined [1:06:05]: very
+undefined [1:06:06]: careful design
+undefined [1:06:12]: layout placement at where you put the legend also matter
+undefined [1:06:16]: so
+undefined [1:06:17]: i think
+undefined [1:06:21]: some of the tasks you want to do in this class
+undefined [1:06:27]: are really new to you because in the past you never worry about this
+undefined [1:06:35]: i think it's good for you
+undefined [1:06:40]: definitely
+undefined [1:06:50]: you say the basic design
+undefined [1:06:53]: of practice
+undefined [1:07:03]: putting some thoughts and effort into your design
+undefined [1:07:10]: don't just use whatever available take some of these repeat
+undefined [1:07:13]: them on screen
+undefined [1:07:17]: that would be too bad
+undefined [1:07:25]: okay so marks are the basic graphical element in an image
+undefined [1:07:34]: to be i is zero d
+undefined [1:07:38]: online
+undefined [1:07:41]: and
+undefined [1:07:44]: probably
+undefined [1:07:46]: this three type of
+undefined [1:07:47]: mod
+undefined [1:07:58]: e control appearance of mark
+undefined [1:08:00]: and you can
+undefined [1:08:01]: have position
+undefined [1:08:05]: position
+undefined [1:08:08]: however
+undefined [1:08:10]: shape
+undefined [1:08:13]: even angle
+undefined [1:08:16]: side
+undefined [1:08:18]: m
+undefined [1:08:19]: irror
+undefined [1:08:31]: i mean it's not like you can use any of them you can apply any of this to any data
+undefined [1:08:35]: type right so there's certain data
+undefined [1:08:39]: but not all of them
+undefined [1:08:40]: for short
+undefined [1:08:43]: let's go through
+undefined [1:08:49]: some really simple examples this is scatter part right scan the
+undefined [1:08:58]: stretchy
+undefined [1:09:02]: a
+undefined [1:09:03]: is here
+undefined [1:09:04]: we have the
+undefined [1:09:04]: metadata
+undefined [1:09:05]: and
+undefined [1:09:07]: b is cell
+undefined [1:09:17]: so you have how many you have twenty five data so we just plot it because we plot year against
+undefined [1:09:21]: you have
+undefined [1:09:23]: twenty five data items data
+undefined [1:09:24]: sample years
+undefined [1:09:28]: we see we circle
+undefined [1:09:29]: right so it's big enough
+undefined [1:09:32]: you can see but then
+undefined [1:09:33]: there's small enough
+undefined [1:09:34]: there's no
+undefined [1:09:38]: other
+undefined [1:09:38]: boy
+undefined [1:09:40]: so this
+undefined [1:09:41]: is just
+undefined [1:09:42]: like
+undefined [1:09:51]: are we
+undefined [1:09:52]: using
+undefined [1:09:54]: so here what we use
+undefined [1:09:55]: this is
+undefined [1:09:56]: we use
+undefined [1:09:56]: for sure
+undefined [1:09:58]: we use position
+undefined [1:10:04]: x position along the x axis position along
+undefined [1:10:07]: the y axis according to what
+undefined [1:10:11]: according to
+undefined [1:10:12]: the
+undefined [1:10:12]: value
+undefined [1:10:13]: right
+undefined [1:10:19]: but then the question is
+undefined [1:10:22]: using
+undefined [1:10:23]: color are we using
+undefined [1:10:24]: science
+undefined [1:10:27]: this
+undefined [1:10:28]: is time
+undefined [1:10:29]: this is a circle
+undefined [1:10:29]: we
+undefined [1:10:33]: 're using
+undefined [1:10:38]: what
+undefined [1:10:39]: 's the meaning of this
+undefined [1:10:42]: col
+undefined [1:10:43]: or or even
+undefined [1:10:44]: copy
+undefined [1:10:45]: the color
+undefined [1:10:47]: should correspond to some
+undefined [1:10:56]: so blue here has no meaning it's just a decoration right it just make it
+undefined [1:11:00]: look maybe better than black p is the same
+undefined [1:11:04]: but maybe we'll look
+undefined [1:11:04]: better
+undefined [1:11:06]: some people might use math
+undefined [1:11:08]: or green
+undefined [1:11:10]: how about size
+undefined [1:11:18]: we just make it big enough so you can see easily but then size has no meaning here
+undefined [1:11:23]: the single bar chart
+undefined [1:11:25]: again
+undefined [1:11:29]: we have this one two three
+undefined [1:11:33]: then hydrogen
+undefined [1:11:38]: and then she represent something
+undefined [1:11:45]: some category and we place that this way so there's horizontal position
+undefined [1:11:49]: and then
+undefined [1:11:52]: the other attribute
+undefined [1:11:56]: that we use to encode
+undefined [1:12:00]: it must be quantitative attribute right
+undefined [1:12:01]: because
+undefined [1:12:03]: we
+undefined [1:12:04]: use lens
+undefined [1:12:08]: if
+undefined [1:12:11]: you have quantity
+undefined [1:12:15]: this category
+undefined [1:12:16]: is bigger
+undefined [1:12:20]: than this and this is bigger
+undefined [1:12:21]: than this
+undefined [1:12:22]: so we can
+undefined [1:12:23]: use
+undefined [1:12:29]: actually use two
+undefined [1:12:36]: use position to position like
+undefined [1:12:42]: to represent there's a vertical position that is a horizontal position to represent different information
+undefined [1:12:51]: i would consider this is like a line mark is there any meaning with the width of this
+undefined [1:12:51]: bar
+undefined [1:12:54]: no right it's only height
+undefined [1:12:59]: so marx and channel
+undefined [1:13:02]: work well
+undefined [1:13:04]: work together
+undefined [1:13:05]: well
+undefined [1:13:11]: let's look at the scatter path again
+undefined [1:13:14]: so when you talk about this
+undefined [1:13:20]: horizontal position vertical position replace
+undefined [1:13:26]: each sample and we choose to color
+undefined [1:13:27]: it
+undefined [1:13:29]: but it has
+undefined [1:13:30]: meaning
+undefined [1:13:31]: to get
+undefined [1:13:32]: and now she
+undefined [1:13:33]: has any one use other
+undefined [1:13:35]: color cub
+undefined [1:13:35]: e
+undefined [1:13:39]: represent different categories so this too belongs to
+undefined [1:13:40]: the same category
+undefined [1:13:43]: we
+undefined [1:13:44]: can do more
+undefined [1:13:45]: you decide
+undefined [1:13:46]: to
+undefined [1:13:47]: encode
+undefined [1:13:51]: this data set as multiple have you used
+undefined [1:13:54]: quantitative another quantitative attribute
+undefined [1:13:55]: we
+undefined [1:13:57]: use sine
+undefined [1:13:58]: to represent
+undefined [1:13:59]: so now we
+undefined [1:14:01]: have this so this is more like
+undefined [1:14:02]: what
+undefined [1:14:04]: i did
+undefined [1:14:06]: i think many of you
+undefined [1:14:07]: will
+undefined [1:14:08]: use
+undefined [1:14:13]: higher
+undefined [1:14:19]: and then
+undefined [1:14:22]: this
+undefined [1:14:23]: area
+undefined [1:14:31]: is
+undefined [1:14:31]: the same
+undefined [1:14:32]: it's the same
+undefined [1:14:39]: area means
+undefined [1:14:40]: something
+undefined [1:14:46]: every
+undefined [1:14:47]: child remember you have
+undefined [1:14:48]: a little bit
+undefined [1:14:53]: stylish
+undefined [1:14:54]: is
+undefined [1:14:54]: high
+undefined [1:15:11]: light
+undefined [1:15:12]: ing
+undefined [1:15:23]: in this case
+undefined [1:15:26]: what did he do
+undefined [1:15:27]: to avoid
+undefined [1:15:29]: as much as possible
+undefined [1:15:36]: i'm not sure these will do this for you directly
+undefined [1:15:46]: as
+undefined [1:15:47]: he designs
+undefined [1:15:55]: the big
+undefined [1:15:57]: one if they own that
+undefined [1:16:04]: so maybe just like you sort the data according to
+undefined [1:16:10]: quantitative value used for the size encoding
+undefined [1:16:13]: but then when you do the rendering
+undefined [1:16:18]: you sort them and then you will plug the bigger one first
+undefined [1:16:21]: according to size the biggest one first second thing is
+undefined [1:16:23]: and then
+undefined [1:16:26]: you should be able to get this
+undefined [1:16:28]: very simple
+undefined [1:16:29]: but
+undefined [1:16:34]: she
+undefined [1:16:35]: happen
+undefined [1:16:35]: s
+undefined [1:16:36]: so you cannot just
+undefined [1:16:45]: write finally applies of these three functions and then just like say oh okay i have a visualization you don't even check it yourself
+undefined [1:16:49]: like the validity the effectiveness
+undefined [1:16:53]: you have to look at it yourself
+undefined [1:16:54]: and see
+undefined [1:16:58]: if some aspect
+undefined [1:17:00]: you have
+undefined [1:17:01]: to know where to
+undefined [1:17:02]: include
+undefined [1:17:12]: okay
+undefined [1:17:13]: so
+undefined [1:17:18]: i
+undefined [1:17:23]: want
+undefined [1:17:24]: to hear
+undefined [1:17:31]: what
+undefined [1:17:32]: 's the mark
+undefined [1:17:43]: left
+undefined [1:18:06]: house
+undefined [1:18:18]: position
+undefined [1:18:19]: and power
+undefined [1:18:23]: and then
+undefined [1:18:25]: you can say
+undefined [1:18:26]: it's on
+undefined [1:18:28]: but then you can also say this area
+undefined [1:18:30]: depends on
+undefined [1:18:37]: they might have to use area to cover
+undefined [1:18:39]: the whole
+undefined [1:18:39]: head
+undefined [1:18:42]: geographical
+undefined [1:18:42]: area
+undefined [1:18:43]: and
+undefined [1:18:47]: even impression of continuity
+undefined [1:18:52]: okay
+undefined [1:18:57]: let's stop here i have a couple of slides but then we can finish next time
+undefined [1:18:59]: we have question
+undefined [1:19:06]: don't forget about whole month
+undefined [1:19:07]: y

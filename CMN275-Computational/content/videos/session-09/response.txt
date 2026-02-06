@@ -1,0 +1,20 @@
+3a) paste the resulting comparison output here
+[paste]
+
+3b) Give a quick interpretation of the results.
+Looking at the comparison between the two videos, the main difference is how people are reacting emotionally, even though both are mostly positive. The Bad Bunny comments feel way more high-energy and expressive, with people talking about pride, excitement, and how much they love the music and the performance. The Old Man’s Advice comments feel slower and more reflective, with a lot of people mentioning loss, timing, and how the video showed up when they needed it. So even though both comment sections are positive, one feels more celebratory and outward, while the other feels more personal and inward.
+
+4a) do you agree with the result?
+Yeah, I mostly agree with the results. When I actually read through the comments, the emotional patterns the model points out are pretty noticeable and line up with how the two videos feel overall.
+
+4b) Discuss for each of the 7 scores.
+Across the seven scores, the results seem reasonable when you look back at the comments. For the Bad Bunny video, the high joy score makes sense because a lot of comments are excited, proud, and talking about how good the music feels, even for people who don’t speak Spanish. There’s also a little more anger there, mostly about ads or political topics, but it doesn’t take over the discussion. Sadness shows up sometimes, like when people mention loss or difficult history, but it’s usually mixed with pride or appreciation. For the Old Man’s Advice video, sadness is more noticeable since many comments mention Bernard’s death or his personal losses, but it doesn’t feel negative overall because it’s paired with gratitude and hope. Anger, fear, and disgust are very low in that comment section, which matches how calm and respectful it feels. Overall, the scores match the tone of what people are actually saying.
+
+5a) Provide a copy of the result from a different LLM.
+[paste]
+
+5b) What do you make of the comparison? Discuss.
+Gemini’s comparison seems similar between the two videos but puts more emphasis on emotional weight, especially for the Old Man’s Advice video. It shows that sadness and grief play a much bigger role in those comments, while still pointing out that hopefulness is very strong. For the Bad Bunny video, Gemini focuses more on joy, celebration, and cultural pride, which fits with how lively and energetic the comments are. Overall, the comparison helps make the difference between the two audiences clearer, one reacting to music and shared culture, and the other reacting to guidance, loss, and reflection.
+
+6) is there one of the LLMs you agree with more? Which of the two LLMs is closer to your impression of different aspects of the comments? Discuss.
+I agree slightly more with Gemini for the Old Man’s Advice video because it feels like it captures how important grief and loss are in that comment section, without making it seem overly negative. For the Bad Bunny video, both models feel pretty accurate since the joy and excitement are very obvious either way. Overall, both LLMs are close to my impression, but Gemini seems a bit better at picking up emotional depth, while the first LLM feels more general and surface-level.

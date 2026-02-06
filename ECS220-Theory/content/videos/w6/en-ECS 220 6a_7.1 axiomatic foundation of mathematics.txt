@@ -1,0 +1,190 @@
+So there was this big
+project proposed by this famous German mathematician
+David Hilbert when he addressed the International Congress of Mathematicians that 9800, right? It's kinda like in 2000 we had
+declared Millennium Prize Problems. Hilbert did, did a similar
+thing a 100 years before, laid out 23 problems he thought were very foundational
+fundamental problems that, that mathematicians should try to
+tackle over the coming century. And some of them took the better
+part of that century to resolve. Some of them are still unresolved. So Hilbert's tenth problem was this. And it says specify a procedure. Now they didn't really
+have this word yet. That's part of what we're
+talking about in this chapter is how did we come to define
+what we mean by procedure? But just think algorithm, I guess I just thank program in your favorite
+programming language. He said specify a procedure
+which in a finite number of operations enables one to determine whether or not a
+given DO fan tiny equation. So a polynomial equations with integer coefficients
+with an arbitrary number of variables has an integer solution. Now, note something curious
+about is he's not even bothering to ask whether
+such a procedure exists. Is very optimistic here, right? He just thought, well,
+clearly there is a way to do this and he just
+set out the goal to be, find it like what's the algorithm you can follow to figure out whether a multivariable polynomial
+has an integer solution. Now, many decades later, he proposed another problem, even more ambitious and even more optimism that he thought it
+obviously had a solution. It's called the incidence problem, which in German means
+the decision problem. And the problem he said is solved. One does a procedure that
+allows one to decide the validity of a given
+a logical expression by a finite number of operations. So here, think of the
+phrase validity of a given a logical expression
+that has meaning that the truth or falsity of a
+mathematical statement. You want an automated
+theorem prover that can prove or disprove any mathematical
+statement you can write down. For example, pause and see if you, you know what this mathematical
+statement corresponds to. There exists x, y, z, n in the non-negative
+integers so that n is at least three and x to the n plus y to the
+n plus z to the n, x equals e to the antibody. So a sub-question for both of these, Hilbert's tenth problem in 1900 and the enshrinement
+problem later is, what's exactly, what exactly
+do they mean by procedure? What exactly does that mean? So suppose that weren't
+possible to find it. How would you prove that
+there's no procedure? You'd have to know what
+precisely you mean by the word procedure to know
+whether or not one exists. So the goal of this, this sort of enshrined in
+this problem is to set an axiomatic foundation
+for mathematics, right? To, to reduce all of mathematics to peer set theory and logic and create a formal system powerful enough to prove all the
+mathematical facts there. So. This is what mathematical
+logic looks like. And I often think of mathematical
+logic of being something like it's sort of like
+Mathematical Anthropology. It's like mathematicians
+studying what it is that mathematicians do when
+they're doing mathematics. So to, so to do that you have to take all the concepts that map
+editions normally use. Integers, real numbers, sets, functions and relations,
+partial orders, all that stuff. And you've got to define what
+exactly are those things and its simplest if you can
+define them all in terms of just some primitives
+that you build up from. And it turns out all those can
+be defined using only sets. So one example is that if you have nothing but
+the concept of a set, you don't have much,
+You have the empty set. You haven't talked about any
+other kind of object yet. So you have just the empty set, but you don't have any other
+objects you defined yet. So how could you possibly go
+about defining other things? Well, you have the empty set, so you can put it in another set. You can talk about the set
+containing the empty set. And then you can talk about
+taking that object and consider the set
+containing only it, right? So these singletons sets that
+are kinda recursively nested. And this could be used to define
+the natural numbers, right? You could say the natural
+number we're just going to identify with the empty set. We're going to say one is
+the set containing only 0, containing only one, and so on. So this is one way to just say
+what are the natural numbers? Well, they correspond to this
+infinite hierarchy of sets. And now you didn't have to talk about any object other than a set here. And once you've defined sets, you can also define
+ordered pairs, right? So a set gives you the ability
+to talk about an unordered pair. A comma b has two elements,
+but there's no order. B comma a is the same set, but you can encode an
+ordered pair by also including a set telling you which
+of these two should be the for. So the set, the
+singleton a and the set, the set containing both a and B. It tells you what both elements
+are and which ones the first, so that's an ordered pair. A function is defined
+by its graph, right? The graph is the set of ordered
+pairs input comma, output. So this is the set right here defines the function n-squared
+sequences, right? Infinite sequences can be
+defined by the function f of n equals the nth
+element of the sequence. You can define a real number
+as a pair of sequences. One is the digits on the
+left of the decimal point, the others the digits on the
+right of the decimal point. And on the left it would
+be a finite sequence. On the right it could be infinite. So you can define anything that
+these are just some examples. Anything you want can just be
+defined using only, right? So you just have to wrap your head
+around the intuitive concept of a set and everything else
+can follow from that. But let's pause there. What exactly is a set though? Like best is the one thing
+that we have to somehow take on faith that such a
+thing called sets exist. So Russell's paradox came from
+thinking about this problem. What objects exactly is
+it that sets can contain, you can contain other sets. We did that on the last slide, so, okay, assets can
+contain other sets. You've all encountered
+the power set, right? That's a set of subsets of another's ad sets can
+contain other sets. Sure that Ought to be allowed, especially
+if we're starting with only sets. But it sets can contain other sets. Kinda set contain itself.
+Can you have a set S? So S is contained in S, right? It's not clear what that would
+mean exactly, but it's just, if you're just defining
+this element of operation that between sets
+and things that they contain. And if the things they
+contain can be other sets, then you're going to
+have the same type of object on each side of that relation. So suppose that you will add this. He said You're going to have
+sets that contain themselves. But then some sets don't
+like the set 1, 2, 3. It does not have, you know, it only has three elements
+and none of them are the set 123 individual editors. So you have some sets that contain themselves and others that
+don't if this is possible. So define Rs is the Russell said, this is a little bit hard to read. This is the set of all sets, right? Instead of all sets that
+don't contain themselves. Okay? If this is allowed in
+this set can be defined. So what, you know, what's going on here? Well, you can ask this question, is our Russell set is, are contained within itself or not? Well, if it contains itself, then it would not be an
+element of this set. But this set is r. Therefore, r would
+not be contained in. But if r is not contained in art satisfies the condition of this set. So it should be in there,
+but then R would be contained in R. So you
+get a contradiction. R cannot be defined
+essentially because it could, you'd have this paradox
+and this contradiction. So one solution to this is what's called a restricted
+set comprehension. And the idea here is I
+just said the set of all sets that don't
+contain themselves. But usually when we talk
+about the set of all objects, we usually sort of say, we're taking them
+from some larger set. So we're saying, you
+know, so the primes, for example, you tend to
+talk about it's the set of all positive integers that
+obey a certain constraint. You're not taking
+them from the set of real numbers are the binary string. So restricted set comprehension means when you write set
+comprehensions like the US, meaning the set of all objects
+that obey some constraint. You have to first specify a bigger
+set you're taking them from. And then this is
+specifying a subset of it. So here are some subset of
+aids got some things from a, but not all and not the
+ones that satisfy this. So after Russell pointed out that the problem with allowing this
+unrestricted set conference. So the point is this then would
+prevent the paradox because now you first have to
+define this bigger set. And before you've defined
+that are doesn't exist. So our couldn't possibly
+be one of the things that year pulling from a to test whether
+it's going to be and are not. So based on trying to fix
+little problems like this, the logicians weren't and
+came up with a set of so-called axioms and the states
+how sets are supposed to behave. And we're, this is not part of this sort of official
+material for the course. I just wanted to show it to you
+that it is possible to say, okay, what are the things we
+have to assume or truth sets? And from that we can get all
+the rest of mathematics. And this appears to be enough, right? So some of them are a
+little complicated, but summer are fairly
+easy to understand the, the axiom of infinities as there's a set with infinitely many elements. The axiom of pairings
+is for any two sets, x and y, There's a set that
+has both of them as members. So note that all of
+them start with a for. All right, this is a
+statement all said. So it's all sets x also too. I have to obey this constraint. This is all set z and all sequence sequences events That's w1 to wn
+obey this constraint except one. There's one said there's one
+acts in the axiom of infinity, gives you the first set, right? So this says there is a set
+with infinitely many elements. And then all the other
+axioms start with a for all. So what this does is it
+gives you a way to just declare some set exists. That's axiom number 6 declares
+that this set exists. And sometimes people
+take this domain. This is the set of natural numbers, but there's some said that exists. And then these give you a
+way to build other sets. They say if these sets can be fat, for any sets that you can define, you can define a new set, right? So for all x and y, there exists a z that pairs
+x and y together, right? So, okay, so this is going to
+be the general theme and we're going to think about
+the sort of computationally. So when we wanted to find what
+do we mean by computation? So we're imagining we're
+in the early 19th century. We don't yet know what procedure
+or algorithm means exactly. We're going to follow
+this approach of defining some sort of atomic
+computational operations. And then define a
+computable operations to be any way of composing on. And people had proposed a variety
+of solutions to this problem. Lambda calculus was
+proposed by church. The general recursive functions were being pushed by Godot and
+somebody named her brand. And there are generalization of
+another thing that's now called primitive recursive functions
+and Skolem and define. And then Turing machines
+were devised by terrain. Of course he didn't call
+them Turing machines, what we call an interview machines. And it turns out all these
+definitions are equivalent, right? They all capture the exact
+same class of computations. And, okay, and they
+could be equivalent, but still not capture everything
+we can do in the real world. But the Church-Turing thesis states that they do that anything that could quote reasonably recall the
+computation can be done by days. So one of turns, big achievements in 1936 was to show the so-called halting
+problem is undecidable. So this is the problem given an
+algorithm isn't going to halt, or there's another variance of that. So that in turn means that this insight into problem that
+Hilbert proposed is undecidable. Because remember the Enchantments
+problem was figure out an algorithm where you can write down any mathematical statement you want. And that algorithm, we'll figure
+out whether it's true or false. Well, one example of a mathematical statement is
+this Turing machine halts. You can encode that as
+a mathematical theorem. But since it's not decidable to
+figure out if it halts or not. If you supposedly had this universal theorem
+prover solving the problem, it could figure the truth or falsity of that statement,
+but terrain grooved. No algorithm can do that. So Hilbert was somewhat devastated by this is
+ruined his whole program. But, you know, the, the authors of the
+textbook say they find it quite limited, liberating, right? So there's essentially
+mathematics will never end. We're not going to be
+able to automate it with an algorithm that just does
+the job of mathematicians.

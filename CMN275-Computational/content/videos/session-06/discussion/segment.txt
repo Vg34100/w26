@@ -1,0 +1,531 @@
+
+55:02
+network again and get pretty much to a random that's just a randomly connected
+55:07
+network that's what I want to tell you about small world networks which leads
+55:13
+us to our last a kind of network formation that I want to talk to you about and actually want to connect that
+55:19
+your entire branch of research that has to do with a very important question of how we can grow a certain kind of
+55:26
+network so can we actually grow a network with particular with particular
+55:33
+characteristics off we said well the small world in the scale-free the preferential attachment networks they
+55:40
+just refined them often in society so it's useful to grow them and then to study them for the random networks are
+55:47
+kind of like a contrast to networks that you might find but there's an entire another that is can we grow networks with
+55:54
+certain characteristics for example in a very efficient network or a very stable
+56:00
+Network and for the social science that's of course very important because as I said the social is actually is a
+56:06
+network right the network is what makes the total more than the sum of its part
+56:12
+it it makes a society out of individual so can we grow networks with the
+56:17
+specific characteristics and I want to expose you a little bit to that to that idea now in this in this examples so one
+56:26
+of the logics we can go about it is to take a logic from from economic cost and
+56:32
+gains because having and maintaining connections has best benefits you gain
+56:39
+from having friends but it's also costly and all it takes takes your time I take resources for company to connect to many other
+56:46
+companies collaborators clients if you work in a team if you have a team that's too big there's so many people you don't
+56:53
+have time for everybody so their costs and there's benefits the benefit might be that a big team gives you a lot of
+56:59
+diversity of skills but it's also cost though so we go with this with this with
+57:04
+a set up so basically with the basic assumption that which is a very reasonable assumption that making
+57:10
+connection has benefits but also costs and then we kind of like grow and
+57:16
+rearrange and form the network we add for example links you can also add nodes but let's go by adding links that have
+57:24
+certain constant gains until we are in equilibrium equilibrium is when nothing
+57:30
+changes anymore so in physics it has a definition nothing changes on average
+57:35
+things are in equilibrium or if you are happen to to be from economics you know
+57:41
+an equilibrium the economy is pretty much stable so sometimes people have
+57:47
+this example of if you roll a ball in a sink right the ball keeps rolling until until it stops and Lizette in
+57:54
+equilibrium there nothing changes anymore often in social negotiations you
+57:59
+can think about it that nobody can actually improve their position at the
+58:04
+point of a stable equilibrium think about it like tic-tac-toe so here you play tic-tac-toe and then a stable
+58:10
+equilibrium would be either at one of the party wins or that you have a tie for example just like right now you have
+58:18
+you have a tie and then you're in equilibrium basically in deadlock in that but an equilibrium is also useful
+58:25
+because it makes it stable if if one person could still benefit change
+58:30
+something in benefit while the network will always change and always change and always change so if nothing changes if
+58:36
+nobody can get better or worse than we are in equilibrium basically right and then we have a stable network
+58:41
+configuration so that's how I go to make the network stable that's one goal and
+58:48
+no link or node can be added or deleted anymore it's called a pairwise stable
+58:55
+equilibrium and now we also want to make the network efficient stable as one and
+59:01
+these are complementary golden as we can see there's a certain trade-off as well of making Network efficient and making
+59:06
+it stable let's work with both of them and we use a symmetric connections model that's what it's called and we look for
+59:13
+efficiency while we go about it as we say given a certain cost in a benefit of
+59:19
+links what's the most efficient network structure so for example you could
+59:25
+assume that well there's cost some benefits monetarily or timewise you can normalize that and say you know 80% you
+59:33
+get a benefit of making a connection and 20% is there is the cost of having the
+59:40
+connection so it might be in dollars or in times you save you save 80% of the
+59:47
+time but it costs you 20% of the time in order if you keep the connection with this collaborator or in financial so we
+59:55
+work with this kind of trade oven and these these these these values are defined by you by your assumption by
+1:00:01
+what you find in empirical reality so you look at empirical reality and you calibrate your model that's that now
+1:00:08
+what we find is if we have a very low cost of making a connection if it's if
+1:00:15
+it's basically free to make a connection but we have a lot of gay then the best network we can build is a
+1:00:22
+completely connected network right if okay if only benefits and no downside
+1:00:28
+then I the best thing is I just connect with everybody now on the other hand if I have a very high cost if my cost of
+1:00:35
+maintaining a connection is much higher actually than the benefit that I get from it then I just cut ties right if
+1:00:41
+all your friends are extremely annoying and just steal your time and your and
+1:00:46
+your money here's what you better just stay at home by yourself so if the cost
+1:00:51
+is much higher than the benefit then the empty Network would be uniquely
+1:00:57
+efficient otherwise if if there's very low cost completely connected that
+1:01:03
+progress you need what happens in between then usually we have something in between there's some costs and some benefits and it turns out that they are
+1:01:10
+in general you can come up with a star network so the star network would be the
+1:01:16
+result of being uniquely efficient if their net was and why the star network
+1:01:22
+started work if you've mentioned that before for example happens a lot and you
+1:01:28
+see that a lot for example in Airlines that's that's the reason why you always
+1:01:33
+fly to some cities like Denver or or Dallas and change planes right we said
+1:01:39
+that's because it has a small average path length if you go through the star you can get to everybody
+1:01:46
+quite quite quickly still and it has to do with a small average path length and
+1:01:52
+that's become a little bit more concrete and do it with a cost-benefit analysis to show that in an intermediate
+1:01:58
+intermediate level of costs and benefit this star network the star configuration
+1:02:03
+of the network is actually the uniquely efficient stable network configuration
+1:02:09
+all right so we work with four nodes very simple and we have an empty Network
+1:02:17
+to begin with no benefits of links because there are no links and no cost
+1:02:24
+now we make the first connection two degrees or two nodes benefit right in
+1:02:31
+that case the upper node benefits and the left no alone benefits because they have a connection and both of them also have
+1:02:37
+costs so we have two benefits and two costs let's go with this example that I
+1:02:42
+mentioned before so my benefit would be 80% my cost would be 20% and we normalize that between
+1:02:49
+zero and one it could also be either on our different a different number in terms of dollars or time and in
+1:02:55
+calculate this way so we have two times a benefit of 0.8 minus 2 times the cost
+1:03:02
+of 0.2 so 2 times 80% benefit minus 2
+1:03:07
+times 20 percent cost net if you put the together your net benefit would be 60
+1:03:15
+zero point six right 0.8 minus 2 that would be your net benefit now if you
+1:03:21
+calculate that out you get 1.2 0.6 plus zero point six is one point two and
+1:03:28
+that's your net benefit your leftover benefit you have a benefit of making this connection so your network would go
+1:03:35
+from the empty network it would make this first connection it's more beneficial for this network to have one
+1:03:41
+connection but then not having anybody so this network would evolve towards
+1:03:47
+making one connection it is beneficial what happens to the second connection
+1:03:52
+well if I add a second connection I have four benefits and for costs right so if
+1:04:02
+you calculate that out four times the benefits minus four times the cost what
+1:04:08
+do you get you get a higher or lower value and what number do you get so four
+1:04:17
+times zero point eight minus four times zero point two this is not this is not like we don't do math in this course
+1:04:23
+because most of our math will be done by computers that's why we do computational social science but it gives you the
+1:04:29
+intuition I mean this is basic use your phone to type it in and to calculate it
+1:04:35
+or to behave it that's that's basically that's counting that's what we that's
+1:04:40
+what we do okay so four times zero point eight minus four times zero point two is two point four the
+1:04:46
+twice as much benefits so the network will will be drawn towards towards this
+1:04:51
+which is more beneficial to a society right it's more benefit voluminous and the empty network which is zero the one
+1:04:57
+connection with modeling is one point two and with two connection has two point four so it's more beneficial to
+1:05:03
+add the second link society our society or four nodes eventually will add the second thing
+1:05:10
+right so that's where the network will evolve what if I make the second link like this so I connect the second leg
+1:05:18
+differently now I also have four benefits and the four four arrows right
+1:05:24
+in four costs these four arrows of benefits and cost but now I have also
+1:05:29
+indirect benefits and that kind of light looks like this so the lower two nodes
+1:05:34
+also connect indirectly through one degree of separation now this indirect connection is there
+1:05:41
+but there's according to our assumption that our assumptions that we took there
+1:05:46
+is no cost associated with it because we said cost is associated with maintaining
+1:05:52
+a connection was having an arrow coming in to you go in it so that is actually
+1:05:58
+then the maintaining so we have we have indirect benefits it kind of goes through here and as a modeler and that's
+1:06:05
+that's my assumption in the money I can say well it has benefits but it doesn't have costs or maybe there's a lower cost
+1:06:10
+that is a cost for somebody else you can model that how you want but we can I keep it simple very simple here and not make it so complicated you just say it
+1:06:17
+has benefits indirect benefits these indirect benefits they are less than 0.8
+1:06:22
+so actually I goes who want to do those one node in the mediating node and I
+1:06:28
+keep on going so it makes sense to multiply them so 0.8 times 0.8 which
+1:06:34
+would be 0.6 for right 8 times 8 is 64
+1:06:39
+so 0.8 times 0.8 yeah it gets because it's lower than 1 so if I multiply them
+1:06:45
+gets lower very very convenient for us so is that the indirect benefit is 0.26
+1:06:51
+for so if I now calculate that out I have a direct benefit 4 times 0 pony
+1:06:59
+- a diary cost four times 0.2 plus an
+1:07:05
+indirect benefit and and and I have that actually twice right f1 indirect benefit
+1:07:12
+going from one or to the other one and the other way around so two times zero point eight squared so 2 times zero
+1:07:22
+point six for base Evie now if I if I sum that up I get a higher number three
+1:07:29
+point six eight so actually my beta my social benefit then increased on it's
+1:07:36
+higher than the previous case because now I take advantage of these indirect effects as well so the network actually
+1:07:44
+it will win it will add the second link it won't it will tend to not maintain
+1:07:49
+the second link independently on different notes it will add the second link rather to already connected note
+1:07:55
+which gets richer logic because that has this brings these indirect benefits with
+1:08:00
+it according to our model setup and you could set up as I said your model differently but we keep it very simple
+1:08:06
+here so the evolution of this network would actually try to be will actually tend to be pulled towards this
+1:08:13
+configuration the this this this fourth configuration that we have here is
+1:08:18
+different now what happens if we add a third a third connection and we add the third
+1:08:25
+connection in the same rich get richer logic so the one that's connected already gets this other connection well
+1:08:31
+we get six benefits minus six costs and
+1:08:36
+then how many indirect benefits do we get now we get six indirect benefits so
+1:08:47
+yeah six direct benefits six costs very costly and six indirect benefits one
+1:08:55
+going from this node to this node these are two wandering from this order these no these are 2 and the other third one
+1:09:01
+goes from this order these not so each one of these indirect routes paths
+1:09:07
+actually has two two connections or the two benefits the one benefits and the
+1:09:12
+other benefits as well when they are connected so there are six indirect benefits six
+1:09:18
+times 0.8 squared what we get here is wow that's that's quite quite a quite a
+1:09:25
+social benefit 7.4 for that it's even higher so the network would tend towards
+1:09:31
+this configuration this is the socially
+1:09:36
+most beneficial Network but is it also stable what happens for example if we would reorganize the third link and and
+1:09:44
+put it like this so basically that's that's kind of like a straight line now right so all of them are are connected
+1:09:51
+and I could also pull it out it would be a straight line what would happen what would happen then well we have six
+1:09:59
+direct benefits and and six direct costs how many indirect the indirect benefits
+1:10:09
+do we have yeah that's a tricky question
+1:10:16
+actually because we have we have four indirect benefits of of path length to
+1:10:23
+so of two degrees of separation we have one here and one here and then we also
+1:10:29
+have indirect benefits of three steps of separation right if we go from the first
+1:10:36
+node the first node can also go to the last node can go to except I could also go all the way three steps so how this
+1:10:43
+was modeled here by Jackson and his collaborators what how they modelled at a then basically Bob multiply it again
+1:10:50
+by 0.8 so each step and like reduces your benefit the indirect benefits are
+1:10:56
+not as much since it's a smaller than one that's a good thing that's normalizing it would be 0.8 times 0.8
+1:11:02
+times 0.8 so it would give me then also to two indirect benefits part of a path
+1:11:10
+length of three basically and that would be then if you calculate that out what
+1:11:17
+look like this is 0.8 at six times 0.8 minus six minus six times 0.2 and then
+1:11:24
+four for indirect connection of Earthlings to and to indirect
+1:11:30
+connections of of path link three that's the first the first and the last note
+1:11:35
+right there also connected of path length three now if I sum that up I get a value that's actually smaller seven
+1:11:42
+point one seven one something so in in the previous configuration I ate seven
+1:11:48
+point four four and now I have seven point one so the network will not evolve towards that it's just not benefit it
+1:11:55
+might it might check it out just by trying an arrow evolve towards that but then go back again to this previous
+1:12:01
+configuration of of seven point four four because that's more beneficial it
+1:12:06
+will find out it's more beneficial and if you look at it the second to last configuration is actually a star Network
+1:12:14
+right suits just organize it if remember there's one middle node and then these three hanging on its it's a star network
+1:12:20
+with a configuration of four total nodes and the question is why stars well
+1:12:26
+because the shorter path lengths are more valuable than the longer path
+1:12:32
+length and the direct links have an intermediate trade-off between benefits and costs that's why the star
+1:12:39
+configuration is more beneficial than just having having basically a straight
+1:12:44
+line is that does that make sense if not please feel free to go back and watch
+1:12:50
+this segment again and if you get the basic intuition behind that more you
+1:12:55
+don't have to learn this model in detail it's just one model but that's basically the idea of your Volf networks until we
+1:13:02
+have maximum efficiency then for society as a whole and that leads us to our next question
+1:13:09
+so for society as a whole I said this is uniquely efficient but what about the
+1:13:16
+individual notes because nodes we said yes the connections have benefits for nodes but they also have costs and if
+1:13:24
+you look at the star configuration well the node in the middle of the node in the hub actually is the most
+1:13:29
+connections a lot of direct benefits but it also carries a lot of the costs and
+1:13:34
+the other ones going with indirect benefits kind of like freer a they have
+1:13:40
+they don't have so many go so let's look look a little bit in more detail about
+1:13:45
+that how is the fairness of the network actually among these network
+1:13:50
+configurations and and we all know it's equally happy inside the network not as a society as a whole
+1:13:58
+okay so let's look at this that's we said that's our that's our best social
+1:14:03
+configuration and we said there are six tyrick benefits six direct costs and six
+1:14:10
+indirect benefits as well but you can go back and look at that why that is let's
+1:14:16
+calculate the benefits for each one of them how does these the total benefit of seven point four four over whatever the
+1:14:24
+number is how does the distribute among these four nodes all right so our middle node has three direct benefits and three
+1:14:33
+direct costs so just for the sake of seeing if you still with me what would
+1:14:39
+that be three direct benefits three direct costs according to our assumptions three times zero point eight
+1:14:49
+minus three times zero point two so one point eight so the net benefit then if
+1:14:58
+it - cost the net benefit of the middle node is one point eight what about the nodes the pendant knows the connection
+1:15:05
+notes so here there is not we have one benefit one direct benefit and one
+1:15:10
+direct costs right is this node only has one one connection going into it and
+1:15:16
+then two indirect benefits and we said the indirect benefits don't have any costs because this person doesn't have
+1:15:23
+to maintain more than one connection and their two indirect benefits that look like this right now what's the overall
+1:15:34
+net benefit of this node just for the sake making sure you still with me
+1:15:40
+please do me a favor think about that it's one point eight eight so it's
+1:15:48
+higher so net costs and benefits considered this node
+1:15:55
+actually has a higher benefit then the middle note what about the other two
+1:16:01
+pendant notes well they are the same right yes I mean that you can do the
+1:16:06
+same calculation now again also one direct benefit one die recalls then two
+1:16:12
+in directives also one point a day so actually the middle one is kind of like worse off here if you sum that up all of
+1:16:20
+these 1.88 and plus one point eight a plus one for today one go ahead you get you get the seven 0.44 of told societal
+1:16:30
+benefit and we see that this total societal benefit is unequally distributed some especially the middle
+1:16:36
+note actually has a less net benefit it would start complaining right like where
+1:16:42
+I have to do the work here of intermediating you guys are benefiting from these indirect benefits and I'm like here in the middle just passing on
+1:16:49
+messages all the time and you guys over there you only have to worry about one connection with me and and I have to
+1:16:55
+talk with all three of you so it's actually that's not a comfortable that's not a really comfortable situation I'm
+1:17:01
+just like I'm out of here I also want to be one of these pendent nodes and if you give me the possibility somehow to do that the societal pressure will try to
+1:17:08
+keep him in but it's not and I was not a fair Network even so from a societal point of view it's uniquely efficient so
+1:17:15
+what can we do here what do you think could be done well nothing that a little
+1:17:22
+money couldn't solve right so basically basically we bribe the one in the middle
+1:17:27
+so formally in terms of if you have a private sector it would be private
+1:17:33
+sector negotiation but then happen in cap bargain favor among individual and
+1:17:38
+favor more individuals and we basically would reimburse the member one for these extra rare for this the middle what is
+1:17:44
+doing if you have public sector authority that means if you make the rules of the game you want to make sure
+1:17:50
+that this middle hub is there so what you would do is then you would subsidize cross subsidize for example you would
+1:17:56
+tax the other ones and say hey I put a tax on you I take some money from you
+1:18:01
+know redistributed to subsidize this middle node that's how we maintain this
+1:18:07
+hub which is crucial to benefit all it benefits all of us with a small average path length messages or
+1:18:13
+airplanes can travel can travel quicker and we need this so it's a mix of private and public sector negotiations
+1:18:20
+that's how these things then are maintained in order to maintain the centralized happen and keep it happy and
+1:18:27
+reimburse this endless up for the effort so how could we do that now here keeping up with our I'd a idealized model yeah
+1:18:34
+well we have 0.88 whatever bout if we take two cents away it's a zero point
+1:18:41
+two we take away and give these 0.2 to the middle hub so of let's say $1 88 we
+1:18:50
+take two cents away and give these two says the middle up now this this pendant
+1:18:56
+note reduced its benefit it had to it was taxed so it went down from one point
+1:19:02
+eight eight to one point eight six and the value one point eight six dollars had lost it lost two cents what about
+1:19:10
+the other the other two well is for fairness reasons we will tax them with the same rate also to sends everybody
+1:19:15
+chips in two cents I take two cents from this one give it to the central Lord I take two cents from that one and give it
+1:19:21
+to the central node and the story is that all of my pendants have now a net
+1:19:27
+benefit of one point eight six hey my central node Oh as well one point eight
+1:19:34
+six right so now with this cross subsidy everybody's happy with his tax and
+1:19:40
+redistribution or it might be out of a private-sector negotiation in order to to find now this would be also fair if
+1:19:49
+it and now everybody is happy the middle one says okay now I'm I'm as screwed as all of you now we really have a stable a
+1:19:55
+really as long term stable Network given to the due to this strategic network
+1:20:02
+intervention that you we had by the way again if you do the math right just to
+1:20:07
+see like I didn't I didn't invent anything or threw anything else nor any money in if you take this suit or social
+1:20:13
+value which was seven point four for lots of numbers I know seven point four
+1:20:19
+four if you take is the same as four times 1.86 so that's how you get the social
+1:20:26
+value and this social this social value is now uniformly equally distributed
+1:20:32
+among our four notes now we are we are good and we achieved a stable and
+1:20:38
+efficient equilibrium thanks to this this in division that's how you can think about that's how you create networks you try to make them efficient
+1:20:44
+you try to make them as stable as possible in the long term in order to also maintain them and then there are
+1:20:51
+some market dynamics you can think about it so market dynamics that actually make
+1:20:56
+the network evolve to in some states and sometimes then also well you can invest or teaching intervention in order to
+1:21:02
+make a network stable at the point where it is because the market sometimes might
+1:21:08
+drive it to an inefficient state a state that is not as efficient so always go
+1:21:13
+between two states and then you can never do something because you're always switching back and forth and you just
+1:21:19
+want to stable configuration in order to be able to build something like societies right or market structures be
+1:21:27
+it in a car noise but it's cannot also applies to social dynamics and social configurations that you want stable
+1:21:35
+social networks now that sounds great but now comes the bad news and the bad
+1:21:42
+news is unfortunately it doesn't always work they came extremely frustrating just
+1:21:48
+making the world a fair place it is sometimes doesn't work just
+1:21:54
+mathematically really it doesn't work and sometimes it might be necessary that you have to give something to someone
+1:22:01
+without taking from anybody else that means you require some outsized resources you take from another network
+1:22:08
+for example so you might take from another industry to subsidize this this industry and make this industry stable
+1:22:14
+that you're interested in or you have to take away from somebody but then don't
+1:22:20
+give to anybody else so basically you're accumulating extra resources which then
+1:22:25
+might be used maybe in another time might be used later or might be given to somebody else so this can also sometimes
+1:22:30
+as was not often sometimes it can happen at you with your network yourself you
+1:22:35
+won't be able to solve it and then but this network of course is part of a larger network but of a larger network
+1:22:41
+mean at the end it's it's well it's difficult to make the world a fair place that's just a message I want to leave
+1:22:47
+you with and if you're interested in it I highly invite you to study that more because yes the world absolute needs
+1:22:53
+more fairness and these are very intricate problems and don't worry you
+1:22:59
+won't usually do this by hand with accounting like me did I just did this in order to show you some intuitions
+1:23:05
+usually you would simulate that as well on a computer and if you want to solve it numerically and find some stable
+1:23:11
+configurations you can do that with a computer or of course I mean if you're good enough in the math in the math you
+1:23:17
+can have some analytical solutions as well and work through the hard math but

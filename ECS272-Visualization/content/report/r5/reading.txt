@@ -1,0 +1,7 @@
+
+Read the paper "Mapping Color to Meaning in Colormap Data Visualizations. Karen B. Schloss et al., InfoVis 2018 " [pdf ].
+
+Write a short summary of the paper (< 300 words) and answer the following two questions:
+
+    Explain each of the three types of biases the paper discusses and provide an example.
+    In the first experiment did the background have different effects depending on the color scale? Explain how the biases were affected, if at all.

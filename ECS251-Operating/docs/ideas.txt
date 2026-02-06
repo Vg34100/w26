@@ -1,0 +1,11 @@
+Kernel bypass
+○ Try out DPDK/SPDK and (efficiently) implement a task like a simple networked file system
+● Fork()
+○ Try porting an existing Linux application to use something like posix_spawn
+○ Try hacking the kernel to support something better than fork() (like Windows CreateProcess)
+● Asynchronous IO
+○ Try porting/optimizing some systems calls to use Linux’s io_uring API for Asynchronous IO
+● Thread pools
+○ Investigate a few thread pool implementations for different tasks
+○ Look at scheduling, synchronization, or scaling issues with different thread pools/use cases
+○ Compare thread pools with coroutines for some tasks

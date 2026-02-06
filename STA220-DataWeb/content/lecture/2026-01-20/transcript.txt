@@ -1,0 +1,959 @@
+Pablo [0:14]: from the us sensor
+Pablo [0:30]: let me just see yes there is like a modifier on the ninety nine us census we know for each of these census groups how many people are living in this area and what immediate income
+Pablo [0:40]: what is the median house age in this area how many rooms we have and some population
+Pablo [0:44]: we have a lot of information and the goal is
+Pablo [0:52]: to model the outrises in terms of hundreds of dollars and
+Pablo [1:01]: what we do first is just try to
+Pablo [1:03]: detonate the data
+Pablo [1:09]: samples and i think it has started to present last picture
+Pablo [1:11]: so we quickly going over the beginning
+Pablo [1:26]: of the median all these our target values on average here a unit just work fifty five thousand dollars and
+Pablo [1:29]: average house
+Pablo [1:34]: just try to explain
+Pablo [1:41]: why for example this block use more expensive of the houses tell more expensive
+Pablo [1:46]: first goal and i mean maybe the first difference
+Pablo [1:51]: immediately median income is much higher in some sense
+Pablo [1:54]: if it's like a rich area that no surprise
+Pablo [1:55]: i would say
+Pablo [2:10]: over it we have twenty power goals one of the target variable
+Pablo [2:27]: s also make sure that the average number like the average looms like average number of dukes per households in some sense we know how many households there are in this area how many roofs we have in open
+Pablo [2:39]: just dividing the number of households for this heavy sometimes reading an area where a lot of houses just audit use for holiday
+Pablo [2:40]: s
+Pablo [2:45]: some have a very high number of average rooms in the sense that the population is small
+Pablo [2:55]: because there are not that many people living for a long time like people have same number of rooms
+Pablo [2:58]: these could be a little bit
+Pablo [3:05]: iceberg
+Pablo [3:10]: session
+Pablo [3:17]: and just breathing one of the differences i have to create as part data frame management
+Pablo [3:19]: and the state of
+Pablo [3:25]: and then i just find house prices
+Pablo [3:30]: we don't need to
+Pablo [3:37]: target please test the house prices and if i exit some
+Pablo [3:56]: other things first i need a linear regression model for my target by the way target
+Pablo [3:59]: and parameter one
+Pablo [4:04]: otherwise
+Pablo [4:06]: it has another stage
+Pablo [4:08]: standardizing
+Pablo [4:09]: our values
+Pablo [4:20]: and then we are filling it is what i mentioned at the beginning there are two hands in some unknown training parameter because we don't know how to choose it
+Pablo [4:42]: of different failures starting from year zero to and then try to come up with cross validation to find the best substituting parameter and the best way in the sense of trying come up with the one truly parameter that gives us the smallest e squared
+Pablo [4:42]: error
+Pablo [4:44]: in this process valid
+Pablo [4:44]: ation
+Pablo [4:49]: so maybe just one very quick
+Pablo [4:59]: how the cross validation works just quick reminder if we have here our twenty thousand
+Pablo [5:00]: data
+Pablo [5:07]: so what we can do is we can split the pm zero
+Pablo [5:07]: three and so on
+Pablo [5:18]: and what we can do in the first step
+Pablo [5:21]: we can
+Pablo [5:22]: test
+Pablo [5:23]: remove
+Pablo [5:29]: the first pole and we just train our model on the remaining nine holes
+Pablo [5:31]: use
+Pablo [5:33]: this to train our model
+Pablo [6:05]: and then the mod we have trained on the remaining nine holes we can evaluate the model on the first hole in the sense that we apply the model on the first hole and try to predict all the values that the power supply is in the first pool and see because we know of course what the actual house prices are we can calculate the mean square error between the ancient house price in the first pole and our prediction that was based on a model training of the last remaining nine
+Pablo [6:12]: volts this is like in our first step and then we come up with first leave error
+Pablo [6:16]: and in the second step
+Pablo [6:20]: remove
+Pablo [6:28]: them together
+Pablo [6:29]: train everything
+Pablo [6:31]: on this data set
+Pablo [6:58]: and we just excited for each of the code once we take them out once fit our model the remaining training data calculate the mean squared error on the fold we have just taken out and then we just calculate the mean squared error for all and see which tuning parameter gave us like the smallest mean square error
+Pablo [7:03]: sum up over
+Pablo [7:04]: all the
+Pablo [7:13]: time today
+Pablo [7:24]: so here we have a transmitted data we define ten o our evaluator is just very narrow and we have our parameter
+Pablo [7:27]: and then
+Pablo [7:29]: our aussie model
+Pablo [7:36]: run
+Pablo [7:40]: until
+Pablo [7:45]: now
+Pablo [7:46]: we have
+Pablo [7:47]: like finish
+Pablo [7:56]: everything and we can just see the summary of the model and for example we would like to get the summary of the best model by best model
+Pablo [8:01]: means according to best tuning for
+Pablo [8:02]: our
+Pablo [8:06]: method chosen and we see that mean square error
+Pablo [8:21]: like the means where there is about fifty two thousand dollars
+Pablo [8:22]: which
+Pablo [8:22]: is still quite a lot
+Pablo [8:25]: our best model and then we can
+Pablo [8:27]: just get the intercept by all the proficient
+Pablo [8:32]: if we're interested in them and maybe it's e
+Pablo [8:48]: combined and decide it's just names like the median income the coefficient quality and eco would be zero or let's justify this we see all the coefficients of our best model best model in a sense for the best tooling parameter
+Pablo [8:51]: to get coefficients and
+Pablo [9:05]: the median income of course if the people are rich in this area house price also ielts i think no surprise and we see what is maybe a little bit surprising
+Pablo [9:18]: if the houses are all very small increase in house prices and i would have said too because it houses are older they should less work
+Pablo [9:21]: maybe this parameter supposed to zero
+Pablo [9:26]: maybe independent of the age
+Pablo [9:29]: still
+Pablo [9:56]: what we see also here that's how average bedrooms we have more bedrooms the houses are more expensive no surprise i would say so far
+Pablo [9:58]: families
+Pablo [10:01]: work more
+Pablo [10:02]: what is a little bit
+Pablo [10:33]: counterintuitive is that the average number of rooms if we have more rooms in an area this means the price are lower still this could be like one explanation could be that the average number of rooms is just the number of groups we have divided by number of households and this is like in the sense of you have holiday houses that are only used some part of the household number smaller but still this is not a week or intuitive
+Pablo [10:34]: the population has no effect
+Pablo [11:04]: but what we can see is that longitude they have a clear effect on the house prices and let me just show you the columns we have the latitude and the longitude my interpretation is closer to southwestern areas and in some sense well this is just the lake of san francisco
+Pablo [11:12]: or like the bay area everything closer to the sea would be more expensive i would say
+Pablo [11:17]: and you can see latitude
+Pablo [11:45]: if we increase the latitude that the house prices are smaller in standard more fun than it will be less expensive and the longitude is the same you can see the length longitude is getting larger so closer to zero getting closer to the eastern part inner part of california under the price that also decreasing so in some sense it overjoyed to
+Pablo [11:47]: see more expensive
+Pablo [12:05]: yes is the population calculated the state or the county level i don't know what i think it should be really for the population for each of cells in a sense like even less than the count level but
+Pablo [12:08]: would
+Pablo [12:34]: n't there be like a population correlation because you were mentioning that the la and san francisco might be pulling the housing but then wouldn't population hold up wouldn't that be that's right so i need maybe like the latitude of the longitude more effect and then they are just taking away maybe the type of population just covering them
+Pablo [12:52]: but it's a good point all just in case of my interpretation of a assignment system which is bone and it's just about how close you are to see and it's not about a city and i think only a good point if it's only about la and san francisco
+Pablo [12:57]: like something different from zero because
+Pablo [12:59]: just a rounded value
+Pablo [13:03]: no effect
+Pablo [13:06]: good point can be operated
+Pablo [13:07]: equal
+Pablo [13:12]: to some sweet
+Pablo [13:20]: but it's just like my interpretation of the numbers
+Pablo [13:22]: definitely
+Pablo [13:25]: yes okay
+Pablo [13:28]: further question
+Pablo [13:34]: then i would just finish here
+Pablo [13:37]: with multiplying multiprocessing current
+Pablo [13:37]: topics
+Pablo [13:50]: just to remind you whenever you are using multiplying a multiple processing just make sure is then input output like an i o bound that is slowing down
+Pablo [13:55]: those kind you have too many process
+Pablo [14:00]: then would be a cpu bound you are facing and then you would
+Pablo [14:04]: need multiprocessing so please make sure
+Pablo [14:07]: think about what you need
+Pablo [14:13]: and
+Pablo [14:15]: with this i would like to start
+Pablo [14:16]: with
+Pablo [14:45]: in python and for this to make it more approachable as i said
+Pablo [14:46]: i have
+Pablo [15:02]: two data sets from taero audiolifting themes like one of them is someone in the games the other one defeats and because we're just a csv file or an excel file
+Pablo [15:08]: i convert them to databases
+Pablo [15:09]: and we work
+Pablo [15:11]: with them as a database
+Pablo [15:14]: and
+Pablo [15:15]: you can also type them
+Pablo [15:16]: on handles of the
+Pablo [15:17]: sql y data
+Pablo [15:18]: base should be
+Pablo [15:32]: although references again sql tutorial basically it covers similar topics as i do
+Pablo [15:47]: not the advantage of this way is actually before we start with actually working with databases databases
+Pablo [15:53]: like a database just a collection of data in a very specific manner
+Pablo [16:01]: and models and most famous ones
+Pablo [16:05]: relational models
+Pablo [16:06]: but please click
+Pablo [16:10]: the many of us
+Pablo [16:20]: don't think of this model as a physical model that is not like data generated background is not just how data are stored
+Pablo [16:37]: and what we have is the typical think of lowest and they have columns with the feature values and then typically all these tables have also under two
+Pablo [16:40]: each row and
+Pablo [16:58]: then there are like different ways we have the mice maybe this is also very famous microsoft sql servers we will just use provide products
+Pablo [16:59]: very easy
+Pablo [17:16]: one disadvantage of sqlite that you don't have a database somewhere on the server but you have your database on the laptop so this somehow limits the storage
+Pablo [17:20]: just connect to a user server
+Pablo [17:22]: it would be easier to
+Pablo [17:23]: actually
+Pablo [17:38]: but still the sql math i will show you sometimes they are slightly different but stretch stays the same
+Pablo [17:42]: and you just have to make
+Pablo [17:43]: sure
+Pablo [17:48]: yes
+Pablo [18:08]: and maybe just give you a reason i mean in this case i startup with data csv file created a database maybe not the typical way in a typical way would be the data you want to access the are already stored as a database and then you would like to work with them
+Pablo [18:10]: also it's very convenient
+Pablo [18:12]: work
+Pablo [18:25]: subset data or some changes manipulate data they're very efficient ways they highly optimized
+Pablo [18:28]: and very useful
+Pablo [18:30]: better
+Pablo [18:40]: using memory and also like database statistics something like a version control
+Pablo [18:42]: working together
+Pablo [18:46]: so along several users to access
+Pablo [18:48]: security check
+Pablo [18:54]: s with maybe one large disadvantage like sql injections that
+Pablo [18:58]: were thought about also we also covered in the lecture how to
+Pablo [19:02]: prevent
+Pablo [19:06]: databases can be updated
+Pablo [19:11]: don't pass the
+Pablo [19:21]: taurus here and like sql is just one database
+Pablo [19:24]: connector one language
+Pablo [19:48]: and as i said we are doing this model also connect atomos to database like database server
+Pablo [19:51]: sqlite
+Pablo [19:56]: possibly the most used database engine network at least according to the package
+Pablo [20:00]: sqlite
+Pablo [20:02]: question
+Pablo [20:05]: but still it
+Pablo [20:26]: what you might know or might not know in the beginning of every the wind olympic games will start in portina and inano like in italy
+Pablo [20:30]: and it just about maybe
+Pablo [20:40]: an enterpriser on our tina looks like city but this is cleaner in the summer
+Pablo [20:46]: and maybe it's hard to imagine how we can come up with games
+Pablo [20:47]: it just
+Pablo [20:48]: seems picture
+Pablo [20:49]: but this is a picture
+Pablo [20:51]: he's a
+Pablo [20:52]: victor
+Pablo [20:54]: and it's very beautiful
+Pablo [21:00]: i don't see where you have enough space for all the applications
+Pablo [21:20]: and what i'd like to add some more things so a database we have actually is for all the olympic games
+Pablo [21:30]: unfortunately only two thousand twenty because the database they were all created in twenty
+Pablo [21:34]: so this means the latest policies
+Pablo [21:35]: with the case
+Pablo [21:40]: in our database
+Pablo [21:44]: but also mainly
+Pablo [21:48]: as immediate but it
+Pablo [21:49]: makes
+Pablo [22:19]: the latest one but the idea is basically this method table is something like you see for all the nations how many gold silver and proxy metals and we see this every year every olympic games go with and somehow we have such high figure and it's not just saying something like remaining but we release all kind of metals that
+Pablo [22:35]: any political things and then we can think of what is maybe the most successful nation on the globe today so we can say okay maybe it's just us but what about number two number three number four maybe china and russia
+Pablo [22:38]: but how about winter
+Pablo [22:39]: because
+Pablo [22:42]: there will be some surprise
+Pablo [22:43]: i would say
+Pablo [22:49]: and we can just see hopefully interesting results
+Pablo [22:55]: at the same time we learn something about how to access databases
+Pablo [23:00]: if you want to learn more about
+Pablo [23:07]: just in case very
+Pablo [23:11]: okay
+Pablo [23:14]: then i start with the data
+Pablo [23:14]: base
+Pablo [23:17]: first we have to connect to the database
+Pablo [23:23]: so i import the library i need
+Pablo [23:32]: a title for a very useful command
+Pablo [23:58]: so first we would connect the database sql connect and then we have i database and if you downloaded just database and your laptop please make sure you change it putting me as usual just
+Pablo [24:28]: so just in case if you have downloaded a database
+Pablo [24:33]: the same folder as this file
+Pablo [24:34]: you can just use
+Pablo [24:37]: here like the same
+Pablo [24:43]: okay
+Pablo [24:47]: and then if we just have like
+Pablo [24:53]: v and you will see just a sqlite connection to some database so nothing special happens here
+Pablo [25:15]: and then we come up with a very cumbersome way a little bit cumbersome way of executing sqlite commands so what we can always do is write let's see we have our database execute and then we have a c cos ai and this is like the very most basic
+Pablo [25:21]: come up with we select everything from a window
+Pablo [25:26]: even called winter is just like all
+Pablo [25:30]: we just executed and that
+Pablo [25:37]: will give us a look into this curve this stands for further because it's not really actually containing all the data
+Pablo [25:40]: it's just pointing
+Pablo [25:41]: to them
+Pablo [25:45]: and if we just execute the cursor in the center
+Pablo [25:53]: all method then we would get all these entries here starting from nineteen twenty four
+Pablo [26:03]: usa one gold medal silver medal one hospital and this is not really a nice way
+Pablo [26:04]: of working
+Pablo [26:05]: with this data right
+Pablo [26:07]: we don't know what this is
+Pablo [26:10]: why there is somebody
+Pablo [26:16]: and what is wrong there is stress so definitely a better way
+Pablo [26:21]: and sometimes
+Pablo [26:25]: in general it's always good to write all the dots comet in size
+Pablo [26:31]: to try to execute the command of the database
+Pablo [27:00]: and then just if you are done with all your database that you can just load it afterwards you're not done yet just show you once i will close the database and i would for example try now to run this code again to execute this code based on a database make sure it's closed
+Pablo [27:04]: you can see the programming error cannot operate on a post database
+Pablo [27:06]: or
+Pablo [27:10]: any
+Pablo [27:30]: before we go into the actual database of wind analytic games there is one thing we should always need to access database first and this is getting all the data from the sqlite masses like a database that is just contained in the mean of data
+Pablo [27:36]: so it's telling us what kind of table are contained in our database
+Pablo [27:45]: and we run this and then we pitch everything and it still is not really readable
+Pablo [27:58]: what we do is help the database that we want to access all these roles not as a tuples because then it's like first row would be this topic here
+Pablo [28:06]: which is like even with the window two and something great it was the first draw in our database
+Pablo [28:11]: this would be the second role and it did not
+Pablo [28:12]: be readable
+Pablo [28:15]: so we can try
+Pablo [28:20]: say tell python go back to
+Pablo [28:28]: really want to have this as actual rows which we exactly the same
+Pablo [28:30]: and now
+Pablo [28:34]: this role is here
+Pablo [28:52]: so root access all these rows one by one and the points to different entries of the database and are still not really good what we are doing now is we convert the dictionary
+Pablo [28:58]: and now it's first time that we
+Pablo [29:15]: name this database like cable games here we have some olympic games they don't have index for the interlith
+Pablo [29:17]: some olympic games
+Pablo [29:24]: we can always subset these other two tables contained in our data set
+Pablo [29:25]: and
+Pablo [29:30]: this audio called we can somehow we can just access
+Pablo [29:32]: them
+Pablo [29:36]: with select style and select everything
+Pablo [29:37]: from window
+Pablo [29:49]: and then we can just also want to see how the names of all these tables more details come up with
+Pablo [29:51]: the command pragma table info
+Pablo [29:58]: window and then we will see all the column names in the wind
+Pablo [30:10]: database of index here host country and so on and so we see now what these entries at the beginning would have meant
+Pablo [30:11]: this one
+Pablo [30:16]: year post alcohol cp nation
+Pablo [30:18]: and goals event
+Pablo [30:24]: still as i've mentioned this is definitely not a way how you would like to work with databases
+Pablo [30:25]: right it's just not readable
+Pablo [30:57]: you want to have a very convenient way just now writing ten lines of python code or sql code just get this one even and this is exactly where we are using handles it's extremely convenient just use the following command read sql whenever we have sql command we're just using pandas combined with sql typically under a generic command will look like pd three
+Pablo [31:14]: and then we have a norm or a shorter sequence statement and then we just have to add the database connection to b here and then we just get in the endless data frame we don't have to come up with sketch call and row factory or whatever
+Pablo [31:26]: it's just the most convenient way and for the remaining of this we always use this weak sql command because as you have seen right now the first five minutes
+Pablo [31:29]: it's just extremely kind of
+Pablo [31:32]: come up with all this patch roles and so on and so on
+Pablo [31:50]: so all the steps we have thousands of parts could also be done with this simple command pv sql of course you can also write here a statement in one line like just
+Pablo [32:13]: one of these symbols but the problem is typically you have longer sql statements over and then the best way most iconic way would create just come up with several lines and that is very
+Pablo [32:18]: okay
+Pablo [32:29]: so what we can do now is everything we put the sum of just finding pd v sql select everything from our sqlite master database
+Pablo [32:32]: and we see everything
+Pablo [32:36]: with all
+Pablo [32:42]: and now i would like to start with actual summer of winter olympic games
+Pablo [32:48]: and as we have seen there is this select statement
+Pablo [32:54]: select something and this is the very first basic keyword we have
+Pablo [32:56]: so whenever we want to access a database
+Pablo [33:11]: we write something like select and then we have this first column name one which says second column name and so on and so on and then we write from and there is like the field name either like the windows brigade some olympic games
+Pablo [33:21]: and then we endemic on here but this is optional we can also skip this and just remove it and
+Pablo [33:23]: just write this select something
+Pablo [33:34]: really the most basic version of sometimes you just want access audit allowance and then we can
+Pablo [33:40]: use the asterisk and select all parts of the key
+Pablo [33:40]: or
+Pablo [33:45]: one more thing
+Pablo [33:50]: all those is not as sensitive
+Pablo [33:54]: so of course just by idols
+Pablo [33:57]: like everything from window also by
+Pablo [34:00]: select
+Pablo [34:03]: something from winter
+Pablo [34:24]: the only difference is there is just command is written in uppercase vectors while everything else is either written by
+Pablo [34:28]: in lowercase that actually would be
+Pablo [34:29]: altered
+Pablo [34:30]: here should
+Pablo [34:40]: always somehow i just use like typical way but still using all the uppercase vectors this typically
+Pablo [34:57]: okay so let me just execute this window table and then you see here like a data framework and a state of frame consisting of four hundred nine rows and nine columns
+Pablo [35:04]: we have our year here our host also takes all the columns we don't have to think of
+Pablo [35:08]: what is
+Pablo [35:14]: really
+Pablo [35:24]: and then we can see it was south korea in china
+Pablo [35:37]: and we can see all the counties one gold medal one north medal and so on we have all these countries also in the austria in nineteen twenty four
+Pablo [35:48]: all metals yes so this is like the table of the window that begins and we can also recycle the symbol some of the
+Pablo [35:54]: and then we see the first some electric games started in eighteen ninety six
+Pablo [35:56]: in greece
+Pablo [36:05]: and we have like counties at one some gold medal and other
+Pablo [36:14]: country participated and didn't win any gold medal they are not listed so it's really like just melanie
+Pablo [36:19]: yes and then we see in twenty seventeen
+Pablo [36:26]: and this also means
+Pablo [36:33]: okay
+Pablo [36:55]: so this was like always everything from the table and then this electrical table so let's start with the very first basic thing maybe i'm just interested in where all this countries hold intro host so i can just come up with select here and not to name
+Pablo [36:56]: and
+Pablo [36:57]: go
+Pablo [37:05]: so we now see maybe a simplified table we see here like all the years we see the countries
+Pablo [37:08]: and how many gold medals
+Pablo [37:09]: they want
+Pablo [37:11]: an adjustable
+Pablo [37:18]: and as i mentioned also
+Pablo [37:25]: this is like basic
+Pablo [37:30]: maybe we are interested in maybe more detailed results
+Pablo [37:37]: so one of them is if you want to just have a quick look into the data we can come up with
+Pablo [37:42]: a limit command which is just something like you would use the
+Pablo [37:53]: head or canvas data frame so i can come up just reading the table from the floor and say i just want to see first for entries
+Pablo [37:54]: from the table
+Pablo [38:02]: so i'm limiting four and really the data frame and the scale of category
+Pablo [38:07]: maybe it's just beginning
+Pablo [38:11]: and hit the right limit of a negative
+Pablo [38:17]: all
+Pablo [38:18]: the anchors
+Pablo [38:18]: okay
+Pablo [38:23]: so this was like getting the main table
+Pablo [38:29]: but the first question we could ask ourselves
+Pablo [38:39]: is we would like to have a list of all of the when we were and at which country
+Pablo [38:40]: they had been
+Pablo [38:41]: hosted
+Pablo [38:54]: so for this there is a physique keyword and it says like all the entries must be distinct somehow sql is very self explaining actually you have to admit
+Pablo [39:04]: so it's like the equivalent of handless job can you map it and it applies to all the columns we write here
+Pablo [39:21]: i will mention one second first i would select both hands from meter this means we trusting which countries ever hosted at least one of the
+Pablo [39:38]: front us and so on so they're like eleven hundred at least once but this doesn't mean that we have only eleven
+Pablo [39:47]: because even now right select this thing both unto host cb still
+Pablo [39:51]: is it not everything but you can also see like
+Pablo [39:59]: for example we had olympic games at different host cities then it would be listed here for example
+Pablo [40:07]: let me just see united states we had one of the winter games and they proceed and one in square valley
+Pablo [40:10]: in salt lake city
+Pablo [40:12]: so we see more of them
+Pablo [40:14]: and we can also
+Pablo [40:21]: just do this if you want to see like have a list of all the olympic games
+Pablo [40:25]: following
+Pablo [40:27]: select this thing
+Pablo [40:30]: here host
+Pablo [40:38]: and now we have this of all the olympic games starting from here and post country
+Pablo [40:40]: and we can now also
+Pablo [40:43]: host city
+Pablo [40:51]: and here we have also the city and we really have all this first born in france switzerland us and so on
+Pablo [40:58]: yes and then we have the whole list
+Pablo [41:02]: plus if we
+Pablo [41:03]: remove
+Pablo [41:04]: this distinct word here
+Pablo [41:11]: then we would have like all the nations that won a gold medal the first olympic games
+Pablo [41:26]: would come up with a lot of like i don't know twenty thirty times france france france south korea because for each country that one at least one gold medal of one melod is one line
+Pablo [41:29]: just use
+Pablo [41:37]: and then we have to see so this like very first thing
+Pablo [41:38]: look at coming
+Pablo [41:38]: up
+Pablo [41:42]: seeing where all the
+Pablo [41:42]: different
+Pablo [41:43]: games were
+Pablo [41:44]: hosted
+Pablo [42:00]: and then there is also order by so we have our data we could order them and see what was like the most successful country all the we believe games
+Pablo [42:19]: not like summed up over all years but in the sense like if you look at all years and all nations was like one year and one age that had a lot of gold medal company name the gold medal silver medicine advanced metals and ordered them
+Pablo [42:23]: by how many gold levels did one
+Pablo [42:37]: and this cable returns now a list with style of grants getting zero gold medals and actually what i was interested in is exactly opposite i was interested in the most successful nations
+Pablo [42:40]: like here norway with forty gold
+Pablo [42:45]: so we would sort them
+Pablo [42:51]: but descending in the number of numbers of gold medals
+Pablo [42:57]: and we just add the keyword esc for descending
+Pablo [43:09]: and of course just get now the evil that is maybe the interesting one if we see the most successful ones that we
+Pablo [43:12]: get the end most successful
+Pablo [43:15]: nation years
+Pablo [43:24]: successful
+Pablo [43:42]: also have to mention activate the number of gold medals aborted teams has increased so it's mainly just easier to win in twenty eighteen forty gold medals was winning in nineteen seventy six very gold medals
+Pablo [43:43]: must be much
+Pablo [43:44]: harder
+Pablo [43:45]: for
+Pablo [43:48]: two thousand yeah just mention this
+Pablo [43:50]: yes
+Pablo [43:54]: still there is one thing that we can see
+Pablo [44:03]: typically we have you can see this melody that we have like gold medals and wood say for example
+Pablo [44:08]: here norway was achieving much better than germany or canada
+Pablo [44:12]: because you can see all of them had forty gold medals
+Pablo [44:41]: but norway has also bought consumable metals and in that mos so typically if there is like some kind of draw we would start sorting in terms of silver medals and if there is like a draw we would start in terms of the bronze medals and we can do so in in that interest right here order by gold medals and then descending order if there's like an afterwards we sort all the draw
+Pablo [44:47]: with respect the silver medals and that would take the bronze medals
+Pablo [44:49]: and then we get negative table
+Pablo [44:56]: working gold medals but in silver medals
+Pablo [45:11]: so you can also add several column names here then we will just order and you can ir by descending or it can be entry right
+Pablo [45:16]: ascending then we would get a different order
+Pablo [45:21]: of silicone metals between all the vocabulary
+Pablo [45:33]: oh yeah here's also another example of how we can think of this substance
+Pablo [45:48]: the gold medals and then sort alphabetically out to we don't try to assign the output
+Pablo [45:59]: so this is like ordering
+Pablo [46:00]: is always top ten
+Pablo [46:06]: the typical way would be order by other limit
+Pablo [46:11]: and
+Pablo [46:15]: also you can use operators
+Pablo [46:17]: in the sense that
+Pablo [46:23]: immediately use something like add a multiply something
+Pablo [46:27]: so if you would like to understand
+Pablo [46:30]: having gold medal
+Pablo [46:37]: five points every silver medal is we have two points across this one point then we can
+Pablo [46:41]: count this together
+Pablo [46:49]: and select everything so this needs we now get just another column we have the original column
+Pablo [46:55]: all the original columns and add one more column of points
+Pablo [47:11]: and just make sure here this is a multiplication this amount of cases this nomination but this asterisk here is really like getting all the power from the database
+Pablo [47:12]: here
+Pablo [47:19]: and then we can see where here our index here also depends on and so on
+Pablo [47:27]: and at points metal points are in this column it's not very easy
+Pablo [47:30]: because it's just five times
+Pablo [47:34]: zero
+Pablo [47:48]: columns and we can release the name of this column as metal and now we have this polar measure
+Pablo [47:52]: just called metal
+Pablo [47:55]: self cleaning
+Pablo [48:03]: and also what is very useful we can sort it once we had written something like as metal points
+Pablo [48:12]: this interflow is what our cable would buy i
+Pablo [48:13]: still
+Pablo [48:14]: had
+Pablo [48:17]: so now it
+Pablo [48:21]: and then we have like one hundred nine metal
+Pablo [48:21]: points
+Pablo [48:37]: okay this was like first part and subset is are there any questions
+Pablo [48:37]: so far
+Pablo [48:49]: then of course a very typical thing is sometimes you always want just excess all the electricity teams or i don't know twenty
+Pablo [49:03]: eighteen or some here then you can just filter your data where command you add all the roles where column year equals
+Pablo [49:04]: ap
+Pablo [49:08]: and you can add a usb policy
+Pablo [49:09]: and so on
+Pablo [49:10]: and
+Pablo [49:15]: your database you would post countries
+Pablo [49:23]: was just south korea was all kind of
+Pablo [49:28]: and then you can see just the melt
+Pablo [49:32]: for south korea window games
+Pablo [49:36]: this is the subset
+Pablo [49:48]: another way would be also say once that all the countries that had like one very good
+Pablo [49:49]: i don't know
+Pablo [50:00]: performer in the sense that they had like more gold medals than silver and cross but together maybe only rarely happening
+Pablo [50:05]: but you can see that there are some cases
+Pablo [50:09]: for example austria in nineteen twenty four
+Pablo [50:13]: one two gold medals but only one silver medal and
+Pablo [50:16]: you can yeah
+Pablo [50:23]: add some conditions you can also combine conditions by just using the can
+Pablo [50:25]: or statement
+Pablo [50:36]: so for example if you're interested in all the starting from thousand and you want to see all the successful countries in the sense that you say a successful countries
+Pablo [50:40]: whenever a country got a niche but whatever any gold medals
+Pablo [50:48]: and then you want to have all these nations after two thousand then you see here
+Pablo [50:52]: this countries here go silver north
+Pablo [51:06]: and actually this needs in two thousand six there was only one country that done more than twenty gold medals
+Pablo [51:22]: and you can also combine is like year or and just make sure that you're writing current this is here or like brackets here that is really you want just a subset two thousand eight
+Pablo [51:28]: see how many companies
+Pablo [51:32]: and gold medals in these years
+Pablo [51:44]: happen you also want to select or like large number of years that you could try to
+Pablo [51:48]: either write the year is larger or equal in two thousand
+Pablo [51:50]: may
+Pablo [51:50]: be right
+Pablo [52:19]: so now you see like all the countries where the year is two thousand and two thousand ten but what is more convenient
+Pablo [52:20]: is just to
+Pablo [52:22]: write intuitive comma
+Pablo [52:27]: where here is three two powers and two thousand
+Pablo [52:32]: and it gives
+Pablo [52:35]: more
+Pablo [52:44]: just make sure when you write it
+Pablo [52:53]: means the limit of two thousand ten are all about
+Pablo [53:00]: and just make sure there's one difference you can also write the following
+Pablo [53:04]: statement too long let's try
+Pablo [53:21]: if i want to have compare whether it's contained in a list i
+Pablo [53:27]: could do a calling i could write where something like where a host country
+Pablo [53:28]: is contained
+Pablo [53:31]: in this list
+Pablo [53:40]: and then you have all the games whatever posted either in the us or in japan south korea
+Pablo [53:42]: china
+Pablo [53:48]: and then you see post country
+Pablo [53:52]: it wins the games
+Pablo [53:55]: the last
+Pablo [53:56]: city
+Pablo [54:02]: okay
+Pablo [54:08]: and then sometimes you always want to have something like pattern matching
+Pablo [54:10]: in this sense
+Pablo [54:12]: if you look for it
+Pablo [54:14]: and so on
+Pablo [54:19]: so you can use light keyword
+Pablo [54:21]: and
+Pablo [54:22]: just have mentioned
+Pablo [54:36]: less our in a sense that you can if you're using python regular expression it has more
+Pablo [54:36]: things
+Pablo [54:39]: but the most common
+Pablo [54:52]: i don't know if you want to match zero more of any character and you could come up with presentation
+Pablo [54:55]: site underscore and
+Pablo [54:58]: one
+Pablo [55:05]: character like any kind of practice one of them and can also
+Pablo [55:07]: match different directors
+Pablo [55:09]: the idle one abc subject
+Pablo [55:18]: and for example to make all different countries
+Pablo [55:23]: in the window where the country needs us to ask
+Pablo [55:29]: and then we will see that go all here and australia
+Pablo [55:32]: have won at least one
+Pablo [55:48]: user name of aspect if you notice the last and first name something like this you can use this pattern
+Pablo [56:29]: and then there's alternate the eastern island is up now you can write like select distinct count remain on which of where the company name is not knowledge and no surprise there is no such thing in this database of all the countries are not now but still in other databases
+Pablo [56:36]: and then you want to get rid of them or you want to sum up some up over all the columns that are not null because i want to put now
+Pablo [56:41]: select this select system whatever
+Pablo [56:45]: is of now or is
+Pablo [56:45]: there
+Pablo [57:00]: and then we have all the faster if you think of
+Pablo [57:02]: the handles data frame
+Pablo [57:04]: data frame moving faster in terms of
+Pablo [57:19]: the stock groups like herding doc and so on counting get us on the app how do we average the minimum
+Pablo [57:22]: and for this we just need
+Pablo [57:25]: the
+Pablo [57:38]: and there are like some of this clustering and aggregation functions just built in time we cannot use as many as python like this
+Pablo [57:41]: bigger one more information
+Pablo [57:50]: on a three pages
+Pablo [57:57]: the most important information of the aggregate average
+Pablo [58:03]: okay so how can we use
+Pablo [58:04]: the
+Pablo [58:04]: first
+Pablo [58:06]: one to see what was
+Pablo [58:07]: the first
+Pablo [58:15]: time
+Pablo [58:21]: inter
+Pablo [58:22]: dict
+Pablo [58:23]: or
+Pablo [58:32]: but
+Pablo [58:33]: this may not
+Pablo [58:34]: important
+Pablo [58:35]: request
+Pablo [58:38]: a lot
+Pablo [58:39]: of things
+Pablo [58:43]: if you want to see how many countries
+Pablo [58:44]: particip
+Pablo [58:45]: ated in
+Pablo [58:46]: two thousand
+Pablo [58:47]: and eighteen
+Pablo [59:00]: and
+Pablo [59:01]: then
+Pablo [59:02]: see in
+Pablo [59:03]: south korea
+Pablo [59:04]: we had
+Pablo [59:05]: thirty
+Pablo [59:05]: years
+Pablo [59:13]: there
+Pablo [59:14]: must be more
+Pablo [59:31]: in
+Pablo [59:32]: the sense that
+Pablo [1:00:03]: is
+Pablo [1:00:04]: also
+Pablo [1:00:11]: what
+Pablo [1:00:12]: we see now is
+Pablo [1:00:13]: how many
+Pablo [1:00:14]: doll
+Pablo [1:00:15]: ars where
+Pablo [1:00:20]: number
+Pablo [1:00:20]: increase you can
+Pablo [1:00:22]: see the first
+Pablo [1:00:22]: olympic games
+Pablo [1:00:37]: one
+Pablo [1:00:38]: hundred and fifty dollars
+Pablo [1:00:39]: i guess
+Pablo [1:00:46]: and
+Pablo [1:00:47]: now we can be
+Pablo [1:00:48]: request
+Pablo [1:00:49]: a little bit more
+Pablo [1:00:54]: what we
+Pablo [1:00:54]: are doing here
+Pablo [1:00:55]: is
+Pablo [1:00:57]: we
+Pablo [1:00:58]: provide
+Pablo [1:01:01]: what
+Pablo [1:01:02]: are
+Pablo [1:01:05]: in terms of
+Pablo [1:01:06]: the gold
+Pablo [1:01:06]: medals
+Pablo [1:01:13]: some
+Pablo [1:01:14]: how how many
+Pablo [1:01:15]: dollars
+Pablo [1:01:16]: is done
+Pablo [1:01:18]: over
+Pablo [1:01:19]: all the years and
+Pablo [1:01:20]: all the
+Pablo [1:01:26]: bio
+Pablo [1:01:31]: s
+Pablo [1:01:32]: number of
+Pablo [1:01:33]: gold med
+Pablo [1:01:34]: als in a dec
+Pablo [1:01:35]: ent
+Pablo [1:01:37]: most
+Pablo [1:01:38]: effective one
+Pablo [1:01:38]: s
+Pablo [1:01:48]: gold
+Pablo [1:01:48]: medals
+Pablo [1:01:51]: and
+Pablo [1:01:52]: also let
+Pablo [1:01:53]: me point out
+Pablo [1:02:09]: and
+Pablo [1:02:10]: just
+Pablo [1:02:12]: talking about
+Pablo [1:02:13]: austrian
+Pablo [1:02:14]: very small
+Pablo [1:02:18]: jesus
+Pablo [1:02:25]: name
+Pablo [1:02:26]: one of
+Pablo [1:02:27]: these
+Pablo [1:02:29]: in
+Pablo [1:02:30]: the future
+Pablo [1:02:31]: one
+Pablo [1:02:32]: of the most famous
+Pablo [1:02:35]: most famous
+Pablo [1:02:36]: era
+Pablo [1:02:37]: s
+Pablo [1:02:40]: and trust the star of era
+Pablo [1:02:41]: se it's literally
+Pablo [1:02:42]: going
+Pablo [1:02:43]: just straight
+Pablo [1:02:44]: down
+Pablo [1:02:45]: and
+Pablo [1:02:46]: after two minutes
+Pablo [1:02:47]: they have
+Pablo [1:02:48]: this
+Pablo [1:02:51]: seventy
+Pablo [1:02:52]: eight miles per hour
+Pablo [1:02:53]: for two hundred
+Pablo [1:02:53]: meters
+Pablo [1:02:54]: and it
+Pablo [1:02:55]: 's just gold
+Pablo [1:02:57]: we
+Pablo [1:02:58]: say
+Pablo [1:03:00]: it's
+Pablo [1:03:00]: a malt
+Pablo [1:03:02]: like the name of
+Pablo [1:03:03]: jump
+Pablo [1:03:05]: because if you jump down
+Pablo [1:03:27]: this
+Pablo [1:03:27]: quickly
+Pablo [1:03:29]: and then we can go back to the database
+Pablo [1:03:30]: handling as well
+Pablo [1:03:35]: we have mouth
+Pablo [1:03:36]: and
+Pablo [1:03:37]: enjoy
+Pablo [1:03:38]: okay
+Pablo [1:03:39]: going back
+Pablo [1:03:45]: we have another thing which is a little bit tricky here we
+Pablo [1:03:47]: have to
+Pablo [1:03:59]: so we can subset our data typically with where people i just mentioned you can say where here twenty eighteen and then you're just looking at all the data where
+Pablo [1:04:00]: self
+Pablo [1:04:05]: explaining but sometimes you want to aggregate data first
+Pablo [1:04:12]: and after exiting the data you want to subset so you want to apply this after aggregate
+Pablo [1:04:13]: and then
+Pablo [1:04:15]: you cannot use the player position
+Pablo [1:04:18]: but you have it
+Pablo [1:04:31]: give you an example in one moment just make sure whatever you are subsetting data make sure whether you want to set the data for or after aggregating
+Pablo [1:04:33]: and also it makes a difference
+Pablo [1:04:36]: if you're using this adding keyword
+Pablo [1:04:37]: it must be used
+Pablo [1:04:38]: after
+Pablo [1:04:43]: a group phi comma while a where statement must be written
+Pablo [1:04:44]: by
+Pablo [1:04:52]: all
+Pablo [1:04:58]: of
+Pablo [1:04:59]: the
+Pablo [1:05:00]: together
+Pablo [1:05:01]: so this
+Pablo [1:05:02]: means for example
+Pablo [1:05:10]: all
+Pablo [1:05:20]: together
+Pablo [1:05:21]: a number of
+Pablo [1:05:22]: accred
+Pablo [1:05:23]: iting them
+Pablo [1:05:25]: calling them
+Pablo [1:05:26]: put the goal and then
+Pablo [1:05:27]: writing
+Pablo [1:05:28]: which has interest
+Pablo [1:05:29]: in all the
+Pablo [1:05:29]: countries
+Pablo [1:05:30]: that wanted these
+Pablo [1:05:31]: ten gold medals
+Pablo [1:05:34]: so
+Pablo [1:05:35]: this is like after
+Pablo [1:05:36]: aggregation you
+Pablo [1:05:37]: write headings
+Pablo [1:05:38]: what
+Pablo [1:05:39]: would happen if we now write
+Pablo [1:05:44]: and
+Pablo [1:05:45]: maybe
+Pablo [1:05:57]: one would
+Pablo [1:06:05]: wear statement the first point is where can only be used
+Pablo [1:06:13]: more aggregated must be equality by command and it took all to be used for things that are
+Pablo [1:06:26]: not work yes you can see like they actually several errors we had first we brought after
+Pablo [1:06:31]: the group by and also the second one even if we would
+Pablo [1:06:32]: write
+Pablo [1:06:41]: if this would give me an error message
+Pablo [1:07:03]: yes and the point is where is always used to core aggregation but we created is how important goal by an engagement cannot accept something is created after every day what we could do instead we could try something like
+Pablo [1:07:06]: select all the countries
+Pablo [1:07:14]: and come together like gold medals if they have been one thing here at least ten dollars
+Pablo [1:07:15]: level
+Pablo [1:07:22]: and this is a very short keyboard just germany norway and canada and russia
+Pablo [1:07:32]: because only these five hundred were able to win at least eleven gold medals within one team
+Pablo [1:07:36]: so this is a difference here before aggregating
+Pablo [1:07:55]: here already come together the gold medals and if we are going back which table all those journeys like norway no jamie no we want one hundred and something gold medals and here it says just twenty eight
+Pablo [1:08:00]: because summing up over all
+Pablo [1:08:04]: we
+Pablo [1:08:05]: are using
+Pablo [1:08:06]: sometimes
+Pablo [1:08:06]: after
+Pablo [1:08:09]: client
+Pablo [1:08:10]: leadership
+Pablo [1:08:11]: or for our
+Pablo [1:08:12]: education
+Pablo [1:08:13]: on
+Pablo [1:08:14]: whether
+Pablo [1:08:17]: or
+Pablo [1:08:18]: not heavy command and
+Pablo [1:08:19]: all is making sure that
+Pablo [1:08:20]: we are in heave
+Pablo [1:08:20]: n
+Pablo [1:09:08]: most
+Pablo [1:09:09]: coming from our
+Pablo [1:09:10]: games from all
+Pablo [1:09:11]: the leadership games
+Pablo [1:09:12]: that come
+Pablo [1:09:18]: from
+Pablo [1:09:21]: all
+Pablo [1:09:21]: the time
+Pablo [1:09:22]: we
+Pablo [1:09:23]: believe
+Pablo [1:09:29]: that
+Pablo [1:09:30]: having
+Pablo [1:09:31]: here desire
+Pablo [1:09:39]: and
+Pablo [1:09:40]: the reason is
+Pablo [1:09:52]: thousand
+Pablo [1:09:55]: people
+Pablo [1:10:00]: then
+Pablo [1:10:01]: you can see
+Pablo [1:10:02]: like
+Pablo [1:10:02]: first
+Pablo [1:10:06]: nineteen
+Pablo [1:10:11]: for
+Pablo [1:10:12]: example
+Pablo [1:10:13]: first
+Pablo [1:10:14]: weekly
+Pablo [1:10:16]: in
+Pablo [1:10:16]: nineteen eighty eight
+Pablo [1:10:18]: and
+Pablo [1:10:19]: the port
+Pablo [1:10:20]: ions
+Pablo [1:10:21]: by o
+Pablo [1:10:22]: m
+Pablo [1:10:23]: ic
+Pablo [1:10:24]: ron
+Pablo [1:10:27]: us
+Pablo [1:10:28]: has only
+Pablo [1:10:29]: one
+Pablo [1:10:49]: other
+Pablo [1:10:53]: and
+Pablo [1:10:54]: its needs is now
+Pablo [1:10:55]: the mind
+Pablo [1:10:56]: having statement
+Pablo [1:11:00]: and
+Pablo [1:11:01]: by one only
+Pablo [1:11:02]: all the
+Pablo [1:11:03]: entries for the
+Pablo [1:11:04]: years is
+Pablo [1:11:04]: done
+Pablo [1:11:06]: i will
+Pablo [1:11:07]: only get versions
+Pablo [1:11:08]: of freedom
+Pablo [1:11:09]: but i do not
+Pablo [1:11:10]: see
+Pablo [1:11:11]: that in two
+Pablo [1:11:12]: thousand
+Pablo [1:11:20]: nine
+Pablo [1:11:21]: those points
+Pablo [1:11:25]: where
+Pablo [1:11:31]: faith
+Pablo [1:11:32]: is
+Pablo [1:11:33]: start
+Pablo [1:11:36]: ing
+Pablo [1:11:38]: and
+Pablo [1:11:39]: having advice
+Pablo [1:11:41]: only
+Pablo [1:11:42]: to this
+Pablo [1:11:43]: place
+Pablo [1:11:44]: but in cont
+Pablo [1:11:45]: rast
+Pablo [1:11:46]: we are this
+Pablo [1:11:47]: should be required
+Pablo [1:11:48]: before we exhib
+Pablo [1:11:49]: it
+Pablo [1:11:55]: then
+Pablo [1:12:02]: we
+Pablo [1:12:03]: have only
+Pablo [1:12:12]: just
+Pablo [1:12:13]: mine
+Pablo [1:12:19]: so
+Pablo [1:12:20]: i would like to
+Pablo [1:12:21]: invite all nations
+Pablo [1:12:22]: that
+Pablo [1:12:22]: have won
+Pablo [1:12:24]: a gold medal in
+Pablo [1:12:24]: one
+Pablo [1:12:26]: and
+Pablo [1:12:27]: medal in any
+Pablo [1:12:27]: other year
+Pablo [1:12:33]: what
+Pablo [1:12:34]: i do is
+Pablo [1:12:37]: first
+Pablo [1:12:38]: i
+Pablo [1:12:39]: create a table
+Pablo [1:12:40]: here
+Pablo [1:12:41]: which is
+Pablo [1:12:42]: i take all
+Pablo [1:12:43]: the help
+Pablo [1:12:44]: and
+Pablo [1:12:45]: take the account
+Pablo [1:12:45]: ing
+Pablo [1:12:48]: and execute by
+Pablo [1:12:49]: every county
+Pablo [1:12:50]: for each
+Pablo [1:12:50]: company
+Pablo [1:12:52]: and
+Pablo [1:12:53]: just seeing how
+Pablo [1:12:54]: many entries they are
+Pablo [1:12:56]: in
+Pablo [1:12:57]: a sense
+Pablo [1:13:00]: how all of their kids
+Pablo [1:13:02]: and this
+Pablo [1:13:03]: call
+Pablo [1:13:04]: is
+Pablo [1:13:06]: not
+Pablo [1:13:07]: able
+Pablo [1:13:11]: to
+Pablo [1:13:12]: call greenhound
+Pablo [1:13:13]: but both people
+Pablo [1:13:19]: and then
+Pablo [1:13:20]: all the
+Pablo [1:13:21]: opportunities in
+Pablo [1:13:22]: performance and
+Pablo [1:13:24]: they want at least one gold medal
+Pablo [1:13:28]: that
+Pablo [1:13:30]: em in my list
+Pablo [1:13:33]: and this is like the answer
+Pablo [1:13:40]: so basically uzbekistan in nineteen ninety four
+Pablo [1:13:41]: one gold medal
+Pablo [1:13:44]: and of course unified hemodynamic
+Pablo [1:13:53]: athletes from russia they unified team in nineteen ninety two was i think
+Pablo [1:13:57]: basically consisting
+Pablo [1:13:58]: of athletes
+Pablo [1:14:18]: you have this can come up with
+Pablo [1:14:20]: something like trading
+Pablo [1:14:21]: a new table
+Pablo [1:14:24]: like this one and then
+Pablo [1:14:27]: applying some conditions
+Pablo [1:14:28]: to the new bas
+Pablo [1:14:29]: ically what we are doing here
+Pablo [1:14:30]: in the background
+Pablo [1:14:34]: our
+Pablo [1:14:35]: first step
+Pablo [1:14:44]: this
+Pablo [1:14:45]: is another past performance
+Pablo [1:14:46]: you can do here is
+Pablo [1:14:50]: see the different steps
+Pablo [1:14:53]: we first create sql select everything
+Pablo [1:15:20]: the first
+Pablo [1:15:21]: table
+Pablo [1:15:28]: here we just have the original table and we add some more column here
+Pablo [1:15:36]: which is how often this country appeared in the metal case of some olympic games
+Them [1:15:40]: seven times in
+Them [1:15:45]: the week against metal it was oscar three times canada went to
+Them [1:15:45]: contact
+Them [1:15:46]: guests
+Them [1:15:47]: if
+Them [1:15:48]: there were only
+Them [1:16:08]: games and what we do then is like our team we create in between and then we just look at all the tables where the wind count is one so they appear only once in our metal which is for example
+Them [1:16:17]: denmark and then we also subset in terms of only want to see one at least one gold med
+Them [1:16:18]: al of
+Them [1:16:19]: this condition
+Them [1:16:20]: and then
+Them [1:16:21]: we see all
+Them [1:16:23]: nations
+Them [1:16:23]: that appear on
+Them [1:16:24]: one
+Them [1:16:27]: and
+Them [1:16:31]: then we see yes for example denmark has only one
+Them [1:16:35]: level
+Them [1:16:36]: in
+Them [1:16:42]: luke
+Them [1:16:44]: twice
+Them [1:16:45]: of them
+Them [1:16:46]: in nineteen ninety
+Them [1:16:58]: and then what we can also do is if we want to see whether a country has posted more than one
+Them [1:17:01]: we can also come up with subqueries
+Them [1:17:13]: so first we can create a new data set where each row represents one version of the olympic games in the sense that you have just listed all the olympic games with the year and the
+Them [1:17:25]: host plant clip i think we have seen history before now it has this table i could count how many times the different posts
+Them [1:17:26]: disappeared in this list
+Them [1:17:32]: so we can combine this adjust here it's like the original
+Them [1:17:53]: table i created a line above and then i trust right select from this table we have to always also use now that people need og then we count how many like how many times
+Them [1:17:57]: we count them together from this table here
+Them [1:18:06]: and we group them by country and which amp is also
+Them [1:18:08]: olympic wins the game
+Them [1:18:15]: austria canada brands italy chapman norway
+Them [1:18:40]: so this is like one way just please make sure that you're always writing these brackets here and also a good idea whenever you are creating a new ebook dealer such a query give them a name for example
+Them [1:18:41]: games
+Them [1:18:56]: because people would not do this statement to know this column hope in like wind table and also in the new table
+Them [1:18:57]: and it
+Them [1:19:01]: is
+Them [1:19:03]: yet
+Them [1:19:16]: someone
+Them [1:19:37]: high
+Them [1:19:38]: ly
+Them [1:19:39]: different
+Them [1:19:40]: ways of trying different
+Them [1:19:49]: fields
+Them [1:20:07]: so
+Them [1:20:09]: the first
+Them [1:20:10]: table
+Them [1:20:15]: and
+Them [1:20:16]: they have some
+Them [1:20:17]: easy
+Them [1:20:18]: combat
+Them [1:20:23]: section
+Them [1:20:24]: of
+Them [1:20:28]: interest
+Them [1:20:29]: ed in all
+Them [1:20:29]: countries
+Them [1:20:30]: host
+Them [1:20:31]: ed
+Them [1:20:32]: both with
+Them [1:20:36]: the olympic games and some olympic games
+Them [1:20:38]: and like if you want to see all countries that have
+Them [1:20:44]: hosted either with olificate or some olympic games
+Them [1:20:47]: and would use
+Pablo [1:20:55]: combined by all entries and the network all different
+Pablo [1:20:56]: countries
+Pablo [1:21:01]: also at least one of them had a typical
+Pablo [1:21:12]: maybe i will explain the details of the joint later but just typical patent we see is whenever we have select something from that table
+Pablo [1:21:15]: join together with the second table summer games
+Pablo [1:21:20]: and then we have to tell people how we combine them
+Pablo [1:21:32]: what kind of keys we want to use we just say we want to find from the wind against the old timer games
+Pablo [1:21:46]: and because it's an inner join we get really the seven countries that have posted both winter and somehow and maybe
+Pablo [1:21:53]: thank you so much
+Pablo [1:21:57]: and

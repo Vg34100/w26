@@ -1,0 +1,17 @@
+Summary:
+You're using color gadget nodes (a k-clique) to represent the k colors. For each vertex, you try assigning it each color by connecting it to all gadgets except the one for that color, which forces the vertex to take that specific color. You query the oracle to check if the modified graph is still k-colorable, and if yes, you assign that color and move on.
+
+Does it answer the question?
+Yeah, the question is answered. You show how to find a k-coloring using polynomially many oracle calls.
+
+Parts that are confusing:
+On line 14, it says "Update G' to reflect this assignment" but I'm not sure what edges you're adding to G' exactly. I think maybe you're permanently adding the edges from vi to all the gadgets except Cc?
+
+Parts that might be wrong:
+I'm not sure if there's a guarantee that you'll always find a valid color for each vertex. Like, what happens if you try all k colors for some vertex vi and the oracle says NO for all of them? The algorithm doesn't seem to handle that case. Maybe it can't happen because the initial check confirmed the graph is k-colorable, but I'm not completely sure why that guarantees you can always extend a partial coloring.
+
+Ambiguous parts:
+The notation with C1, C2, ..., Ck for the color gadgets is clear, but when you say "connecting vi to all vertices in Cj", I think you mean connecting vi to the single vertex Cj? Since each Cj is one vertex in the clique, not a set of vertices. But I'm not totally sure.
+
+Side note:
+Your formatting with the actual algorithm pseudocode block looks way cleaner than what I did. I just wrote it out in plain text but yours is much easier to follow with the line numbers and proper structure.

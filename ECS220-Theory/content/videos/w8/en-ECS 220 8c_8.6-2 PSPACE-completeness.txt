@@ -1,0 +1,132 @@
+As we've seen, how p space can
+be characterized in a sense with this alternating prover
+verifier scheme. But it can seem a bit abstract. So what we're gonna
+do now is prove that a particular problem is P space
+complete called Quantified SAT. And with quantified side, it's a little easier to see how the sort of game
+characterization looks. So to start with, as we usually do when we show a
+problem is complete for a class, we need an original problem,
+obviously complete. So space predict is this problem. Given a program P and an input
+x and an integer m and urinary. The question is, does ps except
+using at most m bits of memory. So it's similar to the last
+prediction when we saw, except we're not taking the log
+of them in the question here, m is written in urinary, but it is just an exact space bound. So that's sort of obviously
+p space complete. Again, we won't go through
+that exercise here. It's similar to others, but ask
+about it in lecture if you want. Okay, so here is a version of satisfiability that's
+phrased like again. So we're given a Boolean formula
+phi that takes N bits of input. And the gain is the two players take turns
+setting the input variables. And player one sets the first, and then player two
+sets the second one, and then players
+three sets the third. And player one wins if
+they can make fee true. But player two wins and
+they can make feet false. And the question is, does Player
+one have a winning strategy? Right? Until it's like a game variant, instead of just asking, is
+there some way to make it true? We're asking, well, can
+player one make it true? Even though Player one only
+gets to set every other bit, player two gets to set
+the remaining beds, particularly based on what
+bits Player 1 has set so far. Okay, so here is a problem Q
+SAT called Quantified SAT. And actually I'm just going to clamp. It's equivalent to two players that it's just a different
+way of phrasing it. So ask about that in
+lecture if it's not clear. So again, you're given a Boolean
+formula phi that takes n inputs. And the question is you let psi be a formula with
+no inputs, right? So it, it has no inputs. It's just a statement that's
+either true or false. And we want to know, is it true? And that is the statement. There exists, you know, a bit, we can set x1 to that. For all bits we get set x2 to the frog here is that you
+know this and for all there, just over individual bit. So this is just saying it's possible to set x one
+equal to 0 or a one. So that no matter which
+bit you set x to do, there's a bit too assigned x3. So no matter the bed
+assignments for et cetera, that assignment makes fee true. So that can be done. Then the quantified
+statement phi is true. And note the satisfiability problem is the case of this when you have
+no for all, so you're asking, does there exist a bit x1, n, does there exist a bit x2, and there exists a bit
+X3 that makes this true. So here every other one is a furrow. Okay, so first, convince yourself that this is
+contained in P space, that we can decide whether
+this is the case or not using only polynomial space. So note that it's not an NP problem, or at least we think it's not. But we can actually find out the question to this
+in polynomial space. So what we're going to do, right? So convince yourself
+that that's true if it's not clear, ask in lecture. So it's NP space. So we want to show it's P space hard. In other words, everything in
+p space reduces do it well, we'll do that by showing space
+predict is reducible to Q set. And this will be our normal kind
+of polynomial time reduction. So in fact, we only needed to be
+a polynomial space reduction. Okay, so let's go through
+how will show this. So recall for space predict our input is a program be an input to
+an X and a space found m. Now, what we're gonna do
+is define this graph. And this is the normal computation
+graph for p on input x. So vx is the configurations of PX but that USE space
+at most n, right? So again, this isn't everything
+P could possibly do, may not be m space bounded. So, so this may artificially
+constrained to make some configurations unreachable
+because they use too much space. So V is only the things that
+are reachable that space them. And the edges are that you
+can go to V and one step. Okay? And what is it that
+would make p except x? Well, you know, given our sort of statement of how to characterize
+P space, sort of computations. That's true if and only if the
+following predicate is true. Rst, like the Bazin, Remember what does that mean? It means in this graph, it is possible to reach from the initial configuration
+of p and x to t, The unique accepting
+configuration of p. In at most this many steps where this
+is just all the configurations. There are these things truly
+and space bounded, right? So this is kind of a
+weak bound right here. We of course need at
+most this many of us are just all the configurations. And remember that we argued it was possible to
+rewrite this predicate using an alternation of exists and quantify as an end
+date and a predicate. That's a simple one, or
+are you just asking about this AN BM configurations
+you're asking, Well, can we reach from
+AMD BM in just one step? So that is going to be our quantified formula
+that we output for Q SAT. We're trying to, on input, this input to space predict, output a quantified formula
+that is true if and only if p on input x accepts
+using the most space. So this does it almost, right? This is almost what we need. Now, there's a couple of technicalities to do with these
+slight differences between. Q SAT. And the way that a
+formula like this works, one is that Q SAT is defined to alternate between exists and
+for all on every single bit. But this is a little
+bit higher level. The, the use and the A's and
+the B's, they're not one bit. Each, each of them is
+a node in a graph, so each of them requires
+several bits to represent. So we want to actually do
+exist on several bits and then for all and several bits
+and then exists on several bits, not to alternate exists
+for all every single bed. Now this is not too difficult
+to fix to put a formula like this in the format cues that expects where it
+alternates on every bit. So think about how to
+do that for yourself. If it's not clear, we can
+talk about it in lecture. Okay, so the trickier issue is
+going to be this, that this, when we do rewrite this so that we have these for alls
+are over every possible bit. Well, remember the way
+we actually wrote this, I'm sort of short name the shorthand. But if you go back to
+the slide where we showed that this
+equivalence can hold. While the for all A1B1, it wasn't over every
+possible sequence of bits you could assigned to A1, B1. They were constrained to refer to
+two particular painters, right? Until we go back to that. Right? Remember we were looking at existing ones for all
+A1B1 in this set. The set is S comma u
+one and u one comma t. And same thing, there exists U2. So that for all a to
+b two in this set, it wasn't over all possible bits
+you could right here it would be, There's only two pairs
+you want to allow. So, so we have a problem here
+because the way Q SAT is written, it just says for all bits, but we need to constrain a t d t for each t between one and m and
+not allow them to be any bits. So the teeth moves of the form
+for all a TBT in that sense, a sub t minus 1, UT and UT comment bt minus 1. So we have this game between
+the prover and the skeptic. The, the prover gives, does the exists, the
+skeptic does the for all. So the skeptic is picking these beds. This is like player two in the game. We need to make sure that
+the skeptic actually pits, picks bits that encode and
+80 VT and this, right? But the skeptic is trying to argue, Well, we're not correct, right? So we did nothing. The skeptic could just pick
+some bits that don't look like this and the answer enforce
+the answer to be no, which is what the
+skeptic wants to do. Skeptics player two in the game. Okay, so here's the facts. Remember that the player one that the prover is trying to make
+the whole formula true. Player to the skeptic is
+trying to make it false. So we make it so that if the skeptic picks an a TBT
+that's not in the set, the prover automatically wins, right? So the final predicate that
+we check where we just check, oh, is this edge a comma b? And I'm sorry, this pair in
+the set of edges in the graph. We change it from
+that to say, well no, there's actually more ways
+the prover could win. Either this is in the edge set or any of these conditions is
+true, and then the prover wins. And what are these conditions? Well, these conditions just check that the various
+a's and b's were illegal, that each a TBT was
+actually an element from the set based on the previous 80
+minus 1 and b t minus one, right? So we're just checking
+if a2 is not equal to b1 and b2 is not equal
+to y2, et cetera. And if a2 is not equal to U2
+or B2 is not equal to B1, that would mean for t equals
+one, this was violated. So if the skeptic picks bits
+so that this is untrue, the prover automatically wins, so it's not in the skeptics
+interest Back button. So the only way to make all of these falls is to actually
+pick a DVT like this. And then the only way to pick
+those to make this false is if the quantified formula
+is actually false.

@@ -1,0 +1,117 @@
+Okay, so we're going to
+move into chapter two now and cover some of the basics
+of the theory of computation. So we want to start with some definitions about what
+exactly is it that we're studying. So we say a decision problem instance is just like an input
+to an algorithm. So for example, if you're
+given a graph, like, well, I'd say at this graph right
+here, you want to know, is this graph Eulerian? In other words, does it have a path visiting each
+edge exactly once? Now the decision problem, somehow like a bigger object. It's all possible instances
+and their answer. So we can, we often will phrase
+decision problems like this. We'll say given, and then we'll
+describe the type of inputs. In this case, the type is a
+graph g. When we just say graph, we mean undirected graph normally. In the question we want to
+ask about that input is, is G or Librarian. Now, another way to formalize what is a decision problem is it's the set
+of all Eulerian graphs, right? There's only two answers, yes and no. So if you know the set of all
+inputs where the answer is yes, well then you also know all the
+inputs for the answer's no, it's just accomplish graphs
+that aren't in that set. So this says encodes the entire
+decision problem in a sense. And another way that
+we often formalize what is a decision problem is we acknowledge that typically
+computers are going to be processing these data when they're
+encoded as binary strings. And so we would say that the decision problem
+is not a set of grass, it's a set of binary strings. But those that under some encoding of graphs represent the
+graphs that are eulerian. And this is sometimes called
+the language as well. So there's different ways
+you could encode a graph as a binary string that can lead to
+technically different languages. In this case, I'm showing if we use the adjacency matrix
+representation of a graph, where I'm drawing
+these binary strings as if they have rows and columns. But really this would
+just be like this one right here would be a
+single binary string with nine. That's it. But I'm
+just trying them to, to help you see where each
+row and then the next one D. Now contrast a decision problem
+with a search problem, right? Where instead of
+answering a question, does a certain type
+of solution exists, we want to output
+the actual solution. So in this case, the
+search problem version of Eulerian path would
+be given a graph, find or output an Eulerian path if one exists or report
+that none exists. So if you can solve this
+problem, of course, this is even better than
+solving the decision problem. Another way to formalize what's
+a search problem is that it's a function from 01 star to 01 star. And so it's describing this
+function f is describing on input a string representing a graph. You want to output a
+string represent in an Eulerian path in that graph
+or some encoding of the word no, meaning there is no path to be found. And a special case of a function. Whose output is just a yes or no is sometimes called
+a predicate, right? So the decision problem can be formalized as a function
+similarly to a search problem, but the range would be different. Instead of being all 01 star, there's only two answers, yes and no, and sometimes
+we call them 10. And when you see the word predicate, that means a function whose
+output is Boolean sense. Okay, so that's a way of
+defining what type of problem do we want to solve. But as computer scientists were interested in coming up with
+algorithms to solve them. So a problem is solved by an algorithm that computes the function or predicate
+associated to the problem. So the formal definition of
+algorithm that we're going to use in this class is
+actually not so formal. We're just going to say
+it's a program written in whatever is your favorite
+programming language. And typically, the more
+traditional thing to do is to define an algorithm as
+being a turning machine. And the textbook
+differs discussion of Turing machines until
+we've developed most of the basics of computational
+complexity theory. Now I want to emphasize that Turing
+machines are historically very important and still
+relevant to understand. But I also want to emphasize
+they're not really required to understand most of computational
+complexity or computability. If you have in your head a general purpose
+programming language that you'd like to think about, like maybe Python that is sufficient to understand
+everything we're going to do. Most of what we're going to
+do does not require, it, does not require understanding the low level sort of
+definitions associated with say, a multi tape Turing machines. We will talk about them eventually. But for now, we're just going to rely on our intuition
+from having programs. Okay, so let's start with
+an example of an algorithm, a non-trivial algorithm
+and a very old one. It's essentially the oldest
+non-trivial algorithm, which is Euclid's algorithm for finding the greatest
+common divisor of two. So we write that given
+integers a and b, we want to find the greatest
+common divisor of a and B. And to see how this algorithm works, we're going to sort of picture
+this little geometrically. So here's two integers, 66 and 24. It turns out that their GCD is six. So because six is a
+common divisor of these, it happens to be the greatest one, but just any common divisor. The following would be true. Which is that you can take a 24 by 66 tangle and partition it up into
+six by six squares, right? So the width of the squares x, so it evenly fits into 24, the height of the squares six, so evenly fits into 66. And notice what's
+going to happen here. If we look at 24 heights
+along the record, when a 24 by definition is the width. But if we look at 24 height, and then we'll look at another 24. And we're going to ask, well, how many times does 24 fit into 66? We can see it fits once, twice, and then it doesn't quite
+fit in a third time, right? It gets cut off. Or another way of
+putting that is that the remainder when we divide six. 24 is 1866 mod 24 is 80. Okay, so that's in some sense the pictorial definition
+of what mod means. It's how much you were able to fit in the last time when you
+couldn't quite fit at all. And so look at what's
+going to happen here. Six, because six is a common
+divisor of both of these, it's going to fit evenly into 24, four copies of six to 24. And it's going to fit
+evenly into the next one. And it's going to fit evenly
+into the whole next one. But because it started right here, right at the start of this mod, that gave us 18, because that
+is also fits evenly into 66. It has to fit evenly into
+this difference right here. Or in other words, that's the pictorial
+justification of this statement. That d is a common
+divisor of a and B. If and only if it is a
+common divisor of both be the smaller number and a mod b, which in this example is, is 80. So this gives us
+essentially the algorithm, which is that whatever
+is the greatest residue, this is true of any
+divisor of a and B. It's also true of the
+greatest common divisor. So we know that whatever is the greatest common
+divisor of both of these, It's also the greatest common
+divisor of b and a mod B. As long as they might
+be, it's not actually 0. So we can use that to
+implement an algorithm, right? So we want to know what's the
+greatest common divisor of a and B. I'd like to assume a
+is the bigger one here. So we'll say if a is
+less than b, swap them. So now we're going to
+assume a is bigger. Well, if a mod b is 0, that's exactly what it means
+for B to be a divisor of a. And so we should just return b. B is obviously bees greatest divisor, so it's the greatest common divisor. But if not, we'll then
+we're going to want to return the GCD of b and a mod B, knowing that that is equal
+to the GCD of a and B. So let's just see it in action. If we want to know what's
+the GCD of 66 and 24? Well, we compute their MOD, it's not 0, it's 18s. And now we let 24 BA
+and we let 18 BB, and we compute 24 mod 18, and that's not 0 either. We get a remainder of six. So now we let a and B be 800000 six, and now 18 divided by 6 is 3. It's even so it fits evenly in there. So at 0, which means the
+last positive number we add here that last version of B, that is sex, that is the GC. Okay, so there's a very
+non-trivial algorithm. And we'd like to analyze, Well, how long does it take? How long does this algorithm take, and especially how long does
+it take in the worst case, what's the worst possible
+numbers we can give to this algorithm that would make
+it run as long as possible. We'll talk about that
+in the next video.

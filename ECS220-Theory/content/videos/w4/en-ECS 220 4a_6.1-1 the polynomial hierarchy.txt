@@ -1,0 +1,141 @@
+So we said that theoretical
+computer scientists are not just guessing when
+they say P is not NP. If p is indeed equal to NP, this is known to have a
+number of consequences. And while we can't rule out
+any of those consequences, we can talk about how
+they in some sense would be even more surprising
+than P equals NP. So one of the consequences if P equals NP is that there's
+many other complexity classes also equal to p. So if somehow the power of non-determinism
+is no power at all, the day doesn't speed up
+computation significantly. If that were true, it would actually grant
+vastly more power to machines that look even
+more powerful than, than np verifier or nondeterministic polynomial time Turing machines. So here's one sort of
+straightforward example. If P equals NP, then p is
+also equal to co-NP, right? And this is the power you get with for all quantifiers
+instead of quantifiers. So why is that? Pause
+and think about that. All right, because P is kinda
+clearly closed under complement, you can swap the yes and no answers of any deterministic computation. And now you're deciding
+the compliment problem. So P equals COPI. So if they're both equal to NP, well then co-NP equals k. So let's look at something
+that's not quite so obvious. So okay, we're sort of rephrasing what we mean
+here by NP and co-NP. So assume b is some predicate NP. So it takes two inputs, x and w, and it
+returns true or false. And as always, when we pair
+this witness w with X, we assume it's bounded in length by a polynomial
+in the length of x. So in this light, we can say that NP predicates
+are of the form, right? So an NP predicate a
+with one input x is expressible using B and
+an exists quantifier. So a of x is true if and only if there is a W obeying this up here. So that b of x w is true. And co-NP corresponds to
+predicates of the form a of x is true if and only if
+for all w b of x, w is true. So with this view in
+mind that you get an NP predicate if you start with something that can be
+decided in polynomial time. But then putting an exists
+quantifier unwanted, it's two inputs, right? We could imagine,
+well, what if we had more quantifiers in front here? So this helps us define
+class, but sigma p2. So sigma p2 predicates
+there questions just like NP and co-NP
+about a single input. But we characterize them with a polynomial-time computable
+predicate that takes more inputs, in this case three inputs. So a sigma two predicate is one
+that you can answer by asking. Does there exist a y not
+too much bigger than x, meaning polynomial that
+does there exist a y, so that for all z, b of XYZ is true. Okay, so we can make that
+mathematical generalization is very abstract. It's kind of hard to think at
+this level of abstraction. Let's do an example. So here is a sigma p2 predicate P. So given a Boolean circuit C, well, circuits compute functions
+and they output a yes or no. So they're predicate
+type of functions. So they, they take some bits as
+input and the output one bit. We want to ask the question, Is there a smaller circuit
+computes the same predicates? So there's the questions. It's somehow about optimizing
+the size of circuits. It's actually a very important
+problem in, in VLSI design. So why is this a sigma two predicate? Well, the answer is yes. If what's true, what would have
+to be true for there to be a smaller circuit computing
+that same predicate. Well, there would have to
+exist a circuit d whose size, maybe number of gates is that moat is strictly smaller
+than the size of C. And they'd have to compute
+the same function. Well, what does it mean for D and
+C to compute the same function? Well, means for all inputs
+w in 0, 1 to the n, The output C gives on w is the
+same as the output D Giza, right? And you can always sort of stack
+all the quantifiers in the front. So I wrote it the natural way where one of the things we're
+saying doesn't involve w, it just involves DNC. So we can say, oh,
+there's a circuit these smaller than sees that
+all this is true. But you can always put all the quantifiers up front and it just becomes harder to
+follow the sentence, but it's saying the same thing. There's a circuit D. So
+that for all inputs, w, d is less than c. Okay? We didn't talk about W yet, but we will d is less than Zn. See if w equals DFW. Or put another way, it seems kind of redundant that for every single w we're going
+to assert D is less than C. But it's, if it's true for one of
+them, It's true for all of them. And so the exist for all right here kind of corresponds
+to these two quantifiers. And then this predicate right here, it's a function of three inputs. The original input, see that we're asking about
+that would be like X. The exists input, the
+first exists input D, and then the for all input, which is w. And then
+what's this predicate? Well, this predicate
+is given three inputs, a circuit C, a circuit
+D, and an input W. Is it the case that D is
+size, smaller than c? And they compute the same
+value on this one input. Well that's polynomial time. We just compare number
+of gates. This is easy. And evaluating a circuit
+on just one input, well, that can be done
+easily in polynomial time. Okay, So the polynomial hierarchy is how we kind of generalize this. So this is the decision problem
+that we just talked about. Given a Boolean circuit C, we want to answer
+the yes-no question. Is there a smaller circuit? Now, the real optimization
+problem we're interested in is finding
+a smaller circuit, find the smallest circuit
+computed in the same function. But as we've alluded, solving this decision problem. It has to be at least as hard. And in fact, if we could solve it, we could, we could
+solve the optimization. So this corresponded to
+ask him exists for all. And then polynomial-time
+predicate type of question. Now, the negation of
+this right, through it, the answer to this is no, that's true if c is actually the
+smallest circuit computing fancy. So smallest Boolean
+circuit is the negation or smaller Boolean circuit
+and the a or the complement. We think about these as sets. So the complements of problems in sigma p2 form a class called py p2. And so if we think of
+NP is being sigma P1, there's just one quantifier
+out in front and it's exists and co-NP is Pi P1 and there's one quantifier and it's
+for all and the Sigma and Pi are because exist is kinda like Boolean OR which is kind
+of like the addition. And then pi is kind of like a product which is
+kinda like Boolean end, which is kind of like for all that, you know, it's just a notation. So the Pi corresponds to for all. So this set of compliments
+here is this, well, if we extend that sigma p2, the set of all complements of
+things and sigma two is pi v2. And what would it mean to take
+a complement of one of these? It would mean you'd put
+a negation in front. But if you pass the negation through it flips the exist for all the, for all to this. And then finally, you just negate
+a polynomial-time predicate, you get another
+polynomial-time predicate. So that's why negating one of
+these gives you 10 things. And you can extend this. You can say, well, you can have exists for
+all exists or for all, exists for all and so on. And that gives you all these others and that set of all
+these possible classes, this is called the
+polynomial-time hierarchy. The hierarchy you get by
+stacking successively more exist or for all
+alternating quantifiers in front of some polynomial time. So another way to think about these, I sometimes find this
+useful is as a tree where each sort of edge you following the tree is one
+of these quantifiers. And so an exists tree is asking does their IRS IEPs are
+each edge corresponds to, sorry, a, a non-deterministic decision when you're doing a
+non-deterministic computation. So suppose this is all the
+non-deterministic choice as your egg. So if we view that nondeterministic
+machine as an NP machine, we're asking, does there exist
+a computation path that accent? Now if we view it as a co-NP
+machine, we're asking, is it the case that all possible
+computation paths, et cetera. So black arrow means except
+green means download. So we would say one of these
+steps if any of its leaves, except we would say for all n, for all nondeterministic
+machine accepts only all of its leaves represent an
+accepting computation path. A sigma p2 tree would be exists
+for all who would ask, well, does there exist some subtree here so that for all leaves in
+the subtree their true. So it would kind of look like this. An exists for all exists tree
+would look kind of like this. And a for all exists
+for all of the great, This is it the case that
+for all children here, there is a child below there such that for all children
+below there, it's true. So you can kind of think of these
+being characterized by Howard, the leaves colored to
+say you except okay, so these pair of classes, sigma p2 and pi v2, again, we call those the kth level
+of the polynomial hierarchy. One other way to think about
+these is in some sense they're like two player
+games that last for Kb. So why do I say that? Well, if I claim we're plates a chess and I
+said I have checkmate in KMT. What does it mean to
+say I have checkmate means I can win.
+Well, why can I went? Because there's a move I can make. So that no matter what you do, for all moves my opponent could make. There could be many,
+but for all of them, There's another move
+I can make so that no matter what they do
+in response to that, there's a move I can make
+and so and so forth and so forth for k moves,
+at the end of which, no matter what moves
+the opponent made, if I made the right one and response
+and take the opponents king. And so in some sense, you can't really characterize having
+checkmate of an NP predicate. But checkmate in K moves can be characterized as K
+alternating quantifiers, where the for all are necessary to capture that my opponent
+is going to try as hard as they can to it and pick
+the best move for them.

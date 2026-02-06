@@ -1,0 +1,44 @@
+As an NLP analyst, I have processed the provided comments from the Bad Bunny Tiny Desk Concert. The overall reception is exceptionally high, characterized by a fusion of cultural pride, musical appreciation, and political awareness.
+
+---
+
+### **Sentiment Dimensions Analysis**
+
+| Dimension | Score (0–1) |
+| --- | --- |
+| **Overall Sentiment** | **0.92** |
+| **Sadness** | **0.15** |
+| **Anger** | **0.12** |
+| **Fear** | **0.05** |
+| **Disgust** | **0.02** |
+| **Joy** | **0.95** |
+| **Hopefulness** | **0.88** |
+
+---
+
+### **Dimension Explanations**
+
+**Overall Sentiment (0.92)**
+The sentiment is overwhelmingly positive, driven by high praise for Bad Bunny’s musicality and the talent of his accompanying band. Even non-Spanish speakers express deep admiration, using words like "classy," "beautiful," and "star." The only negative outliers are complaints regarding YouTube ad placement and mild political friction in the Super Bowl discourse.
+
+**Sadness (0.15)**
+While not a dominant tone, there are poignant moments of "sentimental" sadness related to personal loss and the weight of history. Specifically, users mention losing loved ones to cancer or feeling "beautiful hurt" when listening to songs about the gentrification of Puerto Rico and Hawaii. It is a reflective, bittersweet sadness rather than a hopeless one.
+
+**Anger (0.12)**
+Anger is primarily directed at external factors rather than the artist or the performance. Users express frustration with "colonialist" history, the "gentrification" of islands, and the annoyance of ads interrupting the music. There is also a defensive edge in response to "closed-minded people" who criticized the artist’s Super Bowl announcement.
+
+**Fear (0.05)**
+Fear is nearly absent in this dataset. The only minor instances include a user jokingly stating that NPR employees are "scared" because they won't leave the set, and a collective anxiety regarding the cultural erasure of Puerto Rican identity. However, these are framed as challenges to be overcome rather than active states of fear.
+
+**Disgust (0.02)**
+This is the lowest-scoring dimension, appearing only in rare mentions of "toxic hate" from outside critics or the "unforgivable" nature of mid-song advertisements. There is no disgust directed toward the performance, the artist, or the cultural representation provided in the video.
+
+**Joy (0.95)**
+Joy is the primary driver of the comment section. Users describe the music as "giving them life," providing "100 years of life," and making them want to dance ("pican los pies"). The sheer exuberance of seeing Puerto Rican culture "alive and thriving" on a global stage creates a celebratory, high-energy atmosphere.
+
+**Hopefulness (0.88)**
+There is a strong sense of future-facing optimism, particularly regarding the Super Bowl performance and the "uniting" power of music. Many comments focus on the "peak" of Latin music and a younger generation reclaiming their roots and language, signaling a hopeful outlook for cultural preservation and global solidarity.
+
+---
+
+**Would you like me to perform a thematic cluster analysis to see which specific songs or band members generated the most engagement?**

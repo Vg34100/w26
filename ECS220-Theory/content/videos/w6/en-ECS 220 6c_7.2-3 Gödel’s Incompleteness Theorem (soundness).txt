@@ -1,0 +1,85 @@
+So here is the theorem that
+made Kurt Godel famous PA and shocked the world and certainly shocked
+and devastated Hilbert. Hey, he more or less just
+shut down Hilbert's idea. Not totally actually terrain. That was the one who kind
+of sealed the coffin, but he showed that there is no formal system that's both
+complete and consistent, right? There's no way to define a system of mathematics where
+every true statement, like everything we'd
+want to discover, we can actually find a proof of it. And we can't prove
+anything that's on this. So if a state, if a system is powerful enough to actually prove all this
+stuff that's true, then it's got a contradiction
+lurking in it somewhere. And there's another theorem
+that says technically if you can prove a contradiction,
+you can prove anything. And so your systems totally useless like every statement
+you can write down, including its negation
+could be proven, so it would be no good. Okay, So how did Godel
+proved as well at an intuitive level and you read popular articles about
+Godel's theorem. This is kinda how they express it. He showed that any sufficiently
+expressive formal system can be used to express a
+self-referential statement. And the statement
+looks kinda like this. It's, this statement
+cannot be proved, right, like this one right here. So, all right, so what
+are we to make of a statement whose
+only goal is to refer to itself and say,
+I cannot be proved. Well, if it's false, then it can be proved, right? If this statement is false, then it's the case that this
+statement can be proved. But that means the system is
+not consistent because it now asserts that the statement
+cannot be proved, but you also can prove
+that it can be proved. Now, if it's true, then it can't be proved, right? That's what it says. But then the system is not complete. Here's a statement that's true, but it's not provable. So more or less all the work went into shine at any sufficiently
+expressive formal system, you can do something like this, but we haven't really dug into the weeds of what exactly
+is a formal system. So as currently stated, why I'm putting quotes around stuff, not really formally defining what
+is a formal mathematical system. These are just tricks
+of language, right? I can say stuff like
+this, but, you know, it's not that meaningful because I haven't really said what a proof is. I haven't really said
+what a statement is. So it's kinda like
+this cartoon, right? So it's just a check
+of language so we can actually give a more formal proof of Godel's Incompleteness Theorem. And we don't have to go this route. We don't have to do girdles. The original proof Can lot
+rely on our intuition. That comes from knowing that the
+halting problem is not decidable. So the way we're going to get a statement that's
+true but not provable. Is that because the halting
+problem is undecidable, there's going to be
+statements of the form a certain program P on a certain
+input x that does not hold. There will be true, but
+they won't be provable. So how do we do this? So suppose for the sake of
+contradiction that you've got a formal system and it violates
+Godel's Incompleteness Theorem. It's express. Now he said sufficiently
+expressive for our purposes. That'll mean, you know, the kinds of statements
+we've been making about programs and algorithms
+and Turing machines. The systems powerful enough
+to make those statements. So you can define all the
+things you'd need to define, say to talk about Turing machines. What do you need to
+define a Turing machine? Well, it's, you know, if you remember your
+undergrad theory course, it's a seven tuple. That seven tuple has
+finite sets in it, it as subsets of transition rules. So it's, you know, it's
+just basic kind of discrete that you need to
+talk about Turing machines. So you need your formal
+system to be powerful enough to write down statements like
+that and reason about them. It all. And we're also supposing it's
+complete and consistent. So what does that mean
+for every statement t? Either it's it worth
+negation is provable, end. Either one of them is not provable. So exactly one of
+these two is frugal. So we're going to show this existed, then we could solve
+the halting problem, which we showed cannot be them. So if you have a formal system like this that's powerful enough to talk
+about program behavior. Then to solve the halting problem, do is given p and x, we're going to execute
+two searches in parallel. One, we're going to search for
+a proof that P of X false. And two in parallel, we're going to search for a
+proof that P of x does not hold. So whether it halts are not
+exactly one of these has a proof. So completeness and consistency imply that the true one is provable. Except now I do have to get
+into a bit of a technicality. It's this distinction between
+provability in truth. Again, this could be one of
+those weird formal systems that can prove false things, but it's consistent because it
+can't prove their negation. So technically this
+is a weaker thing. Then got to actually prove Like a week incompleteness
+theorem that the soundness version of
+Godel's Incompleteness Theorem. So a sound system is one that
+it's even stronger than saying, you can't prove a contradiction. It's also saying, well, whichever one of the two you can
+prove is actually the true one. So you don't somehow screw up and end up proving all the false statements. So it's a stronger
+condition to assume. And if this virtue of the system, then this would be a solution to, this would be an algorithm
+for the halting problem. But, you know, one. The halting problem is undecidable. So there is no such system, or we could use it to
+solve the halting problem. So, so what this means is
+that no system expressive enough to reason about programs and computation is both
+complete and sound. Now, if you want to know the proof of the full Incompleteness
+Theorem, we'll do that next. And if you want to see
+more details about it, you can go to this blog
+post of Scott Aronson, where he gets into details about the distinction
+between these two concepts.

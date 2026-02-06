@@ -1,0 +1,192 @@
+So it's common to hear
+theoretical computer scientists make this observation that upper bounds are easy and
+lower bounds are hard. And it's a little bit
+of inside terminology there usually when a
+theoretical computer scientist says upper-bound, they tend to mean showing that
+a problem has an algorithm, like I'd say, an efficient algorithm. Meaning we are, what,
+what's the thing? We're putting an upper bound on the computational difficulty
+of the algorithm, right? So it's a very jargony
+way of phrasing it, but it just means showing
+a problem does have say, a fast algorithm or a
+space sufficient them. Whereas lower-bound to a theoretical
+computer scientists DS domain showing a problem cannot be solved
+by some class of algorithm, meaning placing a lower bound on
+its computational difficulty. So for example, showing a
+problem is NP-complete. Assuming P is not NP, that is placed in a lower-bound and saying no polynomial time
+algorithm can solve that problem. So when I say upper bounds are easy, what they mean is coming up
+with an algorithm to solve a problem tends to be easier than showing that
+there is no algorithm. And the idea is somehow like because you have to do less
+work and in some sense. So to show a problem is
+in P, we need quote, only find a single polynomial
+time algorithm for it, right? It doesn't matter what all those other polynomial
+time algorithms would do. And the fact that they would be, if you ran them on an instance of
+this problem, they'd be wrong. You just need one algorithm that works for this problem
+and you're done. Whereas to show a lower bound, to show that the
+problem is not empty, you need to argue about every
+possible polynomial-time algorithm and why it gets the answer wrong. So in some sense, this is like why people tend to equip
+an upper bounds are easier because you only
+have to reason about one algorithm finding
+it may not be easy, but once you have it, you
+just have to show it works. But for this, you have to show every possible polynomial
+time algorithm does not work. So in an algorithms class, you learn about all sorts
+of techniques for trying to make algorithms polynomial time, make them faster than
+just brute force search. We don't have quite as
+many techniques for these lower bounds,
+but we have a few. So let's look now at a few techniques we do have for proving lower bounds. In other words, for showing
+that a certain problem has no algorithm within a certain sort of complexity resource constraints. So my favorite example of
+this is the first one I ever learned when I was an undergrad
+in my algorithms course. I don't think I really appreciated
+at the time, but they, they kinda gave us a glimpse of it and it was very fascinating to me. So we learned, you know, the naive sorting algorithms
+like the one that you would probably come up
+with your first term, you took a programming class. They tend to be quadratic
+time, right thing. Most people, if they're
+asked to come up with a sorting algorithm when they
+finally get it, we're again, it's probably one of
+the insertion sort or bubble sort or one of the, the slower sorting algorithms. Then you learned about these much
+faster algorithms that take time n log n. And for this
+little section here, we're not going to
+consider everything polynomial time to be
+equally fast here. We really care that, yeah, n log n is really
+faster than n squared. And it's slower than O of n. So when you learn that
+you can get rid of, that, you can turn one of the ends
+and n squared into a log of n, which is looking just at that term. It's a very strong reduction in
+the complexity of that term. You might ask, what
+can you do better? Like can we get, say, a linear
+time algorithm for sorting? So for here we get a
+formalize a little better. What do we mean by sorting? So here's the task and an assortment. Remember in, in this
+course we just consider inputs to be binary strings, right? We often talk about them like
+they're more structured data, but under the hood they're
+all binary strings. So if I tell you sorted X is this input that we
+represent in binary. You don't quite know
+what I mean, right? Because I have to tell you
+how is the data structured? Does it represent a list of three bit integers and they're
+all the same number of bits. So we can just concatenate
+the bits and not have to remember the boundaries like so here ir integers between 07 and sorting them from here would
+make them look like this is a two bit symbols, like maybe they represent DNA bases. And then we would sort of like this. Is it. That's, I want to
+sort the bed semana, just put all the ones at the end. So it kinda matters. So to get this lower bound
+we're going to talk about, we're going to make a little
+bit of an assumption here. So it's not going to be a
+lower bound that applies to every possible algorithm
+you could be talking about. It's one that assumes you can't see the bits that encode the array. So what do I mean by
+you can't see the beds? What I mean is that, you know
+that somehow this input x, it encodes an array. But you can actually look inside of it and see the data
+that composes each one. All you have is access to a comparator function that you
+give two indices, I and j. And it tells you is the ith
+item less than the J type. And that's not such a
+terribly strong assumption that every sorting
+algorithm nearly that we learn about tends to be like because it tends to
+be that they don't much care what is the data
+inside each array element. All they do quicksort, heapsort, insertion
+sort, bubble sort. All they do is they just repeatedly
+pick pairs of elements in the array and they don't look at
+fully detailed into the data. They just asked these two elements which one's bigger based on that, you know what to do next. So this is a so-called
+black box comparison. So if we want to reason only about these kinds
+of sorting algorithms, which is nearly all
+the ones you study. These are all black-box swords and so are most of the
+others and learn about. We can prove unconditionally, we don't need anything
+like assume P is not NP. We're going to show
+black-box sorting algorithms require omega of n log n comparisons. So there's some constant. And the constants going to turn
+out to be pretty close to one. But it means there's some constants
+so that you need at least that constant times n log n comparisons
+to get these things sorted. So how do we show that? So
+every sorting algorithm for each possible length n of the list you want to sort has an associated decision
+tree describing the items. Then it's going to compare. No matter what is
+the length and list. So we, you imagine
+what happens is you do some computation and at some
+point you ask, is a less than b? So here I'm using a, B, and C to refer to the element that's initially
+in the first position. B is the element
+initially in the second, C is initially and maybe
+they get shuffled around. But when I ask is like a less than b, it means is the element that started in position
+one less than that, that the, the element, they're less than the element that
+started at position two. So you ask this and then if yes, maybe you do some more
+computation of no, you do some different computation. And then maybe the next black
+box comparison as you ask, is b less than c If you want left? And if so, maybe you now conclude there already
+in the right order, a is less than b is less than c.
+And you can see that would be the appropriate comparison
+if a is less than b and b is less than c
+there in the right order. But if not, you do, maybe
+do some more computation. Maybe you now ask, is a less than c? And at this point the answer is yes, this is the proper order. So you should put them in order acb, otherwise you do CAB. And this is abstracting away
+like what other computation happens besides just
+doing the comparison. So who knows how much
+computation happens here, we're going to show that
+even if the computation represented by these
+arrows was instantaneous, still the total number of comparisons you have to do
+is going to be n log n. So we don't worry so much
+about what the computation is. We just know you do some
+comparisons and when you're done, you reached a sort of leaf
+of this decision tree. And that tells you how to
+rearrange these elements. So if the initial answer was no, we maybe do some more
+comparison and some more. And what we get is a tree. And the leaves, right, represents all the possible
+sorted orders and ABC depending on how big they
+are relative to each other. In other words, depending on the results of the answers
+to these questions. And there's three elements. So there's three factorial
+which is 3 times 2 is 6. There's six different
+orders of these. And so there ought to be at least six different leaves here to represent all the
+possible different orders. This could be sorted in depending on the relative comparisons
+we get between a, B, and C. So each list of length and traverses some branch
+of this tree, right? If you change the values, but you didn't change the
+answers to these questions, it would traverse the same branch. But if you swap the relative order, it means you'll take a different
+turn somewhere in this tree. And now we ask, okay, we want to know the
+worst-case running time on any list of length that this
+is the question we ask. Most often. What's the worst-case running time? Well, the worst-case running time, or at least the worst case
+number of comparisons. We just assume that somehow these arrows represent
+instantaneous computation. But the worst case number of comparisons we have
+to do is the depth of this tree is the longest path
+from the leaf to any rate. So how many leaves are in the tree? Well, it's going to be
+at least n factorial. Again, in this example, there's one leaf per
+possible permutation of ABC. But maybe you got a
+inefficient algorithm. Maybe, some of these leaves repeat. Maybe a being less than b, b, a less than c, less than
+b shows up twice here. But you have to have each
+permutation appear at least once to represent what if
+that is the sorted order? So the leaves are going to
+be at least n factorial. And what do we know about binary
+tree is that the depth of a binary tree is at least a
+log of the number of leaks. And a log of n factorial
+is theta of n log n. I think I had you do
+that on the homework 0. So in other words, the depth of this tree is
+going to be at least n log n. And this shows that even if all of the computation is instantaneous, still just the number of comparisons you have to do is at least n log n. So of course, the
+running time is going to involve doing comparisons
+and some other stuff. So the running time also
+has to be at least n log n. So this shows a bound and the information needed to
+determine the proper sorted order. And uses that to get
+this running time. Now that said, this is only for a
+particular class of algorithms, those that do blackbox sorting that
+their only access to the data. It inside the list is just
+comparing pairs of items. But sometimes the boxes
+aren't really black. So like radix sort, for instance, this consort and integers, if they're each embeds
+in time O of n times m. Now all the integers are distinct, then you can do a
+counting argument to show that most of them require
+at least log of n bits. And this would be an
+n log n algorithm. But you can have duplicates, right? And that's precisely
+when radix sort is a lot faster than these
+other algorithms, is like say you have a huge list, but all it has is just the
+digits 0 through nine. Then you can sort it in
+time O of N times 10, right? No matter how big n. Or to think about an even faster one, what if you're just
+sorting bets, Right? The only have two
+possible elements to 01. And so you can ask a
+more stringent question. And given two elements which
+is bigger, you can ask, actually ask, is this
+element 0 or is it one? And you can assume it's one of those do and think for a bit when you're on how to come up with a linear time sorting algorithm, it's
+pretty straightforward. So radix sort looks inside
+the box at the bits. So a black box analogy for some of the other problems we've thought
+about like 3-sat would be this. If a 3 CNF formula may only be black box queried with
+test assignments, right? For example, you can
+give an assignment, you can ask, does this
+make it true or not? But you can't examine the clauses. You don't, you know, you know that somehow it's a three CNF formula. You don't know how
+many clauses, as you don't know where the literals are. All you can do is just give it
+a potential assignment and say, Okay, try to set a equal to one
+and b equals to 0 and so forth. And it can tell you, does
+that make it true or false? It's pretty clear to see
+that in the worst case, you have to test all possible
+two to the n assignments. You're getting no information out of that formula other
+than for each input. Is it true or false? So all you're going do is just come up with
+assignments and give it. And whatever your algorithm does, it gives them in some order. So if you make the formula, depend on the algorithms so that there is one
+satisfying assignment, the last one that the algorithm test, then it would require two to
+the n time to render a law. Now, 3-sat is not in
+fact a black box though. There are algorithms
+based on looking at the clause structure that
+run faster than that. So for example, there's a
+still exponential time, but not this really bad exponential. It's a slightly better exponential
+running time for something based on the idea that
+we can learn something about the formula through the
+structure of the clauses.

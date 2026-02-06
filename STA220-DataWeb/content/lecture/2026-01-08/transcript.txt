@@ -1,0 +1,1374 @@
+Pablo [1:05]: first
+Pablo [1:08]: of all some data sets
+Pablo [1:11]: on
+Pablo [1:14]: canvas has existed them those both
+Pablo [1:18]: have a list about all the nod
+Pablo [1:19]: al
+Pablo [1:20]: eighteen
+Pablo [1:23]: yes
+Pablo [1:30]: we will use it on canvas also
+Pablo [1:32]: in case you want
+Pablo [1:33]: to
+Pablo [1:39]: make sure
+Pablo [1:42]: that you have these data files
+Pablo [1:44]: in the corresponding
+Pablo [1:46]: talk about
+Pablo [1:47]: file path
+Pablo [2:43]: mem
+Pablo [2:43]: ories
+Pablo [2:44]: and
+Pablo [3:13]: way
+Pablo [3:20]: forward
+Pablo [3:51]: you mentioned
+Pablo [3:52]: this
+Pablo [3:53]: kind of deliver
+Pablo [3:54]: y
+Pablo [4:09]: every
+Pablo [4:10]: student maybe
+Pablo [4:38]: whatever
+Pablo [4:40]: and
+Pablo [4:41]: that is going
+Pablo [4:42]: to
+Pablo [4:43]: work one of
+Pablo [4:44]: these data
+Pablo [4:45]: and then
+Pablo [4:46]: it's very important
+Pablo [4:47]: to understand how
+Pablo [4:47]: you access
+Pablo [4:48]: the values of
+Pablo [4:49]: all
+Pablo [4:52]: you
+Pablo [4:53]: would do something like
+Pablo [4:59]: this
+Pablo [5:02]: allow
+Pablo [5:03]: s the load of frequen
+Pablo [5:04]: cy
+Pablo [5:05]: how we
+Pablo [5:06]: control
+Pablo [5:09]: and
+Pablo [5:10]: it record
+Pablo [5:10]: s
+Pablo [5:12]: like this
+Pablo [5:22]: so
+Pablo [5:23]: whatever spec
+Pablo [5:23]: ified
+Pablo [5:24]: some name
+Pablo [5:25]: or some
+Pablo [5:26]: body mach
+Pablo [5:27]: ine here
+Pablo [5:28]: we always
+Pablo [5:29]: want to get
+Pablo [5:29]: like these colors
+Pablo [5:44]: in
+Pablo [5:44]: contrast
+Pablo [5:45]: it doesn't
+Pablo [5:46]: want to
+Pablo [5:47]: get
+Pablo [5:48]: students
+Pablo [5:48]: right
+Pablo [5:49]: but
+Pablo [5:52]: if a
+Pablo [5:55]: child
+Pablo [5:56]: uses always
+Pablo [5:57]: looking for the
+Pablo [6:04]: one
+Pablo [6:05]: moment
+Pablo [6:06]: just
+Pablo [6:08]: always
+Pablo [6:11]: just
+Pablo [6:12]: one
+Pablo [6:13]: zero one
+Pablo [6:14]: two
+Pablo [6:17]: and then
+Pablo [6:22]: to
+Pablo [6:23]: give
+Pablo [6:24]: direct office
+Pablo [6:25]: or
+Pablo [6:26]: ident
+Pablo [6:27]: ify the access
+Pablo [6:31]: and
+Pablo [6:33]: neither
+Pablo [6:34]: get
+Pablo [6:35]: response knowledge
+Pablo [6:43]: because it will always if a trust use square bracket try to look at this column with the column name zero there is no such column so i get a key
+Pablo [6:46]: error however now
+Pablo [6:55]: it's getting a little bit fitty here what happens if i say what you have if i put in here a slice not just one thing
+Pablo [6:59]: so i just say want to have everything like
+Pablo [7:06]: the
+Pablo [7:07]: student
+Pablo [7:08]: and the reason
+Pablo [7:14]: for this is typically we have to work with data frames we have two things either we want to really just
+Pablo [7:19]: see one feature that it's like student records
+Pablo [7:32]: and if it just provides one thing if we look into the column it will provide like a slice or something like
+Pablo [7:50]: we always look into the rows but in some sense if i have some kind of subset of filter my students we have this example great
+Pablo [8:00]: i consider a great student everyone who has a piece of more than ninety five percent
+Pablo [8:01]: ninety
+Pablo [8:01]: five points
+Pablo [8:03]: bullet points
+Pablo [8:07]: so this is a typical application
+Pablo [8:10]: just want to access and data frame
+Pablo [8:12]: and
+Pablo [8:15]: points so
+Pablo [8:18]: this
+Pablo [8:19]: would be
+Pablo [8:24]: the list consists of four to
+Pablo [8:36]: whenever i'm applying the list error slides something like this and subset in the rows and this is just important to keep in mind if you just use square brackets
+Pablo [8:43]: here and now you could say well how can i access
+Pablo [8:48]: or like with a specific name or row zero whatever
+Pablo [8:51]: let's go back to our name
+Pablo [9:00]: so
+Pablo [9:08]: how can i now access the students
+Pablo [9:12]: so there are two different ways on how to do this
+Pablo [9:17]: and there is both the location and the eye location
+Pablo [9:33]: i can add here an i location this means i'm really now talking about a position and not the name so if i say i want to have the first element here like first row first column
+Pablo [9:36]: just come up with first row
+Pablo [9:39]: comma first column
+Pablo [9:43]: and then i get the ninety percent
+Pablo [9:45]: you don't want to have the second row
+Pablo [9:48]: and the first column ninety six
+Pablo [10:07]: whenever you are talking about the music you need to use the eye locations and whatever it's about name so for example just know where it should look up how many points
+Pablo [10:16]: this is i provide just the name
+Pablo [10:18]: command and you
+Pablo [10:41]: get so this is like the three ways you can do it either just use square brackets alone then you have to be very careful about do you apply that it's like your augmented list single argument but if you use either the node or the i location then it's very easy custom is your idle
+Pablo [10:42]: community
+Pablo [10:45]: so this is just what i wanted to repeat
+Pablo [10:50]: and i brought a little bit of tricky example
+Pablo [10:58]: you can see like a summary of what it tried to say here
+Pablo [11:02]: and i would like to present following example
+Pablo [11:04]: we have now a data frame
+Pablo [11:12]: consisting of the colony one zero and the ronin zero one two and then we have
+Pablo [11:14]: all the numbers
+Pablo [11:17]: and now a question would be
+Pablo [11:25]: first question easier one what happens
+Pablo [11:29]: if i write ef of zero
+Pablo [11:32]: what would i get
+Pablo [11:36]: a student record
+Pablo [11:41]: zero here we have there with a zero index data frame
+Pablo [11:47]: what would be the return value if i just use dx zero
+Pablo [11:50]: do you have an idea
+Pablo [11:52]: yes correct
+Pablo [11:55]: because it's always referring to the column name
+Pablo [11:59]: if you just use the zero here it's a six seven eight
+Pablo [11:59]: thank you
+Pablo [12:04]: okay this is the first one another second question is
+Pablo [12:06]: how can it now
+Pablo [12:08]: access this first flow
+Pablo [12:46]: like the main diseases way would be just say you want to use the allocation so this means you are interested in the first row and all columns
+Pablo [12:51]: so this gives you the zero three six
+Pablo [12:54]: but there are multiple solutions as i said
+Pablo [12:56]: you can also
+Pablo [13:01]: come up with the name and now you say you're using the location
+Pablo [13:06]: and you provide two arguments
+Pablo [13:14]: like the zero list would be like first you're looking for a column name zero but in the
+Pablo [13:19]: row name zero and you find all the columns
+Pablo [13:25]: or would it be a little bit tricky
+Pablo [13:28]: but just to mention it you can also
+Pablo [13:31]: subset for example
+Pablo [13:34]: more obvious
+Pablo [13:42]: if i provide this consisting of the values true false false
+Pablo [13:51]: but because now it's just this it will turn this zero three six
+Pablo [13:58]: or it can make a little bit simpler just write a slice with everything
+Pablo [14:00]: starting until
+Pablo [14:03]: i'm stopping before i want
+Pablo [14:09]: and gives me all the things so this is like there are several ways
+Pablo [14:20]: just to make sure it rolling and columnate like contains the passive things that still here one
+Pablo [14:23]: can be
+Pablo [14:31]: more like as we saw in the human rack
+Pablo [14:44]: for each entry and then you have column name initial features very first within and here we have a conservation in the sense of what you see
+Pablo [14:50]: i will upload this after this lecture
+Pablo [14:52]: all the solutions
+Pablo [14:53]: here
+Pablo [14:59]: let's do keep it in mind
+Pablo [15:09]: i think this would be everything correct
+Pablo [15:19]: ing you can use it would have a similar thing with twenty five percent more than ninety five
+Pablo [15:20]: points
+Pablo [15:34]: what is maybe more interest you would have something like a so now we have three rows and three columns in our data plane we have a size this is just like the number of elements
+Pablo [15:39]: pipe it's like handles data frame and now oh yeah
+Pablo [15:55]: please distinguish between type and the data types type is just like as the python build in function data frame and the data types are like for each of the columns
+Pablo [16:04]: now it gives us data types so maybe just use a little bit confusing because two one series not really something
+Pablo [16:05]: but us policy
+Pablo [16:06]: correct
+Pablo [16:18]: yes and now you can see like a total points consist of
+Pablo [16:27]: integer same for homework before what maybe change to the break first
+Pablo [16:43]: let's say
+Pablo [16:44]: twenty five
+Pablo [16:50]: points this is just a warning but it's not an error message
+Pablo [16:52]: just tells us that
+Pablo [16:54]: the other
+Pablo [16:55]: bible
+Pablo [17:01]: now
+Pablo [17:07]: just
+Pablo [17:08]: make sure this
+Pablo [17:09]: warning
+Pablo [17:10]: error
+Pablo [17:11]: message
+Pablo [17:14]: and
+Pablo [17:23]: this
+Pablo [17:25]: before
+Pablo [17:40]: one
+Pablo [17:41]: of them
+Pablo [17:43]: all the
+Pablo [17:44]: time
+Pablo [17:45]: so
+Pablo [17:46]: i have
+Pablo [17:52]: different ways for me to get away of course have like a non element to all happen not a number
+Pablo [17:54]: so like in numpy
+Pablo [17:57]: we have another number if you divide zero for example
+Pablo [18:00]: and
+Pablo [18:01]: put this
+Pablo [18:04]: numpy package
+Pablo [18:07]: and that will actually number data frame
+Pablo [18:15]: consisting of another number given in the column eight i need to set
+Pablo [18:17]: none
+Pablo [18:21]: and you can get the data frame testing system
+Pablo [18:33]: but what is more important you can use either is an a or is now and you see that both there are not a number and a number
+Pablo [18:37]: and i can see that
+Pablo [18:46]: and same of true for the disk model more obvious for this knowledge exactly the same result
+Pablo [18:48]: and
+Pablo [18:49]: we can
+Pablo [18:52]: decay
+Pablo [19:01]: so you get the opposite so this like all the values that are not null
+Pablo [19:04]: yes
+Pablo [19:11]: and why can we for example use it if you want to see how many now values we have
+Pablo [19:13]: the typical thing
+Pablo [19:16]: like this
+Pablo [19:18]: and then sum it up
+Pablo [19:21]: first column where it's in two ways
+Pablo [19:24]: and then we get an output we have
+Pablo [19:29]: two now that means
+Pablo [19:48]: also an inform we get an intro like an information about the data types the column names how many non values to non null values here in the column one
+Pablo [19:56]: called y we have three non value so it's all like always good to have like a quick overview of
+Pablo [20:00]: here
+Pablo [20:08]: same if you want to see how many non null values are known n a value wants to
+Pablo [20:12]: have seven
+Pablo [20:16]: and
+Pablo [20:20]: of course can i sum up all the criticism data frame
+Pablo [20:29]: but this will give us a five error because we're all the time that number
+Pablo [20:42]: and then
+Pablo [20:47]: one
+Pablo [20:56]: yeah we also have the lms
+Pablo [21:00]: okay
+Pablo [21:04]: this is how to deal with
+Pablo [21:09]: null values and then i also want to take a quick
+Pablo [21:12]: ly mention in the last lecture
+Pablo [21:25]: for a panda series the app or if we have for example student records we have two panda series we have x and a y
+Pablo [21:31]: and the both consists of values one to three and
+Pablo [21:31]: just
+Pablo [21:33]: y so
+Pablo [21:41]: rry x and y operant three values and here we have just the key indexes change
+Pablo [21:44]: what happens if we multiply
+Pablo [21:46]: x y
+Pablo [21:50]: for if we add and it
+Pablo [21:51]: was
+Pablo [21:57]: it's like if you add student write
+Pablo [22:03]: this a put this a that p value
+Pablo [22:14]: so with bound multiply component wise we don't get one hundred forty nine but we get the two hundred twenty nine because
+Pablo [22:19]: just make sure
+Pablo [22:35]: and sometimes you want to change index or reset the index if you use the read like the preset index
+Pablo [22:43]: then it will be added as a new column called index and you would just add a
+Pablo [22:47]: keep in mind
+Pablo [22:50]: it just returns
+Pablo [22:53]: a new data frame
+Pablo [22:56]: with a reset index
+Pablo [23:00]: but it does not change
+Pablo [23:04]: so it's just depict
+Pablo [23:10]: now i would have two data frames one with the index
+Pablo [23:13]: and one without
+Pablo [23:16]: yes
+Pablo [23:19]: but if i want
+Pablo [23:27]: to throw away for example the index i can copy so if you don't want to keep it column
+Pablo [23:29]: let's
+Pablo [23:29]: do this
+Pablo [23:42]: class it will not be tested at all
+Pablo [23:46]: in the index remot
+Pablo [23:46]: e
+Pablo [24:00]: this is also how you can change the index
+Pablo [24:10]: and
+Pablo [24:13]: you can access the index with the option
+Pablo [24:23]: okay
+Pablo [24:26]: then maybe we can come to more
+Pablo [24:34]: applied a little bit more profit at least this is data then so we can read now
+Pablo [24:38]: a data frame of different
+Pablo [24:51]: and it's very useful we can just use the vsender command you want
+Pablo [24:53]: to save
+Them [25:08]: so if we have a database
+Them [25:23]: so this talks is just a data frame after red csv and these are like the two main format is very useful either i want to read some x laws here files
+Them [25:28]: save them with the two csv
+Them [25:51]: under effective byte data frame of course then data can be stored but just give you like an overview and here we have different breeds we have two for each of these and then we have data like
+Them [25:57]: can cause the patient rank profitability eight ninety five two
+Them [26:00]: hit enter
+Them [26:03]: like the size
+Them [26:14]: so this is test like a data frame now we have our first data frame where we can
+Them [26:15]: i
+Them [26:56]: sort we have different groups and we can try to find out more about depend whatever but before we work with today is always good to have like feelings about the data frame itself you can use just the data types here and then we see like three and two are objects same performing hits and size because they are just dreams so we see really it really is just a name for the group and for like popularity this is an integer
+Them [27:01]: intelligence rank for some reason
+Them [27:12]: but i guess rank should be just integer but these in our data it's a float number and price interfold so it's not really surprising
+Them [27:14]: and then it can also use
+Them [27:17]: tribe
+Them [27:25]: quickly summarize the data in a sense so my intelligence bank i have imported one hundred twenty two
+Them [27:28]: entries
+Pablo [27:34]: the mean intelligence range for the mean and then you have like
+Pablo [27:52]: one and it ends at eighty so either we have a lot of null values here or we have like a lot because if we have one hundred twenty two oh yeah we have one hundred thirty two non now
+Pablo [27:55]: but there must be a lot
+Pablo [28:01]: if you start at one end with eighty
+Pablo [28:07]: same for the push cost
+Pablo [28:14]: raises from two hundred seventy gallery and we can see all that stuff for other things
+Pablo [28:14]: as well
+Pablo [28:20]: you have the quantiles minimum standard deviation mean and so on and so
+Pablo [28:21]: on
+Pablo [28:21]: okay
+Pablo [28:26]: and then we can also
+Pablo [28:45]: try to select owns because everyone has a different description if we are only talking about the concept art object like sprints then we just see a different piece because then there is obviously no mean or standard deviation
+Pablo [29:01]: means but at least we have account of all dogs i think the size is either
+Pablo [29:10]: size medium small lot i guess
+Pablo [29:18]: and we see like most of them are medium people with sixty dollars medium size there are only three different values
+Pablo [29:23]: saved for the kids moving
+Pablo [29:28]: and there are seven different
+Pablo [29:31]: and in contract
+Pablo [29:40]: you can just describe everything about integer column and there is only like
+Pablo [29:53]: okay so what we could do now we can also try to get some of these statistics on our own
+Pablo [30:15]: so we can either calculate like median value command and other things if you want to calculate union only of merit values we get the median of all these things like lifetime costs the median life and cost of the dog at twenty thousand dollars
+Them [30:25]: okay
+Them [30:27]: what is like the
+Them [30:28]: weight
+Them [30:37]: challeng
+Them [30:38]: e we have for all
+Them [30:40]: the needs we have how many
+Them [30:47]: total
+Them [31:03]: areas
+Them [31:04]: and nine
+Them [31:05]: coming up
+Them [31:07]: and
+Them [31:08]: so on
+Them [31:36]: craz
+Them [31:37]: iness
+Them [31:46]: okay
+Them [31:47]: and
+Them [31:48]: all the two is
+Them [31:49]: something like
+Them [31:53]: cross table between
+Them [31:53]: all groups
+Them [31:54]: and
+Them [31:58]: hits so like we have different kind of
+Them [32:04]: go through and then we have how many kids do we have
+Them [32:07]: running dogs
+Them [32:08]: have large number of
+Them [32:13]: maybe all of them just
+Them [32:14]: carry that maybe
+Them [32:16]: not
+Them [32:20]: you can just use this table across the edge
+Them [32:23]: command just
+Them [32:27]: okay and then we can
+Them [32:33]: apply times i mean this is like sometimes you want to come out median
+Them [32:41]: of bi very specific functions
+Them [32:46]: and for this we have climate
+Them [32:55]: for
+Them [32:56]: example
+Them [33:05]: for each
+Them [33:06]: element
+Them [33:08]: for
+Them [33:09]: example
+Them [33:10]: if we
+Them [33:11]: have
+Them [33:13]: student
+Them [33:19]: body
+Them [33:20]: everything
+Them [33:21]: one point one
+Them [33:42]: let
+Them [33:43]: us take the next
+Them [33:44]: vendor
+Them [33:45]: and expect
+Them [33:46]: new value
+Them [33:47]: and then
+Them [33:48]: i select
+Them [33:49]: all of the
+Them [33:52]: five
+Them [33:54]: and
+Them [33:55]: then you can see
+Them [33:59]: the
+Them [33:59]: sense
+Them [34:10]: you
+Them [34:11]: would like to do
+Them [34:12]: so
+Them [34:13]: however
+Them [34:20]: those
+Them [34:21]: entries for one
+Them [34:29]: eight
+Them [34:35]: even
+Them [34:36]: one impact that you
+Them [34:37]: can handle
+Them [34:42]: and
+Them [34:43]: bison and then
+Them [34:44]: check my average
+Them [34:55]: and then
+Them [34:59]: four
+Them [35:00]: outputs
+Them [35:01]: around
+Them [35:02]: one thousand
+Them [35:03]: six hundred
+Them [35:04]: dollars per year
+Them [35:05]: and
+Them [35:06]: i guess
+Them [35:07]: we don't
+Them [35:08]: have the value
+Them [35:09]: either like long
+Them [35:10]: evity zero
+Them [35:11]: or we have
+Them [35:12]: in
+Them [35:13]: one of these
+Them [35:14]: for the last
+Them [35:17]: two
+Them [35:20]: here
+Them [35:21]: oh yes
+Them [35:23]: and we can see
+Them [35:28]: because there are at least thirty seven mile values in one b
+Them [35:32]: and
+Them [35:39]: the light equals to eighty one now so this is the reason why for half
+Them [35:53]: okay
+Them [36:01]: the data frame provides lifetime cost
+Them [36:04]: it provides
+Them [36:08]: anti age
+Them [36:16]: and somehow the license costs are large than just the price cost over all the time
+Them [36:16]: i guess
+Them [36:20]: also like maybe a doctor whatever are included
+Them [36:24]: so it's a little bit more complicated
+Them [36:34]: yes so my conclusion was life cost of the dog i'm not just an initial price plus the good cost
+Them [36:43]: then what we can also do is
+Them [36:56]: typically if you want to calculate them i will give you a quick example of the dogs and ask about nobel prize winners because it's just more interesting
+Them [37:07]: maybe because we have university but still so i just want to quickly say this argument u pi is very useful if you want to
+Them [37:11]: group before we should statistics
+Them [37:12]: so practice
+Them [37:22]: dog like all these tweets they have a group and then we can just put everything and how do they program
+Them [37:29]: so now we have here now no reads but loops regarding group now
+Them [37:32]: and so on and then
+Them [37:58]: please
+Them [37:59]: actually
+Them [38:03]: because
+Them [38:04]: it's like
+Them [38:21]: this
+Them [38:22]: is like one applic
+Them [38:22]: ation
+Them [38:42]: because
+Them [38:43]: before we
+Them [38:45]: meet at the intellect
+Them [38:46]: all the group
+Them [38:46]: s we are
+Them [38:47]: now
+Them [38:55]: complicated
+Them [38:56]: combination
+Them [39:06]: all
+Them [39:07]: helping
+Them [39:16]: a little bit
+Them [39:17]: more interesting
+Them [39:18]: we still fight in
+Them [39:19]: this year
+Them [39:24]: second
+Them [39:24]: example
+Them [39:26]: this
+Them [39:26]: is
+Them [39:32]: i just took it from the area it's a list of all the novel
+Them [39:38]: s have a quick overview
+Them [39:41]: so it consists of like nobel prize winners
+Them [39:45]: then this is year of the award
+Them [39:46]: and
+Them [39:47]: affiliation
+Them [39:49]: university also
+Them [39:56]: and the first thing is i just saved like this i would like to get
+Them [39:58]: rid of first column
+Them [40:07]: so what i do i just set first column as an index and r
+Them [40:13]: but i could also just set the nobel prize in the main
+Pablo [40:29]: trust what i will do is test i will remove the one
+Pablo [40:34]: okay
+Pablo [40:36]: so this is like
+Pablo [40:42]: now our list of nobel prize winners and i would be interested in some questions
+Pablo [40:48]: so one of the questions is only very few people who want more than one nobel prize
+Pablo [40:50]: actually they are
+Pablo [40:55]: and i would like to know who they are
+Pablo [40:58]: and also what kind of nobel prizes
+Pablo [40:58]: want
+Pablo [41:02]: s
+Pablo [41:03]: to ask
+Pablo [41:12]: what is what i like the most successful universities over the whole world in terms of nobel prize of course
+Pablo [41:15]: we can discuss with
+Pablo [41:17]: reasonable
+Pablo [41:29]: touch whether universities would not just based on those price but i mean we can start with it right we can say okay we are interested in the university
+Pablo [41:35]: in the sense that they are mentioned as f
+Pablo [41:42]: what we do is we take this table we do it and we stack the attribution
+Pablo [41:44]: and then we count it together
+Pablo [41:59]: so this means we would just do this with respect to university and then some just count how many nobel prizes we have we don't want that we totally ignore it physically in the year of the world whatever we're just counting together
+Pablo [42:03]: and i thought i would like to sort
+Pablo [42:10]: that we started the highest number
+Pablo [42:12]: so maybe
+Pablo [42:14]: i just remove this for the cursor
+Pablo [42:19]: what's happening in the background
+Pablo [42:28]: so here we just have now a new list all universities
+Pablo [42:34]: all of university agriculture university
+Pablo [42:35]: and what
+Pablo [42:46]: i see now is don't see any name you don't see any
+Pablo [42:47]: just outed together
+Pablo [42:49]: and the number of appearances
+Pablo [42:50]: so
+Pablo [42:53]: in every cell just see how many
+Pablo [42:56]: what i do now is
+Pablo [42:58]: i would like to find out
+Pablo [43:04]: so just sort them
+Pablo [43:07]: if we snipe to any of these
+Pablo [43:22]: and
+Pablo [43:23]: then say
+Pablo [43:33]: and then
+Pablo [43:34]: we can
+Pablo [43:35]: see
+Pablo [43:36]: this is
+Pablo [43:37]: the list of the top
+Pablo [43:38]: ten universities
+Pablo [43:39]: in terms of the
+Pablo [43:42]: dollar price hours i was a top mie
+Pablo [43:48]: chicago cambridge standpoint i mean no bucket all the universe
+Pablo [44:04]: and
+Pablo [44:05]: we can
+Pablo [44:16]: network
+Pablo [44:31]: now as
+Pablo [44:32]: you see
+Pablo [44:33]: some of these
+Pablo [44:34]: universities
+Pablo [44:36]: one
+Pablo [44:38]: crisis
+Pablo [44:40]: more or less
+Pablo [44:41]: always
+Pablo [44:54]: take
+Pablo [44:54]: the
+Pablo [44:55]: whole
+Pablo [44:58]: fine
+Pablo [44:58]: treatment
+Pablo [44:59]: and then
+Pablo [45:23]: i had subset of the original table
+Pablo [45:27]: and there are only those nobel prizes
+Pablo [45:33]: left who won a university at one of ten
+Pablo [45:35]: and what i can do now
+Pablo [45:36]: i can just group it again
+Pablo [45:37]: with respect
+Pablo [45:40]: to the affiliation and also with respect
+Pablo [45:43]: to the discipline so now i get two dimensional
+Pablo [45:52]: this because now i would like to see also in which disciplines like how many nobel prizes they got in each discipline
+Pablo [46:01]: and this is what we get for like the constant university we see like nine nobel prize in physics
+Pablo [46:06]: is there one in
+Pablo [46:06]: peace
+Pablo [46:07]: actually
+Pablo [46:09]: yes and we can quickly go over
+Pablo [46:14]: one of the disadvantages of this even here
+Pablo [46:17]: so maybe i should mention what i did
+Pablo [46:17]: here
+Pablo [46:20]: edge of counter together
+Pablo [46:22]: and reset the index
+Pablo [46:27]: we have here now
+Pablo [46:28]: index before
+Pablo [46:33]: but because i go up reset index they are now column
+Pablo [46:42]: and this is maybe not the way how we are thinking of this hero because typically you would like much more easy
+Pablo [46:46]: we would have something like university
+Pablo [46:49]: and there is like this
+Pablo [46:53]: so here we could add physics
+Pablo [46:58]: and you would just have
+Pablo [47:00]: our
+Pablo [47:04]: and so
+Pablo [47:04]: on
+Pablo [47:06]: and of course let
+Pablo [47:08]: me
+Pablo [47:09]: chemistry
+Pablo [47:10]: and
+Pablo [47:11]: you know what i mean
+Pablo [47:13]: and so on and so
+Pablo [47:14]: on
+Pablo [47:23]: it is easy to read
+Pablo [47:27]: however we get different tables so very particular
+Pablo [47:28]: l typical
+Pablo [47:32]: this is the hero which is very good
+Pablo [47:38]: format
+Pablo [47:39]: and
+Pablo [47:44]: what we would like
+Pablo [47:45]: is what
+Pablo [47:47]: is called white table
+Pablo [48:02]: and we can just use command this means our laws should be the abbreviation the column should be the physically and we're interested in values of the lawyer power
+Pablo [48:14]: and this is now of this is exactly what i think is way easy to be you have test piece and universities
+Pablo [48:19]: because it's only a ten we have discipline
+Pablo [48:22]: i think
+Pablo [48:23]: there's one
+Pablo [48:33]: here and then we see how many nobel prizes they got
+Pablo [48:36]: mit ten economics
+Pablo [48:38]: oem
+Pablo [48:41]: i think they're very painful
+Pablo [48:46]: yes of course they have
+Pablo [48:55]: just two more things i don't like about not a number here
+Pablo [49:00]: it means we don't have any entry
+Pablo [49:05]: we can fill all the path with the zero
+Pablo [49:10]: and we can fill an a and then it provides
+Pablo [49:12]: out to them
+Pablo [49:27]: just zero so now it makes sense now i'm a little bit cherry picking here we have beautiful table i like it a lot but still why is it seven zero
+Pablo [49:34]: let's just recast everything is very beautiful
+Pablo [49:36]: shape
+Pablo [49:42]: this is the answer of the octane universe is which is the instance of the most overpriced
+Pablo [49:47]: more
+Pablo [49:50]: you mentioned what is happening
+Pablo [50:00]: and
+Pablo [50:01]: the second question i
+Pablo [50:02]: mentioned at the beginning
+Pablo [50:12]: how can
+Pablo [50:12]: you do this
+Pablo [50:14]: well
+Pablo [50:15]: it is among
+Pablo [50:15]: us
+Pablo [50:20]: able
+Pablo [50:20]: to
+Pablo [50:35]: be
+Pablo [50:38]: together
+Pablo [51:38]: and
+Pablo [51:39]: then
+Pablo [51:41]: all
+Pablo [52:14]: students
+Pablo [52:39]: one
+Pablo [52:42]: and
+Pablo [52:43]: it's good that
+Pablo [52:44]: we just
+Pablo [52:50]: only
+Pablo [52:51]: want both
+Pablo [52:52]: parties
+Pablo [52:52]: and the reason
+Pablo [52:53]: for this
+Pablo [52:54]: is that
+Pablo [52:55]: she
+Pablo [53:00]: one
+Pablo [53:01]: affiliation just
+Pablo [53:02]: nco
+Pablo [53:03]: s who
+Pablo [53:04]: wants to know
+Pablo [54:41]: maybe
+Pablo [54:42]: this is
+Pablo [54:44]: something
+Pablo [54:45]: our table
+Pablo [54:46]: for all the know
+Pablo [54:47]: ledge that
+Pablo [54:48]: are
+Pablo [54:49]: not
+Pablo [54:59]: and
+Pablo [55:01]: then we get all the answers
+Pablo [55:10]: of our new table of marital and we can see a nobel prize there was no affiliation
+Pablo [55:15]: on one presentation
+Pablo [55:17]: and we should just
+Pablo [55:32]: have a list of all the nobel prize winners who have won more than one dollar price which disability here
+Pablo [55:32]: and so on
+Pablo [55:34]: so i think this is maybe one of the
+Pablo [55:36]: questions for us
+Pablo [55:38]: if you want to talk about
+Pablo [55:41]: thirty two
+Pablo [55:46]: subset
+Pablo [55:51]: then i just store the value
+Pablo [55:53]: in a certain
+Pablo [56:06]: okay
+Pablo [56:14]: so
+Pablo [56:15]: i
+Pablo [56:17]: do
+Pablo [56:17]: one thing
+Pablo [56:37]: and
+Pablo [56:38]: this is
+Pablo [56:40]: how
+Pablo [56:43]: we
+Pablo [56:44]: add basically
+Pablo [56:45]: for each year
+Pablo [56:46]: we have
+Pablo [56:52]: and
+Pablo [56:53]: that is just
+Pablo [57:01]: to
+Pablo [57:02]: come up with
+Pablo [57:03]: the new here
+Pablo [57:09]: if not what we have here like a data framework here the amount of hormone
+Pablo [57:10]: amount
+Pablo [57:16]: of medicate amount of milk consumed in the us
+Pablo [57:22]: and then
+Pablo [57:23]: we can
+Pablo [57:24]: vis
+Pablo [57:25]: ualize
+Pablo [58:15]: pump
+Pablo [58:16]: ing
+Pablo [58:17]: she now
+Pablo [58:18]: have
+Pablo [58:19]: a year for each year
+Pablo [58:20]: we have now
+Pablo [58:21]: all
+Pablo [58:22]: the different types of
+Pablo [58:23]: milk
+Pablo [58:24]: we are interested in
+Pablo [58:25]: and then
+Pablo [58:26]: we have
+Pablo [58:28]: this
+Pablo [58:38]: and
+Pablo [58:39]: i would just like
+Pablo [58:40]: to show you how
+Pablo [58:41]: it
+Pablo [58:44]: is
+Pablo [58:45]: of
+Pablo [58:45]: mine
+Pablo [58:56]: after
+Pablo [58:57]: this video
+Pablo [58:59]: and
+Pablo [59:01]: all
+Pablo [59:02]: the different kinds
+Pablo [59:03]: of
+Pablo [59:06]: us
+Pablo [59:07]: d
+Pablo [59:09]: and this
+Pablo [59:10]: is
+Pablo [59:15]: you
+Pablo [59:16]: have to see
+Pablo [59:17]: the bone mil
+Pablo [59:17]: k
+Pablo [59:24]: types
+Pablo [59:25]: and different col
+Pablo [59:26]: ors
+Pablo [59:27]: so
+Pablo [59:28]: just
+Pablo [59:29]: keep
+Pablo [59:30]: in mind
+Pablo [59:31]: if you want
+Pablo [59:33]: to what your data you have
+Pablo [59:35]: to paste data from really the thing
+Pablo [59:36]: that need to
+Pablo [59:37]: do is
+Pablo [59:38]: just
+Pablo [59:39]: by
+Pablo [59:40]: this
+Pablo [59:42]: one
+Pablo [59:43]: now
+Pablo [59:45]: if you
+Pablo [59:46]: want to project use
+Pablo [59:47]: and then
+Pablo [59:50]: take
+Pablo [59:51]: home message for
+Pablo [59:51]: the last minute
+Pablo [59:53]: was a little bit quicker
+Pablo [59:54]: but it will upload
+Pablo [59:57]: the lecture and everything in between
+Pablo [59:58]: it was more like
+Pablo [59:59]: some
+Pablo [1:00:01]: problem take some column
+Pablo [1:00:02]: age
+Pablo [1:00:06]: okay
+Pablo [1:00:08]: then i would finish
+Pablo [1:00:09]: with the lecture
+Pablo [1:00:09]: and thank you so much
+Pablo [1:02:02]: because i got to get
+Pablo [1:02:32]: probably doing space
+Pablo [1:03:42]: i wish
+Pablo [1:04:01]: statistics short schedule
+Pablo [1:04:04]: you can see all the courses
+Pablo [1:04:33]: i think
+Pablo [1:04:43]: i do want to take
+Pablo [1:04:57]: you out
+Pablo [1:06:14]: i'm not really sure
+Pablo [1:06:16]: i was planning on doing
+Pablo [1:06:50]: i don't want
+Pablo [1:07:02]: to say
+Pablo [1:08:55]: this is likely
+Pablo [1:08:57]: how can i write down
+Pablo [1:09:39]: and also
+Pablo [1:09:42]: this
+Pablo [1:09:44]: so basically
+Pablo [1:09:45]: contains
+Pablo [1:09:49]: the argument the open file argument
+Pablo [1:09:54]: and also the complex manager with so
+Pablo [1:09:56]: functions
+Pablo [1:10:03]: so here
+Pablo [1:10:13]: so here this can be this can help us to deal with some raw data responses
+Pablo [1:10:27]: that
+Pablo [1:10:30]: we really
+Pablo [1:10:37]: this is a building
+Pablo [1:10:38]: function
+Pablo [1:10:41]: to always on files
+Pablo [1:10:42]: to over
+Pablo [1:10:48]: here
+Pablo [1:11:05]: for example
+Pablo [1:11:06]: we have
+Pablo [1:11:07]: the read model
+Pablo [1:11:09]: that
+Pablo [1:11:10]: have a patent mod
+Pablo [1:11:10]: el
+Pablo [1:11:11]: and also
+Pablo [1:11:12]: for the
+Pablo [1:11:17]: most
+Pablo [1:11:35]: i
+Pablo [1:11:36]: hope this is
+Pablo [1:11:43]: so
+Pablo [1:11:50]: here
+Pablo [1:11:51]: i
+Pablo [1:11:52]: just
+Pablo [1:11:53]: give a list of
+Pablo [1:11:56]: a list of five common
+Pablo [1:11:58]: modes for this organ funct
+Pablo [1:11:58]: ion
+Pablo [1:12:00]: that
+Pablo [1:12:03]: is dark for the result for reading the
+Pablo [1:12:04]: text
+Pablo [1:12:06]: and the w for writing the text
+Pablo [1:12:08]: and a for the
+Pablo [1:12:09]: pen inter
+Pablo [1:12:10]: set s
+Pablo [1:12:12]: and
+Pablo [1:12:18]: uh for example r plus and a plus is just for ingredient we have right and we can
+Pablo [1:12:19]: so
+Pablo [1:12:20]: here
+Pablo [1:12:23]: you can you can add
+Pablo [1:12:26]: you can see some
+Pablo [1:12:27]: comparison between
+Pablo [1:12:31]: different
+Pablo [1:12:32]: aspects
+Pablo [1:12:33]: of the
+Pablo [1:12:36]: uh for this report
+Pablo [1:12:37]: like r
+Pablo [1:12:38]: and alpha
+Pablo [1:12:40]: reading
+Pablo [1:12:42]: the test cases were not create a file
+Pablo [1:12:48]: it is missing
+Pablo [1:12:53]: and also
+Pablo [1:13:00]: for writing for disk w it will also uh truncate existing file
+Pablo [1:13:04]: so for the details
+Pablo [1:13:07]: i just reviewed i just gave you the link
+Pablo [1:13:07]: here
+Pablo [1:13:09]: you can just
+Pablo [1:13:15]: you can just take
+Pablo [1:13:18]: a look at this
+Pablo [1:13:21]: open prompt
+Pablo [1:13:32]: so here maybe i in the remaining of the alpha discussion
+Pablo [1:13:39]: i will start with some simple examples there's over function
+Pablo [1:13:47]: so uh so here
+Pablo [1:13:57]: so
+Pablo [1:14:01]: here
+Pablo [1:14:19]: i
+Pablo [1:14:20]: have already
+Pablo [1:14:20]: created the
+Pablo [1:14:21]: environment
+Pablo [1:14:26]: i
+Pablo [1:14:26]: think that that
+Pablo [1:14:27]: if you
+Pablo [1:14:29]: want to run this
+Pablo [1:14:30]: if you want
+Pablo [1:14:34]: just
+Pablo [1:14:36]: remove the existing file
+Pablo [1:14:37]: uh
+Pablo [1:14:39]: when you are when you try to implement this
+Pablo [1:14:41]: notebook
+Pablo [1:14:45]: so here uh
+Pablo [1:14:47]: so
+Pablo [1:14:49]: here
+Pablo [1:14:51]: to
+Pablo [1:14:52]: illustrate how this
+Pablo [1:15:03]: here
+Pablo [1:15:04]: i just
+Pablo [1:15:05]: define
+Pablo [1:15:07]: our new plan
+Pablo [1:15:07]: okay
+Pablo [1:15:08]: and
+Pablo [1:15:12]: then
+Pablo [1:15:15]: we
+Pablo [1:15:17]: just open this file name with the
+Pablo [1:15:18]: mode value
+Pablo [1:15:19]: because
+Pablo [1:15:21]: it will also
+Pablo [1:15:23]: read
+Pablo [1:15:25]: even if you
+Pablo [1:15:26]: don't have
+Pablo [1:15:27]: even
+Pablo [1:15:33]: so uh
+Pablo [1:15:34]: after
+Pablo [1:15:40]: this slide we will just read a new file name that our new file
+Pablo [1:15:43]: and next
+Pablo [1:15:48]: for the file we have the comments
+Pablo [1:15:49]: for writing
+Pablo [1:15:53]: and writing and closing so for example
+Pablo [1:15:54]: if you
+Pablo [1:16:00]: can whatever
+Pablo [1:16:00]: you want
+Pablo [1:16:02]: uh you
+Pablo [1:16:03]: want to change
+Pablo [1:16:03]: your spell
+Pablo [1:16:04]: for example
+Pablo [1:16:05]: i decided
+Pablo [1:16:07]: let's
+Pablo [1:16:08]: add a line
+Pablo [1:16:10]: and
+Pablo [1:16:11]: just use
+Pablo [1:16:12]: this uh
+Pablo [1:16:14]: this comma at
+Pablo [1:16:15]: m
+Pablo [1:16:16]: because
+Pablo [1:16:17]: it can post
+Pablo [1:16:18]: a new lab
+Pablo [1:16:18]: or
+Pablo [1:16:21]: and also we can
+Pablo [1:16:22]: use file
+Pablo [1:16:33]: here
+Pablo [1:16:44]: using
+Pablo [1:16:45]: the value
+Pablo [1:16:56]: test
+Pablo [1:17:19]: finally
+Pablo [1:17:20]: if you want
+Pablo [1:17:21]: to
+Pablo [1:17:22]: treat
+Pablo [1:17:23]: what is
+Pablo [1:17:24]: written in
+Pablo [1:17:24]: this file
+Pablo [1:17:25]: name
+Pablo [1:17:26]: in
+Pablo [1:17:27]: the spell
+Pablo [1:17:28]: you can just try
+Pablo [1:17:30]: file
+Pablo [1:17:31]: read
+Pablo [1:17:34]: and
+Pablo [1:17:35]: so
+Pablo [1:17:35]: cute
+Pablo [1:17:37]: when
+Pablo [1:17:38]: you are using this
+Pablo [1:17:40]: uh
+Pablo [1:17:41]: after
+Pablo [1:17:45]: you finish implementation
+Pablo [1:17:46]: or
+Pablo [1:17:47]: just
+Pablo [1:17:51]: you just finish your initial project
+Pablo [1:17:58]: you need to always you need to always remember to close the valve
+Pablo [1:17:59]: here
+Pablo [1:18:00]: uh
+Pablo [1:18:07]: i just first try to treat
+Pablo [1:18:10]: the content in this file
+Pablo [1:18:11]: and
+Pablo [1:18:19]: then uh if this is successfully then we will close
+Pablo [1:18:23]: so finally it give you the uh
+Pablo [1:18:30]: the sentence that i added in the previous cell let's add a line to the file
+Pablo [1:18:37]: so for the next
+Pablo [1:18:45]: part we we can just try another different
+Pablo [1:18:46]: mode
+Pablo [1:18:51]: the mode of a to append some text
+Pablo [1:19:04]: so here we can use the w parameter and it will override
+Pablo [1:19:05]: the old file
+Pablo [1:19:06]: here
+Pablo [1:19:10]: so for example if i just
+Pablo [1:19:14]: uh if i if i just read the file
+Pablo [1:19:22]: create a file for using the appendix model
+Pablo [1:19:25]: i use it
+Pablo [1:19:30]: for pen and also we can write a sample
+Pablo [1:19:33]: let's add a second line to that file
+Pablo [1:19:44]: so here uh so here basically what we want is that uh we have the first lot
+Pablo [1:19:47]: and also we just
+Pablo [1:19:48]: have
+Pablo [1:19:52]: uh but here
+Pablo [1:19:54]: for
+Pablo [1:19:54]: this
+Pablo [1:20:00]: and this object is not ref
+Pablo [1:20:01]: ocus
+Pablo [1:20:02]: so
+Pablo [1:20:03]: it
+Pablo [1:20:04]: is
+Pablo [1:20:36]: ult
+Pablo [1:20:37]: imately
+Pablo [1:20:46]: how do
+Pablo [1:20:47]: we
+Pablo [1:20:49]: just
+Pablo [1:20:51]: read the
+Pablo [1:20:51]: power line
+Pablo [1:20:52]: by line
+Pablo [1:20:54]: so for
+Pablo [1:20:54]: example
+Pablo [1:20:57]: if you just open
+Pablo [1:20:58]: this
+Pablo [1:21:06]: using
+Pablo [1:21:07]: the file
+Pablo [1:21:08]: of
+Pablo [1:21:12]: inter
+Pablo [1:21:13]: val
+Pablo [1:21:13]: object
+Pablo [1:21:14]: that
+Pablo [1:21:15]: has
+Pablo [1:21:18]: for example
+Pablo [1:21:24]: here
+Pablo [1:21:25]: uh
+Pablo [1:21:26]: let's add
+Pablo [1:21:27]: a line
+Pablo [1:21:27]: as well
+Pablo [1:21:28]: and let's add
+Pablo [1:21:29]: a second
+Pablo [1:21:30]: mic to
+Pablo [1:21:31]: zip file
+Pablo [1:21:34]: so
+Pablo [1:21:36]: this you are into
+Pablo [1:21:38]: the object and you
+Pablo [1:21:39]: can just print
+Pablo [1:21:40]: it uh
+Pablo [1:21:41]: print
+Pablo [1:21:42]: ed
+Pablo [1:21:43]: in the order
+Pablo [1:21:43]: here
+Pablo [1:21:58]: so
+Pablo [1:22:00]: here
+Pablo [1:22:01]: uh
+Pablo [1:22:06]: so here
+Pablo [1:22:23]: how can
+Pablo [1:22:24]: you read this
+Pablo [1:22:26]: block
+Pablo [1:22:32]: and
+Pablo [1:22:34]: file
+Pablo [1:22:37]: and
+Pablo [1:22:38]: if you want
+Pablo [1:22:46]: you
+Pablo [1:22:47]: are already
+Pablo [1:22:51]: file
+Pablo [1:22:52]: so this is
+Pablo [1:22:58]: i
+Pablo [1:23:09]: you
+Pablo [1:23:10]: can just
+Pablo [1:23:11]: recite
+Pablo [1:23:12]: the cursor
+Pablo [1:23:14]: using file dot sixty
+Pablo [1:23:18]: so the zero means the beginning of the files
+Pablo [1:23:18]: here
+Pablo [1:23:26]: so here between this case file of c zero
+Pablo [1:23:31]: then you just go back to the mini and then
+Pablo [1:23:37]: uh we can just we can just print the file read the line
+Pablo [1:23:43]: and it will give you the same as the previous cell
+Pablo [1:23:48]: so finally
+Pablo [1:23:56]: uh
+Pablo [1:23:57]: i would
+Pablo [1:23:58]: recommend
+Pablo [1:24:01]: to just close the file
+Pablo [1:24:02]: when you finish
+Pablo [1:24:20]: uh so next for the right mode so we can use writing to override the file so if the file exists
+Pablo [1:24:23]: it is
+Pablo [1:24:24]: writing
+Pablo [1:24:25]: and it is
+Pablo [1:24:26]: given
+Pablo [1:24:36]: this one is quick
+Pablo [1:24:42]: but dangerous
+Pablo [1:24:43]: if you
+Pablo [1:24:44]: want to
+Pablo [1:24:45]: only
+Pablo [1:24:47]: one
+Pablo [1:24:49]: hundred
+Pablo [1:24:51]: so here
+Pablo [1:25:02]: uh so here for example if we just open this ulla u text file
+Pablo [1:25:03]: with
+Pablo [1:25:04]: the right
+Pablo [1:25:10]: we have
+Pablo [1:25:11]: already
+Pablo [1:25:24]: used
+Pablo [1:25:41]: in
+Pablo [1:25:42]: the right
+Pablo [1:25:47]: and
+Pablo [1:25:48]: if
+Pablo [1:25:49]: we want to
+Pablo [1:25:50]: check the
+Pablo [1:25:51]: latest
+Pablo [1:25:52]: version
+Pablo [1:25:53]: then
+Pablo [1:25:54]: we can just
+Pablo [1:25:56]: open
+Pablo [1:25:58]: this file with the reading mode here
+Pablo [1:26:00]: and just
+Pablo [1:26:01]: click file
+Pablo [1:26:04]: dot with l and it will finally
+Pablo [1:26:06]: give the
+Pablo [1:26:07]: current uh
+Pablo [1:26:08]: content
+Pablo [1:26:09]: in
+Pablo [1:26:10]: the text
+Pablo [1:26:10]: file
+Pablo [1:26:15]: so here
+Pablo [1:26:16]: uh
+Pablo [1:26:22]: either
+Pablo [1:26:24]: because
+Pablo [1:26:25]: since we
+Pablo [1:26:26]: have already
+Pablo [1:26:27]: used w
+Pablo [1:26:28]: for nova
+Pablo [1:26:29]: right
+Pablo [1:26:30]: but
+Pablo [1:26:31]: finally we get
+Pablo [1:26:34]: previous
+Pablo [1:26:35]: we have
+Pablo [1:26:36]: already
+Pablo [1:26:43]: presentation
+Pablo [1:26:46]: you
+Pablo [1:26:51]: have already seen that we just open file with
+Them [1:26:51]: elevated
+Them [1:26:53]: cell manipulation
+Them [1:26:54]: after
+Them [1:26:54]: that
+Them [1:27:11]: you
+Them [1:27:12]: shall know that
+Them [1:27:20]: for
+Them [1:27:21]: example
+Them [1:27:30]: so this
+Them [1:27:35]: right
+Them [1:27:36]: now
+Them [1:28:08]: we
+Them [1:28:12]: can
+Them [1:28:26]: so
+Them [1:28:27]: for example
+Them [1:28:32]: open
+Them [1:28:32]: the file
+Them [1:28:39]: using
+Them [1:28:40]: file of
+Them [1:28:42]: cloud
+Them [1:28:43]: of drug
+Them [1:28:45]: s and here
+Them [1:28:46]: uh so
+Them [1:28:49]: after you successfully run this line
+Them [1:28:51]: the u
+Them [1:28:53]: at the end
+Them [1:28:53]: of the file
+Them [1:28:54]: so
+Them [1:29:01]: she
+Them [1:29:03]: in this
+Them [1:29:03]: case
+Them [1:29:04]: we just need
+Them [1:29:05]: to use
+Them [1:29:08]: zero
+Them [1:29:09]: and then
+Them [1:29:10]: it will
+Them [1:29:11]: post a point
+Them [1:29:12]: er
+Them [1:29:18]: after
+Them [1:29:19]: that
+Them [1:29:39]: just remember to
+Them [1:29:40]: close her
+Them [1:29:41]: up
+Them [1:29:49]: here
+Them [1:29:50]: there is
+Them [1:29:52]: some
+Them [1:29:53]: subtle
+Them [1:29:56]: clos
+Them [1:29:56]: ing a file
+Them [1:29:58]: and
+Them [1:29:59]: waiting
+Them [1:30:00]: a verb
+Them [1:30:01]: for
+Them [1:30:02]: our object
+Them [1:30:03]: in our
+Them [1:30:04]: environment
+Them [1:30:10]: so here closing the file
+Them [1:30:15]: we just release
+Them [1:30:20]: so if
+Them [1:30:21]: you are not
+Them [1:30:22]: remove
+Them [1:30:23]: anything
+Them [1:30:24]: from
+Them [1:30:25]: your
+Them [1:30:26]: space
+Them [1:30:27]: but
+Them [1:30:28]: for delay
+Them [1:30:30]: for the
+Them [1:30:31]: lazy
+Them [1:30:32]: variable
+Them [1:30:33]: like ur
+Them [1:30:34]: u
+Them [1:30:35]: delay
+Them [1:30:36]: functions
+Them [1:30:37]: it
+Them [1:30:38]: will remove the
+Them [1:30:39]: name from your
+Them [1:30:40]: name
+Them [1:30:50]: um but here still deleting using some delay
+Them [1:30:51]: functions
+Them [1:30:55]: and also does not delay
+Them [1:30:59]: so just
+Them [1:31:00]: keep
+Them [1:31:01]: your ideas
+Pablo [1:31:07]: here
+Pablo [1:31:08]: for example
+Pablo [1:31:15]: we just take some check what we have in our space
+Pablo [1:31:20]: so
+Pablo [1:31:23]: for example
+Pablo [1:31:27]: we have this file file
+Pablo [1:31:30]: name added file that we have created before
+Pablo [1:31:34]: and we can check whether the file
+Pablo [1:31:41]: so
+Pablo [1:31:42]: we just
+Pablo [1:31:45]: take
+Pablo [1:31:46]: the
+Pablo [1:31:47]: different
+Pablo [1:31:48]: and we will
+Pablo [1:31:49]: and
+Pablo [1:31:52]: if you want to delay
+Pablo [1:31:53]: this found
+Pablo [1:31:54]: name from our
+Pablo [1:31:57]: use
+Pablo [1:31:58]: funct
+Pablo [1:31:59]: ions
+Pablo [1:32:00]: and
+Pablo [1:32:00]: followed by the
+Pablo [1:32:02]: objects that you
+Pablo [1:32:02]: want
+Pablo [1:32:04]: and
+Pablo [1:32:05]: file
+Pablo [1:32:06]: uh and after that
+Pablo [1:32:09]: you
+Pablo [1:32:10]: will
+Pablo [1:32:11]: end up
+Pablo [1:32:14]: detect you will see that
+Pablo [1:32:21]: and
+Pablo [1:32:22]: you also
+Pablo [1:32:30]: can
+Pablo [1:32:31]: not manage
+Pablo [1:32:42]: the
+Pablo [1:32:43]: help of
+Pablo [1:32:49]: this
+Pablo [1:32:50]: object
+Pablo [1:32:51]: uh
+Pablo [1:32:53]: intentionally
+Pablo [1:32:55]: so
+Pablo [1:32:57]: for for this type of information
+Pablo [1:32:58]: i would
+Pablo [1:33:00]: suggest that suggest that you
+Pablo [1:33:01]: can just
+Pablo [1:33:08]: add some statement for example if the vowel is being
+Pablo [1:33:10]: just
+Pablo [1:33:16]: so
+Pablo [1:33:20]: the next so the next one
+Pablo [1:33:25]: that's the manager so i think this with comments
+Pablo [1:33:29]: for the context manager is more frequently used
+Pablo [1:33:31]: when we are importing
+Pablo [1:33:32]: some
+Pablo [1:33:36]: data set from the website or
+Pablo [1:33:38]: the malware local environment
+Pablo [1:33:43]: so here
+Pablo [1:33:52]: create
+Pablo [1:33:52]: a context manager
+Pablo [1:33:56]: so for example with over
+Pablo [1:33:57]: some
+Pablo [1:33:58]: cloud
+Pablo [1:33:59]: of test
+Pablo [1:34:09]: so the
+Pablo [1:34:12]: benefits of the argument is that people are aut
+Pablo [1:34:13]: omatic
+Pablo [1:34:14]: ally
+Pablo [1:34:16]: close this over
+Pablo [1:34:18]: file
+Pablo [1:34:20]: created by the
+Pablo [1:34:21]: open argument
+Pablo [1:34:26]: and also it will
+Pablo [1:34:32]: have some less resources leakage for the large data
+Pablo [1:34:33]: set
+Pablo [1:34:36]: and so here maybe
+Pablo [1:34:37]: we can
+Pablo [1:34:38]: find
+Pablo [1:34:44]: this uh using the waste function
+Pablo [1:34:50]: with statement just put the open argument in the previous cell
+Pablo [1:34:55]: as some name of the object
+Pablo [1:34:55]: file
+Pablo [1:34:56]: and you can
+Pablo [1:34:58]: do whatever
+Pablo [1:34:59]: for this file
+Pablo [1:35:00]: uh for this
+Pablo [1:35:00]: file
+Pablo [1:35:01]: like we can
+Pablo [1:35:02]: add another
+Pablo [1:35:03]: line
+Pablo [1:35:11]: of
+Pablo [1:35:12]: the
+Pablo [1:35:15]: uh
+Pablo [1:35:16]: we can just
+Pablo [1:35:16]: create this
+Pablo [1:35:17]: file
+Pablo [1:35:18]: using something
+Pablo [1:35:18]: files
+Pablo [1:35:19]: on
+Pablo [1:35:21]: so finally
+Pablo [1:35:22]: this will
+Pablo [1:35:25]: give you give us all the three lines
+Pablo [1:35:26]: in this
+Pablo [1:35:27]: test document
+Pablo [1:35:40]: here if you just create only only file it will give you
+Pablo [1:35:41]: some basic information
+Pablo [1:35:43]: of
+Pablo [1:35:46]: this
+Pablo [1:35:47]: ultra io
+Pablo [1:35:48]: object
+Pablo [1:35:49]: so it will give
+Pablo [1:35:50]: you
+Pablo [1:35:52]: that
+Pablo [1:35:59]: so
+Pablo [1:36:00]: to check whether
+Pablo [1:36:01]: we have
+Pablo [1:36:06]: to confirm or to check using
+Pablo [1:36:08]: this statement
+Pablo [1:36:10]: it will close the file
+Pablo [1:36:11]: automatically
+Pablo [1:36:16]: uh we can just use
+Pablo [1:36:18]: right argument
+Pablo [1:36:20]: outside
+Pablo [1:36:34]: of
+Pablo [1:36:34]: the bible alteration
+Pablo [1:36:37]: because
+Pablo [1:36:38]: using
+Pablo [1:36:39]: this
+Pablo [1:36:42]: after you
+Pablo [1:36:43]: execute the cell
+Pablo [1:36:46]: you have already closed the fil
+Pablo [1:36:47]: es
+Pablo [1:36:49]: you have already closed this file
+Pablo [1:36:51]: after you run this cell
+Pablo [1:36:52]: so
+Pablo [1:36:54]: you
+Pablo [1:36:58]: just
+Pablo [1:36:59]: have some
+Pablo [1:37:00]: question
+Pablo [1:37:01]: from
+Pablo [1:37:02]: that has
+Pablo [1:37:03]: already been
+Pablo [1:37:04]: that has already
+Pablo [1:37:05]: been
+Pablo [1:37:06]: solved
+Pablo [1:37:24]: in the previous in the previous uh examples that we just open
+Pablo [1:37:24]: file
+Pablo [1:37:27]: that
+Pablo [1:37:28]: is not really
+Pablo [1:37:36]: using
+Pablo [1:37:37]: the path of
+Pablo [1:37:37]: grace
+Pablo [1:37:38]: it will also
+Pablo [1:37:40]: return
+Pablo [1:37:42]: the arrow message
+Pablo [1:37:42]: like this
+Pablo [1:37:43]: is not readable
+Pablo [1:37:44]: here
+Pablo [1:37:49]: so inside this vcr memory
+Pablo [1:37:51]: as the previous
+Pablo [1:37:53]: example and using
+Pablo [1:37:54]: the
+Pablo [1:37:58]: statement
+Pablo [1:38:01]: file
+Pablo [1:38:02]: automatically
+Pablo [1:38:07]: so
+Pablo [1:38:14]: uh so for the for the remaining of
+Pablo [1:38:15]: this discuss
+Pablo [1:38:16]: ion
+Pablo [1:38:19]: i will just present
+Pablo [1:38:21]: some
+Pablo [1:38:21]: examples
+Pablo [1:38:23]: of
+Pablo [1:38:24]: how to
+Pablo [1:38:26]: use
+Pablo [1:38:27]: a file
+Pablo [1:38:41]: uh so if the in some project or false it is very common to
+Pablo [1:38:42]: what you want
+Pablo [1:38:42]: to store
+Pablo [1:38:43]: some of the small bit
+Pablo [1:38:44]: of the data
+Pablo [1:38:53]: so here
+Pablo [1:39:02]: you
+Pablo [1:39:02]: see something
+Pablo [1:39:06]: like
+Pablo [1:39:07]: post
+Pablo [1:39:08]: al rest
+Pablo [1:39:09]: or also
+Pablo [1:39:13]: some csv form
+Pablo [1:39:13]: ats
+Pablo [1:39:14]: but for a small
+Pablo [1:39:14]: experiment
+Pablo [1:39:16]: we can
+Pablo [1:39:17]: just
+Pablo [1:39:18]: go over

@@ -1,0 +1,33 @@
+2nd Session- Web scraping task
+
+For this assignment, you will web scrape videos from two YouTube channels.
+
+For guidance, please refer to the video and pdf tutorials on the website of this Session.
+
+You will scrape both featured & recommended videos from The Daily Show and Fox News.
+
+The Daily Show is an Emmy and Peabody Award-winning program that looks at the day's top headlines through a sharp, reality-based lens. It focuses on news, but in the form of comedy, with news satire. It's stereotypical audience is liberal and educated. Fox News is the most watched cable news network in the U.S. It has been accused of biased reporting, and promoting the Republican Party and conservative causes. The Daily Show has long been a vocal critic and has cited the channel as detrimental to the integrity of news overall. Let us have a look at the videos the audiences of each channel are exposed to.
+
+Find the link to the channels below:
+
+The Daily Show with Trevor Noah - https://www.youtube.com/channel/UCwWhs_6x42TyRM4Wstoq8HA/videos
+
+Fox News Channel - https://www.youtube.com/user/FoxNewsChannel/videos
+
+Links to an external site.
+
+Instructions for assignment submission:
+
+You are required to upload three products. The grade will consider all three submissions.
+
+    Take at least 3 screenshots of different stages of your web scraping progress. Upload all images. Screenshots (taken on Mac or Windows) will be in image format (extensions like .JPG, .JPEG, .PNG, .TIFF, .GIF, .BMP, .PDF, etc).
+    Upload the spreadsheet file for your first YouTube channel. Spreadsheets will have extensions like .csv (most generic), .xls, .xlsx, .numbers, etc.
+    Upload the spreadsheet file for your second YouTube channel.
+
+All files must be named with your >FirstName_LastName_product<. For example >Martin_Hilbert_screenshot1.jpg< or >Martin_Hilbert_channelXYZ.csv<
+
+In total, you will upload at least 5 files (3 screenshots + 2 spreadsheets)
+
+Ready?
+
+2nd Session- Web scraping submission

@@ -1,0 +1,1122 @@
+Pablo [0:09]: basic visualization programming as well as like the homework project
+Pablo [0:14]: and yeah i'm your ta my name is rin shin
+Pablo [0:19]: and the best way to reach me is through emails and then my office hours are
+Pablo [0:21]: one space on zoom
+Pablo [0:28]: try not to message me through canvas because i don't usually check there so email is the best way
+Pablo [0:32]: yeah okay so the core idea
+Pablo [0:55]: of this class is that how can we combine data and visual elements to either discover a finding or try to share one with others so hopefully by the end of this class most people would be able to know the founders designing visualization as well as how powerful a data visualization can be when you have
+Pablo [0:57]: done with careful design choices
+Pablo [1:09]: the typical workflow that you're going to go through in this class is you're going to have some raw data where you may or may not do some additional data analysis
+Pablo [1:24]: and that would change the format to json there was csv files and then yeah you might also do additional analysis just to make sure you were able to discover insightful
+Pablo [1:31]: and then after we got the process data how we go from there to the visualization
+Pablo [1:44]: in this class we're going to be two ways the one is we're going to be using some platforms like observable notebook as you're going to see later or the other one was we asked you to build a web app application
+Pablo [1:52]: using project but you don't have church here worry about that because
+Pablo [1:54]: hungry and workshops
+Pablo [1:57]: so we're going to
+Pablo [1:58]: go run that later
+Pablo [2:04]: the outline today that we're going to do is we're just going to do like a quick recap
+Pablo [2:08]: on top ip what's observable
+Pablo [2:28]: then we're going to take trading to the basic introduction to html css javascript how is deep read and then what is homework what's my final project and i'll kind of show you what the trivia is using from last year homework project required
+Pablo [2:35]: before i'm going to jump into gita has anyone never used github before
+Pablo [2:40]: you have never ever used it
+Pablo [2:46]: has never ever used gita
+Pablo [2:52]: sorry
+Pablo [2:54]: okay
+Pablo [2:58]: take it as most people have used key topic form so i'm just going to
+Pablo [2:59]: go through this really
+Pablo [2:59]: fast
+Pablo [3:08]: if you don't know what you have is basically a retro version control key is the version control system that helps you manage the g
+Pablo [3:11]: pus that you made to your projects and tab is one of the
+Pablo [3:11]: platform for that
+Pablo [3:17]: yeah
+Pablo [3:23]: in this class you have to use git to submit your assignments in final project
+Pablo [3:25]: i'm just going to leave here
+Pablo [3:28]: as some sort of references that you can check offline
+Pablo [3:31]: so these are like basic setup information
+Pablo [3:36]: is pretty much all of the comments you're going to be using
+Pablo [3:37]: in this class
+Pablo [3:38]: it's not very messy
+Pablo [3:49]: these are mostly built on the kind of like the idea that you would be using terminals but then if you don't like terminals there's also so that would
+Pablo [3:50]: make your life much easier
+Pablo [3:54]: and then for ide
+Pablo [3:55]: as cod
+Pablo [3:57]: ex called the pycharm whichever
+Pablo [3:58]: field i get
+Pablo [3:59]: the last
+Pablo [4:00]: thing i want to mention for this
+Pablo [4:01]: key top section
+Pablo [4:08]: is there's a gtop copilot and then they have education plan so as long as you can prove your user
+Pablo [4:09]: data
+Pablo [4:10]: by uploading
+Pablo [4:11]: your
+Pablo [4:17]: get you use copilot role for free that means you get to have more models
+Pablo [4:20]: more llm models
+Pablo [4:21]: as a statute
+Pablo [4:22]: helping people a lot
+Pablo [4:22]: too
+Pablo [4:25]: so that's just something so freya
+Pablo [4:26]: so that'll be all
+Pablo [4:28]: about github
+Pablo [4:31]: for observable
+Pablo [4:35]: has anyone ever used observable
+Pablo [4:36]: okay
+Pablo [4:39]: has anyone ever used jupyter notebook
+Pablo [4:43]: great so jupiter notebook
+Pablo [4:45]: is observed was basically jup
+Pablo [4:47]: iter but it was for javascript
+Pablo [4:52]: i will be showing some example later
+Pablo [4:57]: but basically it looks like a web page but it's actually a combination of the cells
+Pablo [5:09]: including visualization
+Pablo [5:14]: and then
+Pablo [5:17]: you want to go be asking you to use observable
+Pablo [5:30]: i just want to have
+Pablo [5:31]: a question
+Pablo [5:34]: how many of you have never
+Pablo [5:36]: used javascript
+Pablo [5:38]: but you don't know javascript
+Pablo [5:39]: that
+Pablo [5:42]: i
+Pablo [5:48]: 've
+Pablo [5:53]: just
+Pablo [5:54]: kind of do like a
+Pablo [5:58]: observ
+Pablo [6:00]: able model it's
+Pablo [6:00]: something about a
+Pablo [6:01]: different factor
+Pablo [6:04]: notebook is inhibitor notebook you do have to
+Pablo [6:05]: intentionally wrong
+Pablo [6:06]: certain cells
+Pablo [6:08]: and then the code was getting extended
+Pablo [6:16]: and then whenever the cell updates
+Pablo [6:17]: on the
+Pablo [6:22]: observable model they have two types of
+Pablo [6:22]: cells
+Pablo [6:23]: there's
+Pablo [6:24]: expressions
+Pablo [6:25]: and
+Pablo [6:26]: the
+Pablo [6:29]: first two you're seeing here these are expressions
+Pablo [6:30]: they're kind of like
+Pablo [6:31]: just online
+Pablo [6:33]: and then if you want to
+Pablo [6:34]: write the multiple
+Pablo [6:35]: lines of code
+Pablo [6:36]: you
+Pablo [6:37]: have
+Pablo [6:38]: early practice
+Pablo [6:39]: that's
+Pablo [6:40]: where we are
+Pablo [6:41]: how the block
+Pablo [6:43]: we
+Pablo [6:44]: do here
+Pablo [6:45]: is that we have
+Pablo [6:46]: this
+Pablo [6:53]: express
+Pablo [6:54]: ion
+Pablo [7:35]: of
+Pablo [7:38]: rollers
+Pablo [7:39]: and then if you go through
+Pablo [7:42]: aut
+Pablo [7:42]: o
+Pablo [7:45]: is going
+Pablo [7:46]: to be very
+Pablo [7:49]: all of
+Pablo [7:50]: the packaging
+Pablo [8:09]: and
+Pablo [8:12]: then for the drama screen ps six conventions
+Pablo [8:15]: that was where there's like two different type of
+Pablo [8:16]: options
+Pablo [8:19]: we have
+Pablo [8:23]: the normal function that everyone should be quite familiar with
+Pablo [8:26]: then there's also arrow function
+Pablo [8:31]: which what it does was just more simplified syntax
+Pablo [8:33]: like a single
+Pablo [8:33]: function
+Pablo [8:45]: like the regular function so this is just something i think you should have the link to this notebook on the slide if you're not familiar with this
+Pablo [9:01]: and then the last thing i want to mention for javascript
+Pablo [9:10]: so in javascript there used to be wireless inconsistent
+Pablo [9:21]: var was already used anymore people now use blood work where the only difference was far as the global
+Pablo [9:21]: scope
+Pablo [9:29]: and then i would recommend you guys just do this when it comes then because that's easier for you to debug something happens
+Pablo [9:36]: and the last thing i want to show was the developer tools
+Pablo [9:51]: in javascript something a little bit different was usually when we use print in python to debug the equivalent of javascript is we use a lot
+Pablo [9:55]: and then how you use console log was where you can go
+Pablo [9:56]: to
+Pablo [10:02]: developers and then there's
+Pablo [10:05]: also a shortcut
+Pablo [10:09]: and what will bring that to you would be like
+Pablo [10:11]: you have to use things
+Pablo [10:14]: elements console sources network
+Pablo [10:15]: performances
+Pablo [10:18]: we're going to go through these calculators
+Pablo [10:20]: but usually this one
+Pablo [10:22]: and then
+Pablo [10:23]: you get
+Pablo [10:26]: to see here console are printing
+Pablo [10:27]: hello
+Pablo [10:28]: and it will value
+Pablo [10:32]: that
+Pablo [10:33]: 's kind of like how you can
+Pablo [10:34]: check
+Pablo [10:36]: how everything
+Pablo [10:36]: works
+Pablo [10:38]: seventeen
+Pablo [10:39]: again
+Pablo [10:43]: and then this will get updated
+Pablo [10:54]: so now i'm just going to go into html
+Pablo [10:54]: screens
+Pablo [10:59]: real quick questions
+Pablo [11:04]: has anyone ever done d three or any type of graphic stuff
+Pablo [11:05]: before
+Pablo [11:08]: not a
+Pablo [11:08]: lot
+Pablo [11:09]: thank you
+Pablo [11:09]: guys
+Pablo [11:19]: so i'm just going to quickly go over what's their relationship html is basically these are all commonly used in all of the web pages that you have seen
+Pablo [11:24]: what html does it defines the whole structure
+Pablo [11:26]: of your web page how certain paragraph
+Pablo [11:30]: ordered and then they have different type of the elements
+Pablo [11:40]: and then whereas css was based off the skeleton or the structure that you have built you have to try to idolize it like that
+Pablo [11:41]: i'm going to keep this like a collar
+Pablo [11:45]: or i'm going to change the opacity that kind of stuff
+Pablo [11:47]: and
+Pablo [11:50]: when you only have html and css
+Pablo [11:52]: i
+Pablo [11:56]: want to put it more simply so i would say most of the time they would just stay more static
+Pablo [11:59]: than when you want to make it more dynamic
+Pablo [12:12]: where you want to change the website behavior condition usually you have to rely on javascript css does give you some sample control but advanced full control
+Pablo [12:13]: you do need to build jav
+Pablo [12:20]: ascript so that's their whole relationships and then whenever you see any single visualization on the web page
+Pablo [12:30]: what base visualization is just a collection of html graphic elements that are styled through css and javascript
+Pablo [12:38]: so in html graphic elements they're generally two ones two different types one is canvas
+Pablo [12:44]: which is html elements but it was for pixelated graphics
+Pablo [12:46]: so here's
+Pablo [12:52]: explanation for pixel reagenting vectors that you can see the difference on the left and right
+Pablo [13:01]: for canvas elements you do have to use javascript to directly draw open graphics
+Pablo [13:06]: and then you have to draw everything that amends and then they would have render it
+Pablo [13:07]: faster performances
+Pablo [13:18]: but we don't really have to use canvas element in this class you usually only need to think about whether you should use templates when you have too many data points
+Pablo [13:30]: that's kind of the only time where it's kind of like when you have too many elements you need to draw your web page doesn't reload fast enough that's the only time you would have think about whatever you need to
+Pablo [13:31]: have
+Pablo [13:35]: most of the time what we're dealing with in this class would be using
+Pablo [13:36]: svg
+Pablo [13:38]: that's correctorized graphics
+Pablo [13:42]: and the svg they have certain different graphical
+Pablo [13:47]: elements like circular rectangle and path elements that we were going to go into later
+Pablo [13:52]: and usually
+Pablo [13:57]: when you have smaller size of these svg elements
+Pablo [14:01]: it would render much more faster
+Pablo [14:03]: and then it's much more free here
+Pablo [14:11]: that's kind of the composition where the gps
+Pablo [14:17]: so simple example here whenever you see a visualization on the web browser for example
+Pablo [14:18]: if you see
+Pablo [14:19]: a circle
+Pablo [14:21]: under
+Pablo [14:23]: lying code that's doing the work
+Pablo [14:24]: was that
+Pablo [14:26]: you have to functionally
+Pablo [14:44]: what you're seeing on the left was the general code and then you solved that we have this svg container that defines what's the size of these elements so the number you see
+Pablo [14:45]: pixels
+Pablo [14:48]: and then inside it we just put
+Pablo [14:52]: and that's how that circle elements
+Pablo [14:55]: that's the circle elements you see on the right
+Pablo [14:58]: and
+Pablo [14:59]: okay
+Pablo [15:00]: so
+Pablo [15:08]: circle elements usually comes with like six and cy properties that's how you specify
+Pablo [15:10]: the precision of that circle
+Pablo [15:14]: where it was referenced
+Pablo [15:26]: and then you usually also have to define what's like the media which in this case is pixels finally you would assign what's like the color that you want
+Pablo [15:26]: to
+Pablo [15:31]: fill the circle so that's kind of like the whole idea of
+Pablo [15:33]: svg elements
+Pablo [15:38]: in terms of the screw pixels we just usually talk about
+Pablo [15:52]: this is kind of just an initial idea with oh this is like forty or zero the zero zero usually starts with the top left corner off your screen
+Pablo [15:55]: and then as it goes to the right
+Pablo [15:56]: or goes to the bottom
+Pablo [16:02]: it would just increasing the x and y value correspondingly so if you
+Pablo [16:05]: put like fifteen thousand
+Pablo [16:08]: lower
+Pablo [16:10]: price to the zero zero
+Pablo [16:11]: center
+Pablo [16:21]: so another variation for the rectangle if you see a rectangle on the web page instead what you're seeing here so we just have the rectangle element
+Pablo [16:23]: then
+Pablo [16:24]: we also
+Pablo [16:26]: have breakfast
+Pablo [16:46]: so what you're seeing here was operating mode instead of
+Pablo [16:51]: instead of radius what you need to define was the lift and height
+Pablo [16:58]: which is one hundred exopixels you still do the filling with the coral these are more easier ones
+Pablo [17:00]: they do ask you to define
+Pablo [17:02]: xy properties
+Pablo [17:15]: which is basically the cas and cytos here we didn't define it so that means it would default to zero zero in this case and then the rectangle we bound
+Pablo [17:16]: to
+Pablo [17:23]: it's basically defining at the top left corner that's where the rectangle
+Pablo [17:26]: so that's kind of the idea of that
+Pablo [17:29]: and then some people are seeing down here
+Pablo [17:37]: that's
+Pablo [17:38]: how you want to see
+Pablo [17:40]: where
+Pablo [17:41]: the alternative
+Pablo [17:55]: s
+Pablo [18:13]: here
+Pablo [18:14]: are
+Pablo [18:21]: spec
+Pablo [18:21]: ified
+Pablo [19:02]: yester
+Pablo [19:03]: day
+Pablo [19:23]: you
+Pablo [19:24]: can also specify
+Pablo [19:58]: and
+Pablo [20:02]: what we want to do is that we want to create free circles
+Pablo [20:03]: where
+Pablo [20:06]: their radius corresponds to each of the value
+Pablo [20:06]: s
+Pablo [20:13]: so then what we want we actually run is the free circles on the right
+Pablo [20:16]: and then how they look like in html
+Pablo [20:18]: which is looking at what you're seeing on the left
+Pablo [20:21]: where
+Pablo [20:23]: we have the radius
+Pablo [20:27]: the radius rather than correspond to each of the elements in the array
+Pablo [20:33]: and most of them stay the same you're seeing cx being different because we're shifting them
+Pablo [20:34]: so that they
+Pablo [20:35]: don't get overlapped
+Pablo [20:37]: on the screen of the right
+Pablo [20:41]: and so now you can think okay
+Pablo [20:43]: so that's like the whole idea
+Pablo [20:45]: i
+Pablo [20:46]: want to show
+Pablo [20:52]: so now whenever you see visualization like this this is actually just the svg elements
+Pablo [20:56]: what you can do is you can open a developer tools
+Pablo [21:00]: but here i'm going to show you like a shape
+Pablo [21:01]: on
+Pablo [21:02]: your web page
+Pablo [21:03]: you see a graphical element
+Pablo [21:05]: you can just right click
+Pablo [21:06]: and
+Pablo [21:07]: then do inspect
+Pablo [21:10]: and then supposed to
+Pablo [21:11]: lead you to
+Pablo [21:12]: where the
+Pablo [21:12]: l is
+Pablo [21:13]: so if i do
+Pablo [21:14]: it again
+Pablo [21:42]: so something that you really do with
+Pablo [21:45]: whenever you have certain elements
+Pablo [21:49]: they will actually show you where they are
+Pablo [21:50]: on the
+Pablo [21:51]: page
+Pablo [21:51]: all right
+Pablo [21:56]: so this is what that screen doing so you can see this is the svg container
+Pablo [22:02]: that is grouping it doesn't do anything
+Pablo [22:04]: just helps you organize everything
+Pablo [22:05]: so that it looks cool
+Pablo [22:07]: so
+Pablo [22:09]: other apples
+Pablo [22:10]: that's freaking out
+Pablo [22:13]: that's operating all of the circular elements you
+Pablo [22:13]: have
+Pablo [22:16]: and so this is the top part
+Pablo [22:18]: of the element tab
+Pablo [22:19]: is
+Pablo [22:20]: home for html
+Pablo [22:22]: on the bottom right
+Pablo [22:24]: here
+Pablo [22:26]: this is all about css styles
+Pablo [22:29]: so something you can do
+Pablo [22:30]: you can actually
+Pablo [22:31]: change it
+Pablo [22:36]: four years old for example i can change the background color
+Pablo [22:56]: so
+Pablo [22:58]: that's like
+Pablo [22:59]: a really easier
+Pablo [23:01]: way for you to check
+Pablo [23:04]: to try and play with
+Pablo [23:04]: different styles
+Pablo [23:15]: so as you just see earlier
+Pablo [23:18]: that's actually a lot of
+Pablo [23:22]: elements you see just to create one single mineralization
+Pablo [23:27]: so if you have really a lot of instances you have to plot
+Pablo [23:29]: then
+Pablo [23:40]: tedious work to do so this is where d three something for d three actually does with respect it allows you to manipulate or populate all these graphical elements in the after confession
+Pablo [23:44]: and then you can use e free
+Pablo [23:51]: you can use d three to specify a css and then html elements
+Pablo [23:58]: and it does use like a method using syntax that you're going to see later so usually different color does look a little bit
+Pablo [23:59]: complicated
+Pablo [24:06]: and then the cool thing about the d three was i also support function
+Pablo [24:10]: so before what you're seeing is
+Pablo [24:11]: that
+Pablo [24:18]: so like over here right
+Pablo [24:20]: now we're just putting forty
+Pablo [24:23]: and then these are directly translated
+Pablo [24:27]: when you're putting html
+Pablo [24:32]: and then so when you say you have values that's like one
+Pablo [24:34]: boolean you don't want direct
+Pablo [24:35]: ly
+Pablo [24:38]: overflow
+Pablo [24:47]: so if you also does is that they have this scale function that helps you to the lab they have value a range of value stat
+Pablo [24:49]: for your screen
+Pablo [24:49]: range
+Pablo [24:56]: and then i also provide like a basic interaction
+Pablo [24:56]: support
+Pablo [25:03]: so this is kind of like a general overview of what video does it's actually like a speaker of all these different libraries
+Pablo [25:12]: from the left to the right they do have support very basic data processing technique specifically for data analysis it's actually quite helpful
+Pablo [25:21]: then for certain visualization they have specific functions that just help you to calculate the
+Pablo [25:22]: whole much faster
+Pablo [25:27]: and then they also have different stylings
+Pablo [25:29]: and then also animation interactions
+Pablo [25:31]: they have fundamental
+Pablo [25:37]: so i guess the quick question would just be
+Pablo [25:49]: why are you even using dfrim this caused on the internet there's so many other commercial libraries that also pretty good like mega lies charges for example
+Pablo [25:56]: the reason we specifically ask you to use a famous class
+Pablo [26:03]: we want to kind of yeah our focus is on the data visualization design principle some gradual level
+Pablo [26:06]: and a lot of these commercial libraries
+Pablo [26:20]: they are good for very basic generalization types but then when you don't use customized tool a little bit better then it'll be really hard they're usually most important versus these
+Pablo [26:28]: so one example i want to quickly show you is that this is like
+Pablo [26:35]: a infographics what you're seeing here was that they're trying to show the popularity of representative artists
+Pablo [26:45]: from nineteen fifties to monuments so each color you're seeing here was representing referring to one artist
+Pablo [26:48]: and then they have these earmarks
+Pablo [26:57]: that are aligning with circular wiggling way and then for certain years they leave a mark
+Pablo [26:59]: that year
+Pablo [27:00]: and then what
+Pablo [27:02]: 's being each year
+Pablo [27:04]: what you can see with that
+Pablo [27:10]: they actually are ordering all of these artists based off bandwarranking so
+Pablo [27:14]: green
+Pablo [27:16]: one doesn't always face at the top
+Pablo [27:19]: you would actually fill the positions all the time
+Pablo [27:28]: so what this one is basically showing us that the green artist popular
+Pablo [27:32]: and then so you pretty much can only do this
+Pablo [27:37]: it's really hard to valid
+Pablo [27:45]: the other examples i want to share over here this is also done by what they're trying to show here was
+Pablo [27:55]: i think it was the pesticide sales across different crops so each spring you're seeing is one problem
+Pablo [28:02]: and then within each spirit you see all of these different squeeze circles
+Pablo [28:09]: each one represent a pesticide and then their size their size corresponding to how much sales they have
+Pablo [28:21]: and the color ones represent these are poisonous gray ones just being half the nine and the different colors just represent different categories
+Pablo [28:22]: of pestic
+Pablo [28:30]: ides so that's kind of like a really quick wafer then to show these complex information in a nutshell and that's also
+Pablo [28:32]: okay
+Pablo [28:39]: so going back to this very basic example when we try to do this again in green
+Pablo [28:50]: this was how it would look like so you would have just in your html you just keep your html
+Pablo [28:55]: in all our fingers draw a script called your
+Pablo [29:00]: sign that your time use data for the variable
+Pablo [29:01]: then
+Pablo [29:12]: so what's your name here with you are selecting an html element based off the identifier
+Pablo [29:20]: in this case with the container so that one goes to the svg and then you're selecting all of the circle elements
+Pablo [29:23]: where finest moments is empty selection
+Pablo [29:24]: and that's fine
+Pablo [29:29]: then you do the theta either the data code what that means
+Pablo [29:38]: is for all the current selections that i have i want my data to match with these
+Pablo [29:41]: elements
+Pablo [29:45]: that's where you actually create circles i would show a great application
+Pablo [29:47]: and then some column here
+Pablo [29:50]: all the specifications that we're seeing
+Pablo [29:51]: earlier
+Pablo [30:08]: so it's kind of like if you're svg here if you don't have id
+Pablo [30:10]: or even class
+Pablo [30:13]: you can definitely won't be able to find your
+Pablo [30:16]: svg outlets you do have to have some sort of
+Pablo [30:17]: identifier information
+Pablo [30:20]: and then you can then make one it doesn't have to be
+Pablo [30:20]: popular
+Pablo [30:31]: talk about this car real quick
+Pablo [30:33]: usually
+Pablo [30:38]: before you do any specifications you only just have four lines on
+Pablo [30:38]: the list
+Pablo [30:40]: what actually resulting in
+Pablo [30:43]: populated circles
+Pablo [30:44]: on the right
+Pablo [30:46]: and then you still won't be able to see
+Pablo [30:47]: anything
+Pablo [30:48]: because like i mentioned earlier
+Pablo [30:49]: circle does need to
+Pablo [30:50]: have
+Pablo [30:52]: some required properties
+Pablo [30:54]: to be visualized
+Pablo [30:56]: so actually see where it is
+Pablo [31:06]: kind of briefly talk about these so each one is like you're selecting the sd you're trying to find a
+Pablo [31:13]: proper element then this is where you actually populate data that join was actually doing that veterinary work
+Pablo [31:16]: and
+Pablo [31:18]: it's okay you don't remember each one
+Pablo [31:23]: you just need to know that four lines usually how we do the
+Pablo [31:24]: data findings
+Pablo [31:26]: and that
+Pablo [31:27]: 's how we usually
+Pablo [31:28]: populate
+Pablo [31:37]: so going back down to here
+Pablo [31:40]: want to talk a little bit more about
+Pablo [31:40]: these
+Pablo [31:42]: what you're seeing
+Pablo [31:43]: over
+Pablo [31:49]: so
+Pablo [31:50]: what you're seeing over here
+Pablo [31:53]: in day three you after you
+Pablo [31:58]: find your ads to the restaurant they're usually just two ways attributes for style
+Pablo [32:07]: style was specifically related to css styles and then the attribute which is kind of like what you see earlier
+Pablo [32:12]: where inside your circle elements you have like chcy
+Pablo [32:24]: so while we are doing in attributes for style they work the same the very first arguments always facing the name of the property
+Pablo [32:27]: the second argument always takes in the value
+Pablo [32:33]: so in this case it's like we're always assigning sixteen to perceived web property
+Pablo [32:36]: then the cx is a little bit different
+Pablo [32:39]: but in c we're doing this dynamic assignment
+Pablo [32:44]: what happens with engagery was
+Pablo [32:46]: that after you did the drawing
+Pablo [32:49]: everything happens in here
+Pablo [33:05]: they're going to be applied to each element in the array of map so what happens was that it would go through forty i'm going to do this i'm going to do esport for twenty i'm going to do n and the first parity
+Pablo [33:06]: i'm going to do that again
+Pablo [33:15]: when we're doing forty when we have these arrow function this is also like the default behavior
+Pablo [33:17]: for javascript functions
+Pablo [33:47]: the v would always refers to the value so in this case we'll be forty and then usually the second argument in the function was the index in that array so in this case the i would be zero forty and then this is how we do that shift horizontal shift you see earlier so when it becomes like a the next element we just want to be planting and then i will be one because that's the second element in the arr
+Pablo [33:48]: ay
+Pablo [33:52]: so that's basically how we do the vending assignments
+Pablo [33:56]: any other questions
+Pablo [34:10]: why do we want to represent it in a circle because the array rate is like forty twenty thirty right but then the surface area of the circle is this power square is not forgeable
+Pablo [34:11]: yeah
+Pablo [34:16]: so this is more like this is actually like a debasing of perception
+Pablo [34:25]: part so they are people to think with like when you just find it to radios you are exaggerating the impact that you're seeing
+Pablo [34:27]: because forty is like the square thing you talk about
+Pablo [34:30]: bigger than twenty and three
+Pablo [34:36]: so there's also people trying to do like they take the square root of that and assign it
+Pablo [34:37]: to
+Pablo [34:40]: so it's kind of like a trade off
+Pablo [34:43]: where i wouldn't say there's like a right wrong way to do it
+Pablo [34:52]: to different assignments in this table so i have definitely seen professionals just
+Pablo [34:58]: doing the radios and then there's also people take the square root of the value
+Pablo [35:07]: so papa and all these chunks
+Pablo [35:13]: what we're doing what do we eventually see would just be the same thing on the right
+Pablo [35:16]: obviously that hard for you
+Pablo [35:21]: okay
+Pablo [35:25]: so i don't really have too much time for this one this part is more advanced
+Pablo [35:26]: art
+Pablo [35:31]: so this goes into a little bit further in detail in d three
+Pablo [35:41]: which is like so when we have forty twenty thirty and then now we have a new array coming the whole data is going to be updated to thirty forty sixty and seventeen
+Pablo [35:52]: in d three what they actually do watch the element they just track the elements in the array where you could actually track it
+Pablo [36:04]: so what are we tracking was that comparative these two arrays they will track okay sixty and seventy are the new values are coming in
+Pablo [36:09]: forty and thirty they are still staying the array and then
+Pablo [36:12]: the twenty is now gone so
+Pablo [36:13]: they would actually
+Pablo [36:25]: tracking your data and categorize them into enter updates and exit and then you can do a finer control
+Pablo [36:27]: offline how these elements are supposed
+Pablo [36:28]: to be
+Pablo [36:32]: i will just show you
+Pablo [36:37]: this is also
+Pablo [36:39]: over here if you want to check it out
+Pablo [36:49]: so how you can actually track it let me just explain the code
+Pablo [36:49]: real quick
+Pablo [36:52]: i kind of divided
+Pablo [37:05]: you have to have this function that does the setup and then once you have defined your once you did the finding then you define this whole channel for the new elements that came in
+Pablo [37:08]: this is for the one that's staying
+Pablo [37:10]: this is for the one that's leaving
+Pablo [37:13]: so
+Pablo [37:19]: for the new elements vacuuming what we were just doing was like we're actually creating all svg elements
+Pablo [37:22]: and i did some animation control
+Pablo [37:28]: so if i type it here this is not empty array type twenty
+Pablo [37:32]: then you'll be seeing on the right over here
+Pablo [37:37]: then now if i add thirty to my array
+Pablo [37:39]: that means what do you
+Pablo [37:44]: say what happens is that you will see a teal circle really that comes up
+Pablo [37:52]: for twenty it will be considered as an update element so you see this one the first circle turning
+Pablo [38:10]: up
+Pablo [38:11]: and
+Pablo [38:12]: then also
+Pablo [38:18]: you
+Pablo [38:19]: can pop up
+Pablo [38:21]: then
+Pablo [38:23]: making
+Pablo [38:24]: it to
+Pablo [38:24]: others
+Pablo [38:38]: so
+Pablo [38:39]: this leads us up to
+Pablo [38:40]: you
+Pablo [38:42]: don't
+Pablo [38:43]: really need this
+Pablo [38:44]: but then
+Pablo [38:45]: knowing
+Pablo [38:46]: this
+Pablo [38:59]: so
+Pablo [39:00]: for all
+Pablo [39:01]: we show
+Pablo [39:02]: you
+Pablo [39:12]: we also
+Pablo [39:13]: have
+Pablo [39:25]: all of
+Pablo [39:26]: these resources
+Pablo [39:30]: basic
+Pablo [39:30]: introduction
+Pablo [39:31]: that you want to
+Pablo [39:32]: know
+Pablo [39:33]: someone
+Pablo [39:34]: who is
+Pablo [39:36]: asking
+Pablo [39:37]: to set up an observer
+Pablo [39:52]: looking at the data
+Pablo [39:55]: and
+Pablo [39:56]: think about
+Pablo [40:00]: so for
+Pablo [40:01]: example
+Pablo [40:03]: if i am looking at
+Pablo [40:06]: green gas emission
+Pablo [40:12]: across country space then i have to think about who's like the main contributor
+Pablo [40:28]: is developing countries are usually the main contributor to the green gas emission we want the data think about kind of questions you can ask and then you can answer those questions
+Pablo [40:30]: through data visualization
+Pablo [40:32]: and then go ahead
+Pablo [40:49]: i would recommend
+Pablo [40:52]: each team pick a unique data set
+Pablo [40:59]: and then usually no one really has choosing the same data set before
+Pablo [41:07]: but then if you're doing the same data station and you have very different valid time
+Pablo [41:14]: okay
+Pablo [41:21]: yeah we're going to talk about that real quick
+Pablo [41:32]: okay so back to homework one we do want to ask you to be like say these are the questions you ask
+Pablo [41:38]: this is what you think visualization can help you answer those questions and we want you to think about
+Pablo [41:43]: who would be done as any from these visualizations
+Pablo [41:44]: and then also
+Pablo [41:58]: and then these questions so for example in my green gas emission examples i could assume maybe environmental people would share about that these kind of caution would be something they're interested in and then you figure this can help
+Pablo [42:08]: them then we just ask you to do a very simple process maybe you need to do some processing and then maybe you just visualize it
+Pablo [42:10]: you can just read these through
+Pablo [42:11]: i'm not going to talk about all of them
+Pablo [42:12]: but
+Pablo [42:18]: you just need to be static and in this one you can use e three or observable plots
+Pablo [42:26]: i would also leave this introduction to you but i just want to mention that at the very bottom
+Pablo [42:31]: we do have an example network that you can trigger
+Pablo [42:44]: so over here what i'm showing is i do some process data processing function this one is me just using very basic if else for loop
+Pablo [42:47]: that's showing you how to do the grouping
+Pablo [42:56]: and then we have like a second function that's me doing the same thing but then i leverage the javascript building functions
+Pablo [43:07]: then finally we have this one that's again doing the same thing but i'm using the different processing function so you can see how the code that clinical really fast
+Pablo [43:15]: then i also provided an example of how do you do the freedom observable logo
+Pablo [43:17]: with documentations
+Pablo [43:21]: as well as an officer for both example
+Pablo [43:28]: so you can just check these to help you kind of understand all of these technical stuff
+Pablo [43:32]: for homework two and three
+Pablo [43:42]: let me go back here one or two we will be asking you again take another data set do a dashboard of three d print visualization
+Pablo [43:49]: this one only needs to be static then homo three would ask you to add interactivity and animation
+Pablo [43:52]: usually people build
+Pablo [44:06]: usually continue homework they just reuse the same data set like one or two some people did restart fresh you could do that you definitely hear this like one or two other stuff
+Pablo [44:24]: so in home one two these are all of the instructions again aa we do provide three different templates i have react templates vanilla javascript and a view you can pick whichever you feel like if you don't know which one you want to take there's also some paragraphs
+Pablo [44:28]: that can help you figure out what you might need then there's also requirements
+Pablo [44:33]: on the canvas you should be able to find the rubik's for home between homework three
+Pablo [44:34]: d
+Pablo [44:39]: the instruction is a little bit long but i do recommend everyone to just
+Pablo [44:41]: read through every part of it
+Pablo [44:44]: and then inside of each template
+Pablo [44:47]: i provided with employee data
+Pablo [44:53]: and there's also the source code where you get to see
+Pablo [44:57]: you get to see how everything was
+Pablo [44:59]: how do you do things
+Pablo [45:01]: application
+Pablo [45:12]: there's templates that you can look at and then how to use ui libraries and how do you set it up there's also instructions for
+Pablo [45:16]: that and then there's also explanation for each of the templates
+Pablo [45:21]: then going back to
+Pablo [45:35]: so for interface layout for homework and hardware free we're using this kind of like data exploration of paradigm which is overview first in detail second
+Pablo [45:42]: we would ask you to have for the free visualization that we created we want one of them to be an overview of the data
+Pablo [45:49]: and that there are going to be two detail views that helps you so overview helps you to find
+Pablo [45:55]: interest of the data groups and then you can further explore them in detail
+Pablo [45:57]: s
+Pablo [45:59]: this is not the actual
+Pablo [46:02]: you don't have to stick to this layout
+Pablo [46:14]: for example when you set up your template this is how it's going to look like and then you can base off how you feel like about your data set you can rearrange
+Pablo [46:15]: it in a different
+Pablo [46:16]: way
+Pablo [46:19]: i'll show you quick example
+Pablo [46:21]: from the previous class
+Pablo [46:24]: okay i'll just leave this one
+Pablo [46:31]: so this is from last year's homework free that was selected for the presentation so for homework
+Pablo [46:35]: free we would invite usually five to six people
+Pablo [46:40]: to come on to present their homework free and then they could get all this credit for
+Pablo [46:44]: that so this is from last year's one of the person that got invited
+Pablo [46:59]: you can see how he's doing like student academic performances where she puts these overview at the very top and then you can interact with one of the bands and then you get to explore more about
+Pablo [47:01]: the distribution of the
+Pablo [47:03]: grades across certain factors
+Pablo [47:05]: into two dw
+Pablo [47:06]: staff below
+Pablo [47:12]: then the auto symbols that we have this is two years ago i think
+Pablo [47:16]: this one is doing the data science salary
+Pablo [47:20]: so her overview with ella left that's showing the salary range
+Pablo [47:22]: across all of these different countries
+Pablo [47:27]: and then she has like two different type of representation
+Pablo [47:28]: go ahead
+Pablo [47:39]: and so we just invite certain people to come
+Pablo [47:46]: out using the visual so all of these assignments homeworks they're always
+Pablo [47:46]: trying to
+Pablo [47:58]: canc
+Pablo [47:59]: el
+Pablo [48:08]: so yeah question has also she has overview on the left and then she has
+Pablo [48:12]: i don't know if she loves people to take certain countries and then they get to
+Pablo [48:13]: explore everything
+Pablo [48:14]: on the right hand side
+Pablo [48:19]: and so that's kind of like how homophobia usually looks like
+Pablo [48:24]: some of the tips for developing your dashboard
+Pablo [48:27]: also log in and developer pools are really good
+Pablo [48:41]: and then some of these are just like debugging tips so before you actually try to do visualization it's really good to check what are your data is in your desired form ask for coming off what your smell looks like
+Pablo [48:46]: but those helps you people i a lot because a lot of students are coming asking questions
+Pablo [48:50]: about how their business is not working and it's usually their data
+Pablo [48:51]: it's not
+Pablo [49:03]: and then when you're doing the dashboard what i would recommend is for one make sure your html structure works as instances then you do the static version
+Pablo [49:06]: just kind of like you go step by step
+Pablo [49:12]: and eventually after the static one also looks good and operates finally for contract
+Pablo [49:20]: yeah and then again i'll leave that ample wire t is up here office hours
+Pablo [49:24]: and now i should really help you a lot
+Pablo [49:25]: whenever you have any question
+Pablo [49:26]: s
+Pablo [49:27]: issues
+Pablo [49:30]: okay so for final project
+Pablo [49:45]: so for final project
+Pablo [49:47]: got a
+Pablo [49:51]: project would have asked you to create a visual data storytelling
+Pablo [49:55]: let me
+Pablo [49:56]: just
+Pablo [50:02]: find
+Pablo [50:07]: so
+Pablo [50:08]: the whole project
+Pablo [50:10]: description is over here
+Pablo [50:13]: we would
+Pablo [50:24]: ask you to pick one of these three narrative structures to create a data story about the data you're choosing don't worry too much about the narrative structure so far
+Pablo [50:25]: because
+Pablo [50:30]: i
+Pablo [50:32]: will talk about
+Pablo [50:34]: i know we would have a workshop
+Pablo [50:36]: to help you
+Pablo [50:38]: project so you're going to be fine with
+Pablo [50:46]: so i want to show you an example this one so this is like on a project from
+Pablo [50:48]: a couple of years
+Pablo [50:48]: back ago
+Pablo [51:03]: what this project does was they're focusing on the financial insider office in the us and then their whole motivation was draft
+Pablo [51:09]: i guess along in the us the public and we
+Pablo [51:13]: officials they do rely on the non public information
+Pablo [51:18]: to kind of invest and then
+Pablo [51:28]: in response to the government's response to this was that they proposed this stuff act which means all these officials they have to disclose
+Pablo [51:29]: all
+Pablo [51:32]: their investment
+Pablo [51:47]: and so what this project motivated is for one they want to know whether the stock act does what it intends to do and then they also just kind of curious who might
+Pablo [51:48]: kind of be
+Pablo [51:49]: more
+Pablo [51:57]: so what they're actually doing was they have like this
+Pablo [52:02]: official is represented by the circle
+Pablo [52:07]: the x axis you're seeing on the screen that's showing the return of investment
+Pablo [52:14]: for people that are placed more on the right that just means like
+Pablo [52:18]: and then the size of their circle descript
+Pablo [52:19]: ion
+Pablo [52:32]: video
+Pablo [52:33]: for this
+Pablo [52:38]: they
+Pablo [52:38]: also allow
+Pablo [52:41]: how you
+Pablo [52:41]: want a position
+Pablo [52:48]: so you can position them based off the parties that go onto
+Pablo [52:52]: or face off like the number of trainings they do every day
+Pablo [52:56]: and whenever you click on the
+Pablo [52:57]: whole
+Pablo [53:02]: overview here if they want you to invite you to click on one of the official
+Pablo [53:04]: so
+Pablo [53:05]: then they have
+Pablo [53:07]: showing
+Pablo [53:10]: entire
+Pablo [53:10]: trading
+Pablo [53:13]: that's
+Pablo [53:13]: going
+Pablo [53:14]: over time
+Pablo [53:15]: so
+Pablo [53:16]: this
+Pablo [53:23]: indic
+Pablo [53:24]: ates
+Pablo [53:25]: combat
+Pablo [53:25]: days
+Pablo [53:26]: and that
+Pablo [53:30]: they're also
+Pablo [53:30]: showing
+Pablo [53:45]: people
+Pablo [53:46]: on the riser
+Pablo [53:47]: officials
+Pablo [53:48]: also
+Pablo [53:49]: have to only be
+Pablo [53:49]: here
+Pablo [53:50]: can actually
+Pablo [53:55]: you
+Pablo [53:57]: to
+Pablo [53:58]: explore
+Pablo [53:59]: officials
+Pablo [54:00]: and i
+Pablo [54:09]: probably
+Pablo [54:10]: do
+Pablo [54:11]: pay like two trades
+Pablo [54:12]: in a year
+Pablo [54:13]: but then
+Pablo [54:18]: there's
+Pablo [54:19]: also officials
+Pablo [54:20]: that pretty much
+Pablo [54:34]: they have
+Pablo [54:37]: also
+Pablo [54:38]: find
+Pablo [54:39]: the vision of
+Pablo [54:42]: keep
+Pablo [54:43]: ing more comfort
+Pablo [54:44]: so
+Pablo [54:45]: this is
+Pablo [54:46]: one example
+Pablo [54:50]: this is one really good and i want to show you the auto lock from last year
+Pablo [54:51]: i will
+Pablo [54:54]: provide all of these links and then the other files
+Pablo [54:55]: later
+Pablo [54:56]: so
+Pablo [54:59]: this is from last year where they're showing
+Pablo [55:11]: is really quiet
+Pablo [55:14]: so you probably can just pretend
+Pablo [55:17]: they're not audio and you can read
+Pablo [55:18]: the
+Pablo [55:19]: link later
+Pablo [55:21]: but other
+Pablo [55:23]: what she does was
+Pablo [55:27]: starting with all of
+Pablo [55:29]: the people in the data set
+Pablo [55:31]: of
+Pablo [55:32]: what kind of
+Pablo [55:34]: mental health issues
+Pablo [55:35]: in techn
+Pablo [55:35]: ical
+Pablo [55:36]: utility
+Pablo [55:43]: so she's showing some of
+Pablo [55:44]: the interact
+Pablo [55:45]: ivity you can kind of
+Pablo [55:46]: hover over
+Pablo [55:49]: and click on the
+Pablo [55:50]: more
+Pablo [55:51]: of the detail
+Pablo [56:00]: s
+Pablo [56:09]: there's this part where she asked you to start asking for user input based off your years
+Pablo [56:10]: and
+Pablo [56:11]: what
+Pablo [56:12]: hours you did
+Pablo [56:13]: because
+Pablo [56:14]: of showing you
+Pablo [56:24]: kind of put you in the classroom to show this is where you want to be
+Pablo [56:30]: and then you get to see how your situation compared to the overall situation
+Pablo [56:37]: so this is another example that's using an entirely different structure
+Pablo [56:40]: the one about the insider training
+Pablo [56:42]: is just like opens up for people to
+Pablo [56:42]: explore
+Pablo [56:43]: on their own
+Pablo [56:47]: this one has an actual step by step to
+Pablo [56:51]: have you go through and then within each step you get to interact with
+Pablo [56:52]: these piece a little bit
+Pablo [56:52]: more
+Pablo [56:55]: so that's like two examples
+Pablo [57:06]: i
+Pablo [57:07]: have a couple more
+Pablo [57:13]: yeah
+Pablo [57:17]: i can share
+Pablo [57:23]: so
+Pablo [57:27]: any other questions about is this made
+Pablo [57:28]: using observ
+Pablo [57:28]: able
+Pablo [57:30]: these are all made by different
+Pablo [57:32]: so
+Pablo [57:34]: you can only use upper server on chrome requ
+Pablo [57:42]: ire and then workshops and then column two homework three and the final project you have to build your own web app application
+Pablo [57:47]: and then we usually need to template so you should be fine with that
+Pablo [57:50]: and when is react
+Pablo [57:50]: used
+Pablo [57:59]: when do we use react so we homework free we have italian framework so you can
+Pablo [58:01]: take
+Pablo [58:03]: a happy re
+Pablo [58:05]: act or
+Pablo [58:21]: any
+Pablo [58:22]: other questions
+Pablo [59:32]: lecture
+Pablo [59:35]: vis
+Pablo [59:36]: ualization
+Pablo [59:40]: i try to
+Pablo [59:42]: show different kind of visualization
+Pablo [59:43]: applications
+Pablo [59:46]: so this is more for
+Pablo [59:58]: medical use
+Pablo [1:00:03]: i mentioned that
+Pablo [1:00:11]: we are now able to make such visualization interactively
+Pablo [1:00:15]: and then we now apply
+Pablo [1:00:17]: that
+Pablo [1:00:18]: to
+Pablo [1:00:21]: surgery
+Pablo [1:00:22]: so we
+Pablo [1:00:23]: go to provide
+Pablo [1:00:28]: surgical visualization three dimensional surgicalization
+Pablo [1:00:41]: yeah i think you missed that lecture
+Pablo [1:00:43]: but then that was one
+Pablo [1:00:48]: course is hand drawn
+Pablo [1:00:54]: people
+Pablo [1:00:55]: exper
+Pablo [1:00:56]: ts
+Pablo [1:00:58]: in
+Pablo [1:00:59]: my
+Pablo [1:01:03]: period
+Pablo [1:01:05]: is
+Pablo [1:01:07]: not going to be made
+Pablo [1:01:08]: by
+Pablo [1:01:09]: one person
+Pablo [1:01:11]: instantly
+Pablo [1:01:14]: yeah
+Pablo [1:01:18]: and now apply that
+Pablo [1:01:20]: to
+Pablo [1:01:26]: but what i want
+Pablo [1:01:31]: to make sure you understand that what i have shown you so far those examples
+Pablo [1:01:35]: different
+Pablo [1:01:35]: kind of
+Pablo [1:01:38]: what
+Pablo [1:01:39]: is going
+Pablo [1:01:43]: to
+Pablo [1:01:45]: data
+Pablo [1:01:48]: from
+Pablo [1:01:51]: being
+Pablo [1:01:52]: a collective
+Pablo [1:01:53]: for
+Pablo [1:01:54]: say marketing
+Pablo [1:01:59]: social science
+Pablo [1:02:03]: social science study
+Pablo [1:02:07]: and so the typical data type is like event sequence
+Pablo [1:02:11]: text document collection
+Pablo [1:02:27]: and could be like having serious data collection of images video this type of data typically high dimensional and could be also very large
+Pablo [1:02:35]: and then we sing we point them to some data possible
+Pablo [1:02:39]: so yeah
+Pablo [1:02:43]: now they need to find interesting data
+Pablo [1:02:43]: online
+Pablo [1:02:45]: but then
+Pablo [1:02:48]: you suddenly welcome
+Pablo [1:02:49]: or encourage
+Pablo [1:02:52]: to collect data yourself
+Pablo [1:02:54]: so you might have some special interest
+Pablo [1:02:57]: you
+Pablo [1:02:59]: can take this opportunity to collect
+Pablo [1:03:01]: rather than data
+Pablo [1:03:02]: and then
+Pablo [1:03:04]: work
+Pablo [1:03:05]: on your homework
+Pablo [1:03:07]: at final project we step that data
+Pablo [1:03:11]: any question
+Pablo [1:03:23]: yeah for this other type of visual science ctv visualization medical data visualization of course metadata visualization
+Pablo [1:03:29]: there's different types too i show you the medical image data
+Pablo [1:03:30]: but
+Pablo [1:03:41]: then there's also ehr right patient record the patient record data belong more to the information visualization category
+Pablo [1:03:51]: but if you're interested in the more scientific visualization treaty visualization we previously offer
+Pablo [1:03:52]: class
+Pablo [1:03:54]: es like ecs one
+Pablo [1:03:54]: check
+Pablo [1:03:58]: and
+Pablo [1:03:59]: we cover
+Pablo [1:04:00]: those topics
+Pablo [1:04:01]: there
+Pablo [1:04:03]: but unfortunately in recent years
+Pablo [1:04:07]: we couldn't offer
+Pablo [1:04:09]: those classes
+Pablo [1:04:12]: we just don't have
+Pablo [1:04:15]: the person now
+Pablo [1:04:18]: to offer so many different classes
+Pablo [1:04:33]: so this is example the kind of visualization some of you will
+Pablo [1:04:34]: be
+Pablo [1:04:35]: working
+Pablo [1:04:40]: on so insane already show you several examples
+Pablo [1:04:42]: i'm just going to show you
+Pablo [1:04:44]: a few more examples
+Pablo [1:04:49]: visualization of
+Pablo [1:04:50]: the
+Pablo [1:04:51]: covid data
+Pablo [1:05:06]: and
+Pablo [1:05:07]: over time
+Pablo [1:05:08]: and
+Pablo [1:05:09]: then
+Pablo [1:05:13]: it
+Pablo [1:05:17]: should
+Pablo [1:05:18]: be
+Pablo [1:05:54]: just
+Pablo [1:05:55]: increase in
+Pablo [1:05:56]: the number of cases
+Pablo [1:05:57]: i owe
+Pablo [1:05:57]: you
+Pablo [1:05:58]: high
+Pablo [1:06:00]: this is
+Pablo [1:06:01]: where we
+Pablo [1:06:02]: call dynamic
+Pablo [1:06:03]: visualization
+Pablo [1:06:04]: use
+Pablo [1:06:05]: it as
+Pablo [1:06:06]: a
+Pablo [1:06:09]: this
+Pablo [1:06:11]: is a way to tell a story
+Pablo [1:06:29]: right
+Pablo [1:06:33]: so that here they try to
+Pablo [1:06:35]: compare different countries
+Pablo [1:06:36]: i think
+Pablo [1:06:38]: right different countries
+Pablo [1:06:40]: will
+Pablo [1:06:41]: curve represent
+Pablo [1:06:44]: number of cases
+Pablo [1:06:47]: in the united states
+Pablo [1:06:53]: over time so here horizontal axis
+Pablo [1:06:56]: show number of the data goals
+Pablo [1:06:57]: here is
+Pablo [1:07:00]: forty days
+Pablo [1:07:02]: ago
+Pablo [1:07:02]: forty two days
+Pablo [1:07:06]: but again this one also interacted
+Pablo [1:07:10]: this one you can basically
+Pablo [1:07:12]: hover
+Pablo [1:07:16]: over your cursor and then
+Pablo [1:07:20]: this cloth responded by pop up some detailed information
+Pablo [1:07:22]: giving you the actual number and
+Pablo [1:07:27]: others so i can you can go through this slide play with it
+Pablo [1:07:28]: i'm not going to do that today
+Pablo [1:07:35]: just going to show you a few more examples like the type of visualization you could do right
+Pablo [1:07:38]: and this one i always show is kind of fun
+Pablo [1:07:47]: lane voyager that basically a site allow you to explore a baby domain if you're going to have
+Pablo [1:07:49]: baby
+Pablo [1:07:51]: and you have to come up with a name
+Pablo [1:07:53]: you can look up
+Pablo [1:07:58]: and you can type like a then it will give you all the name
+Pablo [1:08:00]: starting with the letter
+Pablo [1:08:03]: a and then
+Pablo [1:08:04]: c
+Pablo [1:08:05]: the
+Pablo [1:08:08]: popularity of the name
+Pablo [1:08:13]: and then the other pink red represent more like female name
+Pablo [1:08:15]: collider
+Pablo [1:08:18]: boom colors represent more building
+Pablo [1:08:22]: and then the thing is represent popularity over time
+Pablo [1:08:26]: some things become more popular
+Pablo [1:08:28]: or less popular
+Pablo [1:08:34]: again you can go to this site and you can just type
+Pablo [1:08:35]: like b or am
+Pablo [1:08:38]: c like j or jennifer
+Pablo [1:08:42]: joshua see all those names
+Pablo [1:08:42]: how
+Pablo [1:08:43]: popular
+Pablo [1:08:45]: they are and you see your name
+Pablo [1:08:47]: whether it's too popular
+Pablo [1:08:53]: you can do stuff like that
+Pablo [1:08:55]: with different kind of data
+Pablo [1:09:02]: i think these three let them do this
+Pablo [1:09:02]: directly
+Pablo [1:09:03]: right
+Pablo [1:09:09]: it's good that you make your life so much easier
+Pablo [1:09:11]: but then at the same time
+Pablo [1:09:14]: take away
+Pablo [1:09:20]: your opportunity to practice more
+Pablo [1:09:29]: sophisticated programming we would like you to do in the design right so really hope to see some of you
+Pablo [1:09:41]: go to the next step that come out this new design come out with want to create visualization that d three does not offer
+Pablo [1:09:43]: that will be
+Pablo [1:09:44]: a big plus
+Pablo [1:09:45]: we
+Pablo [1:09:46]: look for
+Pablo [1:09:46]: that
+Pablo [1:10:11]: another example information visualization this is actually quite famous representation it's called tree map i think some of you have seen this right like tree map
+Pablo [1:10:17]: in this case
+Pablo [1:10:20]: it's just really said the stock market
+Pablo [1:10:21]: and
+Pablo [1:10:22]: each
+Pablo [1:10:23]: square
+Pablo [1:10:26]: is
+Pablo [1:10:28]: whatever is level one
+Pablo [1:10:31]: area
+Pablo [1:10:33]: is like different industries
+Pablo [1:10:34]: in this case
+Pablo [1:10:36]: technology
+Pablo [1:10:45]: this is more the communication industry this is financial health care
+Pablo [1:10:47]: and then they further divide
+Pablo [1:10:53]: according to some subcategory that each field
+Pablo [1:11:01]: and then it's down to the smaller square represent a particular company
+Pablo [1:11:04]: and the bigger one
+Pablo [1:11:09]: so i can tell that here you will be
+Pablo [1:11:10]: looking back
+Pablo [1:11:28]: the
+Pablo [1:11:29]: science
+Pablo [1:11:32]: cat
+Pablo [1:11:33]: and oliver
+Pablo [1:11:34]: is in price performance
+Pablo [1:11:39]: so then
+Pablo [1:11:43]: this suddenly can change over time
+Pablo [1:11:44]: right
+Pablo [1:11:45]: the stock market
+Pablo [1:11:47]: is dynamic
+Pablo [1:11:50]: so there's a site
+Pablo [1:11:57]: i didn't check because every year sometimes they move things around
+Pablo [1:12:09]: you can try to go there and to see the current one and you can see the current stock market if you actually
+Pablo [1:12:14]: and again the tree map
+Pablo [1:12:16]: i believe
+Pablo [1:12:19]: is provided by e three
+Pablo [1:12:24]: but then
+Pablo [1:12:27]: i'm not sure they provide
+Pablo [1:12:29]: the
+Pablo [1:12:30]: optimized one
+Pablo [1:12:31]: or not
+Pablo [1:12:33]: they can just give you
+Pablo [1:12:38]: this really simple version which sometimes can look really bad anyway
+Pablo [1:12:58]: this is
+Pablo [1:12:59]: not
+Pablo [1:13:00]: history within
+Pablo [1:13:06]: the work
+Pablo [1:13:07]: that we did
+Pablo [1:13:09]: the
+Pablo [1:13:10]: institute of transport
+Pablo [1:13:10]: ation
+Pablo [1:13:10]: study
+Pablo [1:13:13]: so
+Pablo [1:13:14]: then you have
+Pablo [1:13:15]: studied
+Pablo [1:13:16]: all the material
+Pablo [1:13:18]: on the
+Pablo [1:13:19]: dialogue behavior
+Pablo [1:13:25]: has
+Pablo [1:13:26]: the driver
+Pablo [1:13:27]: behavior
+Pablo [1:13:29]: device
+Pablo [1:13:33]: over here
+Pablo [1:13:36]: and so they want to study
+Pablo [1:13:37]: the results
+Pablo [1:13:38]: so
+Pablo [1:13:41]: we design this visualization for
+Pablo [1:13:41]: them
+Pablo [1:13:47]: so
+Pablo [1:13:48]: what you see here
+Pablo [1:13:49]: is
+Pablo [1:13:51]: the driver
+Pablo [1:13:51]: and
+Pablo [1:13:57]: represent
+Pablo [1:13:58]: a trip
+Pablo [1:14:00]: they
+Pablo [1:14:00]: took
+Pablo [1:14:03]: and then the lens represents b
+Pablo [1:14:06]: and color represent travel distance
+Pablo [1:14:10]: then i don't have a color legend here
+Pablo [1:14:13]: but then the motion represents speed variation
+Pablo [1:14:17]: so you can see this driver
+Pablo [1:14:22]: change speed
+Pablo [1:14:24]: like frequently
+Pablo [1:14:24]: right
+Pablo [1:14:27]: to be a reckless driver
+Pablo [1:14:34]: and this will behave but then this is like shorter trip so probably
+Pablo [1:14:38]: also like slower speed probably like drive
+Pablo [1:14:43]: within davis there's a lot of stop sign or this mostly
+Pablo [1:15:04]: we
+Pablo [1:15:05]: don't know what i mean
+Pablo [1:15:06]: i don't have any question
+Pablo [1:15:07]: but you can tell
+Pablo [1:15:10]: they
+Pablo [1:15:11]: drove home this
+Pablo [1:15:12]: and we're not
+Pablo [1:15:14]: just
+Pablo [1:15:19]: activ
+Pablo [1:15:20]: ely
+Pablo [1:15:23]: surrounding area
+Pablo [1:15:34]: but anyway this kind of visualization kind of interesting to watch but at the same time facilitate what comparison comparative study
+Pablo [1:15:36]: but then
+Pablo [1:15:45]: limitation too what i really want to show you is this one but then i don't think we have time
+Pablo [1:15:49]: we have one minute
+Pablo [1:16:00]: so you can go back and watch yourself but then let me start playing because i think some of you have seen it
+Pablo [1:16:03]: because it's been around
+Pablo [1:16:06]: the lecture
+Pablo [1:16:18]: so
+Pablo [1:16:22]: the kind of visualization
+Pablo [1:17:30]: undergraduate students
+Pablo [1:17:32]: that was often
+Pablo [1:17:33]: twenty years
+Pablo [1:17:36]: and then
+Pablo [1:17:38]: that's okay
+Pablo [1:17:40]: back
+Pablo [1:17:42]: simply before
+Pablo [1:17:56]: and i started in our medical university
+Pablo [1:18:00]: health
+Pablo [1:18:05]: issue

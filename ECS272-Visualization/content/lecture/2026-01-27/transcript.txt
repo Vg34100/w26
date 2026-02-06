@@ -1,0 +1,1337 @@
+Pablo [0:34]: a lot of wire canc
+Pablo [0:34]: els
+Pablo [0:43]: who are doing job interviews on faculty
+Pablo [1:00]: the other
+Pablo [1:01]: half of
+Pablo [1:07]: okay
+Pablo [1:15]: here the lecture of hai or specifically generative ai
+Pablo [1:18]: in data visualization
+Pablo [1:21]: last time
+Pablo [1:25]: we talked about
+Pablo [1:26]: what
+Pablo [1:33]: generative ai is about but then i point out we focus more on
+Pablo [1:35]: large language models
+Pablo [1:36]: and
+Pablo [1:40]: those that
+Pablo [1:41]: use
+Pablo [1:43]: to gener
+Pablo [1:45]: ate visualization
+Pablo [1:47]: generate images
+Pablo [1:59]: in our context are visual
+Pablo [2:01]: ization from data
+Pablo [2:05]: we
+Pablo [2:08]: have quickly go over problem engineering
+Pablo [2:12]: we
+Pablo [2:13]: look at
+Pablo [2:17]: particular facility which is
+Pablo [2:18]: called
+Pablo [2:20]: charge gpt
+Pablo [2:28]: from
+Pablo [2:29]: there
+Pablo [2:33]: and then
+Pablo [2:37]: we talk more
+Pablo [2:42]: about generating ai visualization and really
+Pablo [2:44]: we
+Pablo [2:46]: want to go over
+Pablo [2:47]: three topics
+Pablo [2:49]: and
+Pablo [2:53]: we went over the first one generating
+Pablo [2:53]: and inter
+Pablo [2:55]: pret
+Pablo [2:56]: ing statistical charts
+Pablo [3:00]: and
+Pablo [3:03]: we look at several examples
+Pablo [3:07]: and then we found that they are not perfect
+Pablo [3:09]: people have
+Pablo [3:10]: tried different things
+Pablo [3:16]: to generate visualization particularly the simple charts
+Pablo [3:18]: graph
+Pablo [3:25]: and they found that they're like all kind of they still work to do
+Pablo [3:28]: coding arrow
+Pablo [3:33]: the system the model
+Pablo [3:35]: didn't really understand
+Pablo [3:36]: using
+Pablo [3:43]: the model always make a choice
+Pablo [3:50]: of interpretation
+Pablo [4:05]: so
+Pablo [4:07]: they're
+Pablo [4:08]: still
+Pablo [4:09]: a lot of
+Pablo [4:10]: work
+Pablo [4:23]: so today we
+Pablo [4:24]: 're going to
+Pablo [4:27]: go over
+Pablo [4:28]: the other top
+Pablo [4:28]: ic
+Pablo [4:29]: the first one
+Pablo [4:35]: some of us
+Pablo [4:37]: often might be talking about
+Pablo [4:38]: just
+Pablo [4:39]: like
+Pablo [4:41]: when
+Pablo [4:42]: we
+Pablo [4:43]: try to use
+Pablo [4:44]: amod
+Pablo [4:45]: to generate
+Pablo [4:46]: or to help us
+Pablo [4:47]: inter
+Pablo [4:48]: pret
+Pablo [4:49]: vis
+Pablo [4:50]: ualization
+Pablo [4:54]: and we
+Pablo [4:55]: under
+Pablo [5:15]: stood
+Pablo [5:24]: how
+Pablo [5:25]: does he
+Pablo [5:28]: visual
+Pablo [5:29]: ization
+Pablo [5:30]: gener
+Pablo [5:31]: ate value
+Pablo [5:34]: or
+Pablo [5:35]: suggest
+Pablo [5:38]: or
+Pablo [5:39]: help us
+Pablo [5:39]: more correctly inter
+Pablo [5:40]: pret
+Pablo [5:41]: visualization
+Pablo [5:44]: and then we
+Pablo [5:45]: also talk about
+Pablo [5:49]: the true design and author he supports with machine learning
+Pablo [5:56]: we should be able to finish this and there will more other things
+Pablo [6:09]: what are hygienic system genetic system
+Pablo [6:13]: operates
+Pablo [6:16]: to achieve certain goal
+Pablo [6:21]: and it does so
+Pablo [6:27]: through this ethereum process
+Pablo [6:31]: so perceiving this hr to perceive
+Pablo [6:32]: what we want
+Pablo [6:37]: and then do some reasoning
+Pablo [6:40]: on the sub relevant information
+Pablo [6:47]: if we want the task is data analysis or data visualization the two submissioning and then perform action
+Pablo [6:53]: by including the reason
+Pablo [6:55]: for those
+Pablo [6:57]: action but then
+Pablo [7:01]: the jd system
+Pablo [7:05]: use different tools available
+Pablo [7:12]: as simple as like if the system need
+Pablo [7:15]: to acquire partition information
+Pablo [7:21]: the genetic system can employ a search engine
+Pablo [7:22]: for example
+Pablo [7:27]: you can even employ a simulator
+Pablo [7:33]: or kind of tool so there's key aspect
+Pablo [7:37]: of genetic system is
+Pablo [7:39]: to
+Pablo [7:40]: do
+Pablo [7:44]: according to the visit
+Pablo [7:45]: ing result
+Pablo [7:49]: by
+Pablo [7:50]: using certain
+Pablo [7:51]: tool
+Pablo [7:55]: use
+Pablo [7:55]: rname
+Pablo [7:56]: and
+Pablo [7:57]: two
+Pablo [7:58]: use
+Pablo [8:06]: s
+Pablo [8:07]: of
+Pablo [8:09]: here
+Pablo [8:13]: what you can
+Pablo [8:14]: do
+Pablo [8:15]: is you get
+Pablo [8:16]: vis
+Pablo [8:17]: ual
+Pablo [8:28]: from
+Pablo [8:31]: the
+Pablo [8:32]: website
+Pablo [8:37]: of
+Pablo [8:38]: your interest
+Pablo [8:39]: and then so
+Pablo [8:40]: france all ref
+Pablo [8:41]: ugees
+Pablo [8:41]: and
+Pablo [8:43]: all
+Pablo [8:44]: immediate
+Pablo [8:46]: heart
+Pablo [8:47]: off
+Pablo [8:48]: line
+Pablo [8:52]: s
+Pablo [8:53]: are shall be
+Pablo [8:54]: placed to shop
+Pablo [8:57]: five
+Pablo [8:58]: cent
+Pablo [9:00]: ing ingredients
+Pablo [9:11]: those
+Pablo [9:12]: who are
+Pablo [9:13]: process
+Pablo [9:13]: ed
+Pablo [9:26]: and then eventually
+Pablo [9:30]: ingredients
+Pablo [9:34]: for
+Pablo [9:35]: this user
+Pablo [9:39]: the question
+Pablo [9:40]: is
+Pablo [9:43]: can we apply an adjective system for visual
+Pablo [9:44]: ization
+Pablo [9:47]: answer suddenly
+Pablo [9:50]: and i'll show you some ex
+Pablo [9:51]: amples
+Pablo [10:03]: so
+Pablo [10:10]: exerc
+Pablo [10:12]: ise again by genetic
+Pablo [10:15]: in the context of visualization
+Pablo [10:22]: between
+Pablo [10:23]: aspect
+Pablo [10:24]: of
+Pablo [10:25]: system
+Pablo [10:27]: is two years and
+Pablo [10:28]: reasoning
+Pablo [10:35]: the individual reasoning is
+Pablo [10:37]: basically try to understand the data
+Pablo [10:41]: and then according to the understanding
+Pablo [10:44]: we make a plan
+Pablo [10:44]: right
+Pablo [10:46]: some action
+Pablo [10:49]: actually
+Pablo [10:54]: execute the action
+Pablo [10:58]: and then evaluate the result
+Pablo [11:06]: reflect the result to the user in some way or even generate a report
+Pablo [11:10]: but then there are two u's
+Pablo [11:15]: in order to perform some interaction like do data processing data analysis
+Pablo [11:18]: or even generated visualization
+Pablo [11:30]: so let's see some agentic visualization tool or system people have created
+Pablo [11:36]: this is the first one is called light ba
+Pablo [11:45]: so this is a very recent paper published twenty twenty four
+Pablo [11:47]: in our domain
+Pablo [11:52]: and this work implement
+Pablo [11:55]: ation system
+Pablo [11:58]: and so here
+Pablo [12:02]: we have an overview of this ui
+Pablo [12:07]: basically show
+Pablo [12:09]: it's like the flow
+Pablo [12:11]: of what
+Pablo [12:15]: the system does and what the system provides
+Pablo [12:17]: so first
+Pablo [12:23]: means it has on this side
+Pablo [12:34]: it has this data involved this data table you see and then here is the task that need to
+Pablo [12:35]: be
+Pablo [12:36]: performed
+Pablo [12:41]: so let me just show you
+Pablo [12:41]: the
+Pablo [12:42]: path
+Pablo [12:43]: involved
+Pablo [12:44]: and
+Pablo [12:45]: that
+Pablo [12:49]: is basically
+Pablo [12:50]: show this actually show
+Pablo [12:54]: s
+Pablo [13:00]: convers
+Pablo [13:00]: ation
+Pablo [13:01]: panel
+Pablo [13:03]: and use
+Pablo [13:04]: it again
+Pablo [13:11]: and
+Pablo [13:12]: here
+Pablo [13:13]: as you will
+Pablo [13:14]: see later
+Pablo [13:15]: that
+Pablo [13:18]: this is
+Pablo [13:20]: actually suggest
+Pablo [13:21]: ed
+Pablo [13:23]: and user can choose
+Pablo [13:27]: to run those hats or to
+Pablo [13:32]: reject those tasks so let's see
+Pablo [13:38]: so the user can upload a data set
+Pablo [13:48]: and also enter a goal in the chat remember on the other side there is this conversation
+Pablo [13:52]: panel
+Pablo [13:54]: and then
+Pablo [14:01]: this agent would interpret the data and transform the go into action protect
+Pablo [14:04]: a user will select the task right and here is
+Pablo [14:05]: the hat
+Pablo [14:09]: and then there's a selection actually down
+Pablo [14:12]: on the rightmost
+Pablo [14:13]: part of
+Pablo [14:14]: the interface
+Pablo [14:16]: if you recall
+Pablo [14:18]: and then
+Pablo [14:24]: according to
+Pablo [14:26]: the
+Pablo [14:29]: execution
+Pablo [14:31]: radiant generates
+Pablo [14:32]: code
+Pablo [14:34]: for
+Pablo [14:35]: those tas
+Pablo [14:35]: ks
+Pablo [14:37]: and then
+Pablo [14:38]: report
+Pablo [14:41]: some insight you see here by c
+Pablo [14:48]: so it actually generates some visualization and then also
+Pablo [14:54]: provide some finding and user then inspect the result right
+Pablo [14:59]: both the visualization and the interpretation which is the finding
+Pablo [15:05]: and then the user can
+Pablo [15:10]: evaluate
+Pablo [15:12]: the quality of the results
+Pablo [15:19]: it's the agent actually
+Pablo [15:22]: agent evaluated quality
+Pablo [15:23]: of the result
+Pablo [15:24]: for you
+Pablo [15:25]: and propose
+Pablo [15:28]: improvement
+Pablo [15:29]: actually here
+Pablo [15:36]: oftentimes by decomposition
+Pablo [15:42]: the
+Pablo [15:43]: task
+Pablo [15:47]: to be set
+Pablo [15:49]: to achieve better result
+Pablo [15:52]: improve according to the agent's
+Pablo [15:57]: patient and the user can look at the proposed
+Pablo [15:59]: tas
+Pablo [15:59]: k
+Pablo [16:00]: here
+Pablo [16:03]: and then choose to run or deny
+Pablo [16:10]: and then i guess if you deny i didn't personally try this system
+Pablo [16:16]: say if you deny this is a my proposed
+Pablo [16:18]: generate a new proposal
+Pablo [16:21]: that's what i see
+Pablo [16:26]: this makes sense
+Pablo [16:38]: you can read this paper to find out
+Pablo [16:43]: how usable it is in practice
+Pablo [16:47]: i didn't read this paper fully myself
+Pablo [16:48]: so
+Pablo [16:51]: it is really
+Pablo [16:53]: case study
+Pablo [16:55]: closely
+Pablo [16:56]: and
+Pablo [16:59]: usable
+Pablo [17:02]: for real world problem solving
+Pablo [17:09]: so actually
+Pablo [17:18]: other system or people have been doing similar work
+Pablo [17:20]: so this paper
+Pablo [17:31]: actually kind of survey all this related work and then here i just show some
+Pablo [17:35]: of the work
+Pablo [17:38]: they discuss in the paper
+Pablo [17:43]: and here we sort it by data
+Pablo [17:46]: i have only this six here
+Pablo [17:48]: there should be more
+Pablo [17:53]: and if you're interested in such energetic
+Pablo [17:56]: visualization system
+Pablo [17:59]: you can check it out
+Pablo [18:07]: so i hope some of you will do something very interesting like this
+Pablo [18:08]: for your final
+Pablo [18:14]: hopefully it's not just simple extension of your homework
+Pablo [18:16]: assignment
+Pablo [18:16]: three
+Pablo [18:38]: so as some of you know a gently system
+Pablo [18:40]: is good at
+Pablo [18:41]: giving feedback
+Pablo [18:47]: and you can do so because usually there's some sort of
+Pablo [19:00]: domain knowledge and then certain for this particular area that we consider
+Pablo [19:03]: certain standard principal guideline
+Pablo [19:04]: available
+Pablo [19:07]: so the genetic system
+Pablo [19:09]: can provide feedback
+Pablo [19:13]: to your say your design problem
+Pablo [19:21]: so if you submit the design the assistant can provide you
+Pablo [19:23]: give you some feedback
+Pablo [19:26]: tell you what is bad
+Pablo [19:27]: what is
+Pablo [19:35]: up
+Pablo [19:43]: seven
+Pablo [19:44]: life
+Pablo [19:45]: catalyst
+Pablo [19:46]: zero
+Pablo [19:47]: model
+Pablo [19:48]: design
+Pablo [20:09]: ed to
+Pablo [20:11]: be
+Pablo [20:17]: your only
+Pablo [20:19]: help to be
+Pablo [20:20]: because
+Pablo [20:22]: this means you think about
+Pablo [20:23]: that
+Pablo [20:24]: so the author
+Pablo [20:28]: tama
+Pablo [20:29]: ra
+Pablo [20:34]: she's a professor at pc and
+Pablo [20:36]: she's a senior
+Pablo [20:42]: as senior so as probably senior researcher in
+Pablo [20:49]: so she actually wrote that book that we recommend you to read
+Pablo [20:52]: introductory
+Pablo [20:56]: introduction to information visualization
+Pablo [21:01]: so that book i miss on campus
+Pablo [21:05]: and there's online
+Pablo [21:05]: copy
+Pablo [21:07]: you can read
+Pablo [21:10]: anyway
+Pablo [21:11]: in her paper
+Pablo [21:18]: that's a mod
+Pablo [21:18]: el
+Pablo [21:19]: suggest
+Pablo [21:29]: follow
+Pablo [21:30]: ed by
+Pablo [21:35]: operation
+Pablo [21:36]: abstraction design
+Pablo [21:39]: and then you consider
+Pablo [21:40]: encoding
+Pablo [21:41]: and interaction technique
+Pablo [21:42]: design
+Pablo [21:44]: how
+Pablo [21:46]: you visually encode
+Pablo [21:47]: and then how you
+Pablo [21:48]: can write
+Pablo [21:50]: and
+Pablo [21:51]: then finally
+Pablo [21:59]: and so
+Pablo [22:00]: that's what
+Pablo [22:01]: she
+Pablo [22:03]: suggest
+Pablo [22:03]: ed
+Pablo [22:05]: and
+Pablo [22:06]: then
+Pablo [22:07]: other
+Pablo [22:08]: book related
+Pablo [22:09]: grandma
+Pablo [22:11]: off
+Pablo [22:28]: face
+Pablo [22:29]: you listen
+Pablo [22:32]: outside
+Pablo [22:39]: dimens
+Pablo [22:39]: ion
+Pablo [22:40]: you will consider
+Pablo [22:51]: and then
+Pablo [22:52]: ascend
+Pablo [22:58]: ation
+Pablo [22:59]: and
+Pablo [23:00]: coordinate
+Pablo [23:01]: which is
+Pablo [23:02]: our space
+Pablo [23:13]: because
+Pablo [23:15]: i don't think i can
+Pablo [23:19]: say
+Pablo [23:20]: any
+Pablo [23:21]: way
+Pablo [23:34]: so
+Pablo [23:35]: the question
+Pablo [23:39]: ai
+Pablo [23:40]: give us design
+Pablo [23:41]: feedback
+Pablo [23:42]: using
+Pablo [23:44]: sky
+Pablo [23:45]: line
+Pablo [23:46]: or
+Pablo [23:47]: framework
+Pablo [23:49]: or model like this
+Pablo [24:03]: so
+Pablo [24:04]: this
+Pablo [24:06]: work is again very reason
+Pablo [24:13]: visualization
+Pablo [24:15]: and
+Pablo [24:17]: this
+Pablo [24:21]: work demonstrates exactly that
+Pablo [24:26]: so here again we have
+Pablo [24:30]: an overview of the system in terms of
+Pablo [24:32]: its interface
+Pablo [24:35]: so let's see
+Pablo [24:43]: so here we want to make a visualization
+Pablo [24:46]: and then we want the system
+Pablo [24:47]: to tell us
+Pablo [24:56]: but mainly just like
+Pablo [24:59]: the system will tell us
+Pablo [25:02]: how we can do
+Pablo [25:05]: to make such a visualization different
+Pablo [25:13]: tell you why but then when the user need to do is just upload
+Pablo [25:14]: a visualization
+Pablo [25:18]: and then the system
+Pablo [25:21]: will give you a feedback there's a feedback report
+Pablo [25:25]: with both text description
+Pablo [25:28]: and visualization some picture
+Pablo [25:33]: and then here is an overview summary and there's a different category
+Pablo [25:41]: you can look at i think you make selection here in c different
+Pablo [25:44]: and then here is
+Pablo [25:47]: a panel to track
+Pablo [25:49]: changes
+Pablo [25:54]: because you get this feedback you might change
+Pablo [25:57]: your visualization
+Pablo [26:03]: here the system how you track the changes
+Pablo [26:11]: i think the most of the system i mentioned here
+Pablo [26:17]: they either provide the source code or they have a video
+Pablo [26:18]: demonstration
+Pablo [26:20]: and
+Pablo [26:24]: you can just go and search for the video and
+Pablo [26:25]: see
+Pablo [26:27]: how the system actually work
+Pablo [26:29]: right so
+Pablo [26:33]: i don't want to show the video here because it will take forever
+Pablo [26:34]: right
+Pablo [26:37]: too long
+Pablo [26:52]: so how visualization work
+Pablo [26:54]: s
+Pablo [26:55]: five major
+Pablo [27:09]: represent
+Pablo [27:10]: ation
+Pablo [27:11]: colors
+Pablo [27:24]: seven
+Pablo [27:34]: view
+Pablo [27:35]: ers the user
+Pablo [27:36]: of the utilization
+Pablo [28:03]: anal
+Pablo [28:04]: yst
+Pablo [28:09]: and they
+Pablo [28:10]: go to
+Pablo [28:36]: show
+Pablo [28:37]: me that all
+Pablo [28:38]: of the
+Pablo [28:41]: study
+Pablo [28:45]: visualization
+Pablo [28:47]: so
+Pablo [28:49]: i
+Pablo [28:52]: have this three sets of images show
+Pablo [29:00]: how the user iterate on a visualization design
+Pablo [29:05]: using visualization error rate
+Pablo [29:06]: system
+Pablo [29:13]: so you can see this first user starting with
+Pablo [29:15]: a spec
+Pablo [29:19]: bar
+Pablo [29:20]: or
+Pablo [29:21]: forgot
+Pablo [29:28]: so start with this
+Pablo [29:33]: but then based on feedback between first change tool
+Pablo [29:35]: bar chart but eventually
+Pablo [29:40]: with this bar charge
+Pablo [29:45]: and then what they call that
+Pablo [29:51]: okay yes code stack r it's called this
+Pablo [29:56]: train line basically not only show
+Pablo [30:00]: the information as part of also show the train
+Pablo [30:07]: this may be time i'm not sure
+Pablo [30:10]: if they show train
+Pablo [30:14]: that must be high but anyway here is another one
+Pablo [30:18]: so you see that the progression but then
+Pablo [30:22]: it mainly improve
+Pablo [30:24]: with maybe better
+Pablo [30:25]: let's see
+Pablo [30:28]: better annotation
+Pablo [30:32]: lab
+Pablo [30:33]: eling
+Pablo [30:34]: and
+Pablo [30:38]: then also the contract
+Pablo [30:45]: because this is really common
+Pablo [30:47]: i have seen over and over again
+Pablo [30:48]: right
+Pablo [30:51]: that student
+Pablo [30:52]: particularly
+Pablo [30:55]: either in their presentation or
+Pablo [30:57]: their
+Pablo [30:58]: home
+Pablo [31:00]: work or their report
+Pablo [31:01]: right
+Pablo [31:03]: they would just create
+Pablo [31:08]: some visualization or some figure or illustration
+Pablo [31:10]: but
+Pablo [31:16]: many of them they ignore how easy
+Pablo [31:18]: that illustration
+Pablo [31:21]: can
+Pablo [31:22]: be
+Pablo [31:23]: perceived by
+Pablo [31:24]: others
+Pablo [31:26]: everything
+Pablo [31:29]: could be easy enough contrast
+Pablo [31:30]: and
+Pablo [31:32]: if
+Pablo [31:34]: the text the label annotation
+Pablo [31:38]: easy to read sometimes it's too small
+Pablo [31:45]: and this one is like the user star with
+Pablo [31:46]: tree map
+Pablo [31:53]: but then eventually go to a simple bar chart
+Pablo [31:54]: instead
+Pablo [32:04]: and you can also use the jfx system to help you
+Pablo [32:08]: to basically
+Pablo [32:14]: add some style and improve the style of your visualization
+Pablo [32:19]: so
+Pablo [32:25]: you can have simple bar chart or a simple path but then this is a bar chart
+Pablo [32:25]: right
+Pablo [32:29]: but then
+Pablo [32:30]: for certain domain
+Pablo [32:30]: right
+Pablo [32:36]: you can see there like this is like beta from this particular domain for example about transportation
+Pablo [32:41]: then you use this kind of icon just to make it look more interesting
+Pablo [32:45]: so this is about suffer right
+Pablo [32:49]: then they will
+Pablo [32:52]: use suburb
+Pablo [32:55]: and then the different size right and then
+Pablo [32:56]: they have
+Pablo [32:58]: label and the patient
+Pablo [33:02]: this is
+Pablo [33:08]: about agricultural land use and then you see here they have
+Pablo [33:09]: this
+Pablo [33:10]: crop right
+Pablo [33:13]: you can see
+Pablo [33:21]: here this is about every daily time spent reading per
+Pablo [33:23]: fect in us
+Pablo [33:30]: so you see the new bar chart but then update is
+Pablo [33:34]: and
+Pablo [33:35]: i become
+Pablo [33:37]: somebody in our field
+Pablo [33:42]: actually create a system that can
+Pablo [33:43]: turn
+Pablo [33:46]: your i mean that will stop you
+Pablo [33:47]: continue
+Pablo [33:48]: to provide
+Pablo [33:49]: a child
+Pablo [33:52]: a little
+Pablo [33:53]: bit more
+Pablo [33:54]: or take
+Pablo [33:55]: an infrared
+Pablo [34:07]: in a genting system can also be used to make
+Pablo [34:11]: correction
+Pablo [34:13]: to suggest correction
+Pablo [34:15]: of your visualization
+Pablo [34:16]: specific
+Pablo [34:18]: try to detect error
+Pablo [34:20]: they can detect
+Pablo [34:26]: ambiguity or misleading
+Pablo [34:28]: visualization
+Pablo [34:32]: here clearly is wrong
+Pablo [34:35]: either
+Pablo [34:38]: the bar or the label
+Pablo [34:39]: and
+Pablo [34:42]: here these two i think i showed
+Pablo [34:42]: it
+Pablo [34:47]: or maybe not maybe next lecture
+Pablo [34:51]: you see this is the same path but then because of
+Pablo [34:53]: the
+Pablo [34:55]: y axis
+Pablo [34:59]: you
+Pablo [35:00]: can see this is
+Pablo [35:01]: between three
+Pablo [35:02]: point one
+Pablo [35:03]: four
+Pablo [35:05]: and the string of one
+Pablo [35:06]: five
+Pablo [35:07]: but then
+Pablo [35:11]: if you change this range right
+Pablo [35:21]: all these look the same so what's your i don't want to say this wrong but then what's your intention
+Pablo [35:22]: what do you want to show
+Pablo [35:25]: with this data
+Pablo [35:31]: this is what you want to show or this is one show
+Pablo [35:35]: the difference or the similarity
+Pablo [35:46]: so
+Pablo [35:51]: i can take stuff
+Pablo [35:56]: like
+Pablo [35:57]: chart
+Pablo [35:58]: e two
+Pablo [36:01]: ident
+Pablo [36:02]: ity
+Pablo [36:03]: event
+Pablo [36:04]: s
+Pablo [36:18]: with
+Pablo [36:19]: the grad
+Pablo [36:20]: uate
+Pablo [36:23]: then
+Pablo [36:24]: type different
+Pablo [36:25]: categories
+Pablo [36:26]: go
+Pablo [36:27]: away the
+Pablo [36:36]: design
+Pablo [36:37]: so
+Pablo [36:38]: there are these two paper
+Pablo [36:39]: s in this checkout
+Pablo [36:42]: and
+Pablo [36:43]: the life
+Pablo [36:46]: show
+Pablo [36:47]: you
+Pablo [36:50]: how
+Pablo [36:51]: real
+Pablo [37:19]: ization
+Pablo [37:21]: in
+Pablo [37:22]: this case
+Pablo [37:25]: change
+Pablo [37:27]: to
+Pablo [37:32]: suggest
+Pablo [37:33]: to use
+Pablo [37:47]: anal
+Pablo [37:48]: ysis to be done
+Pablo [37:53]: issue
+Pablo [37:57]: follow
+Pablo [37:58]: ed by a
+Pablo [37:59]: friendly
+Pablo [38:02]: this
+Pablo [38:03]: is how the right
+Pablo [38:04]: friend
+Pablo [38:10]: english
+Pablo [38:11]: is on college
+Pablo [38:13]: over
+Pablo [38:14]: using car
+Pablo [38:15]: ter
+Pablo [38:17]: so
+Pablo [38:28]: there are
+Pablo [38:29]: the two part
+Pablo [38:30]: of why
+Pablo [38:34]: and then there
+Pablo [38:35]: 's this
+Pablo [38:41]: and then
+Pablo [38:42]: the user
+Pablo [38:43]: said
+Pablo [38:44]: which empire
+Pablo [38:45]: appreciation program
+Pablo [38:46]: has the largest
+Pablo [38:49]: and the second largest share of
+Pablo [38:52]: funding this event is
+Pablo [38:58]: the
+Pablo [38:59]: f thirty
+Pablo [39:00]: five
+Pablo [39:03]: democratization program has the largest share of fund
+Pablo [39:04]: ing
+Pablo [39:06]: okay
+Pablo [39:10]: so it's actually trying to interpret from the visualization
+Pablo [39:12]: you can even ask question
+Pablo [39:28]: i mean this is like quite simple right
+Pablo [39:32]: when we were problem solving for really
+Pablo [39:34]: support real world
+Pablo [39:38]: this system
+Pablo [39:39]: is actually
+Pablo [39:55]: domain
+Pablo [40:01]: to solve real problem
+Pablo [40:07]: so
+Pablo [40:08]: next i'm going to
+Pablo [40:13]: start
+Pablo [40:15]: my
+Pablo [40:16]: group
+Pablo [40:17]: actually
+Pablo [40:18]: one
+Pablo [40:20]: a
+Pablo [40:21]: while ago
+Pablo [40:27]: with
+Pablo [40:28]: generating a
+Pablo [40:28]: i just came up
+Pablo [40:34]: with
+Pablo [40:35]: some more eas
+Pablo [40:36]: y
+Pablo [40:39]: which
+Pablo [40:40]: we used
+Pablo [40:45]: generative
+Pablo [40:47]: ai that's
+Pablo [40:47]: my type
+Pablo [40:50]: we actually have other project but then i think it's still kind of interesting
+Pablo [40:52]: and they're very different
+Pablo [40:53]: so i
+Pablo [40:54]: want to show you
+Pablo [40:55]: the
+Pablo [40:58]: first one is about network
+Pablo [40:58]: implementation
+Pablo [41:03]: anybody here network which i think
+Pablo [41:18]: back
+Pablo [41:18]: ward
+Pablo [41:34]: the
+Pablo [41:35]: problem is that will
+Pablo [41:36]: be transition
+Pablo [41:40]: simp
+Pablo [41:41]: ly
+Pablo [41:46]: just visualize the data
+Pablo [41:49]: with the library or the tool
+Pablo [41:52]: he or she has access to
+Pablo [41:56]: but
+Pablo [41:57]: then
+Pablo [42:02]: in practice or in the research field particularly right
+Pablo [42:04]: there are tons of
+Pablo [42:07]: different way
+Pablo [42:09]: to lay off a network
+Pablo [42:13]: if you want to visualize it
+Pablo [42:13]: that way
+Pablo [42:14]: you have to first
+Pablo [42:16]: dec
+Pablo [42:17]: ide
+Pablo [42:18]: how you work
+Pablo [42:19]: on the
+Pablo [42:19]: network
+Pablo [42:21]: and how you have
+Pablo [42:22]: such data
+Pablo [42:33]: there are so
+Pablo [42:34]: many differently on
+Pablo [42:35]: that
+Pablo [42:37]: and
+Pablo [42:38]: then the problem
+Pablo [42:39]: is
+Pablo [42:40]: for
+Pablo [42:41]: a large
+Pablo [42:43]: network
+Pablo [42:51]: for a small
+Pablo [42:52]: level
+Pablo [42:53]: and
+Pablo [42:54]: for most of
+Pablo [42:55]: the problem
+Pablo [42:57]: the network is huge
+Pablo [43:03]: we talk about even just a few thousand notes entity
+Pablo [43:11]: we talk about what's a network there is representation of relation between different
+Pablo [43:16]: and even just
+Pablo [43:18]: a few thousand entities
+Pablo [43:21]: means a few thousand nodes in this network
+Pablo [43:29]: if you want to lay it out using state of r reason especially the one we
+Pablo [43:29]: call
+Pablo [43:31]: force direct data
+Pablo [43:36]: it's basically a global optimization method
+Pablo [43:38]: it can take a long time
+Pablo [43:41]: and take a long time
+Pablo [43:46]: i didn't try it recently but then
+Pablo [43:53]: in the old days it can take hours to lay out a large brand if you
+Pablo [43:58]: have a graph with what media knows right you definitely think
+Pablo [44:02]: if you have a few thousand nodes it might take a few minutes
+Pablo [44:15]: there is some fast layout method like inputting like r two we introduce really fast graph layout method
+Pablo [44:20]: but then those certainly not optimal needed right it gave you the layout
+Pablo [44:24]: but then it does not always show whether
+Pablo [44:25]: you want to see
+Pablo [44:32]: how
+Pablo [44:37]: we
+Pablo [44:37]: show five
+Pablo [44:39]: for the ls
+Pablo [44:42]: to
+Pablo [44:43]: lay out the same
+Pablo [44:44]: rations
+Pablo [44:45]: you see how
+Pablo [44:46]: different
+Pablo [44:49]: each
+Pablo [44:50]: element
+Pablo [44:56]: so the question is how you choose when you have all these different
+Pablo [44:58]: possible way
+Pablo [44:59]: to lay off
+Pablo [45:00]: that
+Pablo [45:05]: work and when your graph is large and it's so expensive
+Pablo [45:06]: to do
+Pablo [45:07]: this
+Pablo [45:08]: triangle
+Pablo [45:09]: right
+Pablo [45:16]: anyway
+Pablo [45:18]: someone
+Pablo [45:19]: said
+Pablo [45:25]: cog
+Pablo [45:26]: nitively
+Pablo [45:29]: and also
+Pablo [45:30]: even
+Pablo [45:34]: you
+Pablo [45:35]: find
+Pablo [45:40]: each
+Pablo [45:41]: layout
+Pablo [45:42]: usually
+Pablo [45:43]: invol
+Pablo [45:44]: ve
+Pablo [45:45]: unob
+Pablo [45:48]: timeters
+Pablo [45:49]: parame
+Pablo [45:50]: ters
+Pablo [45:51]: and
+Pablo [46:04]: you can tune the parameter and you get slightly different layout and sometimes this parameter tuning is important for this particular data set of yours
+Pablo [46:06]: so you can see
+Pablo [46:14]: here six parameters and you use it again change it and then
+Pablo [46:16]: change
+Pablo [46:17]: right
+Pablo [46:22]: this one
+Pablo [46:23]: partially
+Pablo [46:25]: within
+Pablo [46:27]: you
+Pablo [46:28]: forget about
+Pablo [46:30]: what
+Pablo [46:31]: you did
+Pablo [46:42]: see
+Pablo [46:42]: it's not
+Pablo [46:43]: that it
+Pablo [46:46]: show you
+Pablo [46:47]: they are
+Pablo [46:52]: people
+Pablo [46:53]: lazy
+Pablo [46:53]: right they just use
+Pablo [46:54]: devoid
+Pablo [46:57]: and
+Pablo [46:58]: then just assess what
+Pablo [46:59]: ever the
+Pablo [47:00]: tool assist
+Pablo [47:00]: ant
+Pablo [47:04]: what
+Pablo [47:05]: are you doing
+Pablo [47:08]: we
+Pablo [47:09]: see we can do better
+Pablo [47:13]: so it's our job actually right
+Pablo [47:17]: we should develop
+Pablo [47:18]: better
+Pablo [47:20]: network visualization tool
+Pablo [47:23]: for users
+Pablo [47:29]: so my group
+Pablo [47:32]: found
+Pablo [47:33]: this
+Pablo [47:34]: work
+Pablo [47:37]: try to support
+Pablo [47:38]: network visualization better
+Pablo [47:41]: so basically we apply a neural network
+Pablo [47:47]: to train a generative model to construct
+Pablo [47:50]: two dated space
+Pablo [47:51]: so
+Pablo [47:52]: we get
+Pablo [47:53]: given
+Pablo [47:54]: for
+Pablo [47:55]: this
+Pablo [47:56]: data
+Pablo [47:56]: network
+Pablo [47:57]: visual
+Pablo [47:57]: ize
+Pablo [47:59]: we
+Pablo [48:00]: have some
+Pablo [48:01]: sample
+Pablo [48:03]: bas
+Pablo [48:04]: ically
+Pablo [48:18]: mod
+Pablo [48:19]: el and
+Pablo [48:20]: construct
+Pablo [48:21]: to be data space
+Pablo [48:22]: ident
+Pablo [48:25]: if
+Pablo [48:26]: ier
+Pablo [48:30]: so
+Pablo [48:31]: after
+Pablo [48:31]: training
+Pablo [48:34]: then
+Pablo [48:35]: the user can
+Pablo [48:36]: navigate
+Pablo [48:37]: this data
+Pablo [48:38]: space
+Pablo [48:40]: so
+Pablo [48:41]: here we
+Pablo [48:42]: choose
+Pablo [48:43]: out simple
+Pablo [48:44]: layout
+Pablo [48:45]: but then
+Pablo [48:47]: the user can see
+Pablo [48:50]: this is
+Pablo [48:51]: what
+Pablo [48:52]: this will be interesting
+Pablo [48:54]: this
+Pablo [48:55]: here
+Pablo [48:59]: actually nav
+Pablo [48:59]: igate
+Pablo [49:00]: let me
+Pablo [49:01]: show you what i
+Pablo [49:10]: continue in this space
+Pablo [49:14]: and it's real time
+Pablo [49:15]: once the model is trained
+Pablo [49:21]: then you can say start right here that's what i want
+Pablo [49:25]: here's another one
+Pablo [49:28]: but here now
+Pablo [49:33]: we show some particular use of particular matrix
+Pablo [49:43]: because network visualization network layout there are certain matrix we use to evaluate the quality of
+Pablo [49:45]: the layout for example
+Pablo [49:48]: the angle between two
+Pablo [49:49]: edges
+Pablo [49:54]: or the distance between right now
+Pablo [49:57]: so you can see the docker probably is the bad
+Pablo [50:03]: the brighter is better layout as you go to the dark area you see it's more hard
+Pablo [50:04]: er
+Pablo [50:13]: but then again it's just a different space you can pick different metric
+Pablo [50:14]: and then
+Pablo [50:17]: you care more
+Pablo [50:18]: about
+Pablo [50:19]: charact
+Pablo [50:20]: eristics
+Pablo [50:21]: and
+Pablo [50:22]: users use that
+Pablo [50:23]: for that
+Pablo [50:27]: this one is
+Pablo [50:28]: interest
+Pablo [50:32]: we have this it's really a two d layout
+Pablo [50:35]: of this
+Pablo [50:36]: struct
+Pablo [50:37]: ure
+Pablo [50:39]: so
+Pablo [50:42]: then in this later space when we navigate
+Pablo [50:43]: we
+Pablo [50:47]: actually see a three d rotation of this match
+Pablo [50:53]: dividing
+Pablo [50:54]: the way of others
+Pablo [50:55]: to navigate
+Pablo [50:57]: is like
+Pablo [50:58]: a stream
+Pablo [50:58]: has
+Pablo [50:59]: rotated
+Pablo [51:04]: so this is automatic it's not like
+Pablo [51:12]: arithmetically deleted now this is all ai generating ai keywords
+Pablo [51:15]: okay i'm hoping you get idea
+Pablo [51:24]: this one
+Pablo [51:26]: is very different because
+Pablo [51:27]: we're talking about
+Pablo [51:29]: complet
+Pablo [51:30]: ely different genoci
+Pablo [51:31]: d
+Pablo [51:31]: e
+Pablo [51:32]: relations
+Pablo [51:38]: and
+Pablo [51:39]: ancient autopilot
+Pablo [51:40]: three
+Pablo [51:41]: d
+Pablo [51:45]: three dimensional data from scientific
+Pablo [51:48]: bio
+Pablo [51:49]: medical applic
+Pablo [51:49]: ations
+Pablo [51:52]: so it's what we call
+Pablo [51:54]: volumetric data
+Pablo [51:57]: or geometric
+Pablo [51:59]: service data
+Pablo [52:00]: but anyway
+Pablo [52:04]: so
+Pablo [52:05]: we want to
+Pablo [52:06]: visualize this data
+Pablo [52:08]: and
+Pablo [52:09]: it's a three dimens
+Pablo [52:10]: ional
+Pablo [52:15]: could be something you familiar with
+Pablo [52:15]: right
+Pablo [52:17]: or
+Pablo [52:18]: could be
+Pablo [52:21]: some simulated
+Pablo [52:23]: phenomena
+Pablo [52:26]: and simulated structure
+Pablo [52:29]: three d in avatar structure
+Pablo [52:45]: what we try to do here is to be able to
+Pablo [52:48]: visualize three d objects
+Pablo [52:50]: or cd phenomena of
+Pablo [52:51]: interest
+Pablo [52:53]: more expressive
+Pablo [52:57]: especially
+Pablo [53:01]: some particular data or object right
+Pablo [53:08]: we want to encode remember in this class we will
+Pablo [53:10]: do color equ
+Pablo [53:12]: al visual coding
+Pablo [53:15]: but here
+Pablo [53:23]: we want to do material encoding that is we have certain object could be as simple as
+Pablo [53:28]: like this one with only a single material
+Pablo [53:33]: again
+Pablo [53:34]: some
+Pablo [53:35]: other
+Pablo [53:38]: object for example human body
+Pablo [53:41]: you have different material
+Pablo [53:45]: and how you specify
+Pablo [53:46]: and encode
+Pablo [53:48]: laser coding
+Pablo [53:50]: and then be able to render it
+Pablo [53:51]: and
+Pablo [53:53]: get the result you want
+Pablo [53:58]: and so we want to allow the user to
+Pablo [54:00]: specify
+Pablo [54:02]: the look and feel
+Pablo [54:04]: of
+Pablo [54:08]: the resulting visualization of this
+Pablo [54:13]: particular title single material of multi material object
+Pablo [54:22]: people have done this before but then without using ai
+Pablo [54:26]: so then it's a very tedious process because
+Pablo [54:44]: you
+Pablo [54:45]: then introduce
+Pablo [54:48]: material
+Pablo [54:49]: rendering system
+Pablo [54:52]: using stable
+Pablo [54:55]: diffusion model
+Pablo [54:58]: and then also with illumination control
+Pablo [55:00]: network
+Pablo [55:03]: and also
+Pablo [55:09]: we allow user to use network language to specify
+Pablo [55:11]: their intent
+Pablo [55:14]: so according to the user
+Pablo [55:15]: text
+Pablo [55:16]: prompt
+Pablo [55:22]: the model generate a grid of material map
+Pablo [55:25]: basically
+Pablo [55:27]: we consider lighting
+Pablo [55:29]: so this grid of material map
+Pablo [55:31]: generates
+Pablo [55:34]: i consider
+Pablo [55:35]: lighting
+Pablo [55:36]: from different direction
+Pablo [55:41]: so from this map then
+Pablo [55:44]: synthesize the specified material
+Pablo [55:52]: and so here is the example is this particular material
+Pablo [55:56]: and this is the movie
+Pablo [56:00]: so it's quite realistic right it's generated by a
+Pablo [56:02]: i it's not like
+Pablo [56:09]: and
+Pablo [56:10]: here is showing
+Pablo [56:11]: art
+Pablo [56:18]: and
+Pablo [56:19]: the more testing
+Pablo [56:20]: mic is
+Pablo [56:24]: mechanical
+Pablo [56:25]: hand
+Pablo [56:26]: and
+Pablo [56:29]: what's impressive here is
+Pablo [56:33]: there are ten different material we specify
+Pablo [56:36]: and then this is successfully generated
+Pablo [56:37]: and
+Pablo [56:39]: also it's quite realistic
+Pablo [56:43]: just showing
+Pablo [56:44]: something different
+Pablo [56:52]: okay
+Pablo [56:52]: we're almost done
+Pablo [57:03]: so
+Pablo [57:04]: yeah
+Pablo [57:06]: definitely
+Pablo [57:07]: you
+Pablo [57:08]: can see me gener
+Pablo [57:09]: ating the guide
+Pablo [57:21]: as
+Pablo [57:22]: a visualization
+Pablo [57:24]: special
+Pablo [57:25]: ist or
+Pablo [57:26]: researcher
+Pablo [57:36]: skill
+Pablo [57:37]: needs to acquire
+Pablo [57:39]: they're just
+Pablo [57:40]: like all these like they should
+Pablo [57:41]: program me and
+Pablo [57:42]: all that
+Pablo [57:46]: the more conventional way
+Pablo [57:49]: we want to definitely
+Pablo [57:52]: learn how to
+Pablo [57:55]: use a
+Pablo [57:57]: i in this
+Pablo [57:58]: process
+Pablo [57:59]: or
+Pablo [58:00]: if you are designing
+Pablo [58:01]: a visualization
+Pablo [58:03]: you
+Pablo [58:04]: also can use ai
+Pablo [58:10]: so then she's not
+Pablo [58:11]: going to
+Pablo [58:12]: replace your
+Pablo [58:14]: network that's why
+Pablo [58:16]: you guys never need to worry about oh you will be replaced
+Pablo [58:17]: by ai
+Pablo [58:19]: you cannot
+Pablo [58:20]: find a
+Pablo [58:20]: job
+Pablo [58:21]: because
+Pablo [58:24]: it's due by the humans critical thinking
+Pablo [58:27]: very important
+Pablo [58:37]: in real world savvy and then also the ability to effectively communicate with others about certain tasks
+Pablo [58:39]: you'll be fine
+Pablo [58:43]: or
+Pablo [58:44]: certain physician
+Pablo [58:48]: process
+Pablo [58:54]: you can
+Pablo [58:55]: use ai
+Pablo [58:56]: to help you in
+Pablo [58:57]: the process
+Pablo [59:00]: but then i think
+Pablo [59:11]: but we also want to think about is
+Pablo [59:15]: when we all agree that
+Pablo [59:17]: a
+Pablo [59:19]: i human team
+Pablo [59:24]: basically become increasingly important
+Pablo [59:26]: and that basically
+Pablo [59:29]: the future
+Pablo [59:38]: and we can see visualization really plays an important role right because
+Pablo [59:41]: visualization can be
+Pablo [59:44]: very nice database
+Pablo [59:45]: between human
+Pablo [59:47]: and ai system
+Pablo [59:51]: there's other work
+Pablo [59:53]: that we can do
+Pablo [1:00:00]: this morning i saw an email
+Pablo [1:00:05]: it's a job it's a phd position announcement
+Pablo [1:00:08]: from a university in europe
+Pablo [1:00:09]: and
+Pablo [1:00:12]: they have twenty php position
+Pablo [1:00:16]: in the area of visualization
+Pablo [1:00:18]: i was surprised
+Pablo [1:00:22]: phd position
+Pablo [1:00:23]: in one year
+Pablo [1:00:28]: for this area these visualization people think
+Pablo [1:00:29]: that
+Pablo [1:00:30]: it's important
+Pablo [1:00:34]: personally i can see
+Pablo [1:00:36]: you can play border bro
+Pablo [1:00:38]: in
+Pablo [1:00:39]: this human ai
+Pablo [1:00:40]: meaning
+Pablo [1:00:45]: also
+Pablo [1:00:49]: i
+Pablo [1:00:50]: 've been thinking about
+Pablo [1:00:54]: because
+Pablo [1:00:55]: basically
+Pablo [1:00:56]: i
+Pablo [1:00:58]: have to change
+Pablo [1:01:00]: say teaching a lot
+Pablo [1:01:02]: it's like how to teach visualization
+Pablo [1:01:07]: by embracing
+Pablo [1:01:10]: how we consider how we should teach
+Pablo [1:01:13]: a subject visualization
+Pablo [1:01:16]: when ai is dominate
+Pablo [1:01:28]: which
+Pablo [1:01:42]: is demonstrated
+Pablo [1:01:58]: user
+Pablo [1:01:59]: s
+Pablo [1:02:01]: the reason
+Pablo [1:02:02]: you use
+Pablo [1:02:03]: ai to do
+Pablo [1:02:04]: anything for us
+Pablo [1:02:07]: should
+Pablo [1:02:08]: play the central role
+Pablo [1:02:10]: to make
+Pablo [1:02:11]: the most important
+Pablo [1:02:12]: decision
+Pablo [1:02:21]: so when you
+Pablo [1:02:25]: use ai you want to definitely
+Pablo [1:02:28]: you cannot just assess what aip
+Pablo [1:02:30]: so everybody know that right now
+Pablo [1:02:39]: and then also you want to be able to not only right
+Pablo [1:02:44]: use what ai recommend or give you
+Pablo [1:02:46]: but then whenever possible right
+Pablo [1:02:53]: you want to be able to apply or be able to
+Pablo [1:02:57]: acquire treated domain knowledge
+Pablo [1:03:02]: which will help you actually evaluate exam check the result
+Pablo [1:03:04]: but also maybe
+Pablo [1:03:16]: use the ai we generate yield batteries it's also important
+Pablo [1:03:21]: if ai actually is used
+Pablo [1:03:22]: in
+Pablo [1:03:25]: your problem solving decision making process
+Pablo [1:03:26]: it was actually
+Pablo [1:03:37]: a
+Pablo [1:03:39]: i
+Pablo [1:03:41]: change
+Pablo [1:03:42]: higher grad
+Pablo [1:03:43]: ient
+Pablo [1:03:49]: also
+Pablo [1:04:34]: we
+Pablo [1:04:35]: talk about
+Pablo [1:04:42]: creativity
+Pablo [1:04:45]: micro actually found a study
+Pablo [1:04:47]: which show
+Pablo [1:04:48]: s some interesting
+Pablo [1:04:48]: package
+Pablo [1:04:51]: we did
+Pablo [1:04:52]: a study on
+Pablo [1:04:54]: student
+Pablo [1:04:55]: in the visualization
+Pablo [1:04:56]: class
+Pablo [1:05:21]: and
+Pablo [1:05:22]: then
+Pablo [1:05:25]: complet
+Pablo [1:05:26]: ed
+Pablo [1:05:32]: exper
+Pablo [1:05:33]: t
+Pablo [1:05:34]: to evaluate
+Pablo [1:05:35]: students
+Pablo [1:05:39]: bas
+Pablo [1:05:43]: ically we ask for visualization as to evaluate
+Pablo [1:05:46]: what the student
+Pablo [1:05:49]: from each group generates generate
+Pablo [1:05:58]: and while both student use ai they probably can finish their project
+Pablo [1:05:59]: or
+Pablo [1:06:04]: based
+Pablo [1:06:05]: on exper
+Pablo [1:06:05]: imentation
+Pablo [1:06:07]: the stud
+Pablo [1:06:08]: ent who uses ai
+Pablo [1:06:11]: their visualization
+Pablo [1:06:16]: is their visualization
+Pablo [1:06:20]: are less created less normal
+Pablo [1:06:23]: they use what ai did
+Pablo [1:06:28]: simple and then straightforward
+Pablo [1:06:32]: the students who didn't use ai
+Pablo [1:06:35]: they explore more
+Pablo [1:06:35]: they try
+Pablo [1:06:38]: different design or they
+Pablo [1:06:44]: didn't
+Pablo [1:06:45]: have access to some of the
+Pablo [1:06:50]: language she actually said yes
+Pablo [1:07:01]: so yeah if you're interested in this area
+Pablo [1:07:02]: they're like
+Pablo [1:07:09]: different direction
+Pablo [1:07:18]: as you can see most of the system i show you they work on rather simple data right like spreadsheet
+Pablo [1:07:19]: structure
+Pablo [1:07:20]: data
+Pablo [1:07:21]: and
+Pablo [1:07:22]: then they make
+Pablo [1:07:22]: bar chart
+Pablo [1:07:26]: and mostly single char
+Pablo [1:07:28]: t but then
+Pablo [1:07:32]: there are tons of other type of data in real world setting that
+Pablo [1:07:33]: network
+Pablo [1:07:34]: right graph
+Pablo [1:07:35]: would be one
+Pablo [1:07:37]: times
+Pablo [1:07:38]: here
+Pablo [1:07:39]: geographical
+Pablo [1:07:40]: data
+Pablo [1:07:42]: three d
+Pablo [1:07:43]: or
+Pablo [1:07:44]: math right
+Pablo [1:07:44]: terrain
+Pablo [1:07:46]: and
+Pablo [1:07:47]: other data
+Pablo [1:07:51]: yeah
+Pablo [1:07:55]: there's a lot to do
+Pablo [1:08:03]: we can use some better visualization specification language
+Pablo [1:08:05]: for visualizing generation
+Pablo [1:09:04]: change
+Pablo [1:09:17]: i don't know
+Pablo [1:09:18]: anybody
+Pablo [1:09:21]: so
+Pablo [1:09:22]: then
+Pablo [1:09:24]: unlike traditional
+Pablo [1:09:31]: the observable canvas is new so
+Pablo [1:09:34]: kind of
+Pablo [1:09:35]: mod
+Pablo [1:09:37]: el
+Pablo [1:09:38]: ing
+Pablo [1:09:41]: we do what we try to
+Pablo [1:09:43]: explore analyze
+Pablo [1:10:03]: really
+Pablo [1:10:04]: try to keep track
+Pablo [1:10:05]: of what you are doing
+Pablo [1:10:08]: and essentially
+Pablo [1:10:17]: use a graph to represent a network to learn your analysis
+Pablo [1:10:20]: or you are visualizing
+Pablo [1:10:23]: you can check
+Pablo [1:10:23]: it out
+Pablo [1:10:28]: and then with that
+Pablo [1:10:30]: you get manipulate that
+Pablo [1:10:36]: for
+Pablo [1:10:37]: maybe
+Pablo [1:10:40]: in this case you can read the ai
+Pablo [1:10:42]: through that
+Pablo [1:10:46]: you can see how you might want to
+Pablo [1:10:48]: modify
+Pablo [1:10:51]: the generation process
+Pablo [1:11:32]: when you use
+Pablo [1:11:33]: an system
+Pablo [1:11:40]: a lot of people already raise some of the issue
+Pablo [1:11:53]: for discuss
+Pablo [1:11:53]: ion
+Pablo [1:12:20]: about
+Pablo [1:12:26]: it
+Pablo [1:12:29]: you understand
+Pablo [1:12:35]: and also as i say in the message
+Pablo [1:12:44]: we have some number of slots for you to actually present
+Pablo [1:12:47]: your
+Pablo [1:12:48]: project in
+Pablo [1:12:49]: person
+Pablo [1:12:51]: so then you don't need to
+Pablo [1:12:52]: make
+Pablo [1:12:55]: actually probably is better
+Pablo [1:12:55]: right
+Pablo [1:12:56]: and
+Pablo [1:12:59]: then we can ask you a question so that
+Pablo [1:13:00]: we
+Pablo [1:13:01]: don't misunderstand
+Pablo [1:13:10]: we
+Pablo [1:13:11]: give you a very go
+Pablo [1:13:11]: for it
+Pablo [1:13:14]: so
+Pablo [1:13:15]: i'm maggie curtis
+Pablo [1:13:38]: one person responsible for ai that
+Pablo [1:13:39]: 's about to go
+Pablo [1:13:40]: for
+Pablo [1:13:42]: u
+Pablo [1:13:43]: i direction
+Pablo [1:13:46]: or
+Pablo [1:13:47]: you have even up to
+Pablo [1:13:48]: three right you can even have three
+Pablo [1:13:50]: members
+Pablo [1:13:52]: but then you need to plan out
+Pablo [1:13:56]: wait till the last day then you have no choice
+Pablo [1:13:57]: do it by myself
+Pablo [1:13:59]: okay
+Pablo [1:14:02]: so question then we
+Pablo [1:14:02]: done

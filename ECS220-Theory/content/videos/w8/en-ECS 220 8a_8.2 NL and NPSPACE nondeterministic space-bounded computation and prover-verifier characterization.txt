@@ -1,0 +1,66 @@
+We're going to talk
+about how to define non-deterministic space
+bounded computation. Now the textbook goes through some prover verifier
+formulations similar to the verification characterization
+of NP that we talked about. Now, the key difference with nb is that even if
+you're using only say, polynomial space or particularly,
+especially log-space. But even with polynomial space, witnesses can be exponential length. For example, a common P
+space type of problem would be finding a
+check made in chess, or more generally, a
+winning move in some game. And those could be
+exponential length compared to the number of bits you need to represent one single
+configuration of the game. So we don't have the polynomial space found on witness length anymore. Now, I think it's a bit
+awkward actually to define non-deterministic
+space that way. So I actually prefer the
+non-deterministic program formulation, even though I don't
+prefer it for time, For today's gone, I find
+this easier to think about. So remember just the definition of a non-deterministic Turing
+machine or algorithm, it can generate
+non-deterministic bets, right? And we say that if the
+correct answer is yes, we demand that some
+computation path except for some choice of non-determinism
+should cause it to accept. And if the correct answer is no, the no computation, pasture, etc. That's exactly as
+we've been doing it. Now we just put an S
+of n space bound on it and we get the class n space of S. So that's fairly straightforward compared to the other
+kind of characterization. So we can define n, l is n space log n and n space is all the n polynomial
+n spaces particular. So I prefer to think
+about it that way, but there is approver verifier characterization similar
+to NP hour or more generally, n time with t. So in this case
+we have a verifier algorithm. We have an input x, which is an instance of the
+problem we're talking about. And we say it's length is N. And we want the space bound of
+this verifier to be S sub n. So, so far, it's normal and we
+have a witness or a proof w, which is itself a string, so that, that's just like with NP. Now, here's the key difference. The length of w is arbitrary. It can be much bigger than the
+space bound here, unlike NP, where it doesn't make sense
+to have the witness length be longer than the time allowed or else he couldn't even
+read the whole witness. But here the witness could be
+much bigger than the space, so we can still read
+the whole thing without ever you loading it all into
+the read-write memory at once. Now, we demand that v has read-only access to both of its
+inputs, both x and w. It can read them, but I can't right? Now here's where it gets technical. This is why I don't prefer this
+characterization that these are technical things you have
+to do to actually make this map onto the previous slide. It has random access to X so
+it can jump anywhere in to x. I'm already say it's a Turing machine and
+maybe it's not random access, but it can slide the tape head
+back and forth like normal. It has only sequential
+access to bits of w. And here's the key. You don't even have a tape
+that can move left or right. It can only move from left
+to right, kinda like a DFA. So you can choose when you want
+to look at the next bit of w. But once you've done that,
+you can never look at any previous bits that
+you want to remember, any previous bits
+you have to remember them in the read-write memory. And that can be much
+smaller than W itself. So that is the technical
+stuff that we have to add on. Now, from now on, it is just like the definition
+of NP for this verifier. For us to say it works, we need that x is a yes instance. If and only if there's a witness
+w that makes dx x XW accept. And notice I didn't
+say there's a w in some set of strings of a certain way that could
+be an arbitrary length W. Okay, so why is it that we make this strange requirements about access and limits of w in this way. Well, if we didn't
+make this requirement, then I'm going to say we
+could encode NP-complete problems using only
+logarithmic space. Mating because we're not counting
+the space of the witness, right? So if for instance the Hamiltonian path problem would be in L and we'd have n l equals np. I'm not going to go through
+that here on the slide. But the way you would do it is
+to argue that if you had read, write access to w or sorry, not really red, but if we had, if we could go back and forth
+and read bits of w over again, we can actually execute the
+hand path verifier on it. So I won't go through that now, but feel free to ask
+about that if it's not clear how you would do that.

@@ -1,0 +1,1020 @@
+Pablo [0:29]: but i hope i can start right into the topic database and then just a few short announcements
+Pablo [0:32]: first one
+Pablo [0:37]: please go the third line
+Pablo [0:38]: is
+Pablo [0:41]: february sixth so it's like basically weeks
+Pablo [0:49]: when they uploaded this like first last week it was
+Pablo [0:50]: taken
+Pablo [0:52]: seven
+Pablo [0:56]: obvious
+Pablo [1:01]: ly friday everything just was born there won't be not to saturday
+Pablo [1:02]: but
+Pablo [1:19]: one thing and the second one is nearly everyone has registered their group but at least there are three of us students who haven't done so yet please send them
+Pablo [1:32]: easier
+Pablo [1:47]: okay and with this i would like to remind you of one of these reports of sql database
+Pablo [1:55]: i'm just making sure
+Pablo [1:58]: everything
+Pablo [1:59]: on the
+Pablo [2:02]: same you can always look it up as well
+Pablo [2:08]: when we realize that there is possibility
+Pablo [2:17]: please make sure
+Pablo [2:29]: all you can get here is basically whenever you have like user input then you can also try to submit some default call
+Pablo [2:35]: database something like this main idea
+Pablo [2:41]: so here we have our database
+Pablo [2:45]: maybe a very simple task that you can give me account
+Pablo [2:46]: i tell you
+Pablo [2:49]: how many gold medals
+Pablo [2:49]: they want
+Pablo [2:53]: aggregated
+Pablo [2:56]: you just have
+Pablo [3:00]: user i want to create last time
+Pablo [3:01]: it is
+Pablo [3:10]: not
+Pablo [3:28]: one of the lines here also would like to reduce one sixty four gold medals
+Pablo [3:29]: and
+Pablo [3:31]: execute
+Pablo [3:37]: now if it's actually designed here
+Pablo [3:39]: but if
+Pablo [3:40]: i don't
+Pablo [3:46]: write all the year but maybe some
+Pablo [3:50]: database
+Pablo [3:53]: so let me just mention
+Pablo [4:06]: is select everything from table for a company name of austria
+Pablo [4:09]: but of course you can just add anything
+Pablo [4:12]: execute this
+Pablo [4:26]: i'm executing it then it would
+Pablo [4:36]: get some interest but what i could do of course is also instead of specifying the name to ask you i could also write
+Pablo [4:46]: all right it's called and then drop table all values basically i enter through statement or
+Pablo [4:53]: try to look for all the data all the x to the second c value
+Pablo [4:54]: after
+Pablo [4:59]: wards double minded scientist means get everything
+Pablo [5:08]: so it's just to make sure that there is no error message and if i now execute this
+Pablo [5:09]: code
+Pablo [5:11]: oh yeah
+Pablo [5:15]: because it just runs this code again right now
+Pablo [5:19]: it's just dropped which is great a once again
+Pablo [5:42]: result
+Pablo [5:44]: and now i drop the table
+Pablo [5:50]: and then what i do next try to see or get data from this table
+Pablo [5:55]: and of course now there's an issue because it just got zero
+Pablo [5:57]: has deleted
+Pablo [6:02]: worst case we don't have backups and everything
+Pablo [6:07]: but even if you have backups maybe what do they want
+Pablo [6:13]: since the last
+Pablo [6:17]: just make sure you
+Pablo [6:20]: telling me i pulled it ten times the voice
+Pablo [6:23]: so how can we do this
+Pablo [6:29]: whenever you have a parameter just add it
+Pablo [6:30]: here you have to placeholders
+Pablo [6:33]: placeholders and then just
+Pablo [6:36]: add the same thing
+Pablo [6:38]: one to
+Pablo [6:39]: have place
+Pablo [6:45]: specify country and then just add some parameters
+Pablo [6:59]: then we get our values here but there's no way
+Them [7:12]: it provide here
+Them [7:28]: this would be sql injection
+Them [7:29]: do we have
+Pablo [7:47]: to ask things would like databases what would be prep if we had the final project maybe
+Pablo [7:55]: you create your data from a csv file or your data contracting and then you want
+Pablo [8:01]: database so there are like several people
+Pablo [8:06]: let's use data
+Pablo [8:06]: base
+Pablo [8:21]: connect to our database and then write pandas
+Pablo [8:32]: like the pandas data frame just has a comma two sql i would just provide a table name how it stored
+Pablo [8:34]: into the database
+Pablo [8:38]: and we provide a we also can provide whether
+Pablo [8:40]: it should be replacing a table that
+Pablo [8:41]: is existing
+Pablo [8:45]: here
+Pablo [8:47]: just
+Pablo [8:49]: added
+Pablo [8:52]: with the link
+Pablo [9:09]: so basically what we now can do is
+Pablo [9:21]: if we just try to see what kind of data are contained in our second database we collect two database which is realized that it's
+Pablo [9:25]: how you can
+Pablo [9:26]: create
+Pablo [9:27]: a database you
+Pablo [9:28]: can actually find a
+Pablo [9:40]: second possibility is if you have a csv file it's exactly how a came out with the olympic games database because at the beginning you find
+Pablo [9:46]: the first statement is from kfc
+Pablo [9:52]: and they're actually csv files so if you have a log
+Pablo [9:57]: data you can see that the sam olympic metals have between to them
+Pablo [10:02]: depends there are csv files or stored and just
+Pablo [10:06]: in the database
+Pablo [10:17]: whenever
+Pablo [10:18]: you have
+Pablo [10:22]: whenever you have a csv file
+Pablo [10:28]: you can just use pandas data frame to read the csv file and then just to export everything
+Pablo [10:30]: basically
+Pablo [10:36]: what if you have your csv file and you want to have a database just make a panace data
+Pablo [10:42]: everything here
+Pablo [10:44]: create a pandas data frame
+Pablo [10:47]: and afterwards and the state of
+Pablo [10:53]: one step can use
+Pablo [10:54]: media
+Pablo [10:56]: and you have it
+Pablo [11:39]: and now
+Pablo [11:45]: i have just converted the csv file and
+Pablo [12:04]: one way create a database and if you want to go the other way around have your database
+Pablo [12:08]: also very
+Pablo [12:09]: easy so for example
+Pablo [12:17]: if you want to have the data frame and the database of a database all the time
+Pablo [12:19]: just three sql statement
+Pablo [12:21]: and this is how you get
+Pablo [12:22]: your
+Pablo [12:23]: data frame
+Pablo [12:25]: and you want
+Pablo [12:30]: just
+Pablo [12:33]: pandas data frame
+Pablo [12:34]: and output
+Pablo [12:40]: basically
+Pablo [12:41]: we don't have to do
+Pablo [12:41]: anything
+Pablo [12:43]: all the
+Pablo [12:45]: package
+Pablo [12:46]: we just
+Pablo [12:47]: use
+Pablo [12:50]: equal
+Pablo [12:52]: just provide
+Pablo [12:55]: a
+Pablo [12:56]: index
+Pablo [13:00]: so now
+Pablo [13:01]: we have success
+Pablo [13:02]: fully exported al
+Pablo [13:03]: opedo
+Pablo [13:10]: and last but this image
+Pablo [13:11]: once they
+Pablo [13:11]: exist
+Pablo [13:13]: parame
+Pablo [13:14]: ter so some
+Pablo [13:16]: work see where some entries
+Pablo [13:17]: are exist
+Pablo [13:19]: ing for example
+Pablo [13:20]: what
+Pablo [13:21]: the push
+Pablo [13:23]: is on gold meds and we
+Pablo [13:24]: lose the game
+Pablo [13:27]: some of
+Pablo [13:28]: the
+Pablo [13:29]: what
+Pablo [13:31]: we could do is
+Pablo [13:38]: we have
+Pablo [13:39]: one
+Pablo [13:41]: gold
+Pablo [13:43]: medal in some of those
+Pablo [13:48]: some
+Pablo [13:49]: how
+Pablo [13:54]: there
+Pablo [13:55]: is no entity
+Pablo [14:09]: a lot of
+Pablo [14:15]: thank you
+Pablo [14:15]: also
+Pablo [14:17]: ra
+Pablo [14:18]: ther than
+Pablo [14:19]: writing
+Pablo [14:20]: system use
+Pablo [14:21]: x is so many
+Pablo [14:22]: times
+Pablo [14:23]: all the
+Pablo [14:25]: time is that one
+Pablo [14:26]: both the gold
+Pablo [14:27]: medal
+Pablo [14:29]: some
+Pablo [14:31]: of these
+Pablo [14:38]: twenty four
+Pablo [14:39]: different times
+Them [14:49]: and then last but not least let me follow
+Them [14:53]: so how we have only
+Them [14:56]: packaged python is
+Them [14:57]: very lenient for
+Them [14:57]: us
+Them [14:59]: because
+Them [15:00]: just that data
+Them [15:01]: base
+Them [15:05]: on
+Them [15:06]: server
+Them [15:07]: but we want
+Them [15:08]: to connect
+Them [15:09]: with data
+Them [15:10]: base on a server
+Them [15:12]: and
+Them [15:13]: a
+Them [15:15]: package and
+Them [15:16]: we would use
+Them [15:18]: them
+Them [15:23]: there is also package and basic
+Them [15:27]: eng
+Them [15:28]: ine
+Them [15:31]: use database create
+Them [15:32]: connection
+Them [15:34]: and this is a trust rate microbaction
+Them [15:36]: and
+Them [15:37]: all
+Them [15:39]: server
+Them [15:43]: and then do the same
+Them [15:50]: in our case unless you have
+Them [15:57]: huge data that maybe
+Them [16:07]: the way what you would have changed
+Them [16:20]: and also create a website maybe you won't have billions of data
+Them [16:31]: and it's the same for the homework for the environment database
+Them [16:33]: i mean it's quite large
+Them [17:12]: any
+Them [17:12]: questions
+Them [17:36]: and
+Them [17:37]: this request
+Them [17:38]: so
+Them [17:42]: those
+Them [17:43]: is needed
+Them [17:45]: and the state already know how
+Them [17:46]: to store it on a database
+Them [17:48]: and subset them work with them
+Them [17:51]: but next is like how can you access data
+Them [18:06]: and i mean i would also like to talk about financial let me give you one chart if you'd like to get data anyway
+Them [18:08]: the most convenient
+Them [18:14]: case is there is some csv file download some database
+Them [18:17]: database
+Them [18:20]: if you find anything on
+Them [18:21]: text it's always very convenient
+Them [18:24]: and you just download
+Them [18:33]: data most convenient but as the physician working with data even with the analysis
+Them [18:34]: station
+Them [18:42]: sometimes it's very useful to create your own data and maybe you're the first one
+Them [18:45]: to get kind of data process
+Them [18:50]: a new project and such know how to create
+Them [18:51]: data on your own
+Them [18:52]: and
+Them [18:54]: then there are like two because
+Them [18:57]: they
+Them [18:58]: are
+Them [19:04]: document
+Them [19:05]: ed on
+Them [19:06]: the world
+Them [19:11]: and
+Them [19:12]: it can see the
+Them [19:13]: well
+Them [19:14]: spectrum
+Them [19:15]: ideally
+Them [19:17]: at the
+Them [19:18]: three row
+Them [19:24]: system
+Them [19:50]: access
+Them [19:51]: ories
+Them [20:13]: website
+Them [20:15]: only
+Them [20:15]: allow
+Them [20:16]: s to
+Them [20:17]: see the results
+Them [20:18]: if you have
+Them [20:22]: a website
+Them [20:26]: and
+Them [20:27]: user dec
+Them [20:28]: ides that
+Them [20:29]: you show it
+Them [20:35]: website
+Them [20:38]: ium
+Them [20:38]: browser
+Them [20:42]: code
+Them [20:43]: and the website
+Them [20:43]: is still
+Them [20:45]: being draw and act
+Them [20:46]: ual human use
+Them [20:47]: r
+Them [20:48]: which any very useful
+Them [20:51]: but be careful
+Them [20:57]: sometimes there is a reason don't want
+Them [20:58]: to
+Them [21:02]: allow bots to access websites or some data
+Them [21:09]: and such a case it would be always very closely watched
+Them [21:13]: early sending one request per second
+Them [21:23]: or one interaction per second is always considered best practice and be a little bit past of requests per second
+Them [21:29]: regardless whether you're using a cdm file
+Them [21:37]: in any case just make sure if you're trying to get around this
+Them [21:43]: but it's a very nice
+Them [21:45]: okay
+Them [21:49]: and with this short overview
+Them [21:50]: i
+Them [21:53]: would like to say something about the current project
+Them [21:56]: and what we started
+Them [22:02]: and the idea is like last friday there was this kubrick spatial data so this means basically
+Them [22:05]: you could start writing your final
+Them [22:05]: project
+Them [22:17]: and again maybe we'll do only mahat or pieces of action
+Them [22:21]: on how all strategies would look like
+Them [22:23]: and then you can
+Them [22:25]: decide whether to start with the project
+Them [22:27]: all the information
+Them [22:28]: you need
+Them [22:34]: so basically i mean you don't need
+Them [22:37]: the first basic thing which should work in
+Them [22:44]: groups of three heads on experience so
+Them [22:49]: after you have created your product
+Them [22:56]: and ideally upload it github because if you're applying for a job in the industry
+Them [22:57]: do you have
+Them [22:59]: project
+Them [23:04]: the only one but then you have maybe the end of some project
+Them [23:06]: and you
+Them [23:07]: emphasize
+Them [23:08]: what you have done
+Them [23:11]: what kind of knowledge you
+Them [23:12]: had
+Them [23:19]: so basically what i would consider maybe
+Them [23:20]: best
+Them [23:21]: practice
+Them [23:33]: for a file to demonstrate what you learned in this lecture and there are some things we talk about or will talk about
+Them [23:40]: don't lead to all of these steps but this is like some nearly complete list of what you could do
+Them [23:44]: maybe the most important
+Them [23:55]: thing would be starting to research question is should we at least interest for you and also please try to convince me in your
+Them [23:57]: results where they are interesting for others
+Them [24:05]: so question and then the next question would be where to find the data
+Them [24:15]: but otherwise
+Them [24:18]: think about where to get
+Them [24:21]: what kind of website what
+Them [24:22]: methods you use
+Them [24:25]: any user api
+Them [24:28]: manually created or to
+Them [24:34]: and then you can store all your data
+Them [24:40]: all five csv files otherwise all the time
+Them [24:45]: work with sql if you store it in a database
+Them [24:47]: i would say optionally the data
+Them [24:48]: base
+Them [24:57]: and then you can process everything in the pandas data process
+Them [25:03]: ing working with having some information
+Them [25:13]: audio data frame and afterwards maybe you have some physical models sometimes you can just
+Them [25:15]: visualize the data
+Them [25:16]: compression
+Them [25:17]: and
+Them [25:19]: i will
+Them [25:20]: send
+Them [25:26]: this
+Them [25:34]: or
+Them [25:35]: you have all that
+Them [25:35]: you have
+Them [25:42]: any
+Them [25:43]: contact
+Them [25:54]: and
+Them [25:55]: then you notice
+Them [25:56]: this
+Them [25:57]: match you'll see like
+Them [25:58]: us
+Them [25:59]: all
+Them [26:33]: present
+Them [26:33]: works
+Them [26:34]: we also have
+Them [26:35]: five
+Them [26:50]: one
+Them [26:57]: question
+Them [27:01]: why
+Them [27:20]: has
+Them [27:21]: not been
+Them [27:22]: analysis
+Them [27:36]: there should
+Them [27:37]: be something
+Them [27:38]: new
+Them [27:39]: something challenging
+Them [27:42]: demonstrate
+Them [27:50]: with
+Them [27:51]: all this
+Them [27:52]: please
+Them [27:53]: also provide
+Them [27:55]: have the data
+Them [27:55]: from
+Them [27:57]: just
+Them [27:58]: get data
+Them [28:07]: all the information
+Them [28:07]: needed
+Them [28:15]: test
+Them [28:16]: the data
+Them [28:17]: in
+Them [28:18]: order
+Them [28:30]: to
+Them [28:31]: do
+Them [28:32]: access
+Them [28:33]: by the
+Them [28:37]: kind
+Them [28:38]: of
+Them [28:42]: project
+Them [28:46]: right
+Them [28:47]: now
+Them [28:52]: what
+Them [28:58]: please make sure if you have a great idea
+Them [29:01]: and ask for some students have really great ideas
+Them [29:03]: just make sure
+Them [29:04]: that
+Them [29:08]: these two three four five six are enough
+Them [29:09]: to answer your question
+Them [29:16]: also try to come up to a question that can be answered
+Them [29:25]: npc's have what your project is about
+Them [29:29]: so please have some limits on how
+Them [29:30]: much
+Them [29:34]: in particular because you want
+Them [29:41]: and then maybe some inspiration there is
+Pablo [29:53]: one data scientist found out
+Pablo [29:55]: in new york deposit
+Pablo [29:56]: system
+Pablo [29:59]: ticket
+Pablo [30:00]: ing for db
+Pablo [30:04]: fundamental
+Pablo [30:06]: error and just realized
+Pablo [30:09]: by getting all the data
+Pablo [30:14]: you can read about
+Pablo [30:18]: all the science
+Pablo [30:18]: here
+Pablo [30:21]: drink
+Pablo [30:25]: ing
+Pablo [30:29]: and
+Pablo [30:36]: basic message there are some very interesting data projects sometimes
+Pablo [30:40]: you just come across some data
+Pablo [30:42]: or something
+Pablo [30:43]: first
+Pablo [30:55]: the project needs to answer look a really specific research question
+Pablo [31:05]: or can it just be like exploring a topic as more exploratory there will obviously be some conclusions but do i need to
+Pablo [31:06]: kind of know that
+Pablo [31:07]: when i get started
+Pablo [31:15]: no what you always can do is come after investigating some data and then maybe by investigating an official
+Pablo [31:15]: ization
+Pablo [31:20]: findings and
+Pablo [31:23]: visual maybe sometimes it also
+Pablo [31:29]: you don't have very specific
+Pablo [31:34]: question
+Pablo [31:43]: then let me just quickly talk about reading criteria
+Pablo [31:51]: first of all
+Pablo [31:54]: writing on the mast
+Pablo [31:56]: er
+Pablo [32:08]: so it has to be enough time to create any gathering project
+Pablo [32:25]: okay
+Pablo [32:32]: there is a grading scheme in particular i would like provide you
+Pablo [32:34]: with some question
+Pablo [32:35]: that
+Pablo [32:37]: might help you some structure
+Pablo [32:44]: i will upload five
+Pablo [32:51]: so here ten pages
+Pablo [32:52]: but it will
+Pablo [32:56]: have same really criteria please always provide abstract
+Pablo [33:14]: first what is the project about an introduction the method you're using the secret what kind of methods you're using also methods you learn however
+Pablo [33:28]: sql databases web scraping and so on then endpoint is about the results and visualization there's also references
+Pablo [33:37]: and list of diligent tables whatever you have some visualization or tables please should not get all the tables
+Pablo [33:38]: with all the data
+Pablo [33:46]: please try
+Pablo [33:47]: all your
+Pablo [33:54]: content
+Pablo [34:00]: small
+Pablo [34:01]: points
+Pablo [34:02]: high
+Pablo [34:06]: ly
+Pablo [34:07]: loaded
+Pablo [34:14]: if you have
+Pablo [34:16]: some randomization
+Pablo [34:20]: it would be nice for us
+Pablo [34:29]: so this is how
+Pablo [34:36]: and then i have provided some statement
+Pablo [34:43]: how to write the asset i'll be able to evaluate them and even more
+Pablo [34:52]: detailed
+Pablo [34:54]: and
+Pablo [34:55]: you see them
+Pablo [34:56]: now
+Pablo [35:07]: there's no
+Pablo [35:08]: background
+Pablo [35:09]: in the shall
+Pablo [35:12]: just
+Pablo [35:13]: be everything
+Pablo [35:14]: while you
+Pablo [35:23]: collect
+Pablo [35:24]: some method
+Pablo [35:25]: s that
+Pablo [35:31]: kind
+Pablo [35:31]: of
+Pablo [35:32]: using
+Pablo [35:46]: all these
+Pablo [35:48]: provide
+Pablo [35:48]: them
+Pablo [35:54]: and then introduction how great
+Pablo [35:58]: give me a motivation maybe this is one of the most important
+Pablo [36:00]: things if i start in your project
+Pablo [36:04]: it's really making things so much easier
+Pablo [36:06]: to code
+Pablo [36:07]: that create the mod
+Pablo [36:09]: e like to know more about
+Pablo [36:18]: the resource summary
+Pablo [36:19]: as
+Pablo [36:25]: this would be like how
+Pablo [36:34]: last thing the usage of the eye of course for singing
+Pablo [36:36]: what difference
+Pablo [36:54]: that you're not
+Pablo [36:55]: allowed
+Pablo [36:57]: just
+Pablo [37:00]: beautif
+Pablo [37:00]: ul
+Pablo [37:04]: so
+Pablo [37:05]: you have to write it
+Pablo [37:06]: for basically
+Pablo [37:41]: positive
+Pablo [37:42]: everything
+Pablo [37:45]: your own
+Pablo [37:52]: and
+Pablo [37:53]: also like
+Pablo [38:01]: most
+Pablo [38:02]: of the subject of your
+Pablo [38:03]: own
+Pablo [38:08]: okay
+Pablo [38:13]: going back to the original topic for today how to get data from the web
+Pablo [38:18]: called scraping i mentioned million of
+Pablo [38:19]: points how to get
+Pablo [38:22]: them direct download episode
+Pablo [38:29]: and then of course this is coded in the way our cameras
+Pablo [38:33]: work down by
+Pablo [38:41]: easiest way your metal cables what olympic games on page is known to spray wikipedia
+Pablo [38:42]: or whatever
+Pablo [38:43]: on your
+Pablo [38:44]: own
+Pablo [38:45]: it
+Pablo [38:46]: 's just so much easier to come
+Pablo [38:57]: and then there's also like an api or spacing and just
+Pablo [38:59]: distinguish between these two things
+Pablo [39:07]: web spray thing data from a website
+Pablo [39:11]: open wikipedia they can try get all the information
+Pablo [39:12]: for
+Pablo [39:14]: hdfl network
+Pablo [39:15]: an
+Pablo [39:16]: api
+Pablo [39:17]: that's like
+Pablo [39:20]: programming interface so to collect
+Pablo [39:24]: biology
+Pablo [39:28]: with a data
+Pablo [39:29]: set
+Pablo [39:34]: here if you are using a python package
+Pablo [39:35]: it will be all the
+Pablo [39:36]: api create
+Pablo [39:37]: d by the
+Pablo [39:39]: develop
+Pablo [39:42]: ers but the main idea
+Pablo [39:47]: sometimes
+Pablo [39:48]: there are website
+Pablo [39:51]: data whenever
+Pablo [39:52]: you want to have
+Pablo [39:53]: some new data
+Pablo [39:54]: sets
+Pablo [39:55]: then they have a requ
+Pablo [39:56]: est in very specific
+Pablo [39:56]: manner
+Pablo [39:57]: they
+Pablo [39:58]: data
+Pablo [39:59]: base
+Pablo [40:04]: and sometimes
+Pablo [40:05]: and then
+Pablo [40:10]: don't have the same web pages don't have all the information
+Pablo [40:17]: way more effect
+Pablo [40:23]: ive sometimes
+Pablo [40:31]: okay
+Pablo [40:38]: yes so maybe just all in picture
+Pablo [40:40]: if i
+Pablo [40:45]: have here a white page which we
+Pablo [40:51]: communicate with the database
+Pablo [40:55]: in the background
+Pablo [40:58]: and i as a user
+Pablo [41:02]: website
+Pablo [41:18]: visual
+Pablo [41:24]: ize
+Pablo [41:35]: much
+Pablo [41:36]: more useful
+Pablo [41:38]: access
+Pablo [41:39]: all these websites
+Pablo [41:39]: all the time
+Pablo [42:14]: and realize how
+Pablo [42:15]: it is done
+Pablo [42:16]: and
+Pablo [42:18]: if you don't exceed some races
+Pablo [42:26]: and send requests on your own then you get
+Pablo [42:28]: and you don't have
+Pablo [42:30]: skip
+Pablo [42:31]: all these things
+Pablo [42:33]: and
+Pablo [42:35]: it's easier because this data
+Pablo [42:40]: for example json
+Pablo [42:42]: you don't have to think about
+Pablo [42:43]: how it's
+Pablo [42:46]: for today
+Pablo [42:47]: we're going to
+Pablo [42:48]: test
+Pablo [42:52]: the document apis so we are now
+Pablo [42:53]: look at
+Pablo [42:54]: this
+Pablo [42:56]: connect here
+Pablo [43:07]: but on first we'll also talk about how to see the request sent to a database it's not a document
+Pablo [43:12]: that you have code that you don't send
+Pablo [43:15]: some access to databases here
+Pablo [43:19]: okay
+Pablo [43:27]: still have to tell you some more things
+Pablo [43:42]: so http the hypertext transcript protocol is basically a set of rules for communicating you obviously you typically see for most websites you also see an htt
+Pablo [43:43]: ps
+Pablo [44:06]: for
+Pablo [44:07]: example
+Pablo [44:08]: and
+Pablo [44:09]: answer
+Pablo [44:13]: every
+Pablo [44:16]: one
+Pablo [44:24]: is
+Pablo [44:33]: if
+Pablo [44:34]: you have
+Pablo [44:35]: some
+Pablo [44:37]: number four hundred in particular
+Pablo [44:40]: i guess you have seen it
+Pablo [44:41]: borrow for
+Pablo [44:41]: final count
+Pablo [44:43]: also
+Pablo [44:44]: another thing
+Pablo [44:45]: which you
+Pablo [44:47]: see in the next few weeks more of
+Pablo [44:47]: this is four hundred
+Pablo [44:48]: three
+Pablo [44:51]: this is basically when the server denies
+Pablo [44:55]: requesting the same realized you try to get something done and you don't
+Pablo [45:00]: want to give the answer they realize what you were doing at the top
+Pablo [45:02]: not possible
+Pablo [45:05]: and then there are also
+Pablo [45:17]: number three hundred more meters on h status quo and there's also one specific one that highlight
+Pablo [45:27]: here
+Pablo [45:27]: is here
+Pablo [45:30]: four hundred
+Pablo [45:31]: eight in this
+Pablo [45:36]: basically
+Pablo [45:38]: an appeal
+Pablo [45:42]: let
+Pablo [45:43]: me just
+Pablo [45:50]: find it there is somewhere there is a link to this
+Pablo [45:55]: but for all the other status quo
+Pablo [46:04]: just to let you know where you find your reading some
+Pablo [46:09]: more things
+Pablo [46:12]: there are a lot of different types
+Pablo [46:16]: the most
+Pablo [46:17]: and
+Pablo [46:27]: get requests basically you want to retrieve some data very typical thing would be the get method
+Pablo [46:33]: to post it as you just try to send
+Pablo [46:42]: require the website to do some action for you so if you want to change state of website then you have
+Pablo [46:47]: but there are also other methods as well
+Pablo [46:55]: and then the last thing is
+Pablo [47:01]: there is vector here that developers
+Pablo [47:04]: use so you want to see our request
+Pablo [47:11]: and now we can either make the right thing
+Pablo [47:13]: and
+Pablo [47:20]: here on the network
+Pablo [47:27]: there is some request
+Pablo [47:28]: data
+Pablo [47:37]: see a lot of
+Pablo [47:40]: background
+Pablo [47:46]: and needed most
+Pablo [47:53]: you will have our data
+Pablo [47:56]: engaged
+Pablo [48:03]: so basically we will exploit this development tools in the next few
+Pablo [48:04]: weeks
+Pablo [48:13]: if this request has not been documented and basically this inspect
+Pablo [48:20]: is exciting what we could use to get to see how this page communicates with the database
+Pablo [48:29]: and this request that are sent from the web page that we will try to send them on our own just by
+Pablo [48:48]: rest api just m concrete so there are different types of apis web apis one of them is rest apis
+Pablo [48:49]: that is specific
+Pablo [48:57]: i skipped the details basically they had very specific format that allows you use it very easily
+Pablo [48:59]: and they have
+Pablo [49:01]: some nice
+Pablo [49:01]: properties
+Pablo [49:04]: you want to just see how you get the data
+Pablo [49:12]: all the details here how rs api should
+Pablo [49:31]: the first pick is i would like to use the api of itunes so whenever you want to learn something about the song store to kind of access the song dancers for all the meat data in the sense all the musicians all the store itunes
+Pablo [49:33]: and these are
+Pablo [49:43]: automated apis know how to take all the data and if you have the document api please over
+Pablo [49:48]: the second
+Pablo [49:58]: word trying to set data from a documented is that my main message is if you have the documentation nobody likes to use pages
+Pablo [50:05]: of a documentation but some of the answers for your homework will be trusted on documentation
+Pablo [50:11]: but it's more or less explained
+Pablo [50:26]: the ipa is like ipa for items also like restricted you are allowed to send a request only every second
+Pablo [50:33]: even lower than typical and then
+Pablo [50:42]: google import request packages
+Pablo [50:48]: this could be like the first package we use in the next
+Pablo [50:54]: ide
+Pablo [50:55]: ally when we
+Pablo [50:58]: receive something
+Pablo [51:05]: like
+Pablo [51:08]: some private
+Pablo [51:17]: equals
+Pablo [51:24]: and then
+Pablo [51:25]: at the end of the
+Pablo [51:26]: question
+Pablo [51:27]: mark and
+Pablo [51:28]: then you have always
+Pablo [51:30]: put
+Pablo [51:31]: some value and
+Pablo [51:32]: then you have
+Pablo [51:33]: a second parame
+Pablo [51:34]: ter
+Pablo [51:35]: equals another
+Pablo [51:37]: value and this is like a typical struct
+Pablo [51:39]: ure for an api
+Pablo [51:41]: refresh
+Pablo [51:46]: and of course we can do so by adding manually this question marks
+Pablo [51:47]: this
+Pablo [51:48]: ampersand
+Pablo [51:48]: all the time
+Pablo [52:21]: and
+Pablo [52:22]: then we will
+Pablo [52:23]: send some address
+Pablo [52:39]: on
+Pablo [52:39]: relation
+Pablo [52:42]: all
+Pablo [52:43]: the members media and
+Pablo [52:47]: so on
+Pablo [52:49]: and this
+Pablo [52:49]: will be
+Pablo [52:50]: just added together
+Pablo [53:05]: in the end if we create a request like this and you can see this is exact
+Pablo [53:10]: the reason we have to search question mark from e prescript ampersand media because
+Pablo [53:12]: music ends
+Pablo [55:57]: number
+Pablo [55:58]: of surgeries respond
+Pablo [56:00]: because
+Pablo [56:05]: whenever
+Pablo [56:06]: you try it
+Pablo [56:07]: it says some data
+Pablo [56:09]: if
+Pablo [56:10]: you want to get all the
+Pablo [56:11]: options
+Pablo [56:12]: published
+Pablo [56:13]: yesterday
+Pablo [56:14]: just make
+Pablo [56:15]: sure you just get
+Pablo [56:21]: over
+Pablo [56:22]: it
+Pablo [56:38]: and then now we have
+Pablo [56:41]: our response and maybe this is a little bit misleading
+Pablo [56:45]: because it's now just executed response
+Pablo [56:45]: again
+Pablo [56:53]: two hundred like on the one hand this is good news at all your status code two hundred means everything works well
+Pablo [56:55]: but still i don't see any data
+Pablo [56:57]: and you now say
+Pablo [57:04]: it's just because response object itself
+Pablo [57:05]: we
+Pablo [57:08]: respond access the data
+Pablo [57:11]: because i
+Pablo [57:12]: con
+Pablo [57:16]: ic data in this format
+Pablo [57:17]: can be needed
+Pablo [57:19]: just use the
+Pablo [57:20]: network and then
+Pablo [57:22]: you get results
+Pablo [57:50]: here
+Pablo [57:57]: and
+Pablo [57:58]: then
+Pablo [58:35]: your
+Pablo [58:36]: response
+Pablo [58:59]: vis
+Pablo [59:00]: ual after
+Pablo [59:01]: each request
+Pablo [59:03]: of facebook
+Pablo [59:11]: so
+Pablo [59:12]: let me just create
+Pablo [59:13]: some of the
+Pablo [59:16]: issues
+Pablo [59:17]: so
+Pablo [59:18]: if i add
+Pablo [59:29]: and
+Pablo [59:30]: now i can
+Pablo [59:31]: try it
+Pablo [1:10:19]: there would be more important cash and sometimes you sign several times because you have a roof and sometimes or i don't know running code then you realize it's part of the code there is an error message in rerun report again and there's one hundred exactly the same as ten minutes
+Pablo [1:10:34]: ago so for this case you're sending a request to have already sent it will just use the cache request data from the cache data
+Pablo [1:10:43]: from the cache request then it's not really set in actual terms of course a device
+Pablo [1:10:49]: if you would send another request with exactly the same pattern
+Pablo [1:10:53]: and maybe the data have changed if we don't realize
+Pablo [1:11:00]: but typically if you're not really trying to get some live data
+Pablo [1:11:02]: you have
+Pablo [1:11:03]: the same request
+Pablo [1:11:04]: again
+Pablo [1:11:04]: in the end
+Pablo [1:11:10]: it's really
+Pablo [1:11:11]: helping you
+Pablo [1:11:14]: serve
+Pablo [1:11:15]: a lot
+Pablo [1:11:16]: actually
+Pablo [1:11:17]: work for you
+Pablo [1:11:18]: and just make sure
+Pablo [1:11:19]: that you don't
+Pablo [1:11:20]: send requ
+Pablo [1:11:21]: est
+Pablo [1:11:25]: so in order to do so you have to install the
+Pablo [1:11:26]: request of
+Pablo [1:11:26]: package
+Pablo [1:11:29]: and
+Pablo [1:11:30]: basically
+Pablo [1:11:32]: use
+Pablo [1:11:37]: basically
+Pablo [1:11:40]: to
+Pablo [1:11:41]: a patient
+Pablo [1:11:45]: for one
+Pablo [1:11:45]: second
+Pablo [1:11:47]: the end
+Pablo [1:11:48]: point release the one
+Pablo [1:11:49]: second
+Pablo [1:11:54]: and you can
+Pablo [1:11:55]: see
+Pablo [1:12:01]: that
+Pablo [1:12:02]: approximately
+Pablo [1:12:15]: one of
+Pablo [1:12:16]: the
+Pablo [1:12:18]: leaders
+Pablo [1:12:32]: okay
+Pablo [1:12:40]: so
+Pablo [1:12:41]: i'm just using
+Pablo [1:12:42]: cash
+Pablo [1:12:44]: then
+Pablo [1:12:45]: all the data
+Pablo [1:12:46]: called
+Pablo [1:12:49]: email cache and then it's just
+Pablo [1:12:50]: setting five x
+Pablo [1:12:50]: the same
+Pablo [1:12:51]: request
+Pablo [1:12:52]: and
+Pablo [1:12:53]: after the ten
+Pablo [1:12:55]: it
+Pablo [1:12:56]: knows in the second
+Pablo [1:12:57]: read verse
+Pablo [1:12:58]: exactly what the answer will
+Pablo [1:12:59]: be and what
+Pablo [1:13:05]: yes
+Pablo [1:13:06]: but now
+Pablo [1:13:07]: you can see
+Pablo [1:13:08]: one second
+Pablo [1:13:10]: and
+Pablo [1:13:11]: after the first week
+Pablo [1:13:12]: but it just
+Pablo [1:13:14]: moves
+Pablo [1:13:14]: in
+Pablo [1:13:17]: this sense
+Pablo [1:13:18]: just demonstrate
+Pablo [1:13:21]: it doesn't only say few times
+Pablo [1:13:30]: so whatever i mean it's basically two more lines
+Pablo [1:13:35]: the package use request
+Pablo [1:13:51]: okay
+Pablo [1:14:20]: request
+Pablo [1:14:21]: after
+Pablo [1:14:22]: the nineteen
+Pablo [1:14:34]: this
+Pablo [1:14:52]: even
+Pablo [1:14:53]: more
+Pablo [1:14:54]: you try to test the
+Pablo [1:14:55]: jc
+Pablo [1:15:17]: object
+Pablo [1:15:26]: there's nothing
+Pablo [1:15:31]: in
+Pablo [1:15:38]: particular
+Pablo [1:15:40]: find
+Pablo [1:15:51]: your
+Pablo [1:15:52]: api
+Pablo [1:15:53]: key
+Pablo [1:15:54]: identify
+Pablo [1:15:56]: and
+Pablo [1:15:57]: one of the examples
+Pablo [1:15:59]: provide is
+Pablo [1:16:01]: web api of the guardian
+Pablo [1:16:31]: and
+Pablo [1:16:36]: says
+Pablo [1:16:56]: contin
+Pablo [1:16:56]: ental is
+Pablo [1:17:08]: basically
+Pablo [1:17:10]: safe
+Pablo [1:17:12]: and then
+Pablo [1:17:13]: i would just
+Pablo [1:17:14]: load
+Pablo [1:17:15]: the def
+Pablo [1:17:16]: late here
+Pablo [1:17:17]: at home
+Pablo [1:17:19]: of your sharing
+Pablo [1:17:20]: exactly the same thing
+Pablo [1:17:24]: and
+Pablo [1:17:27]: justify i will just read the
+Pablo [1:17:31]: file
+Pablo [1:17:33]: executive
+Pablo [1:17:38]: what do
+Pablo [1:17:40]: you call the garden
+Pablo [1:17:41]: of
+Pablo [1:17:42]: txt
+Pablo [1:17:50]: and then you can see right now
+Pablo [1:17:51]: but
+Pablo [1:17:52]: just
+Pablo [1:17:53]: use it for
+Pablo [1:17:57]: so
+Pablo [1:17:58]: now
+Pablo [1:17:59]: we have
+Pablo [1:18:01]: i now
+Pablo [1:18:03]: have my e and
+Pablo [1:18:05]: how to
+Pablo [1:18:08]: get your own api
+Pablo [1:18:12]: so then think of what would be an example
+Pablo [1:18:13]: think about
+Pablo [1:18:15]: forces
+Pablo [1:18:17]: how to
+Pablo [1:18:18]: get the
+Pablo [1:18:19]: request
+Pablo [1:18:22]: how to
+Pablo [1:18:23]: use all that stuff
+Pablo [1:18:24]: but
+Pablo [1:18:26]: one of the questions would
+Pablo [1:18:27]: be
+Pablo [1:18:28]: the
+Pablo [1:18:30]: try
+Pablo [1:18:31]: to answer the following
+Pablo [1:18:31]: question
+Pablo [1:18:34]: so
+Pablo [1:18:37]: in the us connection
+Pablo [1:18:37]: s
+Pablo [1:18:38]: between
+Pablo [1:18:39]: another
+Pablo [1:18:40]: areas and
+Pablo [1:18:43]: type at a number
+Pablo [1:18:45]: of articles written about
+Pablo [1:18:49]: i have any data
+Pablo [1:18:52]: could be that they had
+Pablo [1:18:54]: more
+Pablo [1:18:55]: news data
+Pablo [1:18:56]: output about
+Pablo [1:18:57]: one candidate
+Pablo [1:18:59]: so
+Pablo [1:19:04]: what we just tried to do is we try to access all newspaper
+Pablo [1:19:06]: in the week
+Pablo [1:19:07]: or the elections
+Pablo [1:19:12]: and
+Pablo [1:19:15]: try specifying an api key here
+Pablo [1:19:19]: i specify like verb i would like to
+Pablo [1:19:20]: look for
+Pablo [1:19:22]: is
+Pablo [1:19:23]: and
+Pablo [1:19:24]: i want to
+Pablo [1:19:26]: test first
+Pablo [1:19:26]: page
+Pablo [1:19:27]: it does not
+Pablo [1:19:29]: return all the newspaper
+Pablo [1:19:32]: s but
+Pablo [1:19:35]: the article
+Pablo [1:19:37]: s and
+Pablo [1:19:42]: us points so this is like what i'm trying to access
+Pablo [1:19:43]: here
+Pablo [1:19:50]: and of course start with the race for status and work
+Pablo [1:20:26]: information
+Pablo [1:20:53]: and then
+Pablo [1:20:54]: we can give
+Pablo [1:20:55]: our visa
+Pablo [1:21:01]: and
+Pablo [1:21:02]: all those
+Pablo [1:21:07]: stuff
+Pablo [1:21:17]: so basically the idea would be now we have first if the entries of this data set
+Pablo [1:21:25]: would like to get all the team one hundred six entries so what i'm doing is just specify the page
+Pablo [1:21:31]: not be number one second page
+Pablo [1:21:38]: and difference is now start index not one but fifty one
+Pablo [1:21:39]: because
+Pablo [1:21:41]: again
+Pablo [1:21:59]: and
+Pablo [1:22:00]: it will be a
+Pablo [1:22:02]: lot
+Pablo [1:22:03]: of people
+Pablo [1:22:05]: design
+Pablo [1:22:06]: ing
+Pablo [1:22:08]: one
+Pablo [1:22:08]: disciple
+Pablo [1:22:11]: one
+Pablo [1:22:12]: week for election
+Pablo [1:22:21]: and
+Pablo [1:22:22]: we order
+Pablo [1:22:23]: them
+Pablo [1:22:28]: so
+Pablo [1:22:29]: for example
+Pablo [1:22:30]: i want
+Pablo [1:22:31]: to test
+Pablo [1:22:40]: the first page you can write
+Pablo [1:22:48]: then i started the number three now there's
+Pablo [1:22:48]: one and only
+Pablo [1:22:50]: like
+Pablo [1:22:55]: add
+Pablo [1:23:07]: and basically the idea is
+Pablo [1:23:08]: that start
+Pablo [1:23:10]: with the first fifteen
+Pablo [1:23:13]: newspaper entries here and then
+Pablo [1:23:14]: i
+Pablo [1:23:16]: move from page number two
+Pablo [1:23:17]: to the number
+Pablo [1:23:18]: seven
+Pablo [1:23:19]: and
+Pablo [1:23:20]: it just add all
+Pablo [1:23:21]: the
+Pablo [1:23:28]: left
+Pablo [1:23:34]: now
+Pablo [1:23:37]: should be
+Pablo [1:23:40]: this containing
+Pablo [1:23:44]: all the entries
+Pablo [1:23:58]: let me
+Pablo [1:23:59]: just check
+Pablo [1:24:18]: now
+Pablo [1:24:23]: the state of frame have two hundred sixty two entries
+Pablo [1:24:25]: somehow
+Pablo [1:24:34]: because harry's one is done with each one
+Pablo [1:24:41]: page one and
+Pablo [1:25:02]: get
+Pablo [1:25:21]: our three hundred sixty eight we have saved everything into a kind of data plane
+Pablo [1:25:33]: as
+Pablo [1:25:35]: we
+Pablo [1:25:36]: go

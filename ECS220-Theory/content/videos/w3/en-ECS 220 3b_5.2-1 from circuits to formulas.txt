@@ -1,0 +1,117 @@
+So we've shown circuit
+SAT is NP-complete. And remember the other
+problem that we lean not a lot because it's got a lot
+more structure is 3 SAT. So we want to show that
+it's NP-complete as well. And then we'll know all those
+other problems where we reduce 3 SAT to them
+are also NP-complete. So 3-sat like circuit, that is a question about circuits. It's just this very restricted
+type of Boolean circuit. First of all, a formula. And more than that
+it'll 3 CNF formula. So because three CNF formulas are much more special case
+than general circuits, we've got a job to do here. We need to transform a circuit C into a 3 CNF formula fee so that c is satisfiable if and only
+if Phi is satisfiable. So the obvious way
+would be to transform C into an equivalent 3-CNF formula. In other words, one
+that takes the same them bots and gives the same
+output on each of those. But it's not obvious how There's a few problems in
+attempting to do this. One is that if we do a natural conversion of
+a circuit to a formula, it can have an exponential blowup. The formula can be much bigger. And it's not clear how
+to make it any smaller. And we need this to be, to be a polynomial time reduction. We need the output to be bounded by a polynomial length
+in the input length. And the second problem is that's just assuming we're
+converting a circuit to an arbitrary Boolean formula. But even if you could do that, well, converting an arbitrary
+Boolean formula to a CNF formula can itself
+have an exponential blow up. So let's just see examples. These problems. So the
+first problem is if you convert a circuit to a formula, you have exponential blow up. And why is that? Well, the unbound,
+unbounded fan out that circuits allow means
+you can have shared sub-circuits that don't take
+up any extra space there, just extra output
+wires in the circuit. But they can exponentially
+amplify in a circuit. So imagine you have this
+very, in a formula. So imagine you have
+this circuit takes four inputs and it's doing
+something not very interesting. It's just alternating and taking an end and then taking an
+order and then taking an end. But it's kind of feeding every output from one layer as inputs
+to the next layer. And that means essentially
+you can compute the end of X1 and X2 and
+then use it here and here. And then you use a here where
+you can use the OR of that with this over here and you
+can use it here and here. And so if you convert this
+to an equivalent formula, you end up having to
+make copies, right? So you want the end of X1 and X2 to go to this
+yellow or right here. But you also want it to be an
+input to this green or right here. So you need to have a second copy of the subformula in a formula because you're not allowed to
+have fanout bigger than one. So you can see that the
+number of leaves in this formula tree right here is exponential in the
+depth of that serve it. Because you're copying the same
+sum formula two to the d times. So just a straightforward conversion
+isn't going to work, right? So now a caveat is
+that the formula on the right may not be the
+smallest equivalent formula. And maybe there's
+some other way to get a formula that is
+equivalent to the circuit. But the point is that we don't know the general conversion method from circuits to formulas that
+preserves their size. All right, now the second
+problem is suppose we could get a formula that is
+equivalent to the circuit. That's the right size,
+but it's not C and F. How do we convert general Boolean
+formulas to CNF formulas? Well, even for this, it's not clear how to do it
+without an exponential blowup. So here's a formula which is it looks kind of like it
+might be C and have, it's not, it's actually DNF
+disjunctive normal form, where it's a big or of many
+subformulas that are themselves ends. So that's like the opposite of CNF. And the obvious way to write an equivalent CNF formula
+would be like this. Alright, so this is saying we
+want x1 and y1 to be true, or we want X2 and Y2 to be true, or we want X3 and Y3 to be true. So how could we express that in CNF? Well, essentially the shortest
+way we know of to list every possible clause
+of length m, like this. And that's two to
+the m total clauses. So this is going to be an exponential blow up in the
+size of the original forgot. So night, so that approach
+is not going to work. We would run into trouble in
+either of those conversions. So we're going to give up on
+the obvious way of doing this. But remember, we don't
+need something strong. We don't need to have
+a 3 CNF formula. It's equivalent to the circuit. In other words, it
+doesn't have to give the same output on every input. It doesn't even have to have
+the same set of inputs. We just need that the
+3 CNF formula phi is satisfiable if and
+only if c is satisfiable, they don't have to be equivalent. They don't even have to have
+the same number of inputs. So here's how we're going to do it. We're going to add new input
+variables to the Formula, One for each gate output. So imagine that this is
+your circuit over here. So it's got these inputs. This is just an example,
+but imagine you have these inputs x one, x eight, and then you have this circuit
+with lots of shared subformulas. I will fan out bigger than one. That's doing all this kind of stuff. So we're going to give a
+name to each of those gates, w1 through wn in this example. And each of those gates
+is going to correspond to a new additional input
+to the formula, right? So our formula will
+actually have 18 inputs. In this case, we haven't drawn the formula yet, we'll
+do that in a second. So the next step is for each gate, what we're gonna do is
+add for 3-CNF clauses. And their job is to assert this
+gate is functioning properly. In other words, it is correctly transforming its inputs
+into its output. And we can do this. Output, right, is one of
+the variables, right? So you can think of the gate as having a variable associated to it, or you can think of a wire, but actually that the two
+wires coming out of this one, we'll call them both W2, so that the output of a circuit or a gates in the
+circuit is a variable. So for example, if you had an end, what does it mean to say that
+end is functioning properly? Well, it means that if
+the two inputs are X1, X2, the output is w1. If X1 and X2 are true, that implies the
+output should be true. But in any other case, X1 is true, it's true is false, or they're both false. That implies that the
+output, That's right. But these implications, remember
+an implication statement is just the negation of the
+hypothesis or the conclusion. And the hypothesis here is an N. So when you negate it, You De Morgan through, you get an or. And then the third OR is from the implication and
+you get a cost, right? You get an OR of three literals. So this asserts that the two inputs and the output agree according to the function that the gate is trying to compute. And of course, there's nothing
+special about end here. The truth table for n is apparent in the sense that
+there's a not, not, not. And then the lack of a knot corresponding to the truth
+table of n being 000 001. But you could put nots
+in any order here. You could express XOR, you can express the or, or, just a negation formula. So you do this for every
+single gate in the circuit. So here's just an example
+showing the gate W6 prime, but it's a very sort
+of irregular pattern. So this asserts that every gate
+is being expressed properly, but we need one more
+thing we want to, we want that this thing is satisfiable if and only
+if the circuit is. So we're also simply going to assert that the circuit's output one. And we could do that with a clause that just redundantly says, well, the output W 10 should be true or it should be
+true, or it should be true. I, it should be true. Okay? So if c is satisfiable by some
+assignment to x one direct sake, then phi is satisfiable by assigning the same values to X1 through Xn, the variables and V. And assigning the values to w1 to wn correspond into what those gates would be outputting in the circuit. So conversely, how do
+you make that work? You just observe that if you've
+somehow made this formula true, well in particular
+you've made W 10 true. So this is true up here. And you've assigned some values to all of these variables so that every one of these
+clauses are satisfied. So in other words, the
+only way to make fee true is assign values to each of these intermediates
+so that each one is actually properly computing
+the function it says, which corresponds to some
+assignment down here that satisfying the circuit
+in the first place, because w ten is one.

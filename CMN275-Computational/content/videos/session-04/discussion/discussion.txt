@@ -1,0 +1,40 @@
+4th Session- NotebookLM Study Agents
+
+Every previous Session came with an AI-guided Study Guide: A Large Language Model (LLM)
+Links to an external site., in this case, based on Google's Gemini, Links to an external site. connected to a database that contains the lecture material, called NotebookLM Links to an external site. =  https://notebooklm.google.com
+
+Links to an external site.
+
+NotebookLM for 1st UCCSS Session: Introduction
+
+Links to an external site.
+
+NotebookLM for 2nd UCCSS Session: Big Data
+
+Links to an external site.
+
+NotebookLM for 3rd UCCSS Session: Social Network Analysis: Structure
+
+Links to an external site.
+
+NotebookLM for 4th UCCSS Session: Artificial Intelligence
+
+Links to an external site.
+
+Now: Professor Hilbert does not take ANY responsibility for the correctness of these AI-generated summaries. ...all models are wrong (including Large Language Models...), but some are useful (see 8th Session), and you can certainly get lots of useful support from interacting with them!
+
+So let's see what our AI-TA can do! For example, explore:
+
+    The 'Podcast Fact-Check': Listen to the generated "Audio Overview" (the banter between the two AI hosts) and catch them missing the point, "dumbing it down" too much, or missing the nuance of a term defined in the Lecture Slides.
+     The 'Devil’s Advocate': Use the AI to find weaknesses in the Professor’s own argument. For example: "Act as a critic of this course. Based on the provided source material, identify a counterargument or a limitation to the main theory presented in the lecture. Generate a respectful but challenging question I could ask the professor in an online forum about this limitation."
+    The 'Spoken vs. Written Detective': Ask NotebookLM to identify a concept that the Professor explained verbally in the Video Lecture/Transcript but was NOT explicitly written on the Slide Decks. For example, "Compare the transcript of the lecture with the slide deck. Identify 3 specific examples or anecdotes the professor used verbally that do not appear as text on the slides." How well does this work? Or does it?
+    The 'Hallucination Trap': Try to trick the AI into answering a question using outside knowledge (which it shouldn't do!). Ask a question about a famous concept that belongs to this field of study but was definitely not in the specific lecture or readings for this week. For example, ask the AI NotebookLM
+
+    Links to an external site.: "What prediction does the Professor make in the lecture regarding when AGI (Artificial General Intelligence) is a reality and when ASI (Artificial Super Intelligence) will take over humanity?"
+    ..what else? Anything else fun, interesting, insightful, ridiculous, and/or extremely helpful you can do with these NotebookLM-Teaching-Assistants?
+
+
+
+(1) After taking time to explore all four NotebookLMs, choose and explain the TWO exchanges that were most entertaining, fascinating, enlightening, and/or informative, each example from a different Session. Why did you choose these examples? What do you make of it?
+
+(2) After you post your response, comment on TWO posts from someone else. You must choose a post that has fewer than 4 comments (your comment can be the fourth). Make sure you write your comment yourself (!) and make it meaningful, kind, thought-provoking, and constructive, so the recipient can reflect on and improve their work.

@@ -1,0 +1,78 @@
+Now we'll see how this alternating quantifier characterization
+of P space. And, you know, one way you
+can think of that is that Q SAT is somehow the cleanest way to capture the notion of alternating quantifiers
+and it's P space complete. We'll see how this directly
+corresponds to the idea of games being peace, face conflict. So here's a game called Geography, and this is something some kids, sometimes we'll play in
+a car on a road trip. And the way the game works
+is Player One names a city, any city, so say Paris, and then Paris ends with an S. And now Player 2 has got a name, a city that starts within us. So maybe Player two
+names, Sacramento. Sacramento ends with a 0. So Player three have Parrot, sorry, Player 1 now has to name a
+city that starts with an a. So maybe the name Omaha. And then plate, it's
+now back to player two. They have to name a city
+that starts with an a, maybe they named Albuquerque. So we can sort of formalize this as being more general than
+just being about city names. We can say we have an arbitrary
+directed graph where in the game the nodes or the city names have
+an edge from one node to another. If the last character of u equals the first
+character of a, sudden. Here might be part of the graph
+of city names in this case. But just imagine you have
+an arbitrary graph, right? It doesn't necessarily
+correspond to letters and words. So the idea is players alternate moving along an
+edge to an unvisited node. So what I forgot to
+say is that you lose the game if you rename them. If you can't name a city
+or if you rename a city, somebody has already
+said, you can't reuse it. So players move along an
+edge to an unvisited node. And the losers, the first
+who cannot make a move. And maybe in the game
+you lose because you, you just forget cities, but imagine you had a perfect memory. You still might lose because
+you might run out of nodes. There may be no OUT neighbors of the previous move that,
+that you're going moved. So the geography decision
+problem is given a directed graph G and a
+starting node B and two players are going to play this game. The question is, does Player one have a winning strategy starting at B? So can they play cleverly enough and they can
+be guaranteed to be Player 2. So the first thing to
+convince yourself as geography is contained in P space. We're given this graph. And we can run a possibly
+exponential time algorithm, but a polynomial space algorithm to determine whether Player
+One is when instead. So we won't talk about that here, but ask about that if it's not clear. Okay, so more interesting is
+that geography is actually p space complete and
+it's P space hard. And the way we can show
+that is by reducing Q SAT to this is generally amaz P
+space completeness proofs go, you reduce Q SAT to the problem. So we didn't define it this way. But let's assume that Q SAT
+uses three CNF formulas. We let it be defined
+with general formulas, but you could do tricks like an Cook 11 theorem to convert
+those formulas to 3-CNF. So let's assume that we actually have three CNF formulas which
+are easier to work with. So the question is how to evaluate a quantified 3 CNF
+formula using geography. And the key idea is going
+to use the nodes you've already visited to lock in
+a choice for variables. So here's an example of
+showing that the construction, hopefully in a general
+enough way you can imagine what the graph would look like if you had more
+clauses and more variable. So you have a node up here, you have one node down
+here for every clause, and you have two nodes down
+here for every variable. And the arrows here represent
+which literals appear in each. And then with these little
+gadgets down here as well. And we're going to mark with an
+hex nodes we've already visited. So let's imagine we have a
+red player and a blue player. And we start at the start node here, and the red player is
+the first to move. So they make a mark, an X on one of the, our
+neighbors of start. So they got either go to this node or this node is
+the only two available. So let's imagine that
+they mark this one. This is how they can choose
+to set x equal to 1. Right? So if, if player, if the red player wants
+to set x equal to 1, they move to the x node, not to the negation of x2. And then now notice there's only one edge out of this node and
+only one edge out of that one. So in some sense that fixes
+the next two minutes. All, all blue can do is move to this node and all red can
+do is move to this node. So after reds middle, we do two moves and now it's
+Blues turns out, blues turned. All right. And so blue can pick
+to set y either to true or false. Remember that the way we
+characterize Q SAT as two players, that are the players take turns
+setting the beds one by one. This is how you can enforce
+that within a graph. So blue, it's blue's turn. They only have to know
+that they can move to, maybe they want to set y
+to one. So they do that. We mark this as blue as before. The next two moves are fixed. Red goes here, blue goes here, and now red gets to pick. Maybe read wants to set z to 0. So redwood moving. Now, next two moves are fixed. Blue has to go here. Read has to go here. Now what's going on? Well now, blue can pick a clause. So we're setting this up. So read wants to make the whole formula true. Blue wants to make it false. So if blue is going to win, right, It would mean it's possible
+to make the formula falls, but it's a CNF formula. Meaning if it's false, that's false because one of the clauses as false, which means blue would
+be able to pick a clause now to that is false
+under this assignment. But actually blue cat. So
+no matter what Blue pick, suppose blue picks the left clause, will read, can go now
+but work and read go. Read can go. Wherever. There's an unvisited nodes. X has been deserved
+why husband visited, but Z has not been visited. So red can go there. Okay, So, so what's happening here? The blue player to start, the blue player lost. And more generally, what's
+happening is that it's possible for red to choose a node so that no matter what
+node blue chooses, red can choose a nodes that no
+matter what cause blue chooses. Red can trap it and satisfy blue.

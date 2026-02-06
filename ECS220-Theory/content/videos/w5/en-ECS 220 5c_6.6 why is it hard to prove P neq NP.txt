@@ -1,0 +1,93 @@
+So we're at the end of the part of the course where we will talk about time complexity and
+the big open question, heirs whether P is equal to np. And what we've established is that it seems likely they're unequal, but wow, it's hard to prove. Why is it so hard to prove? All right, what could explain this? So this is a little more
+philosophical discussion here. Well, maybe P equals NP, right? We could be wrong. Maybe P equals NP. But the fastest algorithms for NP
+complete problems such as SAT, take some obscene
+polynomial running time, like ending to the 100. So this could be possible
+and this would kind of explain why we haven't
+figured this out yet. So maybe the reason
+all natural problems and p have running times that are more modest polynomials is that human intuition can only conceive
+of relatively simple algorithms. Right? So we've used the time hierarchy theorem to prove that there's
+certain artificial, unnatural problems that require time n to the 100 and can't be
+solved in time ended at 90. Now, we don't know of
+natural problems like this, but maybe they're out there and we're just not
+going to figure it out. Because what would the end of the
+100 time algorithm look like? It could look a few different ways, but the most straightforward
+way to come up with the algorithm that takes time n to the 100 is to have 100
+nested for loops, right? So exponential time algorithms
+are pretty simple to write down. You do something like for all x in the set of binary
+strings of length n, and that's exponential time. But it's kind of a simple algorithm. Simple in the sense it's
+easy to understand, not that it's simple to
+execute, it takes a long time, but algorithms that take huge running times maybe are
+hugely complex and we're just, we don't have the
+intellectual capability with our current understanding
+to come up with them. So I liken this to the
+unintuitive nature of say, relativity and quantum mechanics. Our intuitions evolved to deal with objects about big enough
+that we can see the size 1, one millimeter to one
+kilometer, Kilometer. Not enormous gravity
+wells that can bend light nor tiny sub-atomic
+or atomic particles subject to quantum effects. So there's no reason that these
+models that seem to work pretty well for those objects ought to be
+intuitive, even other accurate. So similarly, there's no
+reason to expect that if the most simple algorithms for
+SAT or immensely complicated, that we should be able to
+figure them out right now. Okay, Here's another reason
+why it might be so difficult. Perhaps they're equal, but the
+proof is non-constructive, right? So normally how do you prove that? You know a, a problems
+such as SAT is NP. You give an algorithm for us. But there's sometimes are
+our algorithmic proofs of the form there exists a
+polynomial time algorithm. Right? So sort of like the
+pigeonhole principle doesn't say which pigeonhole gets to begins. You could imagine a
+non-constructive proof that through some
+convoluted reasoning, shows there's a polynomial
+time algorithm for SAT that doesn't say
+what it is, right? It doesn't actually
+give you the algorithm. So if we're just trying to prove
+this by searching for algorithms, we're not going to find it this one. And finally, if you know a
+little bit about formal logic, there's this notion
+that a statement can be independent of the so-called
+axioms of set theory, meaning with the way that we reason
+about proofs in mathematics. Statement can be independent, meaning there's no
+proof that it's true and there's also no
+proof that it's false. So it's either true or false, but there's no way to resolve it
+by trying to prove it either way. So there are statements like this. So the continuum hypothesis
+is the most famous example. This is the statement that there are no set cardinality is strictly in between that of the natural
+numbers and the reals. So this is known to be independent. There's no proof that it
+is and there's no proof that it, that it's false. So okay, this could be possible, but this seemed a lot
+less likely to be true for a statement
+like P versus NP then for these uncountably
+infinite sort of statements, so consider the following statement. I'll call it star. So
+the statement star says, for all n bigger than 1000, there's no Boolean circuit with
+fewer than n to the log n gates. That solves all clique
+instances of size. Okay, so we haven't gotten too much into using circuits
+to decide languages. We've studied them as having interesting decision
+problems themselves. But there's a notion that I would get up and do a follow-up version
+of this course talking about the relationship between an
+algorithm or a Turing machine deciding a problem like league
+boolean circuits decided. But one of the first things
+we would do is establish that if there's a polynomial
+time algorithm for clique, then for particular sizes
+of clique instances, there are small Boolean circuits, polynomial size Boolean
+circuits that can solve clique. So if clique is not NP, then something like
+this would be true. So if P equals NP, then star is false. In fact, you can solve clique with small circuit Canadian
+polynomial size. So this would not be true for
+all n bigger than a thousand. Now if it, if they're not equal, I may have picked the wrong
+threshold at 1000 there, but for some large enough threshold, It's probably true and
+thousands probably big enough that if P is not
+NP, then this is true. Okay? So here's the difference
+between these two cases. If star is false, There's actually a proof
+of that fact, right? It's huge. What it would do is on the end
+that makes this fault right? So if this is false, There's some m, maybe it's 1001,
+maybe it's a million. But for that particular n, there would be no Boolean
+circuit with this many. Also a million raised to the 20 or fewer gates that
+solves all clique instance. So you could prove
+that you could simply enumerate every single
+Boolean circuit of that size. And then you could execute
+it on the clique instance. And you can execute the
+exponential time algorithm for clique on that instance and show that it gets one of the
+clique instances wrong. So this can actually be improved. It's a huge, probably
+would take forever to actually run the verifier for it, but there is a proof of that. So it can't be false. This statement, P not equal to NP, that cannot be false
+and independent, right? So theorem saying the
+statement P not equal NP, so precisely the statement star. So if this is independent, right? Then it's true. In other words, we would
+actually expect that, you know, if they're
+actually independent than, than in fact, P is not NP. Because if they are equal, then we can prove that by proving
+some statement like this.

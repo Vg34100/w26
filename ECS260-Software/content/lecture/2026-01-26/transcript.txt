@@ -1,0 +1,728 @@
+Pablo [0:25]: other files or copyright number of for on one hand
+Pablo [0:31]: it's amazing that you can immediately begin and know how to rationalize
+Pablo [0:33]: on the other hand
+Pablo [0:38]: so it worrisome that you so quickly want to
+Pablo [0:45]: why because we are not given enough abstract thought about what we want it to be
+Pablo [0:50]: i hope davis is a positive
+Pablo [0:51]: not as a crit
+Pablo [0:51]: icism
+Pablo [0:54]: but it's all
+Pablo [0:57]: kind of we are enlarging one dimension
+Pablo [1:01]: and we're kind of disregarding
+Pablo [1:08]: the best way in research is to avoid the allure of the immediate solution
+Pablo [1:16]: what i mean so just what you think it is
+Pablo [1:24]: trying to rationalize and this is how we are trained but in this class that's why we started so i'm asking you to step back and do action
+Pablo [1:27]: think what is coastal brexit mean why do we
+Pablo [1:30]: care about that's why i ask what does it mean
+Pablo [1:32]: i'm going to talk to you
+Pablo [1:33]: step back
+Pablo [1:36]: don't use measures
+Pablo [1:39]: just tell me what code complexity is and why is it
+Pablo [1:40]: so important
+Pablo [1:54]: i would say for a new person who has not interacted with that goal how hard is it for them to understand it understandability is one thing
+Pablo [1:54]: very important
+Pablo [1:54]: that's right
+Pablo [1:58]: actually it's even for yourself two days later
+Pablo [2:03]: i can't do the
+Pablo [2:03]: micro
+Pablo [2:11]: ren and what's the actor adam driver
+Pablo [2:14]: he says he never watches him
+Pablo [2:15]: self
+Pablo [2:17]: he cannot stand
+Pablo [2:19]: that's how i do my coach
+Pablo [2:20]: okay
+Pablo [2:26]: understandability is one what's another thing that complexity may be
+Pablo [2:26]: worth
+Pablo [2:30]: how much resources required
+Pablo [2:36]: movie
+Pablo [2:46]: there are some interest there the complications complexity has an effect on
+Pablo [2:48]: understandability maintainability
+Pablo [2:49]: right what else
+Pablo [2:55]: may be implied that more complex code will take more time to run
+Pablo [3:00]: let's also give nested loops or whatever that's complex
+Pablo [3:03]: if you just take mat or whatever
+Pablo [3:09]: anything else
+Pablo [3:18]: so you see the difficulty is when you recognize this thing right and then the formulate the goal
+Pablo [3:26]: you can't really formulate a goal to say i want low complexity code not everything is achievable with low complexity code
+Pablo [3:29]: right we cannot sort with linear code
+Pablo [3:33]: you need certain amount of compl
+Pablo [3:33]: exity
+Pablo [3:35]: so then you have to accept it
+Pablo [3:42]: what are the right metrics so maybe there are different ones where sustainability maintainability
+Pablo [3:42]: and so on
+Pablo [3:48]: and really you have to dig in and try to understand how they map onto
+Pablo [3:52]: your cartoon
+Pablo [3:53]: onto what you want to do
+Pablo [4:02]: if the metric is how many bugs for example
+Pablo [4:09]: then you can turn it into a way that's not intended
+Pablo [4:11]: you're wrongly incentivized
+Pablo [4:12]: people
+Pablo [4:17]: so if you only allow for very simple code to exist
+Pablo [4:21]: you may not be able to accomplish competitiveness with others
+Pablo [4:25]: writing yourself out of the equation
+Pablo [4:28]: that said
+Pablo [4:38]: so we understand that complexity is a factor we understand there's reasons practical reasons why consumer super complex for local
+Pablo [4:53]: one solution is to keep people once you understand how complex the code is to keep people that are working on a piece of code keep them working on that piece of code and not change them all the time
+Pablo [5:07]: because introducing new people can actually affect more complex code more than this is why l five s are very much replaceable in many companies
+Pablo [5:09]: but l seven states or whatever
+Pablo [5:12]: google pillows are not
+Pablo [5:14]: what's his name
+Pablo [5:27]: so we talked about embedded code we talked about sql code so you may want to maybe devote your best piece
+Pablo [5:29]: but
+Pablo [5:38]: how do we tell what code is complex what code needs to be complex it's easy for me to write a complex code i can write four nested loops that do nothing
+Pablo [5:38]: right
+Pablo [5:46]: for the complex code capturing people that understand algorithms grow
+Pablo [5:50]: it's funny that when you go for
+Pablo [5:57]: these interviews and they ask you crazy dynamic programming questions how many of you attend to this
+Pablo [6:04]: and then the job is about
+Pablo [6:07]: user design
+Pablo [6:14]: so not everybody needs that but recognizing that the code is more complex
+Pablo [6:15]: so we need tools for that
+Pablo [6:19]: and now everybody who has thought about this problem
+Pablo [6:24]: seemingly has come up with their own metric how do we judge what complexity is
+Pablo [6:29]: and the complexity is typically judged based on the lines of code
+Pablo [6:34]: and rarely based on the matches of what they call
+Pablo [6:36]: until recently
+Pablo [6:38]: but okay
+Pablo [6:43]: even keeping with those syntax level kind of complexity measures
+Pablo [6:49]: are they really necessary do we really need one hundred fifty this book that actually go
+Pablo [6:52]: through hundreds of compressive measures
+Pablo [6:55]: and some are listed here
+Pablo [7:00]: so lines of code is certainly the first line of defense
+Pablo [7:03]: unintended
+Pablo [7:05]: and of course that can mean different things
+Pablo [7:10]: but non normal functions like matrix complexity we'll take
+Pablo [7:12]: a look at how compl
+Pablo [7:13]: ex the paths are
+Pablo [7:16]: through the
+Pablo [7:16]: code
+Pablo [7:21]: there's all sorts of network science based measures
+Pablo [7:23]: et cetera et cetera
+Pablo [7:34]: i've selected a few so that we can discuss to go very quickly through them and then discuss whether they are even needed by looking at actual data all data but
+Pablo [7:35]: actual data
+Pablo [7:42]: because i want to illustrate the point so let's take one of these how many of us have heard of this
+Pablo [7:46]: psychomatic complexity
+Pablo [7:50]: most of you should have because it's a part of the other
+Pablo [7:51]: engineering
+Pablo [7:53]: that's fine
+Pablo [7:56]: so here's a control flow graph
+Pablo [7:58]: for a procedure
+Pablo [8:00]: program
+Pablo [8:04]: control flow grab that's something we all know
+Pablo [8:07]: what is your control graph
+Pablo [8:10]: let me see if you don't know raise your hand
+Pablo [8:16]: so what do you think happens inside a function
+Pablo [8:21]: some things happen and then it cause another place
+Pablo [8:23]: maybe a cask is an argument
+Pablo [8:25]: so what do you think the nodes are here
+Pablo [8:28]: the functions that we call that's right
+Pablo [8:34]: and then if you can reach a function from this function they're connected
+Pablo [8:39]: and then the control flow graph has multiple components
+Pablo [8:41]: they're all connected
+Pablo [8:42]: you want to
+Pablo [8:43]: think of that
+Pablo [8:48]: and so the edges indicate that there is something going on between those two
+Pablo [8:49]: functions
+Pablo [8:51]: typically it's a call
+Pablo [8:54]: but there can be arguments being passed
+Pablo [8:55]: okay
+Pablo [9:06]: so in this control flow graph let's just first approximation just the node of edges right
+Pablo [9:09]: and then number connected procedures
+Pablo [9:14]: number
+Pablo [9:16]: of connected components i'm sorry
+Pablo [9:18]: that shouldn't say procedures
+Pablo [9:28]: so in other words in this little thing you have how many edges let's count them six seven eight nine
+Pablo [9:34]: and we have eighth notes right so we have nine inches
+Pablo [9:37]: eighth notes how many connected components
+Pablo [9:38]: one
+Pablo [9:51]: you have to specify the main procedure the procedure for which you are starting the red one
+Pablo [9:56]: because you could possibly start from that blue one in the end right
+Pablo [9:59]: and then interconnected graph is not
+Pablo [10:00]: just itself
+Pablo [10:06]: so it's important to specify the starting point but once you do this is how you calculate it
+Pablo [10:15]: and look how old this is and it's ingrained it's ingrained in many ways in many operating procedures
+Pablo [10:16]: to evaluate software
+Pablo [10:17]: so people
+Pablo [10:18]: use
+Pablo [10:19]: it
+Pablo [10:26]: now of course a code base doesn't look anything like this it doesn't have one
+Pablo [10:28]: kind of connected component
+Pablo [10:34]: then the question is if i give you the full software code
+Pablo [10:36]: how do you calculate this
+Pablo [10:43]: well you start from all the mains maybe you start from all the procedures that may pose or whatever
+Pablo [10:46]: but then you get different measures right so what do you do
+Pablo [10:56]: well you can say maybe a measure of complexity for the whole code is the maximal complexity of any particular connected componen
+Pablo [10:56]: t
+Pablo [11:01]: or you can say well let's just take the average all of that
+Pablo [11:03]: let's just take the media
+Pablo [11:05]: you decide
+Pablo [11:12]: what to take typically people look at both the average
+Pablo [11:20]: if we find that the piece of code is very complex
+Pablo [11:23]: what
+Pablo [11:27]: do you mean by let's say
+Pablo [11:34]: average is two point seven across one particular thing has a value of twelve
+Pablo [11:40]: let's identify this is important
+Pablo [11:43]: but what do you do about
+Pablo [11:53]: this there are some you can do nothing about maybe they're alone an algorithm generating mersenne prime
+Pablo [11:55]: very complex things
+Pablo [12:00]: you can do anything about it right they're probably delivering on results
+Pablo [12:05]: it is what it is you can just hope there's no bug there and maintain
+Pablo [12:11]: others here you can split them into sub function manufacture
+Pablo [12:14]: so there's some practical outcomes
+Pablo [12:14]: of this
+Pablo [12:20]: so for example you guys can look at each other's code and see who is the
+Pablo [12:22]: most complex program
+Pablo [12:27]: but then the real question if you value
+Pablo [12:39]: of the complexities actually meaningful and what do we mean by two complex well first of all as we discussed the first one can we analyze collection programs
+Pablo [12:43]: but you have to average
+Pablo [12:44]: those
+Pablo [12:50]: so now the complexity measure
+Pablo [13:03]: should be less than ten this is an agreed rule of thumb it makes sense post code is like this some people recommend less than five but for every ten to twenty should
+Pablo [13:05]: be classified
+Pablo [13:06]: in twenty
+Pablo [13:10]: twenty let's see what would give you a ten
+Pablo [13:10]: here
+Pablo [13:15]: so you would have multiple different components
+Pablo [13:24]: you will have many more edges than those
+Pablo [13:29]: that make sense so you would have like close to a completely connected network
+Pablo [13:31]: never
+Pablo [13:43]: let's take a look at the other one which kind of aims to get the functional part
+Pablo [13:45]: so let's take a look at
+Pablo [13:50]: this gets close to penalty type of considerations let's take a look
+Pablo [13:58]: n one small n one i'm going to call them in english i don't want to mess up
+Pablo [14:03]: i think it's new but maybe it's not maybe
+Pablo [14:06]: that's what i'm going to call it little n one and n two
+Pablo [14:07]: and then
+Pablo [14:15]: the number of distinct operators the number of the stick operates so if you have a plus b how many operands do we have
+Pablo [14:17]: and operators
+Pablo [14:19]: that's right
+Pablo [14:26]: but now they're asking for the distinct one so if you have another line that has a plus you're not going to count
+Pablo [14:27]: in this one
+Pablo [14:33]: the capital n doesn't care for the thickness only for the total number
+Pablo [14:49]: okay and then the total number of operand and total number of operators and from those so you go to the code you have those and from those then you create what is called the program vocabulary
+Pablo [14:52]: this is just all the words
+Pablo [14:58]: that would be the number of distinct operators and operand there's no repeats in the casualty
+Pablo [15:02]: right the program left is just the other side the
+Pablo [15:03]: capital
+Pablo [15:09]: and then for those two we can calculate and from the others you can calculate all these things
+Pablo [15:12]: so the estimated program
+Pablo [15:21]: you have a volume there's some logic here so the volume is the total number of operators and operand which is the program blend
+Pablo [15:28]: and then the number of distinct operators in hospital
+Pablo [15:43]: so why does this make sense can somebody talk about volume is something meaningful to the lender is at the length times going to have the complex
+Pablo [15:52]: how does language work this is important
+Pablo [15:54]: and i wish we had more time to discuss this
+Pablo [15:58]: maybe i'll invite the latter partner
+Pablo [15:59]: professor devan
+Pablo [16:11]: my partner who share her lab open software engineer very famous one of the first ones to start working on synthesis of code by programs
+Pablo [16:13]: and eventually ai
+Pablo [16:14]: any
+Pablo [16:16]: ways
+Pablo [16:18]: so it started here before
+Pablo [16:23]: so all of these
+Pablo [16:33]: they stay root here because they never lose work anyways i'll invite you to talk about this especially with the connection between lack of code because there's a very intrinsic connection
+Pablo [16:37]: let's discuss language
+Pablo [16:38]: for a second
+Pablo [16:43]: just so we understand because it's fine to discuss one and two to the other
+Pablo [16:44]: based
+Pablo [16:45]: on
+Pablo [16:47]: so
+Pablo [16:48]: how does
+Pablo [16:55]: creation of knowledge work with respect to how these vocabulary
+Pablo [17:04]: let's discuss that do you think there is any do you think there is any connection between the complexity of the words you use
+Pablo [17:06]: and how many of those
+Pablo [17:08]: and what you can create
+Pablo [17:14]: have you ever thought about language
+Pablo [17:17]: and vocabulary
+Pablo [17:37]: yeah i would guess the more vocabulary you have for just a language perspective you need more sound per se let's forget about sound let's forget about some let's say everything is right we don't have maps we don't have peers we just write the same thing
+Pablo [17:39]: just to make it simple
+Pablo [17:42]: everything goes through
+Pablo [17:43]: like coding
+Pablo [17:45]: you cannot speak code i guess
+Pablo [17:46]: you could
+Pablo [17:53]: and i didn't want to stop you maybe if you continue we'll get to
+Pablo [18:00]: i just need more combinations of letters
+Pablo [18:06]: to convey distinct information to the more vocabulary you have you get more options
+Pablo [18:17]: but inherently immunized that it is the most complex because it will retain more knowledge so if we expand very correct if you expand or calculate
+Pablo [18:19]: the programs will get shorter
+Pablo [18:21]: in some way
+Pablo [18:27]: but are they going to get that relationship to be linear
+Pablo [18:29]: or sublinear
+Pablo [18:31]: did you
+Pablo [18:36]: kind of extend on that it works complicated idea
+Pablo [18:36]: to have
+Pablo [18:41]: to
+Pablo [18:44]: use more simpler words
+Pablo [18:52]: that's right so you're pretty much attacking from opposite different sides but the same idea was there
+Pablo [18:56]: the point here is simple
+Pablo [18:59]: vocabulary increases
+Pablo [19:05]: but it doesn't any word that you learn that's bigger more complex takes energy
+Pablo [19:07]: takes learning
+Pablo [19:08]: and whatever
+Pablo [19:12]: so people don't just go and invent words
+Pablo [19:15]: you can come up with a thirty seven letter word now
+Pablo [19:17]: and who will care
+Pablo [19:23]: right so the point is that there is a natural drive almost an evolutionary type of mechanism
+Pablo [19:29]: where a more complex word is needed to get to the next level of creation of ideas
+Pablo [19:31]: okay
+Pablo [19:39]: so these things don't come free they take energy so the moment you have a bigger word it means there was a whole push for that to be created
+Pablo [19:41]: but then that opens up
+Pablo [19:49]: a whole new kind of set of software being created because of that
+Pablo [19:55]: ability now it's not reserved wars that we're talking about here we're talking about how we use concepts together
+Pablo [19:59]: but i just wanted to get the idea
+Pablo [20:04]: that there is a nonlinear relationship and that relationship is forced
+Pablo [20:11]: and then usually if you look at information theory the way knowledge is created goes logarithmically
+Pablo [20:17]: in terms of the size how many of us know this feeling suspected
+Pablo [20:21]: okay well it's very simple right just think about binary numbers
+Pablo [20:28]: you add a digit and you're already being able to express two to the m
+Pablo [20:32]: so twice as much as the previous which is canc
+Pablo [20:39]: el anyway so volume is really telling you about the ability to communicate ideas
+Pablo [20:41]: with what you have
+Pablo [20:51]: your volume is this is the volume of space of ideas this is the volume of software
+Pablo [20:58]: and then difficulty perhaps it's easier to understand
+Pablo [21:06]: difficulty what is this m two capital over m to do what does that tell you
+Pablo [21:09]: that tells you how to use
+Pablo [21:15]: because this total number of operands but you are reusing things
+Pablo [21:36]: and you will see that if you look at how language and code evolves as leos gets higher and higher that's the push but pushes for a new concept because there's a lot of pressure
+Pablo [21:39]: on these reuse which leads to overloading on operators
+Pablo [21:41]: which we will nullify with ideas
+Pablo [21:42]: right and then that creates new stuff
+Pablo [21:48]: so difficulty would be the difficulty of maintaining that overuse
+Pablo [21:51]: little n one divided by two
+Pablo [21:53]: well i don't know what the two is about
+Pablo [21:58]: but the number of distinct operators use certainly increases the difficulty
+Pablo [22:07]: in fact it's a self limiting thing so if you push it to the limit it doesn't really grow linearly
+Pablo [22:14]: but it starts converging asymptotically and that has to do with the fact that
+Pablo [22:18]: you can achieve anything in very purely
+Pablo [22:25]: you can achieve almost any function with very few operators how do we know this
+Pablo [22:33]: or fully transform ai neural networks we don't really need that many layers to achieve almost anything
+Pablo [22:38]: very simple linear functions can achieve all sorts
+Pablo [22:39]: of
+Pablo [22:43]: am i getting too careful
+Pablo [22:56]: difficulty and when you multiply the amount of things that you have in terms of volume and the difficulty that you get
+Pablo [23:11]: so that's what she conceived of that way back in the good old days and it's an interesting matter we don't use these things anymore because we have all sorts of nlp and ai based measures which are much more relevant
+Pablo [23:19]: anne grand repetition things like that
+Pablo [23:22]: how many
+Pablo [23:23]: project
+Pablo [23:24]: s
+Pablo [23:26]: without ai
+Pablo [23:36]: chatbot
+Pablo [23:41]: using what like a spacey type of parser or something
+Pablo [23:46]: but it's really interesting
+Pablo [23:52]: to actually pursue nlp stuff without ai
+Pablo [24:00]: anyways we can really tell you what complexity means for process baked into all these automatic coders
+Pablo [24:01]: nowadays
+Pablo [24:04]: what is the next token
+Pablo [24:08]: when it's not language but it's
+Pablo [24:18]: cool okay but this is now this is irrelevant beyond lines of code so there are two papers that i listed there for this week these are all the good papers
+Pablo [24:20]: actually that award winning papers
+Pablo [24:24]: the online of code do we need more complexity metric
+Pablo [24:30]: so it says here that decades of software research has produced nothing but more metrics
+Pablo [24:33]: instead of producing when do we use these metrics
+Pablo [24:44]: so it's hard to compare two pieces of code people are not even thinking about it it's the same metric in applicable across the two and you will have to contend with this measuring code
+Pablo [24:45]: i don't know how
+Pablo [24:48]: many projects how many groups here are actually going to measure
+Pablo [24:53]: two
+Pablo [24:54]: okay
+Pablo [25:01]: the question is all those different metrics
+Pablo [25:04]: are
+Pablo [25:07]: they tell you something different
+Pablo [25:09]: than the other metrics
+Pablo [25:16]: and what they did in this paper they collected a lot of data from open source repositories
+Pablo [25:23]: and they kind of want to generalize by saying well open source is the same as any code we know that that may not be the case
+Pablo [25:26]: because it's very diverse
+Pablo [25:28]: maybe more complex in general
+Pablo [25:30]: but anyways
+Pablo [25:52]: for now let's assume that it is the same as any other code and they're saying can we by using ultimate source intercepting about all the code you cannot but by the time that opens her it's more complex than other code we can actually take this
+Pablo [26:02]: because what her conclusion will be is in spite of complexity of open source we find that lines of code are just as good
+Pablo [26:06]: in most cases
+Pablo [26:23]: let's say and therefore since other code is less complex on average we can conclude that you have this but what did they do what they did was they took you see way back then they didn't have the privilege of github so they used other depositaries
+Pablo [26:29]: in particular they were interested in code that is written in c
+Pablo [26:30]: program
+Pablo [26:33]: ming
+Pablo [26:48]: even
+Pablo [26:49]: though
+Pablo [26:51]: this was
+Pablo [26:52]: possible
+Pablo [26:58]: it's important
+Pablo [26:59]: to note
+Pablo [27:00]: that
+Pablo [27:01]: program
+Pablo [27:14]: enter
+Pablo [27:14]: classes
+Pablo [27:16]: most
+Pablo [27:17]: enterprise
+Pablo [27:18]: do not have fema
+Pablo [27:19]: le statements
+Pablo [27:20]: but they
+Pablo [27:21]: don't
+Pablo [27:27]: so
+Pablo [27:28]: if they are here
+Pablo [27:29]: what is
+Pablo [27:30]: a psychological
+Pablo [27:31]: complexity
+Pablo [27:40]: how
+Pablo [27:54]: does
+Pablo [27:55]: the
+Pablo [27:59]: observ
+Pablo [27:59]: ations
+Pablo [28:35]: or
+Pablo [28:41]: comments
+Pablo [28:42]: psych
+Pablo [28:43]: ological vaccine
+Pablo [28:48]: is a
+Pablo [28:49]: vaccine
+Pablo [28:54]: as
+Pablo [28:55]: it is
+Pablo [29:08]: many
+Pablo [29:09]: people
+Pablo [29:10]: those great
+Pablo [29:18]: they're so similar
+Pablo [29:19]: in
+Pablo [29:19]: grasses
+Pablo [29:22]: worth
+Pablo [29:23]: while
+Pablo [29:27]: these
+Pablo [29:28]: are the types of questions
+Pablo [29:42]: and
+Pablo [29:43]: then we go down the line
+Pablo [29:44]: and then she goes
+Pablo [29:45]: to a number
+Pablo [29:46]: of functions
+Pablo [29:50]: what does this mean
+Pablo [29:51]: that
+Pablo [29:52]: lines of code
+Pablo [29:54]: second
+Pablo [29:55]: row
+Pablo [30:00]: sixty
+Pablo [30:01]: seven relation
+Pablo [30:23]: that's right
+Pablo [30:24]: let's
+Pablo [30:25]: look at the other
+Pablo [30:25]: side
+Pablo [30:26]: why are they not
+Pablo [30:27]: formulated
+Pablo [30:28]: in a
+Pablo [30:29]: large
+Pablo [30:30]: variability
+Pablo [30:31]: in the length of those
+Pablo [30:32]: functions
+Pablo [30:33]: so you have a lot of small
+Pablo [30:34]: er
+Pablo [30:35]: functions
+Pablo [30:36]: total
+Pablo [30:37]: number of lines of cod
+Pablo [30:38]: e
+Pablo [30:43]: wait
+Pablo [30:52]: okay so lines of code equals the totality of all functions
+Pablo [30:55]: you start in like
+Pablo [30:56]: two different project
+Pablo [30:57]: s or files
+Pablo [31:06]: so as we increase lines of code
+Pablo [31:11]: the n pump doesn't fall
+Pablo [31:14]: this is what that zero sixty seven means
+Pablo [31:17]: so let's take a look at it again
+Pablo [31:21]: to me this indicates that
+Pablo [31:25]: there is some sort of a relationship
+Pablo [31:30]: if this is loc and this is n
+Pablo [31:33]: that there is certain relationship
+Pablo [31:35]: that is nonlinear
+Pablo [31:40]: and so that's what
+Pablo [31:45]: makes these points hyper relation that's not a perfect correl
+Pablo [31:45]: ation
+Pablo [31:53]: and so the question is why is the number of functions not going linearly with the size of the
+Pablo [31:56]: code and you started addressing
+Pablo [31:58]: but
+Pablo [31:59]: you still have to say
+Pablo [32:00]: something about
+Pablo [32:05]: enough
+Pablo [32:05]: number of functions
+Pablo [32:06]: that you would need to
+Pablo [32:07]: write any more
+Pablo [32:10]: combination of
+Pablo [32:16]: the question
+Pablo [32:17]: is why is that
+Pablo [32:21]: finding
+Pablo [32:22]: ourselves
+Pablo [32:25]: exactly
+Pablo [32:36]: we general
+Pablo [32:37]: ly sufficient vocab
+Pablo [32:37]: ulary
+Pablo [32:38]: from our
+Pablo [32:40]: genes
+Pablo [32:41]: for example
+Pablo [32:49]: whatever
+Pablo [32:50]: snail
+Pablo [32:53]: why do we have
+Pablo [32:55]: well because they
+Pablo [32:57]: use for certain functions
+Pablo [33:00]: we have a much wider usage of
+Pablo [33:01]: function
+Pablo [33:03]: but we don't need more functions
+Pablo [33:08]: does that make sense we don't need more functions to achieve what we want
+Pablo [33:15]: we can grow functionality because the code can do
+Pablo [33:17]: with the pure function we have
+Pablo [33:20]: create new functions is costly
+Pablo [33:22]: complicated
+Pablo [33:25]: so there is a downward pressure
+Pablo [33:28]: function but as the code grows to achieve more
+Pablo [33:30]: functionality
+Pablo [33:35]: new features they can be used to say functions
+Pablo [33:42]: pure and pure function per line of code so that's normal behavior we'd expect that
+Pablo [33:46]: but let's take a look at
+Pablo [33:47]: the complexity
+Pablo [33:53]: so both the maximal and average fsi plus acyclo
+Pablo [33:59]: are kind of depressed showing also some sort of similar behavior
+Pablo [34:04]: in other words saying that as the code grows
+Pablo [34:07]: there's a pressure on the code to grow
+Pablo [34:12]: but the complexity number of paths to the code do not follow that
+Pablo [34:12]: right
+Pablo [34:23]: but still there's a very high correlation high enough in fact that they're almost replaceable and we'll see how we will get there
+Pablo [34:31]: what's interesting is that the number of functions in asymptomatic complexity i mean average psychopathic complexity
+Pablo [34:37]: average acromatic is zero three that's an interesting
+Pablo [34:48]: thing
+Pablo [34:49]: that we can
+Pablo [34:49]: ask
+Pablo [35:00]: i
+Pablo [35:01]: want to invite this year
+Pablo [35:03]: healthier
+Pablo [35:25]: this
+Pablo [35:26]: is what happens
+Pablo [35:27]: there is
+Pablo [35:27]: significant difference
+Pablo [35:33]: if you look at her psychomatic complexity behave for other part
+Pablo [35:35]: s it's very different
+Pablo [35:36]: from
+Pablo [35:41]: her
+Pablo [35:50]: why
+Pablo [35:51]: is that
+Pablo [35:52]: because
+Pablo [35:53]: she
+Pablo [35:54]: has
+Pablo [35:58]: very
+Pablo [35:59]: quickly
+Pablo [36:06]: even
+Pablo [36:07]: those
+Pablo [36:25]: change
+Pablo [36:27]: do you feel
+Pablo [36:28]: this is a natural thing
+Pablo [36:29]: for you to
+Pablo [36:32]: say
+Pablo [36:43]: there
+Pablo [36:46]: 's a really good
+Pablo [36:46]: project
+Pablo [36:48]: always
+Pablo [36:55]: you need
+Pablo [36:56]: to be correct from
+Pablo [36:56]: the side
+Pablo [36:56]: in other words
+Pablo [36:58]: preparing
+Pablo [36:59]: shepherd
+Pablo [37:09]: here
+Pablo [37:10]: she received
+Pablo [37:11]: a
+Pablo [37:13]: no
+Pablo [37:15]: de
+Pablo [37:16]: and maximum
+Pablo [37:19]: because
+Pablo [37:20]: they're all
+Pablo [37:21]: almost the same
+Pablo [37:22]: but not the
+Pablo [37:23]: other child
+Pablo [37:23]: they're very
+Pablo [37:24]: different
+Pablo [37:25]: because natur
+Pablo [37:26]: ally she will have
+Pablo [37:30]: where
+Pablo [37:31]: the pain will give
+Pablo [37:32]: you you
+Pablo [37:32]: have some options
+Pablo [37:40]: the project
+Pablo [37:43]: does
+Pablo [37:44]: anyone know the wrong
+Pablo [37:45]: thing
+Pablo [37:47]: so
+Pablo [37:48]: most of the time
+Pablo [37:59]: very
+Pablo [37:59]: deep
+Pablo [38:07]: the
+Pablo [38:08]: normal distribution
+Pablo [38:09]: would be
+Pablo [38:10]: something like this
+Pablo [38:20]: but
+Pablo [38:21]: among that
+Pablo [38:21]: distribution
+Pablo [38:22]: may
+Pablo [38:23]: be something
+Pablo [38:32]: existing is not
+Pablo [38:33]: helping
+Pablo [38:41]: actually
+Pablo [38:42]: develop
+Pablo [38:44]: network
+Pablo [38:48]: this
+Pablo [38:49]: is one of
+Pablo [38:50]: the things that characterize
+Pablo [38:50]: s
+Pablo [38:54]: what
+Pablo [38:55]: i call distribution
+Pablo [38:57]: this is a normal bell cur
+Pablo [38:58]: ve
+Pablo [38:58]: right
+Pablo [39:03]: e to the power negative x
+Pablo [39:14]: so this one is geometric so geometric means is that the number of things you have is proportional to how many digits
+Pablo [39:21]: so let me talk about networks and context
+Pablo [39:34]: let's discuss the takeaways from this
+Pablo [39:41]: all the complexity measures they examined were highly correlated with lines of code except for several in the camera the header file showed poor correlation
+Pablo [39:47]: the chromatic complexity is a great indicator for
+Pablo [39:49]: detect so it is very useful
+Pablo [39:50]: in that sense
+Pablo [40:00]: we're not going to talk about posts because the bottom line is very important complexity measures cannot capture the
+Pablo [40:02]: whole picture software
+Pablo [40:05]: to justify loop is impacted
+Pablo [40:11]: we cannot substitute things like holstead and we didn't show it here
+Pablo [40:17]: we don't care at this point the point is
+Pablo [40:21]: we need if you're going to examine the code for its behavior
+Pablo [40:24]: none of these measures
+Pablo [40:28]: certainly slop will do but not the other
+Pablo [40:34]: so then what behavior is interested in so we're not going to show you that in this class on the semantic side
+Pablo [40:37]: except for using elements
+Pablo [40:38]: in your work
+Pablo [40:41]: then
+Pablo [40:44]: you
+Pablo [40:44]: should all wear
+Pablo [40:46]: but
+Pablo [40:47]: there is a way
+Pablo [40:48]: to actually
+Pablo [40:49]: have elements
+Pablo [40:50]: you're trying to
+Pablo [40:51]: do
+Pablo [40:52]: i
+Pablo [40:53]: need hope that
+Pablo [40:54]: has dysfunctional
+Pablo [40:55]: ity
+Pablo [40:56]: and then
+Pablo [40:57]: you say
+Pablo [40:58]: all of
+Pablo [40:59]: you guys are able to do
+Pablo [40:59]: that
+Pablo [41:00]: and
+Pablo [41:01]: keep it consist
+Pablo [41:02]: ently
+Pablo [41:04]: gener
+Pablo [41:05]: ated
+Pablo [41:08]: that you
+Pablo [41:08]: can examine
+Pablo [41:14]: the
+Pablo [41:15]: goal
+Pablo [41:26]: so
+Pablo [41:27]: that her mem
+Pablo [41:28]: ory
+Pablo [41:33]: there's
+Pablo [41:34]: all sorts of pattern
+Pablo [41:35]: maps in software engine
+Pablo [41:36]: ering
+Pablo [41:37]: so
+Pablo [41:38]: some of them are given
+Pablo [41:38]: here
+Pablo [41:41]: so you have the whole graph
+Pablo [41:44]: you have priority graphs
+Pablo [41:47]: you have email network
+Pablo [41:52]: ers communicating with each other in issues issue connectivity
+Pablo [41:53]: issues
+Pablo [41:55]: and full requests
+Pablo [41:56]: and so on
+Pablo [41:58]: there's all sorts of
+Pablo [41:59]: types of graphs
+Pablo [42:06]: social network analysis is one of the starters of analyzing things based on the company
+Pablo [42:12]: so instead of analyzing let's see what company vladimir gives right
+Pablo [42:21]: he can come to professors students other people and so not just the person but the connections right
+Pablo [42:25]: this is the social network
+Pablo [42:33]: but you can tell a lot about the person from their connection and sna is a collection of methods allow you to do this
+Pablo [42:38]: is it bi directional disinterest but you are to the other person
+Pablo [42:41]: are there cliques there are multiple people participating
+Pablo [42:47]: about the strength of the network
+Pablo [42:51]: s what type of people what type of relationship and so on
+Pablo [42:56]: that can enhance analysis from the social side of things
+Pablo [43:01]: but also the technical side of it we have shown that analyzing sociotechnical
+Pablo [43:01]: network
+Pablo [43:08]: really can tell you much more each other
+Pablo [43:12]: so what could not
+Pablo [43:22]: developers files bugs et cetera and then the edges connect them like code reviews for example code merges as we
+Pablo [43:24]: saw in git
+Pablo [43:28]: comments on issues i comment on the issues somebody replies we are connected
+Pablo [43:30]: our shared project contributions
+Pablo [43:36]: et cetera so multiple people think about the bipartite gravity of people files
+Pablo [43:38]: who contribute
+Pablo [43:41]: what actually it's a very important measure you can figure this out
+Pablo [43:47]: there's this great work that we took from
+Pablo [43:48]: anthropology
+Pablo [43:58]: into software engineering where we show that people's interest in what they are working on can really tell you where you should pay attention what bugs to fix
+Pablo [44:07]: most of
+Pablo [44:08]: my paypal is actually
+Pablo [44:16]: number
+Pablo [44:17]: making
+Pablo [44:25]: central
+Pablo [44:27]: ity have central
+Pablo [44:29]: network
+Pablo [44:29]: s
+Pablo [44:30]: if you look at a program
+Pablo [44:36]: you can
+Pablo [44:37]: identify who
+Pablo [44:38]: is actually the
+Pablo [44:39]: main cause
+Pablo [44:40]: of misinform
+Pablo [44:40]: ation
+Pablo [44:43]: which
+Pablo [44:44]: one you have to
+Pablo [44:44]: face
+Pablo [44:52]: are you
+Pablo [44:57]: network
+Pablo [44:58]: all other
+Pablo [44:59]: distribution as
+Pablo [45:00]: like this
+Pablo [45:03]: or
+Pablo [45:03]: something else
+Pablo [45:05]: and
+Pablo [45:06]: so you know all
+Pablo [45:07]: these
+Pablo [45:12]: opportun
+Pablo [45:13]: ities
+Pablo [45:17]: start
+Pablo [45:18]: thinking about the social
+Pablo [45:19]: polic
+Pablo [45:20]: ies
+Pablo [45:20]: libraries
+Pablo [45:21]: and
+Pablo [45:22]: metrics to use
+Pablo [45:24]: by
+Pablo [45:24]: yourself
+Pablo [45:27]: there is
+Pablo [45:28]: a touch
+Pablo [45:29]: in both art
+Pablo [45:40]: ists
+Pablo [45:43]: and
+Pablo [45:44]: or can
+Pablo [45:46]: i
+Pablo [45:47]: go through
+Pablo [45:48]: this
+Pablo [46:00]: location
+Pablo [46:00]: i will
+Pablo [46:01]: ask you to
+Pablo [46:03]: wear
+Pablo [46:04]: and this is an
+Pablo [46:05]: earlier version of
+Pablo [46:06]: it but
+Pablo [46:09]: we have a tool where you can examine any unit approach
+Pablo [46:10]: now
+Pablo [46:13]: and based on social and technical network analysis
+Pablo [46:16]: it can tell you whether your project is doing well
+Pablo [46:20]: and what actions you can take to make it better
+Pablo [46:24]: it can tell you how likely you are on a sustainable trajectory
+Pablo [46:30]: and what potential corrective things you can take
+Pablo [46:37]: and by doing this you can actually analyze not just what each person does but as a collect
+Pablo [46:38]: ive what they do
+Pablo [46:46]: and
+Pablo [46:47]: this is all
+Pablo [47:11]: just
+Pablo [47:12]: add a link to
+Pablo [47:16]: let's
+Pablo [47:17]: start

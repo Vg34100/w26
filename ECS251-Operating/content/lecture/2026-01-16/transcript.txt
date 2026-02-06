@@ -1,0 +1,607 @@
+Pablo [1:44]: candidates
+Pablo [1:45]: on the second
+Pablo [1:46]: half of
+Pablo [1:49]: respond
+Pablo [1:50]: with
+Pablo [1:51]: your angels for
+Pablo [2:05]: sure
+Pablo [2:22]: present
+Pablo [2:23]: ations
+Pablo [2:35]: also
+Pablo [2:36]: i guess
+Pablo [2:38]: on
+Pablo [2:39]: the main
+Pablo [2:40]: end of
+Pablo [2:41]: what
+Pablo [2:42]: came into a bar
+Pablo [2:43]: there's like a separ
+Pablo [2:44]: ate group
+Pablo [2:46]: if you
+Pablo [2:47]: already signed up for a big
+Pablo [2:47]: limit
+Pablo [2:51]: you should
+Pablo [2:52]: be able to see the
+Pablo [2:53]: triple numbers
+Pablo [2:53]: on that
+Pablo [3:00]: we
+Pablo [3:01]: pray that you start
+Pablo [3:01]: this conversation
+Pablo [3:02]: with that
+Pablo [3:08]: also
+Pablo [3:09]: next week is
+Pablo [3:24]: short
+Pablo [3:25]: distributed
+Pablo [3:56]: so
+Pablo [3:57]: it's kind of like five
+Pablo [3:57]: members
+Pablo [3:58]: for you
+Pablo [4:00]: one of the things
+Pablo [4:01]: i need to do in
+Pablo [4:01]: my life
+Pablo [4:15]: for inspiration
+Pablo [4:18]: i think
+Pablo [4:18]: the sort of
+Pablo [4:19]: sessions you
+Pablo [4:21]: 're hoping
+Pablo [4:22]: ideas and direct
+Pablo [4:23]: ions
+Pablo [4:27]: really
+Pablo [4:28]: fast
+Pablo [4:36]: for examp
+Pablo [4:36]: le
+Pablo [4:40]: mic
+Pablo [4:41]: rosoft
+Pablo [4:42]: is actually
+Pablo [4:56]: particip
+Pablo [4:56]: ating
+Pablo [5:38]: before
+Pablo [5:39]: we get
+Pablo [5:40]: started
+Pablo [5:44]: we
+Pablo [5:45]: can see how this
+Pablo [5:45]: really
+Pablo [5:55]: requ
+Pablo [5:56]: est
+Pablo [5:59]: s
+Pablo [6:01]: and
+Pablo [6:02]: a few more minutes
+Pablo [6:10]: we
+Pablo [6:11]: have to
+Pablo [6:12]: schedule
+Pablo [6:16]: over
+Pablo [6:31]: head
+Pablo [6:34]: interrupt
+Pablo [6:35]: and
+Pablo [6:36]: iowa processing management arc
+Pablo [6:40]: network staff is really going to be the bulk of our overheads
+Pablo [6:42]: compared to our application logic
+Pablo [6:49]: so again we saw this with the arapa paper on
+Pablo [6:50]: wednesday
+Pablo [6:53]: where again only are spending about
+Pablo [6:54]: a quarter
+Pablo [7:00]: of cpu cycles actually executing redis logic
+Pablo [7:05]: three quarters of these cpu cycles actually go to os kernel
+Pablo [7:06]: overhead
+Pablo [7:06]: s
+Pablo [7:08]: and
+Pablo [7:09]: again
+Pablo [7:10]: we're tailoring what we really
+Pablo [7:10]: fast
+Pablo [7:11]: i own devices
+Pablo [7:13]: hurdle
+Pablo [7:14]: is prohibitively exp
+Pablo [7:15]: ensive
+Pablo [7:19]: so what do we do about that
+Pablo [7:20]: one way is
+Pablo [7:21]: we can bypass the kernel
+Pablo [7:24]: so again in user space we copyright us traditionally we have
+Pablo [7:26]: os primal linux
+Pablo [7:27]: internal space
+Pablo [7:31]: that basically interact with the cpu and the i o device start to run
+Pablo [7:33]: our threat of software
+Pablo [7:35]: again
+Pablo [7:36]: kernel
+Pablo [7:42]: operating system provides us our nice operating system management operating profession we expect
+Pablo [7:46]: so the operators and managers and resources and
+Pablo [7:49]: our applications from other applications
+Pablo [8:06]: if we bypass the kernel again we're kind of putting the os protection for the i o devices as a responsibility of the ia hardware itself again this is possible with technology like srilb so we've offloaded the os protection
+Pablo [8:13]: as we've gotten the kernel out of the way but we still kind of want in some way to do this sort of os level
+Pablo [8:19]: so again thermal bypass we've offloaded the second features to the i o device
+Pablo [8:23]: and now the application can directly perform io on the data path
+Pablo [8:24]: for that type of
+Pablo [8:27]: but
+Pablo [8:33]: what about the management side again the operating system has all this stuff that we still want it to be able to do for us
+Pablo [8:40]: and it's not true with kernel bypass operating systems like arrakis how this works this is kind of some stuff we talk about the
+Pablo [8:40]: discussion
+Pablo [8:41]: at the end
+Pablo [8:42]: of
+Pablo [8:47]: this there's some features we're leading up once we switch to internal diecast
+Pablo [8:51]: so again arrakis might fill in some of those features
+Pablo [8:59]: we can use another sort of user level networking staff for criminal bar called mccp that would expose a slightly different api hydrox does
+Pablo [9:01]: we could use something like calidan
+Pablo [9:04]: as a user level schedule again get another api
+Pablo [9:07]: but again these are all going to be very specialized
+Pablo [9:08]: okay
+Pablo [9:12]: a rocket is going to be very specialized in particular nics
+Pablo [9:13]: that it was written for
+Pablo [9:16]: paladin it would be really only for scheduling
+Pablo [9:16]: io
+Pablo [9:30]: mtccp is only for tcp nine of any other network statue might want to use so really the point here is that with kernel bypass if not your chronological way but now there's no general purpose portable data path operating system
+Pablo [9:33]: everything is now kind of more ad hoc
+Pablo [9:51]: so this is kind of organic terminal testing so again demi kernel is trying to provide this general purpose portable data back operating system with flexible architecture to support a number of criminal bypass devices so again there are a number of ways and features to use internal white paths
+Pablo [9:55]: where previous designs were ad hoc for particular style
+Pablo [9:58]: then the colonel wants to be portable across any
+Pablo [10:06]: it comes with a portable high wheel datapath aci that again is going to provide generalizable portability as one
+Pablo [10:19]: while keeping our microsecond scale operating system so we want to keep our software overheads and the operating system low so that we don't waste our fancy fast aisle hardware that we spent all this great time
+Pablo [10:30]: so the main idea that demi kernels will use is basically a separate library operating system per type of device so again these kernel bypasses for ten dollars as we talked about on monday
+Pablo [10:36]: our rma our dtk for different networking from a bypass layers std for storage
+Pablo [10:44]: so every thermal is going to influence the library algorithm for each of these whether you live argument a web page a lid
+Pablo [10:50]: and within these libraries they're basically going to implement the rest of the stack
+Pablo [11:00]: things like the iostat the memory management scheduling that's not already implemented within the hardware device implementing ddpa rgb
+Pablo [11:17]: and then we also have this idea where we can kind of combine different operating systems so if we want room bypass networking and trail bypass storage if we grab a lift and dk and grab the lid spdk now we have turnover bifrical storage
+Pablo [11:19]: at the same
+Pablo [11:19]: time
+Pablo [11:28]: again we have our new api which is pdfs it's going to be centered around an iot extractor that's trying to replace the socket
+Pablo [11:40]: so again kernel bypass devices are heterogeneous so again we have something like rdma which is going to be a network device that implements the rba protocol
+Pablo [11:52]: we might have a dpdkmic which is going to give us a slow model sort of driver level interface for intel and center cards we might have some future programmable device that could do
+Pablo [11:53]: anything
+Pablo [12:04]: so i mean with all of these devices they're all sort of capable for bypass it basically means they're all going to allow usual level io access as well as things like address translation for protection
+Pablo [12:06]: of the
+Pablo [12:07]: aisle
+Pablo [12:09]: but
+Pablo [12:09]: from there
+Pablo [12:11]: things get different depending on the item
+Pablo [12:12]: you're talking about
+Pablo [12:31]: so rdma is going to again because rma the protocol is implemented at least partially within the apartment itself ports i can make argument is going to take care of things like ordering of packets for in order delivery congestion control to make sure we don't overload the network re transmission and cases lost back
+Pablo [12:42]: again it doesn't implement any parts of the network stack but tpk does have a memory allocator so that you can use it for your criminal bypass memory
+Pablo [12:49]: for your i o and again your programmable device could be whatever you want it to be
+Pablo [12:53]: as we program the entire staff
+Pablo [12:54]: onto your programmable hard
+Pablo [12:57]: ware or even something higher level like your photo cluster
+Pablo [12:59]: of your
+Pablo [13:00]: data structures
+Pablo [13:08]: but again these are all nice features to have at hardware but there's still additional things we want
+Pablo [13:10]: to do in order to be able to actually use these devices
+Pablo [13:11]: from self
+Pablo [13:13]: worth so what do we do here
+Pablo [13:20]: and again this is kind of where the demiurl argument with os the dpk look less and some future programmable
+Pablo [13:21]: list
+Pablo [13:30]: and again what's unifying all these together is this portable datapath
+Pablo [13:36]: so again with this kind of architecture
+Pablo [13:40]: the application is programming to a uniform api pd case
+Pablo [13:46]: and then because it's uniform across all these legal lessons they can use any liberal needs based on the hardware
+Pablo [13:53]: and we're going to limbo as this they're going to implement the missing features that are
+Pablo [13:58]: so the argumentative os would take care of memory allocation for your internal
+Pablo [14:09]: your db kables network panels retransmission congested the cohort ordering for the reliable in order those are guarantees we like
+Pablo [14:10]: with dc
+Pablo [14:14]: then i got a future libos would fill in whatever gaps
+Pablo [14:14]: it needs to
+Pablo [14:15]: based on
+Pablo [14:17]: what is in istanbul
+Pablo [14:31]: so i'm going to talk about pdfs for a little bit already so pdfs is sort of designed as a replacement for plastics organic posix was this portable sort of unit like api
+Pablo [14:33]: for things like i o
+Pablo [14:34]: consistent
+Pablo [14:40]: pdp's the idea here is that again the library operating system there are lip files not systems
+Pablo [14:42]: periodically
+Pablo [14:43]: within the future
+Pablo [14:53]: the other difference is that they're q oriented so you have few descriptors instead of file descriptors so these skews are going to be similar to go channels
+Pablo [14:54]: if it's familiar with the gulf language
+Pablo [15:10]: the other difference is that pdp i always inherently asynchronous so again with posix we had this idea of synchronous blocking so our send call would return and we know that the data was ready for each to be read
+Pablo [15:11]: from our socket
+Pablo [15:14]: wikipedia it's asynchronous
+Pablo [15:20]: so we call send on a pdf queue it'll return by the way
+Pablo [15:30]: if we have data but we don't have data instead of returning what data will get this q token which is basically this special little notifier that we can wait on
+Pablo [15:34]: to be notified when our data is actually ready
+Pablo [15:44]: so we offer a weight api where weight and weight on one or more new tokens that will return from one of these
+Pablo [16:00]: data we don't have a specific utopian or a set of two tokens and when weight returns we have the q token that was ready and we can also go ahead and grab the data at the same time
+Pablo [16:05]: so cost x has a similar api mode known as equal so with equal you can wait on a set of file descriptors
+Them [16:23]: for one of the file descriptors is ready with data but the problem equal is that once equal returns you know that one we spotted you have to do it yet another system call to actually go and read data from the
+Them [16:25]: choice so weight kind of combines this operation
+Them [16:30]: the wave returns you get operation at ready as well as the data
+Them [16:44]: and then with pdk symptoms support zero copy io buffer launcher this passed between the application and the data path send or push and then return to the application
+Them [17:07]: so again pdp tips in order to sort of keep as much as we can with optics to minimize the gas station we want to retain most of the features of the positive surface so again the main difference here and so all these operations will take huge characters for as fossils they would pick file descriptors
+Them [17:15]: and again it says asynchronous il interface which basically means it'll be based on the completion
+Them [17:29]: design so on the left here we have these more almost control path or calls that again look a lot similar to if you're familiar with classics api except again everything takes and returns q descriptors and stuff out
+Them [17:30]: strippers
+Them [17:49]: on the right hand side here we have our sort of data where we have push in order to send data to a q in which case you'll send it over to network or send it to the file pop to read data from a queue abbreviate it from the network file again you should make two descriptors and pointers to data
+Them [17:56]: either pointers of where to get data from on push or pointers of where to read the date
+Them [18:02]: we have a set of waste apis so on one q token
+Them [18:10]: we can wait on a seven q token or we can wait for all three programs to be ready and again when weight returns
+Them [18:13]: there's
+Them [18:18]: some information here on how to get the data out the source data
+Them [18:25]: and then we also have our memory allocation calls for valid
+Them [18:28]: allocate and create this dma capable memory
+Them [18:33]: direct memory access which is going to enable r zero popping
+Them [18:33]: out
+Them [18:48]: sort of api side of things on scheduling side of things again we're dealing with these microsecond scale events
+Them [18:55]: so traditional scheduling
+Them [19:01]: so with any kernel and pdf we can't do regular scheduling at the process level
+Them [19:04]: so instead we're doing something lighter weight with pro k
+Them [19:04]: ids
+Them [19:13]: so in a co routine is this you can think of it as like extremely extremely lightweight so it's a general consultant general control structure
+Them [19:21]: where flow control is going to be cooperatively passed between co working without necessarily returning
+Them [19:33]: so you can think of it like a function right so you have one coordinate that's responsible for throwing out your tasks if it has nothing to do it can yield and some other co routine can run some other set of
+Them [19:40]: navy kernel has three different types of core proteins there's an application cover team there's one of these for every block you token
+Them [19:46]: so this is something that science priorities open application co working can run it's going to be
+Them [20:04]: there's background co routines that deal with tcp staff work so like tcp protocol maintain or pcc there's also the fast cop i o processing coroutine which is going to do the theme like pulling that network hardware or the storage device
+Them [20:05]: for data
+Pablo [20:21]: one of the main sort of limitations with naming kernel is that it's single threaded so again there's one thread the pandemic kernel again with each thread has a number of former teams within it but at so many sort of one thread
+Pablo [20:22]: of execution
+Pablo [20:24]: within the business itself
+Pablo [20:35]: so magnit kernel multithreaded is potentially a lot of work to make sure that any state has shouldn't necessarily be shared
+Pablo [20:45]: so academic kernel has memory allocator
+Pablo [20:52]: for being able to allocate ema capable memory so that your i o device can just throw in a graph and data directly without having
+Pablo [20:53]: to copy the specialty
+Pablo [21:01]: in the corner list for all the applications or that single thread for one application for application
+Pablo [21:08]: so semicolon kind of model as written assumes that there's one application
+Pablo [21:09]: running with this i o device
+Pablo [21:12]: one application work
+Pablo [21:12]: right
+Pablo [21:15]: question
+Pablo [21:24]: so this debit card is specific to one certain application like you cannot reuse the same debit card for rdma for let's say
+Pablo [21:25]: some other networking
+Pablo [21:31]: so we had here with demi kernel is you have your data center application on cred
+Pablo [21:31]: its
+Pablo [21:34]: you would rewrite your redis application
+Pablo [21:35]: once to just
+Pablo [21:35]: bd case interface
+Pablo [21:40]: and then link in the libos for whatever crown i passed
+Pablo [21:48]: by so if you're using a dpk capable nit you would make ipv will include instead
+Pablo [21:51]: of the garden but you don't have to rewrite your application
+Pablo [21:55]: between the liberal lessons once you've already written it
+Pablo [21:57]: to the market
+Pablo [22:01]: or sorry once you buy your grant to the pd picks interface
+Pablo [22:05]: you can swap out the liberal license as you need based on the hardware
+Pablo [22:07]: without any
+Pablo [22:15]: paper says that since
+Pablo [22:23]: using thread the data the libos data path and the application logic sits on one thread
+Pablo [22:25]: and essentially
+Pablo [22:31]: what am i trying to say so essentially you use a single thread
+Pablo [22:34]: is there a reason why we are not doing
+Pablo [22:35]: two separate cuts for example
+Pablo [22:45]: all the queue operations since it goes to a different data structure like q right so a different set could basically target that and the data path could be independent of the application itself
+Pablo [22:55]: is there like a cache reason as to why we use single thread for both these processes yeah so partly because of the cache and if your io processing is done
+Pablo [22:56]: on the same board your
+Pablo [22:57]: application process
+Pablo [23:12]: any sort of data your i o processing thread brings in from time to fly space putting the cache your application co routine starts to run used to use the data so it's partially to kind of keep those overheads down if you have any other thing too
+Pablo [23:19]: is you can't pay these linux scheduler
+Pablo [23:23]: so we have to do any sort of scheduling cooperatively among our threads in user space again core routines get this
+Pablo [23:26]: so there does need to be this
+Pablo [23:35]: sort of agreement that we can't just always be running the application for routine writing application logic all the time because we do need to do processing
+Pablo [23:42]: also checking for incoming i o on the i o device maintaining any metadata variety of our faults that
+Pablo [23:43]: we
+Pablo [23:48]: one thing to note here is that the sort of scheduling is not necessarily visible
+Pablo [23:51]: the application is going to be something important
+Pablo [24:11]: and if we think about again this model where we can't just arbitrarily long run our application co regime this is okay in these microsecond scale io data center applications because their model they do some processing they wait for some io they do some more processing
+Pablo [24:18]: so since they're already waiting for ios they're not doing anything else this is when you would run these io processing
+Pablo [24:19]: quality
+Pablo [24:50]: so the application would still sort of like enforce these core teams as a way to schedule an application level but the logos is in charge of doing the actual schedule yeah so because of the way redis is already written right it's already written this pattern of when to receive some io respond to the io what's using more io so because it's already written that way then the libos can kind of take advantage of that and give it this sort of unit level scheduling within the local redis doesn't necessarily have to be aware
+Pablo [25:14]: so again for another thing we want with microsecond scale ion data center software is that we can't do copies so we don't want to do copies then we need this sort of special memory that the irs can directly access free to write from
+Pablo [25:17]: which basically means we need a dma
+Pablo [25:37]: so if our application memory is backed by giving memory basically means that our io devices can access any portion of the application data to defend so again it can send any forms of application to it and it can provide many course of application
+Pablo [25:38]: data
+Pablo [26:00]: depending on the i o device we are using there's different requirements for what this device in order to make memory so something like rgma requires registration and memory and then if you can make that all discussion so the kernel liberalized memory allocators take this into account and do this transparently
+Pablo [26:19]: sort of complication that can arise from zero cost memory and we're passing ownership of buffers between subsystems rather than everyone getting their automatic copy they want
+Pablo [26:21]: with there is these special things that we want to avoid
+Pablo [26:23]: like bringing ion buffer that a network card might
+Pablo [26:26]: so demi pernalization does provide use
+Pablo [26:29]: after prepression
+Pablo [26:30]: using reference
+Pablo [26:33]: so basically when an application has a reference to a bit of memory
+Pablo [26:36]: it has its reference count bit when it passes
+Pablo [26:44]: ownership of this buffer to the network staff for sending a packet over the network
+Pablo [27:00]: the packet has its own reference count fit that it increments and then the application tries to print then in this case the reference count is two it wants to free so it decrements its reference count work in scalp is one not zero buffer is not actually going to be free until
+Pablo [27:07]: this keeps us from basically accidentally brain memory that the network request will need and then
+Pablo [27:20]: importantly the other benefit go on here is that if we don't breed the buffer the application still write the data into
+Pablo [27:22]: the buffer which would still make it so that the i o device sends the wrong data
+Pablo [27:41]: demi cow doesn't really do anything to prevent this for a couple reasons one renting this sort of providing the strike projection is too expensive at the microsecond scale and the other reason is that most areas in your applications that do this microsecond scale io don't necessarily overwrite their buffers so for example on a redis set operation
+Pablo [27:49]: it doesn't change the existing values data it just points the key to a new value
+Pablo [27:54]: in that case it's safe to avoid this protection
+Pablo [28:01]: all right so to give a concrete example of kind of how this works with the cobra team
+Pablo [28:07]: also
+Pablo [28:07]: good
+Pablo [28:17]: application
+Pablo [28:18]: over to
+Pablo [28:19]: one of the
+Pablo [28:20]: reasons
+Pablo [28:33]: this is
+Pablo [28:34]: going to help you
+Pablo [28:35]: if it's not the
+Pablo [28:36]: automating
+Pablo [28:37]: on the
+Pablo [28:41]: rest
+Pablo [28:45]: actually
+Pablo [28:51]: that
+Pablo [28:52]: application permut
+Pablo [28:53]: ation has nothing else
+Pablo [28:54]: you can do
+Pablo [28:59]: so
+Pablo [29:02]: rt of
+Pablo [29:03]: contin
+Pablo [29:03]: ually follow
+Pablo [29:21]: this
+Pablo [29:22]: basically this dialog
+Pablo [29:22]: ue
+Pablo [29:24]: is
+Pablo [29:25]: actually something
+Pablo [29:26]: on the
+Pablo [29:26]: elephant
+Pablo [29:29]: once
+Pablo [29:29]: this returns your data
+Pablo [29:41]: wave
+Pablo [29:41]: unturned
+Pablo [29:44]: and
+Pablo [29:45]: made a stand as well as
+Pablo [29:46]: proper
+Pablo [29:52]: ty
+Pablo [29:52]: response
+Pablo [29:57]: with
+Pablo [29:58]: a buffer of a respons
+Pablo [29:59]: e data
+Pablo [30:00]: process
+Pablo [30:03]: data
+Pablo [30:21]: lay
+Pablo [30:22]: out
+Pablo [30:23]: basically
+Pablo [30:25]: wait
+Pablo [30:26]: for receiving some
+Pablo [30:26]: requests
+Pablo [30:27]: from a client
+Pablo [30:28]: process
+Pablo [30:32]: the request application sender apply wait to receive
+Pablo [30:35]: any questions on this
+Pablo [30:44]: in this passcode you can only continuously what is the failure in the i itself how will that be
+Pablo [30:49]: on the i two like basic package
+Pablo [30:53]: let us say some packets were dropped in the network
+Pablo [30:55]: right
+Pablo [31:06]: so basically this rte rs first is like the lowest level api call for like data is actually coming in on the network
+Pablo [31:07]: right now
+Pablo [31:09]: so
+Pablo [31:20]: could be not the data we want to be some out of order packet in which case the higher level software endemic kernel that we'll figure out what to do with
+Pablo [31:20]: it
+Pablo [31:26]: and then maybe a point maybe it puts us in the buffer and wait for what it actually wants to
+Pablo [31:35]: arrive or maybe instead of receiving actual data it receives a negative and none of this i'm missing some copy and
+Pablo [31:41]: this is when this i o processing program
+Pablo [31:42]: take care of any of
+Pablo [31:45]: the sort of metadata piece of e staff operations
+Pablo [31:53]: where exactly is a schedule that we're running is it all about hardware
+Pablo [31:59]: schedule running within the log not necessarily like a formal schedule we're running
+Pablo [32:03]: because again these are cobra tunes one more than a particular application
+Pablo [32:08]: so if the power routine has nothing to do it will yield
+Pablo [32:13]: and then in the yield call there's logic to hit the next thing for
+Pablo [32:13]: bond
+Pablo [32:18]: space without both the kernel
+Pablo [32:23]: right
+Pablo [32:27]: yeah so again the gimmick kernel scheduler again
+Pablo [32:39]: most of the work is done for me and the co routine into the cable when they're using the service implementation so a lot of this is going to complement the language features itself
+Pablo [32:44]: they do kind of implement this extra logic for tracking of what proteins are running
+Pablo [32:49]: they have good way to you know if they have a number of hurricanes
+Pablo [33:04]: but again it's all very likely because it's all happening within a single so there's no switching between cpu's there's no switching thread or a process for one the thread is always running
+Pablo [33:07]: which cohort
+Pablo [33:13]: there are two apps running
+Pablo [33:14]: in
+Pablo [33:22]: it's just one thread
+Pablo [33:26]: like if this application is something like right
+Pablo [33:32]: is a key value store so it's basically going to be listening
+Pablo [33:35]: on every connection it has through all the clients that want that
+Pablo [33:39]: saying for example
+Pablo [33:49]: runs will process the start request go and get the value associated with who the client wants and send the value as responsive
+Pablo [33:52]: so this is the sort of process i got a high level of risk
+Pablo [33:53]: receiver
+Pablo [33:57]: you know hit a request to do something for the client
+Pablo [34:00]: do the thing the client says to do work by defined
+Pablo [34:10]: so this is like you know this problem like what friends is doing then everything underneath it is like what the debit kernel devices and
+Pablo [34:11]: hardware
+Pablo [34:24]: all right so we implemented a bunch of demi kernel prototypes
+Pablo [34:26]: mostly written
+Pablo [34:34]: support for the control path that's still provided by lexi colonel in this case we have
+Pablo [34:36]: support for both linux aggregates
+Pablo [34:41]: and then our limo lessons that support rdma
+Pablo [34:43]: on both windows
+Pablo [34:52]: we've done some performance
+Pablo [34:53]: using this sort of echo servers
+Pablo [34:56]: as simple as possible
+Pablo [34:57]: i
+Pablo [34:57]: o
+Pablo [35:01]: like network applications
+Pablo [35:04]: where server waits for a connection to a client client
+Pablo [35:05]: server
+Pablo [35:10]: so we wrote this ethel server using just regular linux classics
+Pablo [35:14]: our legacy is about thirty microseconds
+Pablo [35:24]: pretty high we use the sort of demi kernel implementation of classics we can lower that a little bit because of things like more cooperative scheduling
+Pablo [35:34]: and kernel like that we end up using our semi kernel lib operating system for rdma dpk
+Pablo [35:40]: then we can actually bring the dominance down to the second single digit microsecond
+Pablo [35:45]: now we're sort of uploading a lot of these things in the hardware market
+Pablo [36:02]: we can compare demi kernel to be more specialized kernel bypass features like prpc and angle or other kernel bypass features that are sort of custom made for computer applications so they're not formal like impairments we can see that we're closely matching band performance of these custom applications
+Pablo [36:15]: and then finally we can look at sort of implementing the sort of echo server ethel raw sort of device level using we can see that our overhyping troops over those
+Pablo [36:24]: pretty good initial
+Pablo [36:32]: so we'll go ahead and start the discussion we are kind of a little closer to the end class than we tend to be
+Pablo [36:33]: question
+Pablo [36:38]: maybe about five minutes for the small discussion
+Pablo [37:34]: we want to discuss
+Pablo [37:36]: okay
+Pablo [37:37]: i
+Pablo [37:38]: want gpt
+Pablo [37:39]: germany
+Pablo [37:46]: i like
+Pablo [37:47]: that you're just looking for a phone
+Pablo [37:53]: not
+Pablo [37:55]: this point
+Pablo [38:08]: yes
+Pablo [38:21]: y
+Pablo [38:22]: es
+Pablo [38:26]: yes or no
+Pablo [38:34]: no
+Pablo [38:35]: eight
+Pablo [38:45]: scanned
+Pablo [38:45]: the wording is
+Pablo [38:45]: weird
+Pablo [38:50]: is a common
+Pablo [38:51]: data pattern
+Pablo [38:52]: needed
+Pablo [38:54]: despite
+Pablo [38:55]: their being
+Pablo [38:56]: colonel
+Pablo [39:00]: in the face of this
+Pablo [39:01]: confusing
+Pablo [39:05]: but it just means even though it's there
+Pablo [39:16]: it provides a unified abstraction across diverse hardware
+Pablo [39:21]: without it applications must be rewritten for each specialized stack
+Pablo [39:32]: it's useful
+Pablo [39:34]: even once
+Pablo [40:08]: another wild ride
+Pablo [40:11]: the second question
+Pablo [40:13]: what about the second
+Pablo [40:22]: i think it is yes
+Pablo [40:31]: why
+Pablo [40:36]: because it just it could have
+Pablo [40:47]: it didn't because the post six semantics are too general
+Pablo [40:48]: i don't know
+Pablo [40:49]: what that
+Pablo [40:49]: means
+Pablo [40:51]: but i think it could
+Pablo [41:06]: or api is the name of api
+Pablo [41:07]: or
+Pablo [41:18]: confused
+Pablo [41:20]: the two different words
+Pablo [41:24]: yes
+Pablo [41:25]: like i
+Pablo [41:41]: pi
+Pablo [41:42]: for the kernel by
+Pablo [41:42]: pass
+Pablo [41:43]: is this a nice idea
+Pablo [41:44]: you like this
+Pablo [41:45]: or it'll be okay
+Pablo [42:05]: even if you do customizer it will be more difficult
+Pablo [42:08]: to make sure that it has a long term support
+Pablo [42:13]: it's better to have a common database and then go to specialized one
+Pablo [42:16]: of the motivating examples
+Pablo [42:25]: mining data you may not know what you want to write recruitment by class you may not know what colonel bip
+Pablo [42:36]: so you could be running on a data center one server one day that has you know run and it isn't stage data
+Pablo [42:38]: you don't necessarily
+Pablo [42:39]: want to leave right
+Pablo [42:40]: colleges
+Pablo [42:51]: you
+Pablo [42:52]: have to really
+Pablo [42:53]: resonate with your application
+Pablo [42:57]: change
+Pablo [43:09]: that
+Pablo [43:10]: actual
+Pablo [43:11]: api
+Pablo [43:18]: is
+Pablo [43:19]: gonna hypoth
+Pablo [43:20]: esis
+Pablo [43:36]: yeah
+Pablo [43:37]: you're
+Pablo [43:38]: assuming
+Pablo [43:39]: you're making all
+Pablo [43:40]: these
+Pablo [43:42]: system
+Pablo [43:42]: calls
+Pablo [43:44]: you
+Pablo [43:45]: could potentially
+Pablo [43:46]: win
+Pablo [43:53]: all
+Pablo [44:06]: inter
+Pablo [44:07]: faces
+Pablo [44:09]: in a sense that
+Pablo [44:10]: a lot
+Pablo [44:11]: of these
+Pablo [44:20]: are
+Pablo [44:20]: a mega person
+Pablo [44:31]: actually pretty nice
+Pablo [44:32]: but
+Pablo [44:32]: again
+Pablo [44:33]: notifications
+Pablo [44:34]: even
+Pablo [44:35]: though it would be local
+Pablo [44:35]: maintenance
+Pablo [44:37]: as a paper says
+Pablo [44:38]: there was still need
+Pablo [44:41]: to be let's say bigger
+Pablo [44:41]: applications
+Pablo [44:42]: which should change this also in our
+Pablo [44:43]: yeah so what are the benefits
+Pablo [44:45]: of being key oriented
+Pablo [44:52]: is pushing and popping objects for pieces so you push an object in your key on one side and you pop it the entire object back on the other side
+Pablo [44:55]: sockets aren't necessarily locked up they're data frames
+Pablo [44:59]: so with the sockets you're going to push this entire object into a socket
+Pablo [45:08]: you have to push the entire objects and stuff manually you have to basically turn it into a cream of data and then you have a slide you need to know when you've gotten all
+Pablo [45:12]: so you're kind of building up this is kind of where t utilization
+Pablo [45:19]: when
+Pablo [45:21]: there's power
+Pablo [45:21]: you have the entire
+Pablo [45:22]: project
+Pablo [45:22]: to care about
+Pablo [45:23]: so that's
+Pablo [45:25]: extra
+Pablo [45:26]: commercial through
+Pablo [45:27]: this
+Pablo [45:31]: one
+Pablo [45:32]: of the other things
+Pablo [45:33]: that
+Pablo [45:34]: the
+Pablo [45:35]: cost of doing is
+Pablo [45:36]: inherent as
+Pablo [45:38]: applic
+Pablo [45:38]: ations
+Pablo [45:41]: they don't
+Pablo [45:42]: have
+Pablo [45:43]: not necessarily
+Pablo [45:45]: waiting
+Pablo [45:46]: on
+Pablo [45:47]: they don't have
+Pablo [45:47]: anything to do
+Pablo [45:49]: they're
+Pablo [45:49]: rain for data
+Pablo [45:50]: they might have
+Pablo [45:58]: with
+Pablo [45:59]: kind of stuff
+Pablo [46:04]: that you read
+Pablo [46:04]: get your weight
+Pablo [46:08]: given
+Pablo [46:11]: the freedom to do other
+Pablo [46:12]: useful work you might
+Pablo [46:13]: want to do
+Pablo [46:16]: your over
+Pablo [46:17]: head
+Pablo [46:46]: also
+Pablo [46:53]: maybe
+Pablo [46:54]: that's
+Pablo [46:58]: a few
+Pablo [47:20]: yeah so academic kernel was started with microsoft research by irene
+Pablo [47:27]: developers in microsoft trying to make use of these fancy record devices based on the issues they were running into
+Pablo [47:30]: so again
+Pablo [47:40]: a single credit nature of demi kernel i think is kind of limitations because there are again redis is single threaded but there's another key that
+Pablo [47:53]: 's basically the same thing as redis but it's multipurpose dynamic kernel woodwork redis because it's single branch model we have to do a lot more work if your application
+Pablo [48:03]: before the completion model
+Pablo [48:03]: is
+Pablo [48:05]: also usually location
+Pablo [48:05]: in your application
+Pablo [48:07]: a lot
+Pablo [48:08]: of these micro
+Pablo [48:08]: seconds
+Pablo [48:09]: hydrochloric
+Pablo [48:12]: mod
+Pablo [48:13]: el
+Pablo [48:14]: where they're run
+Pablo [48:14]: ning across
+Pablo [48:18]: you could
+Pablo [48:19]: probably imagine
+Pablo [48:21]: high performance
+Pablo [48:22]: data cent
+Pablo [48:22]: er
+Pablo [48:29]: you might have
+Pablo [48:31]: something like that we used
+Pablo [48:32]: where
+Pablo [48:33]: you're talking about
+Pablo [48:34]: your information
+Pablo [48:35]: from
+Pablo [48:36]: other
+Pablo [48:38]: out a bunch of responses
+Pablo [48:41]: maybe not
+Pablo [48:43]: quite as well fitting for this
+Pablo [48:43]: model
+Pablo [49:00]: i don't think even sort of databases based off of elephant engine so like python systems based off of that work be the case they have all this background thread compaction which goes on
+Pablo [49:03]: i'm assuming that won't work here or will i
+Pablo [49:09]: yeah so the main issue with demi kernel and multipreading is that

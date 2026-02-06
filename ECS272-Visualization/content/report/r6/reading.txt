@@ -1,0 +1,20 @@
+Read either of the following papers.
+
+Write a short summary of the paper (< 300 words). Depending on which paper you read, answer the respective questions.
+
+Carpendale, S., Thudt, A., Perin, C., & Willett, W. (2017). Subjectivity in personal storytelling with visualization. Information Design Journal, 23(1), 48-64.
+[pdf
+
+Links to an external site.]
+
+    How can subjective perspectives be communicated in personal narrative visualizations?
+    What are techniques for conveying a personal experience or message through a visual encoding?
+    List some benefits and drawbacks of subjective displays of personal data.
+
+
+B. Lee, N. H. Riche, P. Isenberg and S. Carpendale, "More Than Telling a Story: Transforming Data into Visually Shared Stories," in IEEE Computer Graphics and Applications, vol. 35, no. 5, pp. 84-90, Sept.-Oct. 2015 [pdf
+Links to an external site.]
+
+    What are the components of the storytelling process? Describe them.
+    Describe what kind of impact the audience and setting have on the storytelling process?
+    Are there any differences in the storytelling process between explaining scientific findings to novices at a museum on a touch-table differ versus creating a data-story on the New York Times webpage. Why or why not?

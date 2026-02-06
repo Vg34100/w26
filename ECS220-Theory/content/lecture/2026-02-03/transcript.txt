@@ -1,0 +1,299 @@
+Pablo [0:10]: why because it's two quantifiers
+Pablo [0:17]: pi two sigma two quantifiers and the first quantifier is a for all and when you negate it
+Pablo [0:23]: you get a sigma two something that is two quantifiers but the first one is
+Pablo [0:29]: just de morgan's laws is the reason for that i think it helps to see a concrete example
+Pablo [0:38]: questions about these sort of observations
+Pablo [0:45]: the claims these are easy now when i say easy i mean easy once you wrap your head around the definition
+Pablo [0:53]: you don't need a clever insight to see this stuff they're not easy in the sense that understand the first time you see
+Pablo [0:58]: you got to wrap your head around it but ultimately it's a very small way of expressing
+Pablo [1:02]: natural stuff that should be familiar
+Pablo [1:08]: what would be an example
+Pablo [1:11]: sigma and
+Pablo [1:19]: the negation that they
+Pablo [1:20]: negate everything there
+Pablo [1:24]: make this statement it's assignment to statement
+Pablo [1:26]: negative
+Pablo [1:28]: and then just go the other way
+Pablo [1:35]: what would it mean to say it's not the case that there is a circuit for all of the w is true
+Pablo [1:41]: that would be the same thing as saying it is the case that for all circuits there's an input that makes
+Pablo [1:41]: us good
+Pablo [1:45]: just do exactly what i did here only start with the bottom statement and then the
+Pablo [2:02]: second pass not through the quantifiers you'll flip them around as you pass them through boolean m's or ors you can use flip
+Pablo [2:10]: other questions
+Pablo [2:11]: about
+Pablo [2:12]: observations
+Pablo [2:21]: okay
+Pablo [2:41]: so a lot of times when people talk about polynomial hierarchy they might mean that big infinite sequence of classes sometimes they also mean just the union sometimes we might talk about one complexity class ph the polynomial hierarchy is just the union of all the sigma pks for all k
+Pablo [2:46]: and because of the subset relationships we identified that's the same thing as unioning together all
+Pablo [2:51]: right so we have no quantifier that's just p these are problem decidable
+Pablo [3:00]: the first level is actually these two classes signal one and pi one otherwise known as n cohen v and of course p is a subset of both
+Pablo [3:06]: sigma two and pi two
+Pablo [3:11]: have these subset relationships everything in first level is contained in each of these two things
+Them [3:15]: and then it goes that way
+Them [3:16]: on and then
+Them [3:19]: there's infinitely many levels but you take that infinite union
+Them [3:20]: that's the problem
+Pablo [3:26]: so again this thing can be defined it exists
+Pablo [3:31]: you tend only really find natural problems in the first couple levels
+Pablo [3:34]: most of the things we encounter tend to be here
+Pablo [3:38]: a few things we encounter tend to be here maybe the third level
+Pablo [3:40]: but
+Pablo [3:43]: it does make mathematical sense to think about any
+Pablo [3:43]: level
+Pablo [3:44]: okay
+Pablo [3:50]: so there is the polynomial hierarchy now back to why we're talking about it in this chapter
+Pablo [3:55]: which is this first grotesque consequence of what if p or equal to m
+Pablo [4:00]: well then it turns out that in fact p would equal the whole polynomial
+Pablo [4:01]: log
+Pablo [4:08]: or in other words if adding a single exist quantifier meaning changing p to n
+Pablo [4:16]: doesn't add any power in fact it zero equal then neither do any additional bonfires no matter how many of them you have
+Pablo [4:25]: which however unlikely you think it is that a signal exists to help you it should be at least as unlikely that you're not helped no matter how many quantum
+Pablo [4:25]: fuckers you have
+Pablo [4:28]: okay
+Pablo [4:32]: we don't know how to prove this either
+Pablo [4:38]: but it does seem at least as implausible as people in the even more
+Pablo [4:47]: so looks like a much stronger statement no matter how many quantifiers you have they don't help at all they could just be replaced with a signal how long they have time for google
+Pablo [4:50]: okay so how are we going to prove this
+Pablo [5:01]: so we'll use two so we're going to assume that p is equal to n as a hypothesis and then prove that pulls the whole power
+Pablo [5:11]: and we're going to repeatedly use two facts that hold if t equals a and then the statements i write below i'll talk about this witness w as always assume its length is polynomial index
+Pablo [5:16]: so fact e is standard error exists
+Pablo [5:36]: if i have a predicate b and i can compute a polynomial time and it takes two inputs x and del then the following one input predicate i'll call b exists of x which i define to be there exists a w again w with this y such that bxw
+Pablo [5:38]: if that predicate is empty
+Pablo [5:42]: so is this why because
+Pablo [5:47]: the definition of nd is that it just followed by something beautiful to follow me
+Pablo [5:48]: on
+Pablo [5:53]: but if
+Pablo [5:54]: that
+Pablo [5:55]: may also be
+Pablo [6:01]: p
+Pablo [6:03]: is equal to
+Pablo [6:04]: this
+Pablo [6:05]: related predicate
+Pablo [6:06]: called the
+Pablo [6:07]: x
+Pablo [6:09]: result for all of
+Pablo [6:10]: you bsw
+Pablo [6:11]: that
+Pablo [6:12]: helps
+Pablo [6:13]: if b is equal to
+Pablo [6:17]: okay
+Pablo [6:22]: so we'll prove this by example what we'll do is we'll show
+Pablo [6:27]: if p is equal to np then actually the third level of the
+Pablo [6:28]: polynomial hierarchy
+Pablo [6:29]: is equal to
+Pablo [6:41]: because i think concrete examples in this case the concrete example of three alternating quantifiers is a little easier think about but by the time we get done it ought to be if you understand what i'm saying here it'll be obvious
+Pablo [6:44]: how the proof would extend to any number of levels
+Pablo [6:50]: this would show that p is equal to any level of the polynomial hierarchy you want in other words it's just equal to the whole
+Pablo [6:51]: thing
+Pablo [6:59]: but that proof would be harder to read if i wrote it in full generality i'm just doing it for the third level
+Pablo [7:02]: but it hopefully will be obvious
+Pablo [7:06]: if i had picked the fifth level or the twelfth level
+Pablo [7:08]: you could just have a slightly longer
+Pablo [7:09]: okay
+Pablo [7:21]: let's suppose so how are we going to show as well as we said the containment kind of goes up everything it feeds contained in the first level everything the first level is the name of the
+Pablo [7:29]: second level so show people the whole hierarchy in this case we're just showing third level we had to show the other we have to show that the third level sigma p three
+Pablo [7:37]: is contained in other words anything that's in sigma p three is actually computable and polynomial
+Pablo [7:41]: so let's start with something in sigma p three let's call it a
+Pablo [7:44]: what does it mean for it to be in sigma b three
+Pablo [7:55]: is that it's a predicate it's a function of one string x and it is true if and only if there is a w one so that for all w two there is a w three
+Pablo [8:09]: so that this four argument predicate of x w one w two w three is true and that b three is computable in polynomial that's just the definition of what it means for a to b in the third level of the popular
+Pablo [8:15]: so now we want to argue a is actually in the zero level it's just computable and polynomial
+Pablo [8:19]: and we're going to use max ena repeatedly to do that
+Pablo [8:26]: so we'll start with
+Pablo [8:28]: this last part of the state
+Pablo [8:34]: suppose we've got in mind an x and the w one and w two and i want to know is it the case
+Pablo [8:42]: does there exist a w three so that b three of x w one w two w three is true
+Pablo [8:47]: what do we say we said v three is commutable in polynomial time
+Pablo [8:54]: and yeah we wrote the first three arguments like three separate arguments but again
+Pablo [9:00]: you can think of them as three separate arguments or you think of them as one string in code
+Pablo [9:03]: so from that perspective
+Pablo [9:07]: and we have
+Pablo [9:13]: that the statement of the form this w such that d something comma w is true
+Pablo [9:16]: that's actually computed among polynomial
+Pablo [9:18]: because b will then
+Pablo [9:23]: be one of the advance one exists and then something beautiful
+Pablo [9:31]: so in other words this pre argument function x that takes x of v one w two and then asks a question
+Pablo [9:37]: is there another argument there'll be three that you give a b three that would be true
+Pablo [9:39]: that could be computed in polynomial
+Pablo [9:42]: so this d two that takes only three arguments
+Pablo [9:45]: does this four want to give it to v three
+Pablo [9:49]: that would make it happy that can be done in follow me
+Pablo [9:54]: so this b two is going to be involved in polynomial given these three
+Pablo [10:05]: so
+Pablo [10:06]: we can rewrite
+Pablo [10:10]: one
+Pablo [10:14]: by definition
+Pablo [10:18]: there's this
+Pablo [10:28]: we
+Pablo [10:29]: equivalently
+Pablo [10:30]: write a as
+Pablo [10:32]: a and x is true
+Pablo [10:44]: arguments is logically equivalent to there exists a w three that makes b three
+Pablo [10:47]: but then
+Pablo [10:49]: look at the tail end of that
+Pablo [10:55]: where we this is the case we have in hand this x and this w one
+Pablo [10:59]: we're asking is it the case that for all w two
+Pablo [11:02]: if i were to give x w and w two v two it would be true
+Pablo [11:04]: by
+Pablo [11:05]: fact a
+Pablo [11:10]: that is a cohen he predicate but co np equals p by our hypothesis
+Pablo [11:13]: so that itself
+Pablo [11:19]: function of just these two equals x and w one
+Pablo [11:25]: being commuted in power
+Pablo [11:29]: so we can again equivalently rewrite a using this b one
+Pablo [11:33]: so a of x is true if and only if there is a w one
+Pablo [11:36]: so that b one x w one is true
+Pablo [11:38]: now
+Pablo [11:39]: we're almost at the end
+Pablo [11:43]: by fact
+Pablo [11:58]: which
+Pablo [11:59]: is true
+Pablo [12:07]: in other words a of x is just b zero right this b zero is a
+Pablo [12:16]: but v zero is computable so we show that if a is in the third level the polynomial hierarchy it gets actually at the bottom
+Pablo [12:19]: p is equal to sixty
+Pablo [12:20]: but
+Pablo [12:24]: hopefully it's obvious that whatever level i started at i could have done this that many times
+Pablo [12:28]: shown the fat level is also equal to
+Pablo [12:29]: b
+Pablo [12:36]: so this is what people refer to as
+Pablo [12:38]: the polynomial hierarchy collapse
+Pablo [12:44]: which again we don't know how to prove it doesn't happen but it at least is unlikely
+Pablo [12:46]: as p equals
+Pablo [12:48]: n but seems even more unlikely
+Pablo [12:49]: because it just looks like a stronger statement
+Pablo [12:51]: no amount of quantifiers
+Pablo [13:08]: now more generally when people talk about the polynomial hierarchy collapsing this is kind of like the worst way to collapse which is that the whole thing is just pee there's a generalization of this fact we won't go through it but
+Pablo [13:13]: you can prove it using very similar using basically the same technique
+Pablo [13:16]: which is that if at any level the sigma
+Pablo [13:18]: and the high class equal
+Pablo [13:18]: each other
+Pablo [13:20]: then
+Pablo [13:21]: the polynomial
+Pablo [13:22]: fabric collapses down to
+Pablo [13:22]: that level
+Pablo [13:23]: in other words
+Pablo [13:26]: sigma k equals pi k for any k
+Pablo [13:30]: then they're also equal to significant plus one and high a plus one
+Pablo [13:31]: sigma g plus
+Pablo [13:31]: two
+Pablo [13:37]: everything above them equals them even though the ones below might remain separate
+Pablo [13:49]: so this more general notion of the polynomial hierarchy collapsing is that which is that a few quantifiers add some power but once you get to some k more quantifiers don't help that also seems unlikely
+Pablo [13:56]: it kind of feels like you're getting more power to chime you out of quantifier again we don't formally prove any of this
+Pablo [14:02]: but the strongest way in which the polynomial hierarchy
+Pablo [14:03]: could collapse
+Pablo [14:09]: if just the zero then the first level equal each other then in fact all the levels
+Pablo [14:10]: are collapsed
+Pablo [14:11]: out as well
+Pablo [14:15]: okay so here's a concrete example of
+Pablo [14:19]: a slightly less catastrophic collapse
+Pablo [14:27]: so we argued that if we talked a bit about this in the last chapter what if m equals co m in other words what if
+Pablo [14:37]: for an np question given a graph does it have a hamiltonian path by definition there's a short proof of the answer is yes what if there's also a short proof with the answer no
+Pablo [14:39]: that seems unlikely
+Pablo [14:46]: but if it were true it doesn't immediately mean that we know how to determine the answer in polynomial
+Pablo [14:46]: time
+Pablo [14:56]: it just means that if you want to prove to me the answer is yes you can prove it quickly anyone approved for me the answer is no you can also prove it quickly but i just want to figure it out i still own them
+Pablo [15:07]: so we don't know that if that's true p equals envy we do know that if that's true and b equals common b then the polynomial hierarchy collapses to the first and p
+Pablo [15:07]: i
+Pablo [15:11]: doesn't necessarily apply to equal denominator
+Pablo [15:12]: but it's also the variance
+Pablo [15:13]: so in other words
+Pablo [15:14]: if he is not
+Pablo [15:17]: empty equals
+Pablo [15:18]: then
+Pablo [15:29]: those two both equal the whole polynomial hierarchy so another way of putting that would be that adding a single exists or for all quantifier would increase the computational power beyond me
+Pablo [15:31]: but more quantifiers would not
+Pablo [15:35]: again just seems unlike
+Pablo [15:39]: so this is sort of evidence that
+Pablo [15:44]: there's no problem that involves npn co md that's in their intersection
+Pablo [15:46]: that's at e movement
+Pablo [15:53]: and there are certain problems like this that we don't know how to solve them in polynomial time but they are
+Pablo [15:57]: involved np and co and certain problems related to factoring
+Pablo [16:01]: but if anything
+Pablo [16:06]: that's in cohen keyword np complete then this would imply nd equals code and b
+Pablo [16:08]: which as we see above
+Pablo [16:13]: so that's all
+Pablo [16:20]: there's other reasons
+Pablo [16:20]: to care about it
+Pablo [16:26]: the first couple of those do capture
+Pablo [16:27]: even actual
+Pablo [16:28]: problems and
+Pablo [16:34]: the
+Pablo [16:35]: main reason i
+Pablo [16:36]: think people study it
+Pablo [16:37]: is
+Pablo [16:38]: for this kind of
+Pablo [16:45]: other complexity here at statements that again like most computational complexity people really don't
+Pablo [16:46]: know how to prove it one way or the other
+Pablo [16:47]: but you can at least
+Pablo [16:48]: have these hypothetical
+Pablo [16:49]: statements
+Pablo [16:55]: if this thing that we think is unlikely happens it would imply the polynomial hierarchy collaps
+Pablo [17:02]: es there are many results of this form and i just showed you one which is what if p equals n that implies the polynomial
+Pablo [27:28]: looks exponential but it's exponential in n is not exponential in the length of the input of c the length of the input to c is n plus k
+Pablo [27:33]: this takes time only k which is linear in the length of r
+Pablo [27:39]: we just run that
+Pablo [27:49]: and since c is input size is n plus k which is o of k because k is quite bigger than n that means c itself is solvable in non deterministic linear
+Pablo [27:55]: which means c is an np
+Pablo [28:06]: now determines the linear time is a special case of non deterministic pump so we've just shown that c is contained in np but now we use our hypothesis p is equal to n
+Pablo [28:14]: so up to this point i didn't use the hypothesis up to this point i just define this artificial problem
+Pablo [28:56]: looks kind of like a but instead of taking only x it takes x in this huge second argument that's all one's and everything i said is true that this new problem c is decidable and non deterministic linear time but this is uninteresting until we get to oh remember we assumed p equals n so if you're decidable and non deterministic any kind of polynomial including linear in this case you're actually decidable deterministic in paloma maybe not linear just because p equals np doesn't mean any time of t equals time of t it could be that you to convert a non deterministic polynomial time program to a deterministic one might require the exponent
+Pablo [29:03]: but because these two things are equal we know that there's something computable in polynomial time that can decide
+Pablo [29:13]: so c is decidable in polynomial time maybe time n squared maybe in cubed who knows what it is there's some deterministic algorithm
+Pablo [29:16]: a given x and p can just answer that question
+Pablo [29:25]: so we're going to use that to basically reduce a to
+Pablo [29:35]: c determinist so what does it mean to reduce avices well we want to solve it a does it take x c takes two arguments x and p a just takes x
+Pablo [29:47]: so we've got x we want to use it to decide a and we're going to assume that we have access to this program p and we know there is some polynomial time beautiful program
+Pablo [29:48]: that computes c
+Pablo [29:54]: so what we do is on input x we just produce this really long unary string
+Pablo [30:04]: we look at x we say its length is n write down two to the n cubed one's in a row and give that big string e as the second argument
+Pablo [30:09]: to this deterministic algorithm
+Pablo [30:12]: that runs in polynomial time in the side c
+Pablo [30:17]: because that can be done in polynomial time
+Pablo [30:26]: the time we need to do this is going to be what well again i like concrete examples so c is computable in polynomial time
+Pablo [30:30]: maybe it's computable in time it's input length to the fifth
+Pablo [30:38]: what's its input length it's not exactly bad then plus k dominated by a so maybe it's like something like k to the fifth
+Pablo [30:44]: so now how many steps is that that's just some number of spells
+Pablo [30:49]: but how many steps is that as a function of the input to a deal with an a is a lot smaller it's only like that
+Pablo [31:00]: so as a function of the input length to a which is n this is this quantity two to the n cubed that whole thing to the fifth but that's the same thing as two to the five n cubed
+Pablo [31:03]: so in other words
+Pablo [31:09]: by doing this reduction just taking input x writing down this huge number of ones
+Pablo [31:14]: and giving that to the deterministic decider per c we can decide
+Pablo [31:15]: a
+Pablo [31:23]: and that second time exponential in the length of the input to a but that's okay our only goal is to show a is decidable and deterministic exponent
+Pablo [31:24]: ial number
+Pablo [31:25]: and we
+Pablo [31:29]: did so a is a is an x we don't need the number
+Pablo [31:38]: questions about this
+Pablo [32:06]: the basic trick we're doing here is
+Pablo [32:11]: we know p equals envy we've got this
+Pablo [32:18]: we got this thing that runs
+Pablo [32:19]: in exponential
+Pablo [32:20]: time
+Pablo [32:26]: so we just defined as artificial new problem c basically asking the same question
+Pablo [32:30]: only we define it to have a second argument that's so huge
+Pablo [32:31]: that
+Pablo [32:35]: whatever this big number accepts me takes that looks pretty small
+Pablo [32:37]: as a function of the size of the input
+Pablo [32:38]: that's the
+Pablo [32:39]: package
+Pablo [32:41]: the same algorithm
+Pablo [32:42]: we're running
+Pablo [32:46]: right like when you run this decider b on x and w
+Pablo [32:49]: it's taking the same number of steps
+Pablo [33:03]: regardless of whether you're using it to solve b or you're using it or sorry whether you use it to solve c or whether you're using it to solve a but if your reason solve c then you know that number
+Pablo [33:04]: steps is the same
+Pablo [33:05]: just
+Pablo [33:06]: two to the
+Pablo [33:07]: length of the first arg
+Pablo [33:08]: ument
+Pablo [33:08]: two
+Pablo [33:10]: if
+Pablo [33:11]: you happen to have
+Pablo [33:11]: a second
+Pablo [33:12]: argument that's enormous
+Pablo [33:13]: you ask how many
+Pablo [33:14]: steps is that
+Pablo [33:15]: as a function
+Pablo [33:20]: of
+Pablo [33:21]: evil
+Pablo [33:22]: and bdw

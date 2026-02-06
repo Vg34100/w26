@@ -1,0 +1,85 @@
+Okay, so now from, Let's go back from a natural problem that we're not going to get into. The proof of it being outside appeal to an artificial problem that's going to be a little
+easier to reason about. And his whole goal is just
+to show us that there's something in XP but not be. So let's let T be a
+time-bound function. Remember we require these so-called
+time constructable functions, but just think of t as being something like n
+squared two to the n. So if you fix this function, you can define a decision problem. In this decision
+problem depends on t is that he's not an input
+to the function, is just the name of the
+decision problem as t. So predict sub n squared would be a different decision problem
+then predict sub 2 to the n. But for any time-bound, you can define this problem. The problem is on two inputs, a program P and an input
+x we want to output. And let's assume that P. Just for the sake of concreteness, let's assume that if it halts, it returns a boolean, right? Maybe it's a, it's a Python function. And all the return
+statements return that. We can generalize that. But let's just imagine. So what we want to output is
+one of three different values. Yes, no, or I don't know apple. And if P of X halts with empty
+of length of x, the hubs. In other words, if you know P on this input is actually
+T of n time that bid, then we just want output whatever pietas which will be assembled
+in an otherwise we want to help, but I don't know. Okay, so know that t is
+hard-coded into predict, it's not an input to
+write is just the definition of this problem depends on which team and it's a
+different problem if we, if we change d. And note also that
+this is an absolute boundary, so-called sharp boundary
+are not asking doesn't halt with an o of t of x steps. That wouldn't necessarily be well-defined is we'd have
+to say what the constant, so the constant is one
+we want to note is all in exactly t times length. The next steps. Okay, so here's this artificial
+problem that present. So first of all, this one
+is not all that unnatural. This is some very
+abstract distillation of the problem that all
+static analysis solvers want to solve is they, they want to know if I
+ran a program, you know, possibly on some particular inverter, possibly in any input. What's it going to do, right? We want to predict its behavior. So here's the artificial problem. So if we're given a
+program P that happens to return a Boolean, right? If it returns are all, we want to output this weird value. And this value is if we ran
+P on its own source code, right, to take strings as inputs. When I write p of p, What I mean is I want to
+run the program P and the string I want to get it
+is the source code of B. So the output of a catch-22
+is going to be, okay, negate that whatever P would
+do on its own input if it actually holds within t of
+the input length steps. Then it returns some Boolean. In that case, I want the output of Catch-22 to be the
+negation of that Boolean. Otherwise, I want the output of
+Catch-22 to just say I don't know. Okay, so right here, this
+is the source go to p. And this is sometimes called, this technique is
+called diagonalization, and we're going to see it again. But here's our first
+indication of it. The fact that we're giving P its own source code is why this technique is
+called diagonalization. And it's because if you
+imagine that you have this infinite matrix
+where in the rows you list all possible programs
+you might want to run. And the columns you list all possible inputs you
+might want to give them. And then you get rid of
+any inputs that don't look like source code of programs. Then all that remains is
+source code of programs. And the portions of this matrix that we reference here in this problem
+are the ones along the diagonal. So this is why this technique is
+called diagonalization. Okay? So we've defined this program, this problem catch-22 sub t. Here's just a reminder that there's the statement
+of the problem again. Okay, so now let's, let's reason about the
+complexity of this problem. So, okay, for any program
+P that halts on input P, meaning the source code to be
+within t of length of P steps. Catch-22 sub T of p is
+not equal to p and b. Right? So why is that? Well, just the definition is that if, if p on input B halts, right, that satisfies this catch-22
+on that input is the opposite. So they're not the same. That's just how we've
+defined it. Okay? So we want to reason about how quickly a
+catch-22 sub t can be solved. So let's imagine program, we'll call it P sub 22. That's always catch-22. Right? So this problem can be
+solved is not undecidable. It is solvable, but I want to reason about how much time does it take. Okay, So let's just let pet peeve 20 to be any program that solves
+a correctly an island. That's right. Well then what does it mean? It means P 22 on input, P 22 on, on any input has got to get
+the answer right for catch-22, which means it also works on its own. P20, two of P 22 gets
+the answer right. This right here is the
+definition of the answer. So that means they
+cannot be the case by this definition that P2V2 halts
+on it within this many steps, If it did catch-22, would not oninput P 22 would
+not equal P2 to P1, P2. So catch-22 t, It could
+still be solvable in say, three times T of n steps, right? But it is not solvable on all inputs within T event exactly
+sharply T and n steps. So, so it could be in like time of t and m because this allows
+constants times t-a then. But in particular, this does show for any g of n grows
+strictly smaller than TIA, then this problem is
+not in time of g. And so here is our time lower bound. And this, this problem that can be solved within
+some amount of time, but not within T, T of n steps or smaller. If you care about sharp
+bounds and if you're allowed to have constants in
+front of the time-bound, then it's not solvable in
+anything little o of t. Now this also essentially shows that, that more natural problem predict
+sub t is not in time of g. So in general, this just a little more details
+to kind of work that out. But in general, what that tells
+us is that the fastest way to predict some programs T steps into the future is actually
+to run them for t steps. There's no shortcuts. So most static analysis
+solvers you can think of is trying to find shortcuts and say, well, what might this
+program do without us having to run it and
+see what it does? And, you know, there's a
+lot of that work very well. But the point is they provably cannot possibly work on all
+possible programs. So in general, you cannot predict
+what computation's are going to do other than just by running
+them and seeing what they did.

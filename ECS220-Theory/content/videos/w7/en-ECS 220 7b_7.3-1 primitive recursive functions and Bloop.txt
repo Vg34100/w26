@@ -1,0 +1,143 @@
+We jumped a bit ahead
+in the book with the counter machine because
+I really like that model. I wanted to get some homework on it. And now we'll go back
+to going in order. So back to this question of how do we define what are all the
+possible computations that can be done automatically? How do we do that? So this was a question that needed to be answered before
+anybody could hope to. To tackle Hilbert's and guidance
+problem asking whether there was an algorithm that could decide the truth in any
+mathematical statement, we needed to define
+what is an algorithm. What does that mean? Exactly? So here's one attempt that people made the so called
+recursive functions. There's going to be a couple
+of variants of these, but this was an early
+attempt at defining this very slippery notion of what
+does it mean for a function to be computable in the sense that a sufficiently well trained
+person could sit down with pen and paper and figure
+out what is its output given its input from a. So here was a notion that
+was introduced really on how to build up functions for many integers
+to one integer from scratch. So as we often do, we define some sort
+of atomic functions, things that are quote,
+obviously computable, very easy to compute. And these three functions
+are the constant 0. So on input x, it just ignores x and output 0, the successor function on
+input x and outputs x plus 1. And then projection, this is kinda needed in some
+technical cases to say, if you're given several inputs, I just want to pick
+one of the inputs out. So for example, P1 of any number
+is just the identity function. Okay? So those are going to be
+our only basic functions. And then now we'll have some, some ways to create new functions given that we've
+already defined and computable. So let f and g be functions. So we're going to declare that their composition is
+also a function, right? So what? If f can be defined
+and G can be defined? And I'm being a little
+bit slippery with exactly how many inputs
+do they take here is I've said that
+there's only one output. You can also define needs
+to take several outputs. Or you can equivalently
+consider that to be several functions that you
+just evaluate independently. So let's just assume the
+number of inputs and outputs work out here and its simplest at
+this point to think of them all, I mean one input and one output. So then it makes sense
+to give an input to, to G and output comes out of that. You give that output to IF and then some other
+output comes out of that. And then that is the
+composition of f with g. We declared that's computable. We allow this thing called
+primitive recursion. And it works like this. You assume that you
+have functions f and g. Again as in their computable. And you can use that to define a
+new function recursively work. Essentially f gives you the base case and g gives
+you the recursive case. So how does it work? Well, you imagine that H is
+recursing on only its last him, but so it can take several inputs, but it's only doing
+recursion on its last input. In other words, if
+I want to know what is h of all these inputs comma 0, That's the base case
+for the last input. I just evaluate f on the other
+inputs and I get a base case. And then if I want to know what
+is h and x comma y bigger than 0? Well, the idea is G can tell me that what I do is I
+recursively evaluate h on the same non y input
+x and then y minus one. So that's the recursive part. But then, you know, whatever comes out of that, I need to process it somehow. This is often the case when
+you do a recursive algorithm, you, you get your returns of answer, then you process it based on
+the information you have. So whatever value comes out to be g takes it along with
+all the other inputs, x and y, and then figures out
+what should the output of H. So note that the recursive case
+is always one smaller on y. So this is guaranteed to reach the base case of HX to 0 eventually. Now a whole lot of
+what we know, right? So these are the so-called
+primitive recursive functions. And a whole lot of what
+we know about these is due to the work of Rosa Peter, who was, I think was a
+Hungarian mathematician. But they weren't defined by, or they're defined earlier, but we actually know quite
+a bit about them now. So let's suppose that you
+wanted to implement this. Here's some pseudocode for how you would implement this
+recursive function a, H based on f and g, you would just look like this. Just to make it a
+little more concrete. And if you want to do it iteratively,
+this is how it would look. So you're going to have to
+always translate this into a very straightforward
+iterative pseudocode because of how regularly
+them recursion works. It just evaluates age on the
+first inputs are unchanged. The last one goes down. Okay, so let's look at some examples of primitive recursive functions. Prices. There's all, it's very abstract. So what they were trying
+to do is to say, okay, what is the most bare bones
+definition we can write down for which we can recover everything else
+we know how to compute. So let's take some things
+that aren't on this list. But then see can we define
+them in terms of what's here? So first of all, do is addition. Addition can be
+defined in this way as just using primitive recursion and composition together with
+constant 0 and successor, right? So you can define add recursively
+what we want to add of x, y intuitively to be
+the value of X plus Y. So add of 0 is x. That's a base case. So this is assuming this F function that tells you
+that f of x tells you the base, just the identity here. And then over here, what do we do? We say, well, add of x, y should be. What? Well, what you do is
+you should figure out recursively what's add
+of x, y minus one. That's one smaller. So take the successor of that. So in this case, the
+g function that takes the recursive value and
+then gives you back a, you know, the value you want
+is just successor, right? And so here there's writing
+it down in these terms. So add of 0 is just the
+projection function. It just outputs its first implicated
+in or it doesn't write out, it doesn't, it's not otherwise
+based on the second, but Add an x, y is g of
+x y and x y minus 1, where G is what? Well, gee, can be defined as first, project onto the third element. So g doesn't actually need x or y. Once you've got Add of XY minus
+one, That's all it needs. So takes its three in both XYZ
+just throws away the first two are just project onto the third and
+then take the successor of that. So, so that shows addition
+is primitive recursive. Okay, multiplication, we're
+going to express similarly, its base case, multiplying x by 0 now is project under
+the second input to 600. And the recursive
+case is we evaluate, want to know what's x times y? Well, if we know what's
+x times y minus 1, we know that that's what, that's
+x smaller than x times y. So what do we have to do to that? To get it up to x times y, we have to add x to it, but we've already defined that. So this is how we can compose
+the recursive case with something that's primitive
+recursive and get multiplication. Exponentiation is similar. X raised to the 0 is one that can be defined with the constant 0
+and the successor function. And then x raised to the y is recursively evaluate
+x to the y minus one. And then that's not
+quite what we need, but that times x would be x to the y. So we take that recursive case, multiply it by x. That's something we showed
+is primitive recursive. So the whole thing is okay. So, so this was an early
+attempt at defining stuff, and as you can see, it's a
+bit cumbersome to work with. One of the benefits of hindsight is that now that we know
+a whole lot about programming, there's actually a much more
+simple characterization of these things in terms of progress languages that I
+find to be very elegant, right? So the textbook calls this primitive programming
+language glute, right? And then bloop program. I mean, there's still
+pseudo-code, right? But you can imagine implementing
+this as a subset of say, Python. So bloop programs, I like to say they have for-loops
+but no while loops. Okay, Now, you, if you have a sufficiently
+powerful programming language, I mean for, for loops can
+do what while loops can do. So what I mean by FOR loops is using for-loops in the way that
+you're supposed to use them. Meaning, rather than having some arbitrary condition you test
+to know when to exit the loop, a while loop, you're
+essentially counting, right? In other words, FOR loop should
+be used like a loop that says, repeat the following y times, right? So in other words, before
+entering any loop, we have to precompute how many total iterations
+it's going to take, right? So instead of writing
+it as a for-loop, I'll write it like
+repeat the following y times to make it clear
+that as you enter the loop, you have to know how many
+times you're going to do it, and then that number doesn't
+change while you're doing it. You're just going to do
+this exactly y times. So this is a way to define add it
+using this kind of loop, right? You start z1 and x, and then y times in a row, you incremented, that's
+the successor function, and then you return Z1. Now, you can compose that. You can use that as a subroutine
+to define multiplication. So essentially what you do
+is to multiply x and y. You started Zip2 at 0 and
+then y times in a row. You repeat this with
+z1, you know, starting, starting to x each time, but z2 taking on the
+value of Z1, you're done. You can define
+exponentiation similarly by composing with multiplication. So both of these are sort of equivalent formulations of the primitive recursive functions. Now we're not going to prove that, we're not going to prove that
+these two are equivalent. But it is a very nice
+way to think about, you know, what is
+primitive recursive mean? It means that you can implement
+it in a programming language, but where are the only kind
+of loops you're allowed to do are ones where as you enter them, you've already computed how many
+times they're going to execute. So you can't have anything happening in the body of the loop effect. Whether you're going to
+exit after that iteration or it's just fixed once
+you start the loop, how many times it's going to execute.

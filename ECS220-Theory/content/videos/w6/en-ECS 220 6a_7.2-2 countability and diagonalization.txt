@@ -1,0 +1,154 @@
+And we'll get back to
+computability in a bit. But first we're going to
+dive a little bit into a little bit older
+mathematical technique that preceded the development of
+the computability theory. But this technique proved crucial in developing
+computability theory. And this had to do with fairly
+straight forward looking question, which is, how do you compare
+the size of two sets? All right, well, if
+they're finite sets, it's easy the sizes like a number, and you just compare the numbers. If a has four elements in B as three, then a is at least as big as B. Fact it's bigger. But we know that well, we can get this equivalent
+characterization, which is that the size
+of a is at least that it be if there's an onto
+function from a to b. So this is a on the left
+here, this B on the right. We can describe a function by kind of drawing arrows from elements
+of a to elements a, b. And an onto function is one where everything in B has an
+arrow coming into it. And that's possible to do if and only if the size of a
+is at least that a, B, B add more elements, there wouldn't be enough
+arrows to cover it. Now, this notion of
+the size of the set as an integer makes sense
+only for finite sets. But this notion on the right makes
+sense for any sense whatsoever. So we can take this as a definition
+of what it means for a to be at least the size of B for any
+sets including infinite ones. And, you know, with this
+definition in mind, we can ask a question like, is the number of
+non-negative even integers at least the number of
+non-negative integers, right? It's a subset of it. But pause and think
+about this for a second. Well, that amounts to
+being able to show that there's an onto function
+from the even integers, from the even non-negative integers to all the non-negative integers. And you can do that by just dividing each one of them by two, right? That will map onto
+the naturals because every natural number is some
+even integer divided by two. So in fact, even though
+it's a subset is size is still the least that
+as big, as big as that event. Similarly, clearly the set of real numbers is at least as big
+as the real numbers between 01. But what about the other
+way by this definition? Well, according to this definition, pause and think about this. If you haven't seen it before. We want to be able to
+find an onto function. And there's a lot of ways to do this. But essentially I
+think something like some modification of
+arctangent pulled this off. So essentially any function that
+is only defined between, say, 01, but it goes up as the
+input approaches 0, it asymptotically goes
+down to infinity. And as the input approaches one, it asymptotically
+goes up to infinity. So that would be a function that maps onto all of the real numbers. Every real number can be hit by
+specifying something between 0 and What about the power set of N, the set of all natural numbers? This are the set of all subsets of natural numbers and
+the unit interval. So this one, the way I like
+to see this is we can map each subset of n onto a binary number. And it's the number where the set of ones and the binary number, right? So it's a binary
+number like 0 dot and then some infinite sequence
+of zeros and ones. And it's the positions
+of the ones are the, the elements of the set, right? So if for example you had
+the prime numbers 235711, you'd have ones at positions 2, 3, 5, 7, and 11, and so forth. And any real number between 01, you could express in that way by
+just specifying what's the subset of integer positions and have a
+one and they're binary expansion. So what about this? So the, the natural numbers compared to the power set
+of the natural numbers. So this one, you know, if you've seen this before,
+you know the answer. If not, you know, in fact, the answer to this one is
+no, these other three, yes, that this infinite set is at least the size
+of this infinite set. And in fact, in all
+cases it goes both ways. They have equivalent sizes
+by this step in addition, but not for and then the power
+set of the natural numbers. So this was the theorem
+Cantor proved in the 1800s. And it's that the set of
+natural numbers has struck size strictly less than the
+power set of natural numbers. In other words, its size
+at most that right, there is an onto function
+from p of n to n, but there is no undo
+function from N to P. So again, pause the VMs and
+think about why is this true? What could be the, the
+way you prove that? Okay, So we're going to prove this. And it's an interesting
+theorem in its own right, but we're mainly interested
+in the technique to be. So. So here's the statement. No function from N
+to P of n is on two. In other words, every
+function from N to P of n misses some subset of n. There exists a subset of the
+natural numbers so that for all possible inputs n to F, f of n is not equal to that
+subset is. How do we show this? So this proof is very
+short, but very tricky. So we'll just write it down and then we'll kind
+of look at a picture. So this is in fact the entire
+proof here. It is in one line. For all natural numbers n, Let S sub n equal f of that. Right? Just what's the out, what set of natural numbers does
+f output when input and call that the end of the nth set that produces some subset
+of the natural numbers. Now, define a new set S. This is going to be the set
+that is not in the range of f. F cannot map to it. This is the set of all
+natural numbers n, So n is not contained in S of it. So the claim that S is
+not in the range of f because we have defined, defined it to be so,
+so the easiest way to see this is by making a table. So we imagined in this table on, along the top is all the
+possible inputs to f, right? And then along the columns is
+all the possible outputs of f. And each output of f is a
+subset of natural numbers. And what we're gonna do here
+is identify each subset of natural numbers with its so-called
+characteristic sequence. So this is a binary sequence, is an infinite binary sequence, and it has ones exactly if that position is
+a natural number in the set. So maybe as zeros the empty set, it has zeros everywhere. Maybe S1 is the set of
+all natural numbers. It has 1s everywhere. If S2 is the set of
+even natural numbers, they would have ones on all
+the even natural numbers and zeros everywhere else, right? Maybe S3 is the set of
+odd natural numbers. Maybe as far as the set of prime. So it says 1, 2, 3, 5, 7, 11 and zeros everywhere else. So depending how f is defined, whatever subsets of N and outputs, that means you get a certain infinite sequence in
+each of these rows, one for each input to end. So what did we do
+defining S In this way? What we did is we looked at an input n and then
+the output of f on n, and we related those. So what we're doing is we're
+essentially looking along the diagonal and we're defining has to be the
+opposite of the diagonal. Right? So if n is not contained in S sub N, there's a 0 here, so 0 is not
+contained in S, 0 is a 0. So that means we put it in the S, meaning Ss characteristic sequence has a one there and is in the tes, but then one is contained in S one, write the set output F on input one, it's as all the natural numbers, so it also has one. So we don't put it into S. In other words, we have a 0 there. And so we're essentially
+looking at the diagonal. And that itself is a sequence of bits and we're just defining S to be the bitwise complement of that. So what does that mean? Well, it means that x
+cannot equal any of these rows because S
+disagrees with each of these rows and at least 1 wherever they meet
+along the diagonal. So we're one of the
+rows, say it's S3. Well, what is the fourth element? S says it's 0, but as three pairs, I was the third element. S says it's 0, but AS3 says it's one. So S cannot be the third row, but it can't be any other row
+either or in other words, S is not in the range of f. It is not any of the
+sets output by F. So that function f cannot be onto. So based on this observation, we, we say, okay, well, n and the
+power set of N are both infinite, but the power set of
+N is somehow bigger. So then can't candor defined the size of n to tip
+to say that n is. These are like the counting numbers, but P and NP and bigger
+is uncountably infinite. You can't count the outputs
+that come out of there. So you can count that the
+subsets of natural numbers by putting them into one-to-one correspondence
+with the National Archives. Now, I phrase this
+like it's only for n. It helps to see the diagonalization When you're
+talking about the natural numbers. But actually nothing in this proof as anything special about
+the natural numbers, I could have just put
+any set a whatsoever error and its own power set, right? And this shows the exact same thing. It says that for any set a, the cardinality of a is strictly less than the cardinality
+of the power set of a. Again, that's obvious
+for finite sets, like any set of three elements has eight elements and its
+power set in general, n element set, set two to
+the n possible subsets. But this proof shows it's even
+true for infinite sets if we take this definition using
+the onto functions to, to be what we mean by
+comparing the sizes sets. So this is the
+diagonalization technique. And it's useful for, for
+proving results like this. But now let's come
+back to computability. And let's look at this
+argument we made earlier about how do you programming
+languages where you can write interpreters must have
+non halting programs. That was a diagonalization. So consider what we did. We looked at programs and inputs, but then we defined
+a special program, or the only kind of
+input it ever gave to a program was the source
+code of another program. So if we're going to do that
+and we're going to consider all the programs you can
+write in our language. And then we're going to
+consider all the inputs, but the only ones we care about, our inputs that are themselves
+encodings of programs. Then what we get is
+this infinite 2D table listing all the
+possible programs that we can run and all
+the possible program source codes that we could give
+them is input when we run it. And let's consider that
+they all return Boolean. So say these are just Boolean return that functions in some language. While what did we do? We defined this program V to be such
+that on into a p.sit, it would take the program
+P would run it on input P, and it would negate that. So what it did is it was looking
+at the diagonal of this table. It was looking at all the programs
+and what they would do if you ran them on themselves as input, and then it negated that. And therefore v cannot be any of
+the rows in this program, right? If it were the third row, you'd have a contradiction. This is either true or false. This is the negation, so
+it can't be the third row, it can't be any rattle. In other words, if you can make
+a well-defined v like this, it cannot be one of the
+programs in your language, but you can write v
+as long as you can write an interpreter because
+you're going to use Vi to turn around and oninput P1, r1, v1. And so the only way out of this, the only way that we don't get
+a contradiction here is that the values here are not
+just true and false, that some of these can be undefined
+if they're undefined, right? V Running T3 and input P3. If that never halts, the won't halt either. They're both be undefined. We can only cause v
+To negate it if you actually get a real answer
+out of it, a Boolean, it.

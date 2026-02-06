@@ -1,0 +1,14 @@
+Read either of the following papers.
+
+Write a short summary of the paper (< 300 words). Depending on which paper you read, answer the respective questions.
+
+"The Science of Visual Data Communication: What Works, Franconeri., Psychological Science in the public interest 2021"  [pdf ] (pages 15-End)
+
+    What do you find as a key insight in designing an efficient data visualization?
+    What are the limitations of human memory as it is concerned with the design of a visualization?
+    What are your opinions on aesthetics in visualization? (Rich vs. Minimal design)
+
+"Evaluating Interactive Graphical Encodings for Data Visualization, Bahador Saket et al., IEEE TVCG 14(8), August  2015" [pdf ]
+
+    What is magnitude production? How and why do the authors apply this method to their work?
+    In Section 6, what is your opinion on the design guidelines offered in this paper? List any additional applications for this work.

@@ -1,0 +1,109 @@
+Okay, So we're now
+going to look into how to somewhat formally define
+what we mean by running time. I say somewhat because
+we're going to follow the textbooks convention of being a little bit loose with somebody is, and I'll explain why in a bit. So we're going to measure running time as blue and anywhere else
+as a function of the input size. So for example, we could
+say an algorithm takes n squared steps on
+inputs of size n, right? So it's not a single number
+saying how long it takes. It's a function. How big your input? But then that begs the question, what is the size N of an
+instance of a problem? For example, if we have
+a graph G equals V, the nodes and the edges, That's the type of instance for the Eulerian path
+problem. What's the size? Is the number of nodes in the graph. Is the number of nodes
+plus the number of edges. A graph can have quadratically
+more edges than it as nodes. Is it the length of
+the string S sub g, where S sub G encodes the
+graph and binary, for example, it could be the adjacency matrix, in which case it would have
+exactly VI bits in it. And similarly for other types of problems and other
+types of inputs, what is the size N of an instance AB of the greatest
+common divisor problem. There's two inputs here, right? A and B. Two integers is the sum
+of the two integers. Visit the max of the two. Is that the number of bits we
+need to represent them, right? So log base two of a
+plus log base 2 of b. And note that those numbers are much smaller than the
+numbers themselves, right? By definition, they're logarithmically
+smaller, or in other words, a is exponentially larger than
+the number of bits you need to. So I'm going to leave these questions here as questions because
+it's sometimes not obvious. Normally, we're going to
+say that the right way to encode an integer is
+in binary, right? And therefore, we would
+say the size is the base two logarithm of
+the integer itself. We're going to see
+some reasons why for other decisions like
+counting number of nodes in a graph versus number of edges versus number of bits
+to encode the whole graph. It would matter in
+an algorithms class when you want to get precisely
+to how long it takes. But in computational
+complexity theory will often give ourselves
+permission to sorta, consider all the different answers we'd get in all those
+different cases, roughly equivalent to jump. Okay? So if we have some notion
+of how big our input it is, Here's how we formally
+define running time. Well now we talked about how
+to define the inputs is, but we want to measure the number of steps that the algorithm takes
+on an input of that size. And what's a step? Again,
+this is something aware. If we were in an undergrad class, I would just formally define it. I would say our model of computation is a single tape Turing machine, or maybe a multi tape Turing machine. And it's the number of
+steps it runs into you. But I want to try to point
+out that there's not one exactly right
+answer to this problem. It kinda depends what. Since we've said, are, our notion of a model
+of computation is just going to be whatever your
+favorite programming languages. Because the claim of the theory of computation is to be able to give universally correct
+answers to questions regardless of what kind
+of computer you're using, regardless of what programming
+language you're using. You know, it's not as easy to
+define it formally in the sense, but there's some good
+rules you should follow. Essentially one step should
+be something like an atomic or a basic line of code
+in an imperative program. So for example, an assignment
+statement like a equals 4, we would generally think
+of this as being a single. It takes constant time. We might say an assignment statement like a equals B plus C
+is one line of code. Is this reasonable? Well, it kinda depends exactly
+what you're trying to study. Adding B and C together might take awhile depending
+on what you're trying to, if you're trying to study the exact number of steps
+needed to do addition, you want to take into account, well, what if B and C are both
+arbitrarily large integers as Python allows, well then it might not be okay
+to say this is constant time. If I have a string
+literal like ABCDE, assigning it into a variable
+should take constant time. Um, and so we'd call that one step. Doing a Boolean check
+like is a less than b. Again, normally we
+would say something like this takes constant time. Now if those are very large
+integers, it might not. But usually stuff like this. We'll say this counts as
+one step of a line of code. So definitely things that
+are not allowed, I can't, can't quite draw an
+exact perfect line around everything that is alive. But we can definitely say something should not be considered
+a single atomic step. So Python allows you to do
+list comprehensions like that. So you could assign this
+variable equals this list. What does this list? It's
+constructed by running a for loop. The for loops inside the
+definition of the list, this iterates over all integers
+between 0 and n minus one. And if n is very big, this is going to take a while to run. So it's one line of code, but it would not be fair to call this a single step of the algorithm. If your one line of code
+calls a subroutine that you had better take into account how
+many steps that subroutine takes. Maybe this subroutine
+runs for a long time. If your line of code
+calls a library function, again, that's just
+another subroutine. Maybe it's not one you wrote. Maybe it's one that's in the library, but it may not be okay to
+call this constant time. Now, definitely if we have a very formal model of computation that's very
+simple, like a Turing machine. Most people would
+agree one transition of a Turing machine
+counts as one step. If you have other models like a cellular automaton
+for, for example, defined by an update rule, you might say one execution of
+the update rule is one step. What about non imperative
+programming languages, like a functional language
+or a logical programming? Here you can't even talk
+about steps because the, the method of execution
+of these programs is not done imperatively
+one step after another. There is an algorithm running in the background that you don't, right? That's the thing that the
+interpreter does on your code. So for these, it would actually
+depend on how the interpreter works and you'd have
+to know more about the programming language to know
+how long something will take. Now, we're not going to worry too much about the precise
+definition here. And the reason is that much of
+computational complexity theory just acknowledges that
+we can only hope to get these sort of
+universal truth about computational running time Up to
+polynomial differences, right? So if you have one programming
+language versus another, or one version of these
+rules versus another, it might make a polynomial
+difference that might cause you to say one algorithm is time n squared, while the same algorithm in another language might
+be time in queue. And because we're already going
+to make ourselves okay with saying that n squared and n cubed are close enough to both
+be polynomial there vault, much more efficient than exponential. We're not going to worry
+too much about this, but I'm just giving
+you some guidelines for sort of what would be reasonable.

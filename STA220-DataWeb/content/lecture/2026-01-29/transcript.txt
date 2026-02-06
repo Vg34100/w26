@@ -1,0 +1,686 @@
+Pablo [1:58]: web spray thing
+Pablo [2:01]: today about undocumented
+Pablo [2:02]: apis
+Pablo [2:06]: i will demonstrate
+Pablo [2:08]: how
+Pablo [2:11]: you can inspect undocumented ap
+Pablo [2:13]: i so that you find them
+Pablo [2:16]: because typically you don't know in advance that there is an undocumented ap
+Pablo [2:21]: is you just have a website and you want to know how to access undocumented
+Pablo [2:22]: api
+Pablo [2:25]: how send the request to them
+Pablo [2:28]: but before i go
+Pablo [2:29]: let me
+Pablo [2:30]: just mention
+Pablo [2:31]: the
+Pablo [2:32]: header
+Pablo [2:44]: of course when you're trying to get data from web the best case is to just have i download table somewhere else
+Pablo [2:45]: then there is no need
+Pablo [2:50]: second best case is if you have an api
+Pablo [2:52]: and you can just send
+Pablo [3:00]: a new request to a server and you get all the data you want to have in a very relevant
+Pablo [3:02]: way
+Pablo [3:04]: may be document
+Pablo [3:06]: ed as a dpi it may not be document
+Pablo [3:09]: ed but in any case
+Pablo [3:11]: and
+Pablo [3:12]: if you don't
+Pablo [3:14]: file an api
+Pablo [3:15]: or if you don't have
+Pablo [3:19]: website
+Pablo [3:21]: many many in the sense
+Pablo [3:22]: you just try
+Pablo [3:24]: to get information out of the html
+Pablo [3:26]: content
+Pablo [3:32]: web page
+Pablo [3:35]: and all the data you are interested in the will be not
+Pablo [3:36]: ed
+Pablo [3:38]: execut
+Pablo [3:39]: ed
+Pablo [3:40]: and if you want to
+Pablo [3:42]: access the data
+Pablo [3:50]: selenium browser in the sense that depend
+Pablo [3:50]: s
+Pablo [3:52]: browser
+Pablo [4:03]: with the document api for state guide
+Pablo [4:12]: only
+Pablo [4:14]: and
+Pablo [4:15]: audience ap
+Pablo [4:16]: i will
+Pablo [4:21]: pub
+Pablo [4:22]: lish on
+Pablo [4:22]: guardian
+Pablo [4:24]: and for this
+Pablo [4:28]: kind of
+Pablo [4:29]: documents
+Pablo [4:30]: if
+Pablo [4:31]: very
+Pablo [4:33]: strict language to avoid
+Pablo [4:34]: being
+Pablo [4:35]: completely
+Pablo [4:42]: unscript like thousands request site in other cases you also have ident
+Pablo [4:43]: ity
+Pablo [4:46]: and
+Pablo [4:47]: as i mentioned
+Pablo [4:59]: and since this key is really identifying
+Pablo [5:02]: r one
+Pablo [5:03]: you should not
+Pablo [5:03]: share
+Pablo [5:05]: i have just written
+Pablo [5:20]: such that i can now use an access
+Pablo [5:32]: and then if we have a look the documentation basically knows i have provided key the question like the topic i'm looking
+Pablo [5:33]: for is
+Pablo [5:38]: just about weeks before
+Pablo [5:46]: the election and there are around i don't know three hundred newspaper articles
+Pablo [6:00]: and decide how many of these articles i can see on the first page is a maximum number fifty so basically what i'm doing i want to see the very first fifteen newspaper out
+Pablo [6:08]: of which all the papers
+Pablo [6:12]: are better read
+Pablo [6:23]: and then what we should always do is i will use this grace
+Pablo [6:27]: if the request works that you don't get the answer
+Pablo [6:28]: or
+Pablo [6:37]: there is no return but if there is like an error message that you don't have access to the server
+Pablo [6:38]: that needs to look forward
+Pablo [6:49]: always run this and if there is no error message and now try to recast the data for case five
+Pablo [6:58]: and then you form the status that you should be some other information i can search three hundred six pages
+Pablo [7:10]: which is showing number one number fifteen page is number one and it was included at seven pages six pages
+Pablo [7:15]: fifty newspaper speech and then on the second
+Pablo [7:21]: and then here you can see in the results
+Pablo [7:22]: itself
+Pablo [7:25]: go
+Pablo [7:30]: over it what we do now all the three hundred six newspaper
+Pablo [7:49]: the greater function for some we are looking for trump that needs who we are starting and his page will go from one to seven and for each of the
+Pablo [8:00]: all the newspaper articles and as you can see all the articles are in the sector
+Pablo [8:07]: and get our response repasses the gst file and try to get
+Pablo [8:13]: just a reason on whatever is the response very choice exactly that is the same
+Pablo [8:22]: first page
+Pablo [8:27]: and because we want to have all the pages we just do overall
+Pablo [8:29]: one to seven
+Pablo [8:34]: and we just make them we start
+Pablo [8:44]: calling first you want to see how many stages are there and folded so there are seven and now i will loop over all the seven
+Pablo [8:45]: pages
+Pablo [8:53]: and what i'm doing here start with the first tip
+Pablo [8:54]: use paper out
+Pablo [8:59]: of page two page three and so on upload h seven
+Pablo [9:00]: and plus
+Pablo [9:20]: and now i have my three hundred six results like five is list picture force you want to have it in a nice format
+Pablo [9:21]: inverted
+Pablo [9:26]: course have to use
+Pablo [9:36]: and then you have you need three hundred six entries like newspaper eleven
+Pablo [9:37]: hours
+Pablo [9:40]: and last five entries
+Pablo [9:47]: are used the publication they receive like about the us news for example
+Pablo [9:53]: so this is basically what we ended with the last lecture
+Pablo [10:13]: and then i'm all interested because i would like to compare for like the main goal is we would like to compare how many articles have been published about tama harris and bona because they are here to be one of them there was more me average
+Pablo [10:15]: and it can be
+Pablo [10:24]: able to read the publication dates which is changing it to the daytime object
+Pablo [10:28]: and now you can see the pandas timestamp
+Pablo [10:34]: and for example you see really here our dates
+Pablo [10:39]: november end of october
+Pablo [10:50]: okay and then we can also just get the day name because
+Pablo [10:51]: we plot
+Pablo [10:58]: everything in the center how many articles have been published on seven a day on wednesday by the end
+Pablo [11:14]: zone so i'm now creating just a new data frame consisting of the actual date and the name and then you can see the second remember the second was set
+Pablo [11:23]: and what we have now this now that you're scooping the number of hours we have
+Pablo [11:27]: with respect to
+Pablo [11:35]: the d and the d name to the same order first you have like forty seven r it was
+Pablo [11:36]: about
+Pablo [11:40]: the second or seventh day at thirty articles and
+Pablo [11:41]: so on
+Pablo [11:43]: and this is a number of hours
+Pablo [11:58]: everything into a function so what i what i did here is
+Pablo [12:04]: all the things i show you will be read up one time first we get
+Pablo [12:05]: all
+Pablo [12:07]: the newspaper article
+Pablo [12:12]: one second
+Pablo [12:23]: now all the output
+Pablo [12:24]: s of amateur
+Pablo [12:37]: yes
+Pablo [12:38]: then
+Pablo [12:42]: we get cyclists in
+Pablo [12:42]: pump
+Pablo [13:03]: to have a seven
+Pablo [13:04]: r
+Pablo [13:07]: and what i
+Pablo [13:08]: now
+Pablo [13:10]: have
+Pablo [13:14]: a tidy data set
+Pablo [13:22]: and now we have our id
+Pablo [13:33]: and basically no real difference
+Pablo [13:36]: but this was like one of the contributors
+Pablo [13:37]: one of them
+Pablo [13:44]: you can see on which days you have how many
+Pablo [13:45]: articles
+Pablo [13:51]: one thing i will use
+Pablo [14:07]: okay and this is like just one example here and it was just british newspaper that was great of course maybe if you want to know more about american effect
+Pablo [14:17]: and
+Pablo [14:18]: we can also analyze
+Pablo [14:25]: so this is one of the things how we can improve everything
+Pablo [14:29]: but i just want to give you a short impression how you can use it
+Pablo [14:39]: and also let me mention there is some kind of authentication like all of this like
+Pablo [14:51]: way if you want to authenticate in a sense don't have a feel and you have used sometimes there are like packages for all this and whenever you have identified yourself
+Pablo [14:53]: in a document api
+Pablo [14:56]: and find some statements here
+Pablo [15:08]: and let me remind you on the very last day whenever you are selling request please make sure that you're not sending too many requests per second and low at
+Pablo [15:09]: times
+Pablo [15:14]: only
+Pablo [15:15]: send one request
+Pablo [15:15]: per second
+Pablo [15:17]: so
+Pablo [15:18]: please make sure
+Pablo [15:25]: and with
+Pablo [15:25]: this
+Pablo [15:26]: i would like
+Pablo [15:27]: to show you
+Pablo [15:28]: how you can
+Pablo [15:30]: find out
+Pablo [15:32]: and
+Pablo [15:41]: have included some comments on the next on the next typical notebook but i think the best thing is really see it how i do it
+Pablo [15:43]: by hand
+Pablo [15:45]: right now and let me
+Pablo [15:46]: just
+Pablo [15:54]: end mode so the topic is now how can i find an undocumented api
+Pablo [16:11]: and the first thing is i mean maybe i mention this why you will only have what we are talking today about different undocumented apis because whenever you have such dti or paper website one big disadvantage
+Pablo [16:14]: is the web page
+Pablo [16:19]: the media core is important
+Pablo [16:26]: and have detailed this at the end of december this lecture and unfortunately for
+Pablo [16:32]: the county health inspections they charge on january first they have a new website
+Pablo [16:34]: everything
+Pablo [17:02]: let
+Pablo [17:02]: me just mention
+Pablo [17:10]: this
+Pablo [17:11]: latest
+Pablo [17:12]: modes and the main
+Pablo [17:13]: message is
+Pablo [17:32]: just
+Pablo [17:33]: typed it tested on
+Pablo [17:33]: data
+Pablo [17:35]: so
+Pablo [17:36]: sometime
+Pablo [17:37]: s also
+Pablo [17:38]: for
+Pablo [17:39]: exc
+Pablo [17:40]: ess
+Pablo [17:51]: ively
+Pablo [18:03]: the
+Pablo [18:05]: issue
+Pablo [18:12]: and so on
+Pablo [18:14]: on
+Pablo [18:23]: the
+Pablo [18:24]: website
+Pablo [18:35]: for
+Pablo [18:36]: all
+Pablo [18:37]: university
+Pablo [18:40]: and
+Pablo [18:41]: all
+Pablo [18:42]: the wages and
+Pablo [18:45]: since
+Pablo [18:46]: the years
+Pablo [18:48]: and
+Pablo [18:49]: can be
+Pablo [18:50]: put
+Pablo [18:51]: them after
+Pablo [18:53]: the
+Pablo [18:54]: prophet
+Pablo [18:56]: whatever
+Pablo [18:58]: for
+Pablo [18:59]: example
+Pablo [19:07]: and so
+Pablo [19:08]: on
+Pablo [19:09]: and some of the
+Pablo [19:10]: things you can see
+Pablo [19:12]: just
+Pablo [19:13]: sorry
+Pablo [19:17]: so here there are like stars they are
+Pablo [19:24]: anonymized but no all the other entities have given me
+Pablo [19:27]: so you can look really
+Pablo [19:27]: look them up
+Pablo [19:33]: so i started working at uc twenty
+Pablo [19:34]: five
+Pablo [19:35]: should
+Pablo [19:36]: find
+Pablo [19:54]: german i see now but at least i'm not here but maybe next year you will be able to realize
+Pablo [19:55]: what there are
+Pablo [20:01]: okay so my thing is there is an api background
+Pablo [20:08]: but how do we know i mean it looks like right there is something we actually change here it can change the location
+Pablo [20:10]: but how to enroll
+Pablo [20:11]: access this api
+Pablo [20:13]: and how to get all the information
+Pablo [20:18]: what i'm doing here is either i make the right
+Pablo [20:20]: click and then go to
+Pablo [20:23]: or you can do like something like
+Pablo [20:25]: on windows
+Pablo [20:26]: comm
+Pablo [20:27]: a q
+Pablo [20:28]: i
+Pablo [20:31]: and then i get
+Pablo [20:32]: this
+Pablo [20:37]: so what i do now is i click here on the network
+Pablo [20:39]: and here the beginning
+Pablo [20:40]: is total
+Pablo [20:41]: f
+Pablo [20:43]: what i do next is assignment first
+Pablo [20:46]: view let's say send me
+Pablo [20:46]: something
+Pablo [20:47]: i
+Pablo [20:49]: serve
+Pablo [20:50]: and click
+Pablo [20:51]: on search
+Pablo [20:55]: and what is happening here
+Pablo [20:58]: you see there is a new entry
+Pablo [21:11]: and typically you have more than one a maybe you have like ten or five different entries and then always try i don't know whether you can see on the back now but here it says like chase the pipe
+Pablo [21:17]: is the json file and this is maybe exactly the thing you want to see what have our data in a json format
+Pablo [21:20]: this is the first thing that this is actually
+Pablo [21:29]: an api and also the method it's a post method so we can send some request
+Pablo [21:31]: on
+Pablo [21:33]: this and then you see a lot of things
+Pablo [21:39]: here you see headers two six request response and basically we need two different
+Pablo [21:55]: we need at some response db this is pretty heavy what is picture whenever we are selling this
+Pablo [22:02]: let me just see where
+Pablo [22:03]: the size
+Pablo [22:15]: i guess is a little bit but basically here you have like a j is pi you see you have a json pi you have some emphasis page size you have rows id you have a yield you have the location work
+Pablo [22:17]: in it and you can really see
+Pablo [22:25]: it has for example the gross pay of eighty six thousand and it is just the same as here in the first
+Pablo [22:26]: row
+Pablo [22:42]: so you really have i mean the background of web page there is an api and if you send the same post request is here to get the response you don't have to scrape the website itself you can just send the request
+Pablo [22:43]: to the patient
+Pablo [22:54]: so the only question is like what kind of request should you send what kind of parameters should you use and for this we click here on the request
+Pablo [23:01]: button and then we see basically it says count equals zero location equals all
+Pablo [23:02]: and no surprise
+Pablo [23:17]: we just selected all and then we see something like sidx equals personal so i think it's like we are solving everything with respect to first name ascending and then we're looking for a pipe
+Pablo [23:19]: and yield two thousand
+Pablo [23:28]: four we really see now all the parameters that are specified under the one to copy paste them
+Pablo [23:33]: i can write here on copy value
+Pablo [23:40]: and then copy the piece edit the and then i have everything i need
+Pablo [23:42]: i need
+Pablo [23:51]: just paste it here now everything in one row
+Pablo [23:54]: but what i can do is
+Pablo [24:00]: i
+Pablo [24:01]: have excited to
+Pablo [24:02]: be present
+Pablo [24:26]: and this is
+Pablo [24:27]: what we have
+Pablo [24:27]: now
+Pablo [24:39]: post
+Pablo [24:40]: request
+Pablo [25:00]: actually
+Pablo [25:01]: you have
+Pablo [25:03]: one
+Pablo [25:03]: web page
+Pablo [25:09]: and
+Pablo [25:10]: we
+Pablo [25:11]: know
+Pablo [25:12]: this
+Pablo [25:22]: and
+Pablo [25:23]: we also specify
+Pablo [25:24]: my headers
+Pablo [25:27]: i
+Pablo [25:28]: use the agent
+Pablo [25:29]: to be
+Pablo [25:34]: that
+Pablo [25:50]: how
+Pablo [25:52]: can
+Pablo [25:53]: we die
+Pablo [26:21]: what
+Pablo [26:22]: ever message
+Pablo [26:27]: and
+Pablo [26:28]: let us just check
+Pablo [26:31]: what response looks like
+Pablo [26:45]: it looks like this json file and basically what we are interested in is all the entries within the lows so what we are doing is to take the response test access to rows
+Pablo [26:48]: and recast them and the speed of
+Pablo [26:56]: playing and then we get basically only with very first five rows we get exactly the same people
+Pablo [26:57]: carried
+Pablo [26:59]: eighty six thousand dollars
+Pablo [27:03]: next two hundred thousand
+Pablo [27:05]: one hundred dollars
+Pablo [27:08]: you can get the same data
+Pablo [27:15]: and then of course we can just recast
+Pablo [27:18]: and then store everything
+Pablo [27:24]: you see there are some room professors
+Pablo [27:28]: earning like four hundred thousand
+Pablo [27:29]: dollars
+Pablo [27:38]: and you can solve this and now you know we are just very words
+Pablo [27:44]: every first point the end you can force set sixty
+Pablo [27:48]: and then still we have four hundred pages
+Pablo [27:50]: we can do over four hundred pages
+Pablo [27:57]: again make sure that you have a title speed if you don't wait for one second
+Pablo [28:00]: request
+Pablo [28:10]: i would say most likely within one minute but you could just have time wait for seven minutes and you can speak all the
+Pablo [28:33]: so basically always make sure this may be the next message when you have an undocumented api as here these are public data this is like an official website it's not like some tech data but it's like provided but the risk is california so you are allowed to access data
+Pablo [28:40]: and of course break the data just make sure that you are not
+Pablo [28:55]: for example specify also like how many entries you get you will see like the row is twenty you can set it to sixty
+Pablo [28:57]: then you have to sixty entries
+Pablo [29:07]: and the co
+Pablo [29:11]: sine shape of sixty rows and columns
+Pablo [29:16]: to change your number size
+Pablo [29:20]: the number of rows six is basically the same as equ
+Pablo [29:24]: al select and set it to sixty
+Pablo [29:40]: and then you can set all kind of free course if you are interested you want to have a final project about the salary access all the data for whichever
+Pablo [29:51]: sort of vertically sees the university paste the most for the same position and so on
+Pablo [29:53]: and
+Pablo [29:55]: this could be like one thing
+Pablo [29:56]: analyz
+Pablo [29:57]: e
+Pablo [30:04]: and this is like the first example wanted to show you
+Pablo [30:08]: how to get this data from the undocumented api
+Pablo [30:11]: and there's second thing
+Pablo [30:13]: like rural town
+Pablo [30:14]: sections
+Pablo [30:15]: audience help
+Pablo [30:16]: make sure all the rest
+Pablo [30:20]: and what you can do they publish all the health insight
+Pablo [30:20]: s
+Pablo [30:22]: and all these good staff
+Pablo [30:25]: and my website
+Pablo [30:27]: can
+Pablo [30:28]: access all
+Pablo [30:31]: this
+Pablo [30:34]: let me just quickly install a request head
+Pablo [30:38]: because i want if i'm sending like same request again and again
+Pablo [30:43]: then of course it will cache
+Pablo [30:47]: you may request
+Pablo [30:49]: actually this is the new website
+Pablo [30:52]: of the housing
+Pablo [31:03]: and for some we can look for your account california
+Pablo [31:16]: and this is basically where we see for all the health inspection from the january first end of january for all the purposes that we see here list like the name of the restaurant
+Pablo [31:22]: we see here we can view inspection then we would see more details
+Pablo [31:30]: there could be all the inspection pdf very interesting public data
+Pablo [31:33]: we can access
+Pablo [31:47]: and so like our goal is either we can spray this website and try to get all the entries here manually and also see for example i know here we only see zero points all the time publishing
+Pablo [31:51]: for other health inspection
+Pablo [32:01]: at least the yolo county is not publishing or by other really published core of
+Pablo [32:06]: howled but if you're interested in this you can do exactly the same thing as
+Pablo [32:07]: before
+Pablo [32:12]: you try and inspect
+Pablo [32:14]: go to the network
+Pablo [32:21]: and we just for example you
+Pablo [32:34]: and then you see here another post method for innovation my help department and we see like response here is a json file with different inspection ids
+Pablo [32:39]: we see for example the name is gallery tokyoaster
+Pablo [32:48]: s this is basically this name here and we see other information states address
+Pablo [32:51]: program name and so on and so on
+Pablo [33:00]: score is noted and we can also just get each quest here and see now what we have to specify
+Pablo [33:02]: and again
+Pablo [33:04]: this is
+Pablo [33:13]: okay and basically this is what we are going to do
+Pablo [33:23]: so we are searching zoro county and the first thing would be maybe a manual request
+Pablo [33:27]: one specific restaurant
+Pablo [33:38]: then what it basically does is perhaps ramen to speak with search that means it basically creates a url
+Pablo [33:43]: where we have question marks quite broadly equal
+Pablo [33:46]: and then it's like an ampersand
+Pablo [33:59]: it adds up all so options like how i would one breast comes but if you want to re that i have all the health inspections
+Pablo [34:11]: what i do is send a postmapper that born and here you can find step by step guide how to
+Pablo [34:14]: write everything down
+Pablo [34:16]: but i think it
+Pablo [34:25]: would specify and add here you can see
+Pablo [34:32]: from the request i have data that builds
+Pablo [34:39]: tab equals zero count t and so on and the task is search inspection so basically this is what i'm adding
+Pablo [34:53]: here your account here the date from the beginning first january seventh purpose i would just want to see twenty entries and pass this search inspection
+Pablo [35:00]: and i have adjacent ipf
+Pablo [35:23]: and then sometimes if you get trained then the reason is that you realize that you had bought and not human so that you can just add some cookies so you have manually access website cookies you can edit the details here for one moment
+Pablo [35:31]: it helps you to access the data in case they don't want to
+Pablo [35:34]: let
+Pablo [35:39]: okay so here i just send data
+Pablo [35:54]: what i can do now is transfer recover everything the data frame and then we see basically our inspection ids we have inspection data score
+Pablo [36:01]: we have comments that establishment name and everything like
+Pablo [36:16]: error sign so one of the projects like one of the final projects would be that this rating such website and then we learn how to add a points an interactive map and then you can
+Pablo [36:18]: add some points
+Pablo [36:20]: like add some grade
+Pablo [36:35]: and just zero or none values but for other counties there are scores then you can solve restriction value or you don't want to certify the output
+Pablo [36:37]: i had
+Pablo [36:40]: asked what it was actually go to quake
+Pablo [36:43]: to get all the best guns
+Pablo [36:51]: all
+Pablo [36:54]: but i'm more interested in california
+Pablo [36:58]: i
+Pablo [36:58]: don't know
+Pablo [37:03]: vpc and then i would see all the restaurants of this item
+Pablo [37:05]: i would a list
+Pablo [37:08]: like a very good coach
+Pablo [37:13]: and you can look at the address and all the data
+Pablo [37:25]: we see we have identified so this need not be all the health inspection that happens within the
+Pablo [37:26]: mask
+Pablo [37:33]: the last month but it's just showing the first speed we go back to the request
+Pablo [37:45]: and there is like age number page number and we are doing exactly the same as guardian
+Pablo [37:54]: plus the loop over all speech numbers like zero like this and all the entries and this is basically
+Pablo [37:57]: let's go back
+Pablo [38:04]: you will see twenty five results and of course those more results
+Pablo [38:12]: more research and so on but it's always like we teach though it's just showing twenty five inches
+Pablo [38:22]: or like additional twenty five increase and we want to basically do overall
+Pablo [38:24]: audiences
+Pablo [38:34]: we write functions that get page and just send a request
+Pablo [38:39]: and then you take your json
+Pablo [38:43]: and start with an empty
+Pablo [38:49]: and then i start
+Pablo [38:58]: nineteen hour kind of this one cycle break and then
+Pablo [39:12]: all
+Pablo [39:13]: the help inspectors
+Pablo [39:17]: so manage
+Pablo [39:23]: and
+Pablo [39:33]: let's see how
+Pablo [39:34]: many entries
+Pablo [39:34]: we have
+Pablo [39:36]: one
+Pablo [39:37]: hundred
+Pablo [39:38]: sixty some
+Pablo [39:48]: patients
+Pablo [39:49]: in the order of
+Pablo [39:50]: within
+Pablo [39:51]: the last month
+Pablo [40:01]: the
+Pablo [40:02]: interstate
+Pablo [40:03]: most of
+Pablo [40:04]: the health inspection
+Pablo [40:05]: like
+Pablo [40:06]: seven feet health inspection
+Pablo [40:07]: out
+Pablo [40:08]: of one hundred
+Pablo [40:09]: sixty
+Pablo [40:10]: one hundred seventy
+Pablo [40:13]: within
+Pablo [40:15]: subs
+Pablo [40:16]: et our data
+Pablo [40:17]: all
+Pablo [40:18]: the health inspection
+Pablo [40:19]: data
+Pablo [40:28]: and then there's like we are going back to web page
+Pablo [40:34]: you also see two things you can do
+Pablo [40:35]: first
+Pablo [40:35]: you can click on
+Pablo [40:37]: new vect
+Pablo [40:37]: ions
+Pablo [40:39]: that you
+Pablo [40:45]: might
+Pablo [40:46]: see like different information here
+Pablo [40:48]: great job whatever
+Pablo [40:55]: like sizes four and you read it but we are a number or get pdf
+Pablo [41:04]: or if you are speaking for example not on a few inspection but on the meme then you will see all these expectations
+Pablo [41:09]: for this specific restaurant there was one for let me
+Pablo [41:10]: just see where we have
+Pablo [41:13]: several inspirations
+Pablo [41:19]: maybe minimized
+Pablo [41:24]: yes so there's like an inspection you can see there was one inspection
+Pablo [41:34]: in june twenty five to twenty twenty five and another one in january twenty sixth of all the inspections
+Pablo [41:48]: and you can see here on the top that what you need to access is for each of the restaurants you need a private id and then you have all the inspection for the restaurant
+Pablo [41:51]: while in comparison
+Pablo [42:04]: if you are interested in what specific instruction basically you have just have specified expectation id and the question is more about how can you access all these id
+Pablo [42:25]: and this is very interest all these inspections here let me just see there's also like helmut id whenever we want to do over all this restauran
+Pablo [42:25]: t or
+Pablo [42:26]: public inspection
+Pablo [42:35]: all
+Pablo [42:36]: the health inspections
+Pablo [42:37]: for one specific
+Pablo [42:38]: press
+Pablo [42:39]: job i can
+Pablo [42:40]: just provide a
+Pablo [42:41]: private id
+Pablo [42:42]: and repres
+Pablo [42:43]: s
+Pablo [42:45]: and
+Pablo [42:46]: then just
+Pablo [42:47]: get the
+Pablo [42:53]: first
+Pablo [42:54]: mp
+Pablo [43:25]: all the information
+Pablo [43:27]: technology
+Pablo [43:29]: and now it's getting a
+Pablo [43:30]: little bit more
+Pablo [43:31]: needed
+Pablo [43:33]: because
+Pablo [43:34]: there is
+Pablo [43:35]: network
+Pablo [43:41]: and
+Pablo [43:41]: you could
+Pablo [43:42]: join over
+Pablo [43:43]: this place
+Pablo [43:47]: there is no json file
+Pablo [43:48]: there is only what
+Pablo [43:52]: you get is some html file that's a return which is basically the web
+Pablo [43:54]: patient rendered
+Pablo [43:57]: but it's here at these i mean i guess
+Pablo [44:02]: there is an api in the background if i add use
+Pablo [44:06]: you can always try to get a response and have
+Pablo [44:11]: over all them and there are not
+Pablo [44:12]: the data
+Pablo [44:18]: very interested here at this point it breaks down and at this point really have
+Pablo [44:30]: manually website and would like to be the first video how we can now access for example score of zero request testing is web
+Pablo [44:45]: and for this i mean we have in the last week we had this discussion about x prime today there will be like a discussion about beautiful support and this all helps us to access like to have the html of this web page
+Pablo [44:47]: where it says value
+Pablo [44:51]: what we can do here is
+Pablo [44:57]: so this is basically sent to each tml
+Pablo [45:02]: of the web page and you can see it's very hard to find where our
+Pablo [45:06]: values were interested in
+Pablo [45:07]: just
+Pablo [45:09]: like ms
+Pablo [45:11]: so what we are doing here is
+Pablo [45:15]: we import
+Pablo [45:17]: htm
+Pablo [45:22]: l decoder we put everything to an html object
+Pablo [45:23]: and now we can just use
+Pablo [45:25]: the x out command
+Pablo [45:32]: and just plain that would be a request here editing
+Pablo [45:39]: and we just show you in one moment how i came up with
+Pablo [45:44]: the idea is if you are going back
+Pablo [45:48]: i can again inspect this web page
+Pablo [45:51]: and click here on this small arrow there
+Pablo [45:58]: and now whenever a mouse over some object
+Pablo [46:02]: as you can see it's not now click on it
+Pablo [46:06]: and you see this is the html object
+Pablo [46:13]: and it basically says the class equals inspectionistic score w
+Pablo [46:21]: maybe it's hard to read on the last draws but still here you see exactly the class of
+Pablo [46:27]: what we can do if we're interested in getting off this button
+Pablo [46:29]: we can just look
+Pablo [46:38]: for an object like an e object that contains a class inspection listings or type department
+Pablo [46:42]: and then we just try to get the href object
+Pablo [46:47]: ive the href object just link
+Pablo [46:57]: and this is basically what we have there are two such here we have two buttons first one
+Pablo [47:11]: is this one the second one is exactly the smaller one here and both of them contain links and if they click on that you see i access in our web page
+Pablo [47:14]: this is basically
+Pablo [47:17]: these are the relative things
+Pablo [47:28]: and so now i have access to relative links so i can just try to access them in the science that were added
+Pablo [47:32]: inspections and then
+Pablo [47:37]: also like send a response
+Pablo [47:39]: and it says
+Pablo [47:41]: e squared h's
+Pablo [47:49]: and here for example you see the response to an l
+Pablo [47:53]: and this is exactly like the same as you got here
+Pablo [47:55]: sweden has
+Pablo [48:11]: so basically now i'm able to get all these web pages here and i am now maybe also interested in the score and if i go to the web page
+Pablo [48:19]: you can see there is like a store up this core now how can i expect this core here
+Pablo [48:22]: again i click on the inspect button
+Pablo [48:27]: actually my arrow over it over the button
+Pablo [48:47]: and then we see if it's like the class is inspection score view two thousand button and then i'm interested in the object within a span object that is at first paper
+Pablo [48:48]: is like in a strong object
+Pablo [48:59]: so basically i'm accessing everything by accessing the span object that contains a pass inspection for v two w partners
+Pablo [49:04]: then i just access like span object
+Pablo [49:07]: and it should be my score
+Pablo [49:09]: value and if you want to really get the score
+Pablo [49:12]: then i have to get the text
+Pablo [49:17]: of this code of patient
+Pablo [49:20]: i should maybe write
+Pablo [49:27]: in our integer yes and then we see the score of zero
+Pablo [49:29]: so this is how i can access the score
+Pablo [49:39]: and i can do so basically now if i trust node inspection id the right function my score
+Pablo [49:44]: so whenever i
+Pablo [49:54]: whenever i provide an inspection id from a first list i get a score
+Pablo [50:15]: and the only bad news here is all the scores are either none or zero what i'm doing next is i'm switching to another health inspection that really provides course and basically if you go to health inspection of nscm
+Pablo [50:29]: here we can
+Pablo [50:34]: find x towards respect number one hundred
+Pablo [50:38]: seventy five and so on and so on
+Pablo [50:46]: so now we can try to exact the same as we did for your account you get all the scores and you know for all restaurants
+Pablo [50:56]: we're doing the same thing we just change account to make nsc
+Pablo [51:02]: access like all the pages as before send our request
+Pablo [51:09]: wait for one moment
+Pablo [51:19]: and then just looping over the first five pages
+Pablo [52:21]: and let's see
+Pablo [52:22]: yes
+Pablo [52:24]: and
+Pablo [52:25]: basically what is
+Pablo [52:29]: all
+Pablo [52:30]: the data
+Pablo [52:53]: and
+Pablo [52:54]: here
+Pablo [52:55]: i'm now adding
+Pablo [52:56]: a new
+Pablo [52:58]: column called score
+Pablo [52:59]: and
+Pablo [53:00]: yeah
+Pablo [53:01]: i take
+Pablo [53:03]: test score
+Pablo [53:03]: inspection
+Pablo [53:04]: ids
+Pablo [53:08]: and moving over all these section id
+Pablo [53:09]: s and for each of these
+Pablo [53:10]: instructions
+Pablo [53:12]: i try
+Pablo [53:14]: to get the score and then
+Pablo [53:15]: just
+Pablo [53:24]: and always i have here my time
+Pablo [53:25]: waiting for one second
+Pablo [53:32]: and
+Pablo [53:34]: talk a little bit
+Pablo [53:35]: about
+Pablo [53:36]: one hundred
+Pablo [53:38]: twenty five entries
+Pablo [53:40]: a wait one second
+Pablo [53:43]: minutes
+Pablo [53:47]: finish and because we're more or less at
+Pablo [53:47]: the end
+Pablo [53:49]: this is maybe
+Pablo [54:03]: i would like to take home message before i finish with request here we have this undocumented apis and we have some undocumented apis we always need to do something like go to the inspector
+Pablo [54:07]: click on a network tab
+Pablo [54:08]: and then interact
+Pablo [54:09]: with your web page
+Pablo [54:16]: and then
+Pablo [54:18]: you can here change something
+Pablo [54:22]: and you can sort it with respect with
+Pablo [54:24]: i hope there are some
+Pablo [54:27]: responses
+Pablo [54:28]: and you
+Pablo [54:32]: respond and it really contains a data you request
+Pablo [54:44]: at the end that you just see which request you need to send and you don't have to write everything on your own you can just make another right this year
+Pablo [54:49]: put popular value then of host data
+Pablo [54:52]: and then we have exact
+Pablo [54:55]: ly all the parameters
+Pablo [54:57]: and
+Pablo [54:58]: you can
+Pablo [54:59]: add
+Pablo [55:05]: your request and you get the data
+Pablo [55:10]: and it's just getting a little bit
+Pablo [55:13]: don't
+Pablo [55:14]: have number
+Pablo [55:18]: then a good time in the next few weeks
+Pablo [55:27]: or you can access all these elements just the end
+Pablo [55:28]: just mentioned
+Pablo [55:40]: this i hope that at some point
+Pablo [56:05]: and
+Pablo [56:06]: right
+Pablo [56:15]: and
+Pablo [56:16]: everything i do
+Pablo [56:17]: now is
+Pablo [56:18]: what
+Pablo [56:19]: if i
+Pablo [56:20]: value
+Pablo [56:23]: and it's the result here
+Pablo [56:24]: and
+Pablo [56:25]: there are some
+Pablo [56:38]: things
+Pablo [56:39]: thank you very much

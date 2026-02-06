@@ -1,0 +1,1278 @@
+Pablo [0:49]: people
+Pablo [0:50]: are writing in the air
+Pablo [0:51]: to get on tech support
+Pablo [0:52]: but i don't know what
+Pablo [0:53]: it looks like
+Pablo [0:55]: what's going on with the pyramid
+Pablo [1:11]: for whatever reason you can't see the
+Pablo [1:13]: doctors but they will
+Pablo [1:13]: see
+Pablo [1:14]: okay
+Pablo [1:20]: so it's just hard to validate from your end
+Pablo [1:24]: ed va
+Pablo [1:28]: when i saw somebody say something
+Pablo [1:33]: i carried somebody in my own group but i don't know if they were
+Pablo [1:37]: configured
+Pablo [1:39]: i don't even know why that
+Pablo [1:42]: configure it so you're not supposed to review
+Pablo [1:43]: your own group
+Pablo [1:47]: but it's somebody who's not in a groove
+Pablo [2:01]: okay
+Pablo [2:05]: i don't remember this ever happen
+Pablo [2:05]: ing
+Pablo [2:05]: in the past
+Pablo [2:09]: yeah
+Pablo [2:19]: okay
+Pablo [2:22]: so we're going to finish
+Pablo [2:23]: off chapter five
+Pablo [2:24]: today
+Pablo [2:27]: we kind of mostly got through
+Pablo [2:27]: but we'll do a few more
+Pablo [2:32]: so just to explore some of the options
+Pablo [2:36]: lessons and
+Pablo [2:37]: why not
+Pablo [2:44]: so those are called a cut in a graph
+Pablo [2:49]: is a way of partition the node into
+Pablo [2:50]: this joint subsets
+Pablo [2:53]: sometimes we talk about the edges between them
+Pablo [2:54]: being the cut
+Pablo [2:55]: visualize it
+Pablo [2:56]: that way
+Pablo [2:59]: technically it's just
+Pablo [3:00]: the partitioning
+Pablo [3:00]: of the difference
+Pablo [3:02]: and in particular
+Pablo [3:03]: not all subsets
+Pablo [3:04]: of edges defined
+Pablo [3:08]: you
+Pablo [3:09]: want to visualize
+Pablo [3:10]: the
+Pablo [3:11]: line
+Pablo [3:19]: but
+Pablo [3:20]: the danger
+Them [3:21]: crosses
+Them [3:22]: an edge and even number of times
+Them [3:23]: it's not really
+Them [3:23]: cutting
+Them [3:24]: right
+Them [3:25]: this edge
+Them [3:28]: is between two nodes that are on the side of the
+Them [3:30]: technically it is
+Them [3:31]: just
+Them [3:34]: the partitioning of the node
+Them [3:44]: there's v one and v two and then the edges crossing because we're going to include this one may include the ones that are cross styling
+Them [3:51]: and there are the edges in
+Them [3:59]: sometimes we assign weights and graphs if we do then sometimes
+Them [4:03]: the weight
+Pablo [4:21]: and you want to find the minimum size cut or as always when we take an optimization problem and pass a decision problem when you put a threshold
+Pablo [4:25]: we ask is there a trot of g of weight at most
+Pablo [4:33]: and again we're not going to go through algorithms for this but for example the famous edmund harp algorithm that you might learn
+Pablo [4:41]: algorithms course takes time polynomial on the side of the graph that specific one
+Pablo [4:44]: number nodes times number of edges squared
+Pablo [4:48]: and so
+Pablo [4:50]: forth so positive
+Pablo [4:51]: nine
+Pablo [4:55]: but
+Pablo [4:58]: here's a very similar looking problem
+Pablo [5:02]: that asks all right is there a cut
+Pablo [5:04]: weight at least ten
+Pablo [5:06]: and then it turns out this is n equ
+Pablo [5:20]: al to this follows a pattern we've seen where sometimes two vary similar looking problems that differ on a seemingly significant detail it's really a detailed takes you from being a binding computer
+Pablo [5:25]: whatever you're minimizing
+Pablo [5:26]: or maximizing
+Pablo [5:27]: copy is
+Pablo [5:30]: let's argue that
+Pablo [5:31]: this is going to be easy
+Pablo [5:33]: and
+Pablo [5:34]: even
+Pablo [5:35]: the underweight
+Pablo [5:39]: you're just talking
+Pablo [5:39]: about
+Pablo [5:41]: the most number of
+Pablo [5:42]: edges
+Pablo [5:46]: so
+Pablo [5:47]: we're going to
+Pablo [5:48]: reduce
+Pablo [5:49]: a e three
+Pablo [5:50]: z after that
+Pablo [5:51]: is
+Pablo [5:53]: formula
+Pablo [5:54]: you want to know
+Pablo [5:55]: is there an assignment
+Pablo [5:56]: that puts
+Pablo [5:57]: one
+Pablo [5:58]: true and one
+Pablo [5:59]: false literal
+Pablo [6:04]: think about how
+Pablo [6:05]: to do the product
+Pablo [6:05]: ion
+Pablo [6:06]: we're going to think about the fact
+Pablo [6:08]: that well if we look at the unweighted version
+Pablo [6:09]: of max
+Pablo [6:14]: what's the partition of the nodes
+Pablo [6:15]: in the two sets of
+Pablo [6:15]: edges
+Pablo [6:22]: and when you partition a set into two subsets one way of talking about that is you're assigning
+Pablo [6:23]: one of two colors
+Pablo [6:24]: right
+Pablo [6:28]: that partitioning things on one side that the partition have one
+Pablo [6:29]: color
+Pablo [6:32]: on the other side of the other can we color the nodes
+Pablo [6:34]: with two colors
+Pablo [6:38]: so that at least a of the edges have endpoints of different col
+Pablo [6:39]: ors
+Pablo [6:42]: kind of like a coloring problem
+Pablo [6:45]: but it's not asking that every edge
+Pablo [6:46]: connects
+Pablo [6:51]: nodes in two different colors is just say well let's relax
+Pablo [6:54]: so the decision problem of two coloring
+Pablo [7:00]: which is the same velocity as the graph by hard height is oh is there a cut that makes every edge
+Pablo [7:02]: have two different colors on either side
+Pablo [7:05]: this is kind of relaxing absent and we'll say that's not true
+Pablo [7:09]: well there's some that maximizes the number of
+Pablo [7:10]: edges that have to
+Pablo [7:11]: do
+Pablo [7:12]: what is
+Pablo [7:17]: or in the decision version we're getting the threshold a can we
+Pablo [7:20]: find one that has at least k edges crossing
+Pablo [7:24]: so how are we going to do that so
+Pablo [7:27]: while we're reducing from three
+Pablo [7:31]: so we imagine we have some three santa like this one
+Pablo [7:34]: and this graph might look familiar
+Pablo [7:37]: so far
+Pablo [7:43]: very similar to our reduction from n eighty three to three coloring
+Pablo [7:49]: the difference is that in three coloring we also added one node up here that we connected to all of
+Pablo [7:53]: these nodes that represent variables right so now we don't have
+Pablo [7:53]: that one
+Pablo [7:58]: anymore but we keep the rest of it so we have for every variable pair of nodes and by an edge
+Pablo [8:01]: each representing the variable or instigation
+Pablo [8:10]: and then for every clause we've got a triangle and we hook up edges from the choice gadgets up top
+Pablo [8:15]: to the constraint gadgets on the according to the clauses
+Pablo [8:21]: so x y and z for this because that's positive xyz not x y and not z get up for this
+Pablo [8:27]: so in general we have n variables and n clauses
+Pablo [8:37]: then the number of edges you're going to have here will be n divided n is for the pairs up here
+Pablo [8:40]: plus six equities paying through
+Pablo [8:50]: every clause is going to have these three nodes and each of those can have six a's the three that are internal to them and then the three that connect up to the
+Pablo [8:51]: variable
+Pablo [9:05]: and it turns out the right threshold is set is going to be pretty big almost the biggest thing to me right if k were just the number of edges that would be the same as just two operating problems
+Pablo [9:06]: in my architect
+Pablo [9:07]: but
+Pablo [9:08]: we're not
+Pablo [9:16]: problem is there a cut besides at least well the maximum possibly be the number that is minus ten
+Pablo [9:18]: which is pretty close to the maximum
+Pablo [9:24]: okay so why does this work well
+Pablo [9:30]: the choice gadgets up top work the exact same way as in the reduction
+Pablo [9:34]: we
+Pablo [9:35]: want to argue
+Pablo [9:36]: the
+Pablo [9:37]: organization
+Pablo [9:42]: this way
+Pablo [9:48]: in
+Pablo [9:49]: the sense that
+Pablo [9:51]: we need food colors
+Pablo [9:52]: we have
+Pablo [9:53]: because the choice
+Pablo [9:54]: gadgets are extended
+Pablo [9:55]: by
+Pablo [9:58]: we
+Pablo [10:00]: have to assign them different colors
+Pablo [10:01]: we're going to interpret that
+Pablo [10:02]: side of those two different
+Pablo [10:02]: colors
+Pablo [10:03]: as
+Pablo [10:04]: a truth assignment
+Pablo [10:06]: and
+Pablo [10:07]: vice versa
+Pablo [10:12]: let's imagine
+Pablo [10:13]: that
+Pablo [10:17]: we
+Pablo [10:18]: set x to one
+Pablo [10:19]: our
+Pablo [10:20]: two columns are
+Pablo [10:21]: solution
+Pablo [10:26]: and
+Pablo [10:27]: why we want to
+Pablo [10:28]: say name zero
+Pablo [10:40]: we need
+Pablo [10:42]: to cope up all these
+Pablo [10:43]: nodes
+Pablo [10:44]: here
+Pablo [10:51]: but
+Pablo [10:52]: again we didn't say anything
+Pablo [10:53]: else we would be
+Pablo [10:55]: talk
+Pablo [10:56]: ing about the structure
+Pablo [10:57]: of the c
+Pablo [10:58]: nn formula
+Pablo [10:59]: and
+Pablo [11:00]: how
+Pablo [11:01]: mass
+Pablo [11:02]: structures they influence
+Pablo [11:03]: how it is
+Pablo [11:06]: supposed
+Pablo [11:07]: we have
+Pablo [11:12]: one
+Pablo [11:14]: and a zero this allows an eight to one
+Pablo [11:15]: zero so
+Pablo [11:17]: what does that mean that we
+Pablo [11:17]: can color
+Pablo [11:19]: the
+Pablo [11:20]: nodes
+Pablo [11:21]: in order to
+Pablo [11:22]: at least
+Pablo [11:27]: hang
+Pablo [11:30]: at least k edges
+Pablo [11:31]: across the cut
+Pablo [11:32]: well we
+Pablo [11:33]: do a very similar tribute
+Pablo [11:34]: before we say
+Pablo [11:35]: well we got
+Pablo [11:36]: three literals in each
+Pablo [11:37]: clause
+Pablo [11:39]: and we know that the assignment
+Pablo [11:40]: at a time
+Pablo [11:41]: there
+Pablo [11:42]: 's a one literal somewhere
+Pablo [11:44]: in there there's zero literal somewhere in there
+Pablo [11:45]: and there's a third literal
+Pablo [11:46]: atlantic
+Pablo [11:48]: and
+Pablo [11:50]: that third one is going to be the one
+Pablo [11:51]: that we kind of leak
+Pablo [11:52]: we don't care about
+Pablo [11:52]: one of the things
+Pablo [11:54]: that is
+Pablo [11:55]: part of the mindset
+Pablo [11:56]: basically
+Pablo [11:58]: we
+Pablo [11:59]: have six ed
+Pablo [11:59]: ges
+Pablo [12:00]: connected to this
+Pablo [12:01]: triangle
+Pablo [12:04]: and
+Pablo [12:05]: as you can see
+Pablo [12:07]: if we color at the top like that
+Pablo [12:08]: the
+Pablo [12:10]: edges between pairs
+Pablo [12:11]: separ
+Pablo [12:12]: ate those different colors
+Pablo [12:14]: that gets us
+Pablo [12:14]: our neck
+Pablo [12:15]: right we're trying to
+Pablo [12:17]: get e minus m
+Pablo [12:19]: many across the
+Pablo [12:21]: cut we need to get n plus five
+Pablo [12:22]: or
+Pablo [12:23]: put another way
+Pablo [12:26]: what we want to do is
+Pablo [12:27]: assignment and
+Pablo [12:28]: that
+Pablo [12:29]: we want to be able to show
+Pablo [12:30]: there's this color
+Pablo [12:30]: ing
+Pablo [12:31]: where
+Pablo [12:32]: the edges of connect
+Pablo [12:35]: go to the different columns all the edges of
+Pablo [12:37]: the top plus for each one of these clauses
+Pablo [12:41]: that have six edges connected
+Pablo [12:42]: we want to make sure
+Pablo [12:43]: five of those
+Pablo [12:47]: five
+Pablo [12:48]: of these edges
+Pablo [12:49]: too separate
+Pablo [12:51]: how do we
+Pablo [12:52]: interact
+Pablo [12:53]: well
+Pablo [12:54]: we use a variation
+Pablo [12:55]: of the three color
+Pablo [12:57]: we
+Pablo [12:58]: pick up their wall
+Pablo [12:59]: that we call
+Pablo [13:02]: greater here olf x and y are
+Pablo [13:02]: one
+Them [13:05]: that
+Them [13:07]: is our contributing one to this
+Them [13:09]: we're going to
+Them [13:10]: pick the node
+Them [13:11]: that
+Them [13:14]: the x node is going to have to do and it involves all the
+Them [13:16]: and then
+Them [13:17]: we're going to
+Them [13:18]: take
+Them [13:19]: any
+Them [13:21]: literal zero in the space there's only one
+Them [13:22]: choose and that's eighty
+Them [13:24]: and you use any
+Them [13:25]: color in the opposite
+Them [13:29]: and because that's not one
+Them [13:30]: zero
+Them [13:31]: that's going to be
+Them [13:33]: opposite
+Them [13:34]: color and therefore
+Them [13:39]: not only are these ventures but also
+Them [13:47]: the third one which we can color an orange or blue
+Them [13:49]: and what does that do
+Them [13:50]: or sorry
+Them [13:53]: this one
+Them [13:56]: we don't take anything we take the third one
+Them [14:00]: and then we just color it the opposite of the node that it's
+Them [14:02]: so what does that do for us
+Them [14:06]: will that make sure of these six edges involved here
+Them [14:09]: all three of ones
+Them [14:10]: going up to the choice
+Them [14:11]: gadgets are connecting
+Them [14:13]: with their colors we just always
+Them [14:14]: have these
+Them [14:15]: onset
+Them [14:16]: of what
+Them [14:17]: they are
+Them [14:19]: just
+Them [14:21]: frequently three hundred
+Them [14:22]: one
+Them [14:25]: sure each of the angles
+Them [14:28]: and
+Them [14:28]: colors
+Them [14:30]: but also
+Them [14:31]: because we had two
+Them [14:33]: unemployable literals in each pause
+Them [14:34]: we're
+Them [14:35]: going to have two unequal colors
+Them [14:36]: in the triangle
+Them [14:37]: and
+Them [14:38]: then you call it a triangle
+Them [14:40]: two unequal
+Them [14:40]: colors
+Them [14:43]: then one of the edges
+Them [14:44]: will not be
+Them [14:56]: trying
+Them [14:57]: to do so reach plots
+Them [14:58]: five the edges
+Them [14:59]: ten to do it
+Them [15:55]: the opposite of
+Them [15:57]: the choice
+Them [15:58]: node that act
+Them [15:59]: ed in
+Them [16:00]: that log had
+Them [16:02]: to ensure that five
+Them [16:07]: amp
+Them [16:07]: lified
+Them [16:10]: one
+Them [16:10]: direction
+Them [16:18]: all the
+Them [16:19]: f
+Them [16:22]: ib
+Them [16:26]: ers
+Them [16:38]: not
+Them [16:39]: by
+Them [16:40]: nazi
+Them [16:42]: well so in this blood
+Them [16:46]: these three o's are
+Them [16:47]: above the left node
+Them [16:53]: this
+Them [17:06]: is
+Them [17:07]: about the actual
+Them [17:24]: power
+Them [17:25]: s
+Them [17:30]: then
+Them [17:32]: there are some assign
+Them [17:33]: ments that's why
+Them [17:35]: it's one
+Them [17:36]: zero x
+Them [17:37]: here's how you
+Them [17:38]: call it
+Them [17:40]: however
+Them [17:41]: the choice of
+Them [17:42]: mac and save
+Them [17:43]: two
+Them [17:46]: of jews
+Them [17:48]: doesn't
+Them [18:01]: then
+Them [18:02]: you go around e
+Them [18:03]: rror
+Them [18:05]: s
+Them [18:06]: and you just have
+Them [18:07]: easily connected to
+Them [18:08]: a choice
+Them [18:10]: of the opposite
+Them [18:11]: of
+Them [18:15]: that one
+Them [18:17]: that
+Them [18:18]: looks at one of the
+Them [18:18]: others
+Them [18:40]: we have an unequal
+Them [18:41]: we have
+Them [18:42]: one zero
+Them [18:43]: that
+Them [18:44]: means
+Them [18:46]: the coloring out here
+Them [18:52]: then
+Them [18:53]: two of the edges are
+Them [18:54]: going to
+Them [18:59]: be
+Them [19:00]: together
+Them [19:01]: so the
+Them [19:02]: end is connected
+Them [19:03]: to
+Them [19:04]: the single
+Them [19:05]: inter
+Them [19:05]: face
+Them [19:11]: so
+Them [19:12]: every time we deal
+Them [19:13]: with
+Them [19:15]: graph
+Them [19:15]: structure
+Them [19:26]: how
+Them [19:27]: many
+Them [19:29]: variable
+Them [19:29]: s you have given
+Them [19:32]: twice that number the policy
+Them [19:38]: is
+Them [19:39]: connected from variable
+Them [19:41]: s
+Pablo [19:54]: so basically the edge of the note from top to bottom contain all the logic
+Pablo [19:56]: of if we didn't have those edges
+Pablo [19:57]: and
+Pablo [19:59]: all he looked at is
+Pablo [20:05]: these pairs of nodes up here and these triangles out here that would only tell you how many variables are and how many clauses
+Pablo [20:06]: there are
+Pablo [20:12]: but what makes a formula interesting is which variables appear in which causes and which ones are negated
+Pablo [20:15]: all that information is contained in these edges
+Pablo [20:32]: that's one direction where the other one is what if there's a cut of size k for that value of k in this graph
+Pablo [20:37]: how do we show that that means there's an na assignment formula
+Pablo [20:39]: so i'm not going to go through that
+Pablo [20:42]: but the key idea which
+Pablo [20:46]: is pretty easy to verify by just kind of a tedious case analysis
+Pablo [20:55]: sometimes you think about doing the contrapositive here showing if there's not an innate assignment there's not
+Pablo [21:07]: which that if a clause is assigned all zeros or all one so if you're kind of writing oh well suppose there's no nae satisfying sign or put another way every assignment formula
+Pablo [21:09]: makes some clause
+Pablo [21:11]: calves
+Pablo [21:15]: all
+Pablo [21:16]: zeros are all ones
+Pablo [21:18]: then
+Pablo [21:22]: at most four the six edges involved in that boss can be an
+Pablo [21:26]: animal that's not going to do that
+Pablo [21:29]: 's pretty straightforward
+Pablo [21:31]: okay
+Pablo [21:34]: so point is just that
+Pablo [21:35]: we don't learn about
+Pablo [21:38]: minify and an algorithm class and
+Pablo [21:45]: they don't generally tend to talk about max but you can be forgiven for thinking like it's probably also easy
+Pablo [21:48]: just negate all the weights or something
+Pablo [21:50]: but it's like no
+Pablo [21:56]: i guess in some sense what we're learning here it matters that maybe cut a problem the weights are not negative
+Pablo [22:06]: if men cut if that out of the cargo doesn't work with negative weights well we could just negate the ways to determine any kind of max cut but we can't do that
+Pablo [22:07]: because we want a problem
+Pablo [22:12]: another
+Pablo [22:14]: thing to be cautious of
+Pablo [22:22]: linguist what do they mean well here's an optimization
+Pablo [22:23]: problem
+Pablo [22:26]: it's all
+Pablo [22:28]: match data you're given a kc in a formula
+Pablo [22:32]: and you're not asking kennedy satisfy maybe you can't
+Pablo [22:36]: remember we think of a cnf formula just like a list of constraints
+Pablo [22:46]: and to satisfy each clause is constraint and you have to satisfy every constraint but what if you can't what if it's not satisfying well then maybe you want to satisfy as many constraints
+Pablo [22:47]: as possible
+Pablo [22:49]: maximize the number of
+Pablo [22:49]: columns
+Pablo [22:50]: that can be
+Pablo [22:51]: satisfied
+Pablo [22:57]: well obviously the decision problem can you satisfy every clause
+Pablo [23:01]: is reducible to the optimization problem what is the most number
+Pablo [23:02]: options that we have
+Pablo [23:08]: you just ask what's the know we had some algorithm that can tell you how many quality exams
+Pablo [23:10]: just compare that to the number of
+Pablo [23:10]: losses
+Pablo [23:13]: right
+Pablo [23:14]: so obviously
+Them [23:21]: three sides that would be hard to match three sad is even harder
+Them [23:28]: evolved not only answering the question when you satisfy every clause but if not what is the most number
+Them [23:34]: and as all the other variants that are also at pr in their decision
+Them [23:39]: but recall that the decision problem you said given a two state f formula can i satisfy it
+Them [23:42]: that could be solved in column of time
+Them [23:45]: but this optimization variant of it
+Them [23:52]: 'd be hard to determine what is the most number of quads even in a two cm
+Them [23:59]: so it's easy to tell of all thoughts and be satisfied that if not it's hard to find out exactly how many
+Them [24:02]: and this is very similar to
+Them [24:05]: what we just saw with max code
+Them [24:10]: right and again what y is max also an example of that
+Them [24:17]: well what is the sort of perfect version of max cut it's asking is there a cut of the graph
+Them [24:23]: that includes every edge but recall that's just the same as that scaling is a bipartisan
+Them [24:23]: vaccine
+Them [24:25]: which we can destroy
+Pablo [24:29]: okay
+Pablo [24:34]: again we're kind of like starting to skip some details here
+Pablo [24:37]: so we can reduce any three set to max two set
+Pablo [24:43]: so how do you do that well you have these clause
+Pablo [24:45]: s
+Pablo [24:51]: extra y or z so again those might be little one of those might be litigation
+Pablo [24:58]: so for every one of those forms we're going to add six clauses that have two variables
+Pablo [25:04]: that just generate over every pair variables and every pair of negation
+Pablo [25:13]: i recircum literals and every pair of mediation again remember y for instance might be the negation of something
+Pablo [25:14]: but when i'm not lie
+Pablo [25:19]: and then again what's the key idea
+Pablo [25:21]: we're not going to really dwell on here
+Pablo [25:23]: kind of our surveying here
+Pablo [25:25]: any assignment
+Pablo [25:28]: and again this is just something you can check with the pace analysis
+Pablo [25:35]: there's only three assignments x y and z two to three a sine of x plus eight you can just check by hayes analysis
+Pablo [25:40]: any assignment for those three literals
+Pablo [25:45]: satisfies exactly three or five of the six clauses we
+Pablo [25:54]: one of those two is going to be well it's going to be whether the original clause of three literals in it
+Pablo [25:55]: had two unequal
+Pablo [25:59]: and
+Pablo [26:00]: so this is like
+Pablo [26:01]: we're not going to walk through it
+Pablo [26:05]: but that's the connection between na e satisfying a three cnf formula
+Pablo [26:09]: and could we satisfy three or five issues
+Pablo [26:14]: then that will tell you where to set your threshold
+Pablo [26:19]: higher even satisfied
+Pablo [26:23]: five out of six liters for all groups of six
+Pablo [26:29]: and then just set the threshold you get above that threshold if it only satisfy
+Pablo [26:45]: these equations we talked about which again not a very great term because it's not the equation itself and then the question you asked about it
+Pablo [26:48]: when you ask for an integer solution
+Pablo [26:49]: then you call it
+Pablo [26:50]: an io
+Pablo [26:55]: so the simplest variant this might be linear
+Pablo [27:02]: we've got a linear equation and it could be bigger but let's just imagine even the special cases
+Pablo [27:11]: two variables x and y so we're given three natural numbers a b and c that we think of as polish a and b are coefficients on the variable c is a constant
+Pablo [27:15]: and we're asking given those three
+Pablo [27:21]: is there an non negative integer solution to ax plus by
+Pablo [27:26]: turns out this can be done in polynomial
+Pablo [27:26]: time
+Pablo [27:32]: does anybody list a number of dairy experience like tony loc
+Pablo [27:32]: k
+Pablo [27:58]: not obvious
+Pablo [28:13]: but it is the kind of thing that would be done some number theory would be something would pop out at you as more or less exactly what the extended euclidean algorithm remember the euclidean algorithm just tells you given two integers a and b what's the greatest common divisor
+Pablo [28:16]: but there's this thing called the extended euclidean algorithm
+Pablo [28:17]: i don't quite remember
+Pablo [28:18]: the details of how it works
+Pablo [28:22]: but it's more or less it solves system like this right
+Pablo [28:44]: so it turns out that in order for that to work you need that the grains common divisor of ab has to divide c and they've said euclidean algorithm doesn't happen it will find you an x and a y so an ax plus b y is actually equal to this
+Pablo [28:52]: but then we make the problem just slightly more complicated well instead of linear equation how about a plug
+Pablo [28:52]: action
+Pablo [29:03]: so again given three coefficients abc define the equation now the equation is ax squared plus by z this turns out to be n and we're not even going to try
+Pablo [29:03]: this
+Pablo [29:06]: i think there is an argument in the textbook
+Pablo [29:19]: details can drastically change and recall that if you bump this up even further to arbitrary multivariate
+Pablo [29:29]: polynomials where the set of just two variables you have more and you can multiply them by each other you could have a term like x squared times y that turns out to not even be decided
+Pablo [29:31]: here it's decidable
+Pablo [29:33]: but
+Pablo [29:33]: probably
+Pablo [29:47]: here's one again this is like one of these problems that it's kind of the reason i like this textbook because it's in some of these less traditional problems okay so here's the problem someone's very artificial
+Pablo [29:51]: but bear with me and i'll try to argue why this
+Pablo [29:56]: okay so you're given a list of positives x one direction
+Pablo [30:00]: and the question you ask is this barely obscure question
+Pablo [30:05]: is that integral evolving cosine
+Pablo [30:07]: with the x is being
+Pablo [30:08]: coefficient
+Pablo [30:27]: wow
+Pablo [30:29]: here
+Pablo [30:30]: is one
+Pablo [30:39]: later
+Pablo [30:55]: three
+Pablo [31:13]: to
+Pablo [31:13]: the high
+Pablo [31:17]: two
+Pablo [31:30]: now
+Pablo [31:31]: when we got
+Pablo [31:32]: the product a
+Pablo [31:33]: bunch of
+Pablo [31:36]: one
+Pablo [31:37]: number plus another
+Pablo [31:40]: remember
+Pablo [31:41]: that
+Pablo [31:45]: one
+Pablo [31:51]: so
+Pablo [31:52]: you have
+Pablo [31:53]: a product
+Pablo [31:54]: of some
+Pablo [31:55]: number of s
+Pablo [31:56]: you can
+Pablo [31:57]: expand it out
+Pablo [31:59]: where
+Pablo [32:00]: essentially
+Pablo [32:01]: you have
+Pablo [32:02]: is for each
+Pablo [32:03]: one
+Pablo [32:04]: of these
+Pablo [32:05]: individual
+Pablo [32:25]: arbit
+Pablo [32:26]: rary process
+Pablo [32:27]: so
+Pablo [32:28]: let's do that
+Pablo [32:44]: so
+Pablo [32:45]: all of you are very similar
+Pablo [32:47]: the only difference
+Pablo [32:48]: is
+Pablo [32:50]: somehow we got eight assignment here
+Pablo [33:14]: and
+Pablo [33:16]: we can try it as we'll multiply
+Pablo [33:17]: together all
+Pablo [33:17]: one
+Pablo [33:28]: where
+Pablo [33:29]: these indices represent
+Pablo [33:31]: the end of zero
+Pablo [33:31]: we got
+Pablo [33:32]: eight
+Pablo [33:40]: one
+Pablo [33:41]: six one three
+Pablo [33:57]: and
+Pablo [33:58]: of course we both
+Pablo [33:59]: lie together
+Pablo [34:11]: groove all the x
+Pablo [34:11]: loans together
+Pablo [34:12]: but they're
+Pablo [34:13]: an exponent now you
+Pablo [34:14]: have
+Pablo [34:16]: and all of them
+Pablo [34:17]: have an i all
+Pablo [34:18]: of them have a theta
+Pablo [34:32]: and the only question is do they have an sj or a negative xj so we write the sum over all these other things e to the i theta and then sum all the xjs that are where j is an a and subtract off all the xj over beta
+Pablo [34:35]: algebraic limit
+Pablo [34:41]: so far nothing to enlighten we're just doing algebraic manipulation but it got us to this point
+Pablo [34:43]: that
+Pablo [34:48]: big change integral there is equal to this one
+Pablo [34:56]: now
+Pablo [34:56]: we got it to that point
+Pablo [35:00]: you can exchange sums and integrals
+Pablo [35:01]: so just do that
+Pablo [35:11]: and then now we're going to finally think about here we haven't thought about what does it even mean to integrate this function and now that we'd like to manipulate it
+Pablo [35:13]: and push the integral inside and now we're integrating
+Pablo [35:20]: this term that's an e power we're going to think about what does it mean
+Pablo [35:24]: take an integral from negative pi to pi
+Pablo [35:25]: of
+Pablo [35:27]: e to the i
+Pablo [35:31]: theta times sum in again remember the xj's these are all
+Pablo [35:35]: so if you add up some of them and subtract some others that's just some other
+Pablo [35:44]: so for every a this e to the i theta and in this thing is just e to the i theta times sum integral
+Pablo [35:46]: but if you integrate
+Pablo [35:49]: e
+Pablo [35:56]: integrate e to the i theta times some integer y from negative i to pi
+Pablo [35:59]: there's only two things that can be
+Pablo [36:01]: either two pi or zero
+Pablo [36:08]: so if that integer y is zero well then it doesn't match you have e to the blah blah blah zero
+Pablo [36:11]: that's just one
+Pablo [36:17]: and if you integrate from negative pi to pi with one that's just equal to pi
+Pablo [36:20]: but if y is any other integer
+Pablo [36:27]: then essentially what's being described here is you can unpack what the e to the i is by euler's identity
+Pablo [36:32]: the cosine of this plus i times the sine of this
+Pablo [36:42]: but both of those because we're going from negative pi to five if y is any integer other than zero the integral is just going to come out to zero so
+Pablo [36:43]: if
+Pablo [36:58]: the cosine of any integer times theta from negative five five the area above the curve here is equal to the area below the curve starting and ending in this case at a peak a cosine and same result
+Pablo [37:16]: sine with theta here exactly one cycle but again that was a different integer it was two or three we would have some positive integer number of fines but they would both start and end on a cycle so they have the same area above the current as below
+Pablo [37:25]: so both the real and the imaginary components the real components of cosine the antitrust and the slide if that lie is an integer that's not zero they just make this end up integrating
+Pablo [37:33]: so if we come back down what we're looking
+Pablo [37:38]: we got all these subsets a of the indices and we're taking this integral
+Pablo [37:44]: but this a just determines is this sum of integers minus this other sum of integer
+Pablo [37:46]: s is that going to be zero
+Pablo [37:52]: this minus those are going to be zero or it's going to be some non zero in here
+Pablo [37:54]: so in other words
+Pablo [37:58]: this is simply going to be equal to
+Pablo [38:02]: the number of subsets a
+Pablo [38:06]: that make that integer equal to zero
+Pablo [38:11]: times the value would have if it was there
+Pablo [38:16]: z is
+Pablo [38:20]: so these are all just zero or two pi
+Pablo [38:28]: or just summing up the ultimate thing well z and them make it equal to two five z times two pi and x is
+Pablo [38:29]: one over two
+Pablo [38:32]: but now
+Pablo [38:36]: this should start to look for d is the number of subsets a
+Pablo [38:38]: so that
+Pablo [38:41]: sum of everything in the subset
+Pablo [38:44]: and that equals the sum of the outside the subset
+Pablo [38:49]: so in other words this integral is hot right so again what's going to happen here
+Pablo [38:59]: the integral will just be as positive non negative integer z times this so what does it take to make with zero z has to be
+Pablo [38:59]: zero
+Pablo [39:08]: z is not zero this is just going to be positive so in other words if the number of subsets a to make this true is one or bigger or put another way
+Pablo [39:13]: this is true infinitely there's at least one subset of
+Pablo [39:23]: you add up all the integers na it equals the sum of all integers not n a but that's exactly the integer partition
+Pablo [39:31]: so what i've shown here is title leak we call it a reduction
+Pablo [39:44]: but cosine integration takes as input a list of positive integers and your partitioning takes a bucket list of positive integers and what we just argued is that the answer to each of those decision problems i have
+Pablo [39:56]: there is a subset of these integers that equals the sum equals the sum of integers not and sum said if and only if that integral
+Pablo [39:57]: is positive
+Pablo [39:59]: so these are basically the same problem
+Pablo [40:00]: now
+Pablo [40:08]: of course this particular strain question of this integral cosine is n equal
+Pablo [40:11]: to so now is that an interesting question
+Pablo [40:12]: well
+Pablo [40:16]: the point
+Pablo [40:19]: is
+Pablo [40:26]: that
+Pablo [40:27]: integrals
+Pablo [40:29]: are kind of easy to calculate
+Pablo [42:16]: on
+Pablo [42:17]: the one second
+Pablo [42:30]: and it tells you
+Pablo [42:47]: and it tells you given the statement of time d based on my current state and the state of my neighbors what is my state
+Pablo [42:48]: mus
+Pablo [42:49]: cle
+Pablo [42:50]: and here we're just going to ask there's only
+Pablo [42:51]: two sins
+Pablo [42:56]: so this is like all three states are white if so i'm going to stay the same
+Pablo [42:59]: and then what if
+Pablo [43:05]: my state is white and so is my left neighbor but my left hip or left and i will switch for the other
+Pablo [43:06]: at times
+Pablo [43:08]: and then
+Pablo [43:13]: there's another possible neighborhood i could be glad to neighbors and white
+Pablo [43:20]: and so you just enumerate all two to the three possibilities for what characters take you say what's my state going to be
+Pablo [43:21]: as a function
+Pablo [43:24]: so
+Pablo [43:31]: that defines a tangent the function from three bits to one bit and you assume everybody synchronously applies this rule
+Pablo [43:34]: so you start at some configuration
+Pablo [43:42]: and you got one d cellular compound you just have some finite string or sometimes people think about
+Pablo [43:50]: but you have some stranded states and you apply the rule and you trace through this particular rule
+Pablo [43:53]: apply an error change like this again
+Pablo [43:58]: and it just updates synchronously
+Pablo [44:02]: so formally a cellular common function
+Pablo [44:13]: from a tube bowl of free states in this case there's only two states zero and one and then you output a new state zero one and you have a configuration which is
+Pablo [44:17]: some string whose elements
+Pablo [44:21]: and
+Pablo [44:22]: we're going to write embassy
+Pablo [44:47]: rul
+Pablo [44:47]: e three
+Pablo [44:56]: condition
+Pablo [44:58]: but the left
+Pablo [44:59]: neighbor
+Pablo [45:19]: seven
+Pablo [45:27]: now
+Pablo [45:31]: i
+Pablo [45:34]: was listening
+Pablo [45:52]: order
+Pablo [45:54]: i actually don't need to tell you
+Pablo [45:57]: we're going to list the eight inputs
+Pablo [46:00]: describing the
+Pablo [46:00]: truth table
+Pablo [46:01]: all i need to do is
+Pablo [46:02]: underneath
+Pablo [46:09]: two
+Pablo [46:09]: states
+Pablo [46:10]: less than
+Pablo [46:11]: her in
+Pablo [46:11]: put
+Pablo [46:13]: i
+Pablo [46:15]: could just get eight x right
+Pablo [46:16]: zero one
+Pablo [46:18]: zero
+Pablo [46:20]: zero to describe
+Pablo [46:21]: that whole
+Pablo [46:22]: finish
+Pablo [46:26]: so
+Pablo [46:27]: for this one is
+Pablo [46:28]: that
+Pablo [46:29]: m one
+Pablo [46:31]: zero zero
+Pablo [46:33]: and turn them out
+Pablo [46:33]: with that string
+Pablo [46:34]: among the two hundred
+Pablo [46:35]: fifty six strings
+Pablo [46:39]: the thirty eight one in lesson from our
+Pablo [46:40]: graph we'll work
+Pablo [46:43]: and so for that reason
+Pablo [46:46]: stephen wolgram calls this ruler
+Pablo [46:48]: who
+Pablo [46:49]: wrote a giant
+Pablo [46:54]: class
+Pablo [46:55]: ified
+Pablo [46:57]: that's rul
+Pablo [46:58]: e number thirty so called ele
+Pablo [46:59]: mentary
+Pablo [47:09]: elementary means one knee only two states neighborhood size three now of course all these things can be generalized as well you can have more than two states you have a bigger neighborhood
+Pablo [47:11]: or smaller neighborhood
+Pablo [47:14]: you could have more dimensions et cetera
+Pablo [47:21]: but if you go to in some almost as simplest possible that one dimension two states
+Pablo [47:26]: and neighborhood size three the elementary cellular
+Pablo [47:33]: okay now of course the first generalization within that is going to change
+Pablo [47:36]: we stick with kind of
+Pablo [47:38]: a pretty small neighborhood
+Pablo [47:43]: only locally we would say oh well maybe my neighbors are the
+Pablo [47:45]: eight sums around
+Pablo [47:51]: so if all of them were state zero we might say i'll go to state i'll stay in state
+Pablo [47:51]: two
+Pablo [47:53]: but
+Pablo [48:14]: all of us are zero except my lower right neighbor is a one i'll change now of course i can't list all these there's two to the nine different possible inputs here so i'm not going to list them all but it turns out that these are a few of the instances of this rule that is easier to describe succinctly with suitable
+Pablo [48:18]: so if we think of these two states white and black
+Pablo [48:19]: that's represent
+Pablo [48:22]: ed
+Pablo [48:34]: which is
+Pablo [48:36]: that if you're not
+Pablo [48:40]: into her previous
+Pablo [48:46]: agent
+Pablo [48:50]: four
+Pablo [49:08]: that
+Pablo [49:09]: is the same
+Pablo [49:09]: description
+Pablo [49:10]: of so called
+Pablo [49:11]: being
+Pablo [49:13]: which
+Pablo [49:17]: is
+Pablo [49:18]: this kind of interesting
+Pablo [49:30]: i'm not
+Pablo [49:31]: sure
+Pablo [50:02]: each one
+Pablo [50:03]: of these
+Pablo [50:16]: one
+Pablo [50:17]: is another testament
+Pablo [50:18]: stay there
+Pablo [50:22]: three
+Pablo [50:23]: line
+Pablo [50:23]: row
+Pablo [50:30]: s
+Pablo [50:51]: every
+Pablo [50:52]: four updates
+Pablo [50:53]: it looks like i did
+Pablo [50:53]: before
+Pablo [50:54]: but it just
+Pablo [50:55]: moved down
+Pablo [50:57]: and
+Pablo [50:57]: it was similar
+Pablo [50:58]: to one
+Pablo [51:06]: here
+Pablo [51:08]: so these rules are all symmet
+Pablo [51:08]: ric
+Pablo [51:11]: meaning
+Pablo [51:19]: so
+Pablo [51:20]: what help you do
+Pablo [51:58]: lying
+Pablo [51:58]: with her
+Pablo [52:18]: convers
+Pablo [52:18]: ations
+Pablo [52:56]: hopefully there's a pattern
+Pablo [53:01]: well you kind of think of each of those
+Pablo [53:04]: as representing
+Pablo [53:08]: a single state of the original cellular
+Pablo [53:15]: based on whether all those stations in there or not and in fact all this communication that was going on between the blocks
+Pablo [53:23]: was setting it up so as to simulate the cellular tonnes of the endpoint so here is
+Pablo [53:25]: the game of life
+Pablo [53:27]: simulating
+Pablo [53:31]: the game so it turns out what's going on here is that
+Pablo [53:36]: again i don't think comic books but somebody proved that the game library was called
+Pablo [53:45]: an
+Pablo [53:47]: entrance of eight
+Pablo [54:05]: years ago
+Pablo [54:19]: seven
+Pablo [54:25]: so
+Pablo [54:26]: we should not be surprised
+Pablo [54:27]: if we then find
+Pablo [54:29]: npr
+Pablo [54:33]: so here it is some problem
+Pablo [54:38]: so here we're going to generalize now instead of two states you could have some arbitrary numbers
+Pablo [54:40]: so you got some set q of states
+Pablo [54:42]: maybe binary or maybe it's bigger
+Pablo [54:49]: and you've got some neighborhood of size a what is k is just the size of your neighbor
+Pablo [54:51]: but it's not really saying exactly what it is
+Pablo [54:55]: but you can be whether you're one d or two d
+Pablo [56:10]: five
+Pablo [56:28]: now
+Pablo [56:31]: if you're
+Pablo [56:32]: going to mention
+Pablo [56:50]: whether
+Pablo [56:51]: i can find out more this year
+Pablo [56:52]: sometimes
+Pablo [56:57]: but the two d version
+Pablo [57:00]: so
+Pablo [57:02]: we're going to make a short argument
+Pablo [57:03]: right now with the two d version
+Pablo [57:09]: and again there's a lot of ways to prove this but we're going to do it by reduction from trauma
+Pablo [57:12]: which again i didn't prove it
+Pablo [57:16]: but i showed that you have a trauma and a two by two squared tie the problems
+Pablo [57:20]: and evenly and i told you chris moore also showed even with all
+Pablo [57:23]: her so here we're going to assume trauma pat
+Pablo [57:23]: terning
+Pablo [57:27]: you're given a region remember the trauma is this
+Pablo [57:28]: j
+Pablo [57:35]: three squares and l shaped like that
+Pablo [57:39]: and we ask can we tile the shape
+Pablo [57:44]: so let's imagine that we
+Pablo [57:45]: got three
+Pablo [58:04]: as we talk through the
+Pablo [58:05]: reduction
+Pablo [58:06]: you should be inferring
+Pablo [58:12]: a little
+Pablo [58:13]: bit about the
+Pablo [58:14]: ca
+Pablo [58:16]: st that you
+Pablo [58:18]: learned is at least
+Pablo [58:18]: two days
+Pablo [58:19]: of
+Pablo [58:20]: already
+Pablo [58:21]: and
+Pablo [58:28]: cells
+Pablo [58:29]: that started
+Pablo [58:32]: any
+Pablo [58:32]: thing else
+Pablo [58:46]: so this
+Pablo [58:47]: is going to be
+Pablo [58:48]: the reduction
+Pablo [59:08]: in
+Pablo [59:09]: her presence
+Pablo [59:12]: now that means
+Pablo [59:14]: the
+Pablo [59:15]: predecessors
+Pablo [59:16]: that according to
+Pablo [59:17]: those rules
+Pablo [59:18]: were turned to listen
+Pablo [59:19]: one set
+Pablo [59:27]: well
+Pablo [59:29]: we're going to add more
+Pablo [59:30]: six
+Pablo [59:31]: garcia
+Pablo [59:32]: those were
+Pablo [59:33]: ace harmony
+Pablo [59:34]: and now
+Pablo [59:35]: we have upper
+Pablo [59:36]: case
+Pablo [59:47]: on
+Pablo [59:48]: the
+Pablo [59:49]: patient
+Pablo [59:58]: we're going to get
+Pablo [59:59]: a safety
+Pablo [1:00:08]: and
+Pablo [1:00:09]: then
+Pablo [1:00:12]: this
+Pablo [1:00:13]: is
+Pablo [1:00:18]: how
+Pablo [1:00:23]: this
+Pablo [1:00:25]: but
+Pablo [1:00:28]: the argument is going to be this type of predecessor
+Pablo [1:00:29]: if and only
+Pablo [1:00:32]: why
+Pablo [1:00:32]: is that
+Pablo [1:00:35]: well isn't only in trauma
+Pablo [1:00:42]: or
+Pablo [1:00:43]: and
+Pablo [1:00:44]: what will be
+Pablo [1:00:45]: same size
+Pablo [1:00:48]: background
+Pablo [1:00:50]: lowercase b and all the same places
+Pablo [1:00:54]: as they are over here but instead of r
+Pablo [1:00:57]: the region here we're going to have only these uppercase one
+Pablo [1:01:02]: and the idea is going to be if you can tile the region with trominos
+Pablo [1:01:03]: do it
+Pablo [1:01:18]: and then whatever that piling is it's just going to be for each of these spots there's going to be some covering that in some orientation and you assign the states like they care
+Pablo [1:01:22]: this rotation of the common
+Pablo [1:01:23]: hose covered these three points
+Pablo [1:01:27]: we would say well genes the agents
+Pablo [1:01:30]: same in here then this is a
+Pablo [1:01:33]: n what is the transition
+Pablo [1:01:37]: over all of possible inputs
+Pablo [1:01:38]: not possible
+Pablo [1:01:40]: but at a high level
+Pablo [1:01:45]: is just checking its neighborhood for consistency
+Pablo [1:01:47]: so what do i mean by that
+Pablo [1:01:51]: if i'm an h
+Pablo [1:01:53]: then what do i know
+Pablo [1:02:04]: well i know that h is supposed to be the middle spot in a tromino whose rotation looks like this trauma is just a two by two square with one square
+Pablo [1:02:06]: so if i'm in this orientation
+Pablo [1:02:07]: my upper right square
+Them [1:02:22]: i
+Them [1:02:23]: know they're at a
+Them [1:02:24]: right of me and a j
+Them [1:02:25]: above a
+Pablo [1:02:30]: so each one of these is just going to basically check for consistency
+Pablo [1:02:31]: i
+Pablo [1:02:33]: 'm sinus letter that represent
+Pablo [1:02:34]: s
+Pablo [1:02:37]: i in some particular position
+Pablo [1:02:38]: some rotation of
+Pablo [1:02:39]: common
+Pablo [1:02:40]: i want to check the other
+Pablo [1:02:40]: disposition
+Pablo [1:02:41]: make sure they are
+Pablo [1:02:45]: and if i inj
+Pablo [1:02:46]: ect
+Pablo [1:02:47]: someday i understand what they
+Pablo [1:02:48]: need to be lowercase r
+Pablo [1:02:49]: and that
+Pablo [1:02:52]: ex
+Pablo [1:02:53]: istency
+Pablo [1:02:56]: like say i'm a g and i say she
+Pablo [1:03:00]: lf
+Pablo [1:03:02]: for i
+Pablo [1:03:12]: see or i see an abel i can see anything other than uppercase h below me i say this is not a consistent assignment with
+Pablo [1:03:15]: trauma
+Pablo [1:03:17]: right gene is always at h four
+Pablo [1:03:35]: hp
+Pablo [1:03:36]: so everybody's not over
+Pablo [1:03:41]: hp change the lower case r and i accept you will end up with invig
+Pablo [1:03:41]: oration
+Pablo [1:03:43]: right
+Pablo [1:03:45]: of course if anybody sees
+Pablo [1:03:52]: there is no av
+Pablo [1:03:53]: ocado in the twelve states
+Pablo [1:03:55]: that they will all say hey
+Pablo [1:03:56]: her name
+Pablo [1:04:03]: either you have to assign some safety inconsistently and then it'll go to some state
+Pablo [1:04:09]: make sure you don't end up here or it would be like well maybe all the trauma nodes look consistent
+Pablo [1:04:15]: but they don't look like a tiling in this region in which case when everybody changes the lowercase r
+Pablo [1:04:18]: you'll get a bunch of b's and r's over here but the r's won't be the right
+Pablo [1:04:35]: two d really bad there's one name you can actually solve this with dynamic
+Pablo [1:04:40]: question
+Pablo [1:04:54]: so that is a protractor five so what does chapter five chapter five is
+Pablo [1:04:57]: basically a whole bunch of np hardness
+Pablo [1:05:03]: which is kind of it's not the only thing
+Pablo [1:05:04]: people
+Pablo [1:05:15]: it's probably one of the more important takeaways especially if you're not a hero
+Pablo [1:05:21]: what should you remember about theoretical computer science if you remember absolutely nothing else
+Pablo [1:05:25]: remember that there's np completed problems and you run across a problem
+Pablo [1:05:30]: and it's a natural one it's likely to be an mv you can't figure out how to solve
+Pablo [1:05:32]: it that might be a good indication
+Pablo [1:05:33]: if that
+Pablo [1:05:36]: but
+Pablo [1:05:42]: chapter six we're going to move to some of the higher realms chapter five is all about these particular properties
+Pablo [1:05:46]: and showing they're evenly or in some cases showing hey
+Pablo [1:05:48]: they're actually solving problem
+Pablo [1:05:48]: s
+Pablo [1:05:59]: so now we're going to move more into what we might call proper complexity theory which is trying to understand the relationship between these different
+Pablo [1:06:09]: in particular this is the two most important ones with rp so the question is d or f are they
+Pablo [1:06:13]: and the textbook from strassum
+Pablo [1:06:17]: 's algorithm
+Pablo [1:06:21]: faster
+Pablo [1:06:22]: way
+Pablo [1:06:46]: of
+Pablo [1:06:48]: the evidence
+Pablo [1:06:51]: of her
+Pablo [1:06:52]: test
+Pablo [1:06:58]: what i
+Pablo [1:06:59]: heard you
+Pablo [1:07:01]: are
+Pablo [1:07:02]: approved
+Pablo [1:07:04]: as
+Pablo [1:07:05]: a natural law
+Pablo [1:07:10]: even though unlike natur
+Pablo [1:07:11]: al laws
+Pablo [1:07:12]: it is provable
+Pablo [1:07:18]: questions
+Pablo [1:07:29]: before
+Pablo [1:07:29]: two thousand
+Pablo [1:07:31]: years
+Pablo [1:07:33]: set
+Pablo [1:07:34]: off the practice
+Pablo [1:07:34]: for them
+Pablo [1:07:39]: and it's been twenty six years but only one of them
+Pablo [1:07:45]: and the other deal that they're all important
+Pablo [1:07:46]: about medical problems but
+Pablo [1:07:47]: in some sense
+Pablo [1:07:53]: why is p versus ip special because peter zenke is about the nature of problem solving
+Pablo [1:07:54]: itself
+Pablo [1:07:57]: it is harder to find solutions
+Pablo [1:07:58]: than the
+Pablo [1:07:59]: check
+Pablo [1:08:03]: it's often said like well if you improve t is equal to nb
+Pablo [1:08:06]: you won't get a million dollars you'll get six million
+Pablo [1:08:08]: turnaround uses a fine proof
+Pablo [1:08:14]: use your vast algorithm for sacrificine groups for the other
+Pablo [1:08:16]: bio
+Pablo [1:08:22]: but what is this evidence
+Pablo [1:08:22]: for bottom
+Pablo [1:08:23]: right
+Pablo [1:08:23]: again
+Pablo [1:08:24]: when i say evidence
+Pablo [1:08:27]: i don't mean proof
+Pablo [1:08:28]: but
+Pablo [1:08:31]: other things we can improve
+Pablo [1:08:33]: that make us feel even more
+Pablo [1:08:33]: alike
+Pablo [1:08:37]: why do we think
+Pablo [1:08:39]: well if they are equal
+Pablo [1:08:42]: then in terms of many other classes are also
+Pablo [1:08:45]: able to here's one very simple example
+Pablo [1:08:49]: we already talked d equals envy then p is also equal to cohen
+Pablo [1:08:55]: remember y well e and copy are the same p is kind of clearly closed under compliment
+Pablo [1:09:03]: we don't
+Pablo [1:09:03]: like that
+Pablo [1:09:06]: we
+Pablo [1:09:07]: have
+Pablo [1:09:12]: a whole lot of other
+Pablo [1:09:12]: things
+Pablo [1:09:13]: that will be
+Pablo [1:09:15]: on
+Pablo [1:09:18]: the
+Pablo [1:09:18]: doctor
+Pablo [1:09:24]: but for all very brief definition
+Pablo [1:09:28]: we are
+Pablo [1:09:28]: practice
+Pablo [1:09:30]: so we just
+Pablo [1:09:31]: know
+Pablo [1:09:34]: the
+Pablo [1:09:35]: form
+Pablo [1:09:38]: is
+Pablo [1:09:39]: in the case that there exists
+Pablo [1:09:42]: a w and s w
+Pablo [1:09:46]: ire
+Pablo [1:09:49]: like bnb
+Pablo [1:09:50]: verifier
+Pablo [1:09:51]: horizont
+Pablo [1:09:52]: al
+Pablo [1:09:56]: very shorthand wave writing a definition
+Pablo [1:10:00]: of
+Pablo [1:10:01]: higher
+Pablo [1:10:02]: incentives
+Pablo [1:10:04]: one way to
+Pablo [1:10:07]: define it is you negate the exist but you negate
+Pablo [1:10:08]: the existence
+Pablo [1:10:10]: carry that through by a mortgage law
+Pablo [1:10:18]: we can imagine
+Pablo [1:10:19]: having
+Pablo [1:10:24]: some statement of form given
+Pablo [1:10:28]: so
+Pablo [1:10:29]: that for all to
+Pablo [1:10:30]: be
+Pablo [1:10:31]: a
+Pablo [1:10:34]: chap
+Pablo [1:10:40]: ter
+Pablo [1:10:42]: it wasn't
+Pablo [1:10:43]: a jan
+Pablo [1:10:47]: smaller boolean circle so we're given boolean circuit
+Pablo [1:10:57]: c and every boolean circuit computes some function that takes n bits as input and some of them have more than one output but the kind that only have one output
+Pablo [1:11:01]: our computing some boolean
+Pablo [1:11:02]: value function
+Pablo [1:11:09]: and the question we ask is is there a smaller circuit so a circuit with fewer gains that computes the same funct
+Pablo [1:11:09]: ion
+Pablo [1:11:16]: and again it's just worth appreciating why is it not obvious in indeed
+Pablo [1:11:20]: it looks like np progress is there a circuit
+Pablo [1:11:23]: well yeah there exists
+Pablo [1:11:23]: there
+Pablo [1:11:33]: but the problem is to fully write it out you need another model so we write out what would it mean if there would be a smaller circuit computing the same function as c
+Pablo [1:11:35]: that is true
+Pablo [1:11:50]: there is a circuit d that's smaller the number of a to b is small over number but what else has to be true for them to treat the same function for all inputs w c of w equals d this is what a's or c
+Pablo [1:11:51]: and d
+Pablo [1:11:55]: and this is the natural way to write
+Pablo [1:11:57]: it but we also write
+Pablo [1:11:58]: it like this
+Pablo [1:12:02]: we could say there is a circuit b so that for all inputs w
+Pablo [1:12:05]: and
+Pablo [1:12:05]: cw
+Pablo [1:12:07]: is how
+Pablo [1:12:09]: often right
+Pablo [1:12:10]: this first part of the
+Pablo [1:12:10]: statement
+Pablo [1:12:12]: didn't depend on delta
+Pablo [1:12:13]: but as long as
+Pablo [1:12:18]: reassert
+Pablo [1:12:19]: iveness or eth
+Pablo [1:12:19]: ylene
+Pablo [1:12:20]: was true
+Pablo [1:12:21]: for
+Pablo [1:12:22]: all
+Pablo [1:12:26]: and this makes much more apparent there's a way to write that condition
+Pablo [1:12:30]: as does there exist
+Pablo [1:12:33]: always in the case
+Pablo [1:12:36]: for all witnesses
+Pablo [1:12:37]: assignments
+Pablo [1:12:38]: do
+Pablo [1:12:39]: that circuit
+Pablo [1:12:45]: some polynomial time computable predicate distribute the state following a fact
+Pablo [1:12:46]: comp
+Pablo [1:12:52]: ared to size and gmc make sure d is smaller than evaluate c and b with
+Pablo [1:12:52]: a trigger
+Pablo [1:13:03]: ex
+Pablo [1:13:04]: ists for all
+Pablo [1:13:05]: and then something
+Pablo [1:13:06]: beyond
+Pablo [1:13:07]: it also
+Pablo [1:13:08]: has ability
+Pablo [1:13:11]: to have length at most polynomial
+Pablo [1:13:17]: obviously
+Pablo [1:13:17]: it's going to be
+Pablo [1:13:21]: and
+Pablo [1:13:22]: of course
+Pablo [1:13:28]: i
+Pablo [1:13:34]: 'll
+Pablo [1:13:35]: say what
+Pablo [1:13:38]: n
+Pablo [1:13:39]: p or not
+Pablo [1:13:40]: bc
+Pablo [1:13:40]: because
+Pablo [1:13:41]: it
+Pablo [1:13:43]: 's not obvious
+Pablo [1:13:44]: how the present
+Pablo [1:13:45]: using only
+Pablo [1:13:45]: exists
+Pablo [1:13:47]: or only
+Pablo [1:13:47]: and for all
+Pablo [1:13:48]: followed by
+Pablo [1:13:51]: your
+Pablo [1:13:51]: life
+Pablo [1:14:00]: you
+Pablo [1:14:02]: can test
+Pablo [1:14:02]: the condition
+Pablo [1:14:05]: smaller
+Pablo [1:14:05]: circuit
+Pablo [1:14:12]: the two there
+Pablo [1:14:15]: basically represents that we've got two
+Pablo [1:14:15]: models
+Pablo [1:14:18]: for all
+Pablo [1:14:19]: the sigma
+Pablo [1:14:20]: represent
+Pablo [1:14:21]: s that
+Pablo [1:14:23]: well you got to bon
+Pablo [1:14:24]: fires
+Pablo [1:14:25]: one
+Pablo [1:14:26]: for all
+Pablo [1:14:27]: which one
+Pablo [1:14:31]: we'll see
+Pablo [1:14:39]: small
+Pablo [1:14:40]: herb will be integrated
+Pablo [1:14:43]: is
+Pablo [1:14:43]: there a solid
+Pablo [1:14:48]: this is no answer to this question is yes
+Pablo [1:14:50]: smallest
+Pablo [1:14:56]: we'll start to see
+Pablo [1:14:57]: the follow
+Pablo [1:14:59]: in other
+Pablo [1:14:59]: words
+Pablo [1:15:00]: the answer the first
+Pablo [1:15:01]: question
+Pablo [1:15:02]: and this
+Pablo [1:15:03]: phenomenal
+Pablo [1:15:05]: because
+Pablo [1:15:06]: one is a means
+Pablo [1:15:07]: for the answer to that
+Pablo [1:15:08]: bs
+Pablo [1:15:09]: it means
+Pablo [1:15:10]: for
+Pablo [1:15:11]: all circuits
+Pablo [1:15:16]: i
+Pablo [1:15:17]: order
+Pablo [1:15:27]: ed the
+Pablo [1:15:28]: eye of the servant
+Pablo [1:15:29]: there or
+Pablo [1:15:31]: if not it would be a different function
+Pablo [1:15:33]: what does it mean to be a different function
+Pablo [1:15:34]: is there existed
+Pablo [1:15:38]: that can be characterized as
+Pablo [1:15:41]: for all exists and then some data
+Pablo [1:15:45]: and we
+Pablo [1:15:48]: call that pi p two again the two are everyone's the same thing
+Pablo [1:15:49]: there's two quantifiers
+Pablo [1:15:52]: the pi instead of a sigma
+Pablo [1:16:01]: they
+Pablo [1:16:02]: often use i
+Pablo [1:16:03]: v product
+Pablo [1:16:04]: cabinet
+Pablo [1:16:05]: there
+Pablo [1:16:06]: 's no product here
+Pablo [1:16:08]: sometimes
+Pablo [1:16:09]: people like making
+Pablo [1:16:10]: this analogy
+Pablo [1:16:11]: that exists
+Pablo [1:16:14]: is kind of like a sum for all
+Pablo [1:16:16]: that
+Pablo [1:16:17]: makes sense
+Pablo [1:16:23]: with that
+Pablo [1:16:25]: could also involve
+Pablo [1:16:28]: sigma p one and pi b one
+Pablo [1:16:35]: of course
+Pablo [1:16:36]: we need one
+Pablo [1:16:43]: i
+Pablo [1:16:44]: ask is there
+Pablo [1:16:45]: loved ones
+Pablo [1:16:46]: for all of you two
+Pablo [1:16:47]: is there a w three
+Pablo [1:16:51]: this polynomial time computable function a four
+Pablo [1:16:52]: variator
+Pablo [1:16:55]: i don't
+Pablo [1:16:57]: know the natural example
+Pablo [1:16:59]: there are
+Pablo [1:17:02]: but
+Pablo [1:17:03]: don't ask

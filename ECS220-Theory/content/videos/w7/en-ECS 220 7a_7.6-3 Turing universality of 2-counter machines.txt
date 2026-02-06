@@ -1,0 +1,110 @@
+Now, the three counters seemed
+fairly necessary in that argument, but maybe, I don't know, maybe you could get by with
+using only one counter to represent the whole Turing
+machine configuration and therefore two counters
+to manipulate it. And I don't know of any way to do
+that in a straightforward way. But Minsky figured out
+this very nice idea how to sort of simulate a Turing machine with
+a two counter machine. Well, it actually, essentially
+what we do is we can simulate three counter machine
+with a two kind of machine. And then we know from
+the previous slide, 3 counter machines can
+simulate turning sheets. So how do we simulate a three counter machine
+with a two counter machine? And the reason I say sort of as well, we're not going to represent
+the values directly. If we have say, value
+certain integers in the first two counters of
+the three counter machine. Those integers aren't precisely what shows up in the
+two counter machine. So it's a representational trick. So what you do here is if you're three kind of
+machine has integers, ABC and they're all non-negative. Then R2, Katherine King will have one counter
+that represents that, and then the other
+one's a work counter. All right, so this one counter
+or represent all three of these. And it does that by letting
+that single counter x be two to the a times three
+to the b times 5 with the C. Now, hopefully you
+see how we could use this to simulate any number
+of characters, right? For example, if we had
+a five counter machine, what would be the other
+numbers we'd have here to represent the two
+other counters, right? So counters, let's say D and E. So pause and think about pad, right? So we would do, this would be this times seven to the d times 11 to D. So what we're using here is that every integer has a
+unique prime factorization. So if I write down a single
+number here and that number, What happens to be to have divisors
+that are only 2, 3, and 5. Well then there's a unique value that each of the
+exponent's could add. And so that's the sense in which that single number can
+represent these three numbers. And it's going to be
+convenient one for doing the operations we need to do. So, for example, we might
+want to increment B. So pause, like hit the pause button, think about to increment B. How would you change the value x? What we want to change
+this b to b plus 1. What does that do to
+the whole number? Well, changing this B2B plus
+1 takes the whole number, multiplies it by three, right? And multiplying by a
+constant like three is something we know how
+to do with just two. Just take x and you decrement it. For each time we decremented
+you increment the counter three times and you do it till x gets to
+0 and then push the value back. So you, you've tripled x. If we want to decrement
+the counter, right? Then we divide by a constant, say to decrement a, we divide by two. To decrement C, we
+would divide by five. And we can do that with similar
+tricks to dividing by two. To test if c is positive.
+What does that mean? Well, C is either positive or 0. If it's 0, then five
+is not a divisor of x. If it's positive in
+any positive number, then five is the divisor of x. So we want to test is x a multiple of five is
+congruent to 0 mod 5. And again, we saw how to
+test if x is even or odd. That idea extends pretty
+straightforward laid a testing whether it's a multiple
+of other numbers besides two. So if we want to start with our three counter machine
+has its first counter, a is n and b, C are both 0. We would start with x
+equals 2 to the n. So, so this is the sense in
+which it's indirect. We're not starting with this thing having the input we
+really want to give it. And we start with an encoding of n, where n is an exponent in this
+exponentially bigger number. So because three counter machines can do turning universal computation, we can compute any function we want, including two to the n, right? So, but what that means is that if x, if f is any computable function, we can start with x equal to two to the input we want
+to give to F called M and halt with x equal to 2 to
+the f of n. But you might wonder, well, okay, but can we do a
+more direct one if we have a computable function F, Can we just start with its input in the counter x and end with its
+output in the camera tracks. And that was proven not to be true. So this sort of indirect encoding
+is actually necessary here. So in fact, there is no two counter machine that can even compute this
+encoding function, right? So there is no two kind of
+machine that starts with n In its first counter and ends with two to the n
+and its first camera. And in fact, the person who prove
+this seemed almost upset about Minsky's result and
+said, You know, when, when it was quoting the theorems of this kind of insulting thing about a counter machine can be
+simulated by a two kind of machine provided an obscure
+recoding is accepted. So they seem to be very
+bothered that Minsky was claiming these things are Turing
+universal because he thought, Well, wait now, to use them, you have to do this encoding. And this encoding is itself something that they're
+not even able to do. So to him, it sort of
+seemed like a lot of the work to set it up was
+being done by the person, the program or less
+to use the machine. But that said, tuna machines Canada universal
+computation on encoded inputs, even though they cannot compute
+the encoding themselves. But the fact that to
+kind of machines can simulate arbitrary three
+machines in this way implies that the halting problem for two counter machines
+is undecidable. Sometimes people take that as like one possible definition of
+what does it mean to say your, your model of computation
+is really universal. It's really powerful. Sometimes they say, Well, if it has an undecidable
+halting problem, that's an indication that it,
+that it's pretty powerful. So one of the homework says
+sometimes assigned is to show that one counter machines have a
+decidable holding Brahma. So they're just unequivocally weaker. Okay, and then I want to end with this kinda nice idea
+from the textbook. This is not as much about
+terrain universality, but this will be useful for
+homework I like to assign. So one way to think about a two
+counter machine is that it's a finite automaton on the
+play and not the whole plane, just the first quadrant. And not the real valued plane, the integer valued plane. So it's occupies a point x, y, both natural numbers. And one way to think about it is that I can't write
+anything or see anything. It's a robot that can
+just move around in here. But one thing you can do, the
+consents if it's touching the wall on the bottom or the
+wall on the left or both. Right? That's a corresponds
+to reading is my counter, what first counter 0 or
+is my second noun or 0? And it can move north,
+south, east, west. That corresponds to
+incrementing and decrementing encounters based on
+its current state. And these two bits
+telling it about the law. So this seems like a very
+weak kind of robot. Randomly. You can't do anything except just tell them I up against a wall or not. But there's an automaton to the
+following problem is undecidable. Given x, y, if you start the
+atomaton at that position, all right, say if you started here, Will it ever visit the origin? I mean, it's like what it's
+doing when it's not touching the wall just looks so
+stupidly repetitive. And it seems like you
+could easily decide this, but it's actually
+undecidable to tell if you know the transition rules
+that this thing has, is that ever going
+to visit the origin?

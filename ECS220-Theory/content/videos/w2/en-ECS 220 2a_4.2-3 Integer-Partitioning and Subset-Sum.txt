@@ -1,0 +1,107 @@
+So let's think about this problem. Given a list of integers, this case 4, 5, 6, 7, 8, can we partition them into two
+lists that have the same sum? So in this example you can, you can visualize it as putting balls on one
+side of this or another. So you don't put the same color
+on both sides and you can get 15 over here and 15 over here. And that corresponds to getting
+a sum of 15 on each side. Now note that the total
+sum has to be 30, right? Of each hat sums to 30
+for each have some to 15, then the total has to be dirty. So this is a special case
+of a more general problem, which is given a list of
+integers and a target, some, it may not be half of
+their total sum is just some other number
+less than their total. Can we find a sublist
+that sums to 90? So in this case we can five
+plus six plus eight equals 19. So we formalize this as
+two decision problems. One is called integer partitioning. We're given a list of positive
+integers one through n k. We want to find a subset
+a of the indices so that if you sum all the
+integers in one subset, it equals the sum of all
+those not in the subset. So subset sums that second
+more generalized problem. For some reason this is always formalized as a set
+rather than a list. A list can contain duplicates. A set cannot. So you're given that set of
+integers and a target integer t. And the goal is to find a subset
+of the integers that sums to t, where t may not be half of the total. Now I'm going to claim it's
+obvious that integer partitioning is reducible to subset-sum,
+right? Why is that? Well, as I said, integer partitioning is a
+special case of subset sum, where you set the target to half of the total setup and you can easily figure out what the total silicons. So let's think about this from the perspective of what the
+3 SAT problem was doing. The goal there was to figure out a satisfying assignment or
+report that none exists. So each clause is a constraint. You want to find one assignment that satisfies all the constraints. And each constraint has
+only three variables. There's just, you know, each
+clause was pretty small, but there's many constraints. Whereas each of these
+correspond to satisfying one single constraint that the
+sum is what you want it to be. But that's some involves all
+of the variables potentially. Okay, so before we talk about
+how hard this problem is, let's see, is it easy? Let's explore some obvious kind of algorithmic attempt to solve it. So you might think at first that
+a greedy algorithm would work. We could say, well, I want
+to partition the numbers. I'll call it Xs here
+into a left and a right, whose sums are equal. So we could start with
+both lists empty. And we could try going through
+the x's in sorted order and say, Okay, well, I've got some, some in the left half and
+some some in the right f. If the sum in the
+left half is smaller, well maybe the next
+variable X should go there. Otherwise it goes into the right. But this doesn't work. For example, if you process
+the list 45678 in order, it gives you left is 468
+and right is 57, right? And that sums to 12, which
+has not happened, 30. Okay, so what's the next tool in
+our algorithmic tool, the egg? We could try dynamic programming and it actually turns out this works. And if you seen a bit ahead, you know this problem is NP-complete. So we'll talk about
+how we get to have a polynomial time algorithm
+for an NP-complete problem. After we explore how
+this algorithm works. Okay, so we're going to define this predicate here that takes two
+inputs are both integers. J is an index, so it's going to be one of the
+subscripts on one of our numbers. And t is a target cell. And we're going to say f of
+JT is true if we can balance a weight of T using only
+weights X1 through Xn. Or in other words, if there
+is a subset of the integers, of the, of the first j are
+integers that sums to t, right? So this is like a
+restricted version of the problem where you're only allowed to use the first
+J integers in the list. And to solve subset sum, you want to calculate f of KT, where K is the final index. So let's think about how we would figure out the value of
+the predicate recursively. Well, we can either use the number
+x-j in the subset a or not. So we have this recursion. Maybe we don't bother to include XJ. And if it's possible to find
+numbers from x one to x j minus 1, that sum to t, then
+this would be true. F of j minus 1 t would be true. And therefore it would
+also be possible to do that if we had XJ around, we just wouldn't
+include it in the set. So in that case, f of
+JT will also be true. But the other way for F OJT to be true is that we do
+in fact include X. And so we also want to ask, okay, supposedly did include xj. What would the other numbers
+that we include have to sum to? Well, Xj is responsible
+for part of the sum. So t minus x j as the
+rest of the cell. In other words, it's also possible
+we could use the first j minus 1 integers to get to t minus x j
+and then include XJ and get it. So that's our recursion. Now the base case is when j is 0. In other words, we're
+asking what if we are not allowed to include any
+of the numbers at all? Then when can we sum to t? Well, that's only true when t is 0, write the empty sum to 0. But any other target can't
+be reached with no integers. So based on this base
+case and this recursion, we can fill out a dynamic
+programming table for all the values of t
+and j that are relevant. So the first row is going
+to be the base case. It's true for t equals 0
+and false everywhere else. And then now we can trace through a couple examples of
+using this recursion. So first of all, the whole left column
+is going to be true. That corresponds to looking
+at j minus one, right? So that will always be
+true that we can simply include none of the integers
+and get a sum of 0. But then sometimes we want
+to include an x side. So in this case, if we include x1, which is equal to 2, right? We can work out from the, the j minus one case, in this case that J1 and
+t equals two is true. And similarly we can fill
+in the rest of the table. We're always going to have up arrows. And then the kind of slope of
+these other arrows depends on the, the number x-j that
+you're referring to. Okay, so there's a dynamic programming
+algorithm. What's the running? Well, if w is the sum of all
+the numbers and the whole list, then the running time is going
+to be o w times k, right? We're iterating over. The biggest way to could possibly be, which would be the sum of
+all the numbers, right? N, We're also iterating
+over all k of the numbers, doing a constant time
+operation for each one. Okay, so how fast is this as a
+function of our input silence? All remember, the
+size of an integer in binary is logarithmically smaller
+than the integer itself, right? So this is polynomial in
+the numbers themselves. If we gave our inputs and urinary, this would be a polynomial
+time algorithm. But generally we don't, generally we're giving
+an integers in binary. And so this is an
+exponential time algorithm. If you write down the actual number
+of bits that each x i needs, you're going to need
+O of two to the b, if b is the number of beds and
+then times the number of integers. So it is in fact an
+exponential time algorithm. But if you want to solve this for
+cases where maybe K is very big, but the individual
+integers aren't very big. It would actually be inefficient. Algorithm is just exponential
+in the number of bits you.

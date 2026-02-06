@@ -1,0 +1,54 @@
+Now we saw that three
+coloring is reducible to planar 3 color and meaning an
+algorithm for planar 3 color in, even though it only
+works on planar graphs, can be used after but a processing to determine the 3
+coloring of any graph. And that's maybe not so surprising because they're both
+questions about graphs. Digital transformation to turn a possibly non planar graph into a planer one
+with the same answer. But what we're going to
+show now is something a bit surprising that 3 coloring
+is reducible to CNF SAT. Write a question about a totally
+different type of object. So we're going to show how
+if we had an algorithm that can determine whether an
+arbitrary CNF formula is satisfiable or not. We could use that to
+determine whether a given graph is 3 colorable or not. And the way we're going
+to do it is by giving them an algorithm that
+on input a graph g will output a CNF formula fee that is satisfiable if and only if the
+input graph is 3 colorable. And so if we had an
+algorithm that could determine satisfiability
+of CNF formulas. Together with this
+algorithm we're about to describe is called the reduction. We can use it to get the answer
+about whether G is 3 colorable. And then we'd have an
+algorithm for three color. So the key idea here is going
+to be for each node in V, we're going to make
+up three variables. You are UG and UB. And exactly one of them
+will be set to true. So for example, coloring you
+read will correspond to you. R is one and the other two are 0. Now we're going to have to enforce that by how we design the formula. So here's what we'll do
+for each edge uv any. Now this is a good sanity check
+when you're doing a reduction, make sure that your reduction
+actually depends on the whole input. So in this case, what I've
+said so far is we'll do this. And I didn't mention E at all. I just talked about the nodes. So make sure that somewhere in the reduction you actually use
+the full structure of the graph. So here's where the structure
+of the graph influences us. If we have an edge u, v, and e, We add clauses to capture the implication that if
+you as a certain color, that implies v is
+not that same color. So we have these three implications. View is red, it's not
+the case that v is red. And if you as green, if not the case that v is gray. And similarly for blue, and remember that p implies q
+is equivalent to not p or q. So we can replace these implications
+with ors and look at that. They look like closets. So we have an end of
+ores of literals. Now, if we stopped right
+there, this wouldn't work. A formula that has nothing but clauses like this is easy to satisfy. You just make everything
+falls, right? But we're not, we want to capture the fact that you need to
+assign an actual coloring. And coloring corresponds to setting one of these to true and
+the other two to false. So we're going to
+also add clause like this for each node that
+it's the case that you are, or UAG or UGA has gotta be set
+to true at least one of them. So we're almost there. This ensures we can't just
+make everything falls, but this allows us technically
+to make something that's not a coloring because it allows us to make more than
+one of these is true. So finally, we have to
+add some constraints that no more than one of these three
+variables can be set to true. And to do that, we can
+just add these clauses. And if you go through
+the logic of this, you see that they will
+ensure that exactly one together with this
+constraint over here, exactly one of each of these constraints is
+going to be set to true.

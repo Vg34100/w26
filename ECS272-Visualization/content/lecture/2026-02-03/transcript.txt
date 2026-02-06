@@ -1,0 +1,1654 @@
+Pablo [0:49]: everything is good
+Pablo [0:51]: everybody have
+Pablo [0:54]: the project team
+Pablo [1:55]: so
+Pablo [1:57]: we talk about space
+Pablo [2:00]: you say anomaly
+Pablo [2:01]: that's thursday
+Pablo [2:09]: yeah
+Pablo [2:17]: we talk about the imported choosing the right space
+Pablo [2:20]: for your visualization
+Pablo [2:21]: right
+Pablo [2:24]: critical
+Pablo [2:25]: decision to make
+Pablo [2:34]: in what space how you utilize space what space you display the data
+Pablo [2:39]: and how you utilize space we talk about
+Pablo [2:42]: logarithmic space right
+Pablo [2:44]: which is good
+Pablo [2:46]: for
+Pablo [2:47]: showing
+Pablo [2:49]: the radar change
+Pablo [2:53]: you have data
+Pablo [2:56]: with very large dynamic
+Pablo [3:01]: and then we talk about distortion using distortion
+Pablo [3:03]: we show a lot of example
+Pablo [3:09]: how to use why and when we
+Pablo [3:10]: use distortion
+Pablo [3:13]: and
+Pablo [3:16]: we can basically
+Pablo [3:21]: try to allocate space the display space in a way
+Pablo [3:27]: to basically put the emphasis
+Pablo [3:31]: on certain aspect of data or
+Pablo [3:33]: to give
+Pablo [3:35]: more space to the more den
+Pablo [3:36]: se
+Pablo [3:37]: part of the data
+Pablo [3:53]: using
+Pablo [3:54]: this object
+Pablo [3:57]: and then finally
+Pablo [4:11]: include
+Pablo [4:12]: high
+Pablo [4:13]: as
+Pablo [4:14]: addition
+Pablo [4:15]: and
+Pablo [4:16]: when
+Pablo [4:17]: we
+Pablo [4:18]: design vis
+Pablo [4:19]: ualization
+Pablo [4:20]: for
+Pablo [4:21]: pamphlet
+Pablo [4:22]: we
+Pablo [4:23]: often
+Pablo [4:24]: consider
+Pablo [4:25]: time
+Pablo [4:26]: and special dimensions
+Pablo [4:32]: we will consider it separately
+Pablo [4:33]: from other
+Pablo [4:34]: dimension
+Pablo [4:36]: a lot of
+Pablo [4:37]: time we want
+Pablo [4:38]: to see
+Pablo [4:40]: evolution
+Pablo [4:41]: or
+Pablo [4:42]: change over
+Pablo [4:43]: time
+Pablo [4:45]: and we
+Pablo [4:46]: want
+Pablo [4:52]: in this space
+Pablo [4:56]: we want to somehow preserve space
+Pablo [4:58]: for conveying
+Pablo [5:00]: that particular type of information
+Pablo [5:04]: so today we want to continue
+Pablo [5:06]: on
+Pablo [5:10]: this topic of time
+Pablo [5:13]: and if you remember
+Pablo [5:17]: we were here we look at
+Pablo [5:21]: this patient cohort data
+Pablo [5:27]: we talk about kidney disease chronic kidney disease pat
+Pablo [5:28]: ient
+Pablo [5:35]: and over this eighteen years period we try to look all this patient
+Pablo [5:39]: together
+Pablo [5:41]: and
+Pablo [5:42]: then we have
+Pablo [5:43]: in
+Pablo [5:44]: a way
+Pablo [5:50]: how
+Pablo [5:51]: many
+Pablo [5:52]: nations
+Pablo [5:59]: and
+Pablo [6:00]: all
+Pablo [6:01]: these combinations in
+Pablo [6:02]: the world specify
+Pablo [6:03]: by physician
+Pablo [6:04]: we work with
+Pablo [6:09]: your
+Pablo [6:10]: ear
+Pablo [6:12]: is
+Pablo [6:13]: to highlight
+Pablo [6:14]: using
+Pablo [6:15]: this
+Pablo [6:16]: life highlight
+Pablo [6:17]: ed those patients
+Pablo [6:17]: will deny
+Pablo [6:23]: them
+Pablo [6:24]: reality
+Pablo [6:31]: all kind
+Pablo [6:32]: s of things
+Pablo [6:35]: have
+Pablo [6:36]: older past
+Pablo [6:37]: eight years
+Pablo [6:38]: and
+Pablo [6:39]: also
+Pablo [6:42]: very
+Pablo [6:42]: important
+Pablo [6:43]: decision
+Pablo [6:47]: we
+Pablo [6:50]: may when we design this visualization
+Pablo [6:52]: that is
+Pablo [6:53]: how
+Pablo [6:55]: we align
+Pablo [6:56]: all the patients
+Pablo [7:01]: really
+Pablo [7:03]: have
+Pablo [7:12]: started having this disease the same time
+Pablo [7:13]: how
+Pablo [7:14]: is there together
+Pablo [7:16]: using
+Pablo [7:17]: the same
+Pablo [7:17]: time
+Pablo [7:23]: according
+Pablo [7:24]: to
+Pablo [7:25]: when
+Pablo [7:26]: we jumped in
+Pablo [7:27]: was
+Pablo [7:28]: diagnosed
+Pablo [7:30]: having
+Pablo [7:34]: chronic kidney disease
+Pablo [7:35]: is
+Pablo [7:36]: zero
+Pablo [7:38]: this is
+Pablo [7:42]: by the origin
+Pablo [7:45]: this is time moving forward this is before
+Pablo [7:47]: they were
+Pablo [7:47]: diagonals
+Pablo [7:51]: kidney disease
+Pablo [7:57]: you
+Pablo [7:58]: can align it different
+Pablo [7:58]: ly
+Pablo [8:00]: this
+Pablo [8:01]: was the way
+Pablo [8:04]: it
+Pablo [8:05]: worked out
+Pablo [8:08]: any
+Pablo [8:09]: question about
+Pablo [8:11]: this
+Pablo [8:33]: some suff
+Pablo [8:34]: ered
+Pablo [8:35]: by humiliation
+Pablo [8:36]: disease or
+Pablo [8:37]: pain
+Pablo [8:38]: in the summit
+Pablo [8:39]: short
+Pablo [8:39]: er
+Pablo [8:42]: we
+Pablo [8:43]: just need a way to
+Pablo [8:44]: align them
+Pablo [8:45]: so
+Pablo [8:46]: this is
+Pablo [8:47]: my
+Pablo [8:48]: way
+Pablo [8:56]: of
+Pablo [8:57]: when they start
+Pablo [9:04]: medic
+Pablo [9:05]: ation
+Pablo [9:13]: based on
+Pablo [9:14]: the
+Pablo [9:15]: first
+Pablo [9:20]: com
+Pablo [9:21]: bination of syn
+Pablo [9:22]: thetic
+Pablo [9:23]: so
+Pablo [9:24]: there is always
+Pablo [9:26]: depend
+Pablo [9:27]: s on
+Pablo [9:28]: which allow the user
+Pablo [9:29]: in this case
+Pablo [9:31]: phys
+Pablo [9:32]: icians
+Pablo [9:33]: which allow
+Pablo [9:34]: them to choose
+Pablo [9:35]: all
+Pablo [9:36]: the line
+Pablo [9:38]: s
+Pablo [9:39]: and
+Pablo [9:40]: whether you are develop
+Pablo [9:41]: ing
+Pablo [9:42]: the unit
+Pablo [9:43]: right should be able to say
+Pablo [9:44]: oh i want to line
+Pablo [9:45]: it up
+Pablo [9:45]: the main is how i
+Pablo [9:46]: begin
+Pablo [9:48]: the way
+Pablo [9:49]: for life
+Pablo [9:50]: or
+Pablo [9:51]: they can somehow choose
+Pablo [9:52]: this way
+Pablo [9:53]: rather than to choose
+Pablo [10:06]: very
+Pablo [10:07]: helpful
+Pablo [10:14]: i see
+Pablo [10:17]: how example
+Pablo [10:21]: visualization involving time
+Pablo [10:25]: this is a classic visualization
+Pablo [10:27]: made by hand
+Pablo [10:28]: at this
+Pablo [10:29]: height
+Pablo [10:36]: so this is a train schedule
+Pablo [10:43]: so
+Pablo [10:47]: here you see we have a train station
+Pablo [10:49]: on this side translation
+Pablo [10:51]: enter
+Pablo [10:53]: the name the first one is paris
+Pablo [10:58]: others i don't recognize because of
+Pablo [11:00]: the quality
+Pablo [11:07]: i probably should rescan this because i have the book this was taken from edward half tea's book
+Pablo [11:14]: you can see the different station
+Pablo [11:17]: and you see
+Pablo [11:21]: they place along this axis
+Pablo [11:26]: and then there are different distance this actually
+Pablo [11:30]: kind of relative to the actual distance between the station
+Pablo [11:36]: so that already some encoding of information
+Pablo [11:41]: there's this other
+Pablo [11:44]: you can see there's a line
+Pablo [11:46]: from
+Pablo [11:50]: one place along
+Pablo [11:54]: this x axis is actually time
+Pablo [11:59]: you can see it's like one two three four five
+Pablo [12:03]: and then one two three so this is definitely time
+Pablo [12:14]: and a line start from here means there's a train start from
+Pablo [12:17]: paris to this city
+Pablo [12:19]: at this time
+Pablo [12:22]: right arrive at this time and then
+Pablo [12:23]: leave again right
+Pablo [12:23]: this time
+Pablo [12:30]: align
+Pablo [12:31]: ment
+Pablo [12:33]: all right this and then the short stop
+Pablo [12:35]: and then
+Pablo [12:37]: there's
+Pablo [12:37]: the longest
+Pablo [12:38]: out
+Pablo [12:39]: and the
+Pablo [12:39]: right
+Pablo [12:44]: one
+Pablo [12:45]: trans manual
+Pablo [12:47]: a piece of paper
+Pablo [12:48]: in
+Pablo [12:53]: down
+Pablo [12:54]: right
+Pablo [12:55]: i think in the old days
+Pablo [12:56]: again
+Pablo [12:57]: i
+Pablo [12:59]: just
+Pablo [13:00]: look out
+Pablo [13:01]: what
+Pablo [13:01]: who know that
+Pablo [13:08]: travel
+Pablo [13:11]: i
+Pablo [13:13]: trav
+Pablo [13:14]: el to europe
+Pablo [13:24]: and
+Pablo [13:25]: then you just say okay
+Pablo [13:27]: even
+Pablo [13:28]: the china
+Pablo [13:41]: each
+Pablo [13:42]: day they
+Pablo [13:44]: want people
+Pablo [13:47]: to
+Pablo [13:48]: understand
+Pablo [13:49]: is
+Pablo [13:50]: this little book
+Pablo [13:51]: on paper
+Pablo [13:53]: it was
+Pablo [13:54]: okay
+Pablo [13:55]: but then this
+Pablo [13:56]: is like one
+Pablo [13:57]: key so this is just
+Pablo [13:57]: like ok
+Pablo [13:58]: ay
+Pablo [14:05]: what
+Pablo [14:06]: neighbor do i really
+Pablo [14:07]: miss
+Pablo [14:15]: design
+Pablo [14:16]: is pretty
+Pablo [14:16]: cool
+Pablo [14:17]: because
+Pablo [14:18]: there's
+Pablo [14:19]: a line
+Pablo [14:20]: i'm not
+Pablo [14:21]: even telling you when
+Pablo [14:22]: and
+Pablo [14:23]: when and where
+Pablo [14:28]: information
+Pablo [14:40]: in
+Pablo [14:41]: canal
+Pablo [14:42]: direct
+Pablo [14:43]: ly
+Pablo [14:46]: give
+Pablo [14:47]: you a sense of
+Pablo [14:47]: us
+Pablo [14:56]: line
+Pablo [14:57]: has
+Pablo [15:05]: been
+Pablo [15:05]: of course
+Pablo [15:10]: this
+Pablo [15:11]: indicated
+Pablo [15:12]: the design
+Pablo [15:13]: of
+Pablo [15:14]: our
+Pablo [15:22]: selves
+Pablo [15:22]: right
+Pablo [15:25]: design
+Pablo [15:30]: is
+Pablo [15:34]: all
+Pablo [15:35]: right
+Pablo [15:39]: so
+Pablo [15:40]: you can have
+Pablo [15:41]: some
+Pablo [15:42]: of the
+Pablo [15:43]: chain
+Pablo [15:47]: i mean
+Pablo [15:48]: higher
+Pablo [15:48]: speed
+Pablo [15:50]: provide
+Pablo [15:51]: that information
+Pablo [15:52]: and then
+Pablo [15:53]: you also see
+Pablo [15:54]: auntie man
+Pablo [15:55]: ufact
+Pablo [15:57]: uring
+Pablo [16:00]: each other
+Pablo [16:05]: is
+Pablo [16:06]: cross
+Pablo [16:07]: ing
+Pablo [16:10]: the
+Pablo [16:11]: hiding place
+Pablo [16:11]: that's going
+Pablo [16:15]: to do
+Pablo [16:16]: it as ev
+Pablo [16:16]: idence
+Pablo [16:19]: and
+Pablo [16:20]: that's all that important
+Pablo [16:27]: ly
+Pablo [16:28]: you know
+Pablo [16:29]: what
+Pablo [16:30]: is training
+Pablo [16:31]: i
+Pablo [16:33]: have choices
+Pablo [16:35]: that's why
+Pablo [16:36]: you will get
+Pablo [16:37]: where
+Pablo [16:38]: neither
+Pablo [16:39]: two
+Pablo [16:40]: and one is
+Pablo [16:41]: passive in
+Pablo [16:41]: the other
+Pablo [16:42]: right
+Pablo [16:43]: you
+Pablo [16:44]: might want to take
+Pablo [16:46]: the
+Pablo [16:46]: faster one
+Pablo [16:49]: so yeah this is like a very neat design
+Pablo [16:53]: so can you make a design like this
+Pablo [16:53]: right
+Pablo [16:58]: in the data driven way because you have data
+Pablo [17:00]: and how
+Pablo [17:01]: you
+Pablo [17:02]: make a design
+Pablo [17:03]: like this
+Pablo [17:14]: another example
+Pablo [17:18]: have i shown this before no right
+Pablo [17:26]: this is a visualization made by my student for visualization contest
+Pablo [17:38]: so this comp has provide synthesized data set it's about somebody attack this building they place a bomb inside the building
+Pablo [17:41]: and then the bong takes gold
+Pablo [17:44]: right so this is visual analytics
+Pablo [17:46]: context
+Pablo [17:47]: so
+Pablo [17:50]: they want to see how you use visualization
+Pablo [17:52]: to
+Pablo [17:54]: guide the analysis
+Pablo [17:56]: and figure out
+Pablo [17:58]: kind of try to
+Pablo [18:01]: kind of figure out or show
+Pablo [18:07]: who's the guide placing the bomb
+Pablo [18:12]: let's see
+Pablo [18:12]: okay
+Pablo [18:15]: and you first describe
+Pablo [18:18]: this is the beauty
+Pablo [18:20]: this is the floor plan
+Pablo [18:32]: this is
+Pablo [18:33]: the bomb
+Pablo [18:35]: was placed
+Pablo [18:45]: and then here this two yellow really indicate where you have an exit right so there's a one exit and one axis here
+Pablo [18:51]: and one exit here i don't remember why they have different colors
+Pablo [19:01]: you can see
+Pablo [19:06]: so this whole we assume the whole building
+Pablo [19:08]: is
+Pablo [19:09]: monitored
+Pablo [19:10]: by all the people
+Pablo [19:11]: 's movement
+Pablo [19:14]: is
+Pablo [19:15]: track
+Pablo [19:21]: so you can see there are people in different office and then
+Pablo [19:26]: they move right certain way of course here we capture
+Pablo [19:27]: is
+Pablo [19:29]: just an example right
+Pablo [19:37]: here but then the problem is if you try to visualize their movement directly
+Pablo [19:43]: in this space you see this is the actual physical space the building
+Pablo [19:45]: if we visualize
+Pablo [19:46]: the movement in
+Pablo [19:47]: this way directly
+Pablo [19:51]: right
+Pablo [19:53]: you want to
+Pablo [19:54]: have a copy
+Pablo [20:00]: of
+Pablo [20:01]: each individ
+Pablo [20:02]: ual
+Pablo [20:03]: working
+Pablo [20:04]: inside
+Pablo [20:06]: this
+Pablo [20:07]: is what
+Pablo [20:10]: this space
+Pablo [20:11]: is
+Pablo [20:12]: still useable but
+Pablo [20:13]: it's not the
+Pablo [20:14]: best phase
+Pablo [20:17]: for
+Pablo [20:18]: seeing everybody
+Pablo [20:19]: 's movement
+Pablo [20:20]: so i see
+Pablo [20:21]: the internet
+Pablo [20:24]: as
+Pablo [20:25]: these
+Pablo [20:26]: again
+Pablo [20:27]: ob
+Pablo [20:28]: viously
+Pablo [20:29]: when we want
+Pablo [20:30]: to
+Pablo [20:31]: show
+Pablo [20:33]: this
+Pablo [20:33]: is time over time
+Pablo [20:36]: and
+Pablo [20:36]: then once
+Pablo [20:39]: design
+Pablo [20:40]: decision
+Pablo [20:42]: and
+Pablo [20:43]: make an
+Pablo [20:43]: important difference
+Pablo [20:44]: so
+Pablo [20:45]: what i did
+Pablo [20:46]: is
+Pablo [20:47]: to make
+Pablo [20:49]: y
+Pablo [20:50]: am
+Pablo [20:52]: from the
+Pablo [20:53]: location of the
+Pablo [20:54]: f
+Pablo [20:55]: so
+Pablo [20:56]: here is
+Pablo [20:57]: exactly
+Pablo [20:59]: where
+Pablo [21:00]: bomb is
+Pablo [21:01]: and
+Pablo [21:03]: away
+Pablo [21:04]: from
+Pablo [21:05]: here
+Pablo [21:05]: right
+Pablo [21:06]: so
+Pablo [21:07]: here
+Pablo [21:08]: on this
+Pablo [21:09]: top
+Pablo [21:10]: here
+Pablo [21:11]: will be right here
+Pablo [21:14]: further
+Pablo [21:15]: away
+Pablo [21:16]: will be
+Pablo [21:16]: here
+Pablo [21:17]: that
+Pablo [21:18]: 's the verse in that
+Pablo [21:18]: decision
+Pablo [21:24]: and
+Pablo [21:27]: then we just call each individual movement
+Pablo [21:32]: using these two axis right position
+Pablo [21:35]: so you can see
+Pablo [21:38]: this person move right
+Pablo [21:43]: it move right if it's flat means this person
+Pablo [21:45]: was here somewhere here
+Pablo [21:48]: but this move right didn't change
+Pablo [21:50]: maybe sliding
+Pablo [21:50]: right
+Pablo [21:54]: and then start moving
+Pablo [21:55]: right
+Pablo [21:57]: and
+Pablo [22:03]: then so this person move at this time move
+Pablo [22:06]: right and move closer closer closer
+Pablo [22:06]: right
+Pablo [22:08]: to the bomb
+Pablo [22:14]: and then we see different color
+Pablo [22:16]: we encode
+Pablo [22:19]: so they're conditioned
+Pablo [22:24]: right so the gray color indicates they are inside the building
+Pablo [22:28]: and the yellow indicates
+Pablo [22:31]: yellow right
+Pablo [22:34]: they outside
+Pablo [22:35]: they are out of the building
+Pablo [22:37]: it means they say
+Pablo [22:38]: they can
+Pablo [22:42]: get out of the
+Pablo [22:42]: building
+Pablo [22:47]: and then the red unfortunately the people who die
+Pablo [22:50]: you see other people just die
+Pablo [22:52]: to
+Pablo [22:55]: beauty and then some people
+Pablo [22:56]: try no
+Pablo [22:59]: the red color detail
+Pablo [23:11]: yeah
+Pablo [23:12]: and it would die
+Pablo [23:13]: or it
+Pablo [23:15]: sit your serious leisure
+Pablo [23:16]: yeah
+Pablo [23:21]: anyway but then that's like all the red color indic
+Pablo [23:22]: ate
+Pablo [23:23]: but
+Pablo [23:24]: do we know
+Pablo [23:27]: when the bound explodes
+Pablo [23:30]: we can make a really good guess
+Pablo [23:35]: where must be here right because people
+Pablo [23:36]: kind of
+Pablo [23:39]: most people they say right
+Pablo [23:40]: standing
+Pablo [23:43]: until this point suddenly everybody move right
+Pablo [23:53]: and then it's kind of some people you can say you might be very handy they didn't know where running around some people
+Pablo [23:55]: they're very lucky
+Pablo [23:56]: they safely
+Pablo [23:58]: left the building
+Pablo [24:00]: not everybody
+Pablo [24:00]: right
+Pablo [24:03]: those light turn red most people like die
+Pablo [24:05]: just like inside
+Pablo [24:09]: and then some people maybe you see the people
+Pablo [24:17]: kind of but then it moves but then probably injured
+Pablo [24:18]: survival
+Pablo [24:23]: why
+Pablo [24:24]: do we highlight all these
+Pablo [24:25]: people
+Pablo [24:27]: one two three
+Pablo [24:28]: one two
+Pablo [24:29]: three
+Pablo [24:30]: four
+Pablo [24:32]: five
+Pablo [24:33]: people
+Pablo [24:36]: because these five people
+Pablo [24:39]: they move
+Pablo [24:43]: before the
+Pablo [24:44]: bound
+Pablo [24:45]: i expose
+Pablo [24:47]: so they are suspect
+Pablo [24:51]: because we want to figure out who is the bound
+Pablo [24:54]: so we want to highlight those people
+Pablo [24:57]: they move before
+Pablo [24:59]: the bomb explod
+Pablo [24:59]: e
+Pablo [25:03]: and suddenly one person could be just
+Pablo [25:08]: went to write the coffee room to get a coffee
+Pablo [25:08]: right
+Pablo [25:11]: but then this guy
+Pablo [25:13]: right
+Pablo [25:14]: i actually
+Pablo [25:14]: died
+Pablo [25:16]: so are we just not
+Pablo [25:16]: this guy
+Pablo [25:18]: but then this guy
+Pablo [25:18]: you see
+Pablo [25:20]: this green one
+Pablo [25:22]: move
+Pablo [25:25]: and very close to the bob right you see
+Pablo [25:27]: he's so close to the bone
+Pablo [25:34]: so he plays the bomb and he moves safely move out so this door green
+Pablo [25:39]: ly
+Pablo [25:44]: right and then so are these two
+Pablo [25:47]: they move
+Pablo [25:49]: and then
+Pablo [25:53]: they left the building
+Pablo [25:59]: force about the time
+Pablo [26:01]: the bound explode
+Pablo [26:07]: so they could the district one actually one and two three
+Pablo [26:07]: right
+Pablo [26:09]: so
+Pablo [26:10]: they could
+Pablo [26:22]: be partner of this guy or they took me they just happen to as i say when do you get a copy or when do the printer room or
+Pablo [26:29]: just went to the colleague's office or we don't know right but then pretty much
+Pablo [26:35]: this guy most likely is the guy who
+Pablo [26:36]: plays the phone
+Pablo [26:39]: so
+Pablo [26:42]: yeah very simple right two d part
+Pablo [26:49]: but then it's like this design decision what is each access bar
+Pablo [26:53]: any question comments
+Pablo [26:57]: actual
+Pablo [26:58]: distance
+Pablo [27:03]: how the
+Pablo [27:03]: man would probably but then
+Pablo [27:04]: i don't remember
+Pablo [27:23]: have you seen this before
+Pablo [27:35]: where
+Pablo [27:36]: are you
+Pablo [27:48]: many many
+Pablo [27:49]: years ago
+Pablo [27:50]: before
+Pablo [27:51]: twenty
+Pablo [27:54]: eleven
+Pablo [28:00]: show
+Pablo [28:01]: me this
+Pablo [28:03]: copy
+Pablo [28:08]: artist
+Pablo [28:10]: has
+Pablo [28:11]: decided
+Pablo [28:13]: many
+Pablo [28:14]: of your work desire
+Pablo [28:15]: s
+Pablo [28:17]: and
+Pablo [28:18]: models
+Pablo [28:19]: compounding
+Pablo [28:39]: so my student show me and say hey
+Pablo [28:41]: this is a good visualization
+Pablo [28:47]: and each in this case each tells a movie story
+Pablo [28:51]: slow the brain
+Pablo [28:54]: star
+Pablo [28:56]: war jurassic park
+Pablo [29:00]: twelve angry man
+Pablo [29:04]: let's say you
+Pablo [29:09]: hear each
+Pablo [29:10]: card represent
+Pablo [29:11]: a charact
+Pablo [29:12]: er
+Pablo [29:13]: in the story
+Pablo [29:19]: in
+Pablo [29:20]: some
+Pablo [29:23]: way
+Pablo [29:24]: depend
+Pablo [29:25]: s on the
+Pablo [29:27]: sending
+Pablo [29:28]: of the story
+Pablo [29:33]: when
+Pablo [29:34]: you see some of
+Pablo [29:35]: the person in
+Pablo [29:35]: house calls
+Pablo [29:36]: it
+Pablo [29:39]: a certain
+Pablo [29:40]: point on a
+Pablo [29:41]: serial fire
+Pablo [29:48]: when you see that we know these two character
+Pablo [29:52]: somehow they interact either
+Pablo [29:56]: they
+Pablo [29:57]: match
+Pablo [29:58]: they fight
+Pablo [29:59]: or
+Pablo [30:01]: they are just nearby
+Pablo [30:01]: right
+Pablo [30:02]: they just
+Pablo [30:06]: in the same neighborhood or something
+Pablo [30:10]: so maybe there's a way to indicate using color or whatever
+Pablo [30:11]: or
+Pablo [30:12]: some
+Pablo [30:14]: item to represent
+Pablo [30:15]: what actually
+Pablo [30:16]: happened
+Pablo [30:16]: it doesn't matter
+Pablo [30:23]: if so here there's also label right they give maybe just say who each is
+Pablo [30:25]: and over time
+Pablo [30:31]: it doesn't tell the whole story
+Pablo [30:37]: but it tells certain aspect of the story it's up to the artist
+Pablo [30:41]: what he or
+Pablo [30:42]: she
+Pablo [30:43]: thought
+Pablo [30:48]: that's the most important or most interesting aspect
+Pablo [30:48]: of the story
+Pablo [30:51]: and then you can see star wars the same right
+Pablo [30:56]: there may be some critical
+Pablo [30:57]: time
+Pablo [31:01]: maybe highlight some of the interaction here
+Pablo [31:01]: there
+Pablo [31:11]: and then jurassic park you can see direct part you can tell it's a bit simpler right the story is quite simple
+Pablo [31:17]: this storytelling comic also look simpler and then
+Pablo [31:19]: so angry man
+Pablo [31:20]: i love what it is
+Pablo [31:22]: straight
+Pablo [31:23]: away
+Pablo [31:27]: i
+Pablo [31:28]: like
+Pablo [31:30]: primary
+Pablo [31:30]: diseases
+Pablo [31:35]: and then
+Pablo [31:41]: on
+Pablo [31:43]: anybody know this movie
+Pablo [31:45]: primer yes
+Pablo [31:47]: it's a time travel
+Pablo [31:48]: time
+Pablo [31:49]: travel time
+Pablo [31:54]: one time travel yeah time traveling about time travel
+Pablo [31:57]: that's why you could go back
+Pablo [32:10]: i think
+Pablo [32:11]: it's rewatch
+Pablo [32:15]: how many you get
+Pablo [32:15]: are here
+Pablo [32:15]: right
+Pablo [32:21]: so my student basically say hey this is two visualization
+Pablo [32:34]: we should do something like this right
+Pablo [32:38]: and then i told the family okay because if you
+Pablo [32:38]: can
+Pablo [32:40]: read
+Pablo [32:41]: the story
+Pablo [32:41]: of
+Pablo [32:44]: your
+Pablo [32:45]: life
+Pablo [32:46]: generally sometime
+Pablo [32:46]: s
+Pablo [32:50]: and
+Pablo [32:50]: i don't remember
+Pablo [32:51]: how long
+Pablo [32:52]: maybe
+Pablo [32:54]: like two months later
+Pablo [32:56]: two
+Pablo [32:57]: months later
+Pablo [33:01]: activ
+Pablo [33:01]: ators
+Pablo [33:08]: we have
+Pablo [33:12]: so the top
+Pablo [33:14]: is the original hand drawing
+Pablo [33:17]: the
+Pablo [33:18]: function
+Pablo [33:19]: was generated
+Pablo [33:22]: with
+Pablo [33:23]: how we select
+Pablo [33:24]: optimization
+Pablo [33:30]: in
+Pablo [33:31]: fact it's very
+Pablo [33:32]: close to
+Pablo [33:34]: that it's just if we change the line
+Pablo [33:43]: so
+Pablo [33:44]: we call this
+Pablo [33:46]: story
+Pablo [33:46]: line
+Pablo [34:06]: as
+Pablo [34:15]: this
+Pablo [34:16]: is
+Pablo [34:17]: in fact
+Pablo [34:21]: this neighbor published
+Pablo [34:21]: right
+Pablo [34:24]: this give us
+Pablo [34:25]: the
+Pablo [34:27]: kind
+Pablo [34:28]: of cond
+Pablo [34:28]: ensed story
+Pablo [34:31]: because
+Pablo [34:35]: we actually work on this earlier
+Pablo [34:39]: and then the first set of result
+Pablo [34:41]: we're not as good as this
+Pablo [34:49]: we apply that to different problems anyway
+Pablo [34:52]: later
+Pablo [34:54]: we got the result really good
+Pablo [34:55]: really cold
+Pablo [34:58]: i took
+Pablo [35:02]: that
+Pablo [35:03]: there are several following
+Pablo [35:04]: papers at cw
+Pablo [35:09]: if you search you will find several other storyline visualization
+Pablo [35:10]: paper
+Pablo [35:14]: okay
+Pablo [35:16]: there are a few more example
+Pablo [35:17]: i can show
+Pablo [35:20]: this is the movie matrix
+Pablo [35:28]: so it's interesting because if you know this movie i believe everyone here watch this movie
+Pablo [35:35]: as you know this movie in this movie there like two domain or two spaces
+Pablo [35:37]: right and then
+Pablo [35:39]: you
+Pablo [35:40]: have
+Pablo [35:41]: people
+Pablo [35:44]: like that
+Pablo [35:48]: travel between these two spaces and you can see
+Pablo [35:49]: exactly
+Pablo [35:52]: we
+Pablo [35:53]: have this
+Pablo [35:53]: to
+Pablo [36:01]: be
+Pablo [36:02]: in
+Pablo [36:03]: this
+Pablo [36:06]: very
+Pablo [36:07]: interesting if you remember
+Pablo [36:08]: in this
+Pablo [36:13]: movie in the story there's always like three guys
+Pablo [36:15]: dress in black
+Pablo [36:20]: they always act together so you can see they act together here most of the time
+Pablo [36:23]: and
+Pablo [36:24]: then also you
+Pablo [36:25]: see that
+Pablo [36:28]: is new
+Pablo [36:29]: but then there is
+Pablo [36:30]: also this
+Pablo [36:33]: cyber
+Pablo [36:34]: is the train that
+Pablo [36:35]: trav
+Pablo [36:36]: els together
+Pablo [36:49]: so again
+Pablo [36:50]: i didn't
+Pablo [36:51]: tell the whole
+Pablo [36:52]: story but then it
+Pablo [36:53]: just kind of
+Pablo [36:54]: highlight
+Pablo [36:57]: some important aspect
+Pablo [36:58]: of the story
+Pablo [37:04]: final
+Pablo [37:06]: ly we have inception
+Pablo [37:09]: i think most of you know this movie
+Pablo [37:12]: this
+Pablo [37:13]: movie
+Pablo [37:14]: is
+Pablo [37:16]: coming
+Pablo [37:17]: from the other
+Pablo [37:17]: side because
+Pablo [37:22]: during
+Pablo [37:23]: my
+Pablo [37:28]: story
+Pablo [37:29]: line visualization
+Pablo [37:30]: actually
+Pablo [37:31]: see this
+Pablo [37:36]: and also you can
+Pablo [37:37]: see that
+Pablo [37:41]: before
+Pablo [37:42]: the
+Pablo [37:44]: go
+Pablo [37:45]: to the extreme
+Pablo [37:46]: one
+Pablo [37:47]: of them must
+Pablo [37:48]: stay the first dream
+Pablo [37:49]: so
+Pablo [37:51]: he or she can
+Pablo [37:52]: wake
+Pablo [37:53]: up others
+Pablo [37:54]: otherwise
+Pablo [37:55]: they will not be able to
+Pablo [37:55]: return
+Pablo [37:57]: the previous
+Pablo [37:59]: dream
+Pablo [38:06]: any
+Pablo [38:07]: way
+Pablo [38:15]: we still have the source code available
+Pablo [38:16]: if you want to use
+Pablo [38:17]: also
+Pablo [38:18]: the falling
+Pablo [38:19]: word they
+Pablo [38:20]: make it
+Pablo [38:21]: maybe
+Pablo [38:22]: in
+Pablo [38:23]: control
+Pablo [38:28]: or
+Pablo [38:29]: maybe
+Pablo [38:29]: faster
+Pablo [38:30]: you can generate
+Pablo [38:31]: the solid line
+Pablo [38:33]: faster
+Pablo [38:37]: but
+Pablo [38:38]: then also
+Pablo [38:41]: there's something nature because
+Pablo [38:44]: we
+Pablo [38:45]: are sitting here
+Pablo [38:47]: find this to
+Pablo [38:48]: real data like not just movie
+Pablo [38:48]: right
+Pablo [38:49]: we use
+Pablo [38:51]: movie for
+Pablo [38:51]: application
+Pablo [38:53]: because everybody
+Pablo [38:56]: get
+Pablo [38:56]: ideas
+Pablo [38:57]: they
+Pablo [38:59]: are then inter
+Pablo [39:00]: preted and understand
+Pablo [39:04]: each
+Pablo [39:04]: story
+Pablo [39:05]: line
+Pablo [39:09]: if you
+Pablo [39:11]: have twenty nine
+Pablo [39:13]: you
+Pablo [39:13]: will have some
+Pablo [39:14]: proper
+Pablo [39:17]: so
+Pablo [39:18]: you need a
+Pablo [39:19]: way to deal with that
+Pablo [39:20]: and
+Pablo [39:25]: for real world data you easily can have too many entities
+Pablo [39:28]: to pass so what do you do
+Pablo [39:38]: you have any idea what you do
+Pablo [39:41]: if you want to use storyline
+Pablo [39:42]: but you data
+Pablo [39:43]: set
+Pablo [39:45]: as human
+Pablo [39:47]: life
+Pablo [39:53]: in hundreds is
+Pablo [39:54]: problematic but then you have
+Pablo [39:58]: ten thousand
+Pablo [40:17]: view
+Pablo [40:18]: s and
+Pablo [40:19]: how
+Pablo [40:21]: vis
+Pablo [40:22]: ualization
+Pablo [40:23]: in this case
+Pablo [40:33]: when the characters
+Pablo [40:34]: at the same time
+Pablo [40:43]: show other events since there's a lot of so we
+Pablo [40:50]: should
+Pablo [41:06]: so basically there's no magic right when you have too many samples or entities data samples data point
+Pablo [41:08]: what do you do
+Pablo [41:13]: you have to reduce them right you have to have the select you have to do filtering
+Pablo [41:14]: right
+Pablo [41:20]: what you could do is just to allow the user to select
+Pablo [41:22]: certain subsets
+Pablo [41:23]: and not only that
+Pablo [41:29]: select based on entity attributes of
+Pablo [41:31]: f and say
+Pablo [41:34]: oh only i should say only female
+Pablo [41:35]: for example
+Pablo [41:44]: with or you
+Pablo [41:48]: get babies lack based on events or activity
+Pablo [41:49]: high quality
+Pablo [41:49]: grant
+Pablo [41:50]: i only want to
+Pablo [41:51]: see
+Pablo [41:52]: this event
+Pablo [41:54]: and see who involved
+Pablo [41:54]: right
+Pablo [41:57]: what involved over time
+Pablo [42:00]: and maybe the event repeat right so they have
+Pablo [42:01]: what they want
+Pablo [42:02]: you
+Pablo [42:03]: just have
+Pablo [42:06]: to allow the unit to select
+Pablo [42:07]: to reduce
+Pablo [42:09]: to
+Pablo [42:10]: make
+Pablo [42:14]: the visualization
+Pablo [42:17]: kind of discernible like interpretable
+Pablo [42:19]: usable
+Pablo [42:23]: and there are certainly other way
+Pablo [42:24]: you can make selection
+Pablo [42:31]: so you might have some other visualization allow you to choose
+Pablo [42:32]: the subset
+Pablo [42:33]: and then
+Pablo [42:35]: you use so that visual
+Pablo [42:37]: ization to display
+Pablo [42:39]: the chosen subset
+Pablo [42:42]: and from there
+Pablo [42:45]: you make auto selection and you have another view
+Pablo [42:45]: right
+Pablo [42:48]: okay
+Pablo [42:51]: any suggestions
+Pablo [43:00]: okay
+Pablo [43:03]: next we're going to talk about using animation
+Pablo [43:08]: envision is fun right in measure like you would like to watch
+Pablo [43:09]: an
+Pablo [43:09]: imation
+Pablo [43:12]: people like to watch video
+Pablo [43:16]: and now
+Pablo [43:19]: we can use ai to create
+Pablo [43:20]: what
+Pablo [43:24]: i know in my life
+Pablo [43:28]: you can put yourself into
+Pablo [43:29]: the animation
+Pablo [43:35]: animation
+Pablo [43:43]: like
+Pablo [43:46]: the most
+Pablo [43:50]: obvious
+Pablo [43:50]: way
+Pablo [43:51]: right
+Pablo [43:52]: way to use
+Pablo [43:55]: visualization i use animation is just
+Pablo [44:01]: to directly depict
+Pablo [44:05]: in this case we have a simulation
+Pablo [44:08]: of butterfly movement
+Pablo [44:12]: so this kind of
+Pablo [44:15]: simulating
+Pablo [44:18]: by fluid flow
+Pablo [44:21]: like air force by surrounding
+Pablo [44:23]: a vehicle
+Pablo [44:24]: here
+Pablo [44:24]: we have
+Pablo [44:38]: we just played it frame by frame
+Pablo [44:40]: right times that by times
+Pablo [44:43]: and then we visually encode
+Pablo [44:48]: so you see there's a butterfly by using animation
+Pablo [44:53]: this is commonly done is frequently done
+Pablo [44:57]: when you have time dependent data you just play back
+Pablo [45:07]: like in this case it's very directly we still need to do visual encoding decide what to ease with what to make visible
+Pablo [45:10]: and the look the mapping
+Pablo [45:11]: col
+Pablo [45:12]: or transparency
+Pablo [45:21]: and then we call the other one we have seen more than once
+Pablo [45:25]: roslyn is
+Pablo [45:40]: so this is also very direct right
+Pablo [45:42]: but
+Pablo [45:46]: any
+Pablo [45:47]: layover
+Pablo [45:47]: time
+Pablo [45:49]: and but then the
+Pablo [45:51]: straight
+Pablo [45:52]: forward
+Pablo [46:00]: how
+Pablo [46:01]: do you mind use this
+Pablo [46:02]: anim
+Pablo [46:02]: ation
+Pablo [46:04]: in
+Pablo [46:04]: other ways
+Pablo [46:08]: like
+Pablo [46:09]: beauty
+Pablo [46:09]: heart
+Pablo [46:11]: to help people
+Pablo [46:11]: compreh
+Pablo [46:12]: end and help keep
+Pablo [46:13]: a better comp
+Pablo [46:21]: change
+Pablo [46:25]: one
+Pablo [46:27]: is
+Pablo [46:28]: this
+Pablo [46:30]: we use
+Pablo [46:31]: any
+Pablo [46:37]: made transition to a health viewer
+Pablo [46:41]: better follow the key correspondence between
+Pablo [46:44]: one layout
+Pablo [46:46]: one
+Pablo [46:50]: part of the data to another one another layout
+Pablo [46:52]: arrange
+Pablo [46:52]: ment
+Pablo [46:53]: the same data
+Pablo [46:55]: basically sometimes
+Pablo [46:58]: you want to
+Pablo [47:01]: allow the user to
+Pablo [47:01]: see
+Pablo [47:04]: the same data different way
+Pablo [47:05]: so
+Pablo [47:08]: allow you to switch from
+Pablo [47:09]: this
+Pablo [47:14]: layout to the other layout
+Pablo [47:19]: and then what you can do is pop the first one and then use it to select a different one
+Pablo [47:23]: you just plot the other one right so just
+Pablo [47:26]: switch from one to the other and then maybe the third
+Pablo [47:30]: use
+Pablo [47:31]: an equation
+Pablo [47:34]: to
+Pablo [47:37]: make the transition
+Pablo [47:38]: smoother
+Pablo [47:41]: so
+Pablo [47:42]: that user can
+Pablo [47:43]: follow
+Pablo [47:44]: these
+Pablo [47:45]: change
+Pablo [47:46]: s how
+Pablo [47:47]: preservative
+Pablo [47:48]: viewers a
+Pablo [47:49]: legal act
+Pablo [47:50]: so let me show
+Pablo [47:51]: you what i mean
+Pablo [47:52]: so you see
+Pablo [47:53]: this is a simple
+Pablo [47:54]: bar chart
+Pablo [48:04]: analyzing or presenting information using statistical data graphics it is common to look at a number of related graph
+Pablo [48:04]: s
+Pablo [48:06]: for example the bureau
+Pablo [48:07]: of r sharp main
+Pablo [48:09]: wattie squished to a pie chart to view relative
+Pablo [48:10]: trans
+Pablo [48:13]: ition to a scatter plot to look for correlations between two variables
+Pablo [48:17]: or drill down by breaking up the data like categories
+Pablo [48:33]: animation is one promising approach for facilitating perception of changes when transitioning between data graphics using design guidelines motivated by research of human perception we have developed a dynamix a system supporting animated transitions for statistical data graphics
+Pablo [48:37]: dynamiz provides animations for a number of different transition types
+Pablo [48:40]: including changes of perspective
+Pablo [48:42]: cult
+Pablo [48:43]: uring operations
+Pablo [48:46]: and viewing changes
+Pablo [48:46]: of data over time
+Pablo [48:48]: in some cases
+Pablo [48:51]: it changes the value required changing the axis scales
+Pablo [48:54]: here we show sorting operation
+Pablo [48:55]: animating everything
+Pablo [48:56]: at once
+Pablo [48:57]: result that
+Pablo [48:58]: is including each other
+Pablo [49:03]: i slightly staggering the movement of each of the bars dynamics makes the sword easier to follow
+Pablo [49:10]: here a bar chart becomes a radial donut chart by drawing the wedges to take up the whole circle we form a pie chart
+Pablo [49:15]: we can also perform drill down operations
+Pablo [49:17]: breaking up the data frame to skin
+Pablo [49:25]: categories we can then unstack the bars to do the same data as a group bar chart of course we can always reverse the transitions to return to the view we started
+Pablo [49:30]: we might want to compare different variables in a scatter plot to look for correlations
+Pablo [49:36]: here we keep the y axis values the same as the bar chart use the x axis to show a new variable
+Pablo [49:40]: animations also helpful for showing transformations to the data
+Pablo [49:47]: here we show applying a base ten log transform tubule both data and axes smoothly animate to show the results
+Pablo [49:49]: before
+Pablo [49:50]: going into shape
+Pablo [49:54]: color size can be used to visualize additional data dimensions
+Pablo [49:57]: to evaluate the use of animation and data graphics
+Pablo [49:59]: ok what do you think
+Pablo [50:08]: so you can consider adding this animated transition to your application
+Pablo [50:13]: it help and it's interesting how you
+Pablo [50:15]: make the transition
+Pablo [50:17]: it's a design
+Pablo [50:26]: so here they done this for statistical graphics
+Pablo [50:29]: and then you might think of
+Pablo [50:30]: other
+Pablo [50:31]: places to use
+Pablo [50:32]: it
+Pablo [50:46]: by
+Pablo [50:47]: my group
+Pablo [50:51]: and it was done
+Pablo [50:57]: as a result of collaborating with researcher in software engineering
+Pablo [51:06]: the researcher we work with in software engineering
+Pablo [51:10]: at that time the interesting
+Pablo [51:56]: so
+Pablo [52:03]: at that time they were interesting in studying open source repository
+Pablo [52:10]: and especially because open source
+Pablo [52:12]: repository
+Pablo [52:17]: usually contributed by a lot of volunteers
+Pablo [52:21]: especially a popular one
+Pablo [52:27]: you did a lot of people contribute to it
+Pablo [52:34]: our collaborator they want to understand
+Pablo [52:37]: how those software developer
+Pablo [52:43]: communicate with one another or how they interact
+Pablo [52:44]: how
+Pablo [52:49]: that especially over the evolution of the software right they want to see
+Pablo [52:56]: not just who they want but then when they communicate so they have a way to communic
+Pablo [52:56]: ate
+Pablo [53:01]: and also
+Pablo [53:02]: look at
+Pablo [53:03]: what
+Pablo [53:04]: each actually did
+Pablo [53:08]: who
+Pablo [53:09]: actually work
+Pablo [53:10]: on the
+Pablo [53:11]: same
+Pablo [53:13]: world
+Pablo [53:14]: what and where
+Pablo [53:15]: and
+Pablo [53:16]: then suddenly sometimes
+Pablo [53:17]: several people
+Pablo [53:20]: the same module
+Pablo [53:25]: the same co easily
+Pablo [53:28]: give me
+Pablo [53:30]: some time period
+Pablo [53:34]: so anyway there's many different aspect they want to study
+Pablo [53:43]: we think the data is very
+Pablo [53:48]: repository right store a lot of data
+Pablo [53:52]: besides the source code
+Pablo [53:54]: definitely and then there's
+Pablo [53:57]: a lot of as i say the communication
+Pablo [53:59]: message
+Pablo [54:04]: communication between the developer then also
+Pablo [54:11]: there's like log of what user
+Pablo [54:14]: checking
+Pablo [54:15]: and
+Pablo [54:16]: then check out
+Pablo [54:20]: my
+Pablo [54:22]: and
+Pablo [54:23]: then we'll go ahead
+Pablo [54:24]: and then check it
+Pablo [54:24]: out
+Pablo [54:26]: there's
+Pablo [54:26]: a log right
+Pablo [54:30]: so much information very rich
+Pablo [54:34]: so we find an interesting problem
+Pablo [54:36]: we decided
+Pablo [54:37]: to work
+Pablo [54:38]: on the data
+Pablo [54:45]: we call
+Pablo [54:46]: score
+Pablo [54:49]: and
+Pablo [54:51]: basically
+Pablo [55:05]: develop some other view but then the first one is just
+Pablo [55:13]: like the use of animation to show the history of commit when they commit means
+Pablo [55:16]: the one developer
+Pablo [55:19]: i check out a file
+Pablo [55:21]: and then work on it and then
+Pablo [55:25]: finish and check back in that's like one company
+Pablo [55:27]: so
+Pablo [55:28]: we want
+Pablo [55:29]: to just be
+Pablo [55:30]: like the history of
+Pablo [55:36]: and then
+Pablo [55:37]: we need
+Pablo [55:40]: to desire in one space to visualize
+Pablo [55:43]: too
+Pablo [55:43]: bright
+Pablo [55:44]: actually
+Pablo [56:01]: this
+Pablo [56:01]: was happening
+Pablo [56:02]: at two thousand
+Pablo [56:03]: nine
+Pablo [56:05]: resolution was
+Pablo [56:06]: not very good
+Pablo [56:12]: so one very important
+Pablo [56:14]: design
+Pablo [56:15]: for this host
+Pablo [56:16]: one visualization
+Pablo [56:18]: is
+Pablo [56:19]: that we have to
+Pablo [56:21]: find
+Pablo [56:22]: the space
+Pablo [56:23]: to
+Pablo [56:23]: come
+Pablo [56:34]: xy proper
+Pablo [56:35]: ty
+Pablo [56:35]: over time
+Pablo [56:37]: how
+Pablo [56:38]: many
+Pablo [56:40]: show
+Pablo [56:42]: s
+Pablo [56:43]: we can animate
+Pablo [56:43]: it
+Pablo [56:45]: but
+Pablo [56:48]: then what does space should be
+Pablo [56:52]: so
+Pablo [56:53]: what we did
+Pablo [56:54]: about it
+Pablo [56:59]: right we basically have this each
+Pablo [57:01]: dot or this circle
+Pablo [57:02]: represent
+Pablo [57:03]: a developer
+Pablo [57:03]: cycle
+Pablo [57:05]: so
+Pablo [57:08]: we use color to represent the people working on the code
+Pablo [57:12]: and the people work on the documentation
+Pablo [57:21]: so there's really no coordinates or anything right
+Pablo [57:23]: there's no x axis y axis
+Pablo [57:30]: the location is really based on relatively what each is working on
+Pablo [57:32]: those workout
+Pablo [57:33]: s
+Pablo [57:34]: that was more
+Pablo [57:35]: of actually
+Pablo [57:36]: it's not develop
+Pablo [57:36]: ed
+Pablo [57:37]: and incorrect
+Pablo [57:39]: so
+Pablo [57:40]: the
+Pablo [57:42]: red means each dot
+Pablo [57:45]: in this case
+Pablo [57:46]: is a file
+Pablo [57:49]: it's a five day checkout
+Pablo [57:50]: to work on
+Pablo [57:52]: and
+Pablo [58:02]: then the red represent source code and the blue represent document and then so if one programmer check out multiple files those files
+Pablo [58:05]: will be surrounding
+Pablo [58:07]: this develop
+Pablo [58:11]: so that's why you see
+Pablo [58:16]: this developer working on all this about the same time
+Pablo [58:26]: and then you have another developer working on certain files but then there is some overlap they work on they check out
+Pablo [58:29]: right some related file
+Pablo [58:30]: or just same file
+Pablo [58:32]: but not maybe they didn't work on it
+Pablo [58:33]: exactly
+Pablo [58:37]: because this
+Pablo [58:40]: is animation eventually you will
+Pablo [58:41]: see
+Pablo [58:42]: some of
+Pablo [58:43]: the
+Pablo [58:53]: initial
+Pablo [58:59]: check
+Pablo [59:00]: out
+Pablo [59:01]: to work
+Pablo [59:02]: on
+Pablo [59:03]: so you will see
+Pablo [59:04]: that correspond
+Pablo [59:07]: ent
+Pablo [59:10]: let's say it's a particle
+Pablo [59:10]: right
+Pablo [59:14]: kind of move into this view
+Pablo [59:17]: and then just kind of
+Pablo [59:22]: floating in kind of flying into this space
+Pablo [59:34]: and then place handheld somewhere right randomly but then the other file with other particles coming related to the same developer
+Pablo [59:37]: they will kind of form
+Pablo [59:41]: this circle around this
+Pablo [59:45]: place
+Pablo [59:46]: to develop
+Pablo [59:47]: their name tight
+Pablo [59:47]: in the middle
+Pablo [59:51]: and then
+Pablo [59:52]: you also
+Pablo [59:55]: did is to have this histogram
+Pablo [59:59]: right over time here is time over time
+Pablo [1:00:02]: how
+Pablo [1:00:03]: much
+Pablo [1:00:04]: the source code is
+Pablo [1:00:04]: working
+Pablo [1:00:05]: on
+Pablo [1:00:06]: the
+Pablo [1:00:06]: patient
+Pablo [1:00:07]: was done
+Pablo [1:00:08]: so
+Pablo [1:00:09]: that's facing
+Pablo [1:00:10]: show that overnight
+Pablo [1:00:12]: so
+Pablo [1:00:15]: this is basically the space
+Pablo [1:00:17]: that we defined
+Pablo [1:00:19]: any question about this
+Pablo [1:00:23]: any question
+Pablo [1:00:24]: so let's see
+Pablo [1:00:32]: so there are three the first two
+Pablo [1:00:37]: were actually open source repository
+Pablo [1:00:42]: data the first one is python
+Pablo [1:00:49]: in python is special because i found was introduced by
+Pablo [1:00:50]: somebody
+Pablo [1:00:56]: and then
+Pablo [1:00:57]: people
+Pablo [1:00:58]: shoot
+Pablo [1:01:01]: me
+Pablo [1:01:02]: on really
+Pablo [1:01:04]: and
+Pablo [1:01:05]: it was not
+Pablo [1:01:06]: really
+Pablo [1:01:07]: sponsored by
+Pablo [1:01:07]: any
+Pablo [1:01:08]: company
+Pablo [1:01:10]: but then
+Pablo [1:01:11]: the next one
+Pablo [1:01:15]: eclipse
+Pablo [1:01:16]: is a major
+Pablo [1:01:19]: development project
+Pablo [1:01:22]: funded by id
+Pablo [1:01:23]: f
+Pablo [1:01:24]: so you will see
+Pablo [1:01:25]: there's a
+Pablo [1:01:26]: difference
+Pablo [1:01:30]: how
+Pablo [1:01:32]: each was started
+Pablo [1:01:36]: and then the third one
+Pablo [1:01:38]: was sometimes
+Pablo [1:01:39]: somebody else
+Pablo [1:01:41]: because
+Pablo [1:01:42]: we
+Pablo [1:01:43]: make
+Pablo [1:01:44]: those
+Pablo [1:01:45]: born all this
+Pablo [1:01:45]: source
+Pablo [1:01:47]: and then
+Pablo [1:01:48]: we
+Pablo [1:01:49]: show
+Pablo [1:01:50]: what
+Pablo [1:01:51]: we
+Pablo [1:01:52]: do
+Pablo [1:01:54]: for visualizing
+Pablo [1:01:56]: immediately
+Pablo [1:01:58]: after
+Pablo [1:01:59]: a few
+Pablo [1:02:09]: months we found like more than hundred video made using housewar so a lot of companies actually
+Pablo [1:02:12]: use codes one to visualize
+Pablo [1:02:14]: certain activities
+Pablo [1:02:15]: like development
+Pablo [1:02:20]: and then also basically any time variant right
+Pablo [1:02:23]: activity events you can use
+Pablo [1:02:28]: so maybe today if you search goes wrong
+Pablo [1:02:32]: you should still be able to maybe find a few
+Pablo [1:02:36]: but at the one time there's like more than one hundred video
+Pablo [1:02:39]: so there's this one it's the third one
+Pablo [1:02:42]: was made by a game company
+Pablo [1:02:48]: a game company they basically use close war
+Pablo [1:02:50]: to visualize
+Pablo [1:02:51]: the whole course
+Pablo [1:02:55]: of game development project
+Pablo [1:03:03]: over a certain period of time you can see there's somewhat different interesting
+Pablo [1:03:14]: story of title
+Pablo [1:03:15]: and
+Pablo [1:03:16]: working alone
+Pablo [1:03:22]: and
+Pablo [1:03:35]: stat
+Pablo [1:03:36]: us
+Pablo [1:03:44]: activity stands out because his fear of influence periodically converts his liberties like ritos
+Pablo [1:03:49]: another person
+Pablo [1:03:52]: appears and commits most of the
+Pablo [1:04:00]: rain
+Pablo [1:04:05]: team
+Pablo [1:04:06]: s
+Pablo [1:04:09]: in the
+Pablo [1:04:12]: year two thousand a
+Pablo [1:04:13]: soft
+Pablo [1:04:14]: this is
+Pablo [1:04:15]: nvidia
+Pablo [1:04:16]: as the project
+Pablo [1:04:17]: dramatically
+Pablo [1:04:20]: and for the rest of the video
+Pablo [1:04:22]: the project stays busy
+Pablo [1:04:28]: the eclipse project is vastly different than python
+Pablo [1:04:29]: right away
+Pablo [1:04:31]: there is a flurry of activity
+Pablo [1:04:33]: many developers
+Pablo [1:04:35]: on many files have nearly
+Pablo [1:04:36]: constant pace
+Pablo [1:04:40]: this is possible because these people
+Pablo [1:04:41]: already working
+Pablo [1:04:41]: on the same project
+Pablo [1:04:42]: grateful
+Pablo [1:04:43]: sources
+Pablo [1:04:53]: there are
+Pablo [1:04:54]: many followers
+Pablo [1:04:55]: concerned about this
+Pablo [1:04:57]: act if they each have their own set of files
+Pablo [1:05:02]: in other words there's not one large set of files being accompanied by
+Pablo [1:05:03]: everybody
+Pablo [1:05:06]: but many small sets of files by individuals
+Pablo [1:05:10]: this can be attributed to poster first client platform
+Pablo [1:05:13]: which facilitates on your design
+Pablo [1:05:21]: it continuously all those shift small particles very well
+Pablo [1:05:27]: weekends are periodic gaps histogram every seven days
+Pablo [1:05:31]: the holidays we see at the end of december throughout the video
+Pablo [1:05:37]: that eclipses develop corporate sponsorship
+Pablo [1:05:50]: this final video is not produced by us
+Pablo [1:05:52]: but was made after the open source
+Pablo [1:06:02]: alex evans co founder of media molecule created this using data source control repository
+Pablo [1:06:04]: it is
+Pablo [1:06:07]: not
+Pablo [1:06:08]: working
+Pablo [1:06:11]: at the beginning
+Pablo [1:06:11]: there were only
+Pablo [1:06:12]: headphones develop
+Pablo [1:06:16]: ers mostly working on multiple source cod
+Pablo [1:06:16]: e
+Pablo [1:06:20]: about a year and a half
+Pablo [1:06:24]: the art resources like textures planets and loads
+Pablo [1:06:26]: important
+Pablo [1:06:32]: there are
+Pablo [1:06:33]: different
+Pablo [1:06:34]: things
+Pablo [1:06:35]: also here
+Pablo [1:06:39]: notice that the resources tend to be
+Pablo [1:07:07]: what
+Pablo [1:07:07]: do you think
+Pablo [1:07:27]: we do
+Pablo [1:07:28]: it later
+Pablo [1:07:33]: it suddenly has limitation right
+Pablo [1:07:41]: it
+Pablo [1:07:42]: just provides
+Pablo [1:07:43]: you
+Pablo [1:07:44]: didn't mention
+Pablo [1:07:45]: that we can use
+Pablo [1:07:46]: this compilation
+Pablo [1:07:47]: which
+Pablo [1:07:48]: is storyline
+Pablo [1:07:49]: visualization
+Pablo [1:07:50]: in fact
+Pablo [1:07:54]: when we first work on a story language like nature
+Pablo [1:08:02]: at that time the driving application is this we want to see over time
+Pablo [1:08:04]: the developer have their interaction right
+Pablo [1:08:08]: and we can use storyline
+Pablo [1:08:10]: each code represent
+Pablo [1:08:11]: s
+Pablo [1:08:14]: and what they work
+Pablo [1:08:14]: on
+Pablo [1:08:16]: and then who work
+Pablo [1:08:18]: who work together
+Pablo [1:08:20]: on the similar file
+Pablo [1:08:20]: or something
+Pablo [1:08:26]: so they kind of complement each other
+Pablo [1:08:31]: so next
+Pablo [1:08:32]: we have seen
+Pablo [1:08:32]: this
+Pablo [1:08:35]: but here we use animation
+Pablo [1:08:37]: now to convey
+Pablo [1:08:39]: time
+Pablo [1:08:40]: here
+Pablo [1:08:43]: to show
+Pablo [1:08:45]: just
+Pablo [1:08:46]: like we just call it
+Pablo [1:08:46]: right
+Pablo [1:08:51]: we
+Pablo [1:08:52]: shall see if you remember
+Pablo [1:08:54]: so
+Pablo [1:08:55]: this is kind of different
+Pablo [1:08:59]: i just want to bring this back to just remind you
+Pablo [1:09:01]: right we use animation
+Pablo [1:09:06]: animation to show many different
+Pablo [1:09:11]: things right like we say show transition
+Pablo [1:09:15]: just as a way to visually
+Pablo [1:09:21]: hold one attribute in this case it's v then you
+Pablo [1:09:24]: visualization to show
+Pablo [1:09:25]: evolution
+Pablo [1:09:27]: pattern
+Pablo [1:09:35]: but animation has limitation
+Pablo [1:09:44]: i already stated here because
+Pablo [1:09:48]: people like to watch animation but then just think about
+Pablo [1:09:51]: especially for some important
+Pablo [1:09:51]: ads
+Pablo [1:09:53]: and data
+Pablo [1:09:55]: comprehension
+Pablo [1:09:57]: data
+Pablo [1:09:59]: for interpretation
+Pablo [1:10:05]: if you have especially long video animation
+Pablo [1:10:12]: after you watch half wave
+Pablo [1:10:15]: the beginning you might not remember
+Pablo [1:10:16]: anymore
+Pablo [1:10:18]: sometimes
+Pablo [1:10:19]: you try to
+Pablo [1:10:20]: say this
+Pablo [1:10:23]: and try to think of what do you have seen previously
+Pablo [1:10:26]: you don't necessarily remember everything
+Pablo [1:10:29]: all the important
+Pablo [1:10:33]: so the only way is you cannot play back and forth right
+Pablo [1:10:36]: i mean today you can do that right
+Pablo [1:10:41]: play back and forth and try to take also something
+Pablo [1:10:47]: but then the static visualization like storyline right
+Pablo [1:10:48]: everything
+Pablo [1:10:49]: in front of you
+Pablo [1:10:54]: and you can see what happened
+Pablo [1:10:56]: but then i certainly
+Pablo [1:11:01]: visualization like storyline visualization has its limitation
+Pablo [1:11:09]: also
+Pablo [1:11:10]: there is a study
+Pablo [1:11:12]: about using animation
+Pablo [1:11:14]: they found that
+Pablo [1:11:19]: interactive visualization
+Pablo [1:11:23]: in most cases is better than
+Pablo [1:11:24]: just
+Pablo [1:11:27]: using animation
+Pablo [1:11:28]: just like
+Pablo [1:11:34]: you give just let the user watch
+Pablo [1:11:35]: a video
+Pablo [1:11:39]: and then just the media basically
+Pablo [1:11:43]: present certain aspect of the data
+Pablo [1:11:50]: versus you give the user interactive visualization
+Pablo [1:11:51]: application
+Pablo [1:11:52]: allow the user to
+Pablo [1:11:53]: kind of
+Pablo [1:12:05]: play with right different visual encoding or trying to kind of go back and forth different views and try to move the viewpoint
+Pablo [1:12:10]: or i tried to switch between different attributes
+Pablo [1:12:13]: so
+Pablo [1:12:15]: that athlete was effective
+Pablo [1:12:18]: watching
+Pablo [1:12:19]: video
+Pablo [1:12:29]: so
+Pablo [1:12:30]: yes
+Pablo [1:12:36]: i understand
+Pablo [1:12:38]: how to effectively
+Pablo [1:12:39]: use animation
+Pablo [1:12:42]: depends on the purpose
+Pablo [1:12:45]: so you want to also take into account
+Pablo [1:12:55]: i think we still have some time so let's see the other way to look at
+Pablo [1:12:59]: hand defender activities
+Pablo [1:13:06]: and this is what our company called small multiple
+Pablo [1:13:11]: actually this is something we have seen a lot
+Pablo [1:13:15]: today especially on painted paper in textbook
+Pablo [1:13:18]: so small
+Pablo [1:13:19]: particle basically
+Pablo [1:13:21]: is
+Pablo [1:13:22]: a way to
+Pablo [1:13:23]: highlight
+Pablo [1:13:30]: import
+Pablo [1:13:30]: ance
+Pablo [1:13:31]: activity
+Pablo [1:13:34]: over some period of time
+Pablo [1:13:41]: by using this sequence of picture
+Pablo [1:13:43]: all
+Pablo [1:13:44]: the time
+Pablo [1:13:45]: they
+Pablo [1:13:50]: 're not very large because you need to fit one
+Pablo [1:13:51]: screen on
+Pablo [1:13:52]: what
+Pablo [1:13:58]: they tend to be
+Pablo [1:13:58]: small
+Pablo [1:14:05]: and they put them side by side which really facilitates comparison
+Pablo [1:14:16]: so
+Pablo [1:14:17]: you can look at
+Pablo [1:14:18]: the
+Pablo [1:14:19]: book
+Pablo [1:14:19]: again
+Pablo [1:14:22]: for
+Pablo [1:14:23]: some
+Pablo [1:14:25]: good examples but here we're going to show you
+Pablo [1:14:33]: so
+Pablo [1:14:34]: if we look at
+Pablo [1:14:35]: typical
+Pablo [1:14:39]: hungarian data set like this
+Pablo [1:14:40]: from
+Pablo [1:14:42]: simulation of earthquake
+Pablo [1:14:44]: in los angeles
+Pablo [1:14:50]: scientists will naturally just make animation and watch it
+Pablo [1:14:54]: again right just look at it
+Pablo [1:14:56]: and see how much you can remember
+Pablo [1:15:05]: so another way is just
+Pablo [1:15:07]: samples
+Pablo [1:15:10]: of time point and then
+Pablo [1:15:13]: snapshot
+Pablo [1:15:20]: time form and then put this side by side then scientists can kind of
+Pablo [1:15:24]: go over them right see the evolution right
+Pablo [1:15:26]: see the power
+Pablo [1:15:31]: and
+Pablo [1:15:35]: then see from here to here taking and i'll compare observe
+Pablo [1:15:38]: there is a
+Pablo [1:15:39]: need switch to
+Pablo [1:15:40]: what they are
+Pablo [1:15:45]: later handstand right if you create the interface allow them
+Pablo [1:15:50]: to kind of choose different types but then still in this space
+Pablo [1:15:58]: here's another one
+Pablo [1:16:05]: again los angeles air pollution over a day so each feature
+Pablo [1:16:07]: one hour
+Pablo [1:16:11]: so you can definitely tell this is
+Pablo [1:16:12]: like people
+Pablo [1:16:15]: like khalid right and then this is
+Pablo [1:16:23]: closer to the this is maybe during the night
+Pablo [1:16:24]: oh wait i think
+Pablo [1:16:25]: it's this way
+Pablo [1:16:31]: this is a mark
+Pablo [1:16:35]: and you can tell this is already middle of the night
+Pablo [1:16:38]: and then early morning and become easier
+Pablo [1:16:40]: and then
+Pablo [1:16:45]: you go went home and
+Pablo [1:16:47]: then the traff
+Pablo [1:16:47]: ic
+Pablo [1:16:48]: jump
+Pablo [1:16:48]: in
+Pablo [1:16:51]: another topic this is air pollution
+Pablo [1:16:53]: air pollution
+Pablo [1:16:53]: become better
+Pablo [1:16:59]: so this is another
+Pablo [1:17:01]: new way to use
+Pablo [1:17:05]: think about animation yeah of course
+Pablo [1:17:06]: you can do
+Pablo [1:17:07]: that for
+Pablo [1:17:07]: them
+Pablo [1:17:11]: using small multiple effect
+Pablo [1:17:17]: s
+Pablo [1:17:31]: we
+Pablo [1:17:32]: have
+Pablo [1:17:35]: this
+Pablo [1:17:37]: distrib
+Pablo [1:17:38]: ution for each
+Pablo [1:17:39]: lang
+Pablo [1:17:40]: uage
+Pablo [1:17:41]: used
+Pablo [1:17:42]: in
+Pablo [1:17:43]: areas
+Pablo [1:17:47]: so again
+Pablo [1:17:56]: when you put it side by side it's really good for comparison and then you will see certain language like there's overlap right
+Pablo [1:18:02]: this region that you have both language but then some language dominate right
+Pablo [1:18:04]: you
+Pablo [1:18:07]: can
+Pablo [1:18:08]: see
+Pablo [1:18:09]: i have this
+Pablo [1:18:14]: mad also a little
+Pablo [1:18:15]: bit here
+Pablo [1:18:32]: what
+Pablo [1:18:33]: a space defined

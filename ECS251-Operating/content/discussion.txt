@@ -15,3 +15,14 @@ Changed: Hardware assumptions (no longer PDP-11 specific), performance concerns 
 4) do we like simple, uniform APIs? are ther einstances where more specialized APIs are desirable?
 
 Generally yes - they're easier to learn, compose, and reason about. But specialized APIs are desirable when: performance is critical (GPU/networking), the abstraction doesn't fit (databases, GUIs), or domain-specific operations are needed (ioctl exists for this reason).
+
+
+
+1-9-26/
+1) is user-level management of resources and abstractions a good idea?
+
+2) with exokernal, are we expecting application developers to also be OS developers? is this desirable?
+
+3) is downloading code into the kernal a good idea or a wild/bad idea?
+
+4) exokernel performed much better than unix-like OS. WHy has there been so little commerical adoption of exokernel?

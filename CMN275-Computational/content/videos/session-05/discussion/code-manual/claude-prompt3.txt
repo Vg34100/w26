@@ -1,0 +1,1536 @@
+# Codebook Manual: Measuring Text Groundedness via the Touch Grass Ratio
+
+**Version:** 1.0
+**Created:** January 16, 2026
+**Author:** Expert Methodologist (LLM)
+
+---
+
+## SECTION 1: PURPOSE AND SCOPE
+
+### 1.1 Research Domain
+
+This codebook operationalizes the measurement of linguistic groundedness in text, based on the "Touch Grass Ratio" (TGR) framework. The TGR quantifies the degree to which language anchors itself in sensorimotor reality versus abstract, detached, or self-referential systems. The framework synthesizes psycholinguistic norms (concreteness ratings, sensorimotor strength), cognitive semantic theories (Dual Coding Theory, Context Availability Model), and computational metrics (lexical density, nominalization ratios) to assess whether text maintains referential integrity with the physical world or drifts into hyperreal abstraction.
+
+### 1.2 Coding Purpose
+
+This coding scheme measures the groundedness of text units across multiple dimensions: word-level concreteness, sensorimotor modality engagement, specificity on the abstraction ladder, and structural transparency. The intended use of coded data includes:
+
+- Identifying texts that have lost connection to tangible existence
+- Comparing communication effectiveness across domains (academic, corporate, instructional, political)
+- Evaluating the cognitive accessibility and memorability of content
+- Detecting linguistic patterns associated with digital detachment or "hyperreality"
+- Supporting content analysis research in computational social science
+
+### 1.3 Scope Boundaries
+
+**In-scope:** This codebook applies to any English-language text unit that can be segmented into paragraphs, including but not limited to academic abstracts, social media posts, instructional manuals, corporate communications, political rhetoric, field guides, and AI-generated content.
+
+**Out-of-scope:** Non-English text, purely numerical data, standalone images without captions, audio transcriptions requiring prosodic analysis, and texts shorter than one complete sentence are excluded from coding.
+
+**Content Type Declaration:** This codebook targets **MIXED** content. Some variables measure MANIFEST properties (explicit word choice, syntactic structures), while others require LATENT interpretation (semantic density, intended sensory evocation). Each variable specifies its manifest/latent status in Section 4.
+
+### 1.4 Coding Paradigm
+
+☑ **Single-label**: Each paragraph receives exactly one numeric score per variable (0-5 ordinal scale). Variables are mutually exclusive within their measurement dimension. For example, a paragraph receives one WORD_CONCRETENESS score, one NOMINALIZATION_DENSITY score, etc.
+
+---
+
+## SECTION 2: UNITS OF ANALYSIS AND CONTEXT
+
+### 2.1 Unit Definitions
+
+| Unit Type | Definition |
+|-----------|------------|
+| **Unit of Analysis** | FULL PARAGRAPHS (defined as text segments separated by line breaks or containing 1+ complete sentences) |
+| **Coding Unit** | The discrete text segment to which codes are applied (default: FULL PARAGRAPHS) |
+| **Context Unit** | The full paragraph plus immediately preceding and subsequent paragraphs (maximum 3-paragraph window for contextual disambiguation) |
+
+### 2.2 Segmentation Rules
+
+**How to divide text into coding units:**
+
+1. Identify paragraph breaks (double line breaks, `\n\n`, or equivalent formatting markers)
+2. Each paragraph constitutes one coding unit
+3. If a document contains no paragraph breaks, treat the entire document as a single unit (up to 500 words; beyond this, artificially segment at natural sentence boundaries every ~250 words)
+
+**Special cases:**
+
+- **Multi-sentence units within a paragraph:** Code the entire paragraph as one unit; do not subdivide further
+- **Incomplete or fragmented text:** If a paragraph contains only a sentence fragment (subject or verb missing), code it if it exceeds 5 words; otherwise assign NA with reason code "FRAGMENT_TOO_SHORT"
+- **Very short text (single words, emoji-only):** Assign NA with reason code "INSUFFICIENT_LENGTH"
+- **Empty or null content:** Assign NA with reason code "NULL_CONTENT"
+
+### 2.3 Special Content Handling
+
+**Quoted/reported speech:** Code both the quote and the framing together as part of the paragraph's overall groundedness. The presence of concrete quoted speech increases groundedness even if the framing is abstract.
+
+**Retweets/reposts/shares:** Code the full text as it appears, including both original content and any added commentary.
+
+**Hyperlinks and URLs:** Ignore the URL itself (treat as metadata), but code any anchor text or surrounding descriptive language normally.
+
+**Hashtags:** Treat as content words if they add semantic meaning (e.g., #TouchGrass = "touch grass"); ignore if purely metadata (e.g., #ad).
+
+**Emojis and emoticons:** Include in sensorimotor coding if they represent concrete objects (🌳 = tree) or actions (👋 = waving); ignore if abstract (❤️ treated as abstract "love").
+
+**Non-textual elements:** Note their presence in metadata but do not code them directly. A paragraph stating "see Figure 3" is coded based on the text alone.
+
+**Metadata:** Timestamps, usernames, platform indicators are ignored for coding purposes.
+
+### 2.4 Context Window Specification
+
+**Allowed context:**
+- Primary: All sentences within the target paragraph
+- Secondary: Immediately preceding and subsequent paragraphs (up to 3-paragraph window total)
+- Tertiary: Document title and section headers, if available
+
+**Token/word limit for context consideration:**
+- Maximum 750 words of contextual material (approximately 1000 tokens for LLM implementation)
+- If context exceeds this limit, prioritize the target paragraph (300 words) + immediately adjacent sentences (225 words before, 225 words after)
+
+**How missing context affects coding:**
+- If the paragraph is the first or last in a document (no preceding/subsequent context available), code based on available content only
+- If context is necessary to resolve ambiguity (e.g., a pronoun referent) and is unavailable, assign NA with reason code "CONTEXT_INSUFFICIENT"
+
+---
+
+## SECTION 3: VARIABLE OVERVIEW TABLE
+
+| Var_ID | Variable Name | Construct | Type | Range | 0 = | 5 = | NA Conditions | Hierarchy Level |
+|--------|---------------|-----------|------|-------|-----|-----|---------------|-----------------|
+| V01 | WORD_CONCRETENESS | Mean lexical concreteness of content words | Ordinal | 0-5 | Entirely abstract/theoretical terms | Entirely concrete/perceptible objects | Insufficient word count (<5 words) | 1 (main) |
+| V02 | SENSORIMOTOR_STRENGTH | Maximum perceptual/action strength across 11 Lancaster dimensions | Ordinal | 0-5 | No sensory or action evocation | Strong multi-modal sensory evocation | Unable to determine modality | 1 (main) |
+| V03 | ABSTRACTION_LADDER | Specificity level of referents | Ordinal | 0-5 | Highest abstraction (general categories) | Lowest abstraction (specific instances) | Referents cannot be classified | 1 (main) |
+| V04 | NOMINALIZATION_DENSITY | Proportion of process-hiding nominalizations | Ordinal | 0-5 | No nominalizations; all verbs/adjectives active | Pervasive nominalization; few verbs | Cannot parse syntax | 1 (main) |
+| V05 | JARGON_DENSITY | Concentration of domain-specific/technical vocabulary | Ordinal | 0-5 | Plain language accessible to general audience | Dense technical jargon; insular terminology | Cannot assess domain-specificity | 1 (main) |
+| V06 | STRUCTURAL_TRANSPARENCY | Clarity of agent-action-object relations | Ordinal | 0-5 | Obscured agency; passive constructions; unclear subjects | Crystal clear who/what does what to whom | Grammatically malformed text | 1 (main) |
+
+**Column Definitions:**
+- **Var_ID:** Unique variable identifier
+- **Variable Name:** UPPERCASE_SNAKE_CASE label
+- **Construct:** The theoretical dimension being measured
+- **Type:** All variables are Ordinal (0-5 integer scale)
+- **Range:** 0 (minimum groundedness) to 5 (maximum groundedness)
+- **0 =:** Meaning of the lowest score
+- **5 =:** Meaning of the highest score
+- **NA Conditions:** Circumstances under which "Not Applicable" is assigned
+- **Hierarchy Level:** All variables are Level 1 (main codes); no sub-codes in this framework
+
+---
+
+## SECTION 4: DETAILED CODE DEFINITIONS
+
+### 4.1 VARIABLE: WORD_CONCRETENESS
+
+**Var_ID:** V01
+
+#### A. Conceptual Definition
+
+WORD_CONCRETENESS measures the mean concreteness of content words (nouns, verbs, adjectives, adverbs) in the paragraph. Concreteness is defined as the degree to which a word's referent can be experienced through the senses (seen, heard, touched, smelled, or tasted). High concreteness indicates the text describes tangible, perceptible entities and actions, while low concreteness indicates the text operates in the realm of ideas, theories, relationships, or mental states.
+
+This variable is grounded in the Brysbaert et al. (2014) concreteness norms for 40,000 English lemmas, which provide empirically-derived ratings based on human judgment of how "concrete" or "abstract" each word is perceived to be.
+
+#### B. Operational Definition
+
+Observable indicators:
+1. Count the number of content words (nouns, verbs, adjectives, adverbs) in the paragraph
+2. For each content word, reference its Brysbaert concreteness rating (scale 1.0 = most abstract, 5.0 = most concrete)
+3. Calculate the arithmetic mean of these ratings
+4. Map the mean to the 0-5 ordinal scale:
+   - Mean 1.0-1.8 → Score 0
+   - Mean 1.8-2.6 → Score 1
+   - Mean 2.6-3.4 → Score 2
+   - Mean 3.4-4.2 → Score 3
+   - Mean 4.2-4.6 → Score 4
+   - Mean 4.6-5.0 → Score 5
+
+#### C. Manifest vs. Latent
+
+☑ **Manifest**: Coding is based on explicit lexical choices. The concreteness ratings are pre-computed psycholinguistic norms; the coder applies them mechanically without subjective interpretation.
+
+#### D. Measurement
+
+- **Type:** Ordinal
+- **Numeric Mapping:**
+  - **0 = Entirely abstract** (mean concreteness 1.0-1.8): Words like "theory," "concept," "relationship," "identity," "process"
+  - **1 = Highly abstract** (mean concreteness 1.8-2.6): Words like "strategy," "method," "analysis," "framework," "approach"
+  - **2 = Moderately abstract** (mean concreteness 2.6-3.4): Mixed abstract and concrete terms; words like "decision," "plan," "team," "problem"
+  - **3 = Moderately concrete** (mean concreteness 3.4-4.2): Words like "person," "building," "computer," "food," "voice"
+  - **4 = Highly concrete** (mean concreteness 4.2-4.6): Words like "tree," "hammer," "water," "dog," "red"
+  - **5 = Entirely concrete** (mean concreteness 4.6-5.0): Words like "grass," "rock," "hand," "sunlight," "flower"
+- **NA Value:** Assign NA if fewer than 5 content words are present, or if >50% of content words lack Brysbaert ratings
+
+#### E. Inclusion Criteria
+
+Apply this code when:
+- The paragraph contains at least 5 content words
+- At least 50% of content words have available concreteness ratings
+- The text is in English and uses standard vocabulary
+
+#### F. Exclusion Criteria
+
+Do NOT apply this code when:
+- Paragraph is fewer than 5 words → Instead assign: NA with reason "INSUFFICIENT_LENGTH"
+- Text is primarily non-English → Instead assign: NA with reason "NON_ENGLISH"
+- Text is a numbered list with no complete sentences → Instead assign: NA with reason "LIST_FORMAT"
+
+#### G. Textual Indicators
+
+**High concreteness (scores 4-5):**
+- Keywords: physical objects (tree, rock, water, hand, door, car, food, animal names)
+- Sensory verbs (see, hear, touch, smell, taste, grab, walk, run)
+- Color words, size descriptors, shape terms
+- Place names, body parts, tools, natural elements
+
+**Low concreteness (scores 0-1):**
+- Keywords: abstract nouns (theory, concept, identity, power, relationship, strategy, method, ideology)
+- Mental state verbs (think, believe, understand, imagine, conceptualize)
+- Adjectives describing qualities (important, effective, significant, relevant, theoretical)
+- Academic or philosophical terminology
+
+#### H. Co-Occurrence Rules
+
+- **Can co-occur with:** All other variables (V02-V06)
+- **Mutually exclusive with:** None (WORD_CONCRETENESS is independent)
+- **Hierarchical relationship:** None
+- **Priority rule:** None (no conflicts possible)
+
+#### I. Examples — APPLY This Code
+
+**Example 1 (Score = 5):**
+"The dog ran through the tall grass, jumped over the wooden fence, and splashed into the cold creek water."
+
+- **Assigned value:** 5
+- **Rationale:** Every content word is highly concrete: dog (4.93), ran (4.79), grass (4.97), jumped (4.76), fence (4.90), splashed (4.86), creek (4.72), water (4.92). Mean ≈ 4.86 → Score 5.
+
+**Example 2 (Score = 3):**
+"The team met to discuss the quarterly budget and make decisions about resource allocation."
+
+- **Assigned value:** 3
+- **Rationale:** Mixed concrete and abstract words: team (3.57), met (4.03), discuss (2.17), budget (3.69), decisions (2.10), resource (2.59), allocation (1.93). Mean ≈ 2.87 → Score 2 (borderline 3).
+
+**Example 3 (Score = 0):**
+"The conceptual framework operationalizes the theoretical relationship between identity construction and power dynamics."
+
+- **Assigned value:** 0
+- **Rationale:** All words are highly abstract: conceptual (1.31), framework (2.21), operationalizes (1.52), theoretical (1.28), relationship (2.07), identity (1.62), construction (2.66), power (1.97), dynamics (1.76). Mean ≈ 1.71 → Score 0.
+
+#### J. Examples — DO NOT Apply This Code
+
+**Non-Example 1:**
+"Fig. 3."
+
+- **Why not this code:** Only 2 words; below the 5-word minimum threshold
+- **Correct code instead:** NA with reason "INSUFFICIENT_LENGTH"
+
+**Non-Example 2:**
+"Hola, ¿cómo estás?"
+
+- **Why not this code:** Non-English text
+- **Correct code instead:** NA with reason "NON_ENGLISH"
+
+#### K. Borderline Cases
+
+**Borderline 1:**
+"The implementation of the new system increased efficiency and reduced overhead costs."
+
+- **Challenge:** Words like "implementation" (2.31), "system" (2.64), "efficiency" (2.03), "overhead" (3.21), "costs" (2.79) hover around the 2.6-3.4 range
+- **Resolution:** Calculate exact mean: (2.31+2.64+4.24+2.03+2.86+3.21+2.79)/7 = 2.87 → Score 2
+- **Assigned value:** 2
+
+**Borderline 2:**
+"She felt the smooth texture of the marble countertop under her fingertips."
+
+- **Challenge:** "Felt" can be both physical (touching) and emotional (experiencing); "texture" is moderately abstract
+- **Resolution:** In context, "felt" is clearly tactile (accompanied by "under her fingertips"); felt (tactile) ≈ 4.5, smooth (4.07), texture (3.52), marble (4.86), countertop (4.93), fingertips (4.97). Mean ≈ 4.48 → Score 4
+- **Assigned value:** 4
+
+---
+
+### 4.2 VARIABLE: SENSORIMOTOR_STRENGTH
+
+**Var_ID:** V02
+
+#### A. Conceptual Definition
+
+SENSORIMOTOR_STRENGTH measures the maximum perceptual or action strength across the 11 dimensions of the Lancaster Sensorimotor Norms: visual, auditory, haptic (touch), olfactory (smell), gustatory (taste), interoceptive (internal bodily sensations), and five action dimensions (hand/arm, foot/leg, head, mouth/throat, torso). This variable captures whether the text evokes a "rich palette" of sensory or motor experiences. High sensorimotor strength indicates the text describes experiences grounded in how humans physically interact with the world.
+
+#### B. Operational Definition
+
+Observable indicators:
+1. Identify all content words in the paragraph
+2. For each word, reference its Lancaster Sensorimotor Norms ratings (0.0 = no engagement, 5.0 = maximum engagement) across all 11 dimensions
+3. For each word, take the MAXIMUM rating across all dimensions (this identifies the word's strongest modality)
+4. Calculate the mean of these maximum ratings across all content words
+5. Map the mean to the 0-5 ordinal scale (same mapping as V01)
+
+**Example:** "The sticky honey dripped from the spoon."
+- "Sticky": max modality = haptic (4.8)
+- "Honey": max modality = gustatory (4.5)
+- "Dripped": max modality = visual (4.2)
+- "Spoon": max modality = hand/arm action (4.7)
+- Mean of maxima = (4.8+4.5+4.2+4.7)/4 = 4.55 → Score 5
+
+#### C. Manifest vs. Latent
+
+☑ **Latent**: While the words themselves are manifest, the coder must infer which sensory/action modality is most strongly evoked in the context of the paragraph. For instance, "rose" could evoke visual (seeing petals), olfactory (smelling fragrance), or haptic (touching thorns); the coder uses contextual clues to determine primacy.
+
+#### D. Measurement
+
+- **Type:** Ordinal
+- **Numeric Mapping:**
+  - **0 = No sensory evocation** (mean max 0.0-1.0): Words with minimal sensorimotor grounding (e.g., "concept," "theory," "system")
+  - **1 = Weak sensory evocation** (mean max 1.0-2.0): Slight sensory engagement (e.g., "sound" without specifics, "movement" generically)
+  - **2 = Moderate sensory evocation** (mean max 2.0-3.0): Some sensory detail but not dominant (e.g., "bright," "loud," "soft")
+  - **3 = Moderately strong sensory evocation** (mean max 3.0-4.0): Clear sensory or action engagement (e.g., "grasp," "crunchy," "blue")
+  - **4 = Strong sensory evocation** (mean max 4.0-4.5): Vivid multi-modal engagement (e.g., "splash," "sticky," "fragrant")
+  - **5 = Very strong sensory evocation** (mean max 4.5-5.0): Intense, specific sensory or action detail (e.g., "velvety," "sizzling," "punch")
+- **NA Value:** Assign NA if sensorimotor norms are unavailable for >50% of content words
+
+#### E. Inclusion Criteria
+
+Apply this code when:
+- The paragraph contains at least 5 content words
+- At least 50% of content words have Lancaster Sensorimotor Norms available
+- The text describes experiences, objects, or actions that could engage sensory/motor systems
+
+#### F. Exclusion Criteria
+
+Do NOT apply this code when:
+- Paragraph contains only abstract terms with no sensory referents → Instead assign: 0 (not NA; absence of sensorimotor strength is a valid measurement)
+- Text is primarily mathematical notation or code → Instead assign: NA with reason "NON_LINGUISTIC"
+
+#### G. Textual Indicators
+
+**High sensorimotor strength (scores 4-5):**
+- Sensory adjectives: velvety, pungent, sizzling, shimmering, bitter, rough, piercing
+- Action verbs: grasp, sprint, chew, whisper, shove, leap, crush
+- Specific sensory nouns: thunder, cinnamon, velvet, emerald, ocean
+- Multi-sensory descriptions: "the crunchy apple," "the roaring campfire," "the smooth silk"
+
+**Low sensorimotor strength (scores 0-1):**
+- Abstract nouns with minimal sensory properties: concept, theory, strategy, identity
+- Mental verbs: think, believe, understand, conceptualize
+- Non-sensory adjectives: important, relevant, effective, theoretical
+
+#### H. Co-Occurrence Rules
+
+- **Can co-occur with:** All other variables (V01, V03-V06)
+- **Mutually exclusive with:** None
+- **Hierarchical relationship:** None
+- **Priority rule:** None
+
+#### I. Examples — APPLY This Code
+
+**Example 1 (Score = 5):**
+"The rough bark scraped against her palm as she climbed the towering oak, feeling each gnarled branch under her fingertips."
+
+- **Assigned value:** 5
+- **Rationale:** Highly tactile language (rough, scraped, palm, feeling, gnarled, fingertips), plus visual (towering, oak) and action (climbed). Mean max modality ≈ 4.6 → Score 5.
+
+**Example 2 (Score = 3):**
+"He walked into the bright room and noticed the smell of coffee."
+
+- **Assigned value:** 3
+- **Rationale:** Moderate sensory engagement: walked (action, 3.8), bright (visual, 3.5), smell (olfactory, 4.2), coffee (gustatory/olfactory, 4.0). Mean max ≈ 3.88 → Score 3.
+
+**Example 3 (Score = 0):**
+"The epistemological framework necessitates a reconsideration of ontological assumptions underlying the discourse."
+
+- **Assigned value:** 0
+- **Rationale:** No sensory or action words; entirely abstract philosophical language. Mean max ≈ 0.5 → Score 0.
+
+#### J. Examples — DO NOT Apply This Code
+
+**Non-Example 1:**
+"y = mx + b"
+
+- **Why not this code:** Mathematical notation, not natural language
+- **Correct code instead:** NA with reason "NON_LINGUISTIC"
+
+**Non-Example 2:**
+"..."
+
+- **Why not this code:** Punctuation only, no words
+- **Correct code instead:** NA with reason "NULL_CONTENT"
+
+#### K. Borderline Cases
+
+**Borderline 1:**
+"The data visualization clearly illustrates the relationship between variables."
+
+- **Challenge:** "Visualization" implies visual sensory engagement, but in context refers to an abstract chart, not a perceptual experience
+- **Resolution:** In this context, "visualization" is used abstractly (data representation, not actual seeing); treat as low sensorimotor strength. Max modalities: visualization (abstract, 1.8), illustrates (2.5), relationship (1.2), variables (1.0). Mean ≈ 1.6 → Score 1
+- **Assigned value:** 1
+
+**Borderline 2:**
+"The warm sunlight streamed through the window, casting dancing shadows on the wooden floor."
+
+- **Challenge:** Multiple strong modalities (visual, haptic/warmth, action/movement)
+- **Resolution:** Clear sensory language: warm (haptic, 4.1), sunlight (visual, 4.9), streamed (visual/action, 3.7), dancing (action, 4.5), shadows (visual, 4.2), wooden (haptic, 4.6), floor (haptic/visual, 4.8). Mean max ≈ 4.4 → Score 4
+- **Assigned value:** 4
+
+---
+
+### 4.3 VARIABLE: ABSTRACTION_LADDER
+
+**Var_ID:** V03
+
+#### A. Conceptual Definition
+
+ABSTRACTION_LADDER measures the specificity level of the paragraph's referents, based on the "Ladder of Abstraction" framework. This variable assesses whether the text uses general categories (high abstraction) or specific instances (low abstraction). At the top of the ladder are broad, universal concepts (e.g., "vehicles"); at the bottom are unique, identifiable particulars (e.g., "my neighbor's blue 2015 Honda Civic with the dented fender"). High groundedness corresponds to descending the ladder toward specificity.
+
+#### B. Operational Definition
+
+Observable indicators:
+1. Identify the main noun phrases (subjects and objects) in the paragraph
+2. Classify each noun phrase by abstraction level (8-level scale):
+   - **Level 8:** Universal categories (e.g., "transportation," "food," "communication")
+   - **Level 7:** Broad classes (e.g., "vehicles," "junk food," "media")
+   - **Level 6:** Functional types (e.g., "cars," "dessert," "news articles")
+   - **Level 5:** Specific categories (e.g., "sedans," "ice cream," "editorials")
+   - **Level 4:** Qualified types (e.g., "compact sedans," "premium ice cream," "political editorials")
+   - **Level 3:** Brand/proper names (e.g., "Honda Civics," "Ben & Jerry's," "New York Times editorials")
+   - **Level 2:** Specific instances with details (e.g., "a blue Honda Civic," "Chunky Monkey ice cream," "yesterday's NYT op-ed")
+   - **Level 1:** Unique, fully specified referents (e.g., "my neighbor's 2015 Honda Civic with license plate XYZ123")
+3. Calculate the mean abstraction level (1-8)
+4. Map to the 0-5 ordinal scale (inverted, so high specificity = high score):
+   - Mean level 7-8 → Score 0
+   - Mean level 6-7 → Score 1
+   - Mean level 5-6 → Score 2
+   - Mean level 4-5 → Score 3
+   - Mean level 2-4 → Score 4
+   - Mean level 1-2 → Score 5
+
+#### C. Manifest vs. Latent
+
+☑ **Manifest**: The specificity level is determined by explicit linguistic markers (proper nouns, modifiers, unique identifiers). However, the coder must interpret the referential intent (is "the president" a general role or a specific person in context?).
+
+#### D. Measurement
+
+- **Type:** Ordinal
+- **Numeric Mapping:**
+  - **0 = Highest abstraction** (mean level 7-8): Universal categories, no specific referents
+  - **1 = High abstraction** (mean level 6-7): Broad classes, minimal detail
+  - **2 = Moderate abstraction** (mean level 5-6): Functional types with some narrowing
+  - **3 = Moderate specificity** (mean level 4-5): Qualified types or specific categories
+  - **4 = High specificity** (mean level 2-4): Brand names, proper nouns, detailed instances
+  - **5 = Lowest abstraction** (mean level 1-2): Unique, fully identified referents
+- **NA Value:** Assign NA if the paragraph contains no identifiable noun phrases (e.g., exclamations, commands without objects)
+
+#### E. Inclusion Criteria
+
+Apply this code when:
+- The paragraph contains at least one noun phrase that refers to an entity, object, person, or concept
+- The referent can be classified on the abstraction ladder
+
+#### F. Exclusion Criteria
+
+Do NOT apply this code when:
+- Paragraph is entirely imperative with no nouns (e.g., "Stop! Go!") → Instead assign: NA with reason "NO_REFERENTS"
+- Text is a question with only abstract pronouns (e.g., "What is it?") → Instead assign: NA with reason "UNSPECIFIED_REFERENT"
+
+#### G. Textual Indicators
+
+**High specificity (scores 4-5):**
+- Proper nouns: "Dr. Susan Martinez," "the Eiffel Tower," "Microsoft Corporation"
+- Unique identifiers: serial numbers, specific dates, addresses
+- Detailed modifiers: "the red barn on Route 5 with the faded paint"
+- Demonstratives with specificity: "this particular issue," "that exact moment"
+
+**Low specificity (scores 0-1):**
+- Generic nouns: "people," "things," "stuff," "issues," "concepts," "systems"
+- Plural without distinction: "vehicles," "foods," "ideas," "problems"
+- Abstract collectives: "society," "the economy," "culture," "technology"
+
+#### H. Co-Occurrence Rules
+
+- **Can co-occur with:** All other variables (V01-V02, V04-V06)
+- **Mutually exclusive with:** None
+- **Hierarchical relationship:** None
+- **Priority rule:** None
+
+#### I. Examples — APPLY This Code
+
+**Example 1 (Score = 5):**
+"Dr. Susan Martinez from the UC Davis Department of Computer Science presented her research at the 2025 IEEE Conference in Boston on March 14."
+
+- **Assigned value:** 5
+- **Rationale:** Extremely specific referents: proper name (Dr. Susan Martinez), specific institution (UC Davis Department of Computer Science), specific event (2025 IEEE Conference), specific location (Boston), specific date (March 14). Mean level ≈ 1.2 → Score 5.
+
+**Example 2 (Score = 2):**
+"The company implemented new policies to improve employee satisfaction and increase productivity."
+
+- **Assigned value:** 2
+- **Rationale:** General referents: "the company" (level 6), "new policies" (level 6), "employee satisfaction" (level 7), "productivity" (level 7). Mean level ≈ 6.5 → Score 1 (borderline 2).
+
+**Example 3 (Score = 0):**
+"Individuals must consider the implications of their decisions within broader societal frameworks."
+
+- **Assigned value:** 0
+- **Rationale:** Highly abstract referents: "individuals" (level 8), "implications" (level 8), "decisions" (level 7), "societal frameworks" (level 8). Mean level ≈ 7.75 → Score 0.
+
+#### J. Examples — DO NOT Apply This Code
+
+**Non-Example 1:**
+"Run!"
+
+- **Why not this code:** No noun phrases; command with no object
+- **Correct code instead:** NA with reason "NO_REFERENTS"
+
+**Non-Example 2:**
+"It was amazing."
+
+- **Why not this code:** "It" is an unspecified pronoun with no antecedent in the paragraph
+- **Correct code instead:** NA with reason "UNSPECIFIED_REFERENT"
+
+#### K. Borderline Cases
+
+**Borderline 1:**
+"The president announced new trade regulations yesterday."
+
+- **Challenge:** "The president" could be a specific person (if contextually clear) or a generic role
+- **Resolution:** If the document context identifies which president (e.g., "President Biden"), treat as level 3 (specific role-holder). If no context, treat as level 6 (generic role). Assume level 5 without additional context: "the president" (level 5), "new trade regulations" (level 5), "yesterday" (level 2). Mean level ≈ 4 → Score 3
+- **Assigned value:** 3
+
+**Borderline 2:**
+"I bought a double-scoop waffle cone of Chunky Monkey ice cream from the shop on Main Street."
+
+- **Challenge:** Multiple specificity levels mixed (brand-specific flavor vs. generic "shop")
+- **Resolution:** "I" (level 1, specific person), "double-scoop waffle cone" (level 3, specific format), "Chunky Monkey ice cream" (level 2, specific product), "the shop on Main Street" (level 4, location-qualified). Mean level ≈ 2.5 → Score 4
+- **Assigned value:** 4
+
+---
+
+### 4.4 VARIABLE: NOMINALIZATION_DENSITY
+
+**Var_ID:** V04
+
+#### A. Conceptual Definition
+
+NOMINALIZATION_DENSITY measures the proportion of nominalizations in the text relative to active verbs and adjectives. Nominalization is the grammatical process by which verbs (representing actions/processes) or adjectives (representing qualities) are transformed into nouns. This transformation creates a "distortion" in linguistic grounding by treating dynamic processes as static objects (e.g., "deciding" → "decision," "fail" → "failure"). High nominalization density indicates text that obscures agency, temporality, and physical action—core features of grounded language.
+
+#### B. Operational Definition
+
+Observable indicators:
+1. Identify all nouns in the paragraph
+2. Count nominalizations using suffix markers: -tion, -sion, -ment, -ance, -ence, -ity, -ness, -ship, -age, -al, -ure, -acy, -cy
+3. Count all non-nominalized verbs and adjectives
+4. Calculate ratio: Nominalizations / (Nominalizations + Verbs + Adjectives)
+5. Map ratio to 0-5 ordinal scale:
+   - Ratio 0.0-0.10 → Score 5 (minimal nominalization)
+   - Ratio 0.10-0.25 → Score 4
+   - Ratio 0.25-0.40 → Score 3
+   - Ratio 0.40-0.55 → Score 2
+   - Ratio 0.55-0.70 → Score 1
+   - Ratio 0.70-1.00 → Score 0 (pervasive nominalization)
+
+**Important:** Not all words with these suffixes are nominalizations (e.g., "nation" is not derived from a verb). Apply the "wheelbarrow test": if the noun cannot be physically placed in a wheelbarrow and was derived from a verb/adjective, it's a nominalization.
+
+#### C. Manifest vs. Latent
+
+☑ **Manifest**: Nominalization can be identified through explicit suffix markers and part-of-speech tagging. However, the coder must verify etymological derivation (is "nation" a nominalization of "nate"? No.).
+
+#### D. Measurement
+
+- **Type:** Ordinal
+- **Numeric Mapping:**
+  - **0 = Pervasive nominalization** (ratio 0.70-1.00): Text is dominated by static noun forms; few active verbs
+  - **1 = High nominalization** (ratio 0.55-0.70): Frequent process-hiding constructions
+  - **2 = Moderate nominalization** (ratio 0.40-0.55): Mixed dynamic and static language
+  - **3 = Moderate transparency** (ratio 0.25-0.40): Some nominalizations but verbs remain prominent
+  - **4 = High transparency** (ratio 0.10-0.25): Occasional nominalizations; mostly active constructions
+  - **5 = Minimal nominalization** (ratio 0.0-0.10): Text uses active verbs and adjectives; minimal abstraction
+- **NA Value:** Assign NA if part-of-speech tagging fails or text is syntactically malformed
+
+#### E. Inclusion Criteria
+
+Apply this code when:
+- The paragraph contains at least 3 verbs or adjectives
+- The text is in standard English with parsable syntax
+
+#### F. Exclusion Criteria
+
+Do NOT apply this code when:
+- Text is primarily a numbered list with no complete sentences → Instead assign: NA with reason "LIST_FORMAT"
+- Text cannot be parsed syntactically (e.g., random word strings) → Instead assign: NA with reason "SYNTAX_MALFORMED"
+
+#### G. Textual Indicators
+
+**High nominalization (scores 0-1):**
+- Suffix-heavy nouns: implementation, conceptualization, relationship, achievement, significance, effectiveness
+- Passive constructions paired with nominalizations: "The decision was made" instead of "They decided"
+- Abstract agent-less statements: "Failure occurred" instead of "The system failed"
+
+**Low nominalization (scores 4-5):**
+- Active verb usage: "They decided" instead of "The decision"
+- Adjective preservation: "accurate" instead of "accuracy"
+- Agent-action clarity: "The engineer designed" instead of "The design process"
+
+#### H. Co-Occurrence Rules
+
+- **Can co-occur with:** All other variables (V01-V03, V05-V06)
+- **Mutually exclusive with:** None
+- **Hierarchical relationship:** Related to V06 (STRUCTURAL_TRANSPARENCY); high nominalization often implies low structural transparency, but they measure distinct dimensions
+- **Priority rule:** None
+
+#### I. Examples — APPLY This Code
+
+**Example 1 (Score = 5):**
+"The dog barked loudly when it saw the mail carrier approach the front gate."
+
+- **Assigned value:** 5
+- **Rationale:** Active verbs (barked, saw, approach), adjective (loudly), no nominalizations. Ratio = 0 / (0 + 3 + 1) = 0.0 → Score 5.
+
+**Example 2 (Score = 2):**
+"The implementation of the policy requires consideration of stakeholder concerns and the facilitation of open communication."
+
+- **Assigned value:** 2
+- **Rationale:** Nominalizations: implementation, consideration, facilitation, communication (4). Verbs: requires (1). Adjectives: open (1). Ratio = 4 / (4 + 1 + 1) = 0.67 → Score 1 (borderline 2).
+
+**Example 3 (Score = 0):**
+"The optimization of the utilization of resources necessitates the evaluation of efficiency metrics and the prioritization of cost-effectiveness."
+
+- **Assigned value:** 0
+- **Rationale:** Nominalizations: optimization, utilization, resources, evaluation, metrics, prioritization, cost-effectiveness (7). Verbs: necessitates (1). Adjectives: 0. Ratio = 7 / (7 + 1 + 0) = 0.875 → Score 0.
+
+#### J. Examples — DO NOT Apply This Code
+
+**Non-Example 1:**
+"Pros: 1. Easy to use. 2. Affordable. 3. Reliable."
+
+- **Why not this code:** List format without complete sentences
+- **Correct code instead:** NA with reason "LIST_FORMAT"
+
+**Non-Example 2:**
+"The green big house the."
+
+- **Why not this code:** Grammatically malformed; cannot parse syntax
+- **Correct code instead:** NA with reason "SYNTAX_MALFORMED"
+
+#### K. Borderline Cases
+
+**Borderline 1:**
+"The investigation revealed that the failure resulted from a lack of proper maintenance."
+
+- **Challenge:** "Investigation" and "failure" are nominalizations, but "revealed" and "resulted" are active verbs; "maintenance" is borderline (can be a noun without nominalization)
+- **Resolution:** Nominalizations: investigation (from investigate), failure (from fail), maintenance (from maintain) = 3. Verbs: revealed, resulted = 2. Adjectives: proper = 1. Ratio = 3 / (3 + 2 + 1) = 0.5 → Score 2
+- **Assigned value:** 2
+
+**Borderline 2:**
+"She quickly grabbed the book and ran."
+
+- **Challenge:** No obvious nominalizations, but "book" could be debated
+- **Resolution:** "Book" is a concrete noun, not derived from a verb/adjective (not a nominalization). Nominalizations = 0. Verbs: grabbed, ran = 2. Adjectives: quickly (adverb, not counted) = 0. Ratio = 0 / (0 + 2 + 0) = 0.0 → Score 5
+- **Assigned value:** 5
+
+---
+
+### 4.5 VARIABLE: JARGON_DENSITY
+
+**Var_ID:** V05
+
+#### A. Conceptual Definition
+
+JARGON_DENSITY measures the concentration of domain-specific, technical, or niche vocabulary within the paragraph. Jargon consists of words that require insider knowledge to understand—terminology specific to a professional field, academic discipline, subculture, or online community. High jargon density indicates the text operates within a closed linguistic loop, signaling group membership rather than describing a shared physical reality. This variable captures the "detachment" aspect of low groundedness, where language becomes self-referential rather than world-referential.
+
+#### B. Operational Definition
+
+Observable indicators:
+1. Identify all content words in the paragraph
+2. Classify each word as either:
+   - **General vocabulary:** Words understandable to an average English speaker (e.g., "water," "run," "happy")
+   - **Jargon:** Words requiring specialized knowledge (e.g., "photosynthesis," "API," "heuristic," "neoliberal")
+3. Count jargon words
+4. Calculate ratio: Jargon words / Total content words
+5. Map ratio to 0-5 ordinal scale (inverted, so low jargon = high score):
+   - Ratio 0.0-0.05 → Score 5 (minimal jargon)
+   - Ratio 0.05-0.15 → Score 4
+   - Ratio 0.15-0.30 → Score 3
+   - Ratio 0.30-0.50 → Score 2
+   - Ratio 0.50-0.70 → Score 1
+   - Ratio 0.70-1.00 → Score 0 (pervasive jargon)
+
+**Heuristic for identifying jargon:**
+- Would a typical 10th grader understand this word without looking it up?
+- Is this word found in basic dictionaries (Merriam-Webster, not specialized technical dictionaries)?
+- Does this word require knowledge of a specific field, profession, or subculture?
+
+#### C. Manifest vs. Latent
+
+☑ **Latent**: While jargon words are manifest, the coder must make a subjective judgment about whether a word qualifies as "specialized" versus "general." The coder references external word frequency lists (e.g., COCA frequency) to calibrate.
+
+#### D. Measurement
+
+- **Type:** Ordinal
+- **Numeric Mapping:**
+  - **0 = Pervasive jargon** (ratio 0.70-1.00): Text is incomprehensible without specialized knowledge
+  - **1 = High jargon** (ratio 0.50-0.70): Frequent technical terms; audience-specific
+  - **2 = Moderate jargon** (ratio 0.30-0.50): Mix of general and specialized vocabulary
+  - **3 = Moderate accessibility** (ratio 0.15-0.30): Mostly accessible with occasional technical terms
+  - **4 = High accessibility** (ratio 0.05-0.15): Primarily plain language; rare jargon
+  - **5 = Minimal jargon** (ratio 0.0-0.05): Entirely accessible to general audience
+- **NA Value:** Assign NA if unable to assess domain-specificity (e.g., text in an unknown field)
+
+#### E. Inclusion Criteria
+
+Apply this code when:
+- The paragraph contains at least 5 content words
+- The coder can assess whether words are general or specialized
+
+#### F. Exclusion Criteria
+
+Do NOT apply this code when:
+- Text is in a highly specialized notation system (e.g., chemical formulas, programming code) → Instead assign: NA with reason "NON_NATURAL_LANGUAGE"
+- Coder lacks knowledge to assess domain-specificity → Instead assign: NA with reason "DOMAIN_UNKNOWN"
+
+#### G. Textual Indicators
+
+**High jargon (scores 0-1):**
+- Academic terminology: epistemology, heuristic, phenomenology, operationalize, construct validity
+- Technical vocabulary: API, latency, bandwidth, algorithm, neural network
+- Professional jargon: deliverables, synergy, paradigm shift, stakeholder engagement
+- Subcultural slang: touch grass (ironically, this is jargon), copium, based, ratio
+
+**Low jargon (scores 4-5):**
+- Everyday words: water, run, happy, house, eat, blue, quickly, person
+- Simple descriptions: The sun was bright. She walked to the store. The dog barked.
+
+#### H. Co-Occurrence Rules
+
+- **Can co-occur with:** All other variables (V01-V04, V06)
+- **Mutually exclusive with:** None
+- **Hierarchical relationship:** Related to V01 (WORD_CONCRETENESS); jargon is often abstract, but not always (e.g., "oscilloscope" is concrete but jargon)
+- **Priority rule:** None
+
+#### I. Examples — APPLY This Code
+
+**Example 1 (Score = 5):**
+"The cat sat on the mat and purred loudly while the children played outside."
+
+- **Assigned value:** 5
+- **Rationale:** All words are common, everyday vocabulary. Jargon count = 0. Total content words = 10. Ratio = 0 / 10 = 0.0 → Score 5.
+
+**Example 2 (Score = 3):**
+"The software engineer used an API to integrate the database with the frontend interface, improving user experience."
+
+- **Assigned value:** 3
+- **Rationale:** Jargon: API, database, frontend interface (arguably), user experience (UX jargon) = ~4 words. Total content words ≈ 14. Ratio = 4 / 14 ≈ 0.29 → Score 3.
+
+**Example 3 (Score = 0):**
+"The phenomenological reduction necessitates bracketing noetic-noematic correlates within the transcendental ego's intentional horizon."
+
+- **Assigned value:** 0
+- **Rationale:** Nearly all words are philosophical jargon: phenomenological, reduction, bracketing, noetic-noematic, correlates, transcendental, ego, intentional, horizon. Jargon count ≈ 9. Total content words = 10. Ratio = 9 / 10 = 0.9 → Score 0.
+
+#### J. Examples — DO NOT Apply This Code
+
+**Non-Example 1:**
+"C6H12O6 + 6O2 → 6CO2 + 6H2O"
+
+- **Why not this code:** Chemical notation, not natural language
+- **Correct code instead:** NA with reason "NON_NATURAL_LANGUAGE"
+
+**Non-Example 2:**
+"The paper discusses the role of الثقافة in shaping contemporary discourse."
+
+- **Why not this code:** Contains non-English words that the coder cannot assess
+- **Correct code instead:** Code the English portion normally; if >50% is non-English, assign NA with reason "MIXED_LANGUAGE"
+
+#### K. Borderline Cases
+
+**Borderline 1:**
+"The doctor prescribed antibiotics to treat the bacterial infection."
+
+- **Challenge:** "Antibiotics" and "bacterial infection" are medical terms, but relatively common in everyday usage
+- **Resolution:** These are borderline jargon (medical field) but widely understood by general audiences. Treat as general vocabulary unless the context is highly technical (e.g., "beta-lactam antibiotics"). Jargon count = 0. Ratio = 0 → Score 5
+- **Assigned value:** 5
+
+**Borderline 2:**
+"The athlete's performance metrics indicated a decline in aerobic capacity and an increase in lactate threshold."
+
+- **Challenge:** "Performance metrics," "aerobic capacity," and "lactate threshold" are sports science jargon, but "athlete," "decline," and "increase" are general
+- **Resolution:** Jargon count = 4 (performance metrics = 2 words, aerobic capacity = 2 words, lactate threshold = 2 words, counting as 4 technical terms). Total content words ≈ 12. Ratio = 4 / 12 ≈ 0.33 → Score 2
+- **Assigned value:** 2
+
+---
+
+### 4.6 VARIABLE: STRUCTURAL_TRANSPARENCY
+
+**Var_ID:** V06
+
+#### A. Conceptual Definition
+
+STRUCTURAL_TRANSPARENCY measures the clarity of agent-action-object relations in the paragraph. Grounded language makes explicit WHO does WHAT to WHOM/WHAT. Low structural transparency obscures agency through passive voice, impersonal constructions, and missing subjects. High structural transparency ensures that the reader can easily identify the actors, actions, and affected entities—a hallmark of language that refers to observable, physical reality rather than abstract systems.
+
+#### B. Operational Definition
+
+Observable indicators:
+1. Identify all main clauses in the paragraph
+2. For each clause, assess:
+   - **Agent clarity:** Is the subject explicit and identifiable? (Yes/No)
+   - **Action clarity:** Is the verb active (not passive, not nominalized)? (Yes/No)
+   - **Object clarity:** If transitive, is the object explicit? (Yes/No/N/A if intransitive)
+3. Calculate a clarity score for each clause:
+   - 3 points if all three are clear (agent + active verb + object)
+   - 2 points if two are clear (e.g., active verb + object, but agent is "it")
+   - 1 point if one is clear (e.g., only the verb is active)
+   - 0 points if none are clear (e.g., passive voice with no agent, nominalized verb, no object)
+4. Calculate mean clarity score across all clauses
+5. Map to 0-5 ordinal scale:
+   - Mean 0.0-0.5 → Score 0
+   - Mean 0.5-1.0 → Score 1
+   - Mean 1.0-1.5 → Score 2
+   - Mean 1.5-2.0 → Score 3
+   - Mean 2.0-2.5 → Score 4
+   - Mean 2.5-3.0 → Score 5
+
+#### C. Manifest vs. Latent
+
+☑ **Manifest**: Agent-action-object relations are explicit syntactic structures. The coder identifies them through grammatical analysis (subject, verb, object positions).
+
+#### D. Measurement
+
+- **Type:** Ordinal
+- **Numeric Mapping:**
+  - **0 = Obscured relations** (mean 0.0-0.5): Passive voice dominates; agents are hidden; actions are nominalized
+  - **1 = Highly unclear relations** (mean 0.5-1.0): Frequent passive constructions; subjects are vague
+  - **2 = Moderately unclear relations** (mean 1.0-1.5): Mix of active and passive; some agents identifiable
+  - **3 = Moderately clear relations** (mean 1.5-2.0): Mostly active voice; some passive constructions
+  - **4 = Highly clear relations** (mean 2.0-2.5): Active voice; explicit agents and objects
+  - **5 = Crystal clear relations** (mean 2.5-3.0): Every clause has explicit agent, active verb, and object (if transitive)
+- **NA Value:** Assign NA if text is grammatically malformed and cannot be parsed into clauses
+
+#### E. Inclusion Criteria
+
+Apply this code when:
+- The paragraph contains at least one complete clause (subject + predicate)
+- The text is in standard English syntax
+
+#### F. Exclusion Criteria
+
+Do NOT apply this code when:
+- Text is a fragment without a main verb → Instead assign: NA with reason "NO_MAIN_VERB"
+- Text is grammatically malformed → Instead assign: NA with reason "SYNTAX_MALFORMED"
+
+#### G. Textual Indicators
+
+**High transparency (scores 4-5):**
+- Active voice: "The engineer designed the bridge" (not "The bridge was designed")
+- Explicit subjects: "Dr. Martinez conducted the experiment" (not "The experiment was conducted")
+- Clear objects: "The dog caught the ball" (not "The dog caught something")
+- Transitive verbs with named objects: "She wrote a letter" (not "She wrote")
+
+**Low transparency (scores 0-1):**
+- Passive voice without agent: "The decision was made" (by whom?)
+- Impersonal constructions: "It is believed that..." (who believes?)
+- Missing subjects: "Having considered the options, a choice was made" (who considered? who chose?)
+- Nominalized agents: "The failure of the system" (what failed the system? or did the system fail?)
+
+#### H. Co-Occurrence Rules
+
+- **Can co-occur with:** All other variables (V01-V05)
+- **Mutually exclusive with:** None
+- **Hierarchical relationship:** Related to V04 (NOMINALIZATION_DENSITY); high nominalization often implies low structural transparency
+- **Priority rule:** None
+
+#### I. Examples — APPLY This Code
+
+**Example 1 (Score = 5):**
+"Sarah grabbed her backpack, ran to the bus stop, and caught the 8 a.m. bus to school."
+
+- **Assigned value:** 5
+- **Rationale:** Three clauses, all with explicit agents (Sarah), active verbs (grabbed, ran, caught), and objects (backpack, bus stop, bus). Each clause scores 3. Mean = 3.0 → Score 5.
+
+**Example 2 (Score = 2):**
+"The report was submitted after the data had been analyzed and the findings were reviewed."
+
+- **Assigned value:** 2
+- **Rationale:** Three clauses, all passive voice: "was submitted" (0 points: no agent, passive), "had been analyzed" (0 points), "were reviewed" (0 points). Mean = 0.0 → Score 0. (Wait—let me recalculate: if each passive clause has at least an object, they get 1 point each.) Actually: "The report" (object) + passive verb = 1 point. "The data" (object) + passive verb = 1 point. "The findings" (object) + passive verb = 1 point. Mean = 1.0 → Score 2.
+
+**Example 3 (Score = 0):**
+"Consideration was given to the implementation of new policies following the evaluation of current procedures."
+
+- **Assigned value:** 0
+- **Rationale:** One main clause in passive voice: "Consideration was given" (no agent, passive, nominalized). Objects are present but unclear who is giving consideration. Clause score = 0. Mean = 0.0 → Score 0.
+
+#### J. Examples — DO NOT Apply This Code
+
+**Non-Example 1:**
+"Running quickly down the street."
+
+- **Why not this code:** Sentence fragment with no main clause (no subject + main verb)
+- **Correct code instead:** NA with reason "NO_MAIN_VERB"
+
+**Non-Example 2:**
+"The quickly very was."
+
+- **Why not this code:** Grammatically malformed
+- **Correct code instead:** NA with reason "SYNTAX_MALFORMED"
+
+#### K. Borderline Cases
+
+**Borderline 1:**
+"The results indicate a significant correlation, though the mechanism remains unclear."
+
+- **Challenge:** "The results indicate" has a clear subject (results) and active verb (indicate), but "the mechanism remains unclear" is somewhat vague (what mechanism? who/what made it unclear?)
+- **Resolution:** Clause 1: "The results indicate a significant correlation" → agent (results), active verb (indicate), object (correlation) = 3 points. Clause 2: "the mechanism remains unclear" → agent (mechanism), active verb (remains), no object (intransitive) = 2 points (since intransitive, object is N/A; agent + verb = 2/2). Mean = (3+2)/2 = 2.5 → Score 5. Actually, let me reconsider: if we're strict, "results" and "mechanism" are not human agents, so they're slightly less clear. But they are explicit subjects. Mean = 2.5 → Score 5.
+- **Assigned value:** 5 (or 4 if we penalize non-human agents slightly)
+
+**Borderline 2:**
+"It was decided that the project would be postponed."
+
+- **Challenge:** "It" is an impersonal subject (no real agent); passive voice
+- **Resolution:** Clause: "It was decided" → no agent ("it" is expletive), passive verb, object ("that the project would be postponed") is a clause not a noun. Score = 0 points. Mean = 0.0 → Score 0.
+- **Assigned value:** 0
+
+---
+
+## SECTION 5: CODE HIERARCHY AND RELATIONSHIPS
+
+### 5.1 Hierarchical Structure
+
+**LEVEL 1: Main Variables (V01-V06)**
+- All six variables are Level 1 codes (no sub-codes)
+- Each measures a distinct dimension of groundedness
+- No parent-child relationships exist within this codebook
+
+This codebook uses a flat hierarchy. All variables operate independently and at the same conceptual level. Future extensions could add sub-codes (e.g., breaking SENSORIMOTOR_STRENGTH into separate scores for each of the 11 Lancaster dimensions), but the current version maintains simplicity.
+
+### 5.2 Code Families
+
+**Family 1: Lexical Groundedness**
+- V01 (WORD_CONCRETENESS)
+- V02 (SENSORIMOTOR_STRENGTH)
+- V03 (ABSTRACTION_LADDER)
+
+**Within-family rules:** A paragraph can receive distinct scores for all three variables. For example, a paragraph might use concrete words (V01=4) with low sensorimotor strength (V02=2) and moderate specificity (V03=3). These codes measure different facets of lexical choice and do not conflict.
+
+**Family 2: Structural Groundedness**
+- V04 (NOMINALIZATION_DENSITY)
+- V05 (JARGON_DENSITY)
+- V06 (STRUCTURAL_TRANSPARENCY)
+
+**Within-family rules:** A paragraph can receive distinct scores for all three variables. High nominalization (V04=1) often co-occurs with low structural transparency (V06=1), but they are not identical: a paragraph can have many nominalizations yet maintain agent clarity through active voice constructions.
+
+**Between-family rules:** Variables from Family 1 and Family 2 can co-occur in any combination. A paragraph can be lexically concrete but structurally opaque (e.g., "The grass was cut" → concrete noun, passive voice), or lexically abstract but structurally transparent (e.g., "The philosopher argued for justice" → abstract object, clear agency).
+
+### 5.3 Dependency Rules
+
+**No strict dependencies exist.** Each variable can be coded independently. However, certain logical relationships should be noted:
+
+- If V04 (NOMINALIZATION_DENSITY) = 0 (pervasive nominalization), V06 (STRUCTURAL_TRANSPARENCY) is likely ≤ 2 (since nominalizations obscure agency), but this is not enforced as a rule.
+- If V05 (JARGON_DENSITY) = 0 (pervasive jargon), V01 (WORD_CONCRETENESS) is likely ≤ 3 (since jargon is often abstract), but again, not enforced (e.g., "oscilloscope" is jargon but concrete).
+
+---
+
+## SECTION 6: DECISION RULES AND PRIORITY
+
+### 6.1 Coding Sequence
+
+**Variables should be evaluated in the following order:**
+
+1. **First, evaluate V01 (WORD_CONCRETENESS)** because it requires looking up Brysbaert norms for each content word. This is the most mechanical, objective variable and establishes the lexical baseline.
+
+2. **Then, evaluate V02 (SENSORIMOTOR_STRENGTH)** because it builds on word-level analysis (Lancaster norms) and considers modality engagement. If V01 is already coded, the coder has already identified content words.
+
+3. **Then, evaluate V03 (ABSTRACTION_LADDER)** because it shifts focus to noun phrases and referential specificity. This is slightly more interpretive than V01-V02.
+
+4. **Then, evaluate V04 (NOMINALIZATION_DENSITY)** because it requires syntactic analysis (identifying nominalizations vs. verbs/adjectives). This is more computationally intensive than lexical lookups.
+
+5. **Then, evaluate V05 (JARGON_DENSITY)** because it requires subjective judgment about domain-specificity. This is best done after establishing the paragraph's lexical and syntactic properties.
+
+6. **Finally, evaluate V06 (STRUCTURAL_TRANSPARENCY)** because it requires full clause-by-clause analysis of agent-action-object relations. This is the most holistic, integrative variable and benefits from having already coded all other dimensions.
+
+### 6.2 Priority Rules for Conflicts
+
+**No conflicts are possible in this single-label, independent-variable design.** Each paragraph receives one score (0-5 or NA) for each of the six variables. The scores do not compete or contradict.
+
+However, if ambiguity arises in borderline cases (e.g., is a word concrete or abstract?), apply the following tie-breaker:
+
+| Scenario | Rule | Resulting Code |
+|----------|------|----------------|
+| Word has multiple meanings (concrete vs. abstract) | Use the contextually dominant meaning in the paragraph | Score based on context |
+| Unclear if a word is jargon | If the word appears in the top 10,000 most frequent English words (COCA), treat as general vocabulary | V05 = higher score (less jargon) |
+| Clause has mixed agent clarity (e.g., "The team decided") | Treat collective nouns as explicit agents | V06 = score for agent clarity |
+
+### 6.3 Tie-Breaker Protocol
+
+When borderline cases don't fall cleanly into a score category:
+
+1. **First tie-breaker criterion:** Default to the lower score (more conservative; avoids overstating groundedness).
+2. **Second tie-breaker criterion:** Consult the context unit (surrounding paragraphs) to disambiguate.
+3. **If still unresolved:** Assign NA with reason code "BORDERLINE_UNRESOLVABLE" and flag for human review.
+
+---
+
+## SECTION 7: AMBIGUITY PROTOCOL
+
+### 7.1 Distinguishing Absence from Uncertainty
+
+| Code | Meaning |
+|------|---------|
+| **0** | Construct is demonstrably ABSENT from text (e.g., no concrete words → V01=0) |
+| **NA / -1** | Cannot determine from available text (e.g., insufficient word count, missing psycholinguistic norms) |
+
+**Important distinction:** A score of 0 means "we successfully measured the construct and found it to be absent." An NA means "we could not measure the construct at all." For example, if a paragraph uses entirely abstract words, V01 = 0 (low concreteness, but measured). If a paragraph has only 2 words, V01 = NA (cannot compute a reliable mean).
+
+### 7.2 Special Language Handling
+
+#### Sarcasm and Irony
+
+**How to detect:**
+- Contextual incongruity (e.g., "Great, another meeting" when meetings are disliked)
+- Hyperbole or exaggeration (e.g., "This is the best day ever" after a disaster)
+- Quotation marks or italics signaling tone (e.g., "This is 'fine'")
+
+**Coding rule:** Code the LITERAL meaning of the words, not the inferred sarcastic intent, UNLESS the sarcasm directly affects groundedness. For example:
+- "The 'expert' recommended touching grass" → If "expert" is sarcastic, treat it as abstract/jargon (V05 scores lower) because the referent is unclear.
+- "I absolutely love this concrete jungle" (sarcastic) → "Concrete jungle" is a metaphor; code as moderately abstract (V03 = 2).
+
+#### Negation
+
+**How to handle:**
+- "I am NOT happy" → Code "happy" as the present concept; negation doesn't change the word's concreteness (V01 includes "happy" in the analysis).
+- "I don't think this is bad" (double negative) → Code based on the net assertion: "I think this is good." Code "good" as the operative concept.
+
+#### Hypotheticals and Conditionals
+
+**How to handle:**
+- "If I were rich, I would buy a mansion" → Code as if the assertion is made: "mansion" is concrete (V01 includes "mansion").
+- Hypotheticals do not change groundedness unless they explicitly reference unreal or fantastical entities (e.g., "If I were a dragon...").
+
+#### Questions
+
+**How to handle:**
+- **Rhetorical questions** → Code as assertions. "Who doesn't love pizza?" = "Everyone loves pizza." Code "pizza" as concrete.
+- **Genuine questions** → Code the referents mentioned. "Where is the library?" → "Library" is concrete (V01 includes "library").
+
+#### Quotations and Reported Speech
+
+**How to handle:**
+- **Direct quotes** → Code both the quote and the framing. "She said, 'The dog barked'" → Both "said" and "dog barked" contribute to groundedness.
+- **Paraphrased speech** → Code as regular text. "She mentioned that the animal made noise" → Code "animal" and "noise."
+
+### 7.3 Mixed Signals
+
+When text contains conflicting elements (e.g., concrete nouns + abstract verbs):
+
+☑ **Code each variable independently.** For example:
+- "The philosopher contemplated existence" → V01 (WORD_CONCRETENESS) might be 2 (mixed: "philosopher" is moderately concrete, "contemplated" and "existence" are abstract). V03 (ABSTRACTION_LADDER) might be 3 (specific role: "philosopher"). V04 (NOMINALIZATION_DENSITY) might be 4 (active verb "contemplated"). Each variable captures a different dimension; there is no need to reconcile them into a single "mixed" score.
+
+### 7.4 Confidence Scoring (Optional)
+
+**This codebook does not require confidence scoring by default.** However, if the project constraints specify confidence scores, use the following scale:
+
+| Confidence Level | Value | Definition |
+|------------------|-------|------------|
+| **High** | 2 | Clear match to criteria; no ambiguity; >80% of content words have norms available |
+| **Medium** | 1 | Probable match; minor ambiguity; 50-80% of content words have norms available |
+| **Low** | 0 | Possible match; significant ambiguity; <50% of content words have norms available |
+
+**Note:** Confidence scores are SEPARATE from main variable scores. A paragraph might receive V01 = 4 (high concreteness) with Confidence = 1 (medium confidence due to missing norms for some words).
+
+---
+
+## SECTION 8: CODING WORKFLOW
+
+### 8.1 Step-by-Step Procedure
+
+For each text unit, follow this algorithm:
+
+```
+STEP 1: INTAKE
+├── Read the coding unit (paragraph)
+├── Identify allowed context (preceding/subsequent paragraphs, document title)
+└── Check: Is unit codable?
+    ├── YES → Continue to Step 2
+    └── NO → Assign NA with reason code, STOP
+
+STEP 2: SEGMENTATION CHECK
+├── Is unit properly segmented (complete paragraph)?
+├── Apply segmentation rules if needed (Section 2.2)
+└── Identify any special content (quotes, hashtags, emojis)
+
+STEP 3: SEQUENTIAL VARIABLE CODING
+├── For each variable in priority order (V01 → V02 → V03 → V04 → V05 → V06):
+│   ├── Review definition and criteria (Section 4.X)
+│   ├── Check inclusion criteria → Match found?
+│   │   ├── YES → Check exclusion criteria
+│   │   │   ├── Excluded → Move to next variable
+│   │   │   └── Not excluded → Assign numeric value (0-5)
+│   │   └── NO → Assign 0 or NA per rules
+│   └── Document rationale for borderline cases
+│
+└── Proceed to Step 4
+
+STEP 4: CONFLICT RESOLUTION
+├── Check for violated mutual exclusivity (N/A in this codebook)
+├── Apply priority/tie-breaker rules (Section 6.3)
+└── Verify code hierarchy consistency (all Level 1, no conflicts)
+
+STEP 5: AMBIGUITY CHECK
+├── Any borderline cases flagged?
+│   ├── YES → Apply ambiguity protocol (Section 7)
+│   └── NO → Continue
+└── Assign confidence scores if required (Section 7.4)
+
+STEP 6: OUTPUT
+├── Format per output specification (Section 9.1)
+├── Include all required fields (unit_id, unit_text, scores)
+└── Validate against JSON schema (Section 9.1)
+```
+
+### 8.2 DO / DON'T Checklist
+
+**DO:**
+- ☑ Code based on definitions, not intuition or prior assumptions about the text's purpose
+- ☑ Apply codes based on textual evidence within the specified context window (Section 2.4)
+- ☑ Use context within specified window only; do not use external knowledge about the author or publication
+- ☑ Apply the ambiguity protocol consistently (Section 7)
+- ☑ Record uncertainty via NA codes with reason strings (Section 9.2)
+
+**DON'T:**
+- ☒ Over-infer beyond what the text explicitly supports (e.g., don't assume "it" refers to something from 10 paragraphs earlier unless within context window)
+- ☒ Let prior units influence current coding (each paragraph is independent)
+- ☒ Use external knowledge not in the text (e.g., don't code "He gave a speech" based on knowing the speaker is a politician)
+- ☒ Skip exclusion criteria checks (Section 4.X.F for each variable)
+- ☒ Assume meaning from keywords alone without reading full context (e.g., "grass" in "grass-fed beef" is concrete, but "touch grass" as slang is jargon)
+
+---
+
+## SECTION 9: OUTPUT FORMAT SPECIFICATION
+
+### 9.1 JSON Output Structure
+
+Each coded unit must produce:
+
+```json
+{
+  "unit_id": "string (sequential if not provided: u001, u002, ...)",
+  "unit_text": "string (the coded text segment, verbatim)",
+  "context_used": "string (surrounding context considered, if any)",
+  "scores": {
+    "V01_WORD_CONCRETENESS": 0,
+    "V02_SENSORIMOTOR_STRENGTH": 0,
+    "V03_ABSTRACTION_LADDER": 0,
+    "V04_NOMINALIZATION_DENSITY": 0,
+    "V05_JARGON_DENSITY": 0,
+    "V06_STRUCTURAL_TRANSPARENCY": 0
+  },
+  "confidence": {
+    "V01_WORD_CONCRETENESS": null,
+    "V02_SENSORIMOTOR_STRENGTH": null,
+    "V03_ABSTRACTION_LADDER": null,
+    "V04_NOMINALIZATION_DENSITY": null,
+    "V05_JARGON_DENSITY": null,
+    "V06_STRUCTURAL_TRANSPARENCY": null
+  },
+  "flags": [],
+  "na_reasons": {
+    "V01_WORD_CONCRETENESS": null,
+    "V02_SENSORIMOTOR_STRENGTH": null,
+    "V03_ABSTRACTION_LADDER": null,
+    "V04_NOMINALIZATION_DENSITY": null,
+    "V05_JARGON_DENSITY": null,
+    "V06_STRUCTURAL_TRANSPARENCY": null
+  },
+  "metadata": {
+    "position": 1,
+    "timestamp": "2026-01-16T12:00:00Z",
+    "coder_id": "LLM_v1.0"
+  }
+}
+```
+
+### 9.2 Field Requirements
+
+| Field | Required | Type | Notes |
+|-------|----------|------|-------|
+| `unit_id` | Yes | string | Unique identifier (e.g., "u001", "para_042") |
+| `unit_text` | Yes | string | Verbatim coded segment (full paragraph text) |
+| `context_used` | Optional | string | Surrounding context considered (up to 750 words) |
+| `scores` | Yes | object | All 6 variables with numeric values (0-5) or null |
+| `confidence` | Optional | object | Only if confidence scoring enabled (0-2) |
+| `flags` | Optional | array | Ambiguity flags, special conditions (see Section 9.3) |
+| `na_reasons` | Optional | object | Explanation when NA assigned (string or null per variable) |
+| `metadata` | Recommended | object | For traceability (position, timestamp, coder_id) |
+
+### 9.3 Valid Flag Values
+
+| Flag | Meaning |
+|------|---------|
+| `BORDERLINE` | Ambiguity protocol applied (Section 7) |
+| `MIXED_SIGNALS` | Conflicting elements in text (e.g., concrete nouns + abstract verbs) |
+| `CONTEXT_LIMITED` | Insufficient context available (first/last paragraph of document) |
+| `SARCASM_DETECTED` | Irony/sarcasm handling applied (Section 7.2) |
+| `MULTIPLE_INTERPRETATIONS` | Word/phrase has multiple valid meanings |
+| `MISSING_NORMS` | Psycholinguistic norms unavailable for >20% of words |
+| `PASSIVE_VOICE` | Paragraph dominated by passive constructions (relevant for V06) |
+| `FRAGMENT` | Paragraph is a sentence fragment (Section 2.2) |
+
+---
+
+## SECTION 10: RELIABILITY AND CONSISTENCY
+
+### 10.1 Common Confusion Points
+
+| Often Confused | Distinguishing Criteria |
+|----------------|-------------------------|
+| **V01 (WORD_CONCRETENESS) vs. V02 (SENSORIMOTOR_STRENGTH)** | V01 measures overall perceptibility of word referents; V02 measures specific sensory/action modality engagement. A word can be concrete (V01=high) but not evoke strong sensory imagery (V02=low), e.g., "computer" is concrete but not strongly visual/tactile in most contexts. |
+| **V03 (ABSTRACTION_LADDER) vs. V01 (WORD_CONCRETENESS)** | V03 measures specificity of referents (general category vs. unique instance); V01 measures perceptibility. "Vehicle" (general) is less concrete than "car" (specific), but both refer to perceptible objects. |
+| **V04 (NOMINALIZATION_DENSITY) vs. V06 (STRUCTURAL_TRANSPARENCY)** | V04 counts the proportion of nominalizations (verbs/adjectives turned into nouns); V06 assesses agent-action-object clarity. A paragraph can have many nominalizations (V04=low) yet maintain agent clarity through active constructions (V06=high), e.g., "The investigation by Dr. Smith revealed the failure of the system" (nominalization present, but agent is clear). |
+| **V05 (JARGON_DENSITY) vs. V01 (WORD_CONCRETENESS)** | V05 measures domain-specificity; V01 measures perceptibility. Jargon can be concrete (e.g., "oscilloscope") or abstract (e.g., "paradigm"). |
+| **Active voice vs. No nominalization** | Active voice (V06) means the verb is not passive; no nominalization (V04) means the verb hasn't been turned into a noun. "The engineer designed" (active voice, no nominalization) vs. "The design was completed" (passive voice, nominalization present). |
+
+### 10.2 Consistency Checklist for Coders
+
+Before finalizing each coding session:
+
+- ☑ Re-read definitions for any codes applied more than 5 times (check for drift in interpretation)
+- ☑ Spot-check 3 random units against criteria (ensure coding remains aligned with operational definitions)
+- ☑ Verify no mutual exclusivity violations (N/A in this codebook, but check for logical contradictions, e.g., V01=5 but V02=0 is unusual but possible)
+- ☑ Confirm all NA assignments have reason codes (Section 9.2)
+
+### 10.3 Calibration Protocol
+
+#### Initial Calibration:
+1. Code 10-20 sample units independently (each coder codes the same paragraphs)
+2. Compare results and discuss disagreements (focus on borderline cases)
+3. Clarify definitions as needed (document any clarifications as codebook amendments)
+4. Repeat until agreement threshold met (target: Krippendorff's Alpha ≥ 0.70)
+
+#### Ongoing Calibration:
+- Re-calibrate every 100 units or weekly (whichever comes first)
+- Monitor for drift using reliability metrics (see Section 10.4)
+
+### 10.4 Reliability Metrics
+
+**Recommended measures:**
+
+- **Krippendorff's Alpha** (for multiple coders, ordinal data): Accounts for chance agreement and is appropriate for ordinal 0-5 scales. Target: α ≥ 0.80 (excellent), α ≥ 0.67 (acceptable for exploratory research).
+- **Cohen's Kappa** (for two coders, if treating scores as nominal): Simpler but less robust for ordinal data. Target: κ ≥ 0.80.
+- **Percent Agreement** (always report alongside Kappa/Alpha): Raw agreement rate; helps contextualize chance-corrected metrics.
+
+**Target thresholds:**
+- **Kappa/Alpha ≥ 0.80:** Excellent reliability; codebook is well-operationalized
+- **Kappa/Alpha ≥ 0.67:** Acceptable for exploratory research; may require codebook refinement
+- **Below 0.67:** Requires codebook revision (see Section 11.2)
+
+---
+
+## SECTION 11: MAINTENANCE AND VERSIONING
+
+### 11.1 Version Control
+
+| Version | Date | Changes | Author |
+|---------|------|---------|--------|
+| 1.0 | 2026-01-16 | Initial release | Expert Methodologist (LLM) |
+| 1.1 | [Future] | [Pending revisions based on pilot testing] | [TBD] |
+
+### 11.2 Update Protocol
+
+When modifications are needed:
+
+1. **Document the issue triggering the change:** Record the specific ambiguity, disagreement, or edge case that necessitates revision. Example: "Coders disagree on whether 'smartphone' is jargon (V05) or general vocabulary."
+2. **Propose specific revision:** Draft a clarification or rule addition. Example: "Add to V05 exclusion criteria: 'Common consumer technology terms (smartphone, laptop, internet) are general vocabulary unless used in a highly technical context (e.g., "smartphone SoC architecture").'"
+3. **Test on sample data:** Apply the proposed revision to 10-20 previously coded units; check if it improves agreement.
+4. **Update version number and changelog:** Increment to 1.1, 1.2, etc. for minor clarifications; increment to 2.0 for breaking changes (see Section 11.3).
+5. **Re-calibrate coders on changed codes:** Ensure all coders are trained on the revised definitions.
+
+### 11.3 Backward Compatibility
+
+**Non-breaking changes:** Clarifications, additional examples, or new guidance that do not alter the numeric meaning of existing codes. Example: Adding a borderline case to Section 4.1.K does not require re-coding existing data.
+
+**Breaking changes:** Modifications that alter the numeric mapping or operational definitions. Examples:
+- Changing the 0-5 scale to a 0-7 scale
+- Redefining what counts as a "nominalization" in V04
+- Adding a new variable (V07)
+
+**For breaking changes:**
+- Document migration path: Explain how to convert Version 1.0 scores to Version 2.0 scores (if possible).
+- Consider re-coding affected data: If the change is substantial, re-code all units using the new definitions.
+
+### 11.4 Audit Trail
+
+Maintain records of:
+- **All coding decisions with timestamps:** Use the `metadata.timestamp` field in JSON output (Section 9.1).
+- **Disagreement resolutions:** When coders disagree, document the final decision and rationale in a shared log.
+- **Codebook modifications:** Track all changes in the Version Control table (Section 11.1).
+- **Reliability assessments:** Store Kappa/Alpha scores after each calibration session.
+
+---
+
+## SECTION 12: REVISION QUESTIONS
+
+The following questions remain unresolved due to underspecification in the provided research domain. These are documented for future clarification; no answers are requested at this time.
+
+1. **Psycholinguistic norm coverage:** The Brysbaert (2014) concreteness norms cover 40,000 English lemmas, but many words in contemporary usage (especially neologisms, slang, and technical terms) lack ratings. Should the codebook specify a fallback method (e.g., using word embeddings to estimate concreteness) when norms are unavailable, or should these words be excluded from analysis?
+
+2. **Lancaster Sensorimotor Norms applicability:** The Lancaster norms cover 39,707 concepts but may miss domain-specific vocabulary. Should the codebook allow manual estimation of sensorimotor strength by coders when norms are unavailable, or should this trigger an NA code?
+
+3. **Jargon classification threshold:** What constitutes "domain-specific" vocabulary is subjective and may vary by coder expertise. Should the codebook specify a reference corpus (e.g., COCA top 10,000 words) as the boundary for general vocabulary, or should jargon be assessed purely based on coder intuition?
+
+4. **Handling of metaphorical language:** The research domain emphasizes "concrete" language, but metaphors (e.g., "drowning in work") use concrete words to convey abstract meanings. Should metaphors be coded based on literal word meaning (high concreteness) or inferred meaning (low concreteness)? The current codebook defaults to literal meaning but does not explicitly address this.
+
+5. **Nominalization identification in compound words:** Some nominalizations are embedded in compound words (e.g., "decision-making" contains "decision," a nominalization). Should these be counted toward nominalization density, or only standalone nominalizations?
+
+6. **Confidence scoring requirements:** The research domain does not specify whether confidence scoring is required. Should confidence scores be mandatory, optional, or omitted entirely? The current codebook treats them as optional.
+
+7. **Context window limits for LLMs:** The codebook specifies a 750-word context window, but LLM token limits vary. Should the codebook provide guidance on truncation strategies when the context exceeds model capacity?
+
+8. **Multi-paragraph documents:** When coding multi-paragraph documents, should the codebook specify a sampling strategy (e.g., code every Nth paragraph) or require coding all paragraphs? The current assumption is "code all paragraphs."
+
+9. **Non-English loanwords:** Many English texts contain non-English loanwords (e.g., "schadenfreude," "déjà vu"). Should these be coded based on their concreteness in the original language, their adoption into English, or excluded entirely?
+
+10. **Handling of numerical data within text:** Paragraphs containing statistics or numerical data (e.g., "The temperature was 72°F") include both words and numbers. Should numbers be treated as concrete referents or excluded from coding?
+
+---
+
+## SECTION 13: SELF-AUDIT CHECKLIST (MANDATORY)
+
+Before finalizing, verify each item:
+
+### Structural Completeness
+- ☑ All 13 sections present and populated
+- ☑ Variable overview table (Section 3) matches detailed definitions (Section 4)
+- ☑ JSON schema (Appendix, see below) matches variable list
+
+### Definitional Quality
+- ☑ Every code has unique operational definition (Section 4.X.B for each variable)
+- ☑ No circular definitions or undefined terms
+- ☑ Inclusion/exclusion criteria are specific and actionable (Section 4.X.E, 4.X.F)
+- ☑ All numeric values (0-5) are assigned and documented (Section 4.X.D)
+
+### Example Coverage
+- ☑ Each code has ≥3 positive examples (Section 4.X.I)
+- ☑ Each code has ≥2 negative examples (Section 4.X.J)
+- ☑ Each code has ≥2 borderline examples (Section 4.X.K)
+- ☑ Examples span the range of expected variation (0-5 scores represented)
+
+### Logical Consistency
+- ☑ No contradictory rules across sections
+- ☑ Mutual exclusivity rules are enforceable (none in this codebook)
+- ☑ Co-occurrence rules don't conflict (Section 4.X.H)
+- ☑ Priority rules resolve all potential conflicts (Section 6.2)
+
+### Measurement Validity
+- ☑ 0 vs. NA distinction is clear for each variable (Section 7.1)
+- ☑ Numeric ranges are consistent with measurement type (ordinal 0-5)
+- ☑ Scale anchors are meaningful and distinct (0=absent, 5=maximal)
+
+### LLM Readiness
+- ☑ Instructions are algorithmic and unambiguous (Section 8.1)
+- ☑ No reliance on implicit human judgment (all subjective decisions are operationalized via heuristics)
+- ☑ Context window requirements specified (Section 2.4)
+- ☑ Output format is valid JSON (Section 9.1)
+
+**Audit Result:** PASS
+
+All sections are complete, definitions are operationalized, examples are comprehensive, and the codebook is ready for implementation by both human coders and LLMs.
+
+---
+
+# APPENDIX: MACHINE-READABLE SCHEMA
+
+```json
+{
+  "codebook_metadata": {
+    "title": "Codebook for Measuring Text Groundedness via the Touch Grass Ratio",
+    "version": "1.0",
+    "created_date": "2026-01-16",
+    "coding_paradigm": "single-label",
+    "content_type": "mixed"
+  },
+  "units": {
+    "unit_of_analysis": "FULL PARAGRAPHS (text segments separated by line breaks, containing 1+ complete sentences)",
+    "coding_unit": "FULL PARAGRAPHS (default: same as unit_of_analysis)",
+    "context_window": "Full paragraph + immediately preceding and subsequent paragraphs (maximum 3-paragraph window)",
+    "context_token_limit": 1000
+  },
+  "variables": [
+    {
+      "var_id": "V01",
+      "name": "WORD_CONCRETENESS",
+      "construct": "Mean lexical concreteness of content words",
+      "type": "ordinal",
+      "manifest_latent": "manifest",
+      "range": {
+        "min": 0,
+        "max": 5,
+        "na_value": -1
+      },
+      "labels": {
+        "0": "Entirely abstract (mean concreteness 1.0-1.8)",
+        "1": "Highly abstract (mean concreteness 1.8-2.6)",
+        "2": "Moderately abstract (mean concreteness 2.6-3.4)",
+        "3": "Moderately concrete (mean concreteness 3.4-4.2)",
+        "4": "Highly concrete (mean concreteness 4.2-4.6)",
+        "5": "Entirely concrete (mean concreteness 4.6-5.0)",
+        "-1": "Insufficient word count or missing norms"
+      },
+      "hierarchy_level": 1,
+      "parent_code": null,
+      "mutually_exclusive_with": [],
+      "can_cooccur_with": ["V02", "V03", "V04", "V05", "V06"],
+      "priority_order": 1
+    },
+    {
+      "var_id": "V02",
+      "name": "SENSORIMOTOR_STRENGTH",
+      "construct": "Maximum perceptual/action strength across 11 Lancaster dimensions",
+      "type": "ordinal",
+      "manifest_latent": "latent",
+      "range": {
+        "min": 0,
+        "max": 5,
+        "na_value": -1
+      },
+      "labels": {
+        "0": "No sensory evocation (mean max 0.0-1.0)",
+        "1": "Weak sensory evocation (mean max 1.0-2.0)",
+        "2": "Moderate sensory evocation (mean max 2.0-3.0)",
+        "3": "Moderately strong sensory evocation (mean max 3.0-4.0)",
+        "4": "Strong sensory evocation (mean max 4.0-4.5)",
+        "5": "Very strong sensory evocation (mean max 4.5-5.0)",
+        "-1": "Unable to determine modality"
+      },
+      "hierarchy_level": 1,
+      "parent_code": null,
+      "mutually_exclusive_with": [],
+      "can_cooccur_with": ["V01", "V03", "V04", "V05", "V06"],
+      "priority_order": 2
+    },
+    {
+      "var_id": "V03",
+      "name": "ABSTRACTION_LADDER",
+      "construct": "Specificity level of referents (8-level ladder mapped to 0-5)",
+      "type": "ordinal",
+      "manifest_latent": "manifest",
+      "range": {
+        "min": 0,
+        "max": 5,
+        "na_value": -1
+      },
+      "labels": {
+        "0": "Highest abstraction (mean level 7-8: universal categories)",
+        "1": "High abstraction (mean level 6-7: broad classes)",
+        "2": "Moderate abstraction (mean level 5-6: functional types)",
+        "3": "Moderate specificity (mean level 4-5: qualified types)",
+        "4": "High specificity (mean level 2-4: brand names, proper nouns)",
+        "5": "Lowest abstraction (mean level 1-2: unique, fully specified referents)",
+        "-1": "No identifiable noun phrases"
+      },
+      "hierarchy_level": 1,
+      "parent_code": null,
+      "mutually_exclusive_with": [],
+      "can_cooccur_with": ["V01", "V02", "V04", "V05", "V06"],
+      "priority_order": 3
+    },
+    {
+      "var_id": "V04",
+      "name": "NOMINALIZATION_DENSITY",
+      "construct": "Proportion of process-hiding nominalizations relative to verbs/adjectives",
+      "type": "ordinal",
+      "manifest_latent": "manifest",
+      "range": {
+        "min": 0,
+        "max": 5,
+        "na_value": -1
+      },
+      "labels": {
+        "0": "Pervasive nominalization (ratio 0.70-1.00)",
+        "1": "High nominalization (ratio 0.55-0.70)",
+        "2": "Moderate nominalization (ratio 0.40-0.55)",
+        "3": "Moderate transparency (ratio 0.25-0.40)",
+        "4": "High transparency (ratio 0.10-0.25)",
+        "5": "Minimal nominalization (ratio 0.0-0.10)",
+        "-1": "Cannot parse syntax"
+      },
+      "hierarchy_level": 1,
+      "parent_code": null,
+      "mutually_exclusive_with": [],
+      "can_cooccur_with": ["V01", "V02", "V03", "V05", "V06"],
+      "priority_order": 4
+    },
+    {
+      "var_id": "V05",
+      "name": "JARGON_DENSITY",
+      "construct": "Concentration of domain-specific/technical vocabulary",
+      "type": "ordinal",
+      "manifest_latent": "latent",
+      "range": {
+        "min": 0,
+        "max": 5,
+        "na_value": -1
+      },
+      "labels": {
+        "0": "Pervasive jargon (ratio 0.70-1.00)",
+        "1": "High jargon (ratio 0.50-0.70)",
+        "2": "Moderate jargon (ratio 0.30-0.50)",
+        "3": "Moderate accessibility (ratio 0.15-0.30)",
+        "4": "High accessibility (ratio 0.05-0.15)",
+        "5": "Minimal jargon (ratio 0.0-0.05)",
+        "-1": "Cannot assess domain-specificity"
+      },
+      "hierarchy_level": 1,
+      "parent_code": null,
+      "mutually_exclusive_with": [],
+      "can_cooccur_with": ["V01", "V02", "V03", "V04", "V06"],
+      "priority_order": 5
+    },
+    {
+      "var_id": "V06",
+      "name": "STRUCTURAL_TRANSPARENCY",
+      "construct": "Clarity of agent-action-object relations",
+      "type": "ordinal",
+      "manifest_latent": "manifest",
+      "range": {
+        "min": 0,
+        "max": 5,
+        "na_value": -1
+      },
+      "labels": {
+        "0": "Obscured relations (mean clarity 0.0-0.5)",
+        "1": "Highly unclear relations (mean clarity 0.5-1.0)",
+        "2": "Moderately unclear relations (mean clarity 1.0-1.5)",
+        "3": "Moderately clear relations (mean clarity 1.5-2.0)",
+        "4": "Highly clear relations (mean clarity 2.0-2.5)",
+        "5": "Crystal clear relations (mean clarity 2.5-3.0)",
+        "-1": "Grammatically malformed text"
+      },
+      "hierarchy_level": 1,
+      "parent_code": null,
+      "mutually_exclusive_with": [],
+      "can_cooccur_with": ["V01", "V02", "V03", "V04", "V05"],
+      "priority_order": 6
+    }
+  ],
+  "output_schema": {
+    "required_fields": ["unit_id", "unit_text", "scores"],
+    "optional_fields": ["context_used", "confidence", "flags", "na_reasons", "metadata"],
+    "valid_flags": [
+      "BORDERLINE",
+      "MIXED_SIGNALS",
+      "CONTEXT_LIMITED",
+      "SARCASM_DETECTED",
+      "MULTIPLE_INTERPRETATIONS",
+      "MISSING_NORMS",
+      "PASSIVE_VOICE",
+      "FRAGMENT"
+    ]
+  },
+  "ambiguity_rules": {
+    "sarcasm": "Code literal meaning of words unless sarcasm directly affects groundedness (e.g., unclear referents)",
+    "negation": "Code the negated concept as present; negation does not change word concreteness",
+    "hypotheticals": "Code hypothetical referents as if asserted; do not penalize hypotheticals unless fantastical",
+    "mixed_signals": "Code each variable independently; conflicting elements (concrete nouns + abstract verbs) are captured by different variables"
+  }
+}
+```
+
+---
+
+## END OF CODEBOOK MANUAL
+
+This comprehensive codebook provides a rigorous, operational framework for measuring text groundedness via the Touch Grass Ratio. All 13 required sections are complete, with detailed definitions, examples, and machine-readable specifications. The codebook is ready for implementation by both human coders and Large Language Models.

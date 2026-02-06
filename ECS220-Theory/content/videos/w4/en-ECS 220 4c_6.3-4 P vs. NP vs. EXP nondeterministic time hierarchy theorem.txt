@@ -1,0 +1,25 @@
+Okay, So remember that these, these are the first to
+complexity classes. We talked about P and XP, and we've now talked a lot about NP. And we know P is
+contained in NP and NP is contained in X because every NP problem is solvable
+by exponential time, brute force search over
+all the witnesses. And we know that P is
+a strict subset of NP. So one of these two inclusions right here has got to be proper or strict. But we don't know which one. Probably both are, right? It's probably the case that there's the NP-complete problems
+and problem and some others are not contained in P.
+And it's also probably the case that there's problems
+solvable in exponential time, but they aren't
+necessarily NP problems. So here's an exercise to try it on. Let E be the so-called linear
+exponential complexity class. So this is all the
+exponential time mounds were the exponent in the
+exponential is just a linear. So you don't allow like
+say two to the n squared. So this is a strict subset of X. By the time hierarchy theorem, we can actually prove unconditionally
+that NP is not equal to IE. So try to do that at home. We can talk about that
+if you want to know how. Okay. Now does this last thing dimension. There is such a thing as a non-deterministic
+time hierarchy theorem. So this is the end time of G is a strict subset of N time of
+t If g is little o of t, right? So it's just the nondeterministic
+version of this. And note the lack of a need talk about simulation overhead
+in this version, even for Turing machines. So this is a little
+more complicated to prove to get around that sort of simulation that
+even Turing machines need. But this does hold. So we do also have that NP
+is a strict subset of X, strict subset of and double XP. And we're not gonna talk much more about the non-deterministic
+time hierarchy there. And I just wanted to
+point out it does hold.

@@ -1,0 +1,110 @@
+So let's move to another problem. And unlike the ones we've
+talked about so far, this is one that's fundamentally
+an optimization problem, although we're going to talk
+about a decision version of it. So here's the cartoonish
+setting from the textbook. I'm planning a cocktail party
+from an academic acquaintances. However, there are a
+number of rivalries among pairs of people who glare at each other and salt
+each other's work and generally render the
+conversation like tires. And I'd like to arrange
+a gathering that is as large as possible,
+the optimization part. But I want to make sure that I don't invite both members of
+any of these pairs. So we can formalize that as
+we often can with a graph, G equals V E, where the edges in E represents rivalries and the nodes
+represent the people. So we define a subset
+S of nodes to be independent if no two nodes
+in S are adjacent, right? So if you have a set S and there was no edges between any
+nodes, it's independent. And if the edges represent rivalries, that means everybody in
+that set gets along. Alright, so these
+would be a candidate set of people to invite to the party. But of course you want to find, you want to have the
+largest party possible. So you would like to have the
+largest independent set in G. So that's the optimization
+problem that we want to study. Now, the way that we formalize
+this as a decision problem, right? Rather than outputting
+the independent set or the size of the independent set, we get a second input. And we say the input is a graph G and an integer K. It's a threshold. And the goal is to find an
+independent set of size, at least K. Or put another way you want
+to answer the question, is there an independent
+set size at least k? So in this case, here's
+an example graph and there is an independent
+set for red nodes. You can verify there's no
+edges between any of them. And if you stare at it a
+little, little longer, you can see there's no way to add any new nodes to that while keeping it independent,
+so it's maximal. It's also maximum mean, meaning there's no other set of
+size five that's independent. So here's a very related
+concept, a clique. All right, so a clique is a subset of nodes that are
+all adjacent to each other. So in some sense, this
+is a dual concept, independent set, independent set. You need no edges in a clique. You need every pair of
+nodes that have edges. And the goal would be given
+a graph to find a clique of size at least K to related
+optimization problem. Now if you look at the exact
+same graph we had above, that, the biggest
+clique you can find, which is just size 2, doesn't seem to be all that related to the biggest independent
+set you've been fine. But I'm going to claim these problems
+are more or less equivalent. So pause right now and
+think about why these are not merely reducible
+to each other, but really easily reducible. They're practically the same problem. And the reason is that. You can take what's
+called the dual graph. In other words, you keep the
+exact same set of nodes, but you just flip the edges. In other words, remove all the edges in the
+original graph and then add edges between every pair of
+nodes that didn't have them. This one's a little harder
+to visualize the edges. But if you think about what
+happened in the original graph, since no pair of nodes
+in the set had edges. And since we're flipping
+all the edges now, every pair of nodes is going
+to have edges down here. In other words, in
+this graph up here, a set is independent if and only if it's a clique in this
+dual graph down here. So that very easy
+transformation allows you to, to sort of reduce one problem. That's why they're
+practically the same problem. Now here's another concept from
+graph theory, vertex cover. And we say a vertex cover
+is a subset of nodes where all of the edges have at
+least one endpoint in the subset. And the bigger you
+make the vertex cover, the easier it is for me to
+sort of cover all the edges. And so unlike clique
+and independent set, where it gets harder to find one, the bigger you make the
+threshold vertex cover is more like a minimization problem. The smaller you want
+the vertex cover to be, the harder it might be to find. A trivial vertex cover
+would just be every node. So it's not the same problem. And yeah, I'm going
+to claim it's again, almost the same as independent set. So pause for a second and
+think about why that is. So here's a vertex cover. And if you kinda look at this and
+you look at the independent set, you can see that they're
+complements of each other. Right? So let's think about, is that an accident? That, that the complement of this independent set ended
+up being a vertex cover. Well, no, you're going to have that. It, S is independent if and only if its complement V minus
+S is a vertex cover. The idea is, none of these nodes
+have edges between them, right? None of them have edges between them. So every single edge in the graph
+is either between two nodes, the art in this independent set, or if it touches one of
+the nodes in the set, then the other node
+is not in the set. So if you just take
+the compliment, right, you know that every single
+edge in the graph has gotta be incident on one of
+these nodes here, right? Then no edge can be between two of the nodes that you left out
+because it was independent. So again, by a very easy
+transformation of an instance of independent set to an instance of vertex cover could solve one of
+them if you could solve the other. Okay? And then this slide
+is just summarizing that. So S is an independent set, is equivalent to V minus S
+is a vertex cover, right? And then that's
+equivalent to S. It is a clique and the so-called
+compliment graph. So when you're looking
+for a set of size k, all of these are solvable
+in time O of n to the k, where n is the number of nodes. So you might think, well that
+looks like polynomial and n to the k is polynomial, right? Well, n to a constant,
+this polynomial, right? So n cubed as polynomial, n to the fourth is polynomial, but k here is the size of
+the set we're looking for. And that might be as big as the
+number of nodes in the graph. So in the worst case, this could be like time n to the n, That would be exponential. So it's polynomial if k
+is indeed a constant, if all you care about is
+finding cliques of size 3, those are also called triangles. Well, that's solvable in cubic time. But if you care about general, okay, well then it's
+x, it's exponential. So here's some other variants of
+this independent set problem. One is given a graph, we would like to find
+an independent set of maximum size that's more or less the optimization version
+of the problem, right? Another related problem,
+which is a decision problem, is given a graph and
+a threshold k, right? Instead of asking, does G have an independent set
+of size at least K, we're asking, does its largest
+independent set has size exactly k? So a question to ask is, is this problem in NP? It kinda looks like it is, right? Remember I warned you to look for decision problems where it looks like the solution is some object
+you want to find, right? So this sounds like, oh, it's an NP and the proof would be the largest
+independent set, right? You just verify that it has size k. Well, except how would you
+know it's the largest, right? What if the answer is no? What if I ask the question, does G have an independent
+set of size ten? Right? If I give you an independent
+set of size nine, that doesn't prove that there's
+no larger one of size 10. So this problem is not
+obviously in Endgame.

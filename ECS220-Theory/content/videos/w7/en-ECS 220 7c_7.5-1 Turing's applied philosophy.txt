@@ -1,0 +1,113 @@
+So as I said, all these varying
+models of computation were intended to
+answer this question, what is a computable function which needed to be answered before
+anybody could hope to, to sort of tackle Hilbert's question about is there a computable
+function that on input, a mathematical theorem tells
+you whether it's true or false. But he didn't phrase it that way. Just said find the function, but people started to suspect, well maybe that can't be done, but in order to show
+it can't be done, we've got to nail down what is, what do we mean by
+computable function? So there was a bunch of
+these competing models. Girdle and her brand, develop the Mu recursive functions. That was a response to the failure of the primitive recursive
+functions that to capture everything that we intuitively think we mean by computable church or done the Lambda definable
+functions of lambda calculus. And his student Stephen clean E, showed that in fact, mu recursion and lambda
+calculus are equivalent. They can eat, simulate each other. And that the developers had
+shown that wide classes of known computable functions work word definable and these models. And yet most still work convinced that this is
+the right definition. So just like with the
+primitive recursive functions, you can get most of the functions you tend to think about with those. But that's not very strong evidence that there's not something else
+that you might be able to compute. If only your language can't compute, you just haven't thought of the
+function that just like with the Ackermann function
+and primitive recursive. So church sort of believe right away that lambda calculus just obviously captured all the
+computable functions. And he showed a version of the
+halting problem being undecidable. He showed that the problem finding whether a lambda expression quote, as a normal form and this is somehow the equivalent of
+halting computation. That that question is not itself
+solvable by lambda calculus. So in other words, the lambda calculus
+halting problem is undecidable by lambda
+calculus programs. And he thought that that meant, oh, well that shows Hilbert's question, can't be answered because we are, the halting problem is undecidable. But what if church was
+wrong and asserting that everything computable is
+computable by lambda calculus, it wouldn't rule out that
+something lambda calculus can't do could be the positive
+answer to Hilbert's question. And he got pretty contentious. And Neil Post was another
+pioneer in this area. You know, in writing
+in a journal paper, use Church of masking
+this identification of the solvability of Hilbert's
+question under a definition. Cleaning similarly found audiences not giving him unquote Chile
+receptions about lambda calculus. And so after General Recursive ness appeared and he proved
+them equivalent, you started explaining things in that format because people are just, they didn't get why they, why lambda calculus should, should be a candidate here. Now the existence of
+universal programs, a universal recursive functions
+and lambda expressions was known in a sense
+there's something called the cleaning normal form. Give some notion there, but they
+were difficult to construct, difficult to see why they
+word and the significance of it wasn't fully appreciated yet. And this is all happening in the United States
+and over in Britain. A first year graduate student at the University of Cambridge named Alan terrain heard
+about this problem in a, in a course on logic and
+started thinking about it. And wasn't talking any of these
+people just kinda thought on his, The Fountainhead much different
+thoughts about this problem. And that resulted in him giving the first convincing argument for the correct definition of
+mechanical computability. And I really liked this quote
+from the textbook that they pulled out of this other
+book about terrain. He said, what does a
+Turing machine look like? Google for a description of it, you get some crazy-looking
+machine like this. But he says a better approach
+is to look in a mirror. Right? So what does that mean? So what the computer? I mean, what is it? There's
+different kinds. We all agree. This is one, this is one. I've seen these once in
+your life somewhere. These main principle
+with, but what is it? What makes a computer
+a computer, right? They didn't always look like this. One time. They look like this. Right before we had this ability
+to build electronic computers. And while we still didn't have the machine technology necessary to make Babbage's
+mechanical computers. Computers were people,
+there was a profession. A person would sit with some
+fairly precise instructions about what computation's
+I had to be done. They'd have pen and paper
+and maybe some help. But they would sit and follow the
+instructions and do computation. And it was thinking about this
+kind of computer person just sitting down with a pen and a paper that lead terrain to his definition. And I can actually hardly
+do better than just a quote straight out of
+his original paper. So this is exact text from, from turns first paper on computable numbers with an application to the
+inside it's problem, It's quite an understated very solve the problem showed, showed
+it can't be solved. Actually. They said computing is
+usually done by writing symbols on paper, right? And we can suppose
+divided into squares. And the two-dimensional
+character is not essential. So that it ends of bones as well. If you want to do the tedious, but you could write it on
+one dimensional paper, on it, divided into squares, right? So I'm trying to highlight here where we get this modern definition out of his sort of reasoning
+about what is a person, a human computer doing when they
+sit down to do a computation? That's what the Turing machine
+was intended to capture. It was not intended to capture
+what your iPhone does. Well, your laptop, those
+those didn't exist yet. It was intended to capture
+what could a person do with sufficiently precise
+instructions and of paper and enough patients
+and time on their hands. Because that's what people thought
+of as intuitively computable. So he says, well, the behavior, the computer a MOM is
+determined by the symbols written down in the state
+of mind, right? Of state. Here, this state really corresponds to what's
+going on in your head. And he has, I'm not going
+to quote the whole paper, but he has some very convincing
+arguments to imagine that for the purposes of
+doing computation like this, we only have a finite number
+of states that we can access. That you think we have an
+infinite number at some point the two of them get too close and you sort of can't reliably
+tell the difference between. So he says, Oh, it's
+all also imagine that the operations are split up into simple operations that
+are so elementary, can't divide them further. And it's such a simple operation that not more than one symbol is altered, editor, or any other changes and
+split up into simple operation. So this is why we're talking about reading one symbol and writing ones. And now it's all always
+possible for the computer, meaning this person to
+break off from his work, go away and forget all about it. Later, come back and go on. But if so, you've gotta
+leave a note for yourself. What was I doing when I left? So this note that you leave
+to yourself is somehow the state of mind and it doesn't capture everything
+going on in your head. But, you know, maybe
+you're all distracted. You're thinking about a
+fight, you had all of this, but that's not relevant
+to doing the computation, whatever you're going
+to write down so that you can come back and pick
+up where you left off. That's the part of your state
+of mind that you need to remember and that's the
+parties arguing, fight. So we'll suppose that U, the computer works in
+such a desultory manner. I really love the way
+the British right here, that he never does more than
+one step in a same, right? So you always just sit
+down, do one step, and then just write a note yourself, get up and go off
+and come back later. So the state of progress
+and what you're doing is completely determined by the node of instructions you left
+for yourself describing your state of mind and
+the symbols on the tape. Or in other words, the computer
+updates by calculating a deterministic function of your state and the symbol
+you're currently reading.

@@ -1,0 +1,1398 @@
+Pablo [0:29]: interesting
+Pablo [0:29]: right
+Pablo [0:35]: this one is
+Pablo [0:40]: anyway
+Pablo [0:46]: we actually celebrate you
+Pablo [0:48]: celebr
+Pablo [0:49]: ity birthday
+Pablo [0:53]: yeah
+Pablo [0:59]: i heard that the people actually everybody is so done with everything it's so like behind on everything
+Pablo [1:00]: just like not coming to your birthday
+Pablo [1:09]: sorry about that
+Pablo [1:14]: i know it's not monday your birthday on our first class
+Them [1:27]: yeah i know
+Pablo [1:45]: well
+Pablo [1:48]: thank you very much for
+Pablo [1:49]: your first assignments
+Them [1:58]: well since it's a hybrid class we can actually do whatever we want
+Them [2:01]: already did our chores
+Them [2:08]: so yes you let me know we have anything otherwise i'll just go through the assignments
+Them [2:12]: and see if anybody has some comments
+Them [2:13]: on
+Pablo [2:20]: the presentations yeah i said a quick question about the notebooks at the end you say just review the notebook
+Pablo [2:26]: i open it up by looking at it am i supposed to do something the notebooks here
+Pablo [2:30]: yeah i did that new that's a new addition
+Pablo [2:34]: yes so anybody listen to the podcast
+Pablo [2:36]: yeah are they good
+Pablo [2:40]: useful getting a start with it
+Pablo [2:43]: yeah listen to that i didn't find anything
+Pablo [2:45]: horribly wrong in there
+Pablo [2:46]: but not me
+Pablo [2:49]: it's
+Pablo [2:50]: the newscaster
+Pablo [2:53]: yeah so these notebooks you open them
+Pablo [2:54]: up
+Pablo [2:56]: i look very hard to enable
+Pablo [2:57]: for you
+Pablo [2:59]: and
+Pablo [3:00]: have them
+Pablo [3:00]: now
+Pablo [3:04]: and yeah you can hear interact with them
+Pablo [3:06]: i actually already
+Pablo [3:10]: mention
+Pablo [3:11]: ed it's really
+Pablo [3:12]: gone
+Pablo [3:12]: see that
+Pablo [3:13]: you probably just see
+Pablo [3:14]: that
+Pablo [3:18]: no
+Pablo [3:19]: basically
+Pablo [3:20]: gemini
+Pablo [3:23]: you do have access to gemini
+Pablo [3:24]: right i told you that
+Pablo [3:25]: the
+Pablo [3:25]: professional version
+Pablo [3:27]: of the uc data comes
+Pablo [3:29]: they use research and stuff
+Pablo [3:31]: they're not going to end this basically
+Pablo [3:34]: it's an app on top build it up
+Pablo [3:34]: gemini
+Pablo [3:36]: so
+Pablo [3:40]: what the dash
+Pablo [3:41]: is first of all focuses
+Pablo [3:42]: on the documents
+Pablo [3:44]: almost exclusively tries
+Pablo [3:45]: to only extract from
+Pablo [3:47]: the start of and it should tell you
+Pablo [3:48]: but the system is prompt
+Pablo [3:48]: ed
+Pablo [3:49]: there
+Pablo [3:50]: in order to ensure that
+Pablo [3:52]: if it takes any other knowledge
+Pablo [3:53]: but from the
+Pablo [3:54]: starting method
+Pablo [3:55]: that
+Pablo [3:57]: 's the system
+Pablo [3:58]: competed with
+Pablo [4:00]: and it should only draw
+Pablo [4:01]: from this now
+Pablo [4:02]: you can also unplug them for example
+Pablo [4:04]: that's really not what i want
+Pablo [4:05]: and that's may
+Pablo [4:06]: not what i want
+Pablo [4:08]: and with the singular deserves to really
+Pablo [4:08]: confuse
+Pablo [4:09]: you can undo
+Pablo [4:10]: them and just focus on a specific
+Pablo [4:11]: argument
+Pablo [4:14]: you can also
+Pablo [4:16]: and then you basically talk
+Pablo [4:17]: with
+Pablo [4:20]: these documents over these youtube lectures
+Pablo [4:22]: in shape
+Pablo [4:23]: of basically the trans
+Pablo [4:23]: cripts
+Pablo [4:24]: i think that's what they did about
+Pablo [4:25]: nothing they go visual
+Pablo [4:27]: but i wrote the slides and
+Pablo [4:27]: gemini
+Pablo [4:28]: can certainly look at
+Pablo [4:29]: slides
+Pablo [4:32]: so yes and you could talk with them
+Pablo [4:33]: you listen to this ip thing
+Pablo [4:37]: i do find
+Pablo [4:38]: the inf
+Pablo [4:39]: ographics
+Pablo [4:40]: that's very cool
+Pablo [4:41]: that's what they did
+Pablo [4:42]: for most
+Pablo [4:43]: textual problems
+Pablo [4:44]: if you
+Pablo [4:46]: form
+Pablo [4:46]: atting problems
+Pablo [4:49]: to the
+Pablo [4:50]: lower right
+Pablo [4:51]: or something
+Pablo [4:52]: you can see
+Pablo [4:53]: that the
+Pablo [4:54]: text is like missing
+Pablo [4:55]: the letters
+Pablo [5:06]: changing
+Pablo [5:07]: traffic
+Pablo [5:11]: almost
+Pablo [5:12]: there
+Pablo [5:21]: but it's really resonated with that
+Pablo [5:22]: out of thirteen
+Pablo [5:22]: seconds
+Pablo [5:23]: how much it has
+Pablo [5:27]: you could
+Pablo [5:28]: talk with them i think in sect
+Pablo [5:28]: ion four
+Pablo [5:29]: we make that a little bit
+Pablo [5:31]: more explicit
+Pablo [5:31]: exercise
+Pablo [5:32]: them interested to
+Pablo [5:33]: see
+Pablo [5:35]: what you think of that
+Pablo [5:44]: look over and also to understand
+Pablo [5:45]: it made out of
+Pablo [5:46]: limitations
+Pablo [5:48]: different steps
+Pablo [5:55]: for the discuss
+Pablo [5:56]: ion
+Pablo [5:57]: leader thing that could
+Pablo [5:58]: have just gone through the
+Pablo [5:59]: second
+Pablo [6:11]: all right
+Pablo [6:12]: let's go with israel assignments
+Pablo [6:13]: and then we do that
+Pablo [6:16]: what do you guys think of that exercise i also made
+Pablo [6:18]: that up so that's what these odas
+Pablo [6:19]: look like
+Pablo [6:22]: i mean if you want to know much more about that
+Pablo [6:23]: as i'd love you to tell you
+Pablo [6:24]: so this is how many
+Pablo [6:25]: course
+Pablo [6:26]: on it
+Pablo [6:28]: and then you can learn more about multi agent system
+Pablo [6:28]: s
+Pablo [6:30]: but these multi agent systems
+Pablo [6:32]: that's basically
+Pablo [6:33]: how they work
+Pablo [6:34]: so
+Pablo [6:38]: you basically create growth notes knowledge that you
+Pablo [6:38]: can
+Pablo [6:40]: also call that
+Pablo [6:44]: up but it's a good photo where you do different things
+Pablo [6:45]: in order to
+Pablo [6:46]: create something
+Pablo [6:47]: you use different agents
+Pablo [6:48]: for the same reason you
+Pablo [6:49]: use
+Pablo [6:50]: everything is a great
+Pablo [6:50]: companies
+Pablo [6:53]: and
+Pablo [6:54]: then you cover more
+Pablo [6:57]: reality whatever is the details we get here
+Pablo [6:58]: so
+Pablo [6:59]: you can do much more
+Pablo [7:04]: traditionally start that people read this article and
+Pablo [7:04]: tell you what they think
+Pablo [7:06]: of course you can do much more
+Pablo [7:09]: right now
+Pablo [7:10]: do
+Pablo [7:10]: research
+Pablo [7:11]: complement
+Pablo [7:13]: it and so forth
+Pablo [7:14]: so that was a little bit
+Pablo [7:17]: the
+Pablo [7:18]: principle multi
+Pablo [7:19]: agents for this instance
+Pablo [7:20]: would it be because of
+Pablo [7:21]: capacity
+Pablo [7:22]: like having
+Pablo [7:23]: multiple
+Pablo [7:26]: age
+Pablo [7:26]: nts
+Pablo [7:27]: doing
+Pablo [7:28]: various tasks
+Pablo [7:29]: so that they can do it conc
+Pablo [7:30]: urrently or is it because
+Pablo [7:31]: of the nu
+Pablo [7:32]: ances within each
+Pablo [7:33]: of
+Pablo [7:34]: the llms
+Pablo [7:35]: yeah
+Pablo [7:36]: i think for our purpose
+Pablo [7:37]: s
+Pablo [7:38]: times
+Pablo [7:39]: of the essence of
+Pablo [7:40]: the research even though
+Pablo [7:41]: we did
+Pablo [7:43]: build a consumer app and
+Pablo [7:44]: reach out to
+Pablo [7:45]: real
+Pablo [7:46]: time
+Pablo [7:46]: dialogue
+Pablo [7:47]: with customers
+Pablo [7:49]: maybe you need that follow up
+Pablo [7:50]: this is not what's
+Pablo [7:50]: usually
+Pablo [7:51]: you want to
+Pablo [7:52]: cover more reality
+Pablo [7:55]: so
+Pablo [7:57]: usually then you review or
+Pablo [7:58]: do something like this
+Pablo [7:59]: you spread out
+Pablo [8:01]: i showed you to that visa
+Pablo [8:02]: and explore
+Pablo [8:04]: how many of these different two or
+Pablo [8:05]: three of these different found
+Pablo [8:06]: ation models
+Pablo [8:07]: now
+Pablo [8:08]: just because
+Pablo [8:10]: i want you to know a small
+Pablo [8:11]: gbt that's kind
+Pablo [8:12]: of the first message
+Pablo [8:14]: second
+Pablo [8:15]: of all i want you to know
+Pablo [8:16]: that clause
+Pablo [8:22]: and usually what you would do is you would just use one of them
+Pablo [8:23]: but you could prompt them
+Pablo [8:24]: to where it occurs
+Pablo [8:32]: so you would have one that's the optimist one that's the pessimist one that's the progressive one that's a conservative and whatever you would ask them about it
+Pablo [8:33]: and so you would spread out
+Pablo [8:45]: right now you can grok is certainly different than mistral just like ealing grog is not elon musk is not a grog i already say elon musk is not a french man right
+Pablo [8:51]: so they are certainly different so we have a little bit of diversity here just by using different llms
+Pablo [8:55]: but yeah usually you would multi agent system or to cover more reality
+Pablo [9:03]: i don't know if you're joking not about claude but i have heard that claude is kind of preferred by programmers or just in general
+Pablo [9:30]: some people do have that preference i'm curious if that's well founded or if you agree with that coding claudius don't disappear in clotting clotting encoding i have some freudian yes just because if you just talk with it you will see it basically converts a lot into it converts a lot into
+Pablo [9:42]: it converts a lot into python already when you give it something right you give it something that converts into python immediately and so forth so you do have certainly
+Pablo [9:53]: something with it i do think also that's how they got the priority of the superiority in their coding they don't really tell us how they got so much better than others but i think it's just the focus of the company
+Pablo [10:05]: amadeus is a very different person than outman that's also why they fought and dario left i mean dario amade was the chief scientist in openai right he left to create a tropic
+Pablo [10:09]: you can also see that for example in cloth there's no image generation
+Pablo [10:18]: and i do not think you will see in cloud image generation very soon however i do think you will see openai competing for the next whatever golden globe
+Pablo [10:19]: by
+Them [10:34]: it's openai just does these kind of things it goes ahead and it tries to play with the market and see where it fits whereas anthropic was set out to be a more ethical approach and to really focus on solving problems it is more like the enterprise solution
+Them [10:41]: whereas of the chatgpt is multi consumer solution so i do think that's superior with that
+Them [10:45]: can i add one more thing and that is that research mode button
+Them [10:48]: the little clock there so if you really wanted to see
+Them [11:00]: i think it's the one to the right isn't it there's like a research mode you can turn on research mode and it will take much much longer but it will give you something like i had this project i was working on i'm like you know what
+Them [11:10]: i don't know the state of literature i needed to go get stuff from google scholars like that normal search would not do you hit it in research mode it'll take twenty minutes or something like half an hour
+Them [11:21]: yeah now gemini started at google started that and you do have that too so that's our uc davis and in the uc davis application the free version but you have that too the deep research here
+Them [11:32]: right and in jtbt you have it too and i think chatgpt gives you like five a month as ten a month or something here you run out of them so they give you like twenty five left look you have twenty five left
+Pablo [11:36]: google gives you
+Pablo [11:42]: for us i don't know for the uc davis account if you pay and google you have infinite
+Pablo [11:47]: claude i think has i ran into limits but it fills up every two three days
+Pablo [11:53]: so you can run out of deep research credits and then say until wednesday you are barred to do more
+Pablo [11:56]: so they have that
+Pablo [12:04]: i was wondering how this multi agent system has been received
+Pablo [12:05]: in research
+Pablo [12:20]: like if we wanted to use this in our research that we submit to journals how do reviewers see this i think that depends if reviewers see how their voc the work of
+Pablo [12:30]: using generative ai as part of your research team that's what you're thinking if it's part of your research team or yeah because while i was doing this it seemed good to be
+Pablo [12:30]: true
+Pablo [12:33]: it was doing all the work and
+Pablo [12:38]: i was thinking like researchers might just get lazy
+Pablo [12:46]: oh yeah so for literature reviews i mean
+Pablo [12:47]: they're also
+Pablo [12:55]: yeah so there are also different apps so this elicit here you do actually it does a literature review for you professionally
+Pablo [12:59]: so this is basically an llm that does a literature review for you and you can do that
+Pablo [13:03]: i mean usually you would want to do that
+Pablo [13:22]: i would do a multi agent workflow too so you do a deep research do one with entropic do one with gemini do one thing and get get a literature and then you're basically it's so fast literature review now read it as well so these these deep research help you to identify papers real quick
+Pablo [13:27]: and then do that but you can certainly set up a multi agent workflow relationship reviews
+Pablo [13:34]: now note that by current standards ai is never co author
+Pablo [13:37]: you should always mention it
+Pablo [13:44]: as an assistant so you should say in your acknowledgement you use generative ai to assist you in the literature review
+Pablo [13:46]: production and that's totally fine
+Pablo [13:50]: you should acknowledge it and then you do that and i do think most people do that
+Pablo [13:54]: it's kind of like you would say like hey i google search when i did militia yeah you did
+Pablo [13:58]: i'm just thinking in terms of methodology because we had this conversation
+Pablo [14:02]: you were having it in the brown leg itself
+Pablo [14:07]: so set for the view that human validation of some sort
+Pablo [14:09]: should be incorporated
+Pablo [14:26]: and you were kind of on the other side of this maybe no no so that was for nlps we will do nlps and week four and five so we'll get to that maybe we talk about that so then we do here in session four and five we do natural language processing
+Pablo [14:29]: and yes you use different agents
+Pablo [14:34]: in order to code so you can ask one person hey is this message positive or negative
+Pablo [14:43]: you have a different opinion than you and you have a different opinion than you right so what do i do i ask many different people and ask hey is that actually positive or not is that sarcasm is it not sarcasm
+Pablo [14:44]: i mean okay so what do we do
+Pablo [14:49]: we ask different people and we try to find criteria and then we decide so you can also ask different llms
+Pablo [14:59]: and that's much better than asking one llm because it covers again more of reality right that's why you would use different llms and you would prompt them differently and have more diversity
+Pablo [15:02]: and then you would get to it and that's certainly more solid
+Pablo [15:17]: now do people accept llms as coders or do they want humanist coders i think llms are more reliable encoders so what you usually do you work with nmdn what the discussion was external validation you get by verifying if llms and humans agree
+Pablo [15:20]: that's a different discussion but certainly with more diversity always better
+Pablo [15:27]: even if you use human coders it's much higher quality if you have a team of thirty undergraduates coding for you
+Pablo [15:34]: then if you have just one or two or you do it yourself computer scientists often when they when they encode qualitatively they do it themselves
+Pablo [15:40]: they're like hey we looked over two hundred sentences and we coded them like in social science that wouldn't be acceptable for publication
+Pablo [15:50]: computer science that's how they publish they say yeah our third author he looked over two hundred examples and he coded the map and that's what we did as verification
+Pablo [15:51]: no in social science it wouldn't fly
+Pablo [15:58]: you have to take at least thirty undergraduates you have to train them you have to sing you have to have diversity and that's much more solid
+Pablo [16:02]: so the same here this more diverse agents you have more solidity
+Pablo [16:10]: so this external validation always has to do you want to externally validate it because you want to have to do something with the real world and you want it to generalize
+Pablo [16:19]: if you just have one coder for example the chances of overfitting are very high it won't generalize you do it again next week you get something different
+Pablo [16:24]: because you overfit it to that person or to that example
+Pablo [16:33]: the diversity always in research and everything that's why we use different agents right the diversity brings in you cover more of reality and then you do it again
+Pablo [16:39]: chances are higher that the first time you hit something that when you want to replicate it you can do it again
+Pablo [16:40]: you know what i mean
+Pablo [16:42]: so diversity in that sense always good
+Pablo [16:49]: where we need to prove that
+Pablo [16:56]: elements are funding through human rights no i don't think we have passed that stage no you always want to prove especially in a new concept i mean every new concept we have to prove again
+Pablo [16:58]: there's also the question what do you want to prove
+Pablo [17:07]: if you want to prove fastness you don't need any human to verify if you want to prove fastness if you want to prove
+Pablo [17:10]: if you have a ground truth
+Pablo [17:19]: that you don't need a human like math or does the code run or not run you don't need any human validation either the code runs or not and either it knows that one plus one is true or not
+Pablo [17:25]: so you don't need any ground truth there if you have anything where there is no other ground truth
+Pablo [17:29]: then anthropocentric superiority than us humans
+Pablo [17:45]: but you can't really scale up any you can't look at large scale data sets with just human coding so if you want to scale up any kind of annotation you would eventually have to resort to param
+Pablo [17:51]: s it makes sense to me you still need to validate it in a smaller set with humans
+Pablo [17:55]: if you don't have any other ground truth
+Pablo [18:03]: all right cool okay so that was this little exercise and then number two yes
+Pablo [18:17]: yeah we had several here and i also understand that several of you here ran into problems
+Pablo [18:18]: with
+Pablo [18:24]: the web scraping so i open up i
+Pablo [18:39]: know that shanghai and pablo and jason and jalen that i think were able to collect titles with web scraper io
+Pablo [18:46]: yes others did other things others also collected titles but i think we used other tools
+Pablo [18:52]: tell us a little bit about it how were you able to do that with web scrape io how did you get how did you get the titles
+Pablo [19:00]: i personally just followed it i was using firefox
+Pablo [19:09]: and the only thing that firefox didn't have was the cool little graphic of seeing the flow but otherwise
+Pablo [19:18]: what i was trying to do actually because i was trying to play with it more was trying to extract the views and the text below it and that one is where
+Pablo [19:28]: just for the heck of it but i couldn't get that but i was able i kept it as link that's the one thing i kept forgetting to do switch from text to link
+Pablo [19:31]: and that may have been an issue for some
+Pablo [19:39]: but yeah but you did not switch from text to link and that's what was pulling the title for me
+Pablo [19:52]: i feel like the first part the recommended videos or sorry the featured videos went fine when i moved to recommend it that's where i had an issue that's where it started not scraping data
+Pablo [20:09]: it didn't scrape the title down yes yeah and i think a few other people had that issue as well i think the selectors and reliable so the html starts our youtube probably changes the pdf document is up to hit
+Pablo [20:12]: so if you have now
+Pablo [20:17]: a video here
+Pablo [20:21]: california homeowner did you know
+Pablo [20:23]: let's have another video
+Pablo [20:23]: here
+Pablo [20:26]: about a playlist
+Pablo [20:36]: okay here you could scrape that
+Pablo [20:39]: and then if you go in here
+Pablo [20:40]: that didn't work
+Pablo [20:49]: yes but it did make it so here for example this is certainly the html below is a different structure with this one here
+Pablo [20:55]: than this one so if you would look at this because that's a different this has to do with easier that there are some other things here online on top
+Pablo [20:57]: like some ads or something
+Pablo [20:59]: my
+Pablo [21:00]: wood select all the titles and everything
+Pablo [21:01]: but it wouldn't
+Pablo [21:02]: select any ads
+Pablo [21:03]: and it wouldn't scrape either
+Pablo [21:09]: i tried it on chrome and then i downloaded firefox i had no look
+Pablo [21:12]: yeah
+Pablo [21:19]: it just ran i mean it opened the pages it opened all the pages for the future videos of the recommended
+Pablo [21:25]: yeah and then when it saw the recommended i mean i just didn't get anything in the excel sheet
+Pablo [21:30]: so how did you guys make it work for the one that work
+Pablo [21:51]: so for me at first it was showing no data extracted when i was just doing it based off of the web script or document so it would highlight the whole box in red and then it would go through but then once i went back and did like the data preview it would say nothing's there and then when i exported it it said oh yeah here's a link
+Pablo [21:54]: so it was showing no data but it was giving me a link later on
+Pablo [21:57]: i ended up splitting it
+Pablo [22:03]: into two who's the one who posted on piazza
+Pablo [22:06]: someone posted on piazza
+Pablo [22:15]: okay you were helpful you splitting it into the child element attribute
+Pablo [22:28]: i did a whole separate thing within the featured one so i have recommended to scrape the links and then recommended title to scrape the text oh then you manually put them together at the end
+Pablo [22:30]: no i didn't know
+Pablo [22:36]: you want sweep yeah yeah it did it all in one swoop
+Pablo [22:38]: and then
+Pablo [23:02]: i think i just did the same thing except i did type text selected the same stuff same red box and then i did multi type the multi records in multiple columns and then i only put the column count to one because at first it was saying like five and it would scrape like yeah a lot of blank spaces what is it called
+Pablo [23:07]: counting down what did that do
+Pablo [23:27]: it made it so that it wouldn't because look for like multiple tiles per one yeah in my mind it was like trying to read multiple columns even though the recommended was just one column so it would go like the first video and then just blank but then when i did column count one it would actually go through the whole line
+Pablo [23:39]: okay presented it i didn't ask a question and it was great but then what i okay so what did you mean put it apart so you scrape first the title
+Pablo [23:42]: and then you made another child and then you scraped the url
+Pablo [23:46]: yeah i think i did first the links and then the title
+Pablo [23:52]: okay because i was getting the links i wasn't getting titles and then i just added an addendum
+Pablo [23:55]: to scrape the titles as well all right using the featured
+Pablo [23:59]: did everybody use grip try to do that
+Pablo [24:37]: mine it's not like a bit similar but not worked in the feature so it was great to say that links and title right like a tech you scrape in texture yeah scraping html so that way i will not run into the scram everything to the column things but that works on the features i never work on the recommended so recommend three high test valve like for instance there are five videos but only three will titles that rest are just halfway through get everything but not yet and then you got only three recommended one
+Pablo [24:57]: i don't think so i think based on because you can see that the five all share the same features so it's supposed to be like five or more recommended but only three of them assess have these great potatoes the rest are just flush oh interesting okay so okay so if i wouldn't have had the task of scraping the title there wouldn't be any problem
+Pablo [25:01]: there wouldn't be any problem
+Pablo [25:05]: no so just like if we'd scraped that and would scrape the link
+Pablo [25:10]: so the quick solution is to just to take that out of the tutorial to spread the title
+Pablo [25:30]: i followed the steps one by one and i got it to work so i don't know really i did nothing different which is firefox based i did notice when i started scraping all the recommended videos were taking too long to load
+Pablo [25:39]: for the recommended videos to actually load so the only thing i did was turned off the ad blocker and increased the delay to ten seconds
+Pablo [25:41]: so that it would load the full video
+Pablo [25:56]: first so at the end of it there is a delay thing right these are these numbers that i think i have in a task yeah because you said to increase it and that's the only thing i changed in the video yeah that could be that nowadays they recommended take a long time to load
+Pablo [26:08]: what do you make a difference if i use a work laptop versus another one i don't know there's i don't know i think like in youtube it depends more on your browser probably maybe the firefox or chrome makes a difference
+Pablo [26:13]: firefox now if you scrape the live internet
+Pablo [26:20]: always in computations of rusan talking about digital footprint representativeness and whatever and the bias where you get on collecting artificial footprints as you all know
+Pablo [26:25]: no yes it matters if you're logged into your youtube account or not
+Pablo [26:27]: because you will see something completely different
+Pablo [26:43]: and if you're logged into your whatever uc davis gmail and then open youtube you are in a uc davis youtube account basically right because obviously you see davis gmail so that matters if you log out or go into a cognitive browser you see something different
+Pablo [26:48]: our studies show that if you're an cognitive browser probably you see even more aggressive
+Pablo [26:58]: selection of things because that's what they do in cognitive they want to get people on on board so more flashy more aggressive things that some of our research shows and if you are and you're normally login browser
+Pablo [27:01]: but that's the reality you're going to see in ebony
+Pablo [27:02]: that makes a difference
+Pablo [27:08]: all right cool
+Pablo [27:12]: yeah so get the data you will need it in the second step
+Pablo [27:18]: okay let's go to
+Pablo [27:19]: i
+Pablo [27:22]: think i'm not
+Pablo [27:26]: supposed to do links only or those titles
+Pablo [27:27]: as well
+Pablo [27:29]: i know what do you guys read
+Pablo [27:31]: what others read
+Pablo [27:35]: it was supposed to be titles in
+Pablo [27:40]: it was like around figure twelve is that titles links and titles for the recommended
+Pablo [27:49]: so yeah i mean if you didn't then adults are fine i didn't discount points for that because i saw there was a problem with it so if you have the url it's also
+Pablo [27:49]: fine
+Pablo [27:54]: figure that out but if you did that all the
+Pablo [27:55]: good for you
+Pablo [27:56]: great
+Pablo [27:57]: a little bit more about it
+Pablo [27:58]: and doing it
+Pablo [27:59]: to steps and also makes sense
+Pablo [28:02]: you scrape this and the collection is great
+Pablo [28:03]: you collect
+Pablo [28:04]: it
+Pablo [28:05]: that
+Pablo [28:05]: makes a lot of sense
+Pablo [28:07]: just
+Pablo [28:08]: have a curiosity
+Pablo [28:09]: how many
+Pablo [28:10]: most of you
+Pablo [28:19]: is there
+Pablo [28:22]: a way to get more i think there's a pagination
+Pablo [28:24]: feature or something there's a scroll option
+Pablo [28:35]: yeah and that sometimes also i mean in many modern web pages as well you go over with your mouse and only then it shows up
+Pablo [28:40]: so these are more difficult to scrape too or like you scroll and of course if it didn't load yet you cannot scrape it
+Pablo [28:47]: so it looks great being is basically you can do that band you just copy paste into an excel sheet what you should do
+Pablo [28:48]: now if it's not loaded
+Pablo [28:50]: you cannot copy paste it
+Pablo [28:51]: and you can also not scrape it
+Pablo [29:00]: so with a browser as well sometimes it makes sense you can either scroll yourself down so it loads the infinite feed
+Pablo [29:03]: or you tell the browser to scroll down
+Pablo [29:06]: and whatever is loaded that's what it was
+Pablo [29:10]: great if it's not loaded that's also where the delay is useful because it needs to load first only then you can scrape it
+Pablo [29:21]: who did the vive coding somebody did something with cloud was it yeah you want to tell us a little bit about it
+Pablo [29:23]: yeah
+Pablo [29:31]: i guess it was like seven pm yesterday and web scraper io wasn't working
+Pablo [29:31]: yeah
+Pablo [29:34]: i logged into claude
+Pablo [29:55]: and i actually did the inspect element thing on youtube and i gave it the x parts of the elements that i wanted to scrape and yeah it took like one revision so just version two of the script it worked perfectly it was much faster than what i was doing with bedscraper io
+Pablo [29:58]: yeah so we can ask it right now we can ask claude
+Pablo [30:05]: import fab json sorry unfortunately as a json
+Pablo [30:09]: or your export file ed student
+Pablo [30:32]: the output csv csv no okay what did claude produce so right now and what did you do your python script it gave you a python script so it gave you the python script and then you run python just to you run that script too is great yeah i saw then also in your code that you had there were a lot of different specifications
+Pablo [30:37]: something other than the other one it said something different
+Pablo [30:40]: in the screenshot
+Pablo [30:43]: i put the command prompt the output of the script
+Pablo [30:51]: but in the script file itself there was some configurations for the url for the maximum number of videos that you want to scrape
+Pablo [30:56]: is that what it okay well let me see hold on maybe i pull it
+Pablo [31:05]: your script use selen right yeah but the chrome or firefox version
+Pablo [31:09]: i've never been able to get the chrome version to work
+Pablo [31:26]: specifically with that
+Pablo [31:34]: vis
+Pablo [31:35]: ual
+Pablo [31:39]: because he's embarrassing
+Pablo [31:40]: to be careful
+Pablo [31:55]: to
+Pablo [31:56]: receive
+Pablo [31:58]: which
+Pablo [31:59]: has its own bia
+Pablo [31:59]: ses
+Pablo [32:00]: would create
+Pablo [32:01]: a bias out
+Pablo [32:02]: put
+Pablo [32:02]: for success
+Pablo [32:03]: actually
+Pablo [32:08]: then
+Pablo [32:08]: different
+Pablo [32:17]: now
+Pablo [32:18]: let me see what we clock
+Pablo [32:19]: shall mean
+Pablo [32:30]: just asking and then it basically created the script
+Pablo [32:33]: right and that's a license group
+Pablo [32:35]: that you then copied here and you ran it
+Pablo [32:38]: so claude give me this
+Pablo [32:53]: yeah yeah in the input i also specified the x path or some html of the element that i wanted to scrape because i know that if you don't provide that claude doesn't doesn't work so here let's see let's open your conversation with claude
+Pablo [33:01]: you said i want a python script that's one such youtube channel and then it coded it up right so they did
+Pablo [33:06]: but then here
+Pablo [33:10]: you get something very different whether you are putting here help me write a small script
+Pablo [33:13]: that's the html
+Pablo [33:14]: i went to youtube
+Pablo [33:16]: and i did the right click
+Pablo [33:18]: and inspect element on the elements
+Pablo [33:19]: i wanted to
+Pablo [33:20]: scrape
+Pablo [33:21]: and i copied
+Pablo [33:22]: the source
+Pablo [33:23]: adopted
+Pablo [33:25]: you don't really know html you're a
+Pablo [33:26]: copy
+Pablo [33:29]: do you know html
+Pablo [33:30]: yeah
+Pablo [33:38]: element
+Pablo [33:39]: this was the link
+Pablo [33:47]: okay and initially i specified that for both of the elements
+Pablo [33:50]: but it wasn't working correctly
+Pablo [33:50]: for recommended
+Pablo [33:51]: so in the second
+Pablo [33:52]: round
+Pablo [33:59]: yeah
+Pablo [34:07]: i did a right click and copy full x path so with that it gave me a script that worked perfectly for both
+Pablo [34:14]: okay so basically if you go now on my youtube video
+Pablo [34:14]: s
+Pablo [34:21]: go through the video now here
+Pablo [34:30]: using chat gpt okay and then you did right click here inspect
+Pablo [34:36]: and then you look for
+Pablo [34:37]: recomm
+Pablo [34:38]: ended video
+Pablo [34:40]: i want the recommended
+Pablo [34:41]: video
+Pablo [34:42]: scroll
+Pablo [34:43]: down
+Pablo [34:53]: youtube
+Pablo [35:06]: right
+Pablo [35:21]: you need control
+Pablo [35:22]: after strength
+Pablo [35:34]: and then you look
+Pablo [35:35]: forward
+Pablo [35:41]: it just let me directly
+Pablo [35:42]: do that element
+Pablo [35:50]: sourced
+Pablo [35:52]: you can just right click
+Pablo [35:53]: web page
+Pablo [35:54]: source and then
+Pablo [35:54]: also do that
+Pablo [35:55]: and all of
+Pablo [35:56]: you
+Pablo [35:57]: which is more
+Pablo [35:59]: just right
+Pablo [36:00]: click
+Pablo [36:01]: and then
+Pablo [36:02]: on the screen
+Pablo [36:04]: on this not the thumbnail
+Pablo [36:15]: and then you do view the page source that lets you to the html because it is open source youtube selects you do that but if you have
+Pablo [36:17]: gd or something like that which is
+Pablo [36:18]: very personal
+Pablo [36:23]: you cannot do this or i would say four or three fall within and the web scraper won't work
+Pablo [36:25]: okay
+Pablo [36:37]: all right so okay so that's getting that a little bit more sophisticated that you have to get into the html i thought it would be just if you just would do that without going to html with that web browser that's great
+Pablo [36:41]: for if you just wipe it code it like this like i did right now if i run this here do you think it will work
+Pablo [36:53]: probably not just based on experience because i have tried that way before and it didn't work it didn't work all right good well just see how good that's becoming that good guys
+Pablo [36:56]: you're giving it hard coded sign
+Pablo [36:59]: s for html and when you change the web page
+Pablo [37:03]: the html changes and the hard coded stuff won't work anymore
+Pablo [37:11]: okay so it is in a way you're hard coding a script to search for a specific thing that claude is doing which it always does
+Pablo [37:13]: because it's a human interaction
+Pablo [37:15]: you want to do search in a specific
+Pablo [37:16]: web source
+Pablo [37:19]: on
+Pablo [37:22]: the bedside searches the part that
+Pablo [37:23]: he sent okay
+Pablo [37:27]: but if you want something which is dynamic it cannot do it
+Pablo [37:36]: okay we need a web scraper which has a data set it is built on to scrape
+Pablo [37:37]: all right
+Pablo [37:44]: okay well glad that it still worked for some degree
+Pablo [37:49]: okay who is our discussion leader today
+Pablo [37:52]: four all right
+Pablo [38:00]: okay let's get going then okay so this was for big data then yeah
+Pablo [38:05]: okay who wants to go first under three four okay
+Pablo [38:09]: you want to connect your laptop
+Pablo [38:15]: yes and it's set up front here or does it actually work it probably reaches over all the way over there
+Pablo [38:44]: so if you have four let's keep it to a maximum let's say ten fifteen minutes sure
+Pablo [38:44]: yeah
+Pablo [38:45]: all right
+Pablo [38:49]: from the start
+Pablo [38:50]: and then
+Pablo [38:51]: it needs to switch
+Pablo [39:11]: i just can't find my cursor on the second screen
+Pablo [39:19]: i have a quick clarifying question
+Pablo [39:21]: for these discussions
+Pablo [39:24]: i was
+Pablo [39:25]: going to
+Pablo [39:28]: fifteen
+Pablo [39:30]: well
+Pablo [39:31]: right now
+Pablo [39:34]: concent
+Pablo [39:35]: ration like
+Pablo [39:36]: this week
+Pablo [39:36]: is
+Pablo [39:37]: sign
+Pablo [39:39]: up and you just sign that
+Pablo [39:40]: up so it's just let it run
+Pablo [39:40]: see how it goes
+Pablo [39:43]: but yeah usually i would
+Pablo [39:47]: say only one person presenting we can go more in detail
+Pablo [39:54]: word interactive not visual
+Pablo [39:58]: all right so we learned about big data
+Pablo [40:14]: and personally i was really happy to get some kind of a framework for how to think about that i think i heard of big data the first time my friend's dad was like a computer scientist and he's like you guys need to listen you need to get into big data
+Pablo [40:20]: and whenever you ask somebody with definition of it is how to become
+Pablo [40:22]: circular logic and so i appreciate
+Pablo [40:23]: the framework
+Pablo [40:25]: that we
+Pablo [40:26]: use
+Pablo [40:27]: his last seven lectures
+Pablo [40:29]: so the five kind of dimensions that
+Pablo [40:31]: professor hill
+Pablo [40:32]: ary
+Pablo [40:33]: uses
+Pablo [40:36]: are these two
+Pablo [40:37]: sampling is done
+Pablo [40:38]: real time
+Pablo [40:40]: which was not a hard and fast rule
+Pablo [40:41]: but it's kind of often
+Pablo [40:46]: the case and the machine learning is this tool that we have to fight fire with fire
+Pablo [41:17]: so first digital footprint many things many just pieces of information generally are recorded automatically and even unintentionally the quote that i liked from one of the videos was kind of like a side effect so it might be intentionally collected it might be just kind of incidentally a person's mouse scrolling data is being recorded before folks who are going to use the data know how they're going to use the data it's just kind of something that is being recorded
+Pablo [41:51]: data fusion is because of this kind of messiness the nature of these data are ad hoc so youtube might collect information in a certain way and facebook might collect information in a certain way in order to make sense of all these data something that i guess a big data analyst i'm not sure if that's really the term but something that analysts might do is stitch these data together in order to make sense of them so that it's not just kind of facebook data living in facebook for facebook purposes you can stitch together multiple sources of data
+Pablo [42:10]: the potential issue with this kind of data is that it's necessarily biased depending on the source so the chart that i have here is kind of the difference in social media use by age each of the dots represents an age demographic
+Pablo [42:23]: you can see at the very top you have kind of the younger social medias and at the bottom the older social medias and so this is to say if we're looking at data from instagram
+Pablo [42:31]: that is not going to be representative of the population and neither is data from truth social which is probably not surprising anybody
+Pablo [42:58]: and so there are lots of other dimensions other than age where data from each of these sources is going to vary but i thought that age was kind of the pew research site that i looked at to get this actually had a lot of different crosstabs and age was the one that actually had the most variation so a lot of for example i was kind of surprised like most of these social medias don't have a huge degree of variation by political party which i thought was kind of interesting
+Pablo [43:05]: real time often not always produced instantly
+Pablo [43:12]: allows for faster analysis and we found some kind of interesting ways to use that in the video modules
+Pablo [43:30]: and then like i said machine learning is these sets of tools or i guess i should say the big data makes it possible to analyze using machine learning in a way that wasn't possible prior to big data for the onset of it
+Pablo [43:44]: or maybe it was possible but there are far fewer uses of machine learning when nineteen seventies world where most of the information that we have is not in the digital format
+Pablo [43:54]: so i mentioned last class i'm in education and so i'm kind of like connecting this to my world i'm curious
+Pablo [44:02]: to after this i want to open the discussion up and hear kind of how you all have been using big data or want to use big data in your work
+Pablo [44:05]: this is a quote that i took from this study
+Pablo [44:08]: i can share the link with you if you're curious
+Pablo [44:18]: i pulled it it's not really a novel quote but i really liked it because it kind of lends credence to our professor's rhetoric of digital traces that are kind of left behind
+Pablo [44:30]: promise more scalable finer grain understanding in support of student learning processes which are previously too costly so this is kind of the nod to
+Pablo [44:34]: these are being collected often in real time
+Pablo [44:40]: maybe without a use in mind but now we have the tools to kind of make sense of this
+Pablo [44:50]: and so this paper looks at micro level meso level macro level types of data that are now being analyzed in education spaces
+Pablo [45:24]: but with natural language processing that's kind of starting to make sense of these data
+Pablo [45:29]: and then macro level these are data sources that have always existed or have existed for longer
+Pablo [45:33]: administrative records on test scores enrollment degree completion
+Pablo [45:46]: these are usually collected by mandate actually through some state or federal process they're usually collected only once or twice a year but these i think to kind of bring it home
+Pablo [45:54]: i found it really interesting to think about how these might all relate the lines kind of blurring these are all working in conjunction
+Pablo [46:02]: so you might look at writing burst data so if a student is staring at their tutoring interface and they're thinking and thinking and thinking
+Pablo [46:08]: and researcher can analyze at what point do they start to have this burst of creativity
+Pablo [46:18]: it
+Pablo [46:21]: and so you might look at that data at the micro level
+Pablo [46:25]: and then you can analyze those essays with natural language processing like i said
+Pablo [46:32]: and then maybe after this is a big evaluation is big in the education world
+Pablo [46:35]: you want to evaluate this edtech tool
+Pablo [46:39]: by looking at micro level mesa level
+Pablo [46:46]: at the macro level you would hope that that would show up in a change in standardized test scores although
+Pablo [46:50]: there's a lot of pushback i think the lesson quantity in the field is
+Pablo [46:51]: about in the quality of education
+Pablo [46:52]: world
+Pablo [46:54]: there's a lot of pushback on standardized test
+Pablo [46:56]: the lead on end all
+Pablo [47:04]: curious i have kind of a discussion question
+Pablo [47:05]: before i get into
+Pablo [47:05]: that
+Pablo [47:06]: i'm curious
+Pablo [47:12]: i've been able to share how have you been soliciting data or how are you hoping to be exposed
+Pablo [47:12]: to the data
+Pablo [47:19]: being in computer science
+Pablo [47:25]: for a long time i've seen a lot of data come in i remember when big data was this big revolution
+Pablo [47:30]: i think we thought that we would see what we're seeing now which is the revelations government
+Pablo [47:34]: you're like oh my gosh now that all of this digital data coming in i can make all of these connections
+Pablo [47:53]: except the best that we could do with it was like index it so that maybe you could search it or something but it wouldn't actually do any logic like the we talked about how it inverts where you have your data and your outputs and then it tells you your program as opposed up until the llm and ai revolution
+Pablo [48:06]: i think big data was just a fun little thing it was like this block over here that one day we're going to chisel it out and the david will be there but until then it's just this big block of stone and i think that
+Pablo [48:15]: all of that possibility that we thought was possible twenty years ago is sort of now possible to like the layman
+Pablo [48:26]: yeah you've been an interesting position to have witnessed kind of those stages now it's like a distinct maybe twenty twenty three or twenty two these llms come out that feels like a distinct shift
+Pablo [48:32]: in being able to honestly do that but it's interesting to have seen the growth it was inaccessible before
+Pablo [48:34]: yeah it doesn't matter that it was there
+Pablo [48:43]: although like edward snowden and a few guys in the government they were all those data sources and make use of those before the average person
+Pablo [48:43]: is
+Pablo [49:17]: yeah i've used it before through like apis looking at afp like photo and video data and then ap photo and video data and kind of like for all countries since they started logging like photo and video incidents in order to like track like protests political violence riots things like that i'd like to move into novel political violence data event detection by scraping sources like reddit twitter like all social media sites so scraping this last assignment is super relevant to your
+Pablo [49:48]: this was actually an example that i was going to put in in my discussion with the ninth pivoted to something much more in my past so my kiwi currently is on tweets and tweet data of candidates within the twenty twenty four election to see how they change their ideology too orally either before the primary or after the primary and i remember when i proposed this project i think for the first time in cindy shen's social media course
+Pablo [50:00]: she was like this is a great project but it's going to take a lot of data which obviously is so hard to scrape on twitter now because of various goings on
+Pablo [50:04]: but i'm thinking about
+Pablo [50:20]: i kind of got a little bit of inspiration from an article that was done by bale i think in like twenty twenty two where he essentially was tracking the velocity and the spread of misinformation on twitter
+Pablo [50:51]: by just like taking in i think he took in like one point four million tweets it may have been even more and like put it into a sandbox to track like behavior of the users and how the tweet spreads and how the algorithm makes it spread and then he just tried different levers and pulleys like nudges of like hey this is misinformation or like what was it algorithmic throttling like if you throttle the speed of like the sharing of the tweet
+Pablo [50:57]: like through the whether it shows up in a feed or not does that stop the misinformation
+Pablo [51:13]: and i mean i'm biased because i love twitter even under its current ownership i just think that's it i'm standing up
+Pablo [51:16]: sand
+Pablo [51:16]: box
+Pablo [51:18]: feel to
+Pablo [51:19]: big data
+Pablo [51:19]: makes it so that
+Pablo [51:20]: there are no
+Pablo [51:22]: concern
+Pablo [51:22]: s which i know
+Pablo [51:24]: is going to be
+Pablo [51:24]: included there and
+Pablo [51:26]: it
+Pablo [51:27]: 's fun to just kind of let
+Pablo [51:28]: the t hurt
+Pablo [51:31]: cool well i want to keep talking about this
+Them [51:31]: but
+Them [51:35]: i don't
+Them [51:36]: take too much of your time
+Them [51:39]: but i wanted to kind of
+Them [51:41]: for me
+Them [51:49]: and then the question is associating it that is associated with it kind of describes my thinking on this
+Them [51:54]: but this is the discussion question is true or false websites like price
+Them [51:55]: kind of their own data
+Them [51:59]: to mimic consumer price index data
+Them [52:07]: they can produce data they can analyze data much more quickly and rely just as reliably as the bls how do we feel about that
+Them [52:13]: like whether it's true or false yeah i mean look
+Them [52:17]: our professor's own words you can see
+Them [52:26]: cpi takes i think it's every month they produce these these reports and price stats i don't actually know the specifics but presumably every week
+Them [52:28]: maybe every day
+Them [52:32]: why would we focus on bls data it looks pretty good
+Pablo [52:36]: so one
+Pablo [52:39]: aspect is that it's the common collecting data
+Pablo [52:42]: obviously there is a motivation
+Pablo [52:47]: behind a data collection are different from price
+Pablo [52:54]: you can argue that you can privatize all services but i think
+Pablo [53:01]: that's a separate discussion i didn't include the argentina screenshot but that's even more true in argentina anybody else my dad
+Pablo [53:02]: i think
+Pablo [53:07]: so it has to be done
+Pablo [53:13]: considering the social
+Pablo [53:14]: network
+Pablo [53:27]: there was the critique or not commentary commentary that's what we'll call it against the os
+Pablo [53:31]: and so as we start kind of like do we actually trust the numbers
+Pablo [53:36]: this is maybe where this can be something to keep accountability
+Pablo [53:40]: also
+Pablo [53:48]: there
+Pablo [53:49]: is a lot of attention
+Pablo [53:50]: numbers
+Pablo [53:56]: definitions
+Pablo [53:57]: that are
+Pablo [53:58]: satellite
+Pablo [53:59]: gil
+Pablo [54:00]: bert economic
+Pablo [54:01]: s is unnecessarily
+Pablo [54:02]: the same
+Pablo [54:04]: go
+Pablo [54:04]: through
+Pablo [54:05]: after
+Pablo [54:08]: a certain amount of years you fall off
+Them [54:14]: and i no longer count you only recorded when you're seeking employment and not finding employee
+Pablo [54:19]: how
+Pablo [54:20]: much of a district
+Pablo [54:26]: but i quote unloved from
+Pablo [54:27]: a forward like february
+Pablo [54:33]: is that you just sort of
+Pablo [54:34]: breathe
+Pablo [54:39]: so then the answer that i gave
+Pablo [54:39]: to this
+Pablo [54:40]: i feel like
+Pablo [54:41]: the textbook
+Pablo [54:43]: seems
+Pablo [54:44]: like
+Pablo [54:45]: the kind of
+Pablo [54:46]: curveball is most true
+Pablo [54:47]: the answer is false
+Them [54:53]: pretty good
+Them [54:55]: for demograph
+Them [54:56]: ic data
+Them [54:57]: about how
+Them [54:57]: many people
+Them [54:59]: a certain
+Them [55:00]: place
+Them [55:02]: rigorous methodology random sampling
+Them [55:04]: are going to do a better job
+Them [55:08]: than a lot of these proprietary firms it's not clear necessarily though
+Them [55:11]: that's always true in every setting
+Them [55:15]: one example where
+Them [55:21]: these proprietary sources might run into trouble is if there's non stationary in the data
+Them [55:37]: if price stats is backwards looking to generate their forecast and then something has changed either about the way they collect their data or about the nature of the phenomenon that they're studying that changes it in a way that makes the previous data not reliable
+Them [55:51]: but i did think it was important to say there's not necessarily a clear answer we know if we want a census like that's a you know represented sample matters a lot big data doesn't solve
+Them [56:02]: random sampling issues or it doesn't randomly sample so there could be issues but i think the the classic like very economist style answer is would it kind of depend
+Them [56:06]: but anyway i'm a little bit over time so thanks for your discussion
+Them [56:13]: what we really measure
+Them [56:15]: what does the bls measure
+Them [56:36]: and how they measure it what do you really want to measure is it really like okay so they have some people who really walk into stalls and look at the milk they use it why don't yogurt or at the zero so what cereal are they actually looking at and are they looking at the cereal or that cereal and maybe this other zero or maybe they should look at organics here and that would maybe the entire so what are you actually looking at what is actually the data
+Them [57:00]: or we just used to is this really like okay so what they're looking at is the non organic cereal not the organic cereal because that goes a different price thing and i want to be there so but if you use it the non organic then actually are we managing the economy actually well like these are the data we really managing is this a really is that the useful like what is actually so every data is an abstraction from reality as an observation
+Them [57:02]: it aggregates it fines you
+Them [57:11]: so there's an infinite number of ways you can look at reality that i think it cannot name that thing so it's more complementarity at the end as well
+Them [57:15]: and many of the data that we took for granted like government provided data
+Them [57:24]: are being questioned and in some cases like grooming scalp made this i think this point very elegantly says yes so for example the income data
+Them [57:32]: may be better if you get really their credit score and maybe have that data but in africa it's good enough to have to know if they have a cell phone to estimate what's the income
+Them [57:34]: and how they use their cell phone
+Them [57:36]: and you don't yeah
+Them [57:38]: so
+Them [57:40]: cool very good okay who wants to go next
+Pablo [57:43]: go ahead
+Pablo [57:51]: so i'll feedback on that a little bit now is a good intro
+Pablo [57:57]: i just wanted to point out a few other like characteristics of big data
+Pablo [58:03]: and then i want to give an example from my previous employer
+Pablo [58:05]: i believe
+Pablo [58:07]: you work at ucs health
+Pablo [58:08]: right and then jason
+Pablo [58:09]: you are also
+Pablo [58:11]: kind of help aligned so this
+Pablo [58:12]: is kind of
+Pablo [58:13]: health and claims
+Pablo [58:13]: data
+Pablo [58:14]: but
+Pablo [58:16]: i'll start off with
+Pablo [58:18]: non
+Pablo [58:19]: definition drug
+Pablo [58:20]: matthews
+Pablo [58:23]: right
+Pablo [58:24]: last year
+Pablo [58:29]: so he starts off with despite the widespread use
+Pablo [58:30]: of this term
+Pablo [58:32]: big data there's no cons
+Pablo [58:33]: ensus on what
+Pablo [58:33]: the day
+Pablo [58:34]: is
+Pablo [58:34]: however one
+Pablo [58:36]: of the most common def
+Pablo [58:37]: initions of big data
+Pablo [58:38]: books is on
+Pablo [58:39]: the
+Pablo [58:40]: the volume
+Pablo [58:41]: variety
+Pablo [58:42]: and velocity
+Pablo [58:43]: of the data
+Pablo [58:46]: he goes on to reframe
+Pablo [58:47]: this
+Pablo [58:48]: in terms of
+Pablo [58:49]: five
+Pablo [58:50]: w's
+Pablo [58:52]: where
+Pablo [58:52]: and why
+Pablo [58:54]: i
+Pablo [58:58]: price test and the
+Pablo [58:58]: els
+Pablo [58:59]: i think that
+Pablo [59:05]: the definition that he put this
+Pablo [59:08]: worth with the five w's when you're looking at
+Pablo [59:14]: who when you're differentiating these two sources obviously price stats is you know revenue generating
+Pablo [59:18]: and it's not necessarily like a nonprofit for public good
+Pablo [59:25]: i think a lot of the instances where people use administrative data to track flight logs of like celebrities
+Pablo [59:26]: or whatnot
+Pablo [59:30]: sometimes the why is
+Pablo [59:37]: to make money but sometimes the y is also to you know monitor the government
+Pablo [59:42]: if we have price stats and it mapped very well onto bls
+Pablo [59:56]: then you know that's kind of like a more accessible data source that researchers can use obviously the bls isn't necessarily putting forth data for researchers and for civic duty or public engagement
+Pablo [59:58]: but for price ad
+Pablo [59:59]: s
+Pablo [1:00:00]: inaccessible
+Pablo [1:00:02]: means of big data
+Pablo [1:00:06]: so anyway i have two big characteristics for
+Pablo [1:00:10]: data one observational data collected without intervention
+Pablo [1:00:11]: system
+Pablo [1:00:12]: s
+Pablo [1:00:13]: where
+Pablo [1:00:15]: you're not necessarily
+Pablo [1:00:17]: running a certain kind of experience
+Pablo [1:00:19]: you just have collecting the street state of the jew
+Pablo [1:00:20]: print
+Pablo [1:00:22]: on make these
+Pablo [1:00:23]: research
+Pablo [1:00:24]: inferences
+Pablo [1:00:25]: or analyses
+Pablo [1:00:26]: data analyses
+Pablo [1:00:28]: and then the second one
+Pablo [1:00:29]: is to create
+Pablo [1:00:30]: originally
+Pablo [1:00:32]: created original
+Pablo [1:00:33]: s
+Pablo [1:00:35]: but
+Pablo [1:00:37]: of repurposing
+Pablo [1:00:38]: for research
+Pablo [1:00:43]: my own instance
+Pablo [1:00:45]: tweets aren't necessarily
+Pablo [1:00:45]: for research
+Pablo [1:00:47]: but
+Pablo [1:00:50]: you
+Pablo [1:00:52]: learn about tesla
+Pablo [1:00:53]: then there's a whole bunch of
+Pablo [1:01:00]: pre processing procedures for using text and content for research which has now been
+Pablo [1:01:03]: political communication
+Pablo [1:01:04]: various
+Pablo [1:01:06]: social media studies that use twitter
+Pablo [1:01:10]: so in contrast to traditional social science data
+Pablo [1:01:12]: like surveys and
+Pablo [1:01:13]: experiments that
+Pablo [1:01:13]: involve
+Pablo [1:01:16]: very bespoke custom made data
+Pablo [1:01:17]: collected
+Pablo [1:01:18]: through intervention
+Pablo [1:01:18]: and manipulation
+Pablo [1:01:19]: big data
+Pablo [1:01:20]: can kind of
+Pablo [1:01:21]: just see this
+Pablo [1:01:24]: thing that you're just waiting
+Pablo [1:01:25]: to download from
+Pablo [1:01:26]: the ether end use for your
+Pablo [1:01:27]: own purposes
+Pablo [1:01:28]: which
+Pablo [1:01:29]: creates
+Pablo [1:01:30]: a very inspir
+Pablo [1:01:31]: ing opportun
+Pablo [1:01:32]: ity
+Pablo [1:01:33]: for music
+Pablo [1:01:33]: use by us
+Pablo [1:01:35]: so
+Pablo [1:01:36]: going into my
+Pablo [1:01:36]: example
+Pablo [1:01:40]: work
+Pablo [1:01:41]: at accele
+Pablo [1:01:43]: rate health which was
+Pablo [1:01:44]: a health tech
+Pablo [1:01:45]: startup in newport
+Pablo [1:01:46]: beach
+Pablo [1:01:46]: and
+Pablo [1:01:49]: group so i saw projects
+Pablo [1:01:52]: we
+Pablo [1:01:53]: had a medicare health plan
+Pablo [1:01:55]: i
+Pablo [1:01:56]: 'm going to get a little
+Pablo [1:01:57]: bit insight
+Pablo [1:01:57]: based on this
+Pablo [1:01:59]: here at gift services
+Pablo [1:02:00]: we had health plan
+Pablo [1:02:01]: that was contributing
+Pablo [1:02:03]: under your advantage services
+Pablo [1:02:05]: to
+Pablo [1:02:06]: beneficiaries of
+Pablo [1:02:07]: aggregation
+Pablo [1:02:07]: sharp
+Pablo [1:02:08]: sometimes
+Pablo [1:02:09]: with stipulations
+Pablo [1:02:10]: low
+Pablo [1:02:11]: er age
+Pablo [1:02:12]: but essentially cms
+Pablo [1:02:13]: uses many many
+Pablo [1:02:15]: metrics in order to judge the
+Pablo [1:02:16]: plan quality
+Pablo [1:02:17]: for health plans
+Pablo [1:02:21]: for ibn's integrated delivery networks for hospitals things like that
+Pablo [1:02:24]: so anyone who gets medicare dollars
+Pablo [1:02:27]: is
+Pablo [1:02:29]: under
+Pablo [1:02:30]: michelle
+Pablo [1:02:31]: of this
+Pablo [1:02:32]: data
+Pablo [1:02:34]: overseer data visual visual
+Pablo [1:02:36]: atus that
+Pablo [1:02:40]: kind of looks to see if you are delivering quality care to medicare patients
+Pablo [1:02:44]: whether it be providers plans institutions anything
+Pablo [1:02:44]: like that
+Pablo [1:02:51]: so one thing that we have is the cahps survey which is where cms
+Pablo [1:02:59]: technically they force the plan to contract with a third party vendor it was very dicey because we were if you think of it
+Pablo [1:02:59]: you want it
+Pablo [1:03:00]: no
+Pablo [1:03:01]: we're going to
+Pablo [1:03:02]: use
+Pablo [1:03:05]: but cms is medicare reach out to
+Pablo [1:03:11]: of questions determine
+Pablo [1:03:13]: your care utilization
+Pablo [1:03:34]: medication adherence and their general satisfaction with the hmo or the medicare advantage plan that they're currently on so essentially it's like if you know the communication department were to hire a survey vendor to ask everyone who takes communications classes how were these professors how was this class how was the department xyz
+Pablo [1:03:43]: this is an example of obviously traditional survey data that has various interventions
+Pablo [1:03:47]: we found that sometimes beneficiaries when prompted
+Pablo [1:03:48]: would give
+Pablo [1:03:50]: a lowered satisfaction
+Pablo [1:03:51]: score
+Pablo [1:03:57]: because they were like oh if i tell the survey editor whose third party that my plan
+Pablo [1:04:14]: like oh yeah it's fine but i want this much more and i'm expressing dissatisfaction over that gap then they think that these are old people obviously they have a lot of time they are telling the survey vendor like hey i essentially want this more out of the plan even though the survey is typically just
+Pablo [1:04:15]: very empirical
+Pablo [1:04:17]: custom adjacent
+Pablo [1:04:20]: what's the range of qualitative
+Pablo [1:04:35]: so that would result in a lot of low satisfaction scores which actually prompted a new model that did not have cahps survey anywhere in it and it just used administrative data to measure quality
+Pablo [1:04:55]: but alternatively so that was traditional survey data alternatively there are instances of cms using big data to determine the quality of a plan so there's hedis which is the healthcare effectiveness data and information set it's essentially a set of measures that measures very empirically whether a plan is doing well
+Pablo [1:05:22]: via login to it in a second and then there's star measures which are measures regarding like there's a poll measure which is colon cancer how many patients of your plan got their required colorectal cancer screening whether it be a sigmoidoscopy a colonoscopy and fobt test things like that there's mammogram screenings for breast cancer there is statin use for medications a whole bunch of things
+Pablo [1:05:35]: essentially these are standardized tools that assess the clinical quality across healthcare entities they use numerators which are taken from claims like claims data and
+Pablo [1:05:47]: encounter data from your pcps and then there are denominators which are taken from beneficiary metadata like age like icd ten codes like chronic condition diagnoses et cetera et cetera
+Pablo [1:06:01]: so the more numerator positive cases that a health plan or hospital or provider have the better it will score on these quality metrics and it shows that there's living
+Pablo [1:06:02]: health care
+Pablo [1:06:03]: obviously
+Pablo [1:06:06]: your patients
+Pablo [1:06:10]: will use initiative data from claims
+Pablo [1:06:11]: pct encounters
+Pablo [1:06:28]: pharmacy records and lab results for a broad data set of services rendered this encompasses a method of big data which uses a top down structure of oversight on health plans to make sure that medicare advantage plans which
+Pablo [1:06:34]: is private public partnership with healthcare which is very hard to wrangle in
+Pablo [1:06:38]: in order to figure out what compliance
+Pablo [1:06:40]: and do various things institutional research
+Pablo [1:06:41]: for
+Pablo [1:06:42]: health nutrients and population
+Pablo [1:06:44]: health essentially we have those
+Pablo [1:06:45]: two
+Pablo [1:06:48]: one that's very archaic that's being based out
+Pablo [1:06:50]: of traditional survey that survey
+Pablo [1:06:53]: run
+Pablo [1:06:53]: s
+Pablo [1:06:54]: it's on
+Pablo [1:06:55]: going
+Pablo [1:06:55]: totally
+Pablo [1:06:56]: same
+Pablo [1:06:58]: but they are focusing more on the big data aspect of it
+Pablo [1:07:01]: where they'll use claims data
+Pablo [1:07:02]: for
+Pablo [1:07:03]: various
+Pablo [1:07:04]: benchmarks
+Pablo [1:07:08]: see how
+Pablo [1:07:08]: many dollars
+Pablo [1:07:09]: they should be given to medicare
+Pablo [1:07:10]: for us or
+Pablo [1:07:11]: region
+Pablo [1:07:12]: and certain plan
+Pablo [1:07:13]: s for whether
+Pablo [1:07:14]: the plan is actually
+Pablo [1:07:17]: categorized
+Pablo [1:07:18]: so students
+Pablo [1:07:19]: based on certain
+Pablo [1:07:20]: characteristics of the data
+Pablo [1:07:21]: that
+Pablo [1:07:22]: makes it
+Pablo [1:07:23]: suitable for different types of
+Pablo [1:07:24]: balances
+Pablo [1:07:25]: so the
+Pablo [1:07:26]: capsule they all see that
+Pablo [1:07:30]: would be kind of like content data it's very aesthetically ascribed as
+Pablo [1:07:31]: long and narrow
+Pablo [1:07:38]: because there are very few variables but it's very long with a lot of instances i think our health plan
+Them [1:07:38]: had
+Them [1:07:43]: beneficiaries and we had to survey at least thirty percent of them to some extent
+Them [1:07:51]: and also for instance content data would be like twitter data where there's text or a message in but very few
+Them [1:07:53]: variables in order to
+Them [1:07:54]: actually
+Them [1:07:56]: rhyme or reason
+Them [1:08:00]: so caps data would be content data patient reports
+Them [1:08:06]: treatable from medical offices and are examples of content data even though they aren't necessarily
+Them [1:08:09]: big data
+Them [1:08:10]: because
+Them [1:08:15]: premeditated like survey
+Them [1:08:23]: and then you have digital footprint data which are data that are representing human activities and behaviors typically long and wide
+Them [1:08:25]: and they have many
+Them [1:08:47]: metadata in our instance like claims data i don't know if you guys have ever seen a claims sheet whether it be from your explanation of benefits or something but it has a lot of information it has like three different dollar amounts all of it you don't even know how it's going to line up for what you pay
+Them [1:08:54]: it has a whole bunch of information on age on her previous diagnoses et cetera et cetera
+Them [1:09:00]: and these are continuously used or i guess continuously ingested into
+Them [1:09:00]: these systems
+Them [1:09:02]: in order to set out whether it
+Them [1:09:03]: be quality score
+Them [1:09:06]: or prompt health plans to
+Them [1:09:07]: target
+Them [1:09:08]: for
+Them [1:09:09]: health
+Them [1:09:12]: so they're usually structured usually complex
+Them [1:09:21]: they're usually done in a relational database format we used to use sql for some of our analyses and whatnot
+Them [1:09:49]: so essentially digital footprint data can be used in healthcare for claims data for administrative data for pharmacy records also called pes prescription drug events and they're all examples of digital footprints and trace data that we use to glean from beneficiaries and then electronically obtain for health plans to mirror various cms methodologies measures
+Them [1:09:50]: compliance
+Them [1:09:59]: i've been tracking time i think we're good
+Them [1:10:04]: so
+Them [1:10:09]: i'm just going to ask if anyone else had examples of big data even though that seems like a popular
+Them [1:10:10]: ender
+Them [1:10:23]: leading questions about whether your use in well actually can i be a little bit pointed what is your health experience
+Them [1:10:27]: with claims data and using big data and i'm also going to call
+Them [1:10:29]: sure i think i can only speak
+Them [1:10:31]: maybe for the provider side because
+Them [1:10:38]: i don't deal with insurance i left delta dental for a reason
+Them [1:10:46]: some things about big data that again weren't accessible before
+Them [1:11:10]: and you talked about medicare so when you come into a hospital if it's a government claim some people would get sick while in the hospital or on their way in so there was a lot of science now about specifically coming from the government and wants to crack down they want the symptom when you came in the door not the symptom when the doctor saw you kind of thing because there's a bunch of fraud in there
+Them [1:11:48]: but i think talking about more direct and outcomes in fact one of the students who took this class before steve zeck did thesis paper on follow up visits like her phone calls after post surgery that would then potentially prevent people from coming back to the hospital because one of the metrics of how good was your care is did you come back to the hospital within a week or two because if we gave you the care and we did it right you should just coast on and tow your next event right and so i think there was a lot of science
+Them [1:11:49]: at least in that one case
+Them [1:11:50]: and i think there's still
+Them [1:11:52]: more
+Them [1:11:54]: accessible about outcomes and how
+Them [1:11:55]: to make
+Them [1:11:56]: the best outcomes
+Them [1:11:58]: incision support you're doing a lot
+Them [1:12:12]: so like before a doctor would consult with another doctor now let's say i'm a bad doctor and you're a good doctor you're going to make decisions right ninety five percent of the time i want to make them right seventy percent of the time but having us collaborate maybe you're not going to get hired at ninety five
+Them [1:12:15]: and now they're
+Them [1:12:17]: adding ai into this
+Them [1:12:25]: now you can not necessarily have to consume some time but ai
+Them [1:12:27]: produce
+Them [1:12:28]: care
+Them [1:12:29]: i don't think that was
+Them [1:12:30]: quite available
+Them [1:12:31]: until
+Them [1:12:32]: modern times
+Them [1:12:34]: they still think it's fraught
+Them [1:12:35]: because
+Them [1:12:36]: what are the rules
+Them [1:12:38]: we need to have chat g
+Them [1:12:38]: pt
+Them [1:12:39]: and we say it's health
+Them [1:12:40]: but it's like
+Them [1:12:40]: quarantine
+Them [1:12:41]: we're not training
+Them [1:12:42]: because
+Them [1:12:43]: we don't want to do that
+Them [1:12:53]: a year or two ago lawrence lindmore national laboratory was like don't use llms because they didn't want our national secrets
+Them [1:12:56]: i think that
+Them [1:13:00]: how
+Pablo [1:13:00]: do you take advantage of something that the world's training
+Pablo [1:13:01]: but wikipedia
+Pablo [1:13:05]: source of
+Pablo [1:13:05]: truth
+Pablo [1:13:06]: and then you have to use
+Pablo [1:13:07]: it in there
+Pablo [1:13:10]: if we had
+Pablo [1:13:13]: a national health care system
+Pablo [1:13:15]: maybe like hydro
+Pablo [1:13:21]: and we would actually have
+Pablo [1:13:28]: corpus of material with which to measure people not just say kaiser
+Pablo [1:13:29]: california
+Pablo [1:13:31]: health
+Pablo [1:13:32]: conditions
+Pablo [1:13:53]: what do you even
+Pablo [1:14:00]: further because i think that there is this linear progression towards ai implementation into
+Pablo [1:14:04]: integrated delivery networks like kaiser and
+Pablo [1:14:06]: mercy they purposefully
+Pablo [1:14:07]: want to have
+Pablo [1:14:11]: the network we own our labs
+Pablo [1:14:12]: we are radiology
+Pablo [1:14:13]: we own our hospital
+Pablo [1:14:14]: s we own our out
+Pablo [1:14:14]: patient beyond our clinics
+Pablo [1:14:16]: in order to have all
+Pablo [1:14:19]: that data in house so they could do models like that
+Pablo [1:14:23]: so like with medicare advantage plan which of course is
+Pablo [1:14:31]: they are starting to kind of winnow that down because not only was there a lot of fraud because people were kind of
+Pablo [1:14:36]: p hacking the medicare system to do fraud
+Pablo [1:14:49]: like senator rick scott but it was going further into within the first trump term i think there was the direct contracting entity which was like okay we're going to remove all of these regulations and we only want data from you
+Pablo [1:14:53]: we're going to give you money and you're going to give us back more money
+Pablo [1:14:55]: through savings
+Pablo [1:14:56]: through the savings
+Pablo [1:15:02]: and you're going to give us back data so it's going to be like a premium on data for cms and for government
+Pablo [1:15:38]: and then once biden came in he rebranded the direct contract manatee to be the aco reach so many acronyms i know it was like reenerizing environment actual care health i don't know something but they were like okay we want data as well but we're going to add some of the regulations on so a lot of the sdoh boom came from the aco breach being like okay we want all this sdoh data back into the government so that we can make more targeted claims about certain regions based off the demographics and then now
+Pablo [1:15:41]: no one can say this because technically it's not that
+Pablo [1:15:45]: my friend works for cms she's under mba
+Pablo [1:15:51]: model
+Pablo [1:15:53]: of medicare where essentially
+Pablo [1:15:54]: they're going to have
+Pablo [1:15:55]: doctors
+Pablo [1:15:58]: like triangula patients
+Pablo [1:16:02]: into ai models that then
+Pablo [1:16:10]: say like oh yeah based off of these lab results this diagnosis might be prompted so prompt them for that diagnosis
+Pablo [1:16:35]: and it's a little bit interesting because it's like oh my public health data i'm fine with it being public if it's for a research purpose but also it's nefarious because when do you know you're being triaged by a human like a professional who's been trained for many years or by an ai that's just been trained for thirty minutes on a professional who has been trained for many years
+Pablo [1:16:37]: so it's very slippery slope
+Pablo [1:16:38]: with
+Pablo [1:16:40]: again going back to south africa
+Pablo [1:16:41]: who
+Pablo [1:16:42]: is doing
+Pablo [1:16:43]: what they
+Pablo [1:16:44]: did
+Pablo [1:16:46]: when is this taking place
+Pablo [1:16:49]: all right thank you
+Pablo [1:16:52]: you guys want to take a two minute break
+Pablo [1:16:55]: or not keep on going
+Pablo [1:16:57]: okay
+Pablo [1:17:01]: regular
+Pablo [1:17:14]: who's presenting next they decide i'll present next and i don't quick question jay you spoke about how big data is always observational
+Pablo [1:17:16]: i'm wondering if that's true
+Pablo [1:17:25]: i'm wondering if big data always has to be something that researchers come into after the fact or if researchers can collect
+Pablo [1:17:27]: big data
+Pablo [1:17:43]: so we're assuming that big data that already exists that a researcher goes into after it's a curse like it's very natural but can big data exist
+Pablo [1:17:57]: come about in a way where a researcher let's say runs a survey every single week for thirty years would that then not qualify as big data like with the anes be big data because it's been going for cycle
+Pablo [1:18:01]: and it was rated for research by researchers
+Pablo [1:18:11]: so first of all so these characters i hope i said that in the lecture already i think i do i mean it's not the definition of big data
+Pablo [1:18:22]: because of what social science then of course the fact that ada's real time has nothing to do with big data fusion
+Pablo [1:18:26]: that people would say call it multimodal nowadays
+Pablo [1:18:33]: of big data is actually just big data so for me for the social sciences
+Pablo [1:18:53]: the term digital footprint represented better and that's how i use it so this lecture is actually more about digital footprints that i work please don't confuse that right so the definition of whatever definition of big data is it certainly has to do with the big size because that's the only objective which is
+Pablo [1:18:59]: nothing to do with b model
+Pablo [1:19:07]: observational and so forth so big data could not empirical
+Pablo [1:19:13]: so that's why these definitions morph into the digital footprint
+Pablo [1:19:18]: which is autocratical purpose is how we use it in the social sciences and we talk about computational social science
+Pablo [1:19:24]: now you can have big data simply by simulating it
+Pablo [1:19:28]: it doesn't have to be observational empirical data so empirical data
+Pablo [1:19:33]: by the word empirical means is observation of what happens and here don't need to happen
+Pablo [1:19:47]: so then it happens and some of the tests and that's when we get all this thing with the past and the future and the big visions that we need in order to have theory now you can do an agent based model a computer simulation you can play a video game and you can simulate data
+Pablo [1:19:54]: and that data actually doesn't have empirically happened what had happened when you simulated it
+Pablo [1:20:04]: but you can make weather forecasts like that simulate data so it's not empirical data in a sense that you have it from a real world occurrence empirical you simulate it yourself
+Pablo [1:20:22]: you can roll a dice a few times you can say you simulate it how that dice was it empirical now we started gravel right yes because you roll the dice so when i run my sim cd computer game i simulate data i create simulated data
+Pablo [1:20:25]: then i can also say like oh once i have it it's empirical because it existed
+Pablo [1:20:27]: but you see the difference
+Pablo [1:20:35]: so it basically comes down to the lack of a definition of what big data is
+Pablo [1:20:36]: and what do you want to use it for
+Pablo [1:20:48]: but i do think for the social scientists these definitions that i have here is what made a difference to social science and what made a difference to social science is this avalanche of empirical
+Pablo [1:20:52]: data that inevitably has been stored with digital footprints
+Pablo [1:20:54]: that's what it comes down to
+Pablo [1:21:00]: and they are not sample their observational they often come in real time all the things they talk about
+Pablo [1:21:01]: electron
+Pablo [1:21:04]: and they necessarily don't necessarily have to be big
+Pablo [1:21:13]: in the data we scrape for this lab it's certainly not big data like oh did you get up to six hundred still wouldn't make it big you know what i mean
+Pablo [1:21:15]: it's more about that
+Pablo [1:21:31]: now the fact that it's got an evidently stored as an interesting history so at the beginning when the digital paradigm started right when youtube even started or social media started google was the first one they had no idea the treasure box they were sitting on
+Pablo [1:21:38]: they call it exhaust all these things or people were moving their mouths how they think and google was the first one they didn't have any idea
+Pablo [1:21:43]: what it was so researcher call it the behavioral surplus
+Pablo [1:21:46]: the recorded behavioral surplus that's the technical term
+Pablo [1:22:02]: subov in her surveillance capitalism book that she actually hammers me in but good intended good intended she says you can read it up so anyways in this array of capitalism book that came out then
+Pablo [1:22:12]: is actually that's when she then versed it as behavioral surplus and explains it like that's when google discovered like oh we have this thing we can actually do something with it
+Pablo [1:22:17]: and that's when others like zuckerberg and so forth jumped on that and using it
+Pablo [1:22:18]: as a marketing tool
+Pablo [1:22:28]: so the social media platforms and their social media platforms still they have a two part business model the business model is basically placing ads but you add probably ten percent of the fee
+Pablo [1:22:33]: and then actually the feed the algorithm recommendation that is data production
+Pablo [1:22:37]: that's basically studying you in order to release these ten percent of
+Pablo [1:22:41]: ads but this at the beginning was accidental
+Pablo [1:22:48]: they just discovered like oh this behavior surplus allows us to make better predictions hence the place better ads
+Pablo [1:23:00]: but it was by accident discovered it wasn't like all these social media business model that is the biggest companies in planet earth right now was an accident discovered because they just stored this data and didn't know nobody paid attention to that
+Pablo [1:23:08]: all right cool definitely yes
+Pablo [1:23:17]: the usbc will work
+Pablo [1:23:18]: too
+Pablo [1:23:19]: should work
+Pablo [1:23:21]: it's turned off
+Pablo [1:23:34]: does anybody here work in it
+Pablo [1:23:35]: just
+Pablo [1:23:36]: kidding
+Pablo [1:23:41]: usually happens to the people who work
+Pablo [1:23:50]: go
+Pablo [1:23:50]: well
+Pablo [1:23:53]: there we go
+Pablo [1:24:04]: ok i also misunderstood the assignment a little bit so i'm sort of tacking a little bit one of the things i wanted to do that i really like patrick did was go over some of the material and then talk about something
+Pablo [1:24:05]: i did have a couple
+Pablo [1:24:06]: discussion points
+Pablo [1:24:08]: but then
+Pablo [1:24:08]: i'll get to that
+Pablo [1:24:09]: in a second
+Pablo [1:24:17]: but one thing i just wanted to go over like that i'm sure you guys are watching listen to the assignment but the limitations
+Pablo [1:24:26]: on big data just like the top six or whatever that they gave us the footprint is not necessarily representativeness because of
+Pablo [1:24:28]: perhaps financial differences
+Pablo [1:24:29]: or
+Pablo [1:24:33]: differences between different people there's a digital divide so there's bias
+Pablo [1:24:39]: between those who have technology or different kinds of technology and those who do not so it's hard to do science
+Pablo [1:24:54]: so what you get is not necessarily representative of all people i think in the slides like facebook has two out of seven out of all people so you're not getting the other five out of seven if you're using facebook solely
+Pablo [1:24:58]: second one is data is not equal to reality
+Pablo [1:25:11]: this is problematic applications where the predictive policing thing almost reminded me a little bit of how do they say that the broken glass or something
+Pablo [1:25:15]: if you see milk and glass
+Pablo [1:25:16]: that means
+Pablo [1:25:22]: in
+Pablo [1:25:23]: fact one of the things that
+Pablo [1:25:24]: now is the right time
+Pablo [1:25:24]: to talk about
+Pablo [1:25:28]: i really wanted to have a quick discussion about would you pardon the guy
+Pablo [1:25:35]: from the would you pardon the guy based on the subject recommendation either by the human or a machine
+Pablo [1:26:00]: i feel like you're playing god a little bit there but anyway so the data may not be the reality you haven't committed that second crime yet so how do we lock you up in my comments and simon i mentioned it reminds me of that movie minority report where they had like the pre crime department so they can see into the future a minute and they can see that you are going to commit this crime and they go capture you but then they find out that it's not
+Pablo [1:26:06]: they say it's flawless but clearly it has flaws right and everything does
+Pablo [1:26:23]: and then targeting based on metadata i thought that quote we kill people based on metadata is pretty fascinating morbid sure at like twenty eight people for every one bad guy you kill because of poor targeting so data is not the same as reality
+Pablo [1:26:39]: meaning is not the same as meaningful we talked about how certain like if you cluster male names they cluster with business types of careers and female names with home stuff
+Pablo [1:26:50]: and using that word to vec word to vac i don't know ovec of course of course yeah anyway and the key takeaway there is that the data reflects us which includes our prejudices
+Pablo [1:27:00]: which are not necessarily well if we're looking for truth then you can't get there but if you're looking for a truth maybe you can
+Pablo [1:27:02]: a biased truth
+Pablo [1:27:13]: discrimination is not the same as personalization example they had there was sat prep which is more expensive in certain areas by zip code
+Pablo [1:27:21]: and sort of what ends up happening is by default you end up discriminating against asian people
+Pablo [1:27:44]: which i think you mentioned in the slide that they claimed it was purely a financial decision and i probably generally believe them but that said one particular group is now targeted or discriminated against because of that and then also all these discrimination stuff and we also work with the digital footprint like give you the time back and want to clean up it's an important discussion
+Pablo [1:27:57]: look all kind of data analysis discriminates that's the main definition of what i think i even have in the lecture right that's what data analysis does you need to discriminate
+Pablo [1:28:00]: that's what you distinguish this from the other one
+Pablo [1:28:08]: now in every society there are some things that the society thinks shouldn't be distinguished
+Pablo [1:28:11]: and that completely depends on that society
+Pablo [1:28:16]: so for us i think in our country we have like five and that's it
+Pablo [1:28:19]: what do you have we have gender we have race
+Pablo [1:28:21]: we have belief
+Pablo [1:28:22]: religion
+Pablo [1:28:30]: what else do we have do we have h is h something in the united states i don't even know if it's in the united states i know europe it is you're not allowed to assume of age
+Pablo [1:28:42]: yeah i think so that's not in every country they already start right can you just give by finances you can discriminate obviously but then there's the finances then reflect something about your race oh then it becomes problematic
+Pablo [1:28:51]: right so we also have to be very clear with that okay so that is more like a legal thing and what we think should be discriminated and whatnot
+Pablo [1:28:56]: but then the other thing is for us in general as a bias
+Pablo [1:28:59]: because the bias problem is how generalizable is it
+Pablo [1:29:02]: that's completely fine if you study children
+Pablo [1:29:10]: then use great youtube kids and then make claims about youtube kids that might generalize better to children
+Pablo [1:29:13]: if that's your study focus and that's your generalizability
+Pablo [1:29:17]: but you don't have external ability to make claims about old people
+Pablo [1:29:36]: so that more has to do with your bias like what is your sample and what do you want to generalize to now does everything every claim every assigns only useful if it generalizes to all eight billion people absolutely not it's probably completely useless if a generalized to all eight billion people because you have to say so general that you cannot say anything really
+Pablo [1:29:39]: so it's actually useful to condition your sample
+Pablo [1:29:48]: and just say okay i only study these people who live in whatever and wes davis i can say something about these people and i study those and i say something about her and that is useful knowledge
+Pablo [1:29:56]: so you only also don't have to always basically my point right now is don't be obsessed with trying to unbiase everything
+Pablo [1:30:09]: because first of all the interesting thing is sometimes in the very specific details and second of all even if you're afraid of political repercussions i mean there are only like five things that are really pretty and i read it up in the constitution which are these five things
+Pablo [1:30:14]: and then actually for all the other ones all businesses what they do they discriminate
+Pablo [1:30:17]: targeting marketing is discrimination
+Pablo [1:30:18]: basically
+Pablo [1:30:33]: so don't get too obsessed with that either so yeah thanks discriminant being discriminant doesn't necessarily have to mean racial discrimination it just means you're discerning
+Pablo [1:30:36]: most often no it's the other case
+Pablo [1:30:53]: correlation is not the same as causation we were talking about one more thing about that sorry discrimination like you said it's not necessarily our goal to remove the bias but algorithms are easier to audit correct than human cognitive basis so you can just change your algorithm if you're trying to get around something
+Pablo [1:31:02]: correlation is not the same as causation we're talking about this before class a little bit and i really like the analogy because i totally had it back
+Pablo [1:31:04]: how do you work with success and happiness
+Pablo [1:31:18]: example of
+Pablo [1:31:19]: the shoe size thing
+Pablo [1:31:20]: the founding very
+Pablo [1:31:21]: low
+Pablo [1:31:23]: important
+Pablo [1:31:25]: and then passes about the same as future
+Pablo [1:31:26]: data is always histor
+Pablo [1:31:26]: ical
+Pablo [1:31:27]: and problems
+Pablo [1:31:28]: arise
+Pablo [1:31:29]: when major changes abruptly
+Pablo [1:31:37]: or policies change based on the data and talked about lucas critiqued which is when you optimize the system based on a metric
+Pablo [1:31:40]: you change the system making the original metric unreliable
+Pablo [1:31:56]: and so that was just the recap there and then i had my notes in here but while patrick was doing his presentation i went and asked chat gbt do you give me a slide deck of it so this is the first time i'm seeing as well
+Pablo [1:32:05]: i had three discussion things
+Pablo [1:32:07]: one of them
+Pablo [1:32:08]: was just what i
+Pablo [1:32:08]: did
+Pablo [1:32:17]: the other two were just text because i didn't know we're supposed to create but then here let's see how close we got to this how do i make this
+Pablo [1:32:18]: where's
+Pablo [1:32:19]: there
+Pablo [1:32:23]: great
+Pablo [1:32:24]: okay
+Pablo [1:32:37]: so the lucas critique was just talking about how when you change data when you act on it you change it and then it changes the data which makes it you have to get new predictions so because all data comes from the past
+Pablo [1:32:40]: we use fast data predictive optimize the future
+Pablo [1:32:41]: we change the system
+Pablo [1:32:42]: itself
+Pablo [1:32:47]: when a measure becomes a target it ceases to be good
+Pablo [1:32:54]: be a good measure yes a lucas routine goddard's lower several of basically very similar things
+Pablo [1:33:07]: and that actually what it does is it shows you also traditionally in fsa so when i was like when you start to study this and especially when you go in this complex systems field there is certainly this physics enemy
+Pablo [1:33:09]: physicist
+Pablo [1:33:13]: they can be blood predictions they can make predictions with ninety nine percent accuracy
+Pablo [1:33:14]: like they do in quantity
+Pablo [1:33:25]: because
+Pablo [1:33:26]: you have such an easy system
+Pablo [1:33:27]: because stationary
+Pablo [1:33:30]: so the social design is so much more
+Pablo [1:33:30]: complex
+Pablo [1:33:35]: because we are non stationary by definition because we are part of the observer
+Pablo [1:33:38]: so it's not like you are neutral observer to the traffic jam
+Pablo [1:34:11]: you are the traffic jam by being in there and you are causing it while being in there so you the social scientist are creating the social system in there whereas in physics i mean then they go with oh the quantum effect the quantum lap is so mysterious actually that split experiments or whatever that observer is not neutral i mean on the quantum level that really affect something it's very very unlikely it's very very small the precautions to have that observance you have to be very controlled in order to have a quantum effect right and the split experiment and so forth in the suicide that happens
+Pablo [1:34:11]: all the time
+Pablo [1:34:13]: so observer is part of the model
+Pablo [1:34:20]: so it's so much more complex because once you make an observation like when we publish a research result and it becomes public
+Pablo [1:34:34]: that research result is inevitably already changing something about reality now it might have changed the entire system because maybe nobody reads it but if it's an important finding it can reorganize the entire society and how it works
+Pablo [1:34:40]: so actually even with our research we're changing the stationarity of the system that's basically what luca is saying
+Pablo [1:34:47]: you're taking the data then you publish it you may do policy based on that data now you destroyed the system that created the data
+Pablo [1:35:20]: that doesn't happen like this in physics it's not like you have the hardron colliding you bump these atoms into each other and just because you observe them bumping then you write a paper about it that's why next round they will bump differently no they don't right however you write a paper about presidents were elected and whatever and as a big impact yeah next one presidents get elected that will be a different round around it social hydro collider we call it reality so it's much more complex to do social science and it took her so long as we're in social science to get here because it's such more complex science
+Pablo [1:35:29]: and so in the hierarchy of science how we structure it if it's true or not we don't know we have physics and then you have biology
+Pablo [1:35:37]: and then you have the social science translating over psychology right so they are much more stationary now there's a physics is actually the easiest science
+Pablo [1:35:38]: then biology
+Pablo [1:35:42]: which has stationarity but evolution is extremely slow
+Pablo [1:35:53]: but still it has non stage narrative evolution also changes reality and ecosystems change but it's slower usually they're not a catastrophe and then social science happens on a date changes on a daily basis
+Pablo [1:35:57]: so that actually that's also the level of complexity in the sciences
+Pablo [1:36:06]: in defense for the social science would you consider bluein's tox research complexity science what would you consider blue end stocks
+Pablo [1:36:11]: no
+Pablo [1:36:14]: predictions
+Pablo [1:36:23]: reran complexity science no it's just traditionally really
+Pablo [1:36:27]: just making advantage of taking advantage of digital footprints
+Pablo [1:36:29]: that's pretty blaming
+Pablo [1:36:39]: also i didn't add goodhard's law ai added that
+Pablo [1:36:40]: so how do you like that
+Pablo [1:36:42]: i didn't mean to talk about it
+Pablo [1:36:44]: i don't know what that is
+Pablo [1:36:51]: but one thing i want to point out in the quote below is that people adapt their behavior and response and i think one of my discussion questions at the end
+Pablo [1:36:52]: will be related to that
+Pablo [1:37:03]: all right so real world example standardized testing where test scores measure learning so schools optimize for the test but then they end up just teaching do the test
+Pablo [1:37:21]: and social media engagement algorithms they indicate interest and we maximize engagement but they end up creating polarizing content or echo chambers maybe credit scores i didn't add that one scores reflect credit worthiness people optimize for higher scores
+Pablo [1:37:23]: yes gaming for financial health
+Pablo [1:37:28]: okay
+Pablo [1:37:30]: implications for big data
+Pablo [1:37:33]: do run all the time
+Pablo [1:37:43]: okay well then i'll just get to the question there's a discussion thing here because that's what i really wanted to number one can you think of a metric that was gamed once it became a target
+Pablo [1:37:45]: and a buddy of mine
+Pablo [1:37:48]: i grew up on guam and
+Pablo [1:38:04]: they had a lot of snakes they had a snake problem and so they created a law that said for everyone who brings in a snake will give you x dollars or something like that so the first year like gangbusters people came in snake actually went down the second year people started breeding snakes
+Pablo [1:38:12]: that's one case that where it was gamed and i'm trying to think of other things like every once in a while
+Pablo [1:38:24]: i will click on the ads in youtube or something like that just to mess with the algorithm even though i don't care about the ad i'm just going to do that for a second on google if i see the sponsored result and there's also right below it
+Pablo [1:38:26]: i'm going to go to
+Pablo [1:38:30]: also put on the sociopathy
+Pablo [1:38:59]: stand
+Pablo [1:39:00]: by
+Pablo [1:39:05]: any
+Pablo [1:39:05]: body else
+Pablo [1:39:06]: other
+Pablo [1:39:07]: examples
+Pablo [1:39:10]: social media
+Pablo [1:39:12]: as
+Pablo [1:39:13]: opposed to what
+Pablo [1:39:15]: the woman for assessing content
+Pablo [1:39:17]: that is actually good
+Pablo [1:39:23]: with youtube content like what gets picked up by the algorithm
+Pablo [1:39:36]: covid data if you everyone remembers the four colors when the cdc would publish the maps they change the threshold for what was basically stay open
+Pablo [1:39:39]: basically a higher threshold
+Pablo [1:39:41]: so
+Pablo [1:39:44]: it looks good to go
+Pablo [1:39:55]: yeah we have to be very careful with that and that's actually so especially when you then also every researcher
+Pablo [1:39:58]: i do think i have this example
+Pablo [1:39:59]: with the drum guy
+Pablo [1:40:03]: looks whether she's in a light pose lamppost right do we have that in the lecture
+Pablo [1:40:04]: yeah
+Pablo [1:40:06]: you often we do that
+Pablo [1:40:11]: and especially the digital footprint we talk about today
+Pablo [1:40:13]: is usually never what you look for
+Pablo [1:40:15]: it never is
+Pablo [1:40:17]: but just be very aware of that
+Pablo [1:40:26]: just be aware of that doesn't mean that you shouldn't use it yes look under the lipo well we're kind of like here trying to graduate kind of like drunk at home
+Pablo [1:40:30]: so look under the ipost good but be aware that it's not what you're looking for
+Pablo [1:40:36]: and don't make any conclusions that go beyond that it's just because conveniently you found that it
+Pablo [1:40:38]: was presented there and that's why you use it
+Pablo [1:40:41]: and that's fine you can get a raw alert
+Pablo [1:40:54]: often a lot of them even if you design your own survey imagine i give you infinite amount of funds and whatever you can design your own survey and ask the people even then you probably don't really get to what you really want
+Pablo [1:40:58]: so it's really difficult to get what you really want to just be aware
+Pablo [1:41:00]: that all of these measures are
+Pablo [1:41:00]: wrong
+Pablo [1:41:03]: especially just when you find the body digital footprint
+Pablo [1:41:05]: because you've just found them on the street
+Pablo [1:41:06]: they are mistaken
+Pablo [1:41:20]: organize them and then with different data sources try to do the data fusion and try to kind of get it in hammer it down a little bit more but it's important to correct oneself
+Pablo [1:41:25]: and to check in also like when you write it up at the end that you don't make exaggerated claims
+Pablo [1:41:39]: and the conclusions that you draw from it because otherwise you certainly then also a culprit of kind of like putting the card in front of the horse because then people will try to replicate your data even so that's not what you're ever interested in
+Pablo [1:41:42]: happened to me several times and then people pick it up like oh no sorry
+Pablo [1:41:47]: but then it becomes
+Pablo [1:41:49]: the stories in the rock gets lacked and it runs by itself
+Pablo [1:41:51]: so you have to be
+Pablo [1:41:51]: up for that
+Pablo [1:41:56]: i would say can we do the big data next week
+Pablo [1:42:04]: who else was i'm sorry you were sorry yeah so can we do it next week and then we combine it with the social network
+Pablo [1:42:10]: oh next monday's a holiday yeah
+Pablo [1:42:17]: martin luther king jr all right okay well then we do then
+Pablo [1:42:31]: yeah then we will divide oh that's actually cool and when we meet on the twenty sixth we divide it into three into three different we do a little review of big data let me do the social network and then we go to nlp and then hopefully you get her on the same page
+Pablo [1:42:34]: we have the three discussions on one day
+Pablo [1:42:36]: all right and we don't see each other next monday

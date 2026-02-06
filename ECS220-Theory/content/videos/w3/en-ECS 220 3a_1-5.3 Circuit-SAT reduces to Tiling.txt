@@ -1,0 +1,125 @@
+I don't know. We've talked about Boolean
+circuits and Thailand's. And sorry, it's kinda like
+formulas a little more general. And remember I said in this section, we're going to just assume
+that the circuit SAT problem, which is stated right there, we're just going to assume
+that it's NP-complete and use that to prove other
+language also NP-Complete. So in particular, we're going
+to show tiling is NP-complete. Now by showing that circuit
+SAT is reducible to time. And in the reduction we're going to give them read on input a circuit C, we have to output a set of
+tiles and a set of points, the region we want to tile with them. And the set of tiles is
+always going to be the same. We're only going to use these two
+tiles, the two-by-two square. And then this thing called a trauma, which is basically the square
+with one corner cut out. But remember we have
+all rotations of it. So what we want is to lay down some points in the region that
+these are supposed to tile. So that trying to tile that
+region with these tiles amounts to evaluating the
+circuit C on a particular input. But there's going to be a
+little bit a choice about the input that comes from the
+choice of which tiles to put down. So we'll get to that in a sec. But to start, we'll define this
+thing we call a wider region. So we're going to sort of connect up the various nodes of
+the circuit with wires. And the wires are really going to be geometrical regions
+in our full region. So this is a wire and
+the idea is it can carry one of two values and that's
+going to false or true. And that's going to correspond to there being two ways to
+lay down this prominent. So as you can see,
+there's no way to fit the two-by-two square in any of this. But you could put
+the trauma know like this or you could flip it
+around and put it like this. And these are going to respectively
+correspond to true and false. Shows the wire kinda moving down to the right and
+down a little faster. So it's like slope negative 2. There's other directions wires can go and there's actually eight
+different directions they can go slope negative a
+half or slope positive two. So in general, for all
+the different ways that we can sort of point wires and you'll see them in later figure. You see that there's this middle
+point of the wider region, the one that's not connected
+to either corner here. And when you put the trauma know down in the direction you
+imagine the wire Dine. If the, if most of the
+traumatized behind that, that point, that
+represents the value true. If most of it is ahead of that point, that represents the value false. Okay, so that's how we
+build wires between nodes, but we have to start
+with input nodes. So this region is going to
+represent how we get inputs. So it'll be like a
+square on top of a wire. And we're going to
+interpret putting the two-by-two square in
+there to be true. Why is that? Well, think about how to fill
+in the rest of the region. There's only one way. And it's with the pattern of
+trauma nose we call true. But you could put
+instead of a square, you could put a trauma like this. And then the only way to fill
+in the rest of the region. Oppositely oriented trauma nose
+and that's the value false. And if you look, there's no other
+way to fill this and there's three other rotations
+this trauma can have, but they'd all leave something blank. And you couldn't Thailand. So these are the only two ways to actually fill in this whole thing. So that's how we specify input and
+start sending it along a wire. But now we want to
+perform logic on it. So we're going to show how
+to do NOT gates AND gates. And that's enough to get
+everything you can get OR gates by combining not an end. So the NOT gate is simpler. We'll start with that. And this region looks
+a lot like a wire. It's at this middle part here where it actually is big
+enough first square. And this is going to do negation. So let's see why we just
+do a case analysis. If the computation is kind of
+coming in from the top left, then suppose it's true. Well, what could we do here? We could try to put the trauma know, but this rotation doesn't work, nor does this or this. And this one looks
+like maybe it works. Oh, but there's there's no tile
+that could actually fill this in. So in fact, the trauma does
+not going to work there. The only way to fill it
+ends with the square. And then note the constraint. This puts that to fill
+in the rest of the wire, you have to use the
+opposite orientation. And so you've negated
+true and made it false. But now the other case
+is what a false came in. Well, it would fill in like this. And then you can see the only
+way to keep filling this end is to orient the trauma and
+the true configured. Okay, so this can
+swap false and true. That's a NOT gate. The end gate is a little
+more interesting. But it works on similar principles. If you imagine the two
+inputs coming in the top, we're going to enumerate
+all pairs of inputs here. So if the first input is false
+and the second input as false, again, we have a bit
+of case analysis here. We could try putting the trauma know, but this doesn't work or this or
+this or this for similar reasons, there's no way to continue
+with only those two tiles, but we could put a square
+and then fill in the rest. And it's false, which is what
+we want for an AND gate. Now we can have false
+and true in here. Hopefully it's obvious that
+there's one way to fill this in. It's with this trauma now. And then that also is
+the false configuration. If we switch around true and
+false, this somewhat asymmetric. And yet you can see there's
+one way to fill, doesn't? It also makes the
+false configuration. But now, if they're both true, they're going to fill in like this. And this. The only way to
+continue is to fill in the rest of the wire with
+the true configuration. So this is actually
+the truth table event. It's true if and only if
+both inputs are true. So now we can just
+wire them together by placing the inputs
+somewhere in the plane. So we can say put a here and B here, and the region is described
+just by what I'm showing here. Alright, so this is
+the region, right? So this describes if you add
+this input to the reduction, you would give this region as
+output along with those two tiles. So now let's just see how
+to translate witnesses. So suppose that a equals true and b equals false satisfies this
+formula, which I think it does. Then that means you
+should choose to put a square there and a trauma 0 there. And then the rest of the thing
+fills and you gotta NOT gate here. And you notice there's another
+gadget I didn't quite describe, but there's a way to kind
+of turn of wire so it goes in a different direction
+and it really get into the details but works to yet
+another AND gate here and here. And, and NOT gate here
+and here and an AND gate here and you get this. So how so that's an example. But in general, if there's
+an input to satisfy this, then you can choose the right
+tiles here to tile this n. And conversely, the only way
+to tile this is by choosing inputs that make this the true configuration on the
+output wire here. So if this can be tiled, this circuit can be satisfied. Now notice one thing we left out. We did the circuit to be planar. There's no crossings
+in the wire here. And if there were, well, it's not really
+clear what we do. So this only works if the circuit can be drawn without
+any wires crossing. And in general, not every
+circuit is like there. There are graphs that
+are not planar and they correspond to circuits
+that are not planar. So the way to handle this is if you do have a
+crossing in your circuit, you can replace it with
+a bigger sub-circuit. And you can check that if you want
+X and Y to be swapped around, you can replace that with
+the subcircuit where you do XORs three times like this. And that will in fact, by businesses, one of those clever little
+ways that you can use to swap two variables in a programming language without using an intermediate
+temporary variable, you just do an XOR three
+times and it swaps them. So this would work except we
+didn't describe how to do XOR. So one way is you could
+try to come up with a way to describe an XOR
+with tiles like this. But the psychiatry just be
+done purely within circuits. So this is a homework problem. I sometimes assign. How can you implement
+XOR using only AND, OR and NOT gates in a planar way.

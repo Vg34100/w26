@@ -1,0 +1,9 @@
+Read the following paper: Schetinger, Victor, et al. "Doom or deliciousness: Challenges and opportunities for visualization in the age of generative models." Computer Graphics Forum. Vol. 42. No. 3. 2023. [pdf
+
+Links to an external site.]
+
+Write a short summary (<300 words) and answer the following questions:
+
+1. How would you use GenAI (not limited to IGM) to support you throughout the four stages of the visualization pipeline?
+
+2. Explain why unreliability is a concern. In addition, what is your opinion?

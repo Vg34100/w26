@@ -1,0 +1,112 @@
+So now on the next section of the textbook called
+completeness as a surprise, which indicates sometimes you gotta be careful thinking
+about this stuff. We open the course talking
+about the difference between Euclidean path and a Hamiltonian path and how they look like
+almost the same problem. But one of them is NP-complete, the other one's solvable
+in polynomial time. So we're going to see that this
+pops up in different contexts. So remember that a cut of a graph is a partition of its state set into
+two disjoint subsets, V1 and V2. Sometimes people talk about the edges between V1 and V2 be in the cut, and that's fine to do that, but you gotta be careful because not all subsets of
+edges define a cut. So for example, if
+we have this graph, we imagine that we
+partition in this way. Intuitively the idea is
+you like you draw a line that separates the one
+side from the other. But you can draw lines
+lots of different ways. So the key idea is that the edges that define
+the cut, in this case, they're not every edge
+of the line crosses, it's every edge that the line
+crosses an odd number of times. So this edge is not
+in the cup because it crosses at once and
+then it crosses it again. Easier just to think about a cut
+me in the subset of vertices. But of course we call it cut
+because what we care about is cutting the edges
+that go across, right? So the, the red highlighted edges
+here are the ones in the cut. And sometimes we talk
+about weighted graphs. And then the weight of a cut is the sum of the weights
+of all the edges. Okay? So there's a problem
+that's fairly common to, to study in an algorithms course. The min-cut problem is given a
+weighted graph and a threshold pay, you want to know, is there a
+cut of g of weight at most k? And this is typically one of the first things you would
+study in an algorithms course. You'll learn about the
+max-flow min-cut theorem. And you'd show that this is npq. So for example, the
+Edmonds-Karp algorithm takes time polynomial
+in the size of G. So max cut is almost
+the same problem. But instead of asking about, do you have a cut,
+a weight at most k, you ask about a kind
+of wait, at least K. And it turns out this
+is NP-Complete, right? So there's little change in the
+direction of the comparison, makes the problem vastly harder. And this shows up in a
+lot of other instances we talked about Euclidean bath
+versus Hamiltonian path. Shortest path can be solved
+by Dykstra's algorithm. But asking about the
+longest simple path in a graph is NP-Complete. We saw 2-SAT is easier than 3 SAT. We saw by reduction to
+graph reachability, we sought to coloring is
+easier than three coloring and coloring is basically just
+telling is the graph bipartite. So a greedy algorithm
+that tries to color it will actually succeed in figuring
+out whether it's so colorable. And remember tiling even
+with only one tile, just a trauma, know that
+you're allowed to rotate. That problem is NP-complete. Well, no matter what kind
+of tile you are allowed, if you only have one tile. But you're not allowed to rotate it. It turns out you can
+solve this problem in polynomial time and
+sometimes I assign elbow. Okay, so back to Max-Cut. Me say this is NP-complete. So how can we prove it? What we're going to prove
+that an even easier version of the Maxcut problem, which is unweighted max cut is NP-complete by reducing that
+not all equal 3 SAT to it. So unweighted Max-Cut,
+you can think of as just the weight of every edge is one. So you're just counting
+what is the number of edges in the maximum cut? And you can, an easy way to
+think about that problem. That'll make it a
+little easier to think about is you're asking the question, can you color V with
+two colors, right? So that represents the partition
+on each side of the cut so that at least K edges have
+endpoints of different colors. So let's think about it that way. We'll draw a graph here. And our reduction on input a 3 CNF formula is going to
+output a graph like that. So if the 3 CNF formula where
+this clause and this clause, we would make these gadgets
+for the clauses and then we would make these
+gadgets for each variable. And if we have n variables and m clauses than the
+number of edges here, if you count through this is
+going to be n plus 6 app. That's just what you get from
+a construction like this, where you have edges between all
+the variables appear between the claws nodes and also between each variable node and clause
+node that have the same literal. So the k that we're going to set, the threshold for how
+many edges should be in the cut is going to be almost that bank is going to be almost
+every edge in the graph. It's only going to be n smaller
+than the total number of edges. So to have a cut of this size, you need almost every
+edge to be included. And we're going to set it up
+so that essentially the only way to get a cut of
+the size to include every single edge except one edge per clause gadget
+inside of the clause gadget. So the idea is that you interpret assigning true and false to the variables as
+coloring in this way. So for example, to
+set a variable true, you make the left node blue, the right note orange,
+and you swap them for making the variable false. And remember you want every edge to connect endpoints of different colors if it's going to be in the cut. So essentially because we're
+only going to leave out one per clause node down air. We need to make sure
+however we color this, every single edge is
+connecting different colors. So the idea is that if x
+is set to be true, right? So, so, so what do we mean by
+this formula is satisfiable. That means there's at least one
+of each value and its literal. So suppose that the two
+values we're going to use, our x is one and z is 0. So great that, that works. There's a little set X, have its node here be colored the opposite
+of its node up here. And we'll have z here because it
+the opposite of its node up here. And then for the third one, we just arbitrarily pick
+one of the two colors. But the notice that there's only
+two colors we're using here. And this is connected
+to this node down here. And Arabia, sorry, we
+don't pick it arbitrarily. We said that the opposite of
+whatever this is upheaval, right? So we want this node and this
+node to be opposite colors. But then that forces this edge to
+connect nodes of the same color, which means we should
+leave it out of the cat. And then similarly, if
+we say not x down here, it gives us our 0 value and y gives us our one
+value in the clause. That means we'll take
+the third one, the z. We'll set it the opposite of the
+variable node it's connected to. So we set it to orange. Because we said it to orange. We can't include this edge in
+the cut to this other orange. So this gives us a way to leave out exactly one edge per clause gadget, which gives us the
+number of edges we need. And that just proves
+one direction that if we can NAPE satisfy the formula, we can color the graph in this way, which gives us our cut
+of the right size. And you have to show
+the other direction. We won't talk about it here. But the key idea is
+to prove that in any, that if there's a cut of size k, there's an NA assignment
+to the formula. And it said, if a clause is
+assigned to all zeros or all ones, and therefore it's
+not an a assignment. Then at most four of
+its six edges, right? So the three internal
+and the three going out to the variables
+can be at any caught. And therefore, you couldn't actually have a cut of size k and neck.

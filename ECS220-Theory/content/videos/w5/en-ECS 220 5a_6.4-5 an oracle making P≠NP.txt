@@ -1,0 +1,91 @@
+Okay, so now we're going to show that there's an oracle that
+makes p unequal to Anki. And there's a lot of
+ways to prove this. My favorite actually involves something called
+Kolmogorov complexity, but that's a little more involved
+to first define all the concepts there are we're going to do here is kind of not the
+most rigorous proof. We're going to use some probability, but we're going to a bit about it, but it is kind of slick. So this is more of an
+intuitive proof sketch where we're going to play a
+few tricks of probability. So we're actually going to
+generate the probabilistically. So we're just going to pick B
+at random and show that, that, that it's possible that some called the probabilistic method to show there exists a
+b by showing there's a positive probability of picking
+a B that makes P and NP unequal. So here's what we did.
+For each possible string length n. We're going to pick a random
+string w of that like. And the way we're going to define
+B is any string of length, then that's not w, it's not in B. So B is going to be a
+very sparse language. Most strings are not in it. And the string w might be even
+that's going to be probabilistic. So we're going to flip another coin. And if it's heads will put
+w and b otherwise we want. So B is very sparse. Some string length, it's got
+no strings of that length. Others, it has one. But that one is just picked at random and all the others
+of that light, they're not. So. Okay, so now we're going to define a problem called affinity Oracle. And this will be the probably show is contained in NP to
+be that not in P2P. Although when I say, we'll show it is, well, I mean, probably
+that's what's going to happen because we're
+picking B at random. We could get very unlucky, like would be, could
+be the empty set. And then we're not, this
+isn't going to work, but, but probably, you know, with, with some probability
+this is going to work. So here's the problem. Finicky Oracle to the b. We're given as input, essentially just a string length, so a urinary string 1 to the n. And the question is simply
+this question about B. Is this one of those string
+lengths where B has one string? So is there a w and b of length n, or is it one of those string
+length that does remember about, we're going to expect about half of all the possible lengths to
+have a string of that length, because we're flipping an
+unbiased coin to determine whether W goes into b
+for that length there. Okay, so the easy observation is finicky Oracle to the
+b is an NP to the B. So an input one to the n, you just guess a w of the same length in linear time
+and you just ask your Oracle, thank this query obey is w and b. And it's clear that if there
+is a string of length n and b, then one of the guesses
+will tell it to you, and that means the NP machine
+will, will get it ready. Okay, So now all the hard
+work is to show that this finicky Oracle to the B problem
+is not contained. And Peter. So how do we show that? Well, we let Q be any
+polynomial-time be Oracle program that could possibly decided to let Q be any Under the
+Sea time, the overall program. And we're going to show probably
+it doesn't solve finicky Oracle. So let's imagine what CUDA,
+They don't know what it does. It's an arbitrary polynomial
+time Oracle program. But on input one to the n, It's going to query some
+list of strings in the, maybe the empty list, maybe it makes note where he's, maybe it does. It runs in polynomial time
+now runs in time n to the c. So the key query
+that many strings, there's at most n to the c strings. Queries asking are they a and B? Now, they may be of
+different lengths. It's going to simplify
+talking about it if we just assume they're
+all the same length, It's just technical details
+to handle different lengths. So for the sake of making this brief, let's assume that all the queries
+are the same length string. Now suppose that on all of
+the strings or queries, you get the answer
+false for all of them. Well, in that case, it doesn't really much
+matter what the oracle be. Other than that, as long as the Oracle B is false on all
+the strings that get queried, then all the strings
+that didn't get query, they can be in B or not in B. And q's output is going
+to be exactly the same for all of them, right? Because the only information it gets about B is what it makes
+through the queries. So now let's just examine this
+probabilistically, right? We picked a string at random. So first of all, we picked
+at random whether or not to even put in a
+string of this length. But let's suppose we did
+suppose that there is a string of length n here. Well, what's the probability that one query is on
+the w, That's MBB. Well, there's two to the
+n strings of length n. Only one of them's and b, we pick that one at random. So the probability that one query hits that one is one is almost one. That's one reason that the probability of one query
+hits it is really small. It's 1 over 2 to the n, meaning the probability
+that that query is on a different string
+where the answer is false is really close to one. It's 1 minus 1 over 2 to the n. Now, you don't make just one query. You actually make several queries, but not that many, not all 2 to the n. Only a
+polynomial number of queries can be. So. And we picked these all
+uniformly at random up here. So the probability that all n
+to the c queries return false. Just this probability times itself, n to the c times, right? And you might recognize this if this number in the denominator
+and this number were equal, like if they were
+both n, For example, as n goes to infinity, this will approach one over E. But in fact it's, it's not doing. The number in the denominator is way bigger than the number up here. So in other words, this is
+getting much closer to one. And we're not multiplying it by itself enough times to bring it down. So in fact, this is going to go
+to one as n goes to infinity. So that means that with probability almost a half cuz
+output is wrong, right? So Q is just trying to figure out, is there a string of
+this length or not, but whether it's
+correct or not depends on whether we put a string of
+that length in here or not. So if there is in fact a
+string of that length, then Qt Q and output one. Otherwise it would
+have to add up to 0. But whatever it outputs, It's not even depending on the query because it probably
+didn't query string w. So it has probability pretty
+close to a half to be wrong. And this is for one particular,
+for one particular, and it's probably, it has a
+1.5 chance of being wrong. But then there's another
+end beyond that. There's n plus 1 and n
+plus 2 and n plus three. So the probability that
+for some men that gets it wrong is one, right. It's going to get the answer
+wrong for one of these trends. So with probability 1, infinity Oracle to the
+b is not in T to the B. So in fact a to D and N D
+to the D are not equal.

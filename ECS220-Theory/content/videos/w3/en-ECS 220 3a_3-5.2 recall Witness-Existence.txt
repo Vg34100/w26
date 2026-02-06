@@ -1,0 +1,41 @@
+Finally, we're going to actually roll up our sleeves and prove that a problem is NP complete without appealing to
+circuit SAT or 3 SAT data. And so circuit SAT is going
+to be our first quote, unquote natural NP-complete problem. And we are actually
+going to appeal to an existing problem being NP-complete and as
+witness existence, right? So we're going to show witness
+existence is reducible to circuit SAT and recall
+witness existence is this problem that's very artificial
+looking and we only defined it just to prove that there is
+a problem that is NP-complete, but it's going to be
+useful in this reduction. So this is given as input a program P and an input x and
+then a time-bound. And you want to give
+the time-bound so that the input size scales
+linearly with the time. And so we give the time
+bounty in urinary. So if we want to ask about
+Renee NP for t steps, we give T 1's in a row. And the question about this, remember this program is supposed
+to be like a two input program, like an NB verifier. The question we're asking is, is there a w a second input
+to give B in addition to x? And it's not too
+long, it's at most t, such that P annex w outputs, yes, and at most t steps. But recall T is actually
+playing double duty here. It's a bound on both the witness
+length and on the running time, which when we employed as
+they're both going to be some polynomial function
+of the length of x. So in other words, to do this
+reduction, what does that mean? It means we're going to show
+how to transform our input, the Triple P x t into
+a circuit C sub p x t. So the subscripts there are going to remind us that although the
+circuit takes an input, p and x and t are all sort of
+hard-coded into the circuit. Like if X were to change, the circuit would change. But you can think of the input the surrogate takes
+as being something like w. So, so the second input to P is going to be like the
+whole input to the circuit. So more formally, to show
+that this reduction works, it's gotta be the case that P x t is a yes instance
+of witness existence. In other words, there exists a W of length at most t. So
+the px W outputs, yes. And at most t steps if and only
+if this circuit is satisfiable. And more or less, the way it's gonna work is
+that circuit is going to be satisfied by the w over a year. So intuitively this works because
+circuits can do any computation. So nowadays to us that
+sounds kinda like, of course circuits
+can do computation. But the insight here is
+that Boolean circuits and Turing machines look like they do different
+kinds of computation. So to be able to relate them
+in this way and to keep the time-bound and the size of
+the circuit, how you want. We need to be a little bit careful.

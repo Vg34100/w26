@@ -1,0 +1,387 @@
+Pablo [0:18]: so look at how people have done things
+Pablo [0:19]: what
+Pablo [0:20]: would they use
+Pablo [0:22]: data sources methods
+Pablo [0:28]: theories theories are very important we need to have at least a couple of major
+Pablo [0:35]: five pages each of you will present three minutes
+Pablo [0:50]: the best page difference is do have a page referred per person i don't care how you split this is my suggestion but i need to see at least three minutes of talking to each person and at most fifteen thirty five
+Pablo [0:53]: so five percent team that's it
+Pablo [1:00]: we're a four person team between twelve and fifteen
+Pablo [1:07]: minute presentations we're going to be stopping this rating at fifteen minutes
+Pablo [1:10]: we'll be reviewing these and double speed
+Pablo [1:15]: we want a link
+Pablo [1:19]: to youtube or somewhere else that we can just click on the link
+Pablo [1:20]: and start playing
+Pablo [1:21]: that's what
+Pablo [1:21]: we want
+Pablo [1:22]: we
+Pablo [1:27]: don't want the file do not upload file we want the
+Pablo [1:29]: is that clear
+Pablo [1:30]: okay
+Pablo [1:32]: so
+Pablo [1:33]: question
+Pablo [1:34]: s about
+Pablo [1:42]: i know you said the format we can expect
+Pablo [1:43]: but find
+Pablo [1:46]: it like a tool called market tools
+Pablo [1:47]: introduction
+Pablo [1:52]: forty four papers
+Pablo [1:52]: combined
+Pablo [1:53]: okay
+Pablo [2:00]: so do not finding papers that will align so well that it makes sense
+Pablo [2:02]: that such representation has to make sense
+Pablo [2:06]: so here's a good presentation
+Pablo [2:09]: you start talking about your project
+Pablo [2:16]: so you talk about your project and then you say
+Pablo [2:19]: little introduction by the project
+Pablo [2:26]: and then you can either have a presentation where you say well the motivation for this comes from these two
+Pablo [2:26]: papers
+Pablo [2:29]: and then somebody else takes over and talks about
+Pablo [2:30]: those two things
+Pablo [2:33]: and then this is what they do in these three papers
+Pablo [2:38]: or you can just say we investigated these five paper that's also representation
+Pablo [2:47]: and they're related to here and then with the bridge paper one of you and you say how it's related to the quest
+Pablo [2:49]: what they've done
+Pablo [2:51]: and what you plan to take out
+Pablo [2:56]: and then you just line up
+Pablo [2:59]: typically what you can do is sequence
+Pablo [3:00]: start
+Pablo [3:01]: talking
+Pablo [3:02]: and record
+Pablo [3:04]: this and send me a
+Pablo [3:04]: link
+Pablo [3:06]: that really works really well
+Pablo [3:13]: you can make sure that everything is enabled so kind of trial five minutes first make sure everybody gets docked share screen
+Pablo [3:17]: it's usually best to share one screen and just advanced
+Pablo [3:18]: to it
+Pablo [3:19]: but it's up to you
+Pablo [3:20]: does that answer
+Pablo [3:21]: more or less
+Pablo [3:26]: we edit this video there's some positive space here
+Pablo [3:27]: which one is a real time
+Pablo [3:31]: but i do want to see your face no paid eye subs
+Pablo [3:31]: titute
+Pablo [3:36]: you want to hear your natural expression no editing
+Pablo [3:41]: or speech pattern don't make it
+Pablo [3:47]: we had a person do a elon musk well anyway
+Pablo [3:49]: it was fun
+Pablo [3:49]: ny
+Pablo [3:52]: but don't do it
+Pablo [3:55]: some of these are actually protected
+Pablo [3:56]: okay
+Pablo [3:58]: any other questions
+Pablo [4:02]: youtube link was implemented
+Pablo [4:05]: no i don't care which link
+Pablo [4:06]: i was just suggesting
+Pablo [4:07]: it's easy
+Pablo [4:13]: you'll still use zoom or something
+Pablo [4:16]: so you may as well just use zoomscape ability
+Pablo [4:18]: why does that work
+Pablo [4:26]: zoom is already kind of sampled down and youtube samples done earlier and then i cancel the letters
+Pablo [4:32]: oh that's important make sure you view your presentation before you submit it you can't read it i can't read it
+Pablo [4:36]: and ryan has utilized
+Pablo [4:40]: so make sure we can read the text
+Pablo [4:51]: yeah this thing's usually work out very well and they build this camaraderie
+Pablo [4:52]: in the team
+Pablo [4:56]: any
+Pablo [4:56]: thing else
+Pablo [5:03]: let me try to squeeze in a few more metrics in here
+Pablo [5:08]: so
+Pablo [5:09]: we can continue
+Pablo [5:18]: how far
+Pablo [5:19]: did we get
+Pablo [5:46]: talked about the space of the delta
+Pablo [5:49]: how do we do this in our metrics
+Pablo [5:56]: did you see anything come up
+Pablo [6:02]: always change this
+Pablo [7:15]: fine wasn't the
+Pablo [7:16]: case
+Pablo [7:25]: so what is this right
+Pablo [7:31]: when we start talking about all these metrics
+Pablo [7:38]: we see them as a part of that pipeline of the goal the question metrics
+Pablo [7:39]: right
+Pablo [7:44]: and so that would be standard that can be established for a number of different evaluations
+Pablo [7:47]: at the software engineering institute
+Pablo [7:48]: of cranny
+Pablo [7:48]: development
+Pablo [7:54]: what do you mean by when you start talking about modeling the quality
+Pablo [7:57]: of a software product what do you mean by that right
+Pablo [7:59]: well different people have
+Pablo [8:01]: different goals and different wants from
+Pablo [8:02]: different
+Pablo [8:04]: ways to access them for various reasons
+Pablo [8:08]: so they develop this hierarchy
+Pablo [8:13]: where you can basically go in and choose in which way do you want to evaluate quality
+Pablo [8:26]: and then by clicking that circle back so one thing is to another
+Pablo [8:29]: the factor will be related to your question
+Pablo [8:31]: and the goal
+Pablo [8:38]: the characteristics would be the question how do you evaluate maintainability well through consist
+Pablo [8:38]: ency
+Pablo [8:42]: but this has been done for you
+Pablo [8:43]: right
+Pablo [8:46]: all you have to do is go and click
+Pablo [8:50]: and maybe before you actually undertake any
+Pablo [8:50]: questions
+Pablo [8:58]: and try to do research you will have all these implemented all you have to do is dashboard
+Pablo [9:00]: and then you can report
+Pablo [9:04]: upstairs you can report well here's how this metric
+Pablo [9:13]: that results in six point five on correction time six point five days is related to simplicity is related to reappliability
+Pablo [9:17]: etcetera and different characteristics maybe relate
+Pablo [9:17]: different factors
+Pablo [9:19]: different
+Pablo [9:19]: questions
+Pablo [9:24]: so you can measure you can ask the same question about
+Pablo [9:25]: different
+Pablo [9:26]: things
+Pablo [9:29]: so here's the main thing ability
+Pablo [9:48]: so you can define your own the team should be so this is what you will be doing your team will choose based on the question you have motivated by the theory you will then choose which of these things are relevant which parts of the software engineering process standardized will really be assess
+Pablo [9:49]: ed
+Pablo [9:57]: so for example
+Pablo [9:58]: size
+Pablo [10:01]: getting hearing this is just a sample
+Pablo [10:04]: what is the size of the
+Pablo [10:04]: code
+Pablo [10:07]: we talked previously about mines of covid
+Pablo [10:12]: right that's one very simple measure we're going to talk about process later churn
+Pablo [10:16]: but this one is just to tell you
+Pablo [10:23]: well if we have certain modularity and hierarchy there's other things measures of size
+Pablo [10:25]: in particular
+Pablo [10:28]: here's about classes
+Pablo [10:32]: we have different classes different methods
+Pablo [10:35]: organized
+Pablo [10:37]: maybe jal or whatever
+Pablo [10:47]: this data is equal they may be relevant to you in different ways inheritance next they talk about size
+Pablo [10:51]: but through the inheritance part
+Pablo [10:57]: ed method unmodified modified overridden method
+Pablo [11:05]: the class sizes number of methods in a class attributes businesses per class
+Pablo [11:12]: down in that
+Pablo [11:13]: tree
+Pablo [11:14]: method size
+Pablo [11:15]: s
+Pablo [11:20]: invocations data how many classes where there whole number of states
+Pablo [11:29]: why is it important talk about inheritance and size in this sense
+Pablo [11:32]: what does this u pick
+Pablo [11:33]: ad in addition to lines of code
+Pablo [11:38]: complexity will you have multiple loads of inheritance
+Pablo [11:44]: of
+Pablo [11:45]: two four or five levels
+Pablo [11:45]: down
+Pablo [11:53]: and why is this exactly right and why is this example of measuring size
+Pablo [11:55]: relevant to qual
+Pablo [11:55]: ity
+Pablo [12:04]: so if you assume
+Pablo [12:11]: standard number of errors or defects per unit complexity of code
+Pablo [12:17]: higher complexity code and your complicated code more and more
+Pablo [12:23]: the standard so either you add your i's or better eyes in that code
+Pablo [12:27]: or you solve more value
+Pablo [12:41]: and this will allow you to interpret your code interpretation is it linear is it entangled how many things we share
+Pablo [12:47]: what should i pay attention more to and all these are used in static analyzers
+Pablo [12:52]: to pinpoint places or hotspots where i want you to investigate
+Pablo [13:04]: class with twenty seven issues that inherits different of those and methods can be overridden and have been entangled mess
+Pablo [13:06]: ages
+Pablo [13:09]: that
+Pablo [13:19]: manager that's right so as a manager
+Pablo [13:24]: what would a higher complexity call mean to you you're going to have to spend
+Pablo [13:25]: more machine
+Pablo [13:26]: or more time
+Pablo [13:32]: well is time money or is money are they really equivalent
+Pablo [13:34]: they have some coordination
+Pablo [13:41]: different there's a difference we only have the origin
+Pablo [13:42]: and
+Pablo [13:43]: money
+Pablo [13:49]: so i always choose my time
+Pablo [13:50]: okay
+Pablo [13:59]: it's not just about too called
+Pablo [14:02]: but the couple in between objects
+Pablo [14:05]: more generally those are cohesion
+Pablo [14:17]: there are standard ways to define cohesion method lcom is the number of disjoint sets not accessing the same attributes
+Pablo [14:27]: of local method so there's ways to define this case properly so think about these joints if you're following a thread you're debugging you will want to know
+Pablo [14:35]: how many of these joint sexual attack they assign differently to accept two different people
+Pablo [14:38]: or part of the field or different times
+Pablo [14:41]: they can be also done in parallel
+Pablo [14:55]: which is of course very important versus others if everything is connected and depends on everything you cannot address something downstream addressing something upstream because you can raise in terms of so there's all these considerations
+Pablo [15:06]: on the management and individual side and we see this in actually an open source project people have there's a correlation between how to deliver
+Pablo [15:10]: studies for example how people co work
+Pablo [15:12]: without knowing about each other
+Pablo [15:15]: there are different places
+Pablo [15:17]: they're working on the same method
+Pablo [15:21]: either fixing things or adding features or whatever
+Pablo [15:27]: and so we find that if one person sees somebody working on some people a couple of days or more
+Pablo [15:31]: they try to stay more away they give a personal space
+Pablo [15:38]: and they also try not to anything that that matters
+Pablo [15:38]: as a consequence
+Pablo [15:44]: so it's very plain to sit we have an actual understanding of
+Pablo [15:47]: some of these in an open source these things get results organically
+Pablo [15:51]: so what can i do you don't even need somebody measured
+Pablo [15:53]: because people are
+Pablo [15:53]: aware
+Pablo [16:02]: but in a centralized governance system like the manager and programmer one would have to be aware about the law
+Pablo [16:07]: okay
+Pablo [16:09]: process metrics
+Pablo [16:13]: and how these are related to quality
+Pablo [16:19]: so productivity is a process map it tries to judge functionality over time
+Pablo [16:24]: how productive a team is how productive
+Pablo [16:38]: functionality is measured most simply in terms of lines of code or in terms of maybe something more possible
+Pablo [16:41]: we kind of skipped over function points
+Pablo [16:44]: that just
+Pablo [16:45]: what
+Pablo [16:46]: are functions
+Pablo [16:53]: function points this is an abstract term
+Pablo [17:05]: put it up there
+Pablo [17:14]: scan through this
+Pablo [17:19]: it's an abstract thing
+Pablo [17:27]: what important pieces of the code of the process you can measure
+Pablo [17:38]: so the inputs and outputs user interactions at what point at which place does the user interact with the code what external interface
+Pablo [17:42]: files used by the system
+Pablo [17:52]: anything really that is kind of major goes into here and so you associate a weight with each of these and combine it into one measure
+Pablo [17:53]: if you will
+Pablo [18:01]: and then you say four point five functions this one you have seven point the other one over there
+Pablo [18:08]: so if one measure the lines of code really is just a flat measure but this one
+Pablo [18:15]: it tells you more about the whole system the environment the code the user perspective all combined into
+Pablo [18:17]: that you wrap it up
+Pablo [18:19]: in the world
+Pablo [18:23]: and hopefully this is related to something
+Pablo [18:28]: but that's what we mean lines of code or function points is a bit
+Pablo [18:29]: of a complication
+Pablo [18:35]: of the line approach and as he says none of these address
+Pablo [18:43]: over at the end of this we'll see a counter
+Pablo [18:46]: the lines of corridor
+Pablo [18:49]: we'll talk about that that's a paper that i
+Pablo [18:49]: 've made
+Pablo [18:56]: another type of
+Pablo [18:59]: product metric
+Pablo [19:02]: in this case reliability
+Pablo [19:05]: how can we measure reliability of the product
+Pablo [19:13]: so meantime to failure is not exact average time between failures in meantime between failure
+Pablo [19:22]: so meantime two failure the first one average time between delete in meantime it will fail
+Pablo [19:28]: so the second one is failures over time
+Pablo [19:32]: and the third one is
+Pablo [19:37]: more about where your system will be available
+Pablo [19:38]: and other
+Pablo [19:47]: so it's not just to the failure but to after the failure
+Pablo [19:48]: lose the prior
+Pablo [19:50]: does
+Pablo [19:51]: that make sense
+Pablo [19:53]: and all these things are important
+Pablo [19:55]: so from
+Pablo [20:01]: product perspective
+Pablo [20:03]: what's missing
+Pablo [20:12]: is there any from a product perspective for me to be a successful product that works
+Pablo [20:13]: what is missing
+Pablo [20:21]: well let's think about the product as seen by the user right
+Pablo [20:24]: the user wants a product that works
+Pablo [20:26]: but let's say there is a bug
+Pablo [20:32]: and a bug is it's leaking my password my social security or whatever
+Pablo [20:34]: okay
+Pablo [20:38]: there's also another bug a button shows up in the wrong color
+Pablo [20:39]: on the screen
+Pablo [20:43]: both of these are bugs failures
+Pablo [20:44]: that we'll need to
+Pablo [20:45]: fix
+Pablo [20:48]: these things do not distinguish between them
+Pablo [20:53]: but which one will get you in trouble the user more
+Pablo [20:59]: don't like how it works with somebody
+Pablo [21:00]: but you're right
+Pablo [21:01]: you're absolutely right
+Pablo [21:07]: but this doesn't take into account is severity portal
+Pablo [21:13]: and so then there is a separate issue of severity of defects and how those are assessed
+Pablo [21:17]: another
+Pablo [21:18]: thing
+Pablo [21:19]: to a craft
+Pablo [21:21]: is
+Pablo [21:21]: correct
+Pablo [21:29]: now
+Pablo [21:30]: adays
+Pablo [21:30]: people
+Pablo [21:32]: really don't do things that are in this
+Pablo [21:36]: often you are estimating
+Pablo [21:42]: so you
+Pablo [21:43]: can measure correct
+Pablo [21:43]: ness
+Pablo [21:44]: we don't
+Pablo [21:45]: need true or correct
+Pablo [21:46]: ion
+Pablo [21:49]: but
+Pablo [21:50]: we can
+Pablo [21:51]: not say much better
+Pablo [21:52]: intens
+Pablo [21:52]: ity
+Pablo [21:53]: and
+Pablo [21:54]: nowadays
+Pablo [21:56]: other
+Pablo [21:56]: companies
+Pablo [21:57]: they should
+Pablo [21:58]: for a certain
+Pablo [21:59]: loan capability
+Pablo [22:08]: that is
+Pablo [22:09]: allowing
+Pablo [22:10]: more
+Pablo [22:11]: easy to
+Pablo [22:12]: do
+Pablo [22:17]: meas
+Pablo [22:18]: ure how quality
+Pablo [22:20]: saved
+Pablo [22:21]: above
+Pablo [22:23]: there
+Pablo [22:26]: is
+Pablo [22:27]: acceptable
+Pablo [22:34]: growth
+Pablo [22:35]: agricult
+Pablo [22:36]: ure
+Pablo [22:37]: will be
+Pablo [22:38]: an all
+Pablo [22:39]: mouse in the
+Pablo [22:43]: fact
+Pablo [22:43]: that
+Pablo [22:45]: you should
+Pablo [22:46]: have a certain amount
+Pablo [22:47]: and how
+Pablo [22:48]: chiropractic can guarant
+Pablo [22:50]: ee nobody can
+Pablo [22:50]: guarantee zero
+Pablo [22:55]: number
+Pablo [22:57]: of loan
+Pablo [22:57]: defects
+Pablo [22:59]: and then
+Pablo [23:00]: you can only estimate
+Pablo [23:01]: the un
+Pablo [23:02]: controll
+Pablo [23:03]: able
+Pablo [23:04]: if you can estimate
+Pablo [23:05]: better the static
+Pablo [23:05]: ones
+Pablo [23:06]: then the dynamic ones
+Pablo [23:07]: of course
+Pablo [23:08]: and it's
+Pablo [23:10]: a current optical research how to estimate unknown
+Pablo [23:11]: defects
+Pablo [23:12]: and find them
+Pablo [23:20]: comparing data one thing that comes out of this is that
+Pablo [23:26]: of course metrics and measures can be used to compare twelve
+Pablo [23:34]: states but try to understand that you can only compare if the collection of data is found if your data is garbage
+Pablo [23:39]: while you collecting for one project but it's great from another no matter what metric you use
+Pablo [23:41]: will end up in trouble
+Pablo [23:41]: right
+Pablo [23:48]: and we talked several lessons ago that if you have a very jagged availability
+Pablo [23:49]: for me
+Pablo [23:51]: several months in a certain
+Pablo [23:54]: area
+Pablo [24:05]: three commit hundred two and five and then you go down to zero
+Pablo [24:07]: for a stretch
+Pablo [24:08]: of i don't know three months
+Pablo [24:12]: and then it goes up to here
+Pablo [24:15]: so
+Pablo [24:18]: this is the data you've gathered
+Pablo [24:25]: medium metrics are not the network with zero so maybe you are doing an interpolation then you do something like this
+Pablo [24:31]: you kind of say oh this may go
+Pablo [24:42]: now you'll need to make it do not introduce maybe other strategies
+Pablo [24:48]: no matter what metric you can use it will reliably predict but here you will fail
+Pablo [24:54]: so don't take failure to be signal failure of your data gathering
+Pablo [24:57]: is not signal it's an artifact
+Pablo [25:00]: and it will be different across project
+Pablo [25:06]: so data gathering and methodology have to sound
+Pablo [25:06]: again
+Pablo [25:09]: i'm pointing this out okay
+Pablo [25:12]: we'll talk about maintainability next time
+Pablo [25:15]: let's end here
+Pablo [25:18]: you go into the career here

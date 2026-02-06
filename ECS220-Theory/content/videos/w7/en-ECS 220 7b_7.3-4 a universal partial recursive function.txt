@@ -1,0 +1,85 @@
+Now one of the things
+that was known once the partial recursive functions are defined and then the significance, I think maybe wasn't
+as appreciate it until later when terrain came along and prove something
+similar about his model. But one thing that was
+known as that there's a so-called universal partial
+recursive function, right? Like that function we saw on the
+previous slide of a function that takes as input a description
+of an algorithm or if you like, a description of a function, and then an input to
+that function and evaluate that function on that input. In modern language, we say there's a flute interpreter that
+is written in slope. But in this older kind
+of terminology, it's, there's a partial
+recursive functions that given any description f bar. So f is the function f bars the description that's
+kind of unquote trade of a partial recursive function f and an input x2 f u of f
+bar x equals f of x. Now notice that this is
+defined if and only if f of x is defined and if they're
+defined than they're equal. So the best way to
+understand why this is true is just to think about modern
+programming languages like Python, where the almost trivial. It's just making the observation that you can write Python
+interpreter in Python, right? A universal function in modern
+terminology is just an interpreter. But now the best way to
+understand how much of that deep, unobvious insight this
+was in the 1930s, right before we had the benefit
+of our modern understanding of programming languages is to read this mathematical function
+way of phrasing it. So we're not going to really prove
+it using the old terminology, but I do want to just
+write down like just how difficult that would appear to kind of prove something like this. So here's how you would build a universal partial recursive
+function using pre 1936 technology. And it's something
+called Godel numbering. And it's named after God, who? I think they have proven this, but the original use of
+Godel numbering was, that's how he proved Godel's
+Incompleteness Theorem. But it's this fancy trick we used with the counter
+machines as well, where we use sort of prime factorization representations
+of integers so that the key step that
+you need here is to come up with a way of representing a partial recursive function in the format that partial recursive
+functions expect as input, okay? And the way we've
+defined them, they just expect integers as input, right? Patent, right, non-negative integers. So any functions are
+like a different type of object and this relation between vectors of integers
+and output integer. So how are we going
+to represent that as a positive integer so that we're representing an exactly the
+partial recursive functions. So, so h will be the function itself, right, is just this abstract
+mathematical relationship. H bar is going to be the
+integer that represents it. And because it's an
+integer, we can give it as input to a reverse function. So the easy one is the base cases. We can say, well, there's three base cases, actually, there's an
+infinite number there. There's two. Easy base cases, the constant
+0, the successor function, and then this infinite family
+of projection functions, one for each non-negative integer and one for each positive integer. And we'll just assign
+them these prime numbers. So 7, 11, and 13, 7900 and so on. All the rest of the prime
+numbers appear here. Note we skipped three prime numbers. They're going to use down here. So when we compose functions, we need a way of
+putting them together, but putting their
+descriptions which are integers together into a new integer. So suppose we have f and g
+there, partial recursive. Well, they have some
+integer representing them, f bar and g bar. Now we need, now there. Composition h is a partial
+recursive function. We need to say what is going to be the integer that represents
+H. It's going to be this 12 times three to the
+representation of f minus 5 to the representation
+of G. And again, by the fundamental
+theorem of arithmetic, that's a unique representation. If I write that integer
+down, you know, which two exponents I had to go here to make it so you can figure
+out what f and g are. And we can do something similar
+with primitive recursion, which also depends on
+having two functions. But we just instead of
+multiplying by two at the front, we multiply it by two squared. So again, that gives us a different representation
+than any of these. And then finally, 2 cubed times 3 to the F to
+represent mu recursion. So recall that, you know, add of x to 0 is just the
+projection on to x, right? And then add x. Y is this thing, this primitive recursive function of where the recursion
+is on y minus 1, where G here is defined to be
+compose the successor with P3. We did this a few slides ago. We're going to kind of pick apart. If I had the add function, how would I figure out what is its representation is just
+some positive integer. How would you figure it out? Well, you'll look at what
+functions is it made out of? It's made out of these ones. What functions are those made out of? Well, the composition of S with P3, these are two atomic functions, so I can look up here. So g here is represented by two times three to the representation of S times 5 to the
+representation of P3, which is this thing, 2 times 3 to the 11 times 5 to the, because S is represented
+by 11 p1 by or PI 3 by 19. So that's this number which is six. I don't even know what
+that is. Million, billion, trillion, six quintillion. All right, so that's
+just the g We need, the help us define add. So ADH is then this thing which
+is somewhat modest numbers, but the last one is five
+to the sixth quintillion. So anyway, it is possible to represent these functions
+uniquely as integers. And you need to reason
+about these integers in order to show there's a universal
+function that can somehow pick apart a given integer to figure out what functions does it represent and
+how do you apply them. So we'll quote from the
+textbook here to say that this universal function that
+takes a description of f, meaning an integer like this, and an input to it and evaluate
+it is itself partial recursive. And the proof of this
+claim is rather technical. But we're thankful nod to
+the pioneers of computation. We relegate its details to history. As I said, I didn't. I think this is the right way
+to understand this theorem. I think this one is right. You can write a Python
+interpreter in Python.

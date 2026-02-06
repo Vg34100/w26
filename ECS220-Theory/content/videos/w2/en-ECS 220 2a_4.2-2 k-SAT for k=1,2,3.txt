@@ -1,0 +1,130 @@
+So we've talked about CNF SAT. It has a special case called K sat, where k is a positive integer. And this is just a special case where each clause has exactly k literals. And so let's think about a few
+special cases of the AS1 SAT. So I clam, one set
+is NP. Why is that? Pause and figure that out. So once that just means it's
+a conjunction of literals, ripe and a literal is a
+variable or its negation. So if ever you get a variable and
+its negation or to the literals, well, you can't
+satisfy both of those. It would be unsatisfiable. But if, say, p weren't here and
+you add q and r and not p. Well, if you only have a variable where
+you only have its negation, that tells you what you ought to
+set that variable to satisfy it. So it's very easy to just
+determine if it's satisfied. Well, you just look, does it have
+a variable and its negation? And if that's true, is not satisfied. All right, I'm going to claim that
+2 SAT is also NP. Why is that? This is also worth thinking
+about for a little bit. So pause. Okay, It's not quite as easy. So first let's observe that if
+we have the formula a or B, that's equivalent to not a
+implies B and not B implies a. That's actually looks like quite
+a bit What's going on here? Well, just remember, an
+implication is equivalent to the left side negated
+or the right side. So not a implies b is just
+equivalent to a or B, right? And notice that this formula, not a implies b is just the
+contrapositive of this one, right? Not b implies a. So these two are actually
+equivalent to each other. So taking an end doesn't
+have any effect, but it's equivalent and they're
+both equivalent to a or B. So here's what we're going to do. You want to know whether a
+tooth to CNF formula Phi, such as this one over
+here is satisfiable. You make a graph with one node
+per possible literal, right? Pqr, and then their negations. And you draw an edge from
+one node to another, corresponding to this up here, right? So each clause here is going
+to contribute two edges. So this one, the first
+edge it would contribute, would be you take the
+negation of this, which is p. And that implies q. So there's a black arrow from p to q. And then going the
+other way, You take the negation of the right one, NOT Q and draw an arrow to not P. So that's why we have
+this other black arrow from NOT Q to not P. So you do
+that with the other three clauses. You get six other edges
+and it looks like this. So what are we gonna
+do with this graph? So first observe this has
+a satisfying assignment. If we set all of them to false, then this will be the
+statement will be true. And something to notice
+is that setting them to false corresponds to
+this loop down here. Not p going to NADH
+are going to not q. And if you follow these, you never visit backup here. So we're going to define
+a contradictory loop. This graph G fee that
+we derived from v to be a cycle containing both a
+literal and its negation. In other words, at some point
+you have the variable x. And then sometime later
+this squiggly arrow represents that you've
+maybe followed many edges. You can get to the negation of x, and then that's not quite
+a contradiction yet, but from there you can get back to x. And if you look over here, you'll notice there's no
+contradictory loop, right? Every cycle in here does not contain both a
+variable and its negation. Now, if we were to add
+an extra clause here, say and q or r, and it would add these
+two green arrows that would introduce a
+contradictory loop, right? So for one example, we
+could see you could start at P and you could go to NOT Q. And then you could go to R, and then you could go back to P
+and then to q and r and back to P. So you can have a cycle that
+visits both Q and not Q. And the claim is going to be
+that phi is satisfiable if and only if there are no
+contradictory loops in g, right? And if you think about
+what's going on here, what are these arrows saying? Well, this purple arrow
+right here is saying, well, if P is Q, if P is
+true, what do we know? Well, the purple arrow
+says if P is true, then not q has to be true. In other words, q has to be false. And this black arrow right
+here is saying, well, if not q is true, then not p has to be true. And that's not a contradiction yet. It might just mean q should be false. But then this is saying the blue
+arrows I have not p is true, then not r has to be true. And then if that's true,
+then q has to be true. If that's true, then
+R has to be true. And if that's true, well
+then p has to be true. But now we've said has to
+be both true and false, which again, So a full proof
+of that is in the textbook. We won't go through it,
+but that's the idea. So this boils down to asking, are there any contradictory loops? And essentially that can be solved by just iterating over each variable and check whether it's possible to
+reach from node x to node NOT x. And also is it possible
+to reach from NOT x to x? And those are instances of the
+graph reachability problem, which you can solve with a breadth-first search
+or depth-first search, which can be done in
+polynomial time and there's only a polynomial
+number of variables. So graph reachability is NP. So that implies that
+2 SAT is also in B. We can use a reachability
+algorithm to solve 2-SAT. All right, the next integer
+and interest is 3 SAT. So ones and twos that are both np. We're not going to argue
+yet that 3 SAT is not NP. In fact, we don't know whether it is, but what we are going
+to show is that despite there being more structured
+than just CNF SAT, which allows very numbers
+of literals in each clause. We're going to show
+that this special case of CNF SAT called reset, is just as hard as CNF SAT. We're going to reduce
+CNF SAT to 3 SAT. So how do we do that? Well, we're going to have
+to write an algorithm that on input an
+arbitrary CNF formula. Can convert any clause would say k elements into a number
+of three clauses, meaning clauses with three girls. So let's start with the easy cases. You might have fewer than
+three literals per clause. So suppose you have a clause x or y. What we can do is introduce a new variable that doesn't
+already appear in our end, but let's call it z. And we'll replace the clause x
+or y with these two clauses, x or y or z and x or y or Nazi. Now look at what this is doing. Whatever, suppose that the
+input formula is satisfiable, then there's some way to
+set x and y to satisfy. So if you just set them
+to the same thing over here and just set z say to true, that would make this left clause be satisfied and also this right one, because x or y is satisfied, the fact that NOT z would
+be false doesn't matter. And conversely, if this
+is not satisfiable, so say if every assignment make some flaws like
+say this one be false. What happens if this is false? Well, x and y both have to be false. So then look over here,
+they're both false. So the only way that you
+could possibly satisfy either clause would be to
+satisfy the third letter O, but you can't satisfy both. They contradict each other. So we have one of these do clauses
+are true, the other is false. So there would be no way to
+satisfy this 3 CNF form. You can play a similar
+trick with one clauses. If one of your clauses is simply x, you can now introduce two
+new variables, Z1 and Z2. And now the four clauses you add iterate over every possible
+value they can take. So if you just look at these, you'll see there's
+no way to set z1 and z2 so that they are responsible for satisfying
+all of these closets. At least like any
+assignment to both of them, has to make both of these literals
+false in one of these clauses, and then it's only x that's
+leftover to satisfy it. So again, the truth of these
+four clauses boils down to, does x satisfy this
+original clause over it? So those are sort of the easy cases. Now, more difficult case
+is if we have a clause with more than three variables flow. Again, this is easier by example, but it should be fairly obvious
+how to generalize the example. Let's suppose we have a seven clause, a or B, or C, or D, or E, or F or G. So we're going to replace it
+with these causes over here. We have a special start and end, the start one as the
+first two, a and B. And then our first newly
+introduced variable Z1, that's not in the original formula. And then the last one has
+the last two, f and g. And this is only going to
+apply it to clauses with four or more literals in them. So if you have more than
+four now you're going to have some intermediate ones. And what do they look like? Well, each of them just has
+one of the original variables, C and then D and then E. And then the newly introduced
+variables sort of chained together. So whatever the last variable
+was in the previous clause, its negation is the first one here. Then a new variable X2, and then its negation air, and so on and so forth. And so we won't go through
+the case analysis. But you can do a similar
+thing where you show if an assignment to a
+through G satisfies this, then there's a way to set z1
+through z4 to satisfy these. And conversely, if an assignment to a through G
+does not satisfy these over here, then over on the right,
+no matter how you set z one through z for this
+is going to be false.

@@ -1,0 +1,64 @@
+All right, so just as
+with NP-completeness, to get our foot in the door, we're first going to define
+a fairly artificial problem whose sole purpose is
+just to be NL complete. And then we'll reduce
+it to reachability, to show reachability is. So this is similar to the first
+NP-Complete problem we study. This one's called an
+L witness existence. So very similar. We're given a non-deterministic
+program P and input k. But then unlike witness existence, where we're given a time-bound, now we're given a space bound. So we're given an
+integer k in urinary. So the format is exactly the same, but the question we ask is
+now about memory instead. And the question is, is there a sequence of guesses that p can make on input x so that it accepts while at the same time using at most log of
+k bits of memory. So that's one distinction is that we're naturally baking that
+the logarithm into this. We're not asking and
+k bits of memory, we're asking about log
+of K, that's okay. So the easier thing to see is
+actually that It's et al hard. So for any language and et al, what puts it in and out,
+What's the definition? Well, there's an O of log of n. So c times log of n for some
+constant c space bounded program P. So that decides it. So to reduce a to NO
+witness existence to know. Okay. Is it should is my
+input in a or is it not? Does P accepted or not? On input x? I want to know that I should
+output Pete, the Triple P, x and k for NO witness a distance
+where p is the decider program, x is the input and k is what? Pause and think about it. So should be n to the c. And the reason is that we need to count how many ones that
+the reduction has written. And that's going to
+take log of n to the c, which is the same as c
+times log n bits to store. Okay, so the slightly trickier thing is actually to show that
+it's contained in L. And this is why we had to do
+this a urinary tract up here. So here is a non-deterministic
+logarithmic space program that decides and witness existence. So given input px k, What does it do? Well, it does what you'd expect. It runs p on input x to
+see whether it accepts. But at the same time it
+has to check it, right. It's not just asking, does it, except we don't know whether
+p is space bounded or not. So we're also given the
+space span and we have to ensure that P does not
+exceed the space bounds. We check that it never
+exceed the log again. The reason we gave k and unerring
+because it's given an urinary. That means that the space found
+on q is at most log of n, right? The reasons that it uses space
+log of x to do this check, or log, sorry, log of
+k to do this check. But because we put k in urinary, What's the size of cues input? Well, it's this Triple, P, x, and k altogether. And that triple is at least as
+big as just the last element k. So the last element k is at least n, or sorry, is at most n, where n is the size of
+the entire thing, right? So that gives us that k is at most n. So log of k is at most n. So q itself is log of
+its input space bounded. So this isn't totally
+straightforward, so it can be confusing. Be sure to ask about it in lecture. We need to talk about it some more. Okay, so now we want to argue that. So this shows that witness
+existence NL complete. Now we want to argue that this
+more natural problem reachability. So I'm going to reduce and witness
+existence to reachability. We already showed
+reachability is contained in. So let's just state what does
+it mean to do this reduction. The reduction on input px
+k For Witness existence. We need to output some pain of the format reachability
+expects a graph and to know, so what are G, S, and T going to be? So let's just restate what is it
+that we need the reduction to do? We need that p on
+input x accepts using at most log of k space
+if and only if there's a path from S to T and G. So pause
+and think about what should GB, what should SP, what should TB? So we'll define g to be the
+configuration reachability graph of p, but not the whole thing, actually the k space bound. Again, there's no guarantee that P actually uses only log of k space. It could use more. We're trying to answer the question, does it except using
+at most that space. So in fact, we don't define the
+whole graph, we cut it off. And if ever there's a transition that's going to use more
+than log of k space. We actually don't consider that, that node it would go to. So, so the set of nodes is the set of all configurations of p that use
+at most log of k space, right? Things PIE might do, but we don't consider them. And then the edges is the
+set of all configurations u and v so that p can go
+from u to v in one step, you know, maybe
+non-deterministically, maybe there's other things
+p could do from you, but this is one of the
+things you can do. And then we set S to be the
+starting configuration on input x. And recall we can set it up so that P has a unique accepting
+configuration that's going to be t.

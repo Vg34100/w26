@@ -1,0 +1,124 @@
+So another completeness
+as a surprise result. Remember I DO fan tiny equation is an equation where you asked
+for an integer solution. And famously asking this for general multivariate
+polynomials is undecidable. It was proven in the seventies, but we could restrict what
+patent equations we ask about. So a linear diaphragm
+time equation is just a linear equation
+where you're given as input natural numbers a, b, and c. And you want to know, are there natural numbers x and
+y that make this equation true? And it turns out this is NP. Pause and think about
+that. Why is that true? Well, if you think about
+the number theory of this, you would need that the
+greatest common divisor of a and B should also divide c. And that's precisely what the so-called extended
+Euclidean algorithm gives, gives you x and y, such that AX plus BY equals
+their greatest common divisor. So we're not going to get
+into the number theory that, but it is possible. I just want to point
+out that it's possible. So now what have we get a
+little bit more polynomial, but not general polynomials. So instead of x and y are
+just these linear terms, what if we allow one
+of them to be squared? So a quadratic dial phantom
+equation, coefficients a, b, c. We want to know, can you find natural numbers to
+make this quadratic equation true? Turns out this is NP-Complete. So we're not going to
+prove this in class. I just wanted to throw
+it out there again as an example where the
+details sometimes really matter for exactly
+how hard a problem they can make a huge difference. Okay, So we are going to focus
+a little more on this one that takes us a little bit away from the discrete math that we're used to. But I kinda like it because of its connection to some
+other areas of science. So here's a question about integrals
+that we might want to answer. It's just call it cosine integration. So we have a special formula
+that we want to integrate. And it's the product of the
+cosines of a bunch of angles. And in fact, the angles are
+all related by these integers. So your input is basically just the parameters which has these positive integers,
+X1 through Xn. We want to ask, is this
+integral positive or not? Okay, So this is something
+you'd want to figure out. And our key tool for analyzing this will be
+this sort of variant of Euler's famous formula that relates the trigonometric functions
+to the exponential function. So cosine of tau is this
+exponential function of tau involving imaginary numbers. Okay? So first of all, we get, let me just rewrite this above here
+in a more compact form. So we'll just use a product symbol. So we're asking about this integral
+and using this formula here, we can substitute in
+the numerator up here, and then we just factor
+the two denominator out and there's n of them
+multiplied together. So we factor of one
+over two to the n out and we get that this integral
+is this thing, okay? Now, how do we reason about that? Well, it's the product of n terms, each of which is the
+sum of these two. So in general, if you have a
+product of some number of terms, each one of which is just
+a sum of two numbers. In this case, if they're
+say, three terms, but two things being
+summed in each term, you get eight total terms. When you multiply it all
+through one for each way to pick one number or the
+other in the final term. So that means if we want to
+multiply together these n terms, what we get is all 2 to the n different ways to pick either the un-negated or the
+negated exponent, right? These are the same exact number
+except for negative sign up here. So here they are out with
+the negative terms in red. Okay? So now we can group them in each term by which ones have the negative exponent
+and which ones don't. So we can say this is
+simply the sum over all possible subsets a from one to n. And then the subset a represents
+the positive exponents here. So we multiply together all
+the e to the i x j theta terms and then multiply all the e
+to the negative i XJ terms, but sort of color it a
+little bit different there. Okay? But then here is where
+it was useful to use Euler's formula because we're
+multiplying together exponent's, I'm sorry, we're multiplying
+together e raised to some power, some exponent, which amounts to
+adding the exponents together. So we can turn each of these products into a
+sum up in the exponent. So each term in here is just
+e to the I theta and then the sum over all j and a of x
+j minus the sum over all j, not an a of that XJ. Okay? So it's just a bunch of
+algebraic manipulation so far, but the key idea was to use Euler's formula to turn
+this product into a sum. So that's usually
+what it's useful for. Okay, So now just to reminder, this integral up here
+equals this thing. This is what we just derive it. We're almost there. The first
+thing to notice is you can exchange sums and integrals
+because an integral, integral is just kind of like a sum. And now that we have this integral, okay, now we're gonna do a
+little bit of calculus here. So let's think about
+what to do with this. Well, the key thing to
+notice is that if I have the integral from negative pi to
+pi of e to the I theta y. But what do we have here? These y's are integers, right? We're summing up integers here. So Y is going to be some integer. So if we're constrain
+that y is an integer, then if it's 0, right? Then this integral is
+just two pi, right? Because if y is 0, e to
+the 0 is just 1 and we're integrating from negative pi to
+pi of one, so that's just two pi. But if y is anything else, right? No matter what it is, why does, is why determines how rapid
+this frequency changes. But if we're going from Pi, from negative pi to pi, and that's what each,
+it's kinda small print, but each of these are going
+from negative Pi to Pi. Since y is an integer
+worth if it's cosine, we're starting at the top
+and ending at the top. If it's sign, we're starting in
+the middle and ending at all. And all why is telling us is how
+many times do we go up and down. But when you integrate, you know, there's as much above the
+x-axis as there is below. So all of these just integrate to 0. So we get this very sharp
+distinction, and y is an integer, it at 0, you get two pi, otherwise you just get 0 at this. So in other words, this is
+simply a counting problem. No, this, these, the sum of
+these integrals. What is it? Well, it's just two pi times
+this first term times z, where z is just the
+number of subsets. That would make this y term
+right here equal to 0, right? So the number of subsets of a from
+one to n such that the sum of all the numbers indexed
+by something and a equals the sum of all those
+not indexed by something today. Which means what's happening. This integral right here
+that we care about, is greater than 0 if and only if z, this number of subsets
+here is greater than 0. But just saying the number of subsets is greater
+than 0 is the same as saying there exists a
+subset that makes it true. In other words, if there
+exists a subset a, the integer of the possible
+indices into these integers, that makes the sum of them inside the set equal to
+the sum outside the set. But that is exactly the
+integer partitioning problem. Okay, So in fact we didn't
+do a reduction airway. It's kind of a two-way reduction. We just showed that the
+answer to this question, precisely the same as the
+answer to the question. Is it possible to split these
+integers into two sets, each of which have the same sum. And we know that's NP complete. So, so this cosine
+integration problem. Now why do I find this relevant? Well, it's very common, particularly in
+engineering and physics, to assume that integrals for
+sort of relatively simple F, These kinds of functions can be numerically estimated by
+sampling f at many points. It's usually assume
+when you can write down a formula that you
+care about in this form, great, you've solved, you
+completely understand your system. But the NP hardness
+of cosine integration suggests that as long as P
+is not NP, exponentially, many points need to be sampled to get an accurate approximation when
+that f is this product of cosine, which is considered by most people
+who work with these to be a fairly simple sort of
+form of the function. So in other words, it
+cannot be estimated accurately by these means in
+any feasible amount of time, assuming that P is not NP.

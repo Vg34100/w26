@@ -1,0 +1,56 @@
+So I've mention that not every problem we care
+about is contained in NP. So it's worth cautioning
+to this moment that there's some problems that are
+sort of not obviously in NP. Maybe some of them are, but they're not obviously in NP. So here's one, no Hamiltonian path. Given a graph, we want
+to answer the question, Is it not Hamiltonian? So if there is a Hamiltonian bad, there's a short proof of
+that and it's the path. But it's not obvious
+how to give a short, easily verifiable proof that every path in a graph
+is not Hamiltonian. It seems to require
+checking all of them. And it's worth cautioning
+that not every problem that quote
+looks like it's in NP. Surely it, just because
+it has the word exists or find or something
+in the statement, doesn't mean it's an NP. So here's a good example. Diao Fan tiny equation. So this is the problem given a
+multivariable polynomial equation. So for example, something like this. So x squared minus three, y to the fourth plus
+two at z equals 0. You want to answer the question, does it have an integer solution? So that sounds kind of
+like an NP problem. It seems, oh, the short proof, if the answer is yes, be
+the integer solution. Except why should it be short? Right? Maybe those integers
+could be huge as a function of the description length
+in bits of the equation. And in fact, it turns out that this
+problem is not even decidable. So it's not just that the bound
+on the witnesses is bigger, there is no bound on the witnesses. They can get arbitrarily big. And the obvious exhaustive search algorithm that requires
+in this case that you search all possible triples of
+integers you could assign to XYZ, it might have to keep
+searching integers forever. Integers can get arbitrarily big before it finds one and
+maybe there is no solution. Here's another one we
+talked about already. Given a graph G and an integer K, does GE's largest
+independent set has size exactly k. If we ask at least k, Then that's just the
+independent set problem. And you can prove it by just
+giving an independent set of size k that proves that the largest one
+is either that size or bigger. But if you want to know, is there an independent set
+of size this and no bigger, it doesn't seem obvious
+how to prove there's not a bigger independent
+set up in somewhere. It's a similar idea when you're
+asking about small things, would be given a Boolean
+circuit C, You want to know, is there a smaller circuit that
+computes the same function, right? It might seem that circuit that
+smaller would be the proof, except how would you quickly verify that they actually do
+compute the same function? You apparently have to iterate over every possible input and that
+would take exponential time, Does not a polynomial
+time verification. Here's another one. It is
+actually contained in NP, but I'm just pointing
+out is not obvious. And it's given a set of
+linear inequalities, do they have an integer solution? So it looks kinda like
+diaphragm tiny equation above. Except that first of all, you're asking about
+inequalities and second of all, it's not an arbitrary
+polynomial, it's linear. So you don't get to multiply
+two integers by Egypt. So this one seems to suffer
+from the same problem. If there's an answer, it's not obvious that the
+integers would be bounded in any way by the number of equations you have and
+the number of variables. But it turns out they are bounded by an exponential in that number. And so the numbers are at most exponential in the
+number of variables and equations than their size in bits is logarithmically
+smaller than that. So it's at most
+polynomial in the number. In other words, there's a
+polynomial link witness. Once you have one of those,
+you can quickly check. I just plugged them
+into the inequalities, make sure they satisfied.

@@ -1,0 +1,101 @@
+So turns proof that the halting
+problem is undecidable. A lot like Kanter's proof that there are more subsets
+of natural numbers. The natural numbers, it's very short, but very tricky, right? It seems like a very difficult
+idea to come up with. And it's not the kind of thing
+we necessarily want to repeat. For every problem that we're
+trying to show is undecidable. So there's an analogy to
+be made here, NP hardness, which is that it took a
+lot of work to prove that this original problem
+circuit SAT is NP hard. But once you know it is, the easy way to show new
+problems are NP-hard, is not to repeat the
+full simulation of a nondeterministic Turing
+machine using a Boolean circuit. It's to use reductions. And so you have this notion of a polynomial-time computable function that define your notion of reduction. And you reduce circuit saf to other problems to
+show their NP complete. And the kinds of data we deal with are all kinds
+of discrete data formulas, graphs, lists of integers. And now we have an analogous situation where our
+sort of original hard problem, the one that's the most
+difficult to show is, is undecidable, is halting. And we're going to use this
+notion of reductions as well. Now we don't require them anymore to be polynomial time computable. Most of the ones we'll
+talk about will be, there'll be actually very easy to compute, but we don't require that. They don't need to be. And to show other
+problems are undecidable. We're not going to repeat the
+diagonalization technique. Instead we're going to
+reduce halting to them. Or once we've collected a list
+of other undecidable problems, we can use those and
+we can reduce those to a new problem to show the
+new problem is undecidable. And a lot of the examples we'll see, the questions are going to be questions about the
+behavior of proof. There's other undecidable problems, but this is kinda the most
+straightforward thing to start with. So let's start with another
+variant on the halting problem. And this is called the, the no input halting problem, right? Or I call the hauled
+him sub epsilon here. And here. Instead of the input being a program and an input is just a program. And I call it the no input halting because it's
+essentially what if you gave cue like the trivial
+and just the empty string. So essentially you're not asking what it's gonna do
+on an arbitrary input. You just want to know, if you ran
+it with empty, what would it do? What a halt on that one input or not. So this is clearly reducible to the more general
+halting problem, right? If you had an algorithm for the
+more general halting problem, that can answer this question about
+programs and arbitrary inputs. Well, you could just ask
+him this question and the second input you give would
+be the empty string epsilon. So, so if we gets all halting, we could use that to solve this. But this looks like a
+very special case of it. It seems like not to be as difficult
+as the full halting problem. But we're going to show it is, It's also undecidable by
+showing the reduction in the other way that we can reduce
+halting to this special case. So we'll show that if we could
+solve this epsilon halting problem, then we could solve the
+full halting problem. So the reduction is
+going to look like this. Given an input of the
+form halting expects, which is a program P and an input X. To give to the program. We want to output an instance
+of the halting epsilon problem, which has just a single program. And here it is, Here's the
+program we're going to output. I've called it Q sub px. And that's to emphasize
+that both p and x are sort of hard-coded
+into the program. And in the super high
+level pseudo-code, it's not clear what this
+means is run p on input x. And you'll notice q takes
+an input, ignores it. But where do p and x come from? So just to be concrete,
+let's use Python. So here is a Python implementation of Euclid's algorithm for
+greatest common divisor. So let's imagine we wanted to
+solve the halting problem here. Then our program P would be this
+source code over here for GCD, our input x maybe would be 624. We want to figure out what's
+the greatest common divisor of these two numbers above that? Well, that's what we'd want
+to do if we're running velocity actually are by students. Just if we ran GCD with the
+Zen book wouldn't hold. Now we know it does. Taught, we showed at all. It's actually pretty quickly. But let's imagine we
+want to transform this into an instance of the
+epsilon halting problem. So we want to output a single program that if you run it
+on the empty input, it'll halt if and only if the stones. So you can imagine if you go in here and introduce an infinite loop, well then the new program would
+have an infinite loop two. So here's what it looks like. It takes an input Y, but
+it just ignores it, right? So it's going to do the same thing no matter what input you give it, meaning it will do the same
+thing on input epsilon. And what does it do? Well,
+it has this whole program P, this greatest common divisor
+function just hard-coded into it. And it's got that a 1624. These are just hardcoded
+constants as well. So on input y just ignores its input. It turns around and cause
+this program down here, this Python function
+on this one input. And then notice that P over here, or just write p on input x
+is going to hold if and only if Q px halts on input epsilon. So, so we've gotten what we wanted, which is that the
+answer to the question, does Q px halt on the empty input is the same as
+the answer to the question, does p all on input x. So let's see another
+undecidable problem. So again, it's a question about the behavior of a program
+has a lot of these are this one. The question is, were given a program and we're not given as input, an input to the program, but we still want to
+know something about the behavior of this program
+and one of its inputs and its, Is there an input Y, you can get it. That will cause it to output 42. Let's suppose it as an
+integer return type. So this is also undecidable as is basically any question about
+the behavior of a program. So to show it's undecidable. Now we're going to show that
+halting epsilon reduces to it. That's sufficient because
+we already showed halting epsilon is undecidable. So here's the reduction. We want to know. Given input peer program, does it halt on the empty string? So to reduce that to
+this 42 question, the reduction is going to
+output this program QP, that depends on the right. So it's got P sort
+of encoded into it. And what does it do? It turns around, it just
+runs p on the empty string. And if that ever
+halts, it returns 42. It outputs this thing. And note that if p doesn't called, then it never halts. So in particular it never returns 42. So here's a concrete
+example just to show you what By we're hard-coding p into q. Well, suppose that your program P or this Python program that FLM
+is Fermat's Last Theorem is, and this is looking
+for a counterexample to for bonds last theorem. It's never going to find that. So this program which
+ignores its own input. So on the empty string, it, it never halts it
+in, hold on anyone. But if this were P, then Q P would have this program encoded into it as like a
+subroutine it can call. And what QP will do on input Y, we'll just ignore why
+doesn't pay any attention. It'll call FLM on the empty string. And if that ever halts, which it turns out it
+doesn't in this example, then it will return 42. Alright, and so we get
+P on the empty string, halts if and only if there's
+a y that makes Q output 42. But this condition right here, Q does the same thing no
+matter what its input is. So whether there's a y that
+makes Q output 40 to it, if any, why doesn't
+all of them do it? But if FLM doesn't hold
+on the empty string, then no, I can make you up with. So we actually get a stronger
+condition than we really need.

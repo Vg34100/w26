@@ -1,0 +1,65 @@
+But we're going to start with
+a high level level overview of this class, NP. We've been doing a lot
+of high-level overviews. We're going to get
+detailed after this. But Let's remind ourselves about this decision problem
+called Hamiltonian path, which is the problem given as input, an undirected graph G. Does
+G have a Hamiltonian path, meaning doesn't have a path that
+visits every node exactly once. Now, it's often said it's hard
+to find a needle in a haystack, and we can use that metaphor here. The needle research 84 is the
+Hamiltonian path if that exists, and the haystack is somehow the set of all
+paths. So we might consider. Now there's an obvious algorithm
+to solve this problem. You just look at all possible
+paths in the graph and check whether each one
+is Hamiltonian or not. But that takes a long time. So we did see that it's possible to quickly check whether a given
+path is Hamiltonian or not. And that somehow captures the
+essence of this class NP. And formally, we'll define a
+decision problem to be an empty if, whenever the answer
+for an instances yes, like for Hamiltonian path, the instance would be a graph
+that has a Hamiltonian path. There's a simple proof of this fact. In the case of this problem, the simple proof is the path itself. Now in general, what we mean by simple proof is that given the proof, it's checkable in polynomial time. There's an algorithm that
+can look at the input, the graph, and the proof, the path and tell whether that path is a Hamiltonian
+path in that graph. Note the asymmetry of this definition that talks
+about yes instances. It's not necessarily
+the case that there's a simple proof in the
+case of The answer is no. And think about that
+for Hamiltonian path. If I try to prove to you, here's a graph and I claim
+it has no Hamiltonian path. How would I prove that? What short string, good, I give to you that once
+you've checked it, you would believe there's no path visiting each node exactly
+once. Not obvious. Okay, so before we
+formally define and B, let's think a bit about
+this distinction between P, the problems where I can give a yes or no answer in polynomial
+time versus NP, where I can't necessarily do that. But if somebody gives me a potential solution that they
+claim means the answer is yes, that can be checked
+in polynomial time. So suppose that I
+know a problem is NP, it has a polynomial time algorithm. Is there also in NP was worth
+thinking about for a second, pause if you want to. So what would be the easily
+verifiable proof in that case? Well, it would simply be
+the algorithm itself. You have a polynomial time
+algorithm that can tell whether a is or whether an instance
+is in the language a or not. So if I claim the answer is yes, I can simply give a transcript
+of the computation of that algorithm on the input
+and you could run it yourself. You could just go
+through and verify yep, each step is the next
+step you would get by running the algorithm and
+then verify that at the end, the algorithm actually says yes. Okay? So that means every problem that's contained in B is
+also contained in NP. Or the set theoretic way
+of expressing that is, P is a subset of NP to all the problems that
+can be solved quickly, can be checked quickly. Checking is like an easier thing to do because you get this
+extra information, right, the potential answer. So the P equals NP question is about whether that inclusion
+is proper, right? Is NP contained in B? In other words, are they equal? Or is there a decision
+problem in NP, but not NP? And this is my notation for
+set difference here, right? So if np set minus p
+has something in it, that's a problem where
+you can check solutions efficiently but you can't find
+them were given no solution. So every problem in
+NP can be solved by a slow algorithm that exhaustively searches all
+of the possible proofs. Part of the definition of NP is that the proofs have a certain
+bound on their length, so there's only a
+finite number of them. But p is this very special
+subset of NP for which some mathematical insight lets us avoid that exhaustive search, right? And just beeline
+straight to the answer. And Chapter 3 or any
+class and algorithms like 122 or 220 do is entirely
+about such insights. That's what an
+algorithm's biases about. So the P versus NP question, essentially at an intuitive
+level, ask the question, is find me needles harder than
+distinguishing them from Hey, write the distinguishing Airbnb like the proof checker and
+the definition of NP.

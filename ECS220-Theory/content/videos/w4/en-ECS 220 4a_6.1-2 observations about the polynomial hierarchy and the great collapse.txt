@@ -1,0 +1,108 @@
+Okay, so let's make a
+few simple observations of the polynomial hierarchy now they don't look simple when
+we write them out in this abstract mathematical notation. But we can use our intuition to see. So first of all, adding a
+quantifier adds more power, but it can't reduce it, right? Just like every problem
+in NP is also in NP. Because if you have a fair or if you have a way to
+solve the problem, you certainly have
+a way to verify it. Well, similarly, adding the quantifier can't reduce
+your ability to do anything. So each one of these is
+contained in the next level. Because each one of these is
+defined by simply something that the previous level with one extra
+quantifier put on the front. So the second observation is that exist adds this kind of
+layer of non-determinism, asking whether there's
+a witness that makes the next statement true, right? So in analogy to modifying P with
+this non-determinism to get NP, we can say that sigma k, p is the nondeterministic version of Pi at the next smallest level, p. So in other words, C, right? So we have a circuit, C is
+in smaller Boolean circuit. Alright, What does that mean? It means there's a smaller circuit D, then see that computes
+the same thread of it. Right? And that is what
+Cohen be predicate to say. But you got scene, you got D, and you want to ask the question, do they compute the same function? Well, they compute the same
+function if for all inputs x, C of x equals b of x, right? They give the same answer that, so that for all predicate
+is a co-NP predicate. So in particular, if we just define for the sake of a base
+case that sigma 0, p and pies or OP or just p. Well, we have Sigma 1, P is NP, we add an axis to p, we get NB. But, and generally we
+can say that Pi KP, it, meaning the compliment of
+sigma KP and Sigma KP is, is covered or not, sorry,
+not the complement of the set of complements
+of problems in the air. Since negating epsilon or negating exists gives
+for all and vice versa. So in other words, why is this true? Well, let's just see an example. It's not the case, right? So we're going to negate
+something room air or set theoretically take the
+complement of something. Here. C is the smallest
+Boolean circuit, right? That's a Pi to Pi P2 predicate. The smallest booleans are good computing its function
+That's not true. If and only if. What? Well, what, let's just replace
+sees the smallest Boolean circuit. What does that mean? It
+means for every circuit D, There's some input that it
+gives a different answer on IE, they don't commute
+the same predicate. So if d is smaller, then it gets a different
+answer on that W. And that's saying, if it's smaller than they get
+a different answer is equivalent to just saying, well, either D is at least as big
+or they give a different answer. Right? And we can say, well, it's not the case that
+for all circuits D there is a w that makes this true. If and only if there is a circuit D, so that for all inputs
+w, this is not true. And then now we pass the not through, not this or this is equivalent
+to not this and not this. In other words, there's a
+circuit D for all inputs W I, D is less than c, and
+c of w equals d of w. Which as we said, is what
+it means to say there's a smaller circuit that
+computes PC, right? So this kind of chain of reasoning, I could substitute any Boolean
+predicate I want over here. This would still all
+kind of fall for it. So there's just an example to help illustrate by taking
+the compliment of something in sigma KP gives
+you something and PyGame. Okay, So the polynomial hierarchy sometimes refers to like this
+infinite sequence of the sets. Sometimes it refers to their union. So if you union together
+all the sigma KP's, it's the same as all
+the pie KP's because each one of them is
+contained in the next level. So with no quantifier, you get p at the bottom. And then P is contained in NP and
+it's also contained and co-NP. And we can call those the
+first level of the hierarchy. Each of those is contained in the two sets at the
+next level, and so on. And you get this infinite
+hierarchy going up like this. Okay, so there's the whole
+polynomial hierarchy. Okay, So would that defined? Now we can come back to
+this tesco consequence that I think bronchus Volcker
+Strassen referred do, which is the Great Collapse. All right, so what does the Great
+Collapse and complexity theory? It's this, it's that if p is ND, again, as a consequence,
+we don't think happens. Rephrasing this in terms of two
+things we think don't hold. So if P is equal to NP, well then in fact, p is equal to
+the whole polynomial hierarchy. The whole thing collapses down
+to just the zeroeth level. So in other words, if one
+existential quantifier somehow doesn't have any power to
+the computational power BI, the neither do any additional
+for all or exists quantifiers. So let's see why this is true. And therefore this
+should be even more surprising than thinking P is
+equal to nb because it means like, Oh wow, if you could do
+this, which seems unlikely, you could do all this
+other stuff which it has to be mathematically
+even more unlikely. So we're going to repeatedly use these two facts that hold if
+we assume p is equal to NP. So if P is equal to NP, then for any predicate that takes two inputs to be like
+a verifier, the XW. This predicate is also in P. This is a one input predicate and
+it's just the, the NP predicate, the one that oninput just x asked, does there exists a W sub b? So this thing is an NP, but if they're equal, it's also NP. Okay? So in other words, you could put it exists on the front of anything computable in polynomial time that will also be
+computable in polynomial. And remember, if P equals NP, it also equals co-NP. So this predicate, what also the NPV. If you have any polynomial
+predicate B of two inputs, you can put a for all quantifier
+and the second input, that whole thing would also be NP. So let's do this by concrete example. Suppose we have this
+sigma P3 predicate. What does it mean? It means you have a polynomial time computable predicate,
+taking four inputs, x and then witness one, witness to an S3, B3. We're asking the question
+on input x, is there a w1? So for all W2, W3, that makes B3 true. So we're repeatedly going to
+ultimately use these facts. So by fact E, this means like exists. Just this last part asking does there exists a W three
+to make this true? This right is a function
+of three inputs, x w1, W2. And it's asking, does there exist a fourth input to make all OB3 true? Well, that's NP. So we can replace that, which is this thing we'll call b2, which doesn't have the exists. We can just directly compute
+it in polynomial time. And now we can notice
+what ends in something that looks like a co-NP predicate, but those are also NP. So this can be computed
+in polynomial time. Let's call that thing BY
+want to just x and w. It can answer the question. Given these two, is it the case
+that for all w to this holds? And then now we get an exists
+and a polynomial-time predicate. By fact E, that's also in P. So in fact, a of x is just
+computable in polynomial time. By this predicate, we'd all be 0. So a is NP. So we took an arbitrary
+element of sigma P3, showed it's in P. So
+these two are equal. And hopefully it's obvious how
+to extend this to more levels. So now what if np equals co-NP? So an exercise that we may or may not ask and the
+homework is to show that would imply np equals the whole
+polynomial hierarchy. Which means that collapses
+to the first level, maybe not all the way
+down to the ground floor, but a collapses to the first floor. So this doesn't necessarily
+imply that P equals NP, but it still seems very unlikely to think about what would have to be true if P and NP were different, but NP and co-NP with the same, it would mean that adding
+a single exists or for all quantifier would increase
+your computational power, right? Because you'd actually get something more by adding an exists to get nb. But then somehow adding as many more quantifiers on top of that as you want would
+not increase it. So this is evidence that
+we don't really think any problem in both NP and
+co-NP is NP-Complete, right? Like there's certain
+problems related to factoring that are in
+both of those that we, maybe they got hard. But we don't actually they are
+NP complete because if they were that would imply
+np equals co-NP. And we think that this
+collapse can't happen.

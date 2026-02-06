@@ -1,0 +1,957 @@
+en-ECS 220 8a_8.1-1 space versus time, and read-only, write-only, and read-write memory.txt
+
+Next chapter that's
+called memory paths in games is really about
+memory or space complexity. But the idea of paths in graphs and two player games play such a central role that
+it made it into the title. So we've been talking about
+time complexity so far. And now we're going to talk
+about space complexity. So what's the difference when
+we think about these two? So we'll define a
+little more formally, some complexity classes later. But right now informally, let's just say space is
+the class of problems decidable with a polynomial
+amount of memory. You know, same as with time. We measure the memory usage as a function of the number
+of bits of input. And now the space usage has
+the same units as the input. That's just number of bits used. Okay, so it's often said
+the difference between time and space is that
+you can reuse space, but you can't reuse time. Now this leads to some
+unintuitive results. So first of all, unlike what we believed to be the case
+with time complexity, we know in space complexity, non-determinism does not help that much only by maybe a polynomial, a factor with space
+bounded computation. So P space is known to equal the nondeterministic
+version of p space. And we also have that n space
+of S equals colon space of S. In other words, if a language is decidable with a certain
+amount of space, then so is its complement. Which again, is weird because it means proving that
+something doesn't exist. It's just as easy as proving
+that it does exist if you recall this difference
+between what NP and co-NP. But some intuition still hold. So with more space, you can compute more. There's a space hierarchy
+theorem that says, you know, you can compute more in
+space AS than you can in space. Little of it as if time is bounded, space is also bounded. So whatever you can
+compute with time t, You can also compute
+with that much space. And if space is bounded, time is also bounded, but here they're not
+the same background. Whatever you can do with space S, you can do with time, exponential ns. But we, you know, we
+think maybe you do need more time than you need space. On the biggest open question here is, does space helped more than time? Or more formally,
+does p equal P space? And we think the answer is no. And proving this is true that they're
+unequal should be even easier than proving P
+is not equal to NP. As we'll see in a bit, we
+see the relationships. Okay? So how do we define space bounded
+computation more formally? So the textbook, as
+I've said and takes a somewhat informal approach
+to some of these definitions. If we do think about terrain
+machines, specifically, sub-linear time computation
+is mostly uninteresting. For a Turing machine, two. Scan a bit of its input
+that's near the end. It needs time linear in
+the size of the input. Even if it doesn't care about
+the bits in the middle, it takes time o of n Just
+to advance the tape head. So sub-linear time computation generally doesn't make
+a whole lot of sense. Now it is somewhat interesting
+for random access machines that can jump immediately to some part of the input without reading
+all the parts in between. So binary search is a logarithmic
+time and computation, but only on a RAM machine. It doesn't make sense to
+do it on a terrain should. Now sublinear space computation makes sense even on a Turing machine. So for example, you might
+want to search the graph of all web pages on the internet. In fact, not just you might, many companies do want
+to do this very thing. Google tries to do it continuously. And of course, you can't load
+the whole input into memory. So it makes sense to think
+about using an amount of space less than the total input
+you're trying to process. Now the way we formalize
+this with our formal models as we give our Turing machine
+or a random access machine, whatever kind of model we're using. A read only input, but a read write
+working memory, right? So for a Turing machine, these
+would be two separate tapes, and only the latter is
+counted as space usage. So the idea here is
+to be able to talk about space being sub-linear. You need to restrict the
+model so it can't write to the input and use it
+for some of its space. Otherwise, that would, that should
+count against that space usage. But you do want to let it read
+any of the input at once. Just the working storage
+is going to be small. And if we're talking
+about Boolean output, we can be done there. Sometimes we want to talk about writing more output than
+the allowed space usage. So for example, you know, if you want to talk about
+arithmetic operations like multiplication being
+done in sublinear space. Well, they write numbers just
+as big as the ones they read. So To talk sensibly about not using very much space to do that
+well yet to write the output, you can't make it read-only. So you make a write-only. Alright, so you can't read them or you can't write to the
+input that you can read it. You can't read your output that you've written, that
+you can write to it. So the input and output
+are no use to you if you try to use them as
+intermediate storage. And then you only count the space
+used on your read write memory. Now the textbook sort of implicitly assumes RAM Random Access Memory. So essentially what this means is if you're given a
+location like an address, an integer address into your memory, you can think of it like which position is it on
+a Turing machine tape? Or you can just think about it
+like a regular computer substance that has a linear memory, just like a Turing machine, you address it with a single integer. And once you're given
+this memory location, once you've written it down, if you then try to read or write it, you assume that takes
+one single step. Right now, note that only matters
+if we also care about the time. And notice the size of your input
+or your working memory is K. It's going to take log of k bits
+to write an address into it.-e 
+
+en-ECS 220 8a_8.1-2 space-bounded complexity classes L and PSPACE.txt
+
+So with that definition
+of space usage in mind, let's define our major space
+bounded complexity classes. So space of S sub N is the space
+counterpart of time of T of n. The class of problems solvable with Big-O of acid and
+working memory, right? And we use this Big-O to
+kind of brush aside or okay, Are we talking how many bits of memory or how many bytes of memory? You know, what exactly
+is the tape alphabet if it's a Turing machine, the answer to those questions
+doesn't matter if all you're concerned about is getting things within a
+multiplicative constant. So we use a big, Oh, they're just like with time. And then the two major complexity classes we'll
+focus on here that, that capture a class of
+space bounds as we put here, is one is just called an L, and this is space of log of n. This is a confusing name. Every other space plasma use has the word space
+somewhere in the title, except the ones related to L, where instead of saying
+L space, it just says L. And I don't know why this is. It might be because logarithmic time doesn't make a lot of sense
+on a Turing machines. So there's no need to have
+separate l time and space classes. But at any rate, when you see L, it means space log of n, meaning O of log of n
+space, not log squared. You don't allow exponent's here, just O of log of n, So login to login and
+three login, etc. So intuitively, what is this class? Well, these are problems
+where you can solve them and the only extra memory you need is to have a constant number of
+pointers into your input. Like each pointer is going to
+take log of n space to write down to address a certain location
+and your input and read it. And this is, these are the problems, or you only need a constant
+number of such points. So for example, if you're
+processing a graph, you might want to search
+the graph or do something. The problems, or you need
+only o to store o of 1 nodes at a time and nothing else that these would
+be logging space. And then of course there's
+polynomial space because polynomial bounds again
+are quite robust, been closed under
+composition and everything. So this is the space
+bounded counterpart of p. So let's see some examples of log-space and polynomial
+space computation. So here's an example
+somethin showing that logarithmic space isn't
+that much of a restriction. They can do things say, finite state machines can't do. So it helps to have more than constant memory deciding
+palindrome, right? So remember a palindrome is a string and that's equal to its own reverse, looks the same forward and backward. So here is some pseudocode for it. Or actually I guess this
+is my duty Python code. So how can we tell if x
+equals its own reverse? Well, we can set a pointer
+I to the start of x, a pointer j to the end of X, and then move them towards
+each other while I'm, while I is less than J, check XI and XJ if they're unequal. Oh, there's two spots that we want to know that the
+first symbol equals the last, the second symbol equals
+the second to last. The third symbol equals
+the third to last. So we check those if you find
+that unequal, return false, otherwise they move i up and J
+down, and we get to the end. We didn't find a pair of
+unequal ones, then we say true. So what's the space complexity? Well, we need log n bits
+to store I starts at one, but it goes all the
+way up to n If n is the length of x and when
+he login bits for j. So we need a constant number
+of pointers into art input I and j are both pointers and then
+we can read them like this. Alright, so there's a logarithmic
+space computable example. Here's a polynomial space example. Recall the definition
+of cellular atomaton. When I drew them earlier, I drew time going down. Now time is going to the right. So a configuration would
+be one column here. This would be at time 0,
+at time 1, at time 2. This shows how this one-dimensional
+cellular automaton evolves, starting at time 0,
+going up to time and 63. And one thing you might
+want to do is check if a given configuration is in a periodic orbit of a
+cellular automaton. So you'll notice this
+configuration repeats. So right in a counter-example would be one where it
+eventually gets into an orbit, but that configuration happened
+prior to the orbit, right? So for instance, if you
+started here and then repeated this configuration and
+then cycled within a year, none of these would be in the period. So here's a way to do it. In polynomial space. We have our cellular atomaton rule that CA and then our initial
+configuration and knit, which is just some binary string and is going to be
+the length of that. Now, of course, our total input
+size would also include the rules, but we assume those are
+constant size and we have a very big configuration. So we start exit the
+initial configuration. We're going to repeatedly
+update it by applying the rule. This is just some code for
+applying the CA rules. So this is, I won't walk through
+all of this to carefully, but we update it and then we just check is x equal to a net, right? So we're going to repeatedly
+updated if we ever revisit and it was
+an aperiodic orbit. Okay, So why does this need
+only polynomial space? Well, at any given time, we're remembering in it, which takes space and an
+x which takes space n. So that's two n plus this, you know, the space usage or update
+year, but what does that do? Well, it just reads
+three bits out of x. It uses AI to index into there, but that's only log of n bits. That's negligible compared
+to the n bits to store x. And then, yeah, not too
+much extra space here. So this is polynomial space, linear space it back. So the net x, y, and j are n-bits
+H and an iss log evidence.-e 
+
+en-ECS 220 8a_8.1-3 relationship of time and space-bounded complexity classes.txt
+
+Let's think a bit
+now about time-bound versus space balance and how do these two inner
+play in one computation? So first, an assumption of any reasonable model
+we're going to make here is certainly true
+of Turing machines, is that a program can allocate at most a constant number of
+bits per time-step, right? So now sometimes you'll
+have a single line of code like malloc that will appear to allocate whole bunch
+of memory at once. But that's only gives you not see the operating system code
+executing the dig down into it. On average, it, it might have to clear out that space for you to do. And if it's clearing out n bits
+for you to use, then it's, it's going to require
+O of n time to do that with this kind of more
+straightforward with a Turing machine or what does
+it mean to allocate memory? It just means you move your
+tape head further right, than you've ever moved it before, but that only gets you
+one more tape cell. So so with the definition of space
+just be number of tape cells, it's clear that you
+can't use more space on a Turing machine and then you have time available to move the tape. But we're just going
+to assume that this is true of any of our models. And so that means whatever
+is your space bound, it's gotta be less than your
+time-bound, but within a constant. So stated in the set
+theoretic notation, time of T is a subset of space of t. In other words, if you can
+solve a problem in o of t time, you can also solve IT and OT space, just because that algorithm can't be used in more than OT
+space when it runs. So in particular, P is
+a subset of P space. Now, let's go the other way. Can we go from knowing how much space a computation uses to putting a
+bound on how much time it uses. Well, if it uses all of
+us and bits of memory, all right, So SME space, then it has at most two to the 0
+of S and possible configurations that it could visit to
+what the configuration. Well, again, this is where
+Turing machines come in handy. Most of the, the bulk of counting how big that configuration
+is is the tape content. You need to know what
+state the Turing machine is where the tape that, but it's mostly in that string. That's the take content. And what's the length of that string? Well, the biggest it
+gets is the space usage. That's the definition
+of the space usage. So how many strings of
+length 0 lesson can you add? Well, it's like, like
+two to the 0 of S. And now you might
+have a different base here than two if it's a
+bigger tape alphabet, but again, the big O up here
+would, would take care of that. So, okay, So it has at most exponentially more
+configurations than ESA, them that I can run through. Now, imagine that ever repeats a configuration will
+then it'll run forever. But in this chapter we're only
+going to be focusing on deciders, on total programs that
+halt and all their inputs. So conversely, if a program
+halts on all its inputs, it can never repeat a configuration
+or else it would run forever. So it must have at
+most two to the o of n steps that it takes to the time is at most
+exponential in the space. So we get this for general space
+bounded complexity classes. Space of S, meaning using o of s in beds is contained in time
+of two to though of S. In other words, if you can
+solve a problem with OS space, you can solve it with
+two to the o of n time. So in particular, that means
+l is a subset of B space. Problem solvable with
+logarithmic space necessarily take only polynomial time to
+avoid repeating configurations. And similarly, any
+polynomial space bounded computation is naturally going
+to use at most exponential time. So that's time versus space. In the deterministic setting. We can think about
+nondeterministic time as well, studied a lot and compare
+that to deterministic space. So recall that n time of T is
+contained in time of two to the 0 t. For example, NP is contained in x. This was our observation that you can solve problems in NP by exhaustive search all
+the possible witnesses. That's the basis of
+this kind of result. You to search over all
+the possible witnesses using the verifier characterization or nondeterministic bets using the non-deterministic
+computation variant. So here is that algorithm
+and we analyze this. We showed it takes at
+most two to the 0 t time. So let's take the same algorithm
+and analyze its space complexity. So the length of the witness that your w that
+you're passing into the verifier here is at most the amount of time
+that the verifier uses, right? If it's actually
+nontrivial to using its, its witness, then it's going
+to run for a length of time, at least that so the witness length can't be too much bigger than T or I can't be any bigger than T and N.
+And the space usage of the can't be any bigger than its time by the
+same argument we gave before, which is that to allocate new memory, you need time, so you can't use
+more space than you're using time. So putting those two together, we actually have that. If you can do something in non-deterministic time
+t, naturally, you can. By applying this algorithm, this algorithm can
+solve it in space OFT. So going to polynomial time, we get the NP is contained
+in T space, right? Just this algorithm naturally
+uses at most polynomial space. So putting all those together, these various complexity
+class that we've looked at, we have whatever you can
+do in logarithmic space, you can do in polynomial time. And if you can do that
+deterministically, you can do it non-deterministically
+in polynomial time. And if you can do that,
+right, or in other words, you can verify in polynomial time. And and if you can verify
+in polynomial time, you can search all the
+possible witnesses and only polynomial space. And that naturally takes at most exponential time to avoid
+repeating a configuration. If you can do that deterministically, you can do it non-deterministically
+and, and so on. And that takes at most
+exponential space. So we have these containment, some of them were not sure
+whether their proper or not, but scanning farther out, we do know that getting from
+P to X is a proper container. The time hierarchy
+theorem says there's things solvable in exponential time, but not polynomial time. We also have a non-deterministic
+variant of that. So getting from NP to NXP, you have to add some new problems. That's the non-deterministic
+time hierarchy there. Now we won't prove it, but there
+is a space hierarchy theorem. And even for Turing machines,
+holds quite tightly. Where if S1 is little o of
+s To write by any amount, then you can solve more
+problems of space S2, s1, which means we can come
+back up here and say L and P space and exponential space, three space classes up here are
+each properly contained in Linux.-e 
+
+en-ECS 220 8a_8.2 NL and NPSPACE nondeterministic space-bounded computation and prover-verifier characterization.txt
+
+We're going to talk
+about how to define non-deterministic space
+bounded computation. Now the textbook goes through some prover verifier
+formulations similar to the verification characterization
+of NP that we talked about. Now, the key difference with nb is that even if
+you're using only say, polynomial space or particularly,
+especially log-space. But even with polynomial space, witnesses can be exponential length. For example, a common P
+space type of problem would be finding a
+check made in chess, or more generally, a
+winning move in some game. And those could be
+exponential length compared to the number of bits you need to represent one single
+configuration of the game. So we don't have the polynomial space found on witness length anymore. Now, I think it's a bit
+awkward actually to define non-deterministic
+space that way. So I actually prefer the
+non-deterministic program formulation, even though I don't
+prefer it for time, For today's gone, I find
+this easier to think about. So remember just the definition of a non-deterministic Turing
+machine or algorithm, it can generate
+non-deterministic bets, right? And we say that if the
+correct answer is yes, we demand that some
+computation path except for some choice of non-determinism
+should cause it to accept. And if the correct answer is no, the no computation, pasture, etc. That's exactly as
+we've been doing it. Now we just put an S
+of n space bound on it and we get the class n space of S. So that's fairly straightforward compared to the other
+kind of characterization. So we can define n, l is n space log n and n space is all the n polynomial
+n spaces particular. So I prefer to think
+about it that way, but there is approver verifier characterization similar
+to NP hour or more generally, n time with t. So in this case
+we have a verifier algorithm. We have an input x, which is an instance of the
+problem we're talking about. And we say it's length is N. And we want the space bound of
+this verifier to be S sub n. So, so far, it's normal and we
+have a witness or a proof w, which is itself a string, so that, that's just like with NP. Now, here's the key difference. The length of w is arbitrary. It can be much bigger than the
+space bound here, unlike NP, where it doesn't make sense
+to have the witness length be longer than the time allowed or else he couldn't even
+read the whole witness. But here the witness could be
+much bigger than the space, so we can still read
+the whole thing without ever you loading it all into
+the read-write memory at once. Now, we demand that v has read-only access to both of its
+inputs, both x and w. It can read them, but I can't right? Now here's where it gets technical. This is why I don't prefer this
+characterization that these are technical things you have
+to do to actually make this map onto the previous slide. It has random access to X so
+it can jump anywhere in to x. I'm already say it's a Turing machine and
+maybe it's not random access, but it can slide the tape head
+back and forth like normal. It has only sequential
+access to bits of w. And here's the key. You don't even have a tape
+that can move left or right. It can only move from left
+to right, kinda like a DFA. So you can choose when you want
+to look at the next bit of w. But once you've done that,
+you can never look at any previous bits that
+you want to remember, any previous bits
+you have to remember them in the read-write memory. And that can be much
+smaller than W itself. So that is the technical
+stuff that we have to add on. Now, from now on, it is just like the definition
+of NP for this verifier. For us to say it works, we need that x is a yes instance. If and only if there's a witness
+w that makes dx x XW accept. And notice I didn't
+say there's a w in some set of strings of a certain way that could
+be an arbitrary length W. Okay, so why is it that we make this strange requirements about access and limits of w in this way. Well, if we didn't
+make this requirement, then I'm going to say we
+could encode NP-complete problems using only
+logarithmic space. Mating because we're not counting
+the space of the witness, right? So if for instance the Hamiltonian path problem would be in L and we'd have n l equals np. I'm not going to go through
+that here on the slide. But the way you would do it is
+to argue that if you had read, write access to w or sorry, not really red, but if we had, if we could go back and forth
+and read bits of w over again, we can actually execute the
+hand path verifier on it. So I won't go through that now, but feel free to ask
+about that if it's not clear how you would do that.-e 
+
+en-ECS 220 8b_8.2 Reachability.txt
+
+So we're going to talk about
+this problem, reachability. And it's not just
+some example problem. This is going to be a
+very central problem in the study of space
+bounded computation. And this is the problem
+given a directed graph. So sometimes this is called
+directed reachability and there's an interesting
+undirected variant of it. But the problem is
+given a directed graph, G and two nodes in the graph, is there a path from S to T? So can you reach from S to T? So the claim is that reachability, is it solvable in nondeterministic
+logarithmic space? So pause right now, think about why that is. So here is an algorithm to do it. We want to know in G, can we reach from S to T? So what we do is we
+start the node U and S, and we're going to count how
+many nodes we've searched. And we say, well, while u is not equal to T, just guess a neighbor of
+u and switch you to that. So basically this mix, if you want to think about
+the guest being random, it's taking a random walk on
+the graph starting at node u. Just set u to v. And
+then repeat, right? Just keep doing that
+until you is equal to t because that don't do it forever. If there is a path from u to v, then there's one of length at most. And the cardinality of E. So there's no point in search
+in longer paths than that. So if there is actually a path, There's a way to guess here
+so that it takes fewer than n steps to get there. So that's why we keep
+track of them search, and if it gets too big, we quit and we say false. But what if we do find that
+we can set u equal to t? O is a path from S to T, right? To note lots, even if there
+is a path from S to T, like any non-deterministic
+computation. Most of the paths don't find it, but one of them well, and if
+there's no path from S to T, it doesn't matter what
+we guess here, no path, well, so that justifies the
+correctness of the algorithm. So now, right, and notice it's non-deterministic
+because of this guessing. Okay, so now the claim is that it takes only
+log space. Why is that? Well, let's count the memory
+needed in addition to the input that we consider read-only. What variables are
+we actually writing? 2, we have u, we have b,
+and we have num search. And all of those take log of number
+of nodes, bits to represent. And what do we say log spaces, it's a constant number of
+pointers into the input, right? But that's essentially
+what u and v are. And then this num searched
+takes space log of e is one. So we have only a constant number 10, so it takes o of log space. Okay, so now we're going to talk a little bit about why
+is reachability so central to studying space
+bounded computation. So if our non-deterministic
+program uses space S and we want to use that
+program to search a graph. Well, we can search graph of size
+up to two to the s, Meaning. Right? Because you can store three, No, two nodes, u and v. And so that's enough to search
+graphs with this many nodes. In other words, like, let's
+say polynomial space, these are like internet size graphs. So let's flip this around now. Every non-deterministic
+program in some sense is completely defined by its
+configuration reachability graph. What does that graph? So this is the graph where V is the set of all configurations of the program at
+the state of memory. If you're talking about
+a Turing machine, that means configuration
+by the normal definition, that's a Python program. It's all the memory
+that you need to know, to know what to do Next. And you put an edge between two nodes if there's a transition
+from one to the other. And note that if it's a
+non-deterministic machine, you might have many edges
+coming out of the represented. You can do more than
+one thing, or sorry, coming out of you representing that you can do more than
+one next step from you. But what you can do is completely
+captured by that set of edges. Now, it's also no problem to assume that we only have a single
+accepting configuration, right? If not, then just rewrite
+your Turing machine, say so it erases all the
+tapes before it halts. So that, you know, we did that. It would decide the same language and now all the accepting configuration
+would look identical. Now, recall deterministic
+programs have a line graph. There's always only one
+next node you can go to. Nondeterministic is more general. Okay? So in fact, we can say that every problem in n space of S is equivalent
+to a reachability problem. We want to know on input x, does the machine,
+except if we're asking, well, is there a way, is there a sequence of
+nondeterministic choices to reach the accept state? Well, that's the same thing as just asking in this configuration graph, if we assume there's only a
+single accepting configuration. Once we know x, we
+know what the start configuration c axes
+and we're just asking, can we reach from CX day? They answer to that is the
+answer to the question, does that Turing machine except x? So reachability, recall is solvable, say using depth-first search in time, big O of the number of nodes
+plus the number of IT. So now we're going to
+relate this to time. And since we're talking
+here about we have space S. So the graph hat size up
+to two to the s, right? Which bounds the time. Well, then that means that we need only time O
+of 2 to the 0 of S, right? And no, we're saying here
+that the number of edges, which in general graphs can be quadratically bigger than
+the number of nodes. But not in this kind of graph because we only have 0, 1 out-degree. Because we assume that when we define our terms and
+in fact it's out-degree two. If we just assume that you can make a single binary
+non-deterministic choice. So this gives us a sort of reproof
+of what we already observed, which is that any problems solvable in n space of S is solvable
+in time two to the 0 of this. By solving reachability on the configuration reachability
+graph of the space bounded machine, which gives these two corollaries. And L is contained in P, NP space is contained in x.-e 
+
+en-ECS 220 8b_8.3-1 NL-completeness and logspace reductions.txt
+
+We'll now introduce the
+concept of nl completeness, which is similar to NP-Completeness, but for this nondeterministic
+log-space class, and it has somehow
+the same bearing on L versus NL as NP-completeness
+has on P versus NP. So we just showed that the graph reachability problem is solvable in nondeterministic
+log-space, it's in and L. And that every problem in et al is equivalent to a reachability problem
+on a polynomial sized graph. So we're now going to define
+this notion of nl completeness. We will show formally that
+reachability is NL complete. And the consequences that will be that L equals L if and only
+if reachability is an L. So this is somehow similar to P equals NP if and only if SAT is NP. So in some sense, the question, does non-determinism help with log-space computations can be
+entirely boil down to the question, well, can we solve reachability
+deterministically and log-space? If so, everything else you can do
+and non-deterministic log-space, you can also do deterministically. So it's very similar to how SAT is one of the hardest problems in NP. If it's in B, everything else. And NB also is. Now unlike that, people aren't quite as convinced
+that they're unequal. Like it could go either way. Actually, I think there's
+some people convinced that, yeah, these two are probably equal. We'll see that there are a lot
+closer in some sense than, than we believe P and NP are. Okay. So to define the notion
+of nl completeness, we need a notion of reduction. And similar to how the reductions
+we use for NP-Completeness need to be polynomial time for
+them to get what we want. If we allow them to be
+exponential time, for instance, they could just solve the
+problem we're talking about directly and they wouldn't actually help us relate the two problem. So similarly, since the natural notion here
+is logarithmic space bounds, we don't want to allow
+the reduction to use more resources than we want for the, the algorithm solving the
+problems are talking about. So we need a notion of
+a log-space reduction. And it just means that this
+function from 01 star does their own star is log-space and it's computable by O of log n
+space bounded outward. And if so we write a is log-space reducible to be
+using this little symbol. So because this thing
+outputs a whole string, we have to use this
+convention I mentioned where the output needs
+to be handled specially. So the input is read only as always. It could be, by
+definition linear space. Because the inputs, what's defining, how we're measuring everything else? The output can be much
+bigger than the space bound. So to keep from cheating, we require it to be right only. And then the work tape or
+the working memory is read, write that only the word tape
+counts against the space usage. Now, this may look
+pretty restrictive, but actually most reductions used in NP-Completeness Proofs
+are already log-space. So for example, think of
+the very easy reduction from clique to independent set. Where on input a graph, you keep the nodes the same and
+you just flip all the edges. You just go to every pair of nodes, remove an edge if they have one, add an edge if they doubt. So, think about how to do that
+With only logarithmic space. So what do we do? We're trying to go into every
+pair of nodes and we're trying to determine do we
+want to add the edge UV to, to our output, right? Do we want to write a one
+say in the adjacency matrix? Well, how do we know
+whether to do that? Well, we just need to query is UV an edge in the input
+graph and then negate. So at any given time, we only need like these two pointers, u and v into the input and the
+output to know what to do. So actually, being computable and log-space is actually the norm
+for most of these things. And in fact, some textbooks
+like Papadimitriou's textbook, they actually define NP completeness
+using Labspace reductions. So now the rest looks
+similar to NP-Completeness. Just substituting animal,
+we say B is NP-Complete. It first of all, it's
+contained in et al, and it's NL hard ware et al. Hard means every single
+problem in NP reduces to it. Okay, so the claim is that log splay, log-space reductions are transitive, just like polynomial time reductions. In other words, if there's a reduction from a to
+b and from b to c, then there's a third reduction
+from a directly to C. Now why is that? Really pause and think about this and this is actually not nearly as obvious as in the case of
+polynomial time reductions. So you gotta be pretty
+careful with how you do it. So pause and think about why
+it might not be obvious. Okay, So if you do the natural thing of just chain the two
+reductions together, it can be very slow, right? You need to do a lot
+of re-computation to already computed bits
+just to save space. So why would you have to do that? Well, it's because you can't just do the reduction from a
+to B and write down that output on your work
+tape and then give it to the reduction from B to C.
+That output is really big. That's why we make it right only. So it's not a possibility to
+just write it straight there. So there is a way to handle this. We can talk about it in lecture if, if you don't see it, but think
+about it right now on your own.-e 
+
+en-ECS 220 8b_8.3-2 NL-WitnessExistence and Reachability are NL-complete.txt
+
+All right, so just as
+with NP-completeness, to get our foot in the door, we're first going to define
+a fairly artificial problem whose sole purpose is
+just to be NL complete. And then we'll reduce
+it to reachability, to show reachability is. So this is similar to the first
+NP-Complete problem we study. This one's called an
+L witness existence. So very similar. We're given a non-deterministic
+program P and input k. But then unlike witness existence, where we're given a time-bound, now we're given a space bound. So we're given an
+integer k in urinary. So the format is exactly the same, but the question we ask is
+now about memory instead. And the question is, is there a sequence of guesses that p can make on input x so that it accepts while at the same time using at most log of
+k bits of memory. So that's one distinction is that we're naturally baking that
+the logarithm into this. We're not asking and
+k bits of memory, we're asking about log
+of K, that's okay. So the easier thing to see is
+actually that It's et al hard. So for any language and et al, what puts it in and out,
+What's the definition? Well, there's an O of log of n. So c times log of n for some
+constant c space bounded program P. So that decides it. So to reduce a to NO
+witness existence to know. Okay. Is it should is my
+input in a or is it not? Does P accepted or not? On input x? I want to know that I should
+output Pete, the Triple P, x and k for NO witness a distance
+where p is the decider program, x is the input and k is what? Pause and think about it. So should be n to the c. And the reason is that we need to count how many ones that
+the reduction has written. And that's going to
+take log of n to the c, which is the same as c
+times log n bits to store. Okay, so the slightly trickier thing is actually to show that
+it's contained in L. And this is why we had to do
+this a urinary tract up here. So here is a non-deterministic
+logarithmic space program that decides and witness existence. So given input px k, What does it do? Well, it does what you'd expect. It runs p on input x to
+see whether it accepts. But at the same time it
+has to check it, right. It's not just asking, does it, except we don't know whether
+p is space bounded or not. So we're also given the
+space span and we have to ensure that P does not
+exceed the space bounds. We check that it never
+exceed the log again. The reason we gave k and unerring
+because it's given an urinary. That means that the space found
+on q is at most log of n, right? The reasons that it uses space
+log of x to do this check, or log, sorry, log of
+k to do this check. But because we put k in urinary, What's the size of cues input? Well, it's this Triple, P, x, and k altogether. And that triple is at least as
+big as just the last element k. So the last element k is at least n, or sorry, is at most n, where n is the size of
+the entire thing, right? So that gives us that k is at most n. So log of k is at most n. So q itself is log of
+its input space bounded. So this isn't totally
+straightforward, so it can be confusing. Be sure to ask about it in lecture. We need to talk about it some more. Okay, so now we want to argue that. So this shows that witness
+existence NL complete. Now we want to argue that this
+more natural problem reachability. So I'm going to reduce and witness
+existence to reachability. We already showed
+reachability is contained in. So let's just state what does
+it mean to do this reduction. The reduction on input px
+k For Witness existence. We need to output some pain of the format reachability
+expects a graph and to know, so what are G, S, and T going to be? So let's just restate what is it
+that we need the reduction to do? We need that p on
+input x accepts using at most log of k space
+if and only if there's a path from S to T and G. So pause
+and think about what should GB, what should SP, what should TB? So we'll define g to be the
+configuration reachability graph of p, but not the whole thing, actually the k space bound. Again, there's no guarantee that P actually uses only log of k space. It could use more. We're trying to answer the question, does it except using
+at most that space. So in fact, we don't define the
+whole graph, we cut it off. And if ever there's a transition that's going to use more
+than log of k space. We actually don't consider that, that node it would go to. So, so the set of nodes is the set of all configurations of p that use
+at most log of k space, right? Things PIE might do, but we don't consider them. And then the edges is the
+set of all configurations u and v so that p can go
+from u to v in one step, you know, maybe
+non-deterministically, maybe there's other things
+p could do from you, but this is one of the
+things you can do. And then we set S to be the
+starting configuration on input x. And recall we can set it up so that P has a unique accepting
+configuration that's going to be t.-e 
+
+en-ECS 220 8c_8.4 Savitch's theorem space-bounded deterministic simulation of space-bounded nondeterminism, space usage of Savitch_s algorithm.txt
+
+So now we'll think about transforming non-deterministic
+computations into deterministic ones. So simulating non-determinism
+deterministically. Now recall we did this with
+non-deterministic time, and it seems new and current
+exponential time overhead. For example, NP is contained
+in x because you can run all possible witnesses of
+which there are exponentially many through the polynomial
+time verification algorithm. And more generally, n time of T is contained and deterministic
+time to, to the OT. And in general, we don't know
+how to do any better with time. And we have good reasons to think you really can't do better than that. But we can provably do
+much better with space and currying only a quadratic
+simulation over. So this is what we call
+salvage his theorem, which says that for any space
+bound at least logarithmic, which is all the ones we
+consider in this class. N space of S is contained
+in space of S squared. So the corollary is that NP space
+is actually equal to p space, which is why we never
+talk about NP space. I'd certainly doesn't
+deserve its own name. And another corollary is that NL, when we substitute S is log of n and l is contained in
+space of log squared of N. So note that's polylogarithmic, but it's not logarithmic. Log square root of n is
+not big O of log of n. And in fact, the space hierarchy
+theorem tells us that L, which is space of log n, is not equal to space
+of log square root of n. Log n is little o
+of log squared of N. So there's things you can
+do with this much space. You provably can't do
+with this much space. So we still don't know
+whether l equals n. Now, can we prove that L is actually contained in
+an even smaller class? Well, we don't know. Okay, So, but we do know we can do this. So that's savages there. And so we can restate it as reachability is contained in
+space of log squared of N, right? So this is, this is the entire
+sort of point of the algorithm. And through the fact
+that you can reduce all those space founded
+computation's to reachability. You can get this to apply
+to to others based classes. So kind of the, the most important cases captured by, by showing this. So recall that breadth-first search and depth-first search each
+use linear memory, right? You don't think about
+the memory usage much, but if you think about
+how they both work, they both maintain a set
+of nodes you've already visited to avoid visiting
+the same node twice. So you have to store in your read write memory
+all the visited nodes. They use linear memory. So they're legit search algorithms
+and they run pretty fast there. They're linear time, but, but they use linear memory. How can we get that down to only
+logs square root of n space? So salvage his algorithm, the textbook describes
+as not breadth-first, not that first, but
+middle first search. And what it does is it
+visits each node repeatedly. It does not avoid visiting
+the same node twice. It revisits a whole
+bunch of nodes and in fact does it so often
+it takes a lot of time, but it saves on space. So here's the key observation. Let S and T be two nodes and
+then k be a positive integer. And we write S arrow Katie to denote there is a path of
+length at most k from S to T. So that's what this notation means. We're going to use this repeatedly. There's a path from S to
+T of length at most k. So here's an easy observation that there's a path from
+S to T of length at most k if and only if there's
+a middle point where you, where there's a path from S to
+U of length at most half of K, and a path from u to t of
+length at most half of K. So in other words, there is this path the squiggly thing represents maybe
+there's many nodes along here. This is true if and only if
+there's some you that you encounter halfway
+through on that back. So this is going to be the key to the algorithm because it
+gives us a way to recurse. And in particular,
+note that we can apply that same statement to S and
+U with K equals K over 2. So if there's a path
+from S to U, well, there's a middle point, u1, midway between S and U. And if there's a path from u to t, then there's a middle point,
+U2 midway between UAT. So this gives the basis
+of the algorithm. And here it is in
+Python ESC pseudocode. This is salvage his algorithm. We're given a graph G and S and T, and then we're given a bound k. We, when we called this at first, we just set K equal to the
+number of nodes in the graph. So we want to know, is it possible to reach from
+S to t using at most k nodes. So if k is one, what does that mean? Well, what does it mean to
+have a path of length at most one I did as a
+direct edge from S to T. Or the path could be length 0, that's length at most one. So S could just be equal to t. So if either of these is true, then we say, yes, there is a path of
+length at most one. So that's the base case
+and the recursive case. We do this search, we iterate
+over every single node in you. And we ask, is it
+possible to get from S to U and half as many steps as this end. Is it possible to get from u
+to t and half as many steps? And if so, we return true. And if we don't find that
+middle point, we return false. So by this observation, if we call this with K equal to the number of
+nodes in the whole graph. It will eventually get
+down to a base case and it will correctly identify
+whether this path exists. So now we got to analyze
+the space usage. So here's the same algorithm. I just rewrote it. Let's
+call n the number of nodes. Now notice each level of recursion
+has four variables, STU and k. And each of them are just indices into g or just a number that is at most n. So each of them takes at
+most log of n bits to represent. So what we gotta do now is bound how many levels of
+recursion are going to happen? Because that will bound for us
+how big does the stack yet, meaning the call stack
+as we recurse, right? We're going to have to remember the variables at each
+level of recursion. We're going to bound
+the depth of recursion. So we make the first call and
+we call reachable of GST and n. And we're going to have log n
+levels of recursion because they're cutting K and a half each
+time and it starts at it. So what do we need? We have log n levels of recursion. And each level of recursion
+takes O of log n bits. It's four times log n bits. So the total number of bits than
+ever need to be stored at once, considering the entire
+call stack is log squared of N log n levels times
+log n bits per level. So that shows that reachability this recursive algorithm uses at
+most log square root of n bits. Now recall that predicting whether a non-deterministic program
+will accept using at most as in space is equivalent to reachability on a graph of
+size two to the s at it. So this is an argument that, well, we weren't just talking about log-space and log
+square root of n space. Here we're at, we're actually talking about every space found above there. Because that graph can actually be the computation graph of an
+algorithm with a bigger space bound. Whatever that space bound is, two to that number is how many
+nodes is in its reachability graph. By querying reachability
+using savages algorithm, we can predict that. And so what that shows us
+is that if we want to know, does that algorithm,
+which is S space bounded, that does it except using at
+most space bound S. We can solve that deterministically using salvage his algorithm on the graph
+is in space of S square. So this actually applies to all
+the bigger space bounds as well. So the open question is, is salvage his algorithm optimal? Right? Do we need this quadratic blowup? So here's some open questions. Is there a log to the
+1.99 and space algorithm? I just log raised to any
+power less than two. That's totally. And of course, a much
+stronger connector is, is there a log n space
+algorithm, right? If so, because reachability
+is NL complete, that would imply that L
+equals n. That would show reachability is n. Now this is not
+as unbelievable as P equals NP. People are kinda sure about that.-e 
+
+en-ECS 220 8c_8.6-1 Reachability expressed logically, and as a game between prover and skeptic.txt
+
+So remember that one
+way we characterize NP is a language is an NP
+means that for any string x, x is in the language
+if and only if there is a W of polynomial length and x, such that the verifier VA, which is polynomial time, accepts x and w. And recall that this
+was generalized to this whole polynomial hierarchy
+where we can ask, okay, Given a verifier that
+takes many witnesses, it takes the input x, but
+also the W1, W2, et cetera. It can alternate the
+quantifiers, they can ask, is there a w1 so that for all w two, there is a W3C For all
+w four, et cetera. The accepts all of them. And again, they're all
+polynomial length bounded. The verifier is still required
+to be polynomial time. And up here we just had one witness. Now we alternate k times between witnesses that k is
+just a constant, right? So the witnesses can be
+length polynomial in x, but there's a constant
+number of witnesses. It doesn't depend at
+all. On x itself. There's a surprising
+characterization. It turns out if we relax that and allow more than a
+constant number of witnesses, we allow a polynomial number of
+alternation between the witnesses. We exactly get polynomial space. This is very surprising and it was a very surprising to
+me when I first heard this. So this is not at all obvious to me. And the proof is not obvious, but we have the tools to prove it now. So we're
+going to go through that. All right, so the key idea
+here is that based on x, you choose based on x, how many rounds of alternation
+there's going to be. Okay, so how can we express right? And again, remember reachability, reachability problem
+somehow characterizes the space founded complexity classes. So the key idea here is
+going to be to express reachability with
+logical quantifiers. So here's the desired
+predicate we wanted to define. It is essentially the
+reachability statement. And it's, takes three inputs, an S to T and a k, two nodes n, an integer bound k. And this
+expresses there is a path in some, in this graph from S to
+T of length at most k. So this is the predicate
+we want to define. We want to define it using the logical quantifiers
+exist and for all, as well as the other tools of Boolean logic like
+negation and an or. Now our basic predicate, that's quote, obviously computable, but just by looking at the graph
+and our input is called E of UV. And this expresses not quite. There's an edge from u to be, either there's an edge from u to v, or u is just equal to d. So this is the basic
+predicate, our UV one, there's a path from u to
+v of length, at most one, it's equal to one if
+there's an edge and it's equal to 0 if they're
+just the same node. So that's sort of obviously
+it is computable. Now the goal is to use only
+first order quantifiers. There's some technical
+reasons for this, but what First-order means
+when we're talking about graphs is that when
+you write exist, you. The exists ranges over all nodes. You can't range over
+all sets of note, this is like a technical
+thing we're not going to get into mostly cuz I don't
+totally understand it. But that would be the so-called
+second-order quantifiers. If the exists, we're allowed to
+range over all sets of nodes. Okay, so let's just
+start by writing down the most obvious way to express
+our STK using logical quantifiers. Well, it'll just be, you know, do a bunch of existence string a bunch of the basic
+predicates together. So there's a path from S to
+T of length at most k if and only if there exists these k
+minus one intermediate nodes, which are the nodes you
+go to along the path. So that there's an
+edge from S to U one, there's an edge from U1, U2, from U2, U3, etcetera on to
+UK minus one to t, right? And those all have to be true. So this expresses, this is always using the first
+case that there's an edge, not that they're equal, which
+would be wasteful here. So, okay, so that logically
+expresses this predicate using only existential quantifiers and these ends between
+the basic predicates. But it doesn't quite
+get what we want. The quantified logical formula. We want to be size polynomial
+in the input, right? That was the requirement
+we set for ourselves. We're going to use grass that are exponentially larger than
+the input because the graphs represent the computation graph
+of an algorithm on that input, the algorithm space bounded, it can have a huge running times. In many nodes in this graph, k could be really large. But this is using up to all the
+nodes in the graph possibly. So this doesn't work
+exactly as written. Essentially this is
+showing reachability is an NB using the whole path
+from S to T is the witness. But this is not what we need to show. We need to show that no matter even up to this
+exponential size graph, we can use a formula, the size and whose number of
+alternations polynomial in the input. So here's an idea
+for how to fix this. We use middle first search. This is savages there. So our SDK, there's a path from S
+to T of length at most k. Well, remember this key observation That's true if and only if
+there's a midpoint, you k over 2. So if there's a midpoint,
+nerds as the UK, and we can get from S to U, K over 2 and at most cavities steps. And we can get from UK over two to
+t and most Cambridge who steps, then that's equivalent
+to we can get from S to T and at most k steps. And we can recurse on that. We could say, well, each of these can be
+expressed by splitting them into a pair of predicates, each asking about a quarter path. And we could keep recursing
+until we get down to this. And we would just have there
+exists these nodes and these, oh, this is exactly what we
+had in the slide before. So this recursion was a
+good idea except when we boiled it down to
+what would it turn and do once we expand out the recursion is just precisely the
+thing we wrote before. There's an edge from S to U
+one, there's an edge from U1, U2 and so on up from
+UK minus one to t. So that didn't quite work because this could be way too long
+as could be exponential. This k could be exponential
+in the size of the input. So now, let's wait and observe
+what's happening here. That exists. Shorthand for a long string of
+wars to write there exists a u, so that's some predicate. Phi of u is true. That's the same thing as
+saying Phi of u 1 is true, or phi of u two is true, or that it up to Phi of UN is true. If you wonder you enter
+all the possible nodes, you could make it, right. That's, these are equivalent. And similarly for all is a shorthand
+for a very long string of n. So for all u, Phi of u is true, is the same as saying, well, phi of u honest true, and Phi of u two is true and
+on up to Phi of u n is true. So we can replace this
+very long string of ends with a single for all. And in fact, the way we're
+going to do is we won't need to replace a
+long string of ends. We're just going to replace them
+one at a time in the recursion, but it will avoid in the end
+is very long string down here. So let's go back to the start again. Use this middle first search
+idea and first say our SDK, which means there's a path from
+S to T of length at most k. Let's use middle first
+search and observe that, well, that's equivalent to
+there is a midpoint U1, meaning there's a path from S to
+U on of length at most k over 2. And there's a path from one to
+t of length at most k over 2. But now let's replace
+that end with a for all. It's a really trivial for all. It's like the easiest
+for all There it is. It's only sort of searching over
+two different possible variables. But what we're doing
+is we're looking at, well, what are these two expressions
+have in common the k over 2, but where are they different? They have a different pair. First inputs, here,
+the first input is S, and you want, here are the
+first two inputs, U1 and teeth. So we just replace
+those with variables. And we say, well, this is equivalent to for all A1, B1 in this set, the set only has two things in S1, u1 and u and t r of A1B1, k over 2 is true. Okay? So we replace that
+end with a for all. Okay? So now how can we recurse on this
+expression rv A1B1 k over two? What should we write here? So pause and think about that. Well, this looks very much like
+the first step we had here. We can again use the middle
+first search idea and say, well, that's equivalent to there being
+a midpoint between A1 and B1. But rather than writing
+them at the end, we write it with the for all. So there's a midpoint, you too. So that for all A1, B1 in this set, A1 to A2 or U2 to B1 are of A2B2. K over four is true. Okay, So let's start the intuition starting to get a bit lost here, but just convince yourself
+each step is equivalent. And when we're done, after we've gone down to log
+of K levels of recursion, eggs are cutting cane
+half every time. So we get down to
+where we've got m of these alternation of
+quantifiers exist for all A1, B1 air exists you to
+for all A2V2 there. And we do this. M times n is only the log of k. So the size of this
+formula is log of K. So it can handle an exponential size graph with only a polynomial size formula. So this is the key step to proving that reachability can be
+characterized logically in this way. And because reachability
+is a stand-in for a space bounded
+complexity classes like, like P space that
+shows P space can be characterized in this way
+because the reachability on exponential size graphs is that the problem that
+characterizes piece? So let's just conclude with
+another way to think about this. Reachability has a game between
+approver and a skeptic, and this'll come up later when
+we talk about real games. So the prover says,
+I claim that we can get from node to node T in k steps, like at most k steps by
+going through midpoint yuan. And the skeptic says,
+add, I believe you, how can you get firm has to
+u1 and K over two steps. And the purposes as well
+by going through YouTube. That's the midpoint
+between those two. And the skeptic says, Oh yeah, how can you get from u two to u one and only k over four steps
+if you choose the midpoint. Well, if I go into u3 and they
+interact like this and at some point they reach
+a pair of nodes Kept. This is really how can you get from U6 to you ate and just one step. And the prover says, Wow, there's just an edge,
+follow the edge. The skeptic says, Okay, Yeah, you're right, but this is just
+the middle of a bunch of claims. I'm skeptical about the backup
+to use six to 13 into steps. So this multi-step sort of interactive proof is somehow
+a generalization of NP. Np, there's one around, right? The prover gives you this witness and the verifier verifies, uh,
+and, and they're just done. P spaces like that, except you can go
+for polynomial and n many rounds of interaction this way.-e 
+
+en-ECS 220 8c_8.6-2 PSPACE-completeness.txt
+
+As we've seen, how p space can
+be characterized in a sense with this alternating prover
+verifier scheme. But it can seem a bit abstract. So what we're gonna
+do now is prove that a particular problem is P space
+complete called Quantified SAT. And with quantified side, it's a little easier to see how the sort of game
+characterization looks. So to start with, as we usually do when we show a
+problem is complete for a class, we need an original problem,
+obviously complete. So space predict is this problem. Given a program P and an input
+x and an integer m and urinary. The question is, does ps except
+using at most m bits of memory. So it's similar to the last
+prediction when we saw, except we're not taking the log
+of them in the question here, m is written in urinary, but it is just an exact space bound. So that's sort of obviously
+p space complete. Again, we won't go through
+that exercise here. It's similar to others, but ask
+about it in lecture if you want. Okay, so here is a version of satisfiability that's
+phrased like again. So we're given a Boolean formula
+phi that takes N bits of input. And the gain is the two players take turns
+setting the input variables. And player one sets the first, and then player two
+sets the second one, and then players
+three sets the third. And player one wins if
+they can make fee true. But player two wins and
+they can make feet false. And the question is, does Player
+one have a winning strategy? Right? Until it's like a game variant, instead of just asking, is
+there some way to make it true? We're asking, well, can
+player one make it true? Even though Player one only
+gets to set every other bit, player two gets to set
+the remaining beds, particularly based on what
+bits Player 1 has set so far. Okay, so here is a problem Q
+SAT called Quantified SAT. And actually I'm just going to clamp. It's equivalent to two players that it's just a different
+way of phrasing it. So ask about that in
+lecture if it's not clear. So again, you're given a Boolean
+formula phi that takes n inputs. And the question is you let psi be a formula with
+no inputs, right? So it, it has no inputs. It's just a statement that's
+either true or false. And we want to know, is it true? And that is the statement. There exists, you know, a bit, we can set x1 to that. For all bits we get set x2 to the frog here is that you
+know this and for all there, just over individual bit. So this is just saying it's possible to set x one
+equal to 0 or a one. So that no matter which
+bit you set x to do, there's a bit too assigned x3. So no matter the bed
+assignments for et cetera, that assignment makes fee true. So that can be done. Then the quantified
+statement phi is true. And note the satisfiability problem is the case of this when you have
+no for all, so you're asking, does there exist a bit x1, n, does there exist a bit x2, and there exists a bit
+X3 that makes this true. So here every other one is a furrow. Okay, so first, convince yourself that this is
+contained in P space, that we can decide whether
+this is the case or not using only polynomial space. So note that it's not an NP problem, or at least we think it's not. But we can actually find out the question to this
+in polynomial space. So what we're going to do, right? So convince yourself
+that that's true if it's not clear, ask in lecture. So it's NP space. So we want to show it's P space hard. In other words, everything in
+p space reduces do it well, we'll do that by showing space
+predict is reducible to Q set. And this will be our normal kind
+of polynomial time reduction. So in fact, we only needed to be
+a polynomial space reduction. Okay, so let's go through
+how will show this. So recall for space predict our input is a program be an input to
+an X and a space found m. Now, what we're gonna do
+is define this graph. And this is the normal computation
+graph for p on input x. So vx is the configurations of PX but that USE space
+at most n, right? So again, this isn't everything
+P could possibly do, may not be m space bounded. So, so this may artificially
+constrained to make some configurations unreachable
+because they use too much space. So V is only the things that
+are reachable that space them. And the edges are that you
+can go to V and one step. Okay? And what is it that
+would make p except x? Well, you know, given our sort of statement of how to characterize
+P space, sort of computations. That's true if and only if the
+following predicate is true. Rst, like the Bazin, Remember what does that mean? It means in this graph, it is possible to reach from the initial configuration
+of p and x to t, The unique accepting
+configuration of p. In at most this many steps where this
+is just all the configurations. There are these things truly
+and space bounded, right? So this is kind of a
+weak bound right here. We of course need at
+most this many of us are just all the configurations. And remember that we argued it was possible to
+rewrite this predicate using an alternation of exists and quantify as an end
+date and a predicate. That's a simple one, or
+are you just asking about this AN BM configurations
+you're asking, Well, can we reach from
+AMD BM in just one step? So that is going to be our quantified formula
+that we output for Q SAT. We're trying to, on input, this input to space predict, output a quantified formula
+that is true if and only if p on input x accepts
+using the most space. So this does it almost, right? This is almost what we need. Now, there's a couple of technicalities to do with these
+slight differences between. Q SAT. And the way that a
+formula like this works, one is that Q SAT is defined to alternate between exists and
+for all on every single bit. But this is a little
+bit higher level. The, the use and the A's and
+the B's, they're not one bit. Each, each of them is
+a node in a graph, so each of them requires
+several bits to represent. So we want to actually do
+exist on several bits and then for all and several bits
+and then exists on several bits, not to alternate exists
+for all every single bed. Now this is not too difficult
+to fix to put a formula like this in the format cues that expects where it
+alternates on every bit. So think about how to
+do that for yourself. If it's not clear, we can
+talk about it in lecture. Okay, so the trickier issue is
+going to be this, that this, when we do rewrite this so that we have these for alls
+are over every possible bit. Well, remember the way
+we actually wrote this, I'm sort of short name the shorthand. But if you go back to
+the slide where we showed that this
+equivalence can hold. While the for all A1B1, it wasn't over every
+possible sequence of bits you could assigned to A1, B1. They were constrained to refer to
+two particular painters, right? Until we go back to that. Right? Remember we were looking at existing ones for all
+A1B1 in this set. The set is S comma u
+one and u one comma t. And same thing, there exists U2. So that for all a to
+b two in this set, it wasn't over all possible bits
+you could right here it would be, There's only two pairs
+you want to allow. So, so we have a problem here
+because the way Q SAT is written, it just says for all bits, but we need to constrain a t d t for each t between one and m and
+not allow them to be any bits. So the teeth moves of the form
+for all a TBT in that sense, a sub t minus 1, UT and UT comment bt minus 1. So we have this game between
+the prover and the skeptic. The, the prover gives, does the exists, the
+skeptic does the for all. So the skeptic is picking these beds. This is like player two in the game. We need to make sure that
+the skeptic actually pits, picks bits that encode and
+80 VT and this, right? But the skeptic is trying to argue, Well, we're not correct, right? So we did nothing. The skeptic could just pick
+some bits that don't look like this and the answer enforce
+the answer to be no, which is what the
+skeptic wants to do. Skeptics player two in the game. Okay, so here's the facts. Remember that the player one that the prover is trying to make
+the whole formula true. Player to the skeptic is
+trying to make it false. So we make it so that if the skeptic picks an a TBT
+that's not in the set, the prover automatically wins, right? So the final predicate that
+we check where we just check, oh, is this edge a comma b? And I'm sorry, this pair in
+the set of edges in the graph. We change it from
+that to say, well no, there's actually more ways
+the prover could win. Either this is in the edge set or any of these conditions is
+true, and then the prover wins. And what are these conditions? Well, these conditions just check that the various
+a's and b's were illegal, that each a TBT was
+actually an element from the set based on the previous 80
+minus 1 and b t minus one, right? So we're just checking
+if a2 is not equal to b1 and b2 is not equal
+to y2, et cetera. And if a2 is not equal to U2
+or B2 is not equal to B1, that would mean for t equals
+one, this was violated. So if the skeptic picks bits
+so that this is untrue, the prover automatically wins, so it's not in the skeptics
+interest Back button. So the only way to make all of these falls is to actually
+pick a DVT like this. And then the only way to pick
+those to make this false is if the quantified formula
+is actually false.-e 
+

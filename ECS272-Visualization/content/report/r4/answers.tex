@@ -1,0 +1,27 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip}
+
+\title{ECS272 Reading Report 4}
+\author{Pablo Rodriguez}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Paper: Doom or Deliciousness: Challenges and Opportunities for Visualization in the Age of Generative Models}
+
+\subsection*{Summary}
+
+This paper looks at how generative AI, especially text to image models like DALL-E and Stable Diffusion, could change how visualization work is done. Instead of guessing about the future, the authors interviewed 21 experts from visualization, machine learning, art, and art history to understand what is already happening and what risks and opportunities exist. They frame their findings using a four stage visualization pipeline: \textbf{data-fying, transforming, visualizing, and interacting}. Across all stages, participants saw strong potential for faster idea exploration, rapid prototyping, chart recommendations, and visual inspiration through things like mood boards or auto styling. At the same time, they raised serious concerns, mainly that these models can produce results that look correct but are wrong or unverifiable. Other risks include bias amplification, copyright problems, designer displacement, and easier creation of misleading content. The overall message is that these tools can be helpful, but humans must stay involved, especially when accuracy and trust matter.
+
+\subsection*{Question 1: How would you use GenAI (not limited to IGM) to support you throughout the four stages of the visualization pipeline?}
+
+For \textbf{data-fying}, I would use GenAI to help structure messy or text based data by describing what I need in natural language and letting the model suggest schemas or extract fields. If real data is limited or sensitive, I could also use it to generate synthetic data for testing. In the \textbf{transforming} stage, I would use it to assist with data cleaning, such as suggesting how to handle missing values or outliers, and to propose reasonable transformations or statistical summaries based on my goals. In \textbf{visualizing}, I think GenAI is most useful. I would use it to quickly prototype multiple chart designs, get suggestions for chart types that match my data and task, and improve visual styling like color palettes or layout for presentations. In \textbf{interacting}, I would use GenAI to support conversational interfaces where a user asks questions in plain language and the visualization updates, and also to adjust visualization complexity for different users, such as simpler views for beginners or accessibility focused designs.
+
+\subsection*{Question 2: Explain why unreliability is a concern. In addition, what is your opinion?}
+
+Unreliability is a concern because generative models can create outputs that look convincing even when they are wrong. The paper points out that these models do not truly understand data or visualization rules, so they might generate charts that misrepresent values, choose poor encodings for a task, or fabricate content that cannot be traced back to real sources. Their outputs are also stochastic, meaning the same prompt can give different results each time, which makes verification and debugging difficult. This is especially dangerous in visualization since the goal is to communicate truth from data. In my opinion, this is the most serious risk discussed in the paper. A wrong but professional looking visualization can mislead people more than having no visualization at all. I think GenAI is best used as a suggestion or inspiration tool, such as for layout ideas or styling, while humans remain responsible for checking data correctness and choosing final designs when accuracy matters.
+
+\end{document}

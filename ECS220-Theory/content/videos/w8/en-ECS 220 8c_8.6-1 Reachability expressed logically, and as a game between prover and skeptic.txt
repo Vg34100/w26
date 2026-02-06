@@ -1,0 +1,150 @@
+So remember that one
+way we characterize NP is a language is an NP
+means that for any string x, x is in the language
+if and only if there is a W of polynomial length and x, such that the verifier VA, which is polynomial time, accepts x and w. And recall that this
+was generalized to this whole polynomial hierarchy
+where we can ask, okay, Given a verifier that
+takes many witnesses, it takes the input x, but
+also the W1, W2, et cetera. It can alternate the
+quantifiers, they can ask, is there a w1 so that for all w two, there is a W3C For all
+w four, et cetera. The accepts all of them. And again, they're all
+polynomial length bounded. The verifier is still required
+to be polynomial time. And up here we just had one witness. Now we alternate k times between witnesses that k is
+just a constant, right? So the witnesses can be
+length polynomial in x, but there's a constant
+number of witnesses. It doesn't depend at
+all. On x itself. There's a surprising
+characterization. It turns out if we relax that and allow more than a
+constant number of witnesses, we allow a polynomial number of
+alternation between the witnesses. We exactly get polynomial space. This is very surprising and it was a very surprising to
+me when I first heard this. So this is not at all obvious to me. And the proof is not obvious, but we have the tools to prove it now. So we're
+going to go through that. All right, so the key idea
+here is that based on x, you choose based on x, how many rounds of alternation
+there's going to be. Okay, so how can we express right? And again, remember reachability, reachability problem
+somehow characterizes the space founded complexity classes. So the key idea here is
+going to be to express reachability with
+logical quantifiers. So here's the desired
+predicate we wanted to define. It is essentially the
+reachability statement. And it's, takes three inputs, an S to T and a k, two nodes n, an integer bound k. And this
+expresses there is a path in some, in this graph from S to
+T of length at most k. So this is the predicate
+we want to define. We want to define it using the logical quantifiers
+exist and for all, as well as the other tools of Boolean logic like
+negation and an or. Now our basic predicate, that's quote, obviously computable, but just by looking at the graph
+and our input is called E of UV. And this expresses not quite. There's an edge from u to be, either there's an edge from u to v, or u is just equal to d. So this is the basic
+predicate, our UV one, there's a path from u to
+v of length, at most one, it's equal to one if
+there's an edge and it's equal to 0 if they're
+just the same node. So that's sort of obviously
+it is computable. Now the goal is to use only
+first order quantifiers. There's some technical
+reasons for this, but what First-order means
+when we're talking about graphs is that when
+you write exist, you. The exists ranges over all nodes. You can't range over
+all sets of note, this is like a technical
+thing we're not going to get into mostly cuz I don't
+totally understand it. But that would be the so-called
+second-order quantifiers. If the exists, we're allowed to
+range over all sets of nodes. Okay, so let's just
+start by writing down the most obvious way to express
+our STK using logical quantifiers. Well, it'll just be, you know, do a bunch of existence string a bunch of the basic
+predicates together. So there's a path from S to
+T of length at most k if and only if there exists these k
+minus one intermediate nodes, which are the nodes you
+go to along the path. So that there's an
+edge from S to U one, there's an edge from U1, U2, from U2, U3, etcetera on to
+UK minus one to t, right? And those all have to be true. So this expresses, this is always using the first
+case that there's an edge, not that they're equal, which
+would be wasteful here. So, okay, so that logically
+expresses this predicate using only existential quantifiers and these ends between
+the basic predicates. But it doesn't quite
+get what we want. The quantified logical formula. We want to be size polynomial
+in the input, right? That was the requirement
+we set for ourselves. We're going to use grass that are exponentially larger than
+the input because the graphs represent the computation graph
+of an algorithm on that input, the algorithm space bounded, it can have a huge running times. In many nodes in this graph, k could be really large. But this is using up to all the
+nodes in the graph possibly. So this doesn't work
+exactly as written. Essentially this is
+showing reachability is an NB using the whole path
+from S to T is the witness. But this is not what we need to show. We need to show that no matter even up to this
+exponential size graph, we can use a formula, the size and whose number of
+alternations polynomial in the input. So here's an idea
+for how to fix this. We use middle first search. This is savages there. So our SDK, there's a path from S
+to T of length at most k. Well, remember this key observation That's true if and only if
+there's a midpoint, you k over 2. So if there's a midpoint,
+nerds as the UK, and we can get from S to U, K over 2 and at most cavities steps. And we can get from UK over two to
+t and most Cambridge who steps, then that's equivalent
+to we can get from S to T and at most k steps. And we can recurse on that. We could say, well, each of these can be
+expressed by splitting them into a pair of predicates, each asking about a quarter path. And we could keep recursing
+until we get down to this. And we would just have there
+exists these nodes and these, oh, this is exactly what we
+had in the slide before. So this recursion was a
+good idea except when we boiled it down to
+what would it turn and do once we expand out the recursion is just precisely the
+thing we wrote before. There's an edge from S to U
+one, there's an edge from U1, U2 and so on up from
+UK minus one to t. So that didn't quite work because this could be way too long
+as could be exponential. This k could be exponential
+in the size of the input. So now, let's wait and observe
+what's happening here. That exists. Shorthand for a long string of
+wars to write there exists a u, so that's some predicate. Phi of u is true. That's the same thing as
+saying Phi of u 1 is true, or phi of u two is true, or that it up to Phi of UN is true. If you wonder you enter
+all the possible nodes, you could make it, right. That's, these are equivalent. And similarly for all is a shorthand
+for a very long string of n. So for all u, Phi of u is true, is the same as saying, well, phi of u honest true, and Phi of u two is true and
+on up to Phi of u n is true. So we can replace this
+very long string of ends with a single for all. And in fact, the way we're
+going to do is we won't need to replace a
+long string of ends. We're just going to replace them
+one at a time in the recursion, but it will avoid in the end
+is very long string down here. So let's go back to the start again. Use this middle first search
+idea and first say our SDK, which means there's a path from
+S to T of length at most k. Let's use middle first
+search and observe that, well, that's equivalent to
+there is a midpoint U1, meaning there's a path from S to
+U on of length at most k over 2. And there's a path from one to
+t of length at most k over 2. But now let's replace
+that end with a for all. It's a really trivial for all. It's like the easiest
+for all There it is. It's only sort of searching over
+two different possible variables. But what we're doing
+is we're looking at, well, what are these two expressions
+have in common the k over 2, but where are they different? They have a different pair. First inputs, here,
+the first input is S, and you want, here are the
+first two inputs, U1 and teeth. So we just replace
+those with variables. And we say, well, this is equivalent to for all A1, B1 in this set, the set only has two things in S1, u1 and u and t r of A1B1, k over 2 is true. Okay? So we replace that
+end with a for all. Okay? So now how can we recurse on this
+expression rv A1B1 k over two? What should we write here? So pause and think about that. Well, this looks very much like
+the first step we had here. We can again use the middle
+first search idea and say, well, that's equivalent to there being
+a midpoint between A1 and B1. But rather than writing
+them at the end, we write it with the for all. So there's a midpoint, you too. So that for all A1, B1 in this set, A1 to A2 or U2 to B1 are of A2B2. K over four is true. Okay, So let's start the intuition starting to get a bit lost here, but just convince yourself
+each step is equivalent. And when we're done, after we've gone down to log
+of K levels of recursion, eggs are cutting cane
+half every time. So we get down to
+where we've got m of these alternation of
+quantifiers exist for all A1, B1 air exists you to
+for all A2V2 there. And we do this. M times n is only the log of k. So the size of this
+formula is log of K. So it can handle an exponential size graph with only a polynomial size formula. So this is the key step to proving that reachability can be
+characterized logically in this way. And because reachability
+is a stand-in for a space bounded
+complexity classes like, like P space that
+shows P space can be characterized in this way
+because the reachability on exponential size graphs is that the problem that
+characterizes piece? So let's just conclude with
+another way to think about this. Reachability has a game between
+approver and a skeptic, and this'll come up later when
+we talk about real games. So the prover says,
+I claim that we can get from node to node T in k steps, like at most k steps by
+going through midpoint yuan. And the skeptic says,
+add, I believe you, how can you get firm has to
+u1 and K over two steps. And the purposes as well
+by going through YouTube. That's the midpoint
+between those two. And the skeptic says, Oh yeah, how can you get from u two to u one and only k over four steps
+if you choose the midpoint. Well, if I go into u3 and they
+interact like this and at some point they reach
+a pair of nodes Kept. This is really how can you get from U6 to you ate and just one step. And the prover says, Wow, there's just an edge,
+follow the edge. The skeptic says, Okay, Yeah, you're right, but this is just
+the middle of a bunch of claims. I'm skeptical about the backup
+to use six to 13 into steps. So this multi-step sort of interactive proof is somehow
+a generalization of NP. Np, there's one around, right? The prover gives you this witness and the verifier verifies, uh,
+and, and they're just done. P spaces like that, except you can go
+for polynomial and n many rounds of interaction this way.

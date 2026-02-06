@@ -1,0 +1,106 @@
+Okay, so now we're going to get
+into some of the principles of designing these reductions
+will do a lot of example. One important reminder from
+the textbook to keep in mind the reductions responsibility
+is to translate the question, not to answer it, right? We translate an instance of
+one problem into another, but the reduction itself has no idea whether the answer to
+either one of them is yes or no. And another got you to
+keep in mind that when we want to show a
+problem is NP complete. The new one we're,
+we're trying to show, we're going to reduce an existing
+NP-Complete problem to it, not the other way around. It's a common mistake. Okay, so let's define a new problem. Now we haven't talked about before
+to variant of Satisfy Ability. We're given a three CNF formula fee. And in 3 SAT we want to know is there's some
+assignment that satisfies it. Here we're asking a
+different question. We want to know, is there
+an assignment that makes every clause have two
+unequal liberals? And we say that such
+an assignment NA ie satisfies V. So what does that mean? Well, one way to satisfy a CNF formula clause is
+to make every literal in it, but you also just have
+to make at least one. All right, So some ways of satisfying
+it would not NAEP satisfied, but not every NA ie, satisfying assignment is
+a satisfying assignment because if you have
+two unequal literals, well then there's a true
+literal in nursing. So here's an example. If we set a equals 1, b is 0, C is one, D is 0. You can notice by
+the colors here that every clause has got at least
+a one and also at least a 0. So because they all
+have at least a one, it's satisfied, but it's a stronger
+constraint than to satisfy. Now, one of the things
+that's nice about this problem is that unlike 3-sat, it treats true and
+false symmetrically. All right? We just have to make
+sure there's at least one of each in each clause. And this makes it useful for
+other NP hardness reductions. The first thing we're gonna
+do is show how this is related to 3 coloring. And in the 3 coloring problem, colors are symmetric, right? No one color is special. The way that a true value
+is special in a clause that only a single true value
+can make the clause true, whereas they all have to be
+false to make the clause false. So that's what makes
+this a little more adaptable to those other problems. But first, we have to
+show that it's somehow related to normal satisfiability. So we want to show that this is NP. So we're going to show that any E3 SAT is reducible
+to three, so hat. And therefore NA E3
+SAT is NP-complete. So how can we do that? Well, we're given a
+three CNF formula phi, which is an instance of an A3. So we want to output a formula
+Phi prime an instance of 3 SAT, so that this is NA ie satisfiable if and only if Phi
+prime is satisfied. So we'll do that by
+replacing each clause in FY with these two clauses. If we have x or y or z. And again, these can
+be literals and these could themselves be
+negations, which means save. If x was the negation of an input, NOT x would just be the input. For instance. So we have to show that
+fees and E satisfiable if and only if Phi prime is
+just normally satisfiable. So in the forward direction, if feed has an assignment that makes this clause have at least one true
+and at least one false literal. That's what it means to
+be an a is satisfiable, then that will also be true
+of not x or not y or not z, because you're just flip all of them. So you'll still have at least
+one true and at least one false. Which means that this
+thing will be true, right? That the conjunction of the two, so this is a satisfying assignment. Okay, so the slightly trickier
+wanted to go the other way. So now we'll show that
+if phi is satisfiable, then f0 is NA ie satisfiable. So observe that any
+assignment that satisfies phi prime has to make
+X or Y or Z true. Because an estimate,
+both of these two. So that means at least one of x, y, and z is true. And it also has to
+make not x or not y or not z true mean it has
+to make at least one of X, Y, or Z falls, right? Which again, what does this mean? The two of these together
+means that at least one of X, Y, or Z is true and at
+least one is false. And therefore this clause in the original formula
+is NA ie satisfied. So we've successfully reduced
+and a 3 SAT to 3 SAT. But now it's time to check yourself. Is this what we're
+supposed to do to show any 3 SAT is NP-complete. So think about that for a second. Now, I, I wanted to get a bit
+of practice with reductions, but I also wanted to
+get you thinking this is the wrong direction, right? This is not how we show that
+any E3 SAT is NP-complete. If we already know that
+3 SAT is NP-complete, we've gotta go the other way. Well, remember for this
+whole section we're going to assume that 3 SAT is NP-complete. And in order to use that fact, we have to reduce it to a new problem to show the
+new problem is NP complete. Okay, so how are we going to do that? Well, we're going to start
+with a slightly easier to ask, which is to show that NAD for
+SAT is NP complete, right? So this is a slight variant where you allow for literals per clause. And we're going to show
+that 3 SAT reduces to that, and that's the right direction to go. We're assuming 3 SAT is NP-complete. And it's fairly clear
+that NA for SAT is in NP. So if we can show that it's
+that 3 SAT reduces to it, we will have shown any
+for SAT is NP-complete. So this is a restatement of what a reduction like that
+has to look like. We need that feed the input to 3. Sat is satisfiable if
+and only if the output v prime of r reduction
+is NA ie satisfied. Okay, so here's I will
+do the replacement. If V has these clauses, we're going to take those
+exact causes and then just add one more literal in each clause. That's why it becomes force ahead. And it's going to be
+the exact same literal, just a brand new variable
+S that we didn't. Okay? So how can we show this is true when we show each
+direction separately. This is always how
+you should do this. So in the forward direction
+of Phi is satisfiable, then at least one literal
+in each clause is true. And in that case, we can set S equal to false and keep the rest of the
+assignment the same. And that will make sure that the prime has at least
+one true literal, that it's x or y or z, and at least one false literal S. So now suppose conversely, we want to show the
+reverse direction that V prime is NA ie satisfiable
+by some assignment x. X represents an assignment
+of truth values to these variables, including us. So first of all, we're going to claim that
+the negation of any, any satisfying assignment is
+also an E satisfy, Right? And think about that. If you
+have at least one true and at least one false
+literal in every clause, if you negate the entire assignment, it just swaps true and false around. So you maintain that
+there's at least one true and at least one
+false in every clause. So there's two possibilities. The satisfying assignment
+x does NA ie satisfying assignment x for v prime and
+either sets S to true or false. So suppose that sets us to true. Well that's going to be inconvenient. So we'd rather have us be false. But what we can do is negate
+the entire assignment. And by this claim, well that's also an N, a
+satisfying assignment. And now we get to assume S is false. And if S is false, and yet these all have at least one true and at
+least one false literal. That means at least
+one of X, i, y, i, or ZI in each clause
+has gotta be true. So just restrict in that
+assignment to the x, y's, and z's. It's a satisfying assignment for me.

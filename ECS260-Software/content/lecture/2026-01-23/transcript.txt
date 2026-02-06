@@ -1,0 +1,278 @@
+Pablo [0:24]: give me another one but in taiwan i thought my board game is from united states
+Pablo [0:29]: i've never heard of the one
+Pablo [0:34]: yeah i know all of these
+Pablo [0:36]: all of these
+Pablo [0:38]: all of dollar diamond
+Pablo [0:39]: really yeah
+Pablo [0:43]: connector
+Pablo [0:46]: i'm a terrible headache today so i'm not very looking at slides
+Pablo [0:56]: i'm going to answer questions
+Pablo [0:57]: about
+Pablo [0:57]: the presentation
+Pablo [0:58]: and so on
+Pablo [1:03]: and then maybe i'll leave you for the last half an hour
+Pablo [1:09]: the netflix that we've been talking about
+Pablo [1:18]: more important is those two papers monday
+Pablo [1:22]: you could just show you how there's really a limited
+Pablo [1:26]: benefit from over
+Pablo [1:28]: i want
+Pablo [1:29]: you to kind of
+Pablo [1:30]: look at those
+Pablo [1:37]: get back to the try to read that the complexity
+Pablo [1:48]: part of my lectures thus far were don't be too simple
+Pablo [1:51]: and i'm going to end with don't be too complicated
+Pablo [2:03]: but again terrible headaches i'm not going to be watching slides on a ledger continuing my but use the last part of
+Pablo [2:03]: this if you want
+Pablo [2:07]: directions about
+Pablo [2:11]: but before i leave i went to
+Pablo [2:16]: the dark room
+Pablo [2:19]: let's answer a few questions
+Pablo [2:31]: don't be just reading from the slides
+Pablo [2:35]: but try to look like you're actually interested in
+Pablo [2:36]: which
+Pablo [2:40]: but the presentation should start with telling me about it
+Pablo [2:42]: then how this
+Pablo [2:45]: vibration will fail
+Pablo [2:52]: the big picture view and then dive into
+Pablo [2:55]: the individual place
+Pablo [2:58]: any questions
+Pablo [3:09]: that are relevant to the project
+Pablo [3:12]: that's a part of
+Pablo [3:13]: what
+Pablo [3:15]: we like to see
+Pablo [3:25]: that is why
+Pablo [3:36]: how much time are your team
+Pablo [3:39]: all of the team members should present
+Pablo [3:45]: so
+Pablo [3:46]: we all want to be given a chance
+Pablo [3:50]: so
+Pablo [3:54]: presentations in the conference that you're presenting
+Pablo [3:58]: it's up to you
+Pablo [4:00]: that's up to you
+Pablo [4:02]: that's what
+Pablo [4:02]: you want to do
+Pablo [4:10]: since you're going to have multiple papers each of you presented not paper
+Pablo [4:13]: organized
+Pablo [4:25]: i'm open to a successful presentation my advice would be given the first minute of two deductions and then without project
+Pablo [4:28]: and then dive into each
+Pablo [4:29]: paper
+Pablo [4:36]: each
+Pablo [4:37]: of the speech
+Pablo [4:41]: don't overthink it
+Pablo [4:41]: yet
+Pablo [4:46]: of course your visitation has a nice balance between visuals
+Pablo [4:50]: it's fair use to takers
+Pablo [4:51]: you're going to be talking about
+Pablo [4:53]: visuals
+Pablo [4:57]: there's no reason to give me a block of text explaining
+Pablo [4:59]: a visual
+Pablo [5:07]: if you're putting a huge table from a paper there's also that co two
+Pablo [5:10]: there's no reason to
+Pablo [5:13]: give someone
+Pablo [5:17]: so use text to explain
+Pablo [5:25]: make sure
+Pablo [5:46]: is anybody complimented your job work
+Pablo [6:37]: it's
+Pablo [6:37]: important
+Pablo [7:21]: to
+Pablo [7:28]: have a whole world
+Pablo [7:33]: what's even worse is kind of a whole lot of
+Pablo [7:34]: fish but saying two sentences
+Pablo [7:37]: and
+Pablo [7:38]: then people so why did you
+Pablo [7:52]: do the
+Pablo [7:52]: presentation
+Pablo [8:19]: represent
+Pablo [8:20]: ing
+Pablo [8:21]: people
+Pablo [9:24]: any
+Pablo [9:25]: questions
+Pablo [9:31]: i
+Pablo [9:32]: cannot believe
+Pablo [10:17]: let
+Pablo [10:18]: 's consider something
+Pablo [10:42]: i've been structured
+Pablo [10:43]: leaders
+Pablo [10:44]: have
+Pablo [10:45]: to
+Pablo [10:46]: do
+Pablo [11:02]: some
+Pablo [11:03]: material
+Pablo [11:06]: i
+Pablo [11:07]: try to align this
+Pablo [11:08]: class to get
+Pablo [11:09]: you
+Pablo [11:09]: moving
+Pablo [11:17]: do you have any suggestions how to i would really appreciate
+Pablo [11:23]: individual
+Pablo [11:34]: please either stay and discuss or go copy and discuss or whatever
+Pablo [11:36]: use this time
+Pablo [11:51]: she said that project wait a second
+Pablo [12:01]: yeah
+Pablo [12:02]: with my nami
+Pablo [12:09]: but we have the pick by monday
+Pablo [12:15]: yeah we just have to
+Pablo [12:19]: i'm hoping she had ideas
+Pablo [12:21]: i don't know what to pick
+Pablo [12:30]: can i just send a message on the thing
+Pablo [12:32]: i go to find
+Pablo [14:12]: what's going on
+Pablo [14:48]: hello
+Pablo [14:49]: he's right
+Pablo [14:59]: taiwanese and because i don't have the car so he always took me to costco
+Pablo [15:01]: that's right
+Pablo [15:02]: that's funny
+Pablo [15:05]: do you have a costco card
+Pablo [15:10]: no kids costco two of the senior is a senior he's a doctor
+Pablo [15:15]: no phd
+Pablo [15:17]: the same thing
+Pablo [15:31]: he and another have costco car all the time graduate student that's fine
+Pablo [15:36]: i do the same thing with my friends because i have a costco card
+Pablo [15:39]: he drives me there
+Pablo [15:41]: that's
+Pablo [15:42]: funny
+Pablo [15:43]: i'll buy him a drink
+Pablo [15:46]: do you need some treat
+Pablo [15:47]: ing like that
+Pablo [15:48]: because i don't have
+Pablo [15:49]: part
+Pablo [15:55]: he's so nice
+Pablo [15:58]: go to costco first and go to mai
+Pablo [16:04]: town
+Pablo [16:12]: what do you think we should do for the project for the other
+Pablo [16:21]: the third poise like how to reschedule
+Pablo [16:25]: each thread that i pay some based on the priority
+Pablo [16:26]: something like that right
+Pablo [16:34]: the thread
+Pablo [16:38]: force if we choose it different tasks like we need to schedule
+Pablo [16:42]: i have no idea maybe we can write it
+Pablo [16:46]: martin said it would be the easiest because we can do that one in c plus plus
+Pablo [16:47]: and just that
+Pablo [16:55]: is that the top three we cannot do it c plus plus well she said it like we couldn't but i'm not sure
+Pablo [16:59]: that's why i was saying we could just ask chatgpt
+Pablo [17:02]: because i'm not
+Pablo [17:05]: hi thanks babe
+Pablo [17:11]: i haven't really used it i usually use cloth for the code stuff
+Pablo [17:14]: true
+Pablo [17:19]: he's helping manami will have suggestions
+Pablo [17:28]: and then we can just listen to her name do you know why she called manami because her father really like a kind of
+Pablo [17:32]: the second let me find my phone haven't come
+Pablo [17:35]: he ordered
+Pablo [17:47]: i sent to this yesterday because it's broken so they have so they do be rental
+Pablo [17:48]: yeah
+Pablo [17:55]: they gotta try whatever
+Pablo [18:01]: because our father like this so her name sounds like this
+Pablo [18:16]: we japanese like this maybe it's called manashi in japanese i'm not sure
+Pablo [18:22]: that doesn't seem right
+Pablo [18:27]: i'm not sure what maybe it's not
+Pablo [18:31]: right yeah walrus
+Pablo [18:36]: what's papua mean
+Pablo [18:37]: like jasmine is a flower
+Pablo [18:40]: i don't think pablo means anything it's a name from the bible
+Pablo [18:44]: you are christian
+Pablo [18:50]: i'm not hyper religious my dad is
+Pablo [18:53]: my dad is more religious
+Pablo [18:57]: i don't really go so you don't go to
+Pablo [19:05]: church church every sunday not really
+Pablo [19:13]: i'm
+Pablo [19:14]: not a christian
+Pablo [19:15]: in taiwan
+Pablo [19:19]: there's not so many christians
+Pablo [19:23]: religious
+Pablo [19:26]: i don't know how to say that
+Pablo [19:36]: but i'm not
+Pablo [19:59]: os operating
+Pablo [20:03]: like in there
+Pablo [20:07]: preview class name
+Pablo [20:27]: is the first letter of yeah like os in there you go like in taiwan maybe this is class engineering like we will say se here it's only somewhere secs weird to me but os makes more sense
+Pablo [20:44]: after trying to figure out what monopi maybe the animal
+Pablo [20:52]: so her bag changed to
+Pablo [20:55]: okay
+Pablo [21:30]: it looks like that's like the common practice
+Pablo [21:42]: my phone heaven arrives so long which one
+Pablo [21:43]: are you
+Pablo [21:44]: getting
+Pablo [22:12]: i
+Pablo [22:13]: think
+Pablo [22:43]: yes
+Pablo [22:44]: i can be using
+Pablo [22:45]: it
+Pablo [22:48]: and then also by htc
+Pablo [23:02]: is
+Pablo [23:03]: that what you're saying
+Pablo [23:16]: i
+Pablo [23:17]: can just cut out
+Pablo [23:19]: yeah
+Pablo [23:21]: i do lots of videos
+Pablo [23:25]: we can just record ourselves if you mess up
+Pablo [23:27]: i can take out parts that are
+Pablo [23:28]: cute
+Pablo [23:35]: and then send me the
+Pablo [23:39]: easier to just do one of
+Pablo [23:41]: the
+Pablo [23:45]: record the whole thing
+Pablo [23:49]: that's me
+Pablo [23:58]: literally like to play a lot of games theme games
+Pablo [24:01]: and because of that i'll do that
+Pablo [24:06]: something like law league of legend
+Pablo [24:17]: so he finds female gamer
+Pablo [24:19]: because
+Pablo [24:25]: i'm so confused right now
+Pablo [24:30]: because it played really well when he matched to other people
+Pablo [24:37]: so he managed to a female gamer
+Pablo [24:40]: so they started to date
+Pablo [24:45]: fall in love something like that so he used korea
+Pablo [24:47]: korea wars
+Pablo [24:52]: he used korea so it's like this
+Pablo [24:54]: it's like mandarin
+Pablo [24:56]: this is korean korea
+Pablo [24:59]: miss i know
+Pablo [25:24]: i don't know why it's so weird i don't know when they have a girlfriend like he will play computer games with wrong twelve am to ten am and sleep at ten am to six pm to go to eat dinner with her girlfriend and her girlfriend is so mad
+Pablo [25:28]: that's funny
+Pablo [25:29]: i don't know why
+Pablo [25:34]: i'm too long playing video games no breaks
+Pablo [25:43]: did you see the examples
+Pablo [25:47]: examples of the pdf
+Pablo [25:53]: because they include
+Pablo [25:54]: the paper that you're working on
+Pablo [26:03]: per paper three
+Pablo [26:05]: where
+Pablo [26:07]: i included the pdf
+Pablo [26:10]: it's what notebook suggested
+Pablo [26:15]: lower
+Pablo [26:19]: those two are deeds
+Pablo [26:19]: too
+Pablo [26:23]: but that was before he said we needed five papers
+Pablo [26:27]: so it only has the one two and three as an example
+Pablo [26:32]: and i kind of based my slides off of this one because i liked it
+Pablo [26:44]: so if you wanted an example that's why i made the first slides like this because i thought it looked cool
+Pablo [26:54]: you can technically copy it if you want
+Pablo [26:59]: you just have to recreate it and make sure it makes sense
+Pablo [27:11]: don't want it to be sane completely false thingy
+Pablo [27:17]: after this i'm buying my work because
+Pablo [27:23]: i can sell it for animating
+Pablo [27:32]: should we just use the same pdf for all the whole life
+Pablo [27:36]: why you start homework too i haven't yet
+Pablo [27:40]: i haven't yet i'm asking if i should just use the same one okay
+Pablo [27:43]: we can just make
+Pablo [27:44]: new page
+Pablo [27:47]: and then start down here
+Pablo [28:14]: and lastly
+Pablo [28:51]: again it will continue to
+Pablo [29:21]: have an
+Pablo [29:29]: because you have to once you find the
+Pablo [29:32]: you are doing it
+Pablo [29:33]: okay no
+Pablo [29:56]: why don't you have to stop yourself
+Pablo [30:05]: i don't need to talk to clerics or anything
+Pablo [30:07]: no
+Pablo [30:11]: by luck foam
+Pablo [30:18]: that's just how my family's always done it because we get the plan together
+Pablo [30:23]: because you need like three years
+Pablo [30:38]: three years i think three years too long that's true we want to switch off of at and t to verizon and now we can at and t that
+Pablo [30:46]: i want to switch to mint but i don't know why my credit card cannot approve the deal
+Pablo [31:07]: i
+Pablo [31:08]: can offer
+Pablo [31:10]: yeah i have a list is working
+Pablo [31:11]: now
+Pablo [32:03]: if you're using

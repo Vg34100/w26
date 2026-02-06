@@ -1,0 +1,79 @@
+So with that definition
+of space usage in mind, let's define our major space
+bounded complexity classes. So space of S sub N is the space
+counterpart of time of T of n. The class of problems solvable with Big-O of acid and
+working memory, right? And we use this Big-O to
+kind of brush aside or okay, Are we talking how many bits of memory or how many bytes of memory? You know, what exactly
+is the tape alphabet if it's a Turing machine, the answer to those questions
+doesn't matter if all you're concerned about is getting things within a
+multiplicative constant. So we use a big, Oh, they're just like with time. And then the two major complexity classes we'll
+focus on here that, that capture a class of
+space bounds as we put here, is one is just called an L, and this is space of log of n. This is a confusing name. Every other space plasma use has the word space
+somewhere in the title, except the ones related to L, where instead of saying
+L space, it just says L. And I don't know why this is. It might be because logarithmic time doesn't make a lot of sense
+on a Turing machines. So there's no need to have
+separate l time and space classes. But at any rate, when you see L, it means space log of n, meaning O of log of n
+space, not log squared. You don't allow exponent's here, just O of log of n, So login to login and
+three login, etc. So intuitively, what is this class? Well, these are problems
+where you can solve them and the only extra memory you need is to have a constant number of
+pointers into your input. Like each pointer is going to
+take log of n space to write down to address a certain location
+and your input and read it. And this is, these are the problems, or you only need a constant
+number of such points. So for example, if you're
+processing a graph, you might want to search
+the graph or do something. The problems, or you need
+only o to store o of 1 nodes at a time and nothing else that these would
+be logging space. And then of course there's
+polynomial space because polynomial bounds again
+are quite robust, been closed under
+composition and everything. So this is the space
+bounded counterpart of p. So let's see some examples of log-space and polynomial
+space computation. So here's an example
+somethin showing that logarithmic space isn't
+that much of a restriction. They can do things say, finite state machines can't do. So it helps to have more than constant memory deciding
+palindrome, right? So remember a palindrome is a string and that's equal to its own reverse, looks the same forward and backward. So here is some pseudocode for it. Or actually I guess this
+is my duty Python code. So how can we tell if x
+equals its own reverse? Well, we can set a pointer
+I to the start of x, a pointer j to the end of X, and then move them towards
+each other while I'm, while I is less than J, check XI and XJ if they're unequal. Oh, there's two spots that we want to know that the
+first symbol equals the last, the second symbol equals
+the second to last. The third symbol equals
+the third to last. So we check those if you find
+that unequal, return false, otherwise they move i up and J
+down, and we get to the end. We didn't find a pair of
+unequal ones, then we say true. So what's the space complexity? Well, we need log n bits
+to store I starts at one, but it goes all the
+way up to n If n is the length of x and when
+he login bits for j. So we need a constant number
+of pointers into art input I and j are both pointers and then
+we can read them like this. Alright, so there's a logarithmic
+space computable example. Here's a polynomial space example. Recall the definition
+of cellular atomaton. When I drew them earlier, I drew time going down. Now time is going to the right. So a configuration would
+be one column here. This would be at time 0,
+at time 1, at time 2. This shows how this one-dimensional
+cellular automaton evolves, starting at time 0,
+going up to time and 63. And one thing you might
+want to do is check if a given configuration is in a periodic orbit of a
+cellular automaton. So you'll notice this
+configuration repeats. So right in a counter-example would be one where it
+eventually gets into an orbit, but that configuration happened
+prior to the orbit, right? So for instance, if you
+started here and then repeated this configuration and
+then cycled within a year, none of these would be in the period. So here's a way to do it. In polynomial space. We have our cellular atomaton rule that CA and then our initial
+configuration and knit, which is just some binary string and is going to be
+the length of that. Now, of course, our total input
+size would also include the rules, but we assume those are
+constant size and we have a very big configuration. So we start exit the
+initial configuration. We're going to repeatedly
+update it by applying the rule. This is just some code for
+applying the CA rules. So this is, I won't walk through
+all of this to carefully, but we update it and then we just check is x equal to a net, right? So we're going to repeatedly
+updated if we ever revisit and it was
+an aperiodic orbit. Okay, So why does this need
+only polynomial space? Well, at any given time, we're remembering in it, which takes space and an
+x which takes space n. So that's two n plus this, you know, the space usage or update
+year, but what does that do? Well, it just reads
+three bits out of x. It uses AI to index into there, but that's only log of n bits. That's negligible compared
+to the n bits to store x. And then, yeah, not too
+much extra space here. So this is polynomial space, linear space it back. So the net x, y, and j are n-bits
+H and an iss log evidence.

@@ -1,0 +1,113 @@
+So I want to talk a bit about
+mathematical proofs. Now. We're asking you in homework
+to give some proofs. But, and we tell you
+it'll be precise, be as formal as you can. But we don't really mean
+formal mathematical proof in the way that
+logicians talk about it. So what exactly is a
+formal mathematical proof? It's not the things we
+usually write back. Well, you know what I tend
+to call a proof that I put in my writing and
+my research papers. What I asked you to do on
+the homework is just write down some sentences so
+that somebody intelligent, but who didn't see why the
+theorem is true before, reads it. Well now they do see why
+it's true that to me that's, that's what a convincing proof is. But when we talk the way logicians do about formal
+mathematical proofs, we tend to take that and demand
+and we go to weigh more level of detail such that a computer
+program could verify it. So technically a formal
+mathematical proof is a series of simple steps. Each one of them apply in
+either an axiom that you just assume without proving our a theorem, which is a statement
+that you conclude from a series of simple
+step from the axioms. So for example, you might remember these horrible things from high
+school, these geometric proofs. So here's one of them stating that the angle a PC equals the angle BPD. And then there's the proof
+of it that comes from the axioms or do you tend to call
+them postulates in geometry? And you just apply each of them. And again, I'm showing you
+this just to say, okay, there is technically a way to
+formalize mathematical proofs. Some cruel high school teachers may have forced you to do
+it with geometry and taken an extremely obvious statement
+like this angle equals this angle and then pretended like it's not obvious and that you
+have to prove this. And actually one of
+my favorite essays about mathematics is called a mathematician's element
+by Paul locker, I suggest you go read it. It's very good. But he uses this as an example of how high-school geometry students should not be thinking about
+proofs and says this about it. So I agree with him about that. However, when you want
+to formally study logic, right now, when you want to do, just do mathematics are just
+figure out what's true and false. But when you want to formally study logic and asked me what
+does it postulate? What, what is possible
+to prove in principle? What's possible to know about the
+mathematical world in principle, then you do have to formalize it. And this is what we mean
+by proof in that context. Okay? So when we're talking
+about proofs that can be processed by a computer or verified by a computer will checking proofs like that is
+tedious, but it's simple. You just verifying that each
+statement either is an axiom or it follows by one of your rules of deduction from the previous
+statements that you've proved. So here's a statement that sort of, once you kinda get that definition
+in your head, is kind of, is obviously solvable
+in polynomial time, which is given a mathematical
+statement and a proof of it, you want to ask the question,
+is P a valid proof of S? Right? And this is what
+proof checkers do. I mean, this is what
+the systems like, like Coke do that. And are able to verify formerly written proofs is
+they just apply the rules of deduction and verify that each step follows from
+one of the previous ones. So because this problem, it takes these two inputs. And remember our definition of NP, we had one input for the
+problem we care about in a second one for the verifier
+that was the witness. That because this problem is in P, This one is an NP where you're given essentially only the statement. It's actually an
+optimization problems. Like all optimization problems
+we have the input we care about, and then a threshold to turn the optimization problem
+into a decision problem. So the optimization problem
+is given radical statement. Does it have what's the
+shortest proof of it? But phrased as a decision problem, we can ask, does it have a
+proof of length n or less? And the NP, the verifier for this is the algorithm for this
+state, this problem up here. So, so it's in NP. I'm going to claim it's
+actually NP complete. Pause and think about that. Actually don't pause. I
+won't talk about it here, but asked about it if
+you want to later. So how would you show that the Boolean satisfiability problem is polynomial-time reducible to
+this short proof problem. So this sort of idea leads us to
+the third grotesque consequence. If P equals NP, that makes us think they're
+probably not equal. And it would be the complete
+demise of mathematical creativity. So write down any unsolved
+mathematical problem, Goldbach's conjecture,
+the Riemann hypothesis, or any of those $1
+million clay problems. Where, you know, for
+the clay problems, you're going to get a million
+dollars if you prove it. But there's probably no
+human on earth who's going to prove it with a proof that
+has more than a billion steps. I mean, they can try it,
+it probably won't ever find this if they did, and they published a several
+gigabyte text document proving it, nobody would ever be
+able to verify it. So if give you expect to in practice, be able to solve one
+of these problems and convince other people it solved. You will probably come up
+with a, a short proof, a proof with a billion
+steps service. Okay. And you know, any
+human written proof, even if you took the
+thing we normally call, Approve and tediously expand
+at the formal detail. So it's one of these machine verifiable formal proofs is going
+to be less than a billion steps. So in other words, all of mathematics could be automated
+because if P equals NP, NP-complete problems, short proof
+that can answer this question, that, that would have a
+polynomial time algorithm. Okay, with machine learning, maybe this is going to happen anyway. But, but, you know, but like most machine learning, we probably wouldn't be
+correct on all inputs, so I wouldn't know how
+much we want to trust. So this isn't just mathematics, most scientific fields, right? If you really pull your gaze back and try to say
+what do they all have in common? Well, they repeatedly trying
+to solve this problem. Given some set E, experimental data. For example, astronomical
+observations, say of where the planets are each night and an integer t. And again, for technical reasons, we'll
+put it in the urinary. We will want to find is a theory t, for example, Kepler's laws of planetary motion of length n
+or less, that explains it. You can run other
+words, we want to find a short set of rules that
+explain these observations. So if P were NP, this is what the textbook has to say. No longer would we need
+a Kepler to perceive elliptical orbits or a Newton to
+guess the inverse square law. Fighting these theories
+becomes just as easy as checking that
+they fit the data. And that seems very counterintuitive. This doesn't prove P is not NP. But I think this constitutes very strong evidence
+that they're not equal. We don't actually think
+creativity is this easy. Okay? So there's other reasons to
+believe that P is not NP. I've strongly recommend
+this blog post by Scott Aronson called
+reasons to believe. And he had another one later. The scientific case
+for p not equal to NB. That said, not all theoretical
+computer scientists are so convinced. **** Lipton is chief among them. He likes to remind us repeatedly
+the fact that we don't have a proof is evidence
+that maybe it's true. And he thinks we should consider very seriously the possibility
+that there is a polynomial algorithm for
+something like satisfiability. But we just need vast sort of advancements in our understanding of algorithms to be able to do it. And yeah, that wouldn't be surprising because we clearly
+need vast advances in our understanding to prove that sad is not going to eat because they haven't been
+able to do that either. So certainly resolving this question requires that we figure out
+someone we don't know yet.

@@ -1,0 +1,21 @@
+Here are **5 concise bullets** capturing the key mechanisms and conclusions from the lecture transcript and slides.
+
+---
+
+* **Links have benefits and costs.**
+  Making a connection gives value (access, shorter paths), but maintaining it costs time or resources. Networks form by weighing benefit versus cost of each link.
+
+* **Networks evolve to equilibrium.**
+  Links are added or removed until no node can improve its payoff by changing links. This is a **pairwise stable equilibrium**, where the network stops changing.
+
+* **Efficiency depends on link cost level.**
+
+  * Low cost → fully connected network is efficient.
+  * High cost → empty network is efficient.
+  * Medium cost → **star network** is uniquely efficient.
+
+* **Star networks balance path value and link cost.**
+  Short paths give high value, but direct links are costly. A star keeps paths short using few costly links, making it efficient in the middle-cost regime.
+
+* **Efficient networks may not be stable without transfers.**
+  Central nodes in stars bear more cost than others. To keep the efficient network stable, **transfers or subsidies** are needed to fairly share costs and prevent link deletion.

@@ -1,0 +1,82 @@
+Next chapter that's
+called memory paths in games is really about
+memory or space complexity. But the idea of paths in graphs and two player games play such a central role that
+it made it into the title. So we've been talking about
+time complexity so far. And now we're going to talk
+about space complexity. So what's the difference when
+we think about these two? So we'll define a
+little more formally, some complexity classes later. But right now informally, let's just say space is
+the class of problems decidable with a polynomial
+amount of memory. You know, same as with time. We measure the memory usage as a function of the number
+of bits of input. And now the space usage has
+the same units as the input. That's just number of bits used. Okay, so it's often said
+the difference between time and space is that
+you can reuse space, but you can't reuse time. Now this leads to some
+unintuitive results. So first of all, unlike what we believed to be the case
+with time complexity, we know in space complexity, non-determinism does not help that much only by maybe a polynomial, a factor with space
+bounded computation. So P space is known to equal the nondeterministic
+version of p space. And we also have that n space
+of S equals colon space of S. In other words, if a language is decidable with a certain
+amount of space, then so is its complement. Which again, is weird because it means proving that
+something doesn't exist. It's just as easy as proving
+that it does exist if you recall this difference
+between what NP and co-NP. But some intuition still hold. So with more space, you can compute more. There's a space hierarchy
+theorem that says, you know, you can compute more in
+space AS than you can in space. Little of it as if time is bounded, space is also bounded. So whatever you can
+compute with time t, You can also compute
+with that much space. And if space is bounded, time is also bounded, but here they're not
+the same background. Whatever you can do with space S, you can do with time, exponential ns. But we, you know, we
+think maybe you do need more time than you need space. On the biggest open question here is, does space helped more than time? Or more formally,
+does p equal P space? And we think the answer is no. And proving this is true that they're
+unequal should be even easier than proving P
+is not equal to NP. As we'll see in a bit, we
+see the relationships. Okay? So how do we define space bounded
+computation more formally? So the textbook, as
+I've said and takes a somewhat informal approach
+to some of these definitions. If we do think about terrain
+machines, specifically, sub-linear time computation
+is mostly uninteresting. For a Turing machine, two. Scan a bit of its input
+that's near the end. It needs time linear in
+the size of the input. Even if it doesn't care about
+the bits in the middle, it takes time o of n Just
+to advance the tape head. So sub-linear time computation generally doesn't make
+a whole lot of sense. Now it is somewhat interesting
+for random access machines that can jump immediately to some part of the input without reading
+all the parts in between. So binary search is a logarithmic
+time and computation, but only on a RAM machine. It doesn't make sense to
+do it on a terrain should. Now sublinear space computation makes sense even on a Turing machine. So for example, you might
+want to search the graph of all web pages on the internet. In fact, not just you might, many companies do want
+to do this very thing. Google tries to do it continuously. And of course, you can't load
+the whole input into memory. So it makes sense to think
+about using an amount of space less than the total input
+you're trying to process. Now the way we formalize
+this with our formal models as we give our Turing machine
+or a random access machine, whatever kind of model we're using. A read only input, but a read write
+working memory, right? So for a Turing machine, these
+would be two separate tapes, and only the latter is
+counted as space usage. So the idea here is
+to be able to talk about space being sub-linear. You need to restrict the
+model so it can't write to the input and use it
+for some of its space. Otherwise, that would, that should
+count against that space usage. But you do want to let it read
+any of the input at once. Just the working storage
+is going to be small. And if we're talking
+about Boolean output, we can be done there. Sometimes we want to talk about writing more output than
+the allowed space usage. So for example, you know, if you want to talk about
+arithmetic operations like multiplication being
+done in sublinear space. Well, they write numbers just
+as big as the ones they read. So To talk sensibly about not using very much space to do that
+well yet to write the output, you can't make it read-only. So you make a write-only. Alright, so you can't read them or you can't write to the
+input that you can read it. You can't read your output that you've written, that
+you can write to it. So the input and output
+are no use to you if you try to use them as
+intermediate storage. And then you only count the space
+used on your read write memory. Now the textbook sort of implicitly assumes RAM Random Access Memory. So essentially what this means is if you're given a
+location like an address, an integer address into your memory, you can think of it like which position is it on
+a Turing machine tape? Or you can just think about it
+like a regular computer substance that has a linear memory, just like a Turing machine, you address it with a single integer. And once you're given
+this memory location, once you've written it down, if you then try to read or write it, you assume that takes
+one single step. Right now, note that only matters
+if we also care about the time. And notice the size of your input
+or your working memory is K. It's going to take log of k bits
+to write an address into it.

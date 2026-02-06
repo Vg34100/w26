@@ -1,0 +1,24 @@
+Okay, so we've defined NP and it's specific to
+polynomial running times. We can generalize that a
+bit to other running times. So just like we defined p and then time of T of n to get more fine grained about the
+exact running time, n time of T of n. The
+definition looks a lot like NP. So I will talk through the
+whole thing except to note, this is basically the
+definition of NP, except where we required
+the verification problem AB to B and P. Now we're
+requiring it to be in time t7. And whereas before we required
+the length of w to be bounded by some polynomial of n. Now we're requiring it to be
+bounded by O of T, right? So again, the witness
+could be longer than x, but not so long that the running
+time on these two inputs would exceed that of t. Okay, so with that in mind, we can
+say np is just the union over all possible polynomials
+of n time of that polynomial. Nx has a similar definition. It's n time of two to the
+poly-A then, or in other words, the union overall c of n time
+of two to the end, the sea. And that's contain an
+even bigger class. We can call exp x, which is time
+of two to the two to the poly-A. Then by a similar kind of exhaustive search argument
+that there's only, quote, only exponentially
+many witnesses year. So sorry, only doubly, exponentially many witnesses here. And therefore we need it most doubly exponential time to
+search all of them. And more generally, n
+time of T of n is always contained in deterministic
+time of two to the o of t.

@@ -1,0 +1,510 @@
+Pablo [0:39]: okay any questions about that
+Pablo [0:41]: quiz
+Pablo [0:47]: did you point it correctly there's some ambiguity
+Pablo [0:48]: some of the word
+Pablo [0:51]: there's some good precision in the word
+Pablo [0:51]: ing
+Pablo [1:00]: as usual so what i'm trying to do is guide you towards your most probable interpretation
+Pablo [1:01]: most likely
+Pablo [1:06]: things are there some interpretations that are very odd and rare
+Pablo [1:06]: sure
+Pablo [1:12]: but i want you to get a feel and answer for the most likely
+Pablo [1:17]: when i ask better
+Pablo [1:18]: it depends on context
+Pablo [1:22]: so what did it mean in that
+Pablo [1:28]: 's right
+Pablo [1:34]: so yeah lines of code
+Pablo [1:36]: is not everything
+Pablo [1:41]: any questions
+Pablo [1:47]: we enter in the core
+Pablo [1:48]: of the course
+Pablo [1:49]: which is
+Pablo [1:56]: how do we present things how do we visualize things how do we do basically our q one
+Pablo [1:57]: in your research papers
+Pablo [2:11]: that's the quiz cover the papers
+Pablo [2:16]: so what i do is the papers that i recommend
+Pablo [2:17]: i discuss in the lecture
+Pablo [2:23]: like the last two pages
+Pablo [2:26]: and so i'll continue doing that
+Pablo [2:32]: so the paper i mean the idea is to read the papers and you come to class
+Pablo [2:35]: you do that
+Pablo [2:36]: but that's the idea
+Pablo [2:39]: for those that do good job
+Pablo [2:42]: there's a lot of reading reading the paper is
+Pablo [2:50]: i actually just posted a paper in science which is a very rare sort of so my announcement
+Pablo [2:54]: about it so i'm going to add it to the reading list next week
+Pablo [2:58]: it's kind of mixed with
+Pablo [3:02]: empirical and inferential paper but who codes
+Pablo [3:09]: the clothes we have that's forty percent of new code is distributed by ai
+Pablo [3:13]: what does that mean for us
+Pablo [3:18]: in addition that paper also has and for those of you who have chosen that project may be very important
+Pablo [3:27]: they have a classifier given a line of code or a piece of code tell you whether it's ai or cuna network
+Pablo [3:30]: should be available through
+Pablo [3:31]: that paper
+Pablo [3:41]: fantastic step there's also a series of papers that just came out that the mining software repository conference
+Pablo [3:45]: that are very important for us i'll be adding
+Pablo [3:48]: that because they deal with ai
+Pablo [3:53]: as we're getting close to
+Pablo [3:58]: the science paper i would recommend everybody
+Pablo [3:59]: with
+Pablo [4:04]: you can extrapolate those curves and dis
+Pablo [4:05]: aster
+Pablo [4:12]: let's see how we can generate some of these bots and stuff in our paper
+Pablo [4:23]: and that's where the point is of today we are still doing eda we are doing eda and now we are heat drive under the Cluely
+Pablo [4:23]: right
+Pablo [4:29]: so first of all organizing the data in a spreadsheet during a csv file or whatever you want
+Pablo [4:36]: there's multiple ways of doing it but typically you have at least these two attacks and an unstack
+Pablo [4:40]: data so you can think of stack as for every subject
+Pablo [4:43]: you have multiple edges one for each position
+Pablo [4:49]: put your four in one bridge out of the condition
+Pablo [4:52]: for example before during afterlatch or whatever
+Pablo [5:04]: that presented is unstacked where you're turning the number of categories in the categorical variable into column
+Pablo [5:16]: and if you look at the complexity of these two in terms of space you see that the bottom one is space y we are not duplicating
+Pablo [5:18]: does that make sense
+Pablo [5:21]: what is the advantage of the tough one
+Pablo [5:32]: why am i talking about this
+Pablo [5:35]: why would anybody do the first one
+Pablo [5:42]: so you're doing the second one
+Pablo [5:47]: is anything lost your client something is lost
+Pablo [5:49]: what is lost
+Pablo [6:08]: well this is an artificial example that we made it difficult to see what but imagine we had condition two
+Pablo [6:10]: where everybody just said one
+Pablo [6:11]: entry
+Pablo [6:14]: and
+Pablo [6:15]: that was a few more difficult
+Pablo [6:16]: than to imagine
+Pablo [6:21]: so basically what you're missing in the second one is that before you and after our
+Pablo [6:22]: part of the same
+Pablo [6:23]: condition
+Pablo [6:24]: that you do not know
+Pablo [6:26]: because it's lost
+Pablo [6:34]: so at least you should probably do condition that before completion
+Pablo [6:36]: at least keep in
+Pablo [6:36]: the name
+Pablo [6:43]: but again keeping stuff in the name is not the right thing to do
+Pablo [6:44]: best practices
+Pablo [6:47]: so there are three
+Pablo [6:51]: but also the first one is easy
+Pablo [6:53]: the second one is more difficult
+Pablo [6:56]: to figure out so you're restructuring something
+Pablo [7:09]: so variable salaries we talked about this and then we talked about the four five important things mean median road four tiles
+Pablo [7:18]: so this is what they are meaning the average value media is the middle value because it's the average salary in the us and the
+Pablo [7:22]: media consolidate sixty five dollars
+Pablo [7:23]: already
+Pablo [7:27]: usually higher
+Pablo [7:48]: in addition to the
+Pablo [7:52]: characterizing what you have with average
+Pablo [7:58]: we also have the characterization of variability around the atom
+Pablo [8:03]: now most of us imagine data distribution and trail itself right
+Pablo [8:08]: how many of us can see bimodal
+Pablo [8:19]: especially true when you don't ask the question properly and you start with primordial distribution study two phenomena under the same act
+Pablo [8:25]: i don't know if you've seen the decoders would be elephant plot
+Pablo [8:28]: i don't make you heard about the little prints
+Pablo [8:37]: the kids story whether it's a famous eating exactly like a primary distribution anyway
+Pablo [8:40]: and this is a variability
+Pablo [8:43]: they tell you how red you are and we'll take a look at
+Pablo [8:48]: these around the knee the standard deviation variance and the standard error
+Pablo [8:49]: of
+Pablo [8:53]: the moon which is not the same as standard deviation
+Pablo [8:58]: so here's the problem with statistics
+Pablo [8:59]: descriptive
+Pablo [9:02]: information
+Pablo [9:07]: here's four wonderful little data sets
+Pablo [9:11]: they have two dimensional data xy
+Pablo [9:16]: and they're continuous variables well integers x
+Pablo [9:22]: this is called the anscom project it's a very old example from nineteen seventy
+Pablo [9:23]: two
+Pablo [9:30]: the point here is that the average is the same across the core of data sets
+Pablo [9:40]: x and y the average of the x values of the same as nine the average of the y values the standard deviation
+Pablo [9:46]: they all form the same regression line
+Pablo [9:51]: the correlation between the points is the same
+Pablo [9:54]: based on this
+Pablo [10:02]: you would probably conclude if you just have these algorithm just
+Pablo [10:03]: pretty much
+Pablo [10:04]: the same
+Pablo [10:06]: and yet when you see the plotted
+Pablo [10:13]: when you see the blockage what you see is radically different behavior
+Pablo [10:14]: across the
+Pablo [10:20]: same measure save summarization
+Pablo [10:23]: so of course
+Pablo [10:24]: this isn't
+Pablo [10:28]: for example but it goes to the point
+Pablo [10:29]: of
+Pablo [10:38]: having a summary data itself so we have to always be careful and perform a usual examination
+Pablo [10:42]: there's no substitute for the visual inter
+Pablo [10:42]: action
+Pablo [10:56]: and these things can happen even worse for ai where you have things that look very different
+Pablo [11:04]: that adjustability or vice versa which is even a scarier look the same
+Pablo [11:06]: but are just
+Pablo [11:09]: an example of the latter
+Pablo [11:12]: was the early examples of the
+Pablo [11:13]: tesla driving
+Pablo [11:14]: system
+Pablo [11:19]: where there are changes to one little thing that can say i tell on the sub
+Pablo [11:21]: sign
+Pablo [11:29]: als are high
+Pablo [11:34]: so it's very important to talk about it
+Pablo [11:51]: finally have you heard of the asphalt
+Pablo [11:54]: anybody wants to talk about
+Pablo [12:06]: okay so what is it that you can do better we can look at the whole distribution instead of just four points of summary that
+Pablo [12:09]: we think of distributions
+Pablo [12:15]: as coming in different types but the normal is the most popular one for the gaussian distribution
+Pablo [12:20]: and it arises of independence assumptions
+Pablo [12:30]: a number of other things but basically if you perform enough independent trials
+Pablo [12:38]: it looks like some sort of
+Pablo [12:40]: and they come in different
+Pablo [12:42]: types you don't have to know those names
+Pablo [12:48]: but based on the spread of the data around the read they can be spread out they
+Pablo [12:51]: discuss
+Pablo [12:54]: what is the difference to you
+Pablo [13:03]: if your distribution is more like this versus small like this what does that tell you about your data
+Pablo [13:12]: so the mean would be a better estimate
+Pablo [13:15]: things will not vary much around the
+Pablo [13:16]: me
+Pablo [13:18]: you'll have a very narrow behavior
+Pablo [13:22]: and you'll probably have a very good model if you model your data
+Pablo [13:24]: there's a model
+Pablo [13:25]: that assumes almost
+Pablo [13:27]: how about this here
+Pablo [13:32]: you're not going
+Pablo [13:33]: once the average to represent
+Pablo [13:34]: the whole
+Pablo [13:37]: data so maybe better
+Pablo [13:46]: you can expect if an oven enough to do a little character right
+Pablo [13:47]: by the
+Pablo [13:48]: moment
+Pablo [13:59]: but this is captured by the notion of standard deviation variance by itself around the nucleus market it's not capitalized
+Pablo [14:00]: doesn't
+Pablo [14:03]: have any valuable practice
+Pablo [14:05]: we can calculate it
+Pablo [14:09]: so we can standardize those areas
+Pablo [14:17]: by calculation squared and that one now is comparable across this normal distribution
+Pablo [14:25]: and now we can go the lazier ones getting high standard distribution
+Pablo [14:32]: and that's what you guys said
+Pablo [14:33]: okay
+Pablo [14:47]: and then interpreting now that you have a standard distribution becomes a thing we have a mean and standard distribution we have different these two are mid fifty as the ten
+Pablo [14:50]: so which one is yours
+Pablo [14:53]: which one is the one that's much better
+Pablo [15:05]: look how different a score of fifty five daniel because for a fifty five it's going to lay out the outlier
+Pablo [15:08]: on the second one
+Pablo [15:11]: it's going to be within one standard deviation
+Pablo [15:13]: on the first one
+Pablo [15:14]: so part of the data
+Pablo [15:18]: part of the phenomena on the second one likely out of the phenomena except
+Pablo [15:19]: ional
+Pablo [15:21]: word consideration or exclusion
+Pablo [15:28]: you can do in a war how many of us know about the z score
+Pablo [15:31]: so these four
+Pablo [15:38]: you want to normalize to zero and make everything be unitless this is what you do
+Pablo [15:44]: x you subtract the meant to subtract
+Pablo [15:49]: and if your data is normally distributed then you have these estimates
+Pablo [15:51]: where you know that
+Pablo [15:56]: ninety five percent of your data is within the first two standard deviation
+Pablo [15:58]: that's where the rule of
+Pablo [15:59]: amp
+Pablo [16:01]: close the ninety five
+Pablo [16:12]: milonians use a system
+Pablo [16:16]: that's why we have the sixty seven
+Pablo [16:19]: hours
+Pablo [16:27]: so this is an amazing thing
+Pablo [16:35]: because now the five percent is a five percent that leads to a half percent on each side
+Pablo [16:40]: so you can exclude a half percent on each side and you get ninety five percent of the data
+Pablo [16:46]: it's hunky dory
+Pablo [16:52]: it's not more than maybe you should have
+Pablo [16:58]: questions about this
+Pablo [17:06]: point out also we have two tails and not just one if you're just doing one failed thing adjustment
+Pablo [17:06]: completely
+Pablo [17:12]: the z score is unity
+Pablo [17:21]: many statistical tests
+Pablo [17:25]: that we'll talk about when we get to the hypothesis and infrastructure
+Pablo [17:25]: statistics
+Pablo [17:32]: many of those assume normal but if they do assume normalcy
+Pablo [17:34]: you're warm
+Pablo [17:36]: the data should be
+Pablo [17:41]: well i violate the assumption what will this test
+Pablo [17:47]: so make sure you date is normal
+Pablo [17:49]: you don't just do this for the whole
+Pablo [17:49]: day
+Pablo [17:50]: you have many variable
+Pablo [18:01]: so in practice if you do how the range values
+Pablo [18:04]: even those for sure
+Pablo [18:06]: you check with roc or normality
+Pablo [18:09]: multiple tests show you this one
+Pablo [18:10]: and then
+Pablo [18:13]: you check for how the value
+Pablo [18:24]: so let's talk about the visual display of data
+Pablo [18:26]: we talk about univariate data
+Pablo [18:28]: and also configurable
+Pablo [18:34]: the example data from before the before doing after now the added subject
+Pablo [18:38]: and this now becomes
+Pablo [18:40]: ratio
+Pablo [18:43]: is it rain
+Pablo [18:52]: uous but is it interval or ratio
+Pablo [18:56]: are you varying or are you measured
+Pablo [19:02]: the answer is we don't
+Pablo [19:06]: because we were never told what this is
+Pablo [19:07]: i like it
+Pablo [19:11]: useful your cover
+Pablo [19:12]: very good
+Pablo [19:18]: but the main thing here is precision we don't know what it is
+Pablo [19:29]: how would we visualize unitarian
+Pablo [19:33]: and so here are some main ways to visualize histograms
+Pablo [19:40]: that are leaf quartz we are trying to get those because both are better
+Pablo [19:44]: so let's take a look at those one key and four
+Pablo [19:51]: histograms histograms are a way to summarize the density of our distribution
+Pablo [19:56]: because how many of the items are within a certain range
+Pablo [20:02]: y axis we have a number or percentage on the x axis we have bins
+Pablo [20:05]: and so we are interval
+Pablo [20:07]: you can add one bin
+Pablo [20:10]: which is one rectangle
+Pablo [20:15]: counting everything you can have as many beans as you have different occurrences of data
+Pablo [20:21]: or you can have any intermediate number if you choose two few bins
+Pablo [20:26]: then you have all the data bun
+Pablo [20:30]: ched up together you choose too many bins you have to put it where there will be gaps
+Pablo [20:37]: choosing the right number of things is good not just individualization
+Pablo [20:38]: but for
+Pablo [20:39]: our top
+Pablo [20:44]: in which of these three parts and this is for the three different
+Pablo [20:45]: labels
+Pablo [20:50]: before after which of these can you tell the distribution
+Pablo [20:59]: so
+Pablo [21:02]: maybe choosing experiment
+Pablo [21:06]: somehow the third one shows you
+Pablo [21:09]: this is not just do not want
+Pablo [21:10]: solution
+Pablo [21:11]: you have to experimen
+Pablo [21:18]: t choose more choose less if you're using r over yeah if you're using r how many of you
+Pablo [21:19]: use r
+Pablo [21:24]: if you haven't i really encourage
+Pablo [21:45]: add to your google and start learning modules which tutorial very easy to use because everything and you can just use gpt or use google to tell you what to put functions and what libraries do but it gives you results very quickly
+Pablo [21:50]: so it's particularly good for exploratory data
+Pablo [21:55]: and there's all sorts of stuff
+Pablo [22:03]: r is and so i've linked an r script
+Pablo [22:08]: on today's lectures side
+Pablo [22:15]: and table and you can download them together with data and you can follow the r
+Pablo [22:18]: and i think we'll get to data
+Pablo [22:21]: then on monday
+Pablo [22:25]: just to see how some of these are capital
+Pablo [22:28]: how do we get from data to these elevations
+Pablo [22:44]: histograms and then box plugs boxes any of your clinical traffic they measure
+Pablo [22:50]: themselves through to comparison to green fox if there are multiple
+Pablo [22:52]: distributions
+Pablo [23:00]: so they capture the medium this is the box the middle part is the media they don't really give you the average
+Pablo [23:02]: on them you have to work it separately
+Pablo [23:29]: the box are the lower and upper quartile this length in between the interquartile range and then we have the two extreme points the lowest and the highest of course that could point outside of this because with this two x two point zero five
+Pablo [23:37]: and then any point outside of one point five times these are four pi range is considered an outlier
+Pablo [23:37]: separator
+Pablo [23:48]: and that's it so just by looking at it you can tell immediately once again the middle of the distribution
+Pablo [23:54]: weather distribution skewed one way or another what are the extreme points and what are the outputs
+Pablo [23:57]: all your data at once
+Pablo [24:01]: when you compare across
+Pablo [24:03]: columns
+Pablo [24:09]: for example you get things like this you can tell immediately whether the median retic
+Pablo [24:09]: ulum
+Pablo [24:22]: typically typically if there's overlap between the boxes we don't consider two variables
+Pablo [24:23]: that have
+Pablo [24:24]: different distrib
+Pablo [24:25]: utions
+Pablo [24:32]: one thousand plots are used for
+Pablo [24:38]: visually determining very quickly whether your distributions are normally distributed
+Pablo [24:44]: so in a normally distributed distribution like this for example versus
+Pablo [24:51]: the right you're not quite sure whether
+Pablo [24:57]: you order it
+Pablo [25:05]: respect each other so this is what a normal distribution should look like which is just lined up with
+Pablo [25:12]: diagonal versus using distribution
+Pablo [25:16]: not being aligned at all with a normal distribution
+Pablo [25:18]: but especially in the chaos
+Pablo [25:22]: so you see tail behavior
+Pablo [25:27]: x this is very quick especially in rupaul
+Pablo [25:30]: variable shown
+Pablo [25:31]: in and then you can judge
+Pablo [25:32]: can you use
+Pablo [25:33]: it
+Pablo [25:52]: how to deal with outliers practical talked about is typically people with things outside of these reports range times one point five but you can choose two more times if you want to retain more
+Pablo [26:01]: data in a normal distribution if you go beyond two point seven standard deviations each phase you're really retaining ninety nine point five percent
+Pablo [26:08]: of the data some people take this as zero point five percent as an extreme exclusion
+Pablo [26:14]: so if you go to bio standard deviations now why am i doing
+Pablo [26:16]: that
+Pablo [26:23]: and practically if you're an outlier you can delete it it's a bit crude you can change the outlier
+Pablo [26:26]: so it doesn't mess up your distribution
+Pablo [26:29]: by say it is equal to three times standard deviations
+Pablo [26:34]: and maybe you have too many outliers then you add some noise so it doesn't
+Pablo [26:37]: decide but there's other solutions
+Pablo [26:46]: which at this point maybe we are not so much interested so i would suggest just excluding outliers in the first act unless you know what you
+Pablo [26:46]: 're doing
+Pablo [26:48]: and you need the other
+Pablo [26:48]: price
+Pablo [26:52]: sorry about that
+Pablo [26:54]: but skewed distributions
+Pablo [27:03]: a measure of distribution for skewness will tell you whether most of the data is in the left or to the right
+Pablo [27:08]: of the average or reality
+Pablo [27:14]: which is left skew the right skewed support negative speed to the right
+Pablo [27:18]: you can correct perspective
+Pablo [27:29]: we often do with correct prosecutor by either squaring the distribution more extreme circumstances involve the data
+Pablo [27:33]: if you continue logging the day they basically
+Pablo [27:40]: if you log in the exact it becomes normal then we call the original distribution
+Pablo [27:49]: it's important to understand that there's ways to dealing with low normal distributions
+Pablo [27:54]: again why are we doing this
+Pablo [28:10]: with normal acid so you can use inferential statistics better that depends on distribution most of statistics especially more sophisticated to work with normal dis
+Pablo [28:11]: eases
+Pablo [28:14]: what are some exceptions
+Pablo [28:24]: okay if you find a mistake out of the range fix it outliers
+Pablo [28:35]: let's say you have five variations you have multiple variables
+Pablo [28:36]: in the data
+Pablo [28:47]: so you've examined each variable for mistakes outliers and distributions now they're interested in are there correlations between variables that will affect some of your models
+Pablo [28:55]: if your correlations need two variables or columns of very highly correlated you exclude one
+Pablo [29:02]: hundred percent or higher you don't need to keep them both you reduce the number of variables all around
+Pablo [29:04]: but there's other type of pat
+Pablo [29:05]: terns
+Pablo [29:08]: that are going on so how do they look for those
+Pablo [29:09]: patterns
+Pablo [29:17]: visual displays of biparian data can be of different types depending on what type of variable
+Pablo [29:20]: you have whether you have the vertical or
+Pablo [29:21]: computer
+Pablo [29:25]: example
+Pablo [29:30]: both of your variable
+Pablo [29:31]: then
+Pablo [29:34]: we use cross that you just cross tabulate
+Pablo [29:43]: another version of a cross path is this where you have two t per gram
+Pablo [29:47]: category
+Pablo [29:49]: on
+Pablo [29:50]: hdmx
+Pablo [29:52]: ue
+Pablo [29:53]: the distribution
+Pablo [29:56]: point together jointly
+Pablo [30:01]: how does the point where does the point occur on one dimension
+Pablo [30:02]: versus the other dimens
+Pablo [30:03]: ion
+Pablo [30:08]: and then you get this distribution across the two dimensional
+Pablo [30:15]: and in that distribution does not look like a two d sombrero
+Pablo [30:16]: then
+Pablo [30:18]: output area
+Pablo [30:21]: again
+Pablo [30:22]: even if
+Pablo [30:24]: each individual is normalized
+Pablo [30:35]: and then we get into scatter plot so what do we do about continuous versus
+Pablo [30:43]: continuous but before we get this catacloidical versus continuous then we are in this regime let me show you
+Pablo [30:48]: in this region so if you have categorical before hereinafter
+Pablo [30:52]: we have four different categories
+Pablo [30:56]: here and then each of which has
+Pablo [30:58]: multiple box
+Pablo [31:03]: that
+Pablo [31:05]: means
+Pablo [31:08]: we all know
+Pablo [31:10]: variable
+Pablo [31:13]: x dy in a cartesian coordinate system
+Pablo [31:19]: so interestingly r you can just plug the whole table
+Pablo [31:23]: with pattern web at the end do all possible
+Pablo [31:27]: but why a scatter post important
+Pablo [31:32]: they tell you visually many things
+Pablo [31:36]: including outliers and out of major colleges
+Pablo [31:43]: pat
+Pablo [31:43]: tern
+Pablo [31:47]: so let's say you say is there a trend in this data
+Pablo [31:49]: and you take a look at
+Pablo [31:55]: now you've got some regression
+Pablo [32:01]: what you have to imagine is that
+Pablo [32:09]: there is some underlying phenomenon that behaves linearly but what is that slope and the slope is really the matter
+Pablo [32:10]: that's what you're trying to
+Pablo [32:11]: discover
+Pablo [32:16]: slope is very important so if you have an outlier
+Pablo [32:19]: and if you remove the outlier
+Pablo [32:21]: the slow page very different
+Pablo [32:27]: the outlier may be so heavy it will drag you down this is especially
+Pablo [32:28]: important
+Pablo [32:30]: and this tears
+Pablo [32:45]: always
+Pablo [32:46]: ex
+Pablo [32:48]: amine
+Pablo [33:06]: rs
+Pablo [33:07]: us
+Pablo [33:08]: results
+Pablo [33:09]: there is
+Pablo [33:10]: relations
+Pablo [33:25]: hip
+Pablo [33:28]: so
+Pablo [33:29]: there
+Pablo [33:30]: is
+Pablo [33:31]: emot
+Pablo [33:32]: ion
+Pablo [33:40]: if
+Pablo [33:42]: i would be able
+Pablo [33:43]: to
+Pablo [33:53]: expl
+Pablo [33:54]: ore
+Pablo [33:55]: where
+Pablo [33:56]: as if you
+Pablo [33:58]: are like
+Pablo [34:00]: some
+Pablo [34:03]: work
+Pablo [34:04]: i want you to know
+Pablo [34:05]: that i walk
+Pablo [34:06]: against
+Pablo [34:07]: the last one
+Pablo [34:09]: but
+Pablo [34:09]: because the counsel
+Pablo [34:10]: ing
+Pablo [34:11]: has to be
+Pablo [34:12]: access
+Pablo [34:15]: ed
+Pablo [34:17]: more
+Pablo [34:18]: if
+Pablo [34:19]: you
+Pablo [34:21]: tell
+Pablo [34:22]: you this is actually
+Pablo [34:24]: close
+Pablo [34:30]: now
+Pablo [34:30]: you present
+Pablo [34:31]: the second one
+Pablo [34:32]: because i did not
+Pablo [34:33]: say
+Pablo [34:34]: there's a natural
+Pablo [34:40]: and
+Pablo [34:41]: this
+Pablo [34:42]: indicate that
+Pablo [34:45]: and the
+Pablo [34:46]: growth is
+Pablo [34:49]: why
+Pablo [34:50]: i
+Pablo [35:00]: was
+Pablo [35:01]: able to
+Pablo [35:04]: imag
+Pablo [35:05]: ine if i was with you
+Pablo [35:06]: got the
+Pablo [35:07]: axis
+Pablo [35:08]: to show you
+Pablo [35:10]: access
+Pablo [35:11]: to thirteen
+Pablo [35:11]: and go from thirteen
+Pablo [35:13]: to twenty there is no data
+Pablo [35:18]: so
+Pablo [35:19]: why would not be
+Pablo [35:20]: at one
+Pablo [35:27]: this is
+Pablo [35:28]: the summary
+Pablo [35:29]: of the gather
+Pablo [35:30]: data
+Pablo [35:42]: trans
+Pablo [35:43]: form the dairy
+Pablo [35:43]: coat
+Pablo [35:44]: until you get
+Pablo [35:45]: something
+Pablo [35:45]: more normal
+Pablo [35:47]: so
+Pablo [35:48]: as i said
+Pablo [35:49]: and then you
+Pablo [35:50]: 're ready to start
+Pablo [35:51]: the ce
+Pablo [35:52]: ll
+Pablo [35:58]: any
+Pablo [35:59]: question
+Pablo [36:04]: why
+Pablo [36:05]: is this
+Pablo [36:12]: i
+Pablo [36:16]: hope even so it was valuable but i hope mostly that it's valuable
+Pablo [36:17]: most people
+Pablo [36:20]: because i would be expecting this
+Pablo [36:24]: is estimates physical diet
+Pablo [36:27]: thank you
+Pablo [36:28]: have a good week
+Pablo [36:29]: end

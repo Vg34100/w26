@@ -1,0 +1,86 @@
+So let's step back a bit
+from the sort of MCI details of the arithmetical hierarchy and these various definitions
+of undecidability. And get at. Why were these people
+sort of thinking along these lines when all this stuff was invented back in the 30s Anyway, while they were trying
+to get at, you know, Hilbert's dream of automating
+mathematical reasoning. So in order to talk
+sensibly about that, you need a formal
+way of talking about mathematical reasoning and proofs
+and theorems and so forth. So we've talked a bit about
+this in a previous chapter. We're going to get slightly
+more technical here, but still not to the level of
+technicality class on logic. So we'll say a formal system
+consists of a couple of things, a finite set of axioms. So these are like statements we just assume are true without proof. We saw those nine
+axioms of set theory. Those are statements about sets
+and what rules they have to obey. And then it includes some
+rules of inference, right? So this is something you might
+have learned a long time ago in a very boring dry math class that there's something
+called modus ponens. So very, very simple rules of inference at the level of
+detail we tend not to talk about when we write down
+our proofs like if a is true and the statement
+a implies b is true, then that implies that B is true, right? That's modus ponens. So there's a few other rules of inference and they're
+all like this symbol. And a theorem is a statement that is provable by applying the rules
+of inference to the axioms. And technically you
+may not believe it, but just those nine axioms
+that we wrote down. If you apply these simple rules
+to those axioms in the right way, you can get all the
+mathematical theorems that I've ever been proven. So this isn't how we think about it when we're
+actually writing those proofs. But it is possible to say that
+you don't approve of it there. And it's just applying these rules, starting with axioms until you finally have resulted
+in the state megawatt. So this is how we're
+going to formalize, how we talk about
+mathematical reasoning. And formal systems
+are, or how we do it. Now, formal systems
+aren't all good, right? So we know a couple of
+properties to be true of them. One is that the formal system
+should be consistent and consistent means that no
+contradiction can be proven. And the way we formalize that
+is that for each statement t, at most one of t or the negation
+of t is provable, right? So when you get a contradiction,
+what does it mean? It means you can prove both a
+statement and its negation. And what that means is your
+formal system is no good for resolving which
+statements are true. Because if you can prove goal, it doesn't tell you which one
+of them might actually be true. So it's actually no good. So this is something
+that we want to require a formal system in order for it
+to actually be helpful to us. But it's not the only
+thing that we want. We also would like for
+it to be complete, meaning that all statements
+actually can be resolved by proof. We can formalize that as
+for each statement III, at least one of t are not. T is provable. If neither was provable, then, okay, we don't get a contradiction. Neither does it help us figure
+out whether to use true. So these are two properties
+we would want to be true, the formal system that we use to help us discover mathematical facts. And if it violated
+either one of these, it would not help us with regard to the statements where
+it was in violation. So what we would like as a formal system that's both
+consistent and complete. So for each statement t, exactly
+one of t are not, T is provable. So a consistent and
+complete formal system would fulfill Hilbert's dream, right? All mathematical truth
+can be discovered simply by exploring the proofs that
+are possible in the system. And they can approve
+fear would not be like the kind of thing you're
+doing for your homework. A proof would be just a finite string that's encoding what order to apply rules of inference starting from the axioms in order to get
+your gear their statement. So it's just a systematic
+exploration of strings that encode
+rules of inference. That the statement on
+the end of that string is the theorem that's been proven. So you could just iterate
+over all possible proofs. You know, looking for either a
+proof of t or proof of not T. If the system is
+consistent and complete, you will be guaranteed
+to find one of them. And I say you, I mean
+an algorithm here. This would be the algorithm that can automate
+mathematical reasoning input t. It would search for a proof of t and in parallel would
+search for a proof of not T. And one of them, it would find and it would tell
+you whether T was true or false. Now, there's a little
+technicality here. Technically, we would
+have had to require one more thing called
+soundness, right? So we say a formal system is sound if all the statements you
+can prove are actually true. This is a little bit murky. If you haven't seen a logic before, it kind of sounds like I'm just using synonyms here as though
+they're not synonyms. So it is technically possible
+for you to write down formal systems that are
+consistent but unsound, right? Like maybe everything
+they prove is halts. So again, this would be
+kind of a useless system, something that we never
+prove a contradiction, but it doesn't prove anything true. However, they, you know, if
+everything approved was false, you could just negate
+it to get the answer. But this, this is the kind of
+system that logicians were reasoning about to try to figure out the answer to Hilbert's question.

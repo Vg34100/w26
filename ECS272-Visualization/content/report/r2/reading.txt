@@ -1,0 +1,7 @@
+Read the following paper "The Science of Visual Data Communication: What Works, Franconeri., Psychological Science in the public interest 2021"  [pdf ] (pages 1 -- 15 , stop at the section titled "How to design a perceptually efficient vis")
+
+Write a short summary of the paper (<300 words) and answer the following questions.
+
+    Describe two examples of perceptual illusions that result in the user incorrectly mapping the numerical value to the visual depiction.
+    What are some common visual confusion, illusions, or distortions found in data visualization?
+    What are some techniques for differentiating a set of points or identifying clusters?

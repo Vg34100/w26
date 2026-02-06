@@ -1,0 +1,111 @@
+Ackerman gave this counterexample to the conjecture that the
+primitive recursive functions capture all the intuitively
+computable functions. Because the Ackermann function
+looks intuitively computable, just defined by this
+fairly simple recursion t, It's a huge function, but, but it's a fairly
+simple definition and it's not primitive
+recursive crudely. So one can consider, now I actually don't know a lot about the history of those are
+I don't know if this was developed in
+response to that or not, but, but in any rate, one can consider adding
+a new way to create new functions other than the ways a ladder and
+primitive recursion. And it's technically called Mu recursion if it's actually doesn't look a whole very recursive today. But, but the idea is
+that you have a function on several inputs and you single
+out the last one, call it y. So x is a vector and y
+is just one integer. You can define a new function
+h called mu sub y of f. And what it's doing is
+it's doing a search on the y. And essentially it's defined to be the minimum y that
+makes f x y equal to 0. Right? So new recursive functions are then defined exactly the
+same way as primitive recursion, allowing all these atomic
+sort of functions, composition primitive or recursion. And then this new way to define a new function
+called Mu recursion. Basically saying, oh, you're always allowed to define a new function. That is defined to be
+the minimum value that, that to assign to the last input
+to make the whole function is 0. So this somehow
+corresponds to if you're going to implement this in
+a programming language, if you have f somewhere that
+takes all these inputs, h takes one fewer inputs. So it takes all the x's but
+not the why it starts y at 0. Then while F.dr. Evaluates to
+something other than 0 increments Y, and once it finds a
+way that does this, it returns that one, right? So you can implement
+this fairly easily. So this seems intuitively
+to be something that should be allowed as a
+way to build new functions. But no, such a y may
+not exist, right? Primitive recursion is defined
+so that the recursion sort of always terminates every primitive recursive function you write down. If you can write it down, it is, it has some well-defined
+value on all possible inputs. But you can now write down functions defined with this mu recursion,
+this minimum searcher. And there may be no value of
+y that makes f evaluate to 0. So this, and if so does
+this, why does it exist? That function is
+undefined on the input x. And so mu recursive
+functions may not be total, meaning they may not be
+defined on all inputs. So mu recursive
+functions can be total, but they don't have to be in when they're not there called partial. Partial function is one that's
+not defined on all inputs. So sometimes these are also called the partial recursive functions, given that they, you know, they allowed the
+functions to be partial. And mathematically a function that's
+undefined on a certain input. If you want to think
+about it algorithmically, this is going to correspond to a
+program computing that function. But if you give it an input that is not defined on
+the program won't hold. So, right, so, so
+every Turing machine, every algorithm you can write down, computes some partial function just defined to be the one that's
+only defined when halts, when it halts that, it's defined
+to be whatever it outputs. So we have the various
+classes of, you know, mathematically defined
+functions on the left and then classes of algorithms that
+can compute them on the right. The primitive recursive
+functions are exactly the ones computable by
+bounded loop programs. So these are total, and these programs are guaranteed
+to halt and give an answer. And then way down here there's
+the partial recursive functions and these correspond to what we now know to be intuitively what
+is computable by any algorithm. So any free loop program or in more modern parlance,
+any Python program. Now, there is this class
+in the middle, right? And it turns out it is, It's nontrivially in the middle, which is those recursive functions, meaning those computable functions that are told they're
+defined on every input. So in algorithmic terminology, there are computed by
+programs that always hold. And you might think,
+well, maybe those exact, maybe the set of functions
+they can compute is exactly the primitive
+recursive functions, right? But we're going to show
+no, that's not true. The, the, the bounded
+loop programs here, they're always
+guaranteed to terminate, but they're not strong enough to hit every more general algorithm
+that's guaranteed to terminate. So we'll show that here. And the in modern terminology we would say no total
+programming language, meaning no programming
+language that has the property that all of its
+programs are guaranteed to halt can compute all the total
+recursive functions mean all the functions that
+are computable by some program that just
+happens to always hold. Even though it's written in a
+language where the language doesn't guarantee that
+all the broker, right? So there's kind of a
+crucial difference there. You can write a program in
+Python that always holds. Python itself is not foreseen. All the programs to hold. It is possible to write programs
+in Python that don't called. And so in some sense
+you're just lucky or clever when you
+write one that does. So bloop was a failed attempt to capture all the total
+recursive functions, although computable functions
+that are defined on every input, the Ackermann function,
+the counterexample. It's computable but not by
+any bounded loop program. But the question is, is there a more powerful programming language whose programs always Hall
+just like bounded loop. But that unlike bloop, can actually compute all the
+total recursive function. And we're going to argue
+here the answer is no. And suppose all programs in some
+language or tone, right there, hold on inputs and this is
+enforced by the language just if you can write a syntactically
+valid program in that language, it is guaranteed the whole. Suppose that's the way
+the language works, which none of the languages you typically use like
+Python or C plus, plus behave that way. Okay? So every language, every program you can write
+in that language holds. So the universal function, right? For that language defined to be. Now this isn't necessarily
+an algorithm and just defining a function takes two inputs, a program and that language
+and an input for the program. And it's defined to be whatever
+that program does on that. Now, all programs are well-defined on all inputs because they all hope you have some output. So this thing is well-defined. Read every program you can put air, every input you could put here. This has a well-defined value. So using you as a subroutine, we can define a new program V, right? And these gonna do this diagonalization type
+of thing we've seen before, where V on input P, a program does the following. It runs piano input p.
+It can do that because, you know, you sort of define air. So you can take as input
+a program and run it, which is how you works, and then add one to it, right, by running you a PP. But if he did that, V on input B will be
+undefined, right? So actually that's in some sense, if we assume that you could be implemented in this
+programming language, well then V could be, but V can't be taught to write
+V and V is undefined there. So it's not implementable, but it's perfectly easy to implement if you can
+implement you that. Did you just do this one
+step to use you to run p on its own source code isn't but add
+one when you're done and return. So you cannot be implemented either. Right? So, so the punchline here is that the universal function
+cannot be implemented. And a similar argument shows that
+bloop has no universal program. You can't write a bloop
+interpreter and blue. But in fact, this is true of any program programming language where all the programs
+or guarantee adult.

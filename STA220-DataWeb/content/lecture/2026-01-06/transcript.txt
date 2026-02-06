@@ -1,0 +1,1138 @@
+Pablo [0:47]: it's in the physics and data science building so it's not in a map msp building but it's closed down to the right so it's like
+Pablo [0:55]: i have a teaching assistant
+Pablo [1:11]: you can also find email address and it's office hours from two to three p m in the teaching system office hours they are not
+Pablo [1:15]: so i won't tell you if there are any changes to it
+Pablo [1:21]: just get a new just in case with anything
+Pablo [1:23]: new
+Pablo [1:25]: yes
+Pablo [1:27]: then
+Pablo [1:37]: also make it one obvious thing the lake shouldn't have been recorded but good news i would not want the lecture material
+Pablo [1:39]: s you can find everything
+Pablo [1:41]: run this all again
+Pablo [1:42]: on the road
+Pablo [1:55]: just about piping programming all the time something or maybe
+Pablo [1:57]: you are
+Pablo [1:58]: quicker learning
+Pablo [1:59]: at
+Pablo [2:00]: home also
+Pablo [2:02]: over the next
+Pablo [2:04]: if you
+Pablo [2:06]: find everything on
+Pablo [2:06]: campus
+Pablo [2:15]: so for example here we have two days lecture material just a refresher on some type concepts
+Pablo [2:19]: discussion
+Pablo [2:35]: and all those please make sure all the natures we will use several data sets like data sets of nobel prize winners and so on you can just download them and then you should be able
+Pablo [2:36]: to
+Pablo [2:41]: down
+Pablo [2:41]: load data
+Pablo [2:58]: communicate so the first one as i just showed you i mean obviously pandas for all this stuff electromaterial uploading and so on and so on
+Pablo [3:05]: second thing is if you have questions
+Pablo [3:11]: makes it higher
+Pablo [3:17]: sixty people it's likely that if you have a question one of your colleagues would have the same question
+Pablo [3:25]: so ideally please post your question on piazza and then
+Pablo [3:26]: answ
+Pablo [3:27]: er the question on
+Pablo [3:27]: the outside
+Pablo [3:32]: everyone can see the answer so i mean if it's like frozen with
+Pablo [3:34]: content it cannot depend i don't know
+Pablo [3:38]: what the lectures can just write us in emails
+Pablo [3:46]: but if it's not personal content please just
+Pablo [3:48]: answer
+Pablo [3:49]: every question
+Pablo [4:10]: going back we would try to answer
+Pablo [4:12]: maybe
+Pablo [4:19]: would we be a little bit slower and particularly important
+Pablo [4:22]: because there will be homework on this course
+Pablo [4:24]: and they would like
+Pablo [4:25]: a deadline
+Pablo [4:31]: for assignments we might so in case you have a question
+Pablo [4:31]: that
+Pablo [4:33]: needs
+Pablo [4:34]: to be answered
+Pablo [4:35]: before
+Pablo [4:36]: submitting the
+Pablo [4:37]: offer please don't
+Pablo [4:38]: post
+Pablo [4:40]: this question on friday
+Pablo [4:41]: seven p m
+Pablo [4:44]: because then answer the question saturday
+Pablo [4:45]: is
+Pablo [4:48]: so please allow some time
+Pablo [5:01]: fraction just mention
+Pablo [5:02]: quickly
+Pablo [5:05]: and
+Pablo [5:06]: constructive
+Pablo [5:07]: nothing
+Pablo [5:08]: only applies
+Pablo [5:10]: to our general
+Pablo [5:11]: rule
+Pablo [5:14]: i just want
+Pablo [5:15]: to mention
+Pablo [5:17]: and also if you have a question
+Pablo [5:19]: that you want
+Pablo [5:29]: it's very similar to stack over for what would say please check first whether one of your colleagues came up with the second
+Pablo [5:33]: question of a very similar one then you can follow up
+Pablo [5:34]: questions
+Pablo [5:35]: and also
+Pablo [5:37]: question
+Pablo [5:37]: s
+Pablo [5:38]: and
+Pablo [5:39]: it would be very
+Pablo [5:41]: helpful
+Pablo [5:53]: it can
+Pablo [5:54]: be very hard for us
+Pablo [5:55]: to have a problem
+Pablo [6:25]: specific
+Pablo [6:26]: question
+Pablo [6:27]: or
+Pablo [6:33]: personal
+Pablo [6:34]: content
+Pablo [6:35]: cannot handle
+Pablo [6:37]: it
+Pablo [6:38]: on time
+Pablo [6:39]: first
+Pablo [6:40]: and
+Pablo [6:41]: then you are
+Pablo [6:42]: female
+Pablo [6:43]: or in the office
+Pablo [6:44]: hours
+Pablo [6:45]: but
+Pablo [6:46]: please
+Pablo [6:56]: write
+Pablo [7:06]: a little
+Pablo [7:07]: bit more about
+Pablo [7:09]: organization of the lect
+Pablo [7:10]: ure
+Pablo [7:11]: or
+Pablo [7:14]: something about the presentation part of the lecture
+Pablo [7:14]: at the end
+Pablo [7:15]: and then please
+Pablo [7:16]: write a few more
+Pablo [7:23]: check
+Pablo [7:23]: in
+Pablo [7:23]: particular
+Pablo [7:26]: if you want to discuss specific question
+Pablo [7:28]: s concerning your
+Pablo [7:37]: and then of course
+Pablo [7:42]: it may actually mention this so what we have in general is
+Pablo [7:48]: like degrading several parts
+Pablo [8:12]: and then there will be also presentations so the idea is that you present in the last three lectures
+Pablo [8:17]: that you present the final project to your colleagues
+Pablo [8:22]: so for this
+Pablo [8:23]: both
+Pablo [8:24]: a presentation
+Pablo [8:25]: card
+Pablo [8:26]: will be
+Pablo [8:29]: evaluated
+Pablo [8:30]: and
+Pablo [8:33]: participation
+Pablo [8:46]: in the last lectures
+Pablo [8:56]: is important so when your colleagues move when you call it present you would have three four five minutes
+Pablo [8:57]: discussion
+Pablo [8:58]: for each of the
+Pablo [8:59]: panel projects
+Pablo [9:02]: either
+Pablo [9:08]: extensions or maybe and then
+Pablo [9:21]: assignments
+Pablo [9:31]: project
+Pablo [9:33]: and
+Pablo [9:38]: three over assignments
+Pablo [9:41]: and each of them count
+Pablo [9:47]: like we might now say twenty five
+Pablo [9:50]: but
+Pablo [9:55]: the point is we will count as best two out of three
+Pablo [10:00]: so in particular if you don't submit one of the key home words
+Pablo [10:03]: you are
+Pablo [10:04]: grading
+Pablo [10:04]: just the
+Pablo [10:05]: best
+Pablo [10:06]: time
+Pablo [10:08]: for
+Pablo [10:08]: you
+Pablo [10:09]: and this gives
+Pablo [10:10]: you some
+Pablo [10:11]: freedom either
+Pablo [10:13]: i
+Pablo [10:14]: don't like
+Pablo [10:15]: bobby
+Pablo [10:16]: or
+Pablo [10:17]: mercy
+Pablo [10:18]: and you don't
+Pablo [10:20]: want to submit your homework
+Pablo [10:21]: or
+Pablo [10:22]: you have the other things to do maybe
+Pablo [10:26]: in the final week you may want to
+Pablo [10:27]: focus on
+Pablo [10:28]: approach
+Pablo [10:33]: and not on whatever then of course it entrusts me two out of assignments
+Pablo [10:36]: but of course it would just work
+Pablo [10:38]: three of them
+Pablo [10:41]: out
+Pablo [10:42]: and could be
+Pablo [10:45]: evaluated so you should hopefully get better rate
+Pablo [10:51]: if there is a minor issue
+Pablo [10:52]: or whatever
+Pablo [10:53]: or you
+Pablo [10:57]: i don't know you had some problem to provide
+Pablo [11:01]: my then all these
+Pablo [11:02]: people
+Pablo [11:07]: conservation
+Pablo [11:09]: eval
+Pablo [11:10]: uation
+Pablo [11:11]: of
+Pablo [11:12]: reason
+Pablo [11:20]: to
+Pablo [11:21]: be fairly
+Pablo [11:22]: there will be
+Pablo [11:23]: just
+Pablo [11:24]: check
+Pablo [11:32]: and
+Pablo [11:33]: when you have
+Pablo [11:36]: a sol
+Pablo [11:37]: ution
+Pablo [11:38]: whether
+Pablo [11:39]: this is
+Pablo [11:39]: first
+Pablo [11:55]: you
+Pablo [11:56]: very obvious that the
+Pablo [11:57]: positive
+Pablo [12:02]: people
+Pablo [12:07]: please make sure that you
+Pablo [12:08]: have a very
+Pablo [12:08]: good argument
+Pablo [12:10]: it's just
+Pablo [12:11]: google
+Pablo [12:12]: grade
+Pablo [12:13]: equally
+Pablo [12:14]: i'm just
+Pablo [12:15]: raise one
+Pablo [12:16]: brain
+Pablo [12:18]: so it must be in some sense an obvious mist
+Pablo [12:19]: ake
+Pablo [12:20]: we did
+Pablo [12:21]: in the sense
+Pablo [12:26]: just came out with a completely different code but it gave exactly the same result
+Pablo [12:27]: and
+Pablo [12:28]: you didn't get
+Pablo [12:29]: full credit
+Pablo [12:30]: obvious
+Pablo [12:31]: case
+Pablo [12:32]: and just reach
+Pablo [12:32]: out
+Pablo [12:33]: please
+Pablo [12:35]: but
+Pablo [12:36]: it should be like
+Pablo [12:37]: some obvious
+Pablo [12:37]: mistake
+Pablo [12:42]: and these two in
+Pablo [12:42]: put
+Pablo [12:43]: in first
+Pablo [12:46]: three days so in the sad
+Pablo [12:47]: two hours
+Pablo [12:55]: because we don't want this past week of
+Pablo [12:58]: the absolute
+Pablo [12:59]: data
+Pablo [13:02]: two three days
+Pablo [13:10]: okay let me just quickly
+Pablo [13:10]: see
+Pablo [13:16]: the content of the lecture maybe this is a very important part
+Pablo [13:26]: so at the beginning we will talk about
+Pablo [13:30]: maybe this is good and bad news at the same time
+Pablo [13:34]: on some basic concepts
+Pablo [13:36]: packages like num
+Pablo [13:39]: py and handles and maybe
+Pablo [13:43]: most of you really know numpy
+Pablo [13:51]: handles very well and then it's maybe not something very new for you but after what you will talk about some computation
+Pablo [14:03]: and then
+Pablo [14:04]: my
+Pablo [14:05]: personal favorite
+Pablo [14:06]: public
+Pablo [14:07]: ation
+Pablo [14:08]: web three
+Pablo [14:11]: started very simple
+Pablo [14:12]: cases using an
+Pablo [14:12]: api
+Pablo [14:15]: then web streaking manually
+Pablo [14:16]: by ext
+Pablo [14:17]: racting the data from
+Pablo [14:18]: the html
+Pablo [14:21]: and so on
+Pablo [14:23]: and the last part of
+Pablo [14:26]: the selenium browser
+Pablo [14:30]: pretending you're an actual user
+Pablo [14:35]: just by using code and then browsing the web
+Pablo [14:38]: browser which is only
+Pablo [14:41]: controlled by the pipe
+Pablo [14:42]: is very nice
+Pablo [15:15]: and then there are also more topics visualization first thing is really interactive visualizations and the second parting maps so it's like we have oral platform so maybe you have seen a newspaper up the us elections you see maybe a map of the country and then you see for each of the stages you see like the color red blue
+Pablo [15:18]: and then
+Pablo [15:21]: how they go and you can recycle the same
+Pablo [15:22]: thing of course
+Pablo [15:26]: you more subtle things
+Pablo [15:28]: after learning the visualization
+Pablo [15:37]: yes and then there is also like data processing in the end we will also talk about basics of
+Pablo [15:38]: natural language processing
+Pablo [16:01]: and the idea for your final project is that you show that you can use or that you show your proficiency with out of this fight of
+Pablo [16:10]: classic combination would be just create some data from the web and then you visualize
+Pablo [16:18]: them in the pilot project this was what a lot of students did in the dark sport in twenty fourteen course
+Pablo [16:22]: so i guess this is maybe one very classic combination
+Pablo [16:29]: you can of course use more than two of these topics when you client coach should
+Pablo [16:30]: be
+Pablo [16:32]: at least two out of the five
+Pablo [16:33]: points we have
+Pablo [16:33]: here
+Pablo [16:37]: okay i mean i have
+Pablo [16:38]: talked
+Pablo [16:41]: questions
+Pablo [16:47]: you have questions just raise your hand and
+Pablo [17:00]: talk about the content you can also see how you get an e pass for my person or higher and so on
+Pablo [17:06]: the solar pose you can find a symbol
+Pablo [17:09]: on canvas on piazza and
+Pablo [17:13]: we will find it entries
+Pablo [17:19]: i just have to mention some rules going on
+Pablo [17:24]: wards if you are not submitting a homework at all it will become
+Pablo [17:26]: zero point
+Pablo [17:44]: two it shouldn't be probably once also if you are submitting a not on time i mean if you submitted five minutes later i mean it shouldn't be an issue but if you submit your own
+Pablo [17:45]: one two three
+Pablo [17:45]: days
+Pablo [17:46]: later
+Pablo [18:09]: y
+Pablo [18:09]: es
+Pablo [18:18]: as
+Pablo [18:19]: it says
+Pablo [18:22]: march
+Pablo [18:23]: five and twelve
+Pablo [18:30]: in
+Pablo [18:31]: these lectures
+Pablo [18:45]: as i mentioned and there like the independent of lectures mandatory so for everything until march it's up to you i will upload the lecture material
+Pablo [18:46]: on canvas
+Pablo [18:47]: for
+Pablo [18:48]: the last three lectures
+Pablo [18:53]: and you
+Pablo [18:54]: find what we come back
+Pablo [18:57]: to
+Pablo [18:58]: and we
+Pablo [18:59]: participate
+Pablo [19:05]: in
+Pablo [19:06]: lectures
+Pablo [19:07]: and
+Pablo [19:11]: present
+Pablo [19:11]: ations
+Pablo [19:12]: i think
+Pablo [19:13]: we have
+Pablo [19:16]: students
+Pablo [19:17]: in gold
+Pablo [19:24]: like
+Pablo [19:25]: students
+Pablo [19:29]: and
+Pablo [19:31]: you
+Pablo [19:32]: are not providing your
+Pablo [19:33]: path on your own
+Pablo [19:41]: writing
+Pablo [19:42]: tools of
+Pablo [19:43]: free
+Pablo [19:44]: and then
+Pablo [19:46]: it should be
+Pablo [19:46]: manageable
+Pablo [19:47]: that we can present
+Pablo [19:48]: everything
+Pablo [19:49]: that we make
+Pablo [19:49]: to us
+Pablo [19:50]: and just
+Pablo [19:51]: to make
+Pablo [19:52]: this possible
+Pablo [19:53]: your
+Pablo [19:53]: presentation
+Pablo [19:54]: should take no
+Pablo [19:55]: longer ten minutes
+Pablo [19:57]: please
+Pablo [19:59]: basic principle explain like the
+Pablo [20:00]: main question
+Pablo [20:04]: what is the topic about why your question interesting
+Pablo [20:08]: and then tell us how you got the data
+Pablo [20:12]: present
+Pablo [20:13]: ation
+Pablo [20:14]: just come up
+Pablo [20:15]: with your main
+Pablo [20:16]: message
+Pablo [20:17]: kind of project
+Pablo [20:20]: it can be also just seven minutes or less
+Pablo [20:21]: but
+Pablo [20:24]: it's important that you don't present from it in ten minutes
+Pablo [20:31]: because there would be also like approximately four minute mark discussion
+Pablo [20:32]: of each project
+Pablo [20:36]: so for each project it will be like
+Pablo [20:38]: one minute
+Pablo [20:40]: changing
+Pablo [20:54]: oh yeah i should also mention on these march twelveth of thursday and on these two days the lecture
+Pablo [20:55]: will
+Pablo [20:56]: be
+Pablo [21:01]: like on all of the
+Pablo [21:02]: three
+Pablo [21:09]: there will be no discussion section on march
+Pablo [21:10]: twelve
+Pablo [21:18]: just to let you know please make sure that you can start like from the beginning to
+Pablo [21:44]: this is the pilot project presentation parameter
+Pablo [21:50]: obviously will be created participation is mainly
+Pablo [21:53]: your participation
+Pablo [22:00]: and then we have
+Pablo [22:02]: over
+Pablo [22:10]: it will be like every second week there will be a homework
+Pablo [22:13]: starting in next
+Pablo [22:17]: week on friday i think it will publish the first
+Pablo [22:19]: homework you have two weeks
+Pablo [22:25]: to pj robot or to be more precise these are
+Pablo [22:31]: like the hard data and know exactly that on the generator midnight
+Pablo [22:36]: is the first network deadline and i would try to upload
+Pablo [22:38]: all the google assignments two weeks earlier
+Pablo [22:42]: maybe sometimes
+Pablo [22:43]: eleven twelve
+Pablo [22:44]: days earlier than
+Pablo [22:44]: the airline
+Pablo [22:48]: but in any case have more than ten days
+Pablo [22:49]: finish your homework
+Pablo [22:51]: more than enough time
+Pablo [22:59]: just mention it and the good news is the last homework the airline is on february
+Pablo [23:06]: of course climate project
+Pablo [23:07]: is the middle of
+Pablo [23:12]: march so this means if you have to finish your project
+Pablo [23:14]: if you have presentations and so on
+Pablo [23:22]: there is no it's actually four homeworks as originally
+Pablo [23:24]: enough
+Pablo [23:25]: time finish
+Pablo [23:34]: and the data line of project is again ignite
+Pablo [23:39]: yes and there is like two more deadlines
+Pablo [23:52]: i never keep that in mind just to let you know the first element is carry the twenty first very first and then for us
+Pablo [23:56]: and it's about the group registration elements
+Pablo [24:01]: so the idea is that until this day send an email to them
+Pablo [24:04]: how stay in your group members
+Pablo [24:26]: so each group must send at least one email to that now saying that all the group members also send a copy of email to your colleagues so that they are informed that someone like at least one person of the group send a email us because the problem is
+Pablo [24:31]: if there are students that we have not any
+Pablo [24:33]: group after january
+Pablo [24:35]: twenty
+Pablo [24:35]: third
+Pablo [24:44]: so if you don't write an email
+Pablo [24:46]: there's no i don't know
+Pablo [24:59]: whatever no bad things but just you will be randomly signed and then you have to work together with people and maybe it's easy to know each other
+Pablo [25:04]: from i don't know from other lectures also so maybe you want
+Pablo [25:06]: to
+Pablo [25:08]: before channel
+Pablo [25:27]: and there's also one thing because some students from the last quarter of the lecture two hundred twenty one there's one major change with this group project there are no individual projects allowed
+Pablo [25:31]: because we have too many people and it's just not possible
+Pablo [25:43]: to give everyone the possibility to send their final project individual projects so that groups must be of at least three members
+Pablo [25:53]: i will also upload the grading scheme format guide
+Pablo [26:02]: that you just find some page that use six or ten page long during an abstract introduction
+Pablo [26:04]: and description of the method
+Pablo [26:07]: the results i would open it
+Pablo [26:12]: a summary references and
+Pablo [26:22]: next two weeks so then you have
+Pablo [26:38]: the one idea in the last quarter who just came up with web creating a page listed the restaurant type different restaurants
+Pablo [26:55]: with greetings and the cuisine and they came up with an interactive map and you could just in a sense you say if you say you prefer like korean kitchen or a calvin kitchen or whatever
+Pablo [27:06]: you just click on a button and then it showed you every restaurant they use special and also rating and
+Pablo [27:09]: one
+Pablo [27:10]: example
+Pablo [27:14]: age
+Pablo [27:15]: or
+Pablo [27:17]: similar ideas
+Pablo [27:20]: if creating provided
+Pablo [27:24]: to make
+Pablo [27:25]: it easier
+Pablo [27:38]: it will provide a very specific training scheme in the sense that will be specific questions to be answered like which kind of methods do you use and or in the abstract topic description
+Pablo [27:43]: and this makes it easier for you because you know exactly what to answer
+Pablo [27:49]: kind of or like what kind of request but please make it
+Pablo [28:02]: good for us to trade it so please if you have a specific answer to one of the questions of writing please so if there's like a specific question
+Pablo [28:06]: for example
+Pablo [28:12]: size
+Pablo [28:13]: and how many
+Pablo [28:14]: features do you have
+Pablo [28:16]: most
+Pablo [28:17]: jesus christ
+Pablo [28:18]: always
+Pablo [28:19]: write
+Pablo [28:20]: those
+Pablo [28:22]: just
+Pablo [28:23]: making
+Pablo [28:26]: some
+Pablo [28:27]: basic discuss
+Pablo [28:28]: ions
+Pablo [28:35]: to
+Pablo [28:36]: make the
+Pablo [28:40]: mass
+Pablo [28:41]: submit
+Pablo [28:42]: all the
+Pablo [28:43]: scientific
+Pablo [28:50]: nature
+Pablo [28:56]: of
+Pablo [28:57]: it
+Pablo [28:58]: and
+Pablo [28:59]: this
+Pablo [29:01]: use
+Pablo [29:04]: all the
+Pablo [29:05]: packages
+Pablo [29:06]: that
+Pablo [29:16]: explore
+Pablo [29:21]: and also
+Pablo [29:22]: impact will
+Pablo [29:23]: be very
+Pablo [29:26]: important
+Pablo [30:05]: all
+Pablo [30:05]: the time
+Pablo [30:12]: all
+Pablo [30:13]: the lessons are still
+Pablo [44:07]: very convenient because then you know this is a list and you might think
+Pablo [44:12]: less equals one q but the problem is list is a built in function
+Pablo [44:15]: what you can do is
+Pablo [44:19]: i haven't executed
+Pablo [44:23]: for example by something
+Pablo [44:34]: and then you get like a list containing screen a for you to execute this line here
+Pablo [44:36]: and then
+Pablo [44:41]: it cannot
+Pablo [44:42]: be
+Pablo [44:45]: true
+Pablo [44:46]: for all
+Pablo [44:47]: this
+Pablo [44:48]: you have
+Pablo [44:49]: a package
+Pablo [44:50]: called n
+Pablo [44:52]: p you're not just assign
+Pablo [44:52]: ing the number
+Pablo [44:54]: to a
+Pablo [44:55]: variable called mp
+Pablo [44:56]: first
+Pablo [44:59]: try to use the package afterwards
+Pablo [44:59]: you
+Pablo [45:00]: can't
+Pablo [45:02]: an error message
+Pablo [45:04]: so we have
+Pablo [45:19]: one
+Pablo [45:21]: because
+Pablo [45:25]: we are and there is
+Pablo [45:26]: very convenient
+Pablo [45:36]: one
+Pablo [45:37]: second
+Pablo [45:38]: three
+Pablo [45:39]: or
+Pablo [45:40]: five
+Pablo [45:43]: if you want to add
+Pablo [45:44]: them together
+Pablo [45:47]: then with few basic headings
+Pablo [45:48]: just apply
+Pablo [46:02]: component wise function plus and then of course and then you get just five but you can also do the same for i don't know apply sine function
+Pablo [46:04]: to the one q three
+Pablo [46:10]: and this would just apply sine function to one two and three separately
+Pablo [46:31]: and so the idea is that we have a similar structure structure like an r if you want to apply
+Pablo [46:34]: what
+Pablo [46:35]: is
+Pablo [46:36]: very easy
+Pablo [47:07]: and one
+Pablo [47:08]: of the special
+Pablo [47:09]: things is
+Pablo [47:09]: opt
+Pablo [47:11]: ions must be
+Pablo [47:14]: in our case
+Pablo [47:17]: all integers
+Pablo [47:21]: and for example
+Pablo [47:25]: here i have like an integer i have
+Pablo [47:30]: a load and a string and basically here
+Pablo [47:42]: you pre task all entries through a char like a string because all edges must be of the same height so this means this one is now a string containing the number one
+Pablo [47:51]: and the two is just spring gaining zero point zero and also just tastes same but this is just
+Pablo [47:55]: keep in mind
+Pablo [47:57]: every
+Pablo [47:58]: entry
+Pablo [47:59]: must be same
+Pablo [48:01]: also
+Pablo [48:02]: when
+Pablo [48:07]: everything
+Pablo [48:20]: is also
+Pablo [48:21]: in some sense
+Pablo [48:23]: no
+Pablo [48:24]: body can be
+Pablo [48:26]: honest
+Pablo [48:31]: don't have the
+Pablo [48:32]: period
+Pablo [48:33]: and then also
+Pablo [48:34]: every
+Pablo [48:35]: pitch and every
+Pablo [48:36]: float can be
+Pablo [48:38]: passed which can easily
+Pablo [48:40]: the number one is just
+Pablo [48:49]: so now i always try to use the most general data typ
+Pablo [48:49]: e
+Pablo [48:50]: such that
+Pablo [48:51]: all the
+Pablo [48:52]: angles have the same
+Pablo [48:53]: okay
+Pablo [48:55]: and now
+Pablo [49:01]: let's come to the typical thing we like to do stuff right
+Pablo [49:03]: we have two arrows same length
+Pablo [49:12]: the first number area just the second one loads and then you can see
+Pablo [49:14]: that the new
+Pablo [49:16]: s now
+Pablo [49:21]: different data typ
+Pablo [49:22]: es
+Pablo [49:24]: and also you can
+Pablo [49:25]: add like
+Pablo [49:26]: this
+Pablo [49:36]: plus area so now i'm very generous
+Pablo [49:40]: and you can also oh yes so x
+Pablo [49:47]: let's
+Pablo [49:48]: just print x again
+Pablo [49:54]: so the x is just the numpy array one two three
+Pablo [50:04]: i can also add as you know it in r
+Pablo [50:07]: and d and then go with just applied
+Pablo [50:08]: wise
+Pablo [50:13]: one thing
+Pablo [50:14]: it's all similar to
+Pablo [50:16]: r
+Pablo [50:19]: different
+Pablo [50:20]: link
+Pablo [50:22]: very
+Pablo [50:22]: often
+Pablo [50:29]: and
+Pablo [50:30]: i add another
+Pablo [50:41]: you can
+Pablo [50:41]: also
+Pablo [50:51]: add
+Pablo [50:53]: one more bracket
+Pablo [51:13]: area
+Pablo [51:14]: and
+Pablo [51:15]: you can use that
+Pablo [51:20]: shape the size like size is the number of all entries while shapes
+Pablo [51:29]: length comma just give you like how many
+Pablo [51:30]: dollars
+Pablo [51:32]: may
+Pablo [51:34]: be i just be a little bit quicker
+Pablo [51:35]: now
+Pablo [51:36]: i
+Pablo [51:38]: think it's more important
+Pablo [51:39]: to have
+Pablo [51:47]: also like if
+Pablo [51:50]: you explicitly use
+Pablo [51:51]: np
+Pablo [51:52]: set
+Pablo [51:53]: up
+Pablo [52:09]: range
+Pablo [52:20]: seven
+Pablo [52:24]: once if you want to have back to stat
+Pablo [52:25]: istical your
+Pablo [52:27]: one zero
+Pablo [52:32]: vector but you can also add a second dimension
+Pablo [52:43]: yes then you have now you have a matrix
+Pablo [52:51]: so you can also add more dimensions here
+Pablo [53:05]: mentions here in the new cases
+Them [53:09]: like a
+Them [53:10]: numpy
+Them [53:13]: only one zero there
+Them [53:19]: are just quickly what to mention
+Them [53:25]: it's very useful if you work with matrices
+Pablo [53:34]: up with zeros or as i just showed you
+Pablo [53:36]: can just
+Pablo [53:37]: also
+Pablo [53:38]: use
+Pablo [53:39]: zero
+Pablo [53:45]: months
+Pablo [53:46]: or
+Pablo [53:49]: the i which is equal to
+Them [54:04]: arbit
+Them [54:05]: rary
+Pablo [54:24]: the shape and size command
+Them [54:43]: s
+Them [54:44]: wicked like
+Pablo [55:08]: x
+Pablo [55:09]: is numpy
+Pablo [55:09]: array
+Pablo [55:21]: so each
+Pablo [55:22]: and big
+Pablo [55:24]: gest
+Pablo [55:24]: right
+Pablo [55:25]: you
+Pablo [55:26]: get the numpy
+Pablo [55:27]: and
+Pablo [55:29]: for example
+Pablo [55:41]: you're interest
+Pablo [55:42]: ed in
+Pablo [55:43]: the type of land use
+Pablo [55:44]: the
+Pablo [55:45]: data
+Pablo [56:07]: sometime
+Pablo [56:08]: s you want to
+Pablo [56:09]: buy
+Pablo [56:13]: it
+Pablo [56:24]: and then
+Pablo [56:25]: you get
+Pablo [56:35]: client
+Pablo [56:36]: design
+Pablo [56:49]: you
+Pablo [56:50]: age
+Pablo [56:51]: only
+Pablo [56:52]: be applied
+Pablo [56:53]: to one another
+Pablo [56:54]: but more than
+Pablo [56:58]: you
+Pablo [57:02]: started
+Pablo [57:08]: to always
+Pablo [58:02]: assess
+Pablo [58:09]: typ
+Pablo [58:10]: ical
+Pablo [58:14]: you
+Pablo [58:15]: always have found
+Pablo [58:29]: the
+Pablo [58:29]: range
+Pablo [58:38]: zero
+Pablo [59:00]: one
+Pablo [59:01]: and you
+Pablo [59:02]: stop drying
+Pablo [59:04]: all the
+Pablo [59:05]: elements
+Pablo [59:07]: until
+Pablo [59:08]: one
+Pablo [1:00:01]: a
+Pablo [1:00:02]: equals
+Pablo [1:00:05]: three
+Pablo [1:00:12]: so
+Pablo [1:00:13]: x is also
+Pablo [1:00:14]: the same number
+Pablo [1:00:16]: of
+Pablo [1:00:18]: people
+Pablo [1:00:19]: in the
+Pablo [1:00:20]: sense
+Pablo [1:00:21]: that you
+Pablo [1:00:22]: give us
+Pablo [1:00:23]: what
+Pablo [1:00:24]: you
+Pablo [1:00:25]: just
+Pablo [1:00:26]: and
+Pablo [1:00:27]: the point is
+Pablo [1:00:35]: because
+Pablo [1:00:36]: for the
+Pablo [1:00:37]: eco
+Pablo [1:00:38]: science elevated
+Pablo [1:00:39]: component
+Pablo [1:00:39]: wise
+Pablo [1:00:40]: so it will
+Pablo [1:00:41]: change majorly by
+Pablo [1:00:45]: x
+Pablo [1:00:46]: is now the value
+Pablo [1:00:47]: one
+Pablo [1:00:49]: and
+Pablo [1:00:50]: even say
+Pablo [1:00:51]: is not equal to
+Pablo [1:00:52]: x
+Pablo [1:00:53]: you should be
+Pablo [1:00:53]: answered
+Pablo [1:00:54]: but this is
+Pablo [1:00:55]: not true
+Pablo [1:00:56]: because
+Pablo [1:01:06]: a
+Pablo [1:01:07]: equals x
+Pablo [1:01:09]: then
+Pablo [1:01:11]: something
+Pablo [1:01:15]: for
+Pablo [1:01:16]: a is not equal to
+Pablo [1:01:17]: x because
+Pablo [1:01:18]: then you get just an
+Pablo [1:01:18]: error
+Pablo [1:01:18]: message
+Pablo [1:01:19]: because
+Pablo [1:01:21]: a not equ
+Pablo [1:01:22]: al to x
+Pablo [1:01:23]: consisting of
+Pablo [1:01:24]: array
+Pablo [1:01:25]: with three ele
+Pablo [1:01:26]: ments and
+Pablo [1:01:28]: do not
+Pablo [1:01:29]: know
+Pablo [1:01:32]: whether it should
+Pablo [1:01:37]: apply the first two second
+Pablo [1:01:41]: i think one of the convenient added
+Pablo [1:01:44]: comparison
+Pablo [1:01:46]: it will
+Pablo [1:01:47]: be always
+Pablo [1:01:52]: if you want to check right then
+Pablo [1:01:54]: if you write a
+Pablo [1:01:55]: equals a
+Pablo [1:02:03]: is
+Pablo [1:02:04]: x
+Pablo [1:02:05]: then it fals
+Pablo [1:02:07]: e because it is not a bank
+Pablo [1:02:08]: of the equal
+Pablo [1:02:10]: but
+Pablo [1:02:13]: still the twenty second one is one
+Pablo [1:02:13]: l so you
+Pablo [1:02:15]: divide
+Pablo [1:02:16]: x
+Pablo [1:02:21]: this morning
+Pablo [1:02:28]: can also slide
+Pablo [1:02:33]: you can also do some slicing in the set
+Pablo [1:02:37]: you can
+Pablo [1:02:38]: just
+Pablo [1:02:44]: get all the values that are divisible by three you notice just motor
+Pablo [1:02:49]: load if you divide x by and if the remainder is zero
+Pablo [1:02:53]: it should be the last element
+Pablo [1:02:53]: yes
+Pablo [1:03:15]: if
+Pablo [1:03:16]: you constant area
+Pablo [1:03:17]: with
+Pablo [1:03:18]: only
+Pablo [1:03:19]: two percent
+Pablo [1:03:20]: area with
+Pablo [1:03:21]: only one element
+Pablo [1:03:23]: but still this area
+Pablo [1:03:25]: it's a numpy
+Pablo [1:03:25]: array
+Pablo [1:03:29]: make sure that
+Pablo [1:03:31]: you
+Pablo [1:03:32]: prove
+Pablo [1:03:42]: like matrices multiment
+Pablo [1:03:46]: two dimensional object
+Pablo [1:03:47]: you can
+Pablo [1:03:52]: combine the slice as usual with the pollen it is zero this would
+Pablo [1:03:53]: just
+Pablo [1:03:55]: column
+Pablo [1:03:56]: of
+Pablo [1:04:11]: your teacher angel
+Pablo [1:04:56]: off
+Pablo [1:05:20]: so
+Pablo [1:05:21]: if you want to talk about
+Pablo [1:05:35]: n
+Pablo [1:05:35]: bc
+Pablo [1:05:37]: we transpose
+Pablo [1:05:39]: the
+Pablo [1:05:48]: rolls
+Pablo [1:05:49]: into
+Pablo [1:06:00]: ok
+Pablo [1:06:00]: ay
+Pablo [1:06:01]: you
+Pablo [1:06:02]: can use the
+Pablo [1:06:03]: algebra
+Pablo [1:06:04]: random number gener
+Pablo [1:06:05]: ation
+Pablo [1:06:06]: maybe this is all spirit
+Pablo [1:06:07]: element
+Pablo [1:06:08]: ary statistics
+Pablo [1:06:09]: and so on
+Pablo [1:06:10]: but
+Pablo [1:06:11]: what if
+Pablo [1:06:15]: it will be with data sets the most convenient thing
+Pablo [1:06:16]: could be
+Pablo [1:06:17]: used
+Pablo [1:06:18]: handles
+Pablo [1:06:31]: as
+Pablo [1:06:32]: well
+Pablo [1:06:33]: first of course
+Pablo [1:06:37]: please make sure that you install pandas to be
+Pablo [1:06:47]: and the main idea is that
+Pablo [1:07:01]: you have anders has like a data frame and a data frame is consisting of pandas zero select the columns and the series and this is very similar to numpy array but it comes with one
+Pablo [1:07:11]: extension has the ease in the sense like a dictionary and other series has actually called an index but something like how
+Pablo [1:07:14]: you can access the specific elements
+Pablo [1:07:27]: you can create like a pandas here pd series one through three and then you get the depender series
+Pablo [1:07:30]: also consisting like object one to three
+Pablo [1:07:33]: and because it happens best by the index
+Pablo [1:07:38]: like the people index of the series is just zero one two and so on
+Pablo [1:07:39]: but you can
+Pablo [1:07:41]: always add an index
+Pablo [1:07:49]: okay so what you
+Pablo [1:07:51]: could for
+Pablo [1:07:51]: example
+Pablo [1:07:53]: relay
+Pablo [1:07:54]: in the index
+Pablo [1:07:55]: letter number one
+Pablo [1:07:57]: but you
+Pablo [1:07:58]: can ultimately
+Pablo [1:07:59]: more completely
+Pablo [1:08:01]: come up with a new handle
+Pablo [1:08:05]: series and you can just find an image from
+Pablo [1:08:10]: and now what is the yeast what we have
+Pablo [1:08:12]: this piece or this
+Pablo [1:08:15]: three ideas typically
+Pablo [1:08:19]: so assume i have like seven vectors
+Pablo [1:08:22]: like tenders
+Pablo [1:08:24]: serious
+Pablo [1:08:27]: with your home work
+Pablo [1:08:27]: rate
+Pablo [1:08:29]: so
+Pablo [1:08:37]: you have like students
+Pablo [1:08:37]: one
+Pablo [1:08:39]: i don't know fifteen
+Pablo [1:08:40]: points
+Pablo [1:08:45]: and
+Pablo [1:08:46]: one
+Pablo [1:08:49]: hundred
+Pablo [1:08:53]: and then i have another series
+Pablo [1:08:59]: and it's like from your final project
+Pablo [1:09:09]: and unfortunately i have created the final project starting with the number one
+Pablo [1:09:11]: so maybe
+Pablo [1:09:13]: in the
+Pablo [1:09:21]: final project number one the most like student number three did this project one and number four
+Pablo [1:09:24]: in the same project so they got
+Pablo [1:09:29]: student number one did another project and
+Pablo [1:09:30]: got
+Pablo [1:09:46]: so now the idea is the two data sets like endless years and what i would like to do is just to add points up so i want just to add a couple points and kind of project points get on plan three
+Pablo [1:09:49]: so what i can just write is
+Pablo [1:09:53]: called
+Pablo [1:09:54]: time and
+Pablo [1:09:55]: just
+Pablo [1:09:56]: by
+Pablo [1:09:57]: working class manipulation
+Pablo [1:10:11]: because
+Pablo [1:10:12]: they
+Pablo [1:10:20]: number one
+Pablo [1:10:37]: just
+Pablo [1:10:38]: use
+Pablo [1:10:42]: my
+Pablo [1:10:47]: stage
+Pablo [1:10:48]: if
+Pablo [1:10:49]: you use data
+Pablo [1:10:51]: you
+Pablo [1:10:52]: will use specific
+Pablo [1:10:53]: colors for the
+Pablo [1:10:56]: always
+Pablo [1:11:06]: and the
+Pablo [1:11:08]: reason why these words
+Pablo [1:11:09]: is
+Pablo [1:11:11]: different
+Pablo [1:11:11]: ordering
+Pablo [1:11:13]: you just
+Pablo [1:11:14]: try to combine
+Pablo [1:11:15]: the correct
+Pablo [1:11:15]: uses
+Pablo [1:11:16]: and then just
+Pablo [1:11:17]: add everything
+Pablo [1:11:20]: ind
+Pablo [1:11:20]: ex
+Pablo [1:11:22]: it's just
+Pablo [1:11:25]: there are of course pitfall
+Pablo [1:11:25]: s
+Pablo [1:11:27]: so if
+Pablo [1:11:29]: you have series
+Pablo [1:11:30]: consisting of like if the index
+Pablo [1:11:31]: is three two
+Pablo [1:11:32]: one
+Pablo [1:11:34]: and now i could
+Pablo [1:11:35]: say
+Pablo [1:11:37]: if i want to access like the second
+Pablo [1:11:48]: why
+Pablo [1:11:49]: is one
+Pablo [1:11:50]: but
+Pablo [1:11:51]: the problem is
+Pablo [1:11:52]: given
+Pablo [1:11:56]: the
+Pablo [1:11:57]: number one
+Pablo [1:11:58]: and the index
+Pablo [1:11:59]: number one
+Pablo [1:12:01]: whenever
+Pablo [1:12:02]: you're using an ind
+Pablo [1:12:02]: ex
+Pablo [1:12:03]: please make sure
+Pablo [1:12:04]: it
+Pablo [1:12:05]: will first try
+Pablo [1:12:07]: it
+Pablo [1:12:08]: says
+Pablo [1:12:09]: the ele
+Pablo [1:12:10]: ment
+Pablo [1:12:12]: so
+Pablo [1:12:14]: this is like in some sense
+Pablo [1:12:17]: only
+Pablo [1:12:17]: practice
+Pablo [1:12:20]: because
+Pablo [1:12:21]: here
+Pablo [1:12:22]: it's not
+Pablo [1:12:23]: obvious what
+Pablo [1:12:24]: you need
+Pablo [1:12:25]: because
+Pablo [1:12:26]: we would change the
+Pablo [1:12:26]: index
+Pablo [1:12:28]: here to one as
+Pablo [1:12:29]: x
+Pablo [1:12:31]: then we get
+Pablo [1:12:31]: one
+Pablo [1:12:34]: so
+Pablo [1:12:35]: what would be better
+Pablo [1:12:36]: would be
+Pablo [1:12:43]: accessing an index one
+Pablo [1:12:44]: then it's
+Pablo [1:12:45]: one like
+Pablo [1:12:47]: the n with the index one
+Pablo [1:12:54]: and if you want to have like really the second entry you write an i log here
+Pablo [1:12:55]: so this
+Pablo [1:12:56]: really needs
+Pablo [1:13:05]: and then
+Pablo [1:13:06]: you can
+Pablo [1:13:09]: always
+Pablo [1:13:10]: using
+Pablo [1:13:13]: if you
+Pablo [1:13:15]: test like
+Pablo [1:13:16]: some specific
+Pablo [1:13:18]: entry either use block
+Pablo [1:13:19]: or ilo
+Pablo [1:13:21]: and you can
+Pablo [1:13:26]: also upload this lecture material
+Pablo [1:13:28]: just
+Pablo [1:13:29]: comment here
+Pablo [1:13:56]: whatever also the same applies to data frames you can also put data frames use
+Pablo [1:14:00]: either a lot if you want to use
+Pablo [1:14:07]: or i log if you want to assess really like the h number
+Pablo [1:14:15]: one
+Pablo [1:14:17]: for example
+Pablo [1:14:30]: first
+Pablo [1:14:31]: and reliable
+Pablo [1:14:44]: and then
+Pablo [1:14:47]: something's very convenient to have for example
+Pablo [1:14:51]: at the csu abc
+Pablo [1:14:55]: you can use all the subset thing with like
+Pablo [1:14:56]: x
+Pablo [1:15:07]: because
+Pablo [1:15:08]: there are no
+Pablo [1:15:09]: elements
+Pablo [1:15:25]: should
+Pablo [1:15:26]: always be in
+Pablo [1:15:27]: nature unfortun
+Pablo [1:15:28]: ately
+Pablo [1:15:29]: you don't
+Pablo [1:15:30]: always get
+Pablo [1:15:46]: index
+Pablo [1:15:47]: a at the end
+Pablo [1:15:50]: and
+Pablo [1:15:56]: then i want to access all the values between c and a here there is no error message
+Pablo [1:16:01]: because it somehow obviously you also want to use the
+Pablo [1:16:02]: last
+Pablo [1:16:03]: a
+Pablo [1:16:03]: but
+Pablo [1:16:11]: you will easily run so if you have any kind of series
+Pablo [1:16:21]: and then you ask for all the entities c and a and then it's not clear for interpret the way that you want to access only these values
+Pablo [1:16:26]: or whether you want to access all the value
+Pablo [1:16:38]: and if you would rem
+Pablo [1:16:39]: ove this per entry here
+Pablo [1:16:40]: then it would give
+Pablo [1:16:43]: you no error message so this is somewhat
+Pablo [1:16:45]: very unlucky
+Pablo [1:16:48]: because you should never
+Pablo [1:16:49]: get a message
+Pablo [1:16:50]: you just
+Pablo [1:16:51]: add
+Them [1:17:05]: your
+Them [1:17:06]: css are always
+Them [1:17:06]: unique
+Them [1:17:06]: otherwise
+Them [1:17:07]: you can
+Them [1:17:13]: oh
+Them [1:17:13]: yeah
+Them [1:17:15]: i just
+Them [1:17:20]: wrote you can access your value square brackets
+Them [1:17:26]: but it's good coding practice use either the ilog or position
+Them [1:17:31]: and then there
+Them [1:17:32]: is
+Them [1:17:42]: for example for slicing
+Them [1:17:44]: low bias
+Them [1:17:46]: so let me just
+Them [1:17:48]: if
+Them [1:17:56]: data frames that i will just go quickly over this and see where it
+Them [1:17:57]: will help
+Pablo [1:18:11]: so this is like really the thing we are interested what we would use in the next lectures all the time will be append this data frame
+Pablo [1:18:23]: and a state of grade is consisting of rows and columns it's like a matrix in some sense here you always specify like the column name that you specify like the entries
+Pablo [1:18:27]: and you can see here we have like a data frame
+Pablo [1:18:29]: called x and y
+Pablo [1:18:30]: you can
+Pablo [1:18:32]: transpose it and so on
+Pablo [1:18:39]: but here it gets a little bit more tricky if you want to set
+Pablo [1:18:43]: up
+Pablo [1:18:48]: i got zero
+Pablo [1:18:52]: this would give me like
+Pablo [1:18:53]: first
+Pablo [1:19:03]: i would just write the h zero it gives me exactly the same
+Pablo [1:19:05]: but the point is
+Pablo [1:19:07]: if we write for example
+Pablo [1:19:15]: then i should get an error message because it actually
+Pablo [1:19:23]: context
+Pablo [1:19:24]: cumb
+Pablo [1:19:25]: ersome
+Pablo [1:19:32]: so
+Pablo [1:19:33]: the point is
+Pablo [1:19:39]: you just use standard
+Pablo [1:19:40]: record
+Pablo [1:19:41]: so this is
+Pablo [1:19:42]: how you access
+Pablo [1:19:43]: ultimately
+Pablo [1:19:44]: in
+Pablo [1:19:46]: contrast
+Pablo [1:19:49]: again
+Pablo [1:20:00]: however
+Pablo [1:20:01]: there's
+Pablo [1:20:02]: one station
+Pablo [1:20:07]: always
+Pablo [1:20:10]: actually
+Pablo [1:20:21]: last
+Pablo [1:20:22]: one
+Pablo [1:20:23]: now it
+Pablo [1:20:25]: will return
+Pablo [1:20:25]: lord wherever i have
+Pablo [1:20:26]: like a subset
+Pablo [1:20:27]: in the times
+Pablo [1:20:34]: that i do use slicing will be applied row wise you can just have one entry like
+Pablo [1:20:36]: an x it will
+Pablo [1:20:39]: be a five column wise this is a little bit confusing
+Pablo [1:20:40]: because
+Pablo [1:20:43]: now here it's reapplied
+Pablo [1:20:46]: row wise this one is clockwise and i have like the same code
+Pablo [1:20:57]: on the first slide would say this is not ideal because sometimes it's robot sometimes it's column right but it makes sense in application
+Pablo [1:20:58]: application
+Pablo [1:21:01]: you say you're maybe interested in
+Pablo [1:21:07]: if you have like a data frame where you find projects and almost you want to have
+Pablo [1:21:10]: access to values for your own work
+Pablo [1:21:12]: you would write something like here
+Pablo [1:22:03]: it should
+Pablo [1:22:04]: be
+Pablo [1:22:05]: because
+Pablo [1:22:11]: all these conditions will always be applied to always to your entries
+Pablo [1:22:12]: like
+Pablo [1:22:13]: students
+Pablo [1:22:16]: and if you just want to access one
+Pablo [1:22:19]: in the future like a homework that
+Pablo [1:22:20]: you can
+Pablo [1:22:24]: have
+Pablo [1:22:26]: cons
+Pablo [1:22:27]: ists of
+Pablo [1:23:24]: like
+Pablo [1:23:27]: oh yeah
+Pablo [1:23:28]: one
+Pablo [1:23:29]: maybe
+Pablo [1:23:31]: what
+Pablo [1:23:31]: ever
+Pablo [1:23:36]: yes
+Pablo [1:23:45]: like
+Pablo [1:23:46]: solution for the
+Pablo [1:23:47]: positive actually
+Pablo [1:23:59]: if you want
+Pablo [1:24:00]: to
+Pablo [1:24:01]: find
+Pablo [1:24:02]: like this
+Pablo [1:24:04]: so in practice it's very convenient
+Pablo [1:24:07]: but it can be
+Pablo [1:24:08]: sometimes cumbersome because
+Pablo [1:24:09]: you have always to think
+Pablo [1:24:10]: whether
+Pablo [1:24:11]: how relative
+Pablo [1:24:12]: or wise and
+Pablo [1:24:13]: column wise
+Pablo [1:24:20]: i
+Pablo [1:24:21]: have some
+Pablo [1:24:22]: interest
+Pablo [1:24:23]: oh yeah
+Pablo [1:24:24]: here you can also find
+Pablo [1:24:25]: this what i just said
+Pablo [1:24:46]: maybe
+Pablo [1:24:47]: i will
+Pablo [1:24:48]: use ten to fifteen
+Pablo [1:24:48]: minutes
+Pablo [1:24:49]: of the next
+Pablo [1:24:50]: lecture
+Pablo [1:24:51]: fin
+Pablo [1:24:52]: ish
+Pablo [1:24:57]: missing data some specific
+Pablo [1:24:57]: things
+Pablo [1:24:59]: and maybe
+Pablo [1:25:03]: applying how to this data i will
+Pablo [1:25:04]: just add some things
+Pablo [1:25:05]: in the next
+Pablo [1:25:05]: lecture
+Pablo [1:25:06]: but

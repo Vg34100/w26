@@ -1,0 +1,33 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip}
+
+\title{ECS272 Reading Report 5}
+\author{Pablo Rodriguez}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Paper: Mapping Color to Meaning in Colormap Data Visualizations}
+
+\subsection*{Summary}
+
+This paper studies how people interpret colormaps and whether the background color changes what feels like the correct mapping. The authors say people do not just read the legend. They also bring their own expectations about what colors mean. The study focuses on three possible biases. Dark is more means people think darker colors represent larger quantities. Contrast is more means whatever color stands out most from the background is seen as larger. Opaque is more means the more opaque looking color is seen as larger, but only when the colormap looks like it varies in opacity.
+
+They ran experiments where participants judged which side of a colormap had more alien animal sightings. The legend sometimes said dark is more and sometimes light is more, and the background was black or white. The key result is that background only mattered when the colormap looked like it varied in opacity. When there was no apparent opacity variation, people showed a strong dark is more bias regardless of background. When opacity variation seemed present, an opaque is more bias appeared. On white backgrounds that bias lines up with dark is more, but on black backgrounds it conflicts and can weaken or reverse the dark is more effect. I think the main takeaway is that designers should use darker for larger values if they want stable interpretations across backgrounds, and avoid colormaps that look like transparency changes.
+
+\subsection*{Question 1: Explain each of the three types of biases the paper discusses and provide an example.}
+
+\textbf{Dark is more.} People assume darker colors mean larger quantities. For example, on a rainfall map, darker blue would look like more rain.
+
+\textbf{Contrast is more.} People assume the color that contrasts more with the background is larger. On a white background, dark colors pop more, so dark is more. On a black background, light colors pop more, so light is more.
+
+\textbf{Opaque is more.} People assume more opaque looking colors mean larger quantities, but only when the scale looks like it varies in opacity. For example, if a scale blends a strong blue into white on a white background, the blue can look like an opaque layer, so people read it as larger.
+
+\subsection*{Question 2: In the first experiment did the background have different effects depending on the color scale? Explain how the biases were affected, if at all.}
+
+Yes. The background mattered only when the color scale appeared to vary in opacity. For scales like Autumn and Hot, the background did not change the result, and people showed a dark is more bias on both white and black. For Blue, the dark is more bias was still there but weaker on black, which suggests a mild opaque is more effect. For Gray, the background effect was strong. On white, dark is more was strong. On black, it weakened or even flipped. That fits the idea that the opaque is more bias can cancel out dark is more when the background is dark.
+
+\end{document}

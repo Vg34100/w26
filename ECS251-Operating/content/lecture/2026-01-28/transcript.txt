@@ -1,0 +1,564 @@
+Pablo [2:08]: student led presentation
+Pablo [2:24]: hi everyone
+Pablo [2:28]: so this is a big rhythm
+Pablo [2:29]: today
+Pablo [2:36]: so we're talking about the ninix corporate system
+Pablo [2:47]: we're and ideally for the next scheduler
+Pablo [2:57]: however in reality that's not what we're wasting at the time
+Pablo [3:04]: and while we can add very short period of time to violate markets for necessary actions
+Pablo [3:13]: and the paper the author of this paper actually shows the liquid scheduler can live
+Pablo [3:14]: course
+Pablo [3:15]: to idle
+Pablo [3:16]: for long period of time
+Pablo [3:19]: while having basic graphs
+Pablo [3:24]: and the cost of
+Pablo [3:27]: india was
+Pablo [3:28]: intentional
+Pablo [3:34]: and it actually caused either he doesn't bug inside the negative or
+Pablo [3:41]: the root cause is from the increasing complexity of the scheduler activities
+Pablo [3:42]: in the
+Pablo [3:43]: order multiple
+Pablo [3:48]: era and the problem comes from several
+Pablo [3:53]: manufact cash coherency cost and discrimination
+Pablo [3:57]: so why do we care about this
+Pablo [4:07]: and the impact of these wasted cpu resources can directly cause performance degradation in your system
+Pablo [4:18]: it can reach thirty to twenty four percent for most you can even reach temperature and thirty eight
+Pablo [4:26]: in these corner cases largely from the parallel and synchronization
+Pablo [4:27]: heavy applications
+Pablo [4:40]: and where the title force can delay the cost cascading source for the system and these bots are very hard
+Pablo [4:41]: to detect
+Pablo [4:56]: number one is they do not actually crash the system it's not violate any safety properties and second they happens very fast that is very hard for monitoring tools to detect
+Pablo [5:04]: although accumulate here accumulated delay cause significant consequences
+Pablo [5:06]: for the total rush
+Pablo [5:14]: this other research community also realized this problem and they have tried out different solutions to it
+Pablo [5:27]: the first is they use performance regression testing and assertion based method however for this type of solutions they do not distinguish
+Pablo [5:39]: the short term and long term violation of the work conserving principle because the short term one is actually acceptable it is the long term one that's problematic
+Pablo [5:52]: and we also have tried out preventive spools but as i said before they do not actually violate the safety of these economic ratio systems so these tools are not applicable here
+Pablo [5:55]: and those of you are traditional checking tool
+Pablo [6:05]: s but these tools generate a huge amount of data a lot of noises and they do not provide the mechanism method to locate
+Pablo [6:11]: the direct body section of the traces making identified bugs very hard for the developers
+Pablo [6:16]: next we are going to talk about the caf policies
+Pablo [6:24]: so before we look at what the bugs were in the linux curriculum let's first try to understand how scheduler works
+Pablo [7:26]: so linux uses something called as cfs which is completely bare scheduler to approximate proportional share schedule so what it ideally does is so the cpu cycles are divided among the threads and based on the threads weight so threads weight is nothing but a thread priority so higher the priority the higher the chances of the threat being so as we saw in the last lecture so each cpu has its own run queue it's not possible to have one global run queue and the reasons which we already saw previous lecture so every cpu has its own run queue the problem with that is let's say mcq zero has one low priority thread and cpu two has three high priority threads so ideally we are giving more priority to the low priority threat because at the same time as a high priority again a low priority is being so we want to we want the higher
+Pablo [7:41]: issue is load balance is periodically it runs a load balancing algorithm
+Pablo [7:59]: so load balancing is nothing but you just check which course or mid cpus are busy and try to make or try to steal the load from the bcs cpu to the idle cpu and make every
+Pablo [8:04]: sound symbol i think just look at each of the words
+Pablo [8:07]: but ideally it's not that easy
+Pablo [8:24]: think about capital and the non reform will be accessed because if you're studying from node one to x and node a all the caches are stored in node one you are basically rewriting the entire cach
+Pablo [8:34]: e so it's obviously expensive to run the load balancing advisory because to rank a load balancing algorithm again you have to decide which cpu to run it
+Pablo [8:42]: on so you have to find an idle cpu that cpu where should it look for the residual or
+Pablo [8:49]: idle and then it has to transfer so all this it's a difficult process
+Pablo [8:55]: also the load balancing is not run that often so it's quite periodical
+Pablo [9:02]: and when as soon as the system detects any idle cpu it reverse and emergency load balancing
+Pablo [9:05]: so till that point load balancing is not even triggered
+Pablo [9:43]: so now how linux decides where to balance this code so before that let's quickly understand the architecture of what the paper used to try out the experiments so here you can see the architecture of so all the small the gray colored ones are the individual cpu of the individual course next so the once highlighted in red colors are the logical groups simultaneous threading or smp scheduling group which is the first hierarchy level where the cpu core was scheduled would be scheduled
+Pablo [10:27]: next is the green box which is like the combination of a force which is a newman node and the combination of three newman nodes that's the blue box which are like one away from the first cpu so that's the next hierarchy level and the last hierarchy level you have the entire system you can reach the last node in two hops so that's how the architecture is so now this looks like this is the actual algorithm which is used for the load balancing so each cpu independently runs this load balancing algorithm but only one designated cpu actually tries to do the load balancing stuff
+Pablo [10:35]: so load balancing happens for scheduling domain so all the domains which we saw in the previous slide it happens in all the study domains
+Pablo [10:42]: so it starts from the lowest point can you domain to the largest possible
+Pablo [11:08]: so how does it tries to compute the load is it does not check what is the highest load or what is the lowest load for each particular cpu it calculates an average load of that two so if i am busy in my group and my other members in my group are idle the average of a group is still higher
+Pablo [11:27]: right so what happens is that let's say i am the cpu i'm trying to schedule something or i'm trying to do the words and stuff so i compare my load with the average load of the other two so if my load is less as compared to their load then i try to change the work from them
+Pablo [11:30]: else i will not do the load balancing
+Pablo [11:53]: so you might already have started to see where the bugs start to take so this is how actually the works and this leaves us with the yeah so getting into some of the efficiencies the first bug that was found was the group imbalance bug and so this was looking at a program
+Pablo [12:28]: that was like executing the compilation of a kernel with sixty four threads and then also running to our processes with one kernel each and so they realized that the scheduler was not balancing the load because of the complex load tracking metric so because the load is a combination of weights and how much cpu it needs and then using auto groups the thread load is divided by the number of threads in the parent group and so for the make process at sixty four threads it has a load of sixty four the load is sixty four times smaller than a thread in the single threaded r process
+Pablo [12:35]: and then the other reason that it is not balancing correctly is because of and so when a core tends to see a work from another node
+Pablo [12:39]: it will only go up to average
+Pablo [12:43]: explained before the average load is greater than of its own
+Pablo [12:44]: otherwise
+Pablo [13:09]: group
+Pablo [13:11]: is
+Pablo [13:12]: the
+Pablo [13:13]: first group has
+Pablo [13:14]: all four
+Pablo [13:15]: that is less
+Pablo [13:16]: limited all of the
+Pablo [13:17]: boards in the other group
+Pablo [13:17]: so there's like first
+Pablo [13:19]: request to go from the second
+Pablo [13:19]: group this ensure
+Pablo [13:21]: s that the order
+Pablo [13:21]: and the second
+Pablo [13:22]: group remains
+Pablo [13:23]: overloaded
+Pablo [13:24]: by corner
+Pablo [13:26]: and then
+Pablo [13:27]: this also works
+Pablo [13:30]: and so
+Pablo [13:31]: on this change
+Pablo [13:32]: they saw
+Pablo [13:33]: thirteen
+Pablo [13:34]: percent decreasing
+Pablo [13:35]: times
+Pablo [13:36]: increase
+Pablo [13:37]: in the patient
+Pablo [13:38]: heart
+Pablo [13:47]: that
+Pablo [13:48]: we have
+Pablo [14:22]: to
+Pablo [14:23]: say
+Pablo [14:48]: so
+Pablo [14:49]: now we're in the
+Pablo [14:50]: attitude
+Pablo [14:51]: one
+Pablo [14:52]: and two
+Pablo [14:53]: and the machine
+Pablo [14:54]: all the threads
+Pablo [14:55]: are
+Pablo [14:57]: two
+Pablo [15:00]: but
+Pablo [15:01]: you cannot see
+Pablo [15:02]: any
+Pablo [15:23]: specific
+Pablo [15:28]: respons
+Pablo [15:29]: ible
+Pablo [15:35]: this
+Pablo [15:36]: body had a
+Pablo [15:36]: vision
+Pablo [15:41]: extreme
+Pablo [15:42]: ly
+Pablo [15:57]: important
+Pablo [16:08]: and
+Pablo [16:09]: this was implement
+Pablo [16:09]: ed
+Pablo [16:12]: after
+Pablo [16:14]: use but if there were
+Pablo [16:15]: few attach
+Pablo [16:16]: ments
+Pablo [16:19]: and so
+Pablo [16:21]: the full scenario where we see this
+Pablo [16:22]: is
+Pablo [16:28]: after
+Pablo [16:32]: wards
+Pablo [16:34]: that
+Pablo [16:35]: node that marks
+Pablo [16:36]: and if
+Pablo [16:37]: the drain conditions
+Pablo [16:43]: until
+Pablo [16:44]: the daily
+Pablo [16:45]: spread is often saving and
+Pablo [16:46]: waking up on
+Pablo [16:47]: a sleeve node even
+Pablo [16:48]: though there are no wild
+Pablo [16:50]: system
+Pablo [17:04]: but
+Pablo [17:05]: the gujarat is showing
+Pablo [17:07]: idle
+Pablo [17:07]: core
+Pablo [17:08]: at the same time
+Pablo [17:09]: as above it
+Pablo [17:10]: is
+Pablo [17:10]: showing
+Pablo [17:13]: and so
+Pablo [17:15]: the fix for this was that
+Pablo [17:18]: if the sleeping node
+Pablo [17:19]: is
+Pablo [17:20]: on
+Pablo [17:21]: a port that is idle
+Pablo [17:22]: then we'll wake up there
+Pablo [17:24]: otherwise if there are other important systems
+Pablo [17:25]: it'll wake up
+Pablo [17:26]: on board up and id
+Pablo [17:27]: le for the longest amount
+Pablo [17:28]: of time
+Pablo [17:32]: and so we're fed the threads from waking up on a short term idle core that has data
+Pablo [17:33]: base threads run
+Pablo [17:33]: ning
+Pablo [17:34]: and there are
+Pablo [17:35]: powerful patients that
+Pablo [17:40]: we have a long term eye look for and so long term idle cores are under low power mode and when they're woken up
+Pablo [17:41]: they
+Pablo [17:42]: enter
+Pablo [17:48]: full power and so within this fix they do not allow for assembly control power
+Pablo [17:51]: and then this bug is commonly seen
+Pablo [17:55]: in combination with both one
+Pablo [17:56]: but this bug
+Pablo [17:57]: has a larger
+Pablo [17:58]: on
+Pablo [18:08]: and then the final bug in the paper is in the same scheduler domains block and so when it works disabled and re enabled the load
+Pablo [18:09]: balance between
+Pablo [18:10]: any of the nodes
+Pablo [18:17]: and form so the number of scheduling domains the global for that value is set to the number of domains within
+Pablo [18:20]: one node and so this means that threads can only run on the node
+Pablo [18:21]: that they're running on
+Pablo [18:32]: before because there's no other enhanced for it to move to then any new processes are run on the same node as their parent process
+Pablo [18:33]: and all newly created
+Pablo [18:41]: and so the fix was a bug in the way that the
+Pablo [18:43]: regeneration machine scheduling
+Pablo [18:48]: domain happened and so the regeneration of the scheduling domain
+Pablo [18:56]: generally involves driver generation of domains inside the nodes and then also across all nodes and so they're fixed with adding all the
+Pablo [18:59]: functions that generates domains
+Pablo [19:00]: across all of
+Pablo [19:00]: the nodes
+Pablo [19:10]: so with this bug it causes ultra on one node and instead of taking this scenario so they expect to speed up the results range from forex
+Pablo [19:15]: getting to the tools used to
+Pablo [19:20]: alongside section of the boat
+Pablo [19:24]: that
+Pablo [19:25]: help these
+Pablo [19:25]: kind of bugs
+Pablo [19:28]: they mention that scheduling blood pressures are really much fun
+Pablo [19:32]: because those things that come at each stop
+Pablo [19:33]: they're really going to be
+Pablo [19:34]: nd them up
+Pablo [19:38]: to schedule so they introduce two tools
+Pablo [19:46]: the first tool was to sanity checkers the basic idea of sanity checker is that you just want to make sure that when you program runs the invariant that your program should hold is still
+Pablo [19:51]: moving in this case the invariant is very simple
+Pablo [19:53]: it's just if you have a core that
+Pablo [20:02]: all they do is they just
+Pablo [20:03]: look for an idle
+Pablo [20:04]: and
+Pablo [20:08]: they look through the rest of the cpus and they find that
+Pablo [20:13]: what they do actually is they don't market as failed
+Pablo [20:14]: immediately
+Pablo [20:20]: because as we mentioned before there are some cases where there could be an idle core but they're still a ready thread
+Pablo [20:22]: so what they do is instead of just marking it as a failure
+Pablo [20:29]: they start monitoring grid operations so they're looking to see if in the next short burst are they scheduling jobs
+Pablo [20:35]: and only then if idle is doing it scheduled
+Pablo [20:37]: then
+Pablo [20:42]: intervals as well so two
+Pablo [20:45]: options
+Pablo [20:50]: obviously the more you want to try
+Pablo [20:55]: m is the maximum length that a four is idle
+Pablo [20:57]: or monitoring it
+Pablo [21:02]: set the interval s to one second
+Pablo [21:08]: obviously you go to run less there's less
+Pablo [21:26]: there's going to be a lot more false positives
+Pablo [21:28]: where you think this bug
+Pablo [21:35]: those are kind of goals
+Pablo [21:37]: minimize multip
+Pablo [21:38]: le
+Pablo [21:54]: so the idea was that if you monitor the schedule like the size of the
+Pablo [21:55]: portrait
+Pablo [21:59]: you can kind of get a better idea of
+Pablo [22:01]: how
+Pablo [22:02]: the window is acting
+Pablo [22:09]: and the main purpose of this one is just to kind of gauge why certain scheduling bugs are occurring
+Pablo [22:12]: so like one core
+Pablo [22:16]: is getting a lot
+Pablo [22:17]: of
+Pablo [22:23]: just minimizing overhead this one is also very affordable very small
+Pablo [22:38]: more optimization
+Pablo [22:54]: in order to integrate all the documentation
+Pablo [23:28]: and one of the issues or
+Pablo [23:54]: taking that
+Pablo [23:58]: those have failed for example
+Pablo [24:18]: one of the reason why visualization is
+Pablo [24:37]: this paper
+Pablo [24:38]: has
+Pablo [24:39]: a book
+Pablo [24:59]: let's take a little bit
+Pablo [25:33]: understand the
+Pablo [25:37]: beginning
+Pablo [25:43]: that
+Pablo [25:52]: we
+Pablo [25:53]: should protect
+Pablo [26:03]: what we're doing
+Pablo [26:08]: when did you write this
+Pablo [26:11]: week
+Pablo [26:14]: well most of this is just to do
+Pablo [26:17]: oh wow
+Pablo [26:29]: something this is related to schedule
+Pablo [26:38]: maybe we should read that which box do you listen
+Pablo [26:40]: to
+Pablo [26:45]: us
+Pablo [26:56]: which top
+Pablo [27:01]: ic do we choose last one is related
+Pablo [27:04]: that's what i told her
+Pablo [27:17]: no
+Pablo [27:22]: did i
+Pablo [27:23]: call you
+Pablo [27:23]: no
+Pablo [27:30]: i need to meet with my advisor after this class you need to write something down
+Pablo [27:43]: who is dodging
+Pablo [28:03]: actually i've opened this
+Pablo [28:06]: girl
+Pablo [28:18]: and the word is too small
+Pablo [28:19]: i think
+Pablo [28:33]: they have the things already
+Pablo [28:35]: oh you see
+Pablo [28:37]: on canvas right yeah
+Pablo [28:41]: when they have the same
+Pablo [28:54]: i think this question is easier to invest time
+Pablo [28:55]: less time questions
+Pablo [29:02]: if you know that we have to write for reports every week about our
+Pablo [29:10]: maybe we need to meet with her no we don't have to meet with her we just have to write a report on what we did each week
+Pablo [29:28]: because there's a project meeting so the meeting to write a robot we don't have to meet with her
+Pablo [29:58]: groups may
+Pablo [29:59]: meet with
+Pablo [30:01]: structure
+Pablo [30:03]: okay
+Pablo [32:48]: i
+Pablo [32:49]: just have to
+Pablo [33:02]: scenari
+Pablo [33:03]: o where you
+Pablo [33:04]: disable when
+Pablo [33:11]: she
+Pablo [33:37]: can make
+Pablo [33:38]: fund
+Pablo [33:39]: amental to this
+Pablo [33:40]: sort of increase in
+Pablo [33:41]: less reading
+Pablo [33:42]: success
+Pablo [33:43]: fully
+Pablo [33:45]: these are also plenty
+Pablo [33:47]: that you
+Pablo [33:48]: can catch and
+Pablo [33:49]: fix
+Pablo [33:52]: so maybe sort of a side
+Pablo [34:02]: are these drugs indicative the paper points out several quotes from minus drove all basically
+Pablo [34:07]: having ten very proudly say that scheduling the easy problem
+Pablo [34:09]: and the lynx scheduler is perfect
+Pablo [34:09]: i never write any
+Pablo [34:10]: books
+Pablo [34:15]: and these authors are basically saying oh really
+Pablo [34:16]: right
+Pablo [34:28]: so it's like how many can we find if these bugs are indicative of the fact that multicore scheduling is challenging or is this more just like linux developers maybe be a little more careful
+Pablo [34:34]: or is it because line of cobalt isn't the
+Pablo [34:35]: one actually implement
+Pablo [34:35]: ing it
+Pablo [34:50]: i think this last bug is just like
+Pablo [34:52]: i mean they
+Pablo [34:53]: do that
+Pablo [35:02]: didn't think of the
+Pablo [35:03]: sort of impact
+Pablo [35:05]: that would have on
+Pablo [35:08]: more
+Pablo [35:09]: fun
+Pablo [35:13]: i think that the last one
+Pablo [35:14]: is
+Pablo [35:30]: so i think the purpose of unix was one of the main goals of this was this is to be used in general services applications
+Pablo [35:31]: and for everything
+Pablo [35:36]: so the paper i mean from what i they don't talk about the power consumption
+Pablo [36:03]: so what they talk about is to make that one node back into the power who is not like the one node who is idle for the longest period of time they enter the power same mode so if you have to schedule something on that node you have to take that node out of the power swing mode give it full power and then run some load onto it but they don't talk about how much power does it take so we don't really know yeah it's solving the scheduling
+Pablo [36:07]: bug but how much power consumption has been increased
+Pablo [36:14]: because if linux and angular is going into embedded systems and lot of other low power devices
+Pablo [36:24]: you need that power probably it's acceptable for the scheduling to delay by one millisecond over my question
+Pablo [36:27]: but maybe the power will be saved so in my opinion
+Pablo [36:33]: maybe it's like an application specific thing if you have a low power device
+Pablo [36:40]: you need to focus on the power mode if you have high scale keyword high performance device usually focus on
+Pablo [36:43]: yeah
+Pablo [36:48]: particularly this overall
+Pablo [36:49]: number
+Pablo [36:50]: is caused by
+Pablo [36:51]: this behavior when
+Pablo [36:52]: you're trying to
+Pablo [36:53]: schedul
+Pablo [36:54]: e them
+Pablo [36:56]: either where they can schedule
+Pablo [37:01]: which leads to
+Pablo [37:06]: all the other try to make a thread on core that it ran
+Pablo [37:07]: before
+Pablo [37:08]: it's going to sit in a long
+Pablo [37:09]: run
+Pablo [37:09]: queue
+Pablo [37:10]: but
+Pablo [37:11]: if it does eventually
+Pablo [37:12]: get to run
+Pablo [37:13]: media attach
+Pablo [37:14]: ed
+Pablo [37:16]: right
+Pablo [37:17]: off there between
+Pablo [37:20]: faster runtimes to its cash date versus all the time it lost
+Pablo [37:29]: with one item is putting a schedul
+Pablo [37:30]: e would kind of come over
+Pablo [37:31]: time
+Pablo [37:32]: kind of implicit trade
+Pablo [37:32]: offs
+Pablo [37:37]: there of this application oriented documentation for the system wide
+Pablo [37:46]: locality is really good for applications but it leads to drawbacks from the systems level for idling
+Pablo [37:47]: forward
+Pablo [37:52]: this question about asking about what side of this try valve
+Pablo [37:53]: what
+Pablo [37:54]: you want
+Pablo [37:57]: you were saying might really depend on
+Pablo [38:00]: how we're run like what we're running
+Pablo [38:01]: where we're
+Pablo [38:01]: running
+Pablo [38:15]: questions why do you think that these scheduler works survive for so many years in the production device so let's just be developed by so many developers
+Pablo [38:19]: why would these work still there
+Pablo [38:26]: and as a follow up question for that what makes the performance work harder to detect and find solution
+Pablo [38:28]: than the brightness
+Pablo [38:29]: process
+Pablo [38:31]: ing
+Pablo [38:37]: my point the first part
+Pablo [38:44]: i put the most schedules don't necessarily craft a system where i think
+Pablo [38:47]: a program is my typical bucket for that
+Pablo [38:53]: it's crashed the system you would want to prioritize debt roll up
+Pablo [39:03]: and also i think because performance calculation
+Pablo [39:07]: i did it because
+Pablo [39:16]: i guess hidden by ip classes in the order system so you don't really notice that a small communication
+Pablo [39:22]: but then also it's something uncommon like i think it's because instead of like a common error
+Pablo [39:29]: specific line that crashes it could be like race conditions and probably load balancing
+Pablo [39:34]: all knee for job definitely harder to detect that specific type of crash
+Pablo [39:37]: or kodak crutches a line of crackers type system
+Pablo [39:41]: yeah actually one of the things that i kind of like about this paper is that they have a paragraph
+Pablo [39:42]: towards the
+Pablo [39:43]: beginning
+Pablo [39:49]: this was not the paper they set out trying to write they were working on something completely different
+Pablo [39:50]: not as important
+Pablo [39:51]: as knowledge
+Pablo [39:54]: they're
+Pablo [39:54]: looking at
+Pablo [40:10]: the
+Pablo [40:11]: main right
+Pablo [40:14]: when
+Pablo [40:15]: you have
+Pablo [40:17]: n't necessarily
+Pablo [40:19]: something
+Pablo [40:20]: that
+Pablo [40:22]: you
+Pablo [40:25]: might
+Pablo [40:37]: take
+Pablo [40:44]: software
+Pablo [40:45]: everyone
+Pablo [40:46]: else
+Pablo [40:56]: vis
+Pablo [40:57]: ibility
+Pablo [40:58]: because
+Pablo [41:24]: event
+Pablo [41:25]: ually sort of nar
+Pablo [41:26]: row down and
+Pablo [41:27]: in that sort of
+Pablo [41:28]: organic
+Pablo [41:53]: ten
+Pablo [42:10]: but
+Pablo [42:11]: the way they're running
+Pablo [42:13]: is very
+Pablo [42:13]: easy
+Pablo [42:14]: to start
+Pablo [42:18]: which
+Pablo [42:19]: none of the products
+Pablo [42:20]: is they want to
+Pablo [42:21]: hear
+Pablo [42:29]: test
+Pablo [42:29]: ing for that
+Pablo [42:33]: my
+Pablo [42:34]: credential
+Pablo [42:41]: s
+Pablo [42:43]: when
+Pablo [42:44]: you're doing something similar
+Pablo [42:45]: trying to do
+Pablo [42:46]: something simple
+Pablo [42:50]: your
+Pablo [42:51]: question is
+Pablo [42:51]: simple
+Pablo [42:55]: you start
+Pablo [42:56]: throwing
+Pablo [42:57]: in
+Pablo [43:05]: that
+Pablo [43:06]: 's a lot more complic
+Pablo [43:07]: ated
+Pablo [43:16]: there's
+Pablo [43:16]: a lot going on
+Pablo [43:18]: there's a lot more
+Pablo [43:18]: scheduling
+Pablo [43:19]: decisions
+Pablo [43:57]: made
+Pablo [43:58]: it a lot easier
+Pablo [44:27]: that's how
+Pablo [44:31]: it
+Pablo [44:34]: 's coming
+Pablo [44:36]: that's
+Pablo [44:37]: something which
+Pablo [44:38]: needs
+Pablo [44:40]: money
+Pablo [44:41]: i would
+Pablo [44:42]: say more than the college
+Pablo [44:43]: organization
+Pablo [44:44]: because
+Pablo [44:45]: that
+Pablo [44:46]: really leads to the
+Pablo [44:47]: kindness of algo
+Pablo [44:48]: rithms
+Pablo [44:49]: basically
+Pablo [44:59]: the
+Pablo [45:00]: email
+Pablo [45:01]: could be
+Pablo [45:02]: i
+Pablo [45:03]: was like
+Pablo [45:08]: understand
+Pablo [47:24]: ing
+Pablo [47:25]: also
+Pablo [47:37]: how long
+Pablo [47:38]: does this do
+Pablo [47:44]: applic
+Pablo [47:45]: ations
+Pablo [47:52]: never
+Pablo [47:53]: was
+Pablo [47:54]: better
+Pablo [48:06]: meeting
+Pablo [48:06]: all the time
+Pablo [48:07]: more
+Pablo [48:11]: into
+Pablo [48:12]: the
+Pablo [48:16]: oper
+Pablo [48:17]: ations design
+Pablo [48:26]: of
+Pablo [48:27]: course
+Pablo [48:28]: they don't
+Pablo [48:29]: know
+Pablo [48:30]: how
+Pablo [48:30]: long
+Pablo [48:31]: we need
+Pablo [48:32]: of course twenty four
+Pablo [48:33]: out of four
+Pablo [48:34]: we're that
+Pablo [48:35]: business
+Pablo [48:36]: et cetera
+Pablo [48:37]: so we have
+Pablo [48:44]: each
+Pablo [48:45]: pass independ
+Pablo [48:45]: ent
+Pablo [48:52]: before
+Pablo [48:55]: so
+Pablo [48:56]: depend
+Pablo [48:57]: s on
+Pablo [48:59]: each of those
+Pablo [49:21]: in
+Pablo [49:21]: this case
+Pablo [49:24]: if
+Pablo [49:25]: you're waiting
+Pablo [49:26]: for
+Pablo [49:27]: ideal
+Pablo [49:27]: form to become available
+Pablo [49:29]: so you can wake up
+Pablo [49:29]: a set
+Pablo [49:31]: you're showing everyone
+Pablo [49:31]: else
+Pablo [49:32]: maybe
+Pablo [49:33]: applications like this
+Pablo [49:47]: waiting
+Pablo [49:48]: on
+Pablo [49:49]: any item
+Pablo [49:50]: regarding
+Pablo [49:51]: where it runs
+Pablo [49:52]: might
+Pablo [49:53]: help those applications
+Pablo [49:54]: or
+Pablo [49:55]: applications
+Pablo [49:56]: that
+Pablo [49:57]: have these really
+Pablo [49:58]: tight bounds
+Pablo [50:00]: where they want to
+Pablo [50:01]: only ever access
+Pablo [50:03]: some cash and not have to go to main memory
+Pablo [50:05]: or even across even those
+Pablo [50:05]: in worst case
+Pablo [50:10]: then maybe this extra time you might spend waiting in the run queue
+Pablo [50:13]: of the core that ran on previously is going to trade
+Pablo [50:13]: off right
+Pablo [50:14]: but because
+Pablo [50:16]: if the linux scheduler
+Pablo [50:19]: level we don't have any knowledge of
+Pablo [50:20]: application
+Pablo [50:21]: because
+Pablo [50:22]: we're in kernel
+Pablo [50:30]: and so because we're in tugaway we have to have one policy that kind of works best for everyone
+Pablo [50:33]: again give exactly sort of exopurnal
+Pablo [50:39]: uniform policy or what do you form abstraction they're going to be learning
+Pablo [50:47]: we were looking into some scheduling stuff
+Pablo [50:57]: like for projects unrelated to this so what we found out that there are some frameworks which allow you to sort of write segments
+Pablo [51:01]: so based on the idea of executable
+Pablo [51:05]: where does the application
+Pablo [51:08]: tailor through that
+Pablo [51:16]: easy of i just mentioned a couple of months ago apparently the right like schedulers in
+Pablo [51:24]: and then we allow that to run because those are countries sandbox programs which are coming towards monetary
+Pablo [51:27]: so that was pretty cool

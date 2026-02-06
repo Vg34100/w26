@@ -1,0 +1,119 @@
+5th Session- Your Own (AI generated) NLP
+
+In this lab, you will generate your own NLP, with the help of generative AI, to evaluate a famous speech (or choose your own text!).
+
+BACKGROUND: Traditionally, content coding
+Links to an external site. has been carried out by human coders, enabling the social sciences to leverage new data by converting qualitative text into quantitative scores. In recent decades, automated Natural Language Processing (NLP) has provided custom-made solutions to score tone Links to an external site. and other linguistic features Links to an external site., sentiment Links to an external site. and emotion Links to an external site., and personality traits Links to an external site. and political leaning Links to an external site.. Usually, a single PhD thesis would hardly be enough time to develop a new, custom-made NLP tool. In only a couple of years (2023-2025) Links to an external site., Large Language Models (LLMs) have revolutionized qualitative content coding
+
+Links to an external site., achieving human-level reliability while reducing coding time by 90-97% and costs by up to 30x, resulting in a plethora of new data derived from qualitative expressions in an avalanche of new data for Computational Social Science. Let's see if you can add something meaningful to it! ...but please don't get your hopes up too soon: it's not THAT easy...
+
+
+
+(1) Think about a new concept you'd like to measure in natural language text. It can be anything! For example, given the influence of Elon Musk
+Links to an external site. and Mark Zuckerberg Links to an external site. on today's digital media (including its filter bubbles Links to an external site., politics Links to an external site., etc.), I asked Gemini Deep Research LLM to research how to conceptualize the "Muskianess Links to an external site." and "Zuckianess Links to an external site." expressed in text. It even generated interactive summary infographics on a Muskian Links to an external site.- and Zuckian
+
+Links to an external site.-Taxonomy.
+
+(1a) Come up with a new concept. Choose something you are personally intrigued by and genuinely wonder about.
+
+(1b) Use an LLM with Deep Research functionality
+
+Links to an external site. to develop your Research Domain. For example, UC Davis offers access to the free Education subscription to Gemini Deep Research with your UC Davis credentials. Here is what I did:
+
+GeminiDeepResearch.png
+
+(1c) Read the research result. Make sure it contains illustrative examples (LLMs are famously "few-shot learners
+
+Links to an external site."). Fine-tune your prompt, try again, go deeper, etc., until you have a comprehensive result you are satisfied with.
+
+(1d) In your Reply below, share the Research Domain result as an attachment and explain, in your own words, what the concept is about and why you are interested in it. What motivated you? What do you expect to learn from it and why?
+
+
+
+(2) Here are three prompts that ask an LLM (of your choice) to convert this research domain result into a Codebook Manual that can be used for automated NLP content coding, done by an LLM. Use them to generate three different Coding Manuals to score text (don't forget to attach your Research Domain result when using these prompts!)
+
+LLM Prompt #1 for Codebook Manual Development.pdf
+Download LLM Prompt #1 for Codebook Manual Development.pdf (developed with Gemini
+
+Links to an external site.)
+
+LLM Prompt #2 for Codebook Manual Development.pdf
+Download LLM Prompt #2 for Codebook Manual Development.pdf (developed with ChatGPT
+
+Links to an external site.)
+
+LLM Prompt #3 for Codebook Manual Development.pdf
+Download LLM Prompt #3 for Codebook Manual Development.pdf (developed with Claude
+
+Links to an external site.)
+
+
+
+(3) Pick one of the speeches from below (or, alternatively, any other text of your choice that is at least a few paragraphs long) and use two different LLMs to score it with each of the three Coding Manuals you produced in step (2). You can use a simple prompt like "Use the attached Codebook to score the following text", etc.
+
+(3a) Share the (short summary table and overall score of the) resulting six different outputs below. Make sure to indicate which result is from which LLM and from which Prompt (#1, #2, or #3).
+
+(3b) Reflect on what you learned and share your observations below. What met your expectations? Was there anything surprising? What is the difference between the coding manuals (feel free to look at Prompts#1-#3 with your own eyes (!) to find differences: e.g., what's the 'unit of analysis'?). What do you feel works better, and why?
+
+(4) After you post your response, comment on two posts from someone else in the form of a little video! Show your face, as you would in class, and reflect on both the other's experience and your own. Make it meaningful, kind, thought-provoking, and constructive, so the recipient can reflect on their work and learn from yours. You must choose a post that has fewer than 3 comments (your comment can be the third). If you post a cloud-link, make sure to enable it for public access!
+
+
+
+IN TOTAL, you will post (and will be graded on) 4 OUTPUTS: (1d), (3a), (3b), and (4).
+
+
+
+P.S. in my case, both Mistral.AI
+Links to an external site. and Perplexity.AI Links to an external site. scored Musk's multi-planet speech with higher 'Zuckianess Links to an external site.' than 'Muskianess Links to an external site.' (especially with the Prompt#2 Coding Manual), while the Codebook Manuals generated and used by Grok.com Links to an external site. (Elon Musk's LLM Links to an external site.) scored Musk's speech as more Muskian than Zuckerberg's speech, and Meta.AI Links to an external site. (Mark Zuckerberg's LLM
+
+Links to an external site.) scored Musk's speech more Muskian than Zuckian, and, vice versa, Zuckerberg's speech more Zuckian than Muskian: those LLMs seem to know their masters... By the way: Claude Shannon (the inventor of the digital age) seems to be both more Muskian and more Zuckian than Steve Jobs (the inventor of the iPhone).
+
+
+
+
+
+Famous Speeches (choose one, or pick your own multi-paragraph text)
+
+    Tech & Science
+
+Ada Lovelace: first computer programmer, first published algorithm, early vision of general-purpose computing, pioneering woman in tech.
+
+Claude Shannon: father of the digital age, inventor of the 'bit', founder of information theory, pioneer of logic gates and AI.
+
+Elon Musk: Built SpaceX into a reusable-rocketry powerhouse, helped mainstream electric vehicles with Tesla, and expanded global satellite internet via Starlink.
+
+Fei-Fei Li: ImageNet leader who catalyzed modern computer vision and deep learning, prominent advocate of human-centered AI, co-founder of AI4ALL.
+
+Mark Zuckerberg: Co-founded Facebook and scaled it into a defining global social platform, later steering Meta’s bets on AI and immersive computing.
+
+Steve Jobs: Apple co-founder who drove iconic product revolutions (Mac, iPod, iPhone) and set a new standard for design-led consumer technology.
+
+Sheryl Sandberg: Operational powerhouse at Google and Facebook/Meta, key architect of modern digital advertising scale, shaping leadership discourse about women in tech.
+
+    Politics & Government
+
+Aung Sang Suu Kyi: Nobel Peace Prize–winning pro-democracy leader, emblem of resistance during years of house arrest, led Myanmar’s National League for Democracy to landmark electoral victories.
+
+Barack Obama: 44th U.S. President, first Black president, passed the Affordable Care Act, and advanced major climate and diplomatic initiatives.
+
+Donald Trump: Real-estate and media mogul, who had six companies declare bankruptcy, turned 45th and 47th U.S. President, reshaped the federal judiciary, enacted major tax reforms, and is credited with brokering the Abraham Accords in the Middle East.
+
+Hillary Clinton: Former First Lady, U.S. Senator, and Secretary of State; first woman to win a major-party U.S. presidential nomination; major figure in modern U.S. policy and diplomacy.
+
+    Social Justice & Human Rights
+
+Angela Davis: Influential scholar-activist and author, major voice in Black feminist thought and prison abolition, shaping modern justice movements.
+
+Mahatma Gandhi: Architect of mass nonviolent resistance (satyagraha), pivotal leader in India’s independence movement, global model for civil rights strategy.
+
+Malala Yousafzai: Youngest-ever Nobel Peace Prize laureate, global champion for girls’ education, founder of the Malala Fund.
+
+Martin Luther King Jr: Defining U.S. civil-rights leader, champion of nonviolent activism, Nobel Peace Prize laureate, helped catalyze landmark civil-rights legislation.
+
+    Arts & Entertainment
+
+J. K. Rowling: Creator of Harry Potter, one of history’s most successful book franchises, transforming children’s publishing into a global cultural phenomenon.
+
+Oprah Winfrey: "Queen of All Media", often ranked as the most influential woman in the world, objectively the richest Black woman and the wealthiest female celebrity.
+
+Meryl Streep: Acting benchmark with record-setting major-award nominations, acclaimed for unparalleled range and decades of leading performances.

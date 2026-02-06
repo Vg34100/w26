@@ -1,0 +1,481 @@
+https://doi.org/10.1177/15291006221099494Psychological Science in the
+Public Interest
+ 1 –2
+© The Author(s) 2022
+Article reuse guidelines: 
+sagepub.com/journals-permissions
+DOI: 10.1177/15291006221099494
+www.psychologicalscience.org/PSPIASSOCIATION FOR
+PSYCHOLOGICAL SCIENCE
+Two of the figures in this article and several of the 
+references to the figures have been corrected. These changes are detailed below, and the new figures appear at the end of the text.
+On p. 116, in the last sentence of the fourth full para-
+graph, the callout for Figure 2 has been changed to “(such as that shown in Fig. 2, top of second column).”
+On p. 120, Figure 5 has been replaced because the 
+color-blindness model that was used to test the origi-nally published version of the figure was incorrect. The following sentence has been added to the end of the Figure 5 caption for clarification: “Protanopia was simu -
+lated in Photoshop.” In addition, in the last paragraph of the left column, the second and third sentences have been updated as follows:
+For example, the first row in Figure 5 shows a scatterplot encoded with two colors, green and orange. People with typical vision can see that the green dots have a steep positive correlation and the orange dots make a flat line.
+On p. 140, in the first paragraph in the right column, 
+two sentences (the sentence beginning “For example, 
+when viewing.  . .” and the sentence following it) have 
+been replaced to more accurately describe Figure 20. The new sentences read as follows:
+For example, when viewing results of an evalua-tion of a new intervention (e.g., a special type of equipment one might use to improve one’s score in a sports competition) relative to a control, one might wonder how much investing in the new equipment is likely to help increase one’s score for a randomly drawn instance of the game. When shown frequentist 95% confidence intervals rep-resenting uncertainty on bars representing the control (“Standard Boulder”) and treatment (“Special Boulder”) outcomes in a fictional boulder-sliding competition (Hofman et al., 2020; see Fig. 20, left), lay viewers were inclined to pay more for the treatment and overestimate effect size rela-tive to when they saw error bars showing a pre-dictive interval representing uncertainty in the underlying measurements (Fig. 20, middle).
+On p. 141, the second and third sentences in the cap-
+tion for Figure 20 have been changed to more accurately 
+describe the figure. The new sentences read as follows:
+Hofman et al. (2020) found that participants in an online study who viewed the chart on the left, showing a range extending 1.96 SE above and below the mean, were more likely to pay more for a new intervention (i.e., “Special Boulder”) compared with the standard intervention (i.e., “Standard Boulder”) and to overestimate the size of the new intervention’s effect than those who saw the chart in the center, showing a range extending 1.96 SD  above and below the mean. 
+The chart on the right is the same as the chart on the left, except that it has the y -axis range of the 
+chart in the center. This display slightly reduced overpayment and overestimation, which suggests that viewers are sensitive to superficial visual cues, such as how big a difference looks within the frame of the chart.
+On p. 143, Figure 23 has been replaced to correct 
+the color palette.
+Finally, on p. 148, the figure callout at the end of the 
+fourth full paragraph has been updated to “(see Fig. 24; 
+see also Garcia-Retamero & Galesic, 2009),” and the figure callout at the beginning of the sixth full para-graph has been updated to “(as in Fig. 24; Garcia-Retamero & Cokely, 2017).”1099494 PSIXXX10.1177/15291006221099494
+research-article 2022
+Corrigendum: The Science of Visual  
+Data Communication: What Works
+Original article: Franconeri, S. L., Padilla, L. M., Shah, P., Zacks, J. M., & Hullman, J. (2021). The science of visual 
+data communication: What works. Psychological Science in the Public Interest , 22(3), 110–161. https://doi  
+.org/10.1177/15291006211051956Corrigendum
+
+
+2  
+Transparency Fuzziness Shape Grain Orientation ArrangementLocation Size Color
+HueColor
+ValueColor
+Saturation Value Suppressing
+Uncertainty PaletteLow
+UncertaintyHigh
+UncertaintyHigh
+UncertaintyLow
+UncertaintyBivariate Map of Value
+and Uncertainty
+High
+ValueLow
+ValueHigh
+ValueLow
+Value
+Sample Data
+Fig. 23. Methods for depicting uncertainty. On the left of the figure are different visual variables for conveying uncertainty tested by 
+MacEachren et al. (2012), who found that fuzziness, location, arrangement, and color value were rated as relatively more logical than other 
+variables for representing uncertainty. The right shows a bivariate color map that separately encodes value (via hue) and uncertainty (via lightness). A value-suppressing uncertainty palette uses a tree metaphor to collapse value distinctions in proportion to the uncertainty sur-rounding the values (Correll et al., 2018). Left figure reprinted with permission from “Visual Semiotics & Uncertainty Visualization: An Empiri-cal Study,” by A. M. MacEachren, R. E. Roth, J. O’Brien, B. Li, D. Swingley, and M. Gahegan, 2012, in IEEE Transactions on Visualization and Computer Graphics, 18(12), p. 2497 (https://doi.org/10.1109/TVCG.2012.279). Copyright 2012 by IEEE. Right figure republished with permission of the Association for Computing Machinery, “Value-Suppressing Uncertainty Palettes,” by M. Correll, D. Moritz, and J. Heer, CHI ’18: Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems (https:///doi.org/10.1145/3173574.3174216). Copyright 2018 Association for Computing Machinery.Double
+Encoding
+Double
+Encoding +
+Color-Blindness-
+Safe Color
+PaletteNormal
+VisionRed-Blind
+Simulation
+(Protanopia)
+Fig. 5. Three ways to encode data for two groups in a scatterplot, as 
+seen by observers with typical color perception and those with protano-pia, a form of color blindness. Protanopia was simulated in Photoshop.
+
+https://doi.org/10.1177/15291006211051956Psychological Science in the
+Public Interest
+2021, Vol. 22(3) 110 –161
+© The Author(s) 2021Article reuse guidelines: 
+sagepub.com/journals-permissions
+DOI: 10.1177/15291006211051956
+www.psychologicalscience.org/PSPIASSOCIATION FOR
+PSYCHOLOGICAL SCIENCE
+This report presents research-backed guidelines for 
+creating powerful and intuitive visualizations oriented toward communicating data to students, coworkers, and the general public. We begin by reviewing guide-lines for helping viewers extract data from visualiza-tions in precise and unbiased ways, avoiding a set of known illusions and distortions. We then describe when visual processing of visualizations is powerful (processing broad statistics) versus where it slows to a crawl (making individual comparisons), and we pro-vide a tool kit for avoiding that slowdown. We review guidelines for ensuring that a viewer properly maps visualized values to the right concepts in the world (e.g., viewers can extract the size of an error bar on a graph, but do they understand what it means?), allow-ing viewers to use visualizations as effective tools for reasoning. We then review guidelines for conveying uncertainty and risk (e.g., how could a physician express survival odds for a treatment to a patient?). Finally, we summarize a set of guidelines for creating visualizations that communicate clearly and suggest resources for readers interested in learning more.
+Data visualizations range from simple graphs in ele-
+mentary school classrooms, to depictions of uncertainty in election forecasts in news media, to complex data displays used by scientists and analysts. When designed effectively, these displays leverage the human visual system’s massive processing power, allowing rapid for -
+aging through patterns in data and intuitive communi-cation of those patterns to other viewers. But when designed ineffectively, these displays leave critical pat-terns opaque or leave viewers confused about how to navigate unfamiliar displays.
+We review methods, empirical findings, theories, and 
+prescriptions across the fields of visual perception, 1051956 PSIXXX10.1177/15291006211051956Franconeri et al.The Science of Visual Data Communication
+research-article 2021
+Corresponding Author:
+Steven L. Franconeri, Department of Psychology, Northwestern University Email: franconeri@northwestern.eduThe Science of Visual Data  
+Communication: What Works
+Steven L. Franconeri1, Lace M. Padilla2, Priti Shah3,  
+Jeffrey M. Zacks4, and Jessica Hullman5
+1Department of Psychology, Northwestern University; 2Department of Cognitive and Information Sciences,  
+University of California, Merced; 3Department of Psychology, University of Michigan; 4Department of  
+Psychological & Brain Sciences, Washington University in St. Louis; and 5Department of Computer Science,  
+Northwestern University
+Abstract
+Effectively designed data visualizations allow viewers to use their powerful visual systems to understand patterns in data across science, education, health, and public policy. But ineffectively designed visualizations can cause confusion, misunderstanding, or even distrust—especially among viewers with low graphical literacy. We review research-backed guidelines for creating effective and intuitive visualizations oriented toward communicating data to students, coworkers, and the general public. We describe how the visual system can quickly extract broad statistics from a display, whereas poorly designed displays can lead to misperceptions and illusions. Extracting global statistics is fast, but comparing between subsets of values is slow. Effective graphics avoid taxing working memory, guide attention, and respect familiar conventions. Data visualizations can play a critical role in teaching and communication, provided that designers tailor those visualizations to their audience.
+Keywords
+visual communication, graph comprehension, reasoning, statistical cognition, uncertainty communication, data visualization
+
+The Science of Visual Data Communication 111
+graph comprehension, information visualization, data-
+based reasoning, uncertainty representation, and health risk communication. These research communities study similar questions and use complementary expertise and styles of inquiry, yet they too rarely connect. We ignore artificial boundaries among these research fields, and instead integrate across them.
+The Importance of Visualization 
+Design and Literacy
+Thinking and communicating with data visualizations is 
+critical for an educated public (Börner et al., 2019). Sci-ence education standards require students to use visu-alizations to understand relationships, to reason about scientific models, and to communicate data to others (National Governors Association Center for Best Prac-tices and Council of Chief State School Officers, 2010; National Research Council, 2013). Evidence-based public policy prescriptions about climate change, vaccines,  
+and policing are argued to be most effectively built (Kohlhammer et al., 2012) and communicated to the public (Otten et al., 2015) with visualizations. Journalists at The New York Times Upshot, FiveThirtyEight, The Econ-
+omist, and The Washington Post use visualizations to communicate data and evidence about statistics and policy. Data visualizations are ubiquitous in the work-place—in data-analysis software, in data-overview dash-boards, and in millions of slide presentations created each day (Berinato, 2016; Parker, 2001). Physicians rely on them to show data about the risks of medical procedures, and meteorologists use them to show the uncertainty in a hurricane’s potential path (Ancker et al., 2006; Ruginski et al., 2016).
+In each of these domains, low graphical literacy and 
+ineffective design lead many viewers to struggle to understand these otherwise powerful thinking tools. Many students can find textbook visualizations too challenging to understand or integrate with nearby text (Nistal et al., 2009; Shah & Hoeffner, 2002). Public pol-icy visualizations can be counterintuitively designed, leading many viewers to draw a conclusion opposite the one suggested by the depicted data (Engel, 2014). Dozens of best-selling guides have decried the state of visualizations in the workplace and offered prescrip-tions for more powerful, clear, and persuasive graphs (see the Recommended Practitioner Books section at the end of this article and Ajani et al., 2021, for a more exhaustive list). Medical-risk visualizations can lead patients to fundamentally misunderstand the base rates or risk factors for diseases or medical procedures (Ancker et al., 2006). When a prediction has a high level of uncertainty that is not intuitively conveyed, the pub-lic can lose trust in scientists and analysts. For example, when a hurricane’s path deviates somewhat from the most likely trajectory, or when a politician with a 20% predicted chance to win an election prevails, these outcomes may be consistent with the uncertainty inher -
+ent to the predictions. But if the forecaster does not effectively visually communicate that uncertainty, their reputation can suffer when their prediction is “wrong” (Padilla et al., 2021).
+Who Studies the Design and 
+Comprehension of Visualizations?
+Research on the design and pedagogy of data visualiza-
+tions takes place in several communities. A psychologist focusing on perception might study the mapping between a color value in a heat map and the abstract magnitude that an observer extracts from it (Stevens, 1957). A cognitive psychologist might explore how work-ing memory limits the complexity of the statistical rela-tionships that a viewer might extract (Halford et al., 2007; Padilla et al., 2018). An education researcher might try to remove roadblocks for students struggling to translate visual depictions to their underlying concepts (Börner & Polley, 2014; Shah & Hoeffner, 2002) or seek multime-dia design principles for designing effective graphics and integrating them with text (e.g., Mayer & Fiorella, in press). Researchers in public policy communication or political science might study why viewers find some visualizations to be more trustworthy or persuasive than others (Nyhan & Reifler, 2019). Health communication researchers evaluate how to effectively communicate the risk of a medical procedure to patients with low numer -
+acy (i.e., ability to work with numbers and mathematics; 
+Ancker et al., 2006). Specialists in statistical cognition and communication seek ways to communicate uncer -
+tainty across election outcomes, bus arrival times, and hurricane paths (Hullman, 2019). Finally, a research com-munity housed in computer and information sciences studies data visualization at multiple levels, from data types and algorithms to the creation of user task taxono-mies, to design prescriptions for visually powerful dis-plays and fluid interaction (Munzner, 2014).
+In this article, we also draw advice from communities 
+of practitioners who might not engage in empirical research but use extensive in-context experience to generate prescriptions for powerful and intuitive visu-alizations. At the end of this review, we include a list of recommended visualization-design guidebooks. Although many of these guides are oriented toward business analysts, their prescriptions extrapolate directly to science, education, and public policy visualizations. We also discuss design techniques used by a new wave of journalists focused on communicating data analysis to the general public.
+
+112 Franconeri et al.
+The Structure of Our Review
+This review focuses on how to effectively design visu-
+alizations that communicate data to students and the general public. We review evidence-based prescriptions for designing visualizations that help people under -
+stand and reason about the patterns, models, and uncertainties carried by a data set. Another important topic, which we do not cover systematically here, is how to measure visualization literacy and the effective -
+ness of teaching techniques that improve it (see Börner et al., 2019; Lee et al., 2016). We also restrict our scope to quantitative visualizations, omitting discussion of qualitative visualizations of text data, diagrams, and processes (see Hegarty, 2011; Henderson & Segal, 2013, for review). We focus on research and prescriptions that are most relevant for communication to nonspecial-ist audiences, instead of the design of powerful tools for data analysis within expert communities.
+We first illustrate why visualizations can be such pow-
+erful tools for thinking about data. Because the human visual system is highly developed for rapid parallel extraction of behavior-relevant features and relation-ships, visualizations allow us to process some types of patterns across an entire two-dimensional array of val-ues at once. We describe the limited set of visual chan-nels that can effectively depict magnitudes to a viewer, such as the position of a value in a dot plot, the size of a circle hovering over a map, or the color intensity of an activation pattern in a functional MRI (fMRI) image.
+We then discuss design guidelines for ensuring that the 
+human eye accurately decodes those depicted values. We review evidence for a ranking of some visual channels (e.g., position) as more precise than others (e.g., color intensity) for at least one common task but also discuss how new work has begun to dismantle that ranking for a broader array of tasks. We list a set of common errors and illusions that cause viewers to extract the underlying values from visual channels incorrectly—for example, y-axis manipulations that exaggerate differences among 
+values, confusion about whether circles depict values with their size or diameter (which can change the extracted value by an order of magnitude), a common illusion pro-duced by line graphs, and other illusions and categorical distortions that can arise when depicting value with color intensity. We also include a brief review of accessibility considerations for viewers with color blindness. Finally, we discuss best practices for distinguishing between groups of data (say, two groups of points on a scatterplot) by marking them with different shapes or colors.
+Next, we discuss an important dissociation in visual 
+processing power: Whereas computing statistics across an image is broad and instantaneous, making compari-sons among subsets of values is slow and limited to two or three comparisons per second. We review the types of grouping cues that loosely control what infor -
+mation is compared by a typical viewer and further techniques for precisely guiding a viewer to the right comparison. We discuss the importance of respecting a viewer’s limited working memory, including avoiding legends and animated displays that can engage but also confuse. Finally, we review evaluations of whether visu -
+alizations should have rich and memorable designs, as opposed to a minimalist and clean aesthetic.
+The next section introduces visualization schemas, or 
+knowledge structures that include default expectations, rules, and associations that a viewer uses to extract con-ceptual information from a data visualization. We illus-trate the importance of schemas by introducing the reader to a small set of new visualization designs that will likely be unfamiliar. We then provide examples of common schema elements that are known to more 
+graphically literate audiences (but not always respected 
+by designers), such as the assumption that larger values are plotted upward. We shift to a brief review of human reasoning about visualizations, including formal models that draw links from visual depictions, to numeric values, to their underlying concepts and the designer’s intended message. We then explore two case studies: reasoning about graphs illustrating scientific concepts and reason-ing about graphs of mathematical functions.
+The subsequent sections review research on visualizing 
+uncertainty or risk. Communication failures can start with a lack of understanding of critical statistical concepts, even among scientists. We give examples of how viewers tend to misread error bars as depicting the edges of a range of data instead of correctly understanding them as param-eters of a distribution. Probability information expressed as risk is critical for people such as patients considering a medical procedure and potential evacuees who may be in the path of a hurricane, but depictions of risk are fre-quently misunderstood. We review guidelines for showing uncertainty or risk more intuitively, including depicting samples of discrete outcomes, showing probability density functions, and depicting data with arrays of icons.
+Finally, we summarize a set of evidence-based  
+prescriptions for creating powerful visualizations for intuitive communication of data and provide a list of 
+recommended practitioner guides (Box 1), websites, 
+and data-journalism outlets for further reading and inspiration (for a concise review of similar guidelines, see also Zacks & Franconeri, 2020).
+The Power of Visualization
+Visualizations let viewers see beyond 
+summary statistics
+Visualizations allow powerful processing of an entire 
+two-dimensional rectangle of information at once, in 
+
+The Science of Visual Data Communication 113
+stark contrast to the limitation of reading handfuls of 
+symbolic numbers per second. As a demonstration, Fig-ure 1 (top left) contains four sets of 11 pairs of values. Take a moment to compare those columns, and notice that reading symbolically represented numbers takes time. As you seek patterns within each set, or make comparisons among the four sets, progressively pro-cessing more pairs of values becomes increasingly dif-ficult. Worse, these tasks quickly exhaust memory capacity, such that new numbers or patterns tend to displace ones that were previously seen. These limita-tions on symbolic processing of numbers lead viewers to rely instead on summary statistics that compress data sets into a single group of numbers. For the four sets of numbers in Figure 1, those statistics on the bottom row—means, standard deviations, and correlation coef-ficients—are identical, which might lead you to believe that the numbers contributing to the statistics are similar (Anscombe, 1973). However, because statistics sum-marize larger sets of numbers by abstracting over them and making assumptions about the patterns that they might contain, many sets of numbers can generate the The following books offer excellent, concise guides to designing effective visualizations for communication of data and analyses:
+Camões, J. (2016). Data at work: Best practices for creat -
+ing effective charts and information graphics in 
+Microsoft Excel. New Riders.
+Evergreen, S. D. H. (2017). Presenting data effectively: 
+Communicating your findings for maximum impact  
+(2nd ed.). SAGE Publications.
+Knaflic, C. N. (2015). Storytelling with data: A data visu-
+alization guide for business professionals. Wiley.
+Schwabish, J. (2021). Better data visualizations: A guide 
+for scholars, researchers, and wonks. Columbia Uni-versity Press.
+For a review of the ethics of persuasion with visu -
+alizations, we recommend the following books:
+Cairo, A. (2016). The truthful art: Data, charts, and 
+maps for communication. New Riders.
+Cairo, A. (2019). How charts lie: Getting smarter about 
+visual information. W.W. Norton.
+For a review of accessibility considerations in data visu-
+alization, we recommend the following article:
+Kim, N. W., Joyner, S. C., Riegelhuth, A., & Kim, Y. 
+(2021). Accessible visualization: Design space, opportunities, and challenges. Computer Graphics Forum, 40(3), 173–188.same statistics. For these four sets of numbers, relying 
+on statistics turns out to be dangerous.
+The differences between the four sets of numbers in 
+Figure 1 are immediately visible when translated into images in the form of scatterplots (bottom left). These images allow you to leverage the two-dimensional pro-cessing power of your visual system, the largest single processing system of the brain (Van Essen et al., 1992). If you are familiar with statistics, then the first image at the bottom left likely matches what you assumed the numbers should look like given the statistics on the bot-tom rows: an orderly positive relationship. But the other sets are clearly different in important ways. The right side of Figure 1 depicts frames of an animation that provides a more sophisticated example (Matejka & Fitzmaurice, 2017), in which visual processing allows one to immediately see that, despite identical statistics (to the second decimal place) for each scatterplot, the nine plots contain saliently different patterns. When exploring a new data set, it is good practice to visualize every column of data with a histogram, and every potentially interesting pairing of columns with scatter -
+plots, before turning to statistical summaries (Moore et al., 2017; Wongsuphasawat et al., 2015).
+Visual channels translate numbers 
+into images
+Visualizations rely on several visual channels to trans-
+form numbers into images that the visual system can efficiently process (Bertin, 1983; Mackinlay, 1986; see Munzner, 2014, for a more complete list). Knowing these channels allows a designer to consider which might be best suited for a given data set and context—particularly given that each is associated with differen-tial levels of precision and potential illusions, as described in the following sections. The first column of Figure 2 depicts five of the more frequently used channels. Dot plots and scatterplots, such as those in Figure 1, represent values as position. Bar graphs  
+represent values not only as positions (of the tips of the bars) but also as one-dimensional lengths (and, 
+some argue, even two-dimensional areas; Yuan et al., 2019). If two bars do not rest on the same baseline, such as segments within the same bar in a stacked bar graph, the comparison relies only on length or area. Next, two circles code numbers exclusively as two-dimensional areas (typically circles), a technique often used to overlay values across maps. Angle typically emerges when points are connected to form a line graph, organically allowing an encoding of the differ -
+ence between adjacent points (a bigger difference cre-ates a steeper slope and, typically, a longer line). Outside of pie charts, angle is less frequently used to Box 1. Recommended Reading
+
+114 Franconeri et al.
+depict numbers directly—perhaps on local areas of a 
+map to represent wind directions. Numerosity  is omitted 
+from the figure, but it often implicitly shows higher-level attributes of data. For example, you can immediately estimate the number of points in a scatterplot, segments in a stacked bar chart, or icons in an infographic. Inten-sity is an umbrella term (often also called lightness or value) for either luminance contrast or color saturation, as used in a heat map or fMRI activation map. Motion  
+is also not included in the figure, but animating a scat-terplot to show values changing over time can encode the rate and direction of change in the speed and direc-tion of the dots’ motion.
+How to Design a Perceptually Accurate 
+Visualization
+Understand how to leverage visual 
+channels
+Visual channels are ranked by their perceptual 
+accuracy. These channels differ in how precisely they 
+convey numeric values to a viewer, and knowing the ranking of these channels allows a designer to prioritize what information to show most precisely. The leftmost column of Figure 2 presents five of the channels that can depict metric data to the human visual system. This list is ordered by the typical precision with which a viewer can verbally state the ratios between the two values shown; more precise ways of communicating numbers are at the top and less precise ways are at the bottom (Cleveland & McGill, 1984, 1985; Heer & Bostock, 2010). It should be clear from the figure that the 1:7 ratio can be relatively precisely extracted for position, but that task is a bit tougher for area, and far more difficult for intensity, at the bottom of the list.
+Because position is the clear winner for precision, 
+visualization designers often prioritize the vertical and horizontal dimensions of two-dimensional space when depicting or organizing quantitative data. Faced with a single column of numbers in a spreadsheet, a visualiza-tion designer might depict those data vertically with position (in a bar or line graph) and rely on horizontal position to organize the values into categories, as in a typical bar chart. If faced with two columns of numbers, a designer might simply create two of those same types 
+Fig. 1. Examples of how visualizations can let viewers see beyond summary statistics. At left, four sets of 11 numbers have identical statistics 
+but dramatically different patterns, as revealed by the scatterplots below each column. At right is a more extreme example of nine dramati-
+cally different scatterplots (including one that looks suspiciously like a dinosaur) depicting data with identical statistics, down to the second decimal place. The graphs on the right are adapted with permission of the Association for Computing Machinery, from “Same Stats, Different Graphs: Generating Datasets With Varied Appearance and Identical Statistics Through Simulated Annealing,” by J. Matejka and G. Fitzmaurice, CHI ’17: Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems (https://doi.org/10.1145/3025453.3025912). Copy-right 2017 Association for Computing Machinery.
+
+115
+Isolating pairs with “larger 
+second values” is tough…So guide viewers to the right comparisonsAbsolute Precision Ranking  
+for Seeing a Single Ratio
+Position
+Length
+Area
+Intensit y7 1
+1 7
+1 71 7
+AngleHighest LowestVisual estimation of the 1:7 ratio is noisier toward bottom
+1 7Stacked Ba rDot Plot
+Bubble Ma p
+Slope Grap h
+Heat MapMean length
+of dark bars 
+Mean
+Area
+MeanAngle
+Mean Intensity
+abcd ef#
+∆#
+ab cd ef#
+For color heat maps, 
+depict deltas as blue (+) & red (−)
+[green/red is unsafe 
+for colorblindness]+− +− +−abcd ef
+a bcd ef
+a bcd ef
+a bcd efMean height  
+Max height  
+Min height  
+MinMax
+Min
+ Max
+MinMax
+Min Max
+abcdef
+abcd efCaveats for the visual encoding in 
+each row
+1 7
+Sure, looks
+like a
+~1:7
+area ratio.But beware: if the 
+number is actually mappedto Length,   the gray circles depict~1:2.5 ratio.  
+Intensity values can look different depending their backgrounds.
+Do not plot 
+intensities on intensities.Stacked bar: Bars on baseline are position-coded = more precise perception.
+The black & dark gray bars have the 
+same value differences among them, 
+but the differences are only visible 
+across the black bars.
+The difference is larger for the lighter 
+segments compared with the darker ones, right? That is an illusion—the differences are identical.Use caution with nonzero axes: Viewers tend to overestimate differences…even when the nonzero base 
+is marked, as in the 
+examples at left.
+99
+9899
+98
+ab abFor each visualization, statistics
+are available quicklyCommon Illusions That Distort 
+DataVision Is Powerful for Global 
+StatisticsVision Is Sluggish for 
+Comparisons
+Tool: Shortcut comparisons by adding 
+direct depictions of the deltas, as 
+below
+Tool: Highlight and annotate the right 
+comparisons for your viewers, as 
+above.“a, c, & e have increased”
+Tool: You and your viewers will 
+(generally) compare values that
+(a) ar e close tog ether or
+connected an d
+(b) have similar colors,
+in that priority order.
+Fig. 2.  A summary of the power and limits of visual data processing. The two columns on the left show a quick reference guide to channels that can depict data visually and common 
+illusions for each channel. The column in the center presents a summary of how visual statistics are powerful. The two columns on the right illustrate how comparisons are severely 
+limited and present a set of design techniques that focus viewers on the “right” ones.
+
+116 Franconeri et al.
+of graphs or organize each set of numbers along both 
+the vertical and horizontal axes of position, as in a scatterplot.
+The advantage of position over length for precisely 
+depicting ratios between numbers is demonstrated in the second column of Figure 2, which shows a horizon-tally oriented stacked bar graph in its second row of examples. Because the black segments of the bars are aligned on a common axis at their left, their right tips provide a precise position code, allowing the viewer to see the delicate 0.9:1 ratio between the bars. However, the next set of medium-gray segments are tougher to distinguish because the positions of their right tips are no longer useful, so the viewer must rely on length—a lower-precision channel—to extract the same ratio.
+Mapping visual ratios back to numbers can cause 
+perceptual errors. Using visualizations can unlock 
+powerful data-pattern processing. However, a designer must be aware of several perceptual illusions that can lead viewers to map visual depictions back to their origi-nal numeric values incorrectly (Huff, 1954; Tufte, 1983). If two plotted values have a 1:7 ratio, then the visualiza-tion should cause a typical viewer to see that 1:7 ratio veridically. Even for a precise visual channel such as position, this requirement can be tougher than antici-pated. For example, see the dot plot and bar graph at the top of the second column of Figure 2. The dot plot uses position as its visual channel, and the bar graph depicts the same data with both position and length. The second value appears to be roughly double the first value. Look more closely at the y-axis: The second value is only about 1% bigger than the first; the difference appears greater because the axis baseline does not start at zero. In theory, the data are transparently depicted—but in reality, such graphs are frequently misinterpreted.
+Figure 3 illustrates some real-world examples of this 
+problem. The line graphs in the upper left, adapted from Darrell Huff’s classic 1954 book How to Lie With Statistics, show how a line graph’s scale can be stretched to make a trend appear steeper (Huff, 1954). In March 2014, a version of the bar graph at the upper right appeared on Fox News, a network with an avowedly opposite political orientation to Barack Obama, the U.S. president at the time. Around 6 million U.S. citizens had signed up for a new health-care program spon-sored by the president, and the government specified a goal of 7 million sign-ups by March 31. Although the numbers presented are honest (a 6:7 ratio), the visual-ization’s truncation of the y -axis tells a different story 
+(a 1:3 ratio) to the viewer’s visual system, suggesting a failure of the president’s plan.
+Will people not simply read the y -axis labels and 
+easily overcome this initial misperception? Unfortu-nately, both real-world anecdotes and laboratory studies suggest that this practice can be deeply misleading (Correll et al., 2020; Hofman et al., 2020; Pandey et al., 2014). For example, using a visualization similar to the Fox News example, researchers asked crowdsourced workers to rate the contrast between the two depicted values on a 1-to-5 scale. Ratings in a zero-baseline con-dition averaged around 1.5, whereas ratings in a decep-tive-baseline condition averaged 2.8 (Pandey et al., 2015). In that study, stretching the y -axis also strongly 
+affected ratings of the strength of the trend. The crowd-sourced workers were not simply inattentive: Only par -
+ticipants who passed attention-check trials were included. Moreover, the deceptive effect persisted when participants were asked to type the numeric values rep-resented by each bar before making their effect-size rating and were reminded of the y -axis’s truncation, 
+which was indicated by a “broken axis” symbol (such as that shown in Fig. 2, top of second column) at the base of the y -axis (Correll et al., 2020).
+The prevalence of this deceptive effect has led to 
+quantitative prescriptions for how to set y -axis boundar -
+ies to produce accurate measures of statistical effect sizes by typical viewers (Witt, 2019; B. W. Yang et al., 2021). For example, if the relevant data are far from zero, starting the y -axis at zero can make effect sizes 
+illegible. One approach to increase legibility is to center the y-axis on the data’s mean, then extend the y -axis 
+0.75 SD above and below the mean (Witt, 2019). This 
+approach can be appropriate when the overall scale is not essential.
+Visually conveying an appropriate difference often 
+depends on what “appropriate” means. Many visualiza-tion designers subscribe to the principle that a y -axis 
+must always start at zero so that the visually depicted ratios match the ratios in the data. By contrast, others argue that this guideline must be subject to context (for a distillation of arguments by designers, see Correll et al., 2020). For example, it seems clear that designers should consider the practically relevant range of data values when small but essential differences would be tough to see on a zero-baseline graph. A now-infamous (and now-deleted) story in the National Review used a graph similar to one at the bottom left of Figure 3 to suggest that the recent global temperature rise is incon-sequential (Correll et al., 2020). It even went beyond using a zero baseline for the axis, intriguingly using −10 °F as a lower bound. The graphic to its right shows 
+the pattern of data widely agreed by the scientific com-munity to be more honest: a “hockey stick” pattern indicating a recent rapid rise.
+The image at the bottom right of Figure 3 is a now-
+famous cover of The Economist magazine from Septem-ber 2019, which similarly mapped a restricted range of data to the full range of a blue-to-red color scale. Another issue highlighted by these examples of 
+
+The Science of Visual Data Communication 117
+temperature data is that not all variables have a single 
+natural zero point. Zero degrees Fahrenheit is not a meaningful value for ratio comparisons. Temperature in Celsius has a somewhat meaningful zero point (the typical freezing point of water on earth), but that base-line is not relevant to climate change.
+These mismappings of visually depicted ratios are 
+not isolated to the position and length channels. One can imagine similar differences in interpretations arising for size or intensity. Imagine a map of a country with a circle over each major city. One might depict crime rates with the intensity of the circles’ color, but with what link to the original data? If zero were mapped to gray and 100 violent crimes per capita per year (a very high rate) to gray with a small amount of red, the coun-try might seem safe regardless of the underlying data. Another depiction might link 100 violent crimes per year to a bright red. Side by side, those two depictions would suggest a huge difference in crime rates despite showing the same data. One could imagine the same trick, but this time mapping crime rates to the circles’ size. If 100 violent crimes were linked to a 1 mm circle, the country would seem safe, but if the same number of crimes were linked to a 10 mm circle, it would seem more dangerous.
+Which visual channel is linked to the data val-
+ues? In other cases, viewers can misunderstand which 
+The Difﬁculty of Mapping Numbers to Visual Channels in Honest Ways
+Stretching the y-axis scale of the left graph drastically increases the slopeof the perceived trend at right, which feels dishonest.24
+20
+16
+12
+8
+4
+0
+JFMAMJJASOND JFMAMJJA SONDJFMAMJJASO ND
+The same axis stretch in a bar graph, from
+a real-world example. 
+Here, taking a small visual increase (left) and stretching it (right) is the “honest”way to show climate-change data.This color mapping similarly ampliﬁes arelatively small temperature increase. 22
+21.6
+21.2
+20.8
+20.4
+20Billion Dollars
+100
+80
+6040
+20
+059.0
+58.5
+58.0
+57.5
+57.0
+56.056.5
+1850 1900 1950 2000 1850 1900 1950 2000Degrees Farenheit
+Degrees Farenheit
+Year Year
+Fig. 3. Deceptive axis manipulations across a line graph (top left) and a bar graph (top right). So, should data always be plotted relative to 
+zero? The graph on the bottom left depicts climate change by plotting temperature data from a baseline of 0 °F, yet most would agree that 
+graph is less informative than the version to its right, which allows the differences in temperatures to be seen. At the bottom right of the 
+figure, a cover of The Economist from September 2019 maps the same restricted range of data to the full range of a blue-to-red color scale. The graphs at top left are inspired by Huff (1954); those at bottom left are inspired by Correll et al. (2020). The magazine cover at bottom right is reprinted, with permission, from The Economist (September 19, 2019).
+
+118 Franconeri et al.
+visual property encodes the data. In a classic example at the 
+top left of Figure 4, values are encoded by one-dimensional length (the height of each person), producing a 1:2 ratio of the two numbers. However, you might find that your esti-mate of the depicted values is determined instead by the area taken up by each person, leading to something closer to a 1:4 ratio (or even a 1:16 ratio, if the icons suggest three-dimensional volume). People do indeed make this error, even when the numeric data are printed saliently near the visual representation (Pandey et al., 2015).
+In the donut plot to the right of the human icons in 
+Figure 4, there are two ways that numbers are poten-tially miscommunicated. First, although the data are mapped onto angle, viewer judgments are more strongly determined by two-dimensional area (with some poten-tial contribution from arc length, which is tough to dissociate from area). Because the two donuts are dif-
+ferent sizes, this means that the larger donut’s value will 
+be artificially inflated. Second, the graph is depicted in 3D. If the viewer can recover the actual three-dimensional geometry from the two-dimensional depiction, then the values should be accurately perceived. By contrast, if the viewer pulls values from the two-dimensional image (the amount of green or purple pixels on the screen), the values in the “front” will be inflated because of the perspective projection. Unfortunately, this technique is indeed substantially misleading because static two-dimensional projections do not typically lead to effec-tive recovery of three-dimensional structures (Tittle et al., 2001; but see Brath, 2014).
+Avoid common illusions and 
+misperceptions
+A common optical illusion in line graphs. In the 
+line graph in the middle of Figure 4, the two curves are 
+identical (y  = x3), but the darker line is translated verti-
+cally upward by a constant of 1,000. Even if the viewer knows that the two shapes are identical, it is difficult to see that the vertical distance between the two lines is the same across their entire horizontal span. Instead, given any point on the dark line, viewers tend to see its distance from the closest point on the gray line, which becomes progressively smaller as both lines increase. This illusion makes it difficult to visually estimate differences between lines, especially lines with steep slopes (Cleveland & McGill, 1984). A similar example is depicted in the second column of Figure 2. This illusion is well known to electro-physiology researchers: When faced with visualizing the difference between two measured waves, they will explic-itly plot a “difference wave” that shows the difference as a single line (Luck & Kappenman, 2012).
+Illusory contrast effects for intensity. The bottom of 
+the second column of Figure 2 shows a final illusion that can warp our perception of visualized data. Both on the 
+map and in the rectangle, the two vertically separated circles have the same luminance value. However, the lower circle is subjectively darker to the eye because it has been placed on a lighter background and has a higher contrast with its surroundings. In the real world, convert-ing luminance to contrast is a critically important mecha-nism for seeing accurate luminance and color despite changes in the brightness and color profile of light in the environment (Purves et al., 2004). However, this correc-tion leads to misperceptions of intensity-coded values in the artificial world of data visualizations (Szafir, 2018). One rule of thumb is never to plot intensities on top of other intensities that vary, as in the map in Figure 2.
+Misleading illusions that combine separate val-
+ues. When plotting two sets of numbers on a map, 
+designers typically rely on intensity for one set of values and map the other set of values to the area of circles. This design solution works because, rather than plotting one intensity on top of another intensity, which creates an integral representation of contrast, intensity and area are relatively separable representations (Garner, 1974). Other examples of integral representations include encoding two sets of data in rectangles—one set in their widths and one set in their heights. Instead of seeing these val-ues separately, the eye is tempted to translate them into the aspect ratio and the area of each rectangle. The eye then focuses on the ratios and multiplication of each pair of values (Shechter & Hochstein, 1992). As an extreme case, it is unwise to attempt to use the red component of a single color (imagine using the RGB sliders to change the color of an object in presentation software) to depict one number and the green component for another. Red and green will combine in an integral fashion when both are at their highest value, and the viewer will see a single integral percept of yellow (Ware, 2019).
+A final example is shown in the scatterplot in Figure 
+4. Once two sets of numbers are combined into a single two-dimensional plot, new integral percepts emerge, such as the distance between any two points across both their x  and y  values, points that are outliers on 
+both axes, or the global shape of all points that we can easily interpret as a correlation (F. Yang et al., 2019). However, there is a trade-off. The distribution of values of either set in isolation is now tougher to disentangle (Mackinlay, 1986). This is why data scientists often pair a scatterplot with “marginal histograms” that allow them to see those data in a separable way.
+The biasing effect of categorical perception. When 
+continuous values are encoded through visual channels, 
+those values can be warped by categorical perception. A classic example is the seven discrete colors that we see in a rainbow, which are not present in the rainbow itself. 
+
+119
+In these examples, linear increases in height or radius
+suggest the square of that increase.
+The same data are displayed with two color mappings,
+revealing how color-category boundaries can bias value perception. The difference between theselines is constant, yet an illusion suggests that thedifference decreases.Combining two data dimensions in a scatterplot can make recoverytougher for either alone.A Set of Common Visual Confusions, Illusions, and Distortions
+Year 2
+Year 1
+y = x3 + 100010000
+500
+450
+400
+350
+300250200150
+100
+50
+0
+0501001 502002 503003 504004 505008000
+6000
+4000
+2000
+0
+05 10 15 20y = x
+3 
+Fig. 4.  A set of common visual confusions, illusions, and distortions. At upper left, the two human icons represent vastly different ratios depending on whether the 
+data are represented by their one-dimensional heights, their two-dimensional areas, or their three-dimensional volumes. The donut graph to their right shows that 
+three-dimensional depictions can artificially inflate data values in the two-dimensional plane. At bottom left, the same fMRI data are plotted with two color mappings. The brain image on the left produces less of a spurious categorical boundary effect, whereas the image on the right shows a common red-to-green color map that makes continuous variation appear exaggerated when it maps onto transitions from one color category to another. At center, an illusion prohibits the accurate recovery of differences between values in a line graph. At right, correlation is easier to detect from the scatterplot, but individual histograms for each dimension are easier to see when plotted separately.
+
+120 Franconeri et al.
+Those color categories are created by an automatic pro-
+cess that systematically bins continuous wavelengths into one of several perceptual categories, exaggerating metric differences among values that straddle those boundaries and shifting percepts toward prototypes for the catego-ries (Goldstone & Hendrickson, 2010; Newcombe et al., 1999). This same phenomenon occurs when data are depicted by hues, as in the bottom left of Figure 4. Across the two brain images, the one on the right uses a greater variety of hues to depict activation values. These addi-tional hues create new color-category boundaries that can dramatically exaggerate the differences between val-ues that straddle them (Y. Liu & Heer, 2018; Quinan et al., 2019). In The Economist cover shown in Figure 3, the blue-to-red scale creates a salient categorical color boundary at the color transition point, which makes the temperature increase in the past few years especially salient. Similar category boundaries can affect the per -
+ception of values depicted by other channels such as position or length. In a pie graph or stacked bar graph, values that are near gridlines or the implicit 50% mark in the middle of the bar or pie are recalled as being farther from that category boundary (Ceja et al., 2021; McColeman et al., 2021; Spence & Krizel, 1994; Xiong, Ceja, et al., 2020).
+Design for color-vision impairments
+Beyond illusions and biases, certain combinations of colors in visualizations can be problematic for people who are color-blind or have other color-vision impair -
+ments. Color-vision impairments are estimated to affect 4% of the global population (Olson & Brewer, 1997), or roughly 300 million people. Further, older adults can have less sensitivity to color (Silva et al., 2011). Some color blindness results in viewers not being able to distinguish between various colors; protanopia, or red–green color blindness, is the most common, but various other versions of color blindness exist. Color-vision impairments are highly problematic for visualizations, as a portion of the audience may literally not see impor -
+tant patterns in data.
+Numerous online color-blindness simulators allow 
+users to upload an image to learn how someone with color blindness would see it (Asada, 2019). For exam-ple, the first row in Figure 5 shows a scatterplot encoded with two colors, green and orange. People with typical vision can see that the green dots have a steep positive correlation and the orange dots make a flat line. How-ever, when the scatterplot is processed through a color-blindness simulator, the colors look the same, and all the dots appear to show a positive correlation. The simplest way to make visualizations accessible to view-ers with color blindness is to avoid using hue as the only encoding channel or allow viewers to change the color palette (Silva et al., 2011). Designers can also double-encode a variable, using hue and another encoding channel (Plaisant, 2005), as in the second row of Figure 5. The most thorough and inclusive option is to use color palettes that are safe for people with color-blindness, such as those proposed by Harrower and Brewer (2003), as seen in the bottom row of Figure 5.
+Design for perceptual accuracy across 
+a broad array of tasks
+The ranking of precision for visual channels depicted 
+in the first column of Figure 2 is based on a measure of precision in a particular task: the average error in verbal reports of the ratio between two depicted values (1:7 for each of the examples in the first column; Cleveland & McGill, 1984; Heer & Bostock, 2010).
+Although this task is surely important when compar -
+ing two values, it is not the only task (or perhaps even the primary task) that viewers complete when examin-ing visualizations (Bertini et al., 2020). One proposed taxonomy of graph-interpretation tasks separated them into three levels: elementary, intermediate, and “over -
+all,” roughly corresponding to simple fact retrieval, comparison and identification of trends, and gist under -
+standing (Bertin, 1981). Additional taxonomies have been developed in the context of cognitive models of Double
+Encoding
+Double
+Encoding +
+Color-Blindness-
+Safe Color
+PaletteNormal
+VisionRed-Blind
+Simulation
+(Protanopia)
+Fig. 5. Three ways to encode data for two groups in a scatterplot, as 
+seen by observers with typical color perception and those with protano-
+pia, a form of color blindness. Protanopia was simulated in Photoshop.
+
+The Science of Visual Data Communication 121
+graph comprehension. Other taxonomies are based on 
+analyses of cognitive processes involved in different tasks (Tan & Benbasat, 1990), reliance on local versus global features (Carswell, 1992), or other criteria  
+(MacDonald-Ross, 1977; Washburne, 1927; Wickens, 1989). Work in the data-visualization literature has begun to catalog such tasks and to test the types of displays that best support performance for each. One list of tasks is distilled from questions submitted by students who were asked to analyze a large data set (Amar et al., 2005). This list includes analytic tasks such as “retrieve value,” “sort,” “determine range,” “correlate,” and “characterize distribution.” Another list of tasks focuses on how people generate summary statistics for plotted data (Szafir et al., 2016).
+The ranking derived from performance on two-value 
+ratio judgments does not always extrapolate across these alternative tasks. For example, depicting data with a line graph, which relies on “precise” position coding, can lead to lower efficiency in seeing big-picture statistical properties such as means. Intriguingly, the opposite is true for intensity coding. Multiple studies have shown that for identifying particular values, position is far more precise than intensity, but for judging an average across many values, intensity is more precise (Albers et al., 2014; Correll et al., 2012). The reason for this dissociation is not well understood. It is possible that the lower preci-sion of intensity better allows its values to blend together to construct aggregate values, or perhaps intensity is simply processed by a different mechanism that affords aggregate judgments (Szafir et al., 2016). Some visualiza-tion designs purposely use the low precision of the intensity channel to focus viewers on the big-picture trend of the data instead being distracted by precise details, as in the visualization from the cover of The Economist magazine (Fig. 3), which focused viewers on the big picture of climate while de-emphasizing more detailed (but less relevant) variability in monthly weather.
+Other work has tested whether people can more 
+quickly or accurately complete the types of tasks listed above (judge mean, correlate, etc.) given different graph formats (scatterplots, bar graphs, tables, etc.) and data-set sizes (small vs. large; Y. Kim & Heer, 2018) or different arrangements of data within a graph (Jardine et al., 2019; Ondov et al., 2019). Although such studies have found consistent interactions—better performance on Task X with Design Y in Arrangement Z for Data-Set Size S—the existing pattern of results is currently too complex to generalize to novel combinations. To create generalizable guidelines, the research community will likely require a more complex model of the underlying perceptual operations that produce these complex interactions (Jardine et al., 2019; Ondov et al., 2021).
+Among these alternative tasks, the perception of cor -
+relation is particularly well studied (Harrison et al., 2014; Jardine et al., 2019; Rensink & Baldridge, 2010; F. Yang et al., 2019; Yuan et al., 2019), leading to initial suggestions of its underlying perceptual operations. For example, scatterplots allow for more accurate judg-ments of correlation than pairs of bar charts presenting the same data (Harrison et al., 2014).
+Effectively distinguish among groups 
+in data
+Scatterplots present two metric variables in relation to 
+each other. Imagine that the horizontal position repre-sents the longitude of a collection of oil wells and the horizontal position represents their latitude. This example makes clear that scatterplots and data maps share DNA. Suppose the designer now wants to differentiate the set of points according to a nominal (categorical) variable, such as the company that owns the oil well. Because the two dimensions of position (vertical and horizontal) are already being used to represent the metric variables, designers would typically differentiate points from each group with either different colors or shapes.
+Plotting the groups as categorically different colors 
+is often the first choice because the visual system pro-cesses color differences more efficiently than shape differences across the two-dimensional visual plane, as measured by performance in visual-search and texture-segmentation tasks (Wolfe & Horowitz, 2017). These findings, based on simple displays used in laboratory studies, extrapolated to a data-visualization context in which viewers compared the average heights of mul-tiple color-coded or shape-coded clouds of points in a scatterplot: Color coding produced far better perfor -
+mance (Correll et al., 2012).
+When color differences distinguish data from two 
+separate groups or classes, differentiating those classes is easier if the encoded colors are farther apart in a perceptual color space. For example, it is easier to dif-ferentiate red from blue than from orange-red. Research-ers have constructed effective palettes from perceptually informed color spaces (e.g., CIELAB; Y. Liu & Heer, 2018) to suggest colors to use to differentiate N  nominal 
+classes; colors become progressively crowded together as N increases. One such set that is viewable (and cus-
+tomizable) online is ColorBrewer 2.0 (Brewer, 1994a, 1994b). Another tool, Colorgorical, balances perceptual differentiation with aesthetic considerations (Gramazio et al., 2016).
+Picking a color for a nominal value should also be 
+constrained by the semantic congruence of the value and the color. If the nominal values are lemons and cherries, it is easier for viewers to answer questions about a chart that labels those values with yellow and red, compared with a standard palette that does not consider semantic congruence (Lin et al., 2013; Schloss 
+
+122 Franconeri et al.
+et al., 2018). An algorithm can automatically generate 
+intuitive color choices for a given noun by analyzing the color profile of images pulled from Web searches for the noun and then optimizing color assignments in terms of perceptual spacing and semantic fit. Such algo-rithms can perform as well as human experts in quickly picking color palettes for nominal data (Lin et al., 2013; Setlur & Stone, 2015).
+Sometimes a visualization designer needs to show a 
+second set of nominal values in the same plot. Thinking back to our map, imagine that we have used a unique color to represent each oil company (A, B, C) but also wish to depict each company’s nationality (Canada, Brazil, Mexico). Typically, shape would be used to show that second nominal variable. Because it is less perceptually effective than color, it should be used for the less impor -
+tant variable, or the one with fewer values to differenti-ate. The shape sets used in commercial software (e.g., Microsoft Excel) gravitate toward intuitive shapes, such as circles, triangles, squares, and diamonds, that are not actually well separated in perceptual space.
+Researchers have begun to explore perceptual shape 
+space, and some have extrapolated from pairwise sub-jective similarity ratings of combinations of candidate shapes (Demiralp et al., 2014). Other work has relied on objective performance tasks on actual simulated scatterplots (Burlinson et al., 2017; Huang, 2020). This work is also new, but so far, human shape space (at least for the simple shapes used in visualizations, and at least for the types of tasks tested so far) appears  
+to prioritize the difference between open (circle, square, triangle) and closed (× , +, *) shapes, such that differentiating points is easier when they differ in that property (Burlinson et al., 2017; Huang, 2020). An initial full three-dimensional perceptual shape space (Huang, 2020) adds the additional properties of intersection and spikiness; Figure 6 depicts a clear improvement in shape differentiability compared with the typical sets used even in professional data-visualization software.
+Finally, some software automatically differentiates 
+nominal variables with both color and shape, under the assumption that more differentiation is better. However, work has shown that color is already so dominant in its effectiveness that redundant encoding does not sub-stantially improve visual processing efficiency (Gleicher et al., 2013) unless the viewer has color-vision impair -
+ments or the viewer’s task is exceptionally difficult (Nothelfer et al., 2017). Given anecdotal claims from some expert designers that redundant encoding can cause confusion in viewers, who typically expect color and shape to signal different nominal variables (Tufte, 1983), the lack of evidence for a perceptual advantage suggests that redundant encoding should be avoided in most cases, except when used to make visualizations accessible for viewers with color-vision impairments.

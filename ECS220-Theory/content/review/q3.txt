@@ -1,0 +1,15 @@
+Summary:
+You're proving that if a problem in NP has witnesses of size at most O(log n), then it's actually in P. The argument is that logarithmic witness size means there are only polynomially many possible witnesses (at most 2n^c), so you can brute force check all of them with the polynomial time verifier, giving polynomial total time.
+
+Does it answer the question?
+Yeah, the question is answered. You show that A is in P.
+
+Parts that are confusing:
+You write the final bound as "at most 2n^c" but earlier you got 2^(c log n + 1) = 2·n^c. So is it 2n^c or n^c? Either way it's polynomial but just want to make sure the bound is consistent.
+Also, I'm not totally sure I follow the geometric series calculation, but maybe that's just me.
+
+Parts that might be wrong:
+I'm not sure about the geometric series approach. If witnesses have length at most c log n, I think there are just 2^(c log n) possible binary strings total? Like, you could have strings of length 0, 1, 2, ..., up to c log n, and counting all of those might be what the geometric series is doing. But I'm a bit confused whether you need to sum over all those lengths or if you can just say there are at most 2^(c log n) witnesses since that's the number of strings of maximum length. I'm not super confident about this though, so maybe the geometric series approach is fine and I'm just not seeing it.
+
+Ambiguous parts:
+When you say "the total number of binary strings are" and then do the calculation, I think you mean the total number of possible witnesses? Just to be clear since you're counting all strings up to that length.

@@ -1,0 +1,52 @@
+Okay, so let's look at another surprising
+phenomenon that can happen, which is that a lot of these combinatorial questions you
+ask for some perfect solution. So for example, in a CNF formula, you need to satisfy every
+single clause in order to satisfy the entire formula. Well, we could relax that and say, Well now we just want to get as many clauses satisfied as possible. Maybe it's not necessary
+to satisfy all of them, but they somehow represent
+some constraints. Like remember our cnf example
+was the, The Dinner Party. We have a bunch of constraints
+we want to satisfy by choosing the right food and drink
+and cheese and so forth. Maybe we, we satisfy ourselves
+and not getting every constraint, but as many of them as possible. So this is an optimization problem. It's not a decision problem, although we can phrase it
+like a decision problem. And the optimization problem
+is given a K CNF formula, find the largest number of
+clauses that can be satisfied. Okay, so trivially, the decision problem K SAT
+is reducible to max case at because you can simply ask whether the largest number of
+clauses that can be satisfied is m, where m is the number of clauses. So if you knew how to get the number, you'd know whether the number
+is the maximum it could be. So you could solve
+the decision problem. Can you satisfy all of them? So in particular, Max 3
+SAT is NP-complete as, as max force at max five set. But remember that to SAT is NP. So if I'm given a two CNF formula, there's only two literals per clause. Many clauses as I want. I can actually figure
+out by reduction to graph reachability whether it's
+possible to satisfy them on. But sort of relax in
+this asking, Well, can I suppose is not
+satisfiable and I want to know what's the largest
+number of them that can be satisfied even in a two CNF formula, that problem is NP-complete. So it's easy to tell if all
+the clauses can be satisfied. But if they cannot, then it's hard
+to find out exactly how many. Maxcut as we just saw is sort
+of another example where the quest for the best solution is harder than the quest
+for a perfect solution. Because if you ask whether the max cut in a graph
+has all the edges, That's equivalent to asking
+whether it's bipartite. And it's easy to tell if
+a graph is bipartite. Okay, So to, to see that
+Max 2 SAT is NP hard. We are going to reduce 3 SAT to it. So the idea is we're given some 3-CNF formula and we
+have these clauses in it. And so for each clause, and again, x, y, and z here are literals. So one of them could be like the
+negation of an input variable. But if I write a negation
+of that negation, so we want to turn this 3 CNF formula into a
+two CNF formula where it's hard to figure out how
+many clauses going to be satisfied or the decision
+version would be, you get an integer
+threshold and you ask, can at least this many
+clauses to be satisfied. So you replace this clause with
+these six too literal clauses. Where on each, where these three iterate over
+every pair of literals, and these three iterate over
+every pair of negated literals. Okay? And the key idea, we're not going to
+talk through it here, but it's, it's just a
+straightforward case analysis. Is that any assignment that
+satisfies exactly three or five, there's any assignment has to satisfy exactly three or five
+of these clauses, depending on whether it NA ie
+satisfies x or y or z, right? There's no way to satisfy
+any number other than that, assuming that you have at least a one in this clause and also at least a 0
+somewhere in this clause. And that's just a
+straightforward case analysis on the six different
+assignments to x, y, and z that can make this have
+one true and one false literal.

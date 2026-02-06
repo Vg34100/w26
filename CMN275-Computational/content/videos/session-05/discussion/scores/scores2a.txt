@@ -1,0 +1,17 @@
+ChatGPT w/ chat-prompt2 & musk
+### Summary scores (document-level, using your 0–5 anchors)
+
+| Variable ID      | What it captures             | Score | Quick reason                                                                                                                                                         |
+| ---------------- | ---------------------------- | ----: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| V01_CONCRETE     | Physical things / states     |     4 | Lots of physical objects and materials (tanks, engines, oxygen, methane, heat shield), plus physical processes (landing, refueling).                                 |
+| V02_SENSORIMOTOR | Sense and body-action cues   |     2 | Many action verbs (land, fire, dock, melt, lift), but very little direct sensory language (sound, texture, smell, etc.).                                             |
+| V03_SPECIFIC     | Exact details, constraints   |     4 | Heavy use of numbers, units, dates, counts, sizes, pressures, volumes, durations, and named systems.                                                                 |
+| V04_NOMINAL      | “Process turned into nouns”  |     2 | Some abstract noun phrasing (“development,” “capability,” “production,” “configuration”), but many sentences still keep clear actions.                               |
+| V05_JARGON       | Insider terms and acronyms   |     3 | Frequent domain terms and acronyms (BFR, Raptor, cryo, specific impulse, bar, orbital rendezvous, Sabatier). Often understandable from context, but still technical. |
+| V06_REFERENT     | Clear “who did what to what” |     4 | Mostly clear agents, objects, and actions (SpaceX, Falcon 9, engines, tanks, docking, refilling). A few “this/it” moments, but usually resolved nearby.              |
+
+### Overall assessment
+
+This text is **strongly tied to real-world referents** and **high on specificity**, mainly because it names concrete hardware and gives lots of measurable details (sizes, pressures, counts, time). It is **less sensory** than a lived-experience story, since it rarely describes what something looks/sounds/feels like in human terms. It has **moderate technical gatekeeping** from rocket terms and acronyms, but the talk often explains enough to keep meaning clear.
+
+Net result: **high linguistic tie to physical reality**, with the main “ungrounding” coming from (1) opening motivational, future-focused lines and (2) technical jargon plus some nominalized phrasing.

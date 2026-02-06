@@ -1,0 +1,1071 @@
+Pablo [6:50]: so
+Pablo [6:50]: reminder
+Pablo [6:55]: we show this problem of tiling
+Pablo [6:56]: is np complete
+Pablo [7:00]: and
+Pablo [7:01]: the way we did it
+Pablo [7:03]: involved
+Pablo [7:09]: first of all actually a special case of the tithing problem where there's only these two shapes
+Pablo [7:12]: the two by two square and then this tromino
+Pablo [7:14]: which is a two by two square one cor
+Pablo [7:15]: ner
+Pablo [7:26]: and the way it worked was to essentially set up a region so that the only way to tile that region looks like evaluating gain slope of a boolean circuit one by one
+Pablo [7:31]: and you just set it up so that
+Pablo [7:36]: you can tile the region definitely at the output
+Pablo [7:36]: is true
+Pablo [7:41]: so these two orientations the trauma doesn't represent true and false and you can only clean they get to the end
+Pablo [7:46]: if the final gate which in this case with this and gate implemented by this shape
+Pablo [7:50]: and then somebody pointed out oh well
+Pablo [7:54]: we showed how to do like a wire
+Pablo [7:55]: input
+Pablo [7:55]: gauge
+Pablo [7:56]: an end gate
+Pablo [7:59]: a knot gate we didn't have to bother with an or gate
+Pablo [8:01]: out of
+Pablo [8:01]: nothing but
+Pablo [8:05]: we didn't show how to do a crossing
+Pablo [8:11]: so what you're going to do in the homework is show how you can replace any crossing and a non player circuit
+Pablo [8:14]: it's a logic that makes it plainer
+Pablo [8:19]: except we didn't talk about how to do xor what you're going to do is basically show how to do x
+Pablo [8:21]: so that this would all work
+Pablo [8:25]: so that's just a review of what we did last time
+Pablo [8:26]: and
+Pablo [8:27]: that's using
+Pablo [8:31]: just these two shapes the two x two square in the domino
+Pablo [8:34]: it turns out that even if you only have the drop
+Pablo [8:37]: you can set up a more complicated region
+Pablo [8:43]: the tiling of which corresponds exactly to evaluating a boolean circuit
+Pablo [8:47]: where some question of how you rotate it
+Pablo [8:48]: on the input gates
+Pablo [8:50]: sort of sets those to true or false
+Pablo [8:58]: so that you can tile the whole same idea you can cut the region if and only if there's a setting of the inputs that makes the whole circuit evaluate
+Pablo [8:58]: to true
+Pablo [8:59]: but that's not obvious
+Pablo [9:05]: that's sort of chris moore kind of considered what we just did sort of an easy warm up to this more complicated
+Pablo [9:05]: one
+Pablo [9:06]: but we're not going to go through this
+Pablo [9:08]: okay
+Pablo [9:15]: so what's like the simplest time just be like a one by one square but obviously that
+Pablo [9:16]: it's easy
+Pablo [9:19]: to tile any region if you had only the square
+Pablo [9:20]: because you get the spine
+Pablo [9:21]: control
+Pablo [9:28]: and then this trauma is a little more complicated it's got these three points so what's like intermediate an intermediate question might be the domino topic
+Pablo [9:32]: you've got nothing but a domino so a one by two rectangle
+Pablo [9:34]: you can rotate it
+Pablo [9:44]: the special case of the tithing problem with dominoes would be you're just given a region and you want to know can you title it down we kind of open with this sort of question
+Pablo [9:48]: and it turns out this can be done in polynomial
+Pablo [9:52]: does anybody see why
+Pablo [9:53]: who hasn't
+Pablo [9:54]: looked at the
+Pablo [10:12]: kind of goes back to remember we showed this eight by eight square with four hundred degrees
+Pablo [10:19]: we're going to use checkerboard
+Pablo [10:21]: what
+Pablo [10:21]: will we do
+Pablo [10:23]: thinking about check
+Pablo [10:23]: erboard
+Pablo [10:56]: such
+Pablo [10:57]: that no one chasing
+Pablo [11:00]: the orig
+Pablo [11:01]: inal stylist st
+Pablo [11:02]: ove
+Pablo [11:52]: left
+Pablo [11:53]: problem
+Pablo [12:26]: is it
+Pablo [12:27]: possible to find
+Pablo [13:11]: the most
+Pablo [13:12]: number that
+Pablo [13:17]: can be done
+Pablo [13:18]: so
+Pablo [13:19]: we're going to reduction
+Pablo [13:19]: here
+Pablo [13:21]: but
+Pablo [13:22]: we're doing it
+Pablo [13:23]: at the office of
+Pablo [13:52]: product
+Pablo [13:53]: so
+Pablo [13:54]: we got
+Pablo [14:03]: all blue
+Pablo [14:07]: on
+Pablo [14:08]: the other
+Pablo [14:11]: and we put an edge between two of them if they're next to each other
+Pablo [14:14]: first of all
+Pablo [14:15]: you do apply
+Pablo [14:17]: if you use this check
+Pablo [14:17]: erboard
+Pablo [14:19]: the only
+Pablo [14:20]: square
+Pablo [14:23]: and therefore this will be a my
+Pablo [14:23]: contact
+Pablo [14:28]: little orange
+Pablo [14:34]: so
+Pablo [14:35]: you do this
+Pablo [14:38]: on each
+Pablo [14:39]: side
+Pablo [14:39]: or
+Pablo [14:40]: if not
+Pablo [14:41]: we need to know the answer
+Pablo [14:45]: if you do this and you notice
+Pablo [14:48]: alongside has more nodes than the other
+Pablo [14:49]: you can immediately say
+Pablo [14:52]: that because as we argue
+Pablo [14:54]: no way tightly
+Pablo [14:55]: in that
+Pablo [14:57]: possibly because every time you put
+Pablo [14:58]: a domino down
+Pablo [15:01]: you kind of want to loop in a one orange square
+Pablo [15:02]: so if you got more than
+Pablo [15:03]: the other you can
+Pablo [15:04]: but
+Pablo [15:05]: here we got the same number
+Pablo [15:06]: after we use the
+Pablo [15:07]: table
+Pablo [15:17]: and then notice the edges are just made a is next to who is next to b and e so we've got an edge from a to b and then edge from a
+Pablo [15:19]: and
+Pablo [15:22]: what is a tiling a tiling is just a perfect match
+Pablo [15:28]: so you put down some tiles so the idea here is some domino has to cover a
+Pablo [15:37]: but that domino is one by two so whatever domino covers a we know the other half of it has to cover one of a's neighbors
+Pablo [15:41]: and so when we decide to put a domino on a
+Pablo [15:47]: we have to also decide which neighbor is it going to cover and that corresponds to picking an edge
+Pablo [15:54]: and once we've done that once we decide to say the domino that covers a also covers b that means we've decided to put the ab edge
+Pablo [15:56]: in the matching
+Pablo [16:01]: but the fact that we can't have any overlap we can't have a domino
+Pablo [16:05]: like a different domino that also covers a or a different domino that also covers
+Pablo [16:06]: b
+Pablo [16:18]: that's corresponding to the constraint of a matching that once you pick this edge that has endpoints a and b you cannot pick another edge that has n points a or b that's just the same logic just as we can
+Pablo [16:22]: we can't put a second domino in a nor a second domino and
+Pablo [16:23]: b
+Pablo [16:30]: and then we've decided who's going to cover e well it's also going to cover b so the de is
+Pablo [16:37]: and then we just think about putting this domino down that corresponds to picking edges
+Pablo [16:44]: we can put dominoes that cover the entire region if and only if we can pick edges that form a matching
+Pablo [16:48]: they're not incident on the same node that would correspond to overlapping dominoes
+Pablo [16:52]: but we managed to hit everything in other words it's a maximum
+Pablo [16:58]: and again not obvious that can be done in polynomial time but it can and that's the kind of thing you do
+Pablo [16:59]: in two hundred twenty
+Pablo [17:08]: in some sense we've got the two simplest shapes the one by one and the one by two
+Pablo [17:16]: tile this problem is easy but you go to like the next most complicated shape the termino and it becomes empty
+Pablo [17:25]: now that doesn't mean every other possible tile you could think of it would also be np hard i don't know about the status of the question
+Pablo [17:28]: other here it is for like the simple shape
+Pablo [17:41]: so this is just another illustration of the utility of knowing that but not this slide but the previous one the utility of knowing of circuits at is n equal to
+Pablo [17:51]: this directly reduce circuits activists tiling problem now we know that the timely problem or at least the tromino and two by two squared
+Pablo [17:57]: so now
+Pablo [17:58]: i promised you
+Pablo [18:01]: we're going to go through some reductions see how they work
+Pablo [18:16]: and we're going to give ourselves the benefit of just assuming that all circuits at and three sat are indeed
+Pablo [18:20]: but how do we know they're np complete well at some point you got to prove those are incomplete so we're going to do both of them now
+Pablo [18:30]: how
+Pablo [18:31]: are we going to show
+Pablo [18:34]: the lead we're going to reduce
+Pablo [18:35]: this unnatural
+Pablo [18:36]: and equ
+Pablo [18:36]: ally problem with this existence
+Pablo [18:38]: today
+Pablo [18:39]: right
+Pablo [18:40]: so
+Pablo [18:41]: somebody
+Pablo [18:42]: people describe
+Pablo [18:43]: the proof that a certain
+Pablo [18:44]: exact thing that you can be
+Pablo [18:45]: the only
+Pablo [18:46]: kind of
+Pablo [18:47]: work by reduct
+Pablo [18:54]: ion directly transforms and key verifiers into circuits but the way the textbook does it they kind of do it
+Pablo [18:59]: like no we've got this artificial problem witness existence and then it is a reduction
+Pablo [19:04]: but witness existence kind of this artificial problem
+Pablo [19:06]: it just does a reminder what does witness exist
+Pablo [19:06]: ence
+Pablo [19:13]: it's a problem that basically is designed to be a question about np error so it's a question about the triple
+Pablo [19:24]: a program p we imagine like np verifiers takes two inputs the instance of the problem and then the potential witness of the potential solution
+Pablo [19:33]: and the second input to witness existence we're going to call a string x and it's going to serve as the first input for this program
+Pablo [19:37]: but the second input of this program p is not part of our indic
+Pablo [19:37]: ator
+Pablo [19:46]: now our third input is this integer t and unary or in other words the string one to the t and the question we ask about these three things
+Pablo [19:52]: is there a second input w i could give the p that would make an accept it would cause it to output yes
+Pablo [19:54]: but with some constraints
+Pablo [20:01]: i don't want p to run too long it should run for no more than two steps and i don't want w to be too big should be at most t bits
+Pablo [20:07]: okay so that's the witness existence
+Pablo [20:25]: and again we made an argument that this is np complete and again this is one of those ones where it was actually a little easier chosen hard than it's contained in fda
+Pablo [20:27]: but we're not going to review that right now
+Pablo [20:35]: we know this is going to be complete so what does it mean to reduce it to circuit x again when you get confused just unpack the definitions
+Pablo [20:39]: how do you unpack the definition of reducibility
+Pablo [20:45]: it means you have to show how to transform an instance a witness resistance a triple txt
+Pablo [20:50]: into an instance of service what's an instance of assertive
+Pablo [21:01]: and we're going to call the circuit c sub pxd to remind ourselves that the circuit depends on p and x and t it depends on all three parts of the input subsistence
+Pablo [21:10]: and it's also kind of a reminder it takes an input and remember that the input it takes is not x if you change x it's going to change
+Pablo [21:14]: so we're going to think of the input to c as being this dot
+Pablo [21:21]: right so what we need to do is we need to iron hook the xp output the circuit so that txt is the s instance
+Pablo [21:23]: if only a c is the essences
+Pablo [21:25]: what does it mean for this ads
+Pablo [21:27]: listed rewrite
+Pablo [21:38]: it
+Pablo [21:45]: but the
+Pablo [21:46]: c is going to be
+Pablo [21:47]: executed
+Pablo [21:52]: on
+Pablo [21:57]: the x hard cod
+Pablo [21:57]: ed into it
+Pablo [21:58]: but c
+Pablo [21:59]: w
+Pablo [22:05]: ipe
+Pablo [22:19]: what
+Pablo [22:20]: was the program like
+Pablo [22:21]: well
+Pablo [22:22]: i said in the first week
+Pablo [22:25]: we do not deal with turing machines
+Pablo [22:27]: unless we really need to
+Pablo [22:44]: this is a point where we really need at this point it's going to become quite important the low level details of how turing machines work because we need some way to formalize what is the program and up until now just saying oh by definition of algorithm is a program in your favorite programming language
+Pablo [22:45]: well
+Pablo [22:48]: with that definition this wouldn't be so straightforward
+Pablo [22:54]: this is going to be more straightforward if we say no p is encoded as a single tape target
+Pablo [23:00]: and that is going to give us the detail we need to turn it into a circuit
+Pablo [23:12]: paying attention to the low level details of how that program works because the low level details of turning machines are quite a bit easier to deal with than the low level details of say a c program
+Pablo [23:18]: so our formal model of algorithm for this proof is going to be the single data
+Pablo [23:36]: and you typically define this as something tuple but the most important part of that tuple is the transition function the function that tells you given a state and a symbol i'm reading on my tape what's the next state i go to what's the next symbol i read and which direction does the data and you start in some initial configuration
+Pablo [23:45]: where you're in some state let's call it q you've got some string written on the tape let's say it's zero one one zero one zero zero and then
+Pablo [23:45]: stop there
+Pablo [23:54]: and when a heap is one way
+Pablo [23:55]: the same
+Pablo [24:03]: end
+Pablo [24:06]: you can start with an update
+Pablo [24:07]: that's how
+Pablo [24:08]: we're going to make it
+Pablo [24:09]: this is that
+Pablo [24:11]: for this particular kind of terrain machine
+Pablo [24:15]: we know it's going to be an np verifier so we know how long it's going to run
+Pablo [24:17]: and we know
+Pablo [24:18]: how long
+Pablo [24:23]: it runs that gives us a bound on how many tape cells it can use
+Pablo [24:28]: so we're going to think of turing machines as just having this finite tape that's big enough for the amount of time
+Pablo [24:31]: so you start with some configuration
+Pablo [24:38]: here what do we know well we're in state q we're reading a zero the transition table tells us
+Pablo [24:43]: we're in state q and radiant zero we should replace that zero with a one
+Pablo [24:46]: span u
+Pablo [24:50]: tilization
+Pablo [25:02]: and so the turn machine keeps going okay i guess here i showed the tape growing
+Pablo [25:07]: but the idea is that we knew it was going to grow but no bigger than this it would have just started with a bunch of blank
+Pablo [25:12]: and then you get to some final config
+Pablo [25:12]: uration
+Pablo [25:18]: and then maybe so the key idea here is that we're going to execute this turbine
+Pablo [25:18]: machine
+Pablo [25:22]: so what we need to do is to be able to represent this configuration
+Pablo [25:29]: as a bunch of bits that can be processed by a boolean server boolean targets dealing with this
+Pablo [25:35]: so what is configuration well i typically define a configuration of a single tape current machine
+Pablo [25:36]: to be a truck
+Pablo [25:48]: it's everything you need to know to know what's the term machine going to do next what state is it in where's the tape head which is just an integer say a wear on the same we're scanning and what is the concept of the tape
+Pablo [26:01]: which again if you use the model of a finite but grow we'll take to take content is always some finite string so you could imagine your tape alphabet is just zero one blank if you're careful never to write a blank in the middle
+Pablo [26:05]: just some binary strength
+Pablo [26:07]: until the blank
+Pablo [26:10]: that tells you the date
+Pablo [26:21]: so with that definition well here's the configurations as triplets the triple q one then that mid string the next configuration is q two because we move the tape head right
+Pablo [26:27]: position one up by one and then the split string s one to tape that went back to the left and then this fits
+Pablo [26:47]: so one thing we could do if we wanted to so we represent configurations this way and we assume and again this is not a big ass this would be like tedious but not too hard to demonstrate that you could assume your turing machine always has only a safe alphabet with zero one and blank and it never writes a blank in the middle
+Pablo [26:52]: we could always represent the tape content of the binary string that's kind of naturally this
+Pablo [26:55]: but what about the state and the heaven position
+Pablo [27:03]: stage is just an element from a finite set the head position is an integer well we could come up with some binary representation of those right
+Pablo [27:07]: there's an obvious binary representation of integers
+Pablo [27:10]: and then whatever however many states we have
+Pablo [27:22]: the log base two of that is how many bits we would need to uniquely identify each of those so here's one way that we could represent configurations of the stirring machine
+Pablo [27:24]: using only this
+Pablo [27:31]: we're going to get close to this but not quite this this isn't quite convenient for what we want to do so here's a more convenient binary representation
+Pablo [27:40]: now for the states and the take contents we are just going to use bits in the normal way
+Pablo [27:47]: so each state q and our state set capital q is going to be represented by a string a length log of the number
+Pablo [28:07]: and like i said you can assume that the tape complement is only zero one and blank if you want it to be more general maybe there's a bigger tape alphabet well just same thing
+Pablo [28:14]: even if that tape alphabet has zero and one in it if you want to represent those symbols using only this
+Pablo [28:18]: you could just say okay just like the state said this is just some finite set
+Pablo [28:23]: and log base two of that cardinality is enough bets to represent
+Pablo [28:28]: so if we just say okay well this came alphabet has four symbols in it
+Pablo [28:34]: if there's only four objects in a set i can represent any of those with two bits so i'll just do it this way
+Pablo [28:42]: and just to make it a little easier to visually track i decided to represent zero with two zeros and one with two one
+Pablo [28:45]: but again this is sort of arbitrary right
+Pablo [28:53]: it kind of doesn't matter that two of the symbols in the tape alphabet happen to be name zero and one what matters is there are four symbols in the south of it
+Pablo [28:54]: and they're different
+Pablo [29:00]: and the turning machine is going to do different things when it's scanning them so we need different binary strings to represent
+Pablo [29:03]: and any binary string
+Pablo [29:06]: so this is sort of
+Pablo [29:08]: like pretty close to what i would say
+Pablo [29:09]: on the previous slide
+Pablo [29:10]: what's the difference
+Pablo [29:11]: in how
+Pablo [29:12]: we're going to represent
+Pablo [29:18]: the configuration it'll be the tape head position we're not just going to represent it naively as an integer written binary
+Pablo [29:22]: instead we're going to use this kind of much more sparse representation
+Pablo [29:28]: so essentially what we're going to do is
+Pablo [29:36]: a bit near every bit string representing a tape alphabet
+Pablo [29:38]: most of those will be zero
+Pablo [29:50]: position
+Pablo [29:50]: four
+Pablo [29:53]: represent
+Pablo [29:55]: this minus strain one zero
+Pablo [29:56]: one
+Pablo [29:57]: zero
+Pablo [30:09]: binary strain of light three
+Pablo [30:11]: and then
+Pablo [30:13]: all of these symbols the tape
+Pablo [30:19]: are represented by these pairs of bits like we said above because there's four symbols so we need two bits per symbol
+Pablo [30:24]: and then the fact that the tape head is at position four means we're going to put a one
+Pablo [30:31]: right before the bits that represent tape cell number four and we're going to put a zero right before all the numbers
+Pablo [30:38]: so we're just going to ensure that among these red and green it's exactly one of them is one and all the rest is
+Pablo [30:43]: so if that representation
+Pablo [30:43]: click
+Pablo [30:45]: that
+Pablo [30:54]: you can take any configuration of a turing machine represented in this way and conversely i give you a bit string like this you know how many states there are you know how big the tape out of it is
+Pablo [31:02]: you can uniquely reconstruct from the i'm kind of putting spaces in and color but in reality these bits will just be together
+Them [31:03]: but
+Them [31:05]: you know
+Them [31:07]: the first three bits represent the state
+Them [31:10]: and then the next cup in these you know
+Them [31:14]: triples you know tape head or not symbol take that or not symbol
+Them [31:18]: you could uniquely reconstruct the configuration from that
+Them [31:18]: district
+Them [31:22]: okay so there's just sort of a static description
+Them [31:28]: and one thing i'm going to say is we do a lot of these kind of simulation arguments and theoretical computer science
+Them [31:32]: and we're going to show how to simulate this turing machine
+Them [31:34]: with a boolean circuit
+Them [31:38]: but we can't possibly hope to do that
+Them [31:42]: if we don't know how to represent sort of statically
+Them [31:45]: a configuration of the turing machine
+Them [31:49]: with something that can be represented within the circuit
+Them [32:07]: and so before you get to talking about how are we going to simulate transitions there's this easier task you have which is like forget about doing any simulation or any transition if i had a turing machine just sitting there doing nothing but within some configuration how could i represent that configuration
+Them [32:10]: uniquely as a binary string you can't answer that question
+Them [32:13]: you can't possibly answer the question
+Them [32:23]: how am i going to simulate one step of the turing machine which corresponds to taking that bit string that represents the configuration and changing the bitstream so it represents the next configuration
+Them [32:29]: but contained within that task is you got to know how do bit strings represent configurations
+Them [32:33]: so you find yourself trying to make some argument about simulation
+Them [32:37]: and you haven't yet answered the much easier question
+Them [32:38]: to statute
+Them [32:52]: in that truth she was just sitting there what booster and what i use to represent you can't answer that question you certainly can't answer the question now how am i going to update the bit string it so it represents the next
+Them [33:03]: so this is just the static description just q five it was a whole new state this is just saying here is the bit string our circuit would produce at the end
+Them [33:05]: but now we got to describe how do we update
+Them [33:10]: with boolean logic
+Them [33:11]: okay
+Them [33:20]: so we've got some binary string that represents this configuration of a single type turning machine as we describe
+Them [33:28]: so the way that we're going to update this thing to represent the next configuration is we're going to have a bunch of identical subsurface
+Them [33:38]: so we're going to imagine we've got these sub circuits and what they do is they take as input the data that represents for each cell
+Them [33:44]: what are the bits telling us what symbols on that cell and this one bit that tells us whether the data
+Them [33:56]: but this is going to be identical copies of that circuit now they might do different things because they got different bits coming as input but whatever gates go in that circuit it's the same one for everyone so these are all doing identical logic
+Them [34:03]: and each one of them needs to know what symbol do i have and is the tape header
+Them [34:07]: but they also need to know that about their neighbors
+Them [34:11]: because maybe the tape head is not here
+Them [34:19]: but maybe it's coming there next right if the turing machine says oh if i'm in this state
+Them [34:26]: and i'm reading i think we said zero zero represents the tape alphabet symbol zero
+Them [34:32]: then i should move left or move right so the point is
+Them [34:35]: the tape head's always going to move
+Them [34:42]: and so you need to know not only the information about your own tape cell but about the neighbors in case the te head is coming to you next
+Them [34:55]: so we're going to hook up inputs not only representing this cell but the two adjacent ones
+Pablo [35:00]: and then we're going to do that for everybody which then makes this look a little more complicated but that's just iterating that same sort of input of yourself and your two neighbors
+Pablo [35:05]: do that for every single table
+Pablo [35:08]: and then
+Pablo [35:17]: they also all need to know the state so we just sort of imagine distributing the wires that represent the state so i'm just writing one blue but really the three blue subsurface
+Pablo [35:29]: in order to get the bits that represent the state now most of those circuits are going to ignore those because most of those circuits the tape head is not at that cell and it's not at an adjacent cell either
+Pablo [35:34]: in which case their job is just to copy the bits that represent the cell
+Pablo [35:40]: knowing that the tape head's not here now and it's not going to be here in the next step because it's not in my neighbors either
+Pablo [35:43]: so most of those circuits are just going to ignore the state
+Pablo [35:47]: and they're just going to copy the bits that represent the symbol
+Pablo [36:01]: but the ones that pay attention to it are the ones that where this bit is a one and the tape head is there and also the two neighbors that can see the tape head is there because one of them is going to get tape head in the next step
+Pablo [36:03]: okay
+Pablo [36:11]: so what does this subsircuit do well i'm not actually going to write down n and not gates because that would not be instructive
+Pablo [36:28]: but hopefully what i'm going to write down is kind of pseudocode is simple enough that you can convince yourself yeah if you gave me an hour i could sit down and write down a boolean circuit that would encode the logic being represented so what logic do we need for the mother
+Pablo [36:29]: to process
+Pablo [36:30]: okay
+Pablo [36:31]: i'm getting
+Pablo [36:40]: business that representable myself but also these prevalence do i have to take that and if not
+Pablo [36:44]: so the logic is i have taken the fear right now
+Pablo [36:52]: well i know that it's going to move single tape turing machine it's kind of never useful to keep the tape at where it is sometimes it's useful multitaine machine
+Pablo [36:55]: but with a single type machine you can assume it moves every time
+Pablo [36:58]: so the tape that's here now it's not going to be her next time
+Pablo [37:02]: so it's a one coming in the input we're going to put a zero on the output
+Pablo [37:13]: and we're going to have to update the tape contents and mistake because wherever the tape head is that's the one place where the tape contents might change
+Pablo [37:25]: so whenever symbol was there before in this case represented the tape alphabet symbol zero whatever the transition function says the next symbol ought to be
+Pablo [37:28]: these two bits are going to be programmed to represent that
+Pablo [37:34]: if the tape head is not here
+Pablo [37:40]: we're always just going to copy the take context meaning by content or anything but it's representing
+Pablo [37:41]: a symbol so we'll always do that
+Pablo [37:54]: so every one of those subsircuits except the one where the tape that just does this and then one of these subsurface is going to notice oh the tape head's going to move here next how does it know that because the way we wired it up
+Pablo [38:02]: wherever the tape head's moving let's say it's moving left
+Pablo [38:06]: this thing is able to see well the tape head is to my right
+Pablo [38:13]: it's able to see the state and it's able to see the symbol on the right and therefore it knows whether it's a right or a left
+Pablo [38:14]: move
+Pablo [38:21]: because we've given each sub circuit enough information to know is the tape head coming here next
+Pablo [38:23]: they can answer this question
+Pablo [38:24]: is the pain
+Pablo [38:25]: head moving here next
+Pablo [38:26]: if
+Pablo [38:28]: so i'm just going to set my date
+Pablo [38:31]: i'm not
+Pablo [38:34]: going to show you the actual
+Pablo [38:40]: case
+Pablo [38:52]: this subsurface
+Pablo [38:53]: and it's all
+Pablo [38:54]: oh the logic is
+Pablo [38:55]: that i'm in the state
+Pablo [38:57]: and reading the symbol paid that move
+Pablo [38:57]: right
+Pablo [39:00]: this is
+Pablo [39:01]: not circuit is the exact same calculation
+Pablo [39:02]: because
+Pablo [39:03]: it knows that we're looking to the
+Pablo [39:04]: left
+Pablo [39:09]: zero change
+Pablo [39:10]: to a one
+Pablo [39:11]: one
+Pablo [39:12]: this year
+Pablo [39:14]: and now
+Pablo [39:15]: there's also
+Pablo [39:16]: a new state
+Pablo [39:16]: right
+Pablo [39:17]: so
+Pablo [39:18]: this subservient
+Pablo [39:20]: these all
+Pablo [39:21]: have
+Them [39:28]: state most of them just sort of get ignored so i'm kind of not really showing there's some sort of multiplexing happening here
+Them [39:32]: where exactly one of these updates the state and the rest get ignored
+Them [39:34]: and which one updates it it's the one where the one
+Them [39:36]: this is a common thing to do
+Them [39:37]: in a digital design
+Them [39:45]: sort of multiplexer where you've got all these inputs coming in but only one of them is going to have a one that aren't say take it from the
+Pablo [39:53]: so this one updated the state to whatever state is represented by the bitstream zero one one so that goes here
+Pablo [39:58]: and now we've got our new bit string that represents the configuration of the turing machine after one step
+Pablo [40:09]: is that clear that this could be done with enough tedium designing a lot
+Pablo [40:10]: of
+Pablo [40:13]: update one
+Pablo [40:21]: that same logic
+Pablo [40:24]: from the states
+Pablo [40:29]: so states aren't redefined like it's based on multiples
+Pablo [40:39]: well the set of states is pretty so we're given a turing machine it's got and this one has seven states
+Pablo [40:49]: so when we design the circuit we're careful to allocate three wires to represent the state knowing that three bits is
+Pablo [40:49]: enough
+Pablo [40:54]: and i'm not really i'm kind of drawn like these blue lines
+Pablo [40:55]: are
+Pablo [41:06]: they're kind of a shorthand not just for wires but we'll technically need three wires to these three bits but really what you would need is something that kind of old complexion say well we've got a group
+Pablo [41:15]: of a collection of triples of wires most of which i'm going to ignore and only one of which i'm going to pay attention to
+Pablo [41:20]: so i'm leaving that out but this is kind of standard digital logic
+Pablo [41:22]: i've got several wires coming in
+Pablo [41:28]: and my multiplexer says just take a value from one of them and more of the rest
+Pablo [41:29]: i know which one to take it
+Pablo [41:37]: we know one is going to be one the rest are going to be zero and again that's just another boolean logic thing to do
+Pablo [41:40]: which is on input many bits
+Pablo [41:44]: take only the subset of three bits that happen to be next to a wire
+Pablo [41:47]: if you know in advance only one of those wires
+Pablo [41:54]: kind of leaving it out this is kind of that you do
+Pablo [42:02]: so now
+Pablo [42:05]: this next sort of layer of the circuit
+Pablo [42:12]: has the same number of wires as we had in the previous layer but the bits have changed to represent the next configuration of the direct
+Pablo [42:13]: ion
+Pablo [42:15]: but then the exact same logic
+Pablo [42:18]: can be used again
+Pablo [42:19]: to get the next configuration
+Pablo [42:22]: and then we just imagine taking identical copies
+Pablo [42:25]: of this fairly simple sub circuit
+Pablo [42:28]: and just making a big grid of them
+Pablo [42:38]: a two dimensional one dimension is kind of representing the space of the turing machine the tape the other dimension is representing top each row of this is one
+Pablo [42:41]: configuration the turing machine
+Pablo [42:45]: or on the tegro that represents t cell
+Pablo [42:49]: okay
+Pablo [42:50]: so let's ask ourselves
+Pablo [42:53]: how big is this circle
+Pablo [42:58]: so the subsurface for each cell that i described
+Pablo [43:01]: is going to
+Pablo [43:03]: have m inputs and outputs
+Pablo [43:09]: where m is log of size of q to represent the state
+Pablo [43:10]: plus
+Pablo [43:13]: three times the number of bits
+Pablo [43:16]: needed to represent
+Pablo [43:23]: one to represent
+Pablo [43:31]: our cells
+Pablo [43:33]: and so
+Pablo [43:34]: if you've got the
+Pablo [43:35]: name
+Pablo [43:37]: let's not
+Pablo [43:38]: fairly standard
+Pablo [43:41]: undergrad
+Pablo [43:42]: uate
+Pablo [43:44]: you need
+Pablo [43:45]: something like
+Pablo [43:46]: exponentially
+Pablo [43:47]: more than that
+Pablo [43:47]: many
+Pablo [44:18]: of that would
+Pablo [44:19]: be
+Pablo [44:21]: how many would need to compute
+Pablo [44:21]: one of the alpha
+Pablo [44:22]: wire
+Pablo [44:23]: several
+Pablo [44:23]: aqua
+Pablo [44:23]: wires
+Pablo [44:30]: really m times two to the m times another m to capture that we have m different output wires
+Pablo [44:33]: but it's roughly tricky
+Pablo [44:41]: it's roughly two to the m which since a lot of those are taking a log because i'm going to go along so the point is how many gates do we need
+Pablo [44:47]: well it's at most a polynomial in the size of the tarot
+Pablo [44:49]: the turing machine
+Pablo [44:54]: is described by having some states and some symbols and some transitions
+Pablo [45:01]: and so we've got a number of gates that most polynomial in something that
+Pablo [45:04]: represents the size of the turkish
+Pablo [45:08]: so for each one of those we don't need too many
+Pablo [45:14]: but we need a lot of those sub circuits right that's how many gapes are needed per subsir
+Pablo [45:17]: but we've got this big rectangular grid of these
+Pablo [45:21]: so how many subsircuits do we need
+Pablo [45:26]: what each one of them is going to have this many dates but
+Pablo [45:33]: we're going to put enough of them horizontally to represent the space usage of the turing
+Pablo [45:35]: machine so how many total take cells
+Pablo [46:08]: let's call it s and the number of rows we're going to need is the amount of time we're going to run for let's call that t and we're going to come back to this in the chapter eight on space boundary complexity but want like the first really obvious result about the relationship between time and space in fact how much memory or how many tape cells can it turning machine use if it runs for time t we'll know more than t the most number of tape cells we could possibly use would just be moving the tape head right every single time step if it did that
+Pablo [46:18]: the amount of space it would use would be equal to the amount of time we use so the amount of space is less than or equal to the amount of time so we just replace this s with a t and we get
+Pablo [46:29]: a number
+Pablo [46:33]: really we sort of think about
+Pablo [46:53]: that
+Pablo [47:01]: one
+Pablo [47:09]: we want
+Pablo [47:10]: to know w
+Pablo [47:14]: c
+Pablo [47:15]: s absolutely
+Pablo [47:16]: the reduct
+Pablo [47:17]: ion in the transplant
+Pablo [47:19]: metro phd
+Pablo [47:19]: in the circuit
+Pablo [47:30]: so
+Pablo [47:30]: with t
+Pablo [47:32]: ange
+Pablo [47:33]: nt
+Pablo [47:40]: using
+Pablo [47:46]: one
+Pablo [47:47]: that every w
+Pablo [47:49]: ir
+Pablo [47:53]: ing
+Pablo [47:54]: is only at a px
+Pablo [47:55]: w
+Pablo [47:57]: ish
+Pablo [47:58]: ful oz the answ
+Pablo [47:59]: er to this existence
+Pablo [48:00]: b s
+Pablo [48:01]: even only if the
+Pablo [48:02]: circuit is satisfied
+Pablo [48:04]: so the first layer is
+Pablo [48:06]: going to have to represent our initial config
+Pablo [48:06]: uration
+Pablo [48:13]: so what's the initial configuration well we want to imagine running p on these two inputs x and t
+Pablo [48:16]: x here is hard coded into the circuit
+Pablo [48:23]: so we're going to think of say we want to give the first input as x is zero one one
+Pablo [48:23]: zero
+Pablo [48:25]: then we have to program
+Pablo [48:27]: those five symbols
+Pablo [48:31]: zero one zero into the first five
+Pablo [48:34]: subs or picture represented first time
+Pablo [48:35]: take those
+Pablo [48:41]: and of course tape it starts in the left mostly we put a one error zeros everywhere else
+Pablo [48:48]: and i think what i define boolean circuits i didn't include the constants zero and one as possible gates you can get
+Pablo [48:56]: so that's a perfectly valid definition you can say boolean circuits by definition also allow constant gates but if not
+Pablo [48:59]: you can easily cook up constants
+Pablo [49:03]: like if you just do something like take any of your inputs
+Pablo [49:07]: x one and just do something like
+Pablo [49:12]: negated
+Pablo [49:14]: and then
+Pablo [49:23]: give these to an amp gate right so you do something like this take any of your inputs give it an instigation to an end gate this is always going to output
+Pablo [49:27]: you can get constants like zero and one from pure object
+Pablo [49:31]: so however you imagine the constants like we're going to hard code
+Pablo [49:37]: these as the constant zero this is the constant one these constants and then these constants zero here
+Pablo [49:45]: but the input to this circuit the circuit is going to take some inputs they're going to represent the second input to p
+Pablo [49:49]: so the bits that represent the second input w
+Pablo [49:53]: that is the second input of this program this will be the only input to this circuit
+Pablo [50:00]: and then it may be that x and w put together
+Pablo [50:07]: that number of bits is less than t because we've allocated t total tape cells just in case we need it
+Pablo [50:16]: so if you've got some extra tape cells that go beyond the right of where wns you just put blank you put whatever bits represent blanks
+Pablo [50:18]: to make the total width
+Pablo [50:19]: equal to
+Pablo [50:23]: and that's it that's the reduction
+Pablo [50:28]: so since this circuit simulates
+Pablo [50:35]: b and since there's a second input w to p that makes it accept
+Pablo [50:46]: if and only if there's a w that makes this circuit except again i didn't show you what to do with the last layer at the last layer
+Pablo [50:49]: you would say okay
+Pablo [50:56]: when this thing halted did it halted and accept or reject state that will be encoded in the output
+Pablo [50:58]: yeah
+Pablo [51:06]: so we've got that this w will make p happy if then only if that same w makes c happy
+Pablo [51:12]: so the answer to witness assistance is the same as the answer to is this circuit satisfied
+Pablo [51:17]: and that's why circuit is empty
+Pablo [51:21]: i mean i argued np hardness pretty obviously contained
+Pablo [51:24]: questions about that
+Pablo [51:36]: when it didn't have when i looked up
+Pablo [51:50]: on wikipedia they don't necessarily brown so i guess something yeah i think this was the textbook author's attempt to show that look you can argue circuit set as n complete
+Pablo [51:51]: with a reduction
+Pablo [52:08]: it's a reduction from this kind of artificial looking problem that is basically a question about anti verifoners but the typical way that you other textbooks would prove circuits as an even bleed is rather than defining a problem called witness existence
+Pablo [52:10]: they would just directly say okay
+Pablo [52:16]: i'm going to show you give me an arbitrary np problem
+Pablo [52:21]: represented by its polynomial time verifier p
+Pablo [52:26]: and what do polynomial time verifiers look like they take two inputs
+Pablo [52:27]: wide
+Pablo [52:28]: program
+Pablo [52:37]: s satisfiable
+Pablo [52:38]: if only
+Pablo [52:42]: doing the same logic
+Pablo [52:43]: we're doing
+Pablo [53:14]: everything
+Pablo [53:32]: is the same
+Pablo [53:33]: one
+Pablo [53:37]: let me
+Pablo [53:38]: just put the
+Pablo [53:39]: circus
+Pablo [53:39]: also in
+Pablo [53:50]: this
+Pablo [53:52]: we
+Pablo [53:53]: already show
+Pablo [54:12]: ed
+Pablo [54:22]: one
+Pablo [54:22]: and then the other
+Pablo [54:38]: sheila these are not inputs
+Pablo [54:40]: and these are these are just hard
+Pablo [55:05]: hard
+Pablo [55:21]: when you recall
+Pablo [55:27]: the data
+Pablo [55:28]: one that says
+Pablo [55:29]: wood in second
+Pablo [55:45]: marvin
+Pablo [55:50]: strains
+Pablo [55:51]: and low
+Pablo [55:53]: use that all circuit
+Pablo [55:56]: that outputs one if it's the exact state and zero
+Pablo [56:10]: or more precisely you set up a circuit that outputs one if and only if it's the exact state right the other thing that can happen is this p might not even pulled in the right amount of time
+Pablo [56:12]: but the point is the question we're asking
+Pablo [56:15]: like well does it hold and it most teach them to accept
+Pablo [56:18]: so you can either halted or rejected or didn't halt at all
+Pablo [56:28]: well that's going to be encoded by the backup the state is not the best that represent the excel so really we just need like a subsurface at the bottom that says oh and the last configuration we reach
+Pablo [56:30]: what's the state the attempt state
+Pablo [56:36]: and that'll capture whether it halted in the reject state or it didn't halt
+Pablo [56:40]: at all because both of those would correspond to not being any
+Pablo [56:50]: so by the way this is way more detail than textbook
+Pablo [56:59]: we're sort of disappointed with it i like the textbook mostly but on this one improve i thought it really put a lot of imagination
+Pablo [57:00]: on the read
+Pablo [57:03]: er so i unpacked a lot more detail than they actually get
+Pablo [57:05]: they really down
+Pablo [57:06]: wind through this
+Pablo [57:09]: okay
+Pablo [57:14]: so windows circuits add is now in e
+Pablo [57:22]: but we only directly use circuits at once to show tiling as mpg the other problem is three sap with
+Pablo [57:23]: more
+Pablo [57:28]: and we have been assuming three satisfaction to complete but we haven't proven
+Pablo [57:29]: now that we know
+Pablo [57:30]: her
+Pablo [57:38]: on the left
+Pablo [57:45]: okay
+Pablo [57:46]: what does that mean
+Pablo [57:47]: well
+Pablo [57:49]: transform
+Pablo [57:52]: into a precision formul
+Pablo [57:52]: a
+Pablo [57:53]: b
+Pablo [57:57]: so that the circuit c is satisfiable if and only if the formula phi is satisfied
+Pablo [58:01]: now there's an obvious thing to try
+Pablo [58:09]: here which would be to transform c into an equivalent three c and f four i told you a formula is just a special type of circuit with fan out one
+Pablo [58:13]: and a three c and f formula is just a special type of formula
+Pablo [58:15]: that's an end of a bunch of clauses
+Pablo [58:21]: and in fact it turns out every circuit does have an equivalent three c and f one
+Pablo [58:27]: so this would be the obvious thing to do is compute
+Pablo [58:30]: an equivalent three cnf formula
+Pablo [58:36]: and then if it's equivalent that gives the same output on every input
+Pablo [58:41]: then there's going to be a way to make one of them output one if only if there's a way to make the other one output one but there's a problem
+Pablo [58:44]: the problem is that converting a circuit to a formula
+Pablo [58:46]: can have an exponential blow
+Pablo [58:53]: that formula when we constrain it to be a three cnf formula it might be exponentially bigger
+Pablo [58:58]: than the equivalent circuit but we need a polynomial time reduction
+Pablo [59:04]: that's not going to be polynomial time but the size of the output we're writing down is exponential
+Pablo [59:11]: and that's if all we care about was making it formula forget about a c and f word
+Pablo [59:14]: just making sure it has fan out one that itself
+Pablo [59:21]: might require exponential blow and two even if we could get it to a formula but it's not cnf formula yet
+Pablo [59:24]: well it turns out converting a formula to a cnf formula
+Pablo [59:25]: can also have
+Pablo [59:28]: exponential
+Pablo [59:29]: so let's just see why that's true
+Pablo [59:42]: so the first problem so like i said there is a distinction between circuits and formulas and the distinction is this notion of fat or another way to what a stand with you could use share and subsurface i do this computation of x one and x two
+Pablo [59:46]: i only have to do it once and now i can fan out the answer to where else is needed
+Pablo [59:48]: in the circ
+Pablo [59:48]: le
+Pablo [59:49]: whereas
+Pablo [59:51]: a formula would have to sort of duplic
+Pablo [59:55]: ate that right so here is a boolean circuit
+Pablo [59:59]: that's using fan out at these three different levels
+Pablo [1:00:14]: and you can get an equivalent formula that has fan out one with the way you do it is you have to duplicate the shared substrate so just at the top level what are we doing with this yellow or right here we're feeding it to both this end and this end over here
+Pablo [1:00:24]: but we only have that out one we basically have to take the sub circuit underneath it and duplicate it so we have this subtree right here is one copy
+Pablo [1:00:27]: and this subtree right here is the other
+Pablo [1:00:31]: but then what i'm showing you is that
+Pablo [1:00:39]: that problem that we have to double things up well if you've got kind of a layered circuit here you might have to double edge
+Pablo [1:00:45]: layer so similarly this n gate right here was spanning out to both this yellow orb
+Pablo [1:00:46]: and the screen
+Pablo [1:00:59]: because we had to double
+Pablo [1:01:00]: up
+Pablo [1:01:01]: on this
+Pablo [1:01:02]: door
+Pablo [1:01:04]: but then those are both taken
+Pablo [1:01:12]: more circuits
+Pablo [1:01:28]: and so this
+Pablo [1:01:29]: transformation
+Pablo [1:01:30]: would not be
+Pablo [1:01:30]: beautiful
+Pablo [1:01:36]: now
+Pablo [1:01:38]: caveat here
+Pablo [1:01:45]: this may not be the smallest
+Pablo [1:01:46]: equal formula
+Pablo [1:01:47]: but
+Pablo [1:01:49]: the point is that we don't
+Pablo [1:01:49]: know
+Pablo [1:01:53]: from cervix
+Pablo [1:01:56]: that preserv
+Pablo [1:01:57]: es the cell
+Pablo [1:01:58]: s
+Pablo [1:01:59]: even within a volume
+Pablo [1:02:01]: i
+Pablo [1:02:02]: actually don't know
+Pablo [1:02:03]: whether that
+Pablo [1:02:15]: we don't
+Pablo [1:02:16]: know
+Pablo [1:02:17]: if
+Pablo [1:02:18]: we know
+Pablo [1:02:19]: it's provably impossible
+Pablo [1:02:19]: in some
+Pablo [1:02:20]: cases
+Pablo [1:02:21]: some circ
+Pablo [1:02:24]: uit whose smallest equivalent formula is exponentially
+Pablo [1:02:24]: big
+Pablo [1:02:26]: okay
+Pablo [1:02:32]: so if all we were trying to do is just reduce circuit sat to sat not even free sap
+Pablo [1:02:35]: formulas this would already be a problem
+Pablo [1:02:36]: but then
+Pablo [1:02:38]: supposing we could solve that problem
+Pablo [1:02:42]: and we had some formula but it wasn't a cnf form
+Pablo [1:02:46]: now we got to get it in cnf form
+Pablo [1:02:50]: that itself could have exponential so here's an example
+Pablo [1:02:59]: here's a formula that almost looks cnf but it's not as dnf right this one is an or of a bunch of clauses where each clause is an end of bunch of
+Pablo [1:03:12]: variables that's called dnf form for disjunctive normal form or this is the kind of formula you would get out of sum of products construction where you create a formula based on the truth table of a bool
+Pablo [1:03:12]: ean function
+Pablo [1:03:17]: and it turns out yeah this one has an equivalency and f formula
+Pablo [1:03:24]: but if i've got these m pairs of literals being records of
+Pablo [1:03:26]: form
+Pablo [1:03:26]: ula
+Pablo [1:03:31]: why
+Pablo [1:03:31]: does people
+Pablo [1:03:35]: so the obvious
+Pablo [1:03:36]: approach is not
+Pablo [1:03:37]: going
+Pablo [1:03:39]: to
+Pablo [1:03:40]: get up
+Pablo [1:03:43]: we
+Pablo [1:03:44]: don't know how to do that
+Pablo [1:03:45]: with ap
+Pablo [1:03:46]: ollonial size
+Pablo [1:03:47]: we
+Pablo [1:03:48]: need our reduction to
+Pablo [1:03:49]: output
+Pablo [1:03:50]: able
+Pablo [1:03:51]: colonial
+Pablo [1:03:57]: so
+Pablo [1:03:58]: we'll give up
+Pablo [1:04:01]: on trying to transform
+Pablo [1:04:06]: that's what we need to do
+Pablo [1:04:07]: what we
+Pablo [1:04:08]: need to do
+Pablo [1:04:14]: in a formula
+Pablo [1:04:15]: c is satisfiable
+Pablo [1:04:18]: if it only a fee is satisfiable
+Pablo [1:04:19]: but
+Pablo [1:04:20]: we're not going to require
+Pablo [1:04:20]: that they're equipped
+Pablo [1:04:23]: what do they
+Pablo [1:04:25]: input
+Pablo [1:04:26]: they give the same out
+Pablo [1:04:26]: put
+Pablo [1:04:27]: we don't need that
+Pablo [1:04:30]: we just need there's some input that makes the first one true
+Pablo [1:04:41]: if and only if there's some input that makes the second function we're going to maintain that but they're not going to be equivalent they're not even going to have the same number of inputs so it wouldn't even make sense to talk about
+Pablo [1:04:45]: to be equivalent they have to take the same volts so that they could
+Pablo [1:04:48]: have a hope of giving the same output
+Pablo [1:04:53]: so how are we going to do this without making the circle
+Pablo [1:04:56]: so essentially what we're going to do we got our circuit
+Pablo [1:05:00]: and we're going to imagine it's got a bunch of fan out that we don't know how to handle
+Pablo [1:05:02]: if we were trying to make any quotes
+Pablo [1:05:05]: what we're going to do is we're going to write down a formula
+Pablo [1:05:09]: that basically expresses every gate
+Pablo [1:05:12]: in this circuit is functioning correct
+Pablo [1:05:21]: and the way we're going to do it is all the inputs to the circuit are going to be inputs to our formula but our formula is going to have more inputs
+Pablo [1:05:26]: it's going to have one input for every internal wire
+Pablo [1:05:29]: or if you like every gate
+Pablo [1:05:33]: in the circle
+Pablo [1:05:39]: so i'm kind of thinking of like these as the same yeah
+Pablo [1:05:44]: they look different here but there's an output of this gate that output is going here
+Pablo [1:05:57]: so each gate is going to be an input to our so we've got the same eight inputs as the circuit but in addition to that we have ten more inputs for eighteen total
+Pablo [1:05:59]: because we've got ten non input gates
+Pablo [1:06:16]: in our server and what we need to do is write down three cnf clauses that capture every one of these gates is functioning properly in other words its output is the correct logical function of
+Pablo [1:06:21]: so how are we going to do that well let's pick up a gate this is an end here
+Pablo [1:06:27]: whatever bit g one is it should be the end of x one and x two
+Pablo [1:06:31]: so one way of expressing that is that
+Pablo [1:06:38]: if x one and x two are both true that implies g one needs to be true
+Pablo [1:06:46]: but if x one is false then x two is false that implies g one needs to be false
+Pablo [1:06:53]: and similarly if one of x one or x two is false and the other is true that implies
+Pablo [1:06:59]: g one needs to be false you can basically see these four implications right here
+Pablo [1:07:03]: are basically encoding the truth table of an angle
+Pablo [1:07:08]: these represent zero zero zero one one zero and eleven
+Pablo [1:07:12]: and we know the proper output for those are zero zero zero one
+Pablo [1:07:20]: so now that's an implication but remember an implication is a shorthand for not the hypothesis or the conclusion
+Pablo [1:07:24]: and when you negate this hypothesis that's an end
+Pablo [1:07:31]: by demorgan's laws you get an or and the or that represents the implication ends up here and you get
+Pablo [1:07:32]: three cf
+Pablo [1:07:33]: os
+Pablo [1:07:35]: the one
+Pablo [1:07:36]: i wrote above
+Pablo [1:07:37]: is just
+Pablo [1:07:39]: doing
+Pablo [1:07:40]: that equivalent
+Pablo [1:07:42]: not
+Pablo [1:07:43]: hypothesis
+Pablo [1:07:44]: or
+Pablo [1:07:54]: this is
+Pablo [1:07:55]: encoding what
+Pablo [1:07:56]: ever
+Pablo [1:07:58]: g one is the
+Pablo [1:07:59]: end of this
+Pablo [1:08:06]: and
+Pablo [1:08:08]: then you just do that for every gate
+Pablo [1:08:09]: here's another
+Pablo [1:08:12]: this one takes two other
+Pablo [1:08:19]: c
+Pablo [1:08:28]: ircumstances
+Pablo [1:08:32]: zero
+Pablo [1:08:33]: one one
+Pablo [1:08:39]: so
+Pablo [1:08:41]: we just do that for every gate
+Pablo [1:08:42]: in the circle
+Pablo [1:08:47]: and then
+Pablo [1:08:48]: finally we
+Pablo [1:08:52]: want to assert well not only is every gate functioning properly
+Pablo [1:08:54]: but the output
+Pablo [1:08:55]: is test
+Pablo [1:08:57]: so
+Pablo [1:08:57]: we can add
+Pablo [1:08:58]: laws
+Pablo [1:09:00]: that's basically
+Pablo [1:09:02]: just gtech but technically we have to make it have three
+Pablo [1:09:03]: literals
+Pablo [1:09:09]: but g ten or g ten or g ten
+Pablo [1:09:11]: is equivalent to just gmat
+Pablo [1:09:15]: okay so let's go through
+Pablo [1:09:18]: we want to argue c is satisfiable
+Pablo [1:09:20]: if only if phi is satisfiable
+Pablo [1:09:23]: well if c is satisfiable
+Pablo [1:09:36]: by some assignment of bits to the eight inputs x one to x eight then b is satisfiable how by just assign the same values to x one through x eight and then assign to the inputs g one through g ten to that formula
+Pablo [1:09:41]: whatever values those gates would take on in the circuit if you gave it
+Pablo [1:09:48]: and because those clauses are asserting hey these gates have the proper output given
+Pablo [1:09:51]: then that will satisfy all those
+Pablo [1:10:00]: satisfies the whole certain enemy she tells is true meaning this clause will also be satisfied
+Pablo [1:10:02]: so that's a satisfying assignment
+Pablo [1:10:11]: inversely
+Pablo [1:10:13]: we got to show what
+Pablo [1:10:14]: if
+Pablo [1:10:19]: phi is satisfiable does that mean c is sensitive well how would you satisfy phi
+Pablo [1:10:22]: you got to make all those clauses
+Pablo [1:10:27]: including this one so we got to make g ten
+Pablo [1:10:34]: which means we got to make the four clauses corresponding to the g ten gate
+Pablo [1:10:34]: truth
+Pablo [1:10:37]: but
+Pablo [1:10:43]: then we got to make the clauses corresponding to its input h true and so on recursively down to the input meaning
+Pablo [1:10:48]: the only way to satisfy the formula
+Pablo [1:10:54]: is to give some assignment to the x's and the g's
+Pablo [1:10:57]: that one makes g ten
+Pablo [1:10:58]: true
+Pablo [1:10:58]: and two
+Pablo [1:11:00]: makes every other g
+Pablo [1:11:06]: ate
+Pablo [1:11:17]: so
+Pablo [1:11:18]: this was baby
+Pablo [1:11:19]: cook's insight
+Pablo [1:11:21]: when
+Pablo [1:11:22]: was she appro
+Pablo [1:11:22]: ved
+Pablo [1:11:24]: pretty satisfied
+Pablo [1:11:25]: is this
+Pablo [1:11:27]: kind of i think
+Pablo [1:11:32]: this trick had been known before but he had the inside oh we use this trick
+Pablo [1:11:37]: and demonstrate this very useful kind of continuous
+Pablo [1:11:37]: problem
+Pablo [1:11:55]: okay
+Pablo [1:11:56]: so
+Pablo [1:11:58]: left
+Pablo [1:11:59]: here boolean
+Pablo [1:12:00]: satisfiat
+Pablo [1:12:00]: or
+Pablo [1:12:01]: appears in the ant
+Pablo [1:12:02]: ithesis
+Pablo [1:12:05]: right circumstat
+Pablo [1:12:12]: is like some of the most general variant that doesn't even leave three seven very restricted variant but also immediately
+Pablo [1:12:13]: and many other
+Pablo [1:12:15]: flavors are also complete
+Pablo [1:12:27]: so the intermediate one three sat is np complete then that means that anything generalizing it must be as well including her set you're going to general
+Pablo [1:12:29]: not necessarily see in a form
+Pablo [1:12:34]: well because three santa formulas are special kind of formula
+Pablo [1:12:35]: we know that question
+Pablo [1:12:40]: we saw how to reduce
+Pablo [1:12:43]: three set to na three set
+Pablo [1:12:52]: which is this problem you're given a formula you want to satisfy a very special way which is make every flaws have two unequal levels
+Pablo [1:12:55]: here's one that we didn't talk about
+Pablo [1:12:59]: but this one is sometimes useful it's called one in three sap
+Pablo [1:13:09]: here the goal is to make exactly one literal true in every quote so again yet another way to satisfy it but even more restrictive than nae presale
+Pablo [1:13:12]: two of the literals are false one emergent
+Pablo [1:13:16]: so that then completely turns even if the notifications
+Pablo [1:13:19]: you don't
+Pablo [1:13:20]: allow
+Pablo [1:13:25]: children every boss
+Pablo [1:13:26]: that
+Pablo [1:13:27]: is and we
+Pablo [1:13:28]: leave
+Pablo [1:13:31]: sometimes used by same
+Pablo [1:13:32]: papers that
+Pablo [1:13:33]: use
+Pablo [1:13:34]: from
+Pablo [1:13:35]: that to their problem
+Pablo [1:13:36]: because
+Pablo [1:13:38]: they got some way that they know
+Pablo [1:13:39]: how to simulate
+Pablo [1:13:40]: and
+Pablo [1:13:41]: adore they can't
+Pablo [1:13:42]: figure out how to simulate
+Pablo [1:13:47]: a lot of
+Pablo [1:13:48]: variants that
+Pablo [1:13:49]: lead that veteran
+Pablo [1:13:58]: questions
+Pablo [1:13:59]: about a graph
+Pablo [1:14:00]: that's
+Pablo [1:14:01]: pretty easy
+Pablo [1:14:05]: dn
+Pablo [1:14:06]: sa the
+Pablo [1:14:07]: variant of
+Pablo [1:14:08]: satisfiability where
+Pablo [1:14:09]: you guarantee that
+Pablo [1:14:11]: the
+Pablo [1:14:12]: formula is in disjunct
+Pablo [1:14:15]: ure
+Pablo [1:14:20]: that
+Pablo [1:14:21]: actually
+Pablo [1:15:13]: if i just ask is
+Pablo [1:15:14]: there only one
+Pablo [1:15:19]: how
+Pablo [1:15:20]: are you going to prove to
+Pablo [1:15:20]: me
+Pablo [1:15:21]: at least half
+Pablo [1:15:22]: of all the excitement
+Pablo [1:15:23]: satisfied
+Pablo [1:15:31]: like you can give me one you can give me five of them but you can't give me two to the n over two assignments for me to check in column
+Pablo [1:15:37]: there's already an exponential number assignment so this is a problem we don't even think is contained in anything
+Pablo [1:15:44]: but it is contained in this other class
+Pablo [1:15:48]: called pd which stands for probabilistic polynomial time
+Pablo [1:15:52]: it's actually not a great model randomized computation
+Pablo [1:15:56]: but her p stand for probability
+Pablo [1:15:59]: but this turns out to be complete for that classic class
+Pablo [1:16:03]: and
+Pablo [1:16:04]: we make that
+Pablo [1:16:07]: those
+Pablo [1:16:07]: problems are hard
+Pablo [1:16:07]: as well
+Pablo [1:16:08]: we're
+Pablo [1:16:09]: even more sure of that
+Pablo [1:16:12]: here's another
+Pablo [1:16:17]: decision
+Pablo [1:16:17]: problem
+Pablo [1:16:35]: or satisfying
+Pablo [1:16:35]: assignments
+Pablo [1:16:36]: used
+Pablo [1:16:39]: at number one
+Pablo [1:16:40]: record
+Pablo [1:16:42]: so
+Pablo [1:16:43]: that turns out to be
+Pablo [1:16:44]: complete
+Pablo [1:17:06]: sharpie is
+Pablo [1:17:07]: like the variant of any
+Pablo [1:17:08]: key or rather
+Pablo [1:17:08]: than asking the question
+Pablo [1:17:10]: how
+Pablo [1:17:10]: many
+Pablo [1:17:16]: satisf
+Pablo [1:17:16]: ying assignments
+Pablo [1:17:20]: we can
+Pablo [1:17:21]: do that question
+Pablo [1:17:26]: is
+Pablo [1:17:26]: that number
+Pablo [1:17:27]: so
+Pablo [1:17:28]: these are all at least
+Pablo [1:17:28]: the tire
+Pablo [1:17:30]: in some cases
+Pablo [1:17:30]: they can be
+Pablo [1:17:30]: strictly
+Pablo [1:17:36]: if
+Pablo [1:17:36]: i remember right
+Pablo [1:17:37]: i
+Pablo [1:17:38]: got sharp two zach
+Pablo [1:17:41]: is sharp p hard so it's like easy to tell whether there's at least one satisfying assignment to a two cnf formula
+Pablo [1:17:42]: but it's really hard to count exactly
+Pablo [1:17:47]: how much
+Pablo [1:17:48]: here's another herb called unique set
+Pablo [1:17:48]: so back to a decision problem
+Pablo [1:17:51]: the question that we were asking is does the formula have exactly one satisfying
+Pablo [1:17:51]: cycle
+Pablo [1:17:52]: again
+Pablo [1:17:57]: not obviously an np
+Pablo [1:17:59]: i can give you the slide and then you don't have at least one
+Pablo [1:18:01]: how do you know there's not any other
+Pablo [1:18:14]: that's not even contained in nd it's complete for a complexity class called ux where the u stands for unambiguous i forget what the ds stands for
+Pablo [1:18:18]: no actually maybe it doesn't that's unique
+Pablo [1:18:42]: so in other
+Pablo [1:18:43]: words
+Them [1:18:48]: formula
+Them [1:18:49]: where there's more
+Them [1:18:54]: but
+Them [1:18:54]: from that
+Them [1:18:55]: we don't get
+Them [1:18:56]: those
+Them [1:19:07]: complexity is a little awkward to state but basically there's a reduction from sas to this
+Them [1:19:12]: which would almost show
+Them [1:19:14]: production
+Them [1:19:15]: to random
+Them [1:19:17]: ly
+Them [1:19:18]: that might
+Them [1:19:21]: essentially
+Them [1:19:22]: what it does if you take arb
+Them [1:19:23]: itrary
+Them [1:19:23]: boolean formula
+Them [1:19:24]: and if
+Them [1:19:27]: that boolean formula is unsatisfiable so is the output
+Them [1:19:31]: if the boolean formula is satisfiable
+Them [1:19:36]: then the output is satisfiable but with high probability there's only one
+Them [1:19:40]: even if the original one had many exact kind of way
+Them [1:19:46]: so point is there's a whole landscape here
+Them [1:19:49]: and
+Them [1:19:50]: i would say
+Them [1:20:03]: most of these you don't think about all that much but these are very common to use when you're not short of so say you're trying to show a problem as npr the very first thing to do
+Them [1:20:08]: is you go looking for a problem that
+Them [1:20:11]: is as close as possible
+Them [1:20:13]: right
+Them [1:20:22]: if it's a question about graphs look for a submit over a question of question about coloring graphs look for a similar question
+Them [1:20:24]: if you can't do that
+Them [1:20:28]: i generally try to look for a problem about the same type of object
+Them [1:20:29]: but may not
+Them [1:20:31]: be about
+Them [1:20:32]: draft
+Them [1:20:34]: and
+Them [1:20:35]: then i'm not sure what else
+Them [1:20:36]: to do
+Them [1:20:37]: research
+Them [1:20:39]: or one of those variants
+Them [1:20:40]: that use
+Them [1:20:41]: xana four
+Them [1:20:41]: somehow
+Them [1:20:42]: these
+Them [1:20:43]: tend to be
+Them [1:20:44]: really straightforward
+Them [1:20:46]: to
+Them [1:20:48]: empty hard introductions if you're not sure what else
+Them [1:20:55]: track reset try nae three sap try one and three sat and even if the problem is not itself
+Them [1:20:57]: about moving formula
+Them [1:20:58]: it's very frequen
+Them [1:20:59]: tly
+Them [1:21:00]: there's a straightforward
+Them [1:21:00]: reduction
+Them [1:21:01]: from one of those
+Them [1:21:02]: res
+Them [1:21:03]: et or na
+Them [1:21:09]: that's sort of
+Them [1:21:11]: like the take home less of
+Them [1:21:12]: that
+Them [1:21:16]: i will see

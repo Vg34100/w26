@@ -1,0 +1,11 @@
+5a) Did you learn anything new that wasn't clear from the official lecture? If so, what?
+
+I am sure that despite the re-watch, I did not catch every detail from the lecture (I tend to sometimes zone out), so yes I definitely learned something new that wasn't clear to *me* during the lecture. The LLM helped clarify parts that I probably would have needed to rewatch several times. In particular, it explained in plain language how indirect benefits push the network toward a star structure, and why the central node ends up carrying more cost than others. I found this helpful because the LLM restated these ideas more simply than the raw transcript, which made the logic easier to follow.
+
+(5b) Were some prompts more useful than others to you? What? How?
+
+The plain-English tutor prompt was more useful to me. It turned the transcript into simple explanations and helped me follow the ideas without getting stuck on the math or long calculations. The bullet-point note prompt was still helpful, but mostly as a quick review tool. I found the plain-English explanation better for actual understanding.
+
+(5c) Did the LLM add information that wasn't in the video? Did this help or confuse? Do you trust this add-on information? Could it be fake or false? If you're not sure: paste the output from one LLM into the other one (that also has all the background) and ask it about the correctness of it: what do you learn from pitching AIs against each other?
+
+The LLMs sometimes added small explanations that were not exactly written in the transcript. This usually helped make the ideas easier to follow, and I generally do trust these added details. For example from my own (general) experience using NotebookLM to make video overviews, I know that it often adds example situations to explain ideas more clearly. This is helpful, but sometimes I am looking for something more strictly tied to the source content. Because of this, I still find it useful to compare different LLMs. When ChatGPT and Gemini gave similar explanations, I felt more confident that the added details matched the lecture rather than being made up.

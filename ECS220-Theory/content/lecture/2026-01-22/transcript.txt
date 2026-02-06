@@ -1,0 +1,1230 @@
+Pablo [0:13]: for that
+Pablo [0:16]: definition for being reducible to see
+Pablo [0:17]: why
+Pablo [0:18]: true
+Pablo [0:20]: whatever that definition means
+Pablo [0:26]: so
+Pablo [0:28]: what's the way with that
+Pablo [0:48]: and in particular the way we've defined reductions these mapping reductions or manyone reductions what's a reduction as a function
+Pablo [0:57]: that takes a string and outputs a string and a is reducible to b the input string is an a if and only if the output's greater than
+Pablo [1:00]: b so in terms of those functions we've got two functions
+Pablo [1:05]: one that produces a to b and one that reduces dc how do we come up with this third function
+Pablo [1:07]: that reduces a to c
+Pablo [1:13]: what would that function be expressed in terms of these two functions
+Pablo [1:32]: imagine if i'm just like all that what would be this new
+Pablo [1:45]: compose in other words get your input that has some output give that output to g
+Pablo [1:46]: that third output
+Pablo [1:53]: and because the first input is an a is an only the second one is in b and then only if the third one is in c
+Pablo [1:55]: it means the first one's an a if it only hits the third one
+Pablo [1:56]: c
+Pablo [1:57]: so that's a reduction
+Pablo [1:57]: for the
+Pablo [2:02]: because of that
+Pablo [2:06]: let's say we've got a problem b we know it's at b
+Pablo [2:14]: again what does that mean well in addition to b being contained in np it's also in vr every a and n b is reducible
+Pablo [2:15]: to f three
+Pablo [2:23]: if you can then show that b is reduced to c and if also on top of that you know c is an m that
+Pablo [2:27]: cs mp complete as well right so you pick
+Pablo [2:30]: the hardest problems and then the top there
+Pablo [2:31]: and you've got some
+Pablo [2:32]: problems
+Pablo [2:36]: it means everything in nv is reducible
+Pablo [2:40]: because a one is an mp producible b there's another reduction from the c two
+Pablo [2:48]: also all the np complete problems are because they're contained in empty so maybe you have some mp complete problem a three
+Pablo [2:58]: d well if you can show this other problem c has the property b reduces to hit then by transmittivity you get all of these a's are reducible
+Pablo [2:58]: to zero
+Pablo [3:00]: so that's
+Pablo [3:01]: why
+Pablo [3:20]: the typical way we show problems np complete we find an existing np complete problem and we reduce it to the new one in this case the existing one is b the new one that we want to know about is c and once we demonstrate v is reducible to c we now know c as n being hard as well if it's also an np that
+Pablo [3:30]: show an np problems np complete reduce some problem b that you know is empty complete to c not the other way around very common mistake
+Pablo [3:35]: in other words show how to transform an instance of a known hard problem
+Pablo [3:41]: into an instance of the new problem you can do that now you know the new problem as hard as well
+Pablo [3:47]: now we're going to cover sections five two and five three in the textbook in reverse order
+Pablo [3:51]: uh because i just find five three conceptual reason
+Pablo [3:58]: even though technically you don't know anything in five three is important until we do five two but you know we'll get
+Pablo [4:06]: so five two gives the first natural end of equal b problems uh circuit sat and three sat and kind of directly proves there is complete
+Pablo [4:17]: um and then five three goes through a bunch of other problems and reduces existing np complete problems starting with basically this one reset
+Pablo [4:20]: uh so we're just going to reverse that we're going to assume
+Pablo [4:26]: for now as we go through section fifty three that circuit set and three sat our multi complete
+Pablo [4:29]: and we're going to use that to show other problems
+Pablo [4:32]: or any and then we'll go back to section five
+Pablo [4:36]: too and we will prove that circuit stat is then to complete in a bit more direct
+Pablo [4:41]: and then argue that it's reduced
+Pablo [4:42]: that and therefore resets
+Pablo [4:46]: just a reminder reduction's responsibility
+Pablo [4:48]: is to translate the question
+Pablo [4:49]: not to answer
+Pablo [4:51]: so this is a good
+Pablo [4:54]: uh sanity check
+Pablo [4:59]: if you find yourself noticing that you think you've claimed
+Pablo [5:05]: your algorithm implementing the reduction actually knows the answer to one of the two problems you did something wrong
+Pablo [5:07]: it's a polynomial time reduction
+Pablo [5:11]: and we don't think any of these problems are solved
+Pablo [5:14]: even though you can reduce them to each other
+Pablo [5:15]: so
+Pablo [5:23]: if you find yourself saying something like well if the formula is satisfiable then i'll put this kind of graph otherwise output this kind
+Pablo [5:34]: well however you would try to translate that into actual code it would end up being an algorithm for satisfiability which we don't think there's a polynomial time so if your reduction's following meal time
+Pablo [5:37]: it's not solving satisfiability so if you find yourself
+Pablo [5:41]: wanting your output to depend on the answer
+Pablo [5:42]: that's a problem
+Pablo [5:47]: it should only depend on the structure of the input but you don't know the answer
+Pablo [5:55]: and remember showing any problems that complete reduce some antique leaf problem uh to the new problem c not the other
+Pablo [6:10]: okay so first we're going to define a new problem because uh it's going to be a little easier to show certain reductions with this variant of satisfying called nae
+Pablo [6:18]: so remember three seconds you're given a three cnf formula you want to know is it satisfiable how do you satisfy a cnf formula
+Pablo [6:23]: you make every clause true how you make a clause true you make at least one literal
+Pablo [6:27]: so you have to make at least one literal true
+Pablo [6:27]: in everything
+Pablo [6:32]: and one way to do that would be to make every literal in a clause
+Pablo [6:35]: but you don't have you just have to make at least one
+Pablo [6:40]: so nae three stands for not all equal and this asks for a particular way
+Pablo [6:42]: to satisfy this assignment
+Pablo [6:46]: and it's to make every clause have two unequal literals
+Pablo [6:51]: but there's only two values true and false so two unequal literals means
+Pablo [6:54]: one of the literals is true one of the literals is false
+Pablo [7:00]: and there's a third literal there you don't you don't care catheter or false as long as it leaves one true at least
+Pablo [7:00]: one
+Pablo [7:05]: and we say that such an assignment that nae satisfies
+Pablo [7:08]: a concrete example here's a three cnf formula
+Pablo [7:17]: and if we set a and c to one b and c to zero then hopefully tell by colors every clause has two unequal notes
+Pablo [7:20]: every clause has a zero and every clause has a one
+Pablo [7:23]: um
+Pablo [7:28]: and so if you na you satisfy the formula
+Pablo [7:33]: having two unequal literals means at least one of them is true so you're satisfying the formula
+Pablo [7:36]: but note it's possible to satisfy a formula
+Pablo [7:38]: without nae satisfying it
+Pablo [7:44]: that would be if one of your clauses has all three modes that would satisfy it but not any
+Pablo [7:50]: okay so this is a bit artificial why are we looking at this problem well unlike prefab
+Pablo [7:53]: this treats true and false values symmetric
+Pablo [8:04]: right notice there's no longer this asymmetry where to make a clause true you just have to make at least one literal true but to make it false you have to make all the literals false now
+Pablo [8:06]: to na seek e satisfy it
+Pablo [8:23]: um you just have to have two unequal literals but true and false are now an even footing here and that makes it useful for other mp ardent reductions in particular we're going to relate it to three coloring where the three colors we get are symmetric right if you just permute it the colors
+Pablo [8:28]: of a three coloring that's another valid three color right swap in the role of two two colors
+Pablo [8:31]: won't cause a valid coloring to come in
+Pablo [8:49]: valid same way here you would swap zeros and one's it would continue the nae satisfy right so here you've got two zeros and a one if you just negate every bit in here the negative two ones and a zero you would still get so that's one of the utilities of this
+Pablo [8:52]: is the statement of the problem what we're looking for
+Pablo [8:57]: okay
+Pablo [8:58]: so
+Pablo [8:59]: yeah
+Pablo [9:01]: sorry
+Pablo [9:02]: not
+Pablo [9:11]: all well what's the difference between e preset and reset reset you can satisfy a clause by making all three literals
+Pablo [9:11]: true
+Pablo [9:14]: that was not one thousand eighty satisfied
+Pablo [9:23]: it was harder to satisfy one of these than it is to just fast
+Pablo [9:32]: other
+Pablo [9:33]: questions
+Pablo [9:36]: is the only requirement
+Pablo [9:45]: that every term has to have two unequal literals or does the whole thing still have to be satisfiable in addition to that
+Pablo [9:49]: so how would you
+Pablo [9:50]: violate that
+Pablo [9:54]: every clause
+Pablo [10:01]: has at least one false literal and at least one truth then every cause is at least one true literal so you're satisfied
+Pablo [10:06]: so an nae satisfying assignment is also just regular unsatisfying
+Pablo [10:07]: but not the other way around
+Pablo [10:09]: it's possible to satisfy it
+Pablo [10:15]: without any so you were just checking in that mill term has three truths
+Pablo [10:17]: or three pulses
+Pablo [10:24]: eight possibilities
+Pablo [10:28]: to satisfy it seven of them were to nae satisfied only six of
+Pablo [10:29]: them
+Pablo [10:35]: other questions about
+Pablo [10:35]: the problem
+Pablo [10:45]: okay so now we're going to show that this is related to free cell we show this is reduced bulletproof
+Pablo [10:50]: in order if we assume three thousand complete this will show nad preset
+Pablo [10:52]: so how do we do this
+Pablo [10:56]: well what's the definition of a reduction we take as input a three c and a formula
+Pablo [11:09]: we have alk v we have to output another three cnf formula we call it v prime and we want that phi is nae satisfiable if and only if the output v prime is just regular old satisfied
+Pablo [11:15]: and here's how we're just going to do clause by clause substitutions
+Pablo [11:27]: we have for every clause x or y or z and xyz there might be literals so they're not inputs necessarily some of them might be negations of inputs if i write not of not of an input it just means the input
+Pablo [11:38]: so we're going to replace that clause in phi with two clauses in t and it's just going to be x or y or z the same laws along with the negated version or all three or
+Pablo [11:38]: equal
+Pablo [11:45]: not x or not y or not again say if x was not a some input then when i write not x to
+Pablo [11:57]: so you just do this kind of bitwise negation all right so then we have to show that the original formula is satisfiable if and only if this is an asap signal if only this is
+Pablo [12:01]: okay so there's two directions right
+Pablo [12:09]: so suppose b is a satisfy so it's got some assignment it makes every clause true so it's this positive
+Pablo [12:15]: at least one of x y or z is true and that leads to one of x y are z is false
+Pablo [12:18]: right
+Pablo [12:23]: so if this has at least one false and at least one true if you negate all of those
+Pablo [12:30]: you still have at least one false and at least one truth because the true literal became false the false literal became true
+Pablo [12:35]: so this end at least one should at least one fall so it has at least one true
+Pablo [12:41]: so both of these clauses are satisfied as long as the original formula
+Pablo [12:44]: nae satisfiab
+Pablo [12:48]: that's the forward
+Pablo [12:48]: vector
+Pablo [12:55]: we're reducing nae three
+Pablo [13:03]: so we have to make sure the input formula is nae satisfiable isn't only the output formula is just regular
+Pablo [13:16]: and we've done one half of that we've already evolved nae satisfying assignment b satisfies this bigger formula that's kind of doubled up all the clauses
+Pablo [13:19]: and we gain
+Pablo [13:19]: it
+Pablo [13:22]: negating
+Pablo [13:31]: an nae satisfied assignment is main k is one at least one showed at least one false liter clause but all we care about here is
+Pablo [13:36]: that there's at least one true literal in every clause in b rotten so it's the incentive
+Pablo [13:44]: and the reverse direction we have to argue well if v prime is just regular old satisfiable
+Pablo [13:46]: then
+Pablo [13:49]: the original formula b is saxophone
+Pablo [13:51]: okay
+Pablo [13:53]: so suppose v prime is satisfied
+Pablo [13:55]: then
+Pablo [14:03]: that assignment is going to make this clause true meaning at least one of x y or z will be true
+Pablo [14:12]: but it also has to satisfy this clause not x or not y or not z meaning it has to make at least one of x y or z false
+Pablo [14:16]: because
+Pablo [14:18]: they're all negated so the only way to make
+Pablo [14:26]: the or of their negations true is to make at least one of them false i e at least one of x y or z is false and at least one of them is true
+Pablo [14:34]: therefore that same assignment would satisfy the original formula because it makes at least one of x y or z true and at least quantum
+Pablo [14:40]: so this shows the reverse direction and we get that this is a proper reduction
+Pablo [14:48]: good question
+Pablo [14:50]: it doesn't
+Pablo [14:56]: that was the proper reduction but it does not show
+Pablo [15:00]: nae reset is np complete because we went the wrong way
+Pablo [15:00]: here
+Pablo [15:10]: if we already knew in a three sat was empty complete this would demonstrate three satisf complete but we don't already know
+Pablo [15:14]: nae three sets so if the proper reduction but we went the wrong way
+Pablo [15:16]: so this morning be careful
+Pablo [15:25]: so how are we going to show nae preset as md complete we have to reduce an existing np complete problem today not the other way around
+Pablo [15:28]: so let's do that for real
+Pablo [15:29]: i'm not
+Pablo [15:30]: sure
+Pablo [15:36]: and we're going to start with nae four set because it's just slightly easier and then we'll relate it to na
+Pablo [15:42]: so to show nae forset is np complete we're going to reduce three sat bit
+Pablo [15:58]: and indeed that's because we've got the direction right now because we're assuming in this section three set is np complete this will show nae four set is m equals well mv hard but hopefully it's pretty obvious it's contained in np the assignment
+Pablo [15:58]: is the way
+Pablo [16:08]: okay so we have to on input v output v prime so that phi is satisfiable if and only if b prime is nae satisfied
+Pablo [16:16]: so the reason allowing four variables for foils is going to help us is we're just going to do this very simple thing
+Pablo [16:27]: where we just copy the clauses but add one new variable to each of them it's a new variable s that we assume doesn't appear anywhere else
+Pablo [16:30]: and we just add s to every one
+Pablo [16:33]: that's how we know
+Pablo [16:44]: and now we have to argue that if and only if the original v was satisfiable this new for cnf formula is na
+Pablo [16:46]: all right
+Pablo [16:48]: how do we do this
+Pablo [16:51]: do two directions one assume phi is satisfied
+Pablo [16:55]: and it makes at least one literal in every clause
+Pablo [16:56]: true
+Pablo [16:58]: so
+Pablo [17:01]: how are we going to nae satisfy this new formula
+Pablo [17:04]: that's got these s's here just set as false
+Pablo [17:08]: the original formula had at least one true literal and her clause
+Pablo [17:15]: we've now put one false literal in every clause of v'and therefore v's at least one true at least one false
+Pablo [17:19]: so it's n eighty satisfied
+Pablo [17:22]: so
+Pablo [17:25]: as with most mp hardness reductions this is the easy
+Pablo [17:29]: but now
+Pablo [17:31]: we have to argue
+Pablo [17:33]: the
+Pablo [17:36]: reverse direction which is that the only way to nae satisfy phi
+Pablo [17:40]: is essentially with an assignment that just satisfies
+Pablo [17:42]: so suppose
+Pablo [17:43]: for the other direction
+Pablo [17:47]: that v prime is nae satisfied well my sum assignment x
+Pablo [17:49]: now
+Pablo [17:57]: i stated this already i'm just going to state it in writing now the negation of any nae satisfying assignment is also an a set
+Pablo [18:01]: we got at least one true and at least one false literal in every clause
+Pablo [18:07]: flipping all the values maintains that because false becomes true two becomes false so it remains nae satisfied
+Pablo [18:13]: so that's convenient because now we say well we got some nae satisfied assignment x
+Pablo [18:18]: in either set s to true or sets us to false
+Pablo [18:19]: we don't know which
+Pablo [18:24]: but we can just assume it's false why because if it sets us to true
+Pablo [18:26]: just negate every single variable
+Pablo [18:32]: and that's also nae satisfied but because we've negated s it's now false
+Pablo [18:36]: so we can actually assume s is false
+Pablo [18:39]: if there's any satisfies
+Pablo [18:46]: but what does it mean to be na satisfying well s appears in every clause and false
+Pablo [18:50]: so to nae satisfy all these clauses
+Pablo [18:52]: we've already got at least one false literal
+Pablo [18:57]: we also need at least one true literal meaning for every clause
+Pablo [19:04]: i at least one of xiyi or zi is true in order to be the opposite value
+Pablo [19:13]: but that's exactly what it means for that assignment to satisfy the original form that only has the x's and the y made at least one of them true
+Pablo [19:14]: in every class
+Pablo [19:22]: questions about that reduction
+Pablo [19:31]: and i didn't used to cover this but i threw this together this morning because it's pretty easy
+Pablo [19:50]: what we really want is an a three sap but we showed force that so similar tricks to what we've done can show that nae four sac is reducible to n eighty three cells again we've just shown nae four set as nd complete we now reduce it to this md problem in a preset it means an a three set
+Pablo [19:50]: also
+Pablo [19:53]: so how are we going to
+Pablo [19:56]: well the input formula
+Pablo [20:03]: has four clause this has got four literals protocol so they look like a or b or c or d in this four cnf formula t
+Pablo [20:12]: now we have to convert that formula to a three cnf formula we're just going to do a clause by clause like we've been doing take that one plus the four literals
+Pablo [20:17]: turn it into two clauses or we split the literals a and b are in the first c of the year and second
+Pablo [20:26]: and then we introduce this new variable s and unlike on the previous slide this s will be unique to this plot so we'll have a different s in each one
+Pablo [20:31]: but it's brand new it doesn't appear already in the formula
+Pablo [20:35]: and here you put s in the first pause and the negation of s in the second
+Pablo [20:40]: so y is this going to help us well again two directions
+Pablo [20:44]: we got to show if phi is satisfiable i should say nae satisfied
+Pablo [20:45]: letter
+Pablo [20:48]: then psi is any satisfied
+Pablo [20:56]: and we're going to have three cases right as far as what values a and b can take on
+Pablo [20:58]: so maybe a and b are both one
+Pablo [21:01]: in order to nae satisfy fee
+Pablo [21:04]: well if they're both one
+Pablo [21:10]: but with nae satisfies that clause then at least one of c or d has to be zero
+Pablo [21:15]: in that case just set f equal to zero why does that work
+Pablo [21:16]: well
+Pablo [21:21]: in nae satisfies this because a and b are both one so if you set s to zero great
+Pablo [21:25]: but this implies that c or d is zero
+Pablo [21:30]: so if we set s to zero not s becomes one and we've got no zero and a one
+Pablo [21:34]: in this in other words the second clause is also nad
+Pablo [21:46]: ia and b are both zero the exact same reasoning it's completely symmetric argument
+Pablo [21:48]: if a and b are both zero
+Pablo [21:56]: set s to one same exact argument shows that both of those three clauses
+Pablo [21:58]: have a true literal false
+Pablo [22:03]: now the third case is well what if a is not equal to b one of them is true and one of them's false
+Pablo [22:12]: well good news we don't need s's help to nae satisfy the first clause if a and b are unequal they're already the literals that nae satisfy it
+Pablo [22:16]: so we don't need s's help on the first clause
+Pablo [22:18]: so we're free to set it to whatever we need to
+Pablo [22:21]: nae satisfied second clause
+Pablo [22:30]: and whatever c and doctor just take s to be to so so who knows what c and d are
+Pablo [22:31]: but
+Pablo [22:39]: if one of them is one great because that s to one so negation of s will be zero and we've got a one and a zero if they're both zero
+Pablo [22:42]: set has to be zero so negation of s is one
+Pablo [22:44]: but you're just free to set s to whatever you want
+Pablo [22:47]: because we don't need a tell on the first one
+Pablo [22:49]: and
+Pablo [22:57]: now the reverse direction is what a psi the three c in a formula is na satisfied but we have to show phi as nae satisfied
+Pablo [22:59]: and here we've just got two cases
+Pablo [23:01]: just based on what it does to s
+Pablo [23:02]: again
+Pablo [23:06]: it's a different s for each claw four h clause here's what you
+Pablo [23:09]: have b's for this clause is one
+Pablo [23:11]: what does that mean
+Pablo [23:14]: well with nau satisfied
+Pablo [23:17]: so mass is one and we have this clause
+Pablo [23:20]: a or b or s
+Pablo [23:23]: then at least one of a or b is zero
+Pablo [23:29]: to na satisfied and since we've got negation of s here if s is one negation of s is zero
+Pablo [23:33]: so at least one of c or e is one the nae satisfies the second
+Pablo [23:35]: or put another way
+Pablo [23:44]: in the original clause it has a b c and b in it at least one of them zero and at least one one so this nae satisfies that
+Pablo [23:46]: now
+Pablo [23:50]: the other case is s sub zero it's exactly symmetric if that's a zero
+Pablo [24:00]: then either a or b is one or both can either c or d is zero or both in other words that already automatically says na satisfies
+Pablo [24:07]: question numbers
+Pablo [24:11]: so
+Pablo [24:15]: there's a bunch of reductions between problems at the same type
+Pablo [24:24]: but where you often need to get more clever is when the two problems are about totally different types at all and that's what we're going to see
+Pablo [24:33]: and in particular we're going to reduce nae reset to three colors so a question about formulas is going to be turned into a question about graphs
+Pablo [24:36]: and it's common to use this kind of language
+Pablo [24:39]: that isn't exactly formally defined
+Pablo [24:52]: but it's very common when you're doing empty hardness reductions to talk about using gadgets what's a gadget a gadget is just like some substructure of the thing you're constructing so here we're going to construct a graph
+Pablo [24:58]: as the output of our reduction and we're going to have subgraphs that are the gadgets
+Pablo [25:06]: but these subgraphs are going to have certain purposes there's generally two types of gadgets one the textbook calls a choice gadget
+Pablo [25:14]: so this is going to be some piece of the input where some choice you make there regarding the witness for that problem
+Pablo [25:18]: somehow corresponds to the witness of the original
+Pablo [25:28]: and then the constraint gadgets are setting it up so that well you can't just choose anything you want for the choice gadgets you got to somehow satisfy the constraints of the problem
+Pablo [25:32]: now this is very abstract so generally that's what those mean
+Pablo [25:39]: it's okay if this doesn't make sense right now but we're going to see concrete examples of what do i mean by a choice gadget what do i mean by constraint
+Pablo [25:45]: so to get concrete let's recall the free coloring problem we'll give it a graph under epigraph
+Pablo [25:50]: we want to find a three coloring of the node so that all adjacent nodes have different colors
+Pablo [25:56]: and we're going to show that this is nd hard by showing nae three sat is reducible to three
+Pablo [26:03]: and like i said the colors are symmetric if you would permute a k coloring to fill a valid k ele
+Pablo [26:03]: vator
+Pablo [26:11]: and that's why nae three sap is going to be useful because it also treats its two values of interest true and false symmetric
+Pablo [26:13]: so here's how it's going to work
+Pablo [26:16]: we're going to start with our choice gains
+Pablo [26:19]: so here they are
+Pablo [26:21]: it's
+Pablo [26:28]: going to be these pairs of nodes one per variable in the input
+Pablo [26:29]: formula
+Pablo [26:32]: along with a single node at the top they're all connected
+Pablo [26:36]: so let's suppose our formula has three variables x y and z
+Pablo [26:44]: we're going to have six nodes corresponding to them two for x two for y two for z and then this one node that is connected to all
+Pablo [26:45]: so why are we doing this
+Pablo [26:52]: well if we imagine that the three colors available to us are all blue green and orange
+Pablo [27:01]: then any valid coloring of a graph with this subgraph it colors the top note something without loss of generality call it blue
+Pablo [27:06]: so whatever that color is because this is connected to all of these none of these
+Pablo [27:07]: can be
+Pablo [27:13]: so these can only be green or orange and because these pairs are connected to each other they can't be the same
+Pablo [27:14]: thing
+Pablo [27:16]: so if one of them is orange the other has to be
+Pablo [27:17]: green
+Pablo [27:20]: so given that you colored the top thing blue
+Pablo [27:26]: the only choice that you have available for these is which one of the two nodes is going to be green and which one's going to be
+Pablo [27:30]: orange and we're going to interpret this when we start thinking about the formula
+Pablo [27:47]: as corresponding to an assignment so if you would color the node labeled x green that is going to correspond to setting the variable x to true we color the node labeled negation of x screen that's going to correspond the setting
+Pablo [27:54]: right so we have this choice for each pair which one is green and which one's orange but that's our only choice
+Pablo [27:58]: we have to color them like that because the top one
+Pablo [28:01]: 's okay so if we just stop right there
+Pablo [28:06]: this should be another sanity check that you can't possibly work
+Pablo [28:14]: because i haven't said anything whatsoever about the structure of the formula other than how many variable all you know about the formula is it's got three variables
+Pablo [28:15]: x y and z
+Pablo [28:26]: so this is a good sanity check make sure that the output of your reduction actually depends on the whole input the input here is some formula
+Pablo [28:29]: i haven't even told you what it is so we can't possibly be done
+Pablo [28:30]: yet
+Pablo [28:33]: it had better be that you change the formula somehow
+Pablo [28:50]: it should change this graph because changing the formula might take it from being satisfiable to be an unsatisfiable that ought to take this graph from being three colorable to be not three colorable but so far you don't even know what the formula is so the constraint gadgets are going to be how we encode the logic of the formula
+Pablo [28:53]: essentially into the logic of the graph
+Pablo [28:59]: so let's imagine that we've got a formula and it's got this closet x or y or
+Pablo [29:02]: all three variables are unique
+Pablo [29:09]: so we're going to need some kind of subgraph that corresponds some constraint
+Pablo [29:11]: so what should be that
+Pablo [29:16]: well i want to teach a bit how to think about trying to reason through this we don't know yet
+Pablo [29:31]: but given what we did up top where we want to interpret how we color this or this some assignment x well it kind of makes sense but since x y and z all appear in this clause un negated whatever this graph looks like it seems reasonable
+Pablo [29:39]: that we ought to hook up the nodes representing x y and z to this get whatever it is
+Pablo [29:42]: we don't yet know what that's going to look like
+Pablo [29:51]: but that seems reasonable right and if this formula said negation of x instead then it's going to have eth should have
+Pablo [29:52]: this
+Pablo [30:06]: at least now the structure of the formula is influencing the structure of the graph whatever it is we still don't know what we're doing but let's say the other clause in the formula is this not x or y are not z
+Pablo [30:13]: so a similar rule would tell you we should hook up the nodes representing not x and y and not z down
+Pablo [30:15]: now
+Pablo [30:18]: what should we do now well there's
+Pablo [30:22]: no algorithm that can tell you exactly what you need to do here
+Pablo [30:26]: but you just try so let's just try something simple
+Pablo [30:27]: like this
+Pablo [30:31]: let's say this gadget is just going to be a triangle i have three nodes in it
+Pablo [30:37]: one each one connected to one of those variable nodes up top
+Pablo [30:38]: in the choice
+Pablo [30:43]: and then we're also going to connect these three nodes themselves by it
+Pablo [30:43]: let me try
+Pablo [30:48]: so y well let's do the forward direction
+Pablo [30:52]: what if the formula is satisfied
+Pablo [31:03]: well now we want to argue that the graph is three colorable and we want to do it this way we've been planning where we use the values of these variables
+Pablo [31:06]: to choose how to color these nodes
+Pablo [31:10]: so it turns out this particular formula is nae satisfiable
+Pablo [31:18]: and here's a way to do it if you set x and y to true and z to false that gives you at least one true and false literal and everything
+Pablo [31:20]: these two true and is false
+Pablo [31:24]: then it makes this false and this
+Pablo [31:31]: nae satisfies the force let's now argue that that gives us a way to choose a coloring
+Pablo [31:33]: and
+Pablo [31:34]: then we'll be halfway there
+Pablo [31:39]: when we're done now we have to go the other way and show the only way to
+Pablo [31:47]: color this graph is with a color in the corresponds to an nad satisfying sum but first we do this direction
+Pablo [31:49]: so how are we going to do it well like i said
+Pablo [31:58]: whatever assignment we make here we should color the nodes up top correspondingly and they're already colored that way we set x and y to true
+Pablo [32:06]: and therefore that means we're going to color x and y green and negation of x and negation of y orange and the opposite
+Pablo [32:10]: so why does that mean the whole graph can become
+Pablo [32:16]: so here's what we're going to do we're going to say every clause if it's nae satisfy has at least one true literal
+Pablo [32:17]: at least one false
+Pablo [32:21]: and then there's going to be a third literal we don't care
+Pablo [32:25]: that third literal can be anything as long as we've got our true and our false the third
+Pablo [32:25]: one we don't care
+Pablo [32:28]: about the one we don't care about we're going to color blue
+Pablo [32:32]: the other two we're going to color the opposite of what they're getting
+Pablo [32:47]: so x or y or z it's got at least one show at least on both patients got two troops so we just pick one of them arbitrarily we take x is true so what we're going to do to the node connected to x let's color it in the opposite true color orange in this case
+Pablo [32:48]: as that
+Pablo [32:56]: we have the color blue or orange but because we're picking x to be the true representative here we call her this the opposite of that
+Pablo [33:01]: we do the same thing to z now z is the only false literal
+Pablo [33:09]: we kind of don't have a choice here we're going to have to take z as the false literal the only false literal under this assignment and we color it the opposite of what it's connected to
+Pablo [33:12]: which is false means coloring there's no green
+Pablo [33:17]: and the third one which is y were free to color that blue
+Pablo [33:21]: because there's only one other blue node in the graph
+Pablo [33:21]: up there
+Pablo [33:25]: and then similarly in the other clause
+Pablo [33:31]: we can pick negation of x as the false literal
+Pablo [33:38]: and color it the opposite of what it's connected to it's connected to not x which is orange so we make it green
+Pablo [33:40]: we can pick y as the true literal
+Pablo [33:44]: and therefore color the opposite of the node it's connected to
+Pablo [33:49]: the choice node it's connected to meaning orange and the third one we just color
+Pablo [33:56]: does that mean that
+Pablo [33:59]: in the triangle
+Pablo [34:08]: you have the option to choose x to be any one of those three based on the formation that they have
+Pablo [34:12]: well we have to choose a literal
+Pablo [34:17]: that's true and another literal that's false and
+Pablo [34:29]: we had no choice about which literal is false because under the assignment only one of them falls so we had to pick this but these two are both true so i could have been either x or y i went with x
+Pablo [34:36]: and those two that are the true and the false literal and the clause the nodes and the constraint gadgets are going to end up being orange and green
+Pablo [34:47]: and then that third one that we didn't care in this case it was y y could have been either true or false we've already had ad satisfied the rest of it that's the one we just cover
+Pablo [35:01]: that's half the proof that shows if
+Pablo [35:07]: we can nae satisfy the formula then we can color this graph with only three numbers
+Pablo [35:14]: now we need to argue the other we need to argue and again there's always two ways to think about the other
+Pablo [35:15]: one
+Pablo [35:20]: is just reverse it show that if the output in this case the graph
+Pablo [35:24]: is three color well then the input the formula is an a satisfiable
+Pablo [35:35]: you can also think about the contrapositive which is equivalent which is we can argue what if the formula is not an ae satisfiable we have to show the graph is not real
+Pablo [35:38]: and it's just kind of up to you which one feels more natural
+Pablo [35:41]: in this case i'm going to argue what of the formula is not satisfied
+Pablo [35:56]: now i didn't really want to clutter up the slide so this one isn't as satisfiable as we just saw but just mentally imagined there's more clauses and there's enough extra clauses that they're not all nad satisf
+Pablo [35:59]: ied so you just don't see them on the screen
+Pablo [36:06]: but what does it mean to say it's not nae satisfiable means no matter what assignment you give
+Pablo [36:09]: some clause is going to have
+Pablo [36:15]: three true literals or three false
+Pablo [36:20]: so maybe in this example we imagine a bigger formula
+Pablo [36:29]: where the only way maybe to satisfy all the rest of the clauses is with this assignment and it fails to nae satisfy this law so they're all pre trained
+Pablo [36:33]: then what does that mean
+Pablo [36:39]: well if they're all pre true the only way to make everything else be colored consistently
+Pablo [36:42]: would be to color this green and this screen and this screen
+Pablo [36:45]: but if this is green and this is green and this is green
+Pablo [36:47]: what do you do down here
+Pablo [36:50]: you got three nodes they're connected to each other
+Pablo [36:56]: so they have to all be different but they're also all connected to green so they can't be green either
+Pablo [36:57]: you can't do that
+Pablo [36:58]: with
+Pablo [37:01]: that
+Pablo [37:02]: lady already
+Pablo [37:09]: at some claws
+Pablo [37:10]: where all three literals
+Pablo [37:11]: are true
+Pablo [37:17]: then you got three of those connected to each other
+Pablo [37:18]: and they're also connected
+Pablo [37:19]: to
+Pablo [37:21]: all three
+Pablo [37:25]: at all
+Pablo [37:26]: with three colors
+Pablo [37:27]: that are already connected
+Pablo [37:29]: that
+Pablo [37:30]: are all three
+Pablo [37:46]: algorithm takes them with
+Pablo [37:48]: formula and produces
+Pablo [37:49]: this graph as output
+Pablo [37:51]: it doesn't
+Pablo [37:51]: holograph
+Pablo [37:52]: and it doesn't satisfy
+Pablo [37:53]: the one
+Pablo [37:55]: ula
+Pablo [37:56]: is an ace
+Pablo [37:57]: bible
+Pablo [37:58]: have no idea what the graph
+Pablo [37:59]: is
+Pablo [38:00]: it doesn't
+Pablo [38:00]: answer those
+Pablo [38:01]: questions
+Pablo [38:02]: it just translates
+Pablo [38:03]: that question
+Pablo [38:04]: about satisfiability
+Pablo [38:05]: into
+Pablo [38:06]: another question
+Pablo [38:07]: about color
+Pablo [38:08]: now
+Pablo [38:09]: when we proven
+Pablo [38:10]: works we talk
+Pablo [38:11]: about
+Pablo [38:12]: potential solutions
+Pablo [38:13]: as
+Pablo [38:14]: they also those
+Pablo [38:15]: being satisf
+Pablo [38:15]: iable
+Pablo [38:17]: the
+Pablo [38:18]: proof involves
+Pablo [38:19]: reasoning about
+Pablo [38:20]: potential
+Pablo [38:21]: satisfying
+Pablo [38:22]: assignments
+Pablo [38:24]: but
+Pablo [38:25]: the algorithm itself
+Pablo [38:26]: never
+Pablo [38:27]: produces
+Pablo [38:28]: an assignment
+Pablo [38:28]: in order
+Pablo [38:29]: and because
+Pablo [38:54]: pre
+Pablo [38:54]: coloring
+Pablo [38:57]: so
+Pablo [39:00]: that means that we reduced it to something else
+Pablo [39:00]: that other thing
+Pablo [39:03]: so
+Pablo [39:04]: we're going to introduce recoloring independence
+Pablo [39:05]: now
+Pablo [39:08]: we're back to two questions both about graph
+Pablo [39:08]: s
+Pablo [39:10]: but they're very different
+Pablo [39:15]: question it's not like these minor variants of satisfiability these are
+Pablo [39:20]: like a coloring of graph is a much different thing than the set of nodes
+Pablo [39:23]: so although the whole question is about
+Pablo [39:24]: graphs
+Pablo [39:26]: this is not quite as straightforward
+Pablo [39:29]: as some of those same type of object
+Pablo [39:30]: reduction
+Pablo [39:32]: here's going to be the choice
+Pablo [39:36]: we're going to
+Pablo [39:37]: have the graph
+Pablo [39:39]: which we're going to take a graph as input
+Pablo [39:40]: may or may not be possible
+Pablo [39:41]: we have to produce a graph
+Pablo [39:42]: as output
+Pablo [39:43]: it may or may not
+Pablo [39:48]: have an independent set of a certain size remember independent set dna optimization problem
+Pablo [39:52]: means the decision version is given a graph and a threshold
+Pablo [39:53]: k does it happen independ
+Pablo [39:55]: ent
+Pablo [39:56]: past that
+Pablo [39:57]: beam
+Pablo [39:58]: set of nodes no two of which are
+Pablo [39:59]: connected
+Pablo [40:05]: so the graph we output is just going to have a bunch of complete subgraphs of the same size
+Pablo [40:10]: so here's two copies of cable
+Pablo [40:12]: complete graph of four
+Pablo [40:18]: so it's going to be more structured than that but right away what does that tell you
+Pablo [40:24]: well any independent set in this however whatever other edges we add
+Pablo [40:26]: we're going to add some more edges besides
+Pablo [40:27]: these the graph will actually be
+Pablo [40:28]: connected
+Pablo [40:30]: but whatever edges we add
+Pablo [40:37]: we know that in any independent set you can pick at most one node from each of these
+Pablo [40:43]: they're complete one node you take any other node in the same subgraph
+Pablo [40:45]: they'd be connected by an edge
+Pablo [40:46]: and then that
+Pablo [40:47]: would not be an
+Pablo [40:47]: independent
+Pablo [40:50]: so that is going to be useful
+Pablo [40:59]: we connect these up so much means any independent set in this new graph and have a most one node from each of these gantrons
+Pablo [41:00]: right
+Pablo [41:04]: so if there are k total complete subgraphs
+Pablo [41:12]: then any independent set with k nodes has to have exactly one node for a complete subject
+Pablo [41:22]: and that's how we're going to set our threshold however many of these complete subgraphs we have that's going to be the threshold
+Pablo [41:32]: so this very much constrained what independent sets can look like they have to be exactly one node from each of these subgraphs and the only choices in this case which of the four nodes is
+Pablo [41:33]: with
+Pablo [41:35]: okay
+Pablo [41:36]: but
+Pablo [41:37]: what else
+Pablo [41:49]: are we going to do well we're also going to connect up so called adjacent subgraph what do i mean by basis i'll graph with the same slide but these two subgraphs if i want them to be adjacent i'm going to add edges like this
+Pablo [42:00]: if we think about there being graph assigns four there's like a top note a bottom note a left note a right node we connect it to the top the two bottoms two lefts
+Pablo [42:01]: and then two
+Pablo [42:05]: and i've drawn those edges with dashed lines but they're just regular old edges
+Pablo [42:08]: they just have a different purpose than the edges that were already
+Pablo [42:10]: but they're all
+Pablo [42:19]: so this enforces in addition to well we have to pick exactly one node from each subgraph if two subgraphs are adjacent
+Pablo [42:28]: we have to pick nodes in different relative positions we cannot pick both of the top nodes in these two subgraphs because the top rows are connected
+Pablo [42:30]: so we would have to do something like this
+Pablo [42:35]: we pick the top node on the left maybe we can pick the left node on the right
+Pablo [42:46]: and the idea here is going to be we're going to let the relative choice of the node within each subgraph represent like the color of that cell
+Pablo [42:57]: okay so concretely here would be how we do the reduction let's suppose we're given a graphism maybe that cycle with bio
+Pablo [43:05]: and we want to know the three color and of course we can stare at this one and see way out you can color a five cycle with three col
+Pablo [43:06]: ors can't do two colors
+Pablo [43:15]: and because we're talking about the three coloring problem and i said well i want to let the relative position of a node within a subgraph
+Pablo [43:23]: represent a color and we have three colors that means our complete subgraphs are going to be of size three we're just going to be a bunch of triangle
+Pablo [43:30]: so the idea extends to more like we could have reduced five coloring to independence that we would have used a bunch of copies of k pop
+Pablo [43:40]: but we know three coloring can be complete so we only need three so the reduction just gets slightly easier on the eyes the same concept would work if we had
+Pablo [43:41]: more
+Pablo [43:43]: so her colors are called blue
+Pablo [43:50]: orange and green we might think of like imagining each of the triangles in the top no the left node and a right node
+Pablo [43:56]: and to represent the three colors we're going to pick the top or the left or the right
+Pablo [43:57]: correspond
+Pablo [43:59]: so we look at our input graph
+Pablo [44:05]: that may or may not be three colorable we take each node and we replace it in the output graph
+Pablo [44:07]: by a triangle
+Pablo [44:11]: and then we take each edge in the original graph
+Pablo [44:16]: and we connect the two subgraphs in the way i call
+Pablo [44:23]: because this triangle corresponds to this node and this triangle corresponds to this node and these two are connected by an edge
+Pablo [44:26]: these two subgraphs are connected by these three edges
+Pablo [44:31]: but there's no edge between these two nodes so there's no edges between these two subgraphs
+Pablo [44:34]: and now
+Pablo [44:46]: we're basically almost done we have to argue the original graph is pretty colorable if and only if this has an independent set of size what's the threshold we want to set
+Pablo [44:50]: the threshold k should be the number of nodes in the original
+Pablo [44:50]: graph
+Pablo [44:54]: or the number of triangles in the square
+Pablo [44:58]: i mean the number of those triangle there could be other
+Pablo [45:07]: but let me think her suppose the original graph is three colorable which that one is
+Pablo [45:11]: then take that coloring if you've got to know if it's blue
+Pablo [45:13]: go to the corresponding subgraph
+Pablo [45:16]: and put its top note in the set
+Pablo [45:26]: take anything that's orange and according to this mapping go to the corresponding subgraphs and take the left node and put those in the independent set
+Pablo [45:31]: and then take anything that's green go to the corresponding subgraphs with the right nodes in the
+Pablo [45:32]: independent cell
+Pablo [45:33]: why is it independent
+Pablo [45:41]: because we picked exactly one node for each triangle and therefore no two nodes are connected by one of the triangle edges
+Pablo [46:00]: and because the original coloring was valid and no two neighbors in the same color that means no two subgraphs that we pick the same relative position of a node but that's the only other edges there are in this graph and therefore no two of these black nodes are connected by the dash dens
+Pablo [46:09]: ity forward direction
+Pablo [46:12]: and the reverse direction is basically the same
+Pablo [46:13]: log
+Pablo [46:15]: we could argue
+Pablo [46:23]: directly let's say suppose this graph has an independent set of size k where k is the number of these subframes
+Pablo [46:25]: as we already argued
+Pablo [46:30]: the only way to get an independent set of size k is to have exactly one node from each subgraph
+Pablo [46:34]: but because of these dashed edges
+Pablo [46:42]: any two subgraphs that represent adjacent nodes of the original we have picked a different relative position of a node
+Pablo [46:46]: so in the coloring according to this in the original graph
+Pablo [46:51]: we've got a different color for every pair of nodes connected by the original graph
+Pablo [46:56]: or put it another way and we translated that independent set back to a coloring of the original
+Pablo [46:56]: graph
+Pablo [47:02]: so the original graph is three colorable if and only this has an independent census size
+Pablo [47:04]: the number of nodes
+Pablo [47:10]: questions about this
+Pablo [47:35]: so these are kind of some classical reductions you see these kinds of things in a lot of textbooks now one other thing i like about this textbook is there's some kind of non standard problems that i find a little more fun in particular this is something i've thought about a lot in my own research
+Pablo [47:40]: molecular self assembly where we often model molecules that bind to each other
+Pablo [47:42]: sort of square tile
+Pablo [47:47]: so i think a lot about these sort of tiling problems what do i mean by a tile for this
+Pablo [47:54]: problem here a tile is also going to be known as what's called a polyomino which is just a connected union of unit squares
+Pablo [47:57]: so here's a one by one square
+Pablo [48:05]: one by two rectangle so it's a unit of two unit squares there's the same thing but rotated ninety degrees
+Pablo [48:12]: a two by one rectangle there's a two by two got four unit squares in it here's four units squares in a tetris piece instead
+Pablo [48:16]: so that's what i mean by tile or
+Pablo [48:29]: the tiling problem is you're given a set t of tiles or tile shapes and a region of and by a region r i just mean another bigger color
+Pablo [48:31]: another connected unit
+Pablo [48:33]: and the question you're asking
+Pablo [48:36]: is can rb tiled meaning covered exactly
+Pablo [48:43]: with non overlapping and possibly rotated copies of the tiles in the cell
+Pablo [48:51]: so here's a concrete example there's my set it's just a cycleton it's only got that one top we sometimes call that the dominant
+Pablo [48:58]: so it's just a one by two rectangle and remember it can be row so it's also a two
+Pablo [48:59]: by
+Pablo [49:02]: and there's a region a three by three square
+Pablo [49:07]: so can copies of tie along
+Pablo [49:16]: a simple argument
+Pablo [49:18]: that
+Pablo [49:20]: tile can't possibly
+Pablo [49:21]: tile that
+Pablo [49:30]: t there's only one tile it's got two squares
+Pablo [49:33]: so every time you put one down you've covered two squares of the region
+Pablo [49:40]: meaning you can only possibly tile a region with an even number of squares but that has an odd number
+Pablo [49:48]: however you put the first four tiles down you're going to be left with exactly one square in the region
+Pablo [49:50]: and you try to cover it with that tile
+Pablo [49:54]: the other half it's going to go out so no you cannot tile that region with that
+Pablo [49:55]: top
+Pablo [49:57]: how about this
+Pablo [49:59]: one it's the same tile type the domino
+Pablo [50:01]: only
+Pablo [50:03]: now we have an even number of squares
+Pablo [50:08]: we start with the eight by eight and then remove this corner and this corner this has sixty two
+Pablo [50:09]: points in it
+Pablo [50:14]: so we can't immediately say no by
+Pablo [50:16]: the parody of the size of
+Pablo [50:20]: r so what do you think and this tile this region
+Pablo [50:31]: this is actually kind of a common math puzzle to see recreational map
+Pablo [50:32]: sort of
+Pablo [50:36]: ok so i'll spoil it the answer is no
+Pablo [50:41]: does anybody see an argument why despite
+Pablo [50:47]: there being the right parity there's an even number of points and are nevertheless no matter how we put t down
+Pablo [50:51]: we're not going to exactly cover
+Pablo [50:59]: well
+Pablo [51:06]: but that doesn't immediately because you could turn this horizontal cover here and then a vertical one recover
+Pablo [51:06]: y
+Pablo [51:09]: so you can't just say no
+Pablo [51:14]: you can't tile the top row because i can pile the top row but then i jug
+Pablo [51:15]: gle
+Pablo [51:17]: d
+Pablo [51:18]: checker
+Pablo [51:19]: board
+Pablo [51:20]: you
+Pablo [51:21]: can parody of
+Pablo [51:22]: one of my paths
+Pablo [51:24]: i need two more white or black
+Pablo [51:30]: so this is again don't feel bad you didn't have this other inside i don't think i would have had it
+Pablo [51:46]: but this is the clever martin gardner style insight which is if we mental and again these things are not health but if we mentally imagine coloring r with a checkerboard and we mentally imagine coloring tea with a lunar
+Pablo [51:48]: then
+Pablo [51:55]: if we imagine tiling r with copies of t every time we put a new t down
+Pablo [52:01]: we must be covering exactly one blue square at exactly one orange square
+Pablo [52:09]: and so the only way we could possibly tile the whole thing is if there's an equal number of blue and orange squares but they're not
+Pablo [52:17]: we started with thirty two of each and then we remove two orange squares so there's more blue squares than orange squares in this checkerboard pattern
+Pablo [52:23]: so no matter how you do this you're not going to be able to cover all the blue squares because there's too many
+Pablo [52:31]: and that's just like some clever little insight
+Pablo [52:33]: that is fun to work on as a puzzle
+Pablo [52:41]: but we're computer science we're not interested in thinking hard about individual problems we're interested in coming up with algorithms
+Pablo [52:42]: so we don't have to think
+Pablo [52:44]: about individual
+Pablo [52:48]: so first of all this is contained in entity
+Pablo [52:50]: what's the width
+Pablo [52:51]: of the answer
+Pablo [52:57]: of alicia
+Pablo [52:58]: right
+Pablo [53:01]: you just tell me where to put each file and how much i rotate it
+Pablo [53:04]: and all you got to do is go and check
+Pablo [53:07]: no two tiles overlap
+Pablo [53:12]: no tile goes outside the region and no point in the region is left un
+Pablo [53:12]: known
+Pablo [53:16]: so pretty obviously an np
+Pablo [53:17]: a
+Pablo [53:22]: here's a variant of this we're not going to spend much time on this but it's worth thinking about
+Pablo [53:28]: it's a special case it's a special case of the problem but just because it's a special case
+Pablo [53:31]: doesn't exactly mean it's easy
+Pablo [53:37]: so here i'm going to do the special case where i only ever consider rectangular b
+Pablo [53:41]: i don't have crazy stuff like this i only consider red candle like this
+Pablo [53:44]: so i've got some width i've got some hype
+Pablo [53:51]: and my region is just if the width and height are x and y my region is always just an xyy
+Pablo [54:05]: but i don't specify the region by listing all the points like i didn't exactly say how do you encode a region but the idea would be each one of them each point in it would be a pair of integers and you would just list all those pairs
+Pablo [54:10]: but here i'm not saying represent the rectangle by listing every point i'm saying
+Pablo [54:16]: assume the rectangle has its lower left corner of the origin and just give the width and height
+Pablo [54:24]: and implicitly that gives you the whole reason right and now the question is can that rectangle implicitly specify just by its width and high
+Pablo [54:28]: can it be
+Pablo [54:29]: and the question is
+Pablo [54:30]: that contain
+Pablo [54:40]: we can verify
+Pablo [54:41]: the tiling
+Pablo [54:53]: well we can certainly verify it in time polynomial in the description of the type same thing i just described go around each tile where it is check that no two tiles overlap
+Pablo [55:00]: check that nothing goes outside the rectangle and check that no point in the rectangle
+Pablo [55:02]: but what's the other thing
+Pablo [55:03]: we need
+Pablo [55:05]: from an np witness we need it to be small
+Pablo [55:11]: we need it to be only polynomial size in the length of our input
+Pablo [55:17]: and we can think of some t that are interesting or just like a signal like this
+Pablo [55:24]: so we kind of think of the region r sort of dominating the size of the input
+Pablo [55:27]: so the question is
+Pablo [55:29]: if i give x and y in binary
+Pablo [55:31]: how many bits do i need
+Pablo [55:33]: for right now
+Pablo [55:33]: the tightening
+Pablo [55:35]: of
+Pablo [55:38]: each
+Pablo [55:39]: child only covering
+Pablo [55:40]: a constant number of points
+Pablo [55:43]: then
+Pablo [55:44]: the number of
+Pablo [55:47]: tiles i need to give to specify
+Pablo [55:48]: a tiling of the
+Pablo [55:49]: angle
+Pablo [55:52]: is in a scale via intersects in law
+Pablo [55:53]: each
+Pablo [55:54]: one of those only covering
+Pablo [55:55]: a concept of her
+Pablo [55:55]: points
+Pablo [55:56]: the next time
+Pablo [55:57]: five points
+Pablo [55:58]: that need to be
+Pablo [55:58]: covered
+Pablo [56:01]: but how big
+Pablo [56:02]: are x and y compared to
+Pablo [56:03]: the number of bits
+Pablo [56:04]: i needed to represent
+Pablo [56:05]: x class exp
+Pablo [56:05]: onentially
+Pablo [56:07]: so
+Pablo [56:08]: this
+Pablo [56:09]: is not obviously cont
+Pablo [56:10]: ained in
+Pablo [56:14]: truth
+Pablo [56:15]: the obvious
+Pablo [56:16]: witness doesn't work and
+Pablo [56:17]: i don't think it is
+Pablo [56:20]: and it's because
+Pablo [56:26]: the
+Pablo [56:27]: windows can be either to
+Pablo [56:27]: bear the size
+Pablo [56:29]: get it the
+Pablo [56:30]: input is represented
+Pablo [56:31]: so suc
+Pablo [56:31]: ceed
+Pablo [56:33]: now having said well
+Pablo [56:34]: i'm restricted
+Pablo [56:35]: to rectangles
+Pablo [56:36]: but i'm going to represent
+Pablo [56:38]: the rectangle by listing all the points
+Pablo [56:49]: then this would be an ending because now the number of bits you would need to specify a tiling would be comparable to the number of bits you need to list every point in the rectangle but we're not listing every point
+Pablo [56:51]: we have this much more succinct description
+Pablo [57:02]: and this is very common that these np problems have kind of a succinct variant where you specified some part of the problem using exponentially fewer bits
+Pablo [57:06]: and very often that problem ends up
+Pablo [57:12]: being in some bigger class like nx or something so i think this might
+Pablo [57:14]: be
+Pablo [57:16]: i don't think there's problems in empty i don't know what it looks
+Pablo [57:20]: okay so there's the filing problem
+Pablo [57:30]: and the next reduction we're going to show is going to be between this and a variant of satisfiable we haven't talked about this one's about boolean servants
+Pablo [57:33]: okay so who
+Pablo [57:37]: here can tell me the difference between a circuit and a form
+Pablo [57:39]: i'm always kind of curious
+Pablo [57:45]: this is studied outside i didn't really learn this i think till i taught this class the first time
+Pablo [57:52]: i'm not sure how common it is to talk about this difference i think before i encountered this i tended to think of them as the same
+Pablo [57:52]: thing
+Pablo [57:56]: but there is an important difference between a surrogate and a form
+Pablo [57:56]: does anybody
+Pablo [57:59]: encounters
+Pablo [58:03]: well now
+Pablo [58:04]: you're copying
+Pablo [58:04]: it
+Pablo [58:09]: so first i'll just give the definition the definition of a boolean circuit is it's a direct math
+Pablo [58:11]: so
+Pablo [58:12]: would you have an egg
+Pablo [58:15]: you
+Pablo [58:16]: got to cyc
+Pablo [58:16]: les
+Pablo [58:17]: and it's all
+Pablo [58:18]: your nodes
+Pablo [58:20]: have individ
+Pablo [58:21]: ual we call
+Pablo [58:22]: those
+Pablo [58:22]: sources
+Pablo [58:23]: and those
+Pablo [58:24]: are going to correspond to
+Pablo [58:25]: the animals
+Pablo [58:26]: and
+Pablo [58:27]: some of your notes
+Pablo [58:28]: now can be zero
+Pablo [58:29]: those
+Pablo [58:31]: are going to be called saints and they correspond to the
+Pablo [58:32]: alphas
+Pablo [58:34]: and
+Pablo [58:38]: we're going to allow circuits to have more than one output we're going to use that in a little bit
+Pablo [58:39]: but
+Pablo [58:40]: the next problem we just think of
+Pablo [58:41]: there being
+Pablo [58:41]: only
+Pablo [58:41]: one
+Pablo [58:43]: and
+Pablo [58:47]: then the internal nodes the ones that have positive n degree and out degree
+Pablo [58:54]: we label with n word so it's a not it should take only one input it produces one output with negation
+Pablo [58:59]: and then if it's or n we just allow it to take kind of any number of inputs and have any number of
+Pablo [59:00]: outputs
+Pablo [59:10]: so in particular circuit gates have unbounded fan you notice this or gate right here its output goes to this end gate and it also goes to this a
+Pablo [59:17]: and this is essentially the difference between circuits and formulas formula internal gates are required to have fan out one
+Pablo [59:25]: so one way to think about it the difference is that a circuit is an arbitrary dag but a formula is a tree
+Pablo [59:49]: where the leaves are labeled by inputs and may be the same input labels multiple so another way to think about it would be to say well a formula is a dag but you're only allowed to have fan out bigger than one on the influence so either way you want to think of you can think of them like there's a single input representing x one i'm allowed to fan it out to multiple logic gates
+Pablo [59:59]: but the logic eight themselves have to have that one or you think about them like no it's just a tree if i want to use x one in multiple gates i just label all the
+Pablo [1:00:00]: believes with excellent
+Pablo [1:00:01]: so either way you want
+Pablo [1:00:08]: but that's the key difference
+Pablo [1:00:15]: and in some sense the power of circuits is that you can reuse shared subform so here
+Pablo [1:00:18]: x one more x two
+Pablo [1:00:21]: and then you can feed that cell
+Pablo [1:00:21]: formula
+Pablo [1:00:24]: emphasis in and that same sub formula
+Pablo [1:00:30]: this and if you had a formula you would have to make two copies of that subsurf
+Pablo [1:00:33]: and we're going to see why that matters
+Pablo [1:00:41]: but that's what it is okay and then we just say a circuit with one output is satisfiable if there's an input that makes the temperature
+Pablo [1:00:54]: okay so cervants are in a sense more powerful than fortress we've restricted formulas a lot looking at three c and f formulas this is expanding
+Pablo [1:00:57]: we're saying ok now you have even more power than an arbitrary boolean
+Pablo [1:00:58]: form
+Pablo [1:01:02]: because of the stability to have these shared subsurface
+Pablo [1:01:03]: with
+Pablo [1:01:04]: that
+Pablo [1:01:07]: and like i said we're going to assume in this section
+Pablo [1:01:13]: that circuit sat is np complete as well as ph
+Pablo [1:01:22]: and we're going to use that fact to show that timing is in circuit staff is reducible circuit that we're going to boolean circuit c we want to know
+Pablo [1:01:24]: tightly we're going to
+Pablo [1:01:25]: set
+Pablo [1:01:29]: a region
+Pablo [1:01:30]: and we want to know
+Pablo [1:01:31]: that
+Pablo [1:01:33]: it turns out formula
+Pablo [1:01:37]: is just going to be these two
+Pablo [1:01:38]: mountains
+Pablo [1:01:39]: where
+Pablo [1:01:42]: and then two matthews square with a corner remove
+Pablo [1:01:43]: and the text
+Pablo [1:01:44]: book calls a
+Pablo [1:01:44]: trauma
+Pablo [1:01:47]: three squared
+Pablo [1:02:11]: and it turns out this is also np complete even if you only have the right tile but that i think is a much more complicated argument i think this came from a paper of chris moore one of the textbook authors and he kind of gave this proof without explaining a lot as an easy warm up and then the main result was oh you don't even need the two bytes for it but we're going to use the two by two square because
+Pablo [1:02:16]: the argument with only the trauma notes complicated and
+Pablo [1:02:23]: we already know what the tiles are going to be now we have to specify the region
+Pablo [1:02:32]: how is the region going to somehow encode that boolean circuit so that we can tile the region if and only if the circuit extends off
+Pablo [1:02:34]: so we're going to use gadgets
+Pablo [1:02:40]: that basically represent different pieces of the circuit so the circuit has what it's got
+Pablo [1:02:41]: inputs
+Pablo [1:02:59]: it's got gates and then it's got wires which are the edges between right i didn't call them they're what they connect the output of one gate to the input of a
+Pablo [1:03:05]: and these wires are going to take up physical space in our we're going to think about actually laying the circuit out
+Pablo [1:03:10]: and visibly drawing the wires and then we're going to draw a region to kind of correspond to it so here's what a wire region is going to look like if i had a wire
+Pablo [1:03:12]: that was connecting something
+Pablo [1:03:14]: down here
+Pablo [1:03:15]: i'm
+Pablo [1:03:16]: going to
+Pablo [1:03:17]: go
+Pablo [1:03:18]: down
+Pablo [1:03:20]: ris
+Pablo [1:03:21]: ing right ones down
+Pablo [1:03:23]: and
+Pablo [1:03:25]: all my wires are going to be like this
+Pablo [1:03:26]: there are going to be some
+Pablo [1:03:28]: line of slow
+Pablo [1:03:29]: either
+Pablo [1:03:31]: two
+Pablo [1:03:34]: or one half possibly negative this one has sloped
+Pablo [1:03:35]: negative
+Pablo [1:03:35]: two
+Pablo [1:03:36]: goes down
+Pablo [1:03:36]: twice
+Pablo [1:03:37]: for every once
+Pablo [1:03:38]: in a
+Pablo [1:03:43]: and there's only two ways to tile a
+Pablo [1:03:45]: reason like this obviously you can't use a square
+Pablo [1:03:47]: it's not going to fit in her it's too bad
+Pablo [1:03:49]: but the trauma
+Pablo [1:03:51]: in two different
+Pablo [1:03:51]: ways
+Pablo [1:03:52]: here's one way to drop
+Pablo [1:03:57]: these two different ways
+Pablo [1:03:59]: of representing
+Pablo [1:03:59]: boolean true and
+Pablo [1:04:00]: false
+Pablo [1:04:01]: that won't mean anything
+Pablo [1:04:02]: until we
+Pablo [1:04:03]: get gadgets for
+Pablo [1:04:04]: gates
+Pablo [1:04:05]: actually
+Pablo [1:04:06]: force that
+Pablo [1:04:07]: if two truths
+Pablo [1:04:08]: come into an fda
+Pablo [1:04:09]: a true test
+Pablo [1:04:10]: but
+Pablo [1:04:10]: for now
+Pablo [1:04:12]: we'll just think about
+Pablo [1:04:23]: propagating the battle so supposing that you would kind of partially tile this trauma here the only way to keep tiling down here is to keep using the same rotation
+Pablo [1:04:27]: and versus suppose that you would tile the
+Pablo [1:04:27]: region
+Pablo [1:04:28]: the other way
+Pablo [1:04:29]: which is
+Pablo [1:04:29]: like this
+Pablo [1:04:30]: the only way the teen
+Pablo [1:04:31]: titans blow here
+Pablo [1:04:32]: is with that same
+Pablo [1:04:32]: rotation
+Pablo [1:04:35]: so the distinction between these
+Pablo [1:04:37]: is if you think about
+Pablo [1:04:40]: this vertical region
+Pablo [1:04:50]: the
+Pablo [1:04:52]: toronto is
+Pablo [1:04:54]: either
+Pablo [1:04:54]: behind it
+Pablo [1:04:55]: or
+Pablo [1:04:56]: in front of
+Pablo [1:04:56]: here
+Pablo [1:04:57]: we're going to
+Pablo [1:04:58]: comment
+Pablo [1:04:59]: over there
+Pablo [1:05:00]: where the rest of
+Pablo [1:05:01]: the
+Pablo [1:05:05]: that
+Pablo [1:05:05]: 's what we need
+Pablo [1:05:08]: all the other eight organizations of this
+Pablo [1:05:09]: region all the other
+Pablo [1:05:11]: pos
+Pablo [1:05:12]: itive side
+Pablo [1:05:13]: this is going to be
+Pablo [1:05:14]: which
+Pablo [1:05:15]: ever part of the toron
+Pablo [1:05:16]: to is in the middle
+Pablo [1:05:17]: of this region
+Pablo [1:05:20]: the rest
+Pablo [1:05:21]: of toronto is
+Pablo [1:05:21]: mine
+Pablo [1:05:31]: so the child behind the male point
+Pablo [1:05:32]: of show
+Pablo [1:05:34]: so
+Pablo [1:05:35]: again that doesn't mean anything
+Pablo [1:05:38]: until we talk about gadgets that represent gates
+Pablo [1:05:40]: but with that convention in mind
+Pablo [1:05:41]: we're going to
+Pablo [1:05:45]: do that but before we get there let's deal with something easy the influence
+Pablo [1:05:48]: so here's going to be the active
+Pablo [1:05:49]: corresponding
+Pablo [1:05:49]: twin
+Pablo [1:05:54]: starts somewhere
+Pablo [1:05:55]: comes out of it
+Pablo [1:05:57]: to go to its first gate
+Pablo [1:06:05]: so here is going to be the gadget representing an input variable it's got a wire coming out of it but at the top it's got that two by two square
+Pablo [1:06:12]: and the choice of how we start tithing will represent did we assign this input to true
+Pablo [1:06:13]: or to false
+Pablo [1:06:17]: here is how we're going to assign it to true
+Pablo [1:06:25]: so note that if we put the two by two square there there's only one way to keep going and it's to do this and this is what we called true for the wire
+Pablo [1:06:29]: but there's another way that we can tile this region
+Pablo [1:06:32]: and it would be we put a trauminal here
+Pablo [1:06:45]: and if we put the trominol like this the only way to keep toddie and the rest of it is with the rest of the trominos in the opposite orientation is here in other words it represents false so we've got exactly two ways to start tiling
+Pablo [1:06:50]: one of them forces us to have the true convention
+Pablo [1:06:54]: on the wire coming out of there the other one forces us to have the false image
+Pablo [1:07:01]: so this is going to be our choice gadget corresponding to how do we pick the bits of the witness
+Pablo [1:07:05]: for the serpent and the witness for circuit sat
+Pablo [1:07:07]: is the values of
+Pablo [1:07:15]: we'll start with the easiest one
+Pablo [1:07:16]: with the
+Pablo [1:07:17]: hero
+Pablo [1:07:20]: it looks almost like wired
+Pablo [1:07:21]: in the middle it got stewed by
+Pablo [1:07:22]: teeth
+Pablo [1:07:24]: i've got my wire this one has slope negative a half
+Pablo [1:07:26]: but same convention as before
+Pablo [1:07:34]: whatever the trauma goes here the rest of it is behind it that represents true if the rest of it is in front they're resistance
+Pablo [1:07:34]: false
+Pablo [1:07:40]: so one way the tiling could be kind of coming in from the left would be like this this would be the true
+Pablo [1:07:41]: title
+Pablo [1:07:45]: but now we have this square so how can we keep going
+Pablo [1:07:52]: well we could try putting a tromino there but this clearly doesn't work because we put it like that
+Pablo [1:07:56]: that upper right square doesn't get anything
+Pablo [1:07:57]: and there's no way to tile
+Pablo [1:08:01]: and we can rotate the tromino this also doesn't work
+Pablo [1:08:05]: neither does this and then neither does it this looks like it could possibly work
+Pablo [1:08:10]: but again we only have a two by two square and a tromino so even if we did this
+Pablo [1:08:15]: it's not isolated anymore but you can't put a square here and you can't flip the trominone in any orientation
+Pablo [1:08:17]: or deportable go outside
+Pablo [1:08:21]: so we can't use a tromino in the middle we've got to put the square
+Pablo [1:08:33]: and once we put the square there you can notice the only way to keep dolly is with rotated versions the tromino in other words we flip from true to false according to our convention
+Pablo [1:08:37]: for how the trauma orientation and wire represents boolean
+Pablo [1:08:37]: values
+Pablo [1:08:39]: and conversely
+Pablo [1:08:42]: if
+Pablo [1:08:45]: traumas representing false had a cave in through the left
+Pablo [1:08:50]: then they're going to reach in and cover half the square like this
+Pablo [1:08:57]: so we just can't use the two by two square at all but we can use the termino except we got to flip it around
+Pablo [1:09:01]: so no matter which value is coming in
+Pablo [1:09:06]: there's exactly one way to keep tiling in each case and it's for the output wire to have the opposite
+Pablo [1:09:09]: so there's our first bit of logic
+Pablo [1:09:26]: showing that yeah it was really meaningful we took those two orientations of the traumas and called one of them true and the other one and you can just check my case analysis that the other seven angles the wire could have also this scheme properly does
+Pablo [1:09:31]: so there's the first penal
+Pablo [1:09:36]: i
+Pablo [1:09:36]: told you
+Pablo [1:09:37]: i don't
+Pablo [1:09:46]: chris
+Pablo [1:09:47]: moore is a really smart
+Pablo [1:09:49]: student
+Pablo [1:10:01]: going after
+Pablo [1:10:01]: that
+Pablo [1:10:03]: 's not
+Pablo [1:10:09]: well this could go to like there could be another not gate
+Pablo [1:10:10]: i'm going to flip it back
+Pablo [1:10:14]: but yeah i'm not showing you what's happening because it depends on the circuit
+Pablo [1:10:20]: but the structure of both of these wires are the same
+Pablo [1:10:23]: waiting
+Pablo [1:10:25]: it's the same region
+Pablo [1:10:26]: in either case
+Pablo [1:10:32]: this is
+Pablo [1:10:33]: the region
+Pablo [1:10:34]: and i'm showing you
+Pablo [1:10:36]: if we would try
+Pablo [1:10:36]: a pilot
+Pablo [1:10:38]: how do we do it we could only do it
+Pablo [1:10:39]: by
+Pablo [1:10:43]: having the tromino flip from one truth value to the opposite
+Pablo [1:10:46]: but
+Pablo [1:10:47]: it's just
+Pablo [1:10:47]: a liar
+Pablo [1:10:56]: and
+Pablo [1:10:57]: it doesn't
+Pablo [1:10:59]: look
+Pablo [1:11:06]: yeah
+Pablo [1:11:08]: we'll see an example where you get to the output
+Pablo [1:11:09]: and then the output
+Pablo [1:11:11]: is
+Pablo [1:11:11]: going to be set up
+Pablo [1:11:12]: the only way to
+Pablo [1:11:13]: get all the way at the end
+Pablo [1:11:14]: tiling it
+Pablo [1:11:18]: the output is basically just going to be a wire that stops
+Pablo [1:11:20]: but it's going to stop such that
+Pablo [1:11:24]: you finish right at the end of it's true and you leave a gap
+Pablo [1:11:25]: with this
+Pablo [1:11:25]: pulse
+Pablo [1:11:26]: and that's
+Pablo [1:11:33]: where the output of the whole thing
+Pablo [1:11:34]: i would cut off
+Pablo [1:11:37]: the region right here
+Pablo [1:11:43]: even imagine cutting off right here
+Pablo [1:11:45]: but what if i would cut it off right here
+Pablo [1:11:48]: then i would have a single square
+Pablo [1:11:49]: there and a weight
+Pablo [1:11:49]: ed tile
+Pablo [1:11:53]: could
+Pablo [1:12:00]: you repeat the logic behind true and false you mentioned about the point being behind
+Pablo [1:12:18]: there's another point
+Pablo [1:12:22]: where's the rest of the tromino
+Pablo [1:12:25]: it's behind it because we're going in this direction
+Pablo [1:12:27]: we call that
+Pablo [1:12:27]: true
+Pablo [1:12:32]: but it's false here's the middle point where's the rest of the trom it's a headed
+Pablo [1:12:39]: there's seven other orientations
+Pablo [1:12:40]: and it's the same
+Pablo [1:12:41]: rule
+Pablo [1:12:54]: now the more complicated logic and any so the claim is here's an n and it's the same region
+Pablo [1:12:56]: i drew four copies
+Pablo [1:12:57]: so i could show you the
+Pablo [1:12:57]: four poss
+Pablo [1:12:58]: ibilities for the two
+Pablo [1:13:03]: so i imagine the two input wires are coming in the top
+Pablo [1:13:06]: so one of them is slope negative one two the other one is slope half
+Pablo [1:13:12]: and we got four possibilities we could have false coming in one direction and false come into the
+Pablo [1:13:13]: other
+Pablo [1:13:15]: so if you do that
+Pablo [1:13:17]: set similar argument
+Pablo [1:13:22]: try to put a trauma there this clearly doesn't work neither does this neither is this and neither is this
+Pablo [1:13:26]: one
+Pablo [1:13:36]: now
+Pablo [1:13:38]: what a false king in the
+Pablo [1:13:38]: left
+Pablo [1:13:39]: hand
+Pablo [1:13:41]: well then now
+Pablo [1:13:42]: clearly you have to put a
+Pablo [1:13:43]: trauma like this
+Pablo [1:13:47]: but then the way to keep going is with the same
+Pablo [1:13:49]: and
+Pablo [1:13:50]: you had
+Pablo [1:13:51]: false on the right
+Pablo [1:13:52]: and she on the left
+Pablo [1:13:53]: now you put a
+Pablo [1:13:53]: trauma rotated
+Pablo [1:13:54]: differently
+Pablo [1:13:55]: and that will
+Pablo [1:13:56]: again
+Pablo [1:13:58]: ex
+Pablo [1:13:59]: actly
+Pablo [1:14:00]: cut you off right here
+Pablo [1:14:01]: and the only way to keep going is
+Pablo [1:14:02]: with the false pattern
+Pablo [1:14:03]: but
+Pablo [1:14:04]: if they're both true
+Pablo [1:14:05]: now
+Pablo [1:14:10]: we put a tromino here and unlike those three cases up there
+Pablo [1:14:15]: get juxt one square down into here meaning you have to use the opposite orientation
+Pablo [1:14:18]: two trues come in only a true
+Pablo [1:14:25]: so
+Pablo [1:14:26]: there's how you do an
+Pablo [1:14:29]: entity and of course if we can do not we can do m
+Pablo [1:14:32]: or can be express
+Pablo [1:14:33]: ed using
+Pablo [1:14:38]: so
+Pablo [1:14:39]: concretely
+Pablo [1:14:40]: circuit
+Pablo [1:14:41]: and
+Pablo [1:14:42]: those mag
+Pablo [1:14:47]: replaced all the ores with combinations of knots and n so we got nothing but knots and ends
+Pablo [1:14:51]: this circuit has two inputs a and b it's got a single output
+Pablo [1:14:57]: and this circuit happens to be satisfiable by setting a to true and b to false
+Pablo [1:15:01]: and therefore we can tile the whole thing
+Pablo [1:15:14]: and this answers your question well what happens after the end well in most cases you just go to some other date but find when you get to the output you just make sure to cut it off at the point where only if the true oriented trauma
+Pablo [1:15:16]: does it finish
+Pablo [1:15:19]: the false one would have stopped right here
+Pablo [1:15:20]: and left this little square
+Pablo [1:15:28]: so the claim is if the circumstance is viable
+Pablo [1:15:37]: put the square to represent the true inputs the trauma not to represent the false inputs and then as we argued on all the previous slides
+Pablo [1:15:41]: once you've done that there's only one way to keep going with the rest of the
+Pablo [1:15:53]: now i didn't point out here there's a few little tricks happening here like you notice this wire had slope a half but we needed a wire to have slope negative a half there's a little gadget kind of can turn you around here
+Pablo [1:15:56]: so you need some of these geometric tricks to be able
+Pablo [1:15:58]: to turn wires
+Pablo [1:16:01]: but the basic logic is
+Pablo [1:16:06]: so if the circuit's satisfiable you can tile the region
+Pablo [1:16:10]: but similarly the only way to tile the region
+Pablo [1:16:22]: corresponds to some setting of the input and the only way to continue piling in is properly evaluated at the gates and ending up with an output of true so if you can tile the region
+Pablo [1:16:30]: i don't
+Pablo [1:16:30]: know
+Pablo [1:16:32]: i
+Pablo [1:16:34]: convince myself
+Pablo [1:16:36]: that works here and probably similar stuff
+Pablo [1:16:37]: for us to go different
+Pablo [1:16:55]: direction
+Pablo [1:16:57]: you look
+Pablo [1:16:58]: at the trauma
+Pablo [1:17:00]: cover
+Pablo [1:17:01]: ing the snow white
+Pablo [1:17:03]: the rest of the trauma behind it
+Pablo [1:17:06]: that represents true in the rest of the trauma is ahead of it in the direction of the wire
+Pablo [1:17:13]: concretely that slope negative two behind would mean above
+Pablo [1:17:15]: ahead would mean
+Pablo [1:17:16]: this
+Pablo [1:17:22]: for
+Pablo [1:17:27]: this i guess conversion does your dag have to be played or is the ass
+Pablo [1:17:28]: very good
+Pablo [1:17:32]: so
+Pablo [1:17:35]: i've lost over this notice
+Pablo [1:17:35]: talk about it
+Pablo [1:17:37]: but yeah we need the certificate
+Pablo [1:17:41]: plan i didn't describe what if two wires cross each other
+Pablo [1:17:41]: what are we going to do
+Pablo [1:17:43]: well we don't
+Pablo [1:17:44]: have a way to handle that
+Pablo [1:17:47]: so we need the circuit to be plan
+Pablo [1:17:47]: ned
+Pablo [1:17:55]: but i said a circuit is just a dag some dags are not plain some dag no matter how you draw them some of the edges are going to cross
+Pablo [1:18:00]: so what do we do about it well these bags represent boolean circuits
+Pablo [1:18:08]: meaning we're allowed to go in there and do some logic so it turns out that anytime say if you have a non planar circuit
+Pablo [1:18:09]: you can
+Pablo [1:18:10]: always make it
+Pablo [1:18:12]: by doing
+Pablo [1:18:12]: this
+Pablo [1:18:13]: if you've got
+Pablo [1:18:14]: crossing in the circ
+Pablo [1:18:14]: uit
+Pablo [1:18:15]: you
+Pablo [1:18:22]: want to get this wire over here and this wire over here and it looks like you can always replace it with this planer
+Pablo [1:18:27]: where actually this should
+Pablo [1:18:28]: look familiar
+Pablo [1:18:29]: people
+Pablo [1:18:33]: so you know this programming trick
+Pablo [1:18:37]: how do you swap two variables without an intermediate temporary
+Pablo [1:18:40]: x over
+Pablo [1:18:42]: xor ab
+Pablo [1:18:43]: sorb equals
+Pablo [1:18:44]: b
+Pablo [1:18:47]: ia
+Pablo [1:18:49]: s
+Pablo [1:18:50]: introducing herb storage
+Pablo [1:18:52]: this is the boolean circuit equivalent of that
+Pablo [1:18:54]: that swaps
+Pablo [1:19:01]: exit y with these three sos but notice if you have an xor gate this is planar there's no crossings
+Pablo [1:19:01]: anymore
+Pablo [1:19:04]: what's the problem
+Pablo [1:19:09]: i didn't define boolean circuits
+Pablo [1:19:12]: so we are neil mulberry
+Pablo [1:19:13]: you're going to show how to implement
+Pablo [1:19:15]: xor gates
+Pablo [1:19:18]: using only n's or nots in a planar way
+Pablo [1:19:21]: in order to complete this argument
+Pablo [1:19:24]: that with only n's words and not
+Pablo [1:19:29]: any circuit to a planar
+Pablo [1:19:32]: that's it for today

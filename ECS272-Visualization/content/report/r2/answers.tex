@@ -1,0 +1,35 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip}
+
+\title{ECS272 Reading Report 2}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{The Science of Visual Data Communication: What Works by Franconeri et al.}
+
+\subsection*{Summary}
+
+This paper basically reviews guidelines for designing data visualizations that communicate to general audiences. The authors explain how visualizations let you use your visual system to process entire displays at once, which is way faster than reading numbers one by one. They talk about visual channels like position, length, area, and intensity that turn numbers into images, and these channels are pretty different in how precisely people can extract values from them.
+
+The paper goes over perceptual illusions that mess up interpretation, like when y-axes don't start at zero so differences look way bigger than they are, or when you can't tell if circles show data through radius or area. The visual system is actually powerful at getting broad statistics like averages, but it's slow at making detailed comparisons between specific values. The paper also covers using color versus shape to differentiate groups (color works better) and discusses stuff like accessibility for color-blind viewers.
+
+\subsection*{Question 1: Describe two examples of perceptual illusions that result in the user incorrectly mapping the numerical value to the visual depiction.}
+
+\textbf{Non-zero baseline illusion:} When graphs don't start at zero on the y-axis, viewers basically overestimate the differences between values. The paper gives an example from Fox News where 6 million vs 7 million enrollments (which is a 6:7 ratio) was shown with a truncated axis that made it look more like a 1:3 ratio visually. The paper mentions studies showing that even when people can see the actual numbers and are told about the truncated axis, they still misjudge the effect size based on the visual height.
+
+\textbf{Area vs. length confusion:} When data uses icons or circles, viewers get confused about which property actually encodes the data. The paper shows that if two human figures have a 1:2 height ratio, you might perceive it based on area instead (which would be 1:4) or even volume (1:8). Same thing happens with bubble charts where you can't tell if the radius or area represents the value, and this confusion can change what you think the ratio is by a lot.
+
+\subsection*{Question 2: What are some common visual confusion, illusions, or distortions found in data visualization?}
+
+The paper mentions a bunch of common issues. First, the non-zero baseline thing makes differences look way more exaggerated in graphs. There's also this illusion with line graphs where parallel curves look like they're getting closer together even when the vertical distance between them stays the same. The paper talks about how color intensity creates problems because the same value can look different depending on the background, like how a gray circle looks darker on white than on black. There's also categorical perception with colors that exaggerates differences between values that cross category boundaries (like going from blue to red). The paper shows that 3D charts cause distortion when you project them onto 2D screens because the perspective makes front values look bigger. Finally, when you combine multiple dimensions it can create integral representations where you end up seeing merged properties like area instead of being able to read width and height separately.
+
+\subsection*{Question 3: What are some techniques for differentiating a set of points or identifying clusters?}
+
+The paper says color is basically the most effective technique because the visual system processes color differences more efficiently across space. You want colors that are far apart in perceptual space (the paper mentions tools like ColorBrewer can help with this) and it helps if they match what you'd expect, like yellow for lemons. Shape is less effective but can be useful for a second categorical variable when color is already being used for something else. The paper found that the difference between open shapes (like circle, square, triangle) and closed shapes (like ×, +, *) is pretty important for telling them apart. The paper also mentions that double encoding with both color and shape doesn't really help much since color already dominates, but it can be useful for people with color-vision impairments.
+
+\end{document}

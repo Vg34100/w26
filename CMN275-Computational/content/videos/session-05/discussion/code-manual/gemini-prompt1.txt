@@ -1,0 +1,261 @@
+Following the provided instructional framework for codebook manual development, here is the structured protocol for measuring the **Touch Grass Ratio (TGR)**.
+
+---
+
+## Phase 1: Input Analysis (Chain of Thought)
+
+1.
+**Core Constructs**: The primary construct is **Linguistic Groundedness**, measured via the **Touch Grass Ratio (TGR)**. Sub-dimensions include **Sensorimotor Strength** (perceptual/action intensity), **Ladder of Abstraction** (specificity vs. generality), and **Structural Transparency** (absence of nominalization and jargon).
+
+
+2. **Boundaries**:
+*
+**In-Scope**: Analysis of nouns, verbs, and adjectives for their sensory referents and syntactic structure.
+
+
+*
+**Out-of-Scope**: Purely emotional sentiment, factual accuracy (truth-telling), or the speaker's physical location at the time of writing.
+
+
+
+
+3. **Measurability**:
+*
+**Manifest**: Concrete nouns, specific brand names, and active verbs (e.g., "lime green Nikes," "write several drafts").
+
+
+*
+**Latent**: The degree of "hyperreality" or "social detachment" signaled by niche jargon density.
+
+
+
+
+
+---
+
+## Phase 2: Codebook Structure
+
+### Section 1: Protocol Overview
+
+*
+**Domain & Purpose**: This protocol measures the degree to which language is anchored in sensorimotor reality versus abstract, self-referential systems. It identifies texts that have lost their connection to tangible existence.
+
+
+*
+**Unit of Analysis**: Meaningful parts of sentences and utterances.
+
+
+*
+**Context Window**: Analyze the meaningful expression in isolation, but consider the previous two expressions to resolve pronoun referents or specific jargon context.
+
+
+
+---
+
+## Phase 2: Expanded Codebook Structure
+
+### Section 2: Variable Definitions (Continued)
+
+#### Variable 3: LADDER_OF_ABSTRACTION_LEVEL
+
+*
+**Variable Name**: `LADDER_OF_ABSTRACTION_LEVEL`
+
+
+*
+**Type**: Ordinal (1 to 8)
+
+
+*
+**Manifest vs. Latent**: Manifest; based on the specificity of the noun/entity.
+
+
+* **Operational Definition**: Classifies the level of specificity of the text's primary referents. Level 8 represents broad, general categories with low sensory detail; Level 1 represents maximized sensory and physical detail.
+
+
+*
+**Numeric Mapping**:
+
+
+* **8**: Broadest category (e.g., "Food").
+* **5**: Specific object class (e.g., "Ice cream").
+* **1**: Maximized sensory/physical detail (e.g., "A double-scoop waffle cone of Chunky Monkey").
+
+
+* **Anchor Examples**:
+*
+**High Abstraction (Level 8)**: "Americans must protect our freedoms".
+
+
+*
+**Moderate Abstraction (Level 5)**: "The items will arrive at your location".
+
+
+*
+**Low Abstraction (Level 2)**: "The lime green Nikes will be at your door".
+
+
+*
+**Lowest Abstraction (Level 1)**: "Write several drafts of each paper; review notes weekly".
+
+
+
+
+
+#### Variable 4: JARGON_DENSITY
+
+*
+**Variable Name**: `JARGON_DENSITY`
+
+
+*
+**Type**: Ordinal (0 to 5)
+
+
+*
+**Manifest vs. Latent**: Latent; requires identifying if vocabulary is industry-specific or niche to a closed digital loop.
+
+
+*
+**Operational Definition**: Measures the concentration of specialized vocabulary that signals group membership rather than describing a shared physical reality.
+
+
+* **Numeric Mapping**:
+*
+**0**: General, grounded English easily understood by a layperson.
+
+
+* **3**: Moderate use of technical terms requiring some domain knowledge.
+*
+**5**: High density of "toxic" or "obsessive" niche knowledge.
+
+
+
+
+* **Anchor Examples**:
+*
+**High (5)**: "About the security partial trust allow list".
+
+
+*
+**Low/Null (0)**: "Voters must protest warrantless wiretapping".
+
+
+*
+**Edge Case (2)**: "The Milton Model uses nominalizations". (Scored 2 because while "Milton Model" is jargon, the sentence explains its function).
+
+
+*
+**Counter-Example (0)**: "He gave a tip". (Fails because it describes a common, grounded action verb).
+
+
+
+
+
+---
+
+
+### Section 3: Decision Logic & Ambiguity
+
+*
+**Priority Rules**: If a word is both a nominalization and a jargon term, prioritize coding it under **STRUCTURAL_DETACHMENT**.
+
+
+*
+**Co-Coding Rules**: A single unit can score high on both variables (e.g., a "detached" corporate strategy).
+
+
+*
+**Ambiguity Protocol**: Default to 0 (Not Present) if a sensory referent is unclear. Use the "Wheelbarrow Test": if you cannot put the concept in a wheelbarrow, it is likely abstract.
+
+
+
+### Section 4: Coding Workflow
+
+1. Read the utterance.
+
+
+2. Apply the **Wheelbarrow Test**: Can the main subject be physically moved?
+
+
+3. Identify **Sensorimotor** keywords (Lancaster 11) and assign **SENSORIMOTOR_STRENGTH**.
+
+
+4. Identify suffixes (-ion, -ment, etc.) to assign **STRUCTURAL_DETACHMENT**.
+
+
+5. Check for niche/industry terms to adjust for **Jargon Density**.
+
+
+6. Generate JSON output.
+
+
+
+### Section 5: JSON Output Schema
+
+```json
+{
+  "unit_id": "string",
+  "variables": {
+    "SENSORIMOTOR_STRENGTH": 0,
+    "STRUCTURAL_DETACHMENT": 0,
+    "ABSTRACTION_LADDER_LEVEL": 0
+  },
+  "confidence": "high|low"
+}
+
+```
+
+
+
+To expand the codebook according to the provided research framework, I have integrated the remaining variables and provided the requested anchor examples and self-audit.
+
+
+### Section 5: Expanded JSON Output Schema
+
+```json
+{
+  "unit_id": "string",
+  "variables": {
+    "SENSORIMOTOR_STRENGTH": 0,
+    "STRUCTURAL_DETACHMENT": 0,
+    "LADDER_OF_ABSTRACTION_LEVEL": 8,
+    "JARGON_DENSITY": 0
+  },
+  "confidence": "high|low"
+}
+
+```
+
+---
+
+## Phase 3: Quality Control & Self-Audit
+
+
+
+* **[X] Do all codes have numeric values assigned?**
+* Yes: Sensorimotor and Jargon are 0–5; Abstraction Level is 1–8.
+
+
+
+
+* **[X] Are "Manifest" vs. "Latent" distinctions clear?**
+* Yes: Specified for each variable block.
+
+
+
+
+* **[X] Are there "Counter-Examples" provided for complex variables?**
+* Yes: Provided for Sensorimotor Strength and Jargon Density.
+
+
+
+
+* **[X] Is the JSON schema valid?**
+* Yes: Follows the prescribed snake_case and structure.
+
+
+
+
+
+Would you like me to generate a table comparing how a "High TGR" naturalist text and a "Low TGR" academic text would be scored using these expanded variables?

@@ -1,0 +1,58 @@
+So we'll do another
+example of a reduction. Now this one is going to be
+between two problems are the same type of object that
+both questions about graphs, but they're much different
+questions about graphs. 3 coloring is just asking, can you color a graph with three colors so that no two
+adjacent nodes have the same one. An independent set is an
+optimization problem, which phrased as a
+decision problem says, given a graph and an integer K, can you find an independent set, meaning a set of nodes and no edges between any of them
+of size at least k. So in this case, the choice gadgets that let
+us translate the witness, the coloring from one
+problem to the witness. The independent set and the other
+are going to look like this. So we're going to have in, we're going to take a graph as input. We're going to produce
+a graph as output. That graph we output
+will be a collection of these gadgets connected in a way
+I will see you on the next slide. But each of these collections
+will be complete. So that will enforce that if any of the nodes
+in the independent set, none of the other ones can be
+because they're all connected. So if there are k complete subgraphs, any independent set with
+k nodes must choose exactly one node per
+complete subgraph. Because the only way to get
+decay is to use all of them. So adjacent some graphs
+are going to have different relative
+nodes that have to be picked because we'll
+hook them up like this. So the top one here is
+connected to the top one there. I've drawn the edge, it's
+kind of a dotted line, but it's just a regular edge, just like bees, It's just showing
+it has a different purpose. Now the bottom one
+connects to the bottom. So this would not be
+an independent set. You would be forced to pick two different nodes in relative
+positions in each of these. So the idea is going to be let, to let the relative
+choice of the node within the complete subgraph be
+a color of that subgraph. Now, the subgraphs we need are
+just these triangles, right? So on input a graph, we want to know can it be
+three colored? Here's one. We're going to output a graph that
+has three times as many nodes. Because for each node
+here we're going to have this triangle over here. And we're going to connect
+the triangles in this way. The top of each will be
+connected to the top of adjacent ones according
+to the original edges. And we're going to
+interpret how we assign an independent set or a
+coloring in this way. So we have to show that by
+doing this transformation, this graph is 3
+colorable if and only if this has an independent
+set of size k, where k is the number of nodes in the original graph or the
+number of triangles over here. So if we colored this node blue, that would mean we
+should pick this node to be in the independent set over here. If we colored these two nodes orange, we should pick these two nodes
+to be in the independent set. And finally, these two are green than these two nodes should
+be an independent set. And you can see that because
+between pairs of adjacent clusters, it's always a different
+relative position. The Gothic, this is indeed
+an independent set. There are no edges between any
+of these five black notes here. Conversely, if you have an independent set in
+this graph of size k, where k is the number of clusters. The only way to do that. And you, since you can pick
+at most one per cluster, is to pick exactly
+one in each cluster. And they've gotta be in
+different relative positions. So if you translate
+backwards through this, you get a coloring of
+the original graph.

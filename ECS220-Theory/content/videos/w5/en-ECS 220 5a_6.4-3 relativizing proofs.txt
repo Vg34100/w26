@@ -1,0 +1,34 @@
+All right, so here we're
+going to step away a bit from these relativize
+complexity classes. There's a lot of interesting
+facts about them, but the main reason we brought
+him up is to highlight this first sort of barrier result involving a certain type of proof technique called
+a relative Ising proof. So simulation arguments, meaning essentially the time that we use to prove all sorts of results so far, where one algorithm is
+going to simulate another. They have a crucial property. They all work even
+if all the programs involved in the argument
+are Oracle program. As long as they all have access
+to the same Oracle problem a. And this holds no
+matter what the oracle, it could be undecidable in fact. So a proof like this, we say it relativize is, and every proof we've seen
+so far has this property. So theorems relating
+complexity classes using simulation arguments also show that all the relativize complexity classes obey the exact same relationship. So for example, for any Oracle a, this first statement that we showed. So this is not the time hierarchy that this is not a
+strict subset here. This is just if you allow
+a running time of g. And then if you allow a
+bigger running time t, So g, g of n equals big O of T
+of n. Well then you can at least do as many dead, right? So in other words, all
+the problems solvable in time g are also solvable in time t, because t is at least as big. Well that holds even if
+you're talking about problems solvable by a Oracle programs, right? Is just observing that the
+amount of time needed, G is at most O T of
+n. So, so that holds. We still have that p to the a
+is a subset of NP to the a, which is a subset of X to the a. The time hierarchy there and
+still holds in all its glory. He's like problems solvable in exponential time with
+access to an a or a goal includes and problems not solvable in polynomial
+time even with access to an a. If there's any problem complete for NP to the a that
+is also e to the a, then in fact those two are
+equal, that still holds. So now we're going to see a non magical justification for thinking about
+these magical oracles. And it's this that no proof resolving the P versus NP
+question Can relative eyes. So all of the proof techniques
+that we used up here that just involved one program
+simulating another. Those all relativize if the
+simulating program needs to simulate an Oregon instruction
+in the simulated program, but it has the same oracle itself. It can just use it. So something other than just simulation arguments have got to be used to
+resolve this question.

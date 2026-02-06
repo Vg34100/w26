@@ -1,0 +1,77 @@
+So now that we've seen many
+examples of problems in NP, it's a good time to circle back and think about how
+to formally define it with informally talked
+about a problem is an NP. When there's proof, that's easy to verify whenever
+there's a solution. So now let's formalize that. So ND is the class of problems. A number of problems here
+means decision problems, which means languages are
+subsets of their own star. So a problem is an NP. Whenever the following holds, that a string x is a yes instance
+of a if and only if there is a W such that the pair X W is a yes instance of
+a different language. We call a V the so-called
+verification language. And what's AV? Well, hey, V is a decision
+problem np regarding pairs XW, where we require that the length of w be bounded by a polynomial in x. So if a is a decision problem, right? And the, the above as the
+textbooks, formalism, I liked it to be even slightly more formal with talking
+about strings. Here. We say a is an entity
+if and only if there is a decision problem AV
+NP and a polynomial q. So that for all strings x, x is an a if and only if. The following holds. That there is a W of length
+at most q of the length of x. So it could be longer than x, but at most polynomially long, such that the pair X
+w is an AV, right? So if x is an a, there's a short proof
+that's easy to verify, IE, the pairs and AV and Q
+being short, or sorry, w being short means it's at
+most q of the length of x. And conversely, if x is not an a, then there is no such WQ. No WWW give as a second input
+would cause the algorithm, Brady to accept the terms. There's X is the instance
+of the NP problem. W is the witness also known
+as a proof or a certificate. And a B represents the decision problem that's
+polynomial time solvable, the so-called verification
+Brooklyn. Okay? So we define n to be the length of x. Well then n plus q of n is the
+length of an instance for AV, because that's a pair x w. So that's a little bit longer
+than n, but not too much. It's within a polynomial of n. So since Q is a polynomial, the running time of
+the algorithm for AB, which is polynomial in n
+plus q of n by definition. Well, that's also bounded
+by a polynomial in n, Because n plus q of n is
+bounded by a problem. Yeah. Okay, So with this formal
+definition in mind, we're going to prove this
+complexity class containment. Np is a subset of X. In other words, every problem in NP, though we think maybe not all
+of them are contained in P. Well, they're all
+decidable and in fact they're all decidable
+in exponential time. So let's see why that is
+for an input x of length n, the space of potential
+witnesses is 0, 1 to the less than or
+equal to q of n, right? So this is all the strings that
+could possibly be witnesses. And that is about, and it's
+theta of two to the queue event. So it's exponential
+in N and no bigger. So for each problem a in NP, the following algorithm decides a, assuming that a has a verification
+algorithm will call V sub a, That's about whose time is
+bounded by a polynomial p. And this is just the algorithm that exhaustively searches
+every possible witness. So an input x, you let
+n be the length of x, and you iterate over every string
+w of length at most q of n. And you simply run the
+verification algorithm on x and w. And if that's true for any
+of those, WE return true. If you get through the entire search without finding that
+this ever returns true. And that's the part that
+can take exponential time. You return false. So note that there's
+going to be around two to the Q of n iterations
+of this loop, right? And each iteration it's
+going to take how long? Well, it's going to take p
+of n plus the length of w, which is n plus q then which is
+bounded by some other polynomial, some composition of p and q. So call that R of n. That's the polynomial
+that bounds the, the, the running time of
+each iteration of the loop. And that's done to, to
+the queue of enzymes. So in other words, you
+have total time is r times theta of two to the queue, then that's just two to the
+something polynomial and n, which is exponential time. So we've shown a is an XP and it
+was an arbitrary element of NP. So all event E is contained in X. Now, the conjecture is that you actually need in some
+sense most of x to make this work. So imagine you wanted
+to show that somehow. There's things in NP that
+don't require that much time, maybe exponential, but
+not huge exponentials. Well, the conjecture some
+people believe is that no, you actually do need
+exponential time. Or in other words, for some constant
+alpha could be 0.1 point 0, 1 for some constant alpha. And t is not in time
+of two to the Alpha. In other words, there's
+some problem in NP. But the fastest
+algorithm for it takes at least Time 2 to
+the Alpha n or more. So that's unproven. In fact, showing that would be even stronger than showing
+that P is not NP. This would be showing
+that it not merely requires more than polynomial time, but in fact more than this
+exponential amount of time. But as with most of the open questions and complexity
+theory, we really don't know.

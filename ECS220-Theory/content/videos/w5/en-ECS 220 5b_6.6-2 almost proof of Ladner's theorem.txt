@@ -1,0 +1,86 @@
+Now as I said, this is a
+somewhat complex proof. So we're going to start with a
+proof that sort of almost works. It's got a high level outline of how we get some of those claims
+he talked about before. But we're going to
+miss a few details. So the first thing is just
+to assume P is not NP. They need that for any of the store. Now, let's imagine the enumerating all the polynomial-time
+programs called an Q0, Q1, Q2, et cetera, in some order that
+define a as follows. Imagine iterating over
+all the binary strings. And we're going to have a
+certain notion of a stage. These stages will somehow
+correspond to the values of f, that function that F1 appear here. So imagine we're in state 0. If we're in state a and we
+start there for every x that we encounter in this
+stage and we're going to iterate over x is for
+awhile and Stage 0 a, and then we'll switch to Stage 0 B at some point and then continue
+at whatever x we are. So for a while will be in Stage
+0 and for all those axes, x will equal sapped of x. So this is not an algorithm or
+just sort of defining what a is. Now, what we'll do is if on this x, q of x is not equal to sine of x. But then remember we let
+a of x these at the x. So in other words, if x is not
+satisfiable Boolean formula, and therefore we would
+have set x to be 0 if it's not a satisfiable
+Boolean formula. But Q0 of x says yes. We'll switch to save 0 b or if it is satisfiable Boolean formula
+and Q to 0 that says No. Also we'll switch to state 0 dB. So as soon as q 0, the first polynomial-time
+program disagrees with SAT. Then we'll switch. And if P is not NP, this has to hold for every single
+one of these kittens, right? Because none of them can
+solve SAT if P is not NP. So what does it mean? Well, it means Q0 does not solve a because we made
+Q0 disagree with that. We said a to B sat air, but that's not equal
+to accuser says so we've kept Q0 from
+solving the problem. Heck? Now we'll switch
+to the next stage 0 B, and then Stage 0 b. Now, this is corresponds to letting
+that function f go up by one. Now we just let ants be false
+for all the x's we encounter. We had some initial number
+of strings where we did this and then now we started
+the next string after that, let ants be false for strings. But each time we're going
+to look at clique of x, meaning is x an encoding of a graph and a k such that the
+graph has a clique of size k. We just, anyway, any NP
+problem can work here. So he does look at this
+NP-Complete problem and say, is this different than what? A of q 0 of x ducts? So a couple things to note here. One, note that we have this dual role for the polynomial-time programs. Here I talked about him like the output Booleans for
+deciding decision problems. Here I talk about it like the output
+strings for doing reductions. So that's just a technicality that makes it a little
+easier to talk about it. We could also have said in
+the AES stages will only look at functions that will only look
+at programs that return booleans. And in these stages will only look at programs that
+returns strings. But, you know, you can define
+them in some uniform way where it just always
+returns a string. And if the string is nonempty, you consider that true. And if it's empty, you consider it false as a Python does, for example, with, with it's sort of
+like Boolean interpretation of all it's datatypes. So the point is now we actually
+look at the string output of Q0. And then we ask, is that straight not x, but does that string in a or not? And then we ask, is that the same
+as what clique says about x? So okay, what's going on here? Why, why do we say that we
+want to switch at this point? Well, this is just a
+way of saying that q, q 0 does not reduce
+clique to edge, right? What would it mean to reduce
+clique to a mean on input x? You want to run
+through the reduction. If the reductions Q is 0, the output of that will be q of x. And you want that x is in clique
+if and only if Q of x is in a. But if we detect that, that condition fails, showing maybe clique is reducible
+to a but not through Q0. Q0 is not a proper
+reduction of clique to a. If we find this so great, we've prevented Q0 from being a reduction from clique to
+a, which is what we wanted. But now that's just one program
+that runs in polynomial time. We have an infinite number of
+other ones to worry about. And note in particular, whatever q 0 of X is, call it y, maybe before
+or after x and the order. Okay, so the other
+stages looks similar except they cover other
+polynomial time programs. So stage, stages 11, b are about Q1. They ensure that Q1 doesn't solve a, nor does it reduce clique to a stage to ensure as
+q2 does not solve a, nor does it reduce
+clique to a, and so on. So, well, we needed out of this is that P is not NP, and therefore, you can find eventually a, a QO as an SRA, An x which Q0 and sat must
+disagree because that doesn't have any
+polynomial time program. So, so what's missing
+from this, right? So this kinda looks like
+the proof we dated. It looks like none of those
+polynomial-time programs because of the a's stages, none of them decide a
+because of the bees stages, none of them reduce clique day. So kind of looks like
+we got what we wanted. A is not in P, But it's
+not NP-Complete either. So here's the missing details. Is a itself in NP. How do we know we don't
+just get something undecidable as a
+result of doing this, we actually want this to be an NP, to have a non-trivial statement. How do we enumerate all the
+polynomial-time programs? The problem and given as input, a program, is it polynomial time
+or not, is actually undecidable. So in particular, if we're going
+to use this enumeration to, to define a, a had
+better be decidable. And so we can't just say, oh, we have to enumerate
+all the polynomials and programs in order to
+define what a is. Does each stage n, right? So I'm sort of assuming here I argued about why the eighth stages n, but we need that for each queue
+for infinitely many n, right? So no matter when we start a stage, we need that there's some bigger
+X that will end the stage. To end the eight stages, you need, no matter what x you start at as you iterate through the strings x, from that point, you had better find a bigger one where q
+i and sat disagree. And for the bees stages, you'd
+better find a bigger one where a clique of x and a
+of q i of X disagree. Now both of these are going to use this hypothesis that
+p is not equal to NP.

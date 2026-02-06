@@ -1,0 +1,142 @@
+Claude w/ claude-prompt3 & musk
+
+# Touch Grass Ratio Analysis: Elon Musk IAC 2017 Speech
+
+## Summary Score Table
+
+| Variable | Score | Interpretation |
+|----------|-------|----------------|
+| V01: WORD_CONCRETENESS | 4 | Highly concrete (mean ~4.3) |
+| V02: SENSORIMOTOR_STRENGTH | 3 | Moderately strong sensory evocation |
+| V03: ABSTRACTION_LADDER | 4 | High specificity (proper nouns, detailed instances) |
+| V04: NOMINALIZATION_DENSITY | 4 | High transparency (minimal nominalization) |
+| V05: JARGON_DENSITY | 2 | Moderate jargon (technical aerospace terms) |
+| V06: STRUCTURAL_TRANSPARENCY | 4 | Highly clear agent-action-object relations |
+
+**Overall Touch Grass Ratio: 3.5/5.0 (70% Grounded)**
+
+---
+
+## Detailed Variable Analysis
+
+### V01: WORD_CONCRETENESS (Score: 4)
+**Rationale:** The speech is dominated by concrete, physical objects and specific technical components:
+- **High concreteness terms**: rocket, ship, tank, engine, propellant, Mars, moon, fuel, oxygen, landing, booster, vehicle, payload
+- **Physical dimensions**: "nine meters diameter," "1,200 tons of liquid oxygen," "48-meter length"
+- **Specific materials**: carbon fiber, methane, steel
+- **Abstract terms present but minority**: future, inspiration, civilization, capability
+
+**Representative samples:**
+- "The main body diameter is about nine meters or 30 feet" (concrete measurements)
+- "We tested it up to its design pressure — and then went a little further" (physical testing)
+- "The dog caught the ball" equivalent: "The ship will land with precision on its launch mounts"
+
+Mean concreteness estimate: **4.3** → Maps to Score 4
+
+---
+
+### V02: SENSORIMOTOR_STRENGTH (Score: 3)
+**Rationale:** Moderate sensory engagement with strong visual and action modalities, but limited haptic/gustatory/olfactory:
+- **Visual modality dominant**: "shot about 300 feet into the air," "mesmerizing landing videos," "the tiny person there" (scale reference)
+- **Action/movement**: "lifting," "landing," "firing," "accelerate," "crash," "dock"
+- **Limited tactile/other senses**: "melting," "cryo" (temperature implied but not viscerally described)
+- **Weak interoceptive**: Minimal bodily sensation language
+
+**Strongest modalities:**
+- Visual: Describing rocket landings, size comparisons, trajectory animations
+- Hand/arm action: "build," "grab," "transfer"
+- Foot/leg action: Implicit in "landing" but not dominant
+
+Mean maximum modality estimate: **3.4** → Maps to Score 3
+
+---
+
+### V03: ABSTRACTION_LADDER (Score: 4)
+**Rationale:** High specificity with extensive use of proper nouns, brand names, and detailed instances:
+- **Level 1-2 (unique referents)**: "SpaceX," "Falcon 9," "Dragon 2," "Raptor engine," "BFR," "Cape Canaveral," "Moon Base Alpha"
+- **Level 3 (brand/proper names)**: "Airbus A380," "Boeing 747," "Saturn V," "Hubble"
+- **Level 4 (qualified types)**: "12-meter tank," "nine-meter diameter vehicle," "31 Raptor engines"
+- **Level 5-6 (general categories)**: "rocket," "spacecraft," "booster" (present but less frequent)
+
+**Representative specificity:**
+- NOT: "We need propulsion systems" (Level 7)
+- BUT: "The Raptor engine will be the highest thrust to weight ratio of any kind of engine ever made" (Level 2-3)
+
+Mean abstraction level estimate: **2.8** → Maps to Score 4
+
+---
+
+### V04: NOMINALIZATION_DENSITY (Score: 4)
+**Rationale:** Predominantly active verb usage with occasional nominalizations:
+- **Active verbs dominate**: "tested," "fired," "landed," "build," "send," "carry," "travel," "dock"
+- **Nominalizations present but limited**: "implementation," "realization," "capability," "configuration," "orientation"
+- **Agent-action preserved**: "We developed," "I think," "You can land," "The ship will contain"
+
+**Sample clause analysis:**
+- "We tested it up to its design pressure" → Active verb, clear agency (nominalization-free)
+- "The implementation of new policies" → NOT present in this style
+- "We have 16 successful landings in a row" → "landings" is nominalized but paired with active context
+
+Nominalization ratio estimate: **0.15** (15% of content words) → Maps to Score 4
+
+---
+
+### V05: JARGON_DENSITY (Score: 2)
+**Rationale:** Moderate jargon concentration due to aerospace technical vocabulary, but Musk deliberately explains concepts:
+- **Technical jargon**: "propulsive landing," "supersonic retro-propulsion," "orbital refilling," "cryo," "specific impulse," "chamber pressure," "Sabatier process," "gimbaling"
+- **Domain-specific acronyms**: BFR, CO2, CH4, O2, LEO (low-Earth orbit)
+- **Plain language scaffolding**: Musk uses analogies ("like a 747," "fits a whole Falcon 1 in the payload bay") and explains technical terms
+
+**Accessibility assessment:**
+- Would a 10th grader understand without looking up terms? **Partially** — some aerospace jargon requires specialized knowledge
+- Mixed audience approach: Technical details for engineers + inspirational framing for general public
+
+Jargon ratio estimate: **0.35** (35% of content words require domain knowledge) → Maps to Score 2
+
+---
+
+### V06: STRUCTURAL_TRANSPARENCY (Score: 4)
+**Rationale:** High clarity of agent-action-object relations with minimal passive voice:
+- **Explicit agents**: "We tested," "I think," "The ship will land," "You can transfer," "Falcon 9 lands"
+- **Active voice dominant**: 85%+ of clauses use active constructions
+- **Clear objects**: "We built a 12-meter tank," "The engine produces thrust," "You light both engines"
+- **Occasional passive (justified)**: "The rocket is lifted by 31 engines" (passive emphasizes scale)
+
+**Clause-by-clause sample:**
+1. "We developed a new carbon fiber matrix" → Agent (we) + active verb (developed) + object (matrix) = 3 points
+2. "It shot about 300 feet into the air" → Agent (it/tank) + active verb (shot) + no object (intransitive) = 2 points
+3. "The decision was made" → NOT present in this style
+
+Mean clarity score estimate: **2.3** → Maps to Score 4
+
+---
+
+## Overall Assessment
+
+### Groundedness Profile
+Elon Musk's 2017 IAC speech scores **highly grounded** (3.5/5.0) with a distinct profile:
+
+**Strengths (High Groundedness):**
+1. **Lexical concreteness**: Extensive use of tangible objects, physical materials, and measurable specifications
+2. **Specificity**: Proper nouns, brand names, and detailed technical specifications anchor the narrative in reality
+3. **Structural clarity**: Active voice with explicit agents and actions ("We build," "It lands," "You can transfer")
+4. **Low nominalization**: Preserves dynamic verbs rather than hiding processes in abstract nouns
+
+**Moderate Groundedness:**
+5. **Sensorimotor engagement**: Strong visual and action modalities but limited tactile/olfactory/gustatory depth
+6. **Jargon density**: Technical vocabulary requires aerospace domain knowledge, reducing accessibility
+
+### Interpretation
+This speech exemplifies **engineering-grounded communication**: It maintains high concreteness and structural transparency while using domain-specific vocabulary necessary for technical credibility. Musk's style balances:
+- **Technical precision** (jargon, specifications)
+- **Physical reality** (concrete objects, active verbs)
+- **Inspirational abstraction** (future, civilization, multiplanetary)
+
+The 3.5/5.0 score reflects a text deeply anchored in physical engineering realities (rockets, engines, propellant) while operating in a technical domain that inherently requires specialized vocabulary. Unlike purely abstract corporate or academic discourse (which might score 0-2), this speech "touches grass" through constant reference to buildable, testable, physical systems.
+
+### Comparison Context
+- **More grounded than**: Academic abstracts (typical score: 1-2), corporate strategy documents (1.5-2.5)
+- **Less grounded than**: Field guides (4.5-5.0), instructional manuals (4-4.5)
+- **Similar to**: Technical journalism, engineering documentation with explanatory scaffolding
+
+**Key takeaway**: The speech maintains high groundedness despite technical complexity by anchoring abstract goals ("becoming multiplanetary") in concrete engineering artifacts ("a nine-meter diameter carbon fiber tank holding 1,200 tons of oxygen").

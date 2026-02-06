@@ -1,0 +1,60 @@
+So we saw that the halting
+problem is computable, enumerable, but it's not decidable. So a corollary of this
+is that the set of decidable languages
+is a proper subset of the set of computable
+enumerable languages. And unlike P versus NP
+here we know it's proper. We can actually
+exhibit a language and that's CE, but not decidable. And the complement of any decidable
+language is decidable, right? You can just tab, flip true answers to false and
+false answers to true and that, that decides the complement. But one thing that
+we're going to stay. So the second part is not
+quite a corollary of this, but we'll state is that c
+is not equal to cosine, but deck is equal to codec. So deck is a proper subset of the coping beautifully enumerable languages and these two are not eat. So here's an exercise to do, or we can talk through it
+in the lecture if you want. But here's an exercise to
+think about on your own. And it's a good exercise
+to do to kind of solidify understanding of these two. Which is that a language is
+decidable if and only if both is and its complement are
+computable, innumerable. Or in other words, it's decidable
+if it's C and it's also Cosi, mean and its compliment of C. So, huh? Okay, so we can generalize this
+idea just like we put p at the bottom of the
+polynomial hierarchy and these alternating quantifiers
+kinda went above it. Well, the first definition of CE we saw had this exists quantifier. So we can define sigma 0 and pi 0 to just be the
+decidable languages. Sigma one is c and pi one is cozy, kind of like sigma one and sigma
+and pi P1 for AND, and OMP. And then we can define
+this hierarchy above them. So that this is basically the same thing as the
+definition of the sigma p k. That language isn't sigma k. If there's a language one level
+low on the opposite side, the co language and pi k minus one, so that you can express the
+predicate a of x as being true if and only if there exists
+a W that makes b of x w true. So in other words, but
+the math is expressible by for all the predicate going
+down to the sigma k minus 2 level. So it's essentially saying, hey, x is true of there exists
+one string such that for all of another string there exists another strain,
+et cetera, et cetera. And then at the bottom you
+have a decidable predicate. And we just define pi
+k to because sigma k. So we're kinda zipping through this. We're not going to
+spend a lot of time on this so-called arithmetical
+hierarchy I just wanted to emphasize is define the exact same way as the
+polynomial hierarchy, but without the polynomial
+time constraint. And unlike the polynomial hierarchy, we know this one is proper. Sigma k is a proper
+subset of sigma k plus 1. So when I, like I said, we're not gonna spend
+a ton of time on it, but just to make some
+of this abstract, this a little more concrete. Here's an example from
+the second level, right? And it's provably at the second
+level and not any lower. And it's the, the
+problem given a program. Is it total, meaning, does it halts on every input? So we're not going to prove
+that it's that it's not C, but it turns out if not,
+let's just observe, okay, why is it in pi to pi, two predicates are
+going to be the ones expressible with a for all exists. And then a decidable predicate. P is a total program. If what's true? Well, if for all strings
+x, you might give to B, there exists a time-bound
+t such that if you run p on input x and halts in
+at most t steps, right? And notice this
+predicate is decidable. If you're given p and x and t, you can certainly run p on input x for t steps and
+see if it all right, so that is perfectly well decidable. And this predicate
+is expressible as a for all and then an
+exists and then this. But notice, unlike in NP or
+the polynomial hierarchy, these are, if you think of
+these as like searches, these are unbounded searches. There's no limit on how big x
+can be or how big T can be. You need that for every
+single string x there is, there are infinitely many. If there's any t, no matter how huge, that makes this true, then P is total. So that shows the total is n pi to, it takes a little more
+work to show that it's not in sigma 1 or pipeline
+that that is also true.

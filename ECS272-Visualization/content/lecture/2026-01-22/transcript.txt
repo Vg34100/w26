@@ -1,0 +1,1439 @@
+Pablo [0:03]: yeah
+Pablo [0:07]: again it's about the premium geology
+Pablo [0:11]: i oftentimes feel well encountered
+Pablo [0:17]: that you have a large data set to visualize and you might have
+Pablo [0:23]: too many samples and then when you project all the sample data samples data points
+Pablo [0:28]: this way
+Pablo [0:55]: and there's a series visual father and then there's like over party and so it's really guitar suitability interpret or to be able to tell the actual data distribution point value or some important structured because of the content
+Pablo [1:08]: again there's no magic because you only have this many pixels and then you have more data points than the number of pixel you add what you do
+Pablo [1:13]: so usually we do some sort of aggregation we do it
+Pablo [1:15]: again right
+Pablo [1:21]: step by step it goes through this multiple step rather than just try to display everything
+Pablo [1:24]: so you do some sort of aggregation
+Pablo [1:44]: and give high level view and then from there the user experience explore cleaning school then to maybe zoom in zoom into a local area and then you expand and
+Pablo [1:47]: you have hopefully like the pure
+Pablo [2:01]: data samples in that local area which you can project much larger display area with small pixels
+Pablo [2:05]: and then
+Pablo [2:12]: as to the separability as you can see here we have this example
+Pablo [2:14]: examples
+Pablo [2:16]: showing that
+Pablo [2:20]: as you write when you
+Pablo [2:21]: use
+Pablo [2:27]: more than one channel position but you have no problem
+Pablo [2:35]: but seo used other combination you have increasing difficult
+Pablo [2:40]: to kind of
+Pablo [2:48]: directly make correct interpretation of the actual
+Pablo [2:57]: data semantics or the certain private key of the visualization kind of convey
+Pablo [3:40]: size indicate
+Pablo [3:43]: population
+Pablo [3:54]: and then there's color visa region actually this is just like the one that has traveling use
+Pablo [3:55]: but
+Pablo [3:59]: again you have
+Pablo [4:07]: certain areas you have multiple data points but then you see they place the smaller one right
+Pablo [4:10]: on top of the bigger one
+Pablo [4:14]: this order
+Pablo [4:17]: has
+Pablo [4:18]: exactly the same size
+Pablo [4:27]: and then also
+Pablo [4:28]: some of
+Pablo [4:29]: it i really do
+Pablo [4:30]: too small
+Pablo [4:32]: and
+Pablo [4:35]: you
+Pablo [4:36]: have to tell
+Pablo [4:37]: what it is
+Pablo [4:37]: or
+Pablo [4:38]: you might
+Pablo [4:39]: even miss it
+Pablo [4:40]: right
+Pablo [4:41]: so you have
+Pablo [4:47]: you can just make that perfect visualization
+Pablo [4:48]: every time
+Pablo [4:49]: so you have to
+Pablo [4:50]: signify
+Pablo [4:52]: how
+Pablo [4:53]: i address
+Pablo [4:59]: problem i have
+Pablo [5:00]: with this particular
+Pablo [5:02]: data set
+Pablo [5:03]: and then
+Pablo [5:04]: the projection of the data
+Pablo [5:18]: and
+Pablo [5:22]: here again we talked about separ
+Pablo [5:24]: ability
+Pablo [5:30]: it's by the same
+Pablo [5:32]: way or same
+Pablo [5:33]: i
+Pablo [5:34]: mean
+Pablo [5:42]: same height but then you take some effort
+Pablo [5:47]: can you
+Pablo [5:47]: tell
+Pablo [5:48]: there's
+Pablo [5:49]: red highlight
+Pablo [5:49]: right
+Pablo [5:52]: to do the same way
+Pablo [5:53]: and on
+Pablo [5:55]: the right side is
+Pablo [6:03]: when
+Pablo [6:04]: you
+Pablo [6:05]: change the color
+Pablo [6:09]: a bit
+Pablo [6:09]: easier
+Pablo [6:10]: ev
+Pablo [6:11]: ident
+Pablo [6:12]: it's like you can
+Pablo [6:14]: do
+Pablo [6:15]: my size i'll do my
+Pablo [6:16]: job
+Pablo [6:23]: in order to be
+Pablo [6:23]: able
+Pablo [6:33]: to
+Pablo [6:36]: indicate
+Pablo [6:37]: moving
+Pablo [6:38]: besides how do i
+Pablo [6:46]: cook that size
+Pablo [6:47]: n
+Pablo [6:54]: ail
+Pablo [6:55]: before you
+Pablo [6:56]: could
+Pablo [7:09]: proximity right
+Pablo [7:11]: this cluster
+Pablo [7:16]: and
+Pablo [7:17]: then
+Pablo [7:19]: you have
+Pablo [7:20]: to be careful
+Pablo [7:21]: about using
+Pablo [7:22]: color
+Pablo [7:28]: in
+Pablo [7:29]: a way
+Pablo [7:34]: that
+Pablo [7:35]: bring
+Pablo [7:36]: in the patient
+Pablo [7:37]: heart
+Pablo [7:38]: let me
+Pablo [7:39]: see
+Pablo [7:41]: us
+Pablo [7:41]: map
+Pablo [7:45]: this is
+Pablo [7:46]: smaller
+Pablo [7:47]: area
+Pablo [7:51]: and this is
+Pablo [7:51]: about
+Pablo [7:54]: reading
+Pablo [7:55]: my income
+Pablo [8:05]: there's each color
+Pablo [8:06]: i represent
+Pablo [8:07]: being
+Pablo [8:11]: ab
+Pablo [8:12]: ility or
+Pablo [8:13]: pre measurement
+Pablo [8:14]: using
+Pablo [8:15]: color red
+Pablo [8:16]: and
+Pablo [8:17]: then you can see there's
+Pablo [8:18]: a scale
+Pablo [8:20]: so each one individ
+Pablo [8:21]: ually is fine
+Pablo [8:23]: and here showing
+Pablo [8:27]: the
+Pablo [8:28]: earning money
+Pablo [8:29]: even
+Pablo [8:30]: downright
+Pablo [8:31]: in
+Pablo [8:33]: some bigger cpu higher
+Pablo [8:33]: income
+Pablo [8:34]: this is
+Pablo [8:35]: all fine
+Pablo [8:37]: but then the next thing they do
+Pablo [8:39]: is
+Pablo [8:43]: somehow
+Pablo [8:44]: indicate
+Pablo [8:45]: the
+Pablo [8:46]: relationship
+Pablo [8:49]: yeah
+Pablo [8:56]: i don't know
+Pablo [8:58]: you can
+Pablo [8:59]: easily interpret
+Pablo [9:00]: the utilization
+Pablo [9:02]: so
+Pablo [9:02]: yeah
+Pablo [9:04]: you have to
+Pablo [9:05]: be careful
+Pablo [9:07]: about using color
+Pablo [9:12]: and if you want to highlight something
+Pablo [9:16]: in this case like here
+Pablo [9:19]: it's easy to spot
+Pablo [9:21]: and then
+Pablo [9:24]: when
+Pablo [9:25]: you use
+Pablo [9:32]: you
+Pablo [9:33]: can find it
+Pablo [9:34]: it's just not
+Pablo [9:35]: that
+Pablo [9:42]: you
+Pablo [9:45]: say
+Pablo [9:48]: and
+Pablo [9:50]: how
+Pablo [9:51]: do you find
+Pablo [9:52]: this
+Pablo [9:56]: one
+Pablo [9:58]: shall you
+Pablo [9:58]: need one
+Pablo [10:25]: shallow
+Pablo [10:35]: mention
+Pablo [10:36]: about
+Pablo [10:39]: the
+Pablo [10:43]: when you use
+Pablo [10:44]: position
+Pablo [10:44]: right
+Pablo [10:44]: here
+Pablo [10:47]: you
+Pablo [10:47]: pass something back so
+Pablo [10:58]: you
+Pablo [10:59]: find
+Pablo [11:00]: each
+Pablo [11:03]: curve
+Pablo [11:04]: is
+Pablo [11:05]: a company's and represent
+Pablo [11:06]: s
+Pablo [11:07]: growth
+Pablo [11:08]: over this
+Pablo [11:09]: time
+Pablo [11:10]: by all the
+Pablo [11:10]: time
+Pablo [11:11]: and this is
+Pablo [11:14]: like
+Pablo [11:15]: two hundred million
+Pablo [11:19]: so
+Pablo [11:20]: represent
+Pablo [11:21]: ing how many
+Pablo [11:22]: growth
+Pablo [11:23]: in a
+Pablo [11:24]: way
+Pablo [11:24]: right
+Pablo [11:25]: you
+Pablo [11:26]: can
+Pablo [11:27]: see
+Pablo [11:28]: how you
+Pablo [11:29]: access
+Pablo [11:35]: how many
+Pablo [11:36]: into as many groups
+Pablo [11:37]: as you like
+Pablo [11:41]: you can begin when you interpret the
+Pablo [11:42]: data
+Pablo [11:43]: you can do it yourself
+Pablo [11:43]: that way
+Pablo [11:46]: but
+Pablo [11:48]: then maybe we
+Pablo [11:50]: want to
+Pablo [11:55]: write
+Pablo [11:56]: those companies
+Pablo [11:58]: and then
+Pablo [12:00]: we add this color encod
+Pablo [12:00]: ing
+Pablo [12:01]: right
+Pablo [12:06]: so there's a slower burner hot company and then rocket ship
+Pablo [12:09]: so this red represent
+Pablo [12:17]: grows right and there's a good growth and there's a slow growth
+Pablo [12:18]: into this
+Pablo [12:26]: but then you can also without this you can right you can also kind of separate the company somewhat
+Pablo [12:28]: so this is
+Pablo [12:34]: like here we don't use color but then you can use color to basically
+Pablo [12:41]: use both basically use both position and color
+Pablo [12:45]: to reinforce
+Pablo [12:47]: this grouping
+Pablo [12:51]: and here's another one right
+Pablo [12:52]: this is like
+Pablo [12:55]: graph data and then
+Pablo [12:56]: we use
+Pablo [12:57]: force
+Pablo [12:58]: directly
+Pablo [12:59]: out and based on
+Pablo [13:00]: the connectivity
+Pablo [13:01]: or resources
+Pablo [13:02]: attributes
+Pablo [13:03]: value
+Pablo [13:05]: of
+Pablo [13:05]: the notes
+Pablo [13:07]: that
+Pablo [13:08]: we get
+Pablo [13:11]: all
+Pablo [13:11]: this clustered
+Pablo [13:12]: right
+Pablo [13:13]: aut
+Pablo [13:14]: omatically
+Pablo [13:16]: usually
+Pablo [13:17]: we get
+Pablo [13:18]: this possible
+Pablo [13:20]: but then we can also color
+Pablo [13:24]: we can also color it
+Pablo [13:32]: so we already can see but then with the coloring
+Pablo [13:35]: the grouping even
+Pablo [13:39]: clear so this we can see the redundant
+Pablo [13:40]: coating
+Pablo [13:43]: here is even a better one
+Pablo [13:45]: this was done by my student
+Pablo [13:49]: we try to visualize
+Pablo [13:56]: so
+Pablo [13:59]: excess
+Pablo [14:01]: is pi
+Pablo [14:06]: and basically we try to visualize
+Pablo [14:18]: message passing code so this is for parallel computing hyperforce computing parallel processing is based on so called the fbi
+Pablo [14:21]: message
+Pablo [14:23]: mess
+Pablo [14:24]: age
+Pablo [14:36]: so it is hard
+Pablo [14:49]: to
+Pablo [14:50]: program
+Pablo [14:58]: into the process
+Pablo [14:59]: of communication
+Pablo [15:06]: one
+Pablo [15:15]: processor we need to exchange certain information with neighboring processor so we need to do
+Pablo [15:16]: like a set
+Pablo [15:17]: right
+Pablo [15:21]: and then the other part that we need to do a receipt
+Pablo [15:22]: and they want to do that
+Pablo [15:27]: mutually or one processor may want to broadcast information to all the
+Pablo [15:28]: processor
+Pablo [15:32]: so how this is done
+Pablo [15:36]: can impact overall performance basically we try to
+Pablo [15:38]: help
+Pablo [15:43]: the
+Pablo [15:44]: people who program
+Pablo [15:46]: such pair of beauty
+Pablo [15:49]: to optimize
+Pablo [15:51]: optimize
+Pablo [15:53]: their
+Pablo [15:54]: message
+Pablo [15:55]: passing
+Pablo [15:58]: here what
+Pablo [15:59]: we try to do
+Pablo [16:04]: is
+Pablo [16:05]: this
+Pablo [16:07]: axis duration of
+Pablo [16:08]: communication
+Pablo [16:09]: so
+Pablo [16:10]: the even
+Pablo [16:11]: common represent
+Pablo [16:12]: i don't have
+Pablo [16:12]: a license yet
+Pablo [16:13]: so different
+Pablo [16:14]: color represent
+Pablo [16:15]: different
+Pablo [16:16]: message passing
+Pablo [16:23]: if we
+Pablo [16:24]: are we have
+Pablo [16:25]: a point here
+Pablo [16:30]: of
+Pablo [16:31]: this type
+Pablo [16:32]: was made
+Pablo [16:32]: at this time
+Pablo [16:33]: over
+Pablo [16:34]: time
+Pablo [16:36]: and then
+Pablo [16:37]: how long
+Pablo [16:38]: is called
+Pablo [16:39]: that
+Pablo [16:40]: because
+Pablo [16:41]: send
+Pablo [16:42]: you
+Pablo [16:44]: send something to other no
+Pablo [16:45]: des it take
+Pablo [16:45]: s time
+Pablo [16:47]: so we hope that
+Pablo [16:48]: here in our
+Pablo [16:49]: own
+Pablo [16:55]: some
+Pablo [16:56]: of the call very short
+Pablo [16:57]: i'm a
+Pablo [16:58]: call very large
+Pablo [17:00]: so
+Pablo [17:01]: we show that because
+Pablo [17:02]: long haul
+Pablo [17:03]: bas
+Pablo [17:04]: ically can impact
+Pablo [17:04]: performance
+Pablo [17:05]: because
+Pablo [17:06]: other non daily
+Pablo [17:11]: heavily
+Pablo [17:12]: so
+Pablo [17:13]: we want to highlight that
+Pablo [17:15]: so you can
+Pablo [17:16]: see there is short
+Pablo [17:18]: so
+Pablo [17:19]: what we did
+Pablo [17:19]: is
+Pablo [17:21]: we have a
+Pablo [17:22]: recall vis
+Pablo [17:22]: ually encountered
+Pablo [17:23]: this information
+Pablo [17:24]: and
+Pablo [17:25]: then basically
+Pablo [17:26]: make this
+Pablo [17:27]: everything even
+Pablo [17:27]: clear
+Pablo [17:29]: basically
+Pablo [17:29]: what we did
+Pablo [17:30]: is
+Pablo [17:31]: we use
+Pablo [17:32]: position encoding
+Pablo [17:33]: and then we
+Pablo [17:34]: make this access
+Pablo [17:35]: duration
+Pablo [17:36]: of
+Pablo [17:37]: so
+Pablo [17:38]: it's redundant
+Pablo [17:39]: to what we show here
+Pablo [17:41]: for them
+Pablo [17:42]: what happened is
+Pablo [17:44]: we made the shorter
+Pablo [17:44]: call
+Pablo [17:50]: and
+Pablo [17:54]: longer coefficient we care
+Pablo [17:55]: more
+Pablo [17:56]: and of
+Pablo [17:57]: looking
+Pablo [17:58]: out
+Pablo [18:00]: so then
+Pablo [18:01]: basically
+Pablo [18:02]: we highlight
+Pablo [18:03]: we
+Pablo [18:05]: highlight the longer
+Pablo [18:06]: the column more problem
+Pablo [18:07]: atic
+Pablo [18:10]: this
+Pablo [18:10]: way
+Pablo [18:12]: wider
+Pablo [18:12]: right
+Pablo [18:13]: so the bigger in
+Pablo [18:13]: a sense
+Pablo [18:14]: and then
+Pablo [18:15]: also make
+Pablo [18:16]: them kind of
+Pablo [18:17]: higher
+Pablo [18:19]: so draw
+Pablo [18:20]: so
+Pablo [18:21]: essentially we use
+Pablo [18:22]: double equ
+Pablo [18:22]: al
+Pablo [18:23]: can you see that
+Pablo [18:31]: i guess
+Pablo [18:34]: finally it just wants to
+Pablo [18:35]: point out
+Pablo [18:36]: how
+Pablo [18:37]: you combating information
+Pablo [18:42]: could
+Pablo [18:43]: lead to some
+Pablo [18:44]: confusion
+Pablo [18:45]: a misinterpret
+Pablo [18:45]: ation
+Pablo [18:46]: like
+Pablo [18:48]: this is kind of famous example
+Pablo [18:58]: we have seen this all the time the weather forecast and then when there's typhoon
+Pablo [19:01]: we often see this
+Pablo [19:05]: to show okay it's here now but then we try to predict right
+Pablo [19:09]: the path of the hurricane the typhoon
+Pablo [19:13]: but then all the time even today right
+Pablo [19:16]: they would also show this bubble
+Pablo [19:16]: right
+Pablo [19:21]: to basically show what right some people would think
+Pablo [19:25]: all this typhoon will become stronger right
+Pablo [19:36]: there's not enough indication but actually this is show that uncertainty right
+Pablo [19:41]: this path is estimated and then
+Pablo [19:43]: as time
+Pablo [19:48]: go forward this uncertainty increase
+Pablo [19:49]: increase
+Pablo [19:53]: but then some people might not interpret that way
+Pablo [19:54]: right
+Pablo [19:56]: if you don't explain to them
+Pablo [20:00]: they would think stronger and bigger and bigger
+Pablo [20:17]: and one way to show differently is to show their different path and each path they use color to indicate the category of the storm
+Pablo [20:24]: to show over what they predict the stone category will change right
+Pablo [20:26]: become weaker or stronger
+Pablo [20:29]: and then forward circle beam
+Pablo [20:31]: anyway but there you can see the difference
+Pablo [20:37]: but maybe you still prefer this this is what you used to
+Pablo [20:38]: see
+Pablo [20:45]: yeah so this
+Pablo [20:50]: kind of summarize what we have talked about
+Pablo [20:54]: trying to review yourself
+Pablo [21:00]: position right remember
+Pablo [21:03]: hello tap on the rank
+Pablo [21:04]: ing
+Pablo [21:10]: some are safe right you always consider using position first
+Pablo [21:16]: okay
+Pablo [21:21]: we're going to go to
+Pablo [21:22]: the main topic
+Pablo [21:30]: it is
+Pablo [21:33]: ai
+Pablo [21:37]: so
+Pablo [21:38]: this is a new lecture
+Pablo [21:42]: online
+Pablo [21:59]: this is
+Pablo [21:59]: the new
+Pablo [22:03]: so
+Pablo [22:05]: i think it's good idea
+Pablo [22:09]: to have this earlier rather than toward the end
+Pablo [22:13]: even though this class is not about ai
+Pablo [22:18]: and then this
+Pablo [22:19]: day
+Pablo [22:27]: i can expect that some of you or most of you will use ai somewhat
+Pablo [22:32]: so
+Pablo [22:33]: how are you heading to
+Pablo [22:34]: just to show you
+Pablo [22:39]: what have you done
+Pablo [22:43]: where does it want to be done
+Pablo [22:46]: in
+Pablo [22:46]: research
+Pablo [22:59]: and heaven is god's
+Pablo [23:00]: about
+Pablo [23:01]: what
+Pablo [23:02]: actually doable
+Pablo [23:03]: because
+Pablo [23:04]: in the research study
+Pablo [23:06]: they might find that somebody work well
+Pablo [23:09]: talk about
+Pablo [23:10]: what are do
+Pablo [23:10]: able
+Pablo [23:11]: and then also
+Pablo [23:13]: what
+Pablo [23:14]: is here
+Pablo [23:15]: when
+Pablo [23:16]: you use ai
+Pablo [23:23]: what
+Pablo [23:23]: you said
+Pablo [23:29]: hope
+Pablo [23:30]: fully i can
+Pablo [23:31]: finish it
+Pablo [23:31]: today
+Pablo [23:46]: this is
+Pablo [23:47]: what
+Pablo [23:48]: first
+Pablo [23:49]: is over
+Pablo [23:53]: i think
+Pablo [23:54]: most of them
+Pablo [23:55]: already
+Pablo [23:57]: some
+Pablo [23:58]: of you go
+Pablo [24:06]: og
+Pablo [24:07]: en ai
+Pablo [24:08]: has
+Pablo [24:09]: been used
+Pablo [24:10]: in data visualization
+Pablo [24:12]: particular
+Pablo [24:13]: ly
+Pablo [24:19]: again i
+Pablo [24:19]: will
+Pablo [24:21]: highlight
+Pablo [24:22]: two project
+Pablo [24:23]: s come by my
+Pablo [24:24]: group
+Pablo [24:25]: my whole
+Pablo [24:26]: life is done
+Pablo [24:39]: christian a
+Pablo [24:40]: i then i decided
+Pablo [24:41]: to
+Pablo [24:46]: ok
+Pablo [24:47]: ay what's your
+Pablo [24:54]: name
+Pablo [25:01]: you guys
+Pablo [25:01]: use it chatgpt
+Pablo [25:08]: y
+Pablo [25:10]: eah some of them
+Pablo [25:10]: become better
+Pablo [25:11]: right
+Pablo [25:11]: and then
+Pablo [25:12]: there's always
+Pablo [25:13]: new human
+Pablo [25:13]: s coming up
+Pablo [25:22]: so
+Pablo [25:23]: we can
+Pablo [25:25]: use this kind of ai system
+Pablo [25:30]: to
+Pablo [25:31]: perform natural language
+Pablo [25:32]: processing
+Pablo [25:34]: eng
+Pablo [25:35]: ineering
+Pablo [25:36]: imag
+Pablo [25:37]: ine every copwalk
+Pablo [25:45]: ing
+Pablo [25:46]: design
+Pablo [25:47]: even
+Pablo [25:48]: generate visual identity
+Pablo [25:49]: generate a
+Pablo [25:51]: code for the visualization you want for
+Pablo [26:01]: you
+Pablo [26:02]: attend
+Pablo [26:04]: be done in a way to support
+Pablo [26:05]: data
+Pablo [26:06]: analysis
+Pablo [26:17]: also
+Pablo [26:23]: there are also
+Pablo [26:24]: this huge
+Pablo [26:25]: generation model
+Pablo [26:28]: such
+Pablo [26:29]: as
+Pablo [26:32]: stable diffusion
+Pablo [26:37]: now e major
+Pablo [26:38]: diffusion
+Pablo [26:39]: model but then
+Pablo [26:40]: they also
+Pablo [26:41]: use large
+Pablo [26:48]: and then
+Pablo [26:49]: other
+Pablo [26:51]: that people use
+Pablo [26:52]: to generate
+Pablo [26:55]: video music
+Pablo [26:56]: aud
+Pablo [26:57]: io
+Pablo [26:59]: so
+Pablo [27:00]: in today's lecture
+Pablo [27:09]: i'm going to maybe talk about how people use large language model and diffusion mod
+Pablo [27:10]: els to generate
+Pablo [27:12]: visualization
+Pablo [27:19]: so i'm not going to talk anything about generating video or music
+Pablo [27:32]: so what gen ai
+Pablo [27:42]: as you will see or you already tried
+Pablo [27:44]: you can generate
+Pablo [27:45]: charms
+Pablo [27:46]: graph
+Pablo [27:47]: from data for you
+Pablo [27:51]: and
+Pablo [27:55]: you can assist you writing design
+Pablo [28:00]: or you can generate visualization for you and then it tell you
+Pablo [28:05]: how
+Pablo [28:09]: it actually make all this design choices
+Pablo [28:15]: of
+Pablo [28:18]: course right it didn't generate
+Pablo [28:21]: the visualization directly or generate a code
+Pablo [28:24]: for you to use to generate visualization
+Pablo [28:31]: and it can also like a given visualization
+Pablo [28:34]: you can upload
+Pablo [28:37]: a picture right which is a visualization
+Pablo [28:43]: and then you can add ai to interpret the visual identity for you
+Pablo [28:45]: so we will see example
+Pablo [28:49]: ai can help you
+Pablo [28:53]: do certain data pre processing and cleaning
+Pablo [28:57]: and summarization
+Pablo [29:02]: compute statistic which often you need
+Pablo [29:08]: to do anyway before you can make visualization from data
+Pablo [29:13]: so
+Pablo [29:15]: why jnai
+Pablo [29:17]: for
+Pablo [29:17]: us
+Pablo [29:25]: yeah it really help and that's why i want to have this lecture because we cannot ignore it right
+Pablo [29:28]: analyze just do
+Pablo [29:30]: the old way right
+Pablo [29:35]: why don't you want to use it
+Pablo [29:35]: right
+Pablo [29:38]: to be help in all this way
+Pablo [29:51]: like you need to make visual encoding for your like one of the views you want to add to
+Pablo [29:54]: your visualization interface
+Pablo [29:59]: so you can make decisions but you can also check with
+Pablo [30:01]: chat gpt say hey
+Pablo [30:03]: this is a good
+Pablo [30:05]: visual encoding
+Pablo [30:08]: double check or ask another
+Pablo [30:09]: one
+Pablo [30:15]: very powerful
+Pablo [30:16]: for them
+Pablo [30:17]: to
+Pablo [30:26]: live on a lecture
+Pablo [30:27]: or through reading
+Pablo [30:28]: but then
+Pablo [30:29]: sometimes you
+Pablo [30:29]: miss a lecture
+Pablo [30:33]: so
+Pablo [30:34]: if you don't really get
+Pablo [30:40]: all
+Pablo [30:41]: the consideration
+Pablo [30:51]: many cases
+Pablo [30:52]: like if you try
+Pablo [30:53]: ai
+Pablo [30:55]: handle
+Pablo [30:55]: obviously
+Pablo [30:56]: you want a domain
+Pablo [30:59]: you
+Pablo [31:00]: need to find
+Pablo [31:02]: that train ai
+Pablo [31:04]: to another
+Pablo [31:06]: probably another domain
+Pablo [31:07]: in this our case data
+Pablo [31:10]: from
+Pablo [31:11]: another domain
+Pablo [31:23]: so
+Pablo [31:26]: what really basic scale
+Pablo [31:33]: to use today's ai system under general system generative ai assistant is strong engineering
+Pablo [31:39]: i don't think i need to go over this too much because
+Pablo [31:42]: every one of you has been doing this
+Pablo [31:46]: but you need to do the right way
+Pablo [31:50]: there are several
+Pablo [31:51]: principles
+Pablo [31:52]: right
+Pablo [31:54]: want to be specific
+Pablo [31:56]: right you want to provide context
+Pablo [32:01]: the interaction so that they need to be clear
+Pablo [32:04]: and a lot of time
+Pablo [32:08]: you need to kind of go over several iterations
+Pablo [32:10]: hopefully not too many
+Pablo [32:14]: to get the result you really want
+Pablo [32:22]: so let's see example
+Pablo [32:25]: if
+Pablo [32:26]: you want
+Pablo [32:27]: to
+Pablo [32:28]: make char
+Pablo [32:28]: t
+Pablo [32:32]: for some cell data
+Pablo [32:36]: if you just say make a chart of ourselves
+Pablo [32:37]: that's not a good problem
+Pablo [32:38]: right
+Pablo [32:44]: so this is a little better maybe not good enough
+Pablo [32:46]: but then at least it's better than
+Pablo [32:47]: the top one
+Pablo [32:52]: you cannot be vague and cannot be lazy right you have to be more specific
+Pablo [32:53]: what do you use
+Pablo [32:57]: and
+Pablo [32:59]: specifically
+Pablo [33:06]: give not all the data if that's not what you want to visualize
+Pablo [33:07]: right you have to be specific
+Pablo [33:10]: at what period of time
+Pablo [33:13]: which company or
+Pablo [33:18]: some particular product right
+Pablo [33:28]: so you can review this later
+Pablo [33:31]: i think you know most of them
+Pablo [33:33]: try to remind you
+Pablo [33:37]: the imported principle
+Pablo [33:47]: so we've been using chatgpt i don't know if you know there's
+Pablo [33:50]: a chart to be
+Pablo [33:54]: introduced by a group
+Pablo [33:57]: in china
+Pablo [33:59]: actually
+Pablo [34:01]: the lead researcher
+Pablo [34:03]: was
+Pablo [34:08]: my former postdoc so we actually work in my group for a couple
+Pablo [34:13]: years now he's a professor in chinese university
+Pablo [34:20]: so they develop charge ed
+Pablo [34:24]: so they train this particular model
+Pablo [34:27]: twenty
+Pablo [34:28]: d pi xl
+Pablo [34:33]: on some large number
+Pablo [34:35]: of visualization data set
+Pablo [34:42]: basically data and the actual visualization
+Pablo [34:43]: generated
+Pablo [34:44]: by others
+Pablo [34:50]: probably by hand in the previous they have a large connection trained this model
+Pablo [34:52]: and after that
+Pablo [35:02]: they let you apply this model on your data and then the model give you a chart
+Pablo [35:08]: and you can try it see if they give you a good shot
+Pablo [35:13]: and maybe you can always use this
+Pablo [35:15]: too of course it's limited right
+Pablo [35:21]: it doesn't give you something like it gives you probably fairly
+Pablo [35:26]: mostly used very standard like bar chart hr
+Pablo [35:29]: that's one part
+Pablo [35:34]: so
+Pablo [35:37]: there's nothing really
+Pablo [35:40]: like a novel design
+Pablo [35:46]: but then they did it because
+Pablo [35:50]: they
+Pablo [35:53]: train right train this model
+Pablo [35:56]: with this custom data set
+Pablo [35:58]: and then
+Pablo [36:01]: they also
+Pablo [36:09]: go through this decomposition task decomposition step
+Pablo [36:14]: because you give right your request in natural language
+Pablo [36:20]: they will assisted charge gpt ready set down
+Pablo [36:30]: it decompose into subtest they don't try to kind of take your instruction and based on that to generate something immed
+Pablo [36:30]: iately
+Pablo [36:33]: they will do a kind of incrementally
+Pablo [36:36]: they perform sub tasks
+Pablo [36:40]: and then they will use the result
+Pablo [36:42]: from the subheads
+Pablo [36:47]: to make the final visualization
+Them [36:54]: come on let's say pauline
+Them [37:00]: so you can see
+Them [37:05]: that for each subtask
+Them [37:18]: lm generate something some result they call answer but basically some exam
+Them [37:21]: decision
+Pablo [37:39]: can be used
+Pablo [37:43]: okay i hadn't got him that one
+Pablo [37:46]: how was i supposed to get that
+Pablo [37:50]: work was done of course
+Pablo [37:51]: more than a year ago
+Them [38:01]: and if this is awesome
+Them [38:11]: way too much
+Them [38:15]: absolutely arrow big and era but revolution
+Them [38:19]: but i
+Them [38:20]: believe that there is
+Them [38:21]: a free
+Them [38:22]: version
+Them [38:23]: ready
+Them [38:25]: basically
+Them [38:36]: i
+Them [38:37]: didn't try it
+Them [38:38]: so i don't know
+Them [38:38]: how good it is
+Them [38:45]: we will be finding out letting me from that
+Them [38:48]: healing this
+Them [38:51]: okay
+Pablo [38:54]: so now we're going to go
+Pablo [38:55]: into
+Pablo [38:57]: this topic
+Pablo [38:58]: i prepare
+Pablo [39:04]: so
+Pablo [39:05]: three
+Pablo [39:06]: gener
+Pablo [39:07]: ating
+Pablo [39:08]: and inter
+Pablo [39:09]: preting
+Pablo [39:10]: the physical char
+Pablo [39:11]: m
+Pablo [39:17]: so it's not only talking about generating the chart but also we interpret the
+Pablo [39:19]: chart giving a child with
+Pablo [39:19]: me
+Pablo [39:21]: interpret
+Pablo [39:22]: it
+Pablo [39:23]: and we talk about
+Pablo [39:29]: a genetic visualization magentic system especially mult
+Pablo [39:31]: i agencies
+Pablo [39:33]: that becoming a popular topic
+Pablo [39:38]: and then we also talk about
+Pablo [39:45]: ucan ai to support visual identity design and author
+Pablo [39:56]: so
+Pablo [39:58]: today
+Pablo [40:02]: if you have a data set like this
+Pablo [40:07]: is automobile data set
+Pablo [40:09]: so you have
+Pablo [40:10]: model
+Pablo [40:11]: bio
+Pablo [40:13]: log horsepower weight
+Pablo [40:15]: acceleration year
+Pablo [40:19]: where may origin were made
+Pablo [40:22]: all this information
+Pablo [40:26]: for each vehicle right so this is just
+Pablo [40:29]: small sample of the data set
+Pablo [40:43]: so given this data set right we can use large altitude model to generate visualization code that the answer question like this what's the correlation between horsepower and
+Pablo [40:43]: weight
+Pablo [40:45]: this is a rather simple
+Pablo [40:48]: show me a bar chart
+Pablo [40:54]: of region and average mpg
+Pablo [40:57]: already
+Pablo [41:03]: so here is one example
+Pablo [41:16]: actually generated using chat gpt five point two and this was generated november because if now you do exactly the same thing
+Pablo [41:17]: from this data set
+Pablo [41:20]: now it's january right
+Pablo [41:29]: the model might give you a completely different plot that's why we quite want to integrate the time
+Pablo [41:34]: because you might not be able to reproduce this chatgpt
+Pablo [41:38]: but let's see
+Pablo [41:39]: what it gave us
+Pablo [41:40]: then
+Pablo [41:41]: november
+Pablo [41:45]: so what do we want when you say
+Pablo [41:47]: things generate
+Pablo [41:49]: a visualization
+Pablo [41:54]: comp
+Pablo [41:55]: aring
+Pablo [42:01]: how post power and the mile for dallas are related with
+Pablo [42:02]: weight
+Pablo [42:04]: so
+Pablo [42:05]: there we go fourth
+Pablo [42:06]: power
+Pablo [42:10]: ntg and weight want to find
+Pablo [42:11]: the correlation
+Pablo [42:16]: and hopefully the visualization convey that
+Pablo [42:19]: so we see what
+Pablo [42:21]: is it
+Pablo [42:24]: right so you use position encoding
+Pablo [42:26]: place weight
+Pablo [42:28]: for x axis
+Pablo [42:32]: and force power y axis
+Pablo [42:34]: so what's missing
+Pablo [42:36]: miles per gallon
+Pablo [42:39]: so what we did
+Pablo [42:43]: is have this e is a vehicle right
+Pablo [42:45]: each sample is a vehicle
+Pablo [42:52]: so actually it's a cross and use the size of this marker
+Pablo [42:54]: to represent e g
+Pablo [43:01]: so you can see we have a larger one here right smaller that makes sense because
+Pablo [43:06]: the vendor ntg higher mvt
+Pablo [43:09]: correspond to
+Pablo [43:11]: lighter vehicle
+Pablo [43:13]: heavier
+Pablo [43:18]: vehicle usually give you not as good npt
+Pablo [43:23]: and also it has to
+Pablo [43:26]: horsepower
+Pablo [43:27]: this is okay
+Pablo [43:35]: it show the information but then of course you can complain that
+Pablo [43:39]: why don't you tell me
+Pablo [43:45]: is this good enough where we can do better
+Pablo [43:48]: you want to compete we say
+Pablo [43:51]: what do you want to change
+Pablo [43:52]: to make it better
+Pablo [44:11]: this give you
+Pablo [44:13]: directly
+Pablo [44:16]: actually i don't know the idea
+Pablo [44:26]: just visualization generated pract
+Pablo [44:26]: ice
+Pablo [44:30]: can we do that
+Pablo [44:31]: anybody
+Pablo [44:50]: represent
+Pablo [44:51]: y
+Pablo [44:57]: but then aside but they will still use cost
+Pablo [45:22]: one
+Pablo [45:23]: thing is
+Pablo [45:24]: no
+Pablo [45:25]: use
+Pablo [45:29]: and then
+Pablo [45:31]: the side
+Pablo [45:36]: and then
+Pablo [45:38]: we have this overclocking problem here
+Pablo [45:46]: so there's a lack of legend and then this overboughing we can maybe
+Pablo [45:50]: just use point a small circle
+Pablo [45:53]: and then we can use color
+Pablo [45:58]: in this color we can use if you use size then we will have problem
+Pablo [46:00]: we have over the positive problem
+Pablo [46:12]: that depends right
+Pablo [46:23]: in fact you can see if we use size most of the sample here will have similar size so we cannot say part one on top of the other it will just obscure
+Pablo [46:25]: any
+Pablo [46:25]: way
+Pablo [46:27]: i think
+Pablo [46:37]: we don't use probably color is better than i green color is better
+Pablo [46:40]: than a simple color scale
+Pablo [46:42]: not
+Pablo [46:48]: one with many cubes maybe even one cube
+Pablo [46:50]: will be single hue scale
+Pablo [46:51]: will be
+Pablo [46:51]: greater
+Pablo [46:53]: anything else
+Pablo [46:55]: anybody
+Pablo [46:57]: yes
+Pablo [46:58]: please
+Pablo [47:17]: represent something in this case
+Pablo [47:20]: how you connect why you connect
+Pablo [47:24]: or how you connect data point to make life
+Pablo [47:30]: due to design
+Pablo [47:35]: some particular entity or in this case vehicle
+Pablo [47:42]: there's a trajectory something
+Pablo [47:44]: represent
+Pablo [48:13]: s
+Pablo [48:24]: and
+Pablo [48:25]: there is something comparable
+Pablo [48:26]: for your
+Pablo [48:27]: head
+Pablo [48:31]: i think
+Pablo [48:35]: we
+Pablo [48:35]: will show that
+Pablo [48:36]: later
+Pablo [48:39]: when
+Pablo [48:40]: calling in for each
+Pablo [48:42]: one
+Pablo [48:53]: for
+Pablo [48:54]: we even
+Pablo [48:55]: have member of
+Pablo [49:01]: the
+Pablo [49:03]: acc
+Pablo [49:03]: eleration
+Pablo [49:04]: and then we
+Pablo [49:05]: have one
+Pablo [49:06]: access for each
+Pablo [49:07]: and then we can use
+Pablo [49:08]: line
+Pablo [49:11]: x
+Pablo [49:12]: y
+Pablo [49:13]: z two
+Pablo [49:14]: x axis
+Pablo [49:15]: three
+Pablo [49:16]: or more
+Pablo [49:17]: in fact
+Pablo [49:19]: and then
+Pablo [49:20]: each line is
+Pablo [49:21]: one
+Pablo [49:22]: vehicle
+Pablo [49:23]: and then
+Pablo [49:24]: the
+Pablo [49:25]: nine will inter
+Pablo [49:26]: sect
+Pablo [49:27]: at each ax
+Pablo [49:28]: is based on
+Pablo [49:30]: its
+Pablo [49:31]: value
+Pablo [49:34]: as
+Pablo [49:35]: an ej palette
+Pablo [49:38]: inter
+Pablo [49:39]: sect
+Pablo [49:40]: with
+Pablo [49:41]: eg
+Pablo [49:42]: ss and
+Pablo [49:43]: then
+Pablo [49:44]: you have
+Pablo [49:48]: compare different nine different vehicle
+Pablo [49:50]: like you have this overview
+Pablo [49:52]: you can compare
+Pablo [49:53]: then
+Pablo [49:59]: by considering multiple dimension right multiple attribute at the same time at a glance
+Pablo [50:01]: you can make such comparison
+Pablo [50:07]: so pair of coordinate is actually quite unless you have just
+Pablo [50:18]: two very huge data set which will lead to over plotting if you don't have too many samples payroll coordinate actually not bad
+Pablo [50:19]: for money
+Pablo [50:19]: dimension
+Pablo [50:26]: some of you will use error coordinates for
+Pablo [50:27]: your project
+Pablo [50:34]: okay here's another one
+Pablo [50:37]: data set
+Pablo [50:42]: is could you be
+Pablo [50:44]: how the
+Pablo [50:46]: fuel efficiency has
+Pablo [50:48]: changed over time by region
+Pablo [50:51]: so
+Pablo [50:53]: you
+Pablo [50:53]: have dur
+Pablo [50:55]: a
+Pablo [51:03]: and the model
+Pablo [51:04]: grants
+Pablo [51:04]: right
+Pablo [51:12]: australian toyota so here you can see we have all these different brain and region
+Pablo [51:16]: using these different
+Pablo [51:20]: europe
+Pablo [51:21]: is
+Pablo [51:22]: codependent
+Pablo [51:25]: design
+Pablo [51:30]: and
+Pablo [51:31]: then the
+Pablo [51:31]: over
+Pablo [51:32]: time
+Pablo [51:37]: can change
+Pablo [51:37]: over
+Pablo [51:38]: time by
+Pablo [51:39]: region
+Pablo [51:42]: and the model means
+Pablo [51:48]: how the for each brain then that's like probably take average of all the vehicle data
+Pablo [51:52]: they produce over this year
+Pablo [51:55]: and how their unit
+Pablo [51:59]: do you think this is a good part of
+Pablo [52:00]: our
+Pablo [52:03]: this actually generated by
+Pablo [52:09]: it shows some information for sure
+Pablo [52:11]: okay but
+Pablo [52:13]: is it good enough
+Pablo [52:15]: for you use it
+Pablo [52:35]: already
+Pablo [52:36]: you won't work
+Pablo [52:38]: even
+Pablo [52:39]: you try to
+Pablo [52:40]: look at
+Pablo [52:41]: what people
+Pablo [52:41]: are lying
+Pablo [52:42]: you can see
+Pablo [52:44]: the
+Pablo [52:45]: line between the
+Pablo [52:46]: from
+Pablo [52:47]: here to here
+Pablo [52:48]: because
+Pablo [52:53]: to
+Pablo [52:54]: separate by
+Pablo [52:55]: separate
+Pablo [52:59]: discrimin
+Pablo [53:00]: ate one the
+Pablo [53:00]: other
+Pablo [53:04]: main
+Pablo [53:05]: speech of the body
+Pablo [53:06]: is separ
+Pablo [53:06]: ated
+Pablo [53:07]: and
+Pablo [53:08]: so we have this
+Pablo [53:10]: can
+Pablo [53:11]: not be seen which
+Pablo [53:12]: one the other
+Pablo [53:13]: i always
+Pablo [53:14]: have
+Pablo [53:15]: all
+Pablo [53:16]: this carried over
+Pablo [53:19]: and
+Pablo [53:20]: then you have
+Pablo [53:21]: this
+Pablo [53:22]: zero
+Pablo [53:23]: right
+Pablo [53:24]: i couldn't even
+Pablo [53:25]: tell the difference
+Pablo [53:29]: so
+Pablo [53:30]: it's not very good
+Pablo [53:50]: for
+Pablo [53:50]: this
+Pablo [54:00]: actually
+Pablo [54:01]: sometimes it generates
+Pablo [54:03]: like
+Pablo [54:05]: confusing
+Pablo [54:05]: or
+Pablo [54:07]: like this
+Pablo [54:09]: is
+Pablo [54:10]: a bot
+Pablo [54:15]: tle
+Pablo [54:17]: this
+Pablo [54:18]: is production
+Pablo [54:19]: market in the
+Pablo [54:20]: worldwide world
+Pablo [54:20]: over time
+Pablo [54:34]: is
+Pablo [54:35]: just like
+Pablo [54:37]: how
+Pablo [54:38]: do you say it's really a
+Pablo [54:39]: market
+Pablo [54:44]: so
+Pablo [54:45]: you
+Pablo [54:46]: have to check
+Pablo [54:47]: what the
+Pablo [54:48]: answer
+Pablo [54:49]: direct
+Pablo [54:49]: ly
+Pablo [54:52]: if you just use
+Pablo [54:52]: it
+Pablo [54:55]: of course we ask you to implement interactive system
+Pablo [54:58]: so
+Pablo [55:00]: it can generate code for you
+Pablo [55:11]: but then the visual encoding suggests it suggest you need to carefully evaluate before you apply each
+Pablo [55:36]: they call it like value mode when the ai system
+Pablo [55:39]: not usable yourself
+Pablo [55:39]: right
+Pablo [55:42]: so
+Pablo [55:43]: in our
+Pablo [55:44]: case you can
+Pablo [55:45]: be just coding
+Pablo [55:45]: error
+Pablo [55:46]: the code
+Pablo [55:47]: is not directly
+Pablo [55:47]: visible
+Pablo [55:49]: oftentimes
+Pablo [55:50]: you need to debug
+Pablo [55:51]: somehow
+Pablo [55:56]: so yeah you still need to know
+Pablo [55:59]: how to program so you know how to
+Pablo [55:59]: develop
+Pablo [56:11]: misunderstand your intent
+Pablo [56:17]: your request and that's why we need to go through this intuitive process
+Pablo [56:23]: you'll be able to evaluate without and then ask correction right
+Pablo [56:24]: as
+Pablo [56:24]: improvement
+Pablo [56:27]: so
+Pablo [56:28]: whether you like
+Pablo [56:28]: comment
+Pablo [56:30]: and
+Pablo [56:39]: visualization design the tools
+Pablo [56:41]: it's not good
+Pablo [56:43]: could be
+Pablo [56:44]: bad
+Pablo [56:49]: so this is a possible drop you may encounter
+Pablo [56:54]: and then
+Pablo [57:01]: so what we need to write all this error actually your prompt your promise and videos
+Pablo [57:04]: and then the data
+Pablo [57:07]: is fusion again that relate to
+Pablo [57:12]: the data itself how data organized and then
+Pablo [57:20]: how ai system process data together with the instruction you give
+Pablo [57:21]: which is ambiguous
+Pablo [57:26]: and then also how good is the model
+Pablo [57:28]: right the model
+Pablo [57:33]: we know chatgpt like most of us probably use cspe for quite a while
+Pablo [57:34]: but
+Pablo [57:36]: then gemini
+Pablo [57:39]: become good become good right
+Pablo [57:42]: but then it was awful
+Pablo [57:43]: for a while
+Pablo [57:49]: so the models capability in doing some of the job
+Pablo [57:52]: generating
+Pablo [57:53]: code
+Pablo [57:55]: i interpret visualization
+Pablo [57:58]: and assist our visual identity design
+Pablo [58:01]: we just have to
+Pablo [58:07]: try and then try to play with the model and choose the best model
+Pablo [58:14]: and do maybe one model one head of jada the other model
+Pablo [58:16]: but if you have to
+Pablo [58:18]: just try
+Pablo [58:24]: okay here we actually have a chart
+Pablo [58:27]: very simple one in fact is the line chart
+Pablo [58:32]: use color too
+Pablo [58:34]: not giving any new information
+Pablo [58:42]: this is like the plot of every coffee bean prize from twenty thirteen to twenty fourteen
+Pablo [58:44]: so
+Pablo [58:45]: you have time
+Pablo [58:49]: and then price right simple and you can see the price change
+Pablo [58:52]: right for some reason the price drop here
+Pablo [59:00]: coffee cries whatever
+Pablo [59:01]: drop
+Pablo [59:05]: has become increasingly expensive
+Pablo [59:13]: so can we use positive language model to interview chart
+Pablo [59:16]: have you tried anybody
+Pablo [59:17]: try
+Pablo [59:22]: yeah we can
+Pablo [59:27]: so for this fill one for example
+Pablo [59:32]: there's actually a paper
+Pablo [59:38]: before they develop a
+Pablo [59:40]: way to do better
+Pablo [59:42]: do this
+Pablo [59:49]: so
+Pablo [59:58]: it's just the performance kind of vary depends on the exact type of chart
+Pablo [59:59]: right
+Pablo [1:00:00]: and then
+Pablo [1:00:05]: the prompt you get
+Pablo [1:00:12]: the speeching language model can do is to set a degree
+Pablo [1:00:15]: so here we ask this
+Pablo [1:00:16]: right
+Pablo [1:00:18]: we have this question
+Pablo [1:00:21]: for how many months
+Pablo [1:00:25]: was the average price of
+Pablo [1:00:26]: coffee
+Pablo [1:00:31]: december
+Pablo [1:00:32]: baptist
+Pablo [1:00:33]: last
+Pablo [1:00:34]: exem
+Pablo [1:00:35]: plary
+Pablo [1:00:36]: it's
+Pablo [1:00:37]: a very simple question
+Pablo [1:00:38]: it just
+Pablo [1:00:39]: is like a pancake
+Pablo [1:00:40]: but then
+Pablo [1:00:41]: need to count
+Pablo [1:00:45]: based on this path so
+Pablo [1:00:48]: can vision language model do this
+Pablo [1:00:52]: so they try
+Pablo [1:00:58]: to use generic prompt
+Pablo [1:01:01]: so use tdd four point five
+Pablo [1:01:04]: gemini two point zero
+Pablo [1:01:10]: and they compare these three representative model
+Pablo [1:01:14]: the correct answer is twelve months
+Pablo [1:01:17]: before
+Pablo [1:01:21]: they
+Pablo [1:01:22]: visit
+Pablo [1:01:26]: a
+Pablo [1:01:27]: submarine
+Pablo [1:01:48]: actually
+Pablo [1:01:50]: library
+Pablo [1:01:51]: or
+Pablo [1:01:58]: any
+Pablo [1:01:58]: way
+Pablo [1:02:00]: so
+Pablo [1:02:05]: what they did is they develop this technical chart
+Pablo [1:02:10]: and
+Pablo [1:02:13]: then they are with that
+Pablo [1:02:17]: the so called chart of salts
+Pablo [1:02:21]: they
+Pablo [1:02:26]: again apply to the three model right
+Pablo [1:02:29]: and then they actually get better results
+Pablo [1:02:36]: they still run result
+Pablo [1:02:37]: but closer
+Pablo [1:02:37]: right
+Pablo [1:02:55]: so what chart of thoughts is again basically a way to
+Pablo [1:02:58]: go through this
+Pablo [1:03:01]: not go through this basically to do this task
+Pablo [1:03:02]: now like one step
+Pablo [1:03:08]: you can see
+Pablo [1:03:09]: that
+Pablo [1:03:10]: this is
+Pablo [1:03:16]: actually
+Pablo [1:03:19]: charged
+Pablo [1:03:22]: they
+Pablo [1:03:23]: break down
+Pablo [1:03:25]: so
+Pablo [1:03:26]: i think
+Pablo [1:03:27]: it's
+Pablo [1:03:28]: my personal
+Pablo [1:03:28]: theory
+Pablo [1:03:35]: in yourself
+Pablo [1:03:36]: then
+Pablo [1:03:38]: once you set this up you can process
+Pablo [1:03:42]: or thousands
+Pablo [1:03:44]: you
+Pablo [1:03:45]: much
+Pablo [1:03:50]: but you can see again they decompose the task
+Pablo [1:03:56]: into subnets and then they try to be specific about each
+Pablo [1:03:58]: then
+Pablo [1:03:59]: the mod
+Pablo [1:04:00]: el is
+Pablo [1:04:01]: better
+Pablo [1:04:02]: so
+Pablo [1:04:06]: this is kind of a general approach in the test decomposition
+Pablo [1:04:11]: as a key approach that people
+Pablo [1:04:15]: have used it over and over again it really help
+Pablo [1:04:17]: to
+Pablo [1:04:20]: help a model understand
+Pablo [1:04:23]: exactly what you look for
+Pablo [1:04:33]: and then there's another study
+Pablo [1:04:35]: this paper
+Pablo [1:04:39]: also rather new twenty twenty five
+Pablo [1:04:41]: but then the work probably done more than a year ago
+Pablo [1:04:45]: again so this is some of
+Pablo [1:04:47]: the charts
+Pablo [1:04:50]: they use for their study
+Pablo [1:04:57]: so the title is do
+Pablo [1:04:58]: llm
+Pablo [1:05:04]: have visualization literacy and evaluation
+Pablo [1:05:13]: on modified visualization to test generalization in data into
+Pablo [1:05:23]: so what they did
+Pablo [1:05:25]: the
+Pablo [1:05:26]: following
+Pablo [1:05:32]: so they test
+Pablo [1:05:34]: twelve kinds of
+Pablo [1:05:37]: charge twelve types of chart but here
+Pablo [1:05:42]: i only
+Pablo [1:05:43]: i
+Pablo [1:05:44]: only
+Pablo [1:05:45]: listed
+Pablo [1:05:49]: some result for four types
+Pablo [1:05:54]: line chart pie chart area chart
+Pablo [1:05:56]: and here
+Pablo [1:06:00]: we show the
+Pablo [1:06:01]: task
+Pablo [1:06:02]: to
+Pablo [1:06:02]: perform
+Pablo [1:06:05]: right what is just retrieve added directly
+Pablo [1:06:10]: quantify maximum minimum value or something
+Pablo [1:06:13]: and want to determine
+Pablo [1:06:14]: range
+Pablo [1:06:15]: of data
+Pablo [1:06:16]: or find
+Pablo [1:06:17]: correlation
+Pablo [1:06:19]: based comparison
+Pablo [1:06:23]: and
+Pablo [1:06:25]: even some sample question
+Pablo [1:06:32]: for each but what they did is compare the model gpt
+Pablo [1:06:33]: four and gemini
+Pablo [1:06:40]: with blat what's v already
+Pablo [1:06:44]: it's a test
+Pablo [1:06:51]: that people established called visual literacy assessment test
+Pablo [1:06:54]: so basically
+Pablo [1:06:59]: it's a multiple choice
+Pablo [1:07:00]: question
+Pablo [1:07:04]: so
+Pablo [1:07:04]: that e
+Pablo [1:07:05]: was
+Pablo [1:07:20]: perform
+Pablo [1:07:21]: ed is the human
+Pablo [1:07:21]: basis
+Pablo [1:07:22]: they used to
+Pablo [1:07:24]: and then
+Pablo [1:07:28]: served
+Pablo [1:07:29]: on the
+Pablo [1:07:36]: accur
+Pablo [1:07:36]: acy
+Pablo [1:07:37]: will be one
+Pablo [1:07:43]: so
+Pablo [1:07:44]: i think
+Pablo [1:07:59]: what
+Pablo [1:08:00]: happened
+Pablo [1:08:09]: another
+Pablo [1:08:22]: six
+Pablo [1:08:32]: human
+Pablo [1:08:33]: performance
+Pablo [1:08:37]: and then
+Pablo [1:08:38]: the red
+Pablo [1:08:39]: color
+Pablo [1:08:42]: number
+Pablo [1:08:48]: better
+Pablo [1:08:49]: than the human
+Pablo [1:08:50]: eye
+Pablo [1:08:52]: and then the green
+Pablo [1:08:55]: means the actual the model performance
+Pablo [1:09:25]: of
+Pablo [1:09:25]: the ai
+Pablo [1:09:26]: berry
+Pablo [1:09:29]: across visualization
+Pablo [1:09:34]: type test high as you see you can review the table later yourself
+Pablo [1:09:36]: and the model
+Pablo [1:09:49]: the other thing is the performance can be impacted right really by how the model
+Pablo [1:09:51]: was trained
+Pablo [1:09:53]: because
+Pablo [1:10:01]: we asked the model to interpret to focus on test on the given visualization
+Pablo [1:10:04]: but then
+Pablo [1:10:09]: certainly based off the vision language model
+Pablo [1:10:12]: used but then the model
+Pablo [1:10:20]: might also train previous training for certain domain knowledge related domain knowledge
+Pablo [1:10:22]: if we talk about investment
+Pablo [1:10:28]: this part is about investment about stock market
+Pablo [1:10:32]: the model could have been trained
+Pablo [1:10:34]: for that domain
+Pablo [1:10:36]: so
+Pablo [1:10:39]: the model could use
+Pablo [1:10:42]: the knowledge required
+Pablo [1:10:43]: for
+Pablo [1:10:48]: other test and then apply the field
+Pablo [1:10:50]: for the interpretation of that
+Pablo [1:10:53]: that e dot
+Pablo [1:10:54]: we don't know
+Pablo [1:10:57]: so the performance
+Pablo [1:10:59]: can make depends on that
+Pablo [1:11:05]: uh besides
+Pablo [1:11:17]: extracting data interpreting the ai system could be used to do numerical reason numerically
+Pablo [1:11:22]: but
+Pablo [1:11:23]: it's the current model
+Pablo [1:11:25]: are not
+Pablo [1:11:29]: like really good at such test yet
+Pablo [1:11:31]: so here we
+Pablo [1:11:34]: have this paper actually
+Pablo [1:11:36]: we
+Pablo [1:11:37]: have a labor here
+Pablo [1:11:41]: and
+Pablo [1:11:44]: like here we have this part
+Pablo [1:11:45]: uh
+Pablo [1:11:48]: x is number of station
+Pablo [1:11:51]: and this is total system
+Pablo [1:11:56]: lens so what we have is
+Pablo [1:12:06]: this is a bubble charge this is metro system of the world
+Pablo [1:12:12]: right
+Them [1:12:12]: so each bubble here is a metro system
+Them [1:12:16]: in some particular city right like this is tokyo
+Them [1:12:17]: uh
+Them [1:12:19]: m
+Them [1:12:23]: moscow beijing shanghai
+Them [1:12:42]: this represent number of stations so if the bubble are here means this subway metro system has larger number of station
+Them [1:12:47]: and here if it's higher it means the total system length right
+Them [1:12:51]: the metro system cover along this longer distance
+Them [1:12:54]: so you have all this right
+Them [1:12:57]: and then
+Pablo [1:13:04]: the size means something
+Pablo [1:13:06]: interest
+Pablo [1:13:12]: ing okay so how typ
+Pablo [1:13:14]: e the size means like
+Pablo [1:13:20]: how how much every day how many people actually
+Pablo [1:13:22]: take take the
+Pablo [1:13:23]: train
+Pablo [1:13:26]: uh in that cd
+Pablo [1:13:32]: here what we show this saliency map
+Pablo [1:13:40]: it's like using the model to identify uh i mean basically
+Pablo [1:13:45]: with this seven c map show
+Pablo [1:13:47]: where actually the model
+Pablo [1:13:54]: so
+Pablo [1:13:56]: here we thought that
+Pablo [1:13:58]: the mod
+Pablo [1:13:59]: el looked at
+Pablo [1:14:07]: this particular tool especially this measure system in shanghai
+Pablo [1:14:15]: so actually you look at the right one because we asked which ct's matrices
+Pablo [1:14:17]: right
+Pablo [1:14:18]: so that's when we
+Pablo [1:14:19]: look at l
+Pablo [1:14:34]: iar
+Pablo [1:14:36]: so
+Pablo [1:14:38]: in this case just show that
+Pablo [1:14:43]: it gives the correct answer
+Pablo [1:14:46]: and then
+Pablo [1:14:49]: for numerical reasoning has
+Pablo [1:14:52]: for something really simple like this one
+Pablo [1:14:58]: give two number in this case
+Pablo [1:15:01]: nine point eleven or nine point nine
+Pablo [1:15:03]: when we use
+Pablo [1:15:05]: chat
+Pablo [1:15:07]: for all
+Pablo [1:15:10]: we ask which number is bigger
+Pablo [1:15:14]: actually did the wrong answer
+Pablo [1:15:23]: because probably just like
+Pablo [1:15:25]: separate
+Pablo [1:15:28]: the nine from eleven and nine for nine
+Pablo [1:15:29]: and then
+Pablo [1:15:32]: use the dozen
+Pablo [1:15:34]: nine for
+Pablo [1:15:34]: comparison
+Pablo [1:15:40]: so maybe today if you use chat you want it to give you the right answ
+Pablo [1:15:40]: er
+Pablo [1:15:43]: but this is a real case
+Pablo [1:15:45]: okay let's stop here
+Pablo [1:16:01]: oh i'm only
+Pablo [1:16:02]: half
+Pablo [1:16:05]: okay we'll continue
+Pablo [1:16:08]: next
+Pablo [1:16:08]: time

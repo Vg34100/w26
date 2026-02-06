@@ -1,0 +1,69 @@
+So one of the problems
+we mentioned with the almost proof of
+landowners theorem previously about there being an NP intermediate problem is that
+at some point we said let Q0, Q1, Q2, et cetera, be an enumeration of all the
+polynomial-time programs which exist. They can be mathematically defined, but at some point, because they're
+enumeration in that order will influence the definition
+of our intermediate problem a, and we want it to be contained in NP. We need some way of enumerating them. That, that's going to be decidable, that it's going to be computable. So okay, let q i be the EI
+program in lexicographical order. For that right now is to find you, I just BDI program, so you just enumerate all
+the possible strings. Some of them are valid Python
+programs and others aren't. Qi is the eye valid one that the Python interpreter doesn't
+find any syntax errors. Now, not all of them
+are polynomial time. We only want to enumerate programs
+that are polynomial time. But as he said, we cannot simply
+enumerate all programs and pick out the polynomial-time ones
+that's undesirable to do that. So what we're gonna do
+is we're only going to enumerate programs with a
+so-called self alarm clock. So those with a header that
+defines constants c and k that count their steps and then quit after c times n to the k steps. So let's see an example of that
+in action, I'll use Python. So I put a lot of scare quotes there, but I really just referring to
+what we're going to round here. So let's imagine we have
+a polynomial-time program like this one that computes the
+greatest common divisor of a, couple of integers a and b, and then it just calls that function. So let's imagine you have this, this is polynomial time, but it's not a clocked version of it. We're going to make a three times n to the seventh clocked
+version of this program. So that time-bound is bigger than
+the time this needs, this thing. It is quite a bit faster
+than O of n to the seventh. But we're just showing that we
+can put a clock on this thing and that will time it
+out if it runs too long, even though this one won't run into. So the way we make the clot
+version of the programs, we start with the program, but I'm kind of drawn a level sparsely there cuz we're
+going to have more code here. So first of all, it has a
+header mean just some parts at the beginning that
+define this constant c, which is 3, this constant k, the exponent which is seven. And then a couple of
+global variables, time and time limit. And the first thing the
+program does is it figures out the input length and then
+computes the time limit, which is that in this example is three end of the
+seventh in general, it's c times n to the k. Okay? And then it assigns them
+that global variable. The next transformational
+do is before every other statement
+in the whole program, we want to count how many
+statements we execute will take a statement to be
+like one time-step. We add a call to this
+function called tick. And then what does tick? Tick is this function, it increments this global
+variable time starts at 0 and it just compares time to time
+on that than ever exceeds that, it prints timeout and exits. So as long as this timeline that we
+wrote down here is longer than the actual
+time the program takes. We will never execute. This will never hit exit, right? So we haven't changed the behavior of this program other than to slow
+it down by a constant factor. Right? So in particular, we're only going to enumerate
+the self clocked programs. So we're going to miss most
+polynomial time programs. Most polynomial time
+programs don't have this alarm clock
+attach to themselves. But here's the key. Any problem in P has infinitely many polynomial-time
+program solving. And you take any program that works to start adding comments to it. It doesn't change the behavior, but that's a different program technically that solves
+the same problem. And one of them is a self
+clocking program, right? For any polynomial time program, there's a self clocked version
+of it as we just showed you. And so even if we only include
+those were not hitting all the polynomial time
+algorithms, but we don't need to. We think of the algorithm as being representative of the
+decision problem it solves. We are including all
+the problems in P. Is for every problem in P, There is a self clocked program with a big enough value on the clock, bigger than the actual
+running time in the program so that,
+that program works. And then what's nice about
+the self clocked programs? Well, they're all
+polynomial time, right? They all track their own time. And they all have a polynomial time at some constant times n raised
+to some other constant. So every one of them
+is a polynomial time, but we can hit every
+polynomial time problem. Okay, So now when I refer to you, I don't mean the EI program in lexicographical order or even
+the IT, polynomial-time program. I mean the self clocking
+polynomial program. And that's the enumeration
+that we're going to use. And of course, it's easy to
+enumerate programs in that way.

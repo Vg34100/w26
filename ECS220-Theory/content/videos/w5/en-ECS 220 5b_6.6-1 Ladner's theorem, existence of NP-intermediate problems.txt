@@ -1,0 +1,102 @@
+Now we've seen that a
+whole lot of problems that are in NP that have
+polynomial-time verifier is, are either in p, they have polynomial time algorithms, decide them, or their NP-complete. So a natural question is, are there any problems
+that are neither? And this is so-called
+gladness theorem, and it says yes, shows
+the existence of so-called NP intermediate problems. So if P equals NP, well then every problem in P other than the empty set and Sigma
+star would be NP complete. But so Lander's theorem is conditional on P not
+equal to negative eight. And it says If they're not equal, then there is an
+intermediate problem. There's a problem a in NP that is neither empty nor is it NP-complete. Now, as with the time
+hierarchy theorem, a is not a natural problem we constructed artificially just
+to show that there's theorem. So the only goals of the
+proof are going to be to ensure one that a is
+actually in NP, right? And it's easy to do this if
+you don't care if it's an NP, like the halting problem is, is not in NP, so it can't be
+either NP complete or NP. But the key is that we want to show there's something actually in
+between NP-Complete and B. So the only thing we want
+to show is it's an NP, but it's not contained in P, and neither is an NP-Complete. So if we draw the Venn diagram of P and P and the NP complete problems, we know that if any
+problem in NP is not NP, then none of the
+NP-Complete problems are. But that leaves open the
+possibility that the union of NP-Complete and p could be NP. But this is showing now
+there's something in between. Now it does seem likely
+that some natural problems, For example, problems
+related to factoring, could be NP intermediate as well. But we don't really have
+evidence of that for factoring other then we don't know
+how to show their entity. There is fairly strong evidence a factory and it's not NP-complete, but I think maybe less strong
+evidence that is not NP. Okay, So this is a
+fairly complex theorem. And including the fairly
+complex proof of this theorem. So we're going to start by just
+defining the problem and see as sort of a high level outline of how we define it so as
+to get the property X2. So first we're going to talk about the satisfiability
+problem in this kind of functional notation where
+it's like a predicate. So sack of x is true if and only if x is a binary string that encodes
+a satisfiable Boolean formula. So we're going to kind
+of bounce between thinking of this as a
+structured data like it's a, it's a Boolean formula
+versus it's just a string. Now we're going to define a very slowly increasing function from natural numbers
+to natural numbers. And we're going to use that function. Define this problem a. And it's going to be the
+case that on an input x. So now just think of x as a string. If it's length given in that,
+when we take its length, give it to f. If the
+output of that is even, then for strings of that length, we're going to define a to equal set. In other words, a of x equals sine x. And if f of the length of x is odd, we just say false, right? Does that string is not in a. So f is going to
+increase very slowly, although it's kind of hard to
+show it increasing really slowly and get a example picture
+how this is going to look. But the idea will be that as you iterate through all
+the possible strings, a is going to look like it's
+just going to agree with the SAC problem on every
+string for very long runs, while f does not change. And then at some point
+F will go up by one. It will change from even to
+odd when it changes the odd, now we'll switch to the constant false predicate for long
+runs, switching forever. So here's kind of an
+example of how it looks. Here is just the satisfiability
+language, right? Which is just a series
+of yes or true, false answers to every
+possible string. Then here's the string length 0, 1, 2, 3, 4, and so on. And then here's just an
+example of how f might looks. It starts at 0 and then
+eventually goes up to 1, and then eventually
+it goes up to two. And in reality it's
+going to go very slowly, would probably be 0 for a very long time and then
+one for a very long time. But I couldn't fit all
+that into the example. So then how does that influence
+what, hey, it looks like? Well, while f is even so it's 0, it's just going to
+look like Saddleback. So a und sagt just
+agree on every string. But then when f switches the
+odd now acts, it's just false. In other words, none of
+these strings or NA. And then oneth increases again, gets back to even now it
+agrees with that again. So SAT isn't really being used in a crucial way or we can substitute
+any NP-Complete problem. I thought about
+presenting it that way, but I don't know. I feel being concrete
+is a little easier, but you don't really have
+to think about these as being answers to
+satisfiability queries. It's just any NP-Complete problem
+you right here, this would work. And any problem in P
+would work here, right? So we're switching
+between making eggs look like an NP complete
+problem and making it look like a problem
+in NP is just that sac is kind of your standard
+NP complete problem. And the constant false
+predicate, right? But just say no language. That's sort of the, the
+standard easiest problem in NP. But you can substitute
+this would be in, say answer is to 3
+SAT when f is even. And then answers to
+bipartite matching when, when f is 0, that would also work. Okay, Now by careful design of F, we're going to ensure a few things. One, that f is computable in time, polynomial in it, right? And because we need to compute
+f to figure out the answer to a that will at least
+ensure a is in NP, right? So the nondeterministic
+algorithm will be able to run in
+polynomial time in order to determine should a look like SAP or shouldn't look
+like the empty predicate. We're also going to ensure that no polynomial-time program solves a. So a is not NP, right? That's going to be key of course. And then finally, we're
+going to show that no polynomial-time program
+reduces clique to a. So a is not NP complete
+either, right? If you could show this, this is, knowing that a is in NP, together with an NP-Complete
+problem reduces to it, is what it means for
+it to be NP-Complete. So if you remember that the time
+hierarchy there and that had a similar condition to what
+2 and 3 look like here and drain no polynomial-time
+program did a certain thing. Here we got to worry about
+two things they might do. They might solve a good AMP. We don't want that. They might reduce clique to a showing it's NP-complete. We don't want that. Now as a saint, I'm just using
+a concrete example here. I could put any NP-Complete
+problem there and it would work. I think the book might use the
+same problem for both of these, which I didn't like
+because it kinda made it look like they have to
+be the same problem. They don't put any
+NP-Complete problem here, any problem in P here, and any NP-Complete problem
+you want air to prove Stokes.

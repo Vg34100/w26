@@ -1,0 +1,31 @@
+Okay, So we've talked quite
+a bit about NP completeness. And we're going to
+step back from you, proving particular
+problems are NP-complete. To just accept in a lot of important problems we'd like
+to solve are NP-complete. Now, what does that mean? Does it mean we can't solve them? Or is there some
+possibility P equals NP? So this quote from the textbook talks about the
+evidence in favor of cookies. Audience hypotheses. They're,
+they're talking about. The hypothesis that p is not equal to nb is so overwhelming the
+consequences of their failures so grotesque that their status maybe have Speak compared to that of physical laws rather than that of ordinary
+mathematical conjectures. Meaning there's just a
+lot about the world that seems to point in the direction
+of P not equal in entropy. So let's think a bit about this problem that we call
+P versus NP and then compare that problem to other
+major open mathematical questions. So there's a very famous list
+that P versus NP appears on. It's the clay Millennium
+Prize problems. That words are put together. I mean that the problems
+are known for a long time, but in 2000 they were put
+together by the Clay Institute. And for each one of them, there's a prize of $1 million
+to solve any of them. And so far only one, the Poincare conjecture
+has been resolved. And they were all sort of
+agreed upon to be lit. Some of the just made
+absolutely major, staggeringly difficult open
+problems in mathematics. And these others are
+important problems. I guess I actually don't
+really understand. Most of them kind of understand
+the Riemann hypothesis. Not so much most of the others. But I'll accept the word a
+mathematician so they're important. But P versus NP, this problem is about the nature
+of problem-solving itself, right? Is it harder to find
+solutions than to check them? And it's often said that if you can resolve it by proving P equals NP, you wouldn't get a million dollars, you'd get 6 million
+because you could use it to go and solve the other
+opening problems as well.

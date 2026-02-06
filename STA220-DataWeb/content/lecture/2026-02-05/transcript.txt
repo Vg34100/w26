@@ -1,0 +1,1055 @@
+Pablo [0:20]: like this is the one a with column name so this need not be
+Pablo [0:26]: i just wrote
+Pablo [0:33]: please consider user filter that meet these two criteria
+Pablo [0:38]: and i wrote g is null and then after the row the player did not start any game
+Pablo [0:43]: should it be at least ten or more than ten
+Pablo [0:46]: for gl
+Pablo [0:51]: enn i guess
+Pablo [0:53]: i can just check with my solution
+Pablo [0:55]: afterwards
+Pablo [1:28]: it's more than ten yes really more than
+Pablo [1:30]: half
+Pablo [1:44]: working
+Pablo [1:46]: this
+Pablo [2:00]: condition until the left hand side you see factor condition i manifested in so game started must be null
+Pablo [2:02]: and being played is at least
+Pablo [2:07]: now i see your point
+Pablo [2:08]: in more
+Pablo [2:09]: than
+Pablo [2:30]: you could also do the game solid where do you want to write a position something like
+Pablo [2:37]: this i don't know already zero but i'm not interested in players
+Pablo [2:45]: and the second
+Pablo [2:45]: condition here
+Pablo [2:46]: but not
+Pablo [2:47]: for example that ins
+Pablo [2:49]: ide is now obvious
+Pablo [3:13]: would be a road you have to define a win loss ratio as something like auto width divided by both the losses marked by one point zero and actually you should write like this one point zero at the beginning you should multiply the total wind zero and not a total
+Pablo [3:14]: losses
+Pablo [3:19]: the denominator must be multiplied with one point zero to
+Pablo [3:26]: announce
+Pablo [3:26]: ment
+Pablo [3:31]: okay
+Pablo [3:32]: and with this
+Pablo [3:34]: i would like
+Pablo [3:44]: yes one last thing in terms of i think task four is like asking us for my total variance for players sometimes the player id is not the salary is people you also just have this handle
+Pablo [3:46]: that on our own
+Pablo [3:54]: a
+Pablo [3:55]: for b
+Pablo [3:57]: i
+Pablo [4:04]: think throughout alden so four a for example i think the validation test case the player id is not in the salaries table
+Pablo [4:10]: so then i just kind of handled it by saying just printing out oh it's not there that one's fine with the next one
+Pablo [4:11]: invalidation
+Pablo [4:14]: like aaron ha doesn't exist
+Pablo [4:23]: yes so then you can just return a number
+Pablo [4:32]: how much
+Pablo [4:35]: commenting i know it says provide the amount of commenting
+Pablo [4:36]: that you think makes sense
+Pablo [4:45]: but for me i think sql queries kind of say what they do yes so for like simple tasks
+Pablo [4:56]: okay so i mean at some point please explain what you're doing but if you just write sometimes there is no need for some call that select problem one from the table
+Pablo [4:59]: as you said
+Pablo [5:02]: maybe if you have like if you join several tables
+Pablo [5:05]: or you can do some other things that subquery
+Pablo [5:07]: technology
+Pablo [5:12]: and for those that should go like at the top because you put it in the boreal
+Pablo [5:22]: if you put a comment inside the query with p or e so it should be out like
+Pablo [5:30]: because actually it's not working if you have something to if you add here now a hashtag i think it's not working
+Them [5:38]: i think it should be
+Them [5:39]: all
+Them [5:50]: i would like to continue with a lecture from the last time and i know that at the end it was a little bit
+Them [5:52]: conf
+Them [5:56]: using so what i did is i just provide three
+Them [5:59]: cells on the last lecture
+Them [6:00]: just to wrap everything up
+Them [6:08]: i'm not going over each line just in a sense you can continue with the lecture
+Them [6:10]: and for this
+Them [6:15]: i have provided how we came up with
+Pablo [6:21]: canelo and before this i also included two lines
+Pablo [6:32]: it pulls me so like the first message was whenever you have a table
+Pablo [6:43]: and web page i can use peach l this is the most version to get this table sometimes more people than you expect
+Pablo [6:48]: then just please make sure that you are selecting the right one and then you have for example
+Pablo [6:55]: media and speaking of india and other workplaces
+Pablo [7:02]: eligible bank won't give you access you cannot provide
+Pablo [7:04]: one thing
+Pablo [7:05]: to do
+Pablo [7:08]: then you can use the v eight
+Pablo [7:10]: html and you have everything
+Pablo [7:18]: and what you did last i am using x path and
+Pablo [7:21]: what is the you just go
+Pablo [7:27]: to the call so here we have our chart we have like a lot of vegetable
+Pablo [7:33]: s and our months and for each of the month see whether like for example
+Pablo [7:35]: there are latencies in the green detail
+Pablo [7:46]: i can see and would i would like to have exactly this information as well as a table without trying to inf
+Pablo [7:46]: iltrate a picture
+Pablo [7:49]: or something of all this information
+Pablo [7:49]: here
+Pablo [7:50]: they're all sol
+Pablo [7:52]: id web page and this is a very typical
+Pablo [7:53]: example
+Pablo [8:08]: there's a main page giving you like a link one hundred different sub pages to basically first thing you do is try to get all one hundred subtages like links to them and afterwards it's paid one hundred sub pages
+Pablo [8:11]: twenty whoever how many are
+Pablo [8:14]: and this is what we did in the first step
+Pablo [8:17]: we tried to get all
+Pablo [8:18]: the vegetable
+Pablo [8:19]: s that are there
+Pablo [8:26]: and here we click on vegetables
+Pablo [8:51]: we have like a mist of vegetables background with them all find like the links so we can click on one of these pictures redirect us to the web page they're interested in and the only thing is also very common is we have like four pages we have two from one to four make sure if we either we know in advance
+Pablo [8:52]: there are only four pages
+Pablo [9:08]: or we have few of these cases we are trying to assess the shift case and instead of getting an error message which has to try accept what and then you can just click on it until we have
+Pablo [9:10]: this
+Pablo [9:13]: and then we add just all the links together
+Pablo [9:16]: and this would be like we
+Pablo [9:17]: get all the links
+Pablo [9:27]: and once we have this link we are accessing all these pages here and on each of these we're just trying to get the math list
+Pablo [9:27]: ed here
+Pablo [9:33]: so basically we have to write one of and then just move over all
+Pablo [9:43]: so basically the first step was get like vegetables from first plate from the pixel page
+Pablo [9:45]: and we're just looping
+Pablo [9:52]: over like numbers one four i mean now we did it just ten but
+Pablo [9:54]: beaches
+Pablo [10:01]: should provide
+Pablo [10:21]: and then you can see we have just our very long list of links and last time i struggled
+Pablo [10:24]: with ms j
+Pablo [10:25]: ackson
+Pablo [10:29]: so we tried to get these links
+Pablo [10:38]: but x was the text on the picture just says pepus ama jv but actually like minus
+Pablo [10:45]: all the things directly and with islam this
+Pablo [10:48]: guy to access the money
+Pablo [10:55]: and basically we are just trying to test
+Pablo [11:07]: all the values you know the right side just let me remind you quickly inspector if you have an error
+Pablo [11:16]: and over mouse over the element you're interested in then you can see exactly where it is stored and then you know what kind
+Pablo [11:20]: of beautiful support once
+Pablo [11:21]: you have
+Pablo [11:24]: so this is
+Pablo [11:37]: what we are doing and then it returns i have changed the function slightly so the first thing is it should return the name of the vegetable and afterwards just in the list of minutes
+Pablo [11:40]: and let me just give
+Pablo [11:42]: it show you
+Pablo [11:44]: one example
+Pablo [11:51]: this
+Pablo [11:55]: thing you see how this return looks like
+Pablo [12:04]: so we can see we have like the name and then we have just the list margin
+Pablo [12:09]: on and so on and now we're just doing this applying this function
+Pablo [12:12]: for all our vegetables
+Pablo [12:16]: and this is more or less what we
+Pablo [12:17]: ended
+Pablo [12:20]: we're creating this list
+Pablo [12:25]: and here you see we have all our vegetables vegetable
+Pablo [12:28]: we have
+Pablo [12:32]: now
+Pablo [12:34]: this kind of data table
+Pablo [12:38]: see which is
+Pablo [12:46]: so first instead of just writing like now if we have information like june july august september and so on
+Pablo [13:01]: what i would like to do is having such a table as our picture that you see just a month january february and it should be like
+Pablo [13:07]: either true or false depending on whether it's
+Pablo [13:12]: like providing all the bumps over here
+Pablo [13:16]: getting like now just
+Pablo [13:24]: like this one event and the idea is that for each element in this month
+Pablo [13:30]: i'm just interested in having this true or false statement and two real time
+Pablo [13:34]: so basically i
+Pablo [13:35]: 'm converting everything
+Pablo [13:40]: to
+Pablo [13:41]: ensure all
+Pablo [13:52]: this is how i do it so like i get like a sample row is basically do the tolling they come up with the link for this link with some kind of vegetable
+Pablo [13:59]: i'm creating like this that both returns like a name and the list of all the months
+Pablo [14:10]: and then basically i'm just trying to loop over all the nuts and see whether they are in season and then i'm just inserting
+Pablo [14:27]: for art shops the name of the vegetables in january and every season afterwards releasing season until june july and august it's not in season afterwards
+Pablo [14:35]: and then we're just combining this for all our vegetables
+Pablo [14:41]: and just creating that
+Pablo [14:42]: long
+Pablo [14:44]: and this data frame
+Pablo [14:45]: and
+Pablo [14:46]: chest price
+Pablo [14:48]: everything
+Pablo [14:50]: without the
+Pablo [14:50]: head
+Pablo [14:51]: sets world
+Pablo [14:52]: it will launch
+Pablo [15:08]: don't have all the seventy six rows but basically we end up with a table consisting of vegetables in the first column and then yeah
+Pablo [15:12]: and then i need to place it
+Pablo [15:16]: zero whatever
+Pablo [15:18]: okay enough to have
+Pablo [15:20]: reach
+Pablo [15:20]: across
+Pablo [15:24]: all right
+Pablo [15:29]: and what is i would like to end talking about this analogy
+Pablo [15:41]: and quickly present one way of how we can access another web page like another watch and or i will talk about the international space station
+Pablo [15:47]: so the first thing is with the tonado watch it's like basically a web page
+Pablo [15:57]: telling you where like models are either happened in the past few days or whether they are running for the next few days
+Pablo [16:03]: warning for a tornado
+Pablo [16:05]: in texas
+Pablo [16:08]: and then you have all the snap
+Pablo [16:12]: here and we're interested in
+Pablo [16:14]: getting that all warnings
+Pablo [16:24]: and basically one of the bad things is i would be interested also in the location
+Pablo [16:29]: and the location of native warning is not displayed here
+Pablo [16:37]: i mean there's some kind of text but it would be hard to get the exact location out of space but if we click on the full body
+Pablo [16:39]: we see a little bit more
+Pablo [16:42]: we see the latitude
+Pablo [16:51]: and the longitude we see for example like three out the longitude is nine thousand and we have a lot of information
+Pablo [16:55]: here and what we could do if we can access this page here
+Pablo [17:05]: then we just have to find the very first number three thousand nine thousand and then we get a bing and then we have the location
+Pablo [17:09]: and the only question is how can we access
+Pablo [17:11]: and i mean enough
+Pablo [17:15]: always there we just not this way
+Pablo [17:17]: what i can do now is
+Pablo [17:19]: let me unite
+Pablo [17:25]: on shoulder
+Pablo [17:44]: that the element we're interested in with all the text here
+Pablo [17:46]: is just a pre element
+Pablo [17:50]: and if i just close this very moment
+Pablo [17:53]: it's still there it's just in a great text
+Pablo [17:59]: but basically if i would just sort my html
+Pablo [18:02]: with respect to
+Pablo [18:03]: b
+Pablo [18:12]: is a moment just feel basically you find everything just grayed out
+Pablo [18:15]: and what we can do is
+Pablo [18:30]: use the case force then you cannot find anything because basically it loads everything dynamically but once you have done of the html we can just try to access all the warnings
+Pablo [18:33]: and this is what we are going to do here
+Pablo [18:38]: from all the packages
+Pablo [18:41]: and then
+Pablo [18:44]: we're trying to test the web page
+Pablo [18:52]: so there is no exception so it's working
+Pablo [18:54]: and then just pass the html
+Pablo [19:00]: and afterwards i'm looking with the x up month all the
+Pablo [19:02]: formats on the web page
+Pablo [19:07]: and it actually comes just how many
+Pablo [19:10]: warnings
+Pablo [19:17]: it returns twenty warnings and go back
+Pablo [19:29]: so basically we have exactly these twenty warnings
+Pablo [19:36]: and we all have the content of all these warnings in our pre element
+Pablo [19:45]: so we have already passed is for all three elements we just have to assess
+Pablo [19:50]: so let's start for example
+Pablo [19:51]: first one
+Pablo [19:58]: and then we have here our long at the end our
+Pablo [20:10]: number three hours and nine hours five hundred so basically we just write a function that is trying to access these two numbers very interesting location
+Pablo [20:23]: so basically i use regular expression
+Pablo [20:26]: and what i'm doing is
+Pablo [20:29]: here i have like a positive
+Pablo [20:36]: look behind so in the sense that what i'm interested in all these numbers
+Pablo [20:37]: in these two numbers
+Pablo [20:40]: and they can detect these two numbers
+Pablo [20:50]: because there is always a latitude free period and then the magnitude so it's basically saying here at apple the latitude
+Pablo [20:58]: is an escape character and i have this full point three times longitude and maybe some optional white space
+Pablo [21:15]: and this means smaller equal sign means this is what is directly before the thing and the what comes in these brackets here this is like some digits
+Pablo [21:34]: some white space and some details and this basically three thousand twenty three and nine thousand five hundred and all the numbers upwards i'm not interested in it's just it would just show us where our moving but if i just want to locate it and
+Pablo [21:36]: start
+Pablo [21:43]: just this i o and you can see what the first warning is exactly the first two numbers
+Pablo [21:48]: and it's basically what i'm doing and upwards and splitting
+Pablo [21:52]: so i'm accessing the first element type string here
+Pablo [21:55]: and then i'm splitting it
+Pablo [21:59]: and then i just get
+Pablo [22:09]: so what i can do now is i can apply define all to all of my warnings and then for all of the tornado warnings
+Pablo [22:12]: i have
+Pablo [22:21]: so this is basically a loop over all the warnings for warning in warnings i'm applying this function trust
+Pablo [22:34]: me on this and this basically list of coordinates of warning
+Pablo [22:47]: and my idea is then that i'm just printing the warning with the text write something like this is a new warning in between and also at somewhere like for the age visualize where the location is
+Pablo [22:50]: and on the map it's the same time
+Pablo [22:51]: here
+Pablo [23:04]: basically here somewhere
+Them [23:08]: i guess lori
+Them [23:10]: like
+Them [23:11]: this
+Them [23:24]: and we see this warning some ideas that all the visualize
+Them [23:28]: this tornado one
+Them [23:32]: this would be like here
+Them [23:38]: i'm looping over all the warnings and you have all the text here
+Them [23:41]: in the points
+Them [23:45]: you go over it on the location
+Them [23:56]: followed by this is a new warning and so on and so on we could maybe create this web page and then just check what it require warning or a new warning
+Them [24:02]: and could maybe build an app that is informing us that they can buy web page for every minute
+Them [24:04]: if there is new warning
+Them [24:08]: s on my loc
+Them [24:08]: ation
+Them [24:09]: and
+Them [24:10]: it sends
+Them [24:11]: whenever
+Them [24:15]: it be a message
+Them [24:19]: a callback message
+Them [24:21]: that it would be formed if there's
+Them [24:25]: all the note from you
+Them [24:28]: but still one way
+Them [24:29]: of
+Them [24:40]: and the last thing is i'm now just running everything like coordinate this data frame and
+Them [24:50]: add all the column name of north and west and also nine
+Them [24:53]: thousand and it's basically saying
+Them [24:54]: like
+Them [24:54]: thirty degrees
+Them [24:55]: and five degrees
+Them [24:58]: but it's like a minus
+Them [25:04]: sign here
+Them [25:05]: i divided it
+Them [25:07]: by one hundred
+Them [25:08]: col
+Them [25:08]: umn names
+Them [25:10]: and
+Them [25:11]: basically
+Them [25:13]: now
+Them [25:15]: deployment for all
+Them [25:16]: the
+Them [25:17]: first five
+Them [25:17]: meters
+Them [25:18]: and i just
+Them [25:19]: want
+Them [25:20]: these
+Them [25:20]: locations
+Them [25:23]: okay
+Them [25:24]: and then you have like a
+Them [25:25]: full
+Them [25:26]: coordinate this
+Them [25:27]: all the twenty
+Them [25:32]: has finally
+Them [25:33]: adjust
+Them [25:36]: ing them
+Them [25:37]: and you can see here
+Them [25:43]: it's basically
+Them [25:45]: the same plot
+Them [25:46]: as you can find on the
+Them [25:47]: tornado website
+Them [25:51]: one different for example
+Them [25:52]: look here
+Them [25:52]: at houston
+Them [26:01]: then you see there's only one single point and here's like a bunch of points
+Them [26:01]: and it's exactly because
+Them [26:06]: it's actually very first location and we were not interested in where the tornado was moving
+Them [26:09]: to
+Them [26:10]: so for each of these ban
+Them [26:10]: adas
+Them [26:12]: there was only one point in our year we
+Them [26:13]: had
+Them [26:26]: did you just know it was wes because we were looking at this now
+Them [26:28]: so there's like no information
+Them [26:33]: itself
+Them [26:35]: and i guess
+Them [26:36]: it's only
+Them [26:37]: for us
+Them [26:50]: okay this would be like a quick mention how you can use this and basically the main idea is just to show you
+Them [26:51]: you have some information
+Them [26:54]: and you do it
+Them [26:57]: insp
+Them [26:58]: ector
+Them [27:00]: defined element you're interested
+Them [27:01]: in and you
+Them [27:10]: would like
+Them [27:13]: also
+Them [27:16]: learning
+Them [27:19]: the next middle browser sometimes
+Them [27:21]: you have
+Them [27:22]: a web page
+Them [27:23]: containing some information
+Them [27:25]: but you cannot access all the information
+Them [27:29]: because there are no dynamically
+Them [27:33]: in javascript or you really want
+Them [27:38]: to try new human behavior
+Them [27:41]: you want to think about and wanting some changes
+Them [27:49]: and then you can use browser and python this is something very useful
+Them [28:00]: as introduction to this let me just show you the following web page
+Them [28:06]: where the iss
+Them [28:10]: so i hope you can see everything
+Them [28:11]: but
+Them [28:28]: what is base method here this would create international space station we see like a map maybe it's hard to see what is here in the dark background
+Them [28:36]: but here you can see what australia and you know here we have the iss in the next few minutes
+Them [28:41]: and it's automatically updated
+Them [28:46]: you can see it's moving very slowly but still it's moving
+Them [28:53]: so this is like a web page telling us where the iss is it contains some other information
+Them [28:55]: like the altitude
+Them [28:59]: letitia q longitude and all the information
+Them [29:26]: with the iss is in daylight or not and it was not planned but i'm very happy that we see exactly the toy setting the iss says the iss but you can definitely tell that this part on the world is not in the ui and the reason is that it's like in a space so this basically means that this sub daylight for the iss right now
+Them [29:33]: but not on the earth and if the iss will appear then maybe would have been in the shadow of
+Them [29:36]: the earth
+Pablo [29:36]: so in some sense
+Pablo [29:40]: if we
+Pablo [29:41]: have here
+Pablo [29:47]: sun n apis is here
+Pablo [29:53]: of course you cannot see iss but for example
+Pablo [29:59]: it's there then maybe the iss is daylight
+Pablo [30:08]: then the iss is in data
+Pablo [30:21]: and it's very important for us because of one reason actually you are able to see the eyes as with your own eyes
+Pablo [30:25]: with some exceptions
+Pablo [30:26]: of course
+Pablo [30:36]: so right now it would be impossible i mean like a bunch of first reason is august it's somewhere close to media
+Pablo [30:49]: so it's not about but even if it weren't directly above twenty right now directly from davis you would be able to see because it's like the sky is so bright have no
+Pablo [30:56]: best case to see iss is in such situation
+Pablo [31:05]: where in iss this is daylight unlike the on here it's like perfect
+Pablo [31:13]: but it's like the perfect moment right now so if you would now be on a ship there you could see the iss with your
+Pablo [31:19]: own eyes because it would like reflect the sunlight you could see it
+Pablo [31:20]: would be
+Pablo [31:28]: idea is what i would like to do is for the next few days
+Pablo [31:30]: just see where the iss will be
+Pablo [31:37]: and then try to find out when it's like when it's recycling or less about previous
+Pablo [31:43]: and then see when the iss isn't daylight but we are not
+Pablo [31:50]: in a sense like around us alone i would expect that iss isn't daylight
+Pablo [31:55]: and then this is the moment where we can see the issuing
+Pablo [31:56]: our own eyes
+Pablo [32:06]: the updates stop centering the iss
+Pablo [32:09]: so we would immediately see
+Pablo [32:16]: next queue
+Pablo [32:18]: minutes maybe at the end of the lecture
+Pablo [32:26]: it would be every year sacramento and then it was
+Pablo [32:28]: like the moment
+Pablo [32:30]: but unfortunately daylight
+Pablo [32:31]: right now
+Pablo [32:33]: you are a little
+Pablo [32:33]: confused
+Pablo [32:36]: sorry
+Pablo [32:48]: it's updating every ten seconds so it gets
+Pablo [32:49]: on our
+Pablo [32:57]: so let me just see
+Pablo [33:00]: what we know
+Pablo [33:02]: where you
+Pablo [33:03]: can see
+Pablo [33:15]: but basically
+Pablo [33:22]: i mean we can just leave the website open
+Pablo [33:23]: and we will see
+Pablo [33:24]: where it will
+Pablo [33:25]: be above
+Pablo [33:26]: the second
+Pablo [33:29]: okay
+Pablo [33:34]: so this is i think the information we need so we can now say website here
+Pablo [33:38]: check whether the iss isn't data or not
+Pablo [33:44]: and also just see whether we are going to be like about let me just maybe easy
+Pablo [33:51]: on the package on python telling us when task account is location
+Pablo [33:56]: and then we have like have the end of the lecture
+Pablo [33:58]: that maybe next sunday
+Pablo [34:04]: we will see there is a perfect moment
+Pablo [34:08]: only one bed use
+Pablo [34:09]: typically
+Pablo [34:18]: you can see your own eyes either on even morning or in the evening and it's a change sometimes it's like five days in a row
+Pablo [34:20]: this is going to morning
+Pablo [34:25]: this is the case for us right now you can see that six a m in the morning
+Pablo [34:26]: get up very early
+Pablo [34:31]: if you wait one or two weeks you can just see the email
+Pablo [34:36]: seven to six pm whatever just go outside
+Pablo [34:44]: and we'll also find the perfect moment in the sense that it's not always equally right
+Pablo [34:47]: so
+Pablo [34:57]: i mean this is really a good moment if iss both sacramento but for example if iss would be somewhere here
+Pablo [35:03]: over i don't know over the lake no
+Pablo [35:05]: salt lake city
+Pablo [35:14]: and maybe would even be able to see because it's like up in the sky and space but we only would see it
+Pablo [35:22]: for some seconds and if it really is above direct behaviors
+Pablo [35:30]: this is like a task for today i want to find out when
+Pablo [35:33]: to look at this guy cpi
+Pablo [35:35]: okay good news
+Pablo [35:37]: we have information we need
+Pablo [35:38]: that we just
+Pablo [35:40]: see how far
+Pablo [35:46]: i continue with the update
+Pablo [35:51]: well maybe one hour was a little
+Pablo [35:58]: the next group thing is there is an api
+Pablo [36:01]: and
+Pablo [36:05]: this means it's duplicated document ap
+Pablo [36:05]: i
+Pablo [36:17]: we will start to be able to document the api and what you must document the api then we will need to create a web page and in the end
+Pablo [36:19]: this is still not enough
+Pablo [36:22]: project
+Pablo [36:25]: so we put everything together
+Pablo [36:27]: and
+Pablo [36:28]: as we have already
+Pablo [36:29]: went
+Pablo [36:30]: through
+Pablo [36:35]: okay
+Pablo [36:36]: buddy iss
+Pablo [36:40]: documentation
+Pablo [36:41]: is reliving
+Pablo [36:44]: one per second value
+Pablo [36:50]: and then it basically says it has information about a lot of satellite
+Pablo [36:55]: we cannot maybe see on the eiss but now
+Pablo [36:56]: at
+Pablo [36:57]: least this
+Pablo [36:58]: tell us
+Pablo [37:03]: yes this endpoint returns a list of satellites that we see
+Pablo [37:08]: information about so we could maybe also see
+Pablo [37:10]: other satellites what are
+Pablo [37:12]: these long table
+Pablo [37:13]: s
+Pablo [37:21]: okay so the first thing is i would like to see
+Pablo [37:22]: what kind of satellite
+Pablo [37:24]: we
+Pablo [37:24]: have
+Pablo [37:28]: page
+Pablo [37:30]: so what we are doing
+Pablo [37:33]: is just sending an api request
+Pablo [37:36]: as
+Pablo [37:37]: this
+Pablo [37:38]: set
+Pablo [37:41]: uv
+Pablo [37:42]: c what we have to do is send the
+Pablo [37:43]: api where the
+Pablo [37:44]: iss
+Pablo [37:46]: d one satellite
+Pablo [37:47]: and
+Pablo [37:48]: we send
+Pablo [37:50]: this
+Pablo [37:51]: then
+Pablo [37:55]: we have like two things the first one is i mean i check the response
+Pablo [37:58]: for error message i didn't get any error mess
+Pablo [38:02]: age and then instead of written the response like the content
+Pablo [38:05]: i'm creating a response type address of
+Pablo [38:06]: response
+Pablo [38:08]: because you also could gain some information
+Pablo [38:09]: that is useful
+Pablo [38:10]: one
+Pablo [38:11]: of them is for example
+Pablo [38:17]: here the x rate minute and we create new remaining
+Pablo [38:18]: we can see
+Pablo [38:21]: we have like a limit of three hundred fifty
+Pablo [38:30]: requests we have only three hundred forty nine net just made one and the limited was five minutes so when they said
+Pablo [38:34]: allow make one request per second
+Pablo [38:35]: eight years ago more
+Pablo [38:36]: of them
+Pablo [38:37]: more requ
+Pablo [38:38]: ests per five
+Pablo [38:40]: somehow
+Pablo [38:45]: okay now i'm interested of course in getting
+Pablo [38:47]: the response
+Pablo [38:57]: demonstrate these are like the headers and we can easily see the limit the meaning the integral
+Pablo [39:01]: and the model server time
+Pablo [39:04]: and catch result
+Pablo [39:06]: is memorable
+Pablo [39:07]: yesterday
+Pablo [39:31]: but if it wants to have now all the satellites you can see the only thing is returning is the name of satellite biff and the ip five thousand something and basically we cannot see us we can maybe see other satellites but we don't have any
+Pablo [39:43]: store this number twenty five thousand something as issid equals to all the time
+Pablo [39:48]: because we invest in getting the information of the iss
+Pablo [39:52]: and for this we again looking
+Pablo [39:54]: at ap
+Pablo [39:54]: i
+Pablo [39:56]: and
+Pablo [40:00]: what we could do is we would set the following request
+Pablo [40:09]: like satellites and id number and then it becomes adjacent element name id
+Pablo [40:11]: and it latitude the dom
+Pablo [40:15]: e but also all
+Pablo [40:16]: on the web page
+Pablo [40:19]: if
+Pablo [40:21]: you go with key whether it's data or
+Pablo [40:22]: not
+Pablo [40:24]: that is bas
+Pablo [40:25]: ically containing
+Pablo [40:29]: this information
+Pablo [40:30]: here and email a little bit
+Pablo [40:30]: more
+Pablo [40:34]: so we are sending out a request
+Pablo [40:46]: and the response basically i mean in this case to h response
+Pablo [40:57]: we have light theta
+Pablo [41:08]: and now you can see like a live response
+Pablo [41:20]: everything is working and we can just try to access respawn and then we see the name latitude log
+Pablo [41:27]: we see here exactly one hundred eight and then one
+Pablo [41:29]: and
+Pablo [41:32]: we also see the iss
+Pablo [41:33]: and
+Pablo [41:34]: also what
+Pablo [41:35]: we have
+Pablo [41:58]: is data so basically what i would do is for the next few days in the end section interval i will classify the set the location of the iss because api allows not only to get like device data of the iss but also like a
+Pablo [41:59]: future
+Pablo [42:03]: so we just ask if we have now the currency
+Pablo [42:13]: i can now
+Pablo [42:14]: come up with a ten second
+Pablo [42:21]: interval like for next week until the next thursday
+Pablo [42:30]: and send a request for every office and section then the request get like the location check whether location is close to davis
+Pablo [42:37]: and see whether the iss daylight and whether it
+Pablo [42:38]: basket
+Pablo [42:38]: ball for us
+Pablo [42:44]: and with this and of course if you have like an or you have to send
+Pablo [42:48]: the error and file request and you can software just
+Pablo [42:49]: take
+Pablo [42:51]: so there's of course a very bad idea
+Pablo [43:00]: because we know in advance that we are only interested in all the time steps when there is like either dust for the twenty minutes
+Pablo [43:02]: after
+Pablo [43:10]: dawn maybe sixty minutes before and so on because we're really interested in time when a science is going up or down
+Pablo [43:20]: so i'm not using now an import all the hours of the day but like we know at seven p m we have
+Pablo [43:23]: non and i don't know
+Pablo [43:32]: basically doing something like starting at six p m until seven fifteen
+Pablo [43:37]: and here starting with five forty five
+Pablo [43:39]: going to seven p m
+Pablo [43:42]: seven rpm
+Pablo [43:52]: and for each of these days i'm just looking at this input wall at hand second interval trying to access the location and see what
+Pablo [44:03]: is
+Pablo [44:04]: the nice location
+Pablo [44:05]: so now the
+Pablo [44:06]: point is how can we access
+Pablo [44:07]: our
+Pablo [44:08]: individ
+Pablo [44:08]: ual
+Pablo [44:10]: and
+Pablo [44:11]: there's also
+Pablo [44:12]: an
+Pablo [44:13]: image
+Pablo [44:49]: optional
+Pablo [44:50]: ly specified
+Pablo [44:57]: in the
+Pablo [44:58]: ten seconds
+Pablo [45:09]: so
+Pablo [45:10]: if we just
+Pablo [45:10]: go down
+Pablo [45:19]: bas
+Pablo [45:20]: ically
+Pablo [45:32]: number of
+Pablo [45:40]: depos
+Pablo [45:41]: its because
+Pablo [46:21]: data
+Pablo [46:27]: def
+Pablo [46:28]: ining
+Pablo [46:28]: all the locations
+Pablo [46:30]: like
+Pablo [46:31]: the iss
+Pablo [56:46]: let me just go back
+Them [56:51]: we are
+Them [56:56]: close to segment
+Them [56:58]: as i say
+Them [57:04]: so basically i think we will have one more hour maybe even one and a half hours
+Them [57:08]: then the iss will be about settlement
+Them [57:19]: and with this i would like
+Them [57:21]: and
+Them [57:23]: you would be iss
+Them [57:25]: and all that stuff
+Them [58:47]: i
+Them [58:48]: wear like
+Them [59:36]: we have signed a final
+Them [59:36]: ize or not
+Them [59:37]: i'll make it for you
+Them [1:00:06]: like the loader quite hot
+Them [1:00:22]: yes
+Them [1:01:53]: i
+Them [1:01:56]: do
+Them [1:02:06]: this
+Them [1:02:07]: twenty seven
+Them [1:04:53]: house
+Pablo [1:05:37]: when you
+Pablo [1:05:38]: are visualizing
+Pablo [1:05:47]: this
+Pablo [1:05:48]: discussion
+Pablo [1:06:00]: and
+Pablo [1:06:13]: those
+Pablo [1:06:18]: so
+Pablo [1:06:19]: here
+Pablo [1:06:23]: are you
+Pablo [1:06:24]: amongst you
+Pablo [1:06:54]: for example
+Pablo [1:06:56]: you
+Pablo [1:06:57]: can
+Pablo [1:07:00]: grad
+Pablo [1:07:01]: uate
+Pablo [1:07:06]: and then
+Pablo [1:07:08]: we just
+Pablo [1:07:08]: specify
+Pablo [1:07:11]: the name of
+Pablo [1:07:12]: the y lab
+Pablo [1:07:12]: els
+Pablo [1:07:13]: and finally
+Pablo [1:07:17]: you just call the plus two functions
+Pablo [1:07:20]: and this will return to very simple
+Pablo [1:07:22]: bot
+Pablo [1:07:28]: tle
+Pablo [1:07:29]: numbers
+Pablo [1:07:31]: and
+Pablo [1:07:38]: the x axis starting from the zoo so it's the first three x
+Pablo [1:07:43]: in the python based on aries always zero
+Pablo [1:07:45]: so here
+Pablo [1:07:47]: by default
+Pablo [1:07:52]: the x axis not bigger figure it out
+Pablo [1:07:58]: then this is by the cloth center
+Pablo [1:08:06]: so if we just want to spec
+Pablo [1:08:06]: ify
+Pablo [1:08:11]: the x axis we can just put two list
+Pablo [1:08:14]: functions
+Pablo [1:08:20]: the first one is the specifications for direct access
+Pablo [1:08:23]: and the second one is the y axis here
+Pablo [1:08:26]: and then in this case
+Pablo [1:08:29]: your x set x
+Pablo [1:08:56]: in the plot function you can also specify the format of
+Pablo [1:09:03]: the so here we have some arguments specified
+Pablo [1:09:09]: the columns that the shape of so for example
+Pablo [1:09:22]: so for example in the previous example this is a blue line which is the default value specified that b minus r vector here
+Pablo [1:09:29]: and if you want to change column you can just replace this by other colors
+Pablo [1:09:34]: like drag and also the second character spec
+Pablo [1:09:35]: ify the type of
+Pablo [1:09:38]: symb
+Pablo [1:09:39]: ol
+Pablo [1:09:42]: s
+Pablo [1:09:43]: you can have
+Pablo [1:09:48]: a face
+Pablo [1:09:49]: and finally
+Pablo [1:09:50]: you
+Pablo [1:09:51]: will get
+Pablo [1:09:54]: you will get
+Pablo [1:09:57]: rid of
+Pablo [1:09:57]: circles
+Pablo [1:10:00]: and also when you are specify
+Pablo [1:10:01]: ing the access
+Pablo [1:10:03]: so
+Pablo [1:10:05]: if you store in the previous line
+Pablo [1:10:06]: you get
+Pablo [1:10:08]: two
+Pablo [1:10:08]: dimensions
+Pablo [1:10:09]: so we have
+Pablo [1:10:10]: the x and y
+Pablo [1:10:11]: axis
+Pablo [1:10:12]: and
+Pablo [1:10:13]: you can access funct
+Pablo [1:10:13]: ions
+Pablo [1:10:14]: you can use this
+Pablo [1:10:17]: pool number
+Pablo [1:10:19]: comput
+Pablo [1:10:20]: ations
+Pablo [1:10:28]: first to specify the rate of the x axis and then the range of the y axis correspond
+Pablo [1:10:36]: so this is just x mean xx
+Pablo [1:10:37]: y var
+Pablo [1:10:38]: x
+Pablo [1:10:40]: view
+Pablo [1:10:41]: point of your
+Pablo [1:10:51]: study
+Pablo [1:10:53]: we are
+Pablo [1:10:54]: just working on
+Pablo [1:10:55]: the
+Pablo [1:10:56]: list
+Pablo [1:11:00]: but in general
+Pablo [1:11:03]: data
+Pablo [1:11:07]: we will use we will use not ir
+Pablo [1:11:08]: rit
+Pablo [1:11:15]: ate the plus function
+Pablo [1:11:31]: so all different type of data structures if it is compatible with the numpy so it will convert it to the numpy arrows automatically so here
+Pablo [1:11:38]: so here you can just use the numpy to
+Pablo [1:11:56]: just use the non parameter to specify specify so for example here we can just use the numpad range
+Pablo [1:12:11]: we
+Pablo [1:12:12]: can just directly
+Pablo [1:12:13]: use this
+Pablo [1:12:20]: typ
+Pablo [1:12:21]: e of
+Pablo [1:12:22]: data
+Pablo [1:12:27]: for
+Pablo [1:12:28]: example
+Pablo [1:12:29]: x
+Pablo [1:12:30]: address
+Pablo [1:12:32]: we
+Pablo [1:12:33]: just take the
+Pablo [1:12:34]: t
+Pablo [1:12:35]: axis
+Pablo [1:12:36]: and
+Pablo [1:12:37]: then we can visual
+Pablo [1:12:38]: ize
+Pablo [1:12:39]: t square
+Pablo [1:12:40]: and
+Pablo [1:12:41]: t cubic
+Pablo [1:12:46]: in
+Pablo [1:12:47]: the same
+Pablo [1:12:49]: also
+Pablo [1:12:50]: we can
+Pablo [1:12:51]: just use
+Pablo [1:12:58]: for example
+Pablo [1:13:00]: the
+Pablo [1:13:01]: granite fascist
+Pablo [1:13:06]: points
+Pablo [1:13:07]: and
+Pablo [1:13:08]: bring titles
+Pablo [1:13:09]: for
+Pablo [1:13:10]: presenting different
+Pablo [1:13:11]: types
+Pablo [1:13:12]: of data
+Pablo [1:13:19]: so here
+Pablo [1:13:23]: if we
+Pablo [1:13:24]: are plotting
+Pablo [1:13:25]: the
+Pablo [1:13:28]: we can also figure out
+Pablo [1:13:29]: some
+Pablo [1:13:30]: arguments using
+Pablo [1:13:31]: the keyword
+Pablo [1:13:35]: match
+Pablo [1:13:36]: of the library
+Pablo [1:13:39]: it's usually
+Pablo [1:13:40]: compact
+Pablo [1:13:45]: and we can just
+Pablo [1:13:49]: provide such an object with the data keywords
+Pablo [1:13:51]: so for example
+Pablo [1:14:07]: if we just create data using the dictionary with abcp and the a is some mp range from zero to fifty
+Pablo [1:14:13]: and c to be some red lineages from
+Pablo [1:14:15]: finally
+Pablo [1:14:17]: the d some
+Pablo [1:14:18]: vectors
+Pablo [1:14:20]: some
+Pablo [1:14:21]: random normal
+Pablo [1:14:23]: stand
+Pablo [1:14:24]: ard
+Pablo [1:14:25]: users
+Pablo [1:14:26]: and
+Pablo [1:14:28]: so here
+Pablo [1:14:30]: we can directly use
+Pablo [1:14:31]: for example
+Pablo [1:14:34]: the arguments will color
+Pablo [1:14:35]: and size
+Pablo [1:14:36]: which is
+Pablo [1:14:37]: c and
+Pablo [1:14:40]: s direct
+Pablo [1:14:41]: ly using
+Pablo [1:14:44]: key
+Pablo [1:14:45]: word
+Pablo [1:14:46]: destination
+Pablo [1:14:48]: and this will
+Pablo [1:14:49]: also return
+Pablo [1:14:58]: for
+Pablo [1:14:59]: different
+Pablo [1:15:00]: type of
+Pablo [1:15:02]: size
+Pablo [1:15:05]: so
+Pablo [1:15:10]: all the points obtaining this dictionary the color the size
+Pablo [1:15:11]: the
+Pablo [1:15:12]: color and size
+Pablo [1:15:13]: depends on
+Pablo [1:15:16]: the c and
+Pablo [1:15:20]: that
+Pablo [1:15:24]: each point will
+Pablo [1:15:25]: have a
+Pablo [1:15:25]: different size
+Pablo [1:15:26]: and
+Pablo [1:15:27]: size of others
+Pablo [1:15:33]: and
+Pablo [1:15:34]: also
+Pablo [1:15:35]: we can
+Pablo [1:15:36]: also
+Pablo [1:15:38]: process
+Pablo [1:15:39]: the
+Pablo [1:15:40]: astrological var
+Pablo [1:15:41]: iables using the
+Pablo [1:15:42]: functions
+Pablo [1:15:45]: here
+Pablo [1:15:46]: if you
+Pablo [1:15:47]: just store
+Pablo [1:15:48]: all the level
+Pablo [1:15:49]: s of that
+Pablo [1:15:50]: category
+Pablo [1:15:51]: in
+Pablo [1:15:52]: some list
+Pablo [1:15:54]: and
+Pablo [1:15:55]: we get some
+Pablo [1:15:56]: corresponding
+Pablo [1:15:57]: data points
+Pablo [1:15:58]: for each
+Pablo [1:16:01]: then
+Pablo [1:16:02]: we
+Pablo [1:16:03]: run a
+Pablo [1:16:04]: user
+Pablo [1:16:05]: x
+Pablo [1:16:06]: axis
+Pablo [1:16:07]: and represent
+Pablo [1:16:08]: our
+Pablo [1:16:09]: data files
+Pablo [1:16:10]: the y
+Pablo [1:16:11]: axis
+Pablo [1:16:12]: so here
+Pablo [1:16:13]: i
+Pablo [1:16:14]: just create some
+Pablo [1:16:15]: subfolds here
+Pablo [1:16:20]: sub
+Pablo [1:16:21]: poen
+Pablo [1:16:22]: these
+Pablo [1:16:23]: triple
+Pablo [1:16:25]: one sigma one
+Pablo [1:16:28]: indicates the number of
+Pablo [1:16:29]: the rows
+Pablo [1:16:30]: that come out the col
+Pablo [1:16:31]: umn and
+Pablo [1:16:32]: the position of
+Pablo [1:16:33]: the
+Pablo [1:16:34]: sub speakers
+Pablo [1:16:37]: here one we indicate
+Pablo [1:16:40]: most
+Pablo [1:16:42]: of the fig
+Pablo [1:16:48]: ures two indicates the middle of the figures and three
+Pablo [1:16:54]: so finally
+Pablo [1:16:57]: we just have
+Pablo [1:16:58]: directly
+Pablo [1:16:59]: use
+Pablo [1:17:00]: of
+Pablo [1:17:02]: that
+Pablo [1:17:04]: category and then
+Pablo [1:17:05]: we can just
+Pablo [1:17:06]: prevent
+Pablo [1:17:09]: the
+Pablo [1:17:10]: timeout deploy
+Pablo [1:17:11]: ment
+Pablo [1:17:21]: in
+Pablo [1:17:22]: summary
+Pablo [1:17:24]: all
+Pablo [1:17:27]: this
+Pablo [1:17:28]: examples
+Pablo [1:17:29]: i have present
+Pablo [1:17:30]: ed four
+Pablo [1:17:31]: is that
+Pablo [1:17:32]: you can
+Pablo [1:17:33]: control
+Pablo [1:17:34]: your properties
+Pablo [1:17:38]: some
+Pablo [1:17:39]: like
+Pablo [1:17:41]: you
+Pablo [1:17:42]: can control some
+Pablo [1:17:43]: one property
+Pablo [1:17:44]: use it
+Pablo [1:17:45]: specific
+Pablo [1:17:46]: argument
+Pablo [1:17:47]: or
+Pablo [1:17:49]: frame of the
+Pablo [1:17:50]: pot
+Pablo [1:17:51]: like the subplot
+Pablo [1:17:52]: of the
+Pablo [1:17:52]: single
+Pablo [1:17:53]: so here
+Pablo [1:17:55]: i
+Pablo [1:17:56]: just need
+Pablo [1:17:57]: to provide
+Pablo [1:18:00]: a summ
+Pablo [1:18:01]: ary of how
+Pablo [1:18:02]: to control the
+Pablo [1:18:03]: line
+Pablo [1:18:04]: properties
+Pablo [1:18:12]: like you can just use the keyword arguments like specify the
+Pablo [1:18:22]: you can just using the center method of for example in the two dimensional plots
+Pablo [1:18:25]: and you can specify the arguments
+Pablo [1:18:27]: and also
+Pablo [1:18:30]: specify how many objects you want to have
+Pablo [1:18:37]: here in this example line one
+Pablo [1:18:38]: not
+Pablo [1:18:40]: specified
+Pablo [1:18:42]: by plot x one and y
+Pablo [1:18:43]: x by two
+Pablo [1:18:57]: and also
+Pablo [1:19:03]: here
+Pablo [1:19:10]: how
+Pablo [1:19:11]: to use our
+Pablo [1:19:18]: here
+Pablo [1:19:19]: the
+Pablo [1:19:20]: sending functions
+Pablo [1:19:21]: meas
+Pablo [1:19:22]: uring what
+Pablo [1:19:23]: is
+Pablo [1:19:24]: of the object
+Pablo [1:19:29]: so
+Pablo [1:19:30]: here
+Pablo [1:19:32]: i say i use the python
+Pablo [1:19:33]: style argument
+Pablo [1:19:34]: for some
+Pablo [1:19:35]: maximum style
+Pablo [1:19:36]: on a backlight
+Pablo [1:19:37]: algo
+Pablo [1:19:39]: rithm as you like here
+Pablo [1:19:45]: so we just have the different place
+Pablo [1:19:46]: to
+Pablo [1:19:47]: write
+Pablo [1:19:49]: give you
+Pablo [1:19:55]: a converting
+Pablo [1:19:56]: you are
+Pablo [1:19:58]: calling some legs
+Pablo [1:20:06]: you can also visualize using this set
+Pablo [1:20:07]: d functions
+Pablo [1:20:11]: so here
+Pablo [1:20:18]: for the next is working with
+Pablo [1:20:19]: multiple figures
+Pablo [1:20:22]: and access
+Pablo [1:20:35]: part so for the sub speakers
+Pablo [1:20:37]: for some figures
+Pablo [1:20:40]: we have already seen
+Pablo [1:20:48]: so we have to specify the number of the rows the number of the columns and position of
+Pablo [1:21:04]: the figures from one to the total number of the two lines
+Pablo [1:21:13]: so here in this case we have two rows and one column so here one stands for figures
+Pablo [1:21:15]: and two stands for the bottom submit
+Pablo [1:21:22]: and you can visualize a different type of data as you like
+Pablo [1:21:33]: so for example if you have two by two plus matrix
+Pablo [1:21:39]: so if you have two by two
+Pablo [1:21:43]: by one then you just need to change
+Pablo [1:21:48]: that makes you have
+Pablo [1:21:51]: two rows and columns
+Pablo [1:21:51]: in total
+Pablo [1:21:56]: and third numbers vary from
+Pablo [1:22:01]: one to four indicates the position of
+Pablo [1:22:02]: the
+Pablo [1:22:17]: in the figures you can also add some text in the figures
+Pablo [1:22:23]: so the basic most popular function
+Pablo [1:22:26]: is plural text functions
+Pablo [1:22:31]: you first specify the coordinate
+Pablo [1:22:35]: that you want to put this text in the figures
+Pablo [1:22:39]: and then using
+Pablo [1:22:43]: the so for example you can also use some j text commas
+Pablo [1:22:45]: to type
+Pablo [1:22:46]: the typ
+Pablo [1:22:48]: e
+Pablo [1:22:51]: of letters
+Pablo [1:22:53]: and
+Pablo [1:22:54]: some capacity
+Pablo [1:22:55]: patients
+Pablo [1:22:56]: that also
+Pablo [1:23:00]: you can
+Pablo [1:23:01]: add
+Pablo [1:23:02]: whatever you want
+Pablo [1:23:05]: the name of
+Pablo [1:23:06]: that
+Pablo [1:23:07]: name
+Pablo [1:23:08]: of the
+Pablo [1:23:09]: tit
+Pablo [1:23:10]: le of
+Pablo [1:23:11]: the
+Pablo [1:23:18]: final
+Pablo [1:23:54]: and
+Pablo [1:23:55]: size
+Pablo [1:24:02]: so here
+Pablo [1:24:03]: another
+Pablo [1:24:04]: common
+Pablo [1:24:05]: effect
+Pablo [1:24:08]: you can use the dollar size
+Pablo [1:24:10]: dollar signs include
+Pablo [1:24:13]: your
+Pablo [1:24:15]: tax expression
+Pablo [1:24:19]: and follow up
+Pablo [1:24:22]: so here
+Pablo [1:24:27]: this opposite for the string is very important
+Pablo [1:24:28]: because
+Pablo [1:24:33]: it signifies that the string is wall street and
+Pablo [1:24:47]: not to treat as some back slashes as tight as it is and also because we have enough library we have
+Pablo [1:24:56]: billing tax expressions posture at data so it can help us using this format
+Pablo [1:24:59]: followed by some dollars
+Pablo [1:25:04]: autom
+Pablo [1:25:05]: atically
+Pablo [1:25:16]: and
+Pablo [1:25:18]: next
+Pablo [1:25:19]: part is
+Pablo [1:25:20]: on the page in the
+Pablo [1:25:20]: text
+Pablo [1:25:24]: so here
+Pablo [1:25:25]: we can
+Pablo [1:25:28]: just using
+Pablo [1:25:29]: in the previous example
+Pablo [1:25:31]: we can just use the test
+Pablo [1:25:33]: to place
+Pablo [1:25:40]: x value position based on the coordinate
+Pablo [1:25:41]: specified
+Pablo [1:25:41]: function
+Pablo [1:25:42]: and
+Pablo [1:25:46]: also we can use auto tick functions
+Pablo [1:25:48]: to make
+Pablo [1:25:50]: some modification easily
+Pablo [1:25:52]: so here
+Pablo [1:25:55]: funct
+Pablo [1:25:55]: ion
+Pablo [1:25:57]: we have two important arg
+Pablo [1:25:57]: uments
+Pablo [1:26:00]: the locations
+Pablo [1:26:01]: of
+Pablo [1:26:02]: the text
+Pablo [1:26:03]: and the rot
+Pablo [1:26:04]: ation of the arrow
+Pablo [1:26:11]: finally
+Pablo [1:26:14]: for example if you want to add
+Pablo [1:26:18]: some problems and some arrows here
+Pablo [1:26:23]: in the figures you first figure out
+Pablo [1:26:27]: you get
+Pablo [1:26:28]: the point
+Pablo [1:26:29]: of the arrow
+Pablo [1:26:30]: s
+Pablo [1:26:39]: and also
+Pablo [1:26:52]: modulates
+Pablo [1:26:53]: will give you
+Pablo [1:27:16]: so
+Pablo [1:27:23]: we can also change
+Pablo [1:27:25]: the scale
+Pablo [1:27:28]: of the access so in the most of the
+Pablo [1:27:29]: access
+Pablo [1:27:30]: that we
+Pablo [1:27:31]: present
+Pablo [1:27:46]: many analysis in the physics or the chemistry project for example
+Pablo [1:27:48]: we
+Pablo [1:27:51]: have
+Pablo [1:27:52]: access

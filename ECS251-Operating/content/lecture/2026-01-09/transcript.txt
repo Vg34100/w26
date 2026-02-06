@@ -1,0 +1,852 @@
+Pablo [1:23]: no it's just a hole
+Pablo [1:28]: i don't know
+Pablo [1:33]: yes
+Pablo [1:36]: i didn't know this
+Pablo [1:44]: by
+Pablo [1:45]: today
+Pablo [1:46]: maybe by midnight
+Pablo [1:48]: all the
+Pablo [1:48]: weekend
+Pablo [1:49]: and monday morning
+Pablo [1:50]: i'll go through and make
+Pablo [1:51]: musical groups
+Pablo [1:55]: if you're still registered for the class and haven't joined the group
+Pablo [1:56]: probably about the
+Pablo [1:58]: time you'll get ready to recycle
+Pablo [2:04]: i want to get the groups worked out so that people who are presenting the first two papers federal orchestration
+Pablo [2:09]: i don't have time
+Pablo [2:10]: to work with their group
+Pablo [2:15]: one day we'll have a quiz
+Pablo [2:18]: we'll cover units and exopurnal
+Pablo [2:21]: not the papers for next week which are around netic renewals
+Pablo [2:28]: so again undo natural kernel the format has been posted as an announcement
+Pablo [2:30]: on candidates
+Pablo [2:34]: the quiz will be attended paper or pencil and paper i will provide both
+Pablo [2:35]: if you
+Pablo [2:37]: have to not bring me but it'd be a good idea
+Pablo [2:38]: to bring
+Pablo [2:39]: paper and
+Pablo [2:48]: i think it's a good idea to also give a project ideas so if you have group membership is due soon
+Pablo [2:53]: a week and a half from now initial paragraph
+Pablo [2:59]: s
+Pablo [3:06]: or piazza or chat with the folks sitting around you
+Pablo [3:14]: read a group membership we are turning this in on candice so there is a campus assignment
+Pablo [3:18]: catch while we have a name of all your group members
+Pablo [3:22]: any question
+Pablo [3:22]: s
+Pablo [3:27]: all right
+Pablo [3:30]: so if anyone find this exoplanet paper particularly weird
+Pablo [3:33]: compared to unix
+Pablo [3:37]: completely different system than we did for philosophy
+Pablo [3:45]: so again this is an interesting paper to read it's a very classic paper for graduate students
+Pablo [3:52]: for me because it exposes students to osr completely different from the more traditional
+Pablo [3:53]: operating system
+Pablo [3:53]: s
+Pablo [3:57]: this
+Pablo [3:58]: is a great way to demonstrate
+Pablo [3:59]: that
+Pablo [4:00]: one way to do
+Pablo [4:00]: things
+Pablo [4:01]: and
+Pablo [4:02]: the next attorn
+Pablo [4:05]: ey will definitely evaluate different trade offs
+Pablo [4:06]: that
+Pablo [4:08]: 's also
+Pablo [4:09]: a good example of the fact
+Pablo [4:10]: that paper
+Pablo [4:11]: s are
+Pablo [4:12]: set
+Pablo [4:13]: back
+Pablo [4:15]: so
+Pablo [4:26]: the paper is presenting a viewpoint held by the authors and then they're trying to back up that viewpoint by participants paper building a system proving that they say that's a big thing
+Pablo [4:28]: so again it's not
+Pablo [4:30]: necessarily
+Pablo [4:33]: ground truth they're trying to conduct court argument
+Pablo [4:35]: and they're kind of up to the readers
+Pablo [4:36]: us to decide if
+Pablo [4:38]: it makes their point
+Pablo [4:59]: getting into it again this is another sort of operating system design paper so again the same sort of slide i show the first day of class where we kind of break out the different parts of our computer or bottom level we have our hardware
+Pablo [5:03]: hardware exposes things like drivers
+Pablo [5:05]: or other class specific software that kernel
+Pablo [5:06]: will interact with
+Pablo [5:08]: within the kernel hardware abstraction layer
+Pablo [5:11]: and then above that
+Pablo [5:14]: we build the kernel
+Pablo [5:14]: nice abstractions
+Pablo [5:17]: like virtual memory files scheduling and networking
+Pablo [5:24]: that applications and user level can use maybe use assistance libraries or interacting with these directly
+Pablo [5:36]: this paper is mainly focused on this you kind of raise your interface common attractions and there is the issues the authors have with common abstractions
+Pablo [5:41]: so what are their issues of common interactions well first off the bat there are compromise right
+Pablo [5:46]: they work good enough for most use cases but not everyone gets everything they want
+Pablo [5:49]: so there's going to be some trade off
+Pablo [5:49]: in terms of performance
+Pablo [5:53]: no one
+Pablo [5:54]: can be one hundred percent happ
+Pablo [5:55]: y with the decision
+Pablo [6:01]: when i get to that
+Pablo [6:02]: again they're inflexible
+Pablo [6:05]: since these are information within the kernel
+Pablo [6:06]: they can't easily be changed
+Pablo [6:12]: especially not from future level if you want to change your extra actions that your operating system is providing
+Pablo [6:20]: your basic would have you develop into the kernel source code itself make those changes compile those changes put your kernel
+Pablo [6:24]: with bugs that you've introduced at the kernel
+Pablo [6:31]: it's really hard to do typically once something is implemented in the current volatility
+Pablo [6:32]: that way
+Pablo [6:33]: for a long time
+Pablo [6:39]: in fact common objectives at overhead so again related to comprom
+Pablo [6:39]: ised
+Pablo [6:42]: accomplish
+Pablo [6:43]: ment use cases
+Pablo [6:44]: but
+Pablo [6:45]: if your use case
+Pablo [6:47]: doesn't necessarily
+Pablo [6:47]: design for
+Pablo [6:48]: if you're paying it over
+Pablo [6:49]: night even if you don't
+Pablo [6:50]: have to set one that functional
+Pablo [6:51]: ity
+Pablo [6:55]: for example
+Pablo [6:55]: you might have
+Pablo [6:56]: an applic
+Pablo [6:57]: ation that
+Pablo [6:58]: stream over
+Pablo [6:59]: a bunch of
+Pablo [7:00]: fans
+Pablo [7:02]: swapping your traction
+Pablo [7:03]: without bringing super
+Pablo [7:04]: vised
+Pablo [7:09]: the exact
+Pablo [7:10]: wrong policy
+Pablo [7:11]: you want
+Pablo [7:12]: so you're paying
+Pablo [7:21]: one
+Pablo [7:22]: last paper
+Pablo [7:23]: the technical
+Pablo [7:24]: details is the exop
+Pablo [7:25]: remoly
+Pablo [7:26]: tic
+Pablo [7:27]: example
+Pablo [7:29]: design
+Pablo [7:30]: so
+Pablo [7:31]: in the end
+Pablo [7:34]: functional
+Pablo [7:35]: ity
+Pablo [7:37]: so we
+Pablo [7:38]: have systems
+Pablo [7:41]: network
+Pablo [7:41]: ing
+Pablo [7:42]: instead of classic examp
+Pablo [7:43]: les
+Pablo [7:54]: basically says is in a multilayered system
+Pablo [8:08]: the best place to implement functionality is a critical design choice and the argument says that the highest level you can implement the abstraction of the functionality level to do that
+Pablo [8:16]: the highest level the highest layer in the system has the most knowledge has the most ability to make the best decisions
+Pablo [8:17]: for it
+Pablo [8:19]: so for example
+Pablo [8:21]: if i have
+Pablo [8:26]: an application that wants to transfer a file
+Pablo [8:31]: completely safely from one computer to another
+Pablo [8:39]: the network itself providing reliable delivery of packets is nice but it doesn't necessarily solve my problem
+Pablo [8:42]: because there could still be something to own
+Pablo [8:48]: once so for example the step involved in a file transfer program are
+Pablo [8:49]: data
+Pablo [8:51]: in from the source disk
+Pablo [8:54]: copying that data to the source network card
+Pablo [8:57]: now that that data gets sent over the network
+Pablo [9:05]: arrives at the destination network card that gets copied into destination buffer that copy to do with destination did
+Pablo [9:14]: the reliable delivery of the network only solves that problem but there could still be other errors that happen this copy
+Pablo [9:27]: right
+Pablo [9:28]: not necessarily
+Pablo [9:30]: a natur
+Pablo [9:32]: al cardinal
+Pablo [9:32]: place is that applic
+Pablo [9:33]: ations know less about
+Pablo [9:34]: the functionality than heat
+Pablo [9:36]: or don't be
+Pablo [9:37]: sel
+Pablo [9:37]: ected applications
+Pablo [9:38]: implement
+Pablo [9:45]: when
+Pablo [9:45]: i strove there
+Pablo [9:46]: is
+Pablo [9:47]: an end because
+Pablo [9:49]: points
+Pablo [9:51]: about several different operating systems architect
+Pablo [9:52]: ure
+Pablo [9:55]: the main differences are really kind of
+Pablo [9:56]: you can think about it
+Pablo [9:58]: where and how you're drawing different
+Pablo [10:03]: boxes so systems people in computer science you know dropboxes is like one of our big things
+Pablo [10:08]: and so how you draw the boxes really says a lot about the design of your
+Pablo [10:09]: system
+Pablo [10:10]: so on the left
+Pablo [10:12]: of the slide
+Pablo [10:15]: here we have a monolithic arnold and this is
+Pablo [10:22]: type of operative design you're most likely familiar with this would be linux this would be macos windows where you have your hardware
+Pablo [10:25]: everything service
+Pablo [10:31]: kernel space and then you have some applications and supply lines
+Pablo [10:33]: that then interact with the
+Pablo [10:38]: paper also briefly mentioned another operating system architect called micro panel
+Pablo [10:55]: my door panel again you still have hardware and a minimal kernel space but then you have some common operating system services implemented actually in user space and applications and libraries and use of those services from user space
+Pablo [11:01]: microkernel internal space only contains the functionality necessary
+Pablo [11:08]: to implement these operating system services from future space and then most of the policies and abstractions that are implemented
+Pablo [11:37]: so extracardiopro is something like so again similar to a microkernel we have a very minimal kernel that's internal space but differently from a microkernel where the common abstractions where the services and extractions are common for all applications on the system exoper lets you define custom abstracted custom services that you then link into your application using a library operator
+Pablo [11:44]: their whole idea
+Pablo [11:54]: so again the x kernel's main idea is the end to end argument where the lower the level primitive the more efficiently it can be implemented
+Pablo [12:00]: and also the lower level of primitives the more flexibility you have in higher level of dragons
+Pablo [12:01]: on top of that
+Pablo [12:08]: one of the main ideas of extra kernel design is separation of protection and management
+Pablo [12:17]: so the exo kernel itself mentioned a kernel space does the protection of resources so protect assigning resources
+Pablo [12:26]: to one level less or another and making sure that once assigned a little less can't access the resources of another liberal west unsafely
+Pablo [12:29]: protection
+Pablo [12:30]: for
+Pablo [12:30]: these
+Pablo [12:34]: protect the resource
+Pablo [12:43]: so
+Pablo [12:44]: again except for
+Pablo [12:45]: all these two main part
+Pablo [12:45]: s
+Pablo [12:46]: there's a
+Pablo [12:48]: which
+Pablo [12:49]: more or less is really
+Pablo [12:50]: helping the songs
+Pablo [12:53]: among
+Pablo [12:54]: st the library operations
+Pablo [13:06]: the
+Pablo [13:07]: extra frontal
+Pablo [13:08]: ization
+Pablo [13:09]: of traction
+Pablo [13:10]: overall
+Pablo [13:11]: hard work which is this idea
+Pablo [13:12]: of sleeping your mind
+Pablo [13:19]: set
+Pablo [13:31]: and we
+Pablo [13:32]: have this other applic
+Them [13:32]: ation
+Them [13:36]: use the
+Them [13:37]: treaty
+Them [13:39]: the government
+Them [13:44]: shining
+Them [13:51]: going
+Them [13:52]: back to what
+Them [13:55]: the
+Them [13:56]: bra hardware itself
+Them [13:57]: right
+Them [13:58]: so
+Them [14:04]: physical
+Them [14:05]: legislation
+Them [14:07]: which
+Them [14:08]: can get
+Them [14:09]: memory
+Them [14:10]: is very close to disc
+Them [14:11]: overy
+Them [14:17]: system
+Them [14:18]: is an attraction of storage
+Them [14:19]: so
+Them [14:30]: again your storage provide a very low level complex interface especially ssd that layer is going to be concerned of exactly where data is placed on the medium
+Them [14:40]: the file system is a nice abstraction on top of that where you as a programmer don't have to worry about the physical layout of the underlying media if you just get this nice contiguous file extraction
+Them [14:44]: good question
+Them [14:54]: all right the exoplanet is kernel part the astrop
+Them [15:02]: hernal is really only exposed to library operating systems there's basically managing
+Them [15:03]: and deal with your own resources
+Them [15:07]: and then it does have to be this thing all i've already
+Them [15:09]: checking different entities on the system
+Them [15:16]: so again to carry out these goals extra kernel of it will track the ownership of resources
+Them [15:30]: so assign resources to libra operating systems and track who owns what regards to resource uses at finding points are basically once a resource has been assigned to a level other liberal licensing use that safe resource
+Them [15:44]: safely it also revokes access to resources so there might be a case where the exopurnal has assigned some resources some library operating system it wants to reclaim that resource it works library operating system
+Them [15:46]: to work that
+Them [15:47]: out
+Them [15:51]: the techniques that carry out these goals are going to this idea with your findings
+Them [15:56]: this physical resource represents and that support protocol
+Them [15:57]: s and last resort
+Them [16:00]: cooperative patient work
+Them [16:01]: out
+Them [16:06]: again the library operating systems are more of the bulk
+Them [16:12]: so pernell in this case so this is where most of the implementation of these operating system services and contract
+Them [16:13]: ions are going to be
+Them [16:27]: so again because these are custom abstractions that customize for a particular application rather than general for any application it can be simpler specialized and higher performance
+Them [16:34]: because these are library operating systems running a new space they don't even have to be thrust
+Them [16:45]: library can do whatever on the resources library operators do unsafe things resource but it's doing something unsafe it's really only affecting the library operating system
+Them [16:46]: the application
+Them [16:46]: itself
+Them [16:55]: exopernone is doing its job of security protection between quadrant operating systems then other logographic systems
+Them [17:06]: and again because these are all user space we don't have to do these heavyweight kernel crossings to do this on the answer communicating data between two
+Them [17:07]: players
+Them [17:11]: so they're more efficient than
+Them [17:16]: the traditional monolithic kernels again both because these extractions can be customized
+Them [17:22]: for the particular application and then also we don't have to take this expensive boundary crossing which is a
+Them [17:23]: huge ratio space
+Them [17:24]: all the time
+Them [17:33]: so again the key design principles that make exit print impossible here's this idea of exposing hardware security
+Them [17:36]: there's
+Them [17:37]: also pyro
+Them [17:38]: so not exp
+Them [17:39]: osing
+Them [17:40]: this
+Them [17:41]: time
+Them [17:42]: to use it
+Them [17:43]: the applications
+Them [17:46]: there's
+Them [17:47]: all the income
+Them [17:48]: there time slices
+Them [17:49]: of
+Them [17:50]: totally ex
+Them [17:51]: act
+Them [17:56]: ly
+Them [17:57]: because there's always
+Them [17:58]: hardware
+Them [17:59]: based
+Them [18:00]: on
+Them [18:03]: where
+Them [18:04]: this part
+Them [18:05]: makes specific
+Them [18:06]: aspect
+Them [18:07]: for specific resources
+Them [18:08]: so for example
+Them [18:09]: applic
+Them [18:10]: ation
+Them [18:12]: discipline
+Them [18:12]: so
+Them [18:13]: that the two doesn't have
+Them [18:14]: cash flow constitution
+Them [18:23]: exact
+Them [18:24]: meanings like the access
+Them [18:25]: number
+Them [18:27]: applic
+Them [18:28]: ations
+Them [18:35]: the
+Them [18:36]: absolute kernel will
+Them [18:37]: cooperate
+Them [18:38]: with the lottery oper
+Them [18:39]: ating system
+Them [18:42]: the ide
+Them [18:43]: a here is that
+Them [18:44]: library operating system
+Them [18:49]: for
+Them [18:50]: example
+Them [18:52]: contract
+Them [18:53]: ors
+Them [19:02]: the best
+Them [19:03]: knowledge about which
+Them [19:10]: again
+Them [19:11]: depending on
+Them [19:14]: the main
+Them [19:14]: things we have
+Them [19:16]: to keep
+Them [19:17]: buying into the table
+Them [19:18]: extracurricular
+Them [19:19]: multiple classes
+Them [19:19]: physical resources
+Them [19:23]: on
+Them [19:25]: this
+Them [19:28]: so
+Them [19:29]: again
+Them [19:32]: this is
+Them [19:32]: what it does
+Them [19:39]: really
+Them [19:40]: complicated
+Them [19:41]: policy decision
+Them [19:45]: once
+Them [19:46]: the secure body has
+Them [19:47]: been made
+Them [19:48]: the use
+Them [19:49]: of this
+Them [19:50]: happen
+Them [19:52]: s
+Them [19:52]: we want to make sure
+Them [19:54]: that
+Them [19:56]: applic
+Them [19:57]: ation
+Them [20:00]: actually
+Them [20:01]: is resource
+Them [20:06]: for example
+Them [20:08]: we
+Them [20:09]: have a library out
+Them [20:10]: the system
+Them [20:11]: ask for a particular
+Them [20:12]: physical page
+Them [20:13]: this authorization
+Them [20:14]: would make sure that
+Them [20:15]: this applic
+Them [20:16]: ation has
+Them [20:19]: access
+Them [20:20]: analysis
+Them [20:21]: and
+Them [20:22]: then that checks out
+Them [20:24]: it must be a lot
+Them [20:24]: of
+Them [20:25]: business
+Them [20:27]: and then
+Them [20:28]: you can contact that
+Them [20:29]: when the application
+Them [20:31]: just
+Them [20:32]: a simple
+Them [20:33]: business
+Them [20:34]: application
+Them [20:37]: or
+Them [20:38]: rebrand access to
+Them [20:38]: the stage
+Them [20:39]: doing a crime
+Them [20:48]: whatever
+Them [20:55]: soc
+Them [20:56]: iety of downloading
+Them [21:04]: so
+Them [21:05]: as much as you can
+Them [21:06]: in the library
+Them [21:09]: space
+Them [21:10]: but there are
+Them [21:12]: to
+Them [21:13]: do something
+Them [21:16]: require
+Them [21:17]: some customization
+Them [21:18]: as well
+Them [21:23]: just
+Them [21:24]: execute
+Them [21:25]: in current space
+Them [21:32]: this is
+Them [21:33]: an example
+Them [21:34]: of a topic fil
+Them [21:34]: ter
+Them [21:45]: oper
+Them [21:46]: ation has to
+Them [21:47]: know
+Them [21:51]: about
+Them [21:52]: patient running
+Them [21:58]: our
+Them [21:59]: way of
+Them [22:00]: the algorithms
+Them [22:01]: applic
+Them [22:02]: ations
+Them [22:03]: can basically
+Them [22:04]: say based on
+Them [22:05]: field
+Them [22:08]: s
+Them [22:10]: so
+Them [22:11]: when applications
+Them [22:12]: is
+Them [22:15]: shaping
+Them [22:16]: next to
+Them [22:21]: that
+Them [22:22]: program
+Them [22:26]: for
+Them [22:26]: example
+Them [22:27]: acknowledge
+Them [22:30]: so this
+Them [22:30]: is nice
+Them [22:35]: doesn't
+Them [22:36]: actually
+Them [22:37]: requ
+Them [22:38]: ire
+Them [22:40]: so
+Them [22:41]: the time
+Them [22:55]: where
+Them [22:56]: that operation
+Them [23:35]: they might
+Them [23:37]: want
+Them [23:39]: maybe
+Them [23:47]: trigger
+Them [23:48]: ideas
+Them [23:49]: inst
+Them [23:50]: ead of
+Them [23:51]: the model
+Them [23:52]: when
+Them [23:53]: doing this
+Them [23:54]: invis
+Them [23:55]: ible recurring
+Them [23:56]: a
+Them [23:57]: model that currently
+Them [23:58]: wants to create
+Them [23:59]: this
+Them [24:00]: we'll just pick up a
+Them [24:04]: the application that
+Them [24:04]: i was at age
+Them [24:05]: doesn't have any
+Them [24:15]: applic
+Them [24:16]: ation is
+Them [24:17]: not a winner or
+Them [24:18]: involved
+Them [24:23]: the ex
+Them [24:24]: ocrine will let
+Them [24:25]: the application
+Them [24:27]: know hey i'm going to take away some of your resource
+Them [24:28]: this allows
+Them [24:33]: the application to then participate in this revocation process
+Them [24:38]: in the case of a physical memory of reclamation
+Them [24:43]: the application can choose the page that it knows it does not need anymore
+Them [24:49]: to swap out let the extra kernel know hey i swapped out this page exopheronel is happy
+Them [25:00]: again the benefits are visible replication is that you're more likely to make the correct decision about what resources are no longer needed
+Them [25:04]: the trade off there is that the studs actually require more community
+Them [25:11]: again invisible replication is efficient because the operating system just do it a lot
+Them [25:14]: done visual ramifications
+Them [25:22]: being
+Them [25:23]: assigned
+Them [25:24]: over and over
+Them [25:24]: again
+Them [25:25]: it is more
+Them [25:43]: such
+Them [25:44]: challenges basically
+Them [25:45]: remote
+Them [25:50]: so
+Them [25:51]: what happens
+Them [25:52]: is
+Them [25:55]: i'm
+Them [25:56]: not going
+Them [25:57]: to use
+Them [25:58]: that
+Them [26:03]: share
+Them [26:04]: interesting or
+Them [26:07]: human
+Them [26:08]: space they're not trust
+Them [26:08]: ed
+Them [26:09]: i don't
+Them [26:10]: really have a way to guarant
+Them [26:11]: ee that they're actually invol
+Them [26:12]: ved with
+Them [26:14]: so
+Them [26:15]: for something like
+Them [26:20]: you might
+Them [26:21]: have to take
+Them [26:22]: three versions away by
+Them [26:23]: four
+Them [26:24]: c
+Them [26:25]: one
+Them [26:26]: hundred
+Them [26:27]: eighty
+Them [26:39]: something
+Them [26:40]: here
+Them [26:49]: basically
+Them [26:50]: saying the
+Them [26:52]: reason why
+Them [26:54]: program
+Them [26:58]: does anyone know
+Them [26:59]: how long it would take
+Them [27:05]: that's not something
+Them [27:06]: that anyone really
+Them [27:07]: does
+Them [27:07]: right
+Them [27:09]: if the operating system
+Them [27:10]: says please
+Them [27:11]: swap
+Them [27:12]: out the terminal
+Them [27:13]: page
+Them [27:14]: within the piano sack
+Them [27:22]: even if you're
+Them [27:24]: quiet you may
+Them [27:24]: miss these pounds
+Them [27:25]: because
+Them [27:26]: that used to be
+Pablo [27:30]: so again instead of being killed
+Pablo [27:39]: what the exit kernel will do just write all the secure bindings of the local ratio not the logo less known that you're secure by them are no longer val
+Pablo [27:39]: id
+Pablo [27:43]: there's this possession vector where
+Pablo [27:44]: special pieces
+Pablo [27:54]: so once this happens liverwalk will grains or repossession exception for the liverwatch that they'll
+Pablo [27:57]: case of course will be taken away
+Pablo [27:58]: physical memory
+Pablo [28:01]: being liberal levels that have to go and update all of its mappings
+Pablo [28:05]: but none of these pages are now right remember you are they've been swapped
+Pablo [28:05]: out
+Pablo [28:13]: one of the optimizations they have in this case is that we do have certain situations that are guaranteed
+Pablo [28:22]: each application has some amount of small amount of resources that won't be possessed because of you know certain things are
+Pablo [28:23]: important
+Pablo [28:24]: applications
+Pablo [28:25]: themselves
+Pablo [28:30]: so as best as it can the actual guarantee that
+Pablo [28:35]: it won't repossess the memory backing the application or other important data structures
+Pablo [28:39]: i'll come over again it's a best case effort
+Pablo [28:41]: at this you know can't happen
+Pablo [28:41]: again
+Pablo [28:48]: the exit kernel can still take even these you know guaranteed mappings away but it does try to warn them a little
+Pablo [28:49]: less important
+Pablo [28:56]: any questions about the general sort of concepts here so far
+Pablo [29:18]: so the authors again they do implement an exopermonal which they call aegis and level one suggest what they call sls to sort of demonstrate their design and ideas
+Pablo [29:20]: of kernel prove that they work
+Pablo [29:28]: compared
+Pablo [29:29]: to ultra
+Pablo [29:30]: so we can get any sort of
+Pablo [29:30]: units
+Pablo [29:33]: and it show us
+Pablo [29:37]: back
+Pablo [29:38]: to faster
+Pablo [29:39]: executing system calls
+Pablo [29:40]: and exceptions
+Pablo [29:42]: versus the monolithic chronolog
+Pablo [29:51]: ist things like kernel processing disorder reduced in the case of timer exception where you're saving registered state for scheduling decisions
+Pablo [29:55]: the exoprenal can
+Pablo [30:02]: use
+Pablo [30:03]: your role
+Pablo [30:04]: also
+Pablo [30:26]: are
+Pablo [30:27]: all very dec
+Pablo [30:27]: entralized
+Pablo [30:28]: small
+Pablo [30:29]: experiments
+Pablo [30:30]: they don't have anyone
+Pablo [30:35]: really small examp
+Pablo [30:36]: les
+Pablo [30:37]: there is
+Pablo [30:42]: hard to understand how
+Pablo [30:43]: the translates to
+Pablo [30:45]: you'd imagine to be factored
+Pablo [30:46]: we don't know
+Pablo [30:47]: how
+Pablo [30:56]: discussion so again saying that
+Pablo [30:59]: once they'll finish that ten minutes kind of talking amongst
+Pablo [31:01]: people around us
+Pablo [31:04]: discussion question
+Pablo [33:32]: s
+Pablo [33:50]: it's sometimes a good idea
+Pablo [33:54]: because it can be flexible
+Pablo [33:56]: but
+Pablo [33:56]: i don't know
+Pablo [34:01]: i think good idea
+Pablo [34:03]: final
+Pablo [34:04]: answer
+Pablo [34:16]: i don't think that's a confession
+Pablo [34:33]: app
+Pablo [34:34]: developers
+Pablo [34:39]: because if we want to
+Pablo [34:41]: some specific
+Pablo [35:08]: all
+Pablo [35:09]: applications
+Pablo [35:10]: developers
+Pablo [35:11]: to deal as a
+Pablo [35:21]: child
+Pablo [35:22]: experience
+Pablo [35:27]: i don't know
+Pablo [35:31]: if
+Pablo [35:32]: we can
+Pablo [35:33]: buy it we don't need
+Pablo [35:34]: os
+Pablo [35:37]: our storage network
+Pablo [35:40]: but
+Pablo [35:42]: we don't formulate
+Pablo [35:57]: application
+Pablo [36:01]: if it's a data
+Pablo [36:02]: base
+Pablo [36:12]: but if it's just
+Pablo [36:16]: yeah
+Pablo [36:17]: maybe like whatever maybe
+Pablo [36:22]: there's probably waste
+Pablo [36:26]: you don't have to worry about
+Pablo [36:35]: don't download any bad ker
+Pablo [36:35]: nels
+Pablo [36:38]: or any bad code into your kernel
+Pablo [36:38]: and then you're good
+Pablo [36:42]: just don't don't download any malware
+Pablo [36:45]: then it's probably fine
+Pablo [36:51]: some safety
+Pablo [36:53]: rules at the kernel
+Pablo [36:55]: and then you should be okay
+Pablo [36:59]: if it's safe or
+Pablo [37:00]: not
+Pablo [37:09]: maybe
+Pablo [37:11]: start the code kernel is better
+Pablo [37:13]: maybe
+Pablo [37:43]: yeah
+Pablo [37:49]: you
+Pablo [37:51]: mean a security
+Pablo [37:54]: or like if you do need
+Pablo [37:54]: to put like safety
+Pablo [38:00]: down you can buy ecuador every time it runs
+Pablo [38:03]: because there are given
+Pablo [38:12]: so if we need to change
+Pablo [38:53]: that's why
+Pablo [38:55]: it's like
+Pablo [39:10]: application
+Pablo [39:14]: entirely when it starts
+Pablo [39:17]: like this is what i'm looking for
+Pablo [39:22]: so whatever you receive companies don't like to change
+Pablo [39:28]: still use java twelve years ago so i'll keep using unix
+Pablo [39:29]: better
+Pablo [39:35]: too much work to switch over yeah exactly
+Pablo [39:48]: if you have to spend time checking
+Pablo [39:58]: your
+Pablo [39:59]: a like japanese
+Pablo [40:03]: i tend to say
+Pablo [40:15]: i'm from guatemal
+Pablo [40:15]: a
+Pablo [40:17]: but you know
+Pablo [40:19]: i'm raised here
+Pablo [40:37]: i think they're by each other
+Pablo [40:50]: my name is jasmine
+Pablo [40:59]: it's hard to condense
+Pablo [41:09]: got an a r again was like wait
+Pablo [41:14]: just give the rock
+Pablo [41:29]: ies
+Pablo [41:30]: they want to start off with
+Pablo [41:32]: of those papers that
+Pablo [41:38]: we have
+Pablo [41:44]: develop
+Pablo [41:49]: job
+Pablo [41:52]: is
+Pablo [41:53]: much harder
+Pablo [42:19]: which
+Pablo [42:19]: one application
+Pablo [42:22]: both
+Pablo [42:23]: exocrine hall and then
+Pablo [42:25]: it's a modern linux feature
+Pablo [42:25]: that is similar
+Pablo [42:26]: called
+Pablo [42:32]: evpf so these are going to be written in special languages they're going to be much more limited
+Pablo [42:34]: so you can't do
+Pablo [42:35]: things like unbounded things
+Pablo [42:36]: like
+Pablo [42:37]: they're going
+Pablo [42:37]: to be
+Pablo [42:38]: strict
+Pablo [42:39]: limitations on
+Pablo [42:49]: inst
+Pablo [42:50]: antiating
+Pablo [42:52]: colleges
+Pablo [42:59]: for
+Pablo [43:00]: me at least when i first
+Pablo [43:06]: potential
+Pablo [43:06]: edition
+Pablo [43:07]: tax service
+Pablo [43:08]: where
+Pablo [43:10]: something
+Pablo [43:11]: breaks in the kernel
+Pablo [43:14]: than crafting as
+Pablo [43:23]: an
+Pablo [43:23]: exposure
+Pablo [43:24]: audience
+Pablo [43:25]: they don't care about
+Pablo [43:26]: these optimization
+Pablo [43:27]: they want something done
+Pablo [43:31]: in that case they'll go with the unix style approach
+Pablo [43:36]: but if you are going for something very specific and you are going to make a label anyways
+Pablo [43:41]: why not just make your own mini os on top of the hardware and just get
+Pablo [43:42]: that
+Pablo [43:45]: having to worry about
+Pablo [43:49]: why you still learn technology
+Pablo [43:51]: yeah
+Pablo [44:00]: i mean does anyone here want to write a little less for the exokernel to make their application super super are you just flying with the performance you're going to get from clin
+Pablo [44:00]: ics
+Pablo [44:06]: definitely for did mention it has default
+Pablo [44:12]: placeholders if you don't want to worry about it so i'd assume like ninety nine percent
+Pablo [44:24]: this ecosystem where hardcore os developers will make lego oss to do you know common things like implement plastic the posix standard api
+Pablo [44:24]: implement network
+Pablo [44:26]: ing implement a file system
+Pablo [44:30]: to the point where if you want to write your application for an exoper you have all these
+Pablo [44:35]: ones to choose from and then if you want to customize it from there at least you're not starting from scratch
+Pablo [44:37]: i don't know
+Pablo [44:45]: kind of convincing argument but still kind of again now you're still putting all this extra onus on the developer to go off and find all these custom library
+Pablo [44:53]: operating systems make sure that it works with their application and their hardware ways it's just easier just to run something like linux and have it just work
+Pablo [44:58]: i definitely am
+Pablo [44:59]: like a big fan of that
+Pablo [45:02]: whole time we can hear
+Pablo [45:02]: but
+Pablo [45:04]: i think that in response
+Pablo [45:07]: to that equity that is true but i think
+Pablo [45:13]: they sort of most people
+Pablo [45:15]: that's like unix like
+Pablo [45:16]: really care
+Pablo [45:17]: about
+Pablo [45:19]: those factions
+Pablo [45:28]: i think
+Pablo [45:29]: also
+Pablo [45:31]: even to the end user
+Pablo [45:36]: sometimes even like if your averages are sometimes you do that you want higher performance
+Pablo [45:37]: on certain tasks but for example
+Pablo [45:40]: if you want to play video games
+Pablo [45:42]: it could be helpful
+Pablo [45:49]: could be able to have a separate little s that's like specialized to your game
+Pablo [45:57]: a code we can use
+Pablo [45:57]: this
+Pablo [46:06]: ation
+Pablo [46:07]: this is the kind of
+Pablo [46:08]: prayer
+Pablo [46:12]: you're not
+Pablo [46:13]: paying for all these
+Pablo [46:13]: things
+Pablo [46:23]: some
+Pablo [46:23]: information
+Pablo [46:24]: and email the
+Pablo [46:25]: id
+Pablo [46:27]: innovations
+Pablo [46:28]: every
+Pablo [46:30]: user has to update
+Pablo [46:30]: selves
+Pablo [46:34]: according
+Pablo [46:35]: to the hardware
+Pablo [46:36]: and even
+Pablo [46:38]: that
+Pablo [46:41]: optimization
+Pablo [46:44]: operating
+Pablo [46:45]: system
+Pablo [46:47]: make
+Pablo [46:48]: arrangement process
+Pablo [46:49]: ing
+Pablo [46:50]: and then
+Pablo [46:53]: all those changes
+Pablo [46:55]: a little bit
+Pablo [46:59]: the sort of linux kernel development process is extremely slow
+Pablo [47:00]: competitive
+Pablo [47:05]: something like a lipo app might be because you want to submit a patch
+Pablo [47:08]: like you submit your cash to lwn
+Pablo [47:16]: someone will look at it eventually there's all this discussion that might happen about it they might eventually if they like it they'll do it first
+Pablo [47:17]: inclusion
+Pablo [47:18]: and future
+Pablo [47:19]: cash
+Pablo [47:22]: so the velocity
+Pablo [47:28]: of heavyweight monolithic renal development like len exodus maybe not the right thing
+Pablo [47:35]: especially when we consider how quickly today's hardware allows game is changing again it's not to say that linux is bad like query linux is still
+Pablo [47:40]: used it's just that it kind of takes a long time
+Pablo [47:49]: to write something for linux and see actually be included in things like linux that's not to say i mean again lineage is open source you could run your own sort of home kernel
+Pablo [47:51]: and do it now
+Pablo [47:54]: but then you're kind of back in the same camp as a little less where you're making
+Pablo [47:57]: changes for your specific situation
+Pablo [48:02]: i really like this idea
+Pablo [48:15]: because the traditional os is general purpose and you cannot use that general purpose to serve applications which are specialized to a specific domain so domain specific optimizations
+Pablo [48:18]: cannot be made in linux
+Pablo [48:21]: you need i guess more technology so for example
+Pablo [48:38]: all of our jira copy stuff which has been happening all those are sort of like workarounds around the tournament where i don't want to interact with the kernels because there are coffees involved or there are certain things which is not desirable for the specific application we're just going to go around it
+Pablo [48:47]: in a sense that to be more specific databases they need very specific optimization
+Pablo [48:54]: so like pages and caching need to be a specific order and a lot of the databases take this approach where they roll their own
+Pablo [49:00]: applications
+Pablo [49:13]: i'm just
+Pablo [49:14]: going to ignore everything
+Pablo [49:20]: with this
+Pablo [49:22]: they require very specific
+Pablo [49:24]: things
+Pablo [49:25]: system like
+Pablo [49:32]: get their better
+Pablo [49:34]: specific model versus
+Pablo [49:35]: the animal
+Pablo [49:36]: exocrine
+Pablo [49:37]: on the know provide
+Pablo [49:38]: those resistance
+Pablo [49:48]: yeah but i think scalability wise this isn't too scalable because you rate stuff specific to a specific hardware
+Pablo [49:56]: let's say like gpu code related to a specific gpu then there's like a type top link
+Pablo [50:09]: the os abstraction is nice because you can run any application on any on most of the oss on most hardware this is more specific so i think there's a trade off definitely
+Pablo [50:16]: or an ssd
+Pablo [50:18]: program
+Pablo [50:24]: versus
+Pablo [50:26]: if you want to change
+Pablo [50:27]: to
+Pablo [50:28]: understand
+Pablo [50:29]: ing
+Pablo [50:30]: a completely
+Pablo [50:31]: or
+Pablo [50:32]: you're
+Pablo [50:33]: from structure
+Pablo [50:34]: making all these
+Pablo [50:36]: type of
+Pablo [50:43]: idea as what's the trade option
+Pablo [50:44]: really
+Pablo [50:46]: as much
+Pablo [50:46]: as possible
+Pablo [50:49]: out of everything
+Pablo [50:50]: asokernel
+Pablo [50:55]: is a good fit if you just kind of want ease of development something that works fine
+Pablo [51:00]: you're not necessarily looking you don't necessarily have super super tight form sounds
+Pablo [51:02]: maybe you're still recording
+Pablo [51:09]: and if you want some things in between again linux has adopted some of these ideas
+Pablo [51:12]: i mentioned the ebp effort
+Pablo [51:14]: download the colors of linux
+Pablo [51:15]: kernel
+Pablo [51:20]: certain subsystems and linux that can be executed in user space
+Pablo [51:23]: so you can kind of
+Pablo [51:52]: explain it it's too brief
+Pablo [51:54]: questions and one
+Pablo [51:55]: long verb

@@ -1,0 +1,217 @@
+So before we get into some of the weeds of the
+details of this course, we're going to start with
+just a high level overview of some of the ideas we're
+going to be covered. So we'll talk about a lot of
+discrete objects in this course, and graphs will be chief among them. And remember that a
+path in a graph is a sequence of nodes that
+are connected by edges. And a cycle is a path that ends at
+the same node where it started. And one particular kind of
+cycle was studied by oil, or we call them an Eulerian cycle. And this is a cycle that visits every edge in the graph exactly once. So it's worth pausing for a second. Literally hit the pause
+button to ask yourself, does either of these graphs
+have an Eulerian cycle? Try to find one. Now it turns
+out no, neither of them do. And in fact, Euler
+proved a theorem that allows us to very
+easily characterized when a graph has an Eulerian cycle, it happens if and only if
+every node has even degree, meaning an even number of
+edges connected to it. Now we can ask a slightly
+different question. What if we didn't require
+that the path be a cycle? We just want to know, is there a path that visits
+each edge exactly once, but it may end at a different
+node where it started. And in this case, there is unreal area and path in
+G1, but not NG tube. And there's a similar
+characterization. It's slightly more complicated
+is that a graph has an Eulerian path if and only if all but up to two
+nodes have even degree. So on the right, you can see that three of the no, or for the nodes B, C, D, and E have degree 3,
+so it doesn't qualify. But on the left, D and
+E have degree three, but a, B, and C all have even degree. So that's why there's
+an Eulerian path. Now, Hamilton looked at
+a very similar question, which is to ask, when does the graph of a cycle that
+visits each node exactly once. It might skip some edges. But we want it to visit
+each node exactly once. And turns out this graph does, may not be obvious that
+there's a path through it. I'm sort of highlighted
+the edges there. And we might want to
+ask the question, okay, is there a similar simple
+to check characterization? Just some simple
+property of the nodes. How many edges each of them has. That would tell you when the
+graph has a Hamiltonian cycle. It sounds like almost
+the same problem. Alright, as Eulerian cycle, we just changed the
+word edge to node. So it seems like there should be some similar
+characterization that, but in fact, we don't know of him. We don't know of any easy way to check whether a graph
+has a Hamiltonian cycle. So let's just think about
+these two problems here. An Eulerian cycle visits
+each edge exactly once. Hamiltonian cycle visits
+each node exactly once. We have this symbol way to
+characterize Eulerian cycles. And we can ask, well, if we turn that into an
+algorithm that takes as input a graph and then
+answers the yes, no question. Does it have one of these cycles? How much time will it take? We'll talk a little more in
+future chapters about exactly how we measure the time
+needed for algorithms. But it's going to roughly be
+something like n squared. If n is the number of
+nodes in the graph, kinda depends exactly how
+you represent the graph. But the idea is that you
+can iterate over each node. There's n of them. And then you can ask how
+many neighbors does it have? And in the worst case, you have like an adjacency matrix which would involve iterating over
+every other node to ask, is it connected or not? And incrementing a counter. So it would be n nodes. You have to check each
+of them takes time and to count the
+number of other nodes. And there's more efficient
+ways to represent graphs, but it's at most
+something like n squared. Whereas with a Hamiltonian cycle, we don't have any simple
+characterization like this. The best thing we know
+how to do would be to enumerate every single
+cycle with EndNote, checking whether it's
+a Hamiltonian cycle, meaning that it has each node in the graph
+appearing on it exactly once. And if you think about how
+many ways are there to, to take the end nodes in
+a graph and that sort of permute them and then check
+is that a valid cycle? In other words, each pair of
+adjacent nodes connected by an edge. Well, there's n factorial
+permutations of the n nodes. And n factorial is The
+bigger than n squared. It's at least exponential and n. One kind of easy way
+to see that is that it's n times n minus 1 times n minus
+2 on down to at times 2 times 1. And most of the numbers in
+this list are at least two. So that's going to be at least
+two times itself and many times, which is what we mean by 2 to the n. So that's a lot bigger,
+it's exponential. And in general, we don't know any better way to
+answer that question. So we'd like to know, is there a fast way to decide if
+a graph has a Hamiltonian cycle? And it turns out this is not
+just some one-off question. This is a very fundamental question because as we're going to learn, if there's a polynomial-time
+algorithm for this problem, then there are also polynomial-time
+algorithms for thousands of other natural important
+problems that we also don't know how to solve
+in sub-exponential time. At the technical reason
+for this is because the Hamiltonian cycle problem
+is what we call NP-Complete. I'll define that formally later. And those other problems
+are all contained in NP. And if the Hamiltonian cycle problem had a polynomial time algorithm, then all those other
+problems, what is, well, that's the importance
+of this problem and all the other so-called
+NP-complete problems. So we might want to also ask
+the question, well, if so, if there's a fast way to
+decide the yes, no question. Is there a Hamiltonian
+path in the graph? Is there a fast way
+to actually find what usually this is what we want
+to do in computer science. We're not happy to just know whether there's a solution to our problem. We would like to have the
+solution itself like what is the path that visits
+each node exactly once. So we call this the distinction between a decision
+problem that has a yes, no output versus a search problem. That's generally like
+if the answer is yes, what is the solution
+integer then yes, if there's a fast way to
+solve the decision problem, it turns out there's a fast way
+to solve the search problem. The fact that the other implication follows is pretty easy
+if you could solve the search problem given a graph, give me a Hamiltonian
+cycle if it has one. Well, if you get an answer
+out of it, the answer is yes. If you don't get it and answer, the answer to the
+decision problem is no, it's not obvious that
+decision problems, you know, are, are not any
+easier than the search problems. But it turns out yes, it
+if you could solve the, so the ostensibly easier
+decision problem, you can also solve
+the search problem. So here's a related question. Is there a fast way
+to check solution? But what if I hand you? And I say, this is a
+Hamiltonian path in this graph, is there a fast way to
+check if I'm correct? In other words, this is the
+distinction between searching for a solution and trying to find it versus verifying somebody's
+purported solution. And it turns out yes, there is
+also a fast way to do this. Okay, so let's think about
+this distinction for a bit. This is going to be very
+important to a lot of the course, finding solutions versus verifying that a purported solution
+really is a solution. So for this problem of Hamiltonian
+path given as input a graph G, we should output a Hamiltonian
+path G if it exists. So the verification algorithm that takes as input
+not just the graph, but also a suppose a path
+that's a Hamiltonian. That the way it works is
+you just check that p has exactly and unique nodes where n is the number of
+nodes in the graph, right? You just iterate over all of them. Check that they all appear in the, that each of them only appears once, and that each consecutive pair is
+actually connected by an edge. So we can think about other types of problems we want to solve
+from a similar perspective. So let's consider factoring, which is a very important problem
+in cryptography, for example. And one way to phrase
+the factoring problem as a decision problem or
+as a search problem. Meaning, given an input,
+you want to get an output. You could say, well, on an integer and I want to output
+the whole prime factorization. But just for simplicity, let's just consider this simpler
+case where I just want to output two integers that are both bigger
+than one, whose product isn't. Right? And it's worth pausing
+for a second again, literally pause to think about, well, why is it that I'm calling
+this the factoring problem and not the one that would output
+the entire prime factorization. And the idea is, if you could solve this problem, you can just recursively
+do it these integers p and q and figure out the
+entire prime factorization. Once you get an answer of no, there is no such output. That means that the number is prime. So we don't know how to solve
+this in polynomial time either. It's not known to be NP-complete. Most people think it's not, but we don't know how to solve
+this in polynomial time. But there is a
+verification algorithm, which is if I give you two integers
+and they both bigger than one, you can check that their product is, then you can just multiply
+them together efficiently. So this is yet another
+example of a problem where we don't know how to
+find solutions efficiently, but we do know how to verify whether a purported
+solution really works. So it's worth contrasting
+this with in some sense, the inverse problem to factoring, which is multiplication, right? This problem says given
+as input two integers, p and q, output the integer
+n such that PQ equals n. In other words, output their product. So this problem can be
+solved efficiently. And this is essentially the verification algorithm
+for the factoring problem. And the fact that one of
+these seems to be difficult, but the other one is
+easy is the reason it's useful in public-key cryptography. So, okay, so you
+might start to think, well maybe all these problems that we encounter or maybe we don't know how to find solutions efficiently. Well, maybe all of
+them have this flavor that even though we
+can't find a solution, at least we can check
+solutions efficiently, but that's not actually true of every problem you might want to say. Also, Let's consider chess. So let's suppose that the chess
+problem is given as input, some board positions for chess
+like what appears down here. I want to output if it exists, a checkmate strategy
+for the white player. So I don't know much about chess, but supposedly this
+board configuration as checkmate for a white
+into 162 moons, right? So if white plays correctly air, it will win in a large
+number of moves below. What would be the verification
+algorithm for that? Like what, what proof could I
+give to you that would convince you that white does have
+a winning strategy. It really seemed like we
+have to play the game. But even then, if I'm plane as
+white and your plane is black, you're not going to be
+convinced I had checkmate. All I'm going to do is convince
+you that you made the wrong move. Maybe had you made different
+moves, you might have one. So this is not one of
+these problems are we even know how to verify purported
+solutions quickly. In particular, the moves white needs to make might
+depend on what blackness. So I can't just give a sequence
+of moves for white to make. I have to give more like
+a fully general strategy. Okay, so let's step back a bit and talk a little bit more about some of the lofty ideas we're going
+to cover in this course. So the central theme
+will be which problems have a shortcut that leads to a fast algorithm like Eulerian cycle. But we don't have to
+check all the possible cycles to see is there one that visits each edge exactly once and which don't
+appear to have a shortcut, which ones appear to require exhaustive search like
+Hamiltonian cycle. Now many problems,
+Hamiltonian path of a cycle, graph coloring Boolean
+satisfiability. We'll talk about all
+these eventually, although not protein folding. They're all equally hard in the sense that if any of them as an efficient algorithm
+than all of them do. So why is that like what
+do they have in common? Can we transform one of
+these problems into it? We'll talk a lot about this. If there's an efficient algorithm
+to find Hamiltonian paths. It turns out there's a lot
+broader implications than just, there's some other
+mathematical questions about discrete objects
+that can be solved. It turns out that if this is true, then there's actually an
+efficient algorithm to find short proofs of all the great
+unsolved problems in mathematics, for example, the beam and hypothesis. This is one of the reasons
+that people say if you could prove that P equals NP, and we'll talk about what, what that means in future lectures. You would have solved most of
+the other open problems in mathematics because
+you could just run this algorithm to define proofs. So this kinda goes against our intuition that such an
+algorithm could even exist. So, is it the case that
+mathematics is harder than this, requiring intuition and creativity
+to solve these problems. In other words, can we prove
+that finding proofs is offered? One question we're
+going to touch on is, can one programming language solve
+problems that another cannot? And what exactly is a
+programming language? You've seen a lot of them. But in this course
+we're going to kind of formalize what do we
+mean by appropriately. And we're going to
+see some examples of very simple systems using
+counters and geometric tiles. They can actually do computation. And in doing so, I
+want to kind of expand your idea of what exactly we mean by a system that can be programmed to automatically
+process information? One question worth asking is, can all problems be
+solved by an algorithm given unbounded hamiltonian path? We don't know how to do it quickly, but we do know how to do it
+slowly in exponential time. Could we do that with every problem? And it turns out no,
+the answer is no. There are certain problems that
+cannot be solved no matter how much time you allow the
+algorithm to run four. And we're going to spend most of
+the course talking about time. But another important resource
+to consider is space or memory. How much memory is required
+to solve certain problems? And how does this relate to the time required to
+solve the problem?

@@ -1,0 +1,33 @@
+Now you hear about fact, like the halting problem is not
+decidable and you can't take a given Turing machine or Python program and determine
+whether it's going to hold. And you might think, well,
+maybe we should just switch to a different programming
+language, right? One where all the programs
+hall and we don't have this problems if you write a program that's guaranteed to hold. So what we'll argue here is that
+if you're a programming language, Let's programs, run other programs. Then in that programming language, some programs must be non halting. So, you know, what's a program, one of the other programs or
+operating systems do this. Web browsers with JavaScript do this, or more generally, you know that they have a JavaScript interpreter. More generally, any decent
+programming language has an interpreter, right? Otherwise known as
+a universal program in the language of
+theoretical computer science. It's a program you, so that given two inputs, one is a description of a program P, and the second is an input
+you'd want it to be, it runs it T on that input x
+and does what it would do. So that's essentially
+what an interpreter does. So suppose your programming language has an interpreter
+or you can do this. So consider defined in a
+Boolean return type program V. So like a Python function
+V and what is V2? Well, oninput p, where p is say the source code
+of another program. Where V does is it
+runs p on input peak. Meaning if it runs be an input, it gets it is its own source code. And saying programs can
+take other program doesn't, but their interpreters do that. And in this language,
+we're assuming v has this power to take as input
+a program and then run it. But then run it where it's input is itself another program
+and at the same program. So that's what V does. It seem like kind of a useless task. But now let's answer this question. Does that, but then what
+does it do with that? Well, if P returns symbol
+and then V negate. So whenever P returns, when given itself as input, if it ever does return, v will simply negate the
+return the opposite. So what now is the
+output of v on itself? What have we were to run B with
+its own source code as well. It's not well-defined because supposedly it takes v0 runs in
+an input V in negates that, but what's the output? Is it true or false? So you'd get a contradiction no matter which one
+of those with them. The way out of this is that, well, it must be the case that if you
+run V on input v, It won't hold. All right, so in other words, any programming language powerful enough to write an interpreter for itself must necessarily contain
+programs that don't hold. So this notion of universality
+implies non holding programs.

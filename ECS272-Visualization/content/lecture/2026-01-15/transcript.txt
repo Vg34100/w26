@@ -1,0 +1,1166 @@
+Pablo [0:14]: so we're going to continue the lecture
+Pablo [0:18]: we didn't finish last time tuesday
+Pablo [0:21]: and then we will
+Pablo [0:24]: have the lecture on visual encoding
+Pablo [0:28]: this is already started
+Pablo [0:29]: so far
+Pablo [0:30]: then
+Pablo [0:39]: we mainly talk about there are different types of data
+Pablo [0:43]: and then
+Pablo [0:44]: we
+Pablo [0:45]: talk about
+Pablo [0:46]: mark
+Them [0:53]: is for representing
+Them [0:55]: data
+Them [0:56]: ident
+Them [0:57]: ity
+Them [1:47]: one
+Them [1:48]: mark
+Them [1:48]: were used
+Them [1:49]: and
+Them [1:55]: the
+Them [1:56]: modules and
+Them [1:57]: the high centers
+Them [2:00]: to
+Them [2:01]: represent
+Them [2:03]: attrib
+Them [2:03]: utes
+Them [2:04]: of
+Them [2:05]: the data
+Them [2:14]: let's
+Them [2:15]: look at different
+Them [2:16]: visualization
+Them [2:23]: we
+Them [2:23]: have seen this
+Them [2:25]: now
+Them [2:26]: last time we did
+Them [2:34]: this
+Them [2:38]: is the first
+Them [2:39]: this is
+Them [2:40]: a newsman
+Them [2:45]: so
+Them [2:46]: my question is
+Them [2:55]: anybody
+Them [3:01]: yes
+Them [3:09]: so
+Them [3:11]: at the side
+Them [3:12]: as
+Them [3:13]: me the science
+Them [3:14]: curface
+Them [3:15]: and
+Them [3:17]: usually
+Them [3:18]: represented some sort
+Them [3:19]: of important
+Them [3:21]: math
+Them [3:40]: yeah
+Them [3:41]: anybody out
+Them [3:41]: there
+Them [3:45]: is
+Them [3:46]: eyes towards
+Them [3:47]: technology
+Them [3:57]: but
+Them [3:58]: then the
+Them [3:59]: size
+Them [4:00]: resides
+Them [4:01]: in
+Them [4:03]: what
+Them [4:03]: can be
+Them [4:05]: some
+Them [4:06]: sort of
+Them [4:07]: important
+Them [4:16]: has changed
+Them [4:27]: what do you
+Them [4:28]: consider
+Pablo [4:47]: right
+Pablo [4:53]: the concise contact is the font size coincide
+Pablo [4:56]: the size of the font
+Pablo [4:59]: on the forms
+Pablo [5:04]: but that's not mine i'm not mark i thought you said point
+Pablo [5:13]: so actually it would say it's point rather than area
+Pablo [5:18]: because every here is correspond to size
+Pablo [5:21]: in the considers channel
+Pablo [6:03]: price limit the placement of this is more for grouping it's like proximity for the same category
+Pablo [6:10]: some even position here you can say use for the
+Pablo [6:16]: dynamic really it's more like this
+Pablo [6:17]: is
+Pablo [6:18]: continuity grouping
+Pablo [6:23]: the colors already show them then also
+Pablo [6:26]: this proximity
+Pablo [6:28]: give you that
+Pablo [6:34]: but then this is even we have these big areas small area
+Pablo [6:38]: within that as a different me trying to touch
+Pablo [6:46]: really it's the mark you can see there is more point at the rest
+Pablo [6:52]: and how about this one this is a graph a network
+Pablo [6:54]: what's the mark
+Pablo [7:08]: yeah nine
+Pablo [7:22]: of these and label is more we can talk about label
+Pablo [7:27]: what we consider label can see
+Pablo [7:35]: and then we are
+Pablo [7:42]: getting conceded then you arrive either way but then how about channel
+Pablo [7:46]: hello and what
+Pablo [7:51]: yes this small but then
+Pablo [7:56]: i just color and also the one
+Pablo [8:07]: notice the circle you have
+Pablo [8:10]: and then also powder
+Pablo [8:19]: you can see yellow they have a different level of light different intensity level
+Pablo [8:25]: saturation level of yellow that must be something else
+Pablo [8:35]: to the network layout
+Pablo [8:39]: there's some additional information
+Pablo [8:41]: conveyed
+Pablo [8:42]: which is
+Pablo [8:43]: what
+Pablo [8:57]: so position means nothing identity completely based on a layout algorithm so then it's all relative
+Pablo [9:03]: right because it's based on the connectivity between nodes but then
+Pablo [9:08]: certain nodes are closer together or far away
+Pablo [9:12]: again it's due to the connectivity
+Pablo [9:14]: so yeah
+Pablo [9:21]: so that means that the saturation of the colors would actually be crystal color
+Pablo [9:29]: so now that for example at least monitor it white and else
+Pablo [9:33]: i'm not sure
+Pablo [9:35]: about
+Pablo [9:40]: the saturation or the lightness that must mean something else
+Pablo [9:47]: for example
+Pablo [9:52]: around between that body
+Pablo [10:01]: now you see here like closer to red right but then some of these still stay quite bright yellow right
+Pablo [10:11]: so i don't think there's any blending so i'm trying to point out is the distance between nodes
+Pablo [10:18]: it's a result of layout method you choose but then it's really
+Pablo [10:23]: depends on what depends on connectivity depends on relation
+Pablo [10:31]: between the entity which are not
+Pablo [10:35]: so this one picture actually convey a lot of information
+Pablo [10:47]: so like for example the color the color it represent categories but then the size can mean something right
+Pablo [10:51]: and then the saturation can be something else
+Pablo [10:55]: it can encode so much information
+Pablo [11:11]: whether this is a good visualization or not right you're saying here it's like are we using too many channels right
+Pablo [11:17]: so what do you think right because
+Pablo [11:23]: when you have problem with too many channels
+Pablo [11:26]: when the channel interact with each other
+Pablo [11:32]: and then cause some make it difficult for you to interpret information
+Pablo [11:45]: but in this case do you find visually distracting or using do you feel that way
+Pablo [20:44]: so visual channels control the appearance of marks and there are two types of visual channels
+Pablo [20:54]: this identity journal which we use to encode a categorical information
+Pablo [20:58]: and historical data and then there is the magnitude channel
+Pablo [21:02]: which we use to encode
+Pablo [21:06]: quantitative data order
+Pablo [21:08]: attribute
+Pablo [21:17]: there are actually
+Pablo [21:18]: ranking that
+Pablo [21:19]: people deri
+Pablo [21:20]: ved
+Pablo [21:21]: after
+Pablo [21:22]: some
+Pablo [21:23]: study
+Pablo [21:30]: certain
+Pablo [21:31]: channel
+Pablo [21:34]: information
+Pablo [21:36]: so
+Pablo [21:38]: when you do
+Pablo [21:39]: your
+Pablo [21:40]: job
+Pablo [21:43]: if you're not sure
+Pablo [21:48]: it won't be wrong
+Pablo [21:51]: so you look at if you
+Pablo [21:57]: want to visually
+Pablo [21:58]: go
+Pablo [21:59]: the best
+Pablo [21:59]: channel
+Pablo [22:01]: is position
+Pablo [22:01]: ed
+Pablo [22:04]: remember like xy block you have
+Pablo [22:06]: access
+Pablo [22:07]: or y axis
+Pablo [22:08]: and
+Pablo [22:09]: then each physician
+Pablo [22:10]: has a meaning
+Pablo [22:12]: and the quantity
+Pablo [22:13]: increasing value
+Pablo [22:17]: or decreasing value
+Pablo [22:18]: so that
+Pablo [22:20]: our use position
+Pablo [22:21]: but quantitative
+Pablo [22:22]: information
+Pablo [22:26]: and then if you actually want to show size
+Pablo [22:33]: will be the next second one and ankle
+Pablo [22:35]: distance
+Pablo [22:49]: and slow area oriental density identity can also show i think density probably is better you see second the sdd is better for all you know
+Pablo [22:52]: order
+Pablo [22:55]: but then it's not quantitative
+Pablo [23:04]: you can tell this is larger than that but then how much you cannot say
+Pablo [23:08]: but then again position
+Pablo [23:14]: and color saturation is similar to density
+Pablo [23:17]: and then color
+Pablo [23:21]: i'm not sure
+Pablo [23:24]: actually not sure why
+Pablo [23:24]: it's so high
+Pablo [23:28]: anyway
+Pablo [23:31]: then there's categorical
+Pablo [23:34]: guess what position is field number one
+Pablo [23:41]: again how to cube
+Pablo [23:42]: that's intuitive
+Pablo [23:45]: red means
+Pablo [23:48]: particular
+Pablo [23:50]: area
+Pablo [23:55]: blue represent a different area
+Pablo [23:57]: in the subject area
+Pablo [24:01]: if you have a color legend
+Pablo [24:03]: it's very easy to use
+Pablo [24:05]: attach
+Pablo [24:11]: er is also used for chemical recoil right it's similar to color
+Pablo [24:12]: you
+Pablo [24:14]: connection
+Pablo [24:24]: categorical
+Pablo [24:29]: anybody can see your way
+Pablo [24:31]: this connection
+Pablo [24:53]: i can think of
+Pablo [24:54]: categorical
+Pablo [25:06]: if it's like the hierarchical right there's some also but then there's order right
+Pablo [25:11]: but sometimes the different entity
+Pablo [25:20]: different categories different categories but one category subcategory of the other so there's some sort of hierarchy
+Pablo [25:22]: but then in general
+Pablo [25:25]: yeah i'm not sure how to use connect
+Pablo [25:35]: the most important
+Pablo [25:43]: principle right when you know which channel more effective or what type of data so the most important
+Pablo [25:45]: attribute
+Pablo [25:49]: because when you have the data set it has multiple attributes
+Pablo [25:51]: and you want to
+Pablo [25:53]: visualize some of these
+Pablo [25:53]: categories
+Pablo [25:55]: sometimes whatever
+Pablo [25:58]: in that case
+Pablo [26:01]: you want to encode
+Pablo [26:02]: the most important
+Pablo [26:06]: channel
+Pablo [26:09]: and so for example
+Pablo [26:12]: we know position is the king right
+Pablo [26:14]: position is
+Pablo [26:15]: good
+Pablo [26:18]: channel
+Pablo [26:19]: for all
+Pablo [26:20]: type of data
+Pablo [26:22]: so if you have
+Pablo [26:27]: this visualization to make and then there's one particular important attribute
+Pablo [26:29]: so what channel you want to use
+Pablo [26:32]: position
+Pablo [26:34]: and
+Pablo [26:38]: for categorical data maybe carla hue okay
+Pablo [26:39]: would be good
+Pablo [26:40]: too
+Pablo [26:43]: because sometimes
+Pablo [26:46]: most people
+Pablo [26:50]: like to use color they feel like
+Pablo [26:52]: a change color my visual idea
+Pablo [26:56]: more attractive
+Pablo [26:58]: interesting
+Pablo [27:00]: and more powerful
+Pablo [27:00]: is better
+Pablo [27:03]: but you really want to be careful about using
+Pablo [27:10]: very careful but then after this class you know some general principle you will be fine
+Pablo [27:11]: but then average people
+Pablo [27:20]: blindly use color they just think oh you generate a color colorful
+Pablo [27:22]: picture
+Pablo [27:24]: then a gray scale of black and
+Pablo [27:24]: white
+Pablo [27:37]: suddenly use mark and channel together
+Pablo [27:44]: they give you different
+Pablo [27:45]: results
+Pablo [27:49]: so here's just some example
+Pablo [27:53]: like if you use
+Pablo [27:58]: shape and point
+Pablo [28:04]: is the mark right mark line area use shape and point
+Pablo [28:05]: together
+Pablo [28:10]: it's actually best to show
+Pablo [28:11]: y
+Pablo [28:15]: information
+Pablo [28:21]: so it's like more categorical right
+Pablo [28:23]: so like what are
+Pablo [28:24]: the item
+Pablo [28:27]: but then if you point and size
+Pablo [28:32]: then actually show quantitative difference
+Pablo [28:34]: how much is
+Pablo [28:35]: that
+Pablo [28:42]: and similarly color hue point and color you
+Pablo [28:45]: for showing qualitative difference
+Pablo [28:48]: and then
+Pablo [28:53]: there's color value right
+Pablo [28:55]: so a gray scale here
+Pablo [28:58]: are intensity right brightness
+Pablo [29:01]: and for texture actually
+Pablo [29:06]: can give you the
+Pablo [29:08]: effect of different level
+Pablo [29:10]: of different level of density
+Pablo [29:13]: if you use the same type of
+Pablo [29:15]: accur
+Pablo [29:15]: acy
+Pablo [29:17]: you
+Pablo [29:19]: could create
+Pablo [29:27]: a level of different test and then
+Pablo [29:34]: you can use it to impose like order information
+Pablo [29:39]: but otherwise right here so that's why you say
+Pablo [29:44]: we can work for most qualitative and quantitative
+Pablo [29:45]: information yes
+Pablo [29:56]: i understand sometimes when you're trying to represent
+Pablo [30:06]: right
+Pablo [30:09]: some color
+Pablo [30:17]: some brace your or even people with color partners
+Pablo [30:19]: yeah
+Pablo [30:21]: definitely
+Pablo [30:24]: so we have to be careful about
+Pablo [30:31]: the media you use like it's on paper or on screen or
+Pablo [30:36]: on projectorjective screen a projector can be awful
+Pablo [30:41]: then all the color can become washed out
+Pablo [30:42]: and then you cannot tell the difference
+Pablo [30:45]: so when you make a presentation
+Pablo [30:48]: for example if you are invited to give a talk
+Pablo [30:59]: like if i when i you know get invitation usually i will especially if it's important right if i call it
+Pablo [31:02]: prompt to hundreds of people or thousand people
+Pablo [31:12]: i usually will try to find out like what the presentation room look like like what kind of ad equipment they have
+Pablo [31:16]: like when i
+Pablo [31:19]: if so actually
+Pablo [31:25]: told the cs staff who responsible for assignee classroom
+Pablo [31:31]: i say i must have a room with very good ab equipment
+Pablo [31:46]: because i mean nowadays every classroom is about the same right but then the old age we have some classroom with really lousy you know updated ab equipment and they will ensure the visualization i guess
+Pablo [31:52]: i cannot really explain the difference or this and that
+Pablo [31:53]: so it's problematic
+Pablo [31:56]: and then
+Pablo [31:57]: paper
+Pablo [32:02]: some
+Pablo [32:03]: problem
+Pablo [32:11]: s
+Pablo [32:15]: produce
+Pablo [32:20]: color
+Pablo [32:24]: to preserve the original information
+Pablo [32:33]: mod
+Pablo [32:34]: els
+Pablo [32:39]: too much
+Pablo [32:40]: highlight
+Pablo [32:53]: without
+Pablo [33:03]: okay
+Pablo [33:04]: so yeah
+Pablo [33:07]: we
+Pablo [33:08]: only have
+Pablo [33:09]: one channel
+Pablo [33:10]: and later
+Pablo [33:11]: we
+Pablo [33:12]: also need to
+Pablo [33:13]: worry about
+Pablo [33:16]: channel
+Pablo [33:18]: each
+Pablo [33:19]: channel
+Pablo [33:20]: stay dep
+Pablo [33:20]: endent
+Pablo [33:21]: or
+Pablo [33:22]: dn
+Pablo [33:23]: a interact with
+Pablo [33:36]: express
+Pablo [33:39]: basically
+Pablo [33:40]: you want to
+Pablo [33:42]: match your channel
+Pablo [33:44]: as you use
+Pablo [33:50]: whether it's categorical even right
+Pablo [33:52]: information
+Pablo [33:56]: or it's quantitative or older quantitative
+Pablo [33:58]: order
+Pablo [34:05]: and most important thing is like you want to encode
+Pablo [34:09]: the data in a way to convey
+Pablo [34:13]: the information right
+Pablo [34:17]: properly and correctly exactly
+Pablo [34:23]: you don't want any code and you want to like introduce something that is not there
+Pablo [34:26]: so for example
+Pablo [34:30]: if it's older data
+Pablo [34:32]: issues
+Pablo [34:46]: it should be convey as orders right it's not like people cannot tell the order if it's an older data you should not like give some impression there's order
+Pablo [34:50]: so then it's not expressive
+Pablo [34:55]: so you want to make it expressive visualization
+Pablo [35:11]: let's see an example this kind of stupid example
+Pablo [35:18]: start with the question is this expressive visualization of
+Pablo [35:19]: that
+Pablo [35:31]: yes
+Pablo [35:31]: no
+Pablo [35:31]: yes
+Pablo [35:32]: now
+Pablo [35:33]: why
+Pablo [35:40]: it's obvious right talking about this different
+Pablo [35:50]: car vehicle model right and then made different this part just to show
+Pablo [35:53]: there's different model and then
+Pablo [35:54]: where
+Pablo [35:58]: this model made right
+Pablo [36:00]: different country
+Pablo [36:03]: and then they use this bar chart
+Pablo [36:09]: the barge i give people the impression there is a quantity right
+Pablo [36:13]: there's a quantity but then it's not this is about category
+Pablo [36:17]: so you use this
+Pablo [36:19]: lens
+Pablo [36:22]: to represent
+Pablo [36:24]: categorical information
+Pablo [36:28]: it's just like really bad right so this is not expressive
+Pablo [36:30]: visualization
+Pablo [36:32]: so as simple as this
+Pablo [36:40]: work
+Pablo [36:46]: as simple as this
+Pablo [36:55]: let's do i don't like this
+Pablo [37:00]: somebody here want to say
+Pablo [37:03]: inst
+Pablo [37:04]: ead
+Pablo [37:05]: it doesn't have
+Pablo [37:18]: god
+Pablo [37:20]: information
+Pablo [37:33]: this
+Pablo [37:34]: morning
+Pablo [37:47]: perceived
+Pablo [37:48]: as
+Pablo [37:53]: i
+Pablo [37:55]: did
+Pablo [38:02]: grow
+Pablo [38:02]: and then
+Pablo [38:05]: how
+Pablo [38:14]: you want to
+Pablo [38:15]: use visualization
+Pablo [38:16]: for your
+Pablo [38:17]: sometimes
+Pablo [38:18]: you don't have to
+Pablo [38:19]: use visual
+Pablo [38:20]: ization
+Pablo [38:25]: maybe just
+Pablo [38:26]: like
+Pablo [38:28]: test
+Pablo [38:29]: des
+Pablo [38:29]: cription
+Pablo [38:30]: actually more
+Pablo [38:31]: effective
+Pablo [38:33]: or can be just as i said
+Pablo [38:38]: of course knowledge
+Pablo [38:39]: is okay
+Pablo [38:53]: hundred thousand
+Pablo [38:54]: in item
+Pablo [38:57]: they wish you may
+Pablo [38:58]: try
+Pablo [39:00]: visualization
+Pablo [39:01]: overview first
+Pablo [39:16]: and then the next is
+Pablo [39:17]: the effective
+Pablo [39:19]: so
+Pablo [39:23]: we already say talk about this right
+Pablo [39:25]: we want to encode both
+Pablo [39:31]: salient attributes is the highest ranked channel the most important
+Pablo [39:34]: attributes with
+Pablo [39:36]: the highest ranked channel
+Pablo [39:39]: we know position
+Pablo [39:44]: is a good one and then there is others depends on what type
+Pablo [39:46]: of attributes
+Pablo [39:50]: then
+Pablo [39:54]: usually you will have more effective visualization
+Pablo [39:56]: so let's see example
+Pablo [40:03]: so this
+Pablo [40:07]: is show the altitude
+Pablo [40:13]: they actually give you the provider how the legend
+Pablo [40:15]: and then they even have
+Pablo [40:19]: a number right
+Pablo [40:21]: number one
+Pablo [40:22]: here
+Pablo [40:32]: so you see this is the condition and why
+Pablo [40:33]: if it's not
+Pablo [40:45]: using
+Pablo [40:46]: carter to represent
+Pablo [41:09]: for example
+Pablo [41:12]: area
+Pablo [41:14]: we
+Pablo [41:15]: 're
+Pablo [41:17]: you cannot tell whether
+Pablo [41:18]: it is
+Pablo [41:22]: i mean
+Pablo [41:28]: you refer back to the legend i kept back and forth
+Pablo [41:29]: you could
+Pablo [41:36]: somewhat interpret right but then it's first they make it up like people you know
+Them [41:36]: value
+Them [41:38]: the button
+Them [41:38]: right
+Them [41:42]: they use
+Them [41:49]: how
+Them [41:51]: used to
+Them [41:52]: write
+Them [41:57]: but it's not exactly we'll come
+Them [42:00]: out they have this middle point
+Them [42:02]: for this is more like a middle point right
+Them [42:03]: but then
+Them [42:04]: you know why
+Them [42:06]: they pick
+Them [42:07]: a middle point at the one hundred ninety
+Them [42:08]: four
+Them [42:09]: and then also
+Them [42:11]: you
+Them [42:14]: have to really remember
+Them [42:15]: there's no natural
+Them [42:16]: order
+Them [42:18]: ing here really right
+Them [42:20]: like inclusive to us
+Them [42:25]: so when you look at it we have to come back to the letter back and forth
+Them [42:29]: to make comparison or make interpretation
+Them [42:30]: so
+Pablo [42:39]: it can't be used when it's really not a good design
+Pablo [42:42]: so it's a simple change
+Pablo [42:46]: the color legend
+Pablo [42:49]: huge difference
+Pablo [42:54]: right you see it here
+Pablo [42:57]: is above sea level
+Pablo [42:59]: and then it use
+Pablo [43:04]: s darker right wrong
+Pablo [43:07]: at the glance
+Pablo [43:10]: you can see right
+Pablo [43:14]: the more flat area
+Pablo [43:19]: and then you can see ocean and then ocean different depth
+Pablo [43:26]: you only need to kind of look at this once
+Pablo [43:29]: and then you come back you can interpret
+Pablo [43:32]: comparison
+Pablo [43:37]: this is effective
+Pablo [43:46]: also express
+Pablo [43:55]: let's see another
+Pablo [43:56]: example
+Pablo [44:01]: this one i found on the web a couple years ago
+Pablo [44:05]: one year or twenty twelve a long time ago
+Pablo [44:11]: but this basically is canada british columbia
+Pablo [44:12]: canada
+Pablo [44:18]: they are just trying to compare different different jobs
+Pablo [44:22]: like highest paid partnering servant job
+Pablo [44:23]: work
+Pablo [44:26]: so you can see
+Pablo [44:29]: they have like oh university of british
+Pablo [44:31]: columbia people work there
+Pablo [44:34]: their family and their
+Pablo [44:36]: like i think the nineteen
+Pablo [44:44]: i think nineteen probably is the number of
+Pablo [44:46]: evo the example
+Pablo [44:49]: and then
+Pablo [44:53]: so the size correspond to
+Pablo [44:59]: do i have any notes
+Pablo [45:18]: but then here right they use
+Pablo [45:20]: this shape
+Pablo [45:21]: right
+Pablo [45:24]: it's more as point really
+Pablo [45:25]: like this case
+Pablo [45:26]: the
+Pablo [45:27]: point mark
+Pablo [45:28]: and then
+Pablo [45:29]: they use a circle
+Pablo [45:30]: of righteous
+Pablo [45:31]: society
+Pablo [45:33]: it look
+Pablo [45:34]: s like it correspond
+Pablo [45:35]: s to
+Pablo [45:36]: december
+Pablo [45:38]: i
+Pablo [45:39]: think
+Pablo [46:07]: this
+Pablo [46:08]: one is
+Pablo [46:18]: science by the
+Pablo [46:19]: representative
+Pablo [46:21]: right
+Pablo [46:21]: now
+Pablo [46:26]: here you see they also use colors
+Pablo [46:31]: in the arbitrary way it's like a different category of job
+Pablo [46:38]: i think this is then the color uses more for like decoration rather than really no
+Pablo [46:40]: imported meaning
+Pablo [46:42]: and here size
+Pablo [46:45]: signs actually
+Pablo [46:50]: we definitely need something immediately you know this
+Pablo [46:51]: helps
+Pablo [46:54]: some
+Pablo [46:55]: house of his job
+Pablo [47:03]: i
+Pablo [47:04]: don't know
+Pablo [47:04]: i assum
+Pablo [47:06]: e this is exactly
+Pablo [47:06]: right
+Pablo [47:09]: over
+Pablo [47:10]: and then
+Pablo [47:11]: there will be
+Pablo [47:16]: common
+Pablo [47:16]: decision
+Pablo [47:17]: has
+Pablo [47:18]: any
+Pablo [47:29]: like this next to this
+Pablo [47:33]: is here whether they
+Pablo [47:36]: 're meaning
+Pablo [47:38]: any
+Pablo [47:38]: meaning
+Pablo [47:41]: no
+Pablo [47:41]: right
+Pablo [47:46]: so in fact
+Pablo [47:50]: a lot of students in this class
+Pablo [47:57]: they like to use such visualization because this is available
+Pablo [47:58]: in d three
+Pablo [48:01]: and we call this bubble
+Pablo [48:04]: car
+Pablo [48:08]: all
+Pablo [48:09]: we can make
+Pablo [48:15]: it match the size to something and color in some way categorical
+Pablo [48:16]: and feel
+Pablo [48:16]: cool
+Pablo [48:21]: right and you can if you move one and others like ten
+Pablo [48:23]: are you passing
+Pablo [48:31]: so this is twenty twelve so i was furious so i went to the same side
+Pablo [48:34]: the following year
+Pablo [48:42]: twenty thirteen exactly right the next year i found a change
+Pablo [48:51]: the visualization that the c is bubble path but now
+Pablo [48:54]: they actually give this legit right
+Pablo [48:57]: and then they use
+Pablo [48:58]: the
+Pablo [48:59]: common
+Pablo [49:02]: cooperation
+Pablo [49:03]: office and
+Pablo [49:04]: house azar
+Pablo [49:05]: busy
+Pablo [49:06]: shop alice
+Pablo [49:09]: some
+Pablo [49:10]: categorical loc
+Pablo [49:10]: ation
+Pablo [49:11]: and
+Pablo [49:16]: at a glance you see oh there's like this many group under this category
+Pablo [49:22]: but then position still
+Pablo [49:26]: okay they also do better with this label
+Pablo [49:28]: right so previously
+Pablo [49:29]: if you
+Pablo [49:30]: recall
+Pablo [49:30]: right
+Pablo [49:33]: you just write it down
+Pablo [49:37]: maybe down by some intern right
+Pablo [49:40]: and then now we have somebody kind of
+Pablo [49:42]: bit more serious than
+Pablo [49:50]: it's label but then position
+Pablo [49:51]: to
+Pablo [49:53]: mean
+Pablo [49:54]: nothing
+Pablo [50:00]: and position actually is very important right remember this most powerful
+Pablo [50:03]: channel
+Pablo [50:10]: but if say this origin one is here or this also here
+Pablo [50:12]: and the green is here
+Pablo [50:14]: then there's some sort of grouping right
+Pablo [50:18]: then i think this chart
+Pablo [50:19]: would
+Pablo [50:20]: be
+Pablo [50:21]: better
+Pablo [50:26]: but then still yeah this is better for sure but
+Pablo [50:29]: yeah
+Pablo [50:30]: but it's not perfect
+Pablo [50:33]: so then i check
+Pablo [50:36]: again the following year i don't remember
+Pablo [50:39]: it's exactly the next year
+Pablo [50:44]: i wanted to see if the changes visualization again
+Pablo [50:47]: they did
+Pablo [50:51]: so that's two years later right twenty fifteen
+Pablo [51:00]: they use tree math because whoever did this oh there's a tree map these three give me
+Pablo [51:01]: give a try
+Pablo [51:04]: and just do something different
+Pablo [51:04]: right
+Pablo [51:06]: now it's not boring
+Pablo [51:08]: like every year looks a thing
+Pablo [51:11]: so they change to tree mac
+Pablo [51:17]: so there's a lot of other smaller
+Pablo [51:21]: group and then the upc
+Pablo [51:25]: become the biggest over here they change
+Pablo [51:29]: and they see this color probably just like
+Pablo [51:35]: yeah let me see
+Pablo [51:36]: hyd
+Pablo [51:37]: ro
+Pablo [51:39]: y
+Pablo [51:40]: eah
+Pablo [51:42]: the color right it's just for decoration
+Pablo [51:44]: they don't mean
+Pablo [51:50]: yeah you can see that they probably hire different people and then they just like oh
+Pablo [51:50]: yeah
+Pablo [51:53]: i better create something different
+Pablo [51:55]: so
+Pablo [51:56]: it show that
+Pablo [52:00]: i did my job
+Pablo [52:02]: but
+Pablo [52:03]: yeah we can do better
+Pablo [52:04]: right
+Pablo [52:08]: so it's very likely you will work on similar data
+Pablo [52:10]: think about
+Pablo [52:13]: how you make your design
+Pablo [52:17]: any comments
+Pablo [52:21]: any like like somebody already want to suggest a design
+Pablo [52:22]: today
+Pablo [52:23]: hey we can do better
+Pablo [52:26]: if
+Pablo [52:28]: we encode this way that way
+Pablo [52:29]: yes
+Pablo [52:33]: can you be a bit louder
+Pablo [52:34]: so they can
+Pablo [52:36]: hear you one thing we could do
+Pablo [52:36]: is
+Pablo [52:39]: color based on the system of the
+Pablo [52:40]: university
+Pablo [52:41]: for example
+Pablo [52:43]: if you use our cs
+Pablo [52:44]: r
+Pablo [52:51]: that you were still california or say washington
+Pablo [53:00]: or another vehicle we could also color is depend on what state so if there's any possibility yeah yeah but then what kind of
+Pablo [53:07]: power we use we're talking about gmap or
+Pablo [53:15]: between
+Pablo [53:16]: this if
+Pablo [53:19]: you use overview of the information
+Pablo [53:21]: here i kind of
+Pablo [53:24]: introduce
+Pablo [53:30]: now i think
+Pablo [53:31]: that you can do better
+Pablo [53:53]: actually you arrive i think as simple as bar chart sorted right
+Pablo [53:54]: sorted
+Pablo [53:55]: by
+Pablo [54:04]: decreasing the and then you can still cover based on different category like more dynamic
+Pablo [54:05]: select
+Pablo [54:06]: industry
+Pablo [54:07]: and then you have
+Pablo [54:08]: legend
+Pablo [54:09]: use
+Pablo [54:11]: s like
+Pablo [54:23]: yes yes hr also if you want to kind of
+Pablo [54:25]: compare in a relative way
+Pablo [54:28]: then pychar
+Pablo [54:34]: which as you have too many different data items
+Pablo [54:39]: i have an example i'll show you
+Pablo [54:41]: how pie chart can be abused
+Pablo [54:46]: but then yeah hr for a small number
+Pablo [54:48]: of data item will
+Pablo [54:48]: work
+Pablo [54:51]: hard
+Pablo [54:54]: with the simplest then in this case
+Pablo [54:55]: actually
+Pablo [55:00]: you can get
+Pablo [55:01]: a better
+Pablo [55:03]: deliver
+Pablo [55:03]: ance
+Pablo [55:06]: that actually
+Pablo [55:08]: that's exactly what
+Pablo [55:09]: we're going to talk
+Pablo [55:10]: next
+Pablo [55:19]: so
+Pablo [55:23]: yeah there's ranking and this is just another ranking
+Pablo [55:29]: similar position
+Pablo [55:34]: for
+Pablo [55:38]: order quantitative
+Pablo [55:41]: and then this four categorical
+Pablo [55:49]: so people come up with slightly different branding
+Pablo [55:54]: comparison and cyber one model
+Pablo [56:01]: so then you ask
+Pablo [56:05]: how they come up with all these different range
+Pablo [56:07]: so basically they consider
+Pablo [56:10]: certain objective
+Pablo [56:14]: they object here for example
+Pablo [56:20]: how you maintain the accuracy right these are accuracy of the information
+Pablo [56:23]: how you
+Pablo [56:24]: discriminability
+Pablo [56:25]: which
+Pablo [56:28]: means if
+Pablo [56:38]: the difference between the data ip right in terms of their correspondent
+Pablo [56:45]: quantity like for certain attributes certain property of interest
+Pablo [56:52]: your visualization allows the viewer to distinguish between the different values
+Pablo [56:53]: different level
+Pablo [56:53]: s
+Pablo [56:54]: different value
+Pablo [56:58]: and then separability
+Pablo [57:06]: can you keep each visual channel independent
+Pablo [57:16]: interact the other is in a negative way
+Pablo [57:22]: and then finally like how effect
+Pablo [57:25]: ive you can highlight certain information
+Pablo [57:27]: certain
+Pablo [57:30]: data items
+Pablo [57:32]: or certain attributes
+Pablo [57:38]: jc do highlight the
+Pablo [57:43]: visualization
+Pablo [57:48]: you want a certain information stand out more than others
+Pablo [57:51]: how you achieve that can you achieve that
+Pablo [57:56]: these are the objectives
+Pablo [57:57]: that
+Pablo [58:08]: consider when they make those necking
+Pablo [58:19]: for accuracy we want to consider that how human
+Pablo [58:21]: response
+Pablo [58:23]: to sensory
+Pablo [58:27]: experience of magnitude
+Pablo [58:34]: and that you know actually our response to that
+Pablo [58:36]: follow
+Pablo [58:42]: and
+Pablo [58:45]: so
+Pablo [58:47]: our
+Pablo [58:48]: experience
+Pablo [58:50]: can
+Pablo [58:51]: be magnified
+Pablo [58:52]: or can be
+Pablo [58:53]: handle constra
+Pablo [58:54]: int
+Pablo [58:56]: what
+Pablo [58:58]: would be
+Pablo [59:00]: received
+Pablo [59:03]: and service
+Pablo [59:05]: improve this here
+Pablo [59:10]: is this is more general this improve beyond like digital perception
+Pablo [59:13]: and so you can see here
+Pablo [59:16]: for lens
+Pablo [59:23]: usually we can proceed quite accurately so we have the number one here
+Pablo [59:29]: again for area depth or hip and brightness
+Pablo [59:33]: you know we cannot do as good
+Pablo [59:36]: and then
+Pablo [59:39]: on the other way for saturation
+Pablo [59:48]: oftentimes we over right overestimate
+Pablo [59:50]: and
+Pablo [59:52]: you have to encounter
+Pablo [59:58]: you can imagine
+Pablo [1:00:00]: right our response
+Pablo [1:00:02]: if you get electric shock
+Them [1:00:10]: this axis
+Them [1:00:15]: sensation
+Them [1:00:23]: so let's see some examples
+Them [1:00:26]: because
+Them [1:00:28]: here we indicate
+Them [1:00:32]: some of this
+Them [1:00:37]: when we visualize the skin right
+Them [1:00:39]: area or that information
+Them [1:00:43]: we oftentimes cannot interpret
+Them [1:00:45]: very accurately
+Them [1:00:47]: if that's the case
+Them [1:00:54]: so the question is
+Them [1:01:00]: how many times is this larger circle area
+Them [1:01:04]: larger than this small one
+Them [1:01:08]: can you tell can you estimate can you accurately
+Them [1:01:17]: depend on how
+Them [1:01:18]: you look at
+Them [1:01:23]: straight
+Them [1:01:23]: height
+Them [1:01:25]: thirty
+Them [1:01:26]: depends
+Them [1:01:27]: on what you use
+Them [1:01:28]: right
+Them [1:01:34]: you use the radius or you just use the actual area to handle
+Them [1:01:36]: put this small
+Them [1:01:41]: circle into this large one and see how how many you need two
+Them [1:01:44]: larger
+Them [1:01:47]: so we have from three to sixteen
+Them [1:01:55]: now
+Them [1:01:56]: let's look at
+Them [1:01:58]: we have
+Them [1:01:59]: these
+Them [1:02:00]: two
+Them [1:02:03]: and
+Them [1:02:04]: again
+Them [1:02:11]: this
+Them [1:02:12]: one
+Them [1:02:28]: so one
+Them [1:02:29]: hand is saying is
+Them [1:02:31]: there other estimate
+Them [1:02:32]: for the
+Them [1:02:33]: two
+Them [1:02:34]: for this
+Them [1:02:39]: so we have three and sixteen
+Them [1:02:44]: and here is they only talk about they always say eight
+Them [1:02:45]: yes
+Them [1:02:50]: ident
+Them [1:02:51]: ify somebody
+Them [1:02:58]: we
+Them [1:02:59]: have answered
+Them [1:03:03]: how
+Them [1:03:04]: we have
+Them [1:03:06]: used
+Them [1:03:07]: right
+Them [1:03:08]: you have the area
+Them [1:03:09]: you have the
+Them [1:03:09]: lens
+Them [1:03:12]: but then let's see the answer
+Them [1:03:22]: the line is eleven
+Them [1:03:25]: the circle area ratio is twelve
+Them [1:03:26]: above twelve
+Them [1:03:29]: you see
+Them [1:03:31]: yeah
+Them [1:03:35]: close
+Them [1:03:42]: so exactly right you cannot really estimate
+Them [1:03:48]: accurately so when you do your visualization design or take this into account
+Them [1:03:59]: nobody says did you say sir
+Them [1:04:00]: no nobody says
+Them [1:04:04]: sixteen
+Them [1:04:31]: so you see if you look at that part right we see the area area has power on that it looks better than
+Them [1:04:33]: bright
+Them [1:04:34]: ness
+Them [1:04:34]: which is
+Them [1:04:38]: four
+Them [1:04:40]: different
+Them [1:04:40]: ideas
+Them [1:04:41]: right
+Them [1:04:42]: that
+Them [1:04:43]: you want
+Them [1:04:44]: to
+Them [1:04:45]: hold so then
+Them [1:04:47]: on the easy position
+Them [1:04:48]: right
+Them [1:04:48]: here
+Them [1:04:49]: so
+Them [1:04:50]: i think
+Them [1:04:54]: on the back is a map and then you have different companies
+Them [1:04:59]: probably and then there are certain measures certain quality want to convey
+Them [1:05:02]: and if you use area like this
+Them [1:05:04]: circle
+Them [1:05:08]: size
+Them [1:05:15]: it's okay but then you begin to have problem right
+Them [1:05:22]: yeah but then if you simply use
+Them [1:05:24]: intensity of rightness
+Them [1:05:26]: in fact it works quite well
+Them [1:05:33]: so hopefully you're not going to do something like this what you would expect
+Them [1:05:37]: for such type of data right
+Them [1:05:41]: it's
+Them [1:05:42]: quite actually natural
+Them [1:05:44]: and it might be effective
+Them [1:05:47]: being coordinated information
+Them [1:05:47]: this way
+Them [1:05:50]: we're not even using color
+Them [1:05:50]: yet
+Them [1:05:54]: we just we just use grayscale
+Them [1:05:57]: and then
+Pablo [1:05:57]: if you
+Pablo [1:05:59]: have a legend here
+Pablo [1:06:01]: color
+Pablo [1:06:05]: or gray of magic with
+Pablo [1:06:07]: some number
+Pablo [1:06:10]: indicators actual quantities that will be
+Pablo [1:06:11]: the best
+Pablo [1:06:31]: yeah when you talk about these and the dc
+Pablo [1:06:33]: work really well
+Pablo [1:06:40]: and now
+Pablo [1:06:41]: let's look at
+Pablo [1:06:42]: the
+Pablo [1:06:43]: other objective
+Pablo [1:06:49]: on
+Pablo [1:06:50]: the gable
+Pablo [1:06:53]: side
+Pablo [1:06:54]: one
+Pablo [1:06:55]: level
+Pablo [1:07:01]: to
+Pablo [1:07:02]: distinguish between
+Pablo [1:07:03]: them
+Pablo [1:07:04]: so
+Pablo [1:07:05]: here is the
+Pablo [1:07:06]: kind of aviation
+Pablo [1:07:15]: so
+Pablo [1:07:16]: you
+Pablo [1:07:17]: have
+Pablo [1:07:22]: vived
+Pablo [1:07:33]: and then this is like
+Pablo [1:07:35]: millions of millions
+Pablo [1:07:45]: represent
+Pablo [1:07:45]: that
+Pablo [1:07:50]: so here on the show street level
+Pablo [1:07:52]: and then there's actually more than three
+Pablo [1:07:53]: right
+Pablo [1:08:02]: just increasing right from the three same one to the bigger one right this is the big biggest one
+Pablo [1:08:14]: i guess the biggest is five hundred so it's not exactly the width here correspond to the base here it just gives you a sense
+Pablo [1:08:20]: they consider between one hundred to five hundred so this must be five hundred
+Pablo [1:08:24]: the standard is one hundred but
+Pablo [1:08:27]: the question is
+Pablo [1:08:33]: like how many like sometimes it's even hard to tell whether these two are the same
+Pablo [1:08:35]: this two seems the same
+Pablo [1:08:37]: but even at least two the same
+Pablo [1:08:39]: level or non right
+Pablo [1:08:47]: it's a bit like this two is the same level or yeah it's not easy when you have too many levels
+Pablo [1:08:50]: three level probably easy
+Pablo [1:09:00]: right you can make really distinctive with use very distinctive width but in this case it's already built up confusing
+Pablo [1:09:04]: but this is not like really bad right
+Pablo [1:09:09]: it's just you have this permeability problem
+Pablo [1:09:11]: you want to keep that in mind
+Pablo [1:09:16]: what's the most important objective of your visualization
+Pablo [1:09:24]: is
+Pablo [1:09:26]: to allow
+Pablo [1:09:27]: you to be able
+Pablo [1:09:28]: to
+Pablo [1:09:32]: tell
+Pablo [1:09:33]: the
+Pablo [1:09:34]: active interpret
+Pablo [1:09:35]: the actual
+Pablo [1:09:36]: imam pray
+Pablo [1:09:37]: there's certainly
+Pablo [1:09:38]: this one
+Pablo [1:09:40]: doesn't do
+Pablo [1:09:40]: the job
+Pablo [1:09:44]: but otherwise it's probably okay
+Pablo [1:09:51]: this is
+Pablo [1:09:53]: again
+Pablo [1:09:56]: we look at
+Pablo [1:10:01]: human and the mouse chromosome
+Pablo [1:10:03]: so let's
+Pablo [1:10:04]: play
+Pablo [1:10:11]: so this is human
+Pablo [1:10:15]: this is a mouse there's a difference is dramatically
+Pablo [1:10:18]: so using color hue
+Pablo [1:10:25]: it's actually okay right for the mouse
+Pablo [1:10:31]: but for human right
+Pablo [1:10:33]: yeah it's problematic
+Pablo [1:10:37]: but then that's actually what the biological science theory used
+Pablo [1:10:40]: otherwise
+Pablo [1:10:41]: what do they use
+Pablo [1:10:48]: and then you want to correspond to say
+Pablo [1:10:50]: because the color
+Pablo [1:10:52]: actually in fact
+Pablo [1:10:55]: they use the same
+Pablo [1:10:59]: they use color consistently
+Pablo [1:11:02]: here so the red here
+Pablo [1:11:04]: actually you can find in humans right
+Pablo [1:11:05]: where
+Pablo [1:11:07]: you can find this the
+Pablo [1:11:07]: same
+Pablo [1:11:10]: chromosome
+Pablo [1:11:13]: that i put that here you can find one
+Pablo [1:11:16]: in one
+Pablo [1:11:17]: two
+Pablo [1:11:21]: six maybe and then
+Pablo [1:11:24]: yeah i think it's projector
+Pablo [1:11:26]: that we could
+Pablo [1:11:33]: tell whether it's pure red or orange or strong orange
+Pablo [1:11:39]: today you can see right we begin to have trouble
+Pablo [1:11:41]: as
+Pablo [1:11:44]: a viewer as a user of
+Pablo [1:11:46]: this path
+Pablo [1:12:09]: this is the pie chart
+Pablo [1:12:12]: so this
+Pablo [1:12:13]: is
+Pablo [1:12:19]: i think the right one hundred moles active
+Pablo [1:12:19]: meters
+Pablo [1:12:25]: and somebody made this actually right otherwise i do not
+Pablo [1:12:26]: have
+Pablo [1:12:28]: and they use pie chart
+Pablo [1:12:29]: and then
+Pablo [1:12:37]: i
+Pablo [1:12:38]: use it on my little
+Pablo [1:12:40]: and then
+Pablo [1:12:41]: there's
+Pablo [1:12:44]: some
+Pablo [1:12:45]: body
+Pablo [1:12:49]: is there some sort of a catego
+Pablo [1:12:51]: ry right i think you should be able to tell
+Pablo [1:12:53]: twitter
+Pablo [1:12:55]: certain people
+Pablo [1:13:00]: they may be really tweet about more technology others
+Pablo [1:13:05]: determine how people
+Pablo [1:13:10]: but then here right you see there are too many and then they just arbitrary randomly assign
+Pablo [1:13:11]: color
+Pablo [1:13:12]: and then
+Pablo [1:13:13]: it become
+Pablo [1:13:15]: s
+Pablo [1:13:17]: even tell
+Pablo [1:13:21]: some of this exactly like and then
+Pablo [1:13:23]: you have to look up
+Pablo [1:13:24]: and then try
+Pablo [1:13:25]: to find
+Pablo [1:13:39]: where you have
+Pablo [1:13:40]: too
+Pablo [1:13:41]: many
+Pablo [1:13:42]: different
+Pablo [1:13:47]: data items and also too many different categories
+Pablo [1:13:48]: for them
+Pablo [1:13:49]: what
+Pablo [1:13:49]: do you do
+Pablo [1:13:51]: what do you do
+Pablo [1:13:55]: in this case okay we just going to stick to high
+Pablo [1:13:55]: chat
+Pablo [1:14:05]: section
+Pablo [1:14:06]: of hydro
+Pablo [1:14:07]: that corresponding ang
+Pablo [1:14:07]: le
+Pablo [1:14:13]: so you're saying we still use this as a stunning as the beginning
+Pablo [1:14:14]: very few straight
+Pablo [1:14:15]: towards the pie chart
+Pablo [1:14:16]: and we don't want to
+Pablo [1:14:17]: do anything
+Pablo [1:14:17]: for example
+Pablo [1:14:18]: we don't have
+Pablo [1:14:19]: this situation everybody
+Pablo [1:14:21]: doesn't want to stop
+Pablo [1:14:22]: there's no clear division
+Pablo [1:14:25]: then
+Pablo [1:14:31]: we don't right but i believe normally we don't have
+Pablo [1:14:32]: any one
+Pablo [1:14:34]: thing we can do
+Pablo [1:14:35]: is first
+Pablo [1:14:36]: display
+Pablo [1:14:37]: more
+Pablo [1:14:40]: say there's five different catego
+Pablo [1:14:40]: ries
+Pablo [1:14:46]: and
+Pablo [1:14:47]: they ensure the catego
+Pablo [1:14:48]: ry
+Pablo [1:14:50]: and then
+Pablo [1:14:51]: we only
+Pablo [1:14:52]: decide to use
+Pablo [1:14:53]: that category
+Pablo [1:14:54]: but then
+Pablo [1:14:55]: maybe
+Pablo [1:14:57]: we want to
+Pablo [1:14:58]: solve it
+Pablo [1:14:59]: somewhere
+Pablo [1:15:01]: maybe the display
+Pablo [1:15:02]: the top ten and then others
+Pablo [1:15:06]: maybe display the top ten
+Pablo [1:15:09]: or maybe top five and then others
+Pablo [1:15:11]: or other become one
+Pablo [1:15:20]: so
+Pablo [1:15:21]: just do
+Pablo [1:15:21]: it like that
+Pablo [1:15:22]: and
+Pablo [1:15:24]: progressively
+Pablo [1:15:25]: or
+Pablo [1:15:26]: let them increment
+Pablo [1:15:27]: ally
+Pablo [1:15:28]: navigate
+Pablo [1:15:29]: and
+Pablo [1:15:32]: identify the tweeters of interest or
+Pablo [1:15:33]: some
+Pablo [1:15:34]: comparison
+Pablo [1:15:40]: those
+Pablo [1:15:41]: who are
+Pablo [1:15:48]: what goes wrong with your original chart because it seems that
+Pablo [1:15:49]: color is not
+Pablo [1:15:53]: you're saying that and also there's a problem with
+Pablo [1:15:56]: too many
+Pablo [1:16:09]: god
+Pablo [1:16:09]: with us
+Pablo [1:16:15]: for
+Pablo [1:16:15]: decoration
+Pablo [1:16:16]: on this
+Pablo [1:16:17]: because
+Pablo [1:16:19]: i want to make a thank you colorful
+Pablo [1:16:23]: but then you could reserve color
+Pablo [1:16:25]: more useful information
+Pablo [1:16:26]: as i
+Pablo [1:16:27]: say just
+Pablo [1:16:28]: trying to
+Pablo [1:16:31]: divide
+Pablo [1:16:32]: and put them
+Pablo [1:16:32]: right
+Pablo [1:16:33]: according to
+Pablo [1:16:34]: the category
+Pablo [1:16:34]: right
+Pablo [1:16:38]: certain category certain can categorization
+Pablo [1:16:45]: you use and then you assign color to each category then there's meaning whether
+Pablo [1:16:46]: you have something
+Pablo [1:16:47]: like this
+Pablo [1:16:52]: so you can use colorful decoration
+Pablo [1:16:55]: but ideally use color to convey information
+Pablo [1:16:59]: that's all i'm trying to say but even if we solve that
+Pablo [1:17:00]: in june
+Pablo [1:17:01]: just to make it
+Pablo [1:17:06]: that's why i suggest this there's a hierarchical
+Pablo [1:17:07]: top
+Pablo [1:17:08]: five and others
+Pablo [1:17:11]: if they interest in the artists at all
+Pablo [1:17:13]: first
+Pablo [1:17:14]: different kind of
+Pablo [1:17:17]: study
+Pablo [1:17:24]: catego
+Pablo [1:17:24]: ry
+Pablo [1:17:25]: i want to investig
+Pablo [1:17:25]: ate
+Pablo [1:17:26]: first
+Pablo [1:17:27]: and then
+Pablo [1:17:28]: i want to look at
+Pablo [1:17:29]: those popular
+Pablo [1:17:30]: ones
+Pablo [1:17:31]: those
+Pablo [1:17:33]: way
+Pablo [1:17:39]: i think
+Pablo [1:17:40]: we can stop
+Pablo [1:17:41]: here
+Pablo [1:17:42]: you don't have
+Pablo [1:17:42]: any question

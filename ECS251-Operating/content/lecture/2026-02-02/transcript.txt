@@ -1,0 +1,214 @@
+Pablo [0:18]: typical server might even be server still much much smaller
+Pablo [0:24]: the other benefit of virtual memory is that it has the illusion that each application has its own
+Pablo [0:31]: private memory that will access both the continuous address space you need to
+Pablo [0:34]: isolate it from every other process
+Pablo [0:35]: that might be running on
+Pablo [0:35]: the system
+Pablo [0:53]: so processes will access their memory virtual addresses and then hardware and the operating system will work together to translate these virtual appetizers and the physical addresses and the physical address is going to tell us exactly where
+Pablo [1:02]: the process address space so if you're in virtual addresses we'll start at zero and then they basically contiguous
+Pablo [1:14]: for the entire address that's a natural hole in the other space you can't have those you basically allocate anywhere anywhere and it appears as if it's contiguous
+Pablo [1:16]: vertical aspect
+Pablo [1:22]: and again the size of the virtual logic space for the process is independent of the amount of memory actually available on the machine
+Pablo [1:30]: and so what we have here is a sort of example of how your process outer space might be laid out so you have your text segment
+Pablo [1:41]: again data cycle and you measure keeping your staff you're keeping your staff because they grow in different directions and give you those far apart so that they can kind of grow without
+Pablo [1:43]: growing into each other
+Pablo [1:43]: actually
+Pablo [1:54]: so if we zoom out and look at physical memory so we have each of these sort of process aggregates
+Pablo [1:56]: one of the great
+Pablo [2:02]: options on the slide here so we're going to have multiple process address spaces potentially loaded into the custom memory
+Pablo [2:15]: and again because these virtual address spaces are not necessarily one to one physical outer space that the virtual address zero of any particular process is not necessarily going to be
+Pablo [2:20]: we have multiple processes stored into the address space at a time
+Pablo [2:25]: and again they're all for all intents purposes going to be independent and protected from each other
+Pablo [2:32]: the other thing to note is that physical memory is going to be too small to hold
+Pablo [2:35]: all of this virtual address space of all the processes at the same time
+Pablo [2:41]: we might be limited by physical amount of memory on the hardware
+Pablo [2:50]: so we have to be fertilizers we have a physical addresses and where we get between them is through address translation
+Pablo [2:56]: as a function that's going to map the process id and the virtual address
+Pablo [3:05]: to the fiscal lender when we process id we'll meet the process different applications might be using the same virtual addresses
+Pablo [3:07]: to earn their own bits of data
+Pablo [3:22]: so this function maps this relationship is going to be carried out by a combination of both hardware in your memory management unit and also some parts of the operating system for library operating systems
+Pablo [3:24]: you might see
+Pablo [3:31]: so again the measurement unit is going to be the hardware device that's going to map your vertical life system your physical address that it was in the operating system
+Pablo [3:50]: so with address translation we can have user processes that only work with and see virtual activities we have the physical memory which is only going to work with the physical addresses and for future processes don't say physical addresses
+Pablo [3:53]: physical memory can be virtualized is there basically completely
+Pablo [3:54]: separate
+Pablo [4:01]: one of the ways that we carry out this address translation is through this idea called aging
+Pablo [4:06]: so with paging we allocate virtual and physical memory and chunks all with the same size it's a big size
+Pablo [4:12]: so if we're talking about virtual memory we're calling them pages if we're talking about physical memory
+Pablo [4:13]: we're technically called frames
+Pablo [4:19]: and because they're all the same size it makes them easy to allocate we don't have to worry about external fragmentation
+Pablo [4:29]: so external fragmentation is this tissue that could occur where if we were allocating arbitrarily sized objects or pages arbitrary size segments
+Pablo [4:34]: we could reach a point where we have enough free physical memory in the system
+Pablo [4:37]: but it's not contiguous
+Pablo [4:43]: so we can't allocate anything else because we don't have a free contiguous block that can fit on your validation
+Pablo [4:46]: so this positive waste
+Pablo [4:54]: the problem with pages is that we don't have this external fragmentation everything's all the same size so we're not going to waste space that way
+Pablo [5:07]: but because these pages are fixed size we might actually waste space in the page because an application may not ask for an exact multiple of page size so this sort of internal fry expectation is sort of wasted space
+Pablo [5:08]: within the patients
+Pablo [5:17]: so pages and page tables are going to help us do our address translation
+Pablo [5:23]: so our average tables are going to store how we translate from a virtual address to our physical address
+Pablo [5:28]: and this is page tables are special data structures
+Pablo [5:29]: that does that
+Pablo [5:42]: so page tables are multilevel which basically means we're going to walk it like a tree there are some hierarchy to get us from our virtual address down to our exact scroll location of the data we're looking for
+Pablo [5:45]: and we were to do that it's going to split our virtual address
+Pablo [5:59]: into multiple components and we're going to use these components if we don't get parts of the page table basically do the same walk so the way this works is we have this special register here called cr three it's going to store the base the sort of like topical route
+Pablo [6:01]: of our page table tree structure
+Pablo [6:10]: so this is going to be loaded with the page table root of the process currently running on the cd
+Pablo [6:14]: this page of route has been a topic going through this top level page structure
+Pablo [6:20]: we're going to take the upper bits of our printer address as an offset into the top level page
+Pablo [6:22]: we'll point that through
+Pablo [6:35]: this to the next lower level of our cache table we're going to use the next set of bits process starting address as an offset into this structure so you're up here
+Pablo [6:53]: that's going to point us to the next level of our phage table the next set of bits offset to get into a case of entry and then finally that last is going to point us to the actual page and the last set of bridges the offset we've got physical page up to data
+Pablo [6:57]: anyone see any potential problems
+Pablo [7:00]: with this or method for added translation
+Pablo [7:11]: so we're translating one virtual address into a physical address
+Pablo [7:19]: and we're doing let's see one two three four five in order to do that
+Pablo [7:23]: so we can see how that can be quite slow
+Pablo [7:35]: one of the ways we can do is break that up is basically cache and retributing translations with a special data structure called the tlb translation
+Pablo [7:43]: this is needed because we have these sort of single address translations that are going to result in multiple patients
+Pablo [7:45]: on locust in order to resolve the translation
+Pablo [7:50]: which we're doing this on every single time we're accessing memory we can slow it down
+Pablo [8:16]: so again we have this special hardware cache buffer that's going to store these recently commonly used virtual either translations basically it's going to have cache so we're going to try to reference virtual memory address we want to figure out where this actually is in physical memory we first start check the teal our translation is in here great we can just go straight to that physical
+Pablo [8:16]: location
+Pablo [8:21]: and basically do one memory analysis to get the a one
+Pablo [8:23]: another one
+Pablo [8:27]: page table office join the results
+Pablo [8:35]: so the problem that the paper on friday is talk about will of course realize is that tlb sizes are constrained
+Pablo [8:39]: so how do we make it so that we can still use the tlv efficiently
+Pablo [8:48]: one of the solutions they propose is if we use different larger page sizes so that one clb cache
+Pablo [8:51]: entry covers more address space
+Pablo [8:55]: so that's what the super pages paper will bring you out on friday
+Pablo [8:58]: any questions so far on this yeah
+Pablo [9:07]: this might cause the external fragmentation issue because we are having different types of features so the different sizes will be multiples of each other
+Pablo [9:12]: so like for example you'll have a four kilobyte
+Pablo [9:28]: page or you can have a two megabyte choose a page which is going to be five hundred twelve of those forming the wet pages you could also have like a gigabyte size page five hundred twelve you made the right size pages so because there are multiples of each other we can kind of keep that internal representation issue
+Pablo [9:46]: so since these cases are nurtured you would need lesser number of blocks in a sense like the tree which you need to cover should be shallower so that would make the lookup easier yeah so the benefit in this case of the future like a larger page algorithms too fold right
+Pablo [10:02]: so one because they're larger one translation covers more address space so it's more issues as cache the end of benefit is if we do miss in the fact that we just page take a walk instead of going all the way here we can actually end our walk here
+Pablo [10:13]: so we have to traverse less deeper if the pitch paper will hire you to get to our data in the face of permission that pov but we also make tlb misses less common
+Pablo [10:39]: we're going to have the location of the data that the state table actually describes as well as a bunch of metadata within it so again patient table entries are going to describe pages within the
+Pablo [10:39]: page table
+Pablo [10:47]: so again the page frame number is going to be the actual location of the physical frame that this page table entry is referring to
+Pablo [10:50]: moving out a bunch of metadata that describes
+Pablo [10:54]: whether it's actually prevention memory
+Pablo [11:01]: this is for your set that it either hasn't been mastered
+Pablo [11:02]: out
+Them [11:07]: when we actually touch this page
+Them [11:12]: you have a dirty bit that is set by the hardware when we write to this page basically change data
+Them [11:22]: and then we have some permissions bit like the rewrite bit which describes whether an application re handle right to a page
+Them [11:29]: the user system bit describes whether user level code can access the page or custom systems
+Them [11:34]: we have a number of other bases that describe the cache as we gave you
+Them [11:48]: so we use again the combination of pages and page tables and these two metadata to carry out swapping so swapping is how we're actually going to carry out the illusion of this virtual infinite value
+Them [11:49]: space
+Them [12:04]: so because we have our virtual address space it's larger than our physical space we're not going to be able to keep everything in physical memory at the same time so what do we do with the patients that don't fit well what's bigger than physical memory on computer storage
+Them [12:13]: so we can devote a portion of our storage space that act as knowing little scratch face for our leftover virtual memory
+Them [12:23]: so the way this works at a high level is if we want to actually work on stage absolutely data it has to be in our main memory
+Them [12:36]: if we don't actually need this page right now we want to make room in our physical memory for data that we do actually need we can move this page from our physical memory into our swap space on our storage device
+Them [12:40]: so when we do this we call that swapping out the page
+Them [12:45]: and when we bring a page in from storage in the main memory we call it swapping in page
+Them [12:51]: if we want to actually access data and it's not in main memory
+Them [13:00]: the cpu can't directly access storage so we have to bring it into main memory first when this happens we call the schedule
+Them [13:05]: we try to access a memory it's not actually math and physical memory because if e isn't allocated
+Them [13:12]: yet or it's spot out so in order to actually bring this agent move it
+Them [13:18]: swapping is carried out with the help of these access and journey business tables
+Them [13:28]: so again we can imagine the algorithm we actually use for swapping pages in and out the system and have a high effect on performance of the application right
+Them [13:36]: adversarial cases where the operating system might always swap out a page application might just be about to use
+Them [13:44]: so again the choice of swapping algorithms is going to be very important in that consideration of systems
+Them [13:59]: linux uses or approximates the lru algorithm so basically the nickel product do is keep the most recently used pages in physical memory and anything that has a concussion a long time
+Them [14:04]: so it's the way that linux does this is it keeps two lists it has an activist
+Them [14:06]: inactive list
+Them [14:09]: and then we'll periodically
+Pablo [14:16]: hardware access space are set gets to stay in the access or in the active list and remaining in physical memory
+Pablo [14:18]: access are not set
+Pablo [14:27]: versus the inactive list here as a schedule in atroplas in the inactive list access goodness
+Pablo [14:36]: that means we just use it so the active list if it's still not set then now we're going to get to swap out
+Pablo [14:41]: any question
+Pablo [14:42]: s
+Pablo [14:48]: in case of the super variable the slides like one b will be square
+Pablo [14:53]: or will the entire superpider
+Pablo [15:04]: because we both have on one we break out into the small so that's
+Pablo [15:26]: a
+Pablo [15:27]: how physical
+Pablo [15:28]: memory is actually
+Pablo [15:51]: go
+Them [16:01]: ogle four g
+Them [16:02]: b is just
+Them [16:05]: the in the subject
+Them [16:09]: there's
+Them [16:10]: a few different things that go on
+Them [16:27]: cash
+Them [16:28]: buffer
+Them [16:29]: or file number
+Them [16:30]: which are going to be
+Them [16:32]: fil
+Them [16:32]: e back memory
+Them [16:38]: and
+Them [16:39]: one x will
+Them [16:40]: treat
+Them [16:55]: applic
+Them [16:56]: ation
+Them [16:57]: i would say
+Them [16:58]: what order
+Them [16:58]: this happens will happen
+Them [17:00]: algorithm that
+Them [17:01]: decides
+Them [17:02]: with
+Them [17:03]: linux administrator
+Them [17:04]: approximate
+Them [17:05]: ly based
+Them [17:06]: approach
+Them [17:08]: on
+Them [17:09]: wednesday
+Them [17:12]: nemesis will describe
+Pablo [17:25]: cash
+Pablo [17:34]: the
+Pablo [17:35]: way that fashion plate
+Pablo [17:36]: syndrome is that
+Pablo [17:37]: the mem
+Pablo [17:38]: ory management
+Pablo [17:42]: so
+Pablo [17:44]: the hardware the cpu captions
+Pablo [17:58]: this is something for the most part operating system because of hardware concern
+Pablo [18:06]: so what we're talking about here physical memory versus your back in the
+Pablo [18:07]: year
+Pablo [18:08]: stor
+Pablo [18:09]: age
+Pablo [18:11]: this is something that
+Pablo [18:14]: 's full control of operating
+Pablo [18:18]: mainly responsible for allocating
+Pablo [18:25]: with this sort of after how memory is being used in my first decision
+Pablo [18:33]: can we store the physical address or nova to address or data
+Pablo [18:37]: that's architecture
+Pablo [18:49]: i feel like ashes are
+Pablo [18:51]: really physical addresses
+Pablo [18:59]: much further worse hydro specific when the storage actual data in the cache
+Pablo [19:08]: because then hardware doesn't know what this is about yeah so i think caches will deal with physical addresses which basically means we've already done
+Pablo [19:18]: i do know there's architectures where you can personally address patches
+Pablo [19:22]: but i'm pretty sure physical
+Pablo [19:26]: but i'm also happy to be correct
+Pablo [19:26]: ed if i'm wrong
+Pablo [19:27]: on that
+Pablo [19:38]: addresses won't be just be satisfied with the data that you need
+Pablo [19:45]: so we need to express our why we
+Pablo [19:51]: no i know as a dlb but i just wanted the cache
+Pablo [19:54]: address itself in the cache but what we're checking to see
+Pablo [20:02]: if data is in the cache we do that by physical address
+Pablo [20:11]: virtual address zero x one two three four five physical address
+Pablo [20:19]: and the application just access that just access virtual address one two three four five
+Pablo [20:30]: if we want to check whether that data is in the cache we depending on how the cache the question was does the cache look up virtual address
+Pablo [20:36]: zero x one two three four five with pid one for the process
+Pablo [20:40]: or does it look in the dash for address
+Pablo [20:43]: zero abc
+Pablo [20:55]: and again there's definitely hardware that there's hardware that does one there's r that does the other but again i'm pretty sure the norm is the physical
+Pablo [20:58]: so the sort of memory translation will occur
+Pablo [21:07]: to get the processor virtual address to the fiscal address and then when we're looking to see if this data as at the physical address is in the cache
+Pablo [21:12]: we use that physical address so again the addresses themselves are stored in the cache
+Pablo [21:17]: but again physical address locations will map certain applications
+Pablo [21:22]: so we need some layer
+Them [22:26]: also
+Them [22:26]: include the process
+Them [22:27]: id
+Pablo [23:56]: this is
+Pablo [23:56]: okay
+Pablo [23:57]: for my
+Pablo [24:16]: physical
+Pablo [24:16]: address

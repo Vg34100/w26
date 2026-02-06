@@ -1,0 +1,250 @@
+Pablo [0:38]: or um neuba is now access
+Pablo [0:43]: ing
+Pablo [0:53]: patients these days require really strict scheduling from the operating system to meet their you know microsecond scale or lower response
+Pablo [1:17]: so again this is the sort of printout of an idea of how she
+Pablo [1:20]: can see there's eight tours
+Pablo [1:20]: on this right
+Pablo [1:29]: so we can pretty clearly see more like greener boxes are going to be separate cores where you pass basically you have one thread of execution
+Pablo [1:36]: we have both for
+Pablo [1:38]: beat up
+Pablo [1:40]: a year
+Pablo [1:41]: two years
+Pablo [1:55]: or whatever so you know as moore's law and dinard's viewing have either slowed down or basically stop in order to keep in obviously at the women self
+Pablo [1:56]: direction
+Pablo [1:57]: where we get
+Pablo [2:05]: more careful
+Pablo [2:06]: of whatever program
+Pablo [2:12]: and schedul
+Pablo [2:13]: ing for baby variable
+Pablo [2:14]: s
+Pablo [2:18]: we
+Pablo [2:19]: have the role of
+Pablo [2:20]: no cpu
+Pablo [2:24]: is the way we
+Pablo [2:25]: handle this
+Pablo [2:32]: you have
+Pablo [2:33]: a right list
+Pablo [2:34]: the regulus
+Pablo [2:35]: the process
+Pablo [2:36]: es that you
+Pablo [2:37]: could run
+Pablo [2:39]: and so
+Pablo [2:40]: as long as you're ready
+Pablo [2:41]: list is empty
+Pablo [2:42]: you can
+Pablo [2:43]: always
+Pablo [2:45]: take a process from your ready list and run it on that
+Pablo [2:46]: board
+Pablo [2:52]: let's say we got four parts now right we have this set up
+Pablo [2:53]: in one ready
+Pablo [2:58]: list then we can kind of keep the same thing right so like all of our processes
+Pablo [3:04]: are in the ready list and each of these four can basically pull from the regular does anyone see a potential issue
+Pablo [3:06]: with this architecture
+Pablo [3:16]: right so first of all you have to protect this readiness with the law
+Pablo [3:21]: right because we don't necessarily want to schedule the same process
+Pablo [3:24]: all right so let's say we protect this writing let's go
+Pablo [3:25]: on and potential issues
+Pablo [3:26]: now
+Pablo [3:30]: maybe right
+Pablo [3:36]: we could have a threat a process that previously ran on one cpu it's got some cash date there
+Pablo [3:40]: we schedule it on different cpu that it doesn't have fact data
+Pablo [3:42]: any other central
+Pablo [3:48]: yeah this is the single ready list
+Pablo [4:01]: en you know with four graduates and they got four courses may not be super obvious but if we add you know one hundred four thousand points all depending on this one
+Pablo [4:11]: processes are going
+Pablo [4:19]: yeah i mean yeah so i mean we could design the ready list take that into account instead of having a single list we can have some kind of priority
+Pablo [4:31]: queue that can do that but any case that's another thing where you can imagine if you have multiple courts multiple courses schedule making sure that the most important processes are set
+Pablo [4:43]: the main issue with this you know single radio state that you know we touched on is going to be the scale building
+Pablo [4:43]: right
+Pablo [4:55]: so one of the ways that we can fix this is we can actually each core that are already list now we don't have to worry about locks we don't worry about scalability without more horns we just add more radius
+Pablo [4:58]: is there any issues we can see with this design
+Pablo [5:13]: there's no load balancer yeah yeah so then the elbow balancing is going to be an issue right how do we prevent ten processes that all want to run on this board from stacking up all these processes are idle
+Pablo [5:16]: there's no prostitute
+Pablo [5:29]: that's going to be one of the main installations particularly of the oyster forest paper that you know this sort of load balancing is going to lead to a lot of the bugs they sort of identify
+Pablo [5:35]: all right
+Pablo [5:39]: so that's kind of like the multicore and the scheduling aspect of it i thought i had
+Pablo [5:44]: so the other the other side of things these really text
+Pablo [5:48]: yes sorry just to clarify sorry saying that having multiple radio signals
+Pablo [5:49]: we have
+Pablo [5:59]: and the reason why i wanted the ones to be balanced we don't want you know a bunch of processes to be wind up waiting to run
+Pablo [5:59]: on one floor
+Pablo [6:01]: when there's a three four
+Pablo [6:05]: and again it doesn't necessarily arc about
+Pablo [6:14]: again as the voice towards paper will point out there might be situations where you prefer to wait to run a process on specific course
+Pablo [6:16]: but in general
+Pablo [6:19]: you kind of want this you know load balancing behavior
+Pablo [6:20]: to hold
+Pablo [6:33]: all right so one of the optional readings for today was this article called backward by the second on top of ten you know having a name that i
+Pablo [6:37]: 'm really talking about this idea
+Pablo [6:43]: where the type form is found on login applications and why you know the microseconds scale in particular
+Pablo [6:44]: is hard
+Pablo [6:50]: and we'll make this a nice argument that you know if we look at either side in the microseconds you know we don't know
+Pablo [6:55]: a second scale and we have strategies that depend on events efficiency at this scale
+Pablo [7:01]: so for example
+Pablo [7:04]: instruct
+Pablo [7:04]: ions
+Pablo [7:08]: hardware can vary officially has all these nanosecond scale events
+Pablo [7:11]: with things like out of order execution
+Pablo [7:12]: or
+Pablo [7:13]: either grants
+Pablo [7:26]: so the example here you have followed where we you know set variable one equal to dereference of this address function
+Pablo [7:27]: and then
+Pablo [7:30]: i selected and then we implement other directions
+Pablo [7:36]: so let's say when we try to conduct who's going to pause the cabinet
+Pablo [7:39]: well assuming there's no data dependency
+Pablo [7:47]: variables one variables two variable three or four but cfd can actually do is after you execute just increment on variable two
+Pablo [7:48]: first
+Pablo [7:50]: while waiting to serve this category
+Pablo [7:52]: if it's still waiting
+Pablo [7:54]: and so on
+Pablo [8:03]: so this is a way to kind of hide the latency of a cash base you're still doing useful work but again assuming there's no a dependencies between these variables is fine
+Pablo [8:10]: that the processor could do
+Pablo [8:10]: events
+Pablo [8:14]: is this hypothetically
+Pablo [8:15]: very very fast
+Pablo [8:18]: threat of execution
+Pablo [8:30]: one four maybe with two micro threads and that basically means two breads on the score the core itself in conduct would be
+Pablo [8:35]: so they're given an illustration of you know a bit more complicated what this means
+Pablo [8:41]: so we might have a food threat and a drink drug each try to execute interruptions
+Pablo [8:43]: before
+Pablo [8:45]: we don't have type of
+Pablo [8:51]: threads we might have this you know food reduction maybe it takes a catalyst
+Pablo [8:54]: with that hyper bread it's more basically
+Pablo [8:55]: that weight
+Pablo [8:57]: for the scaffold to be served
+Pablo [8:58]: to then execut
+Pablo [8:59]: e the
+Pablo [8:59]: next destruction
+Pablo [9:05]: and things that rust extreme in which case hybrid
+Pablo [9:12]: we have hybrid friends and we have the same thing where you know we have this blue operation
+Pablo [9:18]: maybe causes a cache miss the core itself which was other type of thread
+Pablo [9:21]: ed fuel structures
+Pablo [9:24]: while the mattress being
+Pablo [9:29]: served and then you know both switch back to the blueprint get to objective
+Pablo [9:34]: so the hyperpad is basically this like hardware threat of execution is very lightweight
+Pablo [9:38]: giving you this twitch context which at the heart of the model
+Pablo [9:56]: who decides the hyperfit so the scheduler will assign reciprocate then again from there the pore itself will kind of show
+Pablo [10:12]: yeah
+Pablo [10:14]: and so for the other more executed
+Pablo [10:15]: question
+Pablo [10:16]: actually so there's two
+Pablo [10:21]: places at night reorder your code you write even a tool
+Pablo [10:22]: you compile it
+Pablo [10:23]: and you were specified
+Pablo [10:24]: focus
+Pablo [10:29]: ed you might notice that it's not
+Pablo [10:30]: like one
+Pablo [10:34]: and so that will tell you that one of the things that henry
+Pablo [10:36]: earlier shows is going to be
+Pablo [10:37]: higher
+Pablo [10:41]: is one course of reordering of your instructions
+Pablo [10:44]: and get power will do a bunch of parenting analysis
+Pablo [10:45]: on your
+Pablo [10:48]: code to figure out what data dependencies exist
+Pablo [10:52]: and what legal your group
+Pablo [10:53]: s are
+Pablo [10:59]: beyond the compiler the hardware the cpu itself could also do something order
+Pablo [11:07]: ing we have a cpu and u its instruction stream and do some of the same sort of analysis there to see if there are any datasets
+Pablo [11:08]: between human interruptions
+Pablo [11:12]: extreme and what we ordering then are legal for
+Pablo [11:20]: the cpu will see that it has attachment
+Pablo [11:28]: like it you know it'll jack the signal again this is l one fash maybe it's also not my l two dash
+Pablo [11:31]: it'll send out
+Pablo [11:35]: a batch instruction basically
+Pablo [11:44]: so at that point okay
+Pablo [11:50]: the hypergraph or it could just look ahead and subjective stream
+Pablo [11:52]: and see what parents
+Pablo [12:08]: the point here being that now second scale events are not something that software don't want us to worry about it because hardware is really good at hiding these sort of problems that might occur
+Pablo [12:10]: from applic
+Pablo [12:10]: ation
+Pablo [12:25]: on the other side of the microsecond domain we have the millisecond building things that are milliseconds scale are going to be things like reading data from a disk you're wide area ot traffic so again sending information over the internet
+Pablo [12:28]: or you know
+Pablo [12:30]: these are all
+Pablo [12:31]: to do
+Pablo [12:37]: and in this case what's good at hiding these you can the application number
+Pablo [12:53]: we have things like content switches where if a process is going to show up for several milliseconds the scheduler will move this side to the block stage really something that camera and make reasonable progress on the c
+Pablo [12:54]: pu requirements
+Pablo [13:11]: and again we saw from like the fossex interface that we have all these very simple synchronous blocking models that basically mean that to the software that looks like read you know we'll read on file descriptor this returns immediately
+Pablo [13:15]: the next instruction we execute will have data
+Pablo [13:26]: however again what happened underneath potentially is our process when putting sleep some other process ran sixty four times our data actually got right in from the disk we got rescheduled now we're running
+Pablo [13:32]: with the next instructions unit has our data but again to this point of view of the application nothing happened
+Pablo [13:44]: either side of your library you have your nano subject your hardware is really good at it you have vanilla second order operating systems you're really good at it
+Pablo [13:46]: microseconds are going to be the challenge
+Pablo [13:56]: some things that take the span of microseconds and again sending the packet from one end of the data center and back that's going to be a few microseconds
+Pablo [14:07]: rtt is ground trip time so packet for one of the data center the other in the back so the acknowledgment high end flash show your you know m two drives or your
+Pablo [14:09]: moder
+Pablo [14:10]: n ssds
+Pablo [14:17]: ten to microseconds could be from getting things to and from a gpu or other accelerator can also
+Pablo [14:18]: do kinds of microseconds
+Pablo [14:23]: so the problem with hardware techniques is they don't really handle these events
+Pablo [14:28]: because there's just not enough independent instructions still these micro
+Pablo [14:29]: scopes
+Pablo [14:36]: and then there's also not enough hyper threads available to also be able to hyp
+Pablo [14:45]: e right so again with the nanosecond scale advantage this cpu really only needs to do a bit of extra work for you know
+Pablo [14:47]: having maybe about ten or so instructions
+Pablo [14:50]: and that's really easy for it
+Pablo [14:50]: too
+Pablo [14:56]: and i feel like there's that we have to basically be able to have this independent strain
+Pablo [15:00]: where there's no data plantation
+Pablo [15:02]: and that's
+Pablo [15:03]: quite unlikely to
+Pablo [15:03]: happen
+Pablo [15:11]: we look at our operating system our software side of things like context switching are going to be too high
+Pablo [15:16]: overhead so again your typical scheduler times wise is going to be a millisecond
+Pablo [15:19]: level and this is really going to be too expensive to handle your vitamin
+Pablo [15:20]: scale event
+Pablo [15:25]: so your you know context switching to too many overnight or too much overhead
+Pablo [15:27]: in order to hide
+Pablo [15:33]: these five foot segments this is why the paper calls things that are going to add up
+Pablo [15:38]: over time of your program not very good techniques right now feel like
+Pablo [15:48]: and again both of these papers will kind of report the second ghost paper we'll be talking about you know clever ways to deal with
+Pablo [15:48]: this
+Pablo [16:06]: one of the ways we can kind of handle these five per second scale effects of these case users in this programming model so things like demi kernel sort of utopians you know pick up some events wait good to finish at some point but again kind of reasoning about asynchronous effect
+Pablo [16:07]: s is kind of hard
+Pablo [16:12]: to pass
+Pablo [16:13]: along
+Pablo [16:25]: students
+Pablo [16:29]: you might
+Pablo [16:29]: wonder
+Pablo [16:30]: maybe why is this
+Pablo [16:31]: the case
+Pablo [16:33]: where
+Pablo [16:33]: else are
+Pablo [16:35]: examples
+Pablo [16:36]: here you might
+Pablo [16:37]: have
+Pablo [16:38]: a packet that comes in
+Pablo [16:39]: on our network
+Pablo [16:39]: card
+Pablo [16:44]: it should basically make it all the way up to an application in order to handle it again it's application
+Pablo [16:48]: might have a tight bound on
+Pablo [16:53]: process and respond especially
+Pablo [17:00]: in this case you know we might have multiple force so we have you know one application running on one floor and another applic
+Pablo [17:00]: ation
+Pablo [17:03]: kind of like the setup
+Pablo [17:07]: so one of the solutions of overhead
+Pablo [17:14]: well the first thing that can go wrong is we might have let's say the package meant for application one
+Pablo [17:17]: application one isn't currently scheduled
+Pablo [17:20]: then we need to be able to contact which direction schedule it and have
+Pablo [17:21]: it run
+Pablo [17:23]: so that's already going to add
+Pablo [17:25]: a lot
+Pablo [17:30]: quite a bit of time
+Pablo [17:33]: figure that process
+Pablo [17:41]: there could also be lots of queuing right so
+Pablo [17:48]: you have the packet weight in the network driver receiver community process by the network hardware
+Pablo [17:55]: itself and then making weight in our plastic socket you can be processed by the network document operating system
+Pablo [18:01]: in the case of itself might be waiting at a review there are going to be scheduled
+Pablo [18:06]: so there's lots of key limpet slows down even more microseconds budget
+Pablo [18:14]: worse we should have load balance on our ccus against one of those things that both of the schedule papers will talk about is you know
+Pablo [18:15]: keeping these
+Pablo [18:20]: balances and how they do that so again you can see that on the left
+Pablo [18:27]: you might have a lot of processes ranging in four one trying to do but no processes in four twenty one periods
+Pablo [18:35]: the process that's like thirty line to run on core
+Pablo [18:35]: one
+Pablo [18:37]: and then we just run on four
+Pablo [18:38]: q
+Pablo [18:47]: i think i notice there's load balancer linux scheduler that will try to balance use but in this load balancer one hundred
+Pablo [18:52]: years as form milliseconds that's already going to be higher than our microseconds
+Pablo [18:53]: scale
+Pablo [18:56]: another thing that involves

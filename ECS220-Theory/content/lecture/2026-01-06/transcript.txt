@@ -1,0 +1,1096 @@
+Pablo [0:26]: on
+Pablo [0:26]: canvas
+Pablo [0:39]: and you'll submit the homework and create scope and canvas the reason it's easiest for us to create it on gradescope it's got a nice tas
+Pablo [0:40]: k
+Pablo [0:47]: but also we do this peer review and that's more straightforward
+Pablo [0:50]: okay
+Pablo [0:54]: and if you have questions on homework
+Pablo [0:58]: or logistical questions or any kind of generic non specific view
+Pablo [1:01]: please post it on fiat
+Pablo [1:02]: i'll just tell
+Pablo [1:04]: you please post this on pia
+Pablo [1:07]: zza because if it's not specific to you
+Pablo [1:12]: some general technical question probably other students have the same question
+Pablo [1:13]: i want everybody to be able to see
+Pablo [1:21]: okay so the gradient is mostly the homework but also just peer review you can work in groups if you want
+Pablo [1:24]: you don't have to it doesn't have to be the same group every time
+Pablo [1:28]: it is a bit of a headache because i think stuff on canvas
+Pablo [1:32]: i think i finally learned my lesson of me to be careful about that
+Pablo [1:37]: but probably we'll do something where you will email mina
+Pablo [1:54]: who's the ta who you want to work with and she'll manually set it there's a spending place on self sign up and then uc davis won't let it happen because they don't want you to know what other students are in class that would violate their prices
+Pablo [1:59]: so please look straightforward and don't look at anybody's face so that you don't know who's in
+Pablo [1:59]: the class
+Pablo [2:04]: so unfortunately
+Pablo [2:06]: we'll have to organize that more manually
+Pablo [2:10]: and the reason for the group work is
+Pablo [2:19]: it can help photograph so i want you to make friends with people and talk with it it is not so that you only have to think about one of the three problems
+Pablo [2:20]: or something
+Pablo [2:21]: or the other
+Pablo [2:22]: that is not
+Pablo [2:29]: moving on split up the work and fortunately
+Pablo [2:34]: somebody doesn't read this carefully enough every quarter
+Pablo [2:39]: if you do split up the work somebody cheats
+Pablo [2:40]: it's on all of you
+Pablo [2:43]: be responsible for what your group is
+Pablo [2:44]: handing
+Pablo [2:49]: and of course it should be from the group
+Pablo [2:52]: working group so you can look really on each other
+Pablo [2:57]: but acknowledging we talk to other people obviously don't use ai to
+Pablo [2:58]: answer the questions
+Pablo [3:03]: if you look at websites to get help that's fine but cite your sources
+Pablo [3:06]: this is just good practice
+Pablo [3:07]: with paper writing
+Pablo [3:09]: okay
+Pablo [3:16]: pyramid the homework study groups peer review you're going to do individually and you'll be basically assigned other submissions
+Pablo [3:19]: to repeat now you're not assigning a grade
+Pablo [3:23]: we will assign the grades
+Pablo [3:26]: but you're reviewing it as though you
+Pablo [3:30]: have an astro so what kind of thing is there the point here
+Pablo [3:33]: the
+Pablo [3:34]: scientific side
+Pablo [3:35]: of graduate school
+Pablo [3:49]: so what are things to think about when you're reviewing a paper or this case a proof of a theorem interface is the explanation detailed enough for you to follow right are the statements and definitions precise
+Pablo [3:55]: and form or some statement ambiguous and it's not clear these are the kinds of things we think about when we're trying to figure out
+Pablo [3:56]: how to
+Pablo [4:01]: break we can't tell what you're saying we can't tell whether it's correct right so you should be doing the same kind of drug
+Pablo [4:05]: but just formal details
+Pablo [4:10]: are not very often effective proof is there enough intuition to help understand
+Pablo [4:16]: nothing but dense symbolic mathematics that's not a very good proof either even if there's no mistake
+Pablo [4:18]: so give some intuition
+Pablo [4:26]: help the whole point of a proof is to help somebody understand why something's true
+Pablo [4:45]: if they're intelligent and educated about the subject matter but they can't see why it's true right so that's the whole point so the point of peer review is to try to take you off this rail thinking that the purpose of the homework is to do this elaborate dance for me and the ta where we know the answer but it's not the point is to figure out how to convince somebody else
+Pablo [4:48]: that a formal statement is true
+Pablo [4:51]: when they're educated enough to see the principal
+Pablo [4:54]: you're going to find
+Pablo [4:56]: out
+Pablo [4:57]: when you redeem review
+Pablo [4:57]: s
+Pablo [5:04]: a lot of times
+Pablo [5:07]: illustrate
+Pablo [5:08]: and it can help
+Pablo [5:09]: with this
+Pablo [5:09]: part
+Pablo [5:12]: not exactly sure what somebody saying
+Pablo [5:14]: with a little bit of precise but you get an example
+Pablo [5:15]: of
+Pablo [5:15]: this
+Pablo [5:18]: there's
+Pablo [5:19]: two different ways to inter
+Pablo [5:20]: pret
+Pablo [5:21]: the example
+Pablo [5:22]: cleared up
+Pablo [5:22]: before
+Pablo [5:23]: those two presentations
+Pablo [5:26]: but
+Pablo [5:28]: not
+Pablo [5:30]: you should
+Pablo [5:31]: use those to
+Pablo [5:32]: improve your teachers
+Pablo [5:33]: so
+Pablo [5:34]: i'm trying to encourage you to
+Pablo [5:35]: thank your audience
+Pablo [5:39]: other
+Pablo [5:40]: people sit
+Pablo [5:41]: ting around
+Pablo [5:43]: you can't
+Pablo [5:44]: explain things to each other
+Pablo [6:01]: this course
+Pablo [6:02]: for is to learn how to
+Pablo [6:03]: solve
+Pablo [6:04]: not to find
+Pablo [6:04]: solutions
+Pablo [6:08]: so
+Pablo [6:10]: what's the best way to learn how to
+Pablo [6:10]: solve a problem
+Pablo [6:11]: well this is
+Pablo [6:12]: all
+Pablo [6:13]: the best
+Pablo [6:14]: way is to try really hard
+Pablo [6:15]: and if you fail
+Pablo [6:17]: and it only then sees someone else's solution
+Pablo [6:21]: but this is not a way to learn how to solve a problem
+Pablo [6:25]: to just leap straight to seeing a solution without having thought about it
+Pablo [6:31]: and unfortunately the way the lecture goes i'm going to try to stop and pause and make and think about things
+Pablo [6:45]: but the lecture is closer to this than the homework because you're going to think about some things i say a little bit and then i'll show you a solution the point of the homework is to make it unlike lecture where you don't just immediately
+Pablo [6:46]: see how to do something
+Pablo [6:47]: before getting
+Pablo [6:50]: so treated that way
+Pablo [6:53]: and don't try to just go looking for solutions immediately without
+Pablo [6:54]: having
+Pablo [6:55]: okay
+Pablo [7:07]: so we want to stay on tasks so we will enforce deadlines but sometimes things crop up at the last minute
+Pablo [7:11]: so the way the kind of late penalty works
+Pablo [7:15]: is if you're late a little bit you only get a little bit off
+Pablo [7:18]: and if you're late by two days okay
+Pablo [7:32]: then you're done but anywhere in between zero hours late and forty eight hours late there's just this kind of sliding scale and you weigh even twelve hours and you'll still get above ninety nine percent
+Pablo [7:42]: so the idea here is just that there's no kind of sharp drop off so there's no one time you're saying yeah it was only five minutes well if you're only five minutes late you only get zero one percent
+Pablo [7:45]: okay
+Pablo [7:46]: next slide
+Pablo [7:47]: unfortunately
+Pablo [7:48]: is not addressed to most of you
+Pablo [7:50]: i don't
+Pablo [7:51]: know who stressed that
+Pablo [7:52]: but
+Pablo [7:53]: unfortunately
+Pablo [7:55]: they saw one hundred people
+Pablo [7:57]: don't really understand
+Pablo [7:58]: this is part of
+Pablo [7:59]: the codependent
+Pablo [8:00]: conduct
+Pablo [8:34]: or solution
+Pablo [8:35]: these
+Pablo [8:36]: white houses
+Pablo [8:39]: i don't think it's fair
+Pablo [8:43]: not what
+Pablo [8:43]: you're doing
+Pablo [8:44]: in viol
+Pablo [8:45]: ation
+Pablo [8:49]: generally i just kind of had to ignore stuff like that
+Pablo [8:50]: but if somebody
+Pablo [8:51]: really
+Pablo [8:55]: repeats it over and over i've had a few quarters or somebody does that
+Pablo [8:55]: remind you of
+Pablo [8:56]: this
+Pablo [8:56]: policy
+Pablo [9:00]: as emotional pressure is not a way to
+Pablo [9:02]: be her
+Pablo [9:02]: self
+Pablo [9:03]: okay
+Pablo [9:03]: anyway
+Pablo [9:08]: like i said this is not directed to most of you so if that sounds a little scary
+Pablo [9:10]: you've talked to us about that
+Pablo [9:12]: don't
+Pablo [9:13]: be
+Pablo [9:18]: repetitive if we've already
+Pablo [9:19]: said no
+Pablo [9:24]: homework zero is a
+Pablo [9:25]: title
+Pablo [9:30]: a lot easier than
+Pablo [9:31]: subsequent hallmark
+Pablo [9:32]: it doesn't that is nature
+Pablo [9:33]: you have
+Pablo [9:36]: the only one that's going to be automated
+Pablo [9:37]: right
+Pablo [9:38]: everything else you'll be prov
+Pablo [9:39]: ing
+Pablo [9:40]: and like i said
+Pablo [9:43]: there's more details in the syllabus on canvas i just wanted to hit the
+Pablo [9:44]: maker
+Pablo [9:48]: so that's it for logistics
+Pablo [9:51]: let's get to the more interesting
+Pablo [9:58]: okay so this is the textbook nature of computation i really like it
+Pablo [10:07]: 's not the most used one for a course like this part of the reason i like it is the first author chris morris i could physicist
+Pablo [10:13]: but one of his rare physicists who just became an expert theoretical computer scientist
+Pablo [10:16]: so has kind of a perspective on some of these things
+Pablo [10:19]: she
+Pablo [10:20]: also does viol
+Pablo [10:21]: ate
+Pablo [10:22]: her research
+Pablo [10:23]: field
+Pablo [10:24]: that also
+Pablo [10:25]: had eyes in theater
+Pablo [10:29]: so we have a lot of examples
+Pablo [10:30]: that are based on
+Pablo [10:31]: her models and stuff
+Pablo [10:35]: related
+Pablo [10:37]: found
+Pablo [10:38]: ational
+Pablo [10:44]: kind
+Pablo [10:44]: of thing
+Pablo [10:55]: a path through the graph it starts and ends at the same
+Pablo [10:58]: and the so called or larian cycle
+Pablo [11:02]: in that particular euler is one that visits every edge in that graph exactly once
+Pablo [11:03]: doesn't leave any out
+Pablo [11:04]: and it doesn't
+Pablo [11:09]: run over any this graph g one here happens to have on the letter
+Pablo [11:09]: a
+Pablo [11:13]: might not be obvious but let's just see what star today we go to b
+Pablo [11:17]: and for b to c back to a
+Pablo [11:21]: assigned to visit nodes more than once but we have to visit each edge
+Pablo [11:25]: so again
+Pablo [11:26]: we can go
+Pablo [11:27]: from
+Pablo [11:28]: there
+Pablo [11:31]: the individually
+Pablo [11:32]: verify
+Pablo [11:33]: in oh
+Pablo [11:37]: that has
+Pablo [11:38]: an hilarious
+Pablo [11:42]: here's a
+Pablo [11:42]: graph
+Pablo [11:53]: so it does
+Pablo [11:54]: not
+Pablo [11:58]: and
+Pablo [11:59]: try to find one
+Pablo [11:59]: all right
+Pablo [12:00]: let's say
+Pablo [12:01]: it's very symmetric
+Pablo [12:06]: so let's start today
+Pablo [12:07]: well
+Pablo [12:08]: wherever we go
+Pablo [12:17]: and
+Pablo [12:19]: as you try to find
+Pablo [12:23]: daily
+Pablo [12:24]: did you realize
+Pablo [12:25]: i have
+Pablo [12:26]: i'm in a
+Pablo [12:28]: and i leave it on one edge
+Pablo [12:32]: and to cover another edge i have to come back in today and then i have to leave a through that third edge
+Pablo [12:33]: and if you kind of reason through it
+Pablo [12:40]: everything worked here because whenever we entered a node we could leave it on one edge at the end of again we leave it on another
+Pablo [12:44]: there was an even number of edges connected to these nodes but here we have an odd number
+Pablo [12:47]: and in fact that leads to a theorem that euler
+Pablo [12:48]: proved
+Pablo [12:49]: which is that
+Pablo [12:52]: an undirect i get slightly more complicated
+Pablo [12:55]: assume the graph is connected
+Pablo [12:57]: an eulerian cycle exists
+Pablo [12:59]: in a
+Pablo [13:01]: mechanograph if and only if every node has an even number of
+Pablo [13:04]: neighbors right so that actually could be formally true
+Pablo [13:06]: in fact it's not too hard to prove
+Pablo [13:07]: we're just not going to do it
+Pablo [13:11]: but that's the intuition if you have an even number of neighbors great
+Pablo [13:19]: then you can enter a node exactly as many times as you leave it but then you know it has an odd number of neighbors you're going to be stuck in not being able to
+Pablo [13:29]: visit that third edge without getting trapped and then let's say a p and then the third edge and then now you're stuck at a
+Pablo [13:30]: layout
+Pablo [13:34]: okay
+Pablo [13:42]: that's a very quick way to answer the question given a graph does it happen or lariat you just run around every node
+Pablo [13:43]: count how many
+Pablo [13:46]: neighbors it has if any of them have an odd number you say
+Pablo [13:47]: no
+Pablo [13:57]: if they have an even number you say yes and if you take an undergraduate algorithms course you can turn that into a more constructive algorithm that actually gives you the eulerian
+Pablo [13:57]: cycle
+Pablo [14:00]: or not
+Pablo [14:02]: this is the simplest thing to do
+Pablo [14:04]: this is a very related idea
+Pablo [14:06]: called
+Pablo [14:07]: the hamiltonian site
+Pablo [14:08]: named after
+Pablo [14:17]: and it sounds like almost the same problem right a hamiltonian cycle is again a cycle
+Pablo [14:20]: atom starts and ends at the same node
+Pablo [14:23]: and it moves with each node exactly once
+Pablo [14:25]: so maybe it'll miss some edges
+Pablo [14:27]: but it's going to visit each node exact
+Pablo [14:29]: and here's a graph
+Pablo [14:32]: and it's modestly size it's not exactly obvious
+Pablo [14:39]: if it has a hamiltonian cycle it turns out it does so here's one that misses some edges
+Pablo [14:44]: but hopefully it's clear this visit every node exactly once every node has a
+Pablo [14:45]: red edge
+Pablo [14:48]: so the answer here is yes
+Pablo [14:52]: and here's a graph that does not have a cycle
+Pablo [14:59]: and pretty easy to see
+Pablo [15:02]: if you start at the scene you leave it
+Pablo [15:03]: and you're not allowed to even see
+Pablo [15:04]: so you're stopping
+Pablo [15:05]: atop
+Pablo [15:05]: sy
+Pablo [15:07]: you come into see
+Pablo [15:08]: there's the one on the other neighbors
+Pablo [15:09]: or the third neighbor is going to be
+Pablo [15:12]: the only way to visit every node at
+Pablo [15:13]: least once a
+Pablo [15:15]: week
+Pablo [15:19]: but is there a general rule
+Pablo [15:25]: but
+Pablo [15:28]: we don't really know a way to turn that into
+Pablo [15:29]: general proper
+Pablo [15:29]: ly
+Pablo [15:30]: as simple as this
+Pablo [15:30]: over here
+Pablo [15:31]: we
+Pablo [15:32]: can tell
+Pablo [15:33]: very simple
+Pablo [15:36]: then
+Pablo [15:37]: that has to happen
+Pablo [15:38]: we don't
+Pablo [15:38]: know
+Pablo [15:46]: let's think about
+Pablo [15:47]: how we would
+Pablo [15:48]: use this insight
+Pablo [15:50]: for lariat cycles
+Pablo [15:55]: well what would be an algorithm to test whether it has an olari
+Pablo [15:59]: we'll get a little more into big o notation
+Pablo [16:19]: but if you want to test the degree of every no one way to do that would be let's say you're representing the graph as an adjacency matrix then you just scan every row count how many ones there are you see an even number in every row great that means every graph that every node has even degree
+Pablo [16:20]: otherwise
+Pablo [16:21]: if you
+Pablo [16:22]: find not
+Pablo [16:23]: number one that are
+Pablo [16:24]: about
+Pablo [16:26]: degree
+Pablo [16:33]: and if you have end nodes in the graph that adjacency matrix the size n squared that's going to be roughly something like old n squared
+Pablo [16:34]: to do that
+Pablo [16:39]: but we don't have a similar shortcut that we know for hamiltonian cycles
+Pablo [16:43]: the obvious way to do it is not actually the best in fact
+Pablo [16:52]: there's a homework problem i sometimes assign where we get back to a better but still bad algorithm
+Pablo [16:53]: for hamilton
+Pablo [16:59]: ian cycle but if we just think about what is the absolutely naive way to test that the graph of hamiltonian
+Pablo [17:08]: well what would a hamiltonian cycle look like it would be a cycle within a nose in fact we could think of it
+Pablo [17:11]: because it has to visit every node exactly once
+Pablo [17:20]: we would give a label to all the nodes like just label them one through n it would be a permutation of a would just be some order in which to visit them
+Pablo [17:28]: because if you're going to visit every node exactly once then the path is going to be described by the label visit
+Pablo [17:36]: and how many permutations and n nodes are there well there's n factorial permutation so the obvious thing to do would be check all the permutations
+Pablo [17:40]: but most of those permutations are not going to be valid
+Pablo [17:50]: paths because most of them are going to have the property that two adjacent nodes in that permutation are not actually connected by an edge and it's not actually a valid pat
+Pablo [17:53]: h but there is a hamiltonian cycle it will be one of those permutations
+Pablo [18:04]: so we just check every permutation and see are any of them a valid path or any of them have the property that every pair of adjacent nodes in the permutation is connected
+Pablo [18:07]: this will be roug
+Pablo [18:09]: hly a little bit more
+Pablo [18:10]: so you have to check
+Pablo [18:16]: the work would be iterating over all the m factorial permutations of the
+Pablo [18:17]: nutrients
+Pablo [18:31]: and how big does n factorial well it's big one way to see it's at least exponential in n is to observe while multiplying all these numbers almost all of which are bigger than two and that's going to be at least as big as just if we replace them all with two
+Pablo [18:34]: but what's two multiplied
+Pablo [18:35]: by
+Pablo [18:36]: two in the end
+Pablo [18:44]: so there's very quick argument that n factorial is at least two to the n and of course in this course we're going to be very concerned about the difference
+Pablo [18:47]: between these two very similar looking expressions
+Pablo [18:53]: one where the n is down in the base and it's merely polynomial but one where the n is up in the exponent and it's exponential
+Pablo [18:58]: and of course these grow much faster there's a much much much slower algorithm
+Pablo [19:10]: so here's an example of the kind of question that we focus on in this course is there a fast way to decide if a graph has a hamiltonian side
+Pablo [19:21]: if there is a fast algorithm and in this course we're going to define fast polynomial time and we'll get into exactly what that means
+Pablo [19:25]: but shouldn't have been exposed to the concept of course ecs
+Pablo [19:29]: if there's a following
+Pablo [19:34]: well it turns out there are polynomial biologists for thousands of
+Pablo [19:46]: other natural and important problems they even hamiltonian cycle kind of looks artificial but there are sort of more important natural problems that are best described as client
+Pablo [19:48]: path or cycle
+Pablo [19:59]: and those thousands of other problems that if we could quickly decide hamiltonian cycle we can quickly decide all of them as well but we don't know how to decide any of them
+Pablo [20:05]: and what makes this true is the fact that the hamiltonian cycle problem and so called np confidence
+Pablo [20:11]: one of the definitions look at the different
+Pablo [20:20]: but because all those other problems are contained in the class n the finalists in later chapters
+Pablo [20:30]: we know that any np complete problem has a polymeal time algorithm then they all do and in fact not only all the complete problems but all the problems through this bigger class called
+Pablo [20:31]: in
+Pablo [20:33]: but this contains
+Pablo [20:37]: like ninety nine percent of the actual
+Pablo [20:38]: natural
+Pablo [20:39]: problem
+Pablo [20:40]: for some reason
+Pablo [20:41]: and they
+Pablo [20:41]: will get to that mission
+Pablo [20:42]: and
+Pablo [20:45]: for some reason there's this kind of cool about our world
+Pablo [20:55]: that most of the problems we tend to encounter in practice are contained in empathy very roughly a problem as an np you don't necessarily know how to solve it
+Pablo [21:01]: but if somebody presents you with solutions and say hey i think i've solved it you can easily check whether the solution is that
+Pablo [21:05]: and that property is tend to hold for most of the
+Pablo [21:07]: problem
+Pablo [21:12]: because there's thousands of those who very much like to solve efficiently and we don't know how
+Pablo [21:16]: that's evidence that perhaps there is no
+Pablo [21:18]: fascinating
+Pablo [21:19]: okay
+Pablo [21:25]: so a related question well what if there is a hamiltonian cycle into the graph maybe you want to know what it is
+Pablo [21:35]: so we're going to focus a lot on these so called decision problems which is a problem of the form give them some input give back a boolean answer yes or no
+Pablo [21:44]: but most of the problems we care about are what we would call search problems you're given somebody richard that yes don't answer this case
+Pablo [21:46]: you don't want to know is there
+Pablo [21:51]: no there isn't one
+Pablo [21:58]: and it
+Pablo [21:59]: turns out
+Pablo [22:02]: to nearly decide
+Pablo [22:03]: what her ass has
+Pablo [22:04]: animal
+Pablo [22:10]: that actually implies that there's a fast way to actually produce the hamiltonian cycle if it exists
+Pablo [22:13]: and in fact this is a homer problem
+Pablo [22:21]: and so we're going to focus a lot on decision problems because they're kind of mathematically cleaner
+Pablo [22:51]: like when the answer is just yes or no that's a simpler kind of thing to study than when the answer can be some more complicated object but there is this very tight connection particularly within the class and between search problems and decision problems and there's a sense in which the search variant of a problem is actually essentially looks like it might be harder looks like target actually find animal podium cycle that to merely say weather one exists and yet
+Pablo [22:55]: it turns out that those problems are of equivalent either both of them
+Pablo [22:59]: cannot be done in polynomial time or both of them can't do that
+Pablo [23:01]: so here's a related question
+Pablo [23:07]: and this is getting at this so called mv class that we're going to talk
+Pablo [23:13]: is there a fast way to check if a given cycle or maybe a given permutation of nodes
+Pablo [23:20]: and a graph is hamiltonian so here we're talking about the search problem given just the graph
+Pablo [23:23]: does it have the hamiltonian
+Pablo [23:29]: what is it versus i give you a sequence of notes and i claim as a hamiltonian cycle
+Pablo [23:31]: but i might be wrong
+Pablo [23:36]: maybe i repeated enough maybe two adjacent nodes are actually not connected by an edge
+Pablo [23:41]: but if i claim someone's a hamiltonian cycle you can very quickly tell whether i'm on
+Pablo [23:50]: you just check that every node appears exactly once and then every pair of adjacent nodes is connected by an edge and at the first node equals the last
+Pablo [24:01]: so this can be done kind of unconditionally these are conditional statements about oh well what if some other problems have polynomial time algorithms this is just unconditional
+Pablo [24:07]: you can efficiently verify whether a given sequence of nodes in a graph is a hamiltonian cycle
+Pablo [24:09]: so let's dig into this idea
+Pablo [24:12]: because this is going to be kind of dominating the first part
+Pablo [24:15]: so we have this problem
+Pablo [24:22]: she will be used
+Pablo [24:24]: if you want to
+Pablo [24:25]: help
+Pablo [24:33]: verification
+Pablo [24:36]: it would take as
+Pablo [24:37]: not only that
+Pablo [24:37]: crap
+Pablo [24:40]: but also this path
+Pablo [24:40]: the sequence
+Pablo [24:41]: of the oc
+Pablo [24:44]: and you want to
+Pablo [24:45]: check out first i'll
+Pablo [24:46]: add it in the path
+Pablo [24:48]: every
+Pablo [24:52]: pair of adjacent nodes is actually connected by an edge and that every node appears exactly
+Pablo [24:56]: and that's pretty easy
+Pablo [24:56]: to do
+Pablo [24:58]: i'm not
+Pablo [25:01]: going to dwell on the exact complexity of it
+Pablo [25:03]: but that's literally going to be polynomial
+Pablo [25:09]: here's another kind of problem
+Pablo [25:11]: you're given an integer
+Pablo [25:12]: bigger than one
+Pablo [25:22]: okay the full factoring search problem would be like output its prime factorization but here's a simpler variant
+Pablo [25:26]: that if you can do this you can find the pole prime factorization
+Pablo [25:31]: i just want you to if they exist output two integers p and q
+Pablo [25:34]: that are both bigger than one
+Pablo [25:35]: and their product is
+Pablo [25:44]: so this has a clear verification algorithm if i claim hey
+Pablo [25:53]: here's a integer n here's these two other integers p and q i claim that their product was n that's easy to check you just multiply them together
+Pablo [25:55]: standard
+Pablo [25:56]: grade
+Pablo [26:06]: and let's contrast this with kind of the reverse problem you've just given the integers p and q and you want to output their product right
+Pablo [26:09]: so this can clearly be done in palo
+Pablo [26:22]: this is essentially the verification algorithm for this factoring problem up here but the factoring problem itself you're not getting you're just given n and you're asked hey find me a pair of integers b into bolt bigger than one
+Pablo [26:24]: of course you can always output one and
+Pablo [26:26]: n but non trivial
+Pablo [26:27]: and they're not
+Pablo [26:33]: obvious how to do that and we don't know polynomial nine algorithm
+Pablo [26:47]: there's better ways than brute force search of all possible divisors up to the square root of n but they take time exponential in again we'll get more in the details here exponential
+Pablo [26:51]: it's needed
+Pablo [26:54]: we'll
+Pablo [26:54]: get into those
+Pablo [26:55]: detail
+Pablo [26:58]: on
+Pablo [27:00]: amazing problem multiplication
+Pablo [27:01]: a hard problem factoring
+Pablo [27:08]: but the relationship is that factoring can be easily verified because of the verification algorithm essentially is the multiplication
+Pablo [27:19]: so there's a couple examples of np from hamiltonian path and this decision variant of factor
+Pablo [27:23]: ing but not every problem we're going to look at
+Pablo [27:27]: actually is contained in np and again i know we have formally defined it yet we will
+Pablo [27:33]: you know here's an example of
+Pablo [27:39]: a problem where it's not even obvious how to check whether a purported solution
+Pablo [27:43]: so may i get u of input chessboard
+Pablo [27:47]: and the output i want if it exists is a checkmate strategy
+Pablo [27:48]: for
+Pablo [27:52]: test
+Pablo [27:53]: position
+Pablo [27:55]: where white women and two hundred sixty
+Pablo [28:00]: plan
+Pablo [28:02]: e
+Pablo [28:04]: what would be the
+Pablo [28:05]: verification
+Pablo [28:06]: how
+Pablo [28:07]: do i describe
+Pablo [28:08]: the strategy
+Pablo [28:10]: first
+Pablo [28:11]: wife is going to
+Pablo [28:12]: blue one of their pieces
+Pablo [28:17]: i'm going to try to
+Pablo [28:18]: do it all those things
+Pablo [28:19]: and then for every
+Pablo [28:20]: one of those
+Pablo [28:20]: i got to say
+Pablo [28:21]: well what would i do
+Pablo [28:22]: white in response to that
+Pablo [28:24]: several things
+Pablo [28:28]: and unfortunately even black can only have two choices in each step
+Pablo [28:30]: we're going to do that two hundred and sixty two times
+Pablo [28:32]: which means we have
+Pablo [28:34]: a we're going to have treat two that's two hundred and sixty two
+Pablo [28:35]: possible
+Pablo [28:37]: thanks to the floor
+Pablo [28:43]: so a question like this is an example of something that isn't obvious that even contained in this medium
+Pablo [28:45]: since the answer might be yes
+Pablo [28:46]: and yet
+Pablo [28:55]: possible
+Pablo [28:56]: that
+Pablo [28:57]: i move and
+Pablo [28:58]: move and i move
+Pablo [28:59]: and that seems to
+Pablo [29:00]: require special
+Pablo [29:05]: so just to point out we're going to focus a lot on these so called nd problems
+Pablo [29:13]: where we don't know how to solve them but we do know how to verify potential solution but then technically not everything that we care about would even be efficiently verified
+Pablo [29:17]: so here's the sort of lofty ideas we're going to cover
+Pablo [29:18]: in this course
+Pablo [29:21]: which problems have a shortcut
+Pablo [29:29]: that leads to a fast algorithm like eulerian cycle where again if we think of the number of possible cycles in the graph i mean it's huge
+Pablo [29:36]: but eulerian cycle has the property we don't have to look at all those cycles we just have to go around every node ask what's its degree
+Pablo [29:38]: see if any of them are on
+Pablo [29:43]: which other require exhaustive search hamiltonian cycle seems to be an example
+Pablo [29:50]: again there's ways to avoid enumerating every possible permutation of nodes but we don't know of an algorithm
+Pablo [29:54]: that kind of gets out of checking all these exponentially many possible
+Pablo [30:00]: now many of these problems hamiltonian path or cycle
+Pablo [30:02]: they're both
+Pablo [30:03]: equally hard
+Pablo [30:07]: graph coloring we're going to get to all these boolean satisfiability
+Pablo [30:12]: all these problems are in a formal sense that we will define equally hard
+Pablo [30:15]: we don't know how hard they are but however hard they are they're all the same
+Pablo [30:19]: they all are easy or they all are difficult and we don't know which is true what we think
+Pablo [30:20]: they're
+Pablo [30:24]: but we do know that they're an equivalent
+Pablo [30:24]: difference
+Pablo [30:30]: if any of them are hard they all are many of them are easy they're all easy what do they have in common
+Pablo [30:32]: why are they all equal
+Pablo [30:40]: so it turns out
+Pablo [30:56]: if there's say the phishing algorithm to find hamiltonian paths and graphs or any of these other so called then that has pretty profound implication i mean i think it's not true most theoretically theater scientists don't actually believe but that's true but if it were
+Pablo [30:58]: it's actually quite profound for example
+Pablo [31:06]: there would be an efficient algorithm to find short proofs of all the major open problems in mathematics
+Pablo [31:15]: the riemann hypothesis or any of the other remaining clay millennium prize problems or any of these open problems
+Pablo [31:21]: and if mathematics harder than this
+Pablo [31:31]: we kind of feel like it requires intuition and creativity but there was this vision algorithm there would actually be an efficient algorithm to automate all of mat
+Pablo [31:33]: find a short roof
+Pablo [31:34]: of all the
+Pablo [31:38]: so in other words can we prove that finding proof is hard
+Pablo [31:40]: seems like
+Pablo [31:46]: can one programming language solve problem
+Pablo [31:48]: what do i mean by programming
+Pablo [31:49]: exactly
+Pablo [32:00]: i'm going to use the phrase model of computation to be somewhat synonymous with programming language it's going to go a bit beyond your standard c plus plus
+Pablo [32:01]: python
+Pablo [32:02]: et cetera
+Pablo [32:05]: and we're going to see examples of very simple systems
+Pablo [32:06]: invol
+Pablo [32:10]: ving counters tiles that can do computation
+Pablo [32:19]: shackles
+Pablo [32:28]: we
+Pablo [32:29]: gave ourselves enough
+Pablo [32:30]: back that we solve
+Pablo [32:30]: many hours
+Pablo [32:51]: and then the last
+Pablo [32:52]: chap will study
+Pablo [32:53]: in correspond
+Pablo [32:54]: ence
+Pablo [32:56]: what if we don't care so much about time
+Pablo [32:58]: we just want to use as little memory as possible
+Pablo [33:01]: how does that relate to the time you need
+Pablo [33:05]: require lots of
+Pablo [33:05]: memories
+Pablo [33:06]: intrinsically
+Pablo [33:09]: that's
+Pablo [33:10]: a rough outline
+Pablo [33:11]: of
+Pablo [33:12]: coverage
+Pablo [33:15]: so now
+Pablo [33:17]: that was
+Pablo [33:18]: a very high level
+Pablo [33:19]: let's get a little more
+Pablo [33:20]: detail
+Pablo [33:23]: okay
+Pablo [33:26]: like i said we're going to focus on the so called decision
+Pablo [33:30]: these are in a sense questions
+Pablo [33:34]: that are a yes no answer about something
+Pablo [33:36]: right so one way you could describe the eulerian
+Pablo [33:39]: path problem
+Pablo [33:43]: or is given a graph
+Pablo [33:45]: does it have
+Pablo [33:52]: a normal area graph so we'll say a decision problem instance is a particular input that graph right there that's an input
+Pablo [33:53]: it either has an euler
+Pablo [33:54]: ian cycle
+Pablo [33:55]: or it doesn't
+Pablo [33:56]: cause
+Pablo [33:57]: it is
+Pablo [34:00]: problem
+Pablo [34:01]: itself
+Pablo [34:02]: sense
+Pablo [34:03]: all canc
+Pablo [34:04]: er so one way
+Pablo [34:07]: given our input
+Pablo [34:07]: question
+Pablo [34:10]: yes
+Pablo [34:13]: so both of these are
+Pablo [34:14]: kind of not
+Pablo [34:16]: often write it
+Pablo [34:17]: but when we want to
+Pablo [34:18]: start studying these things
+Pablo [34:19]: more formally
+Pablo [34:20]: we need to say okay
+Pablo [34:21]: what
+Pablo [34:22]: al object
+Pablo [34:23]: is
+Pablo [34:27]: one way we could formalize
+Pablo [34:34]: an is it is the infinite set of all eulerian
+Pablo [34:35]: graphs
+Pablo [34:36]: all graphs
+Pablo [34:40]: that happen or that in this case for some reason i switch to orlerian path so now we no longer
+Pablo [34:41]: require start
+Pablo [34:43]: these are all
+Pablo [34:44]: malarian
+Pablo [34:46]: graphs
+Pablo [34:47]: because there's a path
+Pablo [34:48]: not necessarily
+Pablo [34:49]: a cycle
+Pablo [34:50]: gets
+Pablo [34:51]: every know exactly
+Pablo [34:52]: what
+Pablo [34:53]: and there's an infinite number
+Pablo [34:56]: of those but that's one way
+Pablo [34:59]: we could formally define the oral arian
+Pablo [35:00]: pat
+Pablo [35:01]: h
+Pablo [35:09]: y
+Pablo [35:09]: code
+Pablo [35:13]: language
+Pablo [35:14]: of computer
+Pablo [35:14]: s
+Pablo [35:15]: which is the binary
+Pablo [35:22]: so we can say well rather than the setup world arian graph it was a slightly different type of object it's a set of binary strings
+Pablo [35:25]: those binary strings that encode
+Pablo [35:26]: drafts that
+Pablo [35:27]: have
+Pablo [35:34]: multiple ways to invoke graphs we're not going to fixate a lot of this force on the exact encoding
+Pablo [35:38]: as long as it's reasonable but one way to encode a graph is as an adjacent
+Pablo [35:43]: pat
+Pablo [35:44]: h
+Pablo [35:46]: herri
+Pablo [35:47]: edge
+Pablo [35:54]: it kind of vacuously
+Pablo [35:58]: to it
+Pablo [35:59]: you've already satisfied
+Pablo [36:03]: just relaxing the requirement of it
+Pablo [36:06]: right
+Pablo [36:10]: this doesn't have an earlier cycle but has
+Pablo [36:15]: h
+Pablo [36:17]: so sometimes we want to think about
+Pablo [36:21]: e
+Pablo [36:31]: if you have a graph with n nodes you can encode the adjacency matrix as a binary string of like and here i'm showing the row i'm showing as a square matrix
+Pablo [36:34]: but if i just give you a flat binary string
+Pablo [36:38]: whose number of bits is a perfect square you can reconstruct the matrix
+Pablo [36:39]: for that
+Pablo [36:41]: take the
+Pablo [36:42]: square root of length
+Pablo [36:43]: that never
+Pablo [36:46]: bits is one row of d
+Pablo [36:57]: so this would be another way to formally define the decision problem eulerian path is it's this particular subset of zero and small those binary strings
+Pablo [37:01]: that are adjacency matrices of graphs that have an eulerian
+Pablo [37:08]: okay a search problem we often write very similarly we say given the input find what output we want here
+Them [37:17]: that's kind of a richer object we want to output either say the word no or the boolean value
+Them [37:18]: or
+Them [37:19]: actually
+Them [37:20]: help with
+Them [37:22]: that
+Them [37:24]: can write it
+Them [37:26]: formal
+Them [37:27]: search problem
+Them [37:28]: we can say
+Them [37:33]: one way to define it would be is a function from zero one star to zero one
+Them [37:37]: so it takes as input a binary string encoding a graph
+Them [37:45]: it outputs a binary string encoding either the word no or encoding an eulerian
+Pablo [37:56]: and decision problems could be defined this way as well here i defined it as a set we could also define the decision problem as a function
+Pablo [37:58]: from zero one star to just zero one
+Pablo [38:01]: this outputs a yes or a no
+Pablo [38:19]: de connection between these kinds of functions that have a boolean output also known as predicate and subsets of the donate so here this set right here is the subset of inputs to this predicate that cause it's output
+Pablo [38:21]: so these are more or less the same type of
+Pablo [38:30]: so these will be sort of primarily how we format the idea of what's a decision problem
+Pablo [38:35]: so we also need to
+Pablo [38:36]: define whatsapp
+Pablo [38:41]: we say problems
+Pablo [38:46]: with all my algorithms compute the function or the predicate associated problem
+Pablo [38:50]: now what is going to be our formal definition of algorithm
+Pablo [38:55]: well in this class it's just going to be a program written in
+Pablo [38:56]: your favorite
+Pablo [39:02]: it's very common to say the formal definition of an algorithm is it's a range
+Pablo [39:05]: and we will talk about turing machines
+Pablo [39:12]: when we really need and you don't need turing machines for most of computational
+Pablo [39:18]: your intuition gain from years of programming is actually better
+Pablo [39:19]: as a definition
+Pablo [39:20]: of al
+Pablo [39:20]: pha
+Pablo [39:21]: than a
+Pablo [39:22]: parade machine
+Pablo [39:28]: so we're going to use a lot of python esque pseudocode in this class
+Pablo [39:32]: but basically my definition of algorithm is going to be
+Pablo [39:34]: there's code written in your favorite
+Pablo [39:43]: program but this is equivalent to turing machines have the same computational ability and say with regard to what decision problems they
+Pablo [39:46]: have solved or what search problems they can solve as any of these program
+Pablo [39:47]: s
+Pablo [39:54]: and the textbook does what i like which is it defers discussion of the low level details of turing machines
+Pablo [39:57]: until we actually need them and we're not going to need them
+Pablo [40:03]: for most but we will need them when we get to kind of the core of n completeness
+Pablo [40:04]: the first problem
+Pablo [40:08]: that's when it really will matter the precise definition of
+Pablo [40:14]: but for the most part we're just going to think about algorithm is just code in your
+Pablo [40:22]: historically ferry machines are important and they're relevant in fact
+Pablo [40:27]: my research field the technical low level details of turing machine actually matter quite a bit
+Pablo [40:29]: i work in molecular computing
+Pablo [40:35]: and it turns out actually simulating simultaneous turing machines is a lot easier for molecules
+Pablo [40:39]: than trying to implement say python program but in this course
+Pablo [40:41]: we won't need to think about training
+Pablo [40:44]: so we'll just have this more high level kind of ide
+Pablo [40:45]: a of an
+Pablo [40:46]: out
+Pablo [40:46]: okay
+Pablo [40:54]: this of course is not an element of course but so we're going to skip chapter three
+Pablo [40:55]: which is
+Pablo [40:57]: ms
+Pablo [41:00]: like
+Pablo [41:01]: ecs one
+Pablo [41:01]: twenty two
+Pablo [41:01]: or two
+Pablo [41:02]: twenty two
+Pablo [41:03]: but
+Pablo [41:05]: let's just talk
+Pablo [41:05]: about
+Pablo [41:06]: we already
+Pablo [41:14]: and
+Pablo [41:15]: this is ulith algorithm
+Pablo [41:16]: for binding
+Pablo [41:17]: divis
+Pablo [41:18]: ors
+Pablo [41:19]: so
+Pablo [41:20]: we
+Pablo [41:21]: 're given two
+Pablo [41:23]: entrepreneurs a and b let's assume without loss
+Them [41:30]: problem
+Them [41:30]: s
+Them [41:47]: so
+Them [41:48]: let's say we got
+Them [41:49]: fifty
+Them [41:49]: six
+Them [41:52]: countless twelve
+Them [41:53]: they're going to try and div
+Them [41:54]: ide her
+Them [41:56]: what we're
+Them [41:56]: using
+Them [42:12]: look
+Them [42:12]: at her
+Them [42:22]: it
+Them [42:23]: 's not exactly
+Them [42:24]: so
+Them [42:25]: this is kind of an illustration
+Them [42:26]: why
+Them [42:48]: twelve minus twenty four but
+Them [42:49]: not six
+Them [42:52]: twelve
+Them [42:56]: so think
+Them [42:57]: about this
+Them [42:58]: well
+Them [43:01]: whatever
+Them [43:02]: common divisors
+Them [43:03]: we have between
+Them [43:03]: these two
+Them [43:06]: if we imagine along the vertical part
+Them [43:06]: here
+Them [43:10]: that goes up to sixty six we imagine jumping up every twenty four and we go up twenty four
+Them [43:12]: we go up twenty four again
+Them [43:14]: and we do the last twenty four
+Them [43:16]: and we go off the edge let's see
+Them [43:19]: how many did we get to before we have to
+Them [43:20]: get
+Them [43:26]: her
+Them [43:27]: anchored
+Them [43:30]: right
+Them [43:32]: but one thing
+Them [43:32]: to observe
+Them [43:33]: is that
+Them [43:37]: must mean that this common divisor
+Them [43:41]: is also common advisor of eighteen stop right
+Them [43:42]: at the end
+Them [43:45]: so we imagine going up by six
+Them [43:49]: because it's a common divisor of that modulus
+Them [43:51]: it won't go off or put another way
+Them [43:57]: this leads to this observation that d is a common divisor of a and b
+Them [43:58]: also
+Them [44:15]: b
+Them [44:16]: twenty four
+Them [44:17]: and
+Them [44:17]: a module
+Them [44:20]: so
+Them [44:22]: the problem
+Them [44:26]: this is being described recursively but we can also just do it iteratively
+Them [44:29]: and here is python code to do this iteratively
+Them [44:33]: we say well i'm assuming that loss of generality b is smaller
+Them [44:36]: so bigger swap them
+Pablo [44:48]: the general oh sorry this is a recursive case is whatever the rate is common divide means we know it's also the greatest common divisor of b and a lobby
+Pablo [44:53]: and so what we do is we check is a mod b zero
+Pablo [44:57]: so we'll have bisex
+Pablo [45:03]: so b must be the greatest common divisor of a and b because the biggest number you can possibly b is smaller
+Pablo [45:08]: the biggest common divisor you could possibly have would be one of the smaller of the two number
+Pablo [45:08]: s
+Pablo [45:12]: but if not it means you got this situation where you're going off the edge
+Pablo [45:19]: that modulus is not in this case it's eighteen not zero in which case we reduce it to the smaller
+Pablo [45:21]: so that's kind of just an illustration
+Pablo [45:21]: why
+Pablo [45:30]: can practice level reversion we this mod is not zero it's eighteen
+Pablo [45:33]: so we've recursively call it with twenty four eighteen
+Pablo [45:43]: we compute that mod it's not zero at six so we recursively call it and each time we're just shifting these two over here eighteen odds and finally we get to eighteen
+Pablo [45:45]: so we know the small number
+Pablo [45:46]: six
+Pablo [45:50]: that's kind of why
+Pablo [45:51]: you all are
+Pablo [45:52]: but
+Pablo [45:55]: ed to us right now
+Pablo [45:56]: is tough
+Pablo [45:56]: access
+Pablo [46:01]: the claims that this is a lot faster than what would you do naive
+Pablo [46:03]: how would you solve this problem
+Pablo [46:05]: that you didn't have eucalyptus right there
+Pablo [46:15]: you would just probably test every integer from two up to b and c is it a common divisor of old then whatever's the biggest integer you find
+Pablo [46:17]: and that would take
+Pablo [46:18]: time
+Pablo [46:32]: oke bi
+Pablo [46:35]: so
+Pablo [46:36]: how long does algorith
+Pablo [46:37]: m take the worst
+Pablo [46:38]: case
+Pablo [46:39]: so
+Pablo [46:43]: we'll analyze it but i want to use the springboard and say well
+Pablo [46:45]: to talk about how long
+Pablo [46:50]: an algorithm takes we need some kind of way of talking about how many steps it takes
+Pablo [46:57]: so we're going to do what you've hopefully done in prerequisite courses and we're going to say we're going to measure the running time of an algorithm
+Pablo [47:05]: and we call it running time which makes you think it's a number but actually the running time as we define it as a function
+Pablo [47:16]: where we say ok given a certain size of an input what's the most number of steps the algorithm takes on any input of that sum that's going to be our definition but that's a function
+Pablo [47:18]: from input size to number of steps
+Pablo [47:21]: so for example maybe on every input
+Pablo [47:24]: a psi n you take a copy of squared
+Pablo [47:25]: how would you get n
+Pablo [47:25]: squared
+Pablo [47:28]: f equals n squared
+Pablo [47:29]: is e
+Pablo [47:33]: so this very couple of questions
+Pablo [47:35]: first of all what's the implication
+Pablo [47:37]: let's say my input is like
+Pablo [47:38]: a
+Pablo [47:39]: what's the
+Pablo [47:40]: size of that
+Pablo [47:46]: we
+Pablo [47:47]: also measures
+Pablo [47:49]: than those
+Pablo [47:52]: number
+Pablo [47:53]: of edges
+Pablo [47:54]: at reasonable
+Pablo [47:59]: and how we might enc
+Pablo [48:00]: ode that graph
+Pablo [48:05]: then
+Pablo [48:06]: that would be a binary
+Pablo [48:07]: strain of
+Pablo [48:08]: cardinality
+Pablo [48:10]: so
+Pablo [48:11]: secondly this is
+Pablo [48:12]: going to be the definition
+Pablo [48:13]: that
+Pablo [48:18]: of your object binary
+Pablo [48:18]: strings
+Pablo [48:19]: and you say
+Pablo [48:20]: the input size
+Pablo [48:21]: and the number of bits
+Pablo [48:22]: need
+Pablo [48:23]: ed to
+Pablo [48:24]: object
+Pablo [48:34]: but if we're not concerned like say precise polynomial running times like n squared versus n cubed
+Pablo [48:37]: which of course you should very much be concerned
+Pablo [48:52]: all sorted that you studied as an undergrad fixated on this difference between n squared and n log n but those are both polynomial in this course we're not saying those differences are unimportant we're saying well there's even more important differences
+Pablo [48:55]: like the difference between the polynomial and exponential
+Pablo [49:06]: equally fast
+Pablo [49:11]: then the choice of encoding doesn't matter
+Pablo [49:28]: to whether you use an adjacency matrix an adjacency list whether you do the horrible thing i do in ecs one hundred twenty and i literally encode in my python code graph a set v like a set of nodes and a set horrible from that algorithmic perspective
+Pablo [49:34]: but it turns out all of those different encodings can be turned into each other in polynomial time
+Pablo [49:42]: so if your running time is polynomial with regard to one of those encodings it's also polynomial with regard to another if you just do the transformation
+Pablo [49:45]: so that kind of frees us to not worry so much
+Pablo [49:55]: about which exact encoding we use and what we call the input so i would actually accept any of these as if you show if you define them to be any of these things
+Pablo [50:01]: and then you show hey we can solve the problem in time polynomial
+Pablo [50:05]: you
+Pablo [50:06]: 're not
+Pablo [50:08]: only in her color
+Pablo [50:15]: but only
+Pablo [50:16]: what
+Pablo [50:18]: squared pairs
+Pablo [50:23]: so for
+Pablo [50:26]: that reason we're not going to fixate so much on most of these problems what's the exact encoding
+Pablo [50:33]: the one exception that we got to be careful about is integers within a jurors
+Pablo [50:36]: there are two very different encodings you can choose
+Pablo [50:37]: and we will
+Pablo [50:41]: work
+Pablo [50:43]: aspect
+Pablo [50:49]: one size
+Pablo [50:50]: of
+Pablo [50:51]: st grace
+Pablo [50:52]: time to bias
+Pablo [50:55]: it's a care manager's a and b
+Pablo [50:57]: so what should n be
+Pablo [51:01]: a plus b or the max of a and b
+Pablo [51:06]: well we're usually going to say the size
+Pablo [51:09]: is the number of bits we need to represent
+Pablo [51:23]: long beard the two of them together
+Pablo [51:29]: maybe plus o one the limit them is the number of bits needed to encode this parent
+Pablo [51:35]: and this is the length of binary encoding
+Pablo [51:39]: of these integers this would be something more like the length of the unary
+Pablo [51:45]: i would encode a by just writing one a
+Pablo [51:49]: exponentially bigger than the
+Pablo [51:49]: binary
+Pablo [51:54]: sometimes we want the urinary noise
+Pablo [51:59]: we're kind of if you're not sure what else to do though binary encoding is
+Pablo [52:00]: the way to go
+Pablo [52:08]: okay so let's take the ladder of vr definition is the length of the binary encodings of these integers
+Pablo [52:10]: we'll just logarithmic in the integers them
+Pablo [52:10]: selves
+Pablo [52:15]: ok the other question that
+Pablo [52:21]: this top bullet point pegs is the first one what do we mean by input size this is generally what we mean
+Pablo [52:26]: but what do we mean by number of steps what is a step in an algorithm
+Pablo [52:28]: this is very easy
+Pablo [52:30]: in your definition of algorithm
+Pablo [52:38]: it gets a little nicer if you take my definition to be a program in your favorite program
+Pablo [52:41]: because what's a step
+Pablo [52:43]: well it kind of depends on the program
+Pablo [52:44]: but
+Pablo [52:50]: roughly fifty something like an atomic or a basic line of code in an imperative program
+Pablo [52:52]: so i'm assigning
+Pablo [52:56]: assigned a to be the integer we could call that one
+Pablo [52:58]: say that can be done in constant
+Pablo [53:04]: what about this a equals b plus c
+Pablo [53:11]: if a b and c are c plus plus ints that's a very reasonable definition of one step
+Pablo [53:13]: for example
+Pablo [53:18]: technically this is python python allows arbitrarily large integers
+Pablo [53:22]: and so b and c yeah they might fit in sixty four bits
+Pablo [53:31]: but they might each be a gigabyte in which case adding them would take time linear in the number of bits they have
+Pablo [53:50]: so this is reasonable if your integers are fitting into constant size registers but you got to be a little careful sometimes we should take into account how much time does it take to do arithmetic like this again on a modern processor immediately both fit more risk that's constant time
+Pablo [53:59]: but they wouldn't both fit into sixty four minutes if you're using or if you're using like a big init or big integer class in another program
+Pablo [54:06]: here's signing a string needs some constant
+Pablo [54:09]: again
+Pablo [54:13]: as a string literal that's one thing
+Pablo [54:16]: but strings
+Pablo [54:17]: can get really
+Pablo [54:17]: big
+Pablo [54:19]: so you got to be careful when you
+Pablo [54:20]: talk about lying
+Pablo [54:20]: a lot
+Pablo [54:21]: of programming languages
+Pablo [54:22]: what do they do
+Pablo [54:30]: they let you do this higher level kind of abstraction but that also means one line of code often corresponds to many many plot cyc
+Pablo [54:31]: le text
+Pablo [54:33]: edition might be
+Pablo [54:35]: what your computer can get
+Pablo [54:36]: cycle
+Pablo [54:37]: but fortunately
+Pablo [54:38]: compile
+Pablo [54:40]: rs and interpreters and virtual machines
+Pablo [54:47]: have made it fairly abstract the relationship between a line of code and how many clock cycles are you going to take
+Pablo [54:52]: so basically we just have to be careful here that we
+Pablo [54:58]: check
+Pablo [55:02]: two integers a and b i want to compare is that constant time
+Pablo [55:07]: it depends they're c plus plus int they both fit in sixty four bits
+Pablo [55:09]: that's single cycle of your
+Pablo [55:15]: al but if they're big integers that might involve comparing all the bits to each other
+Pablo [55:16]: it could
+Pablo [55:17]: each be a gigabyte
+Pablo [55:25]: so i would say that with kind of standard i don't know c plus plus ints or something
+Pablo [55:29]: these are all we could call these a single step
+Pablo [55:33]: but be careful a line that takes several steps or calls a subroutine
+Pablo [55:36]: you should not call this one right
+Pablo [55:41]: so i love list comprehensions in python and they get very nice and easy to read
+Pablo [55:44]: but a list comprehension is shorthand
+Pablo [55:47]: for this on one line but it's definitely not constant time
+Pablo [55:52]: look at
+Pablo [55:53]: all the zero
+Pablo [55:58]: there's one line
+Pablo [56:05]: and that subroutine what it does matches name it's going to take a lot more than constant
+Pablo [56:05]: time
+Pablo [56:10]: again you have a string maybe you want to convert it to uppercase
+Pablo [56:15]: that's going to take linear times it resemble in the string linear length of the
+Pablo [56:19]: so not wouldn't be a single step
+Pablo [56:21]: now
+Pablo [56:25]: like i said an advantage of turing machines you're willing to go
+Pablo [56:32]: this is a very unambiguous definition
+Pablo [56:39]: the disadvantage is that to get down ambiguous definition you go to this very low
+Pablo [56:44]: level admission maturing machine where it's much harder to kind of like if i asked you write a turning machine
+Pablo [56:47]: that executes euclid's algorithm
+Pablo [56:49]: that
+Them [56:49]: would
+Them [56:51]: be a lot more annoying than
+Them [56:51]: that
+Them [56:52]: python i grew up
+Them [56:54]: in biolog
+Them [56:58]: but it has the mathematical virtue that it's very unambiguous
+Them [57:04]: what's a step so we really need to be fully formal this will be our definition
+Them [57:06]: and we will do it when we get to
+Them [57:07]: our percentage
+Them [57:08]: problems
+Them [57:13]: but most of the time we'll just use pseudocode and or icon
+Them [57:18]: we
+Them [57:20]: have so many more design models of computation
+Them [57:32]: one of my favorites we'll talk about a little it's called cellular automata you don't know what they are don't worry about it we'll get to them in a few weeks but a single application of so called update rule we could call that
+Them [57:36]: a step
+Them [57:39]: although technically many updated parallels
+Them [57:41]: so that's sort of like a more parallel
+Them [57:45]: and then of course if you're written something like
+Them [57:46]: a functional or log
+Them [57:48]: ical one of these declarative programming languages
+Them [57:51]: now it's awkward
+Them [57:53]: pascal looks something but
+Them [57:55]: not being able to analyze
+Them [57:56]: person algorithms
+Them [57:58]: but if you're programming in prologue
+Them [57:59]: i wouldn't know how to begin
+Them [58:00]: to analyze running
+Them [58:03]: there were some algorithm laying
+Them [58:04]: under the hood
+Them [58:06]: you got
+Them [58:07]: to know the details
+Them [58:07]: of that
+Them [58:08]: algorithm
+Them [58:09]: just say how long
+Them [58:11]: but we're not
+Them [58:12]: going to be using
+Them [58:13]: logical program
+Them [58:14]: ming
+Pablo [58:16]: like i
+Pablo [58:16]: said
+Pablo [58:18]: and
+Pablo [58:19]: longer careful
+Pablo [58:20]: she
+Pablo [58:21]: called us one
+Pablo [58:21]: seven
+Pablo [58:38]: as long as we're careful that what we call a step is something that takes constant time or even if we because we're going to ignore polynomial differences between different than we just want mostly are going to be concerned
+Pablo [58:41]: but when we find a polynomial time algorithm or not
+Pablo [58:44]: we're kind of getting ourselves
+Pablo [58:45]: permission to be lazy
+Pablo [58:46]: about this effect
+Pablo [58:49]: so with
+Pablo [58:50]: that
+Pablo [58:56]: kind of lucy kind of pseudo definition of mine let's go back to the euclidean hour
+Pablo [58:59]: we want to analyze the drug
+Pablo [59:01]: our input is parameters
+Pablo [59:03]: a portion of
+Pablo [59:08]: the examp
+Pablo [59:08]: le
+Pablo [59:14]: as well
+Pablo [59:17]: what you're trying to get
+Pablo [59:32]: sometimes
+Pablo [59:34]: we'll see a few examples
+Pablo [59:34]: of this
+Pablo [59:37]: in supplement chapters where
+Pablo [59:39]: you know right away
+Pablo [59:41]: it's going to take
+Pablo [59:43]: time
+Pablo [59:43]: just for right now
+Pablo [1:00:00]: well
+Pablo [1:00:02]: the list
+Pablo [1:00:03]: of my men we're
+Pablo [1:00:04]: going to get a
+Pablo [1:00:07]: n factorial
+Pablo [1:00:08]: time
+Pablo [1:00:10]: right
+Pablo [1:00:11]: now all the
+Pablo [1:00:11]: permutations
+Pablo [1:00:12]: no matter how
+Pablo [1:00:14]: yell
+Pablo [1:00:16]: ow so even like if you
+Pablo [1:00:21]: could discount all the steps taken to compute the permutations just the act of writing them down
+Pablo [1:00:22]: clearly
+Pablo [1:00:25]: is going to take at least one step for permutation
+Pablo [1:00:27]: more like n steps
+Pablo [1:00:27]: for permutations
+Pablo [1:00:28]: and things to write
+Pablo [1:00:29]: that
+Pablo [1:00:34]: so yeah no matter how clever you are about how to generate the permutations you can't get around
+Pablo [1:00:36]: with that
+Pablo [1:00:37]: is going to take n
+Pablo [1:00:38]: factorial
+Pablo [1:00:42]: time at least to write down n factorial different
+Pablo [1:00:43]: objects
+Pablo [1:00:47]: the size
+Pablo [1:00:48]: of
+Pablo [1:00:52]: if we pretend that when we talk about the size of the input
+Pablo [1:00:57]: here are the size of the mode would be n is the
+Pablo [1:00:57]: list of like that
+Pablo [1:01:02]: depending what kind of object then unique objects
+Pablo [1:01:03]: they're not going to each be constant
+Pablo [1:01:04]: size
+Pablo [1:01:05]: so if you want to get
+Pablo [1:01:06]: login
+Pablo [1:01:10]: for a problem like that
+Pablo [1:01:19]: decision problems
+Pablo [1:01:25]: don't happen decision problems the output is one bit so you're not constrained by the time needed to write the output
+Pablo [1:01:26]: there
+Pablo [1:01:30]: you actually study no what's the time needed to compute which are the two answers

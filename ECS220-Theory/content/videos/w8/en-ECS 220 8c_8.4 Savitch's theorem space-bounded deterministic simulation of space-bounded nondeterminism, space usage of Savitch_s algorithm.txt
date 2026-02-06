@@ -1,0 +1,112 @@
+So now we'll think about transforming non-deterministic
+computations into deterministic ones. So simulating non-determinism
+deterministically. Now recall we did this with
+non-deterministic time, and it seems new and current
+exponential time overhead. For example, NP is contained
+in x because you can run all possible witnesses of
+which there are exponentially many through the polynomial
+time verification algorithm. And more generally, n time of T is contained and deterministic
+time to, to the OT. And in general, we don't know
+how to do any better with time. And we have good reasons to think you really can't do better than that. But we can provably do
+much better with space and currying only a quadratic
+simulation over. So this is what we call
+salvage his theorem, which says that for any space
+bound at least logarithmic, which is all the ones we
+consider in this class. N space of S is contained
+in space of S squared. So the corollary is that NP space
+is actually equal to p space, which is why we never
+talk about NP space. I'd certainly doesn't
+deserve its own name. And another corollary is that NL, when we substitute S is log of n and l is contained in
+space of log squared of N. So note that's polylogarithmic, but it's not logarithmic. Log square root of n is
+not big O of log of n. And in fact, the space hierarchy
+theorem tells us that L, which is space of log n, is not equal to space
+of log square root of n. Log n is little o
+of log squared of N. So there's things you can
+do with this much space. You provably can't do
+with this much space. So we still don't know
+whether l equals n. Now, can we prove that L is actually contained in
+an even smaller class? Well, we don't know. Okay, So, but we do know we can do this. So that's savages there. And so we can restate it as reachability is contained in
+space of log squared of N, right? So this is, this is the entire
+sort of point of the algorithm. And through the fact
+that you can reduce all those space founded
+computation's to reachability. You can get this to apply
+to to others based classes. So kind of the, the most important cases captured by, by showing this. So recall that breadth-first search and depth-first search each
+use linear memory, right? You don't think about
+the memory usage much, but if you think about
+how they both work, they both maintain a set
+of nodes you've already visited to avoid visiting
+the same node twice. So you have to store in your read write memory
+all the visited nodes. They use linear memory. So they're legit search algorithms
+and they run pretty fast there. They're linear time, but, but they use linear memory. How can we get that down to only
+logs square root of n space? So salvage his algorithm, the textbook describes
+as not breadth-first, not that first, but
+middle first search. And what it does is it
+visits each node repeatedly. It does not avoid visiting
+the same node twice. It revisits a whole
+bunch of nodes and in fact does it so often
+it takes a lot of time, but it saves on space. So here's the key observation. Let S and T be two nodes and
+then k be a positive integer. And we write S arrow Katie to denote there is a path of
+length at most k from S to T. So that's what this notation means. We're going to use this repeatedly. There's a path from S to
+T of length at most k. So here's an easy observation that there's a path from
+S to T of length at most k if and only if there's
+a middle point where you, where there's a path from S to
+U of length at most half of K, and a path from u to t of
+length at most half of K. So in other words, there is this path the squiggly thing represents maybe
+there's many nodes along here. This is true if and only if
+there's some you that you encounter halfway
+through on that back. So this is going to be the key to the algorithm because it
+gives us a way to recurse. And in particular,
+note that we can apply that same statement to S and
+U with K equals K over 2. So if there's a path
+from S to U, well, there's a middle point, u1, midway between S and U. And if there's a path from u to t, then there's a middle point,
+U2 midway between UAT. So this gives the basis
+of the algorithm. And here it is in
+Python ESC pseudocode. This is salvage his algorithm. We're given a graph G and S and T, and then we're given a bound k. We, when we called this at first, we just set K equal to the
+number of nodes in the graph. So we want to know, is it possible to reach from
+S to t using at most k nodes. So if k is one, what does that mean? Well, what does it mean to
+have a path of length at most one I did as a
+direct edge from S to T. Or the path could be length 0, that's length at most one. So S could just be equal to t. So if either of these is true, then we say, yes, there is a path of
+length at most one. So that's the base case
+and the recursive case. We do this search, we iterate
+over every single node in you. And we ask, is it
+possible to get from S to U and half as many steps as this end. Is it possible to get from u
+to t and half as many steps? And if so, we return true. And if we don't find that
+middle point, we return false. So by this observation, if we call this with K equal to the number of
+nodes in the whole graph. It will eventually get
+down to a base case and it will correctly identify
+whether this path exists. So now we got to analyze
+the space usage. So here's the same algorithm. I just rewrote it. Let's
+call n the number of nodes. Now notice each level of recursion
+has four variables, STU and k. And each of them are just indices into g or just a number that is at most n. So each of them takes at
+most log of n bits to represent. So what we gotta do now is bound how many levels of
+recursion are going to happen? Because that will bound for us
+how big does the stack yet, meaning the call stack
+as we recurse, right? We're going to have to remember the variables at each
+level of recursion. We're going to bound
+the depth of recursion. So we make the first call and
+we call reachable of GST and n. And we're going to have log n
+levels of recursion because they're cutting K and a half each
+time and it starts at it. So what do we need? We have log n levels of recursion. And each level of recursion
+takes O of log n bits. It's four times log n bits. So the total number of bits than
+ever need to be stored at once, considering the entire
+call stack is log squared of N log n levels times
+log n bits per level. So that shows that reachability this recursive algorithm uses at
+most log square root of n bits. Now recall that predicting whether a non-deterministic program
+will accept using at most as in space is equivalent to reachability on a graph of
+size two to the s at it. So this is an argument that, well, we weren't just talking about log-space and log
+square root of n space. Here we're at, we're actually talking about every space found above there. Because that graph can actually be the computation graph of an
+algorithm with a bigger space bound. Whatever that space bound is, two to that number is how many
+nodes is in its reachability graph. By querying reachability
+using savages algorithm, we can predict that. And so what that shows us
+is that if we want to know, does that algorithm,
+which is S space bounded, that does it except using at
+most space bound S. We can solve that deterministically using salvage his algorithm on the graph
+is in space of S square. So this actually applies to all
+the bigger space bounds as well. So the open question is, is salvage his algorithm optimal? Right? Do we need this quadratic blowup? So here's some open questions. Is there a log to the
+1.99 and space algorithm? I just log raised to any
+power less than two. That's totally. And of course, a much
+stronger connector is, is there a log n space
+algorithm, right? If so, because reachability
+is NL complete, that would imply that L
+equals n. That would show reachability is n. Now this is not
+as unbelievable as P equals NP. People are kinda sure about that.

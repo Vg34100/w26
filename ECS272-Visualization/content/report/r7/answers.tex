@@ -1,0 +1,33 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip}
+
+\title{ECS272 Reading Report 7}
+\author{Pablo Rodriguez}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Paper: A Nested Model for Visualization Design and Validation}
+
+\subsection*{Summary}
+
+This paper proposes a nested model for visualization design and validation with four layers. The layers are domain problem and data characterization, abstraction into operations and data types, visual encoding and interaction design, and algorithm design. The main idea is that the output of one layer becomes the input for the next, so a mistake early on can cascade through everything downstream. The author argues that evaluation should match the layer you are working in, and she lays out different threats to validity for each level. That makes the model practical because it tells you not only what to design but also how to validate it.
+
+I think the most important contribution is linking design choices to specific kinds of validation, instead of treating evaluation as a flat list of methods. The paper also gives recommendations like stating upstream assumptions and distinguishing claims by level. It does admit the model is simplified and mostly grounded in information visualization rather than scientific visualization. Still, I feel like the model is a useful way to keep track of what you are actually claiming and what kind of evidence you need.
+
+\subsection*{Question 1: What are the differences between immediate and downstream validation approaches?}
+
+Immediate validation happens at the same layer as the design choice. For example, interviewing users can validate the domain problem characterization, justifying an encoding with perceptual principles can validate the encoding layer, and analyzing complexity can validate the algorithm layer. Downstream validation depends on results from lower layers, usually after a system is implemented. For outer layers, that means you need the inner layers to be built before you can test whether the earlier choices really worked. The paper says downstream validation is harder but necessary because immediate validation only gives partial evidence.
+
+\subsection*{Question 2: Describe what this work's model offers in contrast to previous models. What are the limitations or issues with the paper's model?}
+
+Compared to previous models, this one explicitly connects design stages to validation and highlights the unique threats at each level. It also makes it clear that upstream errors can ruin downstream work, so you should be careful about problem characterization and abstraction. A limitation the author admits is that the model is simplified and glosses over some evaluation nuances. She also says the model is rooted in information visualization, and adapting it to scientific visualization would require more work. Another issue is that it assumes complex sensemaking can be broken into low level components, which may not always be true.
+
+\subsection*{Question 3: What is the value of making clear distinctions between each layer?}
+
+The value is clarity. If authors separate their claims by level, readers can see exactly what was validated and what still needs evidence. It also helps future researchers build on the work, because they can tell if a gap is at the abstraction level, the encoding level, or somewhere else. The paper suggests this reduces confusion in the literature and makes it easier to combine results from different papers.
+
+\end{document}

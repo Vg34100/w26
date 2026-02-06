@@ -1,0 +1,282 @@
+Pablo [0:59]: contribution that
+Pablo [1:07]: 's a
+Pablo [1:19]: project
+Pablo [1:26]: high level of what you would
+Pablo [1:33]: already submitted
+Pablo [1:34]: your
+Pablo [1:40]: project membership
+Pablo [1:58]: all right
+Pablo [2:04]: so kind of getting into scheduling now here's where the bar
+Pablo [2:06]: i will attract
+Pablo [2:19]: various
+Pablo [2:23]: browser
+Pablo [2:30]: network cards
+Pablo [2:49]: things like this board and after
+Pablo [2:53]: more
+Pablo [2:57]: this idea of scheduling is deciding who gets to use this
+Pablo [3:09]: question who gets to run on the cpu
+Pablo [3:14]: again the reason why
+Pablo [3:17]: as i've been posted into
+Pablo [3:18]: the earlier days
+Pablo [3:19]: there's
+Pablo [3:20]: really nothing going on
+Pablo [3:22]: one
+Pablo [3:25]: of the nice things the operating system provides is this illusion
+Pablo [3:28]: that this process is the only thing very much
+Pablo [3:30]: so as far as the process
+Pablo [3:31]: is aware it's used
+Pablo [3:32]: all the cpu all the time
+Pablo [3:34]: but underneath the hood
+Pablo [3:38]: the operating system actually multiple tissue among many processes
+Pablo [3:41]: that all things they have
+Pablo [3:51]: to see here the way this is accomplished is by basically multiplexing u as
+Pablo [4:02]: processes running on the system it's actually instructions on the cpu changing state on cpu
+Pablo [4:13]: things are good but of course writing on the cpu is not the only thing that processes do processes like i o which will affect their diseases
+Pablo [4:27]: so again because of these various resource needs processes and all the other topics that are doing files that aren't necessarily going to be requiring the cpu to do that
+Pablo [4:31]: we want to be able to use the same few times efficiently
+Pablo [4:52]: but of course doing this with very little knowledge is very hard right scheduling we need this electron knowledge of the future we need to know how long each process wants to see you more or when it's going to be a certain long events like i've killed you on that
+Pablo [4:59]: ideal allocation
+Pablo [5:00]: resources
+Pablo [5:16]: do we know having a workload is i don't have to work on
+Pablo [5:23]: there might be different performance metrics we're doing so data centers have this concept of service level objectives
+Pablo [5:27]: where the customers pay for a certain global service
+Pablo [5:32]: and the data center providers use climate levels
+Pablo [5:40]: so again these
+Pablo [5:47]: all metrics are identified scheduled policies that approaches this ideal issue
+Pablo [6:01]: some more concrete useurement has a very
+Pablo [6:09]: subjects that can run and there's eq which is run that process
+Pablo [6:37]: in addition to this network sixteen view time we also want this ghost starvation so basically everyone gets it eventually run so this basically says that we don't have one process that basically always loses out to another process never gets to making a progress through process that's never been around you'd be quiet
+Pablo [6:45]: so these are the first two goals in the sort of like that but we want scheduling
+Pablo [6:49]: meaning that we don't really seek utah we don't start our applications
+Pablo [7:09]: another goal that scheduling policies try to do is try to read these hard real time so for example if you have an application that industry is interacting with the user you don't want to have long wait and sees between scheduling events where this process because the user will receive these
+Pablo [7:20]: and then there's this last whole of this preventing its priority problem
+Pablo [7:30]: these processes might have been the priority so we might have priority process
+Pablo [7:35]: with entirety versus
+Pablo [7:38]: the high priority process
+Pablo [7:44]: so the project problems are happening
+Pablo [8:00]: and the low carbage process called l and then they can share some resource like a file that's protected by something like a
+Pablo [8:00]: lot
+Pablo [8:12]: so they share this resource maybe h is blocked for some other reason maybe according to other i o because h is blocked you can't be run you're okay to run
+Pablo [8:17]: so l is currently running out of system it might hold this shared resource
+Pablo [8:21]: and the loss of shared resource
+Pablo [8:27]: we then had a medium priority process for the system since the media priority process
+Pablo [8:40]: m is a higher priority when the current running process l allocates granted we stop running elm start in this case is that ellen was preempted while we were holding the shared block from the resource
+Pablo [8:49]: so at some point after this happened high priority process unblocked
+Pablo [8:59]: because the low priority process is holding a lock for a shared resource that it needs
+Pablo [9:03]: it can't actually continue running until the shared resources available
+Pablo [9:11]: we need to wait for m to finish so that we can run l again so that l can also share resource
+Pablo [9:19]: one to avoid right because now h the high priority process is waiting for all these other lower priority processes
+Pablo [9:20]: to run
+Pablo [9:28]: some of the papers we'll be reading in the next week or two
+Pablo [9:40]: okay
+Pablo [9:49]: a process is going to draft all of the program so the process contains both information about the state of the machine as well as the state of itself
+Pablo [9:55]: so in the machine state will basically involve what cpu is for the most part
+Pablo [10:08]: the memory address space of the running process the values of registers like the staff form and then the idle which you have like
+Pablo [10:28]: in process dates are hinted in the last slide can be one of three states and we'll be running in which case we're actually executing on cpu and can be runnable right there able to be executing on the cpu that is not scheduled currently are blockchaining they're not able to execute on the cpu because they're waiting
+Pablo [10:29]: for
+Pablo [10:43]: so might be a little small font wise but i kind of have the basics of phone and the linux kernel encompasses the detonation of a process
+Pablo [10:48]: we can kind of see from this process
+Pablo [10:54]: here we have some information about memory of the process
+Pablo [11:32]: there'll be one more most important thing for the fed schedule
+Pablo [11:43]: where iot tips are generally a long time even with these they're still not quite as fast
+Pablo [11:44]: during
+Pablo [11:44]: congregation
+Pablo [11:55]: for example for accessing this we have to wait for the dispute to spin either location on this
+Pablo [12:01]: to read the data
+Pablo [12:07]: on there's nothing useful going on
+Pablo [12:11]: cpu just take
+Pablo [12:20]: so for example we have a process a running is trying to read from a file
+Pablo [12:28]: and it's taking a bit more time
+Pablo [12:30]: finding data back
+Pablo [12:39]: so again we don't necessarily want to keep a process waiting on the cpu not doing anything useful
+Pablo [12:40]: on the system
+Pablo [12:51]: so again i cover any kind of touched on this but again that process can be running
+Pablo [12:56]: which we use to say that this process is currently scheduled on a cpu is actually execut
+Pablo [12:57]: ing instructors
+Pablo [13:07]: a process can be ready and not running when it's able to run but it's currently not been chosen but scheduled
+Pablo [13:13]: this process couldn't run because it's waiting on
+Pablo [13:17]: stateing diagram
+Pablo [13:22]: s can be ready but we schedule it it will then test
+Pablo [13:29]: we can run it for some amount of time and then choose schedule it move out to the ready state
+Pablo [13:39]: on the other hand if the process is running an execute sometimes long i o operations then it might go to the top state where it'll stay until this i operation is done
+Pablo [13:41]: that gets moved back to the ready state
+Pablo [13:47]: any questions here
+Pablo [14:00]: i did that a few times about when we can process from the running state to the phrase state and vice versa
+Pablo [14:15]: run process the way this is accomplished is with context switch again this is term for what we use when the scheduler process that's currently running on cpu and run something else
+Pablo [14:16]: instead
+Pablo [14:19]: so again this context switch is how we maintain a solution
+Pablo [14:24]: of the process basically having sole access to this
+Pablo [14:30]: in order to prevent the process from knowing when it's been positive unpaused
+Pablo [14:40]: basically we pause the application we save the state of the current cpu so like all the registers all the statuses of its open files we save that somewhere else
+Pablo [14:55]: you can restore it later for the process that we're going to run we go to the place where we previously stored all of https we started on
+Pablo [15:04]: those little codex or
+Pablo [15:09]: the semi structures because we need to access the name registers and all that
+Pablo [15:13]: but basically what this context was doing
+Pablo [15:17]: pushing the pointer to the current process
+Pablo [15:18]: es
+Pablo [15:21]: and then
+Pablo [15:22]: moving
+Pablo [15:23]: all of the
+Pablo [15:24]: register
+Pablo [15:29]: then
+Pablo [15:30]: once we say
+Pablo [15:33]: the
+Pablo [15:34]: universe
+Pablo [15:35]: or the process
+Pablo [15:40]: we
+Pablo [15:41]: are stored all the
+Pablo [15:42]: registers
+Pablo [15:43]: into the memorial
+Pablo [15:47]: staff
+Pablo [15:56]: there's
+Pablo [15:57]: not a term
+Pablo [16:16]: all
+Pablo [16:17]: the spaces
+Pablo [16:32]: in the
+Pablo [16:33]: jsp
+Pablo [16:54]: process
+Pablo [16:55]: all
+Pablo [16:56]: capital space
+Pablo [16:57]: military
+Pablo [16:58]: process all share
+Pablo [16:59]: d
+Pablo [17:08]: bas
+Pablo [17:09]: ically means that each circle
+Pablo [17:10]: has its own
+Pablo [17:11]: state
+Pablo [17:12]: view registers and
+Pablo [17:14]: then
+Pablo [17:15]: they'll have their own
+Pablo [17:16]: program
+Pablo [17:20]: they're registered
+Pablo [17:21]: on next data
+Pablo [17:28]: we're not
+Pablo [17:30]: swapping out the address space for view
+Pablo [17:32]: ers like the processes we're always walking
+Pablo [17:32]: out
+Pablo [17:40]: the
+Pablo [17:41]: problem is that
+Pablo [17:44]: schedul
+Pablo [17:45]: e activation paper
+Pablo [17:46]: as
+Pablo [17:48]: we try to answer the mitigation
+Pablo [17:52]: schedul
+Pablo [17:52]: e
+Pablo [17:53]: should it be
+Pablo [17:54]: account
+Pablo [17:55]: just like
+Pablo [17:56]: the crown schedule
+Pablo [17:57]: process
+Pablo [17:58]: or just something else
+Pablo [17:59]: like a huge
+Pablo [18:00]: green library
+Pablo [18:04]: and
+Pablo [18:05]: then you can
+Pablo [18:06]: read about what
+Pablo [18:07]: the schedule we're asking
+Pablo [18:08]: for
+Pablo [18:09]: is
+Pablo [18:12]: any
+Pablo [18:13]: questions about
+Pablo [18:16]: the
+Pablo [18:21]: reason why threats can complicate scheduling is because you're introducing a whole lot more things
+Pablo [18:22]: going on
+Pablo [18:24]: again within a process
+Pablo [18:25]: that's a lot more
+Pablo [18:26]: concurrency
+Pablo [18:28]: more of the work that happens
+Pablo [18:29]: within a process
+Pablo [18:46]: well this is what's called a race condition basically what we have to modify the same data overriding each other
+Pablo [18:47]: 's rights
+Pablo [18:53]: that maybe reads a counter one increment calendar write it down
+Pablo [18:56]: we have two friends doing this number currently eleven
+Pablo [19:01]: is believing where one
+Pablo [19:12]: updates it increments eleven twelve but report right back to rates the current counter value also
+Pablo [19:21]: would be funded
+Pablo [19:26]: so lots are a common approach for avoiding rate conditions
+Pablo [19:28]: so with a loss
+Pablo [19:34]: you can protect our shared state with this law which basically means only one thread can access
+Pablo [19:42]: and again one of the things one of the other reasons why i read some public scheduling is because loss
+Pablo [19:44]: what happens
+Pablo [19:49]: when we have a friend holding a law and the schedule
+Pablo [19:58]: we only have one
+Pablo [20:00]: on the system
+Pablo [20:15]: review
+Pablo [20:34]: again the kernel has basically different program
+Pablo [20:54]: eventually people had the idea it might be nice to have a process
+Pablo [20:56]: so there's two ways to do this right
+Pablo [20:58]: we have two processes
+Pablo [21:05]: that cooperate for the same goal in which case you can have one process doing one subpass
+Pablo [21:06]: another processor
+Pablo [21:09]: you can kind of schedule between them
+Pablo [21:10]: and get that
+Pablo [21:16]: way the problem with that processes are pretty negative so if we go back
+Pablo [21:23]: here the stroke process
+Pablo [21:26]: a lot of
+Pablo [21:32]: the more heavier weight things get fast with its address
+Pablo [21:40]: so linux and most operating system each process has its period address space that's separate from any other
+Pablo [21:41]: process
+Pablo [21:46]: so when we do things like schedule it
+Pablo [21:50]: when we schedule between one process and another process
+Pablo [21:57]: we're swapping out all the cpu state of the process and then we're also going to be changing the address based content
+Pablo [22:03]: that's going to involve inserting a new set of page tables for the cp to access
+Pablo [22:06]: and doing other things
+Pablo [22:07]: basically
+Pablo [22:11]: make it so that the new process of funding is acting as home memory and not the number of
+Pablo [22:12]: the previous process
+Pablo [22:19]: this is why proxies are pretty heavyweight because there's all this really protected boundaries between processes
+Pablo [22:25]: reds are different so with friends they exist within our process
+Pablo [22:36]: so they share the address space of the process but they have their own execution which basically means they have their own instructions that they're executing separate from other friends
+Pablo [22:43]: so what this basically allows for is you can have one process doing
+Them [22:46]: that process you need
+Them [22:47]: for it
+Them [22:59]: when you're running a study from one process if you switch to running a credit exam process you're only switching out the execution state and not the address space because they share the address
+Them [23:00]: space
+Pablo [23:10]: so for example spinning up a thread is going to be much lighter weight because you're only really going to be associating upright with the execution context
+Pablo [23:13]: versus last week when we talked about fourth for example
+Pablo [23:18]: this is setting up a whole new process with a whole new address space
+Pablo [23:20]: and always take
+Pablo [23:31]: all right
+Pablo [23:36]: so again why
+Pablo [23:40]: things get complicated easy way to prevent resonance
+Pablo [23:42]: is to check all of our
+Pablo [23:43]: access
+Pablo [23:47]: but again let's schedule on your loss
+Pablo [23:54]: because the scheduler doesn't necessarily have visibility into blocks because blocks are out
+Pablo [23:56]: the kernel doesn't necess
+Pablo [23:57]: arily
+Pablo [24:04]: so we can have an example here we have a friend
+Pablo [24:07]: ly block
+Pablo [24:20]: and it stops running it and then
+Pablo [24:21]: something else
+Pablo [24:26]: in the same process can be scheduled
+Pablo [24:34]: it might be accessory state but it can't because it's locked and because this red pull is not
+Pablo [24:34]: perfect
+Pablo [24:35]: ly
+Pablo [24:36]: sold
+Pablo [24:46]: so now this thread is going to be basically constantly waiting he was going to spend his entire life on the prostitute schedule training for this
+Pablo [24:47]: month
+Pablo [24:48]: which is kind
+Pablo [24:48]: of a bummer
+Pablo [24:49]: we don't want this
+Pablo [24:54]: one of the other things you can take in the federal action
+Pablo [24:57]: what they think
+Pablo [25:10]: would you compare us what instead of keeping
+Pablo [25:23]: as a single unit check it on you in the value
+Pablo [25:28]: of
+Pablo [25:36]: we
+Pablo [25:37]: have a spin
+Pablo [25:39]: there's
+Pablo [25:40]: two practical options
+Pablo [26:12]: such as
+Pablo [26:23]: ident
+Pablo [26:24]: ify
+Pablo [26:49]: ing
+Pablo [26:49]: applications
+Pablo [27:25]: because we
+Pablo [27:27]: got multiple forum and people are fully definitely
+Pablo [27:33]: but even without multipores self risk emissions
+Pablo [27:36]: or don't have block
+Pablo [27:37]: s
+Pablo [27:43]: then the scheduler could deschedule a credit while it's in the middle of some critical operation
+Pablo [28:02]: and we'll get much more

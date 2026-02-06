@@ -1,0 +1,74 @@
+So we've talked about this
+class, NP informally. I promise that later we
+would formally define it. But I'd rather first go through
+some examples of problems and NDP, I think it's good to build
+some intuition for what a formal definition is trying to capture before you actually
+get to the formal definition. So let's start with this
+problem of graph coloring. So let's think about this situation. Most conference talks are bored. They're born. So if you
+find two interesting ones, it's better for you if they aren't
+scheduled at the same time. So we have some constraints here. Each attendee states which talks they want to see. We're
+going to try to schedule them. And there are k time slots. And the question is,
+can we assign talks to time slots so that everyone can
+see all the talks they want. So we can formalize
+this using graphs, as with most problems, into the k coloring problem. And the k coloring problem is this. You're given a graph G equals V E, or the set V of nodes is the set of all the talks and the set of
+edges capture the constraint. There's some person who wants
+to see both of those talks. So an edge uv is any, if there's somebody somewhere out there who wants to see
+both of the talks. So in other words, they should not
+be scheduled at the same time. And the question is, can we color the nodes
+in V with only K colors? K is a constant here. In other words, can we assign talks
+to the K different time slots? So colors here or like timeslots, so that all neighboring
+nodes have different colors. In other words, all talks are
+scheduled at different times. This is called a proper
+k coloring of G. Okay, so let's some examples. Here's a graph on the left, and it's three colorable, right? I've used three colors, blue, orange, and gray to colour at. And if you go through
+each edge and check, you can see every single edge is connecting two nodes that
+have different colors. On the right, There's another graph, and it's been colored
+here with four colors, blue, orange, gray, and black. And it turns out the one on the
+right is not three colorable. Why is that? It's worth
+thinking. Pause for a second. So you can see that the middle
+node is connected to every other. So whatever color you assign here, let's call it black. It's gotta be different than
+every other color around here. Okay, So now you have this ring
+of five nodes around the edge. How many colors does
+it take to color that? Well, it's a cycle with an
+odd number of nodes here. So to make the whole
+thing three colorable, just the edge would have
+to be two colorable because all those colors have
+to be distinct from the metal. But you can't to color
+it whatever you color, say the very first ones
+that you color it, gray. That means the one clockwise, it's gotta be the opposite color, blue if you had only two. And the one next to that is going
+to be back to the first gray. The one next to that
+has to be back to blue. And then the next one
+would have to be gray, but that would conflict
+with this one up here. So that's an argument that
+if he had any odd cycle, you need at least three colors. So if you then connect
+all them to a fourth one, you need at least four colors. So it's not three color. So this looks like just a fun little combinatorial
+problem on graphs, but it actually has
+many applications. This comes up a whole lot. So, for example, you might want
+to assign different frequencies to close wireless devices
+so that they don't talk over each of the colors
+would be frequencies here. So I'm going to claim here that the k coloring problem
+is contained in NP. So Posner and how to think
+about that. Why is that true? Well, most problems that are in
+NP are phrased in such a way that the statement of the
+problem actually gives you the reason why it's an NP. So what makes a problem in NP? If it has a simple proof that can be checked with a
+polynomial-time algorithm. So what's the simple proof
+that a graph is k colorable? It's the k coloring, right? You just give a coloring of the nodes and then it is simple
+to check by just looking at every edge and make sure every edge is connecting
+two nodes are different. Okay? Now it turns out the problem
+of two-coloring is NP. Why is that the pause for us? Well, what does a
+two colorable graph? If you think about it, it's the
+same thing as a bipartite graph. A bipartite graph is one whose
+nodes can be divided into two subsets so that there's no edge between any two
+nodes within the same set. All the edges are between the
+nodes on either side, right? So telling whether a
+graph is two colorable is the same thing as telling
+whether it's bipartite. So how could you come up
+with an algorithm for this? Well, you can just say once
+I know the color of a node, I don't immediately, and
+there's only one other color. I've got a color all its
+neighbors the opposite color. And I've got a color all their
+neighbors, the first color. And you can kind of
+bounce through the graph, figuring out if there is a
+two-coloring, how to assign it. And at some point you'll
+either completely finish, you will color the entire
+graph with only two colors, or you'll discover, oh, you, you want to assign
+one color to another. That's already been assigned to the opposite color and you can't do it. So you get a contradiction.

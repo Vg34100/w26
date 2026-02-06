@@ -1,0 +1,71 @@
+So the textbook makes the important observation
+that the difference between polynomial and
+exponential time is one of kind, not a degree, meaning essentially
+it's a huge difference, it's not a minor difference. So remember, p is the class of decision problems solvable
+in polynomial time. Now you'll often hear
+this paraphrased as being the tractable
+decision problems, meaning the ones that in practice, we can solve efficiently according to our standard intuitive notion
+of what does efficient mean? It needs, it runs and halts by
+the time you need the answer. Now, worth observing, and this
+is a very common objection to hearing that theoretical
+computer scientists obsess over this class P a lot. Which is that, yeah, not all polynomial time algorithms
+really are tractable at the end of the 100 time algorithm
+is not an efficient algorithm. It does not in general
+hall, when you need it to, It would never halt in your lifetime for even
+modest values of that. Okay, so given that, why do we care so much
+about this class peak? What's the point of
+thinking about it? Well, for one, there's sort of
+a one way implication here, which is that if you can
+show a problem is not in P, This generally does
+imply it's intractable. If the best algorithm
+you have doesn't even run in time and the 100, well then of course, there's no good algorithm
+for that problem. So this is worth studying just for, for this kind of insight. But what's the real goal of studying? And it's that it tells
+us something about the mathematical insight
+into problem-solving. When you show that a problem is in P, generally means it has some
+special structure that allows the algorithm to avoid an exponential time
+brute force search. So once this insight is made, once somebody proves that a problem has a polynomial
+time algorithm, other insights tend to follow and so do even more efficient algorithms. One example of this
+for me is when it was discovered in 2002 that there's a polynomial time algorithm for determining whether an
+integer is prime or not. If the integer has n bits, I think the original algorithm took something like time n to the 12, and it really wasn't practical. The randomized
+algorithms that already existed that gave a good
+answer with high probability, vastly outperform this one. And they were obviously the
+thing to run instead of this. But after the original
+paper was published, once people saw the insight
+that had been made, they were able to work
+on that and improve it and got it down to
+time n to the sixth, which I think is
+still worse than the, the existing randomized algorithms, but it was a lot better. And maybe someday somebody will
+follow up on those insights and get like an n squared time algorithm
+or a linear time algorithm. And we think that some
+problems in this class, NP that we're going to talk
+about in the next chapter, do not have this structure. We think, in other
+words, P is not NP. And proving that is more
+or less the top goal of theoretical computer
+scientists in order to take advantage of this
+observation right here, that if you can show
+a problem is not NP, yeah, that really means
+it's intractable. You're not going to be
+able to solve it with an efficient and exact
+always correct algorithm. Okay, So that wraps it up for
+chapter two. Chapter three. We're not going to
+cover it explicitly. It's a good chapter. It's a very good review
+of essentially what you would cover in an undergraduate
+algorithms textbook. So because ECS 120 to a is a
+prerequisite for this course, we're not going to go
+through this in lecture. So I'm going to assume
+that everybody is familiar with the techniques and
+the terminology from Chapter 3. But just in case you haven't
+taken algorithms in a while, it's a good idea to review,
+especially the following. Definitely we're going to
+make heavy use of recursion. That section 31, divide and
+conquer and dynamic programming. There's going to be a lot
+of graphs in this course, we're going to talk a lot
+about graph reachability, including breadth-first,
+depth-first search, which I'll just assume that
+you understand very well. And we're also going to allude to a few other more complex
+graph algorithms like shortest path,
+minimum spanning tree. And we're not going to dig much knew exactly how those algorithms work. But it is going to be important
+for you to understand that each of these problems has a
+polynomial time algorithm. And finally, reductions are going to be at the core of a
+lot of what we do. So be sure to review
+Section 38 as well.

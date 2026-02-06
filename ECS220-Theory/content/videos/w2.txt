@@ -1,0 +1,1227 @@
+en-ECS 220 2a_4.2-1 3-Coloring reduces to CNF-SAT.txt
+
+Now we saw that three
+coloring is reducible to planar 3 color and meaning an
+algorithm for planar 3 color in, even though it only
+works on planar graphs, can be used after but a processing to determine the 3
+coloring of any graph. And that's maybe not so surprising because they're both
+questions about graphs. Digital transformation to turn a possibly non planar graph into a planer one
+with the same answer. But what we're going to
+show now is something a bit surprising that 3 coloring
+is reducible to CNF SAT. Write a question about a totally
+different type of object. So we're going to show how
+if we had an algorithm that can determine whether an
+arbitrary CNF formula is satisfiable or not. We could use that to
+determine whether a given graph is 3 colorable or not. And the way we're going
+to do it is by giving them an algorithm that
+on input a graph g will output a CNF formula fee that is satisfiable if and only if the
+input graph is 3 colorable. And so if we had an
+algorithm that could determine satisfiability
+of CNF formulas. Together with this
+algorithm we're about to describe is called the reduction. We can use it to get the answer
+about whether G is 3 colorable. And then we'd have an
+algorithm for three color. So the key idea here is going
+to be for each node in V, we're going to make
+up three variables. You are UG and UB. And exactly one of them
+will be set to true. So for example, coloring you
+read will correspond to you. R is one and the other two are 0. Now we're going to have to enforce that by how we design the formula. So here's what we'll do
+for each edge uv any. Now this is a good sanity check
+when you're doing a reduction, make sure that your reduction
+actually depends on the whole input. So in this case, what I've
+said so far is we'll do this. And I didn't mention E at all. I just talked about the nodes. So make sure that somewhere in the reduction you actually use
+the full structure of the graph. So here's where the structure
+of the graph influences us. If we have an edge u, v, and e, We add clauses to capture the implication that if
+you as a certain color, that implies v is
+not that same color. So we have these three implications. View is red, it's not
+the case that v is red. And if you as green, if not the case that v is gray. And similarly for blue, and remember that p implies q
+is equivalent to not p or q. So we can replace these implications
+with ors and look at that. They look like closets. So we have an end of
+ores of literals. Now, if we stopped right
+there, this wouldn't work. A formula that has nothing but clauses like this is easy to satisfy. You just make everything
+falls, right? But we're not, we want to capture the fact that you need to
+assign an actual coloring. And coloring corresponds to setting one of these to true and
+the other two to false. So we're going to
+also add clause like this for each node that
+it's the case that you are, or UAG or UGA has gotta be set
+to true at least one of them. So we're almost there. This ensures we can't just
+make everything falls, but this allows us technically
+to make something that's not a coloring because it allows us to make more than
+one of these is true. So finally, we have to
+add some constraints that no more than one of these three
+variables can be set to true. And to do that, we can
+just add these clauses. And if you go through
+the logic of this, you see that they will
+ensure that exactly one together with this
+constraint over here, exactly one of each of these constraints is
+going to be set to true.-e
+
+en-ECS 220 2a_4.2-2 k-SAT for k=1,2,3.txt
+
+So we've talked about CNF SAT. It has a special case called K sat, where k is a positive integer. And this is just a special case where each clause has exactly k literals. And so let's think about a few
+special cases of the AS1 SAT. So I clam, one set
+is NP. Why is that? Pause and figure that out. So once that just means it's
+a conjunction of literals, ripe and a literal is a
+variable or its negation. So if ever you get a variable and
+its negation or to the literals, well, you can't
+satisfy both of those. It would be unsatisfiable. But if, say, p weren't here and
+you add q and r and not p. Well, if you only have a variable where
+you only have its negation, that tells you what you ought to
+set that variable to satisfy it. So it's very easy to just
+determine if it's satisfied. Well, you just look, does it have
+a variable and its negation? And if that's true, is not satisfied. All right, I'm going to claim that
+2 SAT is also NP. Why is that? This is also worth thinking
+about for a little bit. So pause. Okay, It's not quite as easy. So first let's observe that if
+we have the formula a or B, that's equivalent to not a
+implies B and not B implies a. That's actually looks like quite
+a bit What's going on here? Well, just remember, an
+implication is equivalent to the left side negated
+or the right side. So not a implies b is just
+equivalent to a or B, right? And notice that this formula, not a implies b is just the
+contrapositive of this one, right? Not b implies a. So these two are actually
+equivalent to each other. So taking an end doesn't
+have any effect, but it's equivalent and they're
+both equivalent to a or B. So here's what we're going to do. You want to know whether a
+tooth to CNF formula Phi, such as this one over
+here is satisfiable. You make a graph with one node
+per possible literal, right? Pqr, and then their negations. And you draw an edge from
+one node to another, corresponding to this up here, right? So each clause here is going
+to contribute two edges. So this one, the first
+edge it would contribute, would be you take the
+negation of this, which is p. And that implies q. So there's a black arrow from p to q. And then going the
+other way, You take the negation of the right one, NOT Q and draw an arrow to not P. So that's why we have
+this other black arrow from NOT Q to not P. So you do
+that with the other three clauses. You get six other edges
+and it looks like this. So what are we gonna
+do with this graph? So first observe this has
+a satisfying assignment. If we set all of them to false, then this will be the
+statement will be true. And something to notice
+is that setting them to false corresponds to
+this loop down here. Not p going to NADH
+are going to not q. And if you follow these, you never visit backup here. So we're going to define
+a contradictory loop. This graph G fee that
+we derived from v to be a cycle containing both a
+literal and its negation. In other words, at some point
+you have the variable x. And then sometime later
+this squiggly arrow represents that you've
+maybe followed many edges. You can get to the negation of x, and then that's not quite
+a contradiction yet, but from there you can get back to x. And if you look over here, you'll notice there's no
+contradictory loop, right? Every cycle in here does not contain both a
+variable and its negation. Now, if we were to add
+an extra clause here, say and q or r, and it would add these
+two green arrows that would introduce a
+contradictory loop, right? So for one example, we
+could see you could start at P and you could go to NOT Q. And then you could go to R, and then you could go back to P
+and then to q and r and back to P. So you can have a cycle that
+visits both Q and not Q. And the claim is going to be
+that phi is satisfiable if and only if there are no
+contradictory loops in g, right? And if you think about
+what's going on here, what are these arrows saying? Well, this purple arrow
+right here is saying, well, if P is Q, if P is
+true, what do we know? Well, the purple arrow
+says if P is true, then not q has to be true. In other words, q has to be false. And this black arrow right
+here is saying, well, if not q is true, then not p has to be true. And that's not a contradiction yet. It might just mean q should be false. But then this is saying the blue
+arrows I have not p is true, then not r has to be true. And then if that's true,
+then q has to be true. If that's true, then
+R has to be true. And if that's true, well
+then p has to be true. But now we've said has to
+be both true and false, which again, So a full proof
+of that is in the textbook. We won't go through it,
+but that's the idea. So this boils down to asking, are there any contradictory loops? And essentially that can be solved by just iterating over each variable and check whether it's possible to
+reach from node x to node NOT x. And also is it possible
+to reach from NOT x to x? And those are instances of the
+graph reachability problem, which you can solve with a breadth-first search
+or depth-first search, which can be done in
+polynomial time and there's only a polynomial
+number of variables. So graph reachability is NP. So that implies that
+2 SAT is also in B. We can use a reachability
+algorithm to solve 2-SAT. All right, the next integer
+and interest is 3 SAT. So ones and twos that are both np. We're not going to argue
+yet that 3 SAT is not NP. In fact, we don't know whether it is, but what we are going
+to show is that despite there being more structured
+than just CNF SAT, which allows very numbers
+of literals in each clause. We're going to show
+that this special case of CNF SAT called reset, is just as hard as CNF SAT. We're going to reduce
+CNF SAT to 3 SAT. So how do we do that? Well, we're going to have
+to write an algorithm that on input an
+arbitrary CNF formula. Can convert any clause would say k elements into a number
+of three clauses, meaning clauses with three girls. So let's start with the easy cases. You might have fewer than
+three literals per clause. So suppose you have a clause x or y. What we can do is introduce a new variable that doesn't
+already appear in our end, but let's call it z. And we'll replace the clause x
+or y with these two clauses, x or y or z and x or y or Nazi. Now look at what this is doing. Whatever, suppose that the
+input formula is satisfiable, then there's some way to
+set x and y to satisfy. So if you just set them
+to the same thing over here and just set z say to true, that would make this left clause be satisfied and also this right one, because x or y is satisfied, the fact that NOT z would
+be false doesn't matter. And conversely, if this
+is not satisfiable, so say if every assignment make some flaws like
+say this one be false. What happens if this is false? Well, x and y both have to be false. So then look over here,
+they're both false. So the only way that you
+could possibly satisfy either clause would be to
+satisfy the third letter O, but you can't satisfy both. They contradict each other. So we have one of these do clauses
+are true, the other is false. So there would be no way to
+satisfy this 3 CNF form. You can play a similar
+trick with one clauses. If one of your clauses is simply x, you can now introduce two
+new variables, Z1 and Z2. And now the four clauses you add iterate over every possible
+value they can take. So if you just look at these, you'll see there's
+no way to set z1 and z2 so that they are responsible for satisfying
+all of these closets. At least like any
+assignment to both of them, has to make both of these literals
+false in one of these clauses, and then it's only x that's
+leftover to satisfy it. So again, the truth of these
+four clauses boils down to, does x satisfy this
+original clause over it? So those are sort of the easy cases. Now, more difficult case
+is if we have a clause with more than three variables flow. Again, this is easier by example, but it should be fairly obvious
+how to generalize the example. Let's suppose we have a seven clause, a or B, or C, or D, or E, or F or G. So we're going to replace it
+with these causes over here. We have a special start and end, the start one as the
+first two, a and B. And then our first newly
+introduced variable Z1, that's not in the original formula. And then the last one has
+the last two, f and g. And this is only going to
+apply it to clauses with four or more literals in them. So if you have more than
+four now you're going to have some intermediate ones. And what do they look like? Well, each of them just has
+one of the original variables, C and then D and then E. And then the newly introduced
+variables sort of chained together. So whatever the last variable
+was in the previous clause, its negation is the first one here. Then a new variable X2, and then its negation air, and so on and so forth. And so we won't go through
+the case analysis. But you can do a similar
+thing where you show if an assignment to a
+through G satisfies this, then there's a way to set z1
+through z4 to satisfy these. And conversely, if an assignment to a through G
+does not satisfy these over here, then over on the right,
+no matter how you set z one through z for this
+is going to be false.-e
+
+en-ECS 220 2a_4.2-3 Integer-Partitioning and Subset-Sum.txt
+
+So let's think about this problem. Given a list of integers, this case 4, 5, 6, 7, 8, can we partition them into two
+lists that have the same sum? So in this example you can, you can visualize it as putting balls on one
+side of this or another. So you don't put the same color
+on both sides and you can get 15 over here and 15 over here. And that corresponds to getting
+a sum of 15 on each side. Now note that the total
+sum has to be 30, right? Of each hat sums to 30
+for each have some to 15, then the total has to be dirty. So this is a special case
+of a more general problem, which is given a list of
+integers and a target, some, it may not be half of
+their total sum is just some other number
+less than their total. Can we find a sublist
+that sums to 90? So in this case we can five
+plus six plus eight equals 19. So we formalize this as
+two decision problems. One is called integer partitioning. We're given a list of positive
+integers one through n k. We want to find a subset
+a of the indices so that if you sum all the
+integers in one subset, it equals the sum of all
+those not in the subset. So subset sums that second
+more generalized problem. For some reason this is always formalized as a set
+rather than a list. A list can contain duplicates. A set cannot. So you're given that set of
+integers and a target integer t. And the goal is to find a subset
+of the integers that sums to t, where t may not be half of the total. Now I'm going to claim it's
+obvious that integer partitioning is reducible to subset-sum,
+right? Why is that? Well, as I said, integer partitioning is a
+special case of subset sum, where you set the target to half of the total setup and you can easily figure out what the total silicons. So let's think about this from the perspective of what the
+3 SAT problem was doing. The goal there was to figure out a satisfying assignment or
+report that none exists. So each clause is a constraint. You want to find one assignment that satisfies all the constraints. And each constraint has
+only three variables. There's just, you know, each
+clause was pretty small, but there's many constraints. Whereas each of these
+correspond to satisfying one single constraint that the
+sum is what you want it to be. But that's some involves all
+of the variables potentially. Okay, so before we talk about
+how hard this problem is, let's see, is it easy? Let's explore some obvious kind of algorithmic attempt to solve it. So you might think at first that
+a greedy algorithm would work. We could say, well, I want
+to partition the numbers. I'll call it Xs here
+into a left and a right, whose sums are equal. So we could start with
+both lists empty. And we could try going through
+the x's in sorted order and say, Okay, well, I've got some, some in the left half and
+some some in the right f. If the sum in the
+left half is smaller, well maybe the next
+variable X should go there. Otherwise it goes into the right. But this doesn't work. For example, if you process
+the list 45678 in order, it gives you left is 468
+and right is 57, right? And that sums to 12, which
+has not happened, 30. Okay, so what's the next tool in
+our algorithmic tool, the egg? We could try dynamic programming and it actually turns out this works. And if you seen a bit ahead, you know this problem is NP-complete. So we'll talk about
+how we get to have a polynomial time algorithm
+for an NP-complete problem. After we explore how
+this algorithm works. Okay, so we're going to define this predicate here that takes two
+inputs are both integers. J is an index, so it's going to be one of the
+subscripts on one of our numbers. And t is a target cell. And we're going to say f of
+JT is true if we can balance a weight of T using only
+weights X1 through Xn. Or in other words, if there
+is a subset of the integers, of the, of the first j are
+integers that sums to t, right? So this is like a
+restricted version of the problem where you're only allowed to use the first
+J integers in the list. And to solve subset sum, you want to calculate f of KT, where K is the final index. So let's think about how we would figure out the value of
+the predicate recursively. Well, we can either use the number
+x-j in the subset a or not. So we have this recursion. Maybe we don't bother to include XJ. And if it's possible to find
+numbers from x one to x j minus 1, that sum to t, then
+this would be true. F of j minus 1 t would be true. And therefore it would
+also be possible to do that if we had XJ around, we just wouldn't
+include it in the set. So in that case, f of
+JT will also be true. But the other way for F OJT to be true is that we do
+in fact include X. And so we also want to ask, okay, supposedly did include xj. What would the other numbers
+that we include have to sum to? Well, Xj is responsible
+for part of the sum. So t minus x j as the
+rest of the cell. In other words, it's also possible
+we could use the first j minus 1 integers to get to t minus x j
+and then include XJ and get it. So that's our recursion. Now the base case is when j is 0. In other words, we're
+asking what if we are not allowed to include any
+of the numbers at all? Then when can we sum to t? Well, that's only true when t is 0, write the empty sum to 0. But any other target can't
+be reached with no integers. So based on this base
+case and this recursion, we can fill out a dynamic
+programming table for all the values of t
+and j that are relevant. So the first row is going
+to be the base case. It's true for t equals 0
+and false everywhere else. And then now we can trace through a couple examples of
+using this recursion. So first of all, the whole left column
+is going to be true. That corresponds to looking
+at j minus one, right? So that will always be
+true that we can simply include none of the integers
+and get a sum of 0. But then sometimes we want
+to include an x side. So in this case, if we include x1, which is equal to 2, right? We can work out from the, the j minus one case, in this case that J1 and
+t equals two is true. And similarly we can fill
+in the rest of the table. We're always going to have up arrows. And then the kind of slope of
+these other arrows depends on the, the number x-j that
+you're referring to. Okay, so there's a dynamic programming
+algorithm. What's the running? Well, if w is the sum of all
+the numbers and the whole list, then the running time is going
+to be o w times k, right? We're iterating over. The biggest way to could possibly be, which would be the sum of
+all the numbers, right? N, We're also iterating
+over all k of the numbers, doing a constant time
+operation for each one. Okay, so how fast is this as a
+function of our input silence? All remember, the
+size of an integer in binary is logarithmically smaller
+than the integer itself, right? So this is polynomial in
+the numbers themselves. If we gave our inputs and urinary, this would be a polynomial
+time algorithm. But generally we don't, generally we're giving
+an integers in binary. And so this is an
+exponential time algorithm. If you write down the actual number
+of bits that each x i needs, you're going to need
+O of two to the b, if b is the number of beds and
+then times the number of integers. So it is in fact an
+exponential time algorithm. But if you want to solve this for
+cases where maybe K is very big, but the individual
+integers aren't very big. It would actually be inefficient. Algorithm is just exponential
+in the number of bits you.-e
+
+en-ECS 220 2a_4.2-4 Clique, Independent-Set, Vertex-Cover.txt
+
+So let's move to another problem. And unlike the ones we've
+talked about so far, this is one that's fundamentally
+an optimization problem, although we're going to talk
+about a decision version of it. So here's the cartoonish
+setting from the textbook. I'm planning a cocktail party
+from an academic acquaintances. However, there are a
+number of rivalries among pairs of people who glare at each other and salt
+each other's work and generally render the
+conversation like tires. And I'd like to arrange
+a gathering that is as large as possible,
+the optimization part. But I want to make sure that I don't invite both members of
+any of these pairs. So we can formalize that as
+we often can with a graph, G equals V E, where the edges in E represents rivalries and the nodes
+represent the people. So we define a subset
+S of nodes to be independent if no two nodes
+in S are adjacent, right? So if you have a set S and there was no edges between any
+nodes, it's independent. And if the edges represent rivalries, that means everybody in
+that set gets along. Alright, so these
+would be a candidate set of people to invite to the party. But of course you want to find, you want to have the
+largest party possible. So you would like to have the
+largest independent set in G. So that's the optimization
+problem that we want to study. Now, the way that we formalize
+this as a decision problem, right? Rather than outputting
+the independent set or the size of the independent set, we get a second input. And we say the input is a graph G and an integer K. It's a threshold. And the goal is to find an
+independent set of size, at least K. Or put another way you want
+to answer the question, is there an independent
+set size at least k? So in this case, here's
+an example graph and there is an independent
+set for red nodes. You can verify there's no
+edges between any of them. And if you stare at it a
+little, little longer, you can see there's no way to add any new nodes to that while keeping it independent,
+so it's maximal. It's also maximum mean, meaning there's no other set of
+size five that's independent. So here's a very related
+concept, a clique. All right, so a clique is a subset of nodes that are
+all adjacent to each other. So in some sense, this
+is a dual concept, independent set, independent set. You need no edges in a clique. You need every pair of
+nodes that have edges. And the goal would be given
+a graph to find a clique of size at least K to related
+optimization problem. Now if you look at the exact
+same graph we had above, that, the biggest
+clique you can find, which is just size 2, doesn't seem to be all that related to the biggest independent
+set you've been fine. But I'm going to claim these problems
+are more or less equivalent. So pause right now and
+think about why these are not merely reducible
+to each other, but really easily reducible. They're practically the same problem. And the reason is that. You can take what's
+called the dual graph. In other words, you keep the
+exact same set of nodes, but you just flip the edges. In other words, remove all the edges in the
+original graph and then add edges between every pair of
+nodes that didn't have them. This one's a little harder
+to visualize the edges. But if you think about what
+happened in the original graph, since no pair of nodes
+in the set had edges. And since we're flipping
+all the edges now, every pair of nodes is going
+to have edges down here. In other words, in
+this graph up here, a set is independent if and only if it's a clique in this
+dual graph down here. So that very easy
+transformation allows you to, to sort of reduce one problem. That's why they're
+practically the same problem. Now here's another concept from
+graph theory, vertex cover. And we say a vertex cover
+is a subset of nodes where all of the edges have at
+least one endpoint in the subset. And the bigger you
+make the vertex cover, the easier it is for me to
+sort of cover all the edges. And so unlike clique
+and independent set, where it gets harder to find one, the bigger you make the
+threshold vertex cover is more like a minimization problem. The smaller you want
+the vertex cover to be, the harder it might be to find. A trivial vertex cover
+would just be every node. So it's not the same problem. And yeah, I'm going
+to claim it's again, almost the same as independent set. So pause for a second and
+think about why that is. So here's a vertex cover. And if you kinda look at this and
+you look at the independent set, you can see that they're
+complements of each other. Right? So let's think about, is that an accident? That, that the complement of this independent set ended
+up being a vertex cover. Well, no, you're going to have that. It, S is independent if and only if its complement V minus
+S is a vertex cover. The idea is, none of these nodes
+have edges between them, right? None of them have edges between them. So every single edge in the graph
+is either between two nodes, the art in this independent set, or if it touches one of
+the nodes in the set, then the other node
+is not in the set. So if you just take
+the compliment, right, you know that every single
+edge in the graph has gotta be incident on one of
+these nodes here, right? Then no edge can be between two of the nodes that you left out
+because it was independent. So again, by a very easy
+transformation of an instance of independent set to an instance of vertex cover could solve one of
+them if you could solve the other. Okay? And then this slide
+is just summarizing that. So S is an independent set, is equivalent to V minus S
+is a vertex cover, right? And then that's
+equivalent to S. It is a clique and the so-called
+compliment graph. So when you're looking
+for a set of size k, all of these are solvable
+in time O of n to the k, where n is the number of nodes. So you might think, well that
+looks like polynomial and n to the k is polynomial, right? Well, n to a constant,
+this polynomial, right? So n cubed as polynomial, n to the fourth is polynomial, but k here is the size of
+the set we're looking for. And that might be as big as the
+number of nodes in the graph. So in the worst case, this could be like time n to the n, That would be exponential. So it's polynomial if k
+is indeed a constant, if all you care about is
+finding cliques of size 3, those are also called triangles. Well, that's solvable in cubic time. But if you care about general, okay, well then it's
+x, it's exponential. So here's some other variants of
+this independent set problem. One is given a graph, we would like to find
+an independent set of maximum size that's more or less the optimization version
+of the problem, right? Another related problem,
+which is a decision problem, is given a graph and
+a threshold k, right? Instead of asking, does G have an independent set
+of size at least K, we're asking, does its largest
+independent set has size exactly k? So a question to ask is, is this problem in NP? It kinda looks like it is, right? Remember I warned you to look for decision problems where it looks like the solution is some object
+you want to find, right? So this sounds like, oh, it's an NP and the proof would be the largest
+independent set, right? You just verify that it has size k. Well, except how would you
+know it's the largest, right? What if the answer is no? What if I ask the question, does G have an independent
+set of size ten? Right? If I give you an independent
+set of size nine, that doesn't prove that there's
+no larger one of size 10. So this problem is not
+obviously in Endgame.-e
+
+en-ECS 220 2b_4.3-1 formal definition of NP and NP in EXP.txt
+
+So now that we've seen many
+examples of problems in NP, it's a good time to circle back and think about how
+to formally define it with informally talked
+about a problem is an NP. When there's proof, that's easy to verify whenever
+there's a solution. So now let's formalize that. So ND is the class of problems. A number of problems here
+means decision problems, which means languages are
+subsets of their own star. So a problem is an NP. Whenever the following holds, that a string x is a yes instance
+of a if and only if there is a W such that the pair X W is a yes instance of
+a different language. We call a V the so-called
+verification language. And what's AV? Well, hey, V is a decision
+problem np regarding pairs XW, where we require that the length of w be bounded by a polynomial in x. So if a is a decision problem, right? And the, the above as the
+textbooks, formalism, I liked it to be even slightly more formal with talking
+about strings. Here. We say a is an entity
+if and only if there is a decision problem AV
+NP and a polynomial q. So that for all strings x, x is an a if and only if. The following holds. That there is a W of length
+at most q of the length of x. So it could be longer than x, but at most polynomially long, such that the pair X
+w is an AV, right? So if x is an a, there's a short proof
+that's easy to verify, IE, the pairs and AV and Q
+being short, or sorry, w being short means it's at
+most q of the length of x. And conversely, if x is not an a, then there is no such WQ. No WWW give as a second input
+would cause the algorithm, Brady to accept the terms. There's X is the instance
+of the NP problem. W is the witness also known
+as a proof or a certificate. And a B represents the decision problem that's
+polynomial time solvable, the so-called verification
+Brooklyn. Okay? So we define n to be the length of x. Well then n plus q of n is the
+length of an instance for AV, because that's a pair x w. So that's a little bit longer
+than n, but not too much. It's within a polynomial of n. So since Q is a polynomial, the running time of
+the algorithm for AB, which is polynomial in n
+plus q of n by definition. Well, that's also bounded
+by a polynomial in n, Because n plus q of n is
+bounded by a problem. Yeah. Okay, So with this formal
+definition in mind, we're going to prove this
+complexity class containment. Np is a subset of X. In other words, every problem in NP, though we think maybe not all
+of them are contained in P. Well, they're all
+decidable and in fact they're all decidable
+in exponential time. So let's see why that is
+for an input x of length n, the space of potential
+witnesses is 0, 1 to the less than or
+equal to q of n, right? So this is all the strings that
+could possibly be witnesses. And that is about, and it's
+theta of two to the queue event. So it's exponential
+in N and no bigger. So for each problem a in NP, the following algorithm decides a, assuming that a has a verification
+algorithm will call V sub a, That's about whose time is
+bounded by a polynomial p. And this is just the algorithm that exhaustively searches
+every possible witness. So an input x, you let
+n be the length of x, and you iterate over every string
+w of length at most q of n. And you simply run the
+verification algorithm on x and w. And if that's true for any
+of those, WE return true. If you get through the entire search without finding that
+this ever returns true. And that's the part that
+can take exponential time. You return false. So note that there's
+going to be around two to the Q of n iterations
+of this loop, right? And each iteration it's
+going to take how long? Well, it's going to take p
+of n plus the length of w, which is n plus q then which is
+bounded by some other polynomial, some composition of p and q. So call that R of n. That's the polynomial
+that bounds the, the, the running time of
+each iteration of the loop. And that's done to, to
+the queue of enzymes. So in other words, you
+have total time is r times theta of two to the queue, then that's just two to the
+something polynomial and n, which is exponential time. So we've shown a is an XP and it
+was an arbitrary element of NP. So all event E is contained in X. Now, the conjecture is that you actually need in some
+sense most of x to make this work. So imagine you wanted
+to show that somehow. There's things in NP that
+don't require that much time, maybe exponential, but
+not huge exponentials. Well, the conjecture some
+people believe is that no, you actually do need
+exponential time. Or in other words, for some constant
+alpha could be 0.1 point 0, 1 for some constant alpha. And t is not in time
+of two to the Alpha. In other words, there's
+some problem in NP. But the fastest
+algorithm for it takes at least Time 2 to
+the Alpha n or more. So that's unproven. In fact, showing that would be even stronger than showing
+that P is not NP. This would be showing
+that it not merely requires more than polynomial time, but in fact more than this
+exponential amount of time. But as with most of the open questions and complexity
+theory, we really don't know.-e
+
+en-ECS 220 2b_4.3-2 NTIME(t(n)).txt
+
+Okay, so we've defined NP and it's specific to
+polynomial running times. We can generalize that a
+bit to other running times. So just like we defined p and then time of T of n to get more fine grained about the
+exact running time, n time of T of n. The
+definition looks a lot like NP. So I will talk through the
+whole thing except to note, this is basically the
+definition of NP, except where we required
+the verification problem AB to B and P. Now we're
+requiring it to be in time t7. And whereas before we required
+the length of w to be bounded by some polynomial of n. Now we're requiring it to be
+bounded by O of T, right? So again, the witness
+could be longer than x, but not so long that the running
+time on these two inputs would exceed that of t. Okay, so with that in mind, we can
+say np is just the union over all possible polynomials
+of n time of that polynomial. Nx has a similar definition. It's n time of two to the
+poly-A then, or in other words, the union overall c of n time
+of two to the end, the sea. And that's contain an
+even bigger class. We can call exp x, which is time
+of two to the two to the poly-A. Then by a similar kind of exhaustive search argument
+that there's only, quote, only exponentially
+many witnesses year. So sorry, only doubly, exponentially many witnesses here. And therefore we need it most doubly exponential time to
+search all of them. And more generally, n
+time of T of n is always contained in deterministic
+time of two to the o of t.-e
+
+en-ECS 220 2b_4.3-3 problems not obviously in NP.txt
+
+So I've mention that not every problem we care
+about is contained in NP. So it's worth cautioning
+to this moment that there's some problems that are
+sort of not obviously in NP. Maybe some of them are, but they're not obviously in NP. So here's one, no Hamiltonian path. Given a graph, we want
+to answer the question, Is it not Hamiltonian? So if there is a Hamiltonian bad, there's a short proof of
+that and it's the path. But it's not obvious
+how to give a short, easily verifiable proof that every path in a graph
+is not Hamiltonian. It seems to require
+checking all of them. And it's worth cautioning
+that not every problem that quote
+looks like it's in NP. Surely it, just because
+it has the word exists or find or something
+in the statement, doesn't mean it's an NP. So here's a good example. Diao Fan tiny equation. So this is the problem given a
+multivariable polynomial equation. So for example, something like this. So x squared minus three, y to the fourth plus
+two at z equals 0. You want to answer the question, does it have an integer solution? So that sounds kind of
+like an NP problem. It seems, oh, the short proof, if the answer is yes, be
+the integer solution. Except why should it be short? Right? Maybe those integers
+could be huge as a function of the description length
+in bits of the equation. And in fact, it turns out that this
+problem is not even decidable. So it's not just that the bound
+on the witnesses is bigger, there is no bound on the witnesses. They can get arbitrarily big. And the obvious exhaustive search algorithm that requires
+in this case that you search all possible triples of
+integers you could assign to XYZ, it might have to keep
+searching integers forever. Integers can get arbitrarily big before it finds one and
+maybe there is no solution. Here's another one we
+talked about already. Given a graph G and an integer K, does GE's largest
+independent set has size exactly k. If we ask at least k, Then that's just the
+independent set problem. And you can prove it by just
+giving an independent set of size k that proves that the largest one
+is either that size or bigger. But if you want to know, is there an independent set
+of size this and no bigger, it doesn't seem obvious
+how to prove there's not a bigger independent
+set up in somewhere. It's a similar idea when you're
+asking about small things, would be given a Boolean
+circuit C, You want to know, is there a smaller circuit that
+computes the same function, right? It might seem that circuit that
+smaller would be the proof, except how would you quickly verify that they actually do
+compute the same function? You apparently have to iterate over every possible input and that
+would take exponential time, Does not a polynomial
+time verification. Here's another one. It is
+actually contained in NP, but I'm just pointing
+out is not obvious. And it's given a set of
+linear inequalities, do they have an integer solution? So it looks kinda like
+diaphragm tiny equation above. Except that first of all, you're asking about
+inequalities and second of all, it's not an arbitrary
+polynomial, it's linear. So you don't get to multiply
+two integers by Egypt. So this one seems to suffer
+from the same problem. If there's an answer, it's not obvious that the
+integers would be bounded in any way by the number of equations you have and
+the number of variables. But it turns out they are bounded by an exponential in that number. And so the numbers are at most exponential in the
+number of variables and equations than their size in bits is logarithmically
+smaller than that. So it's at most
+polynomial in the number. In other words, there's a
+polynomial link witness. Once you have one of those,
+you can quickly check. I just plugged them
+into the inequalities, make sure they satisfied.-e
+
+en-ECS 220 2b_4.3-4 logical structure of NP and coNP.txt
+
+Okay, So here's yet another slightly different
+way to characterize NP. This is the class of
+Boolean property is, that's the textbooks term. I would rather use
+the word predicate, but it just means a value
+that can be true or false. The class of properties of
+the form a of x, right? So on input x a of x
+is a Boolean value. It's equal to the following. The value of there exists a W of the appropriate size such
+that Av of x w is true, where AAV is itself a
+property or a predicate in P and W is polynomial in x. So in other words, if g is a graph, say than H of G is the property that g is Hamiltonian will then AHV, the verification property of GP is the polynomial time
+decidable property that P is a Hamiltonian path in G. This is just a slightly
+different rephrasing of stuff we've said already. But this definition shows the
+asymmetry between yes and no. So remember De Morgan's law. So the negation of an existence
+statement is for all statement. So for example, we have this. The graph G is not Hamiltonian
+if and only if not H of G once. That's just the definition of age. And that's, let's just substitute
+this equivalence with HB. That's true if it's not
+the case that there exists a path P that makes HV of GP true. And then use De Morgan's law to
+pass this not through the exists. So it's not that there exists a path if and only if for all paths P, it's not the case that
+AHV, the GP evil. In other words, for all paths B, p is not a Hamiltonian path in G. So the very sort of
+drawn out way to just express the intuition
+behind De Morgan's law. So in other words, NP is
+defined by exist statements. But the negation of an egg exist
+statement is a for all statement. So it's not necessarily
+an NP property. So we can talk about a complexity class capturing
+for all statements. And that's called co-NP. That's the for all version of NP. So this is the class of problems
+whose compliments or an NP. Now be very careful
+here we're not saying co-NP is the complement of NP. Np is a class of decision problems. They're all decidable. They all have some polynomial-time
+algorithm defining them. The complement is every
+single other language including a bunch of
+undecidable problems. So go and he's not the compliment of, AND you gotta go one further
+down into the set hierarchy. It's the set of languages, each of which is itself
+a set of strings. And those sets each have a
+complement sac that is in NP. So another way of stating
+it does these are the problems for which the no
+instances have a short proof. So these are properties
+of the form a of x equals for all w b of x, w of wounds, where b is a
+polynomial time problem. So what I caution CA and D is
+not the compliment of entity. Okay? So here's an observation. If P equals NP, then NB equals co-NP. Why? You should pause to think
+about that for a sec. Right? And the answer is that, well, COPI is just p, right? If, if a decision problem is NP, then so is its compliment. You can just take a regular algorithm for it and swap the
+yes and no answers. And now you have an algorithm
+for the compliment. So P were equal to NP, then they'd both be equal
+to copy, which would be go. So here's an interesting question. If n equals co-NP, does that mean P equals NP? So it turns out we don't know, it's possible that np and go and
+D could actually be the same. And yet neither is equal to p. We think that's
+probably not the case, but it is an interesting question. So some problems are not obviously
+in either envy or co-NP. And one example is this problem. Given a graph is it's
+an a and a threshold k is its largest independent
+set of size exactly k, right? There's no obvious proof
+when the answer is yes, and there's also no obvious
+proof for the answer's no.-e
+
+en-ECS 220 2b_4.3-5 nondeterministic computation.txt
+
+So we'll talk about one final
+alternative definition of NP. This definition was actually the first and the reason for the letter N in the name NP stands for
+non-deterministic, right? It does not Stanford not, and B is not called,
+not automobile time. It means nondeterministic
+polynomial time. So here's how we formalize
+it with our kind of semi-formal programming
+language model. We imagine we have a new instruction
+in our language that has an OR in it that represents one of two
+different things we could do. So we might say go to
+line three or line 9. Or we might say, we have a bit b, we want to assign it to be 0 or one. And the idea is, you don't know which one the
+program's going to do. You could think of it like random. But I like the word
+non-deterministic. Better just could do either one. You have no idea
+which one it will do. So with an instruction like this, the program computation forms a tree configurations
+instead of just a sequence. So you have your
+initial configuration and you might have some deterministic instructions and there's just one next configuration, does one next configuration. But if you reach one, now the current instruction is one of these nondeterministic commands. Well then there's two
+possible next configurations, and those form the two
+subtrees of this tree. And then you get a
+tree of computation. The leaves represent when you halt. And the leaves might
+have different answers. Some might call with a no and
+others might call with a yes. So the condition that we
+say the machine or no, it has to just give
+one answer, right? So we say that the machine accepts if at least one of these
+branches as a yes, even if some others have a no, and it only rejects if every single branch
+terminates with a number. So if the non-deterministic guesses are interpreted as
+flipping random coins, then you can express
+this with probability. You say the program
+accepts if and only if the probability of
+outputting yes is positive. In other words, there's at
+least one leaf here with a yes. So NP can be defined as the class
+of problems solvable in a sense, by a polynomial-time
+non-deterministic. So polynomial time
+here would mean that every single root to leaf
+branch would have length, at most some polynomial of the length of the
+input specified up here. Now with this one,
+with this definition, That's a little more straightforward
+to see that P is a subset of NP because p represents
+deterministic computation. And the deterministic computation
+is just a special type of tree where every single node except the one unique
+leaf, has a single trial. So let's justify now that this is actually equivalent to
+the other definition. So we have this
+non-deterministic computation versus deterministic computation. You're provided with this witness. So here's the sort of
+original definition of NP. We start. And let's just point out. We say x is an a if and only
+if there exists a witness w, Not too long, such that the AV
+verifier accepts the pair X W. So the sort of heart we have to show that this is equivalent
+to the other definition. So the idea is that how can you represent this as a
+non-deterministic computation? And the idea is we
+can turn this sort of deterministic verification where
+the witness kinda comes from nowhere into a non-deterministic
+computation where the very first step of the
+computation is guess the witness. So that would look like this. This would look like guessing
+a two or a three bit witness. And then once you've
+got that witness guest, now it's simply a
+deterministic computation to run the verifier for a v. Now that you've got
+both x and the witness. So in other words, like first guessing the witness and then checking it
+is a special type of non-deterministic computation
+where all the non-determinism is sort of frontloaded. That happens all at
+once at the beginning. And then it's deterministic
+from there on out. And it's not too hard to prove the other direction that if you have a arbitrary non-deterministic
+computation where maybe these nodes and
+repairing in the middle, you can turn that into a verifier. And essentially, the
+witness in that case would represent the various bits that gets selected at
+each of the nodes.-e
+
+en-ECS 220 2b_5.1 NP-completeness and reductions.txt
+
+Okay, So we've talked a
+lot about the class NP, and now we're going to get to the main reason people
+care about that class, which is this notion
+of NP-completeness. So we say a problem is NP-hard if every problem a in NP is
+reducible to that problem be. So we've talked about
+particular instances of NP problems that are
+reducible to each other. But this is saying a
+much stronger thing that every single problem in NP is
+reducible to this one problem. So in other words, it's at least
+as hard as any problem in NP. Now technically this applies only to what are so-called
+many one reductions. We've been a little loose with the concept of what
+exactly is a reduction. So far I've just said, Oh, reduction is a way to use an
+algorithm for one problem B, and then use it to
+solve another problem. And we would want that if the
+first algorithms polynomial time, the whole thing, it's
+polynomial time. But many one reduction is a very
+special type of reduction where the way you use the algorithm for B is you take your instance of a, you transform it into
+an instance of B. You hand off that instance to an algorithm for B and
+then whatever yes, no answer, it gives, you report the exact same answer. So it's like a tail call right
+at the end of the reduction. So typically when we talk
+about such reductions, we don't bother including
+the part at the end where we call B because
+it always looks the same. But the last step is always hand off the output to be and
+report whatever it does. So the reduction itself is just the function that
+does the composition. So it's a polynomial-time
+computable function that takes as input a string, which is an instance of a, and, and outputs another string
+which is an instance of B. For all x. That could be input x is an a
+if and only if f of x is in B. So when we're talking about
+reductions for NP completeness, this is always going to be the kind of reduction that we talked about. And we say that B is
+NP complete if it's NP-Hard and also it's
+contained in NP, you can have NP-Hard
+problems that are not in NP and the halting problem is one, not even decidable, but it
+turns out it's NP-Hard. But we're, in this chapter
+are going to focus on only problems in NP. So the first theorem we'll discuss is something that's
+actually not that obvious, but it's just that there
+is an NP complete problem. So this is maybe not obvious. You know, we, we've shown how certain problems can
+be reduced to others. But there's nothing that seems to
+be intrinsic about the class NP that would somehow make you think every single problem and it is
+reducible to one single problem. But it is, and in fact, it's, once we write it down and
+then kind of seems obvious. So we're basically going to define a fairly artificial looking problem. It's not like a natural problem
+would necessarily want to solve. And it's whole point is just to
+be designed to be NP-Complete. So we call it Witness existence. And this is the problem given a
+program P that takes two inputs. Called x and w. So this is going to be a verification
+program like the kind of program that runs in polynomial time that lets you see that a
+certain language is in NP. So we're given just that
+program and then I'm writing the two inputs
+it would take here. Those aren't both part of
+the input to this problem. Does the program is and the first
+input x and then a third input. And you can think of this
+as like a time-bound. So the way I'm going to express it is it's an integer t in urinary. And I said most of
+the time we want to do integers in binary
+because it's more efficient. But here we want to use this to sort of clock how many steps we're
+going to be willing to run p4. And so we want that to scale
+linearly with the size of our input. And so if we write
+down T 1s in a row, we're going to have a
+one in the string for every time step we
+allow Peter and Paul. So the question we're going to
+ask about these three inputs, p, x, and t, is the following. Is there a w, a second input to
+be whose length is at most t, such that P of x w outputs yes, in at most t steps. Or in other words, we're
+basically asking if this thing is an NP verifier, and then x is an instance
+of the NB language, and then T is an amount of
+time we're willing to wait. We're just asking is there a witness that would cause the verifier to say yes
+within this amount of time. So let's think for a second
+and pause right here. What's the reduction from
+Hamiltonian path to witness it? As we said, everything in NP reduces to this,
+including this language. So let's think about that. So it would be more or less
+the same for any NP problem. The on input graph
+G, you want to know, is there a Hamiltonian path in G, the p and the x and the t would
+give to witness existence. The p would be just to the
+verifier for Hamiltonian path, it would be the same no
+matter what the graph is. The x would be the graph as
+the input to Hamiltonian path. And the integer t would be the
+running time you would expect the verifier to take on that graph if you gave
+it a Hamiltonian path. So it wouldn't be that long, they'd be close to linear, not much more than linear
+time in the length of x. So it might be something
+like length of x times a big constant or length of x
+squared has to be on the safe side. Okay? And this is where thing and I
+do y is t expressed in urinary. So think about this on your own. This is a very, this tends
+to confuse students a lot. So we can talk about this
+more when we discuss. But if you didn't
+express teen urinary, if I had written down this problem, this would've been a legit problem to define if I said write
+down T in binary, but then it turns out this
+would not be NP-complete. This would actually be an n. Complete problem. So it is crucial that we
+represented in urinary here. Okay, so here's the only reason that anybody cares about the class NP. And it's the following statement that if there is an
+NP-complete problem in P, then in fact, every problem in NP is also in P. In other
+words, P equals NP. So we don't actually think either
+of these statements is true. The conjecture is
+that there will fall. So the contrapositive statement, it's kinda more informative about what we think the
+state of the world is. Which is that if P is not NP, which we think is probably true, no NP-complete problem is NP. In other words, showing
+that our problem is NP complete amounts to show and
+that is not contained in B. So we have the following
+two scenarios. And these are the only
+two possibilities. Either NP is different
+from p and then all the NP complete problems are different from
+all the P problems, or all three of them are equal. P is equal to np. And then by the technical definition, every problem in NP is NP-complete. So if we take P not equal to NP as a scientific hypothesis that we
+don't know how to prove yet, but we have a lot of evidence for if a problem is
+shown to be NP-complete, this is evidence that it
+is intractable, right? Remember we said P may not
+capture all the problems. That p may not be a
+good representation of problems that are efficiently solvable because some of
+them take time n to the 100. But we did argue that
+if a problem is not NP, then it's most likely just not
+efficiently solvable period. Okay? So we're going to have to think a lot about
+these reductions here. Now remember, reductions
+are transitive, right? So if a is reducible to B
+and B is reducible to see, this implies that a
+is reducible to see. So why is that? Well, a reduction
+transforms an instance of a to b with the same answer, right? And the reduction from
+B to C transforms a B instance to a Z instance
+with the same answer. So you can simply compose them. Give the instance of a
+to the first reduction, give the output of that
+to the second reduction. And you've got hip hop, a polynomial time
+reduction from a to C. So here's why that's important. If B is NP complete. In other words, all a in
+NP are reducible to be. And if we can somehow show that
+B is reducible to see this term, this will show that C
+is NP-Complete as well, assuming that C is also contain B. So the picture looks
+something like this. You have your NP-Complete problems, which are somehow the
+hardest problems in NP. And you've gotta be that you
+somehow know is NP-Complete. Suppose you have one
+of these on hand. That means that everything
+in NP is reducible to it. So suppose you can show
+that B is reducible to see, we'll then by transitivity
+through all of these, all of these problems must
+be reducible to see as well. So if also you can show
+that C is contained in NP, it's not up here somewhere. Then you've shown everything
+in NP is reducible to see. So it is envy them. So
+to show an ND problem, if you know it's an ERA, usually that part is easier. But to show that it's
+also NP-Hard, right? Reduce some NP-complete
+problem B to it. Do not go the other way. Do not reduce C to B. In other words, you're always
+taking something you know, is NP-complete and you're reducing it to the unknown one you're trying
+to prove, not the other way. It's very common to
+switch those two around. So in other words, you show how
+to transform an instance of a known hard problem into an
+instance of the new problem. So the new problem is sort of
+the output end of the reduction. Now, we're going to cover Sections 52 and 53 in the
+textbook next in reverse order. 52 gives the first sort of
+natural NP-complete problems. We gave an unnatural one
+of the witness existence, but we're going to use that eventually to show that
+these two natural problems, 3 SAT we talked about
+already and a new one called circuit SAT
+are also NP-complete. And then 53 will go
+through a bunch of NP hardness reductions as well as general design
+principles for them. And I find it easier to go
+through Section five 31st. So to do that, we're first
+going to have to assume that circuit SAT and 3-sat
+are both NP-Complete. We're not going to prove it to. We go back to Section 52.-e
+
+en-ECS 220 2c_5.3-1 NAE-SAT is NP-complete.txt
+
+Okay, so now we're going to get
+into some of the principles of designing these reductions
+will do a lot of example. One important reminder from
+the textbook to keep in mind the reductions responsibility
+is to translate the question, not to answer it, right? We translate an instance of
+one problem into another, but the reduction itself has no idea whether the answer to
+either one of them is yes or no. And another got you to
+keep in mind that when we want to show a
+problem is NP complete. The new one we're,
+we're trying to show, we're going to reduce an existing
+NP-Complete problem to it, not the other way around. It's a common mistake. Okay, so let's define a new problem. Now we haven't talked about before
+to variant of Satisfy Ability. We're given a three CNF formula fee. And in 3 SAT we want to know is there's some
+assignment that satisfies it. Here we're asking a
+different question. We want to know, is there
+an assignment that makes every clause have two
+unequal liberals? And we say that such
+an assignment NA ie satisfies V. So what does that mean? Well, one way to satisfy a CNF formula clause is
+to make every literal in it, but you also just have
+to make at least one. All right, So some ways of satisfying
+it would not NAEP satisfied, but not every NA ie, satisfying assignment is
+a satisfying assignment because if you have
+two unequal literals, well then there's a true
+literal in nursing. So here's an example. If we set a equals 1, b is 0, C is one, D is 0. You can notice by
+the colors here that every clause has got at least
+a one and also at least a 0. So because they all
+have at least a one, it's satisfied, but it's a stronger
+constraint than to satisfy. Now, one of the things
+that's nice about this problem is that unlike 3-sat, it treats true and
+false symmetrically. All right? We just have to make
+sure there's at least one of each in each clause. And this makes it useful for
+other NP hardness reductions. The first thing we're gonna
+do is show how this is related to 3 coloring. And in the 3 coloring problem, colors are symmetric, right? No one color is special. The way that a true value
+is special in a clause that only a single true value
+can make the clause true, whereas they all have to be
+false to make the clause false. So that's what makes
+this a little more adaptable to those other problems. But first, we have to
+show that it's somehow related to normal satisfiability. So we want to show that this is NP. So we're going to show that any E3 SAT is reducible
+to three, so hat. And therefore NA E3
+SAT is NP-complete. So how can we do that? Well, we're given a
+three CNF formula phi, which is an instance of an A3. So we want to output a formula
+Phi prime an instance of 3 SAT, so that this is NA ie satisfiable if and only if Phi
+prime is satisfied. So we'll do that by
+replacing each clause in FY with these two clauses. If we have x or y or z. And again, these can
+be literals and these could themselves be
+negations, which means save. If x was the negation of an input, NOT x would just be the input. For instance. So we have to show that
+fees and E satisfiable if and only if Phi prime is
+just normally satisfiable. So in the forward direction, if feed has an assignment that makes this clause have at least one true
+and at least one false literal. That's what it means to
+be an a is satisfiable, then that will also be true
+of not x or not y or not z, because you're just flip all of them. So you'll still have at least
+one true and at least one false. Which means that this
+thing will be true, right? That the conjunction of the two, so this is a satisfying assignment. Okay, so the slightly trickier
+wanted to go the other way. So now we'll show that
+if phi is satisfiable, then f0 is NA ie satisfiable. So observe that any
+assignment that satisfies phi prime has to make
+X or Y or Z true. Because an estimate,
+both of these two. So that means at least one of x, y, and z is true. And it also has to
+make not x or not y or not z true mean it has
+to make at least one of X, Y, or Z falls, right? Which again, what does this mean? The two of these together
+means that at least one of X, Y, or Z is true and at
+least one is false. And therefore this clause in the original formula
+is NA ie satisfied. So we've successfully reduced
+and a 3 SAT to 3 SAT. But now it's time to check yourself. Is this what we're
+supposed to do to show any 3 SAT is NP-complete. So think about that for a second. Now, I, I wanted to get a bit
+of practice with reductions, but I also wanted to
+get you thinking this is the wrong direction, right? This is not how we show that
+any E3 SAT is NP-complete. If we already know that
+3 SAT is NP-complete, we've gotta go the other way. Well, remember for this
+whole section we're going to assume that 3 SAT is NP-complete. And in order to use that fact, we have to reduce it to a new problem to show the
+new problem is NP complete. Okay, so how are we going to do that? Well, we're going to start
+with a slightly easier to ask, which is to show that NAD for
+SAT is NP complete, right? So this is a slight variant where you allow for literals per clause. And we're going to show
+that 3 SAT reduces to that, and that's the right direction to go. We're assuming 3 SAT is NP-complete. And it's fairly clear
+that NA for SAT is in NP. So if we can show that it's
+that 3 SAT reduces to it, we will have shown any
+for SAT is NP-complete. So this is a restatement of what a reduction like that
+has to look like. We need that feed the input to 3. Sat is satisfiable if
+and only if the output v prime of r reduction
+is NA ie satisfied. Okay, so here's I will
+do the replacement. If V has these clauses, we're going to take those
+exact causes and then just add one more literal in each clause. That's why it becomes force ahead. And it's going to be
+the exact same literal, just a brand new variable
+S that we didn't. Okay? So how can we show this is true when we show each
+direction separately. This is always how
+you should do this. So in the forward direction
+of Phi is satisfiable, then at least one literal
+in each clause is true. And in that case, we can set S equal to false and keep the rest of the
+assignment the same. And that will make sure that the prime has at least
+one true literal, that it's x or y or z, and at least one false literal S. So now suppose conversely, we want to show the
+reverse direction that V prime is NA ie satisfiable
+by some assignment x. X represents an assignment
+of truth values to these variables, including us. So first of all, we're going to claim that
+the negation of any, any satisfying assignment is
+also an E satisfy, Right? And think about that. If you
+have at least one true and at least one false
+literal in every clause, if you negate the entire assignment, it just swaps true and false around. So you maintain that
+there's at least one true and at least one
+false in every clause. So there's two possibilities. The satisfying assignment
+x does NA ie satisfying assignment x for v prime and
+either sets S to true or false. So suppose that sets us to true. Well that's going to be inconvenient. So we'd rather have us be false. But what we can do is negate
+the entire assignment. And by this claim, well that's also an N, a
+satisfying assignment. And now we get to assume S is false. And if S is false, and yet these all have at least one true and at
+least one false literal. That means at least
+one of X, i, y, i, or ZI in each clause
+has gotta be true. So just restrict in that
+assignment to the x, y's, and z's. It's a satisfying assignment for me.-e
+
+en-ECS 220 2c_5.3-2 NAE-SAT reduces to 3-Coloring.txt
+
+Okay, so we're going to go through some more
+examples of reductions. And unlike the one we just did, which was between two problems, both involving boolean
+formulas in general, the kinda more clever reductions or between two problems
+of different types, like maybe one involves graphs
+and the other involves formed. So we'll talk about abstractly right here about how to think
+about doing these. And a typical reduction design will involve something
+called gadgets. And these are substructures of the instance that the
+reduction is constructed. And we'll get less abstract. I'll point out by example, what are the things they called
+gadgets and the actual reductions. But There's two general
+types, choice gadgets, and these give the freedom to choose particular parts of the NP witness. So in general, you're going to
+have a reduction transforms an instance of one problem
+into an instance of another. But it's generally the case that
+as you look at the reduction, you could see how to
+construct a witness for one problem out of a
+witness for the other. And so the choice
+gadgets are sort of how you get that transformation. And then the constraint
+gadgets are there to impose constraints on the variables. To enforce that the
+choices you're making up here are actually
+legitimate that give you something correct for that particular problem
+is it is quite abstract, but we'll get to concrete
+examples in a bit. So first let's recall
+the 3 coloring problem. But this is given a graph, an undirected graph G equals b, we want a three coloring
+of the mean in a way to assign colors to nodes and v's that all nodes that are adjacent according
+to e have different colors. Now we're going to show
+three coloring is NP-hard. And by showing that any E3 SAT
+is reducible to 3 coloring. And we already argued
+three coloring is in NP. So this will show it's NP complete. Now, the colors are sort of symmetric here you can
+just change the names of all the colors and it wouldn't
+really affect whether it's a legitimate coloring
+or you could permute them. So this is what makes NAD 3-sat useful because it treats
+these two values, true and false symmetrically. Okay, So here's how we reduce an instance of any fees to
+an instance of 3 coloring. So we have some Boolean formula. And imagine that it has
+a clause that has x, y, and z appearing in it. So we're going to have
+this choice gadget here corresponding to that clause. And the three colors
+could be anything. But let's imagine that
+we're going to interpret the color green to represent true and the color orange
+to represent false. And then the third color will
+just be neither. It'll be blue. So depending how these get colored in the final color and we're
+going to interpret that as an assignment in the formula. So if you, so this is going to force because these two are
+connected to each other, they have to be different. And because all of these
+are connected up here, they all have to be different
+than what this is, right? If this is blue,
+these all have to be, one of the two halves is green
+and the other is orange. Whichever one is green, will interpret that as the a site. So in this case, this would mean setting x to false and setting y to true
+and setting z to true. And if you swap these around, this would be like setting x to
+true and why to true and true. Okay? Now the constraint gadgets
+or how we enforce that, the actual negations that appear in the various clauses somehow
+constrain this things so that the only legitimate way to color this graph would look like an
+NA ie satisfying assignment. So supposedly have a
+clause x or y or z, right? So we know that we're going to
+need some gadget here, right? And we don't know much about it yet. So let's just think through.
+So we have to add something to this graph so that it's somehow
+corresponds to this clause. So we can start with just
+observing if this is x or y or z, like none of them are negated. While then maybe somehow the X, Y, and Z nodes up here ought
+to be the things that are connected in here somehow, right? So this is me kinda walking through. How would I do a reduction? Well, maybe I'd start
+with something like this and I wouldn't know
+what should go here, but I know which node
+should be connected. So the fact that X is
+connected in here, and it's not the case that
+this other node is connected. That's how the fact that
+there's no negation on the X in this clause is showing up. Now this is always a sanity
+check in your reduction. Make sure that somehow the specific structural constraints of the input, in this case it's the Boolean formula show up in the output, right? In other words, it
+should be the case that if you changed the input formula, it would change which
+graph you're getting here. So in other words, if we negated x, then there should be an
+edge from NOT x down air and not an edge
+from x down to here. So for example, if you had a
+clause NOT x OR y OR NOT z, then this should be
+how the connections. Okay, so here's how
+we're gonna do it. Each of those gadgets is
+just going to be a triangle. And this is going to be
+enough to do the reduction. And we're going to have
+essentially two nodes for each variable in
+the whole formula. In this case there's three variables. And then we're going
+to have three nodes in these constraint gadgets for each clause in the formula
+connected in this way. So let's see how that
+translates into. The formula is satisfiable if and only if the
+graph is 3 colorable. So we know that up here, this is more or less the
+only way to color the graph to color this thing some
+color, we'll call it blue. And then to color these differently. So the only choice we have is
+which one of these is going to be green and which one is going to be orange and same here and same here. But now we've further
+constrain them down here. So suppose that we have
+an assignment that NA ie satisfies the formula and that
+assignment is 1, 1, 0, right? And you can check that
+puts a 10 in this clause, and it also puts a
+one on a 0 over here. So we're going to say, okay, that means that down here, the node corresponding
+to that literal, we're going to want to color it the opposite of the
+color up here, right? So in other words, if
+green represents true, then we want to color
+this variant of x green. And then the one anyons that it's connected to down here
+should be orange. And similarly, because z
+has been set to false, we look at wherever z is connected
+and these gadgets down here, we set it to the opposite color. And then the third node here, we can just set to
+the third color blue. So the idea is, in general, why did I pick x and z there? Well, notice that this
+has at least one true, Let's say it's x and
+at least one false, let's say at z and then
+y, we're just ignore it. We just pick one true and one
+false literal out of each clause. We set their colors down here to be the opposite of this
+truth assignment up here, which makes them a legitimate
+coloring because of this connection. And then we just set the third node representing the third
+literal to be low. And then similarly over here, we identify at least one false. That's this x right here, it's false so we can set it to the opposite of false,
+which is green. We identify at least one true. That can be why we set it to the opposite of the true
+color, which is orange. And then the third one
+we can set to blue. Okay? So suppose you instead. So that sort of shows
+one direction that if the formulas and E satisfiable, then the graph is 3 colorable to how can we go the other direction? Well, now we'll show that if
+the formula is not satisfiable, then there's no way
+to color this graph. So again, we've
+already argued this is more or less the only way
+for the top part to look. Accept in each of these pairs, you're allowed to swap
+where the two colors are. So now we're going to argue there's
+no way to pick that swap ends. Air, you can legitimately
+color it says suppose that, that no assignment
+and E satisfies this. So you're forced to have
+some clause with say, all true literals like 111
+for XYZ will then, now, no matter what you do down here, each one of these is
+connected to a green. And therefore there's no way to
+put to color one of these great, but they're all
+connected to each other. And you can't color just this
+part with only orange and blue. This is no way to color the graph. So that shows both directions. Okay? So again, just a
+reminder, reduction. Write the algorithm that
+takes as input this formula down here and outputs this graph. It doesn't color the graph and
+it doesn't satisfy the formula. It simply converts
+formulas to graphs. Translating a question of satisfiability into
+one of color ability. Now we then go and argue
+about how we might satisfy or color in
+one case or the other. But the algorithm itself is not
+trying to solve that problem.-e
+
+en-ECS 220 2c_5.3-3 3-Coloring reduces to Independent-Set.txt
+
+So we'll do another
+example of a reduction. Now this one is going to be
+between two problems are the same type of object that
+both questions about graphs, but they're much different
+questions about graphs. 3 coloring is just asking, can you color a graph with three colors so that no two
+adjacent nodes have the same one. An independent set is an
+optimization problem, which phrased as a
+decision problem says, given a graph and an integer K, can you find an independent set, meaning a set of nodes and no edges between any of them
+of size at least k. So in this case, the choice gadgets that let
+us translate the witness, the coloring from one
+problem to the witness. The independent set and the other
+are going to look like this. So we're going to have in, we're going to take a graph as input. We're going to produce
+a graph as output. That graph we output
+will be a collection of these gadgets connected in a way
+I will see you on the next slide. But each of these collections
+will be complete. So that will enforce that if any of the nodes
+in the independent set, none of the other ones can be
+because they're all connected. So if there are k complete subgraphs, any independent set with
+k nodes must choose exactly one node per
+complete subgraph. Because the only way to get
+decay is to use all of them. So adjacent some graphs
+are going to have different relative
+nodes that have to be picked because we'll
+hook them up like this. So the top one here is
+connected to the top one there. I've drawn the edge, it's
+kind of a dotted line, but it's just a regular edge, just like bees, It's just showing
+it has a different purpose. Now the bottom one
+connects to the bottom. So this would not be
+an independent set. You would be forced to pick two different nodes in relative
+positions in each of these. So the idea is going to be let, to let the relative
+choice of the node within the complete subgraph be
+a color of that subgraph. Now, the subgraphs we need are
+just these triangles, right? So on input a graph, we want to know can it be
+three colored? Here's one. We're going to output a graph that
+has three times as many nodes. Because for each node
+here we're going to have this triangle over here. And we're going to connect
+the triangles in this way. The top of each will be
+connected to the top of adjacent ones according
+to the original edges. And we're going to
+interpret how we assign an independent set or a
+coloring in this way. So we have to show that by
+doing this transformation, this graph is 3
+colorable if and only if this has an independent
+set of size k, where k is the number of nodes in the original graph or the
+number of triangles over here. So if we colored this node blue, that would mean we
+should pick this node to be in the independent set over here. If we colored these two nodes orange, we should pick these two nodes
+to be in the independent set. And finally, these two are green than these two nodes should
+be an independent set. And you can see that because
+between pairs of adjacent clusters, it's always a different
+relative position. The Gothic, this is indeed
+an independent set. There are no edges between any
+of these five black notes here. Conversely, if you have an independent set in
+this graph of size k, where k is the number of clusters. The only way to do that. And you, since you can pick
+at most one per cluster, is to pick exactly
+one in each cluster. And they've gotta be in
+different relative positions. So if you translate
+backwards through this, you get a coloring of
+the original graph.-e
+
+en-ECS 220 2c_5.3-4 Tiling and Boolean circuits.txt
+
+Okay, Now we're going to move
+on to some reductions that show why I like this
+textbook better than others. So it's very common for NP-completeness proofs
+to involve these sort of classical combinatorial problems on graphs and formulas
+are sets of integers. And those are great. But there's a lot of other places
+where it shows up. And one model I like to
+think about a lot because of my work and molecular
+self-assembly is Thailand. So we're going to
+abstract away a lot here, but we'll say that in this model, a tile is a so-called poly mono, meaning a connected
+union of unit squares. So there's a single unit square, there's one on top of another. There's one next to each other. Here's four unit squares. Here's four in a
+different arrangement. And the tiling problem
+is given a set of tile shapes like maybe
+these and a region R, So just some bigger union of
+unit squares, the squares. The question is, can RB tiled, meaning covered exactly with non-overlapping and possibly
+rotated copies of the tiles and t. So Here's an example. Suppose that our tile
+shape is just this. We only have one in the set. But remember this can
+be rotated as well. Can we cover this
+three-by-three square rooted? So pause and think about
+that for a second. So we can't, because as you can see, each time we put a tile down, we'll be covering two squares, but there's nine squares here. And we can only cover an even number
+of squares with this one top. So this tile cannot be
+used to tile this region. So how about this one? We again have a height to a
+two by one rectangle here. And there is an even number of
+points in this region, right? It's a, it's an eight
+by eight square, had to location to remove, so they're 62 points. So can we cover this pause
+and think about that one? So this is a little trickier. It turns out you can't,
+and it's kind of a cool, clever argument to see
+that you imagine sort of coloring each unit
+square in the tile. And if you think about how are you
+going to place tiles down here, it turns out the only
+way you can do it is to force a checkerboard
+pattern each time you put a tile down is going to put a blue square somewhere we react to put an orange
+square next to it. Even if you're rotated. A little more complicated
+than that, the argument, but you would have to do
+a checkerboard pattern. And if you look, you can see
+from the checkerboard, well, the original one that had
+these two squares had an equal number of blue
+and orange, two squares. But this one remove
+two orange squares. So there's more blue
+squares than orange. But each time you put a tile down, you're covering one
+blue and one orange. So there's no way to cover all
+of these exactly with this tile. That doesn't work either. Okay, back to the computational
+complexity theory. This problem is contained in NP. Why is that? Well, the question is, can RB tiled? So the witness is going to
+be a tiling, in other words, a description of where each tile should go and
+how it should be rotated, right, which can be checked in polynomial time that they don't overlap and that they
+cover all of our. Here's a related question
+that kind of highlights the importance of how
+we represent integers. How about if we're given
+a set of tile shapes and then a region specified implicitly, we're going to assume
+it's a rectangle. And rather than
+listing every point in the rectangle the way we
+would for a general region. Instead, we'll just give two
+integers, the width and the height. And we ask, given these
+integers x and y, can an x by y rectangle be
+tiled with non-overlapping and rotated copies of tiles and
+D. So this contained in NP. And that's worth thinking about. Okay, so there's one model tiling. Now here's one that's a little
+more standard Boolean circuits, but we're going to relate
+them with a reduction. So first I want to
+introduce Boolean circuits. Now we've talked about
+Boolean formulas. These are a slightly
+different concept. So formally, a Boolean circuit is
+a DAG, directed acyclic graph. The sources, meaning
+nodes with no edges coming into them, are called inputs. The sinks, meaning that the nodes are no edges coming out of
+them are called outputs. This has two inputs, one output, and every other node
+is called the gate. And each of those gates is
+labeled with AND OR or NOT. So to contrast with
+a formula, circuit, gates are allowed to have
+unbounded, unbounded fan out. So this OR gate has two
+edges coming out at one, go into this gate,
+one go into this one. But formula, if you think of a
+formula as being a surrogate, it's the kind of circuit
+where the gates all have fanout one or put another way, you cannot reuse subexpressions
+in a formula without rewriting. Another way to think
+of it as a circuit is a general directed acyclic graph. Whereas the formula is a tree where the leaves
+are labeled by inputs. Alternately, you can say
+a formula is a DAG where fan-out greater than one
+is only allowed by inputs. So you can either think
+of it like inputs can appear more than once
+on multiple leaves, or you can consider now there's
+just one input for each variable, but it can go to multiple
+gates with fan out, but that's the last
+time you allow fan out. Okay? And then a circuit is satisfiable. If there is an input
+making its output true.-e

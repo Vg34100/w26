@@ -1,0 +1,413 @@
+Pablo [0:36]: the performance of the derivative
+Pablo [0:45]: shared memory between objection hypothesis he's consistent with a single address
+Pablo [1:10]: spaces and i can support that for an important kernel although neither is
+Pablo [1:43]: heavyweight please
+Pablo [2:01]: built on top of chrono threads but suffers from the same
+Pablo [2:08]: programmers must decide to find
+Pablo [2:19]: this work as we describe referral interface we provide functionality
+Pablo [2:25]: in a multi program
+Pablo [2:27]: is distributed between the code
+Pablo [2:28]: and each application
+Pablo [2:31]: therefore the brown
+Pablo [2:36]: scheduling operations
+Pablo [2:43]: approach these applications here
+Pablo [2:47]: and no timeline and which processor
+Pablo [3:04]: processor instead of interpreting scheduling event itself
+Pablo [3:23]: communicate downward but this point is preserved and program
+Pablo [3:36]: mers tend to favor final
+Pablo [3:37]: threats
+Pablo [3:38]: if they can handle i
+Pablo [3:43]: ot operation
+Pablo [3:51]: windfalls are popular
+Pablo [4:03]: users are not to inter
+Pablo [4:09]: pret that the os has given to a process and nothing that the kernel does not know about these users
+Pablo [4:17]: so when one of these brands
+Pablo [4:22]: the entire part of them
+Pablo [4:28]: is to just add
+Pablo [4:35]: more efficient because when you have too many programs
+Pablo [4:50]: some consequences to this is a universe
+Pablo [5:46]: only a program will know the program
+Pablo [6:03]: so the solution that author described basically a person might be successful so the current flow ip applications with its attraction of a dedicated
+Pablo [6:09]: maintain connected match between the number of running software auditor
+Pablo [6:09]: s
+Pablo [6:10]: and the located schedul
+Pablo [6:11]: e
+Pablo [6:14]: so just quickly divides
+Pablo [6:24]: all the controller general level kernel controls allocated for example how many processors and address
+Pablo [6:28]: level becomes
+Pablo [6:29]: on the allocated
+Pablo [6:38]: so the user can adopt it as if it is dedicated even though the allocated size metis
+Pablo [6:47]: activation so the paper design of scheduler activation as an execution context for vectoring kernel events to the user
+Pablo [6:52]: so it has three main rules it acts as a vessel for running user level thread
+Pablo [7:00]: it notifies the user level credit system of a personal event and it saves the processor's contacts in case of a block or a
+Pablo [7:07]: one key difference from error activation and kernel is that the kernel never directly
+Pablo [7:13]: inside will create an evaporation to defy the scheduler allowing the user level to decide what to run
+Pablo [7:22]: how the kernels will communicate
+Pablo [7:28]: such as adding a professor or a processor or schedule activation is locked and un
+Pablo [7:29]: locked
+Pablo [7:47]: conversely the user level does not report every pa every as it is a level only resource explicit state transitions such as it has an ideal processor so it will dm this process or refine the writer
+Pablo [7:49]: or it requires more resources
+Pablo [7:50]: that will ask for more processors
+Pablo [7:53]: to its own address space and start earning as
+Them [8:04]: if a thread is holding a log and is preempted other threads wait and spin up as mentioned before
+Them [8:15]: and one solution is to prevention like preventing the critical area but you just see the system priority and memory management and then the control goes from the corner to the user level
+Them [8:26]: the solution that the authors come up with data message coming so when an notifies the user scheduler of a reaction the scheduler checks of the vm head was in a particular
+Them [8:41]: section if yes the scheduler temporarily runs that spread just long enough that it executes that section and releases the law so this solution ensures that if a lock is acquired it is always eventually released and thus prevents deadlock without compromising
+Pablo [9:21]: this was implemented by modifying stockas which is the native os priority issue for power plan location and password which is a user level package so to replace traditional threat options reaction of course the allocation by officers and one interesting thing is that only one thousand two hundred lines was added to us in comparison to kernel dosing for them and they design these scheduler activations of the methods are rather than
+Pablo [9:36]: with regards to processor and drive allocation policies some important details are dynamics they sharing so processors are divided evenly amongst active tasks and a person idol then it leadership in this
+Pablo [9:45]: overhead so page sharing which is assigning dedicated processors over time splicing which requires three m allocation
+Pablo [9:54]: universal compatibility where the allocator treats user kernel level threads to be treated the same way for assist to be allocated more free
+Pablo [10:01]: ly and then application autonomy where the kernel remains usual for user level scheduling to offer more user customer
+Pablo [10:23]: enhances such as they made were zero overhead possession where the system uses code copying to slow down prevent position they use official apollo management activation every month
+Pablo [10:31]: they use both kernel communications where unused activation are returned to a federal
+Pablo [10:45]: transition and then optimized execution flow which ensures that io and preemption require the same number of boundaries crossings and traditional current
+Pablo [11:07]: so some debug considerations that the author has made was developing where the kernel scientological processors schedule their activation during debugging and then separation of concern which is where monster resistant verified that developers can leverage internal statistics human entities application
+Pablo [11:19]: so why it works schedule or activations work because the kernel is no longer involved in every type decision
+Pablo [11:22]: so with a hybrid approach the criminal manages officers
+Pablo [11:27]: and threat scheduling excel stays in the state and so with this upgrade
+Pablo [11:32]: operations are almost as fast as we do a level of credit and much faster than
+Pablo [11:38]: the comprise field so there's a table here which embed operations at the research
+Pablo [11:43]: there's a small delay compared to fast rate so that's
+Pablo [11:46]: slice of label
+Them [11:57]: but that comes from the extra time spent tracking how many threads are available and just having
+Them [12:16]: so they did some performance evaluation to show that this improvement mattered for real applications and so the authors of the paper evaluated be a variable and body simulation so the n bodied problem is basically just a problem that's the only time these cycles like stars and molecules how do they interact with each other
+Them [12:24]: and compare it to playground so each particle force can be computed independently and this makes the problem good for our parallel solution
+Them [12:30]: but this also requires synchronization and share data access
+Them [12:36]: as processors are added you can see in the table the kernel thread performance initially improves
+Them [12:43]: and then flattens out and this flattening out happens because things like to get annoyed
+Them [12:49]: maybe a presentation is better than the original passwords but that's because scheduling and
+Them [12:54]: so do you ran a second experiment
+Them [12:57]: but this time they simulated body behavior
+Them [13:06]: and available memory increases in the graph performance gradually because friends walk and reschedule
+Them [13:16]: and then the original process moves across it even if the other threads are radical
+Them [13:28]: and the new threat implementation department goes well here's one of the red blocks that kernel just immediately notifies user scheduler and hits the front end of it right away and this keeps the processor busy
+Them [13:44]: so how do these paper change things so before this paper you really have to choose right like one or the other and colonel grads are usual they received between practice and performance so scheduled activations showed that the stereotypes are necessary
+Them [14:02]: so by explicitly notifying that interschedular dread block your processor becomes available the system stays accurate without getting so the speaker shows the kernel management processors while the user's patient manage policy
+Them [14:06]: and that idea
+Pablo [14:46]: what do you think a question
+Pablo [14:57]: what is correct
+Pablo [15:00]: encourage
+Pablo [15:12]: why is designing a thread system that evokes fast and correct
+Pablo [15:15]: difficult in a programming process
+Pablo [15:20]: so it's asking why it's difficult
+Pablo [15:22]: to have it be fast and correct
+Pablo [15:24]: at the same time
+Pablo [15:26]: there should be a comma
+Pablo [15:27]: there
+Pablo [15:41]: i do think so
+Pablo [16:05]: i know c
+Pablo [16:08]: so i like c that's great
+Pablo [16:11]: it's been a long time
+Pablo [16:14]: before
+Pablo [16:20]: i
+Pablo [16:21]: just forget
+Pablo [16:25]: c
+Pablo [16:26]: nc
+Pablo [16:34]: what's the
+Pablo [16:35]: hat field
+Pablo [16:50]: because
+Pablo [17:01]: the one that told me to pick
+Pablo [17:02]: the last one
+Pablo [17:04]: okay that's why
+Pablo [17:08]: she said that one would be the easiest
+Pablo [17:10]: one
+Pablo [17:18]: phd all the system work too much
+Pablo [17:26]: to mental
+Pablo [17:30]: the master student
+Pablo [17:31]: is
+Pablo [17:33]: really
+Pablo [17:37]: one hundred square feet
+Pablo [17:37]: doesn't do the work
+Pablo [17:43]: but no idea
+Pablo [17:46]: idea or basic knowledge
+Pablo [17:48]: so masha need to
+Pablo [17:51]: teach a lot really
+Pablo [17:55]: yeah garlic
+Pablo [18:01]: i didn't even notice what this was
+Pablo [18:03]: afraid
+Pablo [18:03]: of them
+Pablo [18:12]: have you watched the tv series
+Pablo [18:13]: like
+Pablo [18:14]: the web
+Pablo [18:15]: daily
+Pablo [18:21]: in my age
+Pablo [18:24]: is very popular
+Pablo [18:26]: by age
+Pablo [18:29]: seven people
+Pablo [18:34]: i like it well
+Pablo [18:49]: how old are you i'm twenty five three years
+Pablo [19:08]: i do think so twenty one
+Pablo [19:16]: we just don't know the question is really too different
+Pablo [19:23]: last quiz i may be
+Pablo [19:27]: four points no two point five
+Pablo [19:30]: i want to eat what i got
+Pablo [19:33]: too many things in my head
+Pablo [19:37]: and remember that
+Pablo [19:46]: maybe
+Pablo [19:50]: and
+Pablo [20:01]: all i remember for day was
+Pablo [20:03]: posix and native
+Pablo [20:14]: the signing of fast and correct for a system
+Pablo [20:14]: is difficult
+Pablo [20:16]: because user level
+Pablo [20:19]: and kernel levels get to lose much coordinate
+Pablo [20:21]: statistician
+Pablo [20:42]: i
+Pablo [20:43]: don't know what
+Pablo [20:57]: from morning
+Pablo [20:58]: from
+Pablo [21:15]: basic
+Pablo [21:26]: through
+Pablo [21:35]: out
+Pablo [22:04]: everybody
+Pablo [24:18]: and you
+Pablo [24:18]: go over
+Pablo [24:19]: what you do
+Pablo [25:00]: if you want a process to
+Pablo [25:02]: get
+Pablo [25:03]: very processed
+Pablo [25:17]: all
+Pablo [25:18]: over
+Pablo [25:48]: the place
+Pablo [26:21]: basically the
+Pablo [26:22]: idea about intern
+Pablo [26:22]: al threads
+Pablo [26:23]: is like a
+Pablo [26:24]: one on one
+Pablo [26:26]: use
+Pablo [26:27]: r
+Pablo [26:30]: so
+Pablo [26:38]: most
+Pablo [26:39]: of the red memories
+Pablo [26:40]: throughout how we
+Pablo [26:41]: shall bless
+Pablo [26:43]: them
+Pablo [26:47]: use
+Pablo [26:48]: your love of grace
+Pablo [26:49]: on the other hand
+Pablo [26:50]: are we
+Pablo [26:52]: execut
+Pablo [26:53]: ion context
+Pablo [26:56]: that
+Pablo [26:57]: connects mult
+Pablo [26:58]: iple people
+Pablo [27:11]: this is
+Pablo [27:12]: why those problems
+Pablo [27:14]: happen
+Pablo [27:14]: because
+Pablo [27:16]: the kernel
+Pablo [27:17]: not easy to
+Pablo [27:17]: do
+Pablo [27:22]: visible
+Pablo [27:25]: so
+Pablo [27:26]: these are all
+Pablo [27:27]: red is running
+Pablo [27:28]: something
+Pablo [27:29]: because it's
+Pablo [27:30]: a page
+Pablo [27:31]: that's been swapped out
+Pablo [27:35]: this is
+Pablo [27:36]: a thing that's going to cause us
+Pablo [27:43]: all
+Pablo [27:44]: the titles in this
+Pablo [27:45]: scene is this
+Pablo [27:46]: criminal grant
+Pablo [27:49]: has reached some state where it's not rental anymore better deschedule
+Pablo [27:57]: it's not really parallel
+Pablo [28:11]: right this isn't just my case the use of all the breads i mean there are some languages that support these whether basically schedul
+Pablo [28:12]: e
+Pablo [28:19]: so you brought up lightweight infrareds these are another example
+Pablo [28:25]: again the in addition to this blocking issue
+Pablo [28:28]: these usual threads
+Pablo [28:34]: again you run into these issues again because of the sort of major one mapping
+Pablo [28:40]: where the separation of concerns what the colonel sees versus what court user space needs
+Pablo [28:49]: what scheduler activations end up being in this case is to get it kind of combining these so it's kind of an end to end mapping
+Pablo [28:50]: is what it's
+Pablo [28:50]: doing
+Pablo [28:58]: so the application is aware of the fact that it has say n number of processors
+Pablo [29:02]: it has amphreads it's responsible for mapping those error processors
+Pablo [29:04]: on
+Pablo [29:04]: threads
+Pablo [29:10]: again
+Pablo [29:27]: let's say i have an application which is doing which constantly works i o operations and just to say it in the memory so i want io access and u so as for the user level application i don't have direct access to the file
+Pablo [29:33]: in that case user head
+Pablo [29:44]: because you have a lot of what do you call it
+Pablo [29:49]: lot of i o and write it first email take a lot of time
+Pablo [29:51]: so
+Pablo [29:57]: and they're also pretty sequential if you're writing to something another thing it would be block
+Pablo [30:02]: you that use a thread would be
+Pablo [30:26]: not i would think that because would be fine because it can actually amp the critical section blocking but if it's a user assume they got that in that case i would say that the main barrier would be the io right such a doc i would say use running pictures in both
+Pablo [30:28]: the
+Pablo [30:29]: user level thread
+Pablo [30:30]: s
+Pablo [30:33]: your user level thread
+Pablo [30:44]: memory that's not going to
+Pablo [30:47]: likely not just walk out
+Pablo [30:52]: their components
+Pablo [30:55]: unusual threads are fine they're very fast
+Pablo [31:03]: operated the problem we've all occurs because of this when you need something
+Them [31:08]: use your level doesn't have access to what kernel wants
+Them [31:12]: so things like page vault and io block are invisible
+Them [31:25]: so if your user level thread is doing a lot of iron we're doing a lot of default this is where these control problems of performance and or correctness
+Them [31:33]: you could have a user level thread again if it has to go through the kernel for a lot of things
+Them [31:36]: the usual
+Them [31:42]: so that's
+Them [31:42]: performance thing
+Them [31:46]: because now user level schedule doesn't have information it needs to make optimal
+Them [31:56]: the present part comes from the usual little thread is maybe pulling a lot it's important
+Them [31:59]: it blocks on some say cage fault
+Them [32:00]: event
+Them [32:04]: and some other thread
+Them [32:06]: scheduled
+Them [32:12]: that's more like a pragma
+Them [32:15]: tist because this neither in user roll
+Pablo [32:19]: either use your level or kernel level of all the information
+Pablo [32:28]: i like a related question
+Pablo [32:34]: you need to
+Pablo [32:34]: operate
+Pablo [32:38]: but i know that way
+Pablo [32:38]: in practice
+Pablo [32:40]: people don't do this
+Pablo [32:49]: schedule
+Pablo [32:50]: for a while
+Pablo [32:56]: so we're thinking about doing this but both of those systems
+Pablo [33:00]: or something
+Pablo [33:02]: doesn't scale multicons
+Pablo [33:08]: basically these two systems both use kernel
+Pablo [33:08]: thread
+Pablo [33:09]: basically
+Pablo [33:11]: so i'm just wondering
+Pablo [33:17]: how much of these fifty
+Pablo [33:18]: i
+Pablo [33:18]: guess
+Pablo [33:27]: main source of contraction
+Pablo [33:33]: different arbitrary number of use
+Pablo [33:35]: r threads
+Pablo [33:40]: and so maintaining these scheduler approbations keeping all the knowledge you need
+Pablo [33:42]: to have about what your state american
+Pablo [33:43]: is
+Pablo [33:48]: a lot of complexity and again this kind of gets back into this order
+Pablo [33:50]: maybe more minutes in philosophy
+Pablo [33:54]: of err on the side if performance is acceptable
+Pablo [33:56]: in most cases or on the side of better
+Pablo [34:05]: things that are more mechanical more understandable for someone who wants to make hands with arms
+Pablo [34:11]: that is to have this complex system that's very easy to
+Pablo [34:12]: bring
+Pablo [34:21]: precious pointed out that again schedule the application the paper present this is really nice solution that we should all be using
+Pablo [34:25]: but if we look at the way systems work in practice
+Pablo [34:31]: mainly kernel
+Pablo [34:35]: programming
+Pablo [34:37]: some notion
+Pablo [34:42]: unusual grants again the co routines
+Pablo [34:50]: and again yeah
+Pablo [34:57]: just the complexity of implementing
+Pablo [35:04]: more commercial operating system
+Pablo [35:09]: are there like existing experiment
+Pablo [35:10]: al systems
+Pablo [35:11]: that usually
+Pablo [35:17]: so the paper will be next week those kind of
+Pablo [35:21]: is going to seem similar in a lot of ways to schedule their applications
+Pablo [35:37]: has to follow this pattern a lot
+Pablo [35:40]: where
+Pablo [35:44]: when something is very
+Pablo [35:54]: common enough it starts to implement things in hardware and then eventually we decide okay but how do we software kind of cooperate
+Pablo [36:02]: we can kind of get again it's a different domain than risk scheduling but this sort of
+Pablo [36:14]: break down these hard boundaries that we tend to have between
+Pablo [36:15]: components
+Pablo [36:17]: and get more cooperation kind of get better
+Pablo [36:25]: just better outcomes and that's kind of common in a lot of systems research
+Pablo [36:42]: like the paper application to voluntarily return it processes to the person like what prevents malaysia
+Pablo [36:46]: or badly applications from coding every
+Pablo [36:47]: health and
+Pablo [36:54]: another system
+Pablo [37:02]: there's a penalty that you can also set connect your
+Pablo [37:13]: application which is not returning the threats or the resources it has taken and that way you can ensure that the processor which actually needs gets the resource
+Pablo [37:20]: actual
+Pablo [37:30]: with mutual level application running the kernel to know what
+Pablo [37:33]: it could be dishonest in which case
+Pablo [37:38]: the exopurnal or the scheduler application system has to kind of
+Pablo [37:41]: the only bit there's ways that each system can
+Pablo [38:00]: overcome dishonesty when penalties like again favoring in the case of schedule occupation having this order credit basis where you ask for less resource resources and more likely to get the resources you ask for resource really you're more likely to not get results
+Pablo [38:07]: revocation policy where you don't meet the deadline they just take things from you
+Pablo [38:09]: and that you know that you don't have these anymore
+Pablo [38:14]: and again
+Pablo [38:21]: it's something that kind of comes up a lot of times too with this cooperating systems that assume cooperation between different levels
+Pablo [38:28]: how do they deal with this situation that occurs at one side cooperating
+Pablo [38:30]: this is going to be
+Pablo [38:35]: the papers that
+Pablo [38:38]: 's pattern
+Pablo [38:58]: losses
+Pablo [39:19]: and how to
+Pablo [39:27]: just refresh what the processor
+Pablo [39:27]: up
+Pablo [39:27]: home
+Pablo [39:41]: created a port is essentially a call that's triggered when notifying the user level library that
+Pablo [39:49]: this occurs usually when major level bread is getting inside the critical section of the
+Pablo [39:50]: user
+Pablo [40:12]: sounds like this paper proposed a waiting to exit waiting for the user level threat to exit the crypt section
+Pablo [40:20]: yeah i think that falls generally under the category of some protection
+Pablo [40:26]: policy where the user level schedule can detect what is inside of a critical section
+Pablo [40:36]: and usually they use a little bit of kick executing on torque outside of that purpose i should say i think that is one method of solving a problem
+Pablo [41:00]: i'm a little confused on the definition of process preemptive from just the wording of these two words what it means to me is that you have the kernel outlet and let's say one hundred user breath would sit on top of it
+Pablo [41:07]: now let's say one of those user threats basically does some sort of io which blocks
+Pablo [41:13]: so in this case the current scheduler just takes the curl thread
+Pablo [41:23]: away or that processor so now the user thread is kind of stuck because it does not have access to that key thread which is doing sort of this i o right
+Pablo [41:27]: so if i'm right is that what prosop
+Pablo [41:33]: one just takes away the processor on which the user threads itself
+Pablo [41:36]: yes i remember correct me
+Pablo [41:37]: i think that
+Pablo [41:46]: 's it kind of feels like to me that
+Pablo [41:54]: you have these so every process has like sig in select fields
+Pablo [42:10]: right and we basically define these lots of functions in the user the application itself like let's say in a web server if i get like a sig int for example then i just define a handler for it so if a segment happens then i want to maybe like clean up my resources
+Pablo [42:12]: so that you know it gracefully shuts down
+Pablo [42:27]: so i think the solution is the authors proposed i think that's also very simple because if it's in the critical section then just like drive that to completion and then i guess take the process of it yeah it's pretty much similar
+Pablo [42:27]: solution to that
+Pablo [42:39]: i think so ninety nine percent of the time this process of granted com will be okay or run through this because it won't be critical inception but then in the case where it is
+Pablo [42:41]: definitely some policy teachers
+Pablo [42:45]: you can also find
+Pablo [42:48]: or
+Pablo [42:49]: just
+Pablo [42:50]: to give
+Pablo [42:51]: more
+Pablo [42:52]: clear quality
+Pablo [42:53]: to make it understand
+Pablo [42:54]: the variable session
+Them [43:55]: you
+Them [43:56]: have to come up
+Them [43:59]: for
+Them [44:00]: example
+Them [44:19]: and this
+Them [44:20]: will be
+Them [44:23]: your
+Them [44:41]: might be
+Them [44:41]: lost
+Them [44:58]: i
+Them [45:01]: believe
+Them [45:18]: it is
+Them [45:19]: the case of heaven
+Them [45:19]: 's prayer
+Them [45:23]: this process
+Them [45:33]: was
+Them [45:34]: running a digital
+Them [45:52]: process
+Them [45:53]: or for him
+Them [45:56]: special
+Them [45:56]: activation
+Them [45:57]: schedule your
+Them [45:57]: accusation
+Them [46:10]: so again this usual thread in the case where the kernel throw was preempted by the criminal
+Them [46:12]: scheduler it's not running
+Them [46:17]: so if we look in the formal lease
+Them [46:26]: running back to the ready list
+Them [46:36]: we let the you know we left the application via scheduling occupations with this method and also we noticed because of
+Them [46:39]: it
+Them [46:46]: okay we scheduled this charge we shouldn't have i got rescheduled a spread on the schedule or observation
+Them [46:49]: that provides the contract
+Them [46:53]: to reschedule the spread let it finish
+Them [47:05]: processor credentials that this usual thread basically got destructed by the principal
+Them [47:10]: so in order to have the critical section we have a schedule operation
+Them [47:53]: of benchmark but the way illustrated
+Them [48:07]: the utility of the test have spin up all these threats and like you flex share memory then like i said i don't that's basically
+Them [48:11]: everything else
+Them [48:15]: so i totally benchmark and obviously when you have multiple
+Them [48:25]: there

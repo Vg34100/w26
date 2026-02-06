@@ -1,0 +1,62 @@
+So we'll talk about one final
+alternative definition of NP. This definition was actually the first and the reason for the letter N in the name NP stands for
+non-deterministic, right? It does not Stanford not, and B is not called,
+not automobile time. It means nondeterministic
+polynomial time. So here's how we formalize
+it with our kind of semi-formal programming
+language model. We imagine we have a new instruction
+in our language that has an OR in it that represents one of two
+different things we could do. So we might say go to
+line three or line 9. Or we might say, we have a bit b, we want to assign it to be 0 or one. And the idea is, you don't know which one the
+program's going to do. You could think of it like random. But I like the word
+non-deterministic. Better just could do either one. You have no idea
+which one it will do. So with an instruction like this, the program computation forms a tree configurations
+instead of just a sequence. So you have your
+initial configuration and you might have some deterministic instructions and there's just one next configuration, does one next configuration. But if you reach one, now the current instruction is one of these nondeterministic commands. Well then there's two
+possible next configurations, and those form the two
+subtrees of this tree. And then you get a
+tree of computation. The leaves represent when you halt. And the leaves might
+have different answers. Some might call with a no and
+others might call with a yes. So the condition that we
+say the machine or no, it has to just give
+one answer, right? So we say that the machine accepts if at least one of these
+branches as a yes, even if some others have a no, and it only rejects if every single branch
+terminates with a number. So if the non-deterministic guesses are interpreted as
+flipping random coins, then you can express
+this with probability. You say the program
+accepts if and only if the probability of
+outputting yes is positive. In other words, there's at
+least one leaf here with a yes. So NP can be defined as the class
+of problems solvable in a sense, by a polynomial-time
+non-deterministic. So polynomial time
+here would mean that every single root to leaf
+branch would have length, at most some polynomial of the length of the
+input specified up here. Now with this one,
+with this definition, That's a little more straightforward
+to see that P is a subset of NP because p represents
+deterministic computation. And the deterministic computation
+is just a special type of tree where every single node except the one unique
+leaf, has a single trial. So let's justify now that this is actually equivalent to
+the other definition. So we have this
+non-deterministic computation versus deterministic computation. You're provided with this witness. So here's the sort of
+original definition of NP. We start. And let's just point out. We say x is an a if and only
+if there exists a witness w, Not too long, such that the AV
+verifier accepts the pair X W. So the sort of heart we have to show that this is equivalent
+to the other definition. So the idea is that how can you represent this as a
+non-deterministic computation? And the idea is we
+can turn this sort of deterministic verification where
+the witness kinda comes from nowhere into a non-deterministic
+computation where the very first step of the
+computation is guess the witness. So that would look like this. This would look like guessing
+a two or a three bit witness. And then once you've
+got that witness guest, now it's simply a
+deterministic computation to run the verifier for a v. Now that you've got
+both x and the witness. So in other words, like first guessing the witness and then checking it
+is a special type of non-deterministic computation
+where all the non-determinism is sort of frontloaded. That happens all at
+once at the beginning. And then it's deterministic
+from there on out. And it's not too hard to prove the other direction that if you have a arbitrary non-deterministic
+computation where maybe these nodes and
+repairing in the middle, you can turn that into a verifier. And essentially, the
+witness in that case would represent the various bits that gets selected at
+each of the nodes.

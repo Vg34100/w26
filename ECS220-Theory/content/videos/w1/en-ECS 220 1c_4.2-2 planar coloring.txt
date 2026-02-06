@@ -1,0 +1,111 @@
+So we talked about coloring
+of general graphs. But remember that special type
+of graphs, a planar graph. This is one where it's possible to draw the nodes and edges so
+that no two edges cross. And one problem that was famously
+open for a very long time, but result in the
+seventies is whether every planar graph is 4 colorable. And you could think of this as the mathematical formalization
+of the state that every map can have the territory's colored with one of only four colors so
+that any bordering territory's have different Viewers like this for coloring of
+the United States here. And it was also sort
+of a famous proof in that it was one of the first ones to be resolved enlarge
+part with computers. And so there was a bit controversial for a while whether the
+proof should be accepted, but it is of course accepted that every planar graph
+is for countable. So that means in particular, there's kind of a trivial
+statement we can make here that there's a simple
+algorithm for planar, for color and so on. Input a planar graph, Yes, if you want to know, is a colorable, you simply output, yes, they're all four colors. So it's not really an interesting question in
+light of the four color there. But an interesting question
+is planar 3 coloring. Given a planar graph, G is G three colorable. The examples I showed
+earlier of graphs that are and are not three
+colorable were both planar. So the answer can sometimes be S, can sometimes be no. So suppose you had an algorithm for three coloring that
+works on any graph. Well, it works on any graph, so it works on every planar graph. So it can be used to solve the special case planar
+3 coloring problem. So this leads us to say that planar three coloring is
+reducible to three column. I'll use this mathematical notation here or use a less
+than or equal sign. I want to emphasize
+it's not that these are numbers and we're saying one number is less than or equal to another, is just a notation where if
+you want to think of this being a quantitative measurement
+at something like the quote, hardness of the problems. So when we say planar three coloring
+is reducible to 3 coloring, we're saying that
+planar three coloring is no harder than three coloring. But again, it's not that
+there's a number out there called hardness and
+we're comparing them. It's just a mathematical notation. Now, theoretical computer scientists
+have a lot of different ways of formalizing exactly
+what reductions me. And we're going to follow the
+convention of the textbook and not get too technical
+with the formalization. So I just want to point out, I once wrote a paper a
+long time ago that had some definition of a particular
+kind of reducibility. And it starts here and it
+has an even ended here. It gets down to here. And by this point you finally
+get to the definition. So this is some formal definition of reducibility and I'm only
+putting it up here to warn you, okay, If you go out
+there in the literature, there's a lot of very
+technical definitions of exactly what reducible means. We're not going to worry about them. We're just going to use the
+intuitive definition that If you had an algorithm
+for three color, you could use it in a quote, easy way to solve planar 3 color. That's what we need. That's why we say that planar
+three coloring is no order. But now it's worth asking, well, is planar three coloring? It's strictly easier. Like should this be a
+strict less than sign? Is it the case that, for example, there could be a faster algorithm that assumes the graph is planar. So we're going to argue
+now, but that's not true. So planar three coloring is
+as hard as three colors. Or to put it another way we
+just flip these two around. We're going to show that 3 coloring is reducible to planar 3 color. In other words, we're
+going to show that if you had an algorithm for planar 3 color, you could call it and only just once essentially in order
+to solve the 3 coloring problem. So here's how you do it. We're going to start with a graph. And it may not be planar. And we're going to convert
+it to a planar graph so that the new planar graph can be three colored if and only
+if the original graph. So what is it that makes
+a graph non planar? It's that you try to draw
+the edges and across the chip so we can replace
+the sum graph right here. So picture this a, B, C, and D. There is a subgraph
+of a larger graph and there's an edge
+AAC, another edge BD. If we can replace these with the larger subgraph that
+maintains the color ability. In other words, it's three colorable now that means it'll
+be three colorable after. And if it's not three colorable now, looking not three colorable after, then, we'll get a planar
+graph and we can just ask this algorithm for planar 3
+color in, Hey, what do you think? Is this graph three colorable? It'll give us the answer
+to the original graph. So you replace it with this thing. So you can kind of
+visually inspect and see that there's no
+edges crossing here. So if you replace to
+these four nodes and these two edges with all
+these nodes and edges, you've gotten rid of that,
+cross it and you could do this iteratively to every edge
+crossing in your graph. And now we want to argue that we've maintained the three
+color ability of the graph. So let's imagine that
+you had a and b. Are these two colors, and we'll just call
+them orange and green. And we want to argue that no matter
+how you color the rest of it, if you were able to color DNC
+different before, you still can. So if we look at this graph, we can see that a and b
+are different colors here. So the middle one, we have no choice. It's connected to both, so it's gotta be the third color,
+we'll call it blue. And then we can kinda do this move for a scene
+or whenever we notice a node is connected to two other nodes that are
+both different colors. It has got to be the third quarter. So this one right here
+has gotta be green. Now we have a choice here. This node here is connected to two. Great. So we could color blue
+or we could color it aligns. So we're going to do bowl.
+We're going to come back. See, let's suppose
+the colored in blue. How would that force r-hat? Well enforced this to be orange. It will force this to be blue, but for this to be green. And again, you can trace through
+and see each time you're coloring a node that's connected to other nodes that
+are different colors. So you have no choice. This is forced to be orange. This here is forced to be orange. This is forced to be green, and it's connected
+to orange and blue. This is forced to be blue, and this is forced to be black. As you can see, there's
+a fourth color that we need because we have
+all three colors here. And there's nothing we can do here. Okay, so maybe that
+was the wrong choice. We shouldn't call it disability. Let's color it orange instead. Okay, that forces our
+hand here, here, here, here, here, here, here, and here. And we see, okay, so we just made the wrong choice
+to color this blue. So essentially we are forced
+to color this orange. And so we can get these and
+then look at what's happened. Whatever was the color of B, we've forced the color of B
+prime to be the same, that, and whatever was the color of a, we force the color of a
+prime to be the same thing. So if you have some coloring of the original graph,
+that works, right? When you do this replacement,
+you might think, well, you're now no longer forcing the same constraint in
+the original graph. C would have been forced to
+be a different color than a. But C and a are not
+connected anymore. But C is connected to a prime. And a prime is forced by the design of this graph in the middle to be the
+same color as that. So essentially we've drawn a new
+subgraph and it has no crossings. But it forces these
+kinds of corners of the subgraph to have the same
+color as the opposite corner. And so it's sort of propagated
+the constraint, the cross. So this shows that if a and
+b are different colors, and let's just call
+them orange and green. It forces the colors on the
+opposite side of each of them in this little gadget here
+to be the same color as the one opposite it. So now we can say, well, what if a and B were the same color? And you can do a similar argument, you can trace through and show if a and B are both, let's say green, the only way to color
+the middle of this thing forces B prime and a prime
+to both be green as well. So in other words, if this
+original graph is 3 colorable, this one over here will be
+as well, and vice versa.

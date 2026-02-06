@@ -1,0 +1,33 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip}
+
+\title{ECS272 Reading Report 3}
+\author{Pablo Rodriguez}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Paper: Evaluating Interactive Graphical Encodings for Data Visualization}
+
+\subsection*{Summary}
+
+This paper is about how well people can \emph{interact} with different visual encodings in data viz, like instead of using a side control panel you just grab the chart data directly, like dragging a bar or a point, whcih they call in the paper embedded interaction. They tested 12 interactive versions of common encodings (like distance, position, length, angle, area, curvature, and shading) with 35 participants. The task was basically magnitude production: people had to adjust the encoding to a target percent of the starting value (like 200\%). They measured how accurate people were and how long it took, and they also looked at interaction behavior like direction changes and re-entering the target.
+
+Overall, position, length, and distance were among the most accurate, and shading was clearly the worst. Area and curvature also did pretty bad compared to the top ones. For speed, length and position were fastest (and angle was also fast), while shading was slow and messy. A big point they make is that the ranking looks a lot like older perception rankings (like Cleveland \& McGill), so if something is easy to perceive, it tends to also be easier to control by direct manipulation. They also show that for the good encodings people do a big move first and then fine tune, but for weak ones you see more back-and-forth. They end with guidelines like, do not force direct manipulation for weak encodings, and if you do need accuracy then add extra feedback like showing numbers. They also mention uses like interactive legends and authoring/editing tools.
+
+\subsection*{Question 1: What is magnitude production? How and why do the authors apply this method to their work?}
+
+Magnitude production is when you make the user \emph{change} an encoding until it matches some target proportion, like “make this 200\% of what it was.” So it is not just looking and guessing, you actually adjust it.
+
+They use it because they are trying to study interaction and with embedded interaction you are doing this loop where you move something, look at it, move again, and so on, and that is different from just estimating a value from a static chart. Also, magnitude production lets them log the whole adjustment process over time, so they can measure accuracy and time, but also data like how often people reverse direction or overshoot and come back. Basically it matches what their systems are trying to support, which is direct manipulation of the visual marks.
+
+\subsection*{Question 2: In Section 6, what is your opinion on the design guidelines offered in this paper? List any additional applications for this work.}
+
+I thought the guidelines were pretty reasonable and they feel backed by the study results. The main idea is basically, embedded interaction is not automatically better for everything, so if an encoding is hard to control accurately (like shading, and often area/curvature too) then a normal widget or control panel can just be better. And then if you really care about precision, you should add extra feedback, like a number readout or some kind of highlight that makes the value change clearer. I do think they are a bit general though. Like I kind of wanted a more concrete “if accuracy drops below X then do Y” type rule, but I get why they do not go that far.
+
+For extra applications, I could see this helping with stuff like dashboards deciding what should be drag-based vs slider/menu-based, mobile touch-based viz design, VR/AR viz where control can get shaky, and also accessibility or tutoring tools where you use the interaction logs to notice when someone is struggling and then you pop up help or switch to a simpler control.
+
+\end{document}

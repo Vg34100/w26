@@ -1,0 +1,69 @@
+So this next part
+gets a bit technical. You want to see the
+details where I got this. It's from this blog
+post and Scott Aronson, I've not in the textbook. But if you want to see
+the full modern day based on computation proof of Godel's
+Incompleteness Theorem. Here's a way to do it. And we do it by making up a new problem called
+consistent guessing. So this is not a decision problem. This is a more general thing. An algorithm solves. Consistent guessing if
+it can do the following, it takes as input a program. And it's not quite the
+epsilon halting problem. We require something a
+little more stringent, which is that if it does hall, we actually want to be able to get the right answer, accept or reject. So what we need to
+do is to say, well, if P on the empty string accepts, our algorithm should accept P. If
+P on the empty string rejects, our algorithm should reject P. And if P and the empty
+string runs forever, then our algorithm has
+to give an answer. It doesn't matter what it is. It
+could be either accept or reject, but it has to halt, right? So we didn't require this. We allowed it to run forever. In this case, it could just run p on the empty string and do what it does, meaning to accept or reject.
+But we're saying not enough. If p does not halt on the empty string to say you've
+solved consistent guessing, you need to give some answer
+after some finite amount of time. And if P on the empty string does
+actually hold and get an answer, you have to give the right answer. So this problem is uncomfortable. There's no algorithm that can
+solve this problem and that can be proved using diagonalization similar to the original halting problem, but we won't do that here. So with consistent guessing
+in mind and unbind, beautiful, Here's a modern day
+proof of Godel's Incompleteness. There are fixed from the previous one that only
+referred to soundness. So if P on the empty string accepts, then what we're gonna do is
+exploit the sort of asymmetry between a program of halting and not halting a statement of the form. A program accepts an input or
+a program halts on an input. If that's true, there's always
+a proof of that, right? There are some mathematical
+statements that don't have a proof, but this is the kind that does write a transcript of the steps
+of the computation, for example, is a proof that
+that that program accepts. So if, so, if the following
+statement accepts p Epsilon is true. So this is the statement that
+asserts P accepts the input epsilon. If this is true, then it's provable. And that similarly olds
+for rejects be epsilon. If that is true, that
+P rejects Epsilon, There's a proof of that fact. So this is a little bit
+stronger statement then we can make about arbitrary
+mathematical statements. So now we suppose for the
+sake of contradiction that our formal system violates
+Godel's Incompleteness Theorem. It's expressive enough to reason
+about programs and computation. It's complete and consistent
+meaning for every statement t, exactly one of t or its
+negation is brutal. So here's how we use
+that fact to solve the consistent guessing problem
+and get a contradiction. So we're defining a program, see here that takes as
+input a program pizza. I'm going to solve
+consistent guessing. So how does P solve it? It has two searches
+in parallel for that searches for a proof that P
+accepts the empty string. And it also searches
+for a proof that P does not accept the
+empty string, right? Notice I didn't say reject air. I just said search for prove
+that it does not accept. Now there's an asymmetry here, right? So and if it finds
+this proof, it says, except, if it finds this
+proof it says reject. So now here's the key difference with the original prove consistency and this star statement and the air
+implies that p Epsilon rejects. There's no proof of one to be found. Right? But now, completeness and consistency give us that there
+is a proof of tip, right? One of these has to be provable, so there's no proof of this. There is a proof of this. So C will reject as it needs to. And the second case, well,
+if P of epsilon accepts, right, then there is no
+proof of number two, right? And by completeness there
+is a proof of number one. And so we will find that
+and we will accept. So it may be neither. These is provable in that case. Went away. Forget I said that. So, all right, So if p on input epsilon accepts
+than SEA accepts the panel, epsilon rejects than C rejects. And so c solve consistent guess it. So why is this all
+consistent guessing? Well, because it
+always halt note it's searching for a proof
+of this statement or its negation and completeness and consistency give you one
+of them will be found. In this kind of reasoning tells
+you that it'll actually be the correct answer when
+it gives an answer. So one of the searches will
+succeed, It'll be correct. And this contradicts
+the young computability of consistent guessing. So we get Godel's
+Incompleteness Theorem. No system expressive
+enough to reason about programs is both
+consistent and complete.

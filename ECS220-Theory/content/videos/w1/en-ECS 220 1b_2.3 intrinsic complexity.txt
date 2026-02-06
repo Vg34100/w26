@@ -1,0 +1,75 @@
+So we're going to discuss a bit, a conceptual theme that sets sort of theoretical
+computer science apart. And it's this notion of
+complexity and where it lives and the distinction between a problem and an algorithm
+for the problem. So let's consider the
+algorithm that we all learned in grade school to
+multiply numbers together. So if you have two n digit numbers and here will be the
+size of our input. The grade school algorithm says that for each digit
+in the bottom number, why you're going to make a row? And each of those rows all have about the number of digits of the top. So you're going to have
+n rows of the n digits, each that size n squared. And making each of the digits is a constant time operation that's just adding together
+a couple of digits. So the total time to do
+this is o of n squared. Now, it might seem like
+that's optimal, right? You might have learned this in grade school and blah,
+blah, blah, yeah, that's obviously the only way to
+multiply integers, but it isn't. So here's a better
+algorithm from the sixties. And the idea is it uses
+a clever recursion. You take x and y, can you split them up into
+two equal size pieces. Size here, meaning the length
+in bits or hi In digits. So if X here is about 1 trillion, you split it into two
+sequences of digits and you get a is about 12 thousand, b is about 67 thousand, and similarly is split up y and a, C and D in this way. Okay? So if we want
+to look at how do we express what x and y r as a function
+of these two smaller numbers? Well, you just take
+a and you left shift it by n over 2 and
+add it to be right. And what is left shift
+in, in base ten? That means multiplying by 10 for each digit you want
+to shift to the left. So x is 10 to the n over
+2 times a plus b y. Similarly for C and D. So x times y is then this expression, that's x times this expression. That's why. And if you multiply
+that out first, outer, inner last, you get this
+expression for x times y. So it looks like what we've said is that while to
+figure out x and y, you have to do four
+multiplications to get AC, AD, BC, and BD. And if you crank through, how much time would it take to do four multiplications on numbers
+that are N over two digits each. It wouldn't really say
+at anytime that would still be n squared total. But we can notice, well, if you had a plus B times C plus D, this other number that hasn't
+shown up yet, if you had that. And multiply that out and then
+subtract off two of the terms, AC and BD, which we're already
+going to need to calculate here. You get the other two
+numbers added together, AD plus BC, right? So in other words, by doing only three multiplications, AC and BD, and then a
+plus b times c plus d. And each of those are an
+n over two digit numbers, along with a constant number of additions and
+subtractions to get them. And a couple of shifts, which are a lot faster. Those take only linear time to
+do the additions and the ships. You get it right, so we can
+save one multiplication. We cut from four down to three. So if you work through the
+time complexity of this, well, it's a constant number
+of linear time operations, which is O of n times three
+multiplications on N over two digits, digit numbers, which recursively
+we can express as T of n over 2. T of n is the total time. And if you solve that recurrence, you get that this is instead
+of being o of n squared, it's O of n to the log base 2 of 3, and that's smaller than
+2, it's about 1.6. So in other words, we get an asymptotically better
+algorithm with this recursion. Now, this isn't the best
+possible thing to do. It's been known for a
+long time that using something called the
+fast Fourier transform, this can be done in time
+n log square root 2. Then very recently, this was about
+a year ago, it was discovered. There's an algorithm that can take
+time o of n log n. The obvious lower bound is omega of
+n because you have to read all the digits and it's
+actually an open question. Is there a linear time
+algorithm for multiplication? This is not know, but I
+wanted the others is not a class on algorithms or on
+multiplication algorithms. I want to use this to
+highlight this idea that the grade school
+algorithm seems very natural. It seems like obviously
+the best way to do this. And it takes time. N squared over n squared is not the time complexity
+of the problem. The problem itself has an
+intrinsic time complexity. And the grade school algorithm, even though it's the
+first way you learn to do this, does not meet it. And this is just sort of a sociological phenomenon
+I've personally noticed, which is a very strange thing, which is that it seems to be that the better a person
+gets at programming, the worse they get at
+understanding this concept. Somehow like very
+talented programmers tend to suffer from this belief that the very first
+algorithm they thought of for a problem must
+obviously be the best one. And it's not until
+you really dig into theoretical computer science that you have this insight that NeuroNode, just because you thought
+of an algorithm, doesn't make it an optimal algorithm. The problem itself has
+some optimal algorithm. And it's our job to discover it or, you know, to prove that the best ones we already
+have actually are optimal.

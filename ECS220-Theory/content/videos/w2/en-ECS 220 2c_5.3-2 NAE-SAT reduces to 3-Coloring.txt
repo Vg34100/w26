@@ -1,0 +1,126 @@
+Okay, so we're going to go through some more
+examples of reductions. And unlike the one we just did, which was between two problems, both involving boolean
+formulas in general, the kinda more clever reductions or between two problems
+of different types, like maybe one involves graphs
+and the other involves formed. So we'll talk about abstractly right here about how to think
+about doing these. And a typical reduction design will involve something
+called gadgets. And these are substructures of the instance that the
+reduction is constructed. And we'll get less abstract. I'll point out by example, what are the things they called
+gadgets and the actual reductions. But There's two general
+types, choice gadgets, and these give the freedom to choose particular parts of the NP witness. So in general, you're going to
+have a reduction transforms an instance of one problem
+into an instance of another. But it's generally the case that
+as you look at the reduction, you could see how to
+construct a witness for one problem out of a
+witness for the other. And so the choice
+gadgets are sort of how you get that transformation. And then the constraint
+gadgets are there to impose constraints on the variables. To enforce that the
+choices you're making up here are actually
+legitimate that give you something correct for that particular problem
+is it is quite abstract, but we'll get to concrete
+examples in a bit. So first let's recall
+the 3 coloring problem. But this is given a graph, an undirected graph G equals b, we want a three coloring
+of the mean in a way to assign colors to nodes and v's that all nodes that are adjacent according
+to e have different colors. Now we're going to show
+three coloring is NP-hard. And by showing that any E3 SAT
+is reducible to 3 coloring. And we already argued
+three coloring is in NP. So this will show it's NP complete. Now, the colors are sort of symmetric here you can
+just change the names of all the colors and it wouldn't
+really affect whether it's a legitimate coloring
+or you could permute them. So this is what makes NAD 3-sat useful because it treats
+these two values, true and false symmetrically. Okay, So here's how we reduce an instance of any fees to
+an instance of 3 coloring. So we have some Boolean formula. And imagine that it has
+a clause that has x, y, and z appearing in it. So we're going to have
+this choice gadget here corresponding to that clause. And the three colors
+could be anything. But let's imagine that
+we're going to interpret the color green to represent true and the color orange
+to represent false. And then the third color will
+just be neither. It'll be blue. So depending how these get colored in the final color and we're
+going to interpret that as an assignment in the formula. So if you, so this is going to force because these two are
+connected to each other, they have to be different. And because all of these
+are connected up here, they all have to be different
+than what this is, right? If this is blue,
+these all have to be, one of the two halves is green
+and the other is orange. Whichever one is green, will interpret that as the a site. So in this case, this would mean setting x to false and setting y to true
+and setting z to true. And if you swap these around, this would be like setting x to
+true and why to true and true. Okay? Now the constraint gadgets
+or how we enforce that, the actual negations that appear in the various clauses somehow
+constrain this things so that the only legitimate way to color this graph would look like an
+NA ie satisfying assignment. So supposedly have a
+clause x or y or z, right? So we know that we're going to
+need some gadget here, right? And we don't know much about it yet. So let's just think through.
+So we have to add something to this graph so that it's somehow
+corresponds to this clause. So we can start with just
+observing if this is x or y or z, like none of them are negated. While then maybe somehow the X, Y, and Z nodes up here ought
+to be the things that are connected in here somehow, right? So this is me kinda walking through. How would I do a reduction? Well, maybe I'd start
+with something like this and I wouldn't know
+what should go here, but I know which node
+should be connected. So the fact that X is
+connected in here, and it's not the case that
+this other node is connected. That's how the fact that
+there's no negation on the X in this clause is showing up. Now this is always a sanity
+check in your reduction. Make sure that somehow the specific structural constraints of the input, in this case it's the Boolean formula show up in the output, right? In other words, it
+should be the case that if you changed the input formula, it would change which
+graph you're getting here. So in other words, if we negated x, then there should be an
+edge from NOT x down air and not an edge
+from x down to here. So for example, if you had a
+clause NOT x OR y OR NOT z, then this should be
+how the connections. Okay, so here's how
+we're gonna do it. Each of those gadgets is
+just going to be a triangle. And this is going to be
+enough to do the reduction. And we're going to have
+essentially two nodes for each variable in
+the whole formula. In this case there's three variables. And then we're going
+to have three nodes in these constraint gadgets for each clause in the formula
+connected in this way. So let's see how that
+translates into. The formula is satisfiable if and only if the
+graph is 3 colorable. So we know that up here, this is more or less the
+only way to color the graph to color this thing some
+color, we'll call it blue. And then to color these differently. So the only choice we have is
+which one of these is going to be green and which one is going to be orange and same here and same here. But now we've further
+constrain them down here. So suppose that we have
+an assignment that NA ie satisfies the formula and that
+assignment is 1, 1, 0, right? And you can check that
+puts a 10 in this clause, and it also puts a
+one on a 0 over here. So we're going to say, okay, that means that down here, the node corresponding
+to that literal, we're going to want to color it the opposite of the
+color up here, right? So in other words, if
+green represents true, then we want to color
+this variant of x green. And then the one anyons that it's connected to down here
+should be orange. And similarly, because z
+has been set to false, we look at wherever z is connected
+and these gadgets down here, we set it to the opposite color. And then the third node here, we can just set to
+the third color blue. So the idea is, in general, why did I pick x and z there? Well, notice that this
+has at least one true, Let's say it's x and
+at least one false, let's say at z and then
+y, we're just ignore it. We just pick one true and one
+false literal out of each clause. We set their colors down here to be the opposite of this
+truth assignment up here, which makes them a legitimate
+coloring because of this connection. And then we just set the third node representing the third
+literal to be low. And then similarly over here, we identify at least one false. That's this x right here, it's false so we can set it to the opposite of false,
+which is green. We identify at least one true. That can be why we set it to the opposite of the true
+color, which is orange. And then the third one
+we can set to blue. Okay? So suppose you instead. So that sort of shows
+one direction that if the formulas and E satisfiable, then the graph is 3 colorable to how can we go the other direction? Well, now we'll show that if
+the formula is not satisfiable, then there's no way
+to color this graph. So again, we've
+already argued this is more or less the only way
+for the top part to look. Accept in each of these pairs, you're allowed to swap
+where the two colors are. So now we're going to argue there's
+no way to pick that swap ends. Air, you can legitimately
+color it says suppose that, that no assignment
+and E satisfies this. So you're forced to have
+some clause with say, all true literals like 111
+for XYZ will then, now, no matter what you do down here, each one of these is
+connected to a green. And therefore there's no way to
+put to color one of these great, but they're all
+connected to each other. And you can't color just this
+part with only orange and blue. This is no way to color the graph. So that shows both directions. Okay? So again, just a
+reminder, reduction. Write the algorithm that
+takes as input this formula down here and outputs this graph. It doesn't color the graph and
+it doesn't satisfy the formula. It simply converts
+formulas to graphs. Translating a question of satisfiability into
+one of color ability. Now we then go and argue
+about how we might satisfy or color in
+one case or the other. But the algorithm itself is not
+trying to solve that problem.

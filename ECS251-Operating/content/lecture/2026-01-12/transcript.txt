@@ -1,0 +1,715 @@
+undefined [0:18]: likely are going to be supported in some way
+undefined [0:29]: so things like being able to support more and more users
+undefined [0:34]: more complications more io
+undefined [0:38]: data centers are basically always looking to maximize any kind of performance
+undefined [0:46]: i think it's senator specific
+undefined [0:47]: ally or more servers
+undefined [0:48]: just as
+undefined [0:49]: people based on their building
+undefined [0:54]: and then if you add a wall computer making a data center today
+undefined [0:56]: at this point
+undefined [1:07]: the issue with data centers is consideration performance on scale is that really the operating system it's what's becoming a little bit faster
+undefined [1:07]: here
+undefined [1:21]: because the operating system has made all these old assumptions newer hardware is kind of forcing us to revisit some of these long standing hardware trends so things like the performance of io and how fast or slow it is
+undefined [1:24]: as well as hardware able to do more than it was
+undefined [1:26]: a generation
+undefined [1:26]: ago
+undefined [1:36]: so the two papers were reading this week are called the rockets and any journal they're basically talking about how to build an operating system for the data center
+undefined [1:40]: so these papers are going to ask and then attempt to answer a number of questions
+undefined [1:47]: for example some of these questions ask are how to take full advantage of the hardware we have available today
+undefined [1:56]: how can we operating system ensure efficiency and then even more fundamentally what role should be operating system even play in these high performance data
+undefined [2:04]: so again what changed in the last forty years so again this is a slide from my first day of class but we'll revisit it today
+undefined [2:10]: the main difference is to look at what computers look like today
+undefined [2:22]: so transitioners have gotten more and more dense we have more cores than we did forty years ago pocket fires more vrams available
+undefined [2:28]: then your idle considerations like your storage and your brand so we have way more storage available that storage is also going to be higher performance
+undefined [2:31]: than something like a disc or
+undefined [2:32]: tape
+undefined [2:41]: over things like network management also increase substantially and again this all comes out actually a fraction of the cost is
+undefined [2:47]: getting way more bang for your buck
+undefined [3:03]: okay so again we talked this side but harvard is much better much faster particularly on the i o side
+undefined [3:25]: so in the old assumption you may have heard about in your operating system spots in undergrad is that cpus are much faster than i o so if you have a process that wants to go off the use of that process to sleep especially in the cpu to do something more useful at the time and then once this io is ready for this occupation where did the application back up let it run process of
+undefined [3:26]: dial
+undefined [3:30]: because this was something that was totally
+undefined [3:33]: back in all the games
+undefined [3:50]: this is a mechanical device and so it takes time to move the dispense where it needs to be under this platter and even more times with this you can rotate underneath the leaf head in order for it to start being able to reach the data
+undefined [4:00]: again because this is a mechanical device you're thinking about the terms of milliseconds to move its head around on the disk and some extra time to rotate
+undefined [4:05]: so this is very slow when you're cpu is blocked at
+undefined [4:09]: families and
+undefined [4:10]: really construction
+undefined [4:10]: per se
+undefined [4:17]: also on the network side network is low which basically meant
+undefined [4:19]: data coming out of network
+undefined [4:20]: because it just wasn't a whole lot
+undefined [4:30]: however if we look at the landscape today it's much much different so ios devices
+undefined [4:46]: have more or less autopilot cpu's sort of slowing down their scaling because moore's law doesn't necessarily automatically speed up cpus anymore we've had insuring to other means of screwing more performance out of transistors
+undefined [5:03]: storage devices are also different so ssds are more common so ssds are not the kind of requirements there's no moving parts here with transistor based so those what used to be milliseconds or seconds in order to regain data from the disk it's microseconds
+undefined [5:15]: or an ssd high addresses to use idents or mod parts higher so basically this means that the cpu has less budget the process data in order to develop
+undefined [5:28]: in addition to being faster and better hardware is also able to do more so we can see that modern network cards are actually able to handle some of this network processing on the network part itself
+undefined [5:36]: bringing up the cpu from some of these common tasks like computing extraction which are integrated data or ensuring reliable history for protocols like
+undefined [5:37]: ccp
+undefined [6:05]: bio devices also have this pin building where they can dna direct memory access their data from memory without having to resolve a cpu so if you want your i have device like let's say for example your network part to send some data off of the network you can point your network card to the physical memory location of your data and then the network card can then fetch it itself you don't have to involve a cpu
+undefined [6:23]: again devices are also able to virtualize themselves which basically means that in this technique called single and io virtualization a single hardware for example a single hardware network card can present itself to the operating system as if it is multiple parts
+undefined [6:38]: and then the operating system you then assign multiple of its parts for example one virtual copy of this car to one application at vm another copy of this card to another application at the end then the hardware itself
+undefined [6:44]: takes care of the work of multiplexing the hardware amongst these virtual copies
+undefined [6:44]: of itself
+undefined [6:54]: so this is nice in that it involves it enables this ability to directly access the network line safely from an application
+undefined [7:01]: so a data center application written for these sriov capable network cards or storage devices
+undefined [7:12]: can directly access the car issue commands issue ios potentially from user space without even having to bother to hurdle at all for this operation
+undefined [7:20]: spell out how they do that and why
+undefined [7:29]: another concept that you might find helpful when thinking about these papers is this idea of the control plane versus the data plane
+undefined [7:34]: so again this is a common design pattern particularly when we're looking at network applications
+undefined [7:42]: and data centers so again the power office and democratic talk about visa
+undefined [7:43]: where
+undefined [7:53]: so the control plane is going to control how data is moved so things like routing and control of data who gets to send data and how it gets there
+undefined [7:56]: the control plan can be quite complex
+undefined [8:07]: it's kind of like the brains of the operation and because it's complex you can't afford to invoke so you're basically going to invoke it anytime you need the policy
+undefined [8:08]: or sanitary
+undefined [8:12]: policy and then ideally we're kind of just letting policy to its thing and
+undefined [8:12]: changes
+undefined [8:18]: the other end is the data plane again this is the entity that's actually moving the data around
+undefined [8:35]: based on the policies that provide a control plan so there's even much more simple than the control planets kind of dumb right it just does with a control because it's way simpler it's way less expensive to run and so this is why we go on every operational
+undefined [8:39]: any question
+undefined [8:48]: so again both of these papers could be a pretty accessory networking networking is not usually a topic
+undefined [8:51]: and using it working
+undefined [8:52]: as elective
+undefined [8:59]: so in case you need some brushing up idea background in
+undefined [9:15]: we'll basically build a symbol it looks like ethos server does is it
+Them [9:15]: plays for client will send some data to server will immediately just send the same data back so data simple as network application
+Them [9:23]: so if we were to write this thing and see we might have code that looks like this removing all the border plate included
+Them [9:38]: here is we're going to pair up our store can get we're going to instantiate a socket a socket is an abstraction that learns to use this for networking it's basically consider it a way to move data
+Them [9:49]: and so again stopping is a special api call you pass it some parameters that tells that this is a network topic that's going to be communicating with another machine
+Them [9:58]: it's a stream of data which is effectively going to make the socket carry out ecq protocol delivery
+Them [10:08]: going to bind the socket because the network address which is basically going to give this object an address so that other people know basically the name of the pocket
+Them [10:19]: and then we're going to listen for example listing is a call that just waits for someone to try to instantiate a connection on the socket and it will block until someone has tried to do so
+Them [10:32]: if listen returns that means that some client is trying to connect with it so we can intercept the connection at which point our connection has been set up and now we can start with receiving some client data equity
+Them [10:41]: call we pass in our buffer that we instantiated receives some data into it and then immediately send the data back using the same socket
+Them [10:45]: any questions about this code
+undefined [11:01]: so all of the sort of highlighted code here socket followed by pulses and calls these are all examples of the classics interface process is the portable operating system inter
+undefined [11:11]: face so again this is a standard os api for any units like operating systems or unix defined it but you use linux use the same interface macos
+undefined [11:17]: larger anything shorter derived from unix will have some support for profits
+undefined [11:25]: this is a great idea because basically now we have an application is written
+undefined [11:44]: as long as your application is written to a policy interface your same application will run on any toxic compliance
+undefined [11:45]: operating system
+undefined [11:48]: so this is nice reportability
+undefined [11:49]: portable
+undefined [11:55]: so again all the sort of function calls we were making
+undefined [11:58]: in the previous example were examples
+undefined [12:16]: okay positive is really nice because this sort of abstractment the operating system provides to us basically then let the algorithm management our bucket we were sending these calls to get the data to where it needs to go well
+undefined [12:18]: on the send
+undefined [12:18]: call
+undefined [12:21]: the operating system is permitted
+undefined [12:33]: data from the buffer to wherever the myth needs it to be extended data on the receive side plastics the operating system will handle the wrapping of the data out of nick memory by putting it into
+undefined [12:34]: our application
+undefined [12:42]: it also does all the network stack implementation so implementing the ccp protocol for your reliable in order to deliver inter data
+undefined [12:50]: so you as a programmer don't have qcd you just improve socket screen socket
+undefined [12:52]: and push the whole data from
+undefined [12:53]: your
+undefined [13:06]: does anyone see any potential issues performance wise otherwise the example from the previous slide
+undefined [13:18]: but i mean the fact that we're you know implementing this really simple apple server
+undefined [13:22]: what we're basically doing here
+undefined [13:33]: basically system call or receive to copy data from the network buffer to our user buffer return to user space
+undefined [13:38]: users based on immediately
+undefined [13:40]: to
+undefined [13:43]: high
+undefined [13:43]: school
+undefined [13:50]: memory
+undefined [13:52]: is that
+undefined [13:53]: like
+undefined [14:28]: additional
+undefined [14:29]: spots to accompl
+undefined [14:30]: ish
+undefined [14:31]: if
+undefined [14:32]: you want things
+undefined [14:33]: that
+undefined [14:34]: we
+undefined [14:37]: call
+undefined [14:45]: synchronous aisle
+undefined [14:46]: model that produces
+undefined [14:47]: programming
+undefined [14:48]: a lot but we're doing something
+undefined [14:52]: all the
+undefined [14:52]: time
+undefined [14:53]: we're just walking
+undefined [14:54]: from this hall
+undefined [14:56]: grat
+undefined [14:57]: ification to
+undefined [14:58]: maybe
+undefined [14:59]: pass on
+undefined [15:00]: more complicated
+undefined [15:01]: but maybe more
+undefined [15:03]: topics
+undefined [15:04]: wouldn't
+undefined [15:05]: really get
+undefined [15:11]: positive nice but there are some limitations that certain areas where it could limit
+undefined [15:13]: your applic
+undefined [15:13]: ation
+undefined [15:22]: so there are alternatives and prospects that are more lower level so again the papers will talk about
+undefined [15:27]: acronym soup here without dpk
+undefined [15:30]: these are
+undefined [15:33]: events to this more operating system supported way of doing
+undefined [15:34]: network and storage
+undefined [15:35]: io
+undefined [15:42]: where dpk is data point development kit this is a high performance network library
+undefined [15:44]: allowing direct access to the network
+undefined [15:45]: from an application
+undefined [15:46]: oracle
+undefined [15:47]: feature space
+undefined [15:52]: on the storage side that we have spdk or storage plan development again so
+undefined [15:53]: this
+undefined [15:58]: high performance storage applications having direct access to storage
+undefined [15:58]: devices
+undefined [16:10]: rdna is slightly different from the use of rnas or low level networking protocol basically allows for direct access memory from one machine to another machine
+undefined [16:15]: without necessarily involving a cpu vibration argument or both are
+undefined [16:16]: access
+undefined [16:30]: so again these are sort of different ways of doing networking that are different from plastics and because you have these more lower level interfaces accessible directly to use space they're going to be high performance
+undefined [16:36]: and again the roth is many criminal paper scroll fuel
+undefined [16:37]: specifically
+undefined [16:43]: again i said this before but these are really low level interfaces
+undefined [16:46]: so these days they're going to have
+undefined [17:02]: rtp rx first in order to send packets home at the network or rtb expert and the cfac this is fairly a lot different than something actually aim like cisect
+undefined [17:03]: ic site
+undefined [17:09]: so again because it's a lower level interface the programmer is using ppdk
+undefined [17:10]: sbk r
+undefined [17:20]: t often have to deal with the dora level by sea bills so for example modern mix you send and receipt buffers in order to handle receiving and sending data
+undefined [17:26]: cost section the operating system would handle this for you if you're using that interface
+undefined [17:32]: if you're using something like ppdk you the program are responsible for managing these
+undefined [17:41]: so again programming against ddk is a lot more like programming and drivers
+undefined [17:47]: do they work on all platforms or just a specific operating system
+undefined [17:48]: rdma
+undefined [17:49]: is going to be a specific
+undefined [17:53]: protocol supported by the ssl so you need a special party
+undefined [18:04]: i'm
+undefined [18:05]: gdp
+undefined [18:11]: devices that support things but most modern
+undefined [18:12]: network cards
+undefined [18:14]: and ssd
+undefined [18:17]: will support these standards
+undefined [18:28]: but again like i said you don't really have the more higher level eth features that plastic has so you're doing a lot of this memory management
+undefined [18:29]: buffer management
+undefined [18:32]: just general device maintenance
+undefined [18:35]: s
+undefined [18:52]: yeah so then you're doing all this manual lettering management for your application device on the networking side for dbdk you're basically reimplementing your network protocol
+undefined [18:55]: ization
+undefined [18:58]: you the program are going to be basically responsive
+undefined [18:59]: to
+undefined [19:06]: state machine or get kind of like extra colonel said fighting implementation of pcp
+undefined [19:13]: and then enter the storage side you're responsible for your storage
+undefined [19:14]: layout
+undefined [19:15]: as the program
+undefined [19:17]: rather than the office
+undefined [19:19]: segment or you via the box
+undefined [19:21]: any questions about this
+undefined [19:35]: finally again as i hinted at on the sort of more positive side there is this concept called zero copy network games again package are nice
+undefined [19:38]: because they kind of are
+undefined [19:44]: programming so there are a few reasons why you might copy data one reason is you actually want to copy the data for backup purposes
+undefined [19:50]: but oftentimes when you're programming you're doing a copy it's an easy way to transfer ownership of
+undefined [19:51]: a buffer
+undefined [19:55]: sub components
+undefined [20:03]: so it's a way to kind of simplify this because two different each has two different properties
+undefined [20:07]: of a buffer data and they don't have your coordinate
+undefined [20:10]: without having to worry about messaging
+undefined [20:31]: in puppies come with a cost so again they can slow down your application because instead of your application performing useful logic it's moving data around and this is kind of bad on two ends because one the cpu times cpu is benji something else then also
+undefined [20:38]: it's going to point your cpu passion with the state of it and it may not be used again right away so you might be flushing out useful
+undefined [20:39]: fasting
+undefined [20:47]: particularly when we look at i o we're assuming due to the level of bio access with something like ebk
+undefined [20:48]: or rgb
+undefined [20:50]: these copies are unnecessary right
+undefined [20:54]: because in order to copy in order
+undefined [21:01]: to copy from a network buffer well the device can already dma anywhere in visible memory
+undefined [21:07]: so again if we're assuming this sort of user level access to the i o device
+undefined [21:24]: to a network buffer so serves no pop currents if we're going through the kernel level networking and we do need a class of people we do need just user level buffer to be copied into the kernel of global buffer within the cardinal handle
+undefined [21:27]: all this sort of memory to a company
+undefined [21:33]: as an unusual access for io and this copy isn't concerning purpose
+undefined [21:38]: so again because of this your copy number has long been a goal
+undefined [21:39]: for high performance
+undefined [21:53]: is not going to come for free so again if we are eliminating any copies
+undefined [21:56]: then this is going to require additional coordination
+undefined [22:01]: numbers
+undefined [22:07]: so for example one requirement is the device always needs to be able to know where the data
+undefined [22:11]: is the place where means you can't pass a device
+undefined [22:17]: to pass a buffer to your i o device and then maybe try to move this buffer somewhere else swap it out to storage
+undefined [22:19]: free it for example you can't do that
+undefined [22:24]: so you need to be a lot more careful
+undefined [22:28]: with your memory
+undefined [22:36]: panel paper will provide two different solutions benchmade for making this a little more
+undefined [22:36]: manageable
+undefined [22:44]: any questions on this
+undefined [22:48]: performance oriented operating system introduction
+undefined [23:00]: a little bit about i
+undefined [23:05]: understand
+undefined [23:14]: this alternative
+undefined [23:15]: to
+undefined [23:16]: your students
+undefined [23:17]: so ioim has
+undefined [23:18]: been identified for ac
+undefined [23:20]: so
+undefined [23:22]: instead of calling send
+undefined [23:26]: and waiting for your central return so you know your data
+undefined [23:31]: you will tender buffer to
+undefined [23:31]: a
+undefined [23:32]: proper
+undefined [23:34]: and then notify
+undefined [23:36]: the i o device
+undefined [23:38]: of
+undefined [23:39]: a batch of io request
+undefined [23:42]: the i advise will then carry out these
+undefined [23:46]: i o as it can and then notify you
+undefined [24:01]: so your programming model for iob is going to look a lot more asynchronous because you're going to basically you might process some i o batch of item request into the string buffer
+undefined [24:10]: both do some useful data periodically check your completion ring buffer if you have completions to process process them
+undefined [24:13]: you know do what you need to do in those cases
+undefined [24:21]: it's a lot more asynchronous it can be higher performance because you're getting not doing this sort of more blocking falls where you're not doing
+undefined [24:26]: iowa you're reading logan that can be bayernal paper
+undefined [24:30]: it's exactly kind of a really important
+undefined [24:35]: use cases people are coming up with it it does kind of unlock the network
+undefined [24:39]: ing performance without necessarily taking the larger steps
+undefined [24:41]: systems like iraq
+undefined [24:44]: so it's kind of like a negative
+undefined [24:54]: in the zerocopy network
+undefined [24:59]: ing can you simply change the ownership into buffer instead of hopping everything to the applic
+undefined [25:00]: ation space or
+undefined [25:08]: yeah so that's kind of what zero copy is trying to figure so instead of having one copy from the application
+undefined [25:12]: to use for the one copy of the price the same property
+undefined [25:13]: for both
+undefined [25:17]: but again this could be problematic in some cases where like let's say you have an application
+undefined [25:22]: that sends some data and then maybe it should be immediately once the frequenc
+undefined [25:22]: y buffer
+undefined [25:36]: you can't do that because this device might still need this buffer until it's actually you can imagine like using something like pcp there might be some kind of packet that it's lost or it might be accessed
+undefined [25:42]: so this is why we have this additional coordination that's needed
+undefined [25:45]: and this interior copy case whereas if we had multiple copies
+undefined [25:46]: of it
+undefined [25:51]: then it would be safe for the application to you know send some data over to the io device
+undefined [25:52]: and the name increase
+undefined [25:53]: on
+undefined [25:56]: buffer because the i device has its own copy
+undefined [25:57]: that it's not
+undefined [25:59]: and this is what the kernel can do
+undefined [26:05]: for example is in the main memory yeah so the buffer is going to be in the application's address space
+undefined [26:11]: it's going to be most likely work it needs to be resident in geographic
+undefined [26:14]: memory
+undefined [26:18]: and in some way somehow
+undefined [26:20]: the vice is to know
+undefined [26:20]: where it is
+undefined [26:23]: so i mean either here at the ajax physical address of
+undefined [26:28]: the data or you somehow let the device basically be the paper
+undefined [26:31]: but once it has this location
+undefined [26:35]: you're basically promising me io advice that the data will remain at this location
+undefined [26:37]: until you are done with it
+undefined [26:41]: again when the i o device is done there's not only so obvious
+undefined [26:46]: because the device could send it over
+undefined [26:46]: network
+undefined [26:51]: you might think it might be done but again you might need for some reason
+undefined [26:54]: or maybe i would like to del
+undefined [26:55]: ay processing some other
+undefined [26:56]: i o
+undefined [26:58]: k
+undefined [29:53]: ay
+undefined [30:25]: what is the
+undefined [30:25]: question
+undefined [30:29]: i just
+undefined [30:32]: tell you what defund last year if i was
+undefined [30:34]: a housework i should be
+undefined [30:35]: for sure
+undefined [30:37]: i was a u twenty interrupter in conversation
+undefined [30:38]: my bad
+undefined [30:42]: so i wasn't engineering class
+undefined [30:47]: but i decided to not take it because i didn't think
+undefined [31:00]: and i didn't speak
+undefined [31:02]: didn't really i thought we were going to make a compiler
+undefined [31:18]: first quarter
+undefined [31:27]: so what were your previous major then
+undefined [31:31]: oh but sopa
+undefined [31:34]: how did so you deferred your entry essentially
+undefined [31:38]: i should have started
+undefined [31:42]: i see i didn't know you could do that
+undefined [32:08]: boy if you matches dnc you expect six years i think unless you do davis would that give you this for three years
+undefined [32:16]: i'm pretty sure if you do like separately you would have to pull you to classes really yes after your master's
+undefined [32:21]: of academics
+undefined [32:24]: exact
+undefined [32:24]: ly
+undefined [32:28]: somewhere else
+undefined [33:24]: why but i thought these people four years
+undefined [33:25]: no
+undefined [33:32]: you're right you're right you do a point about that
+undefined [33:40]: remember
+undefined [33:50]: to get two events to next level which is probably why i didn't want to do page eight
+undefined [33:56]: interesting quantified gender brutal
+undefined [33:56]: no
+undefined [33:59]: how more to qualify
+undefined [34:24]: that's your exam what you did
+undefined [34:52]: after one year i see
+undefined [34:55]: you fighting for me
+undefined [35:48]: get a master's and transfer to a different school for the competition
+undefined [35:52]: it depends on the program itself
+undefined [36:08]: depends on school level school education and programs it's the program specific if you can do master out or like stepper phds
+undefined [36:44]: i'm done with all your classes
+undefined [36:47]: how long does that take on average on average
+undefined [37:40]: and so
+undefined [37:55]: what kind of what is it like finding someone or finding that
+undefined [38:09]: everything sounds glamorous on paper until you really do and you're like oh my gosh what did i get myself into
+undefined [38:12]: yeah i can see that
+undefined [38:17]: is it julie at the t eight do you have to do like a european for phd
+undefined [38:29]: i heard that
+undefined [38:41]: i've heard that dc ten kiodi yeah
+undefined [38:47]: here comes my chances
+undefined [38:51]: i'm screwed
+undefined [38:53]: yeah someone's sitting here
+undefined [39:01]: that's the stuff
+undefined [39:11]: one of these only have like one video
+undefined [39:14]: so that would be probably easily
+undefined [39:15]: reading
+undefined [39:21]: when the weeks are finally awarding yeah
+undefined [39:34]: i also think strategy wise because i do know that for at least part one some closure will be on one reading once of course we'll be on reading two wouldn't be more efficient to like for that at least from one of the folks on one readings
+undefined [39:37]: for at least part one but you don't know which one she's gonna put
+undefined [39:48]: good point but like i think i talk to her at least you guaranteed some forces if they're two to guarantee some questions are from part one to push it from or bring first read some questions from celebrity compare one
+undefined [39:50]: we'll see what happens
+undefined [39:54]: moving over there
+undefined [41:28]: was a
+undefined [41:30]: big
+undefined [41:53]: reading stricter because there's probably huge check but even the
+undefined [42:12]: before we go into that
+undefined [42:14]: question
+undefined [42:15]: about general court
+undefined [42:15]: policies
+undefined [42:16]: the readings
+undefined [42:17]: that you ask
+undefined [42:23]: so far
+undefined [42:27]: yeah
+undefined [42:30]: i did that last quarter it seemed very popular
+undefined [42:33]: i had
+undefined [42:34]: one lecture
+undefined [42:35]: when i was a student
+undefined [42:36]: i did that
+undefined [42:49]: so getting into it so again just some quick logistics so far about the research project
+undefined [42:50]: open ended project
+undefined [42:58]: we'll be doing it in teams of three or four yes you can have water or smaller groups but if you want larger smaller groups and three more students do talk to them
+undefined [43:04]: first so that we can make sure the scope is appropriate for intended
+undefined [43:11]: again it's open ended so you choose the topic beyond the stipulation is that it needs to have some kind of suspension to it
+undefined [43:17]: but again this can be issued very broadly so you don't necessarily have to go modify the linux kernel
+undefined [43:24]: s to do a project user space and maybe investigate overhead system problems
+undefined [43:27]: your generative ai applications
+undefined [43:29]: it's very rough
+undefined [43:35]: again the other stipulation is that it shouldn't be something where the answer is known ahead of time
+undefined [43:37]: so if you
+undefined [43:47]: did corresponding debate your undergrad where it was like steps one two three answer ideally it'd be a little more open than that for this project again we're trying to do research
+undefined [43:50]: the bounds of one two
+undefined [43:56]: so again the goal of doing this is again to get experience with the research cycle so we can progress students
+undefined [43:57]: we're trying to
+undefined [43:59]: part of being aggressive
+undefined [44:00]: is
+undefined [44:09]: getting involved in trying to research or doing substantial project which kind of caused the same flavor of closure idea
+undefined [44:11]: actually carry out your idea right about your idea
+undefined [44:17]: and then again the other benefit particularly for this class is to get hands on
+undefined [44:23]: high level schedule
+undefined [44:26]: next wednesday we do membership
+undefined [44:33]: can this assignment go to text box just enter the names of all your group members every member should submit
+undefined [44:35]: this just
+undefined [44:43]: monday after that your project was going to be
+undefined [44:46]: early
+undefined [44:48]: february is your total
+undefined [44:51]: so this is going to be more in depth this will be in the form of an introduction
+undefined [45:08]: about how you find to evaluate your project as well as post time warning for what stuff you're going to hear
+undefined [45:16]: february harsh we'll be using these discussion sections for project group readings
+undefined [45:21]: i figured this is a compete i'm project groups to meet
+undefined [45:26]: just because there's usually a time available you do not have to meet with your project during this time
+undefined [45:31]: if that doesn't work for you students already said they might have some complex engagement
+undefined [45:32]: with the discussion techn
+undefined [45:33]: ique that's fine
+undefined [45:35]: but again this time is here for you
+undefined [45:38]: to make
+undefined [45:42]: ta will be around to answer any
+undefined [45:42]: questions
+undefined [45:56]: and the court of that last week before final week spending on project presentation so each group will provide short probably ten or fifteen minute talk about the project
+undefined [45:57]: and
+undefined [45:58]: answer any questions
+undefined [46:06]: during finals we'll submit project paper write up as well as any other
+undefined [46:09]: thanks to code and your deliver
+undefined [46:09]: ables
+Them [46:14]: so starting on february ninth
+Them [46:17]: are you
+Them [46:22]: joining the discussion
+Them [46:28]: so again like i said you would rather meet the group somewhere else
+Them [46:30]: or some other time
+Them [46:31]: you're free to do that
+undefined [46:42]: all right
+undefined [46:52]: so how do we pick research on these well one of the things that is really useful to do is again reduce the weight of system structuring out where technology and hardware will be in five years
+undefined [46:57]: and compared to where we are now what will need to change
+undefined [46:59]: to support
+undefined [47:09]: again this is actually kind of hard to do one of the outcomes of phd program is to be something that always finds a home
+undefined [47:19]: and again this is also something that i think is beneficial for academia versus industry because academic users kind of have the freedom to work
+undefined [47:23]: industry is meant to be more focused on short term
+undefined [47:30]: you can try to do is think about a current problem
+undefined [47:36]: you can put on it so some of you might already be involved in research groups in other
+undefined [47:38]: areas of computer science
+undefined [47:41]: there's probably some kind of space
+undefined [47:45]: model
+undefined [47:47]: or scientific computing game
+undefined [47:56]: that might interact with the system of somebody you can investigate these interactions system see if there's any overheads maybe pose get implants
+undefined [48:05]: or something in particular
+undefined [48:07]: you can maybe try to tackle that
+undefined [48:08]: again
+undefined [48:14]: being also a problem is nice but you don't necessarily need to have a set of cons
+undefined [48:15]: oles
+undefined [48:24]: i know another great way to sort of take ideas as to whole
+undefined [48:26]: colleagues we're seeing
+undefined [48:29]: and part of the discussion section today will be useful
+undefined [48:39]: one thing you can add over here is a question you might all have does my project have to work
+undefined [48:43]: that question will depend on what you do
+undefined [48:46]: functional when i do
+undefined [48:47]: a yes
+undefined [48:50]: functional which basically means you have to write enough code
+undefined [48:52]: enough to get some results
+undefined [48:58]: so again there's going to be a fair amount of programming involved in carrying this out
+undefined [49:03]: if on the other hand you mean by work you need pan out then not necessarily
+undefined [49:03]: right
+undefined [49:10]: so you have this great idea at the beginning of the quarter that i'm going to design a tool that does this and makes my life better in this way
+undefined [49:16]: you go off and write that tool and actually maybe you thought the model might be somewhere here but it's actually somewhere else
+undefined [49:18]: that's fine
+undefined [49:19]: you still did some useful work
+undefined [49:23]: but in the case where you may have results
+undefined [49:25]: as good as you i hope
+undefined [49:27]: then you just explain what you learn
+undefined [49:28]: and maybe
+undefined [49:29]: why the results
+undefined [49:34]: and again negative results are still great results this is something that i think
+undefined [49:36]: has to be a little controversial in a lot of research areas
+undefined [49:40]: it's way harder than it should be to get educated
+undefined [49:52]: always validated i had to work but particularly for this ten week course it's fine to have some idea that you thought it would be great
+undefined [50:04]: again another note you might have on hardware and depending on what your project is you might be able to run your code and getting
+undefined [50:05]: your results
+undefined [50:09]: harder you already have access to personal
+undefined [50:12]: machines you have through your research group
+undefined [50:14]: i will say you're on windows
+undefined [50:22]: i generally do not like writing system code on windows so if you don't want to go through the whole process
+undefined [50:31]: particularly nice it's very easy to set up pretty well overhead i do use that on my personal laptop at home
+undefined [50:33]: i need to quickly do something
+undefined [50:39]: it gets you this sort of more classics compliance standards
+undefined [50:41]: i think we're all more used to
+undefined [50:44]: kind of what undergrad advocates
+undefined [50:51]: we need hardware beyond what you have access to there's another resource
+undefined [50:56]: really great called botlab so cloud lab is a free resource for admission
+undefined [50:59]: it's kind of similar to cloud and that is you get access to machines
+undefined [51:05]: so in contrast to something like aws azure you got to know what you're going to
+undefined [51:05]: say
+undefined [51:18]: that said a lot of these amazon azure you do have student credits that if you want to use those you can sign up for student credits and run on those quad level games is the by default resource
+undefined [51:27]: lab is great because access to a wide range of hardware so any school storage devices you might want to work with or will never work hard
+undefined [51:28]: they have some
+undefined [51:31]: access to some use
+undefined [51:43]: be aware that fallout is a project supported by academia it does not have families and billions of dollars and market share supporting it it's run by for universities
+undefined [51:56]: so it's not going to be as your company support cloud lab is pretty well known for around really important systems that being really hard to get access to
+Them [51:59]: if
+Them [52:00]: you're interacting
+Them [52:06]: if you need something else for your project or you're not sure
+Them [52:14]: i don't want hardware to be open
+undefined [52:17]: all right
+undefined [52:24]: so if anyone call up i think ta might give some more information on all of the linear discussion sections
+undefined [52:26]: but again
+Them [52:31]: was originally built to
+Them [52:32]: have
+Them [52:34]: method of doing repeatable research
+Them [52:39]: community and other communities that have
+Them [52:45]: artifact evaluation basically your paper will write about the system you built has all this great performance
+Them [52:53]: it used to be that you didn't have to show anyone your code everyone just kind of had to buy what you said well nowadays
+Them [52:57]: that's really fine as much anymore so most times
+Them [52:58]: someone else
+Them [53:01]: that's not your district or on your
+Them [53:02]: code
+Them [53:04]: it's kind of easy happening
+Them [53:05]: for the future
+Them [53:12]: it also gets you access to specialized hardware so
+Them [53:14]: you're able
+Them [53:15]: to
+Them [53:16]: make hardware
+Them [53:19]: it's
+Them [53:20]: not remarkable
+Them [53:21]: so
+Them [53:22]: in
+Them [53:23]: context
+Them [53:26]: you get access
+Them [53:27]: to
+Them [53:28]: that partner
+Them [53:29]: so you have
+Them [53:30]: some operating system
+Them [53:31]: actual
+Them [53:32]: changes
+Them [53:33]: in
+Them [53:34]: our group as
+Them [53:38]: do you know how we first conquered the skies
+Them [54:25]: for
+Them [54:26]: the human
+Them [54:35]: and
+Them [54:35]: by default
+Them [54:39]: you
+Them [54:40]: have some set of machines
+Them [54:41]: with your question
+Them [54:45]: there
+Them [54:46]: is some that
+Them [54:47]: were automatic extensions
+Them [55:03]: so
+Them [55:05]: as long as you're
+Them [55:05]: in your bible
+Them [57:15]: all right
+Them [57:16]: so again
+Them [57:17]: project catego
+Them [57:18]: ries
+Them [57:25]: study or again you're going to study some important aspect of type of
+Them [57:25]: system
+Them [57:31]: think of application
+Them [58:01]: so
+Them [58:02]: that maybe you
+Them [58:02]: have
+Them [58:09]: or
+Them [58:11]: your
+Them [58:11]: system
+Them [59:23]: cannot
+Them [59:23]: be
+Them [59:26]: ing something
+Them [59:43]: asylum
+Them [59:44]: see if that encourage performance
+Them [59:48]: you can investigate
+Them [59:52]: use any pred pools versus
+Them [59:54]: on mangroves
+Them [59:56]: or
+Them [1:00:03]: looking at different scheduling policies or synchronization for moves or bunches of
+Them [1:00:06]: driving what might be more appropriate where
+Them [1:00:13]: you can also prepare stripes or something lide array on cover genes for different masks
+Them [1:00:16]: trying to investigate language let go
+Them [1:00:19]: something lighter weight
+Them [1:00:49]: would be something that you may be assigned to an under
+Them [1:00:49]: graduate
+Them [1:00:56]: class i'm trying to look like i'd be fine with this as a project but you have to put some kind of interesting
+Them [1:01:01]: versus implementing implementing something
+Them [1:01:11]: i think you talked about ebpf i think a couple of classes back
+Them [1:01:13]: and specifically
+Them [1:01:21]: to do sort of zero code tracing or very low overhead takes either use more and more
+Them [1:01:30]: so i think the main challenges and i'm not like very well versed on it
+Them [1:01:35]: but from what i realized that these are basically
+Them [1:01:40]: you basically cross from user one into kernel space to do ebpf invocations
+Them [1:01:42]: user defined
+Them [1:01:47]: i
+Them [1:01:48]: don't think
+Them [1:01:50]: anything
+Them [1:01:53]: could
+Them [1:01:54]: at least
+Them [1:01:59]: maybe
+Them [1:02:00]: try to implement
+Them [1:02:01]: some operators
+Them [1:02:04]: using
+Them [1:02:09]: custom
+Them [1:02:09]: izing something
+Them [1:02:25]: i guess more of
+Them [1:02:33]: protocol tracing or like distribute system tracing using vpf so that
+Them [1:02:34]: you can kind of
+Them [1:02:36]: use ebpf or any other
+Them [1:02:37]: sort of joint
+Them [1:02:41]: systems called tracing or communications racing
+Them [1:02:46]: if you're going to do that kind of thing
+Them [1:02:49]: again try to have some kind of hypothesis
+Them [1:03:13]: can you do rna sample
+Them [1:03:22]: which
+Them [1:03:23]: means the last
+Them [1:03:24]: time
+Them [1:03:31]: you
+Them [1:03:32]: think about
+undefined [1:04:25]: formul
+undefined [1:04:26]: ating cost but other
+undefined [1:04:32]: relia
+undefined [1:04:33]: bility
+undefined [1:04:45]: yeah
+undefined [1:05:37]: virt
+undefined [1:05:38]: ualization
+undefined [1:05:48]: but they're still sharing resources
+undefined [1:05:50]: they're still filtering
+undefined [1:05:51]: resources
+undefined [1:06:28]: arna do you want to talk about
+undefined [1:06:43]: the
+undefined [1:06:44]: applic
+undefined [1:06:45]: ation
+undefined [1:07:22]: to
+undefined [1:07:23]: allocate a certain amount
+undefined [1:07:24]: of threads
+undefined [1:07:25]: at the beginning
+undefined [1:07:26]: of the application
+undefined [1:07:26]: for example
+undefined [1:07:30]: if you need to create a phrase you want to be shanked
+undefined [1:07:40]: so they try to make a credit
+undefined [1:07:52]: and then
+undefined [1:07:53]: you
+undefined [1:07:54]: stop with bread
+undefined [1:07:55]: and you don't
+undefined [1:07:56]: need to use it again
+undefined [1:08:00]: that was
+undefined [1:08:01]: a neat project
+undefined [1:08:20]: one of the
+undefined [1:08:22]: neighbors some of the papers
+undefined [1:08:23]: actually provide
+undefined [1:08:29]: some frameworks for doing some operating system techniques that you just face so the ghost fever
+undefined [1:08:30]: talk
+undefined [1:08:34]: s about ways to customize scheduling computer space
+undefined [1:08:41]: so you can maybe look into something like something that allows okay there's exploration of different policies
+undefined [1:08:43]: that normally would be implemented
+undefined [1:08:56]: performance wise
+undefined [1:09:11]: is there any file system or so in stock that
+undefined [1:09:18]: there's this new technology
+undefined [1:09:22]: called non
+undefined [1:09:29]: so there are certain files
+undefined [1:09:31]: idea
+undefined [1:09:33]: but you can maybe
+undefined [1:09:36]: find
+undefined [1:09:42]: mean that is something that is currently ongoing
+undefined [1:09:59]: oper
+undefined [1:10:00]: ators
+undefined [1:10:08]: right so the major systems conferences are acflsb and usnips osbi
+undefined [1:10:12]: eco
+undefined [1:10:13]: systems
+undefined [1:10:20]: is kind of mult
+undefined [1:10:23]: i sort of operating system architecture
+undefined [1:10:24]: and other
+undefined [1:10:30]: recommend there's a workshop called auto
+undefined [1:10:37]: that's being early stage interesting work through major so you can kind of look there see
+undefined [1:10:37]: if it's helping
+undefined [1:11:18]: so i'm just trying to understand what type of deliverable
+undefined [1:11:24]: need to be that it has to be an open ended research
+undefined [1:11:29]: it's
+undefined [1:11:30]: a new
+undefined [1:11:32]: form
+undefined [1:11:34]: and video
+undefined [1:11:50]: so
+undefined [1:11:54]: again you asked about deliverables
+undefined [1:11:56]: going to be
+undefined [1:11:57]: like
+undefined [1:12:04]: you can even just
+undefined [1:12:07]: i
+undefined [1:12:08]: con
+undefined [1:12:13]: deliverable really depend on
+undefined [1:12:14]: object
+undefined [1:12:17]: creating a video set
+undefined [1:12:18]: if you want to
+undefined [1:12:21]: so it's really
+undefined [1:12:24]: and again part of
+undefined [1:12:25]: the
+undefined [1:12:28]: part of the purpose of
+undefined [1:12:35]: the project topic submission like that five hundred sixty group unit also
+undefined [1:12:40]: the idea of your project where the scope
+undefined [1:12:44]: any ideas
+undefined [1:13:11]: another
+undefined [1:13:12]: thing that i think would be
+undefined [1:13:13]: around
+undefined [1:13:22]: research paper
+undefined [1:13:25]: re implementing it from scratch
+undefined [1:13:29]: or if they have their code available
+undefined [1:13:42]: writing their own results they do have code that you're i would say that they kind of give you a little push to do something
+undefined [1:13:45]: or
+undefined [1:13:49]: education
+undefined [1:14:04]: i will say though that even with existing
+undefined [1:14:10]: don't follow the trials of thinking oh that's the user project
+undefined [1:14:14]: running systems code from someone else particular
+undefined [1:14:17]: ly harder than you need to
+undefined [1:14:28]: at the level or systems code games like operating system driven and tool chain version so even just getting your finger
+undefined [1:14:45]: when we have about i guess thirty minutes
+undefined [1:14:47]: still scheduled
+undefined [1:15:02]: you guys can chat once you're fellow students again if you want to find a group that you can use a user for that coordinate
+undefined [1:15:43]: yes
+undefined [1:16:05]: y
+undefined [1:16:05]: es
+undefined [1:16:08]: y
+undefined [1:16:08]: es

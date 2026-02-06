@@ -1,0 +1,59 @@
+So with a somewhat formal definition of running time in order we can come back and we can analyze the time complexity of this
+Euclidean algorithm that we defined. So there's the code in Python
+for the Euclidean algorithm. Now the input is a pair
+of integers a and b. So we have two inputs,
+so we got to somehow combine them to get one input size. And we're going to say the size N is the number of bits
+of a and B together. Let's just, for the sake
+of making this easy, ease and they both require, and that's if b is much
+smaller, maybe it doesn't. But you can imagine padding it with zeros until it also requires it. So What we're gonna do is we're just going to count how
+many divisions we need, right? So on an input of size n, we're going to say we
+need d of n divisions. And how will that turn into the time? Well, if we know that
+each division takes time T of n on inputs of size n, then the total time complexity
+is going to be T and N times d. And we're going to analyze this
+is with a couple of exercises. I won't work it out here, but we can talk about it in
+discussion that we need. So the first to think about and stop and think about
+this for a second. Try to see why it's true. If a is bigger than b,
+bigger than or equal to b, then a mod b is less
+than a over 2, right? No matter how a and B are related, you take a mod b and the result
+is less than half of it. The other thing to think about is that we can look at this algorithm
+air and use this first fact and get that Euclid's algorithm
+is going to perform at most to log a divisions, right? And because log of a is, and that's how we're defining
+it as two n total division. So a linear number of divisions. And if we use the sort of grade
+school algorithm for division, this whole thing that is
+going to take o of n squared. And that's a problem in the textbook. Okay? Let's go to a different
+problem for factoring, right? So the factoring problem is
+going to look like this. We'll formalize it as our
+input is an integer m And its size is going to be
+log base two of n, right? We'll call that number n. So m is about two to the n. All right, we're going to
+say that the factoring problem is to find some factor of atom in the range of integers
+between two and n minus 1. If it exists, maybe n is prime, then it would have no such factor. But if it does exist, we just want to find one of them. So one thing to think
+about and seriously, pause for a second
+and think about this. Why is this enough to help us find
+the whole prime factorization? The sounds like a lot crush. This is we're not getting the
+whole prime factorization. We're not even necessarily
+getting a prime factor, we're just getting some factor and good if the PH composite as well. But just think for a second how
+you would use an algorithm for this problem to actually get
+the whole prime factorization. Okay, so here's the obvious
+algorithm to try to solve this problem. Find factor. And this is sort of Python code and my pseudocode looks
+a lot like Python, but I give myself deliberately to just do straight up
+pseudo-code sometimes. So what we're gonna do is just
+search every potential divisor d in this range between two and
+the square root of m plus one. We're going to check what
+happens when we divide by d. Do we get a remainder 0 or not? And the claim is that
+that's enough to tell if there's a factor in the range
+from two up to m minus one. So that's worth thinking
+about for a second. And then we just say, okay, if any of those potential divisors divide m cleanly with no
+remainder there divisor, so we can return that number. It would be a factor that case. Okay, so again, using
+our sort of metric as the number of divisions
+being the key thing here. And then we can just multiply that by the time needed to do divisions. How many divisions? What happened here? Well, it's
+fairly simply a for loop. It has about square root of m terms and each one we do a single
+division to get this mod. So we're doing square root
+of n divisions, which is, now remember we have to express this as a function of our input size, as our size is not, our size is the number of
+bits needed to represent. So we needed log of n
+bits to represent m, which is n. And so m
+to the 1.5 is the same as 2 to the n to the 1.5, which is two to the n over two. So this is the sort of naive
+way to try to do factoring. Now the best-known algorithm is a thing called the number field CVE. And it's quite a bit faster than, rather than raising two to a
+power that's like linear in n, u raised to a power that's something
+like the cube root of that. So it's significantly faster, still exponential time technically, but better than the naive them. And it's believed by many people, not everybody but many people, that there is in fact no polynomial
+time algorithm for factoring. There is an order n cubed
+time quantum algorithm.

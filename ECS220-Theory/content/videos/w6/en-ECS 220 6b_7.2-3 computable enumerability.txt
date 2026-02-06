@@ -1,0 +1,136 @@
+So I want to draw another analogy to the intuition we built
+up with the class NP. And this is this notion of
+having a verifiable proof. That's what it meant for
+a problem to be in NP, is that for Al yes instances, there's a short efficiently
+verifiable proof that it is in fact a yes instance. So we can actually make a
+similar characterization between the decidable problems and these so-called computable and
+innumerable problems, which may not be decidable, but, but they are sort of verifiable. So note that the halting, um, which is we want to know
+oninput x, does P halt? Well, if the answer is yes, there's a finite proof
+of that fact, right? There's a few ways you
+can formalize this, but one way would be just give
+the number of steps it needs, say, on a Turing machine. So p halts on input x if and only if there
+exists a natural number t, such that P run on
+input x for t steps. But this predicate, does P halt
+an input x in t steps or not? That's decidable. You can just
+run p for that many steps. And if it doesn't hold after
+that many steps, you can say no. That might not be the
+right answer to this, but you are verifying that he
+doesn't call in that amount of time. But there's a relationship
+between these two. This existential operator here, p halts an input x if
+and only if there is a finite time bound and
+how long it takes to hold. So this halts and time problem
+is decidable right here. I'm kind of expressing it
+like it's the algorithm. But, you know, there, there is an algorithm to answer this question. In other words, there's a,
+a so-called total program and a program that
+halts on all inputs. That's a verifier for halt in. And for it to verify
+the program halts, you have to give it a proof. And the proof is how many
+steps it's going to take. And you don't give the right number, it won't be able to verify it. So any decision problem with
+this property is called computability innumerable
+or CE for short. And the set of computable
+innumerable problems is called capital C. And this relationship between the decidable and the computable,
+innumerable problems. It's analogous to P versus NP. These you can just decide, you can give a yes or
+no answer to any input. These if it's a yes
+instance, There's approved, that can be verified and finite time, maybe a huge amount
+of time, but finite. And these are the versions of that when you put a polynomial
+time constraint on a tripod. All right, so there's
+no time-bound on is, there's another name for this
+called recursively enumerable or R E that you might see
+out there and other papers. This is kind of an older term, but some people still use it. And just like with NP versus co-NP, if there's a no instance, like if p does not
+call it an input x, there's no obvious finite
+proof of that fact. But the compliment of the halting problem that
+asking the question, does P failed to halt? Well, no instances of that. Ones that also they
+have proofs, right? So we have this notion
+of being able to give a proof of a no instance. And that's cozy problems. Okay, So hopefully the somewhat
+makes sense by analogy. Other than the title,
+computable enumerable. What is enumerable mean here? So there's an alternate
+characterization of this. This is like the verifier
+characterization. There's an alternate
+characterization using something called an enumerator that really
+looks like what it sounds like. So imagine a program P. We call it an enumerator and it
+takes no input, right? Or if you give it an input, it just ignores its input. And it runs for right, that they actually
+intended to run forever. And occasionally it prints a number. Okay, I've usually said the inputs, I imagine all programs tank are
+at their core binary strings. Just for the sake of this slide, it's going to be easier to
+imagine them as numbers, right? Maybe I'm writing down the
+binary expansion of the number. But it's to make for easier code
+to imagine these are integers. So the set of all printed
+numbers we call printed of P. So P runs forever. Once in a while it prints a number. Maybe it prints sum with repetitions, but there's some set of
+all the numbers that ever prints and that's printed it be, could be the empty set, could
+be all the natural numbers. Okay, so let's let L be a subset of and now I'm going to
+consider this to be a language because there's a
+bijection between N and 01 star. So we're going to show that L is CE, meaning there is this total
+program V, the verifier, that lx is true if and
+only if there is a witness w that makes V XW say true, right? So this is basically looks at all again be where does not requiring vid have any time-bound or there
+to be any length band on w. So we're going to show LLC by the definition on the previous slide, if and only if it is
+exactly the set of numbers printed by some program
+P. So pause and think, how would you do the
+forward direction? So here is a program that would do in the forward direction would
+be we have an enumerator P. And we want to know just a sec. Sorry, I wanted to change the
+term narrative enumerator. So we have some the numerator P. So it prints some set
+of numbers, integers. We want to show that the set is C. In other words, we want to show
+there's a total program vi that can verify if given the
+proper proof we call a witness w. The bat number really
+is printed by two. So here's I will define the, it takes x and w.
+And it wants to know is x one of the numbers
+that's ever printed by b? Alright, we want to
+know that. So how would we allow somebody to furnish
+us a proof of this fact? We run it, it prints some numbers. The proof could be the order
+in which x gets printed. So they ought to give us a W That's equal to the order
+in which it's printed. And so now we don't have to wait
+forever to see if it's printed. We just have to run it long enough. W, different numbers get printed. So we start i at 0, and for each y that's printed
+by P, we increment i. We just go and go and go and
+go until I gets up to W. And at that point, we, why was the number just
+print that we see? Is that equal to x? If so, good at x really is the W
+with number to get printed. So we return true in that case. Otherwise we return false, right? Again, it doesn't mean in that case, x is never printed by P. It just was not the WIth number printed by p. So w was not an adequate
+proof that it's printed. And then we need this
+thing to be total. We want this to hold on
+all possible inputs. So, so if this wasn't true, mean on the next
+iteration when it gets up above W will just
+immediately return false. Okay, sorry about that. I keep
+noticing things wrong with this slide and we don't have to
+check if I is bigger than w. Just once i gets to w will
+immediately return, right? If x is not, y will return false. So that's the forward direction. So this gives us a verifier
+that x is printed by P. As long as the proof we furnish it is the right order
+in which x is print. So now how can we go
+the other direction? So pause and think about that
+for yourself on your own. Okay, we have to give
+an enumerator, right? Which is a program
+that takes no inputs. And it should print all the x's that can cause V to return true somehow by
+giving the right w, Right? So maybe this V, but
+just we have some v, There's some total program, it halts on every pair
+of inputs, you get it. We want to know what are
+all the first inputs we could give it that
+could somehow cause it to return true as long as they gave it the right input for
+the second input, right? As long as there exists, that
+would make it return true on XW. So we can try this. Let's just enumerate
+over all the x's, right? And we're, we're just going
+to look for the ones that have a W that make V XW return true. So, well an Uber, I don't know the axis
+for the first x, we'll set W to 0, right?
+And then what do we do? Well, we ask is V XW
+true if not increment W? And just keep going until we
+find the w that makes it true. And then we print that x. Do
+you see what's wrong with this? Well, imagine we get to an
+X where the answer is no. In other words, no for that x, that maybe x equals 1, there's no w where v of
+1 w would return true. This will just be an infinite loop, but that's not what we want. If T2 is something that we could return true and we want to get there and we want to print it, but we'll be stuck on one forever looking for a witness for
+it that doesn't exist. So this is no good.
+That doesn't work. So to make this work, we need to, we're going to use a
+trick, It's called dovetailing. And kind of key idea here
+was that we tried to like settle the case for x equals 1 before we even thought
+about x equals 2. But if the case for x equals one is false, we're never
+going to find the W. So we can't do all the computation
+we ever need to do for x one before moving on to x equals 2? Because we're going to
+have to do an infinite amount of computation there. So the key here is
+going to be to splice in computation for all the x's so that the ones that can be verified with a
+finite amount of work, eventually they get an arbitrary
+amount of work put towards them. Because that sounds a bit abstract. Here's a concrete implementation. We can iterate over all possible t. And this is an infinite loop, right? This, this will run forever
+in a T would go up forever. But notice what's
+happening air inside. It's got two bounded loops. Unlike this while loop over here, these are two bounded for loops. They start at 0, go up to t, they stop there, and
+they call v.floors. And v.events always halts, is total. So this thing will do an infinite number of
+iterations of the outer loop. Okay, what does it
+do? Well, it's just checking every possible pair
+x and w between 0 and t. And if it finds one that makes
+be true, it prints that x. But notice T keeps getting
+bigger and bigger and bigger. So for any possible pair
+X and W, you can have, once T is bigger than both of them, we will find that x and w
+and we will print that X. But we won't print and
+a dx is they can't make V true because this has to
+be true to pass down here.

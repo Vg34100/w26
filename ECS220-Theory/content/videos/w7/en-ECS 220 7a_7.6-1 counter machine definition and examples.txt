@@ -1,0 +1,120 @@
+We're going to jump ahead a
+little bit in the textbook to a model that I really like at some homework problems on
+it called counter machine. And this is another model of computation that
+like a Turing machine, you think of as a
+finite state machine with some unbounded memory provided. But it's a much more limited
+looking kind of memory. There's just a fixed
+number of what we call counters and each holds
+a non-negative integer. So if we want to, so that the natural form of input to this sort of model
+is natural numbers. So the way that we do that, that is we simply put the inputs we wanted to give
+into some of the counters. And we have to assume we have
+at least enough counters to hold all those inputs. And then all the other
+ones start at 0. And that's kinda like
+having a input tape and a work tape and attention. Okay, So this is a
+finite state machine, but each state is one of
+the following types, right? So each state is a command saying
+to do one of these things. Increment a certain counters seek to like ink to name
+increment counter number to decrement counter c.
+And this has no effect. If C is already 0, it
+can't be negative. You have a test for 0, right? So we're going to make
+these lines of code. We can say, well, if a
+certain counter is 0, then we'll jump to line i or state I. And we can also allow
+an unconditional goto. Technically this one isn't needed. This can be a shorthand for having the if statement for some counter that you'd
+never use for anything else. Now, what are these used for? Well, you can give it different semantics the same time
+you have for Turing machines, they can have accept
+or reject semantics. Or maybe they have
+an accept state and a reject state if we want them to
+have more sophisticated output, well, their natural data is a number. So good. We can interpret the output as the value of some counter
+when we're definitely. And the textbook calls these
+additive calendar machines. But when I've seen them
+in the literature, I've just seen them
+called contributions. So let's go through some examples of counter machines to
+see what they can do. So pause right here and
+see if you can figure out what exactly is this
+counter machine doing? Well, if we, what it's doing. It takes an input a that goes
+into the counter called a, and it decrements a and
+increments be twice, and then jumps back to this test. So however big a is that's how many times this loop right
+here is going to execute. Each time it executes, B goes up twice, so B ends up with twice the value a. So if we consider be
+like an output counter, this computes the function
+f of a equals two times. Now, this little loop construct we
+did here is going to be useful. I don't always want to
+write it in this way. So if ever I write while a
+bigger than 0, do something. That's going to be a shorthand
+for what USC up here. If a equals 0, go to I, the first line after the loop, otherwise do the instructions. And then the last line is
+an unconditional goto. Okay, so we're going to
+freely use this while loop. Knowing is just a shorthand
+for what we did here. So here's another kind of machine. Pause right now and see if
+you can figure out what the system looks very
+similar to this one, except this one has two decrements of a and
+only one decremented be. So hey, goes down by two every time and be only goes
+up by one every time. So this is computing the
+floor of a over two. And I'm writing floor
+with these brackets here. Okay. How about this one? Stare at this for a little bit, see if you can figure
+out what's going on. So what do we do? We tested phase 0 and
+we'll jump if it is here, we test an 800 little jumps. So let's suppose a is big,
+it's not going to be 0. What do we do? We, we
+decrement, we decrement, and again we jump back
+a page or decrement, decrement, jump back up here, decrement, decrement
+jump back up here. So at some point a will
+get to 0 and will leap out of this loop. And what do we do? Well, we go to reject
+or accept based on whether we've just decremented a the first time or the second time. So the parity of a
+determines which one. In other words, computing
+the predicate a is odd. If n is odd, we jump to line six. Otherwise we get a Lanza. All right, we can imagine getting
+two inputs into registers and B. Pause and try to figure out
+what this thing is doing. So we look at this while I is 0, we decrement a and none of
+this down here touches a. So the outer loop
+will execute a times. What does each outer loop do? Well, this loop executes the number of time that executes be many times whatever B starts at, because we, we decrement B, was it increments both C and D. And then now that C got
+big, what do we do with C? C, C and D both started at 0, but now C has, you know, whatever value is in B. And now what do we do? Well, this loop executes, see many times and increments be. So. In other words, both
+C and D go up here. And then D doesn't get touched here, and C goes back to 0 and b goes
+back to what it was, right? So this like executing
+this loop be many times. And it got rid of the
+value of B at set B to 0, but we saved, didn't see. And then now we can
+sort of push it from C back to be with this loop. But we've irreversibly incremented D. And we did it by the amount b. How many times are
+we going to do that? We're going to do a many times. So in other words, we're
+storing in the register D, the value a times big. Last example, very similar
+to the previous one. Only. Instead of this loop
+increment in C and D, This one just increments see twice. So there's no D. So stare at those trying to
+figure out what it's doing. Well, it's going to
+be similar to this. It's at the amount of B, right? And notice that b is
+not an input anymore, but we start BY at one, it starts at 0, we increment
+it once, it's now one. So what's going to happen? Well, we're going to push B
+into C and then push it back. Except we're actually
+pushing two copies of B. If every time we
+decrement B, C goes up. So in February, b is one, c goes up to two, and then we push C back
+into B and B is now two. And then we do this. Well now we push each b and c twice. So C goes up before we
+push that back to be four, becomes eight, that goes back here. So when we're done, the register B is going to
+be the value two to the a. Okay, So I've presented these like like an assembly
+kind of language program. And I actually, I've never
+seen that presented that way. I made up that definition
+with line numbers because I, this is related a lot of
+computing with chemistry, which is part of my research. And I give a lot of presentations to scientists who are
+not computer scientists. So they program, most of them
+know Python or something, but they don't really know
+what a finite state machine. Now, for our purposes, for some of the homework
+you're going to do, it's going to be a lot easier
+to think about a formalism where these look kind
+of more like how you might define target machine. So let's give an
+equivalent definition and this is probably the one to
+use when you're doing prints. So we say a k counter machine is a triple consisting of
+a finite set of states, an initial state, and
+a transition function. And similarly to Turing machines, the transition function tells you
+on any state that's not call T. And let's suppose we have an
+accept and reject state with these special names on it and that you hold if you
+enter either those dates. So delta tells you that
+a non halting state, this is set difference there. If now what can you do? You can read it whether
+each counter is 0 and use that to decide
+what to do, right? So in the line number definition, I was saying, Oh, I can test if a
+counter 0, do it jump? Well, if you wanted to base it
+on what several counters are, you could kind of test
+them iteratively. This formalism just lets you
+do the test all at once. So what can you read? Will all you can read is the
+counter is 0 or it's not 0, right? So you just get a bit, but
+you get one for each counter. So there's k bits here, 0 or non-zero based
+on that in the state, you go to a new state and
+then you modify the counters. And the way you are allowed
+to modify the counters is to increment and decrement,
+leave them alone. And we'll just assume if you try to decrement the counter
+at 0, it just stays 0. So in other words, delta of q, z and z equals R 1 negative 1 0 means if the counter machine is in state
+q encounters 13 are both 0, but Counter 2 is positive. Then what we want to do is
+go to state our increment, the first counter, decrement the second counter,
+leave the third counter. Luck.

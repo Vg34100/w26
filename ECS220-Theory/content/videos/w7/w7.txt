@@ -1,0 +1,1068 @@
+en-ECS 220 7a_7.6-1 counter machine definition and examples.txt
+
+We're going to jump ahead a
+little bit in the textbook to a model that I really like at some homework problems on
+it called counter machine. And this is another model of computation that
+like a Turing machine, you think of as a
+finite state machine with some unbounded memory provided. But it's a much more limited
+looking kind of memory. There's just a fixed
+number of what we call counters and each holds
+a non-negative integer. So if we want to, so that the natural form of input to this sort of model
+is natural numbers. So the way that we do that, that is we simply put the inputs we wanted to give
+into some of the counters. And we have to assume we have
+at least enough counters to hold all those inputs. And then all the other
+ones start at 0. And that's kinda like
+having a input tape and a work tape and attention. Okay, So this is a
+finite state machine, but each state is one of
+the following types, right? So each state is a command saying
+to do one of these things. Increment a certain counters seek to like ink to name
+increment counter number to decrement counter c.
+And this has no effect. If C is already 0, it
+can't be negative. You have a test for 0, right? So we're going to make
+these lines of code. We can say, well, if a
+certain counter is 0, then we'll jump to line i or state I. And we can also allow
+an unconditional goto. Technically this one isn't needed. This can be a shorthand for having the if statement for some counter that you'd
+never use for anything else. Now, what are these used for? Well, you can give it different semantics the same time
+you have for Turing machines, they can have accept
+or reject semantics. Or maybe they have
+an accept state and a reject state if we want them to
+have more sophisticated output, well, their natural data is a number. So good. We can interpret the output as the value of some counter
+when we're definitely. And the textbook calls these
+additive calendar machines. But when I've seen them
+in the literature, I've just seen them
+called contributions. So let's go through some examples of counter machines to
+see what they can do. So pause right here and
+see if you can figure out what exactly is this
+counter machine doing? Well, if we, what it's doing. It takes an input a that goes
+into the counter called a, and it decrements a and
+increments be twice, and then jumps back to this test. So however big a is that's how many times this loop right
+here is going to execute. Each time it executes, B goes up twice, so B ends up with twice the value a. So if we consider be
+like an output counter, this computes the function
+f of a equals two times. Now, this little loop construct we
+did here is going to be useful. I don't always want to
+write it in this way. So if ever I write while a
+bigger than 0, do something. That's going to be a shorthand
+for what USC up here. If a equals 0, go to I, the first line after the loop, otherwise do the instructions. And then the last line is
+an unconditional goto. Okay, so we're going to
+freely use this while loop. Knowing is just a shorthand
+for what we did here. So here's another kind of machine. Pause right now and see if
+you can figure out what the system looks very
+similar to this one, except this one has two decrements of a and
+only one decremented be. So hey, goes down by two every time and be only goes
+up by one every time. So this is computing the
+floor of a over two. And I'm writing floor
+with these brackets here. Okay. How about this one? Stare at this for a little bit, see if you can figure
+out what's going on. So what do we do? We tested phase 0 and
+we'll jump if it is here, we test an 800 little jumps. So let's suppose a is big,
+it's not going to be 0. What do we do? We, we
+decrement, we decrement, and again we jump back
+a page or decrement, decrement, jump back up here, decrement, decrement
+jump back up here. So at some point a will
+get to 0 and will leap out of this loop. And what do we do? Well, we go to reject
+or accept based on whether we've just decremented a the first time or the second time. So the parity of a
+determines which one. In other words, computing
+the predicate a is odd. If n is odd, we jump to line six. Otherwise we get a Lanza. All right, we can imagine getting
+two inputs into registers and B. Pause and try to figure out
+what this thing is doing. So we look at this while I is 0, we decrement a and none of
+this down here touches a. So the outer loop
+will execute a times. What does each outer loop do? Well, this loop executes the number of time that executes be many times whatever B starts at, because we, we decrement B, was it increments both C and D. And then now that C got
+big, what do we do with C? C, C and D both started at 0, but now C has, you know, whatever value is in B. And now what do we do? Well, this loop executes, see many times and increments be. So. In other words, both
+C and D go up here. And then D doesn't get touched here, and C goes back to 0 and b goes
+back to what it was, right? So this like executing
+this loop be many times. And it got rid of the
+value of B at set B to 0, but we saved, didn't see. And then now we can
+sort of push it from C back to be with this loop. But we've irreversibly incremented D. And we did it by the amount b. How many times are
+we going to do that? We're going to do a many times. So in other words, we're
+storing in the register D, the value a times big. Last example, very similar
+to the previous one. Only. Instead of this loop
+increment in C and D, This one just increments see twice. So there's no D. So stare at those trying to
+figure out what it's doing. Well, it's going to
+be similar to this. It's at the amount of B, right? And notice that b is
+not an input anymore, but we start BY at one, it starts at 0, we increment
+it once, it's now one. So what's going to happen? Well, we're going to push B
+into C and then push it back. Except we're actually
+pushing two copies of B. If every time we
+decrement B, C goes up. So in February, b is one, c goes up to two, and then we push C back
+into B and B is now two. And then we do this. Well now we push each b and c twice. So C goes up before we
+push that back to be four, becomes eight, that goes back here. So when we're done, the register B is going to
+be the value two to the a. Okay, So I've presented these like like an assembly
+kind of language program. And I actually, I've never
+seen that presented that way. I made up that definition
+with line numbers because I, this is related a lot of
+computing with chemistry, which is part of my research. And I give a lot of presentations to scientists who are
+not computer scientists. So they program, most of them
+know Python or something, but they don't really know
+what a finite state machine. Now, for our purposes, for some of the homework
+you're going to do, it's going to be a lot easier
+to think about a formalism where these look kind
+of more like how you might define target machine. So let's give an
+equivalent definition and this is probably the one to
+use when you're doing prints. So we say a k counter machine is a triple consisting of
+a finite set of states, an initial state, and
+a transition function. And similarly to Turing machines, the transition function tells you
+on any state that's not call T. And let's suppose we have an
+accept and reject state with these special names on it and that you hold if you
+enter either those dates. So delta tells you that
+a non halting state, this is set difference there. If now what can you do? You can read it whether
+each counter is 0 and use that to decide
+what to do, right? So in the line number definition, I was saying, Oh, I can test if a
+counter 0, do it jump? Well, if you wanted to base it
+on what several counters are, you could kind of test
+them iteratively. This formalism just lets you
+do the test all at once. So what can you read? Will all you can read is the
+counter is 0 or it's not 0, right? So you just get a bit, but
+you get one for each counter. So there's k bits here, 0 or non-zero based
+on that in the state, you go to a new state and
+then you modify the counters. And the way you are allowed
+to modify the counters is to increment and decrement,
+leave them alone. And we'll just assume if you try to decrement the counter
+at 0, it just stays 0. So in other words, delta of q, z and z equals R 1 negative 1 0 means if the counter machine is in state
+q encounters 13 are both 0, but Counter 2 is positive. Then what we want to do is
+go to state our increment, the first counter, decrement the second counter,
+leave the third counter. Luck.-e 
+
+en-ECS 220 7a_7.6-2 Turing universality of 3-counter machines.txt
+
+So a counter looks like a lot
+more useless kind of memory. Then the tape of a
+Turing machine, right? I mean, for one, all you can read
+about it is it 0 or non-zero? And so most of the ways you can
+manipulate it, incrementing, decrementing, they don't change that, you know, that fact about it. If the counters got a
+really big number yeah, increment and decrement,
+it was positive before. It's positive now. So it kind of seems that there's
+not a whole lot you can do. But we did see some examples of some simple arithmetical
+functions you didn't do. Well, it turns out you
+can push the ideas farther and actually
+do any computation. So you can simulate a
+single tape Turing machine, and you only need three
+counters to do it. So anyway, we were in
+lecture right now, this would be where I try
+to make you figure it out. Literally pause right now, try to think about how
+you might do that. Now, the first step in any
+simulation argument is to think, okay, let's worry about how
+to do transitions later. First, I've just got to decide if I have a single
+tape Turing machine. Its configuration is
+identifying the states we can easily represent in our own finite states that
+for the counter machine. But the key aspect
+of the configuration is what's the contents of the tape, what string is written on
+it, and where's the tape? Whereas appointing, how
+are we going to represent that in a three counter machine? So here's one way to do it. So you have your a single
+tape Turing machine, right? Maybe it's in some state Q6. We can remember that in
+our finite states that, but it's got some big binary string. We're going to assume it
+has a binary alphabet here, that the tape alphabet is just 0, 1, and then blanks. And we're furthermore,
+we're going to assume that they've never puts
+a blank in the middle. And through some very
+tedious, you know, tricks you can to show
+that it's possible to do any computation
+you want with a, with a Turing machine that does that. So for now, let's just assume that it'll make this argument simpler. So the, the take content is entirely
+represented by a binary string. And it's just assume you have nothing but blanks off the end there. Let's make a further assumption
+that the Turing machine is very careful to maintain that the first
+and last BED are always one. Right? Again, that might not be
+true of a Turing machine, but you could modify
+one that just sticks or one on each end and then just treats them like, like
+they're at the end. It's so let's assume that's true. So here's how we're going to
+represent this with three counters. And in fact, we're going to
+represent it with two counters. We only need the third
+counter as a sort of a, a work memory to, to modify it. So we will split the, the binary string into two pieces
+based on where the tape head is. And we will interpret each side
+of that as a binary number. So the binary string
+here is 0100, 0, 1, 1, 1 in base two, that represents the integer 39. And the other end, we're going
+to do this and assume that the least significant bit is the
+one closest to the tape head. So the other one we picture reversing the string and then asked what
+number is that in binary? And that's 24. And this example. And first convince yourself any possible configuration of the Turing machine can be represented
+by two counters in this way. Right, just a number encoding. What are the bits on the
+left of the tape head? Another number encoding, what
+are the bits on the right? So now the goal is to come up with all the various operations a
+Turing machine can do and figure out what is the counter
+machine you have to do to effect the same change that
+the Turing machine would do. All right, so let's
+break it up like this. And this is what we need the
+third counter for, right? It's to, to be kind of a temporary memory as we make modifications
+to it a and B over here. So the first Turing machine operation we're going to do is read
+the bit under the tape head. We want to know, is the bit
+under the tape head currently? Wonder, is it currently? So again, literally pause and
+think about how you would do that. So first translate
+it to what question is it asking about the
+numbers that are there? Well, under the tape
+head that corresponds to the number a and it corresponds
+to its least significant bit. So we want to know is the least
+significant bit of a 0 or not. In other words, we want to
+know is a odd or even, right? And we saw how to do that
+with only two counters. That's one of the
+examples that he did. So we can use a and the third
+counter see to test is a HOD. And with a little more work
+than we did over here, we could have done with that. We did in that example. We could restore that value back to it when we're done,
+we're done reading it. Okay, so we can test is a odd, so now we can store in
+our finite states that, oh, what was that? So we can remember that. But now we might want
+to change it, right? The transition to the Turing
+machine might say, oh, if it's a 0, write a one,
+or if it's a one, right? A 0. So pause and think
+about what that is. Literally pause. Hit
+the pause button. So again, what change does that have on the number being
+represented by these bits? Well, if you flip one to a 0, that's just decrementing the number. If you flip a 0 to one That's incrementing because it's
+the least significant bit. So that's, that's very simple to do. We actually have that
+as a direct command for a counter machine
+increment or decrement. Okay, The, we might want to move
+the tape head right or left. So we literally pause and think about how would you
+move the tape head, right? How would you affect a and
+how would you effect be? And what would happen if
+the tape had lived, right? Well, that would mean a
+would change from being this bit string to that bit
+string with a 0 on the end. But what happens to
+a binary number when you append a 0 to the end of it, multiplies it by two. Now what's happening to be, be used to have all
+these bits, right? Zeros are 0, 1, 1, or in reverse order. And the order we read it for
+representing a number 1 ones are 0. But now we've gotten rid of the last year or so
+we've chopped officer. Well, what does that
+mean you're doing or if it's a one we're
+chopping off the one. What does that correspond to doing? Well, it means we're
+cutting it in half, so a is going to get doubled
+or doubled and add one. If, if we move the
+tape head over a 1, and then B is going
+to get cut in half. And if it was odd, then that's
+integer floored division. Now moving the tape had left
+is exactly symmetric to that. So that corresponds to doubling
+be and maybe adding one and cutting in half with
+an integer floor division. And then finally, the last
+thing we have to worry about doing is, well, what if the Turing machine
+needs to grow its tape, right, until we can
+sometimes picture, oh, it's got an infinite
+number of blanks, but what if we just
+represented as binary strings? So what does it moves
+on to the blank and then there's not just
+one blank over here. And let's remember we always want
+us in the endpoints are wanting. So how would we move over here
+and then change that to a one? Like what effect does that have? So literally pause and think
+about what that means. Okay, So if indeed the, the tape head is all
+the way here, well, it means a is taking
+them all the bits and B doesn't have
+anything in it, right? So B is essentially 0 now. So what we're doing is that if you try to move
+the tape head right, but b is 0 and that's a test we
+can do with our counter machine. Then B is going to stay 0. The tape has not going to be here. We're still going to
+allocate no bits to B, but a is going to have
+an extra one, right? It's gonna, we're
+gonna put a one there so we double a and add one. Just like anytime you move
+the tape head, right.-e 
+
+en-ECS 220 7a_7.6-3 Turing universality of 2-counter machines.txt
+
+Now, the three counters seemed
+fairly necessary in that argument, but maybe, I don't know, maybe you could get by with
+using only one counter to represent the whole Turing
+machine configuration and therefore two counters
+to manipulate it. And I don't know of any way to do
+that in a straightforward way. But Minsky figured out
+this very nice idea how to sort of simulate a Turing machine with
+a two counter machine. Well, it actually, essentially
+what we do is we can simulate three counter machine
+with a two kind of machine. And then we know from
+the previous slide, 3 counter machines can
+simulate turning sheets. So how do we simulate a three counter machine
+with a two counter machine? And the reason I say sort of as well, we're not going to represent
+the values directly. If we have say, value
+certain integers in the first two counters of
+the three counter machine. Those integers aren't precisely what shows up in the
+two counter machine. So it's a representational trick. So what you do here is if you're three kind of
+machine has integers, ABC and they're all non-negative. Then R2, Katherine King will have one counter
+that represents that, and then the other
+one's a work counter. All right, so this one counter
+or represent all three of these. And it does that by letting
+that single counter x be two to the a times three
+to the b times 5 with the C. Now, hopefully you
+see how we could use this to simulate any number
+of characters, right? For example, if we had
+a five counter machine, what would be the other
+numbers we'd have here to represent the two
+other counters, right? So counters, let's say D and E. So pause and think about pad, right? So we would do, this would be this times seven to the d times 11 to D. So what we're using here is that every integer has a
+unique prime factorization. So if I write down a single
+number here and that number, What happens to be to have divisors
+that are only 2, 3, and 5. Well then there's a unique value that each of the
+exponent's could add. And so that's the sense in which that single number can
+represent these three numbers. And it's going to be
+convenient one for doing the operations we need to do. So, for example, we might
+want to increment B. So pause, like hit the pause button, think about to increment B. How would you change the value x? What we want to change
+this b to b plus 1. What does that do to
+the whole number? Well, changing this B2B plus
+1 takes the whole number, multiplies it by three, right? And multiplying by a
+constant like three is something we know how
+to do with just two. Just take x and you decrement it. For each time we decremented
+you increment the counter three times and you do it till x gets to
+0 and then push the value back. So you, you've tripled x. If we want to decrement
+the counter, right? Then we divide by a constant, say to decrement a, we divide by two. To decrement C, we
+would divide by five. And we can do that with similar
+tricks to dividing by two. To test if c is positive.
+What does that mean? Well, C is either positive or 0. If it's 0, then five
+is not a divisor of x. If it's positive in
+any positive number, then five is the divisor of x. So we want to test is x a multiple of five is
+congruent to 0 mod 5. And again, we saw how to
+test if x is even or odd. That idea extends pretty
+straightforward laid a testing whether it's a multiple
+of other numbers besides two. So if we want to start with our three counter machine
+has its first counter, a is n and b, C are both 0. We would start with x
+equals 2 to the n. So, so this is the sense in
+which it's indirect. We're not starting with this thing having the input we
+really want to give it. And we start with an encoding of n, where n is an exponent in this
+exponentially bigger number. So because three counter machines can do turning universal computation, we can compute any function we want, including two to the n, right? So, but what that means is that if x, if f is any computable function, we can start with x equal to two to the input we want
+to give to F called M and halt with x equal to 2 to
+the f of n. But you might wonder, well, okay, but can we do a
+more direct one if we have a computable function F, Can we just start with its input in the counter x and end with its
+output in the camera tracks. And that was proven not to be true. So this sort of indirect encoding
+is actually necessary here. So in fact, there is no two counter machine that can even compute this
+encoding function, right? So there is no two kind of
+machine that starts with n In its first counter and ends with two to the n
+and its first camera. And in fact, the person who prove
+this seemed almost upset about Minsky's result and
+said, You know, when, when it was quoting the theorems of this kind of insulting thing about a counter machine can be
+simulated by a two kind of machine provided an obscure
+recoding is accepted. So they seem to be very
+bothered that Minsky was claiming these things are Turing
+universal because he thought, Well, wait now, to use them, you have to do this encoding. And this encoding is itself something that they're
+not even able to do. So to him, it sort of
+seemed like a lot of the work to set it up was
+being done by the person, the program or less
+to use the machine. But that said, tuna machines Canada universal
+computation on encoded inputs, even though they cannot compute
+the encoding themselves. But the fact that to
+kind of machines can simulate arbitrary three
+machines in this way implies that the halting problem for two counter machines
+is undecidable. Sometimes people take that as like one possible definition of
+what does it mean to say your, your model of computation
+is really universal. It's really powerful. Sometimes they say, Well, if it has an undecidable
+halting problem, that's an indication that it,
+that it's pretty powerful. So one of the homework says
+sometimes assigned is to show that one counter machines have a
+decidable holding Brahma. So they're just unequivocally weaker. Okay, and then I want to end with this kinda nice idea
+from the textbook. This is not as much about
+terrain universality, but this will be useful for
+homework I like to assign. So one way to think about a two
+counter machine is that it's a finite automaton on the
+play and not the whole plane, just the first quadrant. And not the real valued plane, the integer valued plane. So it's occupies a point x, y, both natural numbers. And one way to think about it is that I can't write
+anything or see anything. It's a robot that can
+just move around in here. But one thing you can do, the
+consents if it's touching the wall on the bottom or the
+wall on the left or both. Right? That's a corresponds
+to reading is my counter, what first counter 0 or
+is my second noun or 0? And it can move north,
+south, east, west. That corresponds to
+incrementing and decrementing encounters based on
+its current state. And these two bits
+telling it about the law. So this seems like a very
+weak kind of robot. Randomly. You can't do anything except just tell them I up against a wall or not. But there's an automaton to the
+following problem is undecidable. Given x, y, if you start the
+atomaton at that position, all right, say if you started here, Will it ever visit the origin? I mean, it's like what it's
+doing when it's not touching the wall just looks so
+stupidly repetitive. And it seems like you
+could easily decide this, but it's actually
+undecidable to tell if you know the transition rules
+that this thing has, is that ever going
+to visit the origin?-e 
+
+en-ECS 220 7b_7.3-1 primitive recursive functions and Bloop.txt
+
+We jumped a bit ahead
+in the book with the counter machine because
+I really like that model. I wanted to get some homework on it. And now we'll go back
+to going in order. So back to this question of how do we define what are all the
+possible computations that can be done automatically? How do we do that? So this was a question that needed to be answered before
+anybody could hope to. To tackle Hilbert's and guidance
+problem asking whether there was an algorithm that could decide the truth in any
+mathematical statement, we needed to define
+what is an algorithm. What does that mean? Exactly? So here's one attempt that people made the so called
+recursive functions. There's going to be a couple
+of variants of these, but this was an early
+attempt at defining this very slippery notion of what
+does it mean for a function to be computable in the sense that a sufficiently well trained
+person could sit down with pen and paper and figure
+out what is its output given its input from a. So here was a notion that
+was introduced really on how to build up functions for many integers
+to one integer from scratch. So as we often do, we define some sort
+of atomic functions, things that are quote,
+obviously computable, very easy to compute. And these three functions
+are the constant 0. So on input x, it just ignores x and output 0, the successor function on
+input x and outputs x plus 1. And then projection, this is kinda needed in some
+technical cases to say, if you're given several inputs, I just want to pick
+one of the inputs out. So for example, P1 of any number
+is just the identity function. Okay? So those are going to be
+our only basic functions. And then now we'll have some, some ways to create new functions given that we've
+already defined and computable. So let f and g be functions. So we're going to declare that their composition is
+also a function, right? So what? If f can be defined
+and G can be defined? And I'm being a little
+bit slippery with exactly how many inputs
+do they take here is I've said that
+there's only one output. You can also define needs
+to take several outputs. Or you can equivalently
+consider that to be several functions that you
+just evaluate independently. So let's just assume the
+number of inputs and outputs work out here and its simplest at
+this point to think of them all, I mean one input and one output. So then it makes sense
+to give an input to, to G and output comes out of that. You give that output to IF and then some other
+output comes out of that. And then that is the
+composition of f with g. We declared that's computable. We allow this thing called
+primitive recursion. And it works like this. You assume that you
+have functions f and g. Again as in their computable. And you can use that to define a
+new function recursively work. Essentially f gives you the base case and g gives
+you the recursive case. So how does it work? Well, you imagine that H is
+recursing on only its last him, but so it can take several inputs, but it's only doing
+recursion on its last input. In other words, if
+I want to know what is h of all these inputs comma 0, That's the base case
+for the last input. I just evaluate f on the other
+inputs and I get a base case. And then if I want to know what
+is h and x comma y bigger than 0? Well, the idea is G can tell me that what I do is I
+recursively evaluate h on the same non y input
+x and then y minus one. So that's the recursive part. But then, you know, whatever comes out of that, I need to process it somehow. This is often the case when
+you do a recursive algorithm, you, you get your returns of answer, then you process it based on
+the information you have. So whatever value comes out to be g takes it along with
+all the other inputs, x and y, and then figures out
+what should the output of H. So note that the recursive case
+is always one smaller on y. So this is guaranteed to reach the base case of HX to 0 eventually. Now a whole lot of
+what we know, right? So these are the so-called
+primitive recursive functions. And a whole lot of what
+we know about these is due to the work of Rosa Peter, who was, I think was a
+Hungarian mathematician. But they weren't defined by, or they're defined earlier, but we actually know quite
+a bit about them now. So let's suppose that you
+wanted to implement this. Here's some pseudocode for how you would implement this
+recursive function a, H based on f and g, you would just look like this. Just to make it a
+little more concrete. And if you want to do it iteratively,
+this is how it would look. So you're going to have to
+always translate this into a very straightforward
+iterative pseudocode because of how regularly
+them recursion works. It just evaluates age on the
+first inputs are unchanged. The last one goes down. Okay, so let's look at some examples of primitive recursive functions. Prices. There's all, it's very abstract. So what they were trying
+to do is to say, okay, what is the most bare bones
+definition we can write down for which we can recover everything else
+we know how to compute. So let's take some things
+that aren't on this list. But then see can we define
+them in terms of what's here? So first of all, do is addition. Addition can be
+defined in this way as just using primitive recursion and composition together with
+constant 0 and successor, right? So you can define add recursively
+what we want to add of x, y intuitively to be
+the value of X plus Y. So add of 0 is x. That's a base case. So this is assuming this F function that tells you
+that f of x tells you the base, just the identity here. And then over here, what do we do? We say, well, add of x, y should be. What? Well, what you do is
+you should figure out recursively what's add
+of x, y minus one. That's one smaller. So take the successor of that. So in this case, the
+g function that takes the recursive value and
+then gives you back a, you know, the value you want
+is just successor, right? And so here there's writing
+it down in these terms. So add of 0 is just the
+projection function. It just outputs its first implicated
+in or it doesn't write out, it doesn't, it's not otherwise
+based on the second, but Add an x, y is g of
+x y and x y minus 1, where G is what? Well, gee, can be defined as first, project onto the third element. So g doesn't actually need x or y. Once you've got Add of XY minus
+one, That's all it needs. So takes its three in both XYZ
+just throws away the first two are just project onto the third and
+then take the successor of that. So, so that shows addition
+is primitive recursive. Okay, multiplication, we're
+going to express similarly, its base case, multiplying x by 0 now is project under
+the second input to 600. And the recursive
+case is we evaluate, want to know what's x times y? Well, if we know what's
+x times y minus 1, we know that that's what, that's
+x smaller than x times y. So what do we have to do to that? To get it up to x times y, we have to add x to it, but we've already defined that. So this is how we can compose
+the recursive case with something that's primitive
+recursive and get multiplication. Exponentiation is similar. X raised to the 0 is one that can be defined with the constant 0
+and the successor function. And then x raised to the y is recursively evaluate
+x to the y minus one. And then that's not
+quite what we need, but that times x would be x to the y. So we take that recursive case, multiply it by x. That's something we showed
+is primitive recursive. So the whole thing is okay. So, so this was an early
+attempt at defining stuff, and as you can see, it's a
+bit cumbersome to work with. One of the benefits of hindsight is that now that we know
+a whole lot about programming, there's actually a much more
+simple characterization of these things in terms of progress languages that I
+find to be very elegant, right? So the textbook calls this primitive programming
+language glute, right? And then bloop program. I mean, there's still
+pseudo-code, right? But you can imagine implementing
+this as a subset of say, Python. So bloop programs, I like to say they have for-loops
+but no while loops. Okay, Now, you, if you have a sufficiently
+powerful programming language, I mean for, for loops can
+do what while loops can do. So what I mean by FOR loops is using for-loops in the way that
+you're supposed to use them. Meaning, rather than having some arbitrary condition you test
+to know when to exit the loop, a while loop, you're
+essentially counting, right? In other words, FOR loop should
+be used like a loop that says, repeat the following y times, right? So in other words, before
+entering any loop, we have to precompute how many total iterations
+it's going to take, right? So instead of writing
+it as a for-loop, I'll write it like
+repeat the following y times to make it clear
+that as you enter the loop, you have to know how many
+times you're going to do it, and then that number doesn't
+change while you're doing it. You're just going to do
+this exactly y times. So this is a way to define add it
+using this kind of loop, right? You start z1 and x, and then y times in a row, you incremented, that's
+the successor function, and then you return Z1. Now, you can compose that. You can use that as a subroutine
+to define multiplication. So essentially what you do
+is to multiply x and y. You started Zip2 at 0 and
+then y times in a row. You repeat this with
+z1, you know, starting, starting to x each time, but z2 taking on the
+value of Z1, you're done. You can define
+exponentiation similarly by composing with multiplication. So both of these are sort of equivalent formulations of the primitive recursive functions. Now we're not going to prove that, we're not going to prove that
+these two are equivalent. But it is a very nice
+way to think about, you know, what is
+primitive recursive mean? It means that you can implement
+it in a programming language, but where are the only kind
+of loops you're allowed to do are ones where as you enter them, you've already computed how many
+times they're going to execute. So you can't have anything happening in the body of the loop effect. Whether you're going to
+exit after that iteration or it's just fixed once
+you start the loop, how many times it's going to execute.-e 
+
+en-ECS 220 7b_7.3-2 Ackermann function.txt
+
+Now the primitive
+recursive functions, we're conjectured to maybe
+be able to capture all of the functions that we would sort of intuitively regard as computable. And Ackermann essentially showed
+that no, that's not the case. And so there's this
+function we're going to study now called the
+acridine function. It's sort of distinctive
+characteristic is that it's quote,
+obviously computable. But it is not primitive recursive. So here, there's a bunch of variants
+of the Akram and functions. I'm just going to give
+one that's kind of like easy to, to look at. And so we're going to start
+by talking about a family of functions so that they're not just
+going to be one function here. So we're going to think
+of this function a1, an XY takes two inputs
+and it adds them. But we can think of this as saying, start with X and do the successor function
+and do it y times, right? So we're iterating the successor
+function on the first input. And the second input tells us
+how many times the iterated. And then addition or
+multiplication is a2 of x, y, x times y. And what does that do? It says, well, start with X and then do the first level
+here, A1, the addition. Do that to two x and do
+it y times in a row. So that's what multiplication is. It's iterated addition. Just like addition is
+iterated successor. Exponentiation is
+iterated multiplication. And this is the third sort of so-called level of the
+aggregate function. You can carry this idea further. You can imagine saying, well, let's take exponentiation,
+iterate it. So in other words,
+compute x to the x, to the x to the x, et cetera. And do that. Why times in a row? This is the last one I know that has a name, it's called titration. And so as you can imagine,
+this grows very rapidly. As y grows, even if x
+is like, Oh me too. And you can imagine A5
+says iterate titration. However many times is given
+by the second argument. So this can be formally defined in this way and
+this recursive way. So you say Ai of x, y is just 1 if y is 0. And then otherwise you recursively
+look at AI of x, y minus one. And then take that as the second argument in
+this call to Ai minus one. So Knuth's up arrow notation is something that sort of
+captures each of these levels. So he would write a single Up arrow to me and exponentiation and
+then that's the third level. Two up arrows would be titrations of x to the x, to the x to the x. And that tower is y axis i. And then x triple up arrow
+would be the fifth one, and that would be x double up
+arrow x double up arrow x, w, et cetera, et cetera. Okay, So these functions grow very fast after you get
+past the first two, the right bus, each level of them is. Sort of primitive recursive. So if I want to compute AI, I can do it with this series of nested for loops are
+nested repeat loops. I'm not going to dig into the
+details of this, but essentially, it's similar to how we
+showed that addition and multiplication exponentiation
+are implementable by these blue program. So you just keep adding new
+loops on the outside of that. Each loop you add gives you a new sort of level of
+the acronym function. Okay? So, so each of these is
+primitive recursive. But notice I is kinda hard-coded
+into this whole thing. If you wanna compute Ai
+plus one, this can't do it. You have to put this inside of a div. So what if that AI is
+an input variable also? So this is when people talk
+about Ackermann function, they mean this one or there's
+some other variants of it, but this is one single function
+that has I and x and y as inputs. And then it's
+expressible in this way. And this doesn't match the format of primitive recursion we talked
+about like this one does. This is how you express
+it, a primitive recursion. But this one does because
+his eyes and input here. Okay, so the way that
+I prefer to think of primitive recursive in terms of these bloop programs
+of the bounded loops. So any blue program is going to have a fixed number of nested loops. So it seems difficult to compute this a with a single bloop programs. It seems like we need high
+nested loops to get the ith row. But this can get up to an arbitrary number of sort of
+rows of the Ackermann function. So here's another characterization of the primitive recursive functions. So we can say a
+function f is primitive recursive if and only
+if there's a program. So by this, I mean, you know,
+Turing machine or Python program. And an I such that p on
+input x computes f of x. And the time it needs is bounded by the ith Ackermann function here it's bounded by
+a of two comma head. So in other words, if there's a Turing machine that
+can compute f and two n steps, or two to the n steps for 2
+to the, 2 to the 2 to the, so on and many timesteps, as long as that tie could
+be a huge time-bound. But as long as one
+of those, you know, a sub i functions bounds it than we, than the functions
+primitive recursive. And that's an exact characterization. So now we're going to argue that the thing we call the
+Ackermann function, where it's not this family, but actually that, that subscript
+is just one of the inputs. Here's how we're going to argue that this is not primitive recursive. And it's that we can define this. This is sort of like a one input
+version of the Ackermann function on input and you compute
+a sub n of 2 comment. Well, the point is
+that grows faster than any single level because the
+subscript there is getting bigger. So this first Ackerman, like what, what's going on there? Well, f of one is just three. It's two plus one. So it's three. But then f of two, right? What's happening? Well, the two gets
+added to itself. Twice. There's two twos in there. F of three is what we're now, we're, now we've moved
+up to the third level. So we're doing multiplication, and we're doing that on three
+copies of 2 and f of 4. We're doing the titration, this tower of 2's. So that's a tower of height four. Does. And so as you can see, the number
+of iterations is getting bigger, but so is the operation, right? So f of five is a 5 of 25, which is this thing. And what does that? Let's try to pick that apart. The five 2's here, but this very rapid
+titration functions being evaluated on each of them. Well, that's this thing right here. This two to double up
+arrow two is just four, so we can replace that with two. I'm going to double up arrow for, is this two to the two
+to the two to the du, which is about 65 thousand. And then, okay, well I'll try to write this in notation to
+double up arrow this thing. Well that's to double up arrow of about 65 thousand but
+then that Do you know? I don't even know of a
+way to represent that. So we can actually see this is yet another example of this
+technique of diagonalization. So this is one reason that, that Ackermann was
+thinking this way is that this is why I call these
+rows of the Ackermann function. So if this whole table kind of
+defines that Ackermann function, then essentially the diagonal
+is this thing on input and we look at the nth row and we compute it on the value 2 comma m, right? So the first thing here
+too is just fixed, but the second input is
+which column we're in. And this row is, is also the first, and that's what
+we're looking at, the diagonal. And the diagonal is
+drawing very rare. So in particular, the diagonal
+is growing faster than any single row because each one of these grows much faster
+than the one before it. So this thing could not be bounded by any single row of this table. So that's an argument
+that it's not primitive recursive because of
+that characterization that a function's primitive
+recursive if it can be computed by a time-bound that's
+of the form one of these rows. But here you're going to
+write down the output. You need so much time that it
+would exceed any of these rows. But now the Ackermann function
+is computable, right? This is what Ackerman invented
+it for is to show, Look, there's something that's
+intuitively computable, but it did not primitive. So here's a recursive
+implementation of it, like regular recursion that can actually be turned
+iterative if you want, you want an iterative implementation. We don't make any recursive calls. You can do it with a stack. The stack is your only sort
+of unbounded memory here. But you know, you're, you're
+pushing quite a few things onto it. And it turns out that the
+stack can actually be represented with just a
+single integer, right? And then pop, pop, push and is empty. It can be implemented as primitive
+recursive functions of us. So let's just stare at this thing. So this is not a bloop program. It has this wild loop
+that has this loop where whether we're going to exit the loop depends on
+what happens in here. We do, we sort of pop more things than we push and
+end up with an empty stack. So if we knew in advance how many iterations the while
+loop was going to execute, then we can replace that loop with a bounded loop and show a
+is primitive recursive. But we can't do that. The number of times
+going to execute is essentially the output itself. So this is a more general
+kind of programming language that the textbook calls
+flute for free loops. And these are essentially
+just a pseudo-code, right? So this is just as fully
+general as like Python. And therefore Turing Universal.-e 
+
+en-ECS 220 7b_7.3-3 μ-recursive and partial recursive functions.txt
+
+Ackerman gave this counterexample to the conjecture that the
+primitive recursive functions capture all the intuitively
+computable functions. Because the Ackermann function
+looks intuitively computable, just defined by this
+fairly simple recursion t, It's a huge function, but, but it's a fairly
+simple definition and it's not primitive
+recursive crudely. So one can consider, now I actually don't know a lot about the history of those are
+I don't know if this was developed in
+response to that or not, but, but in any rate, one can consider adding
+a new way to create new functions other than the ways a ladder and
+primitive recursion. And it's technically called Mu recursion if it's actually doesn't look a whole very recursive today. But, but the idea is
+that you have a function on several inputs and you single
+out the last one, call it y. So x is a vector and y
+is just one integer. You can define a new function
+h called mu sub y of f. And what it's doing is
+it's doing a search on the y. And essentially it's defined to be the minimum y that
+makes f x y equal to 0. Right? So new recursive functions are then defined exactly the
+same way as primitive recursion, allowing all these atomic
+sort of functions, composition primitive or recursion. And then this new way to define a new function
+called Mu recursion. Basically saying, oh, you're always allowed to define a new function. That is defined to be
+the minimum value that, that to assign to the last input
+to make the whole function is 0. So this somehow
+corresponds to if you're going to implement this in
+a programming language, if you have f somewhere that
+takes all these inputs, h takes one fewer inputs. So it takes all the x's but
+not the why it starts y at 0. Then while F.dr. Evaluates to
+something other than 0 increments Y, and once it finds a
+way that does this, it returns that one, right? So you can implement
+this fairly easily. So this seems intuitively
+to be something that should be allowed as a
+way to build new functions. But no, such a y may
+not exist, right? Primitive recursion is defined
+so that the recursion sort of always terminates every primitive recursive function you write down. If you can write it down, it is, it has some well-defined
+value on all possible inputs. But you can now write down functions defined with this mu recursion,
+this minimum searcher. And there may be no value of
+y that makes f evaluate to 0. So this, and if so does
+this, why does it exist? That function is
+undefined on the input x. And so mu recursive
+functions may not be total, meaning they may not be
+defined on all inputs. So mu recursive
+functions can be total, but they don't have to be in when they're not there called partial. Partial function is one that's
+not defined on all inputs. So sometimes these are also called the partial recursive functions, given that they, you know, they allowed the
+functions to be partial. And mathematically a function that's
+undefined on a certain input. If you want to think
+about it algorithmically, this is going to correspond to a
+program computing that function. But if you give it an input that is not defined on
+the program won't hold. So, right, so, so
+every Turing machine, every algorithm you can write down, computes some partial function just defined to be the one that's
+only defined when halts, when it halts that, it's defined
+to be whatever it outputs. So we have the various
+classes of, you know, mathematically defined
+functions on the left and then classes of algorithms that
+can compute them on the right. The primitive recursive
+functions are exactly the ones computable by
+bounded loop programs. So these are total, and these programs are guaranteed
+to halt and give an answer. And then way down here there's
+the partial recursive functions and these correspond to what we now know to be intuitively what
+is computable by any algorithm. So any free loop program or in more modern parlance,
+any Python program. Now, there is this class
+in the middle, right? And it turns out it is, It's nontrivially in the middle, which is those recursive functions, meaning those computable functions that are told they're
+defined on every input. So in algorithmic terminology, there are computed by
+programs that always hold. And you might think,
+well, maybe those exact, maybe the set of functions
+they can compute is exactly the primitive
+recursive functions, right? But we're going to show
+no, that's not true. The, the, the bounded
+loop programs here, they're always
+guaranteed to terminate, but they're not strong enough to hit every more general algorithm
+that's guaranteed to terminate. So we'll show that here. And the in modern terminology we would say no total
+programming language, meaning no programming
+language that has the property that all of its
+programs are guaranteed to halt can compute all the total
+recursive functions mean all the functions that
+are computable by some program that just
+happens to always hold. Even though it's written in a
+language where the language doesn't guarantee that
+all the broker, right? So there's kind of a
+crucial difference there. You can write a program in
+Python that always holds. Python itself is not foreseen. All the programs to hold. It is possible to write programs
+in Python that don't called. And so in some sense
+you're just lucky or clever when you
+write one that does. So bloop was a failed attempt to capture all the total
+recursive functions, although computable functions
+that are defined on every input, the Ackermann function,
+the counterexample. It's computable but not by
+any bounded loop program. But the question is, is there a more powerful programming language whose programs always Hall
+just like bounded loop. But that unlike bloop, can actually compute all the
+total recursive function. And we're going to argue
+here the answer is no. And suppose all programs in some
+language or tone, right there, hold on inputs and this is
+enforced by the language just if you can write a syntactically
+valid program in that language, it is guaranteed the whole. Suppose that's the way
+the language works, which none of the languages you typically use like
+Python or C plus, plus behave that way. Okay? So every language, every program you can write
+in that language holds. So the universal function, right? For that language defined to be. Now this isn't necessarily
+an algorithm and just defining a function takes two inputs, a program and that language
+and an input for the program. And it's defined to be whatever
+that program does on that. Now, all programs are well-defined on all inputs because they all hope you have some output. So this thing is well-defined. Read every program you can put air, every input you could put here. This has a well-defined value. So using you as a subroutine, we can define a new program V, right? And these gonna do this diagonalization type
+of thing we've seen before, where V on input P, a program does the following. It runs piano input p.
+It can do that because, you know, you sort of define air. So you can take as input
+a program and run it, which is how you works, and then add one to it, right, by running you a PP. But if he did that, V on input B will be
+undefined, right? So actually that's in some sense, if we assume that you could be implemented in this
+programming language, well then V could be, but V can't be taught to write
+V and V is undefined there. So it's not implementable, but it's perfectly easy to implement if you can
+implement you that. Did you just do this one
+step to use you to run p on its own source code isn't but add
+one when you're done and return. So you cannot be implemented either. Right? So, so the punchline here is that the universal function
+cannot be implemented. And a similar argument shows that
+bloop has no universal program. You can't write a bloop
+interpreter and blue. But in fact, this is true of any program programming language where all the programs
+or guarantee adult.-e 
+
+en-ECS 220 7b_7.3-4 a universal partial recursive function.txt
+
+Now one of the things
+that was known once the partial recursive functions are defined and then the significance, I think maybe wasn't
+as appreciate it until later when terrain came along and prove something
+similar about his model. But one thing that was
+known as that there's a so-called universal partial
+recursive function, right? Like that function we saw on the
+previous slide of a function that takes as input a description
+of an algorithm or if you like, a description of a function, and then an input to
+that function and evaluate that function on that input. In modern language, we say there's a flute interpreter that
+is written in slope. But in this older kind
+of terminology, it's, there's a partial
+recursive functions that given any description f bar. So f is the function f bars the description that's
+kind of unquote trade of a partial recursive function f and an input x2 f u of f
+bar x equals f of x. Now notice that this is
+defined if and only if f of x is defined and if they're
+defined than they're equal. So the best way to
+understand why this is true is just to think about modern
+programming languages like Python, where the almost trivial. It's just making the observation that you can write Python
+interpreter in Python, right? A universal function in modern
+terminology is just an interpreter. But now the best way to
+understand how much of that deep, unobvious insight this
+was in the 1930s, right before we had the benefit
+of our modern understanding of programming languages is to read this mathematical function
+way of phrasing it. So we're not going to really prove
+it using the old terminology, but I do want to just
+write down like just how difficult that would appear to kind of prove something like this. So here's how you would build a universal partial recursive
+function using pre 1936 technology. And it's something
+called Godel numbering. And it's named after God, who? I think they have proven this, but the original use of
+Godel numbering was, that's how he proved Godel's
+Incompleteness Theorem. But it's this fancy trick we used with the counter
+machines as well, where we use sort of prime factorization representations
+of integers so that the key step that
+you need here is to come up with a way of representing a partial recursive function in the format that partial recursive
+functions expect as input, okay? And the way we've
+defined them, they just expect integers as input, right? Patent, right, non-negative integers. So any functions are
+like a different type of object and this relation between vectors of integers
+and output integer. So how are we going
+to represent that as a positive integer so that we're representing an exactly the
+partial recursive functions. So, so h will be the function itself, right, is just this abstract
+mathematical relationship. H bar is going to be the
+integer that represents it. And because it's an
+integer, we can give it as input to a reverse function. So the easy one is the base cases. We can say, well, there's three base cases, actually, there's an
+infinite number there. There's two. Easy base cases, the constant
+0, the successor function, and then this infinite family
+of projection functions, one for each non-negative integer and one for each positive integer. And we'll just assign
+them these prime numbers. So 7, 11, and 13, 7900 and so on. All the rest of the prime
+numbers appear here. Note we skipped three prime numbers. They're going to use down here. So when we compose functions, we need a way of
+putting them together, but putting their
+descriptions which are integers together into a new integer. So suppose we have f and g
+there, partial recursive. Well, they have some
+integer representing them, f bar and g bar. Now we need, now there. Composition h is a partial
+recursive function. We need to say what is going to be the integer that represents
+H. It's going to be this 12 times three to the
+representation of f minus 5 to the representation
+of G. And again, by the fundamental
+theorem of arithmetic, that's a unique representation. If I write that integer
+down, you know, which two exponents I had to go here to make it so you can figure
+out what f and g are. And we can do something similar
+with primitive recursion, which also depends on
+having two functions. But we just instead of
+multiplying by two at the front, we multiply it by two squared. So again, that gives us a different representation
+than any of these. And then finally, 2 cubed times 3 to the F to
+represent mu recursion. So recall that, you know, add of x to 0 is just the
+projection on to x, right? And then add x. Y is this thing, this primitive recursive function of where the recursion
+is on y minus 1, where G here is defined to be
+compose the successor with P3. We did this a few slides ago. We're going to kind of pick apart. If I had the add function, how would I figure out what is its representation is just
+some positive integer. How would you figure it out? Well, you'll look at what
+functions is it made out of? It's made out of these ones. What functions are those made out of? Well, the composition of S with P3, these are two atomic functions, so I can look up here. So g here is represented by two times three to the representation of S times 5 to the
+representation of P3, which is this thing, 2 times 3 to the 11 times 5 to the, because S is represented
+by 11 p1 by or PI 3 by 19. So that's this number which is six. I don't even know what
+that is. Million, billion, trillion, six quintillion. All right, so that's
+just the g We need, the help us define add. So ADH is then this thing which
+is somewhat modest numbers, but the last one is five
+to the sixth quintillion. So anyway, it is possible to represent these functions
+uniquely as integers. And you need to reason
+about these integers in order to show there's a universal
+function that can somehow pick apart a given integer to figure out what functions does it represent and
+how do you apply them. So we'll quote from the
+textbook here to say that this universal function that
+takes a description of f, meaning an integer like this, and an input to it and evaluate
+it is itself partial recursive. And the proof of this
+claim is rather technical. But we're thankful nod to
+the pioneers of computation. We relegate its details to history. As I said, I didn't. I think this is the right way
+to understand this theorem. I think this one is right. You can write a Python
+interpreter in Python.-e 
+
+en-ECS 220 7c_7.4 λ-calculus.txt
+
+I'm going to mention
+now another model of computation which was developed
+around the same time period, also intended to be a way to capture all the the intuitively
+computable functions called lambda calculus. And this was proposed
+by Alonzo Church. And a little oddly, this one has been much more influential in modern
+computer science. Then the partial recursive functions. It's the basis in some sense for
+functional programming languages, particularly the quote, really
+pure ones like Haskell or ELM. Unlike the partial
+recursive functions, which I would say people
+immediately stop using or once, you know, sort of Turing
+machines came along. And, but we're not actually going
+to spend a ton of time on it. It's really interesting. And often a programming languages
+course like, like 240, well, sometimes deal with this and it's actually a fairly
+interesting way to think about programming for the same reason that you're
+writing. Language isn't. Writing programs in languages
+like Haskell is interesting. But we're going to skip
+it for this course. I'm just going to
+point out that it's, it exists and it's actually
+very easy to evaluate, right? So I found this interpreter for lambda calculus in a fairly
+straightforward notation that, that takes seven lines of scheme, which is another thats
+is a list variant, another functional
+programming language. So it's worth it to know
+that, that this was around, but I just want to mentioned this was another sort of competing model. And that's actually been somewhat influential in modern
+computer science.-e 
+
+en-ECS 220 7c_7.5-1 Turing's applied philosophy.txt
+
+So as I said, all these varying
+models of computation were intended to
+answer this question, what is a computable function which needed to be answered before
+anybody could hope to, to sort of tackle Hilbert's question about is there a computable
+function that on input, a mathematical theorem tells
+you whether it's true or false. But he didn't phrase it that way. Just said find the function, but people started to suspect, well maybe that can't be done, but in order to show
+it can't be done, we've got to nail down what is, what do we mean by
+computable function? So there was a bunch of
+these competing models. Girdle and her brand, develop the Mu recursive functions. That was a response to the failure of the primitive recursive
+functions that to capture everything that we intuitively think we mean by computable church or done the Lambda definable
+functions of lambda calculus. And his student Stephen clean E, showed that in fact, mu recursion and lambda
+calculus are equivalent. They can eat, simulate each other. And that the developers had
+shown that wide classes of known computable functions work word definable and these models. And yet most still work convinced that this is
+the right definition. So just like with the
+primitive recursive functions, you can get most of the functions you tend to think about with those. But that's not very strong evidence that there's not something else
+that you might be able to compute. If only your language can't compute, you just haven't thought of the
+function that just like with the Ackermann function
+and primitive recursive. So church sort of believe right away that lambda calculus just obviously captured all the
+computable functions. And he showed a version of the
+halting problem being undecidable. He showed that the problem finding whether a lambda expression quote, as a normal form and this is somehow the equivalent of
+halting computation. That that question is not itself
+solvable by lambda calculus. So in other words, the lambda calculus
+halting problem is undecidable by lambda
+calculus programs. And he thought that that meant, oh, well that shows Hilbert's question, can't be answered because we are, the halting problem is undecidable. But what if church was
+wrong and asserting that everything computable is
+computable by lambda calculus, it wouldn't rule out that
+something lambda calculus can't do could be the positive
+answer to Hilbert's question. And he got pretty contentious. And Neil Post was another
+pioneer in this area. You know, in writing
+in a journal paper, use Church of masking
+this identification of the solvability of Hilbert's
+question under a definition. Cleaning similarly found audiences not giving him unquote Chile
+receptions about lambda calculus. And so after General Recursive ness appeared and he proved
+them equivalent, you started explaining things in that format because people are just, they didn't get why they, why lambda calculus should, should be a candidate here. Now the existence of
+universal programs, a universal recursive functions
+and lambda expressions was known in a sense
+there's something called the cleaning normal form. Give some notion there, but they
+were difficult to construct, difficult to see why they
+word and the significance of it wasn't fully appreciated yet. And this is all happening in the United States
+and over in Britain. A first year graduate student at the University of Cambridge named Alan terrain heard
+about this problem in a, in a course on logic and
+started thinking about it. And wasn't talking any of these
+people just kinda thought on his, The Fountainhead much different
+thoughts about this problem. And that resulted in him giving the first convincing argument for the correct definition of
+mechanical computability. And I really liked this quote
+from the textbook that they pulled out of this other
+book about terrain. He said, what does a
+Turing machine look like? Google for a description of it, you get some crazy-looking
+machine like this. But he says a better approach
+is to look in a mirror. Right? So what does that mean? So what the computer? I mean, what is it? There's
+different kinds. We all agree. This is one, this is one. I've seen these once in
+your life somewhere. These main principle
+with, but what is it? What makes a computer
+a computer, right? They didn't always look like this. One time. They look like this. Right before we had this ability
+to build electronic computers. And while we still didn't have the machine technology necessary to make Babbage's
+mechanical computers. Computers were people,
+there was a profession. A person would sit with some
+fairly precise instructions about what computation's
+I had to be done. They'd have pen and paper
+and maybe some help. But they would sit and follow the
+instructions and do computation. And it was thinking about this
+kind of computer person just sitting down with a pen and a paper that lead terrain to his definition. And I can actually hardly
+do better than just a quote straight out of
+his original paper. So this is exact text from, from turns first paper on computable numbers with an application to the
+inside it's problem, It's quite an understated very solve the problem showed, showed
+it can't be solved. Actually. They said computing is
+usually done by writing symbols on paper, right? And we can suppose
+divided into squares. And the two-dimensional
+character is not essential. So that it ends of bones as well. If you want to do the tedious, but you could write it on
+one dimensional paper, on it, divided into squares, right? So I'm trying to highlight here where we get this modern definition out of his sort of reasoning
+about what is a person, a human computer doing when they
+sit down to do a computation? That's what the Turing machine
+was intended to capture. It was not intended to capture
+what your iPhone does. Well, your laptop, those
+those didn't exist yet. It was intended to capture
+what could a person do with sufficiently precise
+instructions and of paper and enough patients
+and time on their hands. Because that's what people thought
+of as intuitively computable. So he says, well, the behavior, the computer a MOM is
+determined by the symbols written down in the state
+of mind, right? Of state. Here, this state really corresponds to what's
+going on in your head. And he has, I'm not going
+to quote the whole paper, but he has some very convincing
+arguments to imagine that for the purposes of
+doing computation like this, we only have a finite number
+of states that we can access. That you think we have an
+infinite number at some point the two of them get too close and you sort of can't reliably
+tell the difference between. So he says, Oh, it's
+all also imagine that the operations are split up into simple operations that
+are so elementary, can't divide them further. And it's such a simple operation that not more than one symbol is altered, editor, or any other changes and
+split up into simple operation. So this is why we're talking about reading one symbol and writing ones. And now it's all always
+possible for the computer, meaning this person to
+break off from his work, go away and forget all about it. Later, come back and go on. But if so, you've gotta
+leave a note for yourself. What was I doing when I left? So this note that you leave
+to yourself is somehow the state of mind and it doesn't capture everything
+going on in your head. But, you know, maybe
+you're all distracted. You're thinking about a
+fight, you had all of this, but that's not relevant
+to doing the computation, whatever you're going
+to write down so that you can come back and pick
+up where you left off. That's the part of your state
+of mind that you need to remember and that's the
+parties arguing, fight. So we'll suppose that U, the computer works in
+such a desultory manner. I really love the way
+the British right here, that he never does more than
+one step in a same, right? So you always just sit
+down, do one step, and then just write a note yourself, get up and go off
+and come back later. So the state of progress
+and what you're doing is completely determined by the node of instructions you left
+for yourself describing your state of mind and
+the symbols on the tape. Or in other words, the computer
+updates by calculating a deterministic function of your state and the symbol
+you're currently reading.-e 
+
+en-ECS 220 7c_7.5-2 existence of universal machines and the Church-Turing thesis.txt
+
+All right, so one
+might argue with this, there's a lot of interesting
+theorems and entering the paper, but I included in the proof that the halting problem is not decidable. But I'm going to call this the most important theorem in the
+theory of computing. And it, namely that there is a
+universal Turing machine meeting. There's a Turing machine
+that oninput Emax, where m is a description of a
+Turing machine acts as a string. We can simulate hem events. And part of what made that, even though kind of a
+universal functions were known to the people working on the
+partial recursive functions. Part of what was important
+about this is that it was very straightforward to prove
+this somewhat tedious. You actually write down
+all the transitions of a universal machine and yeah, I get, that gets a little tedious. But once you wrap your
+head around the concept, it's very straightforward
+to see that, that you could write a
+machine that would just carry out simulating the transitions
+of another machine. Much more easy to see then
+with these other models, like the MMU recursive
+functions and girdle, after seeing this, identified
+this ease of simulation. And therefore the ease
+with which you can prove the equivalence of other models or use diagonalization to show limitations on the model
+has a kind of miracle. Now, part of what is so
+convincing about the model as well is that it's extremely robust to choices in
+the definition and terrain made. Some noted this that you can add one-way or
+two-way infinite tapes. You could have many
+tapes or just one. You can have two-dimensional tapes, multiple heads on a tape. All of these are kinds
+of machines that can easily simulate each other. And so it's very
+convincing that, okay, we stumbled on a fundamental
+model here because it's not like it's not going to shatter if
+we make one little change to it. Okay, so we started
+off this whole chapter talking about great
+unifications in science. So This was the great unification for computation that
+happened in 1936, which is that a function is
+computable by a Turing machine if and only if it's computable by any of these
+other competing models that, that people are talking about. Now the rightmost equivalences
+shown by church and cleaning. It was published in April 1936. Terrain submitted his paper. He heard about the problem. He knew nothing about what
+anybody was doing over in the US. So he completely independently
+submitted his paper, proceedings of the London
+Mathematical Society and may 1936. While it was under review, he learned about boot this
+work of church and cleaning. And he has sold an added approve of this leftmost equivalence to
+the appendix of the paper. So he showed turing machines can simulate these and these can
+simulate target machines. And then it was published
+in 19 November 1936. And I just kinda want to draw your attention to the difference
+between these dates here. Note that the first
+transatlantic phone service was established in 1927. And yet somehow they were able
+to publish journal paper is approximately eight times faster than we can today with the benefit. So I've never quite understood that. Now the skeptics, the
+people who were skeptical of lambda calculus,
+girdle, and posts, they were immediately
+convinced by Turing's paper, in particular by his
+physical arguments that this model captured
+general computation. This idea of talking about what
+does a person do when they sit down to do a mathematical
+computation. They were very convinced that, yes, this captures anything you
+could possibly mean by that. And it is straightforward using modern sort of
+technology to show that all of these are equivalent
+to programmability in flute or your favorite
+programming language like Python. The so-called Church-Turing
+thesis captures this intuition. And it's the statement that the universal Turing
+machine can simulate any physical computing device that
+can be finite lead described, where each step accesses and modifies a finite
+amount of information. Okay, so I call this a thesis and not a theorem because this is not a
+mathematical statement. In the middle here I talk about
+physical computing device. What exactly does that mean? It means something you can
+build in our physical universe. And because that's not
+precisely defined, neither does is it precisely defined. What it means for a step
+to access and modify it? Finite and information. So it's not a mathematical statement, it's a physical law, right? Just like any other physical law, the laws of thermodynamics. So it's open to refutation
+in principle, right? We can't prove this
+statement because we can't formalize what are physical
+devices in the universe. But it's, we're fairly
+convinced it's true. So by analogy, most attempts to build a perpetual motion
+machine which would violate the second law
+of thermodynamics. Well, they fail because they're actually increasing
+entropy somewhere. That's not being
+explicitly model by the, the description of the machine. So similarly, when you
+see people attempting to refute the Church-Turing thesis
+does happen occasionally. It's usually cracked pots. Once in a while, It's
+respected scientists. But most attempts to
+do this to describe a so-called super
+terrain physical device. And there's this whole field
+called hyper computation. This is what people think about and actually have conferences
+on this stuff. Well, most of them, what they
+do is they kinda fail for an analogous reason to try to
+build a perpetual motion machine, which is that they smuggle somewhere in their definition
+and infinite description. So for example, a neural net where
+you imagine that the weights, rather than being 64 bit floating point numbers,
+infinite precision. And you'll see people publishing
+papers where they imagined o, if you can only program one of
+the weights in a neural net to encode in its binary
+expansion, the halting problem. We'll then that neural net could, could do sir, Super tearing things. But, you know, the statement is about physical the meeting
+devices we can actually build. We don't have to program
+like a resistor to have its resistance encode
+the halting problem. We just have to get a finite
+amount of information and do it. And so that's what the thesis.-e 
+

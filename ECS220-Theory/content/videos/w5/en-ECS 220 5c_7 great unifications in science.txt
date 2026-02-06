@@ -1,0 +1,32 @@
+So this chapter is going to mark a departure and theme from
+the earlier chapters. First of all, we're done
+talking about time complexity. Now, you could say this chapter
+is about computability theory. And it is we'll do some
+computability theory. I will do things like
+undecidability proofs, but it's also going to get
+particularly philosophical. This chapter's a lot about how modern theoretical
+computer science came about. How did we come to think of
+computation in this way that we do? And the book explores this theme
+of great unifications in science. Meaning when did
+previously disparate ideas get unified into a single
+consistent theory. So one of Newton's insights
+was that apples and planets are moving around the way they do and are falling from a
+tree or orbiting the Earth. Because of the same universal
+law of gravity and motion. Maxwell figured out
+that electricity and magnetism are part of a
+single electromagnetic field. It's oscillations,
+what we call light. Maxwell's equations, were
+very useful in choline all the various
+disparate observations about electricity and light
+and magnetism together. There's still an open Golan, the so-called grand
+unified theory that will combine gravity
+with quantum mechanics. Sunday the right notes. There's no one story
+that explains both. And so these are examples for inspiration and our field
+of computer science, a similar unification and accredited
+terrain and other people, the terrain was one
+of the main drivers. Realize that all the various
+models of computation known, it turns time I will study somebody has
+general recursive functions, lambda calculus, Turing machines and others all have equivalent
+computational power. And so it's possible to build a single unified
+theory of computation. And if it works in
+one of these models, it's going to work in all of them.

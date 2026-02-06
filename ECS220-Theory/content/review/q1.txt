@@ -1,0 +1,15 @@
+Summary:
+You're arguing that A runs in polynomial time by saying the total runtime is P(n)Q(n), which is polynomial since products of polynomials are polynomial. You also explain why the Boolean restriction matters and give an example where strings can cause exponential blowup.
+
+Does it answer the question?
+Yeah, the main question is answered. You show A runs in polynomial time when calling B.
+
+Parts that are confusing:
+The phrase "if every step of A makes a call to B" is a bit unclear to me. The problem says A makes a polynomial number of calls to B, not that every step calls B, so I'm wondering if maybe A also does other work separately?
+Also, in "A will run in P(n)Q(n) time", I think this assumes B is called on inputs of size n. But I'm not totally sure what the input size to B is, like whether it's always the same as A's input size or could be different.
+
+Parts that might be wrong:
+The second paragraph about Booleans is confusing to me. You say "even if A attempts to call B with increasing size of input based on the output of B, the size will only increase linearly." But B only returns true/false, so I'm not sure how A would construct increasingly large inputs based on that? And I'm not sure why it would only increase linearly instead of potentially polynomially.
+
+Ambiguous parts:
+I'm a bit confused about what n and m are throughout. You define them at the start but then it seems like n gets used for both A's input size and B's input size, which might not be the same thing.

@@ -1,0 +1,75 @@
+Okay, so here is the theorem that no proof resolving P
+versus NP can relativize. And if that, whichever
+way the answer goes, there's an oracle that
+makes it go the other way. So there's an article a so that P and NP are equal in the
+relativize world of Oracle a. There's another Oracle bead
+so that they're unequal in the relativize world of Oracle be. So we're going to start with a. It's slightly easier one to do. So we're going to define that Oracle to be this
+problem we call predict. And we saw a variant
+of this earlier where predict had a certain time-bound
+hard-coded and do it. This one similar except
+the time bound is now part of the input to
+the decision problem. So we're given a program
+Q and an input x, we want to know what is Q on x gonna do within a certain amount of time. The time is given as the third input. And here, because of some
+technicalities in the proof below, we're going to want the time
+to be written in binary. And we want to know does QX
+output yes, within T steps? Okay? So we're going to go by a
+series of subset inclusions here. So the first thing
+we're gonna do is show X is contained in P to the a. So let E be an arbitrary
+element of XP, write some decision problem. Solvable in exponential time to, to the n, to the c
+for some constant c. And let's call the
+program solving it QB. Okay? So we can decide if x is, if a given input x is an E
+with an N to the C time, a polynomial-time program
+that queries this a Oracle. What in fact, we can just make one query and just report its answer. It's a so-called mini one reduction. What's the query? Pause
+and think about them. All right, So essentially
+we just want to ask, what does QE do on input x, right? When I'm going to run QV. If we did, it would take time
+to to the end of the sea. That's no good. We need to
+hold in end of the zeta, not two to the n to the c. So we're not going to run
+Q0, we're just going to ask our Oracle a, what would q0 do on input x if
+you ran it for this many steps, the number of steps it needs to haul. And because this number of steps is enough to allow QV
+to actually finish, this is its running time. The answer here will be the same. The answer is running at completion, and that's
+the answer we want. So in polynomial time with access to this oracle
+a, we can solve it. And he was an arbitrary element of X. So X is contained in PDA. Okay? Now let's consider an arbitrary
+element of NP to DA, right? Some, some other problem, l, It's an NVDA. What does that mean? Well, it's decidable by non-deterministic program
+that runs in polynomial time, let's say n to the c Islam constancy. But it's an Oracle program and
+has access to this oracle. A. Let's call it q. Okay, so the first
+observation is that this, this program might make query. But we want to bound how
+big the queries can get. In particular, how big can the, the third element yet? Well, it's polynomial time and
+it runs in time n to the c. And in time n to the
+c, you can only write down into the sea possible bets. So overwriting t and binary and we can only
+write end of the seat bets. That means the value
+of T is at most two to the n to the c. Bigger
+values require more bits, so the value t can't get much
+bigger than this exponential. So we're going to use
+that to arguably can replace each of those queries with a deterministic subroutine that executes the program q on input
+y for this many steps. Right? And just answers the question directly without
+consulting the oracle. A. So this would make QL, the decider for L, into still a
+non-deterministic program. And they wouldn't be polynomial time anymore because we've replaced the one step oracle queries with
+this exponential time subroutine. Now the time will be
+something like n to the c, the number of queries we might make times the time needed for each query, which is two to the end of the sea. But there's no oracle. And oh, it's a
+non-deterministic program. This subroutine and the
+one accounting for most of the time here is deterministic. So there's still only
+a polynomial number of non-deterministic bits. So that's going to be crucial. We're not, we're running an exponential time
+nondeterministic algorithm, but we're not choose a
+non-deterministic bits on every step. It's a very small part
+of that computation. So if we now want to
+convert that into a deterministic program by
+iterating over all the possible, I know just brute force searching all the possible values for
+the non-deterministic bits. We can do that. We can iterate over, well, how many possible n to the c length bit strings are
+there today into the sea. So that means now we
+have these two loops, one of which iterates over all the non-deterministic bits in
+this non-deterministic program. And then within each
+of those were possibly making this many
+calls to this oracle, which had been replaced by this other exponential
+times everything but the whole time there is what
+is going to be two to the n to the c times two to the end
+of the c times n to the c, which is itself at most, say two to the n to the c. That's
+O of 2 to the 3 end of the sea. Well that's still exponential
+to bigger exponential, but it's still Quote,
+merely exponential. So L is an XP, right? We got rid of the non-determinism
+and we got rid of the Oracle. So at the cost of it takes longer, so NP to the a is contained in XP. Again. Then finally, the easy observation, p to the a is contained in
+NP to DA no matter the work, right, by the same reasoning, you can solve a problem even if you need access to an
+Oracle in polynomial time, well, you can verify it with access to the same or
+in polynomial-time. So putting those
+three facts together, we have xp is in NP to
+the a, which is in P. But it was already then PDA, which is an NP to the
+a, which is an exp. So in fact, all of these are equal.

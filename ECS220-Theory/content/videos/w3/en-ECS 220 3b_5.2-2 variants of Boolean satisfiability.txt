@@ -1,0 +1,66 @@
+So we talk a lot about
+Boolean satisfiability. And it's common to
+hear people say, Oh, they Boolean satisfiability
+is NP-complete. But what do we really mean? Like I said, I don't like
+that the textbook calls the CNF satisfiability
+formula just sad because, well, there's one particular
+kind and satisfiability. So the convention
+I've saved is to use SAT when you mean arbitrary
+Boolean formulas, circuit SAT when you mean
+arbitrary Boolean circuits, which are more general, 3-sat
+to mean three CNF formulas. But there's other flavors
+of boolean satisfiability. Or SAT is general Boolean formulas. And a E 3 SAT is one we've seen. This is the question. Is it possible to make an
+arbitrary three CNF formula? Have every single clause
+have two unequal literals. So true and false both
+show up in every clause. 1 and 3 SAT is a sort
+of related variant. So the goal of 1 and 3 SAT is to make exactly one literal
+true in every clause. So it's even more restricted
+than not all equal 3 SAT. And this one is very useful because
+this one is still NP-complete, even when you don't have negations. So even when every literal
+is just an input variable, the problem of making
+exactly one of them true in every clause is NP-Complete. This makes us a particularly
+useful one for reductions as well. Now I want to caution and not
+everything that you might call Boolean satisfiability
+is NP-complete. So 2-SAT we saw is contained in B. So and we saw the algorithm to do that by reduction
+to graph reachability. Dnf SAT. So this is satisfiability with Disjunctive Normal formulas, MY name. Formulas that are a big OR of clauses where each clause
+is an end of literals. Such as you might get out of a
+sum of products construction. If you remember your
+digital design course, it turns out that is actually NP. And I may assign a
+homework problem on this. And some versions of boolean
+satisfiability, they're hard, but they're not NP, complete their hard for
+other complexity classes. So majority sat, ask the question, do at least half of all the
+assignments satisfy the formula? Writes a SAT is the question, is the number of assignments
+that satisfy at least one? Majority sat says within inputs is the number of assignments at
+least two to the n minus one. Sharp SAT is the problem of counting the number of
+satisfying assignments. So this is not a decision problem. This is a search problem if you
+like to look at it that way. So this is the problem to output an integer that says how many
+satisfying assignments are there? Now this is, these
+are both complete for other complexity classes that we probably won't get to in this course. But you can think of
+them as being like the versions of P or NP for the
+kind of problem you're asking her. So Sharpie is like NP where instead of trying to
+figure out is there a witness, you want to know how many
+witnesses are there. That's a Sharpie problem. And so these are at least
+as hard as NP problems. If you could count how many
+satisfying assignments you can see is that it
+is there at least one. But we think actually that
+it's even harder to count the number than indicate, is the number bigger than 0 or not. And then PP is this
+probabilistic class where you're essentially asking if I were to
+assign an assignment at random, would it have probability at
+least 1.5 of satisfying the form? So the kinds of problems or you ask, is there at least a
+probability a half? Those are so-called PPE problem stands for probabilistic
+polynomial-time. Another variant is unique SAT. You want to know, does
+the formula I have exactly one satisfying assignment? So if it had two or more, you'd want to say no or at
+0, you'd want to say now. And this is complete for a
+complexity class called us. And then there's this related one, which is pretty close to unique SAT. It's called unambiguous sat. And this is the problem. You not give an arbitrary
+Boolean formulas, you're promised it so that the
+algorithm doesn't have to, is not required to do
+anything special on formulas, unless the formula has exactly 0
+or one satisfying assignments. So it's an easier task than
+telling is a formula satisfiable? You're promised an advanced if it is, then in fact there's only
+one satisfying assignment. So that might make
+the problem easier. And we don't know if this is NP-Hard, but it is NP-Hard via a
+randomized reduction. So in other words, if
+unambiguous SAT is NP, then that would imply
+that SAT is solvable by a randomized
+polynomial-time algorithm. That's probably correct. And we think that's not true either. So that's pretty strong evidence that unambiguous SAT is
+not contained in NP.

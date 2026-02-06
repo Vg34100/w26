@@ -1,0 +1,67 @@
+ 4th Session- Natural Language Processing submission
+
+    Due Sunday by 9pm Points 20 Submitting a text entry box, a website url, a media recording, or a file upload
+
+Read your assigned task (they vary among students): 4th Session- Natural Language Processing task
+
+Reading over them with your own eyes (!), what feeling do they convey?
+
+Now we'll use a Large Language Model (LLM)
+
+Links to an external site. of your choice to analyze the sentiment and emotions of each speech for you.
+
+You need to have the two speeches from the previous step downloaded, ready, and at hand, because you will attach them to the prompt. Use this suggested prompt
+
+Links to an external site..
+
+You can use any of these popular Foundation Model
+Links to an external site. LLMs (or any other LLM that can process text
+
+Links to an external site.):
+
+    https://claude.ai/Links to an external site. Anthropic: https://en.wikipedia.org/wiki/Anthropic#ClaudeLinks to an external site.
+    https://chat.openai.com/Links to an external site.  OpenAI: https://en.wikipedia.org/wiki/ChatGPTLinks to an external site.
+    https://gemini.google.com/Links to an external site.  Google: https://en.wikipedia.org/wiki/Gemini_(chatbot)Links to an external site.
+    https://www.meta.ai/Links to an external site. Meta (Facebook/Instagram): https://en.wikipedia.org/wiki/LLaMALinks to an external site.
+    https://chat.mistral.aiLinks to an external site. Mistral (European): https://en.wikipedia.org/wiki/Mistral_AILinks to an external site.
+    https://chat.deepseek.com/Links to an external site. DeepSeek (Chinese): https://en.wikipedia.org/wiki/DeepSeekLinks to an external site.
+    https://grok.com/Links to an external site. Grok (xAI/Twitter): https://en.wikipedia.org/wiki/Grok_(chatbot)
+
+The task is five-fold. Details are outlined in this example prompt
+
+Links to an external site.. The general task is:
+
+    Analyze the overall expression of sentiment, emotions, and a trait of your choice in the first speech.
+    Do the same for the second speech.
+    Compare both results.
+    Do the same for another LLM.
+
+Report the following outputs:
+
+1) Show us (copy-paste, screenshot, or upload) both comparison tables from both LLMs. Study differences among the 7 evaluations. What emotional sentiment differences do the LLMs detect? Highlight agreements and eventual disagreements.
+
+2) Take a critical look at the speeches yourself (with your own eyes!) and reflect on them. Is one of the two LLMs closer to your impression of the speeches? Can you identify why there might be differences?
+
+3) Now imagine you (and a few friends) were put in charge of assigning sentiment and emotion scores to natural-language texts by hand (...no genAI! ...just imagine... so pre-2023...). Your job is to produce scores that are "good enough" to be used in a research study. Reflect on the following questions. Then record a short video where you tell us about your reflections:
+
+   3.1) What exactly would you focus on in your scoring: the author's emotion, the emotion expressed in the words, or the emotion you feel as a reader? Why?
+
+   3.2) What counts as the "thing” you score: the whole text, each paragraph, each sentence, or something else? How do you get your final score? Why?
+
+   3.3) What labels or scoring scales would you use to quantify sentiment and emotions, and what would “mixed” or “neutral” mean?
+
+   3.4) What would you do with sarcasm, jokes, quotes, emojis, slang, or cultural references?
+
+   3.5) How would you handle texts that are unclear, ambiguous (sarcasm, jokes, emojis, slang, etc), or depend on context you don’t have?
+
+   3.6) If you and your friends, who also code, disagree, what would you do? Who decides, and on what basis?
+
+   3.7) How and at what point would you know that your system is working well enough to trust the results?
+
+   3.8) What part of this content coding job feels most uncertain or surprisingly difficult? Any ideas what you could do about it?
+
+Prepare your presentation, e.g., by having written notes to guide your answers: think about what you will say before the recording! Be succinct and make it powerful and eloquent (minimum length 3 minutes, maximum 12 minutes). BUT: do NOT read the answers sounding like an AI that reads a transcript! We want to hear your OWN THOUGHTS. Make sure to make them yours and tell us about them with personal ownership. Part of the grade is genuine authenticity, which shows evidence of how reflective and deep your reasoning is! If you're still in doubt, here's the grading rubric we use
+
+Download here's the grading rubric we use.
+
+Use any screen recording software, for example, https://ucdavis.zoom.us/Links to an external site. and speak freely into the camera, like you would in an in-person class. Upload the file below or to a cloud storage and share the link here (UC Davis offers unlimited cloud storage at box.com, for example). If you provide a cloud-storage link, make sure to give access to it, so I can access it!

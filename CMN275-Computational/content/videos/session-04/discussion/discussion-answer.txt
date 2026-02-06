@@ -1,0 +1,13 @@
+Example 1: Session 4 (AI) - Podcast Fact-Check
+
+I listened to the AI podcast and they mentioned you can reduce bias by a factor of 10 by removing gender/race data, with accuracy only dropping from 85.3% to 84.7%. I verified with the chat that these numbers were correct, but then I asked if the machine still finds other ways to figure out race/gender even when you remove those attributes and it looks like the podcast skipped over something like this entirely. The AI explained that even without explicit race labels, names like "Jerome" vs "Harry" end up clustering differently in the data based on historical patterns. So the machine still builds in bias, it just does it through other variables instead of the direct ones.
+
+I chose this example because I actually use the podcast generation feature pretty regularly in my other classes, though usually I make them longer than this 5 minute version. This made me think I probably need to fact check them more carefully or at least verify the key points myself, since they can sound really confident while still missing major parts of the argument. The podcast made it seem like you just remove some data and the bias problem is basically handled, but the lecture explains it better/deeper.
+
+Example 2: Session 3 (Social Networks) - Devil's Advocate
+
+I asked it to critique the theories about weak ties and network bridges and it pointed out something about how Professor Hilbert talks about how 28% of people find jobs through weak ties and how they're essential bridges for creating the small world effect. But then the AI brought up Professor Fowler's Facebook study where "while users have an average of 149 Facebook friends (mostly weak ties), there was 'no evidence' that these ordinary friends had any effect on private or real-world political behaviors like voting" and that "actual voting behavior spread through 'strong ties' characterized by high levels of interaction."
+
+I picked this example because it felt like the AI was doing actual analysis instead of just retrieving information. Like I guess maybe jobs and voting work differently in networks? I'm not totally sure what to make of the contradiction but it seems like something that could be important to understand better.
+
+(I'm not sure how long I need to make these, if I notice the others are longer I will add more detail)

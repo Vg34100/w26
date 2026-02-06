@@ -1,0 +1,1057 @@
+en-ECS 220 4a_6 (P vs. NP) vs. other major mathematical questions.txt
+
+Okay, So we've talked quite
+a bit about NP completeness. And we're going to
+step back from you, proving particular
+problems are NP-complete. To just accept in a lot of important problems we'd like
+to solve are NP-complete. Now, what does that mean? Does it mean we can't solve them? Or is there some
+possibility P equals NP? So this quote from the textbook talks about the
+evidence in favor of cookies. Audience hypotheses. They're,
+they're talking about. The hypothesis that p is not equal to nb is so overwhelming the
+consequences of their failures so grotesque that their status maybe have Speak compared to that of physical laws rather than that of ordinary
+mathematical conjectures. Meaning there's just a
+lot about the world that seems to point in the direction
+of P not equal in entropy. So let's think a bit about this problem that we call
+P versus NP and then compare that problem to other
+major open mathematical questions. So there's a very famous list
+that P versus NP appears on. It's the clay Millennium
+Prize problems. That words are put together. I mean that the problems
+are known for a long time, but in 2000 they were put
+together by the Clay Institute. And for each one of them, there's a prize of $1 million
+to solve any of them. And so far only one, the Poincare conjecture
+has been resolved. And they were all sort of
+agreed upon to be lit. Some of the just made
+absolutely major, staggeringly difficult open
+problems in mathematics. And these others are
+important problems. I guess I actually don't
+really understand. Most of them kind of understand
+the Riemann hypothesis. Not so much most of the others. But I'll accept the word a
+mathematician so they're important. But P versus NP, this problem is about the nature
+of problem-solving itself, right? Is it harder to find
+solutions than to check them? And it's often said that if you can resolve it by proving P equals NP, you wouldn't get a million dollars, you'd get 6 million
+because you could use it to go and solve the other
+opening problems as well.-e 
+
+en-ECS 220 4a_6.1-1 the polynomial hierarchy.txt
+
+So we said that theoretical
+computer scientists are not just guessing when
+they say P is not NP. If p is indeed equal to NP, this is known to have a
+number of consequences. And while we can't rule out
+any of those consequences, we can talk about how
+they in some sense would be even more surprising
+than P equals NP. So one of the consequences if P equals NP is that there's
+many other complexity classes also equal to p. So if somehow the power of non-determinism
+is no power at all, the day doesn't speed up
+computation significantly. If that were true, it would actually grant
+vastly more power to machines that look even
+more powerful than, than np verifier or nondeterministic polynomial time Turing machines. So here's one sort of
+straightforward example. If P equals NP, then p is
+also equal to co-NP, right? And this is the power you get with for all quantifiers
+instead of quantifiers. So why is that? Pause
+and think about that. All right, because P is kinda
+clearly closed under complement, you can swap the yes and no answers of any deterministic computation. And now you're deciding
+the compliment problem. So P equals COPI. So if they're both equal to NP, well then co-NP equals k. So let's look at something
+that's not quite so obvious. So okay, we're sort of rephrasing what we mean
+here by NP and co-NP. So assume b is some predicate NP. So it takes two inputs, x and w, and it
+returns true or false. And as always, when we pair
+this witness w with X, we assume it's bounded in length by a polynomial
+in the length of x. So in this light, we can say that NP predicates
+are of the form, right? So an NP predicate a
+with one input x is expressible using B and
+an exists quantifier. So a of x is true if and only if there is a W obeying this up here. So that b of x w is true. And co-NP corresponds to
+predicates of the form a of x is true if and only if
+for all w b of x, w is true. So with this view in
+mind that you get an NP predicate if you start with something that can be
+decided in polynomial time. But then putting an exists
+quantifier unwanted, it's two inputs, right? We could imagine,
+well, what if we had more quantifiers in front here? So this helps us define
+class, but sigma p2. So sigma p2 predicates
+there questions just like NP and co-NP
+about a single input. But we characterize them with a polynomial-time computable
+predicate that takes more inputs, in this case three inputs. So a sigma two predicate is one
+that you can answer by asking. Does there exist a y not
+too much bigger than x, meaning polynomial that
+does there exist a y, so that for all z, b of XYZ is true. Okay, so we can make that
+mathematical generalization is very abstract. It's kind of hard to think at
+this level of abstraction. Let's do an example. So here is a sigma p2 predicate P. So given a Boolean circuit C, well, circuits compute functions
+and they output a yes or no. So they're predicate
+type of functions. So they, they take some bits as
+input and the output one bit. We want to ask the question, Is there a smaller circuit
+computes the same predicates? So there's the questions. It's somehow about optimizing
+the size of circuits. It's actually a very important
+problem in, in VLSI design. So why is this a sigma two predicate? Well, the answer is yes. If what's true, what would have
+to be true for there to be a smaller circuit computing
+that same predicate. Well, there would have to
+exist a circuit d whose size, maybe number of gates is that moat is strictly smaller
+than the size of C. And they'd have to compute
+the same function. Well, what does it mean for D and
+C to compute the same function? Well, means for all inputs
+w in 0, 1 to the n, The output C gives on w is the
+same as the output D Giza, right? And you can always sort of stack
+all the quantifiers in the front. So I wrote it the natural way where one of the things we're
+saying doesn't involve w, it just involves DNC. So we can say, oh,
+there's a circuit these smaller than sees that
+all this is true. But you can always put all the quantifiers up front and it just becomes harder to
+follow the sentence, but it's saying the same thing. There's a circuit D. So
+that for all inputs, w, d is less than c. Okay? We didn't talk about W yet, but we will d is less than Zn. See if w equals DFW. Or put another way, it seems kind of redundant that for every single w we're going
+to assert D is less than C. But it's, if it's true for one of
+them, It's true for all of them. And so the exist for all right here kind of corresponds
+to these two quantifiers. And then this predicate right here, it's a function of three inputs. The original input, see that we're asking about
+that would be like X. The exists input, the
+first exists input D, and then the for all input, which is w. And then
+what's this predicate? Well, this predicate
+is given three inputs, a circuit C, a circuit
+D, and an input W. Is it the case that D is
+size, smaller than c? And they compute the same
+value on this one input. Well that's polynomial time. We just compare number
+of gates. This is easy. And evaluating a circuit
+on just one input, well, that can be done
+easily in polynomial time. Okay, So the polynomial hierarchy is how we kind of generalize this. So this is the decision problem
+that we just talked about. Given a Boolean circuit C, we want to answer
+the yes-no question. Is there a smaller circuit? Now, the real optimization
+problem we're interested in is finding
+a smaller circuit, find the smallest circuit
+computed in the same function. But as we've alluded, solving this decision problem. It has to be at least as hard. And in fact, if we could solve it, we could, we could
+solve the optimization. So this corresponded to
+ask him exists for all. And then polynomial-time
+predicate type of question. Now, the negation of
+this right, through it, the answer to this is no, that's true if c is actually the
+smallest circuit computing fancy. So smallest Boolean
+circuit is the negation or smaller Boolean circuit
+and the a or the complement. We think about these as sets. So the complements of problems in sigma p2 form a class called py p2. And so if we think of
+NP is being sigma P1, there's just one quantifier
+out in front and it's exists and co-NP is Pi P1 and there's one quantifier and it's
+for all and the Sigma and Pi are because exist is kinda like Boolean OR which is kind
+of like the addition. And then pi is kind of like a product which is
+kinda like Boolean end, which is kind of like for all that, you know, it's just a notation. So the Pi corresponds to for all. So this set of compliments
+here is this, well, if we extend that sigma p2, the set of all complements of
+things and sigma two is pi v2. And what would it mean to take
+a complement of one of these? It would mean you'd put
+a negation in front. But if you pass the negation through it flips the exist for all the, for all to this. And then finally, you just negate
+a polynomial-time predicate, you get another
+polynomial-time predicate. So that's why negating one of
+these gives you 10 things. And you can extend this. You can say, well, you can have exists for
+all exists or for all, exists for all and so on. And that gives you all these others and that set of all
+these possible classes, this is called the
+polynomial-time hierarchy. The hierarchy you get by
+stacking successively more exist or for all
+alternating quantifiers in front of some polynomial time. So another way to think about these, I sometimes find this
+useful is as a tree where each sort of edge you following the tree is one
+of these quantifiers. And so an exists tree is asking does their IRS IEPs are
+each edge corresponds to, sorry, a, a non-deterministic decision when you're doing a
+non-deterministic computation. So suppose this is all the
+non-deterministic choice as your egg. So if we view that nondeterministic
+machine as an NP machine, we're asking, does there exist
+a computation path that accent? Now if we view it as a co-NP
+machine, we're asking, is it the case that all possible
+computation paths, et cetera. So black arrow means except
+green means download. So we would say one of these
+steps if any of its leaves, except we would say for all n, for all nondeterministic
+machine accepts only all of its leaves represent an
+accepting computation path. A sigma p2 tree would be exists
+for all who would ask, well, does there exist some subtree here so that for all leaves in
+the subtree their true. So it would kind of look like this. An exists for all exists tree
+would look kind of like this. And a for all exists
+for all of the great, This is it the case that
+for all children here, there is a child below there such that for all children
+below there, it's true. So you can kind of think of these
+being characterized by Howard, the leaves colored to
+say you except okay, so these pair of classes, sigma p2 and pi v2, again, we call those the kth level
+of the polynomial hierarchy. One other way to think about
+these is in some sense they're like two player
+games that last for Kb. So why do I say that? Well, if I claim we're plates a chess and I
+said I have checkmate in KMT. What does it mean to
+say I have checkmate means I can win.
+Well, why can I went? Because there's a move I can make. So that no matter what you do, for all moves my opponent could make. There could be many,
+but for all of them, There's another move
+I can make so that no matter what they do
+in response to that, there's a move I can make
+and so and so forth and so forth for k moves,
+at the end of which, no matter what moves
+the opponent made, if I made the right one and response
+and take the opponents king. And so in some sense, you can't really characterize having
+checkmate of an NP predicate. But checkmate in K moves can be characterized as K
+alternating quantifiers, where the for all are necessary to capture that my opponent
+is going to try as hard as they can to it and pick
+the best move for them.-e 
+
+en-ECS 220 4a_6.1-2 observations about the polynomial hierarchy and the great collapse.txt
+
+Okay, so let's make a
+few simple observations of the polynomial hierarchy now they don't look simple when
+we write them out in this abstract mathematical notation. But we can use our intuition to see. So first of all, adding a
+quantifier adds more power, but it can't reduce it, right? Just like every problem
+in NP is also in NP. Because if you have a fair or if you have a way to
+solve the problem, you certainly have
+a way to verify it. Well, similarly, adding the quantifier can't reduce
+your ability to do anything. So each one of these is
+contained in the next level. Because each one of these is
+defined by simply something that the previous level with one extra
+quantifier put on the front. So the second observation is that exist adds this kind of
+layer of non-determinism, asking whether there's
+a witness that makes the next statement true, right? So in analogy to modifying P with
+this non-determinism to get NP, we can say that sigma k, p is the nondeterministic version of Pi at the next smallest level, p. So in other words, C, right? So we have a circuit, C is
+in smaller Boolean circuit. Alright, What does that mean? It means there's a smaller circuit D, then see that computes
+the same thread of it. Right? And that is what
+Cohen be predicate to say. But you got scene, you got D, and you want to ask the question, do they compute the same function? Well, they compute the same
+function if for all inputs x, C of x equals b of x, right? They give the same answer that, so that for all predicate
+is a co-NP predicate. So in particular, if we just define for the sake of a base
+case that sigma 0, p and pies or OP or just p. Well, we have Sigma 1, P is NP, we add an axis to p, we get NB. But, and generally we
+can say that Pi KP, it, meaning the compliment of
+sigma KP and Sigma KP is, is covered or not, sorry,
+not the complement of the set of complements
+of problems in the air. Since negating epsilon or negating exists gives
+for all and vice versa. So in other words, why is this true? Well, let's just see an example. It's not the case, right? So we're going to negate
+something room air or set theoretically take the
+complement of something. Here. C is the smallest
+Boolean circuit, right? That's a Pi to Pi P2 predicate. The smallest booleans are good computing its function
+That's not true. If and only if. What? Well, what, let's just replace
+sees the smallest Boolean circuit. What does that mean? It
+means for every circuit D, There's some input that it
+gives a different answer on IE, they don't commute
+the same predicate. So if d is smaller, then it gets a different
+answer on that W. And that's saying, if it's smaller than they get
+a different answer is equivalent to just saying, well, either D is at least as big
+or they give a different answer. Right? And we can say, well, it's not the case that
+for all circuits D there is a w that makes this true. If and only if there is a circuit D, so that for all inputs
+w, this is not true. And then now we pass the not through, not this or this is equivalent
+to not this and not this. In other words, there's a
+circuit D for all inputs W I, D is less than c, and
+c of w equals d of w. Which as we said, is what
+it means to say there's a smaller circuit that
+computes PC, right? So this kind of chain of reasoning, I could substitute any Boolean
+predicate I want over here. This would still all
+kind of fall for it. So there's just an example to help illustrate by taking
+the compliment of something in sigma KP gives
+you something and PyGame. Okay, So the polynomial hierarchy sometimes refers to like this
+infinite sequence of the sets. Sometimes it refers to their union. So if you union together
+all the sigma KP's, it's the same as all
+the pie KP's because each one of them is
+contained in the next level. So with no quantifier, you get p at the bottom. And then P is contained in NP and
+it's also contained and co-NP. And we can call those the
+first level of the hierarchy. Each of those is contained in the two sets at the
+next level, and so on. And you get this infinite
+hierarchy going up like this. Okay, so there's the whole
+polynomial hierarchy. Okay, So would that defined? Now we can come back to
+this tesco consequence that I think bronchus Volcker
+Strassen referred do, which is the Great Collapse. All right, so what does the Great
+Collapse and complexity theory? It's this, it's that if p is ND, again, as a consequence,
+we don't think happens. Rephrasing this in terms of two
+things we think don't hold. So if P is equal to NP, well then in fact, p is equal to
+the whole polynomial hierarchy. The whole thing collapses down
+to just the zeroeth level. So in other words, if one
+existential quantifier somehow doesn't have any power to
+the computational power BI, the neither do any additional
+for all or exists quantifiers. So let's see why this is true. And therefore this
+should be even more surprising than thinking P is
+equal to nb because it means like, Oh wow, if you could do
+this, which seems unlikely, you could do all this
+other stuff which it has to be mathematically
+even more unlikely. So we're going to repeatedly use these two facts that hold if
+we assume p is equal to NP. So if P is equal to NP, then for any predicate that takes two inputs to be like
+a verifier, the XW. This predicate is also in P. This is a one input predicate and
+it's just the, the NP predicate, the one that oninput just x asked, does there exists a W sub b? So this thing is an NP, but if they're equal, it's also NP. Okay? So in other words, you could put it exists on the front of anything computable in polynomial time that will also be
+computable in polynomial. And remember, if P equals NP, it also equals co-NP. So this predicate, what also the NPV. If you have any polynomial
+predicate B of two inputs, you can put a for all quantifier
+and the second input, that whole thing would also be NP. So let's do this by concrete example. Suppose we have this
+sigma P3 predicate. What does it mean? It means you have a polynomial time computable predicate,
+taking four inputs, x and then witness one, witness to an S3, B3. We're asking the question
+on input x, is there a w1? So for all W2, W3, that makes B3 true. So we're repeatedly going to
+ultimately use these facts. So by fact E, this means like exists. Just this last part asking does there exists a W three
+to make this true? This right is a function
+of three inputs, x w1, W2. And it's asking, does there exist a fourth input to make all OB3 true? Well, that's NP. So we can replace that, which is this thing we'll call b2, which doesn't have the exists. We can just directly compute
+it in polynomial time. And now we can notice
+what ends in something that looks like a co-NP predicate, but those are also NP. So this can be computed
+in polynomial time. Let's call that thing BY
+want to just x and w. It can answer the question. Given these two, is it the case
+that for all w to this holds? And then now we get an exists
+and a polynomial-time predicate. By fact E, that's also in P. So in fact, a of x is just
+computable in polynomial time. By this predicate, we'd all be 0. So a is NP. So we took an arbitrary
+element of sigma P3, showed it's in P. So
+these two are equal. And hopefully it's obvious how
+to extend this to more levels. So now what if np equals co-NP? So an exercise that we may or may not ask and the
+homework is to show that would imply np equals the whole
+polynomial hierarchy. Which means that collapses
+to the first level, maybe not all the way
+down to the ground floor, but a collapses to the first floor. So this doesn't necessarily
+imply that P equals NP, but it still seems very unlikely to think about what would have to be true if P and NP were different, but NP and co-NP with the same, it would mean that adding
+a single exists or for all quantifier would increase
+your computational power, right? Because you'd actually get something more by adding an exists to get nb. But then somehow adding as many more quantifiers on top of that as you want would
+not increase it. So this is evidence that
+we don't really think any problem in both NP and
+co-NP is NP-Complete, right? Like there's certain
+problems related to factoring that are in
+both of those that we, maybe they got hard. But we don't actually they are
+NP complete because if they were that would imply
+np equals co-NP. And we think that this
+collapse can't happen.-e 
+
+en-ECS 220 4a_6.1-3 collapse propagates up padding technique.txt
+
+Okay, so let's look at another
+consequence of P equals NP, which again, doesn't prove
+that they're unequal. But it establishes that some even more surprising things
+would happen if they were, gives us evidence that
+they're not equal. So the textbook says a common misconceptions that P
+versus NP is about polynomial time. But it's really a
+question about the power of non-determinism in general. Whether finding
+solutions is harder than checking them regardless
+of how much time we have. So in this section we're going to show if they're equal, then in fact, the problem is decidable in time T are equal to the problems
+decidable in time. Non-deterministically
+decidable in time t for essentially any class of functions t that grows
+at least polynomially. So recall that XP is the problem is decidable and exponential time, or time looks something
+like two to the end. The sum constant, like
+two to the n cubed, two to the end of the tenth. And then NX is similar except
+with a non-deterministic machine. And this is question, is x equal
+to NX? Well, we don't know. But what we're going to show
+is that if P and NP are equal, well then so are these. And really, as this is
+anything kind of above it, but we're going to,
+we're going to use exponential just to be concrete
+because it'll be easier. And this is a very
+nice proof technique which can be useful in other
+areas called padding, right? So if you hear me talking
+about the padding proof technique, It's this. So we have to show if P is NP, then x equals and x, and x is clearly a subset of X. So in other words, we have to show assuming P equals NP, x is a subset of X. So we'll pick an arbitrary
+a and an XP and show we can get rid of the
+non-determinism and decide it deterministically
+in exponential time. So because it's an annex, there's a, say two to the n cubed. Now maybe not MQ, maybe end of
+the fifth, maybe end of the 100. But for some constant up here, Let's just use cubed to be concrete. There's a predicate decidable
+in this amount of time be XW, so that a of x is true if and only if there is a W of an
+appropriate length bound, because this is exponential time, we're going to allow
+exponentially large witnesses. So that b of x w is true. That's the definition of n x. Okay, So let's think
+about the problem that we're going to define called SI, see is the so-called patent problem. So the input to see is a
+binary string of length, and we'll call it. And then a urinary string
+of length k minus n. So n is simply this
+number given to us. It's going to be something like
+the length of this X up here. And then k is going to be arbitrary, but we'll use it on
+particular values of k. The first question
+we're going to ask is, is it the case that k is
+equal to 2 to the n cubed? In other words, we want to
+know this whole string, but together you just
+concatenated x and p. Would that whole thing
+equal 2 to the n cubed? If n is the length of x here, if not, we're just
+going to reject, right? We just want to say now, we're only going to consider inputs
+where k has this exponential, is exponentially bigger than that. But if so, the question we're
+going to ask about this input is, is there a W of length k, where k is the difference
+between n cubed and n. So that b of x w is true. So is not really a question
+about P here, right? So there's two inputs, x
+and p, but all we've used, P4 is just to get past
+this first gate here, verify the length is correct. Now all we want to do is just
+ask this question about X and W, where W is going to be
+quite a bit bigger tax. So here's like a representative
+example of how these look. Log p, The new areas, just a bunch of ones. X is some binary string
+we want to know, is there a W of this huge length that makes B of this x comma this W true. So here's a
+non-deterministic algorithm that can solve this problem, sees an artificial problem. It's not really useful. It's just going help us
+get this proof-of-work. But here's an algorithm to solve it. It will non-deterministically guess w of the right length
+that takes time k. We just generate bits
+k times in a row. Now we, now B is decidable in
+exponential time two to the n cubed. So run the decider for B on x and
+w. Now that you've guessed w, How much time does that take? Well, it takes two to the n cubed, but k is 2 to the n cubed. So another way of saying
+that is it takes time k, This length that's quite
+a bit bigger than x, but it's actually by definition, the length of our
+entire input, right? So season, but size is K. N is like the input to this, this first input to be
+that K is the input to C. So C is actually solvable in
+nondeterministic linear time, right? This time linear in c is
+input the lot bigger than x, but x is not the whole input. The input is x NP together. So this padding essentially means C runs pretty fast as a
+function of its input size. It's pretty slow as a function
+of the designer for B. But, but it's laying around. And remember we assume
+p is equal to NP. So in fact, see is not only solvable in nondeterministic
+linear time, it's decidable in polynomial time. Maybe we need more than linear, but the polynomials are all
+kinda equivalent in here. So because it's an NB, it's also in P. So there's a
+polynomial time algorithm for z. So here's a deterministic
+algorithm for a. Remember a is solvable in
+nondeterministic exponential time. Now we want to show we can solve it in deterministic exponential time. We're going to use this
+deterministic algorithm that exists for C,
+that's polynomial time. So how do we, how do we determine if a of x is true on
+input x of length, then compute C of what? Well, the first input is x, the second input is enough ones to make the entire length
+2 to the n cube, which means to the n cube
+minus the n bits over an x. So Season P, which means there's a polynomial
+time algorithm for this. It's polynomial time in
+the length of the input. To see, again, we're kinda do a
+lot of things jumping around here, but how big is the input to see? It's this number k, it's n plus k minus
+n, So it's just k. And k is 2 to the n cubed, right? So if we're polynomial in case
+they were k to the fifth, that means or two to the
+n cubed to the fifth, which is two to the five n cubed. So that's a bigger exponential, that's still exponential
+and AES input leg. But that's a deterministic algorithm. So in fact, a unsolvable
+deterministically in exponential time.-e 
+
+en-ECS 220 4b_6.1-1 time constructible functions.txt
+
+Now the last proof we did, as we often do, we left
+out a few details. And one of the details we
+didn't really spell out was that we assumed that when we want to run some program that runs for
+a certain amount of time that we can first calculate
+how much time it runs for. So in other words, what we did was we
+wrote down on input x, the pair X comma 1 and T of n
+minus n copies of one, right? In other words, we assume
+we can take string. We started with an
+extended to be length T of n or T was the time-bounded
+we were concerned. So that assumes we can calculate T and then given n.
+But what if T of n is itself a computationally
+difficult function that cannot be computed
+in time 0, t of n. Now that wasn't true of
+the function we had. It was like two to the n cubed. And if we were dealing with
+the different XP machine, it would have been 2 to the
+n to some other constant. Those can be computed, but in time linear in
+the time-bound itself. But what if you had a
+function like this, a time-bound T of n
+equals say two times, then if the nth Turing machine
+halts and it's one otherwise. So whether it's even or odd could tell you about the halting problem. This is not even a
+computable function. Now if you allow really
+pathological time-bound, not exactly this one,
+but if you allow pathological time-bound such as this, then it's possible to prove very pathological theorems such
+as there is a time-bound t of n, such that time of T of n equals time of two to
+the two to the two to the t. So we're simply going to disallow such
+functions as time bounds. And we're going to
+formally define a function T that takes as input
+a natural number, outputs a natural number
+to be time constructable. If there's a program that on input will say one to the n and so on, on input, a string of
+the length we care about for our time-bound but not the string our machine is going to process. We just want to know how
+long is that string. And so you write down and copy
+the one you want to be able to compute the number t of n
+in at most t of n steps. And this is true of basically every time-bound we tend to talk about. And n squared two to the n, 2 to the n squared, et cetera. But subsequently from
+now we're going to assume all time-bound are
+actually time constructable. So we don't get these sort of
+pathological results like about-e 
+
+en-ECS 220 4b_6.1-2 relation of NP to finding mathematical proofs.txt
+
+So I want to talk a bit about
+mathematical proofs. Now. We're asking you in homework
+to give some proofs. But, and we tell you
+it'll be precise, be as formal as you can. But we don't really mean
+formal mathematical proof in the way that
+logicians talk about it. So what exactly is a
+formal mathematical proof? It's not the things we
+usually write back. Well, you know what I tend
+to call a proof that I put in my writing and
+my research papers. What I asked you to do on
+the homework is just write down some sentences so
+that somebody intelligent, but who didn't see why the
+theorem is true before, reads it. Well now they do see why
+it's true that to me that's, that's what a convincing proof is. But when we talk the way logicians do about formal
+mathematical proofs, we tend to take that and demand
+and we go to weigh more level of detail such that a computer
+program could verify it. So technically a formal
+mathematical proof is a series of simple steps. Each one of them apply in
+either an axiom that you just assume without proving our a theorem, which is a statement
+that you conclude from a series of simple
+step from the axioms. So for example, you might remember these horrible things from high
+school, these geometric proofs. So here's one of them stating that the angle a PC equals the angle BPD. And then there's the proof
+of it that comes from the axioms or do you tend to call
+them postulates in geometry? And you just apply each of them. And again, I'm showing you
+this just to say, okay, there is technically a way to
+formalize mathematical proofs. Some cruel high school teachers may have forced you to do
+it with geometry and taken an extremely obvious statement
+like this angle equals this angle and then pretended like it's not obvious and that you
+have to prove this. And actually one of
+my favorite essays about mathematics is called a mathematician's element
+by Paul locker, I suggest you go read it. It's very good. But he uses this as an example of how high-school geometry students should not be thinking about
+proofs and says this about it. So I agree with him about that. However, when you want
+to formally study logic, right now, when you want to do, just do mathematics are just
+figure out what's true and false. But when you want to formally study logic and asked me what
+does it postulate? What, what is possible
+to prove in principle? What's possible to know about the
+mathematical world in principle, then you do have to formalize it. And this is what we mean
+by proof in that context. Okay? So when we're talking
+about proofs that can be processed by a computer or verified by a computer will checking proofs like that is
+tedious, but it's simple. You just verifying that each
+statement either is an axiom or it follows by one of your rules of deduction from the previous
+statements that you've proved. So here's a statement that sort of, once you kinda get that definition
+in your head, is kind of, is obviously solvable
+in polynomial time, which is given a mathematical
+statement and a proof of it, you want to ask the question,
+is P a valid proof of S? Right? And this is what
+proof checkers do. I mean, this is what
+the systems like, like Coke do that. And are able to verify formerly written proofs is
+they just apply the rules of deduction and verify that each step follows from
+one of the previous ones. So because this problem, it takes these two inputs. And remember our definition of NP, we had one input for the
+problem we care about in a second one for the verifier
+that was the witness. That because this problem is in P, This one is an NP where you're given essentially only the statement. It's actually an
+optimization problems. Like all optimization problems
+we have the input we care about, and then a threshold to turn the optimization problem
+into a decision problem. So the optimization problem
+is given radical statement. Does it have what's the
+shortest proof of it? But phrased as a decision problem, we can ask, does it have a
+proof of length n or less? And the NP, the verifier for this is the algorithm for this
+state, this problem up here. So, so it's in NP. I'm going to claim it's
+actually NP complete. Pause and think about that. Actually don't pause. I
+won't talk about it here, but asked about it if
+you want to later. So how would you show that the Boolean satisfiability problem is polynomial-time reducible to
+this short proof problem. So this sort of idea leads us to
+the third grotesque consequence. If P equals NP, that makes us think they're
+probably not equal. And it would be the complete
+demise of mathematical creativity. So write down any unsolved
+mathematical problem, Goldbach's conjecture,
+the Riemann hypothesis, or any of those $1
+million clay problems. Where, you know, for
+the clay problems, you're going to get a million
+dollars if you prove it. But there's probably no
+human on earth who's going to prove it with a proof that
+has more than a billion steps. I mean, they can try it,
+it probably won't ever find this if they did, and they published a several
+gigabyte text document proving it, nobody would ever be
+able to verify it. So if give you expect to in practice, be able to solve one
+of these problems and convince other people it solved. You will probably come up
+with a, a short proof, a proof with a billion
+steps service. Okay. And you know, any
+human written proof, even if you took the
+thing we normally call, Approve and tediously expand
+at the formal detail. So it's one of these machine verifiable formal proofs is going
+to be less than a billion steps. So in other words, all of mathematics could be automated
+because if P equals NP, NP-complete problems, short proof
+that can answer this question, that, that would have a
+polynomial time algorithm. Okay, with machine learning, maybe this is going to happen anyway. But, but, you know, but like most machine learning, we probably wouldn't be
+correct on all inputs, so I wouldn't know how
+much we want to trust. So this isn't just mathematics, most scientific fields, right? If you really pull your gaze back and try to say
+what do they all have in common? Well, they repeatedly trying
+to solve this problem. Given some set E, experimental data. For example, astronomical
+observations, say of where the planets are each night and an integer t. And again, for technical reasons, we'll
+put it in the urinary. We will want to find is a theory t, for example, Kepler's laws of planetary motion of length n
+or less, that explains it. You can run other
+words, we want to find a short set of rules that
+explain these observations. So if P were NP, this is what the textbook has to say. No longer would we need
+a Kepler to perceive elliptical orbits or a Newton to
+guess the inverse square law. Fighting these theories
+becomes just as easy as checking that
+they fit the data. And that seems very counterintuitive. This doesn't prove P is not NP. But I think this constitutes very strong evidence
+that they're not equal. We don't actually think
+creativity is this easy. Okay? So there's other reasons to
+believe that P is not NP. I've strongly recommend
+this blog post by Scott Aronson called
+reasons to believe. And he had another one later. The scientific case
+for p not equal to NB. That said, not all theoretical
+computer scientists are so convinced. **** Lipton is chief among them. He likes to remind us repeatedly
+the fact that we don't have a proof is evidence
+that maybe it's true. And he thinks we should consider very seriously the possibility
+that there is a polynomial algorithm for
+something like satisfiability. But we just need vast sort of advancements in our understanding of algorithms to be able to do it. And yeah, that wouldn't be surprising because we clearly
+need vast advances in our understanding to prove that sad is not going to eat because they haven't been
+able to do that either. So certainly resolving this question requires that we figure out
+someone we don't know yet.-e 
+
+en-ECS 220 4b_6.2 upper bounds versus lower bounds.txt
+
+So it's common to hear
+theoretical computer scientists make this observation that upper bounds are easy and
+lower bounds are hard. And it's a little bit
+of inside terminology there usually when a
+theoretical computer scientist says upper-bound, they tend to mean showing that
+a problem has an algorithm, like I'd say, an efficient algorithm. Meaning we are, what,
+what's the thing? We're putting an upper bound on the computational difficulty
+of the algorithm, right? So it's a very jargony
+way of phrasing it, but it just means showing
+a problem does have say, a fast algorithm or a
+space sufficient them. Whereas lower-bound to a theoretical
+computer scientists DS domain showing a problem cannot be solved
+by some class of algorithm, meaning placing a lower bound on
+its computational difficulty. So for example, showing a
+problem is NP-complete. Assuming P is not NP, that is placed in a lower-bound and saying no polynomial time
+algorithm can solve that problem. So when I say upper bounds are easy, what they mean is coming up
+with an algorithm to solve a problem tends to be easier than showing that
+there is no algorithm. And the idea is somehow like because you have to do less
+work and in some sense. So to show a problem is
+in P, we need quote, only find a single polynomial
+time algorithm for it, right? It doesn't matter what all those other polynomial
+time algorithms would do. And the fact that they would be, if you ran them on an instance of
+this problem, they'd be wrong. You just need one algorithm that works for this problem
+and you're done. Whereas to show a lower bound, to show that the
+problem is not empty, you need to argue about every
+possible polynomial-time algorithm and why it gets the answer wrong. So in some sense, this is like why people tend to equip
+an upper bounds are easier because you only
+have to reason about one algorithm finding
+it may not be easy, but once you have it, you
+just have to show it works. But for this, you have to show every possible polynomial
+time algorithm does not work. So in an algorithms class, you learn about all sorts
+of techniques for trying to make algorithms polynomial time, make them faster than
+just brute force search. We don't have quite as
+many techniques for these lower bounds,
+but we have a few. So let's look now at a few techniques we do have for proving lower bounds. In other words, for showing
+that a certain problem has no algorithm within a certain sort of complexity resource constraints. So my favorite example of
+this is the first one I ever learned when I was an undergrad
+in my algorithms course. I don't think I really appreciated
+at the time, but they, they kinda gave us a glimpse of it and it was very fascinating to me. So we learned, you know, the naive sorting algorithms
+like the one that you would probably come up
+with your first term, you took a programming class. They tend to be quadratic
+time, right thing. Most people, if they're
+asked to come up with a sorting algorithm when they
+finally get it, we're again, it's probably one of
+the insertion sort or bubble sort or one of the, the slower sorting algorithms. Then you learned about these much
+faster algorithms that take time n log n. And for this
+little section here, we're not going to
+consider everything polynomial time to be
+equally fast here. We really care that, yeah, n log n is really
+faster than n squared. And it's slower than O of n. So when you learn that
+you can get rid of, that, you can turn one of the ends
+and n squared into a log of n, which is looking just at that term. It's a very strong reduction in
+the complexity of that term. You might ask, what
+can you do better? Like can we get, say, a linear
+time algorithm for sorting? So for here we get a
+formalize a little better. What do we mean by sorting? So here's the task and an assortment. Remember in, in this
+course we just consider inputs to be binary strings, right? We often talk about them like
+they're more structured data, but under the hood they're
+all binary strings. So if I tell you sorted X is this input that we
+represent in binary. You don't quite know
+what I mean, right? Because I have to tell you
+how is the data structured? Does it represent a list of three bit integers and they're
+all the same number of bits. So we can just concatenate
+the bits and not have to remember the boundaries like so here ir integers between 07 and sorting them from here would
+make them look like this is a two bit symbols, like maybe they represent DNA bases. And then we would sort of like this. Is it. That's, I want to
+sort the bed semana, just put all the ones at the end. So it kinda matters. So to get this lower bound
+we're going to talk about, we're going to make a little
+bit of an assumption here. So it's not going to be a
+lower bound that applies to every possible algorithm
+you could be talking about. It's one that assumes you can't see the bits that encode the array. So what do I mean by
+you can't see the beds? What I mean is that, you know
+that somehow this input x, it encodes an array. But you can actually look inside of it and see the data
+that composes each one. All you have is access to a comparator function that you
+give two indices, I and j. And it tells you is the ith
+item less than the J type. And that's not such a
+terribly strong assumption that every sorting
+algorithm nearly that we learn about tends to be like because it tends to
+be that they don't much care what is the data
+inside each array element. All they do quicksort, heapsort, insertion
+sort, bubble sort. All they do is they just repeatedly
+pick pairs of elements in the array and they don't look at
+fully detailed into the data. They just asked these two elements which one's bigger based on that, you know what to do next. So this is a so-called
+black box comparison. So if we want to reason only about these kinds
+of sorting algorithms, which is nearly all
+the ones you study. These are all black-box swords and so are most of the
+others and learn about. We can prove unconditionally, we don't need anything
+like assume P is not NP. We're going to show
+black-box sorting algorithms require omega of n log n comparisons. So there's some constant. And the constants going to turn
+out to be pretty close to one. But it means there's some constants
+so that you need at least that constant times n log n comparisons
+to get these things sorted. So how do we show that? So
+every sorting algorithm for each possible length n of the list you want to sort has an associated decision
+tree describing the items. Then it's going to compare. No matter what is
+the length and list. So we, you imagine
+what happens is you do some computation and at some
+point you ask, is a less than b? So here I'm using a, B, and C to refer to the element that's initially
+in the first position. B is the element
+initially in the second, C is initially and maybe
+they get shuffled around. But when I ask is like a less than b, it means is the element that started in position
+one less than that, that the, the element, they're less than the element that
+started at position two. So you ask this and then if yes, maybe you do some more
+computation of no, you do some different computation. And then maybe the next black
+box comparison as you ask, is b less than c If you want left? And if so, maybe you now conclude there already
+in the right order, a is less than b is less than c.
+And you can see that would be the appropriate comparison
+if a is less than b and b is less than c
+there in the right order. But if not, you do, maybe
+do some more computation. Maybe you now ask, is a less than c? And at this point the answer is yes, this is the proper order. So you should put them in order acb, otherwise you do CAB. And this is abstracting away
+like what other computation happens besides just
+doing the comparison. So who knows how much
+computation happens here, we're going to show that
+even if the computation represented by these
+arrows was instantaneous, still the total number of comparisons you have to do
+is going to be n log n. So we don't worry so much
+about what the computation is. We just know you do some
+comparisons and when you're done, you reached a sort of leaf
+of this decision tree. And that tells you how to
+rearrange these elements. So if the initial answer was no, we maybe do some more
+comparison and some more. And what we get is a tree. And the leaves, right, represents all the possible
+sorted orders and ABC depending on how big they
+are relative to each other. In other words, depending on the results of the answers
+to these questions. And there's three elements. So there's three factorial
+which is 3 times 2 is 6. There's six different
+orders of these. And so there ought to be at least six different leaves here to represent all the
+possible different orders. This could be sorted in depending on the relative comparisons
+we get between a, B, and C. So each list of length and traverses some branch
+of this tree, right? If you change the values, but you didn't change the
+answers to these questions, it would traverse the same branch. But if you swap the relative order, it means you'll take a different
+turn somewhere in this tree. And now we ask, okay, we want to know the
+worst-case running time on any list of length that this
+is the question we ask. Most often. What's the worst-case running time? Well, the worst-case running time, or at least the worst case
+number of comparisons. We just assume that somehow these arrows represent
+instantaneous computation. But the worst case number of comparisons we have
+to do is the depth of this tree is the longest path
+from the leaf to any rate. So how many leaves are in the tree? Well, it's going to be
+at least n factorial. Again, in this example, there's one leaf per
+possible permutation of ABC. But maybe you got a
+inefficient algorithm. Maybe, some of these leaves repeat. Maybe a being less than b, b, a less than c, less than
+b shows up twice here. But you have to have each
+permutation appear at least once to represent what if
+that is the sorted order? So the leaves are going to
+be at least n factorial. And what do we know about binary
+tree is that the depth of a binary tree is at least a
+log of the number of leaks. And a log of n factorial
+is theta of n log n. I think I had you do
+that on the homework 0. So in other words, the depth of this tree is
+going to be at least n log n. And this shows that even if all of the computation is instantaneous, still just the number of comparisons you have to do is at least n log n. So of course, the
+running time is going to involve doing comparisons
+and some other stuff. So the running time also
+has to be at least n log n. So this shows a bound and the information needed to
+determine the proper sorted order. And uses that to get
+this running time. Now that said, this is only for a
+particular class of algorithms, those that do blackbox sorting that
+their only access to the data. It inside the list is just
+comparing pairs of items. But sometimes the boxes
+aren't really black. So like radix sort, for instance, this consort and integers, if they're each embeds
+in time O of n times m. Now all the integers are distinct, then you can do a
+counting argument to show that most of them require
+at least log of n bits. And this would be an
+n log n algorithm. But you can have duplicates, right? And that's precisely
+when radix sort is a lot faster than these
+other algorithms, is like say you have a huge list, but all it has is just the
+digits 0 through nine. Then you can sort it in
+time O of N times 10, right? No matter how big n. Or to think about an even faster one, what if you're just
+sorting bets, Right? The only have two
+possible elements to 01. And so you can ask a
+more stringent question. And given two elements which
+is bigger, you can ask, actually ask, is this
+element 0 or is it one? And you can assume it's one of those do and think for a bit when you're on how to come up with a linear time sorting algorithm, it's
+pretty straightforward. So radix sort looks inside
+the box at the bits. So a black box analogy for some of the other problems we've thought
+about like 3-sat would be this. If a 3 CNF formula may only be black box queried with
+test assignments, right? For example, you can
+give an assignment, you can ask, does this
+make it true or not? But you can't examine the clauses. You don't, you know, you know that somehow it's a three CNF formula. You don't know how
+many clauses, as you don't know where the literals are. All you can do is just give it
+a potential assignment and say, Okay, try to set a equal to one
+and b equals to 0 and so forth. And it can tell you, does
+that make it true or false? It's pretty clear to see
+that in the worst case, you have to test all possible
+two to the n assignments. You're getting no information out of that formula other
+than for each input. Is it true or false? So all you're going do is just come up with
+assignments and give it. And whatever your algorithm does, it gives them in some order. So if you make the formula, depend on the algorithms so that there is one
+satisfying assignment, the last one that the algorithm test, then it would require two to
+the n time to render a law. Now, 3-sat is not in
+fact a black box though. There are algorithms
+based on looking at the clause structure that
+run faster than that. So for example, there's a
+still exponential time, but not this really bad exponential. It's a slightly better exponential
+running time for something based on the idea that
+we can learn something about the formula through the
+structure of the clauses.-e 
+
+en-ECS 220 4c_6.3-1 problems not in P and a natural problem in EXP - P.txt
+
+So we're going to get into trying to show that certain
+problems are not in P. Now, big conjecture is whether
+NP is not equal to BA, and that would mean all those NP
+complete problems are not NP. Most of the problems we encounter in the real world
+that we want to solve quickly, but we don't know how they
+turn out to be NP-complete. So we don't yet have any techniques
+for proving they're not NP, but we do have some techniques for proving certain
+problems are not empty. So let's just look now. Not at what we want to prove, but at the tools we have
+which are insufficient. So proving a particular
+problem is not NP is tough if you to animate
+something like sat, right? And asked me, show that
+there's no algorithm for this. That's tough. But one thing that's quite a
+bit easier is if you don't have a problem And in mind and
+advance that you care about. You just want to demonstrate
+that there is some problem. Outside of p. You can just artificially construct one and it's not a natural problem. You care about solving. It just demonstrates something about the structure of these
+complexity classes. So the trick, even when you're
+artificially construct in an unnatural problem
+is to ensure that the problem remains and some
+other complexity glass. So in this case here, we're going to use which is
+bigger than NP we think. But we aren't going to actually show unconditionally that x is not equal to p by showing there's a
+problem in EXP, but not be. Now, as I said, it's
+going to be artificial. This won't tell us whether
+any natural problem is in XP, but not be. Although I'm going to
+point out that there are some problems that are natural there, but we're not going to show it there. A little tougher to show. The more generally, we're going
+to show that time of T of n, the problem solvable
+in o of t then time is a strict subset of time of f of x. Whenever f grows at a rate
+quote sufficiently larger than. So the way this is often
+summarized is with more time, you can compute more. So in other words, computational complexity theory
+is actually worth study. There's something to
+be discovered here. This whole alphabet soup of all these different
+complexity glasses is not simply a 1000
+different names for Pete. So this is actually more or less
+the first theorem proved in computational complexity theory in the mid 1960s that kicked
+the whole thing off. Okay, so let's start by
+just observing that there is a natural problem solvable
+in exponential time, but not in polynomial time. We're not going to prove this, but this is a problem
+with the little easier to tell a problem we might
+actually want to solve. So here's this problem. We haven't given a name too, Yeah, but we've kind
+of talked about it. It's called Circuit value. And this is simply given a Boolean circuit that takes an input and an
+assignment to its inputs. So a particular binary string
+to give the circuit isn't, but is it one? Alright? So I'm going to say this
+is obviously NB, right? You can just trace through each
+of the inputs, look at the gates, they're connected to evaluate
+the values of those gates, then go to the next layer of the circuit and so on until
+you have the output value. So let's now think about a different
+way of representing circuits. So let's imagine that you have of
+not a surrogate written out in full detail listing all the gates and circuits are essentially
+directed graph. Absolutely. We define them as
+directed acyclic graphs. So rather than a normal graph
+representation where you explicitly list every node u
+explicitly list every edge. Let's imagine instead
+that way you have is a polynomial time algorithm, AAC. So it's an algorithm for CE. And it succinctly
+represents the circuit, meaning it takes as input an integer I write and you imagine each of
+the gates can be numbered. Maybe gate number two is
+input to gate number five. Is this not gate, gate
+number eight is the output. So this takes us input this index for a gate and what
+an output, this two things. First of all, the type of
+the gate isn't an end or, or is it an input? And it also indicates
+essentially the edges. So it just gives the indices of n neighbors and
+our neighbors of gay. But, and so if you were
+to run this algorithm for all the I represented
+indices of gates, you could construct this explicitly
+listed representation of it. But this algorithm, when you consider how many bits you need to just
+write down the algorithms. In Python, it might be much
+smaller than the circuit itself. You might have some
+extremely regular circuit. And it's a very big circuit, but it can be described by
+a very small algorithm. So not all circuits are that way, but some circuits are regular enough that just the algorithm
+itself will take a lot fewer bits to write
+down than the circuit that would be output if you ran
+the algorithm on every input. So this is called succinct because
+it's sort of potentially says. So here's the problem
+we're going to think about is this variant
+of circuit value. So again, your whole
+goal is just given a circuit and an
+assignment to evaluate it. If you're not given the
+circuit explicitly, you're given this
+succinct representation. So you're given an algorithm and you want to know what's
+the value of the circuit. And because this circuit
+can be much smaller, because the algorithm generating
+the circuit can be much smaller. Legwork require many fewer bits to write down than
+the circuit itself. Although the time needed to do this would roughly be the same
+as the time needed to. Up here, they take
+different size inputs. This one, the size of
+the input is dominated by the explicit representation
+of the circuit. If you had some algorithm for
+producing the circuit gate by gate, and that algorithm was logarithmically smaller
+than the circuit itself. Well then, although the time needed for each of these is
+the same for that circuit, down here, the circuit is represented
+with a much smaller input. And so the running time, as a function of the input
+would be exponentially larger than the running time up here. So it can't be much more than
+that for technical reasons, but that we won't get into. But, so the point is
+this problem is in X, but that algorithm isn't necessarily polynomial time because you don't have this large input. Anybody might have
+a very small input, but you take the same, the
+amount of time to do that. And it turns out this thing is, you know, outside of PPE, we can prove that is something
+called EXP complete, which we won't define, but
+it's similar to NP-Complete. And in particular, it means that
+this is an x minus set minus p. So we're not going to get too much
+into this problem, be on this, but this is a problem that you, it's a little bit more natural
+and it is, it is solvable. It is solvable in some time-bound
+exponential time button, but provably not in polynomial
+time on all possible inputs. And just in case you're wondering
+the variant of this that looks more like the problems we had
+been studying. Circuit SAT. Meaning given us a sink
+representation of a circuit, you want to know, is there an
+assignment that makes it true, that is NXP complete
+as you might expect, going from the deterministic version to the nondeterministic version, the same way circuit
+SAT is NP complete.-e 
+
+en-ECS 220 4c_6.3-2 definition of artificial problem Catch22.txt
+
+Okay, so now from, Let's go back from a natural problem that we're not going to get into. The proof of it being outside appeal to an artificial problem that's going to be a little
+easier to reason about. And his whole goal is just
+to show us that there's something in XP but not be. So let's let T be a
+time-bound function. Remember we require these so-called
+time constructable functions, but just think of t as being something like n
+squared two to the n. So if you fix this function, you can define a decision problem. In this decision
+problem depends on t is that he's not an input
+to the function, is just the name of the
+decision problem as t. So predict sub n squared would be a different decision problem
+then predict sub 2 to the n. But for any time-bound, you can define this problem. The problem is on two inputs, a program P and an input
+x we want to output. And let's assume that P. Just for the sake of concreteness, let's assume that if it halts, it returns a boolean, right? Maybe it's a, it's a Python function. And all the return
+statements return that. We can generalize that. But let's just imagine. So what we want to output is
+one of three different values. Yes, no, or I don't know apple. And if P of X halts with empty
+of length of x, the hubs. In other words, if you know P on this input is actually
+T of n time that bid, then we just want output whatever pietas which will be assembled
+in an otherwise we want to help, but I don't know. Okay, so know that t is
+hard-coded into predict, it's not an input to
+write is just the definition of this problem depends on which team and it's a
+different problem if we, if we change d. And note also that
+this is an absolute boundary, so-called sharp boundary
+are not asking doesn't halt with an o of t of x steps. That wouldn't necessarily be well-defined is we'd have
+to say what the constant, so the constant is one
+we want to note is all in exactly t times length. The next steps. Okay, so here's this artificial
+problem that present. So first of all, this one
+is not all that unnatural. This is some very
+abstract distillation of the problem that all
+static analysis solvers want to solve is they, they want to know if I
+ran a program, you know, possibly on some particular inverter, possibly in any input. What's it going to do, right? We want to predict its behavior. So here's the artificial problem. So if we're given a
+program P that happens to return a Boolean, right? If it returns are all, we want to output this weird value. And this value is if we ran
+P on its own source code, right, to take strings as inputs. When I write p of p, What I mean is I want to
+run the program P and the string I want to get it
+is the source code of B. So the output of a catch-22
+is going to be, okay, negate that whatever P would
+do on its own input if it actually holds within t of
+the input length steps. Then it returns some Boolean. In that case, I want the output of Catch-22 to be the
+negation of that Boolean. Otherwise, I want the output of
+Catch-22 to just say I don't know. Okay, so right here, this
+is the source go to p. And this is sometimes called, this technique is
+called diagonalization, and we're going to see it again. But here's our first
+indication of it. The fact that we're giving P its own source code is why this technique is
+called diagonalization. And it's because if you
+imagine that you have this infinite matrix
+where in the rows you list all possible programs
+you might want to run. And the columns you list all possible inputs you
+might want to give them. And then you get rid of
+any inputs that don't look like source code of programs. Then all that remains is
+source code of programs. And the portions of this matrix that we reference here in this problem
+are the ones along the diagonal. So this is why this technique is
+called diagonalization. Okay? So we've defined this program, this problem catch-22 sub t. Here's just a reminder that there's the statement
+of the problem again. Okay, so now let's, let's reason about the
+complexity of this problem. So, okay, for any program
+P that halts on input P, meaning the source code to be
+within t of length of P steps. Catch-22 sub T of p is
+not equal to p and b. Right? So why is that? Well, just the definition is that if, if p on input B halts, right, that satisfies this catch-22
+on that input is the opposite. So they're not the same. That's just how we've
+defined it. Okay? So we want to reason about how quickly a
+catch-22 sub t can be solved. So let's imagine program, we'll call it P sub 22. That's always catch-22. Right? So this problem can be
+solved is not undecidable. It is solvable, but I want to reason about how much time does it take. Okay, So let's just let pet peeve 20 to be any program that solves
+a correctly an island. That's right. Well then what does it mean? It means P 22 on input, P 22 on, on any input has got to get
+the answer right for catch-22, which means it also works on its own. P20, two of P 22 gets
+the answer right. This right here is the
+definition of the answer. So that means they
+cannot be the case by this definition that P2V2 halts
+on it within this many steps, If it did catch-22, would not oninput P 22 would
+not equal P2 to P1, P2. So catch-22 t, It could
+still be solvable in say, three times T of n steps, right? But it is not solvable on all inputs within T event exactly
+sharply T and n steps. So, so it could be in like time of t and m because this allows
+constants times t-a then. But in particular, this does show for any g of n grows
+strictly smaller than TIA, then this problem is
+not in time of g. And so here is our time lower bound. And this, this problem that can be solved within
+some amount of time, but not within T, T of n steps or smaller. If you care about sharp
+bounds and if you're allowed to have constants in
+front of the time-bound, then it's not solvable in
+anything little o of t. Now this also essentially shows that, that more natural problem predict
+sub t is not in time of g. So in general, this just a little more details
+to kind of work that out. But in general, what that tells
+us is that the fastest way to predict some programs T steps into the future is actually
+to run them for t steps. There's no shortcuts. So most static analysis
+solvers you can think of is trying to find shortcuts and say, well, what might this
+program do without us having to run it and
+see what it does? And, you know, there's a
+lot of that work very well. But the point is they provably cannot possibly work on all
+possible programs. So in general, you cannot predict
+what computation's are going to do other than just by running
+them and seeing what they did.-e 
+
+en-ECS 220 4c_6.3-3 simulation slowdown and the Time Hierarchy Theorem.txt
+
+Okay, so this artificial
+problem, catch-22 t, is designed to be unsolvable by
+every T of n time-bounded program. But it is solvable, right? I promised you that we're not
+just going to show there's some problem outside of time of t, Then we're going to show it is
+solvable in some bigger time. So how much time do I need
+to solve? Catch-22 of t? Well, in order to solve it, right, what do we have to do? We have to know what
+would in oninput p, What would do when run
+on its own source code? And we don't even have to know
+eventually we'll just have to know within t of length of P steps. So we could solve and eight and
+then we just negate the answer. That's what Catch-22 it. So we could just simulate P, a P for this many steps. So it does not only take
+TO length of P steps and contradict the fact that catch-22 T cannot be solved
+and that many steps. So think about that for a second. Why? Why is that? So no, because the simulation
+encourages a slowdown, right? We can't simulate P
+for this many steps. In exactly that many steps, there's some slowdown
+happening. How much? So this is where the details
+get a little tricky. It depends on the
+programming language, right? Or are you talking about Python? C plus plus? Are you talking
+about multi take Turing machines? So we're going to, for now we're just going to leave
+that slowdown has a parameter. We're going to define S of t. For the programming
+language we care about to be the number of steps
+required to simulate the steps of a program
+using an interpreter written in the same
+programming language, right? So for Turing machines is
+not that hard to show. S of t is o of t squared that
+one Turing machine can suit, you know, it can be
+given the description of another and simulate it. And there's a quadratic slow down. Someone not a very non-obvious proof shows
+that in fact that can be reduced to o of t log t for
+to take turning Michigan's. For programming
+languages like Python, it tends to be the case that this is sort of
+special tutoring machines. So this is one of the reasons that I only like to
+use Turing machines as the model when it seems
+like we need that formalism. But when we're just
+talking about programming, there's a few things they
+do that are a little awkward compared to regular
+programming languages. And this is one of them that you have this inherent simulation overhead. For most programming languages, S of t is the right. I can the Python interpreter. For each basic step
+in a Python program, it takes a constant number of
+steps of the interpreter to do it. So for most programming languages, S of T is 0 if TV, but the big O constant
+is bigger than 1, right? So for these languages, because the big O is
+kind of disappear in the definition of this
+deterministic time glass. Time of S of T of n is the
+same as time of T of n. Now, that's not the only thing
+that has to happen. We do have to simulate p
+of p for this many steps, but we have to know, well, what
+did we reach that many steps? Even if you did have this
+lightening fast simulation, it's just like real time one step of this algorithm
+for every step of P, The simulating algorithm
+also has to set off an alarm clock that goes off
+after t of n steps, right? So you do need a little time to actually like count how
+many steps that we've done. And in particular to be
+able to do that count in, in not too much extra time we need tend to be time constructable, right? It can't be some
+crazy time-bound that takes way longer to compute
+than the number it outputs. Okay, So with those sort
+of ugly details in place, now we can formally state
+this time hierarchy theorem. And this what tells us that
+if you allow more time, you can actually solve more problems. So I'll state the more
+complicated version that says, you know, if your
+programming language has this function telling you
+the simulation slow down. So it takes S of T steps
+to simulate t steps of an arbitrary program while
+running this alarm clocks. So that's all buried and S here. Then the theorem says, as long as t is time
+constructable and g is strictly smaller,
+it's a little o of t. Then the problems you can solve
+in only g of n amount of time, or a strict subset of those you can solve in S of T of n amount of time. And that looks a little complicated, but the proof is
+essentially that what we showed in that time lower
+bound a few slides ago is that catch-22 is one of these problems in this bigger
+set on the right here it's in, it's solvable in time
+S of T of n, right? So we, we run p on input
+peeve for, for t steps, our program doing that and takes S of that many steps to do it and see
+what it does and then negate it. And we prove that it is not in time. G of n for any g is
+strictly smaller than. Now, the corollary for most
+programming languages, where S of T is just o of t, right? So not Turing machines. Language languages is just
+the simpler thing to state, which is that you've got
+to time bounds T and G, and G is strictly smaller. In that case, you can solve more problems with time T of
+n than you can with time GDB. And you just have to get
+a little ugly if you're talking about Turing
+machines because they're simulation overhead is
+a little bit bigger. So in particular, it means we
+have this hierarchy of problems. We don't really consider
+sub-linear time in this class, although that is a very
+interesting subject, is called streaming algorithms that, that study sub-linear time. But the smallest one
+we'll consider is linear. And we now know that
+is a strict subset of problems solvable
+in quadratic time. Those are a strict subset of problems solvable in just a little bit
+more than quadratic time, like end the 2.1, which is a subset of problems
+solvable in cubic time. And if we allowed
+end of the 100 time, yet more problems will be solvable. So these are strict
+containment there. And then that of course, is a strict subset of P because P contain things like
+n to the 1 thousand. And that's a strict subset of time
+t to time of n to the log of n, because p is defined by
+n raised to a constant, but log of n grows faster
+than any constant. But that itself is a strict subset of this two to the N time-bound, which is itself a strict subset
+or two to the two n, right? Notice that there's a constant
+here compared to here, but this, this is not
+big O of this, right? Because this is essentially
+this time-bound squared. And then you could put a
+bigger constant there. And then you're going to
+replace this linear polynomial in the exponent with a bigger
+polynomial in the exponent. And that's all a subset of EXP. And then x is itself a subset of
+problems solvable in time two to the two to the n. And that's a strict subset of the
+so-called experts, which is, you replace this end
+here with another polynomial.-e 
+
+en-ECS 220 4c_6.3-4 P vs. NP vs. EXP nondeterministic time hierarchy theorem.txt
+
+Okay, So remember that these, these are the first to
+complexity classes. We talked about P and XP, and we've now talked a lot about NP. And we know P is
+contained in NP and NP is contained in X because every NP problem is solvable
+by exponential time, brute force search over
+all the witnesses. And we know that P is
+a strict subset of NP. So one of these two inclusions right here has got to be proper or strict. But we don't know which one. Probably both are, right? It's probably the case that there's the NP-complete problems
+and problem and some others are not contained in P.
+And it's also probably the case that there's problems
+solvable in exponential time, but they aren't
+necessarily NP problems. So here's an exercise to try it on. Let E be the so-called linear
+exponential complexity class. So this is all the
+exponential time mounds were the exponent in the
+exponential is just a linear. So you don't allow like
+say two to the n squared. So this is a strict subset of X. By the time hierarchy theorem, we can actually prove unconditionally
+that NP is not equal to IE. So try to do that at home. We can talk about that
+if you want to know how. Okay. Now does this last thing dimension. There is such a thing as a non-deterministic
+time hierarchy theorem. So this is the end time of G is a strict subset of N time of
+t If g is little o of t, right? So it's just the nondeterministic
+version of this. And note the lack of a need talk about simulation overhead
+in this version, even for Turing machines. So this is a little
+more complicated to prove to get around that sort of simulation that
+even Turing machines need. But this does hold. So we do also have that NP
+is a strict subset of X, strict subset of and double XP. And we're not gonna talk much more about the non-deterministic
+time hierarchy there. And I just wanted to
+point out it does hold.-e 
+

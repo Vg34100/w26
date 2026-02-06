@@ -1,0 +1,73 @@
+Okay, So with this definition
+of relativize programs in mind, let's define a complexity
+class based on its hot pizza, the SAT, this is the problems solvable in polynomial
+time relative to set. Meaning the problems
+you can solve with a polynomial-time program that can call a subroutine
+that evaluate sat. And you can implement that
+subroutine however you want, but the time spent in it is
+not counted against you. It's only the extra time that
+needs to be at most polynomial. So this is a so-called
+relativize complexity class. One way to think about
+this is this is p and a world in which some
+website out there exist. It just answers that
+question instantly. Okay, so what are some
+problems in P to the set? Well, there's one obvious problem
+that they know besides the ones in P sacked itself, right? Like obviously if you
+have an oracle for SAP, you can use that to solve
+the satisfiability program. How about complement of SAT? Think about that on your own. Why is that contain and
+P2? If you can see that. Then clique and compliment of clique, these are Bolton p to the set. Pause and think about
+why is that true? And we can talk about
+it in discussion board. Not only those, but actually any problem in P to
+the clique, right? We can make clique
+the Oracle instead. And the claim is any problem you can solve with an oracle for clique, you could also solve
+instead in polynomial time, you had an oracle for say. Okay, we can define another kind of relativize complexity class where instead of considering
+just one Oracle, SAP, we consider, well
+what if the oracles, you know, what do we have
+more than just that Oracle? In fact, what have we
+allow any NP Oracle? So we take, for every a, we will get p to the a and we
+take the union over all a and b. So one of the decision
+problems in NP is sad. So it's one of the terms
+that makes up this union. So obviously p to the SAT is
+a subset of P to the envy. What about the other
+way? Is that true? Pause and think about that. Okay, So we can think about this P to the NP complexity class
+and compare it to sigma p2, sorry, PyPy to Oersted and P2. So an exercise to do at home, which I think in the past
+I've assigned as homework. But think about it for
+a minute right now. Is to show that P to the NP, which is the same as P to this app, is contained in sigma p2 and
+it's also contained in pi t2. So it's in their intersection. So that's not totally obvious, but it's not terribly hard to prove. It's like a homework exercise. So what about the other direction? Because the containment
+go the other way. And of course I can't prove it can't, because all these things are being unequal sort of depends
+on p not equal. But the right, if they're equal, the whole polynomial
+hierarchy collapses. All these things are
+equal to each other, but we can show that it's not obvious that the
+containment could go the other way. So Let's define this variant with the satisfiability problem
+called for all exists SAS. It's a Pi t two problem actually it's complete provide P2 and it's
+given a Boolean formula phi, and we're going to kind of
+cut the inputs in half. So the first half of the inputs, we'll call x on the x and the
+second half we'll call Y1 to Y2. And the question we're
+going to ask is, is it the case that for any
+bits you can assign to the x's, there is a way to assignments to the wise that makes the
+formula equal to one. Okay, So, so this is sort of
+obviously a pi t2 problem. It's phrased as a for all
+followed by an exists, followed by the circuit
+value problem, which is NP. Okay, so we can try to solve this in polynomial time with a SAT Oracle. Because somewhere
+SAT is in the middle of this and we can
+imagine trying to do it. And if you look at just
+this portion, right, exists Y1 two ions such
+that this is true. If you sort of fix what the x's are, then this portion of the question is a sac question that we're asking. Once we fix these inputs and just consider them
+constants, the X1 to Xn. We just want to know is
+that formula satisfiable? There's some insight into the y's. But how would we go about solving the whole
+problem with the SAT Oracle? Well, it seems we have to iterate
+over all the possible x's. So we can iterate over every
+assignment of X1 to Xn in 0, 1 to the end, there's
+two to the N of those. And then we could say, well, take that circuit f0
+hard-code these particular x's and this iteration
+of the loop into it. So that now instead of two n inputs, you've hard-coded the first n, What's remains, or
+the other n inputs, you have an n input circuit
+you would call side. And then at that point you can
+just ask, is that satisfied? Well, that's this
+portion of the question. Right? And if not, you return false because you've found a setting that
+makes this thing falls. There's, there's no y. But if not, you have to keep going because we have to
+verify this for all x's. If you get through all of them, then the answers is yes. This still takes exponential time. Even with the sac Oracle, you still got to iterate over all the possible assignments to
+the first half of the inputs. And our intuition is that
+this can't be improved. That in fact, having two
+quantifiers like this, an exists and for all and exists. It is in fact, more power than
+having a single SAP Oracle.

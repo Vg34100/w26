@@ -1,0 +1,82 @@
+Okay, Now we're going to move
+on to some reductions that show why I like this
+textbook better than others. So it's very common for NP-completeness proofs
+to involve these sort of classical combinatorial problems on graphs and formulas
+are sets of integers. And those are great. But there's a lot of other places
+where it shows up. And one model I like to
+think about a lot because of my work and molecular
+self-assembly is Thailand. So we're going to
+abstract away a lot here, but we'll say that in this model, a tile is a so-called poly mono, meaning a connected
+union of unit squares. So there's a single unit square, there's one on top of another. There's one next to each other. Here's four unit squares. Here's four in a
+different arrangement. And the tiling problem
+is given a set of tile shapes like maybe
+these and a region R, So just some bigger union of
+unit squares, the squares. The question is, can RB tiled, meaning covered exactly with non-overlapping and possibly
+rotated copies of the tiles and t. So Here's an example. Suppose that our tile
+shape is just this. We only have one in the set. But remember this can
+be rotated as well. Can we cover this
+three-by-three square rooted? So pause and think about
+that for a second. So we can't, because as you can see, each time we put a tile down, we'll be covering two squares, but there's nine squares here. And we can only cover an even number
+of squares with this one top. So this tile cannot be
+used to tile this region. So how about this one? We again have a height to a
+two by one rectangle here. And there is an even number of
+points in this region, right? It's a, it's an eight
+by eight square, had to location to remove, so they're 62 points. So can we cover this pause
+and think about that one? So this is a little trickier. It turns out you can't,
+and it's kind of a cool, clever argument to see
+that you imagine sort of coloring each unit
+square in the tile. And if you think about how are you
+going to place tiles down here, it turns out the only
+way you can do it is to force a checkerboard
+pattern each time you put a tile down is going to put a blue square somewhere we react to put an orange
+square next to it. Even if you're rotated. A little more complicated
+than that, the argument, but you would have to do
+a checkerboard pattern. And if you look, you can see
+from the checkerboard, well, the original one that had
+these two squares had an equal number of blue
+and orange, two squares. But this one remove
+two orange squares. So there's more blue
+squares than orange. But each time you put a tile down, you're covering one
+blue and one orange. So there's no way to cover all
+of these exactly with this tile. That doesn't work either. Okay, back to the computational
+complexity theory. This problem is contained in NP. Why is that? Well, the question is, can RB tiled? So the witness is going to
+be a tiling, in other words, a description of where each tile should go and
+how it should be rotated, right, which can be checked in polynomial time that they don't overlap and that they
+cover all of our. Here's a related question
+that kind of highlights the importance of how
+we represent integers. How about if we're given
+a set of tile shapes and then a region specified implicitly, we're going to assume
+it's a rectangle. And rather than
+listing every point in the rectangle the way we
+would for a general region. Instead, we'll just give two
+integers, the width and the height. And we ask, given these
+integers x and y, can an x by y rectangle be
+tiled with non-overlapping and rotated copies of tiles and
+D. So this contained in NP. And that's worth thinking about. Okay, so there's one model tiling. Now here's one that's a little
+more standard Boolean circuits, but we're going to relate
+them with a reduction. So first I want to
+introduce Boolean circuits. Now we've talked about
+Boolean formulas. These are a slightly
+different concept. So formally, a Boolean circuit is
+a DAG, directed acyclic graph. The sources, meaning
+nodes with no edges coming into them, are called inputs. The sinks, meaning that the nodes are no edges coming out of
+them are called outputs. This has two inputs, one output, and every other node
+is called the gate. And each of those gates is
+labeled with AND OR or NOT. So to contrast with
+a formula, circuit, gates are allowed to have
+unbounded, unbounded fan out. So this OR gate has two
+edges coming out at one, go into this gate,
+one go into this one. But formula, if you think of a
+formula as being a surrogate, it's the kind of circuit
+where the gates all have fanout one or put another way, you cannot reuse subexpressions
+in a formula without rewriting. Another way to think
+of it as a circuit is a general directed acyclic graph. Whereas the formula is a tree where the leaves
+are labeled by inputs. Alternately, you can say
+a formula is a DAG where fan-out greater than one
+is only allowed by inputs. So you can either think
+of it like inputs can appear more than once
+on multiple leaves, or you can consider now there's
+just one input for each variable, but it can go to multiple
+gates with fan out, but that's the last
+time you allow fan out. Okay? And then a circuit is satisfiable. If there is an input
+making its output true.

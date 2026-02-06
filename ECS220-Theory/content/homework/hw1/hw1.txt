@@ -1,0 +1,42 @@
+Copyright © December 31, 2025, David Doty
+Homework 1 – ECS 220, Winter 2025
+Instructions
+Unfortunately, you will have to submit PDFs with your solutions in both Gradescope and Canvas.
+This is because we will grade them in Gradescope, but we will use Canvas for peer review. Your
+submission to Gradescope is the official one that will be graded and that will determine the late
+penalty if it is late. The Canvas submission will only be used for sharing PDFs for peer review.
+Please turn in separate PDF files (produced by LATEX) with solutions to each of the following
+problems. In peer review, I prefer if the matching of submissions to people for peer review is
+independent on each problem, rather than reviewing the same two groups for all problems. To
+facilitate this in Gradescope and Canvas, each of these problems is a separate assignment, with
+names like “HW 1(a)”, “HW 1(b)”, etc. (Though all assignments link to this same PDF document
+with the problem statements.) So please make different PDF files, each with a solution to a single
+problem, uploaded to the different Canvas assignments (i.e., please do not just produce a single
+PDF with all the solutions and upload it to all the Gradescope/Canvas assignments).
+To keep peer review anonymous, please do not include any group member’s name in the PDFs.
+Although the assignment may be done in groups, peer review is to be done individually.
+You may work in groups of 2 or 3, or you may work on your own. See the course syllabus for
+more details.
+Exercises
+Exercise a. Polynomial subroutines. (Textbook problem 2.19)
+Here is the exercise as stated in the textbook:
+Another sense in which P is robust is that it allows one program to use another as a
+subroutine. If an algorithm B runs in polynomial time, and an algorithm A performs
+a polynomial number of steps, some of which call B as a subroutine, show that A also
+runs in polynomial time.
+Furthermore assume that B returns a Boolean, i.e., it also solves a decision problem. (Though
+not required, if you like, discuss how this could be false if B, although a polynomial-time algorithm,
+is allowed to return a string rather than a Boolean.)
+Exercise b. Coloring, with the oracle’s help. (Textbook problem 4.2)
+suppose we have an oracle for the decision problem Graph k-Coloring. Show that
+by asking a polynomial number of questions, we can find a k-coloring if one exists.
+Hint: You want to iteratively compute a coloring, where partway through, some nodes have colors
+assigned already and others do not. You need to ask the oracle about a modified version of the
+original graph to learn if this partial coloring can be finished; if not, make a different choice when
+coloring the next node.
+Exercise c. Small witnesses are easy to find
+The definition of NP requires that the number of bits of the witness is at most polynomial
+in the number of bits of the input, i.e., |w| = poly(n). Suppose a decision problem
+A ∈ NP has the property that witnesses, when they exist, are at most logarithmic size,
+i.e., |w| = O(log n). Show that this implies A ∈ P.
+2
