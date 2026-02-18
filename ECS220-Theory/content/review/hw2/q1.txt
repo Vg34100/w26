@@ -1,0 +1,14 @@
+Summary:
+The solution explains how to turn a Boolean circuit into a CNF formula by first looking at all input assignments where the circuit outputs 0. For each of those assignments, it builds a conjunction of literals, then takes the OR of all of them to form a DNF for the complement of the circuit. Finally, it negates that formula to get a CNF for the original circuit, using De Morgan’s laws.
+
+Does it answer the question?
+Yes, it does. It gives a clear construction for producing a CNF equivalent to the circuit and explains why the final formula is in CNF form.
+
+Parts that are confusing:
+The step where all assignments with output 0 are listed could use a bit more explanation. It might help to say more clearly that this is a conceptual construction and not something meant to be efficient, since iterating over all assignments can get very large.
+
+Parts that might be wrong:
+I did not notice any major errors in the reasoning. The use of De Morgan’s laws and the overall structure of the construction seem correct.
+
+Ambiguous parts:
+The phrase “iterate every variable assignment” is a little vague. It could be clearer if it explicitly said all possible Boolean assignments to the input variables of the circuit. Aside from that, the explanation is mostly easy to follow.

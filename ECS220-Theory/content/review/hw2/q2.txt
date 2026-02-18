@@ -1,0 +1,14 @@
+Summary:
+The solution shows that Strict-Matching is NP-complete by first explaining why it is in NP and then giving a reduction from Independent Set. Each vertex in the original graph is split into two connected vertices, and edges are added between copies of adjacent vertices. The solution then explains how an independent set of size k matches up with a strict matching of size k, and the other way around.
+
+Does it answer the question:
+Yes, it answers the question. It covers both parts needed for NP-completeness and explains the reduction clearly.
+
+Parts that are confusing:
+For the most part, the explanation is pretty clear. One spot that could maybe use a bit more explanation is why a strict matching in G′ can only use edges of the form {v1, v2}, but I think the reasoning can still be followed from what’s written.
+
+Parts that might be wrong:
+I didn’t notice anything that seems wrong. The construction and the arguments for both directions of the reduction look correct.
+
+Ambiguous parts:
+Most of the wording is clear enough. The mention of “forbidden edges” could maybe be explained a little more, but I don’t think it causes much confusion overall.
