@@ -117,17 +117,6 @@ Coding incurs very specific errors. Often, these have to be looked up online. Us
     W3 Schools
     Git Documentation
 
-AI Usage
-
-The following rules for the use of AI apply:
-
-AI may be used to improve single code snippets, but must not be used to complete a full task. In particular, no homework and no part/exercise on the homework sheet may be solved by AI use only.
-
-AI may be used to improve single code snippets in the final project as long as these snippets are highlighted and reported to be provided by an AI. The text of the final project may not be written by AI - however, checking for spelling, grammar and formatting by an AI is allowed.
-
-It is strictly prohibited to submit the homework exercise sheet or a final project description to an AI and use or submit the generated output. This will be considered as cheating and a severe violation of the code of conduct.
-Mental health
-
 Sometimes life can be overwhelming. UC Davis offers mental health resources here including a counseling service for all students here.
 
 If you need urgent mental health support, please visit the I Need Help page to review your options.
