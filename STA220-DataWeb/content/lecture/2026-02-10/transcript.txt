@@ -1,0 +1,1336 @@
+Pablo [0:17]: i'd like to check what it is in error message
+Pablo [0:21]: then we just wait for one second
+Pablo [0:25]: if there's no error message
+Pablo [0:46]: so please keep in mind we always want to have something like this one second of slowing down our request poster is rate dividing three hundred fifty five minutes like three hundred fifty more important
+Pablo [0:53]: and then i also created a function telling us whether the iss is
+Pablo [1:21]: just if you want to execute the code on your own on your laptop i uploaded this by today in the morning so if you have this file of money left of please make sure that you have an upload like algorithm daily because at some point when you update it
+Pablo [1:25]: nothing included in the file
+Pablo [1:25]: yesterday
+Pablo [1:27]: okay
+Pablo [1:36]: then i was made to take a patient that has to be with two different time formats that you won't get used to
+Pablo [2:04]: if the bomb is three this is needed to be twelve time object february sixth will be better anyway three p m and we can also convert this to time which is basically the number of second cities generally the first and this is the number of seconds
+Pablo [2:07]: since then
+Pablo [2:13]: we need to deal with both data points i just wrote functions
+Pablo [2:18]: and then we can see like current time
+Pablo [2:23]: february tenth
+Pablo [2:29]: because basically different is
+Pablo [2:32]: from eight hours
+Pablo [2:37]: i think
+Pablo [2:45]: if we now convert it back with g value minus eight
+Pablo [2:47]: means
+Pablo [3:03]: i will the main idea where we stop and then i said what i want to do is just try to find out when class
+Pablo [3:04]: is
+Pablo [3:07]: for example
+Pablo [3:13]: don say we can find out
+Pablo [3:24]: first of all i just import a package like as well package and the actual sum
+Pablo [3:44]: take it allows me to define a location statement there's also and then i'm just saying i'm interested to find the sun on this location
+Pablo [3:57]: specify everything and then i can just some object also has a dawn and a dusk and this is just the daytime on
+Pablo [4:01]: the government that's just defining current time
+Pablo [4:04]: which is today
+Pablo [4:16]: and sometimes would be at six thirty five dawn at six p m
+Pablo [4:21]: i guess it's really
+Pablo [4:27]: like at six p m i think it's really getting dark i mean
+Pablo [4:48]: half past five before you see the first dust or first while at six p m it's on seven okay so this is like a two times and now what we're doing basically even though for example today at six p m
+Pablo [4:52]: the sun sets
+Pablo [4:58]: and what i can do is if it's
+Pablo [5:03]: six minutes
+Pablo [5:05]: i do the following
+Pablo [5:08]: here i have like my time
+Pablo [5:11]: at six p m
+Pablo [5:19]: we have the dust and then because i want to give some kind of power around that also allow for like fifteen minutes
+Pablo [5:31]: before last because it all gets for us to see
+Pablo [5:32]: and
+Pablo [5:34]: for like seventy five
+Pablo [5:35]: minutes
+Pablo [5:41]: after that and here is seventy five minutes
+Pablo [5:51]: it start
+Pablo [5:53]: s to even see
+Pablo [5:57]: in the sense like here it is
+Pablo [6:09]: and
+Pablo [6:12]: for instagram
+Pablo [6:15]: for example today
+Pablo [6:36]: and like the seventy five minutes
+Pablo [6:51]: more bond and this would be like the time window i will be specifically check whether we can see the iss and of course here is like the first that even when it came up
+Pablo [6:57]: is don't want us to time intervals but i look at every ten seconds
+Pablo [6:59]: on the wall there
+Pablo [7:05]: from zero am twelve p
+Pablo [7:08]: m and then from twelve p m twelve p m again
+Pablo [7:20]: but then you are sending like thousands of requests and you basically know that you can't see only a request we know there is some time
+Pablo [7:21]: possibility
+Pablo [7:25]: cdi is because it's either possible
+Pablo [7:29]: and then what is like
+Pablo [7:40]: so
+Pablo [7:41]: the nine minutes
+Pablo [7:49]: ten seconds interval every ten seconds
+Pablo [7:51]: i'm sending a
+Pablo [7:52]: request for every
+Pablo [7:53]: office item
+Pablo [7:56]: website
+Pablo [7:57]: to see
+Pablo [7:58]: what
+Pablo [8:01]: each
+Pablo [8:02]: of these points
+Pablo [8:03]: with the time
+Pablo [8:05]: of
+Pablo [8:06]: can say
+Pablo [8:07]: that
+Pablo [8:08]: and then
+Pablo [8:09]: just trying
+Pablo [8:10]: to collect
+Pablo [8:11]: all these
+Pablo [8:12]: guys
+Pablo [8:16]: for
+Pablo [8:17]: this vaccine
+Pablo [8:21]: and
+Pablo [8:22]: i also
+Pablo [8:41]: do the next
+Pablo [8:42]: video
+Pablo [8:45]: sometime
+Pablo [8:46]: s it will be very hard
+Pablo [8:50]: and
+Pablo [8:51]: we will have
+Pablo [9:00]: to
+Pablo [9:01]: use may
+Pablo [9:02]: be is
+Pablo [9:08]: the next
+Pablo [9:08]: few days
+Pablo [9:10]: i'm test
+Pablo [9:11]: ifying
+Pablo [9:11]: daily
+Pablo [9:21]: through
+Pablo [9:22]: the days of
+Pablo [9:23]: quiet work
+Pablo [9:26]: the following thing
+Pablo [9:30]: i started with dawn minus seventy five minutes
+Pablo [9:32]: like here
+Pablo [9:47]: and then i add all these data events like i add ten segments here you can see i had a range with ninety times sixty seconds which means like ninety minutes
+Pablo [10:04]: and i have like a step size of ten seconds so i'm always adding ten seconds in each step so starting i equal seventy five minutes before dawn then the next highlight like the next element into this is pancake mislead ten seconds later and so on and so on
+Pablo [10:10]: and it was for like ninety minutes then it adds the same for us
+Pablo [10:15]: and then i have a very long consisting of all possible
+Pablo [10:16]: moments
+Pablo [10:17]: when i see
+Pablo [10:21]: and
+Pablo [10:22]: it also brings for example
+Pablo [10:23]: dominant
+Pablo [10:26]: on
+Pablo [10:27]: thursday
+Pablo [10:47]: you can
+Pablo [10:47]: see the difference
+Pablo [10:48]: between these
+Pablo [10:48]: two things
+Pablo [10:51]: is exactly ten
+Pablo [11:03]: like here we have thirty four here we have forty four so it's a region ten second interval and we see in total we have four thousand
+Pablo [11:03]: moments
+Pablo [11:05]: in the next
+Pablo [11:11]: so we have to send now four thousand request web page
+Pablo [11:39]: and good and bad news the page there is a documentation for the api and it tells us that request for up and different time steps so this means we have four thousand times times different we can send only it is enough four hundred request and then each of the requests we want to get data in
+Pablo [11:40]: time steps
+Pablo [11:44]: let me just see
+Pablo [11:48]: position
+Pablo [11:52]: yes so for example
+Pablo [11:57]: if i want to assess like position for one specific segment
+Pablo [12:00]: it would be like for this moment
+Pablo [12:09]: the data i get you can see now we have the visibility it's a data
+Pablo [12:23]: but what i would be interested in is aging is fine too because now it only allows get like one
+Pablo [12:30]: so we can also add more than one
+Pablo [12:51]: yes we have to combine so basically what i'm doing is i want to add different timestamps to this function
+Pablo [12:59]: so how should i do this you can see i cannot just add it's like zero to two but what i'm doing here is
+Pablo [13:06]: i have my list of timestamps like a list of ten different elements for example
+Pablo [13:15]: then each of the elements will be converted to string and then i'm joining the string together with the comma so basically if i
+Pablo [13:29]: have times that model if i have to this timestamp one times two and i just want to convert this to a string called one comma three
+Pablo [13:34]: because if i add this string with the commas
+Pablo [13:40]: to my time get positions then it would get the perfect
+Pablo [13:44]: return so let me just show you what i mean
+Pablo [13:54]: zero
+Pablo [14:15]: would be just this einstein here
+Pablo [14:19]: and now
+Pablo [14:41]: return is now that i get like two entries like for each of the types i get like the wall entry and here for the second timestamp i get a second value so basically this is what we're doing now instead of sending two different timestamps
+Pablo [14:52]: so basically
+Pablo [14:54]: i
+Pablo [14:55]: feel like
+Pablo [14:56]: from zero to
+Pablo [14:56]: negative
+Pablo [15:02]: and
+Pablo [15:04]: you only
+Pablo [15:05]: think that i'm here
+Pablo [15:06]: for
+Pablo [15:10]: and
+Pablo [15:10]: it's very useful
+Pablo [15:11]: whenever you
+Pablo [15:12]: have
+Pablo [15:13]: all
+Pablo [15:16]: the
+Pablo [15:17]: elements
+Pablo [15:18]: you can add
+Pablo [15:19]: this key
+Pablo [15:20]: and
+Pablo [15:21]: it's basically
+Pablo [15:22]: giving you
+Pablo [15:23]: progress bound
+Pablo [15:24]: to
+Pablo [15:26]: use
+Pablo [15:35]: send
+Pablo [15:36]: the request
+Pablo [15:44]: and
+Pablo [15:45]: this is what happens
+Pablo [15:45]: here
+Pablo [15:46]: just
+Pablo [15:47]: get to the verse
+Pablo [15:51]: you
+Pablo [15:52]: try everything together
+Pablo [15:53]: to
+Pablo [15:55]: send
+Pablo [15:56]: the request
+Pablo [15:56]: and then
+Pablo [15:58]: we add
+Pablo [15:58]: like the
+Pablo [16:02]: return to our list we start with an empty list let me just
+Pablo [16:03]: add everything
+Pablo [16:04]: and
+Pablo [16:09]: if we execute this now you can see here progress bar
+Pablo [16:12]: it estimates like seven minutes
+Pablo [16:15]: for each
+Pablo [16:16]: step
+Pablo [16:17]: eight on one second
+Pablo [16:18]: you go
+Pablo [16:22]: and
+Pablo [16:24]: because
+Pablo [16:25]: i don't want
+Pablo [16:26]: to wait right now
+Pablo [16:29]: i have
+Pablo [16:30]: executed
+Pablo [16:32]: and
+Pablo [16:33]: just
+Pablo [16:34]: save the video
+Pablo [16:43]: and
+Pablo [16:44]: just load
+Pablo [16:45]: the
+Pablo [16:47]: pile
+Pablo [16:50]: and then
+Pablo [16:52]: just
+Pablo [16:59]: ele
+Pablo [17:00]: ment
+Pablo [17:03]: and
+Pablo [17:04]: now
+Pablo [17:06]: three
+Pablo [17:07]: hundred twenty
+Pablo [17:13]: like
+Pablo [17:13]: this
+Pablo [17:38]: is
+Pablo [17:39]: basically what we
+Pablo [17:40]: have
+Pablo [17:41]: the
+Pablo [17:43]: long table consisting of four thousand something
+Pablo [17:45]: entries because the name
+Pablo [17:45]: calls
+Pablo [17:49]: all
+Pablo [17:50]: the things
+Pablo [18:02]: and
+Pablo [18:04]: you can
+Pablo [18:05]: make
+Pablo [18:06]: ten seconds
+Pablo [18:09]: and then other information
+Pablo [18:13]: okay
+Pablo [18:14]: so
+Pablo [18:15]: basically
+Pablo [18:17]: let's go back
+Pablo [18:18]: list of three points
+Pablo [18:21]: when are we able to see the iss
+Pablo [18:23]: when
+Pablo [18:24]: it start
+Pablo [18:24]: in babies
+Pablo [18:26]: because
+Pablo [18:27]: we have
+Pablo [18:49]: bas
+Pablo [18:50]: ically
+Pablo [18:53]: all
+Pablo [18:54]: the entries
+Pablo [18:55]: where it says
+Pablo [19:02]: sorting
+Pablo [19:03]: my data frame
+Pablo [19:04]: checking whether
+Pablo [19:07]: it
+Pablo [19:08]: was
+Pablo [19:12]: now
+Pablo [19:13]: a new
+Pablo [19:20]: verse
+Pablo [19:21]: of all the cases
+Pablo [19:27]: on
+Pablo [19:28]: time
+Pablo [19:42]: and
+Pablo [19:43]: i would like drop a
+Pablo [19:44]: lot of information
+Pablo [19:47]: it
+Pablo [19:48]: says that the name
+Pablo [19:50]: always containing the iss
+Pablo [19:51]: not
+Pablo [19:52]: really helpful
+Pablo [19:52]: for us
+Pablo [19:53]: and
+Pablo [19:55]: here
+Pablo [19:59]: but
+Pablo [20:00]: i don't know how
+Pablo [20:02]: it would
+Pablo [20:03]: help you to know how
+Pablo [20:04]: fast the is
+Pablo [20:04]: right now
+Pablo [20:09]: and also others like unit always
+Pablo [20:14]: throw it away a lot of
+Pablo [20:15]: columns
+Pablo [20:16]: and you can
+Pablo [20:17]: see all the
+Pablo [20:18]: columns are going
+Pablo [20:18]: to waste
+Pablo [20:22]: including the column contain the visibility because we know
+Pablo [20:23]: that it now
+Pablo [20:25]: the same
+Pablo [20:26]: value all the time
+Pablo [20:28]: okay
+Pablo [20:29]: this is bas
+Pablo [20:30]: ically
+Pablo [20:31]: now the table
+Pablo [20:32]: t
+Pablo [20:40]: drop
+Pablo [20:41]: column
+Pablo [20:45]: this is not what we have
+Pablo [20:50]: the latitude the longitude so for each where
+Pablo [20:54]: the iss is like okay maybe the altitude
+Pablo [21:01]: is not that important for us we could also have thrown it away or like dropped the column and here's like a
+Pablo [21:03]: good thing and the idea of the footprint is the following
+Pablo [21:07]: let's go back
+Pablo [21:13]: you can see this white circle here
+Pablo [21:18]: and the idea is that this web page calculates
+Pablo [21:29]: from which point we are able to see is as technically in the sense that it appears on the sky and maybe the sky is bright like right now
+Pablo [21:53]: and this is like the footprint it's like the maximum is like the radius of this curve so basically what we have now doing in the next step we're calculating like the distance from eis to davis
+Pablo [21:58]: and we check whether length is distant is smaller than the footprint
+Pablo [22:09]: because this would mean if davis is between the white serve to be put potentially ciss and this is addressing this question
+Pablo [22:15]: we are throwing away all the data over somewhere else
+Pablo [22:22]: so
+Pablo [22:23]: all
+Pablo [22:24]: my
+Pablo [22:28]: some
+Pablo [22:29]: point
+Pablo [22:37]: and for this calculated system
+Pablo [22:38]: for all
+Pablo [22:40]: the locations we have like the latitude and the longitude
+Pablo [23:04]: and we have two hundred but still that we have to calculate difference in kilometers so if you two coordinates usually coordinates of davis and if you put a coordinate of the iss like if it's projected on here and what is a bit like the distance in kilometers
+Pablo [23:06]: so this will be
+Pablo [23:14]: two places
+Pablo [23:18]: and have to think about the angle and so on and so on
+Pablo [23:20]: or you just use a package
+Pablo [23:22]: do pi that's exactly what we are doing
+Pablo [23:30]: i just provide the viewpoint where the iss is projected here
+Pablo [23:44]: and then it just return get a value like the distance between the iss and davis the kilometers and then an x where the distance is smaller or large
+Pablo [23:54]: i'm installing the package
+Pablo [23:56]: requirement is already satisfied
+Pablo [23:59]: and then
+Pablo [24:02]: have
+Pablo [24:03]: a different
+Pablo [24:05]: for all the
+Pablo [24:06]: roles of
+Pablo [24:07]: my data set
+Pablo [24:09]: and
+Pablo [24:11]: then i'm just adding a new column
+Pablo [24:14]: called this lens in my data set
+Pablo [24:34]: footprint is on this time step at the beginning
+Pablo [24:37]: first timestamp
+Pablo [24:43]: the iss far away from davis we are not able
+Pablo [24:47]: on this
+Pablo [24:49]: so let's do this for
+Pablo [24:56]: all the typescripts and then i'm also adding the volume i just compare distance from the footprint
+Pablo [25:00]: and if it's like closer like if it's in the white surface
+Pablo [25:09]: if davis is within the white circle around the iss and just call it it is new
+Pablo [25:12]: and then edit this information
+Pablo [25:15]: now
+Pablo [25:36]: we have
+Pablo [25:37]: two hundred eighty
+Pablo [25:40]: cei
+Pablo [25:41]: because
+Pablo [25:44]: we have
+Pablo [25:45]: now also
+Pablo [25:47]: checked the second assumption
+Pablo [25:59]: in the remaining two hundred eighteen moments we are near today it's like in davis and we have also checked the visibility
+Pablo [26:02]: it is
+Pablo [26:06]: so in all of these two hundred eighty moments you could see the iss
+Pablo [26:12]: but
+Pablo [26:13]: i was like
+Pablo [26:14]: different
+Pablo [26:14]: things
+Pablo [26:17]: sometimes
+Pablo [26:18]: you can see
+Pablo [26:19]: five p
+Pablo [26:20]: m that's how you can see iss
+Pablo [26:24]: uing
+Pablo [26:29]: the
+Pablo [26:30]: style
+Pablo [26:36]: this is
+Pablo [26:37]: what happens
+Pablo [26:38]: here
+Pablo [26:45]: so
+Pablo [26:46]: like in eight person
+Pablo [26:47]: assist
+Pablo [26:50]: ance
+Pablo [26:51]: hall
+Pablo [26:53]: two
+Pablo [26:54]: thousand seven hundred
+Pablo [26:55]: observations
+Pablo [27:12]: very
+Pablo [27:13]: close to the use
+Pablo [27:15]: and
+Pablo [27:16]: with respect to distance
+Pablo [27:17]: and
+Pablo [27:19]: this means
+Pablo [27:24]: it would be exactly a bad thing with potentially be able
+Pablo [27:25]: very well
+Pablo [27:29]: i
+Pablo [27:30]: 'm just trying to get
+Pablo [27:34]: this
+Pablo [27:35]: minimized
+Pablo [27:39]: it's the minimum value like where we
+Pablo [27:41]: have the road
+Pablo [27:46]: and it minimizer is actually
+Pablo [27:47]: entry
+Pablo [27:54]: so we see here all the information the footprint and the distance
+Pablo [28:03]: it's like three hundred kilometers distance between davis and the projection of the iss on the earth
+Pablo [28:08]: there's a timestamp and this is one of the reasons why we need this
+Pablo [28:09]: because
+Pablo [28:10]: this
+Pablo [28:12]: has been
+Pablo [28:19]: inform
+Pablo [28:19]: al
+Pablo [28:20]: and the answer is
+Pablo [28:22]: well
+Pablo [28:28]: this is
+Pablo [28:29]: like first
+Pablo [28:30]: take home message
+Pablo [28:32]: on thursday and since
+Pablo [28:33]: early morning
+Pablo [28:55]: but
+Pablo [28:56]: it has
+Pablo [28:58]: going
+Pablo [28:59]: on thursday
+Pablo [29:01]: we will
+Pablo [29:02]: extend our blessed
+Pablo [29:02]: beds
+Pablo [29:04]: so
+Pablo [29:05]: this is like
+Pablo [29:06]: more
+Pablo [29:07]: or less the
+Pablo [29:08]: reason
+Pablo [29:10]: you can
+Pablo [29:11]: see
+Pablo [29:11]: honestly
+Pablo [29:12]: there are all
+Pablo [29:13]: other things
+Pablo [29:15]: and
+Pablo [29:17]: i saw
+Pablo [29:18]: different
+Pablo [29:18]: days of
+Pablo [29:20]: the next
+Pablo [29:21]: release
+Pablo [29:28]: and
+Pablo [29:29]: when i finished
+Pablo [29:30]: the project
+Pablo [29:31]: i
+Pablo [29:32]: used this
+Pablo [29:35]: house a very good education look up
+Pablo [29:36]: to the sky
+Pablo [29:39]: unfortunately there
+Pablo [29:40]: is another website
+Pablo [29:43]: which is called issuage
+Pablo [29:47]: and you can just add here a location
+Pablo [29:49]: california
+Pablo [29:52]: and
+Pablo [29:58]: then you see the visible iss passes over the accuracy like this
+Pablo [30:02]: and this q state is both today in the morning
+Pablo [30:06]: and let's go first
+Pablo [30:12]: at this time point you see it not exactly we had six forty was the best moment
+Pablo [30:14]: and it says six thirty six
+Pablo [30:17]: so there must be some issue
+Pablo [30:26]: but still you can see on this day the iss like you can see it starts here like southwest
+Pablo [30:29]: and
+Pablo [30:31]: if we look closer
+Pablo [30:41]: we see a lot of six hundred and forty here because it basically means it enters our visible part of the sky at six thirty six
+Pablo [30:48]: at six forty somewhere like bigger very close to davis we said three hundred twelve pages in our calculation
+Pablo [30:52]: and then at six thirty three it's like some of the
+Pablo [30:56]: other information we all have like a direction to look
+Pablo [31:02]: at for example at six hundred forty we should look north northwest makes sense i guess
+Pablo [31:14]: and we all see the brightness in the sense there are other moments for example thursday at five a m there's only like one brightness
+Pablo [31:18]: bar which basically means it's very hard to see iss right
+Pablo [31:24]: here but it's a very good moment to see
+Pablo [31:37]: well and tuesday wednesday and friday friday you see one more bar so it would be better but in my calculations i just took into account like today tomorrow
+Pablo [31:38]: february
+Pablo [31:50]: is maybe more than seventy five minutes before long
+Pablo [32:02]: not really so maybe this is just where our calculations differ from this web page but it is a very good moment
+Pablo [32:04]: are there any questions
+Pablo [32:18]: some confirmation for our calculation it's very good idea
+Pablo [32:20]: on this concept
+Pablo [32:29]: and the only thing bothering me is this web page has one more information than i have
+Pablo [32:41]: the node direction tell me at six thirty six i should and maybe at least forty i should look northwest
+Pablo [32:49]: but we can also do the same because nobody iss is no in our data apis as it's there we know the data
+Pablo [32:59]: we can also just calculate like the angle and provide
+Pablo [33:02]: and this is what i'm doing here
+Pablo [33:10]: i have to be honest here there is some comma x y how to calculate
+Pablo [33:12]: this
+Pablo [33:15]: copy paste again
+Pablo [33:23]: and here i'm just calculating like yank davis and that is this
+Pablo [33:31]: and then so that basically this returns the value between zero and three hundred sixty degrees
+Pablo [33:41]: this is like ground value and then there's like cardinal direction in the sense when i tell you for example one hundred eighty degrees
+Pablo [33:47]: this means is basically solved pointing in the southern direction
+Pablo [33:55]: so this get parallel direction is just converting a number between three zero and three hundred sixty
+Pablo [34:03]: all this direction is north of east and east and southeastern with a very easy formula
+Pablo [34:07]: basically if you have
+Pablo [34:15]: zero this is ninety one
+Pablo [34:30]: i'm just dividing by forty five and then i'm just rounding this means this is considered as north this is considered as
+Pablo [34:32]: considered as east and so on
+Pablo [34:36]: so basically it just take the decrease
+Pablo [34:43]: divide number forty five to get like one like zero one two
+Pablo [34:59]: and so on and then use the low row because if i'm at three hundred fifty nine centigrade times eight and it also want to have what is left to the zero degree like three hundred fifty eight
+Pablo [35:03]: balls it becomes
+Pablo [35:06]: basically the time
+Pablo [35:17]: keep and everything i need to do right now is just provide the rotation for davis and the location
+Pablo [35:21]: and
+Pablo [35:25]: last for the eighteen output for example
+Pablo [35:34]: so let's just check whether formulas work in
+Pablo [35:42]: with san francisco at this point here is the official location of that consistent center
+Pablo [35:47]: we have zero and direct
+Pablo [36:03]: and it basically says it's two hundred sixty degrees from davis and it had another direction in southwestern and if you like remember the map of davis and san francisco we know san francisco is like southwest of us
+Pablo [36:05]: like if you click here on moving maps
+Pablo [36:07]: it makes sense
+Pablo [36:14]: this is davis this is like the point of san francisco at southwest so it makes sense the formula you can also check with other locations
+Pablo [36:31]: so whenever you have two different latitudes and then molecules that really coordinate the coordinates you can calculate the angle
+Pablo [36:38]: so this is exactly what we are now doing for one moment of thursday
+Pablo [36:47]: and it tells us we should look at northwest direction which is exactly
+Pablo [36:49]: what is
+Pablo [37:05]: so at six forty when the iss is there very close to davis we should look northwestern and it would really look this guy named
+Pablo [37:16]: six thirty seven then we should just southwest southwest and then cdis like on the sky
+Pablo [37:17]: until it leaves
+Pablo [37:20]: the sky
+Pablo [37:23]: in northeastern direct
+Pablo [37:23]: ion
+Pablo [37:24]: okay
+Pablo [37:28]: and i guess
+Pablo [37:34]: yes then i have two one more thing
+Pablo [37:41]: you could now say everything we did so far was a little bit used less because there is a web edge that gives us information
+Pablo [37:43]: we will concentrate
+Pablo [37:49]: unfortun
+Pablo [37:50]: ately
+Pablo [37:51]: cannot
+Pablo [37:52]: really
+Pablo [37:59]: background
+Pablo [38:00]: we have the
+Pablo [38:01]: necessary knowledge
+Pablo [38:05]: does
+Pablo [38:06]: not put in all the
+Pablo [38:06]: same
+Pablo [38:07]: and it start showing
+Pablo [38:08]: this data
+Pablo [38:09]: and
+Pablo [38:10]: all the
+Pablo [38:11]: time on davis
+Pablo [38:12]: and
+Pablo [38:14]: the data
+Pablo [38:15]: will be loaded the
+Pablo [38:16]: navy
+Pablo [38:20]: you won't
+Pablo [38:21]: get any
+Pablo [38:22]: value
+Pablo [38:23]: so you
+Pablo [38:24]: cannot just send a
+Pablo [38:25]: trip to
+Pablo [38:26]: this web application
+Pablo [38:27]: as we have found
+Pablo [38:29]: so let me
+Pablo [38:30]: just
+Pablo [38:32]: show you this for one moment
+Pablo [38:36]: i think what it is
+Pablo [38:41]: exactly like you have
+Pablo [38:44]: and specify use h
+Pablo [38:56]: and then we send like request here and of course a check for the ratios data stories maybe just happen it says denied but this is not it is worth and we have ehtml here
+Pablo [39:09]: and it can also go into details but basically if we would open the html in the web page
+Pablo [39:17]: and then
+Pablo [39:18]: we should
+Pablo [39:19]: just
+Pablo [39:26]: send you
+Pablo [39:27]: a request
+Pablo [39:29]: just
+Pablo [39:30]: bring in
+Pablo [39:30]: points
+Pablo [39:34]: on the other hand
+Pablo [39:40]: ph
+Pablo [39:41]: m you will see
+Pablo [39:42]: that there are no
+Pablo [39:43]: end
+Pablo [39:55]: you
+Pablo [39:56]: have
+Pablo [39:57]: twenty six
+Pablo [39:58]: and it really cont
+Pablo [39:59]: ains the new data
+Pablo [40:06]: and the difference is that if you are sending a request
+Pablo [40:07]: with the
+Pablo [40:08]: python
+Pablo [40:09]: it just knows it's a bond and
+Pablo [40:11]: it does not execute all the javascript
+Pablo [40:14]: functions in the background
+Pablo [40:15]: but
+Pablo [40:16]: here
+Pablo [40:19]: execut
+Pablo [40:19]: ed
+Pablo [40:21]: and then
+Pablo [40:22]: at the
+Pablo [40:23]: beginning
+Pablo [40:24]: there has to be
+Pablo [40:28]: faith
+Pablo [40:30]: so
+Pablo [40:31]: for people
+Pablo [40:32]: to
+Pablo [40:33]: do is
+Pablo [40:34]: to really
+Pablo [40:36]: process
+Pablo [40:37]: the
+Pablo [40:38]: page
+Pablo [40:39]: via pipe
+Pablo [40:42]: pack
+Pablo [40:45]: age but by an actual browser that is open
+Pablo [40:46]: ing and pretending
+Pablo [40:49]: that it's by the actual human browser
+Pablo [40:53]: but it will not be a human browser because we just control
+Pablo [40:58]: it with pipe and then we would just click on all these elements here
+Pablo [41:06]: and do overall these elements try to get the information but just with anywhere actual
+Pablo [41:08]: human user
+Pablo [41:17]: and then we can also do other things for example can change the location here we can add maybe a different location
+Pablo [41:19]: maybe a basic url
+Pablo [41:24]: wherever you want to be you can just add location
+Pablo [41:28]: also pass is passes
+Pablo [41:34]: so for example for interest in taskbu we can also add this
+Pablo [41:36]: show is for one moment
+Pablo [41:38]: maybe
+Pablo [41:51]: it's europe because the date format is like in a non u s honestly this feels like data
+Pablo [42:13]: if we're using
+Pablo [42:14]: another
+Pablo [42:16]: graph then it should
+Pablo [42:17]: be
+Pablo [42:37]: mentioned this in the last
+Pablo [42:47]: buttons
+Pablo [42:49]: and
+Pablo [42:49]: human behavior
+Pablo [42:52]: is really a use
+Pablo [42:53]: ful task and also
+Pablo [42:56]: try to overcome some of
+Pablo [43:04]: also
+Pablo [43:05]: for falling
+Pablo [43:08]: path if you're setting up a web page
+Pablo [43:12]: if your company is setting up a web page then you want to know in advance
+Pablo [43:15]: whether there are some errors
+Pablo [43:19]: that you want to avoid so then you can
+Pablo [43:20]: come up with
+Pablo [43:22]: python program that is control
+Pablo [43:24]: ling any human behavior
+Pablo [43:25]: test
+Pablo [43:27]: whether you
+Pablo [43:28]: really need
+Pablo [43:29]: all
+Pablo [43:36]: that
+Pablo [43:51]: your
+Pablo [43:51]: own webpage
+Pablo [43:52]: okay
+Pablo [43:53]: and before
+Pablo [43:56]: we start with me some preparations
+Pablo [43:57]: that you need
+Pablo [43:58]: i have
+Pablo [44:00]: thought
+Pablo [44:01]: in
+Pablo [44:02]: your
+Pablo [44:13]: driver
+Pablo [44:21]: and
+Pablo [44:22]: i
+Pablo [44:25]: did
+Pablo [44:26]: just
+Pablo [44:27]: trying to augment
+Pablo [44:35]: everything
+Pablo [44:36]: for
+Pablo [44:36]: you
+Pablo [44:37]: and the trust
+Pablo [44:38]: run is code instead
+Pablo [44:39]: of trying to inst
+Pablo [44:40]: all everything
+Pablo [44:44]: and then basically
+Pablo [45:02]: before we start just applying this browser web page i would like to give some basic information on how to use
+Pablo [45:32]: let's start the first thing is whenever you want such like a browser you just client driver equals
+Pablo [45:37]: web driver growth so then basically a prowse browser
+Pablo [45:40]: and afterwards you close the driver
+Pablo [45:48]: you could
+Pablo [45:49]: talk about it from
+Pablo [45:50]: that angle
+Pablo [46:02]: then with only one second
+Pablo [46:14]: docile
+Pablo [46:26]: ideally
+Pablo [46:28]: if you are executing this product
+Pablo [46:38]: file we have a second because
+Pablo [46:44]: what it is
+Pablo [46:44]: it opens
+Pablo [46:45]: nothing happens
+Pablo [46:55]: so i mean it's not really useful but at least you see something is opening
+Pablo [46:59]: and then again
+Pablo [47:03]: first of all the most important
+Pablo [47:05]: thing is exactly web page
+Pablo [47:08]: we start with our home page
+Pablo [47:18]: statistics department we try and assess web page in the samples if we would just access web page we speak for three seconds
+Pablo [47:36]: and then it will close automatically in this case the standard power should be used today to drive all the time with generate width chrome s driver because even if there is an error message between
+Pablo [47:38]: closes afterwards
+Pablo [47:46]: best practice because otherwise you can just do it without this generate era
+Pablo [47:50]: it will end up ten open browser windows
+Pablo [47:58]: web page and three seconds data
+Pablo [48:00]: and this
+Pablo [48:02]: is what you just so it's very easy
+Pablo [48:10]: who can trust access
+Pablo [48:23]: then the next thing is sometimes you want to access like one hundred of our pages in a sense vegetable try to do over one thousand pages
+Pablo [48:27]: seventy eight people in our case
+Pablo [48:32]: we want power then you don't want to open one thousand
+Pablo [48:40]: four so the idea is that so called alice browser so it's just doing everything in the background and you don't see anything
+Pablo [48:46]: oppose value
+Pablo [48:58]: if something is not working as expected you don't see it on the other hand if you have test your code if you run your browser in the head
+Pablo [49:01]: everything is in the background
+Pablo [49:07]: you see something happening but no browser window is open three seconds data
+Pablo [49:14]: and
+Pablo [49:16]: don't have your
+Pablo [49:16]: oper
+Pablo [49:18]: ating system
+Pablo [49:24]: visual
+Pablo [49:25]: ize
+Pablo [49:30]: then
+Pablo [49:31]: the next thing is
+Pablo [49:32]: sometimes
+Pablo [49:34]: our
+Pablo [49:35]: handles
+Pablo [49:38]: have
+Pablo [49:43]: all
+Pablo [49:43]: these eyes
+Pablo [49:44]: but in a sense
+Pablo [49:45]: you have
+Pablo [49:46]: something
+Pablo [49:47]: like try
+Pablo [49:48]: you notice
+Pablo [49:50]: that you try to catch an error
+Pablo [49:51]: execut
+Pablo [49:52]: e the code
+Pablo [49:54]: message
+Pablo [50:00]: you want to
+Pablo [50:01]: take excret
+Pablo [50:03]: ion from web page
+Pablo [50:04]: where you
+Pablo [50:15]: an error message so you just do basically do something like get screenshot s five even just save and i mean of course then you should do something
+Pablo [50:23]: you use this in a headless mode come up with a block file
+Pablo [50:25]: also come up with like an old folder
+Pablo [50:32]: that they contain so that you can really try to see what is happening in the background
+Pablo [50:34]: we execute this
+Pablo [50:38]: and i guess
+Pablo [50:41]: if you have downloaded this file
+Pablo [50:42]: you won't be able to see
+Pablo [50:53]: this right now because this is locally on my computer it's inside here for the output screenshots ucd
+Pablo [51:09]: but the point is if you run this code once you should be able to access this screenshot so if you have this jupyter note you can run this card and then just double click
+Pablo [51:12]: on this
+Pablo [51:17]: i'm not sure have you
+Pablo [51:33]: so then i would just type it right now it can be sometimes a little bit cover some chrome or driver
+Pablo [51:38]: maybe after the lecture
+Pablo [51:45]: but the idea would be
+Pablo [51:50]: you cannot right now see this image if you have not executed the cell before
+Pablo [51:58]: handles but you can imagine what happens i mean it's basically you see this web page
+Pablo [52:13]: it looks exactly as if you would have access uc department web page one special thing you can see here
+Pablo [52:14]: you can scroll down
+Pablo [52:27]: but it just stop cut here like the web page and here is that in the head there's more i think it's just six hundred times six hundred pixels very small brow by default
+Pablo [52:31]: so sometimes you want to access the web page
+Pablo [52:34]: let me
+Pablo [52:34]: just
+Pablo [52:44]: i mean at some point makes sense
+Pablo [52:47]: we are a small window
+Pablo [52:50]: and mention that this is more as a speech
+Pablo [52:51]: hub
+Pablo [53:05]: this short before you make a screenshot the last thing you want to do is max ice window and this is hand move
+Pablo [53:24]: you can change the window size so you can maximize the window you can set the window size of five hundred times
+Pablo [53:24]: five hundred pieces
+Pablo [53:25]: to verify
+Pablo [53:25]: that your
+Pablo [53:26]: gas
+Pablo [53:27]: map
+Pablo [53:27]: at least you can
+Pablo [53:29]: know if google
+Pablo [53:30]: just changed the window size
+Pablo [53:34]: and now we're not running the driver
+Pablo [53:35]: in headers
+Pablo [53:35]: also you want
+Pablo [53:37]: to
+Pablo [53:37]: see that
+Pablo [53:38]: your first maximize the wind
+Pablo [53:39]: ow wait for ten seconds
+Pablo [53:41]: make very small wave per second
+Pablo [53:45]: average size
+Pablo [53:48]: it all maximizes will be very small in
+Pablo [53:51]: the doctor
+Pablo [53:52]: and
+Pablo [53:54]: it's
+Pablo [53:55]: very interesting
+Pablo [53:56]: whether it is
+Pablo [53:57]: complete and
+Pablo [53:58]: with this
+Pablo [54:01]: i will continue whenever you want to change middle size
+Pablo [54:02]: there is
+Pablo [54:04]: screenshot
+Pablo [54:05]: and now
+Pablo [54:06]: a little bit more
+Pablo [54:07]: on the screen
+Pablo [54:09]: because
+Pablo [54:10]: the window
+Pablo [54:11]: was
+Pablo [54:20]: and then there are some other things you want to sometimes refresh a page forward backward navigation
+Pablo [54:24]: page refresh and useful if you are accessing live data for example
+Pablo [54:27]: if there are some
+Pablo [54:30]: stock prices if you have like a web page that
+Pablo [54:32]: is showing
+Pablo [54:32]: types of
+Pablo [54:35]: prices whatever one example
+Pablo [54:36]: you can
+Pablo [54:39]: access them and then you just want to maybe
+Pablo [54:40]: refresh the page
+Pablo [54:40]: every second
+Pablo [54:42]: and also within some
+Pablo [54:43]: catch errors
+Pablo [54:44]: so if you
+Pablo [54:45]: get banned
+Pablo [54:48]: you reference the page every second
+Pablo [54:53]: then you just want loads everything
+Pablo [54:55]: i don't know change the ip
+Pablo [54:58]: and account u browse the template is
+Pablo [54:59]: just
+Pablo [55:00]: a test
+Pablo [55:07]: so we will access a page that is changing every time we refresh the stage
+Pablo [55:14]: the next five window access the page refresh the browser and
+Pablo [55:16]: after
+Pablo [55:17]: wards
+Pablo [55:19]: note that
+Pablo [55:20]: these images
+Pablo [55:27]: but
+Pablo [55:28]: look at these
+Pablo [55:28]: three images here
+Pablo [55:44]: and
+Pablo [55:45]: then just take
+Pablo [55:46]: on the next button
+Pablo [55:48]: and
+Pablo [55:49]: destroy
+Pablo [55:55]: then we
+Pablo [55:56]: are going to use
+Pablo [55:57]: this
+Pablo [55:58]: and we
+Pablo [55:59]: going back
+Pablo [56:00]: and twenty four
+Pablo [56:23]: now
+Pablo [56:24]: and it's all about
+Pablo [56:30]: getting
+Pablo [56:37]: so
+Pablo [56:38]: let's start
+Pablo [56:39]: first
+Pablo [56:45]: we can
+Pablo [56:46]: get like
+Pablo [56:47]: five dollars
+Pablo [56:52]: most
+Pablo [56:53]: important
+Pablo [56:57]: and
+Pablo [56:58]: then
+Pablo [56:59]: we have the htm
+Pablo [57:00]: l
+Pablo [57:03]: via
+Pablo [57:04]: then of course
+Pablo [57:05]: we can do
+Pablo [57:06]: physical things
+Pablo [57:08]: pass everything
+Pablo [57:10]: use x part of beautiful
+Pablo [57:12]: but this is typical thing you
+Pablo [57:14]: would come up with
+Pablo [57:15]: all the
+Pablo [57:16]: text
+Pablo [57:30]: and then
+Pablo [57:32]: you are trying to access
+Pablo [57:33]: the raw edge
+Pablo [57:34]: level
+Pablo [57:35]: and then
+Pablo [57:55]: convers
+Pablo [57:56]: ation
+Pablo [58:00]: despite
+Pablo [58:04]: and now
+Pablo [58:05]: all the things
+Pablo [58:10]: and you
+Pablo [58:11]: know
+Pablo [58:16]: used to
+Pablo [58:16]: have this mode
+Pablo [58:18]: of
+Pablo [58:18]: ages
+Pablo [58:22]: what we want
+Pablo [58:23]: to do is
+Pablo [58:25]: on
+Pablo [58:26]: this issue
+Pablo [58:34]: this
+Pablo [58:35]: is an
+Pablo [58:36]: all the e tr
+Pablo [58:36]: ip ele
+Pablo [58:37]: ments
+Pablo [58:41]: some other
+Pablo [58:42]: qualities in
+Pablo [58:43]: background
+Pablo [58:46]: more
+Pablo [58:47]: than one
+Pablo [59:01]: size
+Pablo [59:02]: one
+Pablo [59:10]: office
+Pablo [59:13]: s
+Pablo [59:14]: especially
+Pablo [59:43]: on
+Pablo [59:44]: your
+Pablo [59:58]: five
+Pablo [1:00:11]: day
+Pablo [1:00:13]: loc
+Pablo [1:00:13]: ation
+Pablo [1:00:21]: and
+Pablo [1:00:22]: they either want to
+Pablo [1:00:23]: test
+Pablo [1:00:24]: the past days
+Pablo [1:00:25]: where i want to
+Pablo [1:00:28]: do this
+Pablo [1:00:57]: the way
+Pablo [1:00:58]: how we find ele
+Pablo [1:00:59]: ments is always
+Pablo [1:01:06]: by
+Pablo [1:01:07]: name by
+Pablo [1:01:08]: the
+Pablo [1:01:09]: past and
+Pablo [1:01:10]: so on
+Pablo [1:01:12]: and then you provide
+Pablo [1:01:12]: like last
+Pablo [1:01:13]: name or
+Pablo [1:01:14]: whatever
+Pablo [1:01:15]: you're interested in
+Pablo [1:01:17]: and
+Pablo [1:01:18]: so
+Pablo [1:01:23]: every kind of
+Pablo [1:01:25]: field and we're interested in an impact
+Pablo [1:01:28]: so
+Pablo [1:01:30]: for examp
+Pablo [1:01:30]: le
+Pablo [1:01:34]: you
+Pablo [1:01:35]: open this
+Pablo [1:01:37]: that
+Pablo [1:01:38]: you could find
+Pablo [1:01:39]: an
+Pablo [1:01:40]: element
+Pablo [1:01:41]: by if i
+Pablo [1:01:42]: use
+Pablo [1:01:46]: show you
+Pablo [1:01:47]: what
+Pablo [1:01:48]: this
+Pablo [1:01:49]: page
+Pablo [1:01:50]: and
+Pablo [1:01:51]: select
+Pablo [1:01:52]: this
+Pablo [1:02:06]: yes so here basically
+Pablo [1:02:08]: there is
+Pablo [1:02:09]: this element
+Pablo [1:02:13]: with the id called content and it's exact
+Pablo [1:02:24]: ly
+Pablo [1:02:26]: some
+Pablo [1:02:27]: elements
+Pablo [1:02:28]: by
+Pablo [1:02:29]: each
+Pablo [1:02:30]: of the
+Pablo [1:02:34]: ele
+Pablo [1:02:35]: ments
+Pablo [1:02:38]: have been
+Pablo [1:02:38]: active
+Pablo [1:02:40]: you can
+Pablo [1:02:41]: also find
+Pablo [1:02:42]: different
+Pablo [1:02:43]: type as before
+Pablo [1:02:44]: just
+Pablo [1:02:46]: some
+Pablo [1:02:46]: input
+Pablo [1:02:47]: text
+Pablo [1:02:48]: you can see
+Pablo [1:02:49]: it contains
+Pablo [1:02:50]: ae acceleration
+Pablo [1:02:53]: basically won't be
+Pablo [1:02:53]: solved
+Pablo [1:02:54]: here
+Pablo [1:02:55]: ab
+Pablo [1:02:56]: test control
+Pablo [1:02:57]: test variation
+Pablo [1:03:15]: but what is maybe more interesting is if you have for example
+Pablo [1:03:18]: want to submit like a form
+Pablo [1:03:30]: this would be a selenium test phase so we have excessive we don't have to think about rate limits but here we have like a test on maybe one to enter first name a surname
+Pablo [1:03:39]: pick a gender from a list then we want to click on our favorite color
+Pablo [1:03:41]: add some other stuff
+Pablo [1:03:45]: select something and then click on nothing
+Pablo [1:03:49]: so like we can all like select all these things and this is
+Pablo [1:03:51]: pract
+Pablo [1:03:51]: ice
+Pablo [1:03:52]: so let's
+Pablo [1:03:52]: check for example
+Pablo [1:03:59]: dispute
+Pablo [1:04:01]: out of the
+Pablo [1:04:02]: ip of
+Pablo [1:04:03]: blue
+Pablo [1:04:10]: yes bruce i'm just trying to access the element
+Pablo [1:04:13]: by its id called first name
+Pablo [1:04:18]: and then
+Pablo [1:04:18]: we also
+Pablo [1:04:20]: now
+Pablo [1:04:21]: under
+Pablo [1:04:28]: that i cannot
+Pablo [1:04:28]: see
+Pablo [1:04:29]: the
+Pablo [1:04:30]: obvious way to know
+Pablo [1:04:31]: that
+Pablo [1:04:32]: i am like that in
+Pablo [1:04:34]: my rock like a bot not a human
+Pablo [1:04:35]: i
+Pablo [1:04:39]: to some part of the windows that i cannot see
+Pablo [1:04:47]: and this is what we are doing now we open the page maximize it and we scroll down and then we add to the word
+Pablo [1:04:48]: a
+Pablo [1:04:50]: so
+Pablo [1:04:52]: let's
+Pablo [1:04:53]: first
+Pablo [1:05:00]: said i want to scroll down
+Pablo [1:05:04]: then we have
+Pablo [1:05:07]: the edges first name here that
+Pablo [1:05:09]: i waited
+Pablo [1:05:10]: for two seconds
+Pablo [1:05:16]: not like immediately click on the peel type i mean two seconds is maybe too much
+Pablo [1:05:17]: but
+Pablo [1:05:17]: no
+Pablo [1:05:19]: added like the
+Pablo [1:05:20]: key a
+Pablo [1:05:23]: always use
+Pablo [1:05:25]: send abundance for the keys
+Pablo [1:05:28]: sometimes you want to submit about
+Pablo [1:05:32]: what you want to do other things the second part
+Pablo [1:05:34]: would be
+Pablo [1:05:39]: now we're not using the ip
+Pablo [1:05:40]: button d which is
+Pablo [1:05:42]: called color with drawing down
+Pablo [1:05:46]: hundred pixels
+Pablo [1:05:47]: and then
+Pablo [1:05:48]: on the
+Pablo [1:05:51]: but i think
+Pablo [1:05:54]: should choose first
+Pablo [1:05:55]: one
+Pablo [1:06:03]: let me just check each here
+Pablo [1:06:32]: so
+Pablo [1:06:33]: for example
+Pablo [1:06:46]: in part
+Pablo [1:07:13]: and
+Pablo [1:07:15]: the things
+Pablo [1:07:16]: that you can imagine
+Pablo [1:07:16]: you can add
+Pablo [1:07:22]: an element by the x path css selector tag name class name
+Pablo [1:07:23]: id and so on
+Pablo [1:07:24]: whatever is
+Pablo [1:07:25]: called
+Pablo [1:07:25]: please
+Pablo [1:07:26]: always practice
+Pablo [1:07:28]: the idea
+Pablo [1:07:30]: things that have no ide
+Pablo [1:07:31]: a
+Pablo [1:07:39]: your ele
+Pablo [1:07:39]: ment
+Pablo [1:07:41]: are
+Pablo [1:07:42]: there any questions
+Pablo [1:07:42]: so far
+Pablo [1:07:47]: how does a website know
+Pablo [1:07:48]: that
+Pablo [1:07:54]: how does it know that you have like
+Pablo [1:08:02]: scroll down so that don't help yourself as a bot lane how does a website know
+Pablo [1:08:06]: why
+Pablo [1:08:08]: there is
+Pablo [1:08:10]: involved in some sense
+Pablo [1:08:10]: this is basically
+Pablo [1:08:12]: because
+Pablo [1:08:13]: we actually
+Pablo [1:08:14]: hope the
+Pablo [1:08:15]: involvement
+Pablo [1:08:16]: standing in the head
+Pablo [1:08:17]: or in the handle
+Pablo [1:08:18]: there are a lot of information
+Pablo [1:08:27]: but if
+Pablo [1:08:28]: you are opening
+Pablo [1:08:31]: your sen
+Pablo [1:08:32]: der if you have
+Pablo [1:08:34]: any
+Pablo [1:08:36]: space
+Pablo [1:08:37]: that is telling you
+Pablo [1:08:38]: what kind of
+Pablo [1:08:39]: problem you
+Pablo [1:08:40]: are using
+Pablo [1:08:41]: what
+Pablo [1:08:42]: is that screen
+Pablo [1:08:42]: size
+Pablo [1:08:43]: and
+Pablo [1:08:49]: all that other stuff so in this sense this is why the browser sometimes works where request is not working
+Pablo [1:08:52]: because it's really sending all that stuff
+Pablo [1:08:54]: as you would actually open the brow
+Pablo [1:09:05]: ser but the second thing is i mean how about strolling for example right like a different task and it minus this
+Pablo [1:09:17]: but this was installed at the beginning this echo driver and the road driver because this is really a software that was made great tech this and you can just provide
+Pablo [1:09:18]: pipe common
+Pablo [1:09:21]: and it does safely without
+Pablo [1:09:24]: taking control over your operating system
+Pablo [1:09:31]: doing the same thing within the browser so it's not actually moving your mouse or like using other things
+Pablo [1:09:35]: scrolling down but it's sending a command browser
+Pablo [1:09:38]: it would be the same from other speaking
+Pablo [1:09:47]: really use that normal process but why you have to install exactly like this game trying to model that stuff
+Pablo [1:09:56]: you have two different monitors and different sizes maybe note it shows up on one piece together
+Pablo [1:09:59]: like they would be able to guess
+Pablo [1:10:10]: based on the information they have about so if i access your web page yada grant u access my web page on university vienna
+Pablo [1:10:21]: if there won't be or whatever if there is some code you can always read my screen size and if the tire will access your page with two different screen sizes
+Pablo [1:10:32]: how do you like which one is which you could use so you know and this is one of the reasons why for example if you using selenium
+Pablo [1:10:38]: typically you should not use the standard window size because it's the first name for a web page
+Pablo [1:10:47]: that you are using a bot if you're using a standard screen is like six hundred times eight hundred something like this no
+Pablo [1:10:48]: way
+Pablo [1:10:50]: nowadays
+Pablo [1:10:51]: six hundred
+Pablo [1:10:52]: most
+Pablo [1:10:53]: valuable
+Pablo [1:11:14]: and
+Pablo [1:11:15]: we see that
+Pablo [1:11:16]: storing now and
+Pablo [1:11:18]: one
+Pablo [1:11:19]: second
+Pablo [1:11:21]: one
+Pablo [1:11:22]: and for the second
+Pablo [1:11:22]: one
+Pablo [1:11:27]: more
+Pablo [1:11:28]: things than
+Pablo [1:11:29]: one percent
+Pablo [1:11:30]: by the end of
+Pablo [1:11:31]: the
+Pablo [1:11:32]: one hundred of the meter
+Pablo [1:11:33]: per second
+Pablo [1:11:34]: like
+Pablo [1:12:11]: this
+Pablo [1:12:12]: one to access
+Pablo [1:12:13]: all the things
+Pablo [1:12:15]: and
+Pablo [1:12:16]: then so
+Pablo [1:12:19]: create all this update
+Pablo [1:12:20]: and
+Pablo [1:12:23]: we are doing basically a similar thing here
+Pablo [1:12:29]: we have like statistics for ph we're trying to find all the x elements
+Pablo [1:12:32]: of the very
+Pablo [1:12:37]: oh this is not the links this is now the images
+Pablo [1:12:42]: a little bit too we want to access
+Pablo [1:12:54]: like an image with a specific id and then we want to access like where it is and i think this must be the main image
+Pablo [1:12:56]: of using data statist
+Pablo [1:13:02]: ics just check so i think i'm interested in this main big picture
+Pablo [1:13:03]: from
+Pablo [1:13:05]: yes
+Pablo [1:13:07]: so
+Pablo [1:13:12]: image side
+Pablo [1:13:16]: oh no there is like an id block hd welcome and so on
+Pablo [1:13:17]: this point
+Pablo [1:13:24]: it's like the whole element has an id and then you just find out
+Pablo [1:13:27]: beautiful picture from
+Pablo [1:13:28]: pete
+Pablo [1:13:33]: opening it trying to assess the source
+Pablo [1:13:37]: yes
+Pablo [1:13:41]: so we could also just click on this
+Pablo [1:13:49]: here and see so you cannot see maybe from the last row so if you are like looking very close here you can see it says p
+Pablo [1:13:51]: i guess
+Pablo [1:14:00]: it's fourth of september very hard to read twenty one ninety four five year old picture drawn from pete
+Pablo [1:14:04]: so jesus
+Pablo [1:14:05]: you can get
+Pablo [1:14:08]: what we did the success
+Pablo [1:14:09]: listening here so if you want to
+Pablo [1:14:10]: download the picture
+Pablo [1:14:17]: you can also get some text
+Pablo [1:14:21]: or now try to find
+Pablo [1:14:22]: all the anchors
+Pablo [1:14:24]: if this was the one
+Pablo [1:14:28]: let's go back
+Pablo [1:14:30]: here
+Pablo [1:14:31]: is
+Pablo [1:14:33]: and
+Pablo [1:14:34]: then
+Pablo [1:14:35]: excess
+Pablo [1:14:39]: and then we are trying to access all the anchors
+Pablo [1:14:41]: and for all the anchors
+Pablo [1:14:51]: if there is some text contained in the anchor that we are also trying to access
+Pablo [1:14:54]: and we end up with the pollen very useful information
+Pablo [1:14:59]: there is like skip to main content this is what we can see on the page
+Pablo [1:15:03]: and if you would click on this to make content
+Pablo [1:15:07]: like go to this
+Pablo [1:15:20]: home about forces ends on how to apply and we now see like all the child web pages of uc davis just as a warning eco trying to access
+Pablo [1:15:33]: send
+Pablo [1:15:33]: emails
+Pablo [1:15:36]: to your
+Pablo [1:15:36]: web page
+Pablo [1:15:39]: so be very careful
+Pablo [1:15:41]: with
+Pablo [1:15:46]: access very quick
+Pablo [1:15:48]: ly but still you can see
+Pablo [1:15:54]: also link to the upcoming two hundred ninety seminar aaron smith
+Pablo [1:15:56]: and
+Pablo [1:15:57]: so on
+Pablo [1:16:07]: yes
+Pablo [1:16:08]: you can
+Pablo [1:16:10]: loc
+Pablo [1:16:11]: ations other information
+Pablo [1:16:17]: just
+Pablo [1:16:18]: on
+Pablo [1:16:19]: the documentation
+Pablo [1:16:20]: and
+Pablo [1:16:21]: then
+Pablo [1:16:24]: of nature
+Pablo [1:16:30]: it's
+Pablo [1:16:31]: very wide
+Pablo [1:16:32]: monopoly
+Pablo [1:16:35]: high it's like the long picture of pete scully
+Pablo [1:16:40]: and you can do all that stuff scrolling public writing text
+Pablo [1:16:50]: you can execute a script this was like scrolling down
+Pablo [1:16:53]: you can send keys
+Pablo [1:16:54]: we have c space basically
+Pablo [1:16:58]: right but you can also do is you can clear field so
+Pablo [1:17:04]: if you just added the text a squared field and then if you want to remove everything
+Pablo [1:17:11]: you can just click on element clear then it's like move then you can set a new key
+Pablo [1:17:16]: so we open this window
+Pablo [1:17:48]: so
+Pablo [1:17:49]: now you can see the
+Pablo [1:17:50]: edges now
+Pablo [1:17:51]: we're recording everything
+Pablo [1:17:55]: and
+Pablo [1:17:56]: then we click on this
+Pablo [1:18:00]: we
+Pablo [1:18:01]: are finding buttons
+Pablo [1:18:04]: press
+Pablo [1:18:04]: submit
+Pablo [1:18:05]: go
+Pablo [1:18:06]: spine
+Pablo [1:18:08]: and
+Pablo [1:18:11]: this
+Pablo [1:18:12]: was
+Pablo [1:18:18]: maybe this is also interesting sometimes you have
+Pablo [1:18:20]: to
+Pablo [1:18:21]: say
+Pablo [1:18:22]: options
+Pablo [1:18:24]: and then how you can
+Pablo [1:18:25]: do this person click
+Pablo [1:18:27]: on
+Pablo [1:18:30]: like you click on this field here then it opens
+Pablo [1:18:40]: and then you try after you click on this element now you can find these three elements and values was like my business and i click on it
+Pablo [1:18:46]: and then it's selected so basically you can also do this select click
+Pablo [1:18:48]: from the list
+Pablo [1:18:50]: and same
+Pablo [1:18:53]: pose true for this kind of this you can also click on elements
+Pablo [1:18:56]: check whether something is selected
+Pablo [1:19:01]: so you can have a bunch of interesting things
+Pablo [1:19:06]: whenever you have new thing i did not present
+Pablo [1:19:06]: so far
+Pablo [1:19:07]: goog
+Pablo [1:19:13]: le it or ai nowadays maybe or see the documentation
+Pablo [1:19:14]: you can really do a lot of
+Pablo [1:19:16]: things and the only thing
+Pablo [1:19:17]: i have about
+Pablo [1:19:18]: there's one
+Pablo [1:19:19]: bad way that
+Pablo [1:19:20]: you solve it
+Pablo [1:19:21]: and this
+Pablo [1:19:22]: is
+Pablo [1:19:24]: basically
+Pablo [1:19:25]: whatever
+Pablo [1:19:27]: one second
+Pablo [1:19:29]: at that
+Pablo [1:19:29]: moment
+Pablo [1:19:34]: a human user sometimes you don't have to
+Pablo [1:19:37]: wait very long and something if you know the web
+Pablo [1:19:37]: page
+Pablo [1:19:39]: then what i would
+Pablo [1:19:40]: do
+Pablo [1:19:42]: the value of the wait for five seconds
+Pablo [1:19:44]: until this h
+Pablo [1:19:45]: as
+Pablo [1:19:46]: five second
+Pablo [1:19:46]: s
+Pablo [1:19:49]: here we go
+Pablo [1:19:50]: nineteen days ask not
+Pablo [1:19:51]: after five seconds
+Pablo [1:19:52]: everything should
+Pablo [1:19:53]: have
+Pablo [1:19:56]: and
+Pablo [1:19:56]: there is
+Pablo [1:19:57]: a developing
+Pablo [1:20:01]: issue
+Pablo [1:20:19]: with
+Pablo [1:20:21]: and
+Pablo [1:20:22]: then of
+Pablo [1:20:23]: many but something to know
+Pablo [1:20:24]: you have to train up
+Pablo [1:20:27]: and you concede of the web page
+Pablo [1:20:29]: and
+Pablo [1:20:33]: i mean of course you can very quick which is explicit weight then you have problem
+Pablo [1:20:35]: that you are sending to many
+Pablo [1:20:35]: requests
+Pablo [1:20:38]: but for one moment
+Pablo [1:20:40]: just let me tell you how we can do this
+Pablo [1:20:42]: either going back
+Pablo [1:20:44]: as review web page
+Pablo [1:20:45]: this is
+Pablo [1:20:46]: an explicit
+Pablo [1:20:47]: way to open
+Pablo [1:20:49]: ing a web page and waiting for
+Pablo [1:20:53]: you
+Pablo [1:21:00]: and
+Pablo [1:21:01]: then
+Pablo [1:21:04]: three
+Pablo [1:21:05]: numbers on the
+Pablo [1:21:07]: patient
+Pablo [1:21:12]: dav
+Pablo [1:21:13]: is
+Pablo [1:21:22]: so
+Pablo [1:21:22]: we all
+Pablo [1:21:23]: never
+Pablo [1:21:26]: then we look
+Pablo [1:21:27]: at a field
+Pablo [1:21:28]: called ask
+Pablo [1:21:33]: header and basically it contains the location that contains
+Pablo [1:21:34]: x i think you are
+Pablo [1:21:37]: just
+Pablo [1:21:40]: a
+Pablo [1:21:41]: feeling like
+Pablo [1:21:42]: location
+Pablo [1:21:47]: i'm sending the
+Pablo [1:21:48]: keys and then
+Pablo [1:21:51]: this is
+Pablo [1:21:52]: like
+Pablo [1:21:53]: going practice
+Pablo [1:21:54]: so
+Pablo [1:21:55]: basically i
+Pablo [1:21:58]: weight like a maximum hand section
+Pablo [1:22:03]: i do the following i'm trying to access the new error
+Pablo [1:22:15]: and see whether it's still new york or what it state is as long as it is biggest as long as it is just waiting and inside at the moment what it has changed
+Pablo [1:22:17]: to the new
+Pablo [1:22:20]: babies i know all the new information
+Pablo [1:22:24]: loaded successfully and i stop waiting
+Pablo [1:22:25]: here
+Pablo [1:22:31]: so basically i'm opening up
+Pablo [1:22:34]: and here was new york city
+Pablo [1:22:35]: and right now
+Pablo [1:22:39]: that age loaded successfully and now i'm just creating
+Pablo [1:22:45]: there's no driver
+Pablo [1:22:46]: but
+Pablo [1:22:47]: basically you can
+Pablo [1:22:49]: see
+Pablo [1:22:54]: the old text was visible iss passed over new york city
+Pablo [1:23:06]: and the new x would have been visible ice as passes over various and it's like a better way it's more efficient than you don't have to wait for five seconds
+Pablo [1:23:10]: and
+Pablo [1:23:11]: this
+Pablo [1:23:13]: lect
+Pablo [1:23:14]: ure that's what believe
+Pablo [1:23:14]: it
+Pablo [1:23:16]: interest
+Pablo [1:23:17]: ing
+Pablo [1:23:18]: each other
+Pablo [1:23:20]: thank you so much

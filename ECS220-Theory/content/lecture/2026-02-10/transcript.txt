@@ -1,0 +1,1224 @@
+Pablo [0:14]: formal
+Pablo [0:15]: ize
+Pablo [0:18]: the more general notion of production
+Pablo [0:21]: so if you talk about manual automatic introduct
+Pablo [0:21]: ions
+Pablo [0:26]: where the way you call a subroutine for one problem to solve another
+Pablo [0:29]: is you do a bunch of work
+Pablo [0:41]: to produce an instance of that of a problem you feed it to the designer and you just give back the same hand that's one way you can call it subroutine it's the last thing you call and you return whatever it says
+Pablo [0:44]: but you can imagine doing other stuff you can imagine
+Pablo [0:46]: negating the end
+Pablo [0:58]: you can imagine calling at multiple problems that's all oracles do they just formalize hey the oracle is a stand in for this hypothetical subroutine
+Pablo [1:03]: for this other problem and we can talk about
+Pablo [1:16]: what you can do if you had access to it even if we suspect as we do that for the kinds of problems we substitute in there the np complete ones that there is in fact no efficient algorithm for it
+Pablo [1:17]: but we say well what if there was
+Pablo [1:21]: we model that with this oracle that takes one step to answer the problem
+Pablo [1:43]: and then we just so one way to think about it is just put any subroutine you want in including say if it's an np problem the exponential time brute force search algorithm but then you just don't count the timing steps spent in that subroutine you only count the extra steps how much extra work do you have to do beyond these costs of the sub
+Pablo [1:49]: and we talked a bit about this sort of structural complexity theory last time
+Pablo [2:00]: p to the end p is the same thing as p to the sat if you have access to a sat oracle showed it kind of lies somewhere between the first two levels of the colonial hierarchy
+Pablo [2:22]: but we're not going to dwell too much on that the main reason we're bringing up these oracles is to get to this next sort of barrier result which says essentially if you look at the proof of the time hierarchy there fundamentally a simulation result well we're going to construct this problem
+Pablo [2:27]: that's decidable in some amount of time but not a little bit less
+Pablo [2:30]: and the way we do it
+Pablo [2:37]: is essentially by defining a problem whose answer is based on what those faster running programs do
+Pablo [2:41]: basically you say the problem was artificial
+Pablo [2:54]: but this predict probably defined was basically you pick apart what it was doing with the time battle we gave it it was predicting what t time bounded programs would do
+Pablo [3:00]: and then we constructed a problem that would just do the opposite of them on at least one instance
+Pablo [3:11]: and if you have a problem that gives a different answer than everything solvable in time t then that problem cannot be solvable in time t that was the diagonalization
+Pablo [3:17]: but it worked by simulating these slightly master programs
+Pablo [3:27]: and gave us this lower bound it gave us this problem that's solvable in a little bit more than tea time but not tee time so it cannot be solved by any time g program that's the lower
+Pablo [3:37]: back so if we would hope to separate p from mv we need a lower bound we need their sum say md complete really we just need to argue it for any np problem
+Pablo [3:43]: but since it's the unequal ones but we suspect actually are not in p that's what you focus
+Pablo [3:44]: attention on
+Pablo [3:47]: and you need to show a similar thing that particular problem
+Pablo [3:59]: cannot be solved by any n squared time program or any mq time program or any of the fourth time program so it's a similar time lower bound we need
+Pablo [4:10]: and one might hope you could do some fancier diagonalization somehow maybe construct some artificial np problem like we did in the time hierarchy
+Pablo [4:16]: theorem and maybe it wouldn't be natural it wouldn't be sad or hamiltonian path
+Pablo [4:22]: but if it's an mp and you can show it's not solid with polynomial time that separates heat from it
+Pablo [4:24]: so you might hope to be able to do something
+Pablo [4:24]: similar
+Pablo [4:35]: only now the goal would be unlike in the time hierarchy theorem where our only goal is to make sure that problem even though it's not solvable say in polynomial time it was solvable with a little bit more
+Pablo [4:40]: we showed how well with a little bit more than polynomial time you could solve that problem
+Pablo [4:44]: the polynomial climate
+Pablo [4:51]: machine for the fire so now we're going to argue that actually no such argument could possibly separate
+Pablo [4:53]: these sort of simple simulation arguments
+Pablo [4:56]: will not separate them why is that well
+Pablo [5:01]: because basically any simulation argument that looks like what we used proved the time hierarchy
+Pablo [5:06]: there are what we call relative meaning
+Pablo [5:12]: whatever statement you're trying to prove in this case we're trying to prove there's a problem solvable in time
+Pablo [5:19]: t one but not t two where t two is a little bit smaller than t one
+Pablo [5:27]: those arguments go through even
+Pablo [5:32]: if you hook up the same oracle to every computational device you're talking about
+Pablo [5:38]: in some sense
+Pablo [5:44]: what we proved when we said well there's a problem solvable in time
+Pablo [5:47]: t one or i guess
+Pablo [5:51]: formally we've raised it
+Pablo [5:53]: like
+Pablo [5:58]: if t one is little o of t two
+Pablo [6:01]: then time
+Pablo [6:08]: and again for turing machines you need a stronger separation than this i'm going to phrase it the simpler way
+Pablo [6:11]: that works with random access kind of machines
+Pablo [6:15]: that time of t one is a strict subset
+Pablo [6:19]: of time
+Pablo [6:32]: of t two in other words subset relationship always holds if t one but if t two grows strictly faster and you have an appropriate model of computation notary machine
+Pablo [6:44]: but random access machines that only have a constant factor of simulation overhead then there are problems here that are not here this is strictly bigger in other words you can solve things with this much time
+Pablo [6:47]: but not this much time well it turns out
+Pablo [6:51]: if i pick any oracle a any decision problem
+Pablo [6:54]: that i give oracle access to
+Pablo [7:02]: this still holds right so we didn't define this formally but you could define time to the a of t one
+Pablo [7:04]: this means problem solvable in time t one
+Pablo [7:08]: if you have at oracle access today right
+Pablo [7:13]: so that's a perfectly well defined glass
+Pablo [7:15]: and it turns out that proof technique would go through
+Pablo [7:27]: if one of the kinds of instructions that is available to these programs is tall and oracle for a and then do something based on the boolean result
+Pablo [7:32]: the whole time hierarchy there improved goes through right
+Pablo [7:34]: there's nothing there that would go wrong
+Pablo [7:43]: if one of the kinds of instruction that the simulating machine has to deal with is oracle pulse to a because the simulating machine also has oracle
+Pablo [7:44]: access it
+Pablo [8:01]: so we say groups like that relative wise right and all the proofs we've seen so far happens properly so anything related to these complexity will improve p is a subset of np when we prove delta t is a subset of x and again these are all simulation
+Pablo [8:05]: well simulation arguments or just run a program type of course
+Pablo [8:14]: how do we prove np as an x we showed o np's defined by happiness verifier there's only exponentially many witnesses it could be the second argument
+Pablo [8:20]: you iterate over all of them and ask the verifier and you just see do any of them cause it to say yes
+Pablo [8:39]: again if your np verifier can call this subroutine for a the oracle access to a and so does your exponential time program then whenever you're running that np verifier whenever it makes an oracle call to a your exponential time program can do the same thing
+Pablo [8:48]: because you also have that because you also have access to the same oracle in other words that argument also showed
+Pablo [8:49]: that
+Pablo [9:00]: mp to the a is the subset of x in other words the verifiers that we needed to run in order to look for the witness
+Pablo [9:12]: if those could call it an oracle for a but then we want to simulate them deterministically we but we also have access to a we just you know call the oracle whenever the machine the verifier were running
+Pablo [9:18]: right so if we're all oracle's a like all these relationships we've proven both
+Pablo [9:45]: time to the a of g is a subset of time to the a of t if g is big o of t the strict subset of g is a little o of t contained at np contained an x p properly contained an x those all hold relative to an arbitrary oracle so you hook up all the machines that define these classes for the same oracle a these groups still go through
+Pablo [9:50]: we have that
+Pablo [9:59]: the problem complete with a complexity class mp to the a is also a p to the a that would mean p and m p to the nar to set
+Pablo [10:02]: right but what's an mp to the a complete problem
+Pablo [10:10]: one example would be satisfiability where one of the types of gates you allow and you're
+Pablo [10:11]: sort of
+Pablo [10:13]: this wonderful game so these are the
+Pablo [10:14]: eight
+Pablo [10:15]: arbitrary
+Pablo [10:16]: band
+Pablo [10:17]: you get some mips
+Pablo [10:19]: on the inputs of that gate
+Pablo [10:20]: and the output
+Pablo [10:20]: that come back
+Pablo [10:21]: tells you whether the in
+Pablo [10:22]: put was in it
+Pablo [10:23]: well
+Pablo [10:24]: defined
+Pablo [10:25]: mathematical
+Pablo [10:27]: object is a generalization
+Pablo [10:27]: of surveys
+Pablo [10:29]: and
+Pablo [10:31]: the satisfiability
+Pablo [10:32]: turned baptism
+Pablo [10:36]: so
+Pablo [10:37]: now we're going to see
+Pablo [10:38]: despite
+Pablo [10:40]: characteristics
+Pablo [10:41]: adorable
+Pablo [10:42]: reason
+Pablo [10:45]: i was at no
+Pablo [10:46]: groupers on any
+Pablo [10:47]: of the same question
+Pablo [10:48]: s in
+Pablo [10:49]: a way
+Pablo [10:53]: whatever
+Pablo [10:54]: argument you may be got
+Pablo [10:56]: that separates the humanity
+Pablo [11:02]: we didn't
+Pablo [11:03]: run anymore
+Pablo [11:05]: whatever argument you think you have
+Pablo [11:06]: whatever
+Pablo [11:08]: part of it
+Pablo [11:08]: you're making
+Pablo [11:09]: on various algorithms
+Pablo [11:10]: and programs
+Pablo [11:11]: that are being run
+Pablo [11:12]: and that proof
+Pablo [11:13]: that
+Pablo [11:14]: proof has been available
+Pablo [11:16]: if
+Pablo [11:17]: you would substitute
+Pablo [11:18]: or
+Pablo [11:19]: acle programs
+Pablo [11:20]: for those
+Pablo [11:20]: programs
+Pablo [11:22]: you got some arg
+Pablo [11:23]: ument you think
+Pablo [11:24]: says no
+Pablo [11:25]: program
+Pablo [11:29]: well
+Pablo [11:30]: that argument
+Pablo [11:31]: fail
+Pablo [11:33]: if instead of
+Pablo [11:34]: polynomial program
+Pablo [11:39]: and
+Pablo [11:40]: if you look through your
+Pablo [11:42]: roof and you don't see any stuff
+Pablo [11:43]: that would come apart
+Pablo [11:47]: is
+Pablo [11:49]: then
+Pablo [11:50]: i can just reject
+Pablo [11:51]: your group by hand
+Pablo [11:52]: there's no way that
+Pablo [11:56]: is because
+Pablo [11:57]: there are orals
+Pablo [11:58]: that may be answerable
+Pablo [11:59]: there's
+Pablo [12:00]: rk
+Pablo [12:01]: to be enable
+Pablo [12:02]: d
+Pablo [12:10]: that when you make the query
+Pablo [12:12]: the answer
+Pablo [12:13]: you get back is
+Pablo [12:13]: dependent on which
+Pablo [12:17]: other
+Pablo [12:18]: word means that p to
+Pablo [12:20]: b is not equal to
+Pablo [12:23]: any
+Pablo [12:24]: argument resolves this question
+Pablo [12:28]: in either direction what are these oracles
+Pablo [12:29]: is going to
+Pablo [12:30]: break that proof
+Pablo [12:31]: if you can hook it up
+Pablo [12:39]: so that's the sort of significance of these oracle arguments
+Pablo [12:42]: and now
+Pablo [12:43]: we'll go through and we'll talk about
+Pablo [12:45]: how do you make these words
+Pablo [12:49]: okay
+Pablo [12:54]: the sort of canonical way to show the first one
+Pablo [12:58]: so it turns out the more challenging one is going to be the second one
+Pablo [13:04]: but let's stop and think which one of these is in some sense more important or relevant
+Pablo [13:14]: well we think p is not empty we think p is not so we think if anybody's ever going to resolve this question with a proof they're going to do it by proving p is not equal to m
+Pablo [13:20]: so the point is that argument that doesn't relativize that would break if you hooked up an oracle to it
+Pablo [13:22]: the one that's going to break it
+Pablo [13:24]: is going to be
+Pablo [13:25]: a
+Pablo [13:30]: right because a would contradict that proves supposedly separates p from md
+Pablo [13:37]: but breaks down when you hook up an oracle this a is going to be the one that breaks it down so in some sense the more relevant one here is a and it's also the easier
+Pablo [13:39]: we will do both of them
+Pablo [13:54]: but that's just where kind of observed amen given what we believe is probably true it's only the first part of this statement that you need to show no proof separating p from m and d can relative eyes because that would contradict the oracle that does the opposite that
+Pablo [13:55]: makes an equal
+Pablo [13:57]: that says they're not separate
+Pablo [14:07]: and the canonical way to do this is just to say let a be a p space complete problem and if you understand p space and pspace completeness
+Pablo [14:15]: and you internalize some of the consequences of that it's like a three line proof but we haven't talked about p space we're going to do that in the last chapter
+Pablo [14:19]: and even if we haven't yet internalized a lot of the
+Pablo [14:20]: quick fads
+Pablo [14:22]: so we're going to avoid
+Pablo [14:33]: p space it turns out what we're going to do is a is going to be a problem complete for x i may mention that at some point in the proof but you don't really need to know that to understand the proof
+Pablo [14:39]: but essentially any x complete problem would work as well
+Pablo [14:49]: and if you've really wrapped your head around the consequences of x completeness it would be also a three line root but i'm not going to trust
+Pablo [14:56]: we've only just introduced some of these concepts so we'll kind of unpack some of the reasons here's going to be the problem
+Pablo [15:06]: we'll call it predict and it's very much like that predict some t we studied last week that was parameterized by a time bound this one is not this one
+Pablo [15:10]: the running time that we allow for it is an actual input
+Pablo [15:13]: the other one it was just sort of a hard coded time
+Pablo [15:18]: and that problem only took two inputs the program keyword and input x this one takes three
+Pablo [15:22]: and the third argument represents a number of steps we're going to run the program
+Pablo [15:29]: but the question we ask is the same one as in predict sub t the one that we use to show the time hier
+Pablo [15:29]: archy
+Pablo [15:38]: which is given this program q and this input x does q n equal to x except now put yes n doesn't do it within t sets
+Pablo [15:54]: notice we're not writing t of length of x here because t is no longer a function like it was in that parameterized version t is just an individual name you would tailor t if you're programmed for example with an nq time program
+Pablo [15:56]: for this to be a meaningful question
+Pablo [16:01]: when you give input x you would want to specify t to be the length of x cubed
+Pablo [16:10]: so that you're giving a time bound that's enough time for qdol but the problem itself doesn't require that
+Pablo [16:16]: to pulp on input x and that amount of time because ash well if it does what answer does it give
+Pablo [16:19]: and if it doesn't hold in that amount of time you save
+Pablo [16:25]: so there's the oracle and the claim is that oracle a
+Pablo [16:26]: makes p and np equal
+Pablo [16:28]: in other words
+Pablo [16:30]: if you
+Pablo [16:49]: have oracle access to this program then anything that can be solved by a non deterministic a oracle polynomial by machine can also be solved by the terminus a oracle
+Pablo [16:50]: polynomial
+Pablo [16:58]: okay so how are we going to prove that well we're going to involve x as sort of an intermediate we're actually going to show that
+Pablo [17:01]: for this problem a both p to the a and np are just equal to x
+Pablo [17:02]: that's why they're going to be equal to each other
+Pablo [17:08]: so let e be a problem in x e is decidable and exponential
+Pablo [17:20]: number so what does it mean we decide well n program called q sub e it runs in time two to the end of c for some constant c and it answers whether strings are in e or in that amount
+Pablo [17:22]: okay
+Pablo [17:29]: so the first claim is that let's say i want i got an input x and i want to know is it an e or not
+Pablo [17:35]: and i've got access to this a what query can i make to a
+Pablo [17:40]: makes takes three of what's here q x and mt
+Pablo [17:44]: and it is going to matter we represent a t and binary
+Pablo [17:53]: this would barely be p completed with representative because we represented it in binary it's going to be for x again
+Pablo [18:02]: not so you don't have to understand that fact to understand this truth it's kind of the other way once you understand the proof it'll be kind of implicit in there oh this thing was
+Pablo [18:05]: not really relevant what israel isn't right now
+Pablo [18:06]: is that
+Pablo [18:10]: essentially the x complete this is why we do this
+Pablo [18:13]: but the claim is if you had access to that predict problem
+Pablo [18:16]: and you wanted to know
+Pablo [18:30]: hey z and e and e is decided by this program qe that runs in time two to the end of the c what query can we make to a to predict that will tell us whether x is what three is must we
+Pablo [18:31]: get
+Pablo [18:41]: so the first one we need some program
+Pablo [18:43]: to give to it
+Pablo [18:44]: well there's an obvious one
+Pablo [18:47]: qe
+Pablo [18:52]: so we're qe to sign z so hopefully knowing what qe is going to do will tell us what
+Pablo [18:55]: the second argument
+Pablo [19:00]: also pretty obviously we want to know the xqe again accept
+Pablo [19:04]: ance so we get x in our what do we give as the third arm what integer
+Pablo [19:05]: do we get
+Pablo [19:14]: related to c not quite c two
+Pablo [19:23]: just two to the length of x's so if n is the length of x here we want to get
+Pablo [19:28]: the number of steps that qe would take or at least an upper bound on it
+Pablo [19:30]: if you ran it with input x
+Pablo [19:32]: so that the answer
+Pablo [19:37]: to this question is the same as the answer those qx output yes
+Pablo [19:38]: period
+Pablo [19:43]: as long as that last time bound is at least the number of steps
+Pablo [19:52]: q e is going to take on input x then that means the answer to this question is the same answer as the question wall this qe except x at all
+Pablo [19:54]: because it makes sense
+Pablo [19:56]: two to the length of x
+Pablo [19:57]: to the
+Pablo [20:05]: and notice that okay that's a pretty big integer two to the length of x to the c but we're represented in binary
+Pablo [20:10]: so to write that it's a pretty simple integer it's a power of two
+Pablo [20:15]: so just one followed by length of x to the c zero right so it's a pretty simple integer
+Pablo [20:16]: to write down in bind
+Pablo [20:24]: you can do that you're literally just writing one and then length of x to the c zero that obviously takes time like the next to the c
+Pablo [20:29]: so you can make that query and notice you can write down that query in polynomial
+Pablo [20:30]: nine
+Pablo [20:40]: because the bulk of writing mountain choir is writing down that number of steps and yeah it's a big number but we're representing binary so we need only polynomial time
+Pablo [20:41]: to write
+Pablo [20:45]: so because we can do that and because
+Pablo [20:57]: that query takes only a polynomial time to write down and then one step to answer by our definition of the oracle this shows that the program the problem e is in p to the a
+Pablo [21:04]: we have oracle access to a and we get x we want to know is mean we just write down this query
+Pablo [21:16]: it takes the bulk of it is just writing down that binary number one followed by length of x to the c zero s and then just return with the oracle
+Pablo [21:23]: so that means but e was an arbitrary element of x two
+Pablo [21:31]: any problem decidable in exponential time and we just showed it's in p to the a so x is a subset of p to the for this particular
+Pablo [21:39]: and this is the kind of thing where if you would believe me that this problem is x complete
+Pablo [21:47]: well then this line kind of would have been you put in any x complete problem and much the same as when we wrote an np complete problem
+Pablo [21:50]: there were a p to the sat there
+Pablo [22:00]: we had a pretty easy argument that mp is contained in u the same or the access to sap because sat is np complete you can solve anything in np by making queries
+Pablo [22:09]: so it's basically the same argument here because a is complete for x again i'm not proving it's complete for x but if you do that
+Pablo [22:13]: this would be a one line proof and there's the one line
+Pablo [22:19]: everything decidable and exponential time without an oracle
+Pablo [22:22]: is decidable in polynomial time if you have access to that
+Pablo [22:26]: or a third of the way there
+Pablo [22:29]: because we got to show
+Pablo [22:47]: both p to the a and n to the a are equal to x the way we're going to do it is via one of these containments where we show x is a subset of p to the a as a subset of np to the a is a subset of x so we get three and you know if you show three things are subsets of each other a circle like that well then they're all
+Pablo [22:51]: so we're a third of the way through the circle x is a subset of p to
+Pablo [22:55]: now we got to show another
+Pablo [22:57]: so
+Pablo [23:01]: let l be an arbitrary problem in np to the a
+Pablo [23:08]: so what does that mean well it's decided that it's an np to the a it's decidable by some non deterministic program
+Pablo [23:11]: runs in polynomial time
+Pablo [23:15]: o of n to the c o of n to the c time
+Pablo [23:19]: and that program has access to this table
+Pablo [23:21]: let's call that thing q sub zero
+Pablo [23:25]: now
+Pablo [23:27]: it's an oracle program
+Pablo [23:29]: so it sometimes makes queries
+Pablo [23:29]: today
+Pablo [23:34]: but it's a polynomial time program
+Pablo [23:40]: so kind of like flipping around the argument we made up here that we had enough time to write down that time
+Pablo [23:50]: for it to be called o'malial time to write it down here we can say well we're given that this is a polynomial time program it takes time n to the c
+Pablo [23:58]: and so any query it makes it can't spend more than time n to the c writing down the bits of the query
+Pablo [24:00]: and it takes a step for each that it writes down
+Pablo [24:03]: so whatever this t is
+Pablo [24:11]: it can't take more than n to the c bits to represent in binary or this end of the c time program wouldn't have enough time to write it down
+Pablo [24:20]: which means that any query makes the third parameter of the query this number t
+Pablo [24:30]: if it requires less than n to the c fits to write down that means the integer it represents is less than two to that number less than two to the f of
+Pablo [24:30]: c
+Pablo [24:39]: or put another way if we're running and now notice i didn't use the fact ql is determinant is non deterministic
+Pablo [24:42]: whether it's deterministic or not if it makes these queries
+Pablo [24:46]: but it's polynomial time that limits how big the queries can be
+Pablo [25:03]: and so basically any query is only going to be about time bounds that are of most exponential in the size of the input to this program queue
+Pablo [25:03]: up
+Pablo [25:09]: now here's what we can do
+Pablo [25:11]: what
+Pablo [25:14]: we want to do we basically want to argue np to the a is contained in x
+Pablo [25:24]: right so we're going to argue np to the a is contained in x one difference is that x doesn't have an order right this is just regular not x to the a
+Pablo [25:27]: so we got to get rid of the oracle
+Pablo [25:27]: somewhere
+Pablo [25:33]: so what we want to do is replace the queries with some program we can run
+Pablo [25:35]: that would give us the same answer
+Pablo [25:43]: but because we know that
+Pablo [25:53]: the t's we get in the queries are less than two to the n to the c that means every query that this program makes can be replaced by a deterministic subroutine
+Pablo [25:55]: call that just runs q on input y
+Pablo [26:05]: for that many steps i mean that's a hard problem there but it's disciple it's obviously disciple
+Pablo [26:12]: on q x and t just run q and input x for t steps and see what it says right so we can just do that here
+Pablo [26:19]: now we don't need the query anymore we're just running code that answers what the query
+Pablo [26:22]: by just running q on input y for t steps
+Pablo [26:31]: and because t is less than two to the end of c this is going to take at most two to the nc steps so we've traded off
+Pablo [26:34]: we got rid of the oracle but now we're taking more time
+Pablo [26:52]: so if we do this change this is no longer a polynomial time algorithm now we're replacing these queries that take one step with this deterministic subroutine called it simulates q on and y
+Pablo [26:58]: so it's now deterministic but it takes longer it takes
+Pablo [27:01]: less but the key at most exponential
+Pablo [27:03]: we only have to do it for two to the n
+Pablo [27:04]: c steps
+Pablo [27:14]: okay so what do we have now well now we have q is a longer running program now it takes time at most two to the end of the c times a
+Pablo [27:20]: very lazy out there to say well each individual call takes almost as much time
+Pablo [27:28]: how many such calls can there be well the original program was
+Pablo [27:32]: so you can make at most end of the c section right
+Pablo [27:35]: so it's a very lazy bound there
+Pablo [27:41]: but in only exponential time this program so we got rid of the oracle
+Pablo [27:57]: but it's still non determinist so there's two things we need to do this sort of show l that we know is an np to the a container x we have to make the program deterministic we just did that or sorry we have to make we have to get rid of the oracle and we have to change the program from being non deterministic to being determinist
+Pablo [28:00]: ic we're halfway there we got rid of the oracle
+Pablo [28:02]: but it's still a non deterministic program
+Pablo [28:04]: there's no oracle
+Pablo [28:10]: but it's still non deterministic but here's the key even though the running time has gone up a lot
+Pablo [28:18]: the number of non deterministic choices that are ever made when we're running it is still at most polynomial
+Pablo [28:37]: because that was all happening outside the oracle balls right the bulk of this new running time was spent running this deterministic subroutine that executes q one in y all the non determinism was in the original polynomial time programs there's still only polynomially many non deterministic bits that this thing generates
+Pablo [28:48]: so the point is we can convert those deterministically again pain of most exponential time so to decide i'll just straight up determine
+Pablo [28:53]: we can just do our standard trait that we use to show it
+Pablo [28:56]: well at the end of the scene
+Pablo [28:58]: i'm part of that success
+Pablo [29:01]: generates each one of which
+Pablo [29:04]: goes down
+Pablo [29:07]: there's only two to the end of the
+Pablo [29:07]: sea choice
+Pablo [29:09]: so we can just iterate
+Pablo [29:10]: over all of those and see
+Pablo [29:11]: what this machine
+Pablo [29:12]: did
+Pablo [29:13]: and again that bumps up
+Pablo [29:14]: running
+Pablo [29:15]: time
+Pablo [29:17]: but we're already getting
+Pablo [29:18]: that central time
+Pablo [29:19]: this just
+Pablo [29:19]: makes the bigger
+Pablo [29:22]: now
+Pablo [29:26]: the original one
+Pablo [29:31]: is the longest branch for a particular choice
+Pablo [29:31]: of individual
+Pablo [29:33]: non deterministic
+Pablo [29:35]: will we iterate
+Pablo [29:35]: over all
+Pablo [29:35]: of them
+Pablo [29:47]: very
+Pablo [29:48]: lately substituting
+Pablo [29:50]: the upper bound and end of the ca
+Pablo [29:51]: plus to the two to the end
+Pablo [29:53]: so
+Pablo [29:54]: this is big
+Pablo [29:54]: old
+Pablo [29:56]: again
+Pablo [30:05]: so
+Pablo [30:06]: we show
+Pablo [30:25]: you
+Pablo [30:26]: ninety
+Pablo [30:27]: eight
+Pablo [30:32]: and
+Pablo [30:33]: also bring a
+Pablo [30:34]: us
+Pablo [30:37]: together
+Pablo [30:38]: and
+Pablo [30:39]: you can
+Pablo [30:41]: just circle the payments
+Pablo [30:43]: all three
+Pablo [31:07]: property
+Pablo [31:08]: that we were using
+Pablo [31:09]: problems
+Pablo [31:10]: that
+Pablo [31:14]: particular
+Pablo [31:15]: concrete one
+Pablo [31:17]: essentially
+Pablo [31:19]: the healing we did
+Pablo [31:20]: here
+Pablo [31:20]: was
+Pablo [31:21]: that
+Pablo [31:23]: because
+Pablo [31:24]: asx complete
+Pablo [31:25]: with lord
+Pablo [31:26]: lacks us to it
+Pablo [31:27]: and
+Pablo [31:28]: we
+Pablo [31:29]: can decide anything
+Pablo [31:39]: and as i said the original paper
+Pablo [31:45]: that
+Pablo [31:46]: you show these days
+Pablo [31:49]: but
+Pablo [31:50]: we have got the space time
+Pablo [32:06]: when you're approving y x is in p to the a y is two to the end of the c actually to the length of x to the c again
+Pablo [32:12]: because we want to know does qe accept x
+Pablo [32:17]: so because this tells us not does qe accept x it tells us doesn't do it
+Pablo [32:19]: in at most t steps
+Pablo [32:24]: we need to get a value of t that's enough time for qe to actually hold
+Pablo [32:35]: for this to be a useful query that actually tells us what is qe do on x we have to get
+Pablo [32:40]: enough steps that it actually holds otherwise if we get a no answer
+Pablo [32:45]: it could mean it could mean q rejects x it could also mean q just didn't hold
+Pablo [32:47]: but
+Pablo [32:58]: if we get a t that's enough time for qe to halt then the answer to the question does qe on x output yes within t steps is just the same as the answer does it output yes
+Pablo [32:58]: here
+Pablo [33:00]: it never takes more than that
+Pablo [33:01]: many steps
+Pablo [33:14]: other
+Pablo [33:14]: questions
+Pablo [33:18]: or did that answer your question yeah yeah
+Pablo [33:33]: okay so this is actually the easier direction i mean it looks complicated but i'm sort of unpacking a lot of the details here but if you spend enough time around completeness
+Pablo [33:36]: the first step becomes pretty easy to spot
+Pablo [33:42]: the last step hopefully already was easy to spot this was the key part that we had to do a bit of work on
+Pablo [33:48]: showing how to convert a non deterministic oracle program
+Pablo [33:51]: with deterministic program and no oracle
+Pablo [33:53]: and we paid the price of going up and running time
+Pablo [33:54]: but only
+Pablo [33:58]: by an exponential so this is the only part where we had to really be creative
+Pablo [34:01]: the first and last part are kind of just
+Pablo [34:03]: slide into
+Pablo [34:09]: okay so the second one we need actually is a little tougher
+Pablo [34:16]: and it's not as needed because we think p is probably not equal to np and so that we don't think is going to contradict the eventual
+Pablo [34:22]: proof that resolves this but it's nice to know that well you need non relativizing techniques
+Pablo [34:23]: even show the article
+Pablo [34:26]: how do you show the non
+Pablo [34:27]: relevant technique
+Pablo [34:28]: s are needed to show
+Pablo [34:29]: too less
+Pablo [34:30]: or equal
+Pablo [34:31]: you call
+Pablo [34:34]: that
+Pablo [34:35]: oracle you contradict
+Pablo [34:36]: any
+Pablo [34:37]: supposed relativ
+Pablo [34:38]: izing
+Pablo [34:39]: so
+Pablo [34:41]: what norm will be separating
+Pablo [34:43]: so
+Pablo [34:44]: if we
+Pablo [34:46]: did
+Pablo [34:47]: the original paper
+Pablo [34:48]: it was kind of
+Pablo [34:48]: complicated
+Pablo [34:50]: i like
+Pablo [34:51]: to text folks way
+Pablo [34:52]: doing it
+Pablo [34:53]: where
+Pablo [34:55]: we're actually going to generate b randomly
+Pablo [34:57]: this is a
+Pablo [34:57]: problem
+Pablo [35:03]: where we're essentially going to generate b randomly and then just show
+Pablo [35:09]: according to the random experiment that we use to generate b there's a positive probability
+Pablo [35:17]: that would that v p is not equal to np and this is the so called probabilistic method which is you just choose some object randomly
+Pablo [35:21]: and you show there's a positive probability it has some property you want
+Pablo [35:28]: and that has the much less ambitious corollary
+Pablo [35:31]: that if there's a positive probability
+Pablo [35:37]: that you generate an object with the properties you want that proves there exists an object with the properties you want
+Pablo [35:39]: but the object can't exist
+Pablo [35:44]: if the object has to exist if there's a positive probability in general
+Pablo [35:55]: so we're going to generate b by a random experiment and there's a way we can get unlucky and it doesn't separate p from np but all we need to show is that there's a positive probability that what we did
+Pablo [35:55]: does separate
+Pablo [35:59]: so here's how we generate
+Pablo [36:03]: so for each n that we think of as a length of an input
+Pablo [36:09]: we're going to pick a random string w length just uniformly at random two to the n strings
+Pablo [36:11]: just pick one uniform
+Pablo [36:16]: so each one of them has probability two one over two to the n
+Pablo [36:22]: okay so for each n we've identified
+Pablo [36:23]: string like that
+Pablo [36:25]: somehow be involved
+Pablo [36:25]: as an evolution
+Pablo [36:28]: and here it'll be
+Pablo [36:31]: now we're going to flip it up as we flip it
+Pablo [36:33]: then
+Pablo [36:36]: w now we're going to flip an additional
+Pablo [36:36]: coin
+Pablo [36:40]: and this coin is going to tell us whether we put w in the language
+Pablo [36:48]: we're going to let this random wdl b tail
+Pablo [36:55]: and every other strain of the same length is not going to be
+Pablo [36:58]: so v is going to be a very sparse language
+Pablo [37:01]: not going to have hardly any strand at all
+Pablo [37:02]: for about
+Pablo [37:05]: half the length it's not going to have any strength
+Pablo [37:06]: that way
+Pablo [37:08]: and for the rest of them
+Pablo [37:09]: it's only going to have one
+Pablo [37:09]: string
+Pablo [37:16]: and if it does have a strain of length then which one of them it has is just
+Pablo [37:21]: so that part definition the claim is that
+Pablo [37:24]: again this could go wrong
+Pablo [37:26]: right what's one possible outcome
+Pablo [37:35]: it's that well on the second part every time we flip the coin it comes up tails and we end up defining b to be the empty lang
+Pablo [37:36]: uage
+Pablo [37:44]: and the empty language of course doesn't separate p from np because if you have oracle access to the np language the empty language
+Pablo [37:52]: you may as well not have the oracle at all just yours will always answer is no so you could just replace it with a deterministic constant no
+Pablo [37:55]: there's a way we can get unlucky here
+Pablo [37:59]: and b ends up not actually separating p for
+Pablo [38:01]: that there's one concrete
+Them [38:04]: no straight from the line
+Them [38:09]: or it could be like no it puts strings of every length in the language
+Them [38:12]: but it's always the string zero to the n right
+Them [38:21]: so again b could be very easy to decide if we get unlucky it could just be like nothing but all the strings with nothing but zero
+Them [38:35]: again if that was your language you wouldn't need an oracle access to it all the oracle would be doing is answering the regular language query is this thing a string of form zero sum
+Pablo [38:45]: so the point is you can get unlucky and b does not separate entity all we got to do is show there's a positive probability that it does separate them
+Pablo [38:51]: if there's a positive probability it separates them that means there exists a b that separates e prime
+Pablo [38:57]: okay so how are we going to show those positive probability that we separate e
+Pablo [39:13]: well how do you separate p to the b from np to the b you got to shove well like we said
+Pablo [39:18]: the proof that p is contained in np relative i'll so no matter what b you get p to the b is going to be contained in n the
+Pablo [39:21]: p so to show they're unequal we have to show those a problem in mp to the b but not theta
+Pablo [39:25]: here is going to be that problem
+Pablo [39:27]: here is the problem that
+Pablo [39:32]: for most choices it turns out that we can make with the random choices up there
+Pablo [39:35]: this problem
+Pablo [39:39]: which again is a problem that depends on b this will be an n g to the b but not u
+Pablo [39:44]: so this is the problem you're given this the unary strand one to the n
+Pablo [39:49]: you're given some one's and the only thing interesting about them is how many are there's n of them
+Pablo [39:52]: and the question you ask is
+Pablo [39:55]: is there a string w in the oracle b of lengthen
+Pablo [40:08]: so you're just given a length and you want to know what happened up here in the definition of b well for each length we had a one half chance of having some string
+Pablo [40:09]: or not
+Pablo [40:13]: we just want to know is this one of the ones where this came up
+Pablo [40:13]: yes
+Pablo [40:17]: and this is very easy to see that it's in np to the b
+Pablo [40:21]: we just guess the w
+Pablo [40:23]: of length n
+Pablo [40:27]: and linear time and then we just make a query to be say hey
+Pablo [40:32]: here's a w i just guessed is it in b or no
+Pablo [40:36]: and because our oracle correctly answers such queries
+Pablo [40:51]: if and only if there is a string of length n then there's a way to make this guess that causes us to say yes and that's the definition of what it means for this thing to be decidable non deterministic
+Pablo [40:59]: and it clearly takes linear time the bulk of the time is just guessing the string once you do that you just make the point where
+Pablo [41:00]: you're
+Pablo [41:12]: the oracle is kind of set up the oracle in this problem are kind of set up to make this kind of easily and npm
+Pablo [41:18]: so now we have to argue that it is not impeded
+Pablo [41:22]: so how do we do that
+Pablo [41:32]: well again we're not going to show it always on clues we could get very unlucky like i said if b was just the empty language here
+Pablo [41:43]: then p to the b would just be p right so more generally if b is any problem already decidable in polynomial time
+Pablo [41:48]: then having oracle access to it can't let you do anything more than you can already
+Pablo [41:52]: just replace the query is what it calls the polynomial time subroutine
+Pablo [41:59]: and that's more or less what you did on homework one where you showed up because the polynomials are closed under composition
+Pablo [42:04]: having oracle access to things that are already decidable and polynomial time
+Pablo [42:09]: doesn't save you more than a popular amount compared to just running
+Pablo [42:23]: so in particular there's a way if you have a problem in p by that random experiment generating b so we're not going to show that this always holds we're just going to show that in fact it has probability zero
+Pablo [42:27]: so when i said there's positive probability that this way of generating b will do it
+Pablo [42:32]: you might have wondered well what is that probability it turns out it's probability one
+Pablo [42:39]: which is a little strained if you're not used to thinking about these uncountably infinite probability spaces
+Pablo [42:59]: but technically the space of all languages all decision problems is uncountably infinite and when you have an uncounted input set and you start talking about probability it's possible to get things that happen with probability one but are not guaranteed to happen or conversely happen with probability zero but they might have
+Pablo [43:01]: so it's on the counterintuitive
+Pablo [43:08]: if i flip a sequence of coins infinitely many times and i ask what's the probability i get all zeros
+Pablo [43:11]: there's only one reasonable thing to say zero
+Pablo [43:15]: there's no other probability that makes sense to say
+Pablo [43:18]: and yet that's one thing that might happen i might be able to
+Pablo [43:20]: in fact any other infinite sequence you think of
+Pablo [43:25]: that sequence might happen as well every individual infinite sequence
+Pablo [43:29]: is possible to have and yet each one individually has probabilities in them
+Pablo [43:35]: so it's a little counterintuitive you've not dealt with this kind of
+Pablo [43:37]: probability before
+Pablo [43:44]: but point is we're going to show not only this have low probability that's probability zero even though that doesn't rule out that this could happen
+Pablo [43:55]: it just has probability zero happening the same way that if i flipped infinitely many coins i have probability zero to get all heads even though i might get on it
+Pablo [44:03]: okay so how do we argue that
+Pablo [44:09]: this has probability zero well we're going to let q be any program that we contradict
+Pablo [44:19]: any program that is of the class that defines p to b in other words it's an nsc time program
+Pablo [44:21]: and it has access to the dior
+Pablo [44:29]: so now we're going to show that it probably does not solve that problem
+Pablo [44:35]: it's just an arbitrary end of the c time b oracle program
+Pablo [44:38]: and if we can make an argument that
+Pablo [44:41]: it probably does not solve any oracle
+Pablo [44:46]: the rest of it so how are we going to do this let's unpack the detail
+Pablo [44:46]: s
+Pablo [44:51]: so we're actually going to show this one thing has probability zero to solve that problem
+Pablo [44:53]: and then we'll appeal to the
+Pablo [44:54]: fact
+Pablo [45:03]: that there's only countably many b oracle tendency time programs and each one of them individually has probability zero to solve this problem
+Pablo [45:06]: the probability that any of them do is also going to be
+Pablo [45:11]: the union bound over calib
+Pablo [45:11]: ration
+Pablo [45:17]: how do we infinite number of events each of which has probability zero
+Pablo [45:19]: the probability that any of them happens
+Pablo [45:20]: also
+Pablo [45:21]: again
+Pablo [45:28]: this is standard if you've dealt a lot with the more fancy measure theoretic probability if not
+Pablo [45:29]: i prom
+Pablo [45:31]: ise we're done with it after this
+Pablo [45:37]: okay so q is just any polynomial time deorical program
+Pablo [45:40]: we got a show has probability zero to solve that problem
+Pablo [45:42]: finicy oracle
+Pablo [45:44]: okay
+Pablo [45:45]: so what is
+Pablo [45:47]: polynomial time row
+Pablo [45:53]: and it's an oracle program it has access to the d orb so it makes some queries
+Pablo [45:58]: and the definition of
+Pablo [46:02]: that problem is such that
+Pablo [46:05]: so we gave the string one to the end of this cube
+Pablo [46:08]: if we query some of those
+Pablo [46:13]: but because it's end of the time now that it can't query yet it's very lazy
+Pablo [46:13]: down
+Pablo [46:14]: here
+Pablo [46:19]: the total number of steps it runs as a it can't make more than that to the
+Pablo [46:23]: takes at least one step to write down
+Pablo [46:24]: more
+Pablo [46:25]: than one
+Pablo [46:28]: so
+Pablo [46:29]: because runs are time intimacy
+Pablo [46:30]: aquarium
+Pablo [46:34]: now they could be all different lengths
+Pablo [46:36]: just to make the argument
+Pablo [46:37]: a little simpler and
+Pablo [46:38]: not get bogged down
+Pablo [46:40]: and
+Pablo [46:41]: kind of not crucial
+Pablo [46:44]: details i'm going to assume all those strings have the same length
+Pablo [46:47]: they might not but it's not as interesting
+Pablo [46:48]: to handle that
+Pablo [46:51]: as the rest of the so let's just assume all the strains have the same
+Pablo [46:56]: length and that's the same length as we get so again it could be different and you can handle that
+Pablo [46:59]: but this is just fant
+Pablo [46:59]: astic
+Pablo [47:06]: so your on cue
+Pablo [47:08]: on input one of
+Pablo [47:08]: the
+Pablo [47:15]: now imagine that our oracle b
+Pablo [47:18]: had the property but all the queries
+Pablo [47:19]: we make
+Pablo [47:22]: all say the same thing
+Pablo [47:24]: and have
+Pablo [47:24]: the thing
+Pablo [47:25]: i'll say
+Pablo [47:31]: then you can actually end up changing the aura
+Pablo [47:37]: as long as you don't change any of the strings it doesn't work in other words
+Pablo [47:39]: if it happens
+Pablo [47:45]: then all these strings get queried are not in vain and therefore the oracle returns false
+Pablo [48:05]: you could actually change b as long as you don't change any of those all those strings are not in b as long as you keep them out of b you could move around the rest you could take some length and say oh it had a w before now it doesn't or i'll move where the w is as long as whatever queries this thing makes
+Pablo [48:08]: that all are all on strings
+Pablo [48:18]: that are not in b this is true for lots of different b right just as long as for all those b's that list of strings the two queries is
+Pablo [48:18]: not
+Pablo [48:27]: so now we're going to actually appeal to the fact that we generated v at random
+Pablo [48:32]: and we're going to say all right we've got this polynomial time program
+Pablo [48:37]: and
+Pablo [48:40]: the queries unless the strings
+Pablo [48:45]: and those strings were generated by this stochastic procedure described
+Pablo [48:52]: so now we can ask what's the probability that of all those n to the c queries one of them returns true
+Pablo [48:55]: well how did
+Pablo [49:00]: we this is where this is making things a little simpler let's just assume they're all the same
+Pablo [49:01]: length
+Pablo [49:07]: if we query nothing but strings of the same
+Pablo [49:07]: length
+Pablo [49:19]: we know that either there's no strains of that length in which case they're all going to return false or there is a string that length but there's only one
+Pablo [49:27]: and so we make some query to a string of length then and then another string like that and then another one then another
+Pablo [49:30]: but for each one of those queries
+Pablo [49:32]: the probability
+Pablo [49:33]: that
+Pablo [49:44]: that string was the one we decided to pick for length n this is sort of conditioned on this coin flip came up head right at this point pinot tails
+Pablo [49:46]: this probability is just zero
+Pablo [49:49]: so in the worst case we do have a string of length n
+Pablo [49:51]: but there's only one
+Pablo [49:56]: and there's two to the n strings of length n and we're only querying n to the c of those strands
+Pablo [50:05]: so the probability that the string we decide to put in the language is one at the end of the c strings that this thing varies
+Pablo [50:08]: is the number
+Pablo [50:11]: of those queries we make divided by the total number
+Pablo [50:16]: and just observe this is small it's a hollow wheel over an f direct
+Pablo [50:17]: ion
+Pablo [50:39]: we actually have either probability zero that an anthem returns true because maybe there was no string in b like that or there is a string in the of length then there's only one of them out of two to the n so we query into the c of them we have probability only n to the c over two to the n that one of those is the string that got put in
+Pablo [50:49]: and if we just negate this condition then the probability of something the probability is the opposite of that is one minus
+Pablo [50:50]: right
+Pablo [51:02]: so this is the probability one of the queries returns true so what's the opposite of that it's at all n to the c squared false this is big this is at least one minus ten to the c over two
+Pablo [51:05]: and notice that that quantity is going to
+Pablo [51:09]: one as i'm going to infinity because we have a polynomial over an exponent
+Pablo [51:12]: which is going to
+Pablo [51:20]: okay so now this is probably the trickiest part
+Pablo [51:22]: so what do we get here
+Pablo [51:28]: so now we get that well what does q do q is giving chumbboolina
+Pablo [51:34]: and it's attempting to answer this well i mean we don't know what q is doing but we interpret it as a potential designer
+Pablo [51:40]: for this problem and it's attempting to answer the question is there a w and b in length
+Pablo [51:49]: with very high probability
+Pablo [51:53]: all of the m and c queries
+Pablo [51:59]: and
+Pablo [52:01]: the habits there's basically
+Pablo [52:02]: no way
+Pablo [52:04]: they're
+Pablo [52:05]: stranded every lane
+Pablo [52:05]: and they're not
+Pablo [52:07]: exp
+Pablo [52:07]: ired
+Pablo [52:09]: so
+Pablo [52:10]: at this point
+Pablo [52:11]: what's the probability
+Pablo [52:12]: that
+Pablo [52:13]: whatever q
+Pablo [52:14]: set
+Pablo [52:14]: yes
+Pablo [52:15]: there is the screen like
+Pablo [52:16]: that or no
+Pablo [52:17]: there's not
+Pablo [52:20]: but with probability
+Pablo [52:21]: almost
+Pablo [52:21]: that
+Pablo [52:22]: while
+Pablo [52:23]: this is exactly
+Pablo [52:25]: but
+Pablo [52:26]: we
+Pablo [52:27]: probably
+Pablo [52:28]: basically
+Pablo [52:29]: have
+Pablo [52:33]: cuellar
+Pablo [52:33]: 's going to be wrong
+Pablo [52:34]: yes
+Pablo [52:35]: there is a string of
+Pablo [52:36]: like men but there wasn't
+Pablo [52:37]: because we
+Pablo [52:38]: have one half
+Pablo [52:43]: chance of not putting any strain in va lengthen or if q happens to output no there is no string
+Pablo [52:47]: length and string well there might be
+Pablo [52:54]: so for any particular length
+Pablo [53:07]: we have almost not quite a half because this isn't quite zero so this isn't pipeline but we have close to a half probability that for this particular value of n two gets the output wrong
+Pablo [53:12]: but there's infinitely many
+Pablo [53:16]: so the probability for any particular element against the output correct
+Pablo [53:20]: is something like a half
+Pablo [53:26]: then well what's the probability that it gets the output right it's only a little bigger than that
+Pablo [53:36]: but what we're saying this happens on length one length two length three like four so if you have pretty close to a one half probability to get the answer right on length one
+Pablo [53:38]: and then
+Pablo [53:43]: same thing for like two same angle length three what's the probability that
+Pablo [53:59]: you get the answer wrong for at least one value of n that would be again probability one the only way to make sense of what does it mean to say if you have let's just pretend exactly a half just make it simpler to talk about
+Pablo [54:05]: if you have exactly a one half chance to get the answer right on length one and a one and a half chance to get the answer right on link two
+Pablo [54:10]: what is the probability you would get the answer right on every one of them
+Pablo [54:14]: equals
+Pablo [54:15]: zero
+Pablo [54:23]: so if any
+Pablo [54:24]: thing wrong
+Pablo [54:25]: her son
+Pablo [54:26]: would
+Pablo [54:27]: probably
+Pablo [54:33]: use
+Pablo [54:37]: her
+Pablo [54:42]: and
+Pablo [54:43]: then now she feels
+Pablo [54:44]: the fact that
+Pablo [54:45]: you have
+Pablo [54:48]: one
+Pablo [54:54]: each one of them
+Pablo [54:56]: the probability is zero
+Pablo [55:05]: that it besides b then by the union bound which actually does apply to countably infinitely infinitesim
+Pablo [55:08]: al the probability that any of them decide b is
+Pablo [55:08]: also
+Pablo [55:16]: by the way i think the slide had some son they got
+Pablo [55:17]: it every quarter i've ever
+Pablo [55:18]: taught
+Pablo [55:25]: the first time i count her but not in b
+Pablo [55:26]: i don't know if she ever used
+Pablo [55:27]: y
+Pablo [55:30]: somewhere
+Pablo [55:32]: i just wanted to give a name
+Pablo [55:33]: to the strings in rw
+Pablo [55:40]: by definition is the thing that we're going to put in b in this game event
+Pablo [55:43]: just to avoid
+Pablo [55:46]: name conflicts
+Pablo [55:55]: yeah y is not one particular string variable representing all the
+Pablo [55:56]: other strings
+Pablo [56:06]: okay so
+Pablo [56:10]: we show that with probability
+Pablo [56:12]: zero
+Pablo [56:23]: yeah only the probability zero does any polynomial time b oracle program
+Pablo [56:26]: decide
+Pablo [56:26]: all right
+Pablo [56:30]: this isn't as crucial mistake i usually
+Pablo [56:30]: make
+Pablo [56:31]: but
+Pablo [56:35]: it's not b but finicky or
+Pablo [56:35]: acle
+Pablo [58:11]: the probability
+Pablo [58:12]: that any
+Pablo [58:13]: of the
+Pablo [58:14]: column
+Pablo [58:15]: s i'm oracle
+Pablo [58:17]: designed
+Pablo [58:19]: even with oralized also zero
+Pablo [58:22]: so
+Pablo [58:23]: the opposite statement
+Pablo [58:24]: then that probability you
+Pablo [58:25]: want to do that
+Pablo [58:26]: all
+Pablo [58:28]: times
+Pablo [58:29]: numerical program
+Pablo [58:31]: fail to design
+Pablo [58:34]: so with probability one is not repeat
+Pablo [58:37]: and then that's the optimal
+Pablo [58:41]: we have positive probability
+Pablo [58:41]: turns out pretty big
+Pablo [58:46]: that
+Pablo [58:47]: 's something happens
+Pablo [58:49]: the
+Pablo [58:50]: generated
+Pablo [58:51]: by
+Pablo [58:52]: this property
+Pablo [58:53]: that means there
+Pablo [58:54]: must exist
+Pablo [59:02]: so
+Pablo [59:03]: there was something
+Pablo [59:04]: in her statement of
+Pablo [59:04]: also truth
+Pablo [59:10]: maybe not surprising
+Pablo [59:16]: it's a deeper statement we made
+Pablo [59:16]: here
+Pablo [59:17]: which is
+Pablo [59:20]: we generated bioscopic process
+Pablo [59:25]: so we use randomness in the generation of b
+Pablo [59:33]: but we were still fairly structured in how we did we said okay
+Pablo [59:42]: b is going to contain either zero or one strings of each length and then if it has one it's just going to be random
+Pablo [59:45]: there's another way you might have imagined generating
+Pablo [59:50]: which is just completely erect you just say
+Pablo [59:52]: no just go through every possible string
+Pablo [59:59]: and blip poem to decide whether to put it into line so this would probably result in a much denser language
+Pablo [1:00:03]: that would have about half the strings of each one
+Pablo [1:00:05]: it turns out that if you pick b in that way
+Pablo [1:00:11]: then also with probability one that b separates p for n
+Pablo [1:00:20]: so these kinds of results were i mean people still prove them but these kinds of results were particularly interesting to people for a while
+Pablo [1:00:22]: it's called random oracle results
+Pablo [1:00:34]: which is that so it's a one way that this is phrase very succinctly is p is not equal to np relative to a random b was generated in a random way but it wasn't uniformly
+Pablo [1:00:42]: it generates this very sparse language but literally just generating the language uniformly at random
+Pablo [1:00:45]: for every string flip an unbiased coin to decide whether to put it
+Pablo [1:00:46]: in
+Pablo [1:00:48]: that's what people mean when they talk about a random oracle
+Pablo [1:00:52]: and there are some results like p not equal to n
+Pablo [1:00:53]: v they're a true relative to a
+Pablo [1:00:54]: random orbital this is
+Pablo [1:00:55]: one
+Pablo [1:00:56]: and
+Pablo [1:01:02]: it was believed by a few people i don't know if it was ever very widely believed but a few people conjectured that
+Pablo [1:01:06]: if something is true
+Pablo [1:01:13]: relative to a random oracle like p naught equal to nb then maybe that implies it's true without anyone
+Pablo [1:01:21]: which seems somewhat intuitive because it's like okay if there's just like literally no structure in this oracle you could imagine
+Pablo [1:01:23]: do the flipping coin
+Pablo [1:01:24]: it really
+Pablo [1:01:25]: doesn't feel like
+Pablo [1:01:28]: there could be any useful information
+Pablo [1:01:31]: to be gained by querying the sorrow
+Pablo [1:01:35]: but it turns out that
+Pablo [1:01:36]: there are
+Pablo [1:01:37]: in fact
+Pablo [1:01:42]: complexity theoretic state not this one
+Pablo [1:01:50]: approved p is not empty but there are complexity theoretic statements the most famous of which is going to be something i will allude to but not prove
+Pablo [1:01:52]: pretty tough to prove
+Pablo [1:01:55]: called ip equals d space
+Pablo [1:01:58]: so we're going to get to pspace so we will define it
+Pablo [1:02:07]: we won't spend a lot of time with ips and for interactive proofs have a generalization of md and it turns out that was something where it was known that
+Pablo [1:02:09]: a random article separated
+Pablo [1:02:10]: they were not able
+Pablo [1:02:11]: to each other relative
+Pablo [1:02:12]: to a random oracle
+Pablo [1:02:14]: did you have to turn
+Pablo [1:02:15]: that in real
+Pablo [1:02:24]: might be a way
+Pablo [1:02:25]: to prove
+Pablo [1:02:29]: that
+Pablo [1:02:30]: ran more of my office
+Pablo [1:02:33]: makes
+Pablo [1:02:34]: them
+Pablo [1:02:35]: rel
+Pablo [1:02:36]: ative
+Pablo [1:02:37]: the oracle
+Pablo [1:02:38]: that is true
+Pablo [1:02:39]: now anymore
+Pablo [1:02:43]: examp
+Pablo [1:02:44]: le
+Pablo [1:02:51]: but
+Pablo [1:02:51]: it's so interesting
+Pablo [1:03:11]: like i said this is the more complicated argument
+Pablo [1:03:13]: and i kind
+Pablo [1:03:13]: of like it
+Pablo [1:03:16]: but
+Pablo [1:03:16]: i probably
+Pablo [1:03:17]: don't like it
+Pablo [1:03:20]: the original
+Pablo [1:03:21]: paper didn't do
+Pablo [1:03:22]: any
+Pablo [1:03:31]: reason
+Pablo [1:03:32]: to think
+Pablo [1:03:33]: that
+Pablo [1:03:34]: proving
+Pablo [1:03:35]: d is not in
+Pablo [1:03:36]: theory
+Pablo [1:03:38]: we don't have
+Pablo [1:03:39]: very many examples
+Pablo [1:03:40]: of non
+Pablo [1:03:42]: stop
+Pablo [1:03:42]: value
+Pablo [1:03:43]: s these days
+Pablo [1:03:45]: not
+Pablo [1:03:46]: as many or
+Pablo [1:03:48]: random
+Pablo [1:03:48]: or separated
+Pablo [1:03:49]: by people these days
+Pablo [1:03:50]: and yet they're actually
+Pablo [1:03:51]: equal
+Pablo [1:03:52]: so
+Pablo [1:03:53]: they'll prove that they're equal
+Pablo [1:03:54]: does not relevant
+Pablo [1:03:57]: but
+Pablo [1:03:58]: not relativized
+Pablo [1:04:00]: improved techniques are few and far
+Pablo [1:04:01]: but
+Pablo [1:04:11]: the last thing we're going to do in chapter six before we get to chapter seven it's going to be so called np intermediate problems
+Pablo [1:04:20]: so inside of np we've seen a whole lot of problems but everyone we've seen is either we were able to show it as np or we were able to show it to
+Pablo [1:04:24]: so a natural question is there problems that are nia
+Pablo [1:04:28]: like you can imagine some dichotomy
+Pablo [1:04:29]: there
+Pablo [1:04:35]: if you're in np you have to either be decidable with polynomial time or be
+Pablo [1:04:36]: in
+Pablo [1:04:38]: but it turns out that's not true
+Pablo [1:04:41]: so this is so called ladder's theorem
+Pablo [1:04:47]: which says that again you need the hypothesis p is not equal if they're equal
+Pablo [1:04:51]: then every problem in nd is both np and z complet
+Pablo [1:04:52]: e
+Pablo [1:04:53]: that's just kind of a boring concept
+Pablo [1:04:54]: in there
+Pablo [1:04:56]: but the point is if they're not equal
+Pablo [1:04:59]: then it turns out that there are problems
+Pablo [1:05:05]: that are np but they're neither soluble in polynomial time nor are they complete
+Pablo [1:05:10]: meaning nor is any empty complete problem reducible to them
+Pablo [1:05:13]: hierarchy
+Pablo [1:05:14]: there
+Pablo [1:05:15]: a year is not going to be
+Pablo [1:05:15]: an asshole
+Pablo [1:05:19]: and
+Pablo [1:05:20]: the only goal is
+Pablo [1:05:21]: going to be to ensure
+Pablo [1:05:25]: that it's in mv and this is pretty easy to do if you
+Pablo [1:05:27]: allow it not to be an empty
+Pablo [1:05:29]: the whole thing problem is not decipherable
+Pablo [1:05:35]: so it's certainly not decidable in polynomial time neither by deterministic machines nor by non determinist
+Pablo [1:05:36]: ic machine
+Pablo [1:05:42]: it's not np complete because it's not even an np and if it's not mp it's also not empty
+Pablo [1:05:47]: so it's easy to come up with things that are in either of these two classes because they're way out here
+Pablo [1:05:50]: you add
+Pablo [1:05:51]: in the error
+Pablo [1:05:55]: so we got to figure out for
+Pablo [1:05:56]: show or something
+Pablo [1:05:57]: that
+Pablo [1:05:57]: it's not as easy
+Pablo [1:06:05]: now it does seem like that it's only natural problem
+Pablo [1:06:05]: s
+Pablo [1:06:06]: some related
+Pablo [1:06:07]: to factoring
+Pablo [1:06:09]: might be in the intermediate
+Pablo [1:06:10]: we don't have a ton of examples
+Pablo [1:06:12]: of candidates
+Pablo [1:06:19]: it really does tend to be the case if you come across an np problem and you can't show it's in b it's probably
+Pablo [1:06:23]: but point is that this is provenly not going to happen with epic
+Pablo [1:06:29]: okay so we're not going to get through the proof today i'll just start it and then we'll do review from the startup
+Pablo [1:06:33]: on so we want to generate this np intermediate across
+Pablo [1:06:34]: okay
+Pablo [1:06:35]: and
+Pablo [1:06:35]: we're going to do it
+Pablo [1:06:36]: and we're
+Pablo [1:06:38]: going to talk about a lot
+Pablo [1:06:38]: but at this point
+Pablo [1:06:40]: the definition of
+Pablo [1:06:41]: sap
+Pablo [1:06:44]: x means that if that
+Pablo [1:06:45]: boolean formula
+Pablo [1:06:47]: it tells you whether that will inform a satisfiable
+Pablo [1:06:51]: really all i care about here is that is an mp complete problem
+Pablo [1:06:54]: and that given input's x to sat
+Pablo [1:06:57]: we don't think that in halloween time
+Pablo [1:07:02]: so i'm going to use sap just to have something concrete
+Pablo [1:07:07]: but really i can just have any nv complete problem there and that would be enough for everything else
+Pablo [1:07:10]: but if it is sat that is the definition
+Pablo [1:07:17]: now we're going to define this very slowly increasing function from end there
+Pablo [1:07:21]: and i'll tell you what the function is like that most of the proof is defining this function
+Pablo [1:07:33]: let's define it in a bit for now just know it's an increasing function so it goes up sometimes and it never goes down it actually stays the same for very long strength it's very slowly increasing function
+Pablo [1:07:41]: and really all we care about this function is when every time it goes up it goes up by one so it switches between even and odd whenever it goes up
+Pablo [1:07:47]: and this np intermediate problem a is going to be
+Pablo [1:07:59]: you have an input x some binary string that may encode a boolean formula that may or may not be satisfiable
+Pablo [1:08:05]: and a of x is just going to be sat of x if f of length of x is e
+Pablo [1:08:08]: n a of x is just going to be false if f of length of x is off
+Pablo [1:08:20]: so what does this look like well i said f increases very slowly which means i couldn't make to have the text be readable i couldn't make any fast over here
+Pablo [1:08:23]: but here's just kind of a cartoon example
+Pablo [1:08:27]: so what we're trying to do here is as you sort of iterate over all the strings
+Pablo [1:08:30]: in say lexicographical
+Pablo [1:08:39]: this language a that we define this decision problem looks like sat for very long so the intuition here
+Pablo [1:08:48]: is that for very long runs of strings a looks just like sound and that's what's going to keep it from being decidable and publicly
+Pablo [1:08:53]: if p is not np sat is not decidable
+Pablo [1:09:01]: but also for very long runs it's just going to look like the empties you say no
+Pablo [1:09:07]: and that's going to keep it from being in complete because the empty language is definitely not n complete if p is not equal
+Pablo [1:09:17]: and it switches between these every time f goes up but f goes up only very slowly for these really long runs
+Pablo [1:09:25]: of strings f just looks like a very difficult language again assuming b is not empty even we know sad and typical but for those other ones it looks very easy
+Pablo [1:09:26]: to say
+Pablo [1:09:32]: if f happens to be this it starts at zero for the first three lengths
+Pablo [1:09:45]: then whatever sat says on strings a says the same thing some are true and are false but then f finally goes up to one
+Pablo [1:09:49]: and now a is just the constant false no matter what sat is this was false
+Pablo [1:09:57]: and then when f goes up again switches back to looking like so picture this is what a looks like only in reality these runs are
+Pablo [1:09:58]: much longer
+Pablo [1:10:00]: huge
+Pablo [1:10:01]: amount of time
+Pablo [1:10:02]: that looks like not
+Pablo [1:10:03]: even the false
+Pablo [1:10:04]: for a huge number of
+Pablo [1:10:05]: strains
+Pablo [1:10:07]: like
+Pablo [1:10:07]: a huge number
+Pablo [1:10:13]: of like i said any np complete problem works there there's nothing crucial about sex i just want her to be
+Pablo [1:10:19]: any problem she
+Pablo [1:10:20]: also works here
+Pablo [1:10:22]: there's just one
+Pablo [1:10:23]: style of
+Pablo [1:10:24]: slightly more convenient
+Pablo [1:10:26]: constant false language
+Pablo [1:10:36]: but really the proof technique would fundamentally go through by said well whenever f of length of x is odd have a look like some problem in
+Pablo [1:10:40]: p but certainly one of the problems in p is the mpm
+Pablo [1:10:44]: so by careful design of f we're going to ensure the following
+Pablo [1:10:45]: happens
+Pablo [1:10:47]: well what do we need
+Pablo [1:10:52]: one key is we need a to b in it
+Pablo [1:10:55]: and
+Pablo [1:10:59]: a is not going to be decidable in non deterministic polynomial time
+Pablo [1:11:02]: if we can't compute f in public
+Pablo [1:11:04]: so we're going to need f to be computable
+Pablo [1:11:04]: in polynomial
+Pablo [1:11:08]: and
+Pablo [1:11:12]: that will immediately give us a as an m why because we can compute f
+Pablo [1:11:14]: then
+Pablo [1:11:16]: we just compute it we look at the parity
+Pablo [1:11:24]: if it's all we just say no that's easy enough and if it's even then we run the non deterministic polynomial time program for sex
+Pablo [1:11:26]: that
+Pablo [1:11:26]: works
+Pablo [1:11:28]: to give the correct answer
+Pablo [1:11:33]: so that will ensure that it's in m
+Pablo [1:11:37]: we didn't have to appeal to sat this would have shown to be
+Pablo [1:11:40]: we need the non determinism to solve
+Pablo [1:11:43]: a on the instances where it's the same thing as cell
+Pablo [1:11:53]: but we have two other data set we have to establish a is not np or expand out no polynomial time programs all day
+Pablo [1:11:58]: and we also have to ensure a is not empty
+Pablo [1:12:00]: one way
+Pablo [1:12:02]: is to ensure that
+Pablo [1:12:03]: no
+Pablo [1:12:04]: program
+Pablo [1:12:05]: produces
+Pablo [1:12:07]: clean
+Pablo [1:12:09]: i calculate that the
+Pablo [1:12:11]: textbook uses sat there
+Pablo [1:12:18]: which i didn't like because it kind of makes it look like it's important that these two languages are the same but it's not
+Pablo [1:12:27]: you can have any antique complete problem here because many of people take problem here so i just picked a different one that had emphasized we don't need these two to be the same but if you look at the textbook
+Pablo [1:12:28]: it uses
+Pablo [1:12:33]: sap here i usually again not because we're really going to be thinking about graphs and things
+Pablo [1:12:34]: on draft
+Pablo [1:12:35]: this is what i want
+Pablo [1:12:37]: ed a concrete problem that you know is
+Pablo [1:12:38]: going to be
+Pablo [1:12:41]: that's not the same as that so you know that these can be different problems
+Pablo [1:12:47]: okay
+Pablo [1:12:50]: so i will start with what i'll call the almost proof
+Pablo [1:12:53]: and it won't quite work and we'll fix it
+Pablo [1:12:59]: they almost prove says well this only works if p is not assume he died
+Pablo [1:13:05]: and here's what you do you imagine enumerating all the polynomial time prot
+Pablo [1:13:10]: ons in some say let's look at graphical order of their encoding and pilot
+Pablo [1:13:12]: column q zero q one
+Pablo [1:13:13]: q two
+Pablo [1:13:19]: and for each a
+Pablo [1:13:20]: numerator
+Pablo [1:13:21]: string
+Pablo [1:13:25]: remember
+Pablo [1:13:26]: what we're going to do
+Pablo [1:13:37]: is we're going to have these things take zero state one stage two stage i is sort of like trying to make sure qi does not
+Pablo [1:13:41]: solve a and it's also making sure it does not reduce clean
+Pablo [1:13:47]: so we have two substances of each stage stage zero a we just let a of x be sat
+Pablo [1:13:54]: we do that for xmp empty string with zero to one then zero zero
+Pablo [1:13:58]: what
+Pablo [1:14:00]: ever
+Pablo [1:14:03]: we finally reach this
+Pablo [1:14:05]: where q zero
+Pablo [1:14:06]: x so something different
+Pablo [1:14:06]: than cell
+Pablo [1:14:07]: in other words
+Pablo [1:14:09]: q zero
+Pablo [1:14:17]: but up to this point satin vaccine ax have a greedy
+Pablo [1:14:18]: so that means q zero
+Pablo [1:14:22]: and x also disagrees with it and at this point after this string
+Pablo [1:14:25]: where we found an x where q zero gets the answer wrong
+Pablo [1:14:28]: we switch to stage zero
+Pablo [1:14:28]: b right
+Pablo [1:14:34]: but before we do that let's just observe this implies q zero does not decide
+Pablo [1:14:38]: because there's an x where it gets the answer differently than what a
+Pablo [1:14:41]: now we switch to
+Pablo [1:14:42]: the next stage
+Pablo [1:14:42]: where the next stage
+Pablo [1:14:44]: do now
+Pablo [1:14:45]: we're just going to let as evolves
+Pablo [1:14:46]: as always
+Pablo [1:14:47]: wish to say
+Pablo [1:14:48]: one end
+Pablo [1:14:49]: and
+Pablo [1:14:49]: what are we looking for
+Pablo [1:14:51]: switch to stage
+Pablo [1:14:53]: looking
+Pablo [1:14:54]: for x
+Pablo [1:14:56]: so that clean of x is not equal to
+Pablo [1:14:57]: a user
+Pablo [1:15:00]: that's a little tougher to
+Pablo [1:15:03]: pick apart but think about what that's doing
+Pablo [1:15:08]: we're saying q zero does not reduce clique today
+Pablo [1:15:11]: so again notice the kind of double duty here
+Pablo [1:15:15]: being played
+Pablo [1:15:16]: by q zero
+Pablo [1:15:23]: in the top i was interpreting its output as boolean and just say no that a different boolean
+Pablo [1:15:27]: at the bottom interpreting that was
+Pablo [1:15:28]: given today
+Pablo [1:15:32]: but again you can do turning machines
+Pablo [1:15:32]: on your layer
+Pablo [1:15:34]: it has a notion the bowl of
+Pablo [1:15:35]: boolean and a string
+Pablo [1:15:46]: now it's not really crucial i'm doing it this way because the book did it this way we could equivalently have said let q zero q one be all the polynomial time boolean programs that return true false
+Pablo [1:15:50]: and then in the b stages i could have had a different type of
+Pablo [1:15:51]: polymeal time
+Pablo [1:15:52]: program
+Pablo [1:15:59]: you don't like
+Pablo [1:15:59]: that
+Pablo [1:16:00]: we're
+Pablo [1:16:01]: switching to a different program
+Pablo [1:16:02]: it's
+Pablo [1:16:03]: the zero program
+Pablo [1:16:04]: and the list of all program
+Pablo [1:16:05]: s
+Pablo [1:16:07]: that would be
+Pablo [1:16:07]: pubonial hybrid
+Pablo [1:16:22]: but the point is if we interpret q zero as a reduction what would it mean for it to reduce clique to a it would be in an input x we want the x is in clique if and only if q zero of x is an a and
+Pablo [1:16:25]: that's the opposite of the state
+Pablo [1:16:26]: if there's some ext
+Pablo [1:16:28]: ra which those two are unequal
+Pablo [1:16:31]: that means q zero does not reduce clear
+Pablo [1:16:35]: and then
+Pablo [1:16:37]: use the
+Pablo [1:16:38]: only stage one
+Pablo [1:16:39]: is about the program
+Pablo [1:16:40]: q
+Pablo [1:16:41]: which makes her
+Pablo [1:16:42]: q one
+Pablo [1:16:43]: does not solid
+Pablo [1:16:53]: a nor does the produce lead a and then once we make sure q one doesn't do either of those stage two a and two b ensure q two does not solve a and it also does not reduce cleat
+Pablo [1:17:02]: so we can do this we're done because a is not solved by any polynomial time program so it's not np
+Pablo [1:17:06]: but also no polynomial time program can reduce clique today
+Pablo [1:17:12]: but if they were np complete you could reduce gland because you can reduce everything in n
+Pablo [1:17:13]: p
+Pablo [1:17:18]: so if none of the modules program is going to be
+Pablo [1:17:23]: that's going to be our
+Pablo [1:17:24]: strategy
+Pablo [1:17:26]: and you
+Pablo [1:17:27]: didn't notice any of the details
+Pablo [1:17:28]: you would hope
+Pablo [1:17:30]: fully even
+Pablo [1:17:33]: that we
+Pablo [1:17:34]: 'll cover on thursday
+Pablo [1:17:35]: first
+Pablo [1:17:37]: is ann b right
+Pablo [1:17:43]: what are some one thing we need to do to make sure
+Pablo [1:17:45]: we got num
+Pablo [1:17:46]: erator all along the time
+Pablo [1:17:47]: how do we do that
+Pablo [1:17:51]: does each stage
+Pablo [1:17:52]: in right
+Pablo [1:17:59]: i say we'll switch to the next stage when you find the sex that makes this thing true what if you never find an x that makes that thing true
+Pablo [1:18:01]: they do just be stuck in one stage forever
+Pablo [1:18:06]: and you would not have done your job on most of the papal mealtime program
+Pablo [1:18:08]: s so we need that for each stage
+Pablo [1:18:35]: we will find an x that makes us exit the stage which means that for every hui we need that there's infinitely many x where this condition is true in this one because those are the conditions that cause us to go to the next stage because we're iterating over the strings in order we might have passed any finite number of strings that made this true so we need this to be true for infinitely many strings so that's always another one out of five to make one of these
+Pablo [1:18:36]: true
+Pablo [1:18:39]: this is basically the missing details
+Pablo [1:18:42]: and we'll show how to handle them one third
+Pablo [1:18:45]: and one thing to notice
+Pablo [1:18:47]: or you could have said hey your proof doesn't work
+Pablo [1:18:50]: understanding
+Pablo [1:18:51]: carpenting
+Pablo [1:18:53]: words of that would be to say
+Pablo [1:18:58]: you said she is not envy and you never use that
+Pablo [1:18:58]: assumption
+Pablo [1:19:02]: resulting
+Pablo [1:19:06]: is
+Pablo [1:19:06]: an mp
+Pablo [1:19:09]: and they're all in v and they're all np complete
+Pablo [1:19:16]: so the fact that i never once appealed to the fact p is not evil then she should be a hint something's wrong
+Pablo [1:19:20]: i should have to use that hypothesis or else
+Pablo [1:19:26]: something's going to go wrong so we are going to use it we're going to use it to argue that we will actually exit each stage
+Pablo [1:19:31]: and we will not exit the stage if people
+Pablo [1:19:32]: okay
+Pablo [1:19:37]: so most of the proof is actually dealing with these missing details
+Pablo [1:19:39]: but there's the high level
+Pablo [1:19:40]: i think
+Pablo [1:19:42]: i'll see you on thursday
+Pablo [1:20:03]: like chilling every single bubble does not work with one hundred graph bigger yeah
+Pablo [1:20:10]: but it looks so nice when it's one in five but then when it even looks okay in one and two
+Pablo [1:20:15]: but when it's one in one so including every single thing it is just so much
+Pablo [1:20:23]: like one in five looks pretty fair
+Pablo [1:20:27]: you're using
+Pablo [1:20:29]: border

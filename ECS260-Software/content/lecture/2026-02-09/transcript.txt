@@ -1,0 +1,527 @@
+Them [0:40]: did you all receive the announcement that lectures are online
+Them [0:47]: yeah i saw it on campus
+Them [0:49]: okay
+Them [0:51]: so then it went to everybody good
+Them [0:58]: let's start talking about just for a few minutes
+Them [1:06]: about the progress reports those are due in about ten eight days
+Them [1:10]: okay
+Them [1:15]: and
+Them [1:17]: let's talk a little bit so yeah on the seventeenth
+Them [1:22]: we can talk about several things
+Them [1:24]: we can talk about the date
+Them [1:27]: is the date okay
+Them [1:32]: there's a holiday on the sixteen so i set it one day after the holiday
+Pablo [1:36]: but let me know
+Them [1:37]: how does that date
+Them [1:38]: look
+Them [1:44]: any issues with it
+Them [1:54]: okay
+Them [1:59]: so let's see what do we expect for the progress report
+Them [2:07]: i certainly want to see some meat in there where is that the project proposal was really a proposal
+Them [2:11]: now we need to see some results
+Them [2:12]: okay
+Them [2:15]: and preliminary results are fine
+Them [2:19]: results on a small sample is fine
+Them [2:21]: but we need to see something
+Them [2:26]: do you have a methodology
+Them [2:29]: and an approach and data gathering et cetera
+Them [2:31]: do you have a pipeline
+Them [2:33]: that actually yields results
+Them [2:35]: so that's what you will be judged on
+Them [2:40]: and that's what you will be then given comments
+Them [2:41]: on
+Them [2:45]: we also need to see specific plans for the remaining time
+Them [2:53]: so check out the progress report assignment
+Them [2:55]: and look at all of those details
+Them [2:59]: there's also a report rubric
+Them [3:02]: that you can check out which will be graded on
+Them [3:08]: we do want to see specific plans we do want to see specific progress and accomplishments
+Them [3:13]: an obstacle
+Them [3:21]: okay any questions about the progress reports
+Them [3:35]: so during these online lectures the next three this one and two more
+Them [3:40]: let's agree that if you want to ask a question you can either raise a hand
+Them [3:43]: the reaction react button
+Them [3:51]: or you can write in chat so i will be stopping periodically as i'm lecturing and i will be addressing whatever questions
+Them [3:53]: accumulate on chat
+Them [3:56]: and i'll also be looking for raised hands
+Them [4:03]: if i haven't been paying attention for a while feel free to then jump in and say professor
+Them [4:05]: there's questions or whatever
+Them [4:09]: hold on keeping track pretty well
+Them [4:20]: okay so what i want to do in the next lectures it's really focus on the methodology
+Them [4:24]: and focus on how we create new stuff
+Them [4:28]: and how do we compare it to other stuff
+Them [4:32]: so i'm going to share these slides
+Them [4:42]: hopefully you're able to see these
+Them [4:46]: thumbs up
+Them [4:49]: yeah i can see it
+Them [4:51]: good thank you sir
+Them [4:53]: good
+Them [5:04]: and this is one of the more important parts of our class which is how do we establish a baseline for a comparison
+Them [5:09]: so i teach regression modeling regression linear regression in particular
+Them [5:12]: because it establishes exactly that
+Them [5:14]: if nothing else
+Them [5:22]: if nothing else in your modeling framework i want you to understand that whatever you do it has to be compared to something
+Them [5:30]: no matter how fancy a method you come up with you have to eventually convince me that it's doing something
+Them [5:37]: and one of the things that one of the obstacles you have to jump over is how does it compare
+Them [5:39]: to something that's very simple
+Them [5:43]: and something that's very simple is linear regression
+Them [5:52]: if the first non trivial thing linear regression is great because it's not just a comparison point
+Them [5:59]: it also is an example of how explainable models work
+Them [6:06]: and you can certainly compare it in terms of performance and you can say i do my method does better than linear regression
+Them [6:15]: but also you can say well this is how i compare to the explainability that's provided by linear regression
+Them [6:17]: which is usually very good
+Them [6:23]: so those are some of the points that i want to make in addition to understanding how to do it
+Them [6:30]: so we will do the theory now and we'll go next class will go through some programming
+Them [6:36]: in addition to that i want you to use it as a jumping point
+Them [6:42]: so i want you to feel like i have a comparison because i can always be regressive
+Them [6:45]: if your research is quantitative
+Them [6:58]: so we all know how to even start thinking about these things right we have a scenario we would like to predict a variable based on another
+Them [7:00]: based on other sets of variables
+Them [7:06]: it's useful to ask by the way why do you want to predict anything
+Them [7:10]: and what do you actually want to do
+Them [7:13]: and we talked about these things to the goals questions and metrics
+Them [7:21]: we would have to have a reason to do so the reason in your cases is answering research questions
+Them [7:33]: answering research questions that are beyond just correlation beyond just exploratory data analysis but leading into confirmatory or interferential
+Them [7:34]: analysis
+Them [7:38]: so why would you want to do this
+Them [7:39]: here's examples
+Them [7:47]: you have amount of youtube videos you want to predict for a video and you want to predict it ahead of time
+Them [7:56]: or in other words you would like to maybe tweak how many youtube views you get based on the parameters of the video
+Them [8:01]: the previous views maybe the length of the video maybe the colors
+Them [8:04]: the tone of the voice used etcetera
+Them [8:12]: or you want to predict if you're netflix which movies a user will rate higher than others so that you can recommend them
+Them [8:13]: to them
+Them [8:19]: based on the previous movies they've seen the demographic of the viewer etcetera
+Them [8:32]: here's a little data set it's a very simple example it's almost not even realistic but let's take a look at it nevertheless
+Them [8:34]: because we can easily imagine what's going on
+Them [8:37]: and it can guide us through everything
+Them [8:44]: your company producing some product in two hundred different markets
+Them [8:49]: and these are the sales listed in the last column
+Them [8:52]: in those two hundred different markets
+Them [8:55]: so the split per market
+Them [9:01]: but in aggregate you have some number of sales or whatever the product the widgets are
+Them [9:04]: and in addition here given in the other three columns
+Them [9:08]: are the budgets
+Them [9:12]: for different advertising media
+Them [9:22]: so tv radio and newspaper and those are the budgets as you can see some markets they're different the ratios
+Them [9:29]: so this is taken from that book that's listed there
+Them [9:36]: okay so everything is given here in units of one thousand dollars except sales
+Them [9:37]: which is in millions
+Them [9:54]: now usually when you want to predict in this case sales based on how much you will put into marketing
+Them [9:56]: there's asymmetry
+Them [10:01]: in these problems you want to know sales sales is difficult to know
+Them [10:03]: ahead of time
+Them [10:15]: you know how much budget
+Them [10:15]: you will
+Them [10:21]: categories tv news and radio
+Them [10:28]: of course being that this is twenty thirteen of course it's missing social media online internet et cetera
+Them [10:30]: let's proceed with this you can always add more column
+Them [10:36]: the point here is that sales is what you want to get the other three are what you know
+Them [10:42]: so we define two categories of variables right those that we want to predict and those that we want to make use for our prediction
+Them [10:53]: so we call those predictors x the features independent variables or covariates those are all the things that we can use that are easy to get
+Them [10:59]: and then the outcome or why or the response variable or the dependent variable
+Them [11:01]: is what we are trying to predict
+Them [11:08]: and i'm slowly going to work in math into all these right so we have an observations
+Them [11:10]: one for each market
+Them [11:13]: and we have p predictors in this case three
+Them [11:18]: and we'll start first by looking at one predictor at a time
+Them [11:19]: and we'll move on
+Them [11:23]: but let me just make sure that everybody is on board
+Pablo [11:26]: we know
+Them [11:26]: what the problem is
+Them [11:30]: and what is required of us to do
+Them [11:33]: any questions
+Them [11:39]: still we are just setting up terminology here
+Them [11:44]: it predictors there's the outcomes
+Them [11:56]: well you can multiple outcomes but this is one outcome one column is one outcome and those vector coordinates there they are just one for each row
+Them [12:01]: the predictors have two coordinates of course because they have a row and a column
+Them [12:04]: okay
+Them [12:11]: so we can think of this
+Them [12:13]: we can think of any such problem really
+Them [12:18]: as observing people one variables where one of them is the outcome
+Them [12:23]: or the response variables and the rest of features of predictor variables
+Them [12:30]: here comes some assumptions
+Them [12:37]: we all have to make assumptions in the first assumption we make is that there is something phenomenal going on
+Them [12:40]: that things are not random
+Them [12:43]: there is some functional connection
+Them [12:48]: between the advertising budgets and the actual outcome
+Them [12:49]: okay
+Them [12:54]: and that's a hypothesis and we will test that but we have to make that assumption
+Them [13:01]: in other words the assumption is that there is a function that relates the predictors to the outcome
+Them [13:07]: in particular the outcome depends on the predictor so you see there is this asymmetry
+Them [13:09]: when we start doing modeling
+Them [13:12]: and it's not simply correlation we are saying something more
+Them [13:19]: so for any time we have
+Them [13:28]: some sort of a measurement of course there will be some error included in the measurement but we'll talk about that in a second
+Them [13:32]: let's just talk about why
+Them [13:39]: as this response variable related to the predictors and there's some error included
+Them [13:46]: now there's the real excuse me we assume that there's a real function
+Them [13:48]: connecting the two
+Them [13:52]: right
+Them [14:00]: but also what we know is that if we follow some protocol methodology whether it's ml ai regression whatever
+Them [14:08]: we will get some function or we'll get some way to predict this y but those are two different things
+Them [14:18]: statistical model that we are developing is any algorithm that estimates f and we will denote that estimated function as f hat
+Them [14:23]: it's important to know that f hat is our product
+Them [14:24]: based on the data
+Them [14:27]: and f is what we assume exists
+Them [14:33]: so we don't see we will never see f itself
+Them [14:36]: unless we've created the data
+Them [14:42]: so here the y's and the x's
+Them [14:48]: and we have these points
+Them [14:51]: this is just for tv budget
+Them [15:03]: the tv budget in one thousand dollars and when we look at this the question is do we see any patterns do we see anything we can use to make our job of beating a model easier
+Them [15:17]: so how do we find our estimate the real question is what is the value of y at this x or this x or any x so here's a simple minded idea
+Them [15:22]: hey why don't we just take the average of all y value
+Them [15:24]: and call it a day
+Them [15:28]: how bad can that be
+Them [15:33]: let me ask you
+Them [15:36]: is that a good idea bad idea
+Them [15:44]: feel free to chime in
+Them [15:59]: the question is why not just average across all the y's
+Them [16:05]: and call it a day
+Them [16:10]: i mean we could
+Them [16:12]: it's not a terrible idea
+Them [16:23]: but what is missing if we average across wise what aren't we capturing we certainly capture exam behavior of the data but what aren't we capturing
+Them [16:28]: okay there's somebody in chat
+Them [16:36]: outliers make the average not necessarily the best representative well
+Them [16:45]: remember we already went through eda we got rid of the outliers right so no reason to talk about them
+Them [16:52]: you can assume we don't have outliers
+Them [16:52]: here
+Them [16:59]: but it's true what you're saying is absolutely true
+Them [17:05]: however that's not what i what i'm asking here what i'm asking is why is the average
+Them [17:09]: why can't you do something better than the average
+Them [17:13]: well because it seems here that there is some sort of a trend
+Them [17:19]: a trend where as we increase the budget
+Them [17:21]: the sales increase
+Them [17:29]: now look if you're working for this company and you have to make decisions if you're in that responsible position to make decisions
+Them [17:33]: this is exactly what you would like to capture
+Them [17:38]: and you would like your data scientist to come and tell you oh you know if we put in more money
+Them [17:42]: in the tv budget we will get more sales
+Them [17:49]: and this average value estimating f hat which is the average of all y's
+Them [17:51]: is not going to give you that
+Them [17:58]: so you're unable to make decisions about whether you should increase or decrease the budget
+Them [18:03]: in fact using just the average from a decision perspective
+Them [18:06]: i may as well just put zero
+Them [18:16]: dollars into the budget right because for zero i'm getting the same sales as i'm getting for putting two hundred thousand dollars in the tv page
+Them [18:17]: okay
+Them [18:22]: so i would be in fact mismanaging company's funds
+Them [18:24]: if i don't go to zero in this case
+Them [18:29]: so that's not what we mean by
+Them [18:48]: predictions we mean something more yes this may be a good predictor of the average but we would like to capture the reason and pattern that corresponds to that visit for why we study this and in this case it is the desire of the company to make more sales
+Them [18:50]: okay
+Them [19:01]: so now we have we have a choice to make whenever we model and the choice is do we want to do we have an imprints problem or do we have a prediction
+Them [19:02]: problem
+Them [19:03]: and what is the difference
+Them [19:11]: and to some extent these terms are interchangeable or arbitrary but we've chosen to to use it this way
+Them [19:16]: so inference is when you want to obtain an estimate of the function
+Them [19:18]: you want to actually see the function
+Them [19:22]: and linear methods allow you to do this
+Them [19:25]: so you don't want a black box you actually want the function
+Them [19:32]: whereas prediction problem really we just are interested in the best prediction possible
+Them [19:42]: for given the next budget given the next person whatever what is the best treatment we don't necessarily want the function itself
+Them [19:46]: a black box is perfectly fine
+Them [19:47]: okay
+Them [19:50]: i hope that distinction is clear
+Them [19:51]: so we'll have to decide
+Them [19:55]: and interestingly a linear problem
+Them [20:00]: gives you both good estimates and a function
+Them [20:04]: so let's take a look at linear model
+Them [20:05]: in general
+Them [20:08]: so there is our table
+Them [20:12]: for the sales and the marketing budget
+Them [20:18]: a linear model is one where we have a linear relationship between the predictors
+Them [20:22]: shown here is the situation where you just have a single predictor
+Them [20:27]: single x it can be tv radio or newspapers
+Them [20:31]: and it predicts sales which is in y
+Them [20:33]: we always have a random error
+Them [20:37]: it's due to many different things
+Them [20:44]: market variability and sampling just general biological
+Them [20:48]: variation between how people perceive day to day versus tomorrow
+Them [20:51]: how they react to us there is some error
+Them [20:53]: you can never get rid of error
+Them [21:01]: okay so our estimate for this real function we assume that the function looks this way
+Them [21:04]: and the estimate is this
+Them [21:05]: okay the y hat
+Them [21:10]: and what we are after is those beta one and beta zero
+Them [21:12]: x is our data
+Pablo [21:17]: so
+Them [21:17]: if we get beta one and beta zero we'll be able to get y hat
+Pablo [21:21]: so that's
+Them [21:21]: the goal let's get those two coefficients
+Pablo [21:25]: how do we get to them
+Pablo [21:33]: as
+Them [21:33]: we said a straight line along x will not do it for various reasons
+Them [21:39]: how about a line like this that follows a pattern that follows a trend well that would be great
+Them [21:41]: but how do we do it
+Them [21:42]: which one is better
+Them [21:45]: is this line good maybe this one maybe this one
+Them [21:50]: how do we get to one that makes sense well let's agree
+Them [21:52]: on something
+Them [22:01]: what we will agree on is to take a look at what we call residuals residuals are very important in modeling
+Them [22:03]: these are the values
+Them [22:10]: by which you differ the real data is different from your estimate
+Them [22:16]: so it is really just the y difference between predicted and measured
+Them [22:18]: for any given x
+Them [22:20]: okay
+Them [22:29]: so how about we take those and we add them up and try to find the line that minimizes those
+Them [22:32]: well we'll actually do a little bit more
+Them [22:51]: we don't really want to deal with pluses and minuses sometimes we may overshoot the value sometimes we undershoot
+Them [22:51]: we square the differences right this way always we stay on the positive and we penalize additional for being too far away
+Them [23:02]: and we form this loss function the cumulative already studied in other classes loss function which is just the average on the squares of the differences
+Them [23:08]: the mean square error in other words and we want to minimize this loss
+Them [23:15]: and we do that by choosing the beta zero and beta one which minimize this loss
+Them [23:21]: it's actually interestingly possible to do this analytically
+Them [23:27]: for the linear setup for the linear model
+Them [23:34]: and we can calculate beta zero and beta one hat directly using these formulas
+Them [23:40]: and they're calculated by any least squares method package
+Them [23:44]: so this is called linear regression and these are the solutions
+Them [23:50]: the y hat that results is called the regression line
+Them [24:03]: any questions thus far all this should be something that you've seen at some point in your previous education so not new
+Them [24:07]: the only thing i'm putting it is in context
+Them [24:09]: and our expectations
+Them [24:13]: there are a bunch of assumptions
+Them [24:18]: when you model with these and then feel free to put questions no question is stupid
+Them [24:23]: no question is not worth my time just put it in there i'll answer it
+Them [24:27]: so linearity assumption
+Them [24:32]: is one the y variable is linearly related to the value of dx variable of course
+Them [24:34]: we started with this
+Them [24:42]: independence of error the residuals that we get are independent for each value of x
+Them [24:47]: often you will see data where the larger the values the bigger the error
+Them [24:50]: so that violates this independence assumption
+Them [24:59]: homoscedasticity is the variation around the line of regression and it has to be constant for all values of x
+Them [25:11]: and of course we have the normality or normalcy assumption where the values of y must be we assume to be normally distributed at each value of x
+Them [25:19]: of course not all of these will be satisfied especially as you work with empirical data
+Them [25:30]: this is why when we discussed previously in eda etc normalizing the data make sure the data behaves as a normal distribution it's very important
+Them [25:37]: linear regression is actually one of those things that has a graceful degradation
+Them [25:48]: as the assumptions fail so you can expect that some of these things will not matter too much until they do you don't really know what that is
+Them [25:55]: but let's go into more practical things here interpreting the coefficients so here is
+Them [26:00]: imaginary none of the solutions are liked it
+Them [26:01]: but
+Them [26:05]: let's say sales equals if
+Them [26:10]: we just a random model and fit the beta zero and beta one
+Them [26:21]: just for the tv predictor we get seven point five plus zero point four times ev with the seven point five million here and one point zero four
+Them [26:27]: so in other words if we increase the tv budget by one thousand dollars
+Them [26:43]: what would you expect for example the increase in sales to be well let's calculate the new sales will be seven point five plus zero four times the tv whatever you spent before plus a thousand
+Them [26:51]: and you see that new sales equals old sales plus forty
+Them [26:59]: okay so for every dollar for every unit increase in tv sales will increase by zero four units
+Them [27:07]: and so this is important so when you run a linear regression yourselves
+Them [27:10]: this is how i want you to report
+Them [27:12]: that
+Them [27:22]: every unit increase in one of the variables in the predictors what does the outcome change like
+Them [27:24]: increases or decreases
+Them [27:28]: but what is seven point five here
+Them [27:37]: seven point five is called the intercept and this is the situation where you spend no money on tv budgets zero
+Them [27:40]: i mean no additional
+Them [27:52]: no money at all so this will be not just you're not adding money but completely spending no money so seven point five units get sold without any advertising budget on tv
+Them [27:57]: so let's stop here see if there's any questions
+Them [28:05]: no question
+Them [28:05]: okay
+Them [28:09]: now
+Them [28:16]: let's still talk about interpretations what if that coefficient was one point zero one
+Them [28:17]: well
+Them [28:21]: here we say for
+Them [28:27]: one unit increase in tv's sales will increase by one point zero one
+Them [28:29]: okay
+Them [28:38]: so the interpretation of the predictors depends on the value but now making decisions depends on how much we trust these values right
+Them [28:47]: and having a model like this doesn't really tell you anything yet about how much to trust those values
+Them [28:52]: let's talk about confidence intervals of the predictor's estimates
+Them [28:55]: and that will take us there
+Them [29:07]: as a reminder we have the epsilon term which corresponds to some random variations or imprecisions or whatever
+Them [29:08]: as we discussed
+Them [29:12]: if we knew the exact form of f of x
+Them [29:18]: and there was no epsilon then the estimates the betas
+Them [29:18]: exact
+Them [29:20]: okay
+Them [29:30]: if things are exact then any value any increase based on the increase in the budget is worth it
+Them [29:31]: why not
+Them [29:36]: you know the exact function you know exactly how people will react and so on
+Them [29:41]: and the model will be fitting the data perfectly of course
+Them [29:43]: we can't have that
+Them [29:49]: epsilon is always there even if we know the exact function you may not be sampling the exact market
+Them [29:51]: and so on
+Them [29:53]: we have limited sample sizes
+Them [29:57]: so there will always be an error
+Them [30:00]: and there always will be a reason
+Them [30:07]: to expect your data scientists to tell you how much you should trust
+Pablo [30:07]: this
+Pablo [30:15]: if you have a very
+Them [30:15]: zero and beta one
+Them [30:20]: will be sure they will be estimated as the means of their distributions
+Them [30:28]: but what if you repeat the experiment if you have a very small sample size they can end up being in a completely different place
+Them [30:31]: in that beta zero beta one space
+Them [30:37]: so let's try to think about this how to estimate those confidence intervals in the predictors
+Them [30:44]: if we start with a model and we have some values of x and we have some data
+Them [30:48]: due to error every time we measure the response variable
+Them [30:49]: the dependent variable
+Them [30:52]: for any x we will obtain a different observation
+Them [31:03]: okay so you can think of these as box plots or as even full distributions that are kind know ninety degrees turned around
+Pablo [31:06]: so the
+Them [31:06]: peaks are pointing to the y axis
+Them [31:15]: so there is a distribution of those y values for any x right and we want to capture the variance of those distributions
+Them [31:19]: so one set of observations is just one realization
+Pablo [31:37]: and then we have another
+Pablo [31:37]: distributions so for each of those
+Them [31:37]: realizations we have an estimate of beta zero beta one and across all of those we will have distributions
+Them [31:42]: and statistical variance and
+Them [31:42]: deviation
+Them [31:44]: around the mean
+Pablo [31:54]: so if we just have one set of measurements our estimates are beta zero and beta one are just for that particular realization
+Pablo [32:15]: but then how do we build those variances how do we build those distributions around any x well we can imagine counterfactually that we've measured it in other universes universe a b c like we ran the experiment multiple times in parallel universes
+Pablo [32:21]: and then we will assume that the distributions behave a certain way
+Pablo [32:26]: as i said you're assuming the data will be normally distributed
+Pablo [32:30]: along any x and if you have both of those assumptions
+Them [32:50]: and you can you know either then assume some analytical formulas for these beta zero and beta one standard errors or you can bootstrap and draw data from a different sample or the same sample either way we'll get some distribution
+Them [32:55]: and we can calculate standard errors around the coefficients
+Them [33:06]: if we assume the data is normally distributed this is what the probabilities of being inside and outside of the two standard deviations
+Pablo [33:18]: and now
+Them [33:18]: by having those standard errors we can answer which of those features actually significant
+Them [33:22]: just by looking at their
+Pablo [33:22]: distributions
+Pablo [33:24]: but before we
+Them [33:24]: get there
+Them [33:37]: let's just say that there's two ways to estimate the beta zero and beta one as i said we can sample multiple times and run multiple models
+Them [33:41]: or we can just assume standard errors
+Them [33:47]: we can assume a normal distribution and then we can calculate
+Them [33:50]: the standard errors
+Them [33:53]: there are formulas
+Them [33:56]: again i said you can bootstrap
+Them [34:01]: but assume that we know those standard errors on the beta zero and beta one
+Them [34:09]: any statistical package like r will give you those or you know scikit learn will also do that for you
+Pablo [34:14]: so now that we have these three distributions
+Pablo [34:25]: you can tell whether the distribution around the mean is
+Them [34:25]: place
+Them [34:36]: so how much does your beta differ and we are back into hypothesis testing how much does your beta differ from
+Them [34:38]: the random one
+Them [34:46]: so basically you'll be comparing distributions i'm going faster through this just to get you to a place where
+Them [34:58]: there's formulas you can use the formula some of these packages will do it for you but basically you have a null distribution for the beta one where you assume beta one happened by chance
+Them [35:16]: there is no pattern or your measured one where you're just calculating from the data and if those two means which you can calculate
+Pablo [35:16]: using the student t test which is really just dividing the mean by the standard deviation
+Pablo [35:20]: look at the student t test
+Pablo [35:23]: is
+Pablo [35:23]: turnout
+Pablo [35:27]: and then
+Them [35:27]: you can determine whether that
+Pablo [35:31]: particular
+Them [35:31]: variable beta one is important or not
+Pablo [35:43]: as i said
+Them [35:43]: t is just the ratio of mean over the standard deviation and we then do a regular
+Them [35:43]: type of a test
+Them [35:45]: by looking into a table
+Them [35:50]: we went over hypothesis testing so i'm not going to belabor this
+Them [36:10]: just to say that we have a null hypothesis an alternative one
+Pablo [36:11]: evaluate the
+Them [36:11]: test statistic and then with a reject or accept the null hypothesis typically it's p value less than zero five as i said for larger sets zero one
+Pablo [36:17]: so
+Them [36:17]: this is nothing new just rewritten and given an explicit test here
+Them [36:19]: which is the t test
+Them [36:24]: okay
+Them [36:37]: and here explicitly in this case we're saying that we are sampling and resampling our result for beta one so that we can get the mean and the standard deviation
+Pablo [36:43]: or
+Them [36:43]: equivalently we can just calculate them using the formula
+Pablo [36:50]: okay and then we'll
+Them [36:50]: reject or accept
+Them [36:57]: in addition we also get something for free which is the confidence in the model
+Them [37:08]: are significant then we are going to of course get a significant model although it's quite possible
+Them [37:16]: that there is some effect if the random effect epsilon is not really random but we're not going to talk about that too much
+Pablo [37:28]: bottom
+Them [37:28]: line is we have to have estimates on the variability of the betas otherwise you can't tell which variable is significant or not
+Pablo [37:33]: so
+Them [37:33]: let's stop here
+Them [37:44]: and see if people have questions i know i kind of went through these slides fast but the bottom line was we are following the same hypothesis testing thing
+Them [37:53]: but here we are comparing the means of the bootstrapped and the null hypothesis for the betas go ahead
+Them [38:09]: can i take a quick sample here can we all raise hands if this is familiar stuff for us
+Them [38:16]: how many of us this is very familiar
+Them [38:21]: by a show of hands
+Them [38:30]: i have show of hands okay
+Them [38:34]: good
+Them [38:38]: so about half the people here okay
+Pablo [38:48]: i
+Them [38:48]: probably you know i was probably thinking most of you will will have seen these things
+Them [38:56]: let's go to multiple linear regression let's keep you know kicking it up a notch
+Them [38:59]: what if you have multiple predictors
+Them [39:04]: well things get a bit more complicated on the interpretation side
+Them [39:10]: but the models the linear models stay as useful as before
+Them [39:12]: uh so
+Them [39:15]: we can use all three predictors
+Them [39:20]: from our example to to to generate a model for sales
+Them [39:23]: and hopefully by using more and more predictors
+Them [39:30]: you're then um getting a better model and capturing more of the variability of the data
+Them [39:37]: thereby getting a better significant fit and estimate for that y hat
+Them [39:44]: now of course the problem is the flip side is the more variables you use
+Them [39:46]: the more data you will need
+Them [39:49]: okay and we talked about this
+Them [39:50]: due to the power analysis
+Pablo [40:02]: but multilinear models you know don't worry about the algebra if you don't care about the algebra but we will have one beta for each of the predictors
+Pablo [40:07]: and we can
+Them [40:07]: express everything nicely in a beautiful matrix format
+Them [40:11]: and the msc can be calculated easily
+Them [40:18]: and it will follow uh it will fall out out of these things and
+Them [40:22]: it is exactly that thing on the bottom
+Pablo [40:29]: where you can have the transpose and the inverse of the matrices so sure there is an assumption you can invert
+Pablo [40:32]: the x d times x which is the data
+Pablo [40:34]: and the transpose
+Pablo [40:40]: uh so if there is
+Them [40:40]: if you can invert it
+Them [40:40]: for the betas
+Them [40:42]: okay
+Them [40:51]: now you will always for an invertible matrix xtx have a solution but it doesn't mean the solutions are valuable to you
+Them [40:52]: anyhow
+Them [40:55]: for them to be valuable
+Pablo [40:59]: two things have to be
+Them [40:59]: satisfied the whole model y hat
+Them [41:01]: has to be a good fit to the data
+Them [41:06]: and you have to have some individual significant predictors
+Them [41:08]: otherwise
+Them [41:09]: what are you doing
+Them [41:10]: right
+Them [41:18]: and uh to estimate the means and the standard deviations which is what you need
+Them [41:23]: uh you'll have to either bootstrap or calculate them outright
+Them [41:25]: with the formula above
+Them [41:30]: now let's dive
+Them [41:33]: in into this and see what happens
+Them [41:36]: when we run three individual models
+Pablo [41:43]: of cells as a function of separately tv separately radio separate
+Pablo [41:48]: versus
+Them [41:48]: one model that includes all three of them
+Them [42:02]: so this is kind of an ablation type of a thing if you're doing ml for a while you're taking out a feature and you're seeing how it affects but in reverse we've run three separate models
+Them [42:05]: and a fourth one of altogether
+Pablo [42:08]: so what
+Them [42:08]: we see here
+Them [42:10]: is
+Them [42:12]: they are small
+Them [42:17]: but in most cases but in some cases significant differences
+Them [42:20]: in the three individual models
+Them [42:26]: what's given first are the coefficients the first one is beta zero
+Them [42:30]: the second one is beta one
+Them [42:33]: beta zero was the intercept
+Them [42:35]: and beta one is the slope
+Pablo [42:42]: so
+Them [42:42]: this is the one that will affect the additional tv spending
+Pablo [42:45]: this is the one that will affect additional radio spending
+Pablo [42:50]: oops and this is the one that will affect additional news spending
+Them [42:53]: oh come on sorry about that
+Them [42:58]: my mouse is hyperactive okay
+Them [42:58]: compare those
+Pablo [43:01]: to
+Them [43:01]: here where you have only one intercept
+Them [43:07]: and you have three separate betas beta one two and three
+Them [43:09]: well
+Them [43:16]: the tv beta one and this beta one seem to correspond well to each other maybe some five percent difference
+Them [43:22]: this one likewise may be some five to ten percent difference
+Pablo [43:25]: but this
+Them [43:25]: one is is big
+Pablo [43:31]: it's not just
+Them [43:31]: that this coefficient is very different almost non existent for the news
+Them [43:34]: but
+Them [43:50]: if you look at the probability that that happened by chance so this is that probability when we compare the zero and the alternative hypothesis so the null and the alternative this one came out highly significant
+Them [43:55]: not as highly as these two so these are the probabilities that this can happen by chance
+Them [43:59]: but it's still pretty high it would have passed my tests
+Them [44:01]: but look what happens here
+Them [44:05]: in the model where we have all three together
+Them [44:13]: it's absolute absolutely not significant in fact it's very likely that this could have happened by chance
+Them [44:26]: that's one thing to note another thing to note is the standard errors the error ranges here
+Them [44:36]: they seem to be much tighter in the model that has all of the variables versus the individual ones
+Them [44:40]: does anyone want to interpret any of these two
+Them [44:45]: the fact that news becomes non significant
+Them [44:49]: and the fact that the ranges get tighter
+Them [44:52]: any comments about either of those

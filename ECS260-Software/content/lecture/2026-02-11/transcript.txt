@@ -1,0 +1,664 @@
+Them [0:47]: okay let's wait for a few more minutes to get more people
+Them [0:53]: any questions meanwhile
+Them [1:46]: yes there is a will the quiz friday be on zoom the quiz will not be on friday
+Them [1:49]: so it will be moved to monday
+Them [1:51]: i mean wednesday
+Them [1:53]: sorry
+Them [1:55]: monday is a holiday
+Pablo [2:21]: okay
+Them [2:50]: let's wait a few more minutes
+Them [2:52]: any other questions
+Them [4:15]: okay so about the quiz this week it will be actually postponed to next wednesday
+Pablo [4:21]: when we will
+Them [4:21]: be back in person hopefully
+Pablo [4:26]: okay
+Pablo [4:29]: okay so
+Them [4:33]: let's start with this
+Them [4:38]: hi everyone
+Them [4:46]: so today i wanted us to just go over some examples of how to
+Them [4:56]: do analysis i'm going to demonstrate it on r and i'm going to use r to
+Them [5:04]: get the data and process it et cetera but of course this can be done with anything else just r is as an interpreter
+Them [5:06]: is much faster getting results
+Them [5:10]: that one can use and discuss immediately
+Them [5:14]: let me share my
+Them [5:17]: not
+Them [5:18]: entire screen
+Them [5:26]: let's see if you guys can see this if you can see my rstudio
+Them [5:29]: give me thumbs up
+Pablo [5:39]: about
+Them [5:39]: fourteen people
+Them [5:46]: which is a bit low but at least we will know things the others don't
+Them [5:50]: make it worth your time hopefully okay
+Them [5:56]: so on today's calendar i've linked a data set
+Them [6:02]: and i've linked
+Pablo [6:02]: also
+Them [6:02]: this script
+Them [6:07]: so the way r works
+Them [6:10]: i can zoom in a little bit
+Them [6:12]: zooming
+Them [6:13]: in
+Them [6:17]: make things bigger okay
+Them [6:18]: hopefully you can see this
+Them [6:26]: so we need to you know get a couple of these libraries to make it work this lme four will be useful for next time
+Them [6:29]: car is just a standard library
+Pablo [6:34]: okay
+Them [6:34]: so first we load in the file
+Them [6:36]: it's comma separated values
+Them [6:45]: actually i'm not sure if it's comma yeah i think it's a comma separated value
+Them [6:45]: are downloading it
+Them [6:56]: so what i'm specifying here is that there is a header with the names of the variables oh separator is column so it's not a comma
+Them [7:01]: this to my bigger window okay
+Them [7:08]: let me know if you if i if i lose any of the windows and you can see anything properly
+Them [7:10]: but okay so
+Them [7:13]: i'm not going to be using the second example for now
+Them [7:18]: but i'm downloading so we're going to comment this out
+Pablo [7:22]: okay
+Them [7:25]: so one thing that
+Them [7:33]: well i forgot how to clear a screen but okay so one thing that
+Them [7:44]: you should note here is that once we are loading this file this is in a data frame and now we can ask all sorts of things about the the data frame for example how many rows it has
+Pablo [7:51]: so i've
+Them [7:51]: capped it the actual data has the diversity data from that paper
+Them [7:56]: it has more than thirty thousand rows but i've capped it at ten thousand here
+Them [8:00]: and if you want to see what's in the file
+Them [8:03]: meaning what's in this data frame
+Them [8:06]: you do view
+Them [8:09]: and that tells you
+Them [8:16]: you know you have the row id you have the project id these are basically github projects
+Them [8:20]: that have been gathered
+Them [8:26]: in twenty seventeen or so i forgot exactly the year
+Them [8:35]: but you can look at the owners you can take a look at the language of the coding project when it was created
+Them [8:52]: meaning the project and then what type of domain it is application library other gui how many forks how many watchers total commuters total commits project age you see these are all the things that can be gathered using
+Them [9:06]: some of the tools we discussed earlier when we talk about data
+Pablo [9:06]: we also have gathered data at multiple time points and these are these windows every six months
+Them [9:20]: total number of commits pull
+Pablo [9:20]: requests some projects
+Them [9:20]: don't have pull requests number of people on the team the committer id's their commits and so on and so forth
+Pablo [9:37]: now
+Them [9:38]: in addition to all this we also have genders of the people in there and this exercise
+Them [9:38]: to show you how to compare things across projects and so doing some eda for example but also how to do it properly
+Them [9:39]: using regression
+Them [9:43]: and where differences arise if you don't do it properly
+Them [10:12]: it's an interesting question how we identified the genders of people and the answer is with some skill and with some doing we looked at their names we looked at their aliases we combined it into one paid particular attention to understanding what part of the world they come from so you know luca for example is a is a male name in italy but could be a female name here
+Them [10:19]: and also we ignore chinese names because it was just impossible to tell there in general
+Them [10:22]: okay
+Them [10:49]: so i will keep doing this exercise i mean using this data set for
+Pablo [10:49]: the exercises i'm doing until we reach a point where i can show you how to properly analyze such a complex data set with all of its nuances and you can see that initial analysis may not always pan out so be careful what you do initially doesn't have to be the result that you present at the end
+Pablo [10:51]: so for example
+Pablo [11:09]: we downloaded this data set it has ten thousand rows you can also check
+Them [11:09]: how many variables it has it has forty six so about forty five different predictors
+Them [11:21]: the other thing that you can do is you can start looking at how many commits projects have so if you just plot
+Them [11:22]: let's see
+Them [11:35]: let's just go directly through the id so let's run this box plot and you will get this figure on the right i just wanted to
+Them [11:50]: show we have plotted two box plots the number of commits in the data per project is condition on whether a project has a woman in it or not
+Them [11:56]: and so true is if there is a woman and falses if there isn't
+Them [12:00]: the first thing we notice is
+Them [12:04]: what
+Them [12:16]: let's let's make this more interactive just jump in you don't have to raise your hand just jump in and talk to me what is the first thing you notice from this box plots
+Them [12:24]: pay particular attention to this i mean can you even see the box
+Them [12:29]: all you see is really outliers above
+Them [12:31]: the third quartile
+Them [12:43]: what are we concluding from this well one thing we are concluding is that we are not looking at this at the right way
+Them [12:46]: because the data is not normally distributed
+Them [12:54]: so let's take take a look at the logged non commits and see if anything changes and lo and behold
+Them [12:58]: what we are getting now is something that looks much more normal
+Pablo [13:15]: so
+Them [13:15]: root let's see if i can do this
+Them [13:21]: yes i should be able to do this
+Them [13:32]: oops no no no i was i was meaning to add it here sorry
+Them [13:34]: okay
+Them [13:37]: so with the square root which is also a correction
+Them [13:40]: you get a little bit of that effect
+Them [13:48]: and you can see that the data becomes more normal but you're keeping more of the outliers whereas with the log
+Them [13:57]: you're completely getting rid of the outliers and that's what we really wanted
+Them [14:04]: okay now of course there may be a reason for you to keep the outliers and maybe analyze them separately
+Them [14:08]: now this looks like
+Them [14:11]: the teams that have at least one woman on them
+Them [14:15]: have more commits on average
+Them [14:37]: and that's an interesting result it's an interesting hypothesis driving result it's a it's an exploratory result so you'll have to now continue with some inferential statistic to see if this actually makes sense right and maybe you saw this last friday also but let's proceed now
+Them [14:42]: and try to dig in and see whether this actually pans out
+Them [14:47]: but before that let me see any comments there's already something in chat
+Them [14:59]: so brandon
+Pablo [15:06]: this
+Them [15:06]: is an interesting question which probably doesn't mean as much as you think but let's let's discuss it
+Pablo [15:12]: what is the difference between scaling the axis and not the data
+Pablo [15:17]: if you log scale to access if you make
+Pablo [15:18]: it bigger up at the top
+Pablo [15:20]: you kind of
+Pablo [15:22]: scrunch up all the outliers
+Pablo [15:26]: where they don't super matter but then you keep
+Pablo [15:27]: more
+Pablo [15:31]: accurate scale of the differences of the data where you care about them
+Pablo [15:33]: and the median area
+Them [15:42]: so what you're basically saying
+Them [15:43]: is
+Them [15:46]: why don't we just change the plotting
+Them [15:48]: instead of changing the data
+Them [15:53]: and what i'm trying to tell you is really what that will amount to is just having different
+Them [15:54]: numbers on the
+Them [15:55]: y axis
+Them [15:56]: but
+Them [15:56]: the same
+Them [16:03]: with the y log scale the semi log
+Them [16:05]: adjust the scale
+Them [16:06]: not the numbers themselves
+Them [16:08]: so it won't be linear
+Them [16:14]: this is what i'm saying
+Them [16:15]: so
+Them [16:19]: with respect to the small thing it will just be
+Them [16:20]: different so the
+Them [16:21]: things on the y axis
+Them [16:22]: but hold on
+Them [16:24]: my point is this
+Them [16:27]: doing that will not give you a normal distribution
+Them [16:40]: okay that makes sense of this transformation is to then use this transform data into a downstream analysis
+Them [16:42]: you know so it's a good point
+Them [16:44]: in the sense of oh but we don't want to change data
+Them [16:49]: no in fact you do want to change the data because this original plot
+Them [17:01]: what am i doing why am i keep testing okay sorry so this original plot no matter how much you zoom in is not going to look is not going to look normal
+Them [17:10]: okay and you can you can tell that maybe a little bit here but you can tell it even more if you
+Them [17:11]: if you zoom in
+Them [17:22]: and sorry this is showing me a different window but if you guys are able to run it on your end
+Them [17:26]: that's fine but actually let me just share
+Them [17:33]: okay this is what it looks like when you zoom in okay
+Pablo [17:38]: so no matter how much you zoom in
+Them [17:41]: the data is not going to look normal
+Them [17:43]: right
+Pablo [17:45]: okay
+Them [17:53]: but thank you thank you for that question let me go back to sharing the other thing
+Them [17:55]: good
+Them [18:13]: okay back to here now the question is really so let's get back to our log data we saw a desk the square root data looked like and again you would like to choose a transformation that doesn't disturb the data too much
+Them [18:22]: and also once you transform the data you have to keep track of that in follow on analysis so that you can interpret it properly because
+Them [18:25]: brandon is right we lost the original data
+Them [18:39]: so keep track of what you're doing but okay now to actually ascertain if
+Pablo [18:39]: this difference between the means actually these are medians so it's not even the means but
+Pablo [18:42]: we can on a normal plot they're pretty close
+Pablo [18:52]: so let's assume those are the means to actually tell if those means are meaningfully separated and not just by chance we can run a t test
+Pablo [19:01]: and let's run it with the data as we transformed it meaning with the log data and here's the outcome
+Them [19:23]: we have two t test we're testing between the two the difference between the values is negative nineteen the p value meaning the chance that this happened the probability this happened by chance is less than
+Them [19:25]: sixteen zeros
+Them [19:31]: two two so therefore the null hypothesis is rejected
+Them [19:39]: if you're choosing an alpha of zero point zero five or even zero one or even zero zero one so it's very significant
+Them [19:42]: what else do we have here the means
+Them [19:49]: the means of the two groups one has three point five the other one is two point six on this log scale
+Them [20:09]: and also we are given the ninety five percent confidence interval what is this interval on well remember what it is that we are evaluating here is the difference between the means right the difference between the means is what is zero point eighty five or something like that
+Them [20:11]: okay
+Them [20:21]: so what this tells you is where the ninety five percent confidence interval lies so it's zero point negative zero eighty five
+Them [20:26]: so it goes from negative zero ninety four to negative zero seventy six
+Them [20:34]: so ninety five percent probability your mean difference will lie between those two
+Them [20:35]: okay
+Pablo [20:43]: but the t test looks at that difference in the means and evaluates whether that's significant and where that difference lies
+Pablo [20:49]: okay so this tells us this t test tells us that this difference is meaningful
+Pablo [20:51]: okay
+Pablo [20:53]: but that's misleading
+Them [20:56]: can anybody tell me
+Them [21:08]: why this is misleading why why shouldn't we jump to a conclusion that oh look having a woman on the team will make you
+Them [21:08]: code faster
+Them [21:23]: i mean there's probably a bunch of other variables involved and it by itself doesn't appear statistically significant
+Them [21:29]: no by itself it is very statistically significant that was the point of the t test
+Them [21:32]: all right okay yeah there's other variables
+Them [21:32]: then
+Them [21:35]: okay so when you look at this
+Them [21:41]: you're encouraged you're saying look i've gathered data that can give me some results
+Them [21:45]: ok so that's that's first thing so you're doing something well
+Them [21:53]: but then you start wondering whether what you've tested makes sense
+Pablo [21:59]: you
+Them [21:59]: just took all projects and you separated them in those that have a woman and those that don't
+Them [22:03]: right and then you tested the number of commits
+Them [22:10]: and really here you have ten thousand projects right ten thousand you don't even know which projects these are
+Pablo [22:41]: we should worry about whether you're comparing apples to apples and oranges to oranges you know how large are these projects is there any attractiveness between you know projects and particular classes of people is there for example i mean is there a reason for example a sawyer says that maybe projects with more people are more likely to have a woman
+Pablo [22:44]: you know
+Them [22:50]: soyer why would that be the case why would what would explain such a thing
+Them [22:59]: and and before you answer look how important theories are here because you're now grasping at straws unless you have a theory
+Them [23:03]: okay so what theory could explain
+Them [23:09]: such a thing that more that more populous projects are more likely to have a woman
+Them [23:17]: i mean it's a good hypothesis but what drives you to say that
+Them [23:21]: what inspires you right there has to be some reason for that
+Them [23:30]: so
+Them [23:42]: the first thing that we have not really understood well is that distribution of project sizes but the second thing we have not understood well is how many women are there across all these projects anyways
+Them [23:44]: or on average
+Pablo [23:47]: in fact
+Them [23:53]: you know if you do a table let's see if i can do this
+Them [23:55]: on the go
+Them [24:00]: table let's see didi
+Them [24:02]: has
+Them [24:04]: woman
+Them [24:19]: okay so what this shows you is how many of the nine hundred ninety nine projects have a woman versus how many don't so it looks like thirteen percent of the project have women on them
+Them [24:21]: okay
+Pablo [24:25]: so an eighty six percent don't
+Them [24:29]: so that's interesting
+Them [24:37]: how about how do how can we test whether projects with women
+Them [24:42]: have higher sizes
+Pablo [24:47]: so why don't we
+Pablo [24:49]: do a box plot
+Pablo [24:51]: and
+Pablo [24:52]: on this side
+Them [24:59]: we can call
+Them [24:59]: first of all
+Them [25:00]: we need to
+Them [25:01]: sorry before we do this
+Pablo [25:08]: that's not what i wanted to do before we do this let's do
+Pablo [25:11]: summary of scientists
+Pablo [25:21]: project non commence let's
+Pablo [25:22]: see
+Pablo [25:23]: so now
+Pablo [25:30]: i guess
+Them [25:30]: we can
+Them [25:44]: see everything so what are you not seeing
+Them [25:45]: step
+Them [25:46]: hen
+Them [25:51]: i think i'm sharing my whole
+Them [25:52]: ide
+Them [26:05]: a
+Them [26:05]: try to zoom out
+Them [26:11]: because i'm showing the whole window i have this four panel
+Pablo [26:20]: anybody else has a
+Them [26:20]: problem
+Them [26:21]: so you have four channels
+Them [26:27]: okay
+Them [26:29]: so
+Pablo [26:30]: thank you
+Pablo [26:32]: that's let me just see if i can
+Pablo [26:41]: thank you for letting
+Pablo [26:42]: me know
+Pablo [26:43]: okay
+Them [26:47]: is
+Them [26:47]: this better
+Pablo [26:57]: okay
+Them [27:00]: o
+Them [27:05]: kay so what i'm doing here is i first discuss how many
+Them [27:06]: women how many projects have women
+Them [27:08]: and now i'm
+Them [27:10]: trying to see what
+Them [27:11]: the distribution is
+Pablo [27:23]: immediately
+Pablo [27:30]: so this is
+Them [27:30]: a distribution
+Them [27:33]: across all project
+Them [27:35]: of the number of
+Them [27:37]: commits i just wanted to see
+Them [27:39]: so most of
+Them [27:40]: know have
+Them [27:43]: fears and four hundred commits
+Them [27:44]: and there is some outlier
+Them [27:44]: s
+Them [27:45]: okay
+Them [27:46]: so let's for example
+Them [27:48]: do a table
+Them [27:52]: or maybe box
+Them [27:53]: plot
+Them [27:54]: we're gonna
+Them [27:58]: throw this
+Them [27:59]: against
+Them [28:08]: different
+Them [28:12]: let's
+Them [28:13]: say non
+Them [28:14]: commit
+Them [28:19]: ment
+Them [28:23]: but
+Them [28:24]: lord is in ceilings
+Them [28:39]: maybe
+Them [28:40]: i should try it
+Them [28:40]: together
+Pablo [29:02]: oh actually
+Them [29:02]: what i wanted to delia was a table
+Them [29:07]: you can see medieval
+Them [29:09]: question
+Them [29:09]: first
+Them [29:16]: and our expert here
+Them [29:18]: how do we do this
+Them [29:24]: i'm sure you've got
+Them [29:26]: plenty there's a better way to do this
+Them [29:28]: actually instead of counting through this
+Them [29:30]: why don't we just
+Them [29:33]: have this why don't we just create a model
+Them [29:35]: that is multiv
+Them [29:35]: ariate
+Them [29:39]: and in a multivariate model
+Them [29:41]: we will include the number of
+Them [29:42]: commits
+Them [29:43]: we will include hes
+Them [29:44]: woman and
+Them [29:45]: so on
+Pablo [29:47]: okay so let's see
+Pablo [29:49]: if we can get to the bottom of it
+Pablo [29:51]: and whether we can
+Pablo [29:53]: see if this
+Pablo [29:54]: thing pans out
+Pablo [29:55]: okay
+Pablo [29:56]: so how do we build a model
+Pablo [29:59]: well first of all
+Pablo [30:01]: acoust
+Pablo [30:02]: ics
+Pablo [30:05]: yeah there may be some non value so i don't want to hit
+Pablo [30:07]: i don't want to keep pursuing this because that's going to
+Pablo [30:08]: take some time instead
+Pablo [30:09]: we're going to use
+Pablo [30:12]: functions that actually can function in the presence of
+Pablo [30:13]: non values
+Pablo [30:14]: brendan
+Pablo [30:15]: that's a good point
+Pablo [30:23]: so first of all let's create a separate data set
+Pablo [30:24]: that has
+Pablo [30:29]: only projects that don't have
+Pablo [30:29]: women
+Pablo [30:33]: and here's a data set of only projects that have
+Pablo [30:35]: women
+Pablo [30:37]: and now
+Pablo [30:39]: we can look whether those
+Pablo [30:40]: commits
+Pablo [30:41]: and again
+Pablo [30:42]: we should be able to
+Pablo [30:44]: get the same result
+Pablo [30:45]: okay
+Pablo [30:46]: so yes
+Pablo [30:49]: it turns out project with women and without
+Pablo [30:50]: women
+Pablo [30:52]: they actually behave in very different in terms of
+Pablo [30:53]: number of
+Pablo [30:54]: planets
+Pablo [30:58]: if you want to take a look at the correlation
+Pablo [30:59]: text
+Pablo [31:01]: okay
+Pablo [31:03]: so this will not work
+Pablo [31:07]: unless you make it have the same length
+Pablo [31:09]: but
+Them [31:14]: the same number and
+Them [31:15]: this is why
+Them [31:21]: r is great because here i'm sampling the same number as without
+Them [31:24]: and what i'm hearing is that
+Them [31:26]: i'm getting something interesting
+Them [31:31]: if you just sample the same number
+Them [31:33]: of
+Them [31:39]: projects as without women
+Them [31:40]: as with
+Them [31:42]: then i'm getting there's no correlation
+Them [31:47]: but some called the t test was working
+Them [31:48]: fine
+Them [31:52]: so what's going on so it seems like there's some different behavior
+Them [31:55]: so the projects are different so let's do some regression
+Them [31:59]: and here's a simple model
+Pablo [32:01]: model one
+Them [32:05]: up
+Them [32:07]: we're going to try to predict
+Them [32:08]: okay
+Them [32:09]: so it's going to be a predictive mod
+Them [32:10]: el
+Them [32:11]: to
+Them [32:12]: take the number of comments
+Them [32:14]: from
+Them [32:17]: is very important
+Them [32:20]: number of people on the team is very important if you assume
+Them [32:23]: constant productivity per person on average
+Them [32:26]: and project a is important
+Them [32:28]: because constant productivity per
+Them [32:28]: time
+Them [32:35]: the size of the team is one thing the number of commuters is another many people
+Them [32:39]: just talk or work on it fixing bug
+Them [32:39]: s et cetera
+Them [32:42]: and we are adding
+Pablo [32:43]: this factor
+Pablo [32:44]: of
+Pablo [32:48]: this factory
+Them [32:48]: just turning this into
+Them [32:50]: the appropriate
+Pablo [32:52]: let's
+Pablo [32:54]: see what happens we run this model
+Them [33:00]: and now let's summarize
+Them [33:01]: the models so the model is done
+Them [33:07]: the model is now an object card that you can mine and extract stuff
+Them [33:08]: from the different functions
+Pablo [33:09]: and here is the summ
+Pablo [33:10]: ary of the model
+Pablo [33:14]: several interesting
+Them [33:14]: things let's go to the
+Them [33:15]: bottom
+Them [33:15]: first
+Them [33:19]: multiple r squared is how you judge
+Them [33:20]: whether mod
+Them [33:21]: el is a good fit
+Them [33:27]: from zero to one
+Them [33:35]: one is the perfect model coin four means we are capturing forty percent of the divergence of variability in the data
+Them [33:37]: okay
+Them [33:39]: so now the perfect model not a terrible
+Them [33:40]: mind
+Them [33:42]: but
+Them [33:43]: it's not the best model
+Them [33:46]: and we'll see how we can
+Them [33:46]: do better
+Them [33:50]: the appointment here is here are listed all the betas
+Them [33:55]: so debate is our given
+Them [33:57]: we have standard there the t value is
+Them [33:58]: a good let
+Them [33:59]: 's just calculate the
+Them [34:00]: probability or
+Them [34:01]: how significant
+Them [34:03]: this is if we set
+Them [34:04]: from alpha zero
+Them [34:05]: zero one
+Them [34:12]: tell us anything important
+Them [34:15]: with
+Them [34:18]: project page
+Them [34:19]: is significant
+Them [34:21]: and r already gives you
+Them [34:22]: significant
+Them [34:22]: call
+Them [34:25]: so three stars
+Them [34:28]: is significant at the level of
+Them [34:30]: zero zero
+Them [34:31]: one two stars at zero
+Them [34:32]: one
+Them [34:33]: star
+Them [34:35]: is what the standard
+Them [34:38]: significance is zero five but again
+Them [34:40]: i would like to see at least two stars
+Them [34:41]: in my analysis
+Them [34:44]: and
+Them [34:45]: most important
+Them [34:46]: ly look at this
+Them [34:49]: who can interpret
+Them [34:50]: this line for us
+Pablo [34:56]: any
+Pablo [34:56]: one
+Pablo [35:02]: looking
+Pablo [35:03]: for
+Pablo [35:03]: general inspiration
+Pablo [35:04]: of stuff
+Them [35:07]: demon
+Them [35:08]: again
+Them [35:12]: to which panel can you see
+Them [35:20]: i have no idea why that's happening
+Them [35:21]: because i
+Them [35:22]: 'm not doing anything on
+Them [35:22]: my end
+Pablo [35:27]: want
+Pablo [35:27]: an address
+Them [35:30]: can you see the lower left panel
+Them [35:30]: ing
+Them [35:37]: i'd say maybe if i can share my whole screen
+Pablo [35:41]: whether that will stop happening here
+Pablo [35:44]: desktop two
+Them [35:51]: are we seeing my whole desktop
+Them [36:00]: guys feedback we're seeing everything
+Them [36:03]: yes
+Them [36:04]: good
+Pablo [36:04]: just
+Pablo [36:06]: got one question to ask
+Them [36:08]: okay
+Pablo [36:10]: come on
+Pablo [36:19]: ghost i said i
+Pablo [36:20]: the
+Them [36:20]: stars i was talking about this project age number of people on the team a number of committers
+Them [36:23]: all sorts of interesting things to say about the betas there
+Them [36:26]: in the interest of time legends focused on the last
+Them [36:27]: line
+Them [36:28]: has
+Them [36:29]: won
+Them [36:32]: the interpret deadline
+Them [36:32]: for me
+Them [36:35]: now
+Them [36:36]: i am
+Them [36:37]: pretty sure it doesn't
+Them [36:38]: happen
+Them [36:39]: just jump in you don't have to raise
+Them [36:53]: what does it mean to disturb it
+Them [36:54]: loaded take a look at the probability
+Them [37:07]: are there any stars next to the variable so we have to get a zero three probability that this is by chance and that's much higher than zero five
+Them [37:09]: or zero one
+Them [37:13]: so we conclude
+Them [37:16]: that this variable is not significant
+Them [37:18]: for
+Them [37:18]: the model
+Them [37:21]: that's what
+Them [37:22]: i call a brain
+Them [37:25]: so it's not because of the air it's because of the t value
+Them [37:27]: the t value is too small
+Them [37:32]: the difference between the means
+Them [37:33]: of the null
+Them [37:40]: and the distribution of this factor is too small it's too small to matter
+Them [37:45]: the probability that this result happened by chance is thirty percent
+Them [37:49]: and we wanted it to be smaller than five percent right
+Them [37:56]: so we cannot exclude the null at this point this variable is not significant
+Them [38:07]: so our conclusion is that once we controlled four all other things being constant
+Them [38:24]: in other words has woman was taken in context of the project age of the teams we are comparing of the project is comparable the number of people per team is comparable when we adjust or take into account all the other stuff
+Them [38:28]: then having a woman on a team doesn't matter
+Pablo [38:32]: okay
+Them [38:34]: any questions about that
+Them [38:48]: so we are seeing the betas we are seeing the standard error the standard error and the betas allow us to estimate the distribution you remember in the parallel universes
+Them [38:59]: allow us to estimate the distribution of the t value which is the mean divided by the mean difference divided by the standard deviation
+Them [39:02]: okay
+Them [39:18]: so we are getting something that's interesting here we are learning that just looking at correlations and looking at box plots is the first step but it cannot be an answer to an rq
+Them [39:21]: you are studying very complex things
+Them [39:30]: so you cannot give me box plots or eda and claim that you have a conclusion
+Them [39:39]: not unless you've controlled for all the other things that could have gotten in the way that you'll have to anticipate
+Them [39:44]: always we need to control for size always we need to control for time
+Them [39:48]: so those are the things here that we are controlling for
+Them [39:52]: okay before we move on any other questions
+Them [40:12]: it's interesting to interpret the other variables as you can see the number of people on the team actually lowers has a negative impact on the number of commits whereas the number of committers has a high positive value on a number of commits
+Them [40:19]: so having more people on the team will not by itself improve the productivity
+Them [40:24]: which is also an interesting result in itself
+Them [40:25]: other
+Them [40:30]: people
+Pablo [40:30]: now let's take a look
+Them [40:31]: at some other things here as we are evaluating models
+Them [40:42]: this vif is called a variance inflation factor and that tells you whether there is correlations between any of the variables in your model
+Pablo [40:50]: if several variables are very highly correlated that may throw off the values of the beta make them uninterpretable
+Them [40:55]: okay this is why i needed
+Them [40:57]: car function
+Them [41:03]: okay now let's repeat the vif
+Them [41:08]: okay
+Them [41:19]: so
+Them [41:19]: runs an average correlation for all pairwise things and then it distributes it for a variable
+Them [41:24]: and so long as it's lower than five and some people say even ten is okay
+Them [41:25]: you're good
+Them [41:38]: there are certainly some correlation between
+Pablo [41:38]: but
+Them [41:38]: not sufficiently so to make the model invalid
+Them [41:43]: because of variance inflation because of correlations
+Them [41:59]: another thing that you can do is look at the assumptions whether the assumptions are violated in the model remember we had assumptions that we would like the residuals to be normally distributed etcetera and you do that
+Them [42:08]: in various ways here in r it's very easy it's going to run through a sequence of steps that will show you all of the assumptions and it's called plot
+Them [42:16]: and so every time we hit a return it will show you the distributions
+Them [42:20]: and clearly clearly we have a bunch of outliers
+Them [42:32]: the residuals are not normally distributed or randomly distributed residuals should be randomly distributed here just look like a sea of points they're not
+Them [42:35]: the normalcy of the distribution
+Them [42:46]: is not normal that's the line the dotted thing that the data should fall the residual should follow but they don't so many assumptions are violated
+Them [42:49]: in this model
+Them [42:58]: and some of that has an effect on the r squared and why your model is not that good
+Them [42:59]: okay
+Them [43:01]: so
+Them [43:08]: one thing that you can do well yeah one thing that you can do is
+Them [43:15]: understand that the number of commits are not normally distributed and then correct for that like we did before
+Them [43:18]: so let's take a look at this model too
+Them [43:22]: with the logged number of commits
+Them [43:25]: and now let's take a look at the summary here
+Them [43:36]: one thing to note is that
+Pablo [43:36]: first of all
+Them [43:36]: the estimates will be much lower we are logging now things are much closer to each other
+Them [43:42]: the estimate is much better so as a y hat
+Them [43:44]: the estimate of the real
+Them [43:45]: y
+Pablo [43:48]: esterday
+Pablo [43:51]: it was thirty nine
+Them [43:54]: here to forty one
+Pablo [43:55]: percent
+Pablo [43:57]: so a few percentage point
+Pablo [44:02]: and that normal
+Pablo [44:04]: ized things to each other
+Pablo [44:08]: but if you look into this distribution of
+Them [44:08]: value
+Them [44:09]: let's look at the residual
+Them [44:11]: that started to be spread
+Them [44:12]: out more across the space
+Them [44:14]: things are looking more normal
+Pablo [44:20]: okay so
+Them [44:20]: all in all everything looks a bit better
+Pablo [44:23]: but not
+Them [44:24]: perfect
+Them [44:26]: not perfect by all means
+Them [44:37]: so what we are taking out of this though is even in that logged model that has woman is not important
+Them [44:50]: it became more important meaning less likely that the variability that it's sucking up is due to chance
+Them [44:55]: so it's less likely so you see that drop to zero two the t value
+Them [45:08]: oh sorry i was looking at the wrong thing sorry no it actually became even less significant
+Pablo [45:08]: eight four eight so almost surely due to chance
+Them [45:12]: make sure you interpret the right column
+Them [45:15]: i thought it dropped from zero
+Them [45:18]: it actually could
+Them [45:19]: zero eighty four
+Them [45:22]: then correct
+Them [45:22]: ed
+Them [45:27]: is this the end
+Them [45:30]: of such an analysis
+Them [45:31]: well this is actually the beginning
+Them [45:33]: first of all
+Them [45:36]: we haven't really looked at the distribution
+Them [45:39]: of
+Them [45:40]: these variables
+Them [45:41]: if they are not normal
+Them [45:42]: themselves
+Them [45:47]: although here we've committed a number of commuters got corrected
+Them [45:53]: we don't know anything about project age or the others
+Them [45:55]: in addition
+Them [45:59]: is it possible that maybe some project will
+Them [46:00]: act
+Them [46:03]: more closely to some other project
+Them [46:12]: and form some sort of clusters of behavior simply because they have a certain number of people started at a certain time et cetera
+Them [46:20]: and that will take us into random effects where we allow grouping
+Them [46:22]: of projects together
+Them [46:29]: and we'll get there next time that will allow us to run projects that are more complicated
+Them [46:42]: before we get to model three i just wanted to show you the anovas of this let's go back to model one that's the first thing we didn't see
+Them [46:45]: what the anovas do for you
+Them [46:56]: is tell you how much of the variability goes to or the variance goes to each of the variables
+Them [47:21]: if you think of this is the amount of variability in the data if you add up all of these so it's going to be close to oh i don't know what is this one seven seventy three million twenty seven so maybe one hundred twenty million is the variability sum of squares right
+Them [47:26]: out of that you've modeled successfully about fifty million
+Them [47:41]: and out of those fifty so the ratio of fifty million over one hundred twenty is how well you're fitting so basically r squared but out of the variability that you're capturing
+Them [47:42]: these four
+Them [47:52]: the sum of squares for each variable in the anova table tells you how much of the variability is captured by each of these variables
+Them [48:04]: so look at those order of magnitudes higher numbers for num team and num committers versus project age versus has a woman so if this is ten thousand
+Them [48:07]: and this is nineteen million
+Them [48:21]: okay just tells you how insignificant a factor of hell's woman is at all to this model removing it would not matter a hundredth of a percent and they explaining power
+Them [48:26]: so think of this as how much explanatory power each variable has
+Them [48:31]: and it's good to understand what you're doing
+Pablo [48:49]: and so on
+Pablo [48:52]: but let's
+Them [48:52]: let's stop here see if people have questions
+Them [48:56]: and we'll continue next time
+Them [49:05]: with organizing the project in groups of projects and just to show you where this will end up
+Them [49:08]: we will
+Them [49:14]: if we actually load in so think of a question if you have any
+Them [49:16]: while
+Them [49:29]: i am kind of wetting your appetite for what's going to happen with model three because it's a story we'll see how things will flip again and projects with women will become at some point more productive
+Pablo [49:46]: any good python libraries for this modeling is the s factor one hot encoding
+Pablo [49:50]: i believe so i believe that's what s factor does
+Pablo [49:53]: python libraries
+Pablo [49:56]: what is it called
+Pablo [50:02]: why did i forget the sk learn exactly bren thank you
+Pablo [50:10]: sk learn will do many of these things for you the difference is though this is so immediate because it's an interpreter right
+Pablo [50:15]: and so you can just go through this and
+Them [50:18]: it will take you places faster
+Them [50:26]: so there is an immediacy between this type of analysis and environment and generating hypotheses and testing them right away
+Them [50:40]: yeah so what we will see eventually is that when we build a full model and we're not going to get there of course but we can read the paper that's linked
+Them [50:49]: and this was the first paper that we published where we showed that teams that have women on them if you do it properly and account for many different things
+Them [50:51]: on average are more productive
+Them [51:15]: by a small amount but more productive so the conclusion was it was always beneficial to increase diversity on a team and this was true not just gender wise but it was through experience wise it's good to have older and younger people on a team but things this is the case for diversity not just for women in other words it's good to have men and women on a team
+Them [51:19]: it's very interesting so we'll discuss this further
+Them [51:25]: over the next few lectures but any comments questions please stick around if not you're free to go thank you
+Them [51:48]: cheers

@@ -1,0 +1,1082 @@
+Pablo [0:07]: capt
+Pablo [0:07]: uring the angle
+Pablo [0:12]: so anything that was called computation
+Pablo [0:17]: was captured in this tree
+Pablo [0:20]: models and they're all important
+Pablo [0:24]: usually we look at story machines
+Pablo [0:34]: during
+Pablo [0:36]: the three show was the holiday
+Pablo [0:36]: problem
+Pablo [0:41]: and showed that multiplied is undecided
+Pablo [0:53]: meaning that you cannot define a program or an algorithm that when you give it another program it will tell you that if this program will halt or
+Pablo [0:58]: you will look into the formal dimensional
+Pablo [1:05]: so this theorem by
+Pablo [1:11]: turing it showed that and scheiden's problem is undecidable do you remember what was that
+Pablo [1:19]: problem was saying that any mathematical statement
+Pablo [1:22]: and he verified as true
+Pablo [1:23]: or false
+Pablo [1:26]: by a given
+Pablo [1:26]: procedure
+Pablo [1:28]: but that is wrong
+Pablo [1:36]: because the problem that the statement that this machine halves can be
+Pablo [1:39]: and to ensure that you can
+Pablo [1:42]: not this problem is not decided
+Pablo [2:01]: so this was a disaster because he was proposing this idea and trying to
+Pablo [2:05]: automate the mathematical problem but all the mathematic
+Pablo [2:06]: s
+Pablo [2:12]: but since we have some undecidable problem now we know that we cannot
+Pablo [2:14]: automate all
+Pablo [2:15]: the documents
+Pablo [2:19]: before hitler disclosed
+Pablo [2:20]: other mathematicians
+Pablo [2:27]: not some automation will replace them
+Pablo [2:29]: for a
+Pablo [2:33]: moment
+Pablo [2:40]: you
+Pablo [2:51]: might think that maybe if we switch our programming language or the language they're describing the algorithm maybe we could have
+Pablo [2:53]: some programming language
+Pablo [2:57]: no program will be non help
+Pablo [3:02]: but now we want to show that if programs can run
+Pablo [3:03]: other programs
+Pablo [3:07]: then there must be some program that is not
+Pablo [3:11]: how do we do
+Pablo [3:11]: this
+Pablo [3:18]: so first
+Pablo [3:23]: let's look at programs we know that run other program
+Pablo [3:28]: s we know that operating system run other programs web browsers
+Pablo [3:35]: and any programming language we usually use it has an interpreter
+Pablo [3:38]: it's also called a universal program
+Pablo [3:42]: both
+Pablo [3:44]: of the universal program
+Pablo [3:48]: it gets two inputs a description of the program and the template and it will run
+Pablo [3:49]: the program
+Pablo [3:53]: so usually
+Pablo [3:55]: we are working with programs that are
+Pablo [3:56]: running other
+Pablo [3:59]: now
+Pablo [4:01]: with this assumption that
+Pablo [4:04]: programs are running on other programs
+Pablo [4:09]: we are defining this boolean return program that
+Pablo [4:10]: launch
+Pablo [4:13]: es
+Pablo [4:23]: digital
+Pablo [4:24]: social
+Pablo [4:27]: you're
+Pablo [4:28]: looking at
+Pablo [4:34]: and
+Pablo [4:35]: we
+Pablo [4:36]: have to
+Pablo [4:44]: what is
+Pablo [4:45]: the output of
+Pablo [4:46]: being out
+Pablo [4:46]: of detail
+Pablo [4:51]: what you
+Pablo [4:52]: can
+Pablo [5:12]: because
+Pablo [5:14]: it's not well defined
+Pablo [5:16]: if we run v on itself
+Pablo [5:19]: what it will do
+Pablo [5:23]: the answer of
+Pablo [5:27]: so when it comes to it doesn't make sense
+Pablo [5:30]: it be as true then it must return false
+Pablo [5:32]: and the other way
+Pablo [5:38]: so the only information was
+Pablo [5:49]: for any programming languages that
+Pablo [5:51]: has an interpreter
+Pablo [5:54]: must come program
+Pablo [6:00]: in other words
+Pablo [6:07]: is the program that doesn't halt always itself
+Pablo [6:15]: for v the input that you feed to it that doesn't halt is
+Pablo [6:19]: doesn't help
+Pablo [6:29]: is every halting problem like that
+Pablo [6:35]: from netherlands
+Pablo [6:36]: in a bit
+Pablo [6:38]: okay
+Pablo [6:41]: any
+Pablo [6:42]: other questions
+Pablo [6:50]: now
+Pablo [6:55]: we want to go back to some problem
+Pablo [6:55]: for now
+Pablo [6:56]: and
+Pablo [6:57]: we will see why this is useful
+Pablo [6:59]: for
+Pablo [7:02]: sort of problems we are thinking about
+Pablo [7:09]: for being
+Pablo [7:10]: close
+Pablo [7:13]: so the problem
+Pablo [7:17]: the size of sets
+Pablo [7:20]: for finite sets it's like easy
+Pablo [7:25]: first let's look at
+Pablo [7:27]: what does it mean if we say
+Pablo [7:34]: finite state a is at least as the size of the financing
+Pablo [7:43]: that means it can have on two function from a to b and on two as a reminder means
+Pablo [7:44]: it will cover all
+Pablo [7:45]: the range
+Pablo [7:56]: as
+Pablo [7:57]: a function
+Pablo [8:04]: if you
+Pablo [8:04]: have the function
+Pablo [8:12]: so
+Pablo [8:13]: now we want to use
+Pablo [8:15]: the definition
+Pablo [8:15]: on the right
+Pablo [8:18]: for
+Pablo [8:19]: what we
+Pablo [8:20]: need
+Pablo [8:24]: the size of a greater
+Pablo [8:25]: than
+Pablo [8:31]: so now we want to think about influences
+Pablo [8:35]: for example
+Pablo [8:38]: the set of non
+Pablo [8:38]: deven integers
+Pablo [8:40]: and the set of natural law
+Pablo [8:44]: is the first
+Pablo [8:46]: step
+Pablo [8:52]: those two are both
+Pablo [8:57]: but we want to compare the size of
+Pablo [9:05]: the idea is to find this function f
+Pablo [9:10]: what can we do
+Pablo [9:25]: and divide the function so the function f can simply be divided by two
+Pablo [9:30]: map two to one
+Pablo [9:31]: and color all
+Pablo [9:33]: over
+Pablo [9:36]: now if i be other rails
+Pablo [9:47]: so you have different examples of this for example the interval zero to one
+Pablo [9:52]: is x is the size of real numbers
+Pablo [9:56]: this might be but you can do
+Pablo [9:59]: variation of r times and
+Pablo [10:04]: you could have a function
+Pablo [10:12]: from zero to one as you go toward one then the option is under
+Pablo [10:28]: example is the start of a circle of radius one by this we need points
+Pablo [10:29]: on
+Pablo [10:34]: the show
+Pablo [10:37]: all that work so
+Pablo [10:40]: you can hope they are correct
+Pablo [10:42]: from
+Pablo [10:43]: the
+Pablo [10:46]: ten
+Pablo [10:48]: draw line
+Pablo [10:48]: from the center
+Pablo [10:51]: and
+Pablo [10:52]: that
+Pablo [10:58]: 's
+Pablo [11:03]: you have the visual and it shouldn't be true but
+Pablo [11:07]: another one
+Pablo [11:15]: the powers above n and the interval
+Pablo [11:17]: can you
+Pablo [11:20]: have a function from the power
+Pablo [11:23]: to angle
+Pablo [11:26]: do you have any guess what that one
+Pablo [11:47]: idea is here to represent any number between zero and one in binary
+Pablo [11:52]: numbers
+Pablo [12:01]: and the things
+Pablo [12:12]: so how do we map a subset of natural numbers with this
+Pablo [12:18]: we can say that each position after the decimal
+Pablo [12:24]: is representing which natural number we are including
+Pablo [12:28]: so the power set of n is the set of
+Pablo [12:32]: any of those
+Pablo [12:33]: losses can
+Pablo [12:34]: be matched to
+Pablo [12:36]: primary
+Pablo [12:37]: number
+Pablo [12:47]: so
+Pablo [12:48]: the answer to all
+Pablo [12:49]: of those
+Pablo [12:50]: true
+Pablo [12:51]: but one
+Pablo [12:52]: thousand
+Pablo [13:12]: two
+Pablo [13:13]: sets
+Pablo [13:24]: here
+Pablo [13:25]: and it
+Pablo [13:28]: 's
+Pablo [13:29]: really
+Pablo [13:31]: the
+Pablo [13:32]: sign of
+Pablo [13:39]: the other
+Pablo [13:40]: way is
+Pablo [13:47]: okay
+Pablo [13:48]: so the
+Pablo [13:49]: thing you're using
+Pablo [13:50]: for this group
+Pablo [13:51]: of this
+Pablo [13:52]: is
+Pablo [13:53]: what we call
+Pablo [13:55]: using
+Pablo [13:58]: this
+Pablo [14:04]: so
+Pablo [14:05]: the truth
+Pablo [14:06]: was
+Pablo [14:07]: very short
+Pablo [14:08]: of
+Pablo [14:18]: so
+Pablo [14:23]: the statement of the theorem here is no function from
+Pablo [14:26]: n to powers of n is on two
+Pablo [14:28]: that means
+Pablo [14:30]: for every function we can define
+Pablo [14:32]: the mass
+Pablo [14:35]: such that
+Pablo [14:37]: all
+Pablo [14:38]: ends in
+Pablo [14:39]: for natur
+Pablo [14:40]: al numbers
+Pablo [14:43]: f of n bond be equal to s
+Pablo [14:46]: so there will be at least one
+Pablo [14:47]: point
+Pablo [14:53]: or subset of n that we cannot map anything from n to
+Pablo [14:53]: that
+Pablo [15:00]: if the right to prove like this it's just a small line
+Pablo [15:08]: so what are the defining here
+Pablo [15:11]: all ends
+Pablo [15:18]: and f of n is some subset of m because the function we define f is nothing
+Pablo [15:28]: into we define s sub n to be the n subset so that's a set
+Pablo [15:35]: so s one is f of one s two is f of two
+Pablo [15:38]: now we define s as this
+Pablo [15:42]: we are including
+Pablo [15:48]: if n is not in s sub n we are including it in s
+Pablo [15:52]: and then this s is not in the range of
+Pablo [15:55]: f so let's look at this figure
+Pablo [16:00]: so this is what we call characteristics
+Pablo [16:09]: and on top for each column you have all the natural number
+Pablo [16:15]: and each row is representing the solvent
+Pablo [16:19]: so
+Pablo [16:20]: s zero
+Pablo [16:27]: b naught zero
+Pablo [16:38]: so we have those s one s zero and each one means we have that element in
+Pablo [16:40]: this zero
+Pablo [16:46]: so the s zero is mts one
+Pablo [16:51]: has everything so it's n s two maybe has only even numbers
+Pablo [16:56]: now the way we define s
+Pablo [16:59]: is we are looking at the diagonals
+Pablo [17:06]: and we look at each number and we include the negation two
+Pablo [17:07]: s
+Pablo [17:15]: zero is nothing as zero we are including zero in s
+Pablo [17:21]: if one is in s one we are not including
+Pablo [17:27]: and the argument is s is not in the sprint
+Pablo [17:30]: s cannot be
+Pablo [17:38]: why because it will contradict at this one element of each
+Pablo [17:39]: row
+Pablo [17:52]: under these two terms we define
+Pablo [17:55]: countably infinite and unfound typ
+Pablo [17:55]: ing
+Pablo [18:01]: so m here is calculating our setup and his uncoun
+Pablo [18:02]: table
+Pablo [18:04]: and we show
+Pablo [18:07]: that the size of our m
+Pablo [18:12]: although both are infinite but there are different
+Pablo [18:26]: and one thing to note here is we didn't use anything special about of natural numbers you can replace
+Pablo [18:28]: any infinite set you have
+Pablo [18:30]: for even finance
+Pablo [18:31]: this is true
+Pablo [18:35]: you can count how many elements are our set of
+Pablo [18:39]: subset but even for any infinite set this whole
+Pablo [18:54]: even if this is unchangeable then this
+Pablo [18:58]: is even larger than any of
+Pablo [19:08]: any question on this
+Pablo [19:13]: it make is what you're going to see
+Pablo [19:24]: in fact sorry
+Pablo [19:30]: yeah how did we prove that p of n was uncountably infinite
+Pablo [19:33]: because we show
+Pablo [19:38]: that for any function we can define from n to pfn
+Pablo [19:44]: there must be some element of p of n that we cannot map
+Pablo [19:53]: here we are not defining what is f of n it's any function from
+Pablo [19:53]: n
+Pablo [20:00]: as we define these sets s zero as one s two and s
+Pablo [20:06]: and we showed that this s cannot be
+Pablo [20:07]: function
+Pablo [20:12]: so there must be some elements that we cannot map
+Pablo [20:12]: in
+Pablo [20:18]: i understand how that makes p of n greater than n
+Pablo [20:24]: i don't understand how that makes it uncountably infinite
+Pablo [20:25]: that
+Pablo [20:26]: 's just like
+Pablo [20:27]: a term
+Pablo [20:28]: people invent a
+Pablo [20:30]: face on this
+Pablo [20:34]: you can count elements of n right yes
+Pablo [20:37]: so anything that you can map into
+Pablo [20:40]: then those are also countable
+Pablo [20:44]: anything that is like
+Pablo [20:51]: anything that you can map to p of n then we call those
+Pablo [20:52]: uncalculated
+Pablo [20:53]: okay
+Pablo [20:54]: got it
+Pablo [20:54]: yeah
+Pablo [20:57]: any
+Pablo [20:58]: other questions
+Pablo [21:04]: so like p of p of n is i'm guessing
+Pablo [21:09]: also uncountable in relation to even
+Pablo [21:10]: yeah i'm thinking about that
+Pablo [21:20]: must be very good
+Pablo [21:23]: maybe those are
+Pablo [21:24]: the same class
+Pablo [21:37]: so earlier we show
+Pablo [21:42]: assumption
+Pablo [21:43]: that for everything
+Pablo [21:46]: but we did
+Pablo [21:50]: there is also some sort of
+Pablo [22:05]: you have
+Pablo [22:06]: all the programs
+Pablo [22:14]: and
+Pablo [22:14]: each
+Pablo [22:15]: row is also
+Pablo [22:25]: what
+Pablo [22:25]: we did here was
+Pablo [22:29]: b
+Pablo [22:30]: and
+Pablo [22:34]: i
+Pablo [22:48]: define
+Pablo [22:52]: all
+Pablo [22:53]: the problems
+Pablo [22:54]: which are given
+Pablo [22:55]: for
+Pablo [22:56]: my p than
+Pablo [22:57]: k
+Pablo [22:59]: you
+Pablo [23:01]: on
+Pablo [23:02]: input and
+Pablo [23:04]: is
+Pablo [23:05]: there some
+Pablo [23:06]: output
+Pablo [23:09]: with the alphabet
+Pablo [23:18]: and we are defining the setup on this slidable problem
+Pablo [23:22]: these are class of decision
+Pablo [23:30]: program
+Pablo [24:03]: why
+Pablo [24:04]: this is important
+Pablo [24:05]: even
+Pablo [24:09]: by
+Pablo [24:14]: using
+Pablo [24:18]: the
+Pablo [24:19]: whole problem was
+Pablo [24:20]: not
+Pablo [24:22]: disciple
+Pablo [24:23]: that we had this program
+Pablo [24:26]: if you
+Pablo [24:27]: give us
+Pablo [24:28]: program and
+Pablo [24:30]: some
+Pablo [24:31]: input
+Pablo [24:33]: but
+Pablo [24:34]: we can
+Pablo [24:46]: not
+Pablo [24:47]: be honest
+Pablo [24:47]: here
+Pablo [24:48]: in america
+Pablo [24:57]: to
+Pablo [24:58]: prove that
+Pablo [24:58]: if
+Pablo [24:59]: we have
+Pablo [25:00]: programmed
+Pablo [25:01]: or
+Pablo [25:02]: something
+Pablo [25:04]: if
+Pablo [25:05]: you have this program
+Pablo [25:06]: that will tell you
+Pablo [25:07]: some program
+Pablo [25:10]: that
+Pablo [25:11]: is trying to
+Pablo [25:12]: find solutions
+Pablo [25:13]: for the
+Pablo [25:14]: statement
+Pablo [25:22]: we can
+Pablo [25:22]: not find
+Pablo [25:24]: or
+Pablo [25:26]: we don't have
+Pablo [25:27]: that program
+Pablo [25:29]: had it would be very useful
+Pablo [25:32]: now let's
+Pablo [25:38]: prove that the solving problem is
+Pablo [25:38]: not
+Pablo [25:40]: to move this by
+Pablo [25:40]: contradiction
+Pablo [25:43]: so
+Pablo [25:44]: the
+Pablo [25:46]: field that we have
+Pablo [25:46]: health
+Pablo [25:47]: as
+Pablo [25:49]: program that gets
+Pablo [25:49]: a program
+Pablo [25:51]: p and something
+Pablo [25:57]: program holds on it
+Pablo [25:58]: and no
+Pablo [26:04]: we find this program
+Pablo [26:05]: catch twenty two
+Pablo [26:11]: it will just p as an input and if
+Pablo [26:13]: pulse on p and p
+Pablo [26:15]: is true it will do forever
+Pablo [26:16]: so
+Pablo [26:17]: if
+Pablo [26:23]: p halts on p this program catch twenty two forever
+Pablo [26:24]: and if
+Pablo [26:26]: it's moving then it will
+Pablo [26:29]: make
+Pablo [26:38]: and the question is what happens if you run cat
+Pablo [26:46]: this will be contractation right
+Pablo [26:53]: because if catch ninety two on the cache twenty two halves then this program
+Pablo [26:54]: to the contradiction
+Pablo [26:57]: if it loops and it will halt
+Pablo [27:08]: and this means we cannot have program like
+Pablo [27:11]: that show holding problem
+Pablo [27:29]: here is the figure to show why this is again instead of zero by one
+Pablo [27:37]: program on another program
+Pablo [27:49]: okay so
+Pablo [27:51]: this
+Pablo [27:52]: looks
+Pablo [27:52]: cool
+Pablo [27:56]: but it's not always easy to come up with
+Pablo [27:57]: so for
+Pablo [28:00]: other halting problem other undecidable
+Pablo [28:11]: problems you want we want to do something similar for any hard we want to do reductions
+Pablo [28:12]: now we have this halting problem we know it's not decidable
+Pablo [28:17]: now whenever we want to show another problem
+Pablo [28:27]: similar to what we had in end environment you have the sub problem we know that form of
+Pablo [28:29]: ndr
+Pablo [28:37]: so one difference here is
+Pablo [28:42]: you don't have this mutation
+Pablo [28:47]: because we don't need the computable function
+Pablo [28:48]: from
+Pablo [28:56]: the
+Pablo [28:57]: headquarters
+Pablo [28:59]: problem we
+Pablo [28:59]: have different types
+Pablo [29:01]: of into
+Pablo [29:01]: our
+Pablo [29:03]: integer
+Pablo [29:05]: s formulas
+Pablo [29:05]: and so on
+Pablo [29:11]: and the question
+Pablo [29:13]: asking about the behav
+Pablo [29:13]: ior
+Pablo [29:22]: now this is the first example you will see
+Pablo [29:24]: and usually
+Pablo [29:28]: using reduction from the housing problem or no ex
+Pablo [29:28]: ample
+Pablo [29:29]: sometimes
+Pablo [29:31]: easier
+Pablo [29:32]: you really
+Pablo [29:33]: can do
+Pablo [29:39]: so what is no input
+Pablo [29:44]: it's similar to the hardcover problem but it will ask
+Pablo [30:48]: given a program q does it hold on empty
+Pablo [30:51]: now we want to show non consulting problems undecidable usually we write it as all things called epsilon
+Pablo [30:52]: now we show that by reduction
+Pablo [30:53]: what do we do so the reduction is given and input p and x
+Pablo [30:56]: these are the inputs for the halting problem
+Pablo [30:56]: the reduction output program q sub px and this means
+Pablo [31:00]: so it will get some input y ignore that and it will run p on x
+Pablo [31:00]: for
+Pablo [31:02]: today
+Pablo [31:04]: and then
+Pablo [31:08]: sixteen and
+Pablo [31:08]: twenty four
+Pablo [31:11]: jc
+Pablo [31:14]: and
+Pablo [31:15]: then
+Pablo [31:16]: it heals like
+Pablo [31:16]: that
+Pablo [31:18]: could
+Pablo [31:18]: define
+Pablo [31:19]: q sub
+Pablo [31:21]: p x
+Pablo [31:22]: like this
+Pablo [31:23]: so q
+Pablo [31:28]: is getting some input y if we ignore that
+Pablo [31:31]: and then it will call gce on sixty and twenty four
+Pablo [31:36]: and it has a program for gcp hardware
+Pablo [31:40]: okay
+Pablo [31:45]: so what does that mean not specifically
+Pablo [31:47]: p on x halves
+Pablo [31:49]: that means
+Pablo [31:55]: this line will hold and then in turn q will hold
+Pablo [31:57]: if p is looping on x
+Pablo [32:00]: then q will loop as well
+Pablo [32:02]: on
+Pablo [32:02]: ancestry
+Pablo [32:09]: so q does that on any other incidence go but we care about
+Pablo [32:12]: does
+Pablo [32:12]: that make sense
+Pablo [32:14]: can
+Pablo [32:18]: you explain what alt thing less than equal to forty
+Pablo [32:21]: this
+Pablo [32:22]: is the reduction
+Pablo [32:24]: so we are doing a reduction
+Pablo [32:26]: it still weird
+Pablo [32:27]: right
+Pablo [32:29]: compared to empty hardness problem
+Pablo [32:30]: s
+Pablo [32:34]: it's a little bit it's like it feels like very abstract
+Pablo [32:36]: but we are trying to
+Pablo [32:42]: map some any given input to voting problem to how things look as a problem
+Pablo [32:46]: and then we want to show this
+Pablo [32:46]: one
+Pablo [32:58]: so this is a function we believe mapping from x to q and this is what we want to prove
+Pablo [32:59]: it is truly
+Pablo [33:06]: any other question on this
+Pablo [33:13]: let's see another
+Pablo [33:16]: this
+Pablo [33:17]: problem we call
+Pablo [33:18]: for the two
+Pablo [33:19]: is given
+Pablo [33:20]: and program
+Pablo [33:21]: q
+Pablo [33:22]: is
+Pablo [33:23]: there a why
+Pablo [33:24]: such as
+Pablo [33:25]: that
+Pablo [33:26]: include
+Pablo [33:38]: a lot of the questions that you will see in this chapter
+Pablo [33:40]: anyone has any ideas
+Pablo [33:44]: reduction should we do
+Pablo [33:46]: that's
+Pablo [33:49]: practice because you see examples like this
+Pablo [33:50]: in homework
+Pablo [34:10]: so this is not reduction right
+Pablo [34:14]: as opposed
+Pablo [34:17]: we want to show that
+Pablo [34:19]: our
+Pablo [34:23]: we need to do some sort of reduction
+Pablo [34:25]: either from halting
+Pablo [34:28]: or halting
+Pablo [34:34]: here you're choosing to do the reduction using pump
+Pablo [34:40]: this is the reduction we do
+Pablo [34:43]: on a given input p
+Pablo [34:49]: the reduction output program q sub p
+Pablo [34:50]: such that
+Pablo [35:01]: qp is defined like that it will ignore its input y if we run p on x one and then return the max line from forty two
+Pablo [35:03]: so what does that mean
+Pablo [35:05]: it means
+Pablo [35:14]: so if you run p on s one and it will halt
+Pablo [35:16]: you are returning fortitude
+Pablo [35:22]: because the first line is halting doesn't matter what's the output here
+Pablo [35:25]: you're returning forty two
+Pablo [35:28]: which means for any input it's going to
+Pablo [35:31]: return so there exists
+Pablo [35:36]: return if p is running forever
+Pablo [35:39]: it will never output anything
+Pablo [35:41]: because q is running for
+Pablo [35:41]: it
+Pablo [35:43]: so there won't be
+Pablo [35:46]: an
+Pablo [35:54]: let's give some this is again
+Pablo [35:55]: the
+Pablo [36:00]: solution for grandma
+Pablo [36:03]: we know that this
+Pablo [36:04]: thing will go on
+Pablo [36:10]: if
+Pablo [36:11]: you want
+Pablo [36:12]: to do something
+Pablo [36:17]: and then you call
+Pablo [36:18]: it
+Pablo [36:19]: string
+Pablo [36:20]: since
+Pablo [36:21]: this one
+Pablo [36:22]: never call
+Pablo [36:23]: s me
+Pablo [36:24]: then q is
+Pablo [36:25]: not
+Pablo [36:48]: hal
+Pablo [36:49]: ting
+Pablo [36:50]: it will
+Pablo [36:51]: if
+Pablo [36:52]: it's not how you
+Pablo [36:58]: go
+Pablo [36:59]: here
+Pablo [37:09]: and
+Pablo [37:10]: so on for
+Pablo [37:12]: liter
+Pablo [37:12]: ally
+Pablo [37:13]: if
+Pablo [37:14]: tis
+Pablo [37:18]: always
+Pablo [37:29]: then
+Pablo [37:30]: that
+Pablo [37:31]: line is start run
+Pablo [37:31]: ning
+Pablo [37:32]: and you
+Pablo [37:33]: go to the next one
+Pablo [37:34]: and the cure
+Pablo [37:35]: intense
+Pablo [37:36]: so
+Pablo [37:37]: we are proving
+Pablo [37:38]: something stronger
+Pablo [37:38]: here
+Pablo [37:39]: it's not
+Pablo [37:40]: just
+Pablo [37:48]: every
+Pablo [38:13]: other
+Pablo [38:29]: question that the problem
+Pablo [38:30]: statement
+Pablo [38:34]: is you have a program q is there a y such
+Pablo [38:35]: that
+Pablo [38:38]: we are
+Pablo [38:39]: doing your reductions
+Pablo [38:40]: we are compari
+Pablo [38:41]: ng
+Pablo [38:45]: problems with no input
+Pablo [38:49]: to this problem
+Pablo [38:55]: validate my
+Pablo [39:02]: so if q runs on y and it runs on b it returns whatever output p returns
+Pablo [39:10]: and if it halts at b it never goes to return forty two and it returns nothing
+Pablo [39:12]: okay
+Pablo [39:15]: if it runs
+Pablo [39:23]: and it produces some output and it is halting and
+Pablo [39:32]: it doesn't come to
+Pablo [39:35]: the reversal factors it will do
+Pablo [39:36]: so
+Pablo [39:36]: if p root forever
+Pablo [39:41]: we are stuck in that line and we don't come to the next
+Pablo [39:44]: okay you are not returning anything
+Pablo [39:51]: if p halves it doesn't matter what it returns
+Pablo [39:56]: we are returning forty two which means there is at least one y that we are
+Pablo [40:06]: talking
+Pablo [40:07]: about if you don't even have
+Pablo [40:10]: any reason about
+Pablo [40:12]: quite a bit
+Pablo [40:13]: less
+Pablo [40:15]: if i only have a statement
+Pablo [40:30]: out
+Pablo [40:41]: yeah so the goal was to show that
+Pablo [40:44]: problem forty two is undecided
+Pablo [40:52]: and you cannot give a program
+Pablo [40:56]: so the second thing is we cannot have a program
+Pablo [41:00]: that does the following
+Pablo [41:01]: it gets two inputs
+Pablo [41:03]: sorry gets one input
+Pablo [41:09]: a program another program and it will tell you if this will ever output forty two
+Pablo [41:10]: for some
+Pablo [41:12]: help
+Pablo [41:15]: and here we are showing
+Pablo [41:17]: that
+Pablo [41:18]: problem is on this
+Pablo [41:18]: slide
+Pablo [41:19]: so
+Pablo [41:27]: this whole thing is trying to show you that you cannot have some program that answers the question
+Pablo [41:40]: since you define the input of the problem that's requiring you be providing with another
+Pablo [41:40]: program
+Pablo [41:48]: personally define any program that for any input program
+Pablo [41:59]: the question statement seems so clear it's like oh i'll just return forty two
+Pablo [42:03]: but i mean the requirement is that it takes in
+Pablo [42:05]: how the program
+Pablo [42:09]: yeah yeah so why is another maybe that oh sorry
+Pablo [42:09]: no
+Pablo [42:11]: no no
+Pablo [42:14]: so the question statement is
+Pablo [42:16]: can we have
+Pablo [42:20]: a program that gets input
+Pablo [42:22]: program
+Pablo [42:35]: and this
+Pablo [42:36]: already some
+Pablo [42:37]: program i
+Pablo [42:37]: think
+Pablo [42:40]: can this tell you
+Pablo [42:41]: that
+Pablo [42:44]: there is a voice such that
+Pablo [42:45]: q
+Pablo [42:47]: five
+Pablo [42:51]: can this verify
+Pablo [42:52]: this
+Pablo [42:54]: k here
+Pablo [43:06]: if you try to build that arm
+Pablo [43:07]: you are trying
+Pablo [43:08]: to
+Pablo [43:10]: something
+Pablo [43:11]: like the diagram
+Pablo [43:20]: you are
+Pablo [43:21]: showing
+Pablo [43:33]: that
+Pablo [44:03]: write
+Pablo [44:03]: this account
+Pablo [44:09]: and then you need to show
+Pablo [44:30]: you have to see more often
+Pablo [44:33]: here
+Pablo [44:38]: all right so
+Pablo [44:39]: we saw that
+Pablo [44:48]: deciding if calvin is decided the lord does can be similar to showing
+Pablo [44:52]: reduction but we can have other analysis here
+Pablo [44:54]: we can
+Pablo [44:55]: have something like
+Pablo [44:57]: there
+Pablo [44:58]: were two different
+Pablo [45:03]: in this
+Pablo [45:04]: part you are trying
+Pablo [45:05]: to
+Pablo [45:09]: define
+Pablo [45:13]: decidable on that side of a problem based on
+Pablo [45:16]: something that
+Pablo [45:16]: will track what
+Pablo [45:42]: we
+Pablo [45:43]: can
+Pablo [45:46]: send
+Pablo [45:47]: all the
+Pablo [45:52]: is equivalent to there exists some t
+Pablo [45:54]: in time
+Pablo [46:02]: will return true and what does fluid get three input this time
+Pablo [46:05]: px and t is like the number of step
+Pablo [46:07]: s it takes
+Pablo [46:09]: that part is like the mirror
+Pablo [46:14]: this bookshelf is the program p on x
+Pablo [46:14]: after
+Pablo [46:15]: ronnie
+Pablo [46:18]: return
+Pablo [46:26]: s
+Pablo [46:26]: disciples
+Pablo [46:31]: and
+Pablo [46:32]: this will be our
+Pablo [46:33]: client
+Pablo [46:43]: problem
+Pablo [46:44]: that has
+Pablo [46:45]: this poverty
+Pablo [46:46]: is called
+Pablo [46:47]: computer
+Pablo [46:49]: and
+Pablo [46:50]: if you find
+Pablo [46:51]: the self
+Pablo [47:02]: so
+Pablo [47:03]: this will be
+Pablo [47:04]: like
+Pablo [47:13]: innumer
+Pablo [47:13]: able
+Pablo [47:14]: similar
+Pablo [47:15]: to
+Pablo [47:16]: key ver
+Pablo [47:17]: sion
+Pablo [47:21]: there is no
+Pablo [47:22]: time
+Pablo [47:33]: so
+Pablo [47:35]: see
+Pablo [47:35]: also
+Pablo [47:54]: and
+Pablo [48:03]: co ceo also
+Pablo [48:04]: decided
+Pablo [48:06]: this is
+Pablo [48:08]: the continent
+Pablo [48:09]: of
+Pablo [48:10]: c
+Pablo [48:15]: to verify for the problem not halting
+Pablo [48:18]: it does this program not halt on x
+Pablo [48:19]: that
+Pablo [48:20]: has the required
+Pablo [48:22]: co
+Pablo [48:24]: just checking that if this program
+Pablo [48:26]: is verifying the nuances
+Pablo [48:37]: there's another way to define computable and vulnerability
+Pablo [48:41]: by something that we call enumerator
+Pablo [48:44]: so this is like a program
+Pablo [48:47]: doesn't have any input to run forever
+Pablo [48:52]: and once in a while it will print something
+Pablo [48:55]: and we can assume that these numbers are
+Pablo [48:58]: given it's binary you can
+Pablo [48:58]: convert
+Pablo [48:59]: that
+Pablo [49:04]: so there is a program we call it the name is enumerator
+Pablo [49:06]: it gets no input it will run forever
+Pablo [49:09]: and sometimes it turns
+Pablo [49:12]: we call the set of
+Pablo [49:13]: all the numbers
+Pablo [49:21]: design
+Pablo [49:22]: ing computer
+Pablo [49:22]: is
+Pablo [49:23]: like
+Pablo [49:24]: showing
+Pablo [49:26]: this
+Pablo [49:27]: statement
+Pablo [49:28]: let's say
+Pablo [49:42]: even
+Pablo [49:43]: deliver
+Pablo [49:49]: this
+Pablo [49:49]: is true
+Pablo [49:51]: then
+Pablo [49:52]: we can find
+Pablo [50:02]: individ
+Pablo [50:03]: ual
+Pablo [50:16]: s
+Pablo [50:18]: or
+Pablo [50:19]: witnesses
+Pablo [50:20]: it can be like
+Pablo [50:23]: w number
+Pablo [50:46]: and we have a
+Pablo [50:47]: p
+Pablo [50:48]: you want to show
+Pablo [50:49]: the number
+Pablo [50:52]: so you want to show the verifiable
+Pablo [51:14]: like
+Pablo [51:14]: this
+Pablo [51:17]: so
+Pablo [51:20]: we define this for group
+Pablo [51:25]: that goes through all elements of print set of p
+Pablo [51:28]: and it checks
+Pablo [51:29]: if
+Pablo [51:35]: it goes through that until it will reach w and it will check if
+Pablo [51:38]: x is in fact the thing that is printed
+Pablo [52:24]: and
+Pablo [52:26]: if
+Pablo [52:27]: x is
+Pablo [52:37]: four
+Pablo [52:45]: this program is checking the fourth position there
+Pablo [52:49]: 's
+Pablo [52:50]: two which is x
+Pablo [52:53]: so it's verifying
+Pablo [53:11]: if we return false so here you're checking if that w element is x
+Pablo [53:13]: it might be something else
+Pablo [53:15]: and if we return
+Pablo [53:20]: false here it doesn't mean x will never
+Pablo [53:23]: it just means
+Pablo [53:25]: in that position we are not
+Pablo [53:35]: sure
+Pablo [53:51]: how
+Pablo [53:52]: we can show
+Pablo [53:53]: that
+Pablo [54:10]: you can
+Pablo [54:11]: try something like
+Pablo [54:11]: this
+Pablo [54:13]: we
+Pablo [54:14]: can go through
+Pablo [54:14]: all possible
+Pablo [54:15]: x's
+Pablo [54:16]: these are natural numbers
+Pablo [54:19]: go
+Pablo [54:19]: forward
+Pablo [54:20]: that's still the wrong fore
+Pablo [54:20]: ver
+Pablo [54:30]: these
+Pablo [54:31]: thoughts of
+Pablo [54:32]: peace should
+Pablo [54:33]: print everything
+Pablo [54:35]: that
+Pablo [54:37]: is in hell that is defined that
+Pablo [54:37]: way
+Pablo [54:38]: right
+Pablo [54:41]: so we are going through all access
+Pablo [54:46]: and we are checking for any w so we are checking
+Pablo [54:47]: if
+Pablo [54:48]: this thing is
+Pablo [54:56]: while loop is searching to see if x will ever be print
+Pablo [54:57]: ed
+Pablo [55:01]: it's checking
+Pablo [55:07]: the zero position first position second position
+Pablo [55:09]: but there is something wrong with this
+Pablo [55:28]: one key to print everything in depth
+Pablo [55:35]: why does
+Pablo [56:11]: the x
+Pablo [56:12]: is
+Pablo [56:13]: one you are
+Pablo [56:14]: checking w
+Pablo [56:15]: for any possible
+Pablo [56:33]: so
+Pablo [56:34]: there's a
+Pablo [56:41]: search
+Pablo [56:45]: anything that you want
+Pablo [56:47]: based on
+Pablo [56:48]: the
+Pablo [56:50]: thing
+Pablo [56:51]: you're doing
+Pablo [56:52]: you still have
+Pablo [56:53]: a for loop
+Pablo [56:54]: that will run
+Pablo [56:54]: forever
+Pablo [57:00]: but
+Pablo [57:01]: these two
+Pablo [57:02]: are
+Pablo [57:06]: increasing
+Pablo [57:07]: the
+Pablo [57:08]: size of your
+Pablo [57:09]: stitch as you
+Pablo [57:10]: go
+Pablo [57:19]: for any x
+Pablo [57:23]: because you're negative
+Pablo [57:25]: does that make sense
+Pablo [57:37]: you're limiting the size of your search
+Pablo [57:37]: how sorry
+Pablo [57:40]: so you are including this
+Pablo [57:41]: for loop
+Pablo [57:42]: for
+Pablo [57:43]: t
+Pablo [57:46]: for
+Pablo [57:47]: cing
+Pablo [57:48]: how the x
+Pablo [57:50]: is a yeah i see
+Pablo [57:55]: if that's one and your stock you cannot find anything
+Pablo [57:57]: go and increase that
+Pablo [57:57]: to two
+Pablo [57:58]: and then you search again
+Pablo [57:59]: okay
+Pablo [58:04]: any other question
+Pablo [58:10]: this one doesn't really matter but why is it called dovetailing
+Pablo [58:12]: sorry
+Pablo [58:34]: it's
+Pablo [58:35]: all called
+Pablo [58:36]: for
+Pablo [58:45]: similar
+Pablo [58:46]: to the hierarchy
+Pablo [58:47]: we have
+Pablo [58:48]: now
+Pablo [58:57]: there are differences between what we've seen before
+Pablo [58:58]: this hierarchy
+Pablo [59:03]: so we saw that halting
+Pablo [59:05]: is
+Pablo [59:07]: comparatively enumerable
+Pablo [59:09]: so it's nce
+Pablo [59:10]: but all name is not
+Pablo [59:18]: and that means
+Pablo [59:21]: that deck is called
+Pablo [59:25]: it's not like key versus
+Pablo [59:30]: here we go
+Pablo [59:36]: that is
+Pablo [59:37]: a problem
+Pablo [1:00:01]: you can define the set of decidable problem as the intersection of c
+Pablo [1:00:07]: now we define
+Pablo [1:00:13]: our stigma as a pi sigma zero and pi zero from tech
+Pablo [1:00:19]: and then based on this sigma one would be ce pi one equals
+Pablo [1:01:09]: similar to the hierarchy we had before
+Pablo [1:01:14]: there
+Pablo [1:01:15]: is a
+Pablo [1:01:42]: signal
+Pablo [1:01:46]: and
+Pablo [1:01:47]: this is one
+Pablo [1:01:48]: of the goodness of
+Pablo [1:01:49]: here
+Pablo [1:01:59]: sigma k
+Pablo [1:02:31]: two
+Pablo [1:02:43]: given a program key question does not enter
+Pablo [1:02:43]: input
+Pablo [1:02:49]: so then total p is true
+Pablo [1:02:58]: and x there exists some t or x
+Pablo [1:03:01]: this is how we define
+Pablo [1:03:05]: the total problem
+Pablo [1:03:07]: and
+Pablo [1:03:13]: there exists
+Pablo [1:03:52]: so
+Pablo [1:03:54]: one thing
+Pablo [1:03:55]: that we can get
+Pablo [1:03:57]: from undecided algorithms
+Pablo [1:04:05]: other things that we can
+Pablo [1:04:09]: that's a conversation
+Pablo [1:04:16]: you remember we had this set theory thing
+Them [1:04:25]: the idea was trying to formalize all the mathematic
+Them [1:04:26]: s
+Them [1:04:28]: zero trying to do something
+Them [1:04:36]: about stuff
+Them [1:04:41]: this is an attempt to formalize what does it mean
+Them [1:04:47]: like your homework much more technical
+Them [1:04:47]: here
+Them [1:04:54]: so a formal system has finite these are the things that we are assuming is correct
+Them [1:05:04]: and then we also include rules of inference so we are not usually
+Them [1:05:06]: right leading our
+Them [1:05:09]: formal proofs even in paper
+Them [1:05:14]: it's possible to write your proofs this way
+Them [1:05:19]: one example is modest one which means if
+Them [1:05:20]: a is true
+Them [1:05:21]: and
+Them [1:05:27]: a in first p is true then the it feels like very repetitive
+Them [1:05:28]: right
+Them [1:05:29]: very technical
+Them [1:05:36]: so based on
+Them [1:05:37]: this
+Them [1:05:39]: system
+Them [1:05:43]: that
+Them [1:05:44]: is
+Them [1:05:45]: lying
+Them [1:05:58]: at the
+Them [1:05:59]: best
+Them [1:06:01]: statement
+Them [1:06:05]: that
+Them [1:06:06]: 's what we need
+Them [1:06:07]: for
+Them [1:06:09]: does that
+Them [1:06:10]: make sense
+Them [1:06:18]: another
+Them [1:06:21]: thing that we want formal
+Them [1:06:23]: sustainable actor is
+Them [1:06:26]: we want the formal system to
+Them [1:06:27]: be consistent
+Them [1:06:28]: and
+Them [1:06:31]: that means no contradiction
+Them [1:06:32]: can
+Them [1:06:34]: so if you have a statement t
+Them [1:06:37]: at most one of t and
+Them [1:06:38]: negation of
+Them [1:06:39]: t
+Them [1:06:42]: is
+Them [1:06:43]: correct
+Them [1:06:44]: coordinator
+Them [1:06:51]: and
+Pablo [1:07:23]: that's what we call consist
+Pablo [1:07:24]: ent
+Pablo [1:07:32]: another
+Pablo [1:07:37]: characteristic is completeness so we want a formal system to be complete
+Pablo [1:07:43]: and that means if all statements can be resolved by
+Pablo [1:07:53]: any statement you have at least one of t and lambda t
+Pablo [1:07:56]: this is what we call
+Pablo [1:07:56]: confidence
+Pablo [1:08:07]: and if you combine consistency and completeness then you can say
+Pablo [1:08:10]: for each statement t exactly one of
+Pablo [1:08:12]: the
+Pablo [1:08:14]: user
+Pablo [1:08:21]: this one doesn't enforce
+Pablo [1:08:24]: consistent helping this other
+Pablo [1:08:29]: it's just saying one of those two should be
+Pablo [1:08:33]: consistency was saying
+Pablo [1:08:36]: at most one of those
+Pablo [1:08:40]: maybe more unknown
+Pablo [1:08:45]: but then when you combine these two and you're saying exactly one of t and not
+Pablo [1:08:46]: t
+Pablo [1:08:51]: if we have
+Pablo [1:08:55]: a consistent and complete system
+Pablo [1:08:56]: and
+Pablo [1:08:57]: this will
+Pablo [1:08:58]: universe
+Pablo [1:09:13]: people
+Pablo [1:09:14]: see how this
+Pablo [1:09:19]: another
+Pablo [1:09:20]: techn
+Pablo [1:09:21]: icality sound
+Pablo [1:09:22]: ness
+Pablo [1:09:23]: and this
+Pablo [1:09:24]: means
+Pablo [1:09:29]: if all
+Pablo [1:09:30]: rules in the
+Pablo [1:09:31]: are true
+Pablo [1:09:32]: and
+Pablo [1:09:33]: their system
+Pablo [1:09:34]: you
+Pablo [1:09:35]: might have the formal system
+Pablo [1:09:36]: that
+Pablo [1:09:41]: 's
+Pablo [1:09:42]: another
+Pablo [1:09:53]: possible to have a system
+Pablo [1:09:59]: you are proving everything that is
+Pablo [1:09:59]: false
+Pablo [1:10:00]: we can define
+Pablo [1:10:06]: i think i want to go
+Pablo [1:10:06]: to
+Pablo [1:10:09]: slide
+Pablo [1:10:14]: any question on this
+Pablo [1:10:15]: abstract
+Pablo [1:10:16]: definition
+Pablo [1:10:29]: so what was
+Pablo [1:10:31]: the consistency
+Pablo [1:10:33]: the completeness of
+Pablo [1:10:34]: both
+Pablo [1:10:50]: cannot
+Pablo [1:10:51]: have
+Pablo [1:11:10]: finish
+Pablo [1:11:10]: ed
+Pablo [1:11:20]: need to see that like three in the morning
+Pablo [1:11:22]: i'm doing stuff
+Pablo [1:11:29]: i was tired from just sleeping at midnight three in the morning so late yeah yeah i felt myself
+Pablo [1:11:31]: i'm gonna get
+Pablo [1:11:32]: a snack or something
+Pablo [1:11:36]: from a sweet
+Pablo [1:11:40]: because like i'm about to
+Pablo [1:11:41]: like crash
+Pablo [1:11:45]: and i'd still have like a meeting in like twenty minutes
+Pablo [1:11:46]: quick
+Pablo [1:11:50]: yeah i'm just
+Pablo [1:11:52]: think these sound all right
+Pablo [1:11:55]: i'm trying to figure out the email to send
+Pablo [1:11:57]: to professors
+Pablo [1:12:13]: yes although you should
+Pablo [1:12:16]: you should say like this is pablo at the beginning of that
+Pablo [1:12:20]: there's of course there
+Pablo [1:12:22]: after

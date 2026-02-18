@@ -1,0 +1,1594 @@
+Pablo [0:24]: so let me just make the boys last first day i uploaded
+Pablo [0:27]: we submit your presentation order
+Pablo [0:47]: within the field and have registered so far dependent on rapidly so thank you very much because we need to know on which day which will now be a structure on the first day on march fifth
+Pablo [1:02]: so like a march we have only three presentations on the other two days we have five presentations so the idea will be unmarked
+Pablo [1:07]: if we will add a short date to maybe somehow
+Pablo [1:27]: the first attempt and the first presentation is just easier because we have not really under any pressure here and the idea is we started like ten p m and end
+Pablo [1:50]: but i would like to add ten more minutes on this thursday maybe we will take some more time on the first presentation to switch between all the tools and on march and march twelveth unfortunately we really need one hundred minutes because we had five groups in total
+Pablo [1:52]: and i would like to spend five minutes for each
+Pablo [1:53]: group
+Pablo [1:54]: in a sense
+Pablo [1:56]: we have five minutes of
+Pablo [1:57]: discussion
+Pablo [1:58]: and if
+Pablo [1:59]: you need
+Pablo [2:00]: twelve fifteen
+Pablo [2:02]: minutes for a presentation
+Pablo [2:06]: this means switching the groups and everything
+Pablo [2:09]: i guess we really need nineteen minutes
+Pablo [2:10]: to do
+Pablo [2:27]: but i will be strict on this five minutes in the sense that i have an arm and start with the next presentation up twenty minutes no matter what because i think one hundred lectures of one hundred meters are in
+Pablo [2:28]: going
+Pablo [2:29]: to fifty p
+Pablo [2:32]: m this is quite a lot
+Pablo [2:38]: and i think nobody wants to have like i don't know one hundred and forty minutes
+Pablo [2:40]: just because
+Pablo [2:43]: this is the base idea
+Pablo [2:46]: it's like twenty minutes
+Pablo [2:52]: i thought weird so you also know when you will send to start number one on each day
+Pablo [2:53]: and number five
+Pablo [2:59]: so you can even imagine which types of effect you will present
+Pablo [3:04]: let me just give you some ideas what i would like to see on the presentation
+Pablo [3:18]: the first thing please try to convince me and also all your colleagues why your research question is interesting for you and also for others
+Pablo [3:29]: so please just presenting some questions some idea something you're interested in and discuss this short before
+Pablo [3:30]: you go into
+Pablo [3:37]: so that we know at some point oh we really want to see that they don't really want to see the results in the end
+Pablo [3:43]: and then of course there's also this data collection and data description
+Pablo [3:53]: so how did you get all the data i do have to figure that
+Pablo [4:00]: to create the web page and then also please drive your data with the bare minimum
+Pablo [4:02]: i need to know the sample size
+Pablo [4:25]: and how many features if you have a data frame consisting of one hundred rows and i would really like to know at least these two numbers and ideally have an idea of very adverse five rows then i know how your data look like and i don't think the old one hundred rows but at least
+Pablo [4:31]: i want to have some kind of feeling what your data contains what kind of information
+Pablo [5:07]: and then please describe what kind of methods you're using when you're transforming your data i don't know if you say you have a lot of whatever just quickly mention what we have in between intermediate step between getting the data and somehow present the data to pretend to have some work in if you like you don't have to do something typically just remove nas or whatever please mention as quickly this is also part of
+Pablo [5:10]: project lifecycle
+Pablo [5:18]: something you just want to present it and then you realize oh you can't work data you have to change some things
+Pablo [5:24]: and of course then it's
+Pablo [5:26]: like the most important
+Pablo [5:37]: thing the presentation of finding somehow representing an answer i think one of the best ways would be come up with visualization of any kind
+Pablo [5:39]: you
+Pablo [5:44]: have a visualization of data then maybe we all have
+Pablo [5:44]: questions
+Pablo [5:51]: yes
+Pablo [5:53]: do
+Pablo [5:54]: we have questions
+Pablo [6:00]: then let me quickly mention
+Pablo [6:01]: two things
+Pablo [6:18]: first every first of the two should be added one slide one minute in the sensor i have seen every person i'm talking about the project it equally someone feels
+Pablo [6:27]: someone maybe half of the precipitation is all fine but at least
+Pablo [6:31]: once
+Pablo [6:39]: and then as i mentioned there is five minutes q and a section at the end
+Pablo [6:41]: of each presentation
+Pablo [6:59]: and this is if you remember the grade how you get the grade the homework there is kind of project paddington submitted the end and then there are two things like precipitation well this is one hundred percent
+Pablo [7:14]: and the last thing would be the participation in a sense the participation will be highly or mainly based on these discussions
+Pablo [7:31]: not only participate but this and all the negative when you're not presenting and then you can ask
+Pablo [7:34]: influencer particip
+Pablo [7:35]: ation
+Pablo [7:37]: okay
+Pablo [7:37]: and i
+Pablo [7:38]: think
+Pablo [7:43]: this is everything i want to say about presentations
+Pablo [7:48]: yes and then of course
+Pablo [7:55]: to more announcements second homework assignment is friday
+Pablo [7:59]: and there will be a discussion section february twenty six
+Pablo [8:02]: th and we don't
+Pablo [8:04]: have copied in the sense that we are present
+Pablo [8:05]: ing some
+Pablo [8:07]: on this paper
+Pablo [8:10]: we
+Pablo [8:11]: will be both
+Pablo [8:12]: here in this class
+Pablo [8:12]: room
+Pablo [8:13]: for
+Pablo [8:14]: around one hour
+Pablo [8:15]: it means something
+Pablo [8:15]: like this
+Pablo [8:17]: if
+Pablo [8:17]: you have questions
+Pablo [8:18]: concern
+Pablo [8:19]: ing your project
+Pablo [8:21]: and you
+Pablo [8:23]: can just
+Pablo [8:23]: come for us
+Pablo [8:24]: as
+Pablo [8:26]: you know
+Pablo [8:27]: the first presentation
+Pablo [8:28]: is
+Pablo [8:29]: one
+Pablo [8:31]: you have one
+Pablo [8:31]: more
+Pablo [8:32]: change
+Pablo [8:42]: okay
+Pablo [8:45]: present
+Pablo [8:45]: ation
+Pablo [8:46]: announcement
+Pablo [8:48]: and
+Pablo [8:49]: this would
+Pablo [8:50]: make
+Pablo [8:51]: sure
+Pablo [8:53]: visual
+Pablo [8:54]: ization
+Pablo [8:55]: and the idea is
+Pablo [8:56]: in
+Pablo [8:57]: general
+Pablo [8:58]: i would like
+Pablo [8:59]: to take talk about
+Pablo [9:00]: the
+Pablo [9:01]: free words and
+Pablo [9:02]: three different offerings
+Pablo [9:09]: the
+Pablo [9:10]: first would be
+Pablo [9:12]: and
+Pablo [9:13]: according to multiple
+Pablo [9:16]: hospital
+Pablo [9:17]: s
+Pablo [9:18]: did you know
+Pablo [9:19]: some of
+Pablo [9:20]: the
+Pablo [9:21]: packages
+Pablo [9:25]: also
+Pablo [9:26]: like
+Pablo [9:27]: operational
+Pablo [9:30]: i will
+Pablo [9:31]: briefly mention
+Pablo [9:32]: them
+Pablo [9:33]: over
+Pablo [9:34]: everything
+Pablo [9:36]: just
+Pablo [9:37]: to give an impression
+Pablo [9:39]: and
+Pablo [9:40]: after
+Pablo [9:41]: that you shall
+Pablo [9:42]: call
+Pablo [9:43]: inter
+Pablo [9:44]: active
+Pablo [9:46]: because
+Pablo [9:48]: more interesting
+Pablo [9:48]: for you
+Pablo [9:49]: to present
+Pablo [9:51]: adv
+Pablo [9:52]: anced vis
+Pablo [9:53]: ualization
+Pablo [9:56]: and
+Pablo [9:57]: also
+Pablo [9:58]: all of that
+Pablo [10:01]: we
+Pablo [10:01]: receive
+Pablo [10:02]: and
+Pablo [10:03]: then obviously
+Pablo [10:05]: all
+Pablo [10:06]: different counties
+Pablo [10:08]: even
+Pablo [10:09]: json
+Pablo [10:11]: this is
+Pablo [10:12]: what we are
+Pablo [10:19]: doing
+Pablo [10:27]: okay
+Pablo [10:56]: you want to know
+Pablo [10:57]: more about
+Pablo [10:58]: specific
+Pablo [10:59]: way
+Pablo [11:04]: more
+Pablo [11:05]: examples
+Pablo [11:06]: here but i would like
+Pablo [11:07]: to
+Pablo [11:09]: be a little bit quicker
+Pablo [11:10]: and
+Pablo [11:11]: talk about
+Pablo [11:15]: so if you want
+Pablo [11:15]: all the lecture
+Pablo [11:17]: exactly
+Pablo [11:19]: just
+Pablo [11:21]: download
+Pablo [11:23]: okay
+Pablo [11:25]: and
+Pablo [11:26]: with this
+Pablo [11:40]: one
+Pablo [11:41]: more comment
+Pablo [11:42]: sometimes
+Pablo [11:43]: two
+Pablo [11:44]: feature load will
+Pablo [11:45]: give you try
+Pablo [11:46]: quite something
+Pablo [11:47]: it does not show
+Pablo [11:48]: the
+Pablo [11:50]: useful
+Pablo [11:52]: command
+Pablo [11:53]: like percentage
+Pablo [11:59]: sign and matplot inline this basically means that you want to see the clock
+Pablo [12:07]: and then there are basically
+Pablo [12:12]: three depending on how you come three hundred four packages how to come up
+Pablo [12:21]: with codes and the most basic one like the low level would be this allows you to change everything you want
+Pablo [12:36]: in a programming language and where pmc is just more cumbersome but you can change stable supermarkets can do more things
+Pablo [12:41]: than just they do python with much more work
+Pablo [12:46]: and for this reason i would not really recommend using up for you all
+Pablo [13:17]: time because you sometimes need five or ten lines to come up with the most basic visualization and in all the other packages just one it's just one line and there is a very long article about basically makes fun about not all the time in the sense that you have and the c one map of the
+Pablo [13:19]: mind
+Pablo [13:38]: and another package out there i want to send out and then you can see from here how did this very simple plot and then you were anders and the other
+Pablo [13:42]: and it needs less and less by depending on
+Pablo [13:43]: what
+Pablo [13:50]: package we're using and getting way easier
+Pablo [13:54]: if you are just using
+Pablo [13:56]: higher level
+Pablo [14:04]: one that we have
+Pablo [14:08]: useful if you have something
+Pablo [14:10]: data frame and
+Pablo [14:15]: some of the data only for you if you want
+Pablo [14:16]: feeling
+Pablo [14:18]: what kind of data
+Pablo [14:26]: pub
+Pablo [14:27]: lishing some kind of
+Pablo [14:28]: visualization
+Pablo [14:31]: it
+Pablo [14:32]: 's just
+Pablo [14:33]: making
+Pablo [14:34]: it
+Pablo [14:35]: content
+Pablo [14:36]: of your data
+Pablo [14:38]: and then there are more pack
+Pablo [14:39]: ages
+Pablo [14:40]: keyboard
+Pablo [14:53]: and here it's not obvious what kind of package you should use on everyday use i mean if you know gg bot then i would recommend basically what line this is just a
+Pablo [14:56]: teaching for package
+Pablo [15:00]: for python so if you know it it's easy
+Pablo [15:02]: and also
+Pablo [15:10]: at a quick time we came up with
+Pablo [15:42]: and then there's another thing if you don't know gg what might personal recommendation would be to use seaborn because basically design statistical bots so if you want to have professional looking mice plots without having too much work and it's more about statistical parts that might also recommendation is using seaborn you don't need a lot of effort you can come up with very beautiful
+Pablo [15:56]: and then i have just included some documentation for port nine g port and so on and also have included below some documentation
+Pablo [16:03]: lasting maybe i should mention
+Pablo [16:23]: while gg put this rather old a very well established package in r what line is somehow like a decent package that was somehow transferred from our python there are more parts
+Pablo [16:30]: and with this
+Pablo [16:48]: i would just present two lines and two quick plots about map to give you a feeling from the basic map so importing the map
+Pablo [16:51]: and it just want
+Pablo [17:02]: align then you can just put something one two three or other values it will be automatically enabled with zero three
+Pablo [17:06]: and y label i wish
+Pablo [17:33]: you can see very plot then you can all come up with a little bit more advanced but want to change colors type size of things you can do so what you see you have to come up with a little bit more work so first we are defining here and a data set consisting of fifty oscillations
+Pablo [17:35]: each
+Pablo [17:59]: and what we are doing here is basically we now have a scatter top of the ntp and you can see they are generated in a way that they more or less around your mind and then we are also adding the color and also how large the surf code is the videos
+Pablo [18:04]: it takes a little bit of effort
+Pablo [18:10]: there will be map pop
+Pablo [18:11]: there
+Pablo [18:17]: and then i would quickly go and
+Pablo [18:19]: assist
+Pablo [18:21]: and the typical thing is to have the data
+Pablo [18:22]: frame
+Pablo [18:23]: like this
+Pablo [18:26]: one of the
+Pablo [18:35]: classical data frames consisting of different cars and their engines and how much fuel they take
+Pablo [18:37]: not
+Pablo [18:38]: the most invest
+Pablo [18:39]: ing
+Pablo [18:40]: one now
+Pablo [18:42]: we have this kind of data change
+Pablo [18:43]: and the first
+Pablo [18:44]: thing is
+Pablo [18:48]: tell
+Pablo [18:49]: ing us
+Pablo [18:50]: our
+Pablo [18:51]: lives
+Pablo [18:59]: and
+Pablo [19:01]: kindness
+Pablo [19:08]: item
+Pablo [19:08]: s
+Pablo [19:09]: and
+Pablo [19:10]: basically visible
+Pablo [19:11]: zero
+Pablo [19:13]: back
+Pablo [19:13]: ward
+Pablo [19:15]: vis
+Pablo [19:15]: ual
+Pablo [19:21]: s
+Pablo [19:22]: for the
+Pablo [19:23]: artists
+Pablo [19:32]: okay
+Pablo [19:33]: this is
+Pablo [19:34]: how you know
+Pablo [19:41]: zero
+Pablo [19:57]: than
+Pablo [19:58]: what we have
+Pablo [20:19]: install
+Pablo [20:20]: ed
+Pablo [20:21]: you have
+Pablo [20:22]: n't altogether
+Pablo [20:33]: and then like there are different
+Pablo [20:34]: kind
+Pablo [20:42]: s you can come up with typical scalar plot the line draw the r four histogram
+Pablo [20:46]: and you can also while
+Pablo [21:05]: and so on so it's basically a year of c one is there are ten point eight classical ways of statistical or speaker data there are two ways seaborn allows you
+Pablo [21:06]: to come
+Pablo [21:08]: up with a very easy command
+Pablo [21:15]: and it's basically built upon map object so the idea is in the background
+Pablo [21:23]: whenever you come out with one line of c format in the background it's just using a lot of mines in math public
+Pablo [21:33]: you can basically change everything you are using even you can change everything you are doing in c one via map object just build upon it
+Pablo [21:38]: but yes basically you don't need to change a lot of things
+Pablo [21:41]: because it really meant
+Pablo [21:49]: that you can specify most in diploma and c one commodity don't really have to use
+Pablo [21:49]: multiple
+Pablo [21:51]: so yeah here
+Pablo [21:59]: you have your typical task in statistics come out of the plot and then you don't have to
+Pablo [22:00]: change your own
+Pablo [22:16]: and it's also that data set oriented can easily change how does teams so depending on what kind of application you have maybe want to have a professional looking team don't come up with your own colors
+Pablo [22:21]: also
+Them [22:37]: what i would like to send is a typical example of engines so there are three different kind of data set
+Them [22:41]: building and we have three kind of species
+Them [22:45]: and i would just like
+Them [22:51]: because here you can see that it's really dedicated
+Them [23:02]: we can also come up with less but the idea is it all the ads
+Them [23:22]: this kind of dentist here so the same is you notice the classical scatter plot here you have the split building in millimeter you have to build length you have the species like three kind of pieces and somehow you realize there will be different in terms of the triple length and building
+Them [23:41]: but you also have the modest use for an estimation color estimation distribution so it gives somehow giving that on average a clickable length of green species is on average
+Them [23:42]: much smaller
+Them [23:46]: than like blue one and from
+Them [23:50]: science
+Them [24:04]: can remove the dent is just use the scale but sometimes it's also nice to have some statistical additional information you don't have things on your own output
+Them [24:12]: just use the type of command specify data frame x and y axis
+Them [24:14]: and how
+Them [24:17]: great
+Them [24:22]: species and it basically you need
+Them [24:28]: two lines and then just come up
+Them [24:34]: the first thing why i like
+Them [24:36]: this beautiful
+Them [24:41]: and the second
+Them [24:42]: example is
+Them [24:48]: all the ufc and i guess you have seen in the models a lot
+Them [24:51]: of times
+Them [24:53]: you just want to visualization
+Them [25:00]: model and here we have our data set
+Them [25:02]: with different cards
+Them [25:03]: and so on
+Them [25:06]: and i would like to do the following
+Them [25:11]: so i create the style of a classical here
+Them [25:25]: with the engine displacement versus like the highway you mileage and we have two different types we have like cast four cylinders and up eight cylinders
+Them [25:30]: and here there are two
+Them [25:38]: but
+Them [25:39]: we
+Them [25:40]: can
+Them [25:57]: use
+Them [25:58]: robust equ
+Them [25:59]: als force
+Them [26:00]: that is basically
+Them [26:01]: just
+Them [26:06]: anal
+Them [26:07]: yser
+Them [26:18]: by the larger the engine is the higher the mileage that you mileage is in this data set
+Them [26:18]: round
+Them [26:24]: yes and then you see some kind of
+Them [26:29]: confidence when and it's like oh you don't have to do this on your own
+Them [26:32]: just use the
+Them [26:33]: lm
+Them [26:33]: for it
+Them [26:37]: specify x y axis
+Them [26:40]: u
+Them [26:41]: and
+Them [26:43]: i for example
+Them [26:58]: yes i use the color press i think one of the most beautiful colors i have seen of sequoia with different shades of blue gre
+Them [26:59]: en
+Them [27:05]: you immediately some information
+Them [27:24]: one of the reasons why you could use seaborn because it comes up with sanitation information you don't have to program them on your own
+Them [27:29]: and this is like c four
+Them [27:44]: maybe over this that you can find a lot more examples on the original lecture
+Them [27:47]: with five different examples and they don't want to
+Them [27:50]: just read every command to you
+Them [27:56]: but give you like an idea of what kind of package you could use for a
+Them [28:03]: then there's like hotline as i said if you know gg what
+Them [28:04]: then
+Them [28:06]: maybe just
+Them [28:07]: there
+Them [28:10]: is of course a cheat sheet
+Them [28:13]: with information
+Them [28:16]: output
+Them [28:27]: so the basic idea is that you really try to distinguish between the data
+Them [28:32]: and the aesthetics and like what kind of
+Them [28:34]: plot you want to come up
+Them [28:35]: with
+Them [28:42]: so really you can see what's in the code it really ties
+Them [28:45]: to separate for example
+Them [28:47]: from behind what you want to do
+Them [28:51]: and this is what it does in the background
+Them [28:53]: you can just see the data frame
+Them [29:04]: and you see that it has a geom coin or a scatter called fuel line so you know the name suggestion
+Them [29:08]: a lot of new things
+Them [29:15]: let me just come up trading
+Them [29:16]: at data frame
+Them [29:22]: and maybe one of the things you really need data in a time
+Them [29:49]: so i found with the instead of having a data frame consisting of a lot of pros and columns basically now you have just this kind of high data you have years you have the kind of milk and so on and here it has a number you're interested in
+Them [30:04]: so it's somehow coming up with this long corner and making a tidy format is basically the most important task if you want and you can use stack form
+Them [30:04]: at
+Them [30:10]: and i think we have seen this transformation at the beginning of this vector
+Them [30:14]: so you can run the code that you have basically
+Them [30:16]: this data set
+Them [30:41]: and there is like a lot of time commits the basic that you need four things come up with the top nine gauge your data frame and then you come up as ethics in a sense x equals year you want to have like different kinds of milk you want to come up with my import and add some
+Them [30:50]: titles and then you just set beam bray or quiet whatever but this is more like
+Them [31:01]: the colors you want to see this is the kind of what you want to see this is the kind of pain you're interested in and this is just four parts
+Them [31:06]: and then we have this picture here
+Them [31:20]: with the grid and everything so it's very convenient you can see an auto reef some numbers because you have this grid and you know this must be something one hundred fifty thousand
+Them [31:24]: because one we can
+Them [31:31]: so this would be very quick going over the packages you could
+Them [31:42]: and i would like to spend the meaning time on two other things one of them is image processing and pipe
+Them [31:48]: introduction
+Pablo [31:56]: do you have questions
+Pablo [31:57]: or main pack
+Pablo [31:58]: ages
+Pablo [32:08]: just if you want to have more details just download the other language
+Pablo [32:10]: a lot of command
+Pablo [32:18]: so the idea is that
+Pablo [32:26]: come up with some image processing because some images if you use im
+Pablo [32:54]: bop it will be just stored as a numpy array containing plastic colors so like pixels you have for example red blue part as you can change things easily and this is just quick mention of course you can add filters and more advanced but for this very nice you are importing the math of the image
+Pablo [33:04]: package you can just need an image of
+Pablo [33:13]: you see here this is like the first axis at the first dimension is going from zero to one about three hundred i guess
+Pablo [33:25]: two thousand here and each of the six here contain is like a three dimensional vector containing red green and blue values
+Pablo [33:29]: basically allah and
+Pablo [33:30]: up
+Pablo [33:31]: wards
+Pablo [33:35]: so we just now after we have read
+Pablo [33:41]: the image we can just specify now hi or if you want to
+Pablo [33:42]: know
+Pablo [33:46]: it's basically as i mentioned a numpy array
+Pablo [33:47]: and
+Pablo [33:54]: we can just now change date i mean of course can go a little bit more advanced
+Pablo [33:55]: things for example
+Pablo [33:58]: if you want to see
+Pablo [33:59]: what
+Pablo [34:01]: kind of
+Pablo [34:20]: area or what fixes on this picture are some kind of dress or nature thing so if you want to distinguish between the block and this dress here and also the pressing background we can do so because our own eyes
+Pablo [34:24]: go
+Pablo [34:25]: forward
+Pablo [34:31]: sheila
+Pablo [34:37]: wow
+Pablo [35:19]: okay
+Pablo [35:20]: i
+Pablo [35:21]: would like
+Pablo [35:22]: change things
+Pablo [35:40]: back
+Pablo [35:41]: ward
+Pablo [35:49]: this is
+Pablo [35:50]: basically
+Pablo [35:52]: small
+Pablo [35:52]: er
+Pablo [35:53]: than this volume
+Pablo [35:57]: lower
+Pablo [35:58]: than forward
+Pablo [35:59]: w
+Pablo [36:00]: ow
+Pablo [36:00]: for example
+Pablo [36:04]: this has
+Pablo [36:05]: a very high
+Pablo [36:08]: yes
+Pablo [36:10]: one
+Pablo [36:11]: answer
+Pablo [36:17]: one
+Pablo [36:18]: one one
+Pablo [36:28]: zero
+Pablo [36:30]: one zero
+Pablo [36:31]: this
+Pablo [36:32]: could be
+Pablo [36:33]: nine
+Pablo [36:51]: and
+Pablo [36:57]: eight
+Pablo [36:58]: three
+Pablo [37:02]: if
+Pablo [37:03]: you had to yw
+Pablo [37:04]: let me
+Pablo [37:05]: have for example
+Pablo [37:07]: one
+Pablo [37:11]: zero
+Pablo [37:11]: one
+Pablo [37:12]: so the
+Pablo [37:14]: following is
+Pablo [37:27]: five
+Pablo [37:37]: changing
+Pablo [37:45]: a change
+Pablo [37:46]: in the edge
+Pablo [37:47]: of
+Pablo [37:48]: the
+Pablo [37:51]: h
+Pablo [37:52]: sb
+Pablo [38:07]: there
+Pablo [38:08]: are different ways
+Pablo [38:09]: of
+Pablo [38:10]: representing
+Pablo [38:12]: other
+Pablo [38:13]: wise
+Pablo [38:19]: it
+Pablo [38:20]: 's just
+Pablo [38:26]: zero
+Pablo [39:12]: five
+Pablo [39:40]: somehow
+Pablo [39:40]: we present
+Pablo [39:45]: so
+Pablo [39:46]: going back
+Pablo [39:47]: to h
+Pablo [39:51]: if you want to find out
+Pablo [39:55]: how
+Pablo [39:55]: we look
+Pablo [39:58]: is i could for example look at
+Pablo [40:01]: this picture i know for sure
+Pablo [40:04]: this here is somehow like
+Pablo [40:05]: green
+Pablo [40:08]: so like this is the resin
+Pablo [40:10]: into the picture here
+Pablo [40:18]: and say like all the values within this picture here should be somehow present
+Pablo [40:25]: and what i'm doing now is i'm just taking
+Pablo [40:28]: the lower left corner which means
+Pablo [40:39]: to the right hand side take the first two hundred pixels that here i take the last two hundred pixels which means somewhere
+Pablo [40:42]: there this is more a year
+Pablo [40:43]: and look at this corner
+Pablo [40:48]: this is how it looks like
+Pablo [40:52]: and my idea is everything in this corner
+Pablo [40:54]: should be green press and so on
+Pablo [40:57]: how can i now
+Pablo [41:00]: get this actually like the average value
+Pablo [41:02]: average
+Pablo [41:02]: q value
+Pablo [41:04]: within
+Pablo [41:09]: this area and add some standard deviation
+Pablo [41:10]: and say everything
+Pablo [41:11]: around
+Pablo [41:17]: me
+Pablo [41:21]: forward
+Pablo [41:31]: zero
+Pablo [41:52]: down
+Pablo [41:53]: right
+Pablo [41:54]: yes
+Pablo [42:01]: whenever
+Pablo [42:02]: possible
+Pablo [42:16]: follow
+Pablo [42:31]: and now
+Pablo [42:32]: as i said
+Pablo [42:33]: i also want
+Pablo [42:34]: you to add
+Pablo [42:40]: the
+Pablo [42:41]: key model
+Pablo [42:49]: happy
+Pablo [42:50]: seven
+Pablo [42:52]: picture
+Pablo [42:53]: and add
+Pablo [42:54]: two three
+Pablo [42:54]: accident
+Pablo [42:57]: follow
+Pablo [43:09]: s
+Pablo [43:14]: so
+Pablo [43:16]: that you value something
+Pablo [43:16]: you want
+Pablo [43:17]: point
+Pablo [43:18]: the zero component three
+Pablo [43:20]: and zero point
+Pablo [43:20]: forty five
+Pablo [43:22]: will consider the screen
+Pablo [43:23]: which is
+Pablo [43:25]: i would say very pro
+Pablo [43:27]: bant
+Pablo [43:28]: let
+Pablo [43:33]: and you can see well this new ground so
+Pablo [43:35]: really
+Pablo [43:39]: this is very close to the brownish how we have
+Pablo [43:43]: another kind of
+Pablo [43:44]: rem
+Pablo [43:45]: ove
+Pablo [44:04]: and now what i'm doing is that if i everything has everything that is somewhere between this brownish area and this green bluish
+Pablo [44:05]: part
+Pablo [44:09]: i will define as
+Pablo [44:13]: green whenever i have
+Pablo [44:20]: a hue value of a picture that is larger than brown
+Pablo [44:24]: and hue red small or equal to this
+Pablo [44:34]: and what i will do is i would just now set the value to two hundred fifty
+Pablo [44:34]: five
+Pablo [44:39]: so we can either use a hue value
+Pablo [44:42]: something between zero and one or something
+Pablo [44:47]: and i will just change it so we just change the color
+Pablo [44:50]: and basically set it to
+Pablo [44:54]: then you can see now it really work
+Pablo [44:55]: ed
+Pablo [45:04]: at all the dress here in this one and just change the values to blue which is maybe another thing you can
+Pablo [45:06]: but at least
+Pablo [45:11]: all the rest of the pict
+Pablo [45:12]: ure
+Pablo [45:16]: and for example can also
+Pablo [45:17]: set red
+Pablo [45:20]: and what is even more interesting
+Pablo [45:28]: if you want to process a picture maybe want to make the dress bright in a sense if you have a picture
+Pablo [45:37]: you take a photo then maybe you want to come up with slightly polished picture what we could do now is we set the date very bright
+Pablo [45:38]: meaning
+Pablo [45:59]: and this is not a polish picture and of course you can see now it looks a little bit artificial picture but we were really able to change things came up with the dot meaning how that changed its slightly
+Pablo [46:04]: and the most important part is while we had to change everything
+Pablo [46:55]: it's not like that we had just one blank green area it's not all the same field all the dark green you can see like the single rest and everything is reserved and the idea is because the shade auto this operates everything is stored in the saturation and the value and we haven't changed the two other pages this is the reason we have to change the rgbwc color but not like shape and this is like good news if you want to do something like change the color slightly but still have the structure
+Pablo [47:07]: and otherwise you won't just have the same color for the wall you don't want to see
+Pablo [47:09]: single pieces
+Pablo [47:15]: then of course you could just set everything to the same value the same rgb
+Pablo [47:16]: value
+Pablo [47:17]: and we use all
+Pablo [47:18]: structured
+Pablo [47:23]: and then
+Pablo [47:25]: i think
+Pablo [47:27]: one more thing
+Pablo [47:36]: so what we should now do as comparison instead of
+Pablo [47:41]: just changing by the green area
+Pablo [47:45]: draw a load like different we could for example
+Pablo [47:46]: take the original
+Pablo [47:48]: value
+Pablo [47:51]: and send everything
+Pablo [47:52]: all
+Pablo [47:54]: zero which
+Pablo [47:55]: means
+Pablo [47:56]: we'll add
+Pablo [47:58]: that
+Pablo [47:58]: removes
+Pablo [48:00]: all
+Pablo [48:02]: elements
+Pablo [48:03]: of
+Pablo [48:04]: picture
+Pablo [48:05]: and of course
+Pablo [48:07]: if you apply movement
+Pablo [48:08]: you can see now it's more or less
+Pablo [48:10]: or
+Pablo [48:11]: ange yellow
+Pablo [48:12]: green
+Pablo [48:15]: and of course do the same
+Pablo [48:16]: width
+Pablo [48:19]: set the red channel
+Pablo [48:21]: one percent now everything
+Pablo [48:22]: should be
+Pablo [48:24]: just red collect
+Pablo [48:26]: more
+Pablo [48:27]: red is
+Pablo [48:28]: four and then we have for example
+Pablo [48:29]: such a
+Pablo [48:29]: picture
+Pablo [48:31]: this
+Pablo [48:32]: would reapply
+Pablo [48:33]: build
+Pablo [48:35]: add picture
+Pablo [48:38]: now we have intact some parts
+Pablo [48:42]: we set every
+Pablo [48:44]: value to the next
+Pablo [48:47]: so this is one of the things
+Pablo [48:49]: and
+Pablo [48:50]: of course we don't
+Pablo [48:51]: have to create a build
+Pablo [48:52]: on your own
+Pablo [48:53]: you can just
+Pablo [48:55]: use packages
+Pablo [48:55]: and then app
+Pablo [48:56]: ly filter
+Pablo [49:01]: okay
+Pablo [49:04]: and
+Pablo [49:05]: with this
+Pablo [49:07]: i would like
+Pablo [49:11]: to go to main path to the map of data
+Pablo [49:13]: if you don't have question
+Pablo [49:13]: s
+Pablo [49:14]: yes
+Pablo [49:20]: what is zero parameter in the right graph this year
+Pablo [49:26]: one second
+Pablo [49:31]: oh yes so the point is to have the right person location
+Pablo [49:34]: and the zero means
+Pablo [49:39]: would have like
+Pablo [49:47]: just want to set the hue value
+Pablo [50:00]: to three hundred twenty four so this like the first entry which corresponds to zero so it's like the right breath is like an array consisting of
+Pablo [50:06]: like a three dimensional array doesn't make on this picture
+Pablo [50:15]: all the grid area and within each dimension
+Pablo [51:01]: this is one of the things i would like to do today and the good news
+Pablo [51:15]: what do we have here if you maybe know a map of abs you can see this is basically university here
+Pablo [51:24]: this is uc dave and this is like data sound then you have sicker mode a part
+Pablo [51:29]: the sulfonic eastern part of davis and actually this map here
+Pablo [51:30]: contains
+Pablo [51:33]: i mean you can see a lot of red points
+Pablo [51:35]: and if you click on one of them
+Pablo [51:49]: you see oh wow i really can't manor rest on like see different restaurant name and basically this web contains all response of units so that midst of all the restaurants take this
+Pablo [51:56]: you can find them and we can do of course second method we can change things and zoom in
+Pablo [52:05]: out but what is maybe more useful first of all now i just use full screen and then i can click on this here
+Pablo [52:08]: asking me
+Pablo [52:09]: whether i want to
+Pablo [52:10]: allow
+Pablo [52:29]: use
+Pablo [52:32]: conn
+Pablo [52:32]: ection
+Pablo [52:39]: and then it was like remove my
+Pablo [52:40]: work
+Pablo [52:42]: here
+Pablo [52:43]: but
+Pablo [52:46]: anyway a lot of things like anticipation
+Pablo [52:47]: kinda and
+Pablo [52:57]: this basically means to open this fast you can locate yourself and your location then you have all the restaurants around you you have a map
+Pablo [53:17]: and you could use a bulk basically seven or eight lines of code and then you have an html file and the seven or eight nine and not three lines that you have always used the same three or four lines beginning
+Pablo [53:29]: and this is one of my if you want to create some kind of output for your pilot project if you have some kind of
+Pablo [53:37]: spatial data in a sense you have some kind of location you can always use audio package
+Pablo [53:41]: have to write five and lines of code
+Pablo [53:44]: and in the end you probably has an h
+Pablo [53:50]: tml to use an html file with all these games showing you some kind of information
+Pablo [53:59]: add more than just a restaurant you can also add like maybe what kind of restaurant is maybe
+Pablo [54:02]: also array and so on
+Pablo [54:08]: but you can also click here and maybe you want to look for a specific restaurant
+Pablo [54:09]: i don't know
+Pablo [54:19]: let me see press is not out of
+Pablo [54:26]: and
+Pablo [54:38]: then you're here so you can also do other things for example if you want to find a point you can add here so it has like a lot of functionality
+Pablo [54:39]: and it's like ten lines
+Pablo [54:40]: for all
+Pablo [54:41]: these quality stuff here
+Pablo [54:49]: just a quick
+Pablo [55:09]: and
+Pablo [55:10]: so on
+Pablo [55:11]: it just
+Pablo [55:14]: means
+Pablo [55:15]: what we always have
+Pablo [55:16]: to do
+Pablo [55:17]: is
+Pablo [55:18]: volume
+Pablo [55:19]: of men
+Pablo [55:20]: and then
+Pablo [55:21]: it
+Pablo [55:22]: don't specify
+Pablo [55:23]: anything
+Pablo [55:24]: just based
+Pablo [55:25]: on
+Pablo [55:26]: any
+Pablo [55:26]: information
+Pablo [55:43]: and
+Pablo [55:44]: you have to
+Pablo [55:45]: very creative things
+Pablo [55:51]: one
+Pablo [55:52]: line
+Pablo [55:53]: and two
+Pablo [55:57]: and
+Pablo [55:58]: so on
+Pablo [55:59]: and maybe
+Pablo [55:59]: the next few things
+Pablo [56:02]: like
+Pablo [56:03]: location
+Pablo [56:08]: let's
+Pablo [56:09]: say
+Pablo [56:10]: thirty eight times
+Pablo [56:11]: one hundred twenty
+Pablo [56:12]: two
+Pablo [56:15]: and
+Pablo [56:15]: this is
+Pablo [56:17]: well
+Pablo [56:36]: yes we are not very far away davis would be i guess somewhere there is famous but you can always start with the starting location by specifying the coordinates and there is a guess thirty eight something and one minus one hundred twenty two
+Pablo [56:37]: but of course
+Pablo [56:44]: you want to have like a starting point and it's really just adding location equals the list of variables
+Pablo [56:48]: and the next thing is sometimes
+Pablo [56:51]: you specify sum
+Pablo [56:56]: and this
+Pablo [56:57]: means
+Pablo [56:58]: the
+Pablo [56:59]: level
+Pablo [57:03]: of cube where you start with what you can
+Pablo [57:04]: all
+Pablo [57:22]: change
+Pablo [57:23]: like
+Pablo [57:24]: and
+Pablo [57:40]: equals
+Pablo [57:41]: six hundred
+Pablo [57:55]: twenty
+Pablo [58:22]: and then
+Pablo [58:28]: add
+Pablo [58:29]: a child
+Pablo [58:33]: right
+Pablo [58:45]: here
+Pablo [58:50]: left
+Pablo [58:58]: now
+Pablo [59:11]: because
+Pablo [59:12]: i'm
+Pablo [59:13]: lazy
+Pablo [59:14]: always
+Pablo [59:15]: write
+Pablo [59:16]: this
+Pablo [59:17]: and
+Pablo [59:19]: so on and add a child
+Pablo [59:26]: support joma where i just add an m like the audio
+Pablo [59:27]: batch
+Pablo [59:33]: specify width and the heat and then i'm just doing all the things display
+Pablo [59:38]: okay
+Pablo [59:41]: so whenever i have
+Pablo [59:43]: some
+Pablo [59:44]: audio that i can
+Pablo [59:45]: just do something like shorten
+Pablo [59:48]: and specify
+Pablo [59:49]: the
+Pablo [59:50]: width and the
+Pablo [59:51]: a
+Pablo [59:54]: okay
+Pablo [59:55]: yes
+Pablo [1:00:07]: so we have basically two things
+Pablo [1:00:08]: change
+Pablo [1:00:10]: with
+Pablo [1:00:11]: the a
+Pablo [1:00:41]: ur
+Pablo [1:00:42]: ic
+Pablo [1:01:03]: question
+Pablo [1:01:07]: yes
+Pablo [1:01:15]: back
+Pablo [1:01:15]: ward
+Pablo [1:01:16]: yes
+Pablo [1:01:20]: bigger
+Pablo [1:01:21]: that is
+Pablo [1:01:22]: non wide
+Pablo [1:01:23]: area
+Pablo [1:01:26]: it's a beautiful
+Pablo [1:01:41]: yes definitely just like a container i want to remove this white area
+Pablo [1:01:43]: just go down here
+Pablo [1:01:51]: so i can in zoom out two other things change so it's not like in a sense it's not a static picture
+Pablo [1:01:54]: it's really like
+Pablo [1:01:56]: okay
+Pablo [1:01:59]: then with this
+Pablo [1:02:05]: let's do a little bit more interesting things
+Pablo [1:02:06]: but
+Pablo [1:02:07]: i have to talk about
+Pablo [1:02:09]: tiles
+Pablo [1:02:14]: so we have here like a car completing all the like the name
+Pablo [1:02:19]: s we have like all this information we just wrote one line as audio map
+Pablo [1:02:22]: and we had like
+Pablo [1:02:28]: this map with all this information the cities and the name and of course a very useful for us
+Pablo [1:02:32]: but of course the first question where does this information come from
+Pablo [1:02:38]: and maybe can we change this if we're interested in a different kind of information
+Pablo [1:02:41]: and basically this is going to call it like
+Pablo [1:02:42]: tiles here
+Pablo [1:02:46]: there are different kinds of mac we
+Pablo [1:02:47]: can use and all of
+Pablo [1:02:48]: these maps
+Pablo [1:02:49]: contain
+Pablo [1:02:51]: more or less
+Pablo [1:02:53]: like
+Pablo [1:02:54]: the herb
+Pablo [1:02:55]: but like
+Pablo [1:02:55]: different information
+Pablo [1:03:00]: one of them is maybe more cell byte data the other thing is more really
+Pablo [1:03:06]: and we can
+Pablo [1:03:07]: change
+Pablo [1:03:09]: for
+Pablo [1:03:09]: example
+Pablo [1:03:13]: and
+Pablo [1:03:15]: then see this white
+Pablo [1:03:16]: information
+Pablo [1:03:25]: and you
+Pablo [1:03:25]: still see some things
+Pablo [1:03:33]: and
+Pablo [1:03:34]: analysis by
+Pablo [1:03:35]: augmented
+Pablo [1:03:46]: for
+Pablo [1:03:46]: his mother
+Pablo [1:03:47]: will have
+Pablo [1:03:54]: seen
+Pablo [1:03:55]: that on the left
+Pablo [1:03:56]: hand
+Pablo [1:03:56]: side
+Pablo [1:03:58]: and
+Pablo [1:03:59]: move the only difference
+Pablo [1:04:00]: in using
+Pablo [1:04:01]: different tire lay
+Pablo [1:04:02]: ers so i'm using
+Pablo [1:04:03]: the
+Pablo [1:04:09]: n
+Pablo [1:04:10]: six
+Pablo [1:04:14]: right
+Pablo [1:04:21]: and
+Pablo [1:04:22]: then i will
+Pablo [1:04:23]: just add
+Pablo [1:04:24]: everything
+Pablo [1:04:26]: and
+Pablo [1:04:28]: near
+Pablo [1:04:28]: control
+Pablo [1:04:29]: so you
+Pablo [1:04:30]: don't want
+Pablo [1:04:34]: this
+Pablo [1:04:37]: and it basically if i now
+Pablo [1:04:41]: on the left hand side only two things on the left
+Pablo [1:04:41]: hand side
+Pablo [1:04:43]: on the right hand side you can
+Pablo [1:04:44]: see basically
+Pablo [1:04:46]: everything
+Pablo [1:04:47]: is the same
+Pablo [1:04:48]: just
+Pablo [1:04:49]: a
+Pablo [1:04:50]: different
+Pablo [1:04:50]: map
+Pablo [1:04:51]: so
+Pablo [1:04:52]: if you want these
+Pablo [1:04:53]: differences
+Pablo [1:04:55]: here on the left hand side of
+Pablo [1:04:56]: the right
+Pablo [1:04:57]: hand side
+Pablo [1:04:59]: and
+Pablo [1:05:02]: more
+Pablo [1:05:03]: than these kind of
+Pablo [1:05:04]: pipes
+Pablo [1:05:06]: in a specific
+Pablo [1:05:07]: kind of information
+Pablo [1:05:08]: choose
+Pablo [1:05:10]: and
+Pablo [1:05:11]: here this is
+Pablo [1:05:12]: like
+Pablo [1:05:17]: this layer what i have here on the right hand side was very beautiful
+Pablo [1:05:21]: very useful if i over with my mouse
+Pablo [1:05:22]: over it opens
+Pablo [1:05:24]: and then i can just either use the old speed map
+Pablo [1:05:25]: then i
+Pablo [1:05:29]: bought it save i can do the absolute job
+Pablo [1:05:30]: or
+Pablo [1:05:31]: i can use the
+Pablo [1:05:32]: sx diet
+Pablo [1:05:36]: i wouldn't
+Pablo [1:05:37]: say it's very
+Pablo [1:05:38]: useful right now
+Pablo [1:05:39]: or like i don't have
+Pablo [1:05:40]: project where
+Pablo [1:05:40]: it's useful
+Pablo [1:05:42]: but if you want
+Pablo [1:05:43]: the other tires
+Pablo [1:05:44]: and maybe
+Pablo [1:05:46]: this is the way
+Pablo [1:05:46]: i'm up
+Pablo [1:05:48]: with
+Pablo [1:05:53]: all street maps and then you have five different tiles on the right hand side
+Pablo [1:05:55]: with everything and then you can
+Pablo [1:05:56]: decide what you want
+Pablo [1:06:08]: six
+Pablo [1:06:09]: seven
+Pablo [1:06:20]: over
+Pablo [1:06:21]: in
+Pablo [1:06:34]: thirteen
+Pablo [1:06:47]: piles
+Pablo [1:06:48]: and
+Pablo [1:06:49]: use these
+Pablo [1:06:52]: now
+Pablo [1:06:54]: web
+Pablo [1:06:55]: two
+Pablo [1:06:56]: zero
+Pablo [1:07:04]: left
+Pablo [1:07:39]: zero
+Pablo [1:07:44]: yes
+Pablo [1:07:48]: then you see here for example
+Pablo [1:07:51]: minimap which is also used both
+Pablo [1:07:52]: so if you have
+Pablo [1:07:53]: now
+Pablo [1:08:16]: here
+Pablo [1:08:28]: now
+Pablo [1:08:31]: pipeline
+Pablo [1:08:32]: which is
+Pablo [1:08:33]: very useful
+Pablo [1:08:34]: because i
+Pablo [1:08:36]: think google has very strict rest
+Pablo [1:08:39]: rictions on what you allow access
+Pablo [1:09:04]: now
+Pablo [1:09:09]: i'm a little bit disappointing but typically
+Pablo [1:09:10]: let me show you
+Pablo [1:09:21]: maybe it's me
+Pablo [1:09:28]: maybe but for example it means something like s
+Pablo [1:09:33]: whatever
+Pablo [1:09:37]: so it's not as good as what made it yet
+Pablo [1:09:41]: and you can try it on your own
+Pablo [1:09:44]: at home and then if you add
+Pablo [1:10:04]: this
+Pablo [1:10:04]: all
+Pablo [1:10:05]: right you can
+Pablo [1:10:07]: pass it just click on it
+Pablo [1:10:11]: and it just opens and has a coordinate
+Pablo [1:10:16]: which is also very useful so basically you can just go on like the map
+Pablo [1:10:20]: find a specific thing and then just click on it
+Pablo [1:10:34]: of course another way to get the location like let me just quickly present the things full screen is going to
+Pablo [1:10:40]: wear the location and then four separate button
+Pablo [1:10:46]: basically means whether the button is just here at the zoom or what it's like separate button
+Pablo [1:10:49]: it said can you just add it
+Pablo [1:10:57]: that is a big deal coda which is basically this thing here just make sure it's restricted to one request per second
+Pablo [1:11:00]: very
+Pablo [1:11:00]: quickly
+Pablo [1:11:05]: one
+Pablo [1:11:13]: and
+Pablo [1:11:24]: sunshine
+Pablo [1:11:25]: will be a sense
+Pablo [1:11:26]: in miles
+Pablo [1:11:34]: yes
+Pablo [1:11:36]: you
+Pablo [1:11:37]: can see now
+Pablo [1:11:40]: where the
+Pablo [1:11:40]: sun shine
+Pablo [1:11:41]: i mean
+Pablo [1:11:46]: yes
+Pablo [1:11:56]: nine
+Pablo [1:11:57]: left
+Pablo [1:12:23]: sheila
+Pablo [1:12:29]: make a line
+Pablo [1:12:30]: between
+Pablo [1:12:31]: i don't know
+Pablo [1:12:33]: this
+Pablo [1:12:33]: way
+Pablo [1:12:39]: i
+Pablo [1:12:43]: can create mine i can create a polygon
+Pablo [1:12:45]: whatever
+Pablo [1:12:45]: i want
+Pablo [1:12:48]: do great shapes
+Pablo [1:12:50]: circuit and
+Pablo [1:12:51]: so on
+Pablo [1:12:52]: also
+Pablo [1:12:53]: can add
+Pablo [1:12:54]: point
+Pablo [1:12:54]: markers
+Pablo [1:12:56]: so basically maybe adding
+Pablo [1:12:57]: manually point
+Pablo [1:12:57]: markers
+Pablo [1:12:58]: i'm thinking
+Pablo [1:13:00]: about
+Pablo [1:13:01]: going for a
+Pablo [1:13:02]: hike
+Pablo [1:13:02]: or a national
+Pablo [1:13:03]: park
+Pablo [1:13:05]: you planning your height
+Pablo [1:13:06]: and
+Pablo [1:13:10]: flexion map and then also add some markers on your own
+Pablo [1:13:16]: you will find there are like applications
+Pablo [1:13:21]: i would just recommend you not the old if you
+Pablo [1:13:22]: want to go hiking
+Pablo [1:13:24]: but maybe something like that
+Pablo [1:13:26]: similar
+Pablo [1:13:29]: sm
+Pablo [1:13:30]: add
+Pablo [1:13:31]: point
+Pablo [1:13:32]: and
+Pablo [1:13:33]: good use you can also
+Pablo [1:13:35]: exp
+Pablo [1:13:35]: ort things
+Pablo [1:13:36]: so
+Pablo [1:13:37]: basically now
+Pablo [1:13:38]: i just have create
+Pablo [1:13:38]: d
+Pablo [1:13:40]: for
+Pablo [1:13:40]: example
+Pablo [1:13:41]: if you want
+Pablo [1:13:43]: be able to
+Pablo [1:13:44]: create
+Pablo [1:13:45]: in the future not by
+Pablo [1:13:49]: hand but if you want to wear at the same location
+Pablo [1:13:51]: with
+Pablo [1:13:52]: a python code
+Pablo [1:13:54]: then you see
+Pablo [1:13:55]: the click on it
+Pablo [1:13:56]: see
+Pablo [1:13:57]: the polygon is
+Pablo [1:13:58]: coordinates
+Pablo [1:13:59]: how
+Pablo [1:14:00]: to
+Pablo [1:14:01]: export
+Pablo [1:14:03]: and
+Pablo [1:14:04]: then you would have
+Pablo [1:14:05]: as
+Pablo [1:14:06]: a eos
+Pablo [1:14:07]: by all
+Pablo [1:14:08]: these objects
+Pablo [1:14:11]: first
+Pablo [1:14:15]: prefix by and create your item map or whatever
+Pablo [1:14:18]: with your goals and where you want to
+Pablo [1:14:25]: start hiking and afterwards you import it
+Pablo [1:14:28]: and then it will
+Pablo [1:14:32]: typ
+Pablo [1:14:32]: e
+Pablo [1:14:43]: some things
+Pablo [1:14:44]: and so on
+Pablo [1:14:46]: but
+Pablo [1:14:48]: i think you got the main message
+Pablo [1:14:52]: okay
+Pablo [1:14:55]: and of this
+Pablo [1:14:57]: i would like
+Pablo [1:15:00]: first thing that the map i had at the beginning with all the red box
+Pablo [1:15:02]: restaurants
+Pablo [1:15:02]: davis
+Pablo [1:15:06]: and it's actually very easy to create and that
+Pablo [1:15:08]: once you have all your map
+Pablo [1:15:10]: you just have to add some red dots
+Pablo [1:15:12]: and
+Pablo [1:15:13]: i don't know like an
+Pablo [1:15:14]: o
+Pablo [1:15:21]: d that is missing right now
+Pablo [1:15:26]: set
+Pablo [1:15:26]: of restaurants
+Pablo [1:15:28]: and
+Pablo [1:15:28]: consists
+Pablo [1:15:29]: of
+Pablo [1:15:30]: a lot of restaurants
+Pablo [1:15:31]: in
+Pablo [1:15:32]: yoru county
+Pablo [1:15:34]: and a little bit around with sacrament
+Pablo [1:15:35]: o
+Pablo [1:15:39]: so let me just quickly cop
+Pablo [1:15:40]: y this
+Pablo [1:15:41]: and
+Pablo [1:15:41]: see
+Pablo [1:15:43]: you will have like an address
+Pablo [1:15:44]: name
+Pablo [1:15:46]: you can also
+Pablo [1:15:46]: else
+Pablo [1:15:47]: or
+Pablo [1:15:50]: program
+Pablo [1:15:51]: ideas
+Pablo [1:16:14]: hold
+Pablo [1:16:15]: and access
+Pablo [1:16:17]: via python
+Pablo [1:16:17]: directions
+Pablo [1:16:18]: on
+Pablo [1:16:32]: basically
+Pablo [1:16:40]: seven
+Pablo [1:16:41]: hundred seventy
+Pablo [1:16:42]: restaurants
+Pablo [1:16:44]: let
+Pablo [1:16:45]: out of my three hundred sixty
+Pablo [1:16:45]: five
+Pablo [1:16:48]: and
+Pablo [1:16:50]: this is basically
+Pablo [1:16:52]: this is the code
+Pablo [1:16:53]: for
+Pablo [1:16:56]: exactly the age in l show you twenty minutes
+Pablo [1:17:02]: before it contains like the polio map we start with audio map start the location
+Pablo [1:17:08]: somewhere like davis i guess assumes that it's just first time
+Pablo [1:17:15]: and whenever you do anything with audio in ninety nine percent cases
+Pablo [1:17:24]: we add like columns this is maybe nothing that has
+Pablo [1:17:31]: moved forward
+Pablo [1:17:32]: our data
+Pablo [1:17:33]: set
+Pablo [1:17:36]: we
+Pablo [1:17:37]: just want to get a
+Pablo [1:17:41]: restaurant and we want to get the lens the longitude
+Pablo [1:17:42]: and
+Pablo [1:17:43]: just do all the
+Pablo [1:17:44]: rest
+Pablo [1:17:51]: of
+Pablo [1:17:55]: yes
+Pablo [1:17:56]: visual
+Pablo [1:18:01]: off
+Pablo [1:18:08]: inspections or whatever we want to
+Pablo [1:18:10]: what kind of breastfeed it is
+Pablo [1:18:33]: and have into the longitude and then we are adding all the circles to m basically whenever you have such an object you must add it to the original map with n h file and then you have object added
+Pablo [1:18:38]: on
+Pablo [1:18:45]: which
+Pablo [1:18:50]: add
+Pablo [1:18:51]: geocod
+Pablo [1:18:52]: er autonom
+Pablo [1:18:53]: y atim
+Pablo [1:18:54]: you can add an address
+Pablo [1:18:56]: which didn't work but ucd was
+Pablo [1:18:57]: like yes
+Pablo [1:18:58]: whatever
+Pablo [1:19:00]: and
+Pablo [1:19:01]: then
+Pablo [1:19:07]: just
+Pablo [1:19:08]: make it
+Pablo [1:19:08]: more beautiful
+Pablo [1:19:09]: you add
+Pablo [1:19:10]: bigger
+Pablo [1:19:11]: and add
+Pablo [1:19:12]: m to figure
+Pablo [1:19:13]: and afterwards
+Pablo [1:19:14]: save everything
+Pablo [1:19:16]: as an h
+Pablo [1:19:17]: m
+Pablo [1:19:18]: and
+Pablo [1:19:19]: basically
+Pablo [1:19:26]: item
+Pablo [1:19:28]: i think
+Pablo [1:19:29]: what makes
+Pablo [1:19:29]: it very useful
+Pablo [1:19:34]: that you can share this html part of all its mix of
+Pablo [1:19:37]: all thread locks and you don't need to run distrib
+Pablo [1:19:39]: ute the notebook so if someone has
+Pablo [1:19:41]: not giving stores
+Pablo [1:19:50]: then you can just still share food like this html map and they can run it and this makes a guess very useful in
+Pablo [1:19:51]: the science
+Pablo [1:19:51]: project
+Pablo [1:19:59]: needed to see what you have
+Pablo [1:20:06]: basically
+Pablo [1:20:18]: and then
+Pablo [1:20:36]: the last ten minutes i would like to answer a question that occurs regularly if you are using this kind of maps typically you don't have coordinates or something you have coordinates but for example if you have a web page then you typically
+Pablo [1:20:42]: know
+Pablo [1:20:49]: trying to
+Pablo [1:20:50]: distract
+Pablo [1:20:52]: and
+Pablo [1:20:53]: try to avoid
+Pablo [1:20:58]: basically
+Pablo [1:20:59]: design
+Pablo [1:21:01]: this is
+Pablo [1:21:02]: a tool
+Pablo [1:21:04]: it's like on a server
+Pablo [1:21:07]: you can just access give them basically an address
+Pablo [1:21:10]: and adjustment coordinates and the other way around
+Pablo [1:21:12]: and also specify coordinates
+Pablo [1:21:14]: and then you can do an
+Pablo [1:21:15]: human
+Pablo [1:21:16]: readable address
+Pablo [1:21:19]: and this is possibly like both ways
+Pablo [1:21:20]: and
+Pablo [1:21:21]: this
+Pablo [1:21:22]: whole field
+Pablo [1:21:23]: will be
+Pablo [1:21:25]: so
+Pablo [1:22:06]: visual
+Pablo [1:22:07]: one
+Pablo [1:22:23]: el
+Pablo [1:22:23]: ders and
+Pablo [1:22:31]: this
+Pablo [1:22:32]: is
+Pablo [1:22:36]: main
+Pablo [1:22:37]: message is
+Pablo [1:22:38]: there is
+Pablo [1:22:39]: something
+Pablo [1:22:40]: web page
+Pablo [1:22:44]: it also use this map and you can for example
+Pablo [1:22:48]: add here uc davis
+Pablo [1:22:54]: because
+Pablo [1:22:56]: you can
+Pablo [1:22:57]: see here
+Pablo [1:23:02]: now
+Pablo [1:23:03]: try
+Pablo [1:23:04]: get
+Pablo [1:23:05]: everything
+Pablo [1:23:06]: to read this
+Pablo [1:23:20]: from
+Pablo [1:23:21]: zero
+Pablo [1:23:54]: and
+Pablo [1:23:55]: address
+Pablo [1:23:58]: and this is basically what we're doing yes
+Pablo [1:24:02]: address is group building and so on
+Pablo [1:24:05]: and the latitude is seven
+Pablo [1:24:08]: two
+Pablo [1:24:10]: and
+Pablo [1:24:12]: you can do this
+Pablo [1:24:14]: and just to show you how everything is in practice
+Pablo [1:24:29]: i have remembered during the winter games and now we have news there is this host canvas and the host cities and we have all the winter games hosted in france
+Pablo [1:24:38]: so i would like to create a roadmap with other political winter games where it will help
+Pablo [1:24:40]: so
+Pablo [1:24:42]: i first create
+Pablo [1:25:07]: a list of cities of all the winter games and maybe more interesting is this i giving us a ocd we have a year and basically i'm making the idea for me i don't want to have a specific address of the living center or something like just want to have a point on the roadmap just looking up the location for
+Pablo [1:25:08]: shopping
+Pablo [1:25:25]: and what i'm doing then is for each of the cities here
+Pablo [1:25:35]: i'm adding like i'm just trying to get the address of the city from the altitude in its own
+Pablo [1:25:35]: head
+Pablo [1:25:37]: for address
+Pablo [1:25:41]: then
+Pablo [1:25:43]: wait for one second
+Pablo [1:25:45]: add to that it was a longitude
+Pablo [1:25:50]: and i'm doing this for i guess
+Pablo [1:25:52]: cities have
+Pablo [1:26:03]: men have bas
+Pablo [1:26:11]: ically all measures have coordinates and then i can just use the podium package display everything
+Pablo [1:26:15]: and because it's the end of the day
+Pablo [1:26:22]: i would just say i do exactly the same for the summer games and then i create like a map
+Pablo [1:26:23]: where
+Pablo [1:26:43]: i
+Pablo [1:26:44]: can see now
+Pablo [1:27:12]: that
+Pablo [1:27:32]: this is basically my
+Pablo [1:27:33]: i
+Pablo [1:27:36]: p
+Pablo [1:27:38]: od
+Pablo [1:27:39]: games
+Pablo [1:27:42]: obviously because snowflakes you see the summer
+Pablo [1:27:43]: became and
+Pablo [1:27:45]: if you click on the wind electric
+Pablo [1:27:45]: games
+Pablo [1:27:47]: you see strength over twenty
+Pablo [1:27:48]: ten with the
+Pablo [1:27:51]: help
+Pablo [1:27:52]: mexico city
+Pablo [1:27:54]: in nineteen sixty eight some of the games
+Pablo [1:28:00]: you see the different colors but also what i have not shown you on
+Pablo [1:28:01]: google
+Pablo [1:28:04]: lecture
+Pablo [1:28:06]: only
+Pablo [1:28:07]: once
+Pablo [1:28:09]: again
+Pablo [1:28:14]: this is also very
+Pablo [1:28:15]: useful
+Pablo [1:28:16]: tool create
+Pablo [1:28:17]: such groups
+Pablo [1:28:23]: if you have these points here this uninformation sometimes you just want to see some kind of
+Pablo [1:28:29]: root in the sense you have the restaurants you only want to see
+Pablo [1:28:34]: french restaurants or i don't know korean restaurants
+Pablo [1:28:41]: i would
+Pablo [1:28:43]: like to add today's lecture
+Pablo [1:28:45]: i hope
+Pablo [1:28:46]: to see you on
+Pablo [1:28:47]: thursday
+Pablo [1:28:48]: when i continue
+Pablo [1:28:50]: thank you
+Pablo [1:30:40]: i mean i'm open
+Pablo [1:30:41]: yeah
+Pablo [1:31:03]: because i want
+Pablo [1:31:05]: to send you guys
+Pablo [1:31:06]: these documents
+Pablo [1:31:17]: so i could send you the code or whatever
+Pablo [1:31:20]: if it's interesting
+Pablo [1:31:22]: maybe we can make something out
+Pablo [1:31:22]: of that
+Pablo [1:31:25]: that's really the only idea
+Pablo [1:31:26]: i have now because i haven't
+Pablo [1:31:27]: been
+Pablo [1:31:31]: more of an idea than i have
+Pablo [1:31:35]: some i was wondering if either of these ideas are
+Pablo [1:31:36]: interesting to you guys
+Pablo [1:31:41]: there's this website that's the center for biological diversity
+Pablo [1:31:57]: and they have all these species lists that are kind of like point and click but then it has all the text for the overview and then on the side it has all of these individual
+Pablo [1:32:03]: i can't make this screen any bigger
+Pablo [1:32:06]: i just googled this really quickly right now
+Pablo [1:32:12]: but it has all the information
+Pablo [1:32:13]: for
+Pablo [1:32:15]: the animals on here
+Pablo [1:32:20]: and related issues and everything so if you guys are interested in doing
+Pablo [1:32:22]: more like a scraping project
+Pablo [1:32:23]: this might be cool
+Pablo [1:32:25]: so what kind of hidden photo does that have
+Pablo [1:32:25]: on
+Pablo [1:32:26]: youtube
+Pablo [1:32:28]: things because i imagine half
+Pablo [1:32:30]: of the projects got to be
+Pablo [1:32:33]: something to do with data and then like a visualization component
+Pablo [1:32:37]: yeah this is like primarily text data
+Pablo [1:32:48]: but also if we're able to collect all of this text data and get it into
+Pablo [1:32:55]: like a pandas data frame we could also do visualizations showing
+Pablo [1:32:56]: what
+Pablo [1:32:58]: percentage
+Pablo [1:33:03]: of an all endangered species are like in each of the categories
+Pablo [1:33:09]: a lot of them have issues related to them
+Pablo [1:33:19]: so we could see and they have links to maps here
+Pablo [1:33:21]: which like this is like not helpful
+Pablo [1:33:29]: but we could do something like that or if you guys are interested in a more human element there's also
+Pablo [1:33:30]: add it up
+Pablo [1:33:31]: but
+Pablo [1:33:35]: yeah here this is like less of a scraping project but this is like kalan virus green
+Pablo [1:33:44]: it's basically like this big
+Pablo [1:33:49]: project that california has done
+Pablo [1:33:53]: to kind of put together a lot of the data that they have
+Pablo [1:33:54]: i'm trying to
+Pablo [1:33:55]: open this
+Pablo [1:33:56]: map
+Pablo [1:33:56]: okay
+Pablo [1:34:02]: click to open in a new window that's what i would like to do thank you
+Pablo [1:34:10]: this has like a ton of data about
+Pablo [1:34:14]: environmental risk factors and
+Pablo [1:34:15]: they have all of these
+Pablo [1:34:20]: they've all just data about
+Pablo [1:34:22]: toxic relationship facilities
+Pablo [1:34:23]: and traffic
+Pablo [1:34:26]: and then they have all of these data visualizations
+Pablo [1:34:28]: so if we wanted to do anything
+Pablo [1:34:32]: related to
+Pablo [1:34:35]: mapping of like
+Pablo [1:34:50]: any kind of issues like that we could do something with this data this data is like probably available and like pretty well documented i think this is still a good scraping task because we would have to find a way to get all of this data unless they have the data in their own
+Pablo [1:34:55]: it's all under this like map and data section
+Pablo [1:34:56]: you can download
+Pablo [1:34:58]: all the data
+Pablo [1:35:03]: i do like this one
+Pablo [1:35:07]: a little more than the animal one just because this one feels a bit more
+Pablo [1:35:08]: data ish
+Pablo [1:35:09]: like
+Pablo [1:35:13]: number y well and be sure if the other one has enough
+Pablo [1:35:18]: data yeah that one makes more sense
+Pablo [1:35:19]: upload
+Pablo [1:35:22]: but we're not doing the web scraping part
+Pablo [1:35:25]: then what is technically the second aspect
+Pablo [1:35:26]: that we're doing
+Pablo [1:35:28]: of course visualization
+Pablo [1:35:33]: i was trying to find that list
+Pablo [1:35:37]: but we had a lessee
+Pablo [1:35:40]: two or three
+Pablo [1:35:41]: out of
+Pablo [1:35:44]: list of topic
+Pablo [1:35:51]: i think the topics were web scraping visualization nlp or data processing
+Pablo [1:35:59]: so it could be data processing
+Pablo [1:36:19]: because the teacher salary do you guys know transparent california
+Pablo [1:36:20]: no
+Pablo [1:36:21]: website
+Pablo [1:36:22]: that has
+Pablo [1:36:23]: the salaried
+Pablo [1:36:23]: creation
+Pablo [1:36:24]: of the ancient
+Pablo [1:36:25]: public
+Pablo [1:36:37]: salary
+Pablo [1:36:38]: hotspot
+Pablo [1:36:39]: summary california
+Pablo [1:36:40]: but my
+Pablo [1:36:41]: key map was really
+Pablo [1:36:42]: basic and really
+Pablo [1:36:42]: boring
+Pablo [1:36:46]: there's a huge amount of
+Pablo [1:36:46]: data
+Pablo [1:36:54]: rose
+Pablo [1:37:06]: i
+Pablo [1:37:16]: mean i would imagine it's not like probably not like a hotspot of teachers who are all getting paid a lot it's that there are some counties where a few people are getting paid
+Pablo [1:37:18]: there are a lot of people
+Pablo [1:37:19]: that
+Pablo [1:37:20]: 's
+Pablo [1:37:23]: what
+Pablo [1:37:24]: i have found is that
+Pablo [1:37:29]: unsurprisingly sf in la
+Pablo [1:38:07]: ke
+Pablo [1:38:11]: of the copy of this google doc to drive identity
+Pablo [1:38:15]: i like the environment
+Pablo [1:38:37]: that we could potentially use
+Pablo [1:38:37]: the data
+Pablo [1:38:39]: and that was
+Pablo [1:38:40]: like i
+Pablo [1:38:41]: think it doesn't have to be
+Pablo [1:38:49]: much against an api or without an api i think we could use an api to download data would probably count as web scraping
+Pablo [1:39:04]: data yeah i think on the on the download video section and then it had this like excel
+Pablo [1:39:31]: we have a good time
+Pablo [1:39:58]: probably
+Pablo [1:40:01]: it is probably a ginormous file
+Pablo [1:40:08]: when i clicked on the link i don't even think it downloaded
+Pablo [1:40:21]: i think it might be
+Pablo [1:40:26]: under
+Pablo [1:40:28]: faith
+Pablo [1:40:33]: and i think that's kind of how they allow
+Pablo [1:40:33]: you
+Pablo [1:40:34]: to
+Pablo [1:40:36]: like
+Pablo [1:40:37]: y
+Pablo [1:40:37]: eah
+Pablo [1:40:46]: i also
+Pablo [1:40:47]: work on the game
+Pablo [1:40:56]: work on
+Pablo [1:40:57]: finding some other
+Pablo [1:40:58]: like pieces
+Pablo [1:40:59]: of
+Pablo [1:41:08]: three
+Pablo [1:41:14]: data download
+Pablo [1:41:15]: one scraping
+Pablo [1:41:16]: and then
+Pablo [1:41:26]: this isn't going to be a huge file so this would probably fall like there might even be like a a database for the cal envirus green data that wouldn't surprise me
+Pablo [1:41:38]: but we could potentially do something like that try to get some like additional data that we can scrape to add to this and then make some data visualizations
+Pablo [1:41:41]: so what about
+Pablo [1:41:45]: we can all look over the data and by next week
+Pablo [1:41:46]: just try
+Pablo [1:41:47]: to come up
+Pablo [1:41:49]: with one or two research questions
+Pablo [1:41:49]: yeah
+Pablo [1:41:50]: i'm thinking
+Pablo [1:41:55]: only
+Pablo [1:41:56]: have
+Pablo [1:41:58]: six
+Pablo [1:41:59]: yes
+Pablo [1:42:05]: so
+Pablo [1:42:09]: next week
+Pablo [1:42:13]: so questions by
+Pablo [1:42:17]: yeah did you guys get access to
+Pablo [1:42:25]: final
+Pablo [1:42:26]: report
+Pablo [1:42:29]: i came
+Pablo [1:42:29]: up with sections
+Pablo [1:42:30]: for potential
+Pablo [1:42:31]: research questions
+Pablo [1:42:33]: i put the
+Pablo [1:42:34]: link to
+Pablo [1:42:39]: link from the other
+Pablo [1:42:39]: website
+Pablo [1:42:40]: that you had
+Pablo [1:43:07]: it might be so much data you might need an api
+Pablo [1:43:08]: to download it
+Pablo [1:43:17]: but if we did then that would be huge and then that would be the much great thing if we use an api to get it
+Pablo [1:43:32]: is
+Pablo [1:44:30]: maybe by like class on thursday we could have some questions written down that way
+Pablo [1:44:34]: like we have questions about each other's questions
+Pablo [1:45:02]: and it's like a six
+Pablo [1:45:03]: megabyte
+Pablo [1:45:08]: open
+Pablo [1:45:08]: ing
+Pablo [1:45:10]: it is crashing loophead
+Pablo [1:45:14]: thank you
+Pablo [1:45:53]: on
+Pablo [1:45:54]: google
+Pablo [1:45:54]: sheets
+Pablo [1:46:05]: seems to be a lot of data
+Pablo [1:46:29]: there is eight thousand thirty six rows
+Pablo [1:46:31]: probably enough
+Pablo [1:46:32]: data
+Pablo [1:46:40]: oh but oh this is just the twenty twenty one data
+Pablo [1:46:43]: this doesn't even show trends over time
+Pablo [1:47:39]: do we feel good about maybe
+Pablo [1:47:40]: like trying to
+Pablo [1:47:41]: research questions
+Pablo [1:47:47]: and also maybe potentially trying to bring in one additional data source that we could scrape
+Pablo [1:47:50]: to add to this data
+Pablo [1:47:53]: i
+Pablo [1:47:54]: have
+Pablo [1:48:00]: seen this
+Pablo [1:48:01]: as counties
+Pablo [1:48:04]: and
+Pablo [1:48:06]: prospect
+Pablo [1:48:06]: location
+Pablo [1:48:08]: the summary
+Pablo [1:48:09]: that i have is doing
+Pablo [1:48:10]: my county
+Pablo [1:48:10]: also
+Pablo [1:48:12]: so if you wanted
+Pablo [1:48:15]: to have some sort of connection between
+Pablo [1:48:17]: pol
+Pablo [1:48:17]: lution
+Pablo [1:48:21]: that would just be teachers
+Pablo [1:48:29]: and also if you did want to look at how much people make and
+Pablo [1:48:35]: the information poverty is one of
+Pablo [1:48:38]: the like poverty and poverty percentile
+Pablo [1:48:38]: are on
+Pablo [1:48:38]: here
+Pablo [1:48:40]: at least they should be
+Pablo [1:48:43]: yeah poverty and poverty percentile are on here
+Pablo [1:48:59]: it's also worth noting that this is all census tract data which like so if you sort by california county
+Pablo [1:49:03]: there will be lots of census tracts within one
+Pablo [1:49:03]: county
+Pablo [1:49:10]: but if we wanted to do like any county level data we could also do that
+Pablo [1:49:53]: one percent property
+Pablo [1:50:05]: no i don't think you're reading that
+Pablo [1:50:08]: it's sorted by county
+Pablo [1:50:13]: so like the alameda is just the first one in the list
+Pablo [1:50:17]: and it doesn't want to buy percent low scores but then if you scroll all the way down
+Pablo [1:50:20]: like a little bit more
+Pablo [1:50:23]: by a sentiment
+Pablo [1:50:31]: it's also being a specific neighborhood
+Pablo [1:51:34]: which countries have the highest concentration of hybrid
+Pablo [1:51:46]: y
+Pablo [1:51:46]: es
+Pablo [1:52:17]: what
+Pablo [1:52:18]: are the dates for
+Pablo [1:52:18]: these
+Pablo [1:52:25]: class
+Pablo [1:52:27]: after the
+Pablo [1:52:29]: learning
+Pablo [1:52:30]: assistant workshop
+Pablo [1:52:31]: at four ten
+Pablo [1:52:38]: there
+Pablo [1:52:39]: is
+Pablo [1:52:42]: a cal enviro
+Pablo [1:52:43]: screen three point zero
+Pablo [1:52:46]: which seems to be from twenty eighteen
+Pablo [1:52:50]: so i don't know if there's the data
+Pablo [1:52:54]: changes over
+Pablo [1:52:54]: time
+Pablo [1:52:57]: where do you find the twenty eighteen
+Pablo [1:52:58]: one it's still not letting you even click on
+Pablo [1:53:03]: this one i just looked up ces three point zero instead of
+Pablo [1:53:08]: it's asking me to request a copy
+Pablo [1:53:10]: so i don't think it's public
+Pablo [1:53:14]: it's not where i
+Pablo [1:53:15]: collect the engine
+Them [1:53:47]: this is actually huge if we wanted to see if we could do like anything related if we want to look at anything air quality related which is all like the pm
+Them [1:53:51]: that would be really interest
+Them [1:53:51]: ing
+Them [1:53:57]: we can look at like changes
+Them [1:53:58]: in air quality
+Them [1:53:58]: over time
+Them [1:54:01]: it's just like look at twenty twenty one
+Them [1:54:10]: like the year of twenty twenty one is a case study but this website has a ton of like air quality data
+Them [1:54:11]: here
+Them [1:54:13]: particulate matter
+Them [1:54:18]: that's just general
+Them [1:54:19]: air quality
+Them [1:54:20]: metric
+Them [1:54:26]: right pm two point five is typically measured in grams
+Them [1:54:27]: per cubic
+Them [1:54:28]: need cubic centimeter i believe
+Them [1:54:42]: i also added air quality link in the track this has like a ton of data associated with it
+Them [1:54:47]: and it also has like json and all this stuff this is like a really well supervised api
+Them [1:54:51]: so that would be the web scraping component
+Them [1:54:52]: and then
+Them [1:54:56]: we got the data download
+Them [1:54:59]: we can
+Them [1:55:03]: try to like combine this air quality data
+Them [1:55:10]: with the non virus green data and answer like any question related to air quality and that would be super relevant because
+Them [1:55:14]: i think they just updated
+Them [1:55:20]: the was it the clean air act that they just updated or like the epa's regulations
+Them [1:55:25]: that they can't that they're not going to
+Them [1:55:29]: they're like not going to regulate greenhouse gases anymore
+Them [1:55:39]: yeah trump revokes epa finding on greenhouse gas thread
+Them [1:55:41]: in mutual imply change regulation
+Them [1:55:41]: s
+Pablo [1:55:55]: for
+Pablo [1:55:55]: cars
+Pablo [1:55:56]: like trucks car
+Pablo [1:55:56]: plants
+Pablo [1:55:57]: and
+Pablo [1:56:16]: element
+Pablo [1:56:18]: of life improve like prove to be wise is important
+Pablo [1:56:19]: i don't think
+Pablo [1:56:21]: we'll have a hard
+Pablo [1:56:22]: time
+Pablo [1:56:34]: it's not a zip code because there's multiple zip codes per
+Pablo [1:56:35]: county per
+Pablo [1:56:37]: approximate location it's by census tract
+Pablo [1:56:44]: yeah it's like how they like count people for the like us census
+Pablo [1:56:45]: which is in my opinion
+Pablo [1:57:06]: okay
+Pablo [1:57:06]: this is fun

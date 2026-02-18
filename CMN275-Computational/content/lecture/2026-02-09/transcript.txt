@@ -1,0 +1,506 @@
+Pablo [0:21]: how's everybody great for the house
+Pablo [0:32]: okay
+Pablo [0:37]: so i'm going to send around
+Pablo [0:41]: some more logistical announcements in the afternoon but
+Pablo [0:45]: first of all thank you for submitting the labs obviously i haven't looked at that
+Pablo [0:48]: but i hope you enjoyed it
+Pablo [0:52]: i hope you the last discussion a little bit and i thought a little bit excited
+Pablo [0:55]: a few times that was good
+Pablo [1:00]: and yeah that basically wraps it up
+Pablo [1:03]: so today we have our last incentive discussion
+Pablo [1:08]: trying to finish up both the abms and ethics
+Pablo [1:12]: because you will have before we watch the lectures which might also be interesting
+Pablo [1:15]: see the students reflections before and then we have two of them
+Pablo [1:19]: and then we do the ethics lecture which doesn't have a lab
+Pablo [1:25]: until wednesday not because it's an afterthought
+Pablo [1:29]: it's actually of all of my teaching is by far the most popular
+Pablo [1:33]: course i think there are seventy thousand students on coursera just for that
+Pablo [1:52]: so it's certainly not an afterthought it's actually the most the thing people are most interested in so have a look at that i just put it last because for us to get through the methods first so you can start thinking about your project and that's what this is about now so we're going into the second half of the course
+Pablo [2:03]: after our tour force through all the methods and i hope you start thinking about your project on fridays the deadline to submit to the conference
+Pablo [2:05]: please take advantage of it
+Pablo [2:11]: as i said you get conference experience you don't need to
+Pablo [2:20]: raise any funds for any travel or for conference fees i mean conference fees nowadays or like five hundred bucks and i just have first has to be raised
+Pablo [2:25]: and you have everything even lunch and happy hour included
+Pablo [2:34]: and can get experience can present get a line in your cv and get feedback most importantly on your work and network with others
+Pablo [2:35]: across campus
+Pablo [2:45]: so please take advantage of it i obviously cannot force you to be there next friday friday two weeks on the twentieth but i strongly encourage it
+Pablo [2:49]: as then for the remaining meetings what it looks like we're just going to meet two more times
+Pablo [2:53]: after day once
+Pablo [3:01]: to discuss your first initial ideas which do this sunday so next monday we will meet
+Pablo [3:09]: and talk about it so i can give you direct feedback and i would say about a quarter to a third of students at that point and change their topic
+Pablo [3:15]: which is fine so don't be afraid now working on this week or you can even pitch two ideas
+Pablo [3:29]: by this sunday i said hey these are the two ideas and next monday you bring them in and hear the feedback and sometimes when you verbalize it in front of others it's like nah actually you make your decision right there
+Pablo [3:31]: because you start to realize why it comes out of your mouth
+Pablo [3:33]: that the one might be better than the other
+Pablo [3:41]: so we'll take advantage of that and then you have the task to meet with other faculty
+Pablo [3:42]: at least two as you know
+Pablo [3:53]: but i strongly encourage you to reach out to more is a great excuse it's a really great excuse and networking you don't get these opportunities a lot
+Pablo [3:56]: that you get these excuses and then you're on their radar
+Pablo [4:04]: and something might come off it and these kind of connections last you very long i go back to my advisors from whatever
+Pablo [4:09]: twenty years ago and ask them sometimes for letters of recommendation or something it will not that will not disappear
+Pablo [4:13]: so having a good network is very important
+Pablo [4:16]: so take advantage of that and also comes with it
+Pablo [4:22]: and then we will meet one more time after that shortly before your final
+Pablo [4:24]: submission
+Pablo [4:30]: skip one or two or two or three even meetings
+Pablo [4:36]: because i assume you're meeting with the other faculty instead so don't want to overburden you with that
+Pablo [4:40]: and then there's the conference as well where i hope you will all come
+Pablo [4:44]: so you won't meet that but then we will meet one more time
+Pablo [4:51]: so next monday we meet and then we one more time to discuss your final project after you have the feedback from other faculty and so forth
+Pablo [4:54]: so that will be that
+Pablo [5:01]: next monday is monday
+Pablo [5:05]: president
+Pablo [5:08]: yeah so you won't read
+Pablo [5:13]: all right let me see when we meet that i don't know if that's actually useful
+Pablo [5:19]: yeah we have the twenty third
+Pablo [5:21]: i think you should be going there
+Pablo [5:25]: maybe only me one more time after that
+Pablo [5:29]: the ninth now
+Pablo [5:33]: i would then give you very detail
+Pablo [5:37]: s as well you will do them per video
+Pablo [5:40]: and you will give peer review
+Pablo [5:48]: so give very extensive and good peer review and hopefully you will also get very extensive and good peer review and i will also then do that we will work on that
+Pablo [5:54]: yeah then probably we only meet one more time probably on the ninth of march
+Pablo [6:05]: but if you want to meet in the twenty third let me know we can also meet on the twenty third maybe do that
+Pablo [6:06]: so if you know twenty third
+Pablo [6:07]: and then on the ninth
+Pablo [6:08]: maybe
+Pablo [6:08]: do that
+Pablo [6:11]: and to see how far you come
+Pablo [6:41]: anybody else wants to be in the twenty third
+Pablo [6:43]: i mean jeff and me can also be here by ourselves
+Pablo [6:53]: well i do think it most important also that you meet with a faculty and don't wait until the fifteenth start to email them right now
+Pablo [6:57]: and then you send them a reminder in a week and then you send them another reminder in a week i mean i also get these emails and i usually don't respond immediately
+Pablo [7:02]: so yes i get behind that
+Pablo [7:04]: okay then we could meet on the twenty third
+Pablo [7:14]: and can you remind us where the conference takes place on the twenty in stonegate that's in west davis so it's a fifty minute bike right from here
+Pablo [7:16]: it's a country club it's very nice
+Pablo [7:18]: been doing it there since twenty eighteen
+Pablo [7:26]: nice for the happy hour as well so we do it there just to get off campus and have a little bit of conference feeling and also be in another classroom
+Pablo [7:32]: okay
+Pablo [7:34]: so let's get going with the abm presentation
+Pablo [7:38]: did you mute
+Pablo [7:51]: i also actually have so many fun videos of you guys coding up things and the last question of exploring with your own code but then i'll be applying for that today but actually i downloaded them i wanted to share because some of them were very cool
+Pablo [7:56]: should i do
+Pablo [8:00]: that
+Pablo [8:01]: works you see
+Pablo [8:01]: it
+Pablo [8:05]: i need to extend my screen i think
+Pablo [8:06]: okay
+Pablo [9:18]: good morning everyone today i'm discussing asian based modeling or abm which is a way to study how large through social patterns emerge from individual behavior instead of modeling society from top down equations abn build system from bottom up by simulating environments and individuals in their interaction
+Pablo [9:27]: in individual agents follow simple rules and interact with each other in their environment no agents has global knowledge
+Pablo [9:36]: despite this structured system level patterns emerge naturally from the local interactions which is what makes abm more useful for studying social systems
+Pablo [9:52]: the main components of evm are the agents which represent the individual or the entities the behavioral rules which guides how agents act or respond the interaction among agents lead to emergent outcomes that were not explicitly programmed
+Pablo [10:04]: the scaling model one of the earliest examples of abm which suggests that certification could arise even when individuals would not mind being surrounded by different races
+Pablo [10:17]: as long as they desire to have at least small fraction of people of the same racial background as neighbors as you can see in the diagram shown even mild preferences from similar backgrounds can produce highly segregated communities
+Pablo [10:34]: then why abm matters it captures a real world complexity it models the social behavior as well as test all the scenarios whatever scenarios that come to your mind which cannot be simulated in social arrangement
+Pablo [10:44]: the real world applications as we have seen is population control economics social media influence and epidemic spread for some diseases and many more
+Pablo [10:54]: so coming to my discussion questions my first discussion question is can abm help predict social polarization
+Pablo [11:04]: first option to find polarization
+Pablo [11:09]: kind of diversity or can we
+Pablo [11:12]: segregate kind of a crucial involvement
+Pablo [11:16]: using media is it easy for us to predict
+Pablo [11:23]: do you have some value for the social polarization
+Pablo [11:27]: like social media or buildings
+Pablo [11:37]: or kind of like that but then is it possible for us to have a prediction for
+Pablo [11:49]: some post or some page that you have on instagram for example and then divide the following of that page into categories is it possible for us to do that
+Pablo [11:53]: by simulating the environment like changing the population changing the followers
+Pablo [11:58]: the type of post the ideas behind it the tools kind of
+Pablo [12:03]: i
+Pablo [12:09]: think in the shelling model it's based on rules for agency yeah it actually has no preferences
+Pablo [12:15]: or you need you're comfortable with a certain percentage like minded yeah
+Pablo [12:20]: so i guess in real life people are different
+Pablo [12:27]: so this is a simplification that maybe can be insight into how people
+Pablo [12:37]: always have a fixed percentage of people that
+Pablo [12:38]: having it
+Pablo [12:40]: yeah
+Pablo [12:44]: the social emergence can be predicted
+Pablo [12:45]: in a way
+Pablo [12:58]: yeah i think we can simulate how it will work but we can never predict using abm models it is just a way for us to imagine
+Pablo [13:04]: how abuse can help us in adjusting but not really protecting
+Pablo [13:10]: my second question is should social policymakers rely on simulation models
+Pablo [13:20]: i think
+Pablo [13:50]: my bad i think it would be a good way to say we try to see the real world with different dance from different perspective i think can be one of them can maybe complement the other from other method from other aspect maybe some real world qualitative plus agent based modeling plus something else that we can try to grab some part of the truth we're trying to see
+Pablo [13:58]: yeah but again it's impossible from everyone's perspective to implement the exact simulation model
+Pablo [14:00]: to come up with the same outcomes
+Pablo [14:16]: our department communication department we have a ground back meeting
+Pablo [14:17]: and when we
+Pablo [14:25]: should transportation simulation
+Pablo [14:44]: to simulate the transportation university and try to keep people change up the air community waste i guess that provides some insight although as sam said it is simplification but also
+Pablo [14:55]: i was going to say the same because traffic laws are not predictable most people in those cases it might be useful to have simulation
+Pablo [15:03]: i was going to mention also something about travel data in regards to congestion pricing
+Pablo [15:04]: how they
+Pablo [15:08]: use extensity simulation or to see what the effect
+Pablo [15:12]: would be i think also since we're talking about policymakers
+Pablo [15:20]: a lot of election prediction falling prediction simulations kind of use agent if not a little bit
+Pablo [15:25]: but it's very small so far so far we're just doing
+Pablo [15:32]: i've never heard someone in election that's cool
+Pablo [15:45]: yeah but for this one i think policymakers can use this for testing for stress testing as well boundary cases that we actually cannot simulate to understand the else cases that might happen
+Pablo [15:51]: my third question is this is very interesting that came to my mind every time
+Pablo [15:54]: i was simulating the model that
+Pablo [15:57]: where might abm fail
+Pablo [16:05]: what do you guys think what does fayette mean
+Pablo [16:10]: it wasn't for you what i was paying what did you have in your mind
+Pablo [16:11]: then you asked that question
+Pablo [16:16]: for example i have some findings and i try to simulate an involvement
+Pablo [16:18]: not able to get it right
+Pablo [16:24]: and i'm trying to adjust all the parameters involvement agents
+Pablo [16:30]: and the predictions that are already present do not at all match with the abm
+Pablo [16:37]: there can be an issue with the parameters
+Pablo [16:45]: so we get those from it can actually keep on getting warm up
+Pablo [16:51]: that could be one of
+Pablo [16:52]: them
+Pablo [17:05]: i think it's very difficult to validate you can have some force and simulations but it's very difficult to verify whether it
+Pablo [17:09]: 's the same
+Pablo [17:23]: too i think the assumptions sometimes might be unrealistic and humans are oversimplified so sometimes the parameters might not be the right one the involvement that we are working on might not be the best
+Pablo [17:31]: and also adms are we don't have anything to test abms against so that was a good point
+Pablo [17:42]: great didn't we why don't you go first and be quiet
+Pablo [17:46]: but very interesting pointy right i want to clarify to number eight
+Pablo [17:47]: fantastic
+Pablo [17:50]: good conversation started
+Pablo [18:21]: my head i'm old enough to anyway well let's take another look at apn a bit from different perspective well let's see
+Pablo [18:24]: so before okay
+Pablo [18:33]: presentation compose of three parts versus that we go through some more famous ish like historical apm models
+Pablo [18:46]: provided that we might build an abm for our final project for rsm helpful tips that might help us grow like a pro or build successful epm and final will be some thought provoking
+Pablo [18:46]: questions
+Pablo [18:56]: okay so while first is that there's this person joshua and abstinence who are looking at his resume thing i guess maybe his past crossword margin in the center faith instead
+Pablo [19:18]: yeah because his phd in political science in mit but now he work in nyu as an epidemiology professor wow i'm an epidemiologist i cannot expect someone from political shift to ep now and doing very prospering research but anyway two thousand six he says that if you didn't grow it you didn't explain it
+Pablo [19:32]: but if what he means that if you want to explain something based on the concept of agent based modeling when you grow it we need to try to code some simple rules and see the emergence from the agent based model
+Pablo [19:55]: so while we are classmate just cover it and we all see it in the martin's class about the segregations even though minor micro intentions that one person just wants thirty percent of a neighbor to be like him in the end it's still come out as a macro outcome which is like a segregation
+Pablo [19:57]: which is we see somehow emergence pattern from this
+Pablo [20:06]: and the other one is the famous go back to that because we don't go back this is also like glance over that
+Pablo [20:28]: but this is very important so sharing won the nobel prize right in economics they gave him for that because it is still very ingrained with many also other researchers maybe even with your advisors and with others and they're really there because usually the assumption is that if you take a bunch of as it's usually humans could be companies could be countries that have each one has an average of thirty percent
+Pablo [20:30]: you assume
+Pablo [20:34]: it's iid you add them up and the average should be thirty percent
+Pablo [20:37]: that's what all your statistics classes will teach you
+Pablo [21:00]: that's what most of researchers doesn't matter if they've been thirty years tenure would assume just by doing that and this result from the nineteen seventies nobel prize crown tells you that's not what it is you have a bunch of these that are all thirty and the result is seventy now that statistics cannot get behind that
+Pablo [21:12]: right and that is a very clear sign and something very clear you can always point to in a sense it's not something from my class i show you that here because it's a nobel prize crown actually inside that we have here
+Pablo [21:21]: and especially for social systems that yes the basic assumption of a society the definition of what social is that they're not independent
+Pablo [21:31]: and these things then happen these emergence does happen and the most important that's also going back to the first lecture the most interesting things in society are actually about that
+Pablo [21:35]: adam smith famously said how can it be that we are all greedy
+Pablo [22:13]: but the outcome is actually a benefit for all of us like that cannot be so you cannot sum up the thirtieth and get a thirty result you cannot sum up a bunch of three d and have a greedy society know the society is actually prosperous and everybody has israel even so they're all greedy he called it the invisible hand so that actually is the most interesting thing about social science is and i do think after this class bringing that back that has sunk in and that's why we do need i would say we need complex setup the systems approaches we call it computational whatever just because it sounds better but that's the kind of systems thinking we need in the social sciences in order to advance
+Pablo [22:15]: thank you
+Pablo [23:00]: and this one is the famous sugarscape which is we all see this in class a marketing class and it's actually model proposed by the he proposed a sugarscape so this is how things connected and in here he equipped the agent with two elements one is ambitious how far they can see and how they metabolize the sugars and they set up different patches for them to interact with and we see that through this with all these micro intention of the agents they are not trying to recreate a society but with these rules they try to follow they somehow recreate the wealth genes coefficient inside the sugar state models
+Pablo [23:51]: and here's another one maybe some of you heard about this one is that researchers are interested in finding out that how selfish these two collaborations because we expect that maybe if one species or one creature's keeping selfish all the time is very likely he could get most resources and it's just like a prosper in the end and so the code in the system there are several agents some agents they always collaborate some agents they always try to backstab each other and get the resources and betray each other and there's this agent they try to establish strategies called tit for tat so first they try to cooperate if they got backstep they like backstab back and it just basically copying the move or what the agent is interacting with
+Pablo [24:34]: so by putting these agents together they find out that for the one getting the most benefit of fund is getting the highest score is not the ones keep baptizing each other it's not one kid collaborating but this one the titan tat so first cooperate then just copying the previous move of the other agent previous mode is corporate and now keep collaborating previous mode is backset kickback sacking back where we see that so somehow being selfish and corny at the same time leads to the general the best outcome of that individual in the system
+Pablo [24:59]: well here are some tips that might help us provide that we want to code for a base model in the future in the futures or for our final project so first is that the rule of kiss keep it simple and stupid so it will be as simple as possible as stupid as possible to capture the set of some rule for the agent to follow
+Pablo [25:09]: for instance if you want to collect the flow of agents or maybe evacuations or maybe just like a bunch of birds forming across the skies
+Pablo [25:49]: so in this case coding like separation alignment and cohesion separation that the agents don't bump into each other alignments they try to move in the same direction cohesion trying to stay somehow in the center of the swarm the pack in this case we can code the flow of maybe evacuation or flow of the bird across the skies like the waterfalls much more effectively compared to like we set them up into a formation or setting up into our evacuation which capture people's personality pain side that kind of extreme situation while they are just way too complicated we just set up simple rules for our agents
+Pablo [25:51]: maybe whatever scenarios to follow
+Pablo [26:51]: and also environment is a very important character we might say in the most recent interpreter that martin provided us at the media patch for the agent to interact with the media patch so in the agent based modeling environment is a very important element for us to play with we can't say that usually like patches that provide some things or things in the barriers or block something so for instance epidemic emojis if you want to code for instance social distancing it might not be a good idea to code it as a choice for the agent it might not just code the barrier fiscal battery and we know in the network we can do a sidebar and just for that so we can do just the actual barriers inside the agent based model and see how does any like how does the interaction turn out between the barriers and also social distancing interact with our agent like bar like real people publishing inside the system
+Pablo [27:38]: okay so after we set things done and play with it well we always try to verifications and validations so if our agent somehow dies out in the end they just disappeared and we probably know it's not that good model like one very very long when we are doing the class the recycling the recycling models i think probably we do that in lab or in somewhere but yeah so what we always try to do for patient validation to make sure that our model is run all right and even if it runs out right well we keep running it until it reach like larger malware longer enough in time frame to figure out that it doesn't crash after like something accumulates enough and suddenly this isn't just correct
+Pablo [27:38]: ion
+Pablo [27:40]: okay
+Pablo [28:17]: so for agent based modeling actually i find out that netlocal adult looks super super i would say simple i thought it's some toy but it's actually the industrial standard for the intro level of agent based model as the developer and it want to build something deeper well python offer nestels and which can be collaborated with other python packaging if you want to do more advanced stuff and then you can do more like machine learning will be the skidance app or you want to do a bit more other stuff with pandas or the plotting with the
+Pablo [28:48]: last but not least these are two a bit i would say a bit more philosophical questions for us to think about it the first one is that well if we can successfully grow successfully grow a society that looks exactly that ours using some simple rules for example rules or sub rules we set up doesn't mean that our world is much simpler than or these rules we coded here are just way too powerful
+Pablo [28:52]: if apple provides that everyone follows the rules
+Pablo [28:54]: any
+Pablo [28:55]: thoughts
+Pablo [28:58]: i don't understand why these are mutually exclusive
+Pablo [29:00]: oh you mean like they can coexist
+Pablo [29:05]: even though i would say
+Pablo [29:19]: this is how it can be very complex while having very several strong rules that can like hold everyone's behavior and somehow emerge to see the immersion of people individuals
+Pablo [29:30]: well you start for selena and crystallizes see how to have just analogy many different types of snowflakes no two snowflakes are the same
+Pablo [29:34]: it's very simple how it's no fleet forms the process of it
+Pablo [29:43]: i think one of the purposes of a model is to simplify
+Pablo [29:50]: and we are i think comfortable in economics using models all the time with minor in social science
+Pablo [29:54]: even in economics
+Pablo [29:57]: like you know citrus parabolic keeping everything
+Pablo [30:03]: else constant basically we can do the same social sciences
+Pablo [30:11]: and it replicates or predicts some socioeconomic
+Pablo [30:19]: yeah i think your answer resonates with my personal answer to this i guess is that although the world is complex
+Pablo [30:29]: but there are some characteristic part inside like the world studios can be treated as a modular stuff
+Pablo [30:50]: so we all have complement we all have some justice systems we all have some thing that is shared inside the general consensus across the society so that part can try to capture the essence and code it as like a big powerful rules let's see how we as agents interact with these rules
+Pablo [30:53]: two comments
+Pablo [30:55]: first for me economics is a social science
+Pablo [31:00]: just because they think they're specialists now
+Pablo [31:04]: and i'm allowed to say that i have a phd in economics
+Pablo [31:12]: but yes second of all what is the difference between complicated and complex
+Pablo [31:13]: think about that
+Pablo [31:16]: and there is an answer
+Pablo [31:31]: to that according to what current science is understanding or scientists understand general society uses these two words more exchangeably but in science it doesn't matter if that's physics or chemistry
+Pablo [31:37]: or social science we do have a clear distinction what's the distinction between something as complicated and something is complex
+Pablo [31:42]: well the insides of a computer are pretty complicated
+Pablo [31:45]: but not complex you don't see real clinto
+Pablo [31:49]: them they have emergency nominal print oh what's the difference
+Pablo [31:51]: then yeah say that again
+Pablo [31:54]: something is complicated and what when is it complex
+Pablo [31:54]: is that
+Pablo [32:03]: so at least with complex systems you start with simple components and then the interactions between them
+Pablo [32:14]: complicated things you heard it's great just organization really simple like this wire feed into this one this one
+Pablo [32:15]: let's see
+Pablo [32:15]: back in there
+Pablo [32:21]: right and that is a very important distinction and that's it so something complex is actually very simple
+Pablo [32:27]: simple is the contrary simple as the opposite of complicated agree on that
+Pablo [32:28]: more complex
+Pablo [32:32]: it's not complicated complex is actually very simple
+Pablo [32:40]: but the interactions between them to support for us in the zoko scientists leads to something that might look complicated
+Pablo [32:46]: now something complicated could have emerged from something very simple just by the interactions
+Pablo [33:06]: or just please somebody just send up something up very complicated since they have the super bowl sunday i always had the discussion with one of my buddies he says like oh football is the most complex no it's not football is not complex football is complicated that is just like who will ever learn all of these rules what you guys are talking about that is really complicated
+Pablo [33:11]: now something complex is something different if something is complicated
+Pablo [33:23]: you have very little chances to really figure it out like i'm trying with football for right now i'm just kidding so if something is complicated that is really not what we offer in science what we're after in science
+Pablo [33:35]: is to find very simple so things like this on the fee institute joshua as well is and many of us hang out they got together because they understood that they are simple rules
+Pablo [34:13]: that can apply across sciences so you go there and there's a lot of physicists chemists they say they're simple rules that you can apply then also to other disciplines so we figured that out in physics but check that out it might work in social sciences as well and so these simple rules then can be used and so for example power law scale free and whatever they are a few simple rules that can lead to them and it doesn't matter in which sciences we apply them so what we're after inside is actually look for simple rules because it's really complicated there's nothing you cannot really reproduce it it's just like okay you just did a complicated thing and in chemistry we thought that it would be really complicated for a long time
+Pablo [34:24]: until they suddenly said and it is complicated chemistry may remember from high school you have to memorize a lot of stuff but that's just complicated it's just really boring you have to memorize a lot of these words
+Pablo [34:27]: but then they were able to put that all together in this little table
+Pablo [34:35]: and even to make predictions like oh there's some missing it turns out yeah we could fill that in later on like whoa now that is a sign of complexity
+Pablo [34:44]: so there are simple rules that allow you to do all this diversity of life to put it in a table and actually to identify the holes so that's what we are after in science
+Pablo [34:47]: we are always after very simple rules
+Pablo [34:51]: if something is really so when there's something complicated that we see
+Pablo [34:55]: our hope is that we will discover simplicity underneath
+Pablo [35:01]: and that we then can grow it and say like oh you brew that i'm like oh this complexity emerges
+Pablo [35:10]: now as morrison said two snowflakes might never be the same but we understand then how to grow them and if you didn't grow it you didn't explain it right according to joshua
+Pablo [35:13]: e so that's what we're actually after
+Pablo [35:16]: so yes i would say summing it all out
+Pablo [35:24]: football is complicated soccer is complex
+Pablo [35:30]: about
+Pablo [35:31]: the first question
+Pablo [35:31]: like that
+Them [35:36]: question you see
+Them [35:37]: previously
+Them [35:38]: so we're just pointing that we
+Them [35:39]: cannot disc
+Them [35:40]: lose
+Them [35:41]: distinguish between
+Them [35:42]: a simulation of the
+Them [35:42]: society
+Them [35:44]: itself
+Them [35:45]: we try to
+Them [35:46]: grow something super
+Them [35:46]: complex
+Them [35:47]: that just tastes like
+Them [35:49]: agents
+Them [35:49]: who window society
+Them [35:50]: and psychosystems
+Them [35:54]: are still explaining the social media or
+Them [35:55]: just barely
+Them [35:57]: second world
+Them [35:59]: so
+Them [36:00]: you are saying that
+Them [36:02]: might be too
+Them [36:02]: simple
+Them [36:03]: they cannot capture
+Them [36:04]: acids
+Them [36:05]: then what
+Them [36:06]: did we
+Them [36:08]: concept
+Them [36:09]: ually push into
+Them [36:10]: a very extreme
+Them [36:11]: very
+Them [36:12]: complex
+Them [36:13]: just like
+Them [36:14]: a copy these jokes
+Them [36:19]: expl
+Them [36:20]: ain something
+Them [36:24]: gen
+Them [36:24]: tle
+Them [36:33]: and
+Them [36:34]: that
+Them [36:39]: will
+Them [36:41]: just daily
+Them [36:42]: add it as
+Them [36:46]: for the current
+Them [36:48]: employment for sure
+Them [36:51]: we can project
+Them [36:51]: something
+Them [36:52]: but not really
+Them [36:57]: thinking that
+Them [36:59]: because
+Them [37:00]: the current
+Them [37:01]: world we are having
+Them [37:02]: now is
+Them [37:03]: very dynamic changing
+Them [37:03]: all the time
+Them [37:04]: so
+Them [37:05]: provided that
+Them [37:07]: inside the business
+Them [37:08]: they cannot evolve
+Them [37:09]: as the same journey
+Them [37:10]: as the current what is
+Them [37:11]: involving
+Them [37:13]: we can always know these model
+Them [37:15]: as things change
+Them [37:17]: but this trend of the parameters
+Them [37:18]: we can always
+Them [37:20]: change model as well
+Them [37:21]: but there's impossible
+Them [37:24]: interesting
+Them [37:28]: llms are trained
+Them [37:29]: right
+Them [37:33]: each time a new release comes out it's because it's been trained a little bit
+Them [37:33]: better
+Them [37:35]: model
+Them [37:37]: like a film model is pointing backwards
+Them [37:38]: right
+Them [37:42]: and you're asking plate clovers well if you rendered it every second
+Them [37:44]: if you render the model every second then would it
+Them [37:50]: then be true because you could incorporate every second worth of change if you
+Them [37:53]: were changing it then it would be like a human
+Them [37:55]: it'd be a living thing
+Them [38:02]: for gave every second offer something new and it would just evolve by some maybe
+Them [38:10]: somehow cruel and draw the different direction overload them with information
+Them [38:46]: interesting because it kind of reminds me of ai sort of simulated try to simulate human intelligence artificially but i don't think we got closer to explaining human intelligence by developing ai we actually built a second built a new entity that is as mysterious as our own so i guess this goes the same with the simulation i think rather than instead of explaining
+Them [38:48]: better explaining our social behavior
+Them [38:57]: i think it raised other questions about the definitions like what defines our society and what shapes our society
+Them [39:46]: i have my present answer to all the questions but just my two cents so i think that even though we build like a digital twins inside the computer inside system they just grow by itself but still how to say we cannot really get some big principle that we can apply to our real world we still need to kind of get some powerful rules some powerful things that we can take with us and become our maybe making decision become our guideline when we try to do something become our thinking logic to try to solve the problem these two things might be the same but we still need something a bit more simpler to just i think too complex they might be just overfitting
+Them [39:49]: any thoughts
+Them [39:58]: very deep yes
+Them [40:02]: so if we will continue this class
+Them [40:04]: we would actually
+Pablo [40:09]: go one step further and talk about digital twins so we're good here
+Pablo [40:21]: so what's the difference we started and we had actually
+Pablo [40:24]: three let's say
+Pablo [40:27]: we had this class divided into empirical
+Pablo [40:29]: and then theoretical
+Pablo [40:30]: what's the difference again
+Pablo [40:42]: empirical so we said this class was actually introduction to the scientific methods and i basically told you well there's empirical science and then there is theoretical science
+Pablo [40:43]: what's the difference
+Pablo [40:48]: here and how do they complement each other
+Pablo [40:50]: is observed so you have data
+Pablo [40:53]: it's all data empirical
+Pablo [40:58]: you can simulate data
+Pablo [41:16]: that's right so no the answer is no not all data is empirical however for the scientists what's the definition of the sciences again and what's the difference between the arts and the science of selachino campus we both have the arts and we have the sciences and here the social we are sometimes like oh we still do our humanity stuff when we do class of red wine
+Pablo [41:31]: hypothesizing styles i don't know you still have very strong roots in humanity so we're like more like an art and a science this would also the other say the physicists sometimes laugh about us say like you're more like an art so what do you think is
+Pablo [41:33]: what do you think is the difference here
+Pablo [41:38]: what's it resuming the arts and the scientists what makes the science of scientists
+Pablo [41:46]: yeah we may hypothesis and we test hypotheses that's right so we do it empirical data at the end we do that's what we do that's the definition of what we do
+Pablo [41:57]: now what's the problem with working with empirical data exclusively we do that exclusively where what's the dead end we run into
+Pablo [42:01]: different
+Pablo [42:02]: right
+Pablo [42:08]: yeah because there are too many possible ways it could turn out and actually we do not want to replicate
+Pablo [42:11]: it and that's also like talking about ai that's a big concern
+Pablo [42:22]: so i optimize this and there's these amazing things of learning very quickly and learning very quickly from data that's what machine learning is we automatically learning from data that's what we do
+Pablo [42:42]: and then it takes this data and it learns extremely quickly and can really faithfully replicate it much more than any human so it will learn what we feed it with and then optimize it to create the most racist sexist whatever is society that we ever had great great goal and that's what it does
+Pablo [42:47]: because we don't have data about a world in peace that's sustainable
+Pablo [42:50]: respects diversity we do not have that data
+Pablo [42:53]: however yes we can simulate that data
+Pablo [42:54]: in theory
+Pablo [43:08]: and then in theory we have models that actually do that that's why simulation is so powerful and that's where simulation also needs to be used if you want to do something in the real world
+Pablo [43:16]: and the most usage of simulation nowadays is happening especially on wall street because it really matters for them that it works
+Pablo [43:23]: in the defense departments around the world because it also matters for them that it works these interventions that they're doing and warfare for example
+Pablo [43:42]: and that's the most important stability and during covid we did a lot of simulations starting drew in health but traditionally these have been the two most frequent users now if you have a simulation what's the difference between a computer simulation and making it work for reality and you said that so
+Pablo [43:51]: we need to calibrate it you guys said every second see what the heartbeat is with real world data
+Pablo [43:55]: and that's actually not called a simulation that is called a digital twin
+Pablo [44:03]: so the difference between a simulation and digital twin is that a simulation can just be theoretical
+Pablo [44:20]: so probably most sophisticated simulation that i know of is the microsoft flight simulator have you ever played with that thing it's forty years old i think they simulate and that's amazing also digital twin already but it gets updated whatever every three four five years
+Pablo [44:29]: so you might fly over your house you see your house but the same as google maps if you zoom in it's like what i didn't have that car for many years why is the car in front of my garage
+Pablo [44:33]: so you see that and these depends on the heartbeat how they update it
+Them [44:53]: when the department of defense stuff they need to update it all the time it depends on that's very expensive to update it with real world data but when a computer simulation which might be a video game like whatever sim city or what we did with the shelling model with our net logo if you connect that to real world data and calibrate it
+Them [44:55]: then you get this a digital twin
+Them [44:59]: in digital twins is where industry is going to
+Them [45:08]: so when you work towards that they basically they have computer simulations then they have the digital twins on their platform on the platform economy that's where they simulate
+Them [45:09]: and that's where this is going
+Them [45:11]: and then
+Them [45:26]: you have different experts those data guys who bring in empirical data and make sure that's clean and that's accurate and they have to get all their sensors right and that's what basically a lot of things about social media all the data that they're getting right that's a big machinery
+Them [45:28]: then you have the theoretical people
+Them [45:40]: that actually are more in charge of saying okay so how do i model and they are awesome like we said already this solution is have the technical term is an ensemble assembly you write that french word funny no
+Them [45:49]: anymore this ensemble modeling so you have an ensemble of different models and you model reality from different perspectives
+Them [45:51]: and know what we said in lecture no model
+Them [45:53]: all models are wrong
+Them [45:59]: but some are useful and that's what we're doing there and that's then basically what they do on this platform
+Them [46:04]: and then you try to simulate your digital twins and you don't only have one digital twin
+Them [46:06]: you can have many different digital twins
+Them [46:15]: same as the cao or the president of a country doesn't take the decision based on one advisor in the best case they have many advisors
+Them [46:21]: and the problem is if all the advisors think the same it can get very dangerous scientists call that group thing
+Them [46:28]: and that has led the world to collapse sometimes for example most famously what they usually say is the cuban missile crisis
+Them [46:56]: they're all the advisors kind of like thought the same thing and that has been studied extensively in this oversign and see how dangerous it can be so you want your advisors or in that case your models also
+Pablo [46:56]: might it be your ai agents that you prompt to have a diversity in order to cover your basis you don't want them just to have the default chatgpt to give you your opinion right that's why we create ai agents and multi agent systems at the end
+Pablo [46:59]: diversity and that's why this is
+Pablo [47:03]: gone let's leave you a few things
+Pablo [47:06]: so we started here in the first session
+Pablo [47:20]: and we said usually everyone's either of simplicity and that was the birth of science and people thought that was really cool and very important and here we have only a few variables but we understand their interactions quite well
+Pablo [47:24]: so we don't assume in an equation you don't assume that they're independent
+Pablo [47:29]: so you assume that they're dependent right you change something here then this side will change
+Pablo [47:35]: or you change something here then this side has to change so they are dependent that's the idea of mathematics
+Pablo [47:39]: so you have this equal sign in mathematics in the middle that basically shows how they are dependent
+Pablo [47:48]: and that's extremely important so when you go to excel for example that's a game theory is basically also equations
+Pablo [47:54]: and you have these equations this game derivative equations for example evolutionary model like that a system evolves
+Pablo [47:57]: and then we see how they are actually dependent
+Pablo [47:59]: anybody has done game theory here
+Pablo [48:07]: so you do that with differential equations how many of those parallel
+Pablo [48:14]: you set up your master solids stud
+Pablo [48:15]: io owns less respons
+Pablo [48:16]: e
+Pablo [48:21]: technically
+Pablo [48:23]: in terms of
+Pablo [48:28]: the number of location methods
+Pablo [48:35]: the catalyst is
+Pablo [48:36]: really
+Pablo [48:39]: complicated
+Pablo [48:50]: and that's actually so that's what just lecture said in the last lecture right so you have these equations
+Pablo [48:53]: that you have to solve
+Pablo [49:01]: here and it's really difficult to solve here you have three or four equations and each one of these equations could be like you have two journals
+Pablo [49:09]: me and my opponent in that game and then the opponent does this and i do this here right and in order to solve them
+Pablo [49:20]: thank you in order to solve them that's already difficult it's not because you don't have strong enough computers it's just really difficult we have computers we can throw supercomputers on there but then these equations just don't solve
+Pablo [49:39]: and it takes way too long to solve them figure that out but this is basically problem of simplicity but you don't have too many parameters you can still solve them so that's then he told us we do the same thing here now we do not only we cannot solve it analytically so this is called analytically and this is called numerically
+Pablo [49:45]: fun side note when you use your computer to solve a differential equation it's also numerical
+Pablo [49:57]: it basically approximates the area under the curve very finely so they don't have an analytical solution when you use computers they always use numerical simulations you might think approximations
+Pablo [50:02]: so you have these two sides the good thing here is that you can really scale it
+Pablo [50:08]: so you don't have to work with two turtles we work with we can work with hundreds of turtles and that still works fine
+Pablo [50:12]: and then you can see how far it runs and what you get out of it
+Pablo [50:22]: but the analytical solution will be precise and if you really want to i mean if you really want to publish in the high high genre science you probably need to provide both
+Pablo [50:34]: like that's when they are interested because then i don't know if that's more like still kind of like anthropocentric or old school science
+Pablo [50:48]: so that's what we do here
+Pablo [51:24]: assume that
+Pablo [51:26]: thirty percent of the data
+Pablo [51:27]: should be different
+Pablo [52:26]: the
+Pablo [52:27]: iid
+Pablo [52:29]: now
+Pablo [52:30]: people
+Pablo [52:31]: told us that roger
+Pablo [52:33]: is from tears of course combining those
+Pablo [52:33]: two right
+Pablo [52:44]: so you have not few variables that are dependent on each other and not many variables depend on each other so actually you have many variables that have somehow dependent on each other
+Pablo [52:45]: so what do you do with that
+Pablo [52:48]: traditional method it's very difficult
+Pablo [52:51]: so that's how we started our exploration
+Pablo [52:54]: and that's how we got here then
+Pablo [53:00]: and then we say okay so at the end we create kind of like a digital twin of reality
+Pablo [53:03]: now first of all
+Pablo [53:10]: we don't have an america solution so we cannot tell you for sure how it's going so i set that up
+Pablo [53:11]: and then i let it run
+Pablo [53:12]: what will happen
+Pablo [53:18]: somebody summarizes to me what is an invariant distribution or a stationary distribution
+Pablo [53:19]: or measure what is that about
+Pablo [53:25]: so you have your abm you have your simulation or maybe you calibrated it with all your data
+Pablo [53:29]: and you have a big model
+Pablo [53:33]: that really is supposed to measure whatever you're interested in
+Pablo [53:36]: the voting or the wall street or whatever you want
+Pablo [53:38]: now you run it
+Pablo [53:40]: then you get a result
+Pablo [53:43]: and then what
+Pablo [53:48]: then you go to the president's a mister president i run my model and that's the result you should do that
+Pablo [53:49]: is that what you do
+Pablo [53:51]: what's this about
+Pablo [54:01]: you do that and then if you're lucky then you change the trim you successfully change the pattern over time
+Pablo [54:03]: and then it becomes non stationary
+Pablo [54:15]: so then your advice that change the old problem isn't as good at fixing the new problems very good that's another but that's an add on problem i'm still here to be any very good that comes later
+Pablo [54:17]: so with beanie you have your model and you run it
+Pablo [54:28]: so for example you answered like that was in session seven right you had your luger model and you ran it and then i had these little questions i have on with multiple choice question did you exactly know which one or do you have to run it again
+Pablo [54:31]: or by one time running already knew what i was after
+Pablo [54:47]: my model
+Pablo [55:02]: for example
+Pablo [55:21]: what is
+Pablo [55:22]: random
+Pablo [55:25]: ness
+Pablo [56:12]: that way
+Pablo [56:13]: i mean that makes a difference
+Pablo [56:24]: and depending on if the turtle went this way or that way then well and that goes down and then the past dependency and it goes down and like well the entire thing will end up as different it's like a ball rolling down rolling down a hill
+Pablo [56:32]: and sixty percent of the stone it goes this way sixty percent of the stone it goes that way it will end up at a different path at the end like it will take a different path down the hill
+Pablo [56:39]: so you code in this randomness of course every time you run that model so much random as you code it in because you coded it into every turtle guys
+Pablo [56:44]: then it all interacts like of course no surprise that turns out differently all the time
+Pablo [56:50]: first of all yes that's part of the design you did why did you code in randomness there
+Pablo [56:53]: what is randomness
+Pablo [56:56]: why do you code it in there
+Pablo [57:06]: some people model chaos even though chaos itself isn't random deterministic okay so let's take that as a footnote
+Pablo [57:08]: human behavior
+Pablo [57:10]: it can be erratic
+Pablo [57:13]: random
+Pablo [57:13]: ness
+Pablo [57:15]: we
+Pablo [57:16]: are trying to make it all
+Pablo [57:20]: okay you behave a really radical where does that come from
+Pablo [57:25]: why human behavior ratic
+Pablo [57:30]: i mean it will be completely erratic we wouldn't need psychology
+Pablo [57:30]: right

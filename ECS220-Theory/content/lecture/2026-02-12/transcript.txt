@@ -1,0 +1,1254 @@
+Pablo [0:05]: searching for a
+Pablo [0:14]: strain again we don't reset the search right so whatever string that was x the next string x that we look at is just the one after that
+Pablo [0:15]: and let's
+Pablo [0:18]: the idea here being we want to make these decisions
+Pablo [0:20]: which strings to put an a and which one's not
+Pablo [0:23]: and we want these stages to be consistent with each other
+Pablo [0:30]: so whatever decisions were made about strings prior to stage zero b we got to stick with that
+Pablo [0:34]: so that stage zero a is well defined
+Pablo [0:42]: so then this next x we start looking at in stage zero b is the next one after the x in stage zero a that caused us to switch
+Pablo [0:52]: and for these x's we just let a of x be false and if don't put any of these in a and now what condition are we searching for to switch out of this stage
+Pablo [1:00]: we're searching for this condition we want to know well if i gave x to q zero and now looked at the string portion of its output
+Pablo [1:04]: so i'm interpreting q zero as a reduction here or whatever strain it outputs
+Pablo [1:11]: i wrote it here and i make it more obvious
+Pablo [1:24]: why we can make this conclusion but given what we're deciding to do with these x's we're just setting it to false so when i write well so the point is when we do this
+Pablo [1:39]: clique of x not equal to a and q zero of x what do we want out of this well if they were equal for all x this would be what it means to reduce sleep
+Pablo [1:40]: to a
+Pablo [1:41]: that's just the definition of
+Pablo [1:42]: reduction
+Pablo [1:46]: and since these q zero these q's are polynomial times following their
+Pablo [1:52]: line so notice here that there's a little bit of a subtlety which is that
+Pablo [2:03]: q zero of x which let's call that y that may be before or after exo right so that's a little bit of a subtlety i think it would be one
+Pablo [2:07]: okay so we're looking for this condition
+Pablo [2:10]: and applying such a strength that means great
+Pablo [2:13]: this q zero does not reduce clique to a
+Pablo [2:21]: because it did that circled part would be true for all x but we just found on x for which it's not true
+Pablo [2:26]: so q zero does not reduce clink to a and that's our time to switch to the next stage
+Pablo [2:30]: these numbered states as each number
+Pablo [2:38]: substages are interpreting the program to the cider and then the next substitute reduction
+Pablo [2:42]: so the a stages ensure nowadays follow the
+Pablo [2:53]: time program a so a is not in p and the b stages ensure that none of these polynomial type programs reduce clique to a
+Pablo [2:59]: but if a or np complete everything and v would be reducible to it including click
+Pablo [3:05]: so if
+Pablo [3:06]: we do this great
+Pablo [3:07]: this will be
+Pablo [3:08]: our
+Pablo [3:09]: mdr media
+Pablo [3:14]: well again
+Pablo [3:23]: this is very easy to do if we're not concerned with np intermediate we just want something that's not np and not empty completed
+Pablo [3:23]: great pick anything
+Them [3:28]: that's also not in p nor is it empty complete
+Them [3:36]: but we're looking for no if they're intermediate complexity so we need a to bnp we haven't argued that if we define a in this way it will be contained in
+Them [3:37]: b
+Them [3:38]: and in particular
+Them [3:47]: it almost looks like it is because well what do we have to do for any x to the side is it an a
+Them [3:53]: well if we're in one of the stages we can just say no that's easy enough if we're in the other stage
+Them [3:58]: we can just run the non deterministic polynomial time program for sat
+Them [4:01]: but how do we know what stage we're in like how do we know
+Them [4:06]: which one of these stages to associate to a given x
+Them [4:09]: so in particular
+Them [4:13]: how we enumerate all these polynomial
+Them [4:15]: s
+Them [4:16]: how would you do that
+Them [4:27]: here's something you can't just say well enumerate all the programs then filter out the ones that aren't calling the time because ascalate is a given program polynomial times
+Them [4:31]: like any other question about the long term behavior of programs on the side
+Them [4:36]: so it's not obvious how to enumerate all the polynomial time programs that's a missing detail
+Them [4:48]: we also need that each state is going to end right so i said oh as soon as we find an x where this happens go to the next stage what if you never find that x then you'll be stuck in one of these stages
+Them [4:51]: and you will ensure some finite number of polynomial time programs
+Them [4:55]: don't do what we want to prevent them from doing
+Them [5:06]: but we miss most of these others and for all we know one of those polynomial time program either decides hey so it's in b or it reduces clean to a so it's n equal leak
+Them [5:13]: so we
+Pablo [5:13]: need each stage to end well what do we need for each station to end
+Pablo [5:15]: we go through some number of strings
+Pablo [5:18]: in stages up to
+Pablo [5:18]: the current
+Pablo [5:23]: so we need is that from that point on
+Pablo [5:26]: we're going to find the strain to satisfy the position
+Pablo [5:27]: as m j
+Pablo [5:28]: meaning that
+Pablo [5:30]: no matter how many strings we've gone through
+Pablo [5:30]: so far
+Pablo [5:32]: we need to always have another one
+Pablo [5:37]: property
+Pablo [5:38]: somewhere out there
+Pablo [5:40]: beyond where we go
+Pablo [5:40]: so far
+Pablo [5:41]: is yet another
+Pablo [5:42]: x because
+Pablo [5:43]: in the
+Pablo [5:47]: qi is not
+Pablo [5:48]: equals that
+Pablo [5:49]: so it's written there's no
+Pablo [5:50]: undead
+Pablo [5:50]: s
+Pablo [5:53]: but because
+Pablo [5:56]: saying i
+Pablo [5:57]: 'm way out there
+Pablo [6:01]: so
+Pablo [6:04]: a way to ensure that we need to
+Pablo [6:04]: access
+Pablo [6:07]: so
+Pablo [6:09]: no matter how many streams we've gotten
+Pablo [6:09]: so far
+Pablo [6:10]: there's another one
+Pablo [6:14]: similar
+Pablo [6:15]: ly with these days
+Pablo [6:16]: we need that there's not
+Pablo [6:16]: hing
+Pablo [6:23]: like
+Pablo [6:24]: i said last time
+Pablo [6:26]: one
+Pablo [6:27]: kind of kids
+Pablo [6:34]: that something was missing from this roof is i said assume p not equal to nb and then i never brought up that fact again
+Pablo [6:43]: but of course this is not going to be true of p equals n p equals n d everything and m d in b and they're also all n to complete
+Pablo [6:46]: technically except the language
+Pablo [6:51]: with the mds
+Pablo [6:52]: i can
+Pablo [6:54]: everything
+Pablo [7:01]: but those two languages would technically be complete if p were equal np but mt completeness would not be an interesting notion in that
+Pablo [7:01]: case
+Pablo [7:12]: so in order to establish that there's infinitely many x that make this true we're actually going to use the hypothesis
+Pablo [7:21]: but given that we didn't yet you know there's some details missing right i didn't justify each statement we're going to use that
+Pablo [7:21]: hypothesis
+Pablo [7:25]: i have to deal with this first
+Pablo [7:26]: issue
+Pablo [7:27]: how to do rail
+Pablo [7:28]: but we're
+Pablo [7:29]: not exactly
+Pablo [7:32]: program
+Pablo [7:33]: med
+Pablo [7:43]: in
+Pablo [7:44]: like some of the graphical
+Pablo [7:45]: order
+Pablo [7:46]: programs
+Pablo [7:49]: so
+Pablo [7:49]: we're actually
+Pablo [7:50]: you know we're going to do
+Pablo [7:52]: my
+Pablo [7:53]: program
+Pablo [8:01]: doesn't
+Pablo [8:02]: run
+Pablo [8:03]: in
+Pablo [8:03]: particular
+Pablo [8:10]: we're not actually
+Pablo [8:11]: going to enumerate
+Pablo [8:12]: our reprogramming
+Pablo [8:13]: track filter output
+Pablo [8:17]: you can
+Pablo [8:18]: think of it like
+Pablo [8:19]: we're in a numeric
+Pablo [8:20]: al program
+Pablo [8:24]: or
+Pablo [8:25]: depending how clever
+Pablo [8:26]: you would be actually
+Pablo [8:27]: writing the code
+Pablo [8:29]: just
+Pablo [8:30]: do some
+Pablo [8:31]: clever enumeration
+Pablo [8:32]: only enumer
+Pablo [8:33]: ates programs of the following
+Pablo [8:33]: form
+Pablo [8:34]: right
+Pablo [8:35]: so either way you want to
+Pablo [8:35]: think about it
+Pablo [8:36]: but the point is that
+Pablo [8:41]: the condition we're going to check on the programs now will not be is it palo meal time
+Pablo [8:46]: which is undecidable it's going to be a simpler kind of syntactic condition
+Pablo [8:48]: we're just checking the syntax of the program
+Pablo [8:52]: and ensuring that it obeys a few easy to check rules
+Pablo [8:58]: so what is that subject going to be we're only going to enumerate programs that have what i'll call a self alarm
+Pablo [9:00]: so those that have like a header at the top
+Pablo [9:07]: with these constants c and k i mean i'm describing kind of imperative programming
+Pablo [9:10]: but i'll show you a common data
+Pablo [9:14]: and it defines these constants c and k
+Pablo [9:17]: and it counts the number of steps that you take
+Pablo [9:22]: and it's going to quit automatically after c times
+Pablo [9:28]: so let's see an example of how that here is a normal python program
+Pablo [9:37]: standard implementation of the gcd and then the main function just calls that
+Pablo [9:46]: with two inputs prints the output so the logic of this is not quite as interesting to me the point is that what we justified earlier this is polynomial time
+Pablo [9:52]: so now what we're going to do is attach an alarm clock to it
+Pablo [9:57]: with a certain polynomial time bound and if that alarm clock has a big enough polynomial on it
+Pablo [10:03]: then in fact the alarm won't go off before the program halts naturally
+Pablo [10:15]: but here's what it's going to look like so concretely with c equals three and k equals seven here's a three times n to the seven clocked version of our program
+Pablo [10:17]: so you imagine starting with the program
+Pablo [10:24]: and then now we're going to insert some statements in the header at the top we put these constants c is three k is seven
+Pablo [10:28]: and then a couple other variables global variables that are going
+Pablo [10:32]: and then we add before we start
+Pablo [10:39]: we compute the length of our input in this case we're taking
+Pablo [10:44]: in this case it'd be like two integers so i converted the strings to see how many digits do they need to
+Pablo [10:45]: represent
+Pablo [10:46]: that's what that is
+Pablo [10:51]: and then we set our time limit to be how much time we're allowed to go and it always looks this way
+Pablo [10:56]: c and k are the only things that change are depending what polynomial you want to
+Pablo [10:56]: talk about
+Pablo [11:04]: and then whatever see hey this is going to be a number computed from the length of our input that's how many steps we're willing to allow
+Pablo [11:11]: and then after every step and then here's where again with the python you got to be a little bit careful what do we mean by one step
+Pablo [11:15]: some individual lines of python do many steps
+Pablo [11:22]: so in reality you want to do something like this but do it in a more low level kind of assembly language so you're not
+Pablo [11:28]: accidentally thinking one line of code is one step when it could be like a for loop or something
+Pablo [11:33]: but if you just bear with me if we were
+Pablo [11:42]: a low level enough language where each line really would be constant time then we could make a call to this tick function before every step
+Pablo [11:49]: and what does tick do it just increments that global time variable by one and it compares it to our time limit
+Pablo [11:54]: and it makes us it forces us to exit if we ever exceed the time
+Pablo [12:03]: so if the original program is polynomial time
+Pablo [12:11]: what does that mean it means there's a c and a k so it always holds within c times n to the k on input on any input of size
+Pablo [12:13]: n so
+Pablo [12:14]: if you happen to know that
+Pablo [12:17]: time bound those two copses are in that
+Pablo [12:18]: hollow
+Pablo [12:19]: and
+Pablo [12:20]: would set the c in the k
+Pablo [12:21]: to be
+Pablo [12:22]: able to
+Pablo [12:24]: find
+Pablo [12:25]: all this
+Pablo [12:27]: time spent doing these text
+Pablo [12:28]: this part of
+Pablo [12:29]: the program
+Pablo [12:30]: was exited
+Pablo [12:34]: but the point is
+Pablo [12:35]: we don't know
+Pablo [12:36]: what we're going to talk
+Pablo [12:40]: reality
+Pablo [12:41]: what we're going to do is we're
+Pablo [12:42]: just going to look at all the program
+Pablo [12:42]: s
+Pablo [12:44]: and
+Pablo [12:45]: some of them naturally
+Pablo [12:46]: hold
+Pablo [12:47]: ourselves
+Pablo [12:49]: but by hooking up
+Pablo [12:50]: this heather and doing
+Pablo [12:51]: this
+Pablo [12:53]: and
+Pablo [12:54]: only considering
+Pablo [12:54]: the program platform
+Pablo [12:55]: by def
+Pablo [12:56]: inition every single
+Pablo [12:57]: program
+Pablo [12:58]: is
+Pablo [12:59]: now a volume
+Pablo [13:01]: a lot
+Pablo [13:02]: of them are recording
+Pablo [13:02]: volume
+Pablo [13:11]: time
+Pablo [13:12]: out
+Pablo [13:13]: have some exit
+Pablo [13:13]: code
+Pablo [13:18]: but
+Pablo [13:19]: the ones that
+Pablo [13:20]: are naturally
+Pablo [13:24]: for
+Pablo [13:25]: those they
+Pablo [13:26]: would never enter this way
+Pablo [13:26]: anyway
+Pablo [13:27]: we
+Pablo [13:28]: get the same answer
+Pablo [13:29]: we get
+Pablo [13:30]: if we had
+Pablo [13:35]: concept
+Pablo [13:36]: of adding a
+Pablo [13:37]: sub alarm
+Pablo [13:39]: not
+Pablo [13:40]: disciple
+Pablo [13:41]: given
+Pablo [13:42]: just around
+Pablo [13:43]: the left is a following entire
+Pablo [13:48]: ly
+Pablo [13:49]: new
+Pablo [13:57]: behavior
+Pablo [14:02]: so
+Pablo [14:03]: we're only
+Pablo [14:04]: going to record
+Pablo [14:12]: choice
+Pablo [14:13]: of integrity
+Pablo [14:16]: so
+Pablo [14:17]: for some choice
+Pablo [14:18]: s of c and a
+Pablo [14:19]: this won't
+Pablo [14:19]: be enough
+Pablo [14:23]: we've seen label
+Pablo [14:24]: rule
+Pablo [14:25]: one mark it out for
+Pablo [14:25]: gcd
+Pablo [14:29]: this is
+Pablo [14:31]: a
+Pablo [14:32]: straw
+Pablo [14:35]: so
+Pablo [14:36]: we're going to numerate
+Pablo [14:37]: these programs
+Pablo [14:38]: we're going to
+Pablo [14:40]: miss most of the polyme
+Pablo [14:41]: al time program
+Pablo [14:42]: but the key is
+Pablo [14:43]: that our goal is not to
+Pablo [14:44]: enumerate all
+Pablo [14:45]: the programs
+Pablo [14:46]: because every polynomial
+Pablo [14:48]: undecidable language
+Pablo [14:49]: has
+Pablo [14:50]: an infinite number of programs
+Pablo [14:51]: as a pilot
+Pablo [14:54]: all we got to do is make sure at least one of them is included
+Pablo [14:54]: in our search
+Pablo [14:57]: any
+Pablo [14:58]: problem indeed
+Pablo [15:02]: has some self talking program
+Pablo [15:05]: of the format we just looked at the discipline
+Pablo [15:06]: take any
+Pablo [15:07]: molecule time
+Pablo [15:11]: program that decided to add those blocking statements
+Pablo [15:14]: also
+Pablo [15:17]: a program but that one will
+Pablo [15:18]: be integrated
+Pablo [15:20]: so even though we only include
+Pablo [15:21]: that subs
+Pablo [15:22]: et following
+Pablo [15:22]: programs
+Pablo [15:25]: thinking that it was representatives
+Pablo [15:26]: of the langu
+Pablo [15:27]: ages and p they
+Pablo [15:28]: decide
+Pablo [15:30]: we're hitting
+Pablo [15:31]: every problem
+Pablo [15:32]: in p
+Pablo [15:37]: because we're hitting at least one representative decider for each problem
+Pablo [15:38]: in p
+Pablo [15:44]: so now when i talk about qi what i mean is the i program that matches this picture
+Pablo [15:48]: right so filter out ones that don't self clock in this way
+Pablo [15:50]: keep the rest
+Pablo [15:53]: now we're talking about the ice program in that order
+Pablo [16:09]: q
+Pablo [16:09]: one
+Pablo [16:10]: q two
+Pablo [16:19]: it's a
+Pablo [16:20]: common drift
+Pablo [16:21]: so it's often
+Pablo [16:22]: like skipped in the
+Pablo [16:22]: details
+Pablo [16:25]: ok
+Pablo [16:26]: ay
+Pablo [16:27]: so
+Pablo [16:28]: clear
+Pablo [16:29]: what program
+Pablo [16:37]: all right so now we need to
+Pablo [16:37]: level
+Pablo [16:41]: ashley moore
+Pablo [16:42]: dialysis steve
+Pablo [16:43]: mclean
+Pablo [16:47]: and
+Pablo [16:48]: my humie any
+Pablo [16:49]: ollie mcmurdo
+Pablo [16:56]: again in the first lemma we're going to interpret it as a decider that's boolean in the second lemma we're going to interpret it as a reduction in alpha
+Pablo [16:56]: district
+Pablo [17:02]: so the first one is that for this queue there are infinitely many x or q of x is not equal to seven
+Pablo [17:03]: x
+Pablo [17:04]: and i'm not
+Pablo [17:06]: going to write down a proof
+Pablo [17:09]: all i'm going to say is
+Pablo [17:11]: well first of all
+Pablo [17:14]: if p is not equal to n
+Pablo [17:17]: then what do we know no polynomial time program
+Pablo [17:20]: decides any end you can leak from
+Pablo [17:33]: so that means this polynomial time program does not decide sat but what does it mean that this polynomial time program does not decide sat it means for at least one string x q of x is not equal to seven
+Pablo [17:34]: x
+Pablo [17:39]: that's what it means for q to fail to the side sac it gets the answer wrong on at least one strip
+Pablo [17:42]: so i'm claiming well if we know that's true
+Pablo [17:50]: not only that this q doesn't but we know that p is not empty and q is polynomial time program
+Pablo [17:57]: er wrong
+Pablo [17:59]: at least
+Pablo [18:00]: one but
+Pablo [18:01]: for sad it gets
+Pablo [18:02]: wrong
+Pablo [18:04]: what
+Pablo [18:05]: i'm not happy
+Pablo [18:06]: with t
+Pablo [18:12]: utorial
+Pablo [18:16]: right
+Pablo [18:17]: because
+Pablo [18:19]: suppose it's like a
+Pablo [18:19]: definition
+Pablo [18:27]: well
+Pablo [18:28]: then find a restraint that gets
+Pablo [18:29]: wrong
+Pablo [18:30]: we
+Pablo [18:31]: can write those
+Pablo [18:31]: strings down
+Pablo [18:32]: in
+Pablo [18:33]: a constant size
+Pablo [18:35]: and
+Pablo [18:36]: have a new program
+Pablo [18:38]: that
+Pablo [18:39]: first check
+Pablo [18:40]: s is our strand
+Pablo [18:41]: and that lookup handle
+Pablo [18:42]: is so we'll just do
+Pablo [18:43]: what the table says
+Pablo [18:44]: the table
+Pablo [18:46]: otherwise
+Pablo [18:47]: ask
+Pablo [18:48]: q
+Pablo [18:49]: and if
+Pablo [18:50]: it's due
+Pablo [18:51]: with all of the strings
+Pablo [30:01]: defined a point
+Pablo [30:06]: it might not be the same as sap on every string
+Pablo [30:13]: but it's the same as sat on all the strings we've looked at so far and there's only a finite number of straight as we've looked at so far
+Pablo [30:16]: so if we got stuck at this stage
+Pablo [30:24]: that would mean that because qi must agree with a on every single string to get stuck on the stage
+Pablo [30:27]: and we've only made a
+Pablo [30:28]: agree
+Pablo [30:30]: with
+Pablo [30:36]: a false on finitely many strings so far
+Pablo [30:40]: and if we get stopped here a is just going to be sap on all the remaining strings
+Pablo [30:46]: that means that qi will agree with sap on all the finitely mini strips
+Pablo [30:48]: a little subtle with happening
+Pablo [30:49]: here
+Pablo [30:58]: but it's not quite the qi deciding it's that it's that qi is deciding set correctly except on the finite number of strings
+Pablo [31:05]: that we process of length less than or equal to n
+Pablo [31:19]: but the exact same trade that we use to prove level one we can use the argue right here and say well if q five intercept that that's just where we're going to use
+Pablo [31:26]: the point is that level one says you cannot have a polynomial time program
+Pablo [31:32]: agree with sap on all the finite domain strings if p is not equal
+Pablo [31:33]: but this one would do that
+Pablo [31:42]: that's why we needed that q is polynomial time not only does it get set wrong on one string it's thrown infinitely many
+Pablo [31:44]: but that
+Pablo [31:45]: toxins
+Pablo [31:52]: so we will so if we're on a value of n where f of n is even
+Pablo [31:54]: we will eventually
+Pablo [31:56]: exit by this
+Pablo [32:00]: we'll find a string where qiy is not equal
+Pablo [32:03]: okay
+Pablo [32:10]: and then what if we're in the other stage what if we're on an n where f of n is odd how can we argue well eventually we're going to do this return statement
+Pablo [32:13]: and increment and get back to
+Pablo [32:19]: fd and e button and go back to the first a stage well we got this
+Pablo [32:19]: one
+Pablo [32:26]: and we can't get stuck here forever otherwise
+Pablo [32:34]: what would happen well again remember how we define a we said if we're in this b stage where f of n is odd
+Pablo [32:37]: we're just letting a be false
+Pablo [32:41]: but we're just letting a be false if we got stuck here forever
+Pablo [32:53]: that would mean all the true instances the ones that happen in stages where we were making a look like sac those happen on only finitely many strings until we got to a stage where we got stuck
+Pablo [32:56]: here so a would just have only finitely many yes
+Pablo [32:57]: instances
+Pablo [33:00]: and then for all strings bigger than that it would just be
+Pablo [33:01]: n
+Pablo [33:06]: but that means a would just be a finite line right we have a finite number of strings in it
+Pablo [33:24]: but any finite language is in p again if you have a finite number of strings in your language you just make a constant look okay it could be a huge number but if it's finite technically it's a constant to just look up is my string hat size table or not
+Pablo [33:38]: so a would be in p right because it would have only finite in any s but lemma two says that a is in p you can't produce clique to it in other words you can find a y or ple y is not equal to u of y
+Pablo [33:44]: so that means we can't get stuck here we will attack eventually find the y lasting exp
+Pablo [33:44]: osed
+Pablo [33:54]: yeah so that's a little change
+Pablo [34:01]: but it's basically that in this com yeah so thanks for asking because i forgot to explain this comment
+Pablo [34:07]: this comment is saying well notice what we're doing with the self talk we run this
+Pablo [34:08]: but we count how many steps we're doing
+Pablo [34:12]: and if we ever take more than n steps
+Pablo [34:14]: then
+Pablo [34:18]: we just exit and return the recursive value f of n minus one
+Pablo [34:24]: but certainly each iteration of the loop takes at least one step
+Pablo [34:34]: so what we're doing no more than n steps i mean i could have done this just let count the total number iterations that would have been maybe i should do that straightforward
+Pablo [34:39]: but then this ensures that it halts the polymer
+Pablo [34:46]: so certainly if we're going to take no more than n steps as we're doing this loop we can't do any more than an iteration of the loop
+Pablo [34:57]: but if we do n iterations of a loop going through the strings and lexicographical order how big of a string can we get to we're only looking at strings of length less than or equal to log of n
+Pablo [35:00]: so in particular
+Pablo [35:04]: you're right there's a dependence but
+Pablo [35:21]: sometimes the mutual recursion doesn't get us in trouble because n is the length of a string so i didn't really write so what i left out here is like what is the non deterministic polynomial time decider
+Pablo [35:25]: for a it's just call f
+Pablo [35:26]: look at its parity
+Pablo [35:34]: if it's odd just say no if it's even run the non deterministic program for sat that just guesses an assignment
+Pablo [35:38]: and sees it satisfies the formula
+Pablo [35:42]: so that's the code for a so it's very simple
+Pablo [35:45]: key stuff
+Pablo [35:46]: is
+Pablo [35:47]: yes you're
+Pablo [35:48]: right
+Pablo [35:49]: that the definition
+Pablo [35:55]: up to
+Pablo [36:12]: lost
+Pablo [36:13]: over
+Pablo [36:15]: how
+Pablo [36:16]: do you evaluate
+Pablo [36:17]: ai
+Pablo [36:19]: one way
+Pablo [36:21]: to do it when you speak
+Pablo [36:22]: say
+Pablo [36:23]: since
+Pablo [36:25]: we're only evaluating any conc
+Pablo [36:25]: rete
+Pablo [36:27]: logarithmic smaller
+Pablo [36:28]: than the lower
+Pablo [36:28]: type
+Pablo [36:29]: the one right
+Pablo [36:30]: side not
+Pablo [36:31]: e
+Pablo [36:32]: let
+Pablo [36:34]: call us out
+Pablo [36:35]: so that x
+Pablo [36:39]: is exponentially bigger than y but because we define it so far
+Pablo [36:50]: to just either be false or it'd be easy or to be sat events we can just imagine like well evaluate a of x by running the exponential time decider
+Pablo [36:55]: for sap which is going to be only time polynomial and n because of this
+Pablo [37:01]: there's a few moving parts here
+Pablo [37:08]: but that's roughly the reason why it's not a circular dependence even though it is kind of a mutual recursion
+Pablo [37:08]: in a sense
+Pablo [37:11]: but as long as things keep getting smaller
+Pablo [37:12]: mutual recursion is okay
+Pablo [37:13]: it's not certain
+Pablo [37:17]: okay so
+Pablo [37:19]: that's the proof of liabilities
+Pablo [37:27]: and that's the last kind of
+Pablo [37:30]: complexity theory result will do related to
+Pablo [37:31]: time complex
+Pablo [37:31]: ity
+Pablo [37:38]: okay so just to conclude the chapter before we move on to chapter seven oh by the way before i forget i won't be here next week
+Pablo [37:39]: so
+Pablo [37:45]: i'll have mina will teach one of the days and then one of my students will
+Pablo [37:46]: teach
+Pablo [37:47]: i'll
+Pablo [37:48]: be at a workshop
+Pablo [37:52]: okay but just to conclude this chapter
+Pablo [38:00]: what i was reminded of acts my favorite chapter so i was lamenting that they get to start teaching that instead
+Pablo [38:00]: of me
+Pablo [38:03]: but just to conclude this chapter
+Pablo [38:07]: why is it so hard to prove to peter
+Pablo [38:12]: i actually think i just made this up my soul i don't think this is in the textbook
+Pablo [38:19]: this is just my own museum so why is it so hard to prove p is not equal well here's something i thought for a while
+Pablo [38:20]: perhaps
+Pablo [38:26]: they're equal but the fastest algorithms for say sat take time n to the one
+Pablo [38:28]: or n to the one million or something
+Pablo [38:34]: we know there are problem solvable in time n to the one million but not n the nine hundred
+Pablo [38:36]: ninety nine thousand maybe sap is one of those
+Pablo [38:41]: and maybe that's true of all the np complet
+Pablo [38:58]: e problems right so maybe in some sense maybe the one thing i pointed out the very beginning well this common objection to using p as our formal definition to mean feasible is yeah and the one thousand is not feasible
+Pablo [39:03]: so that's way too many steps to expect to be able to wait
+Pablo [39:11]: but then i said yeah but in reality almost all the problems and p are n to some small right
+Pablo [39:13]: but
+Pablo [39:14]: why is that
+Pablo [39:20]: well one reason might be there's human intuition can only conceive of relatively simple algorithms
+Pablo [39:33]: it doesn't make that long before you get to a program that takes time out of the one hundred if you think about the most straightforward way to just say i told you write a program that takes time into the one hundred
+Pablo [39:57]: you'd probably do something like one hundred nested for loops or you might just confuse the value into the one hundred if you tried to make it so the natural structure of the program was causing it to take time into the one hundred it'd be like one hundred messes of torque the reason insertions are is time n square is that there's an outer loop and then an error the inter loop searches for the next element to swap but the one you're looking at in the outer loop
+Pablo [40:00]: iterates over elements as well
+Pablo [40:13]: so two nested for loops are m squared time so n to the one hundred the simplest program you could imagine would take time into the one hundred would be something like one hundred nested for loops
+Pablo [40:20]: but have you ever written a program with one hundred nested for loops i mean maybe if you're a clever software engineer you put stuff in some subroutines
+Pablo [40:24]: and it hides some of the nesting but really
+Pablo [40:32]: even unpacking things into one big function i think most programs i've ever written would have at most five or six vested for loops
+Pablo [40:38]: i wouldn't know how to think of one that is one hundred nested for loops right whatever that thing would be doing i don't think i could understand
+Pablo [40:44]: but that would be how a natural end of the one hundred time program would right
+Pablo [40:54]: so it might be that yeah maybe the enemy complete problems are these time hierarchy theorem style problems that are solvable in polynomial time but only for huge exponents
+Pablo [41:21]: and human intuition can't think about algorithms that have one thousand nested for groups and so it's just going to take us a very long time to discover these algorithms so i somehow liken this to the unintuitive nature of relativity and quantum mechanics and physics our intuition was evolved to deal with objects within a couple orders of magnitude of our own size
+Pablo [41:35]: not a huge gravity well distorted spacetime or these tiny atomic particles with quantum effects and so there's no reason that those models of reality ought to be into it
+Pablo [41:38]: they
+Pablo [41:39]: only apply on scales
+Pablo [41:40]: that
+Pablo [41:41]: our ancestors
+Pablo [41:46]: so
+Pablo [41:47]: nice
+Pablo [41:48]: i follow them
+Pablo [41:50]: they don't have
+Pablo [41:51]: the intuition
+Pablo [41:54]: may
+Pablo [41:55]: be
+Pablo [42:00]: so many
+Pablo [42:01]: groups on it like
+Pablo [42:02]: there is this element
+Pablo [42:03]: at the time algorith
+Pablo [42:04]: m
+Pablo [42:09]: so maybe i can't imagine this happening but that might be true
+Pablo [42:13]: and non constructive proofs are often weird
+Pablo [42:19]: maybe it's independent of the axiom perceptor we'll talk a little bit more about that in the next chapter
+Pablo [42:24]: but this is roughly the logician's way of saying there's no proof either way
+Pablo [42:31]: and this is actually one of the big achievements of twentieth century logic was the notion that you can have perfectly well defined mathematical statements
+Pablo [42:37]: where there's no proof that the statement is true and there's also no proof that the statement is false
+Pablo [42:44]: whether the statement is false or true we're never going to figure it out because there's no proof either way this can actually happen
+Pablo [42:48]: maybe p versus np is one of those statements
+Pablo [42:54]: where yeah maybe they're not equal but there's just no way to prove it and there's no way to prove the oppos
+Pablo [42:54]: ite
+Pablo [43:12]: but here's a reason to kind of think this is probably not like one of these types of independent statements so consider the statement that's almost equivalent to people's entity it's not quite the same thing and we didn't talk a lot about circuit complexity in its relation to
+Pablo [43:14]: turning machine complexity
+Pablo [43:17]: but if p were equal to n
+Pablo [43:25]: then something like the following would be true which is that for some n let's say bigger than one thousand there would be a boolean circuit
+Pablo [43:28]: with not very many gates
+Pablo [43:34]: so end to the log n so that's why polynomial but a little bit bigger than commonal infant no more than that
+Pablo [43:39]: and it was all three instances aside
+Pablo [43:48]: so that's one compute
+Pablo [43:58]: like how we saw when we proved circuits that was np complete you convert polynomial time programs to polynomial size circuits so that's why it's like almost an equal
+Pablo [44:10]: and so i wrote one thousand here so being a little larger value of one thousand and time bound here
+Pablo [44:16]: that are sufficiently close to polynomial this is the statement here is actually equivalent
+Pablo [44:21]: but the point of that there's sort of an asymmetry to this kind of statement
+Pablo [44:27]: when it comes to whether it's improvement if this statement is true there must be a fruit
+Pablo [44:30]: why is that
+Pablo [44:31]: well
+Pablo [44:35]: let's look at the same for some n bigger than a thousand
+Pablo [44:38]: but that's just one value of it maybe it's five thousand
+Pablo [44:43]: maybe some particular value of n there's a boolean circuit
+Pablo [44:53]: with that many games or fewer that solves all the instances we can prove an mp style proof where it takes a long wheel time to verify
+Pablo [45:02]: but point is what would be the proof it would be giving a servant you give me a circuit i would count the number of gates make sure it's less than the end of the login for this value of n
+Pablo [45:03]: let's say five thousand
+Pablo [45:08]: and then i would just evaluate all the clique instances of size five thousand
+Pablo [45:15]: and i would run them through the boolean circuit and i would run the exponential time decider for cleek and
+Pablo [45:18]: i would verify that this circuit gives the correct answer
+Pablo [45:22]: on all of those so again not a deficient
+Pablo [45:34]: to check proof but we could do that check that proof would exist right and this statement about it being independent of the axiom of set variation that's not talking about mp style that just means purpose theory
+Pablo [45:37]: no matter how big they are no matter how long they take
+Pablo [45:43]: is true
+Pablo [45:44]: you can do
+Pablo [45:47]: so that means p equ
+Pablo [45:48]: als enemy cannot
+Pablo [45:49]: be true
+Pablo [45:56]: there's no proof either way
+Pablo [45:59]: well
+Pablo [46:00]: that would in some
+Pablo [46:01]: sense be like
+Pablo [46:02]: proof that
+Pablo [46:06]: i think
+Pablo [46:07]: the reason that
+Pablo [46:19]: 's it
+Pablo [46:20]: for chapter six
+Pablo [46:41]: good
+Pablo [46:41]: question
+Pablo [46:43]: so i
+Pablo [46:44]: really can answer
+Pablo [46:45]: the full
+Pablo [46:46]: roof
+Pablo [46:51]: but
+Pablo [46:55]: the most famous i could have
+Pablo [46:56]: prophet himself prior to this
+Pablo [46:56]: that was known
+Pablo [47:03]: but the most famous one is the proof of this fact ip equals p space
+Pablo [47:07]: and i won't talk about what either of those is but the fundamental idea in that proof
+Pablo [47:11]: is that you simulate boolean circuits with polynomials
+Pablo [47:16]: and one simple way to do that and i mean multivariate
+Pablo [47:20]: circuits take multiple different inputs with different names
+Pablo [47:24]: so you can do something like
+Pablo [47:26]: say i want to compute
+Pablo [47:39]: x and y
+Pablo [47:40]: and
+Pablo [47:47]: what i mean by simulating with a polynomial is i want to have a multivariate polynomial it takes two variables x and y
+Pablo [47:49]: and this is a
+Pablo [47:49]: model guilty
+Pablo [47:50]: to the numbers
+Pablo [47:51]: and output numbers but
+Pablo [47:54]: if the numbers you give it happen in the either zero or one
+Pablo [47:57]: it's going to output either zero or one and it's going to agree
+Pablo [47:59]: with the n function
+Pablo [48:00]: so what would be a way to do that
+Pablo [48:02]: well here's
+Pablo [48:03]: multiply
+Pablo [48:04]: so
+Pablo [48:08]: if either of them is zero the output will be zero if they're whole one the output is one
+Pablo [48:12]: so you agree that polynomial implements that bool
+Pablo [48:12]: ean operation
+Pablo [48:17]: and then you have negation of x is also pretty easy
+Pablo [48:24]: this does something weird on other numbers but if the number happens to be one or zero one minus x negates
+Pablo [48:27]: and once you have n the knot you can do everything else
+Pablo [48:30]: you can express or in terms of s and zero
+Pablo [48:33]: so the fundamental idea is that
+Pablo [48:49]: they're taking something like the satisfiability problem it's this thing called qsat that we'll talk about when we get the space complexity but in some variant of satisfiability meaning it's a question
+Pablo [48:56]: about boolean formulas and what they do is they take the boolean formula and then they turn it into a polynomial in this way
+Pablo [48:57]: and then
+Pablo [48:59]: what they do is they
+Pablo [49:03]: start evaluating the polynomial on other integers beside zero and one
+Pablo [49:11]: so even though what we mainly care about is that if the integers happen to be zero and one it gives the same answer as
+Pablo [49:13]: the boolean formula
+Pablo [49:20]: the polynomial also gives some answers on other integers and so you start evaluating those polynomials on those other integers
+Pablo [49:25]: and
+Pablo [49:26]: the most natural way
+Pablo [49:27]: that you
+Pablo [49:29]: would try to hook up an oracle
+Pablo [49:30]: temporary computational
+Pablo [49:31]: device in this
+Pablo [49:32]: group would
+Pablo [49:33]: be to say
+Pablo [49:34]: well did the turing machine
+Pablo [49:35]: make an oracle
+Pablo [49:36]: turning machine
+Pablo [49:36]: and like i said
+Pablo [49:37]: when we talk about
+Pablo [49:38]: what
+Pablo [49:39]: would be an example
+Them [49:43]: for
+Them [49:44]: energy
+Them [49:45]: to the sac
+Them [49:46]: being
+Them [49:47]: or emp
+Them [49:48]: ty the end
+Them [50:15]: what does it mean to be for example what would be an example of a problem that's complete for np to the a for an arbitrary oracle a one would be the satisfiability program for formulas or circuits problem first formulas or circuits that in addition to end or a not also have a special type of gate called an oracle where you give it some vista input it tells you that that string and a so that's a canonical example of something that's complete
+Them [50:15]: for that
+Them [50:20]: so in some sense like if you were going to try to hook up an oracle to everything here
+Them [50:28]: yeah you could hook up an oracle to hold a turing machines things would go through you could have an oracle to haul the boolean circuits by giving them these oracle gates
+Them [50:31]: but how do you hook up an oracle
+Them [50:33]: it's not quite
+Them [50:33]: clear
+Them [50:35]: if you don't
+Them [50:36]: have oracle
+Them [50:37]: circus
+Them [50:38]: then you turn the circuits
+Them [50:40]: into polynomials they give the same answers
+Them [50:41]: you get zero
+Them [50:42]: one input
+Them [50:44]: but if this is an oracle
+Them [50:44]: circuit
+Them [50:49]: that's how
+Them [50:50]: i convince myself
+Them [50:51]: why
+Them [50:52]: that proof does not
+Them [50:53]: trans
+Them [50:54]: form me in the circuit
+Them [50:55]: into a meal
+Them [50:56]: to relativize
+Them [50:57]: the proof the circuits
+Them [50:58]: we have that work
+Them [50:59]: needs
+Them [51:00]: and i wouldn't know i had
+Them [51:01]: friendly oracle games
+Them [51:02]: in the politics
+Them [51:05]: probably
+Them [51:06]: there is no hit
+Them [51:07]: with because
+Them [51:08]: the conclusion
+Them [51:09]: that proof is not
+Them [51:10]: something that holds
+Them [51:11]: relative to all work
+Them [51:12]: that would
+Them [51:13]: be the stat
+Them [51:14]: you would not
+Them [51:15]: be able to come out
+Them [51:16]: with a polynomial
+Them [51:17]: that gives
+Them [51:18]: the right answers for that
+Them [51:19]: for us
+Them [51:29]: okay so
+Them [51:34]: this has a kind of grandiose title in this chapter the grand unified period computation
+Them [51:38]: another name for this africa is the computability area
+Them [51:41]: okay
+Them [51:43]: but
+Them [51:46]: it opens by talking about these sort of great unifications and science
+Them [51:50]: newton achieved one of the more awe inspiring ones
+Them [51:55]: realize that apple planets follow the same laws motion of gravity
+Them [51:56]: and that's where we have classical
+Them [52:00]: maxwell
+Them [52:07]: is the one i mean digging a lot of people contributing to maxwell's equation each one of those same efforts
+Them [52:08]: somebody else
+Them [52:10]: kind of un
+Them [52:11]: ifies that
+Them [52:12]: unified theory
+Them [52:13]: of elect
+Them [52:14]: romagnetism real
+Them [52:15]: izing that
+Them [52:17]: field
+Them [52:18]: and oscill
+Them [52:19]: ations that be able to
+Them [52:21]: phys
+Them [52:22]: icists are still working
+Them [52:23]: on unifying
+Them [52:24]: gravity
+Them [52:26]: with quantum annex
+Them [52:29]: and turing did something simple
+Them [52:31]: in nineteen thirty six
+Them [52:43]: showing all of the sort of powerful models of computation were known at the time and we're going to talk about these general recursive functions lambda calgary machines all have equivalent power they're all just
+Them [52:44]: different ways of
+Them [52:45]: talking about the same
+Them [52:46]: class of functions
+Them [52:51]: before we start
+Them [52:52]: eighty years
+Them [52:53]: before
+Them [52:56]: this might be
+Them [53:01]: so here's a quote from charles babbage expressing some frustration
+Them [53:04]: looking at these astronomical tables and finding errors
+Them [53:05]: saying i wish
+Them [53:08]: these populations executed by state
+Them [53:12]: so the middle of the eighteen hundred mechanics by some machine
+Them [53:18]: and he started thinking about well how would we build a machine
+Them [53:21]: that would execute these calculate calculations
+Them [53:25]: well a lot of these
+Them [53:29]: calculations involve computing values of certain functions
+Them [53:34]: and any kind of well behaved function
+Them [53:39]: from r to r is going to have what's called a taylor series expansion around
+Them [53:44]: here
+Them [53:45]: looks
+Them [53:46]: like a
+Them [53:49]: seven
+Them [53:55]: so
+Them [53:56]: for example
+Them [53:57]: cosine of
+Them [53:59]: x if you just take a fourth order
+Them [54:00]: taylor expansion
+Them [54:02]: just pick the first five terms
+Them [54:04]: of the series
+Them [54:07]: two of which are zero so you just get these three terms
+Them [54:15]: this actually approximates cosine of extremely well
+Them [54:17]: in the interval negative pi over two to five
+Them [54:22]: so you can use
+Them [54:23]: these polynomials
+Them [54:24]: very frequently
+Them [54:25]: and all the
+Them [54:26]: other functions that
+Them [54:27]: show up
+Them [54:32]: in
+Them [54:32]: particular
+Them [54:33]: have in mind
+Them [54:34]: jingular method
+Them [54:35]: that i think
+Them [54:41]: and so that
+Them [54:42]: basement is observation
+Them [54:46]: we're not
+Them [54:46]: going to follow
+Them [54:52]: so
+Them [54:54]: we have discrete derivative
+Them [54:55]: s
+Them [54:57]: incre
+Them [54:58]: ment
+Them [54:59]: by one
+Them [55:00]: then you get some
+Them [55:01]: difference
+Them [55:02]: that's
+Them [55:03]: kind of what i do
+Them [55:08]: but in particular the difference between those
+Them [55:10]: is a degree n minus one
+Them [55:16]: because you're always going to have the highest order terms cancel when you take that difference
+Them [55:16]: so for example
+Them [55:20]: the polynomial x cubed plus two
+Them [55:26]: if you evaluate in our x so value of x plus one they both are going to have an x cubed term and those will cancel
+Them [55:29]: the difference and what you get is a degree two column
+Them [55:33]: so based on that you can kind of recursively do this
+Them [55:39]: and look at the discrete derivative of that and the speed derivative of that until you sit down to a constant
+Them [55:49]: so here's just p of x here's delta of p of x expressed for arbitrary x there'd be two polynomial delta of that is a degree one delta that is just the constant
+Pablo [55:59]: the bottom is being filled out it's just a bunch of sixes
+Pablo [56:06]: and we get this kind of hard code what all of these are on input x equals zero
+Pablo [56:16]: and then the way that you can evaluate all the other values to get what is p of one what is p of two well you can do it by these kind of simpler calculations
+Pablo [56:17]: where you say
+Pablo [56:33]: by the definition of this delta if we're at p of zero and we add to it delta of d of zero that's b of y delta p of zero justifying the p of one minus when we flip that around and say okay this is now a method to compute p of one if we know p of zero
+Pablo [56:36]: in this lower order delta
+Pablo [56:40]: so that means we just add these two things together that's p one
+Pablo [56:43]: and if we add these two things together that's delta
+Pablo [56:45]: we have these two together that's delta delta
+Pablo [56:50]: that polynomial on x plus delta to that problem
+Pablo [56:52]: gives you
+Pablo [56:53]: that volume
+Pablo [56:54]: on it as possible
+Pablo [56:56]: and you just keep adding things up like this
+Pablo [56:58]: and you fill in the table
+Pablo [57:10]: and this can give you this polynomial for arbitrary base so it's just a particular easy to understand easy to execute method to evaluate problems and i chose integers here
+Pablo [57:18]: but the discrete derivatives don't have to be by integer i could have set up plus one i could have said plus zero point one and this would all
+Pablo [57:20]: so you could do this on fractional value
+Pablo [57:23]: i'm just choosing integers to make it
+Pablo [57:24]: kind of easy
+Pablo [57:27]: so based on this method of finite differences
+Pablo [57:31]: he designed and built this machine all the differences
+Pablo [57:34]: and this is basically what it does able to evaluate
+Pablo [57:52]: polynomials up to a certain degree using the method of finite differences if you choose those polynomials to be some order of a taylor expansion of a more interesting function you can compute all these physics relevant functions like those used
+Pablo [58:07]: baggage english mathematic
+Pablo [58:08]: ians
+Pablo [58:18]: i think as we know not succeed in compet
+Pablo [58:19]: ing any
+Pablo [58:25]: this is the first physical realization
+Pablo [58:26]: of any
+Pablo [58:27]: values
+Pablo [58:47]: which
+Pablo [58:48]: is very unnecess
+Pablo [58:49]: al basis
+Pablo [58:58]: and also
+Pablo [58:59]: users
+Pablo [59:14]: oper
+Pablo [59:15]: ated by
+Pablo [59:19]: each cycle of the engine
+Pablo [59:25]: so initial conditions
+Pablo [59:26]: turn
+Pablo [59:27]: the handle
+Pablo [59:31]: what happens when you turn the handle here is it drives this can stack if you access the micropro
+Pablo [59:32]: graph
+Pablo [59:36]: get in
+Pablo [59:37]: the formula repeated conditions
+Pablo [59:38]: that are needed
+Pablo [59:41]: personally
+Pablo [59:42]: to determine
+Pablo [59:45]: handle turns these cam stacks the twenty eight
+Pablo [59:46]: separate cams
+Pablo [59:49]: and that is what determines the ethernet timing
+Pablo [59:50]: and the orchestration of all
+Pablo [59:52]: the botanical move
+Pablo [59:53]: ments of the machine so that's
+Pablo [59:56]: what
+Pablo [1:00:18]: is
+Pablo [1:00:18]: called
+Pablo [1:00:19]: so
+Pablo [1:00:27]: print
+Pablo [1:00:28]: s are more copied
+Pablo [1:00:31]: of
+Pablo [1:00:35]: at the same time it presses results
+Pablo [1:00:37]: on soft material
+Pablo [1:00:38]: in these traits
+Pablo [1:00:45]: the
+Pablo [1:00:46]: moon loves
+Pablo [1:00:47]: get
+Pablo [1:00:50]: one
+Pablo [1:00:51]: year
+Pablo [1:00:53]: on the
+Pablo [1:00:54]: machine to play the
+Pablo [1:00:55]: mobile
+Pablo [1:00:56]: commission
+Pablo [1:01:00]: and it goes into
+Pablo [1:01:06]: search
+Pablo [1:01:06]: machines
+Pablo [1:01:07]: that we adjust
+Pablo [1:01:14]: also part of the reason
+Pablo [1:01:20]: for the first time about the engine research and say what is it
+Pablo [1:01:22]: how do they have success
+Pablo [1:01:48]: ful
+Pablo [1:02:05]: couldn't
+Pablo [1:02:06]: quite
+Pablo [1:02:06]: bump into the building
+Pablo [1:02:09]: it was even inspired
+Pablo [1:02:12]: by the attempt to think of an even more powerful
+Pablo [1:02:13]: machine
+Pablo [1:02:14]: design
+Pablo [1:02:19]: but
+Pablo [1:02:21]: what was
+Pablo [1:02:23]: well it was more or less
+Pablo [1:02:24]: what we
+Pablo [1:02:25]: would recognize as a modern
+Pablo [1:02:25]: computer
+Pablo [1:02:29]: so it had something called a store that we might call memory
+Pablo [1:02:33]: one thousand and fifty digit integers
+Pablo [1:02:38]: what you call the mill but we might call that a cpu
+Pablo [1:02:40]: addition
+Pablo [1:02:41]: al traction mult
+Pablo [1:02:42]: iplication division
+Pablo [1:02:45]: this
+Pablo [1:02:46]: whole idea of using
+Pablo [1:02:47]: punch car
+Pablo [1:02:48]: ds to program
+Pablo [1:02:49]: computers back
+Pablo [1:02:50]: in romantics
+Pablo [1:02:53]: because they originally were used
+Pablo [1:02:56]: to program this thing called their jacquard
+Pablo [1:02:58]: loop which is
+Pablo [1:03:06]: a loom for weaving fabric with patterns in it but where the way that you specify the pattern you want to do is you basically punch the pattern
+Pablo [1:03:09]: into the punch hard and then this machine
+Pablo [1:03:11]: from seventeen hundred
+Pablo [1:03:15]: it's not a
+Pablo [1:03:15]: fortress
+Pablo [1:03:18]: this
+Pablo [1:03:18]: is a piece of
+Pablo [1:03:19]: fabric
+Pablo [1:03:20]: what is your hard
+Pablo [1:03:21]: picture of
+Pablo [1:03:24]: matt is new about that
+Pablo [1:03:27]: he's like you know what we might be able to use that to program this machine
+Pablo [1:03:28]: and then
+Pablo [1:03:29]: one hundred years later that's
+Pablo [1:03:30]: how people were program
+Pablo [1:03:31]: ming electron
+Pablo [1:03:32]: ics
+Pablo [1:03:33]: before keyboards
+Pablo [1:03:34]: became more popular
+Pablo [1:03:40]: and the cards had different types one was called a variable card this was like copy number in the
+Pablo [1:03:40]: middle
+Pablo [1:03:43]: instruct
+Pablo [1:03:44]: ion
+Pablo [1:03:46]: operation card
+Pablo [1:03:46]: saying hey
+Pablo [1:03:48]: execute the instruction
+Pablo [1:03:51]: cards
+Pablo [1:03:52]: where basically
+Pablo [1:03:53]: those statements go
+Pablo [1:03:54]: to for loop
+Pablo [1:03:57]: so this thing really was like a design
+Pablo [1:03:57]: again
+Pablo [1:03:58]: it was all mechanical
+Pablo [1:03:59]: in the design with
+Pablo [1:04:00]: electronic
+Pablo [1:04:02]: but had it been buildable
+Pablo [1:04:03]: this would have been more or less
+Pablo [1:04:04]: the first recogn
+Pablo [1:04:05]: izable
+Pablo [1:04:06]: mark
+Pablo [1:04:07]: what you wanted to do
+Pablo [1:04:07]: again
+Pablo [1:04:09]: to help automate
+Pablo [1:04:10]: certain
+Pablo [1:04:13]: my
+Pablo [1:04:14]: legacy was his colleague
+Pablo [1:04:16]: in
+Pablo [1:04:17]: love
+Pablo [1:04:21]: or
+Pablo [1:04:21]: ange
+Pablo [1:04:23]: y numbers
+Pablo [1:04:42]: pitch sound
+Pablo [1:04:44]: the size of army
+Pablo [1:04:44]: composition
+Pablo [1:04:48]: and
+Pablo [1:04:49]: adaptation
+Pablo [1:04:50]: in other words
+Pablo [1:04:51]: digital
+Pablo [1:04:52]: incoming of
+Pablo [1:04:52]: music
+Pablo [1:04:56]: pieces
+Pablo [1:04:57]: of
+Pablo [1:04:58]: here are some
+Pablo [1:04:58]: algorithm
+Pablo [1:05:02]: tree
+Pablo [1:05:03]: large found
+Pablo [1:05:04]: ation
+Pablo [1:05:08]: i want
+Pablo [1:05:09]: you to talk
+Pablo [1:05:13]: and
+Pablo [1:05:14]: it's fine
+Pablo [1:05:15]: every
+Pablo [1:05:17]: interested
+Pablo [1:05:19]: in programming
+Pablo [1:05:20]: something
+Pablo [1:05:21]: to do with vr
+Pablo [1:05:21]: end of it
+Pablo [1:05:22]: and actually wrote
+Pablo [1:05:23]: this program
+Pablo [1:05:26]: for
+Pablo [1:05:27]: beginning
+Pablo [1:05:28]: renewing numbers
+Pablo [1:05:29]: and use
+Pablo [1:05:30]: s how the nest
+Pablo [1:05:31]: is loose
+Pablo [1:05:37]: but unfortunately machines were not precise enough in the eighteen hundreds to enable this thing to be constructed
+Pablo [1:05:42]: so in some sense this dream kind of you know died
+Pablo [1:05:46]: when these two couldn't convince the british
+Pablo [1:05:47]: government
+Pablo [1:05:51]: the idea of
+Pablo [1:05:52]: a universal lead program
+Pablo [1:05:53]: mable computer came
+Pablo [1:05:53]: up again
+Pablo [1:05:55]: independently in the nineteen
+Pablo [1:05:55]: thirties
+Pablo [1:05:57]: over fifty years later
+Pablo [1:06:03]: to explore a much more abstract question about the foundation of matt mac
+Pablo [1:06:05]: again babbage
+Pablo [1:06:12]: maybe out of to some extent but definitely that was just laser focused on i want a compute numbers
+Pablo [1:06:13]: in big
+Pablo [1:06:14]: math tables
+Pablo [1:06:16]: so very practical kind of question
+Pablo [1:06:19]: but
+Pablo [1:06:23]: there was a much more heady dreamy kind of question that was in the air
+Pablo [1:06:40]: in the nineteen hundreds so hilbert's problems are these twenty three famous problems that were presented at the turn of the century in the year nineteen hundred to the international congress of mathematicians by who was at the time the most respected mathematician or old david
+Pablo [1:06:40]: hilbert
+Pablo [1:06:45]: and the tenth problem was this out of this list of twenty three
+Pablo [1:06:57]: specify a procedure by which an algorithm which in a finite number of operations enables one to determine whether or not a given diophantine equation
+Pablo [1:07:00]: integral visions and where we
+Pablo [1:07:01]: ask for an integer
+Pablo [1:07:02]: solution
+Pablo [1:07:03]: with
+Pablo [1:07:07]: an arbitrarium of variables has an integer solution he's not even bothering
+Pablo [1:07:08]: and asks whether this
+Pablo [1:07:09]: exists
+Pablo [1:07:13]: he's very optimistic he's convincing yeah definitely there must be one
+Pablo [1:07:14]: your job mathematic
+Pablo [1:07:15]: ians
+Pablo [1:07:18]: even
+Pablo [1:07:19]: more often to say than twenty
+Pablo [1:07:19]: eight years later
+Pablo [1:07:20]: define
+Pablo [1:07:21]: the same called the
+Pablo [1:07:22]: chinese
+Pablo [1:07:23]: or
+Pablo [1:07:24]: in german the decision
+Pablo [1:07:24]: wrong
+Pablo [1:07:29]: so he said the ensheidance problem is solved
+Pablo [1:07:30]: one of the proced
+Pablo [1:07:31]: ure
+Pablo [1:07:32]: that
+Pablo [1:07:37]: allows one to decide the validity of a given logical expression by a finite number of
+Pablo [1:07:42]: operations what does that mean it means given a statement of a mathematical theorem figure out it's true
+Pablo [1:07:48]: that's what he wanted an algorithm automate mathematics
+Pablo [1:07:53]: so for example here is a logical expression
+Pablo [1:07:57]: the
+Pablo [1:07:58]: truth there exists
+Pablo [1:08:00]: x
+Pablo [1:08:01]: yz
+Pablo [1:08:03]: positive
+Pablo [1:08:04]: integers
+Pablo [1:08:06]: and
+Pablo [1:08:10]: x
+Pablo [1:08:22]: al
+Pablo [1:08:23]: nineteen ninety four
+Pablo [1:08:27]: solution to the chinese problem
+Pablo [1:08:31]: saying quite a bit of effort in some sense and also put all the mathematic
+Pablo [1:08:32]: ians out of a job
+Pablo [1:08:35]: there's
+Pablo [1:08:36]: a sub question of
+Pablo [1:08:37]: all of these problems
+Pablo [1:08:39]: what does that
+Pablo [1:08:40]: do to the procedure
+Pablo [1:08:41]: what do we
+Pablo [1:08:41]: utilize
+Pablo [1:08:44]: and sometimes hope we're so optimist
+Pablo [1:08:45]: ic they exist
+Pablo [1:08:59]: that he can be forgiven for not bothering to define it because it's kind of like you know when you see it i mean the ancient greeks came up with euclid we were not sure if euclid was okay with people's algorithm but some ancient greek came up with euclid's algorithm
+Pablo [1:09:04]: and even not knowing what the formal definition of an algorithm is you look at that
+Pablo [1:09:05]: 's definitely an out
+Pablo [1:09:11]: unambiguous steps that you follow given these integers to figure out their greatest common divide
+Pablo [1:09:22]: but it turns out that neither is tripping there is no procedure to do this but to prove that there's no procedure
+Pablo [1:09:23]: now you need a formal definition
+Pablo [1:09:26]: you really need to formulas what do we mean by procedure
+Pablo [1:09:28]: if you're going to argue that one doesn't exist
+Pablo [1:09:32]: but we're going to take a little bit of a deeper
+Pablo [1:09:33]: into the foundation of the
+Pablo [1:09:34]: map mask
+Pablo [1:09:41]: just to motivate why some of these mathematicians were thinking about these subjects that came brought them into collision
+Pablo [1:09:43]: how levels
+Pablo [1:09:44]: were trying to do
+Pablo [1:09:44]: in years
+Pablo [1:09:44]: earlier
+Pablo [1:09:46]: and the goal
+Pablo [1:09:49]: started
+Pablo [1:09:50]: happening around the end of the
+Pablo [1:09:51]: nineteenth century the
+Pablo [1:09:52]: eighteen hundreds early
+Pablo [1:09:53]: nineteen hundreds
+Pablo [1:09:55]: the final axiomatic foundation
+Pablo [1:09:56]: for mathematic
+Pablo [1:09:58]: s and the goal here was to say okay
+Pablo [1:10:09]: we've got all these mathematical statements the mathematicians spend time crew but all of it operates by assuming something is true
+Pablo [1:10:10]: without
+Pablo [1:10:11]: all these accidents
+Pablo [1:10:12]: app
+Pablo [1:10:13]: lying google
+Pablo [1:10:15]: the
+Pablo [1:10:16]: idea was to try
+Pablo [1:10:19]: to essentially reduce the number of axioms down to
+Pablo [1:10:20]: a bare minimum
+Pablo [1:10:22]: things are completely incontrovertible
+Pablo [1:10:26]: and then show that you could derive all the rest of mathematics from that
+Pablo [1:10:32]: which in some sense would put people at ease as long as we believe those axioms well then we have no reason to doubt
+Pablo [1:10:34]: all the other mathematics
+Pablo [1:10:39]: that's been done if you can indeed derive the rest of mathematics from these simple
+Pablo [1:10:43]: and what people ended up and that there is more than one way to do this
+Pablo [1:10:46]: but one way to do it was to focus on sets
+Pablo [1:10:54]: and why is that well a lot of mathematical logic so we tend to think about can be defined using only sense
+Pablo [1:10:55]: right
+Pablo [1:10:57]: so for example
+Pablo [1:11:04]: one way to define the natural numbers would be to say well ok we need some set to represent zero
+Pablo [1:11:08]: and if we haven't started talking about what other types of objects are there
+Pablo [1:11:11]: that could be in the sets
+Pablo [1:11:14]: then how do we even talk about that
+Pablo [1:11:15]: well we talk about
+Pablo [1:11:16]: the np set
+Pablo [1:11:20]: certainly the envy said is a concept that makes sense even if you have no idea
+Pablo [1:11:22]: what other things you might put into
+Pablo [1:11:26]: or not you can say liam descent clearly exists there's a set with nothing
+Pablo [1:11:33]: in and if we want to have some set represent the integer zero we can say well that thing represents the integer
+Pablo [1:11:39]: and how might you represent the integer one well now that we've defined one set the empty set we can make a new set
+Pablo [1:11:42]: what we can contain
+Pablo [1:11:48]: other sets but we only can find one other set so far the empty set so our second step that we defined this contains that
+Pablo [1:11:49]: and
+Pablo [1:11:50]: then we could call that one
+Pablo [1:11:57]: so we could define one to be the set containing zero but zero is just the empty set so this is technically the set containing the
+Pablo [1:12:05]: we can put that in its own singletons right so this is one way that you could just come up with some infinite list of sets
+Pablo [1:12:07]: with some clear definition
+Pablo [1:12:15]: from one to the next that you could put in course even say oh this is how we're going to represent the natural numbers using only six
+Pablo [1:12:27]: and if you did this you could express arithmetic operations like the successor operation would just be the successor of a set would be the set containing only that set
+Pablo [1:12:30]: define addition using successor and so forth
+Pablo [1:12:42]: so that would be a way that defines say integers if you have nothing but sets to deal and let's say you wanted to talk about ordered pairs like sequences of length two one way to define the ordered pair
+Pablo [1:12:56]: you get unordered pairs for free you have sets then i can make the unordered pair ab by just the second thing but what if i want the net be in an order well i can define the order pair maybe in the following two elements
+Pablo [1:13:00]: the first one is the set containing a the
+Pablo [1:13:07]: and b so i know oh in this set i'm going to have two sets one will be cardinality one the other will be cardinality two
+Pablo [1:13:13]: the one of cardinality one will tell me in the other one which is the first element in the ordered pair
+Pablo [1:13:19]: once you've got ordered pairs you can define functions
+Pablo [1:13:20]: by their graphs
+Pablo [1:13:22]: funct
+Pablo [1:13:23]: ion is just
+Pablo [1:13:24]: to be minus seven
+Pablo [1:13:25]: output
+Pablo [1:13:26]: s
+Pablo [1:13:28]: there's the graph of the function
+Pablo [1:13:31]: f of n equals n squared to integers
+Pablo [1:13:46]: once we've got functions we can define whole infinite sequences so one way infinite sequence x one x two x zero to one x two et cetera it could just be defined by a function f of n equals x
+Pablo [1:13:49]: there's way of defining arbitrary in particular
+Pablo [1:13:51]: so once we've got our charity for the sequences
+Pablo [1:13:53]: now you don't for managers
+Pablo [1:13:54]: say three aluminum
+Pablo [1:14:01]: a real number
+Pablo [1:14:05]: and then a finite or infinite sequence let's say what digits are to the right
+Pablo [1:14:18]: so hopefully you believe me that even though if i started this slide and say oh we'll just have nothing but sets we won't even talk about necessarily what goes in them other than other sets
+Pablo [1:14:19]: you actually could
+Pablo [1:14:24]: have nothing but sets and use it to define all the familiar types of mathematical objects
+Pablo [1:14:26]: that we deal with
+Pablo [1:14:36]: okay but then in attempting to kind of formalize mathematics in this way bertrand russell notice prop that we now call russell's paradise
+Pablo [1:14:40]: and it was basically due to the fact that we're not being very restrict
+Pablo [1:14:42]: ive about what type of object sets in
+Pablo [1:14:46]: they can certainly contain other sets
+Pablo [1:14:49]: right that's the whole thing we did and we define the natural numbers
+Pablo [1:14:51]: but if a set can contain other sets
+Pablo [1:14:54]: can a set contain itself
+Pablo [1:14:58]: we haven't set this
+Pablo [1:15:04]: we're being very untyped here it's possible to have success but s is an element
+Pablo [1:15:05]: of
+Pablo [1:15:12]: supp
+Pablo [1:15:13]: ose that
+Pablo [1:15:17]: you just think about this concept
+Pablo [1:15:20]: well you can define what we might call the russell
+Pablo [1:15:21]: what does the russell set are
+Pablo [1:15:26]: it's the set of all sets s that do not contain themselves
+Pablo [1:15:31]: but then
+Pablo [1:15:35]: well r itself is set
+Pablo [1:15:37]: so does it contain itself
+Pablo [1:15:40]: well by the definition
+Pablo [1:15:50]: if it contains itself and it doesn't and if it doesn't contain itself then it does so we have this paradox that if you just allow yourself to make these arbitrary statements
+Pablo [1:15:52]: about setups you can get into trouble
+Pablo [1:15:58]: sharing
+Pablo [1:15:58]: the second outrage
+Pablo [1:16:00]: is that you're not allowed to
+Pablo [1:16:08]: just write down the set of all sets so that some condition holds what you have to do is say no you have to already define some bigger set
+Pablo [1:16:12]: and then you're going to filter out elements from it to get a new set
+Pablo [1:16:20]: so for some existing set a you're allowed to write the set of all s in a throwing some conditions and if you do this
+Pablo [1:16:23]: then this becomes a well defined set
+Pablo [1:16:25]: but only
+Pablo [1:16:26]: the first half
+Pablo [1:16:26]: of the day
+Pablo [1:16:30]: r doesn't exist
+Pablo [1:16:31]: according to
+Pablo [1:16:32]: q so
+Pablo [1:16:33]: this was kind of like
+Pablo [1:16:34]: the way
+Pablo [1:16:47]: and then what people eventually settled on is what's called the so called zfc axioms or zermelo frank axioms and we're not going to go through this is not a course on logic
+Pablo [1:16:51]: i have an english description of what they mean
+Pablo [1:16:55]: and the formal statement but the thing to focus on is that one of them actually insists
+Pablo [1:16:57]: starts
+Pablo [1:17:01]: it says there exists a sense that something true and it turns out that
+Pablo [1:17:05]: rather than one way to do it is to have an axiom that posits the empty set exists
+Pablo [1:17:09]: and then you add more
+Pablo [1:17:11]: the first test that you define
+Pablo [1:17:14]: exists is basically one that
+Pablo [1:17:18]: represents the way not the one i did earlier but a bearing
+Pablo [1:17:20]: set
+Pablo [1:17:21]: boundaries an amp
+Pablo [1:17:22]: hibometer
+Pablo [1:17:26]: and all the other axioms start with a for all the other ones
+Pablo [1:17:28]: are basically well suppose you already have a
+Pablo [1:17:29]: set
+Pablo [1:17:31]: i
+Pablo [1:17:35]: can say x you can define new sets based on that
+Pablo [1:17:36]: one
+Pablo [1:17:41]: and in particular the axiom two is comprehension so it's like oh if you've got a new set
+Pablo [1:17:43]: so you've got an existing set
+Pablo [1:17:47]: you can filter elements out of it to generate the new set
+Pablo [1:17:48]: basically what it's
+Pablo [1:17:48]: saying
+Pablo [1:18:00]: and so this gives away to start with one simple set in this case not quite the simplest one the empty set but close to that the one that we think of as the natural numbers
+Pablo [1:18:03]: and then to build other sets from that
+Pablo [1:18:10]: so the power set axiom would give you the set of all subsets of natural numbers those can be put into correspondence with the real numbers et cetera
+Pablo [1:18:23]: but that was how people got out of brussels paradox by not allowing them to write down the sun of all sets that obey something now you have to write down the son of all elements from some existing set that ob
+Pablo [1:18:24]: eys
+Pablo [1:18:28]: starting next week
+Pablo [1:18:30]: we're going to do the same thing but with computation
+Pablo [1:18:39]: we're trying to build up a definition of computation from very simple parts so simple that uncontroversial these things are clearly computable
+Pablo [1:18:50]: we want to try to build up from that to everything we know how to compute in the same way that logicians are trying to build up all mathematics from very simple statements that are uncontroversial
+Pablo [1:18:55]: that's what mule the next week while i'm in phoenix i'll be sorry
+Pablo [1:18:57]: have a good weekend
+Pablo [1:19:03]: you see veritasium video
+Pablo [1:19:19]: yeah you probably see more of his videos at some point can you put the name
+Pablo [1:19:26]: but
+Pablo [1:19:35]: he has this really good video on the stuff
+Pablo [1:19:37]: i think it's called the whole math
+Pablo [1:19:40]: yeah it goes over a bunch of really
+Pablo [1:19:41]: interesting stuff
+Pablo [1:19:42]: i have nothing
+Pablo [1:19:43]: with
+Pablo [1:19:45]: search up
+Pablo [1:19:46]: on that
+Pablo [1:19:56]: oh yeah
+Pablo [1:19:58]: it's really good

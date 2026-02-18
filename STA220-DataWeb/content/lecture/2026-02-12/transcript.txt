@@ -1,0 +1,639 @@
+Pablo [0:15]: announcements because what postponed the announcement because i want to start talking about this beautiful blue screen
+Pablo [0:20]: it's just blue this is why i'm calling it a blue spin everything is blue
+Pablo [0:26]: everything no one single hydro uses to be blue
+Pablo [0:27]: here
+Pablo [0:40]: and the idea behind this is this is a picture of today six forty a m in the morning towards the northwestern direction and if you remember the last lecture
+Pablo [0:44]: you can now imagine what this single white pointer is
+Pablo [1:07]: maybe in the last row you cannot really see very well but i have uploaded a picture canvas that you can see maybe more clearly and with your own eyes was really very well to see the iss so it was a very good idea if we had very early anyways
+Pablo [1:13]: bad news for you i looked it up for the next few days you want the cdiss tomorrow
+Pablo [1:19]: this order even better possibility in terms of how bright the iss is
+Pablo [1:21]: bad news
+Pablo [1:22]: it's a pipe
+Pablo [1:22]: here
+Pablo [1:27]: so maybe have to wait for the next wish it's almost in the morning
+Pablo [1:31]: in two or three weeks hopefully it will also be
+Pablo [1:33]: in the data
+Pablo [1:46]: this might be a recommendation just wait until beginner march then you can just look at six p m most of the way okay and just to give you an impression justify point
+Pablo [1:48]: this is the original picture
+Pablo [1:53]: now you can maybe not really see this white point here
+Pablo [2:00]: the picture in two push the smartphone it's just as much another full camera razor is quite a voltage
+Pablo [2:03]: somewhat i don't know average
+Pablo [2:09]: i just wanted to show it to you
+Pablo [2:12]: and i had uploaded for this reason two days
+Pablo [2:13]: lecture
+Pablo [2:18]: so if you want to find these pictures and you can just download the lecture
+Pablo [2:20]: make sure
+Pablo [2:26]: you also download it to pictures of iss finite iss
+Pablo [2:27]: uing
+Pablo [2:34]: and otherwise you just see this hml code
+Pablo [2:36]: here without any
+Pablo [2:36]: pictures
+Pablo [2:38]: we also have the download
+Pablo [2:46]: and we have to down
+Pablo [2:46]: load them
+Pablo [2:48]: and put them in the right
+Pablo [2:49]: folder
+Pablo [2:50]: you can just
+Pablo [2:51]: over and then
+Pablo [2:54]: okay this is basically the idea
+Pablo [2:57]: so it's really working it was very little
+Pablo [3:02]: let's just go to the web page
+Pablo [3:03]: where all major
+Pablo [3:04]: contained
+Pablo [3:10]: and this is with two different ways of getting this information
+Pablo [3:29]: the first thing was our brute both approach where this web page view with information with the light position of the iss you have iss and shadow so right now we're not able to see the is shadow of the earth
+Pablo [3:32]: develop
+Pablo [3:36]: and there is this api
+Pablo [3:44]: so we send request to the api to build like a position or estimated position of iss in the next
+Pablo [3:44]: view
+Pablo [3:50]: estimate
+Pablo [3:51]: and
+Pablo [3:52]: those three yes
+Pablo [3:53]: so we could put
+Pablo [3:56]: ns into our
+Pablo [3:58]: just
+Pablo [4:01]: some
+Pablo [4:02]: information
+Pablo [4:03]: on the other web
+Pablo [4:04]: page
+Pablo [4:05]: when you
+Pablo [4:06]: can see
+Pablo [4:08]: there is
+Pablo [4:21]: like the second web page that came up with which is really basically showing you when look different
+Pablo [4:27]: format where you can see the eyes as with your own eyes and there's also the information
+Pablo [4:31]: basically telling you what advice has last time
+Pablo [4:37]: the iss must be the iss standard and visible
+Pablo [4:49]: it should be more the stark here on our davis and yes it should be at least ten degrees above isome
+Pablo [4:51]: where we always
+Pablo [4:52]: die
+Pablo [5:07]: so we have tried to come up with these calculations here to find out the best moment when the sky and then when we had done all this i just said there is work patient we don't have to calculate
+Pablo [5:07]: our own
+Pablo [5:16]: so the next idea would be just great this web page so i mean this is just for not but we can change the location
+Pablo [5:17]: davis
+Pablo [5:24]: then you can see here six thirty six
+Pablo [5:26]: and six thirty
+Pablo [5:29]: what's the best common date
+Pablo [5:37]: so the idea is instead of coming up with all these calculation square page so for this reason
+Pablo [5:39]: we just
+Pablo [5:42]: did view the h source
+Pablo [5:45]: to get all the html
+Pablo [5:51]: and this is basically if we would send a request to this web page
+Pablo [5:55]: what we would get is exactly these fields here
+Pablo [6:08]: periods like full stops but no information so we can also try to look for this error in the twelve date and there is no information in the background
+Pablo [6:24]: and the reason for this is if we just access this web page then all this information will be lower dynamic so we need a browser to access this and then all this information will be loaded
+Pablo [6:38]: afterwards and we can scrape it for this reason i presented selenium browser the last time and this is what we are going to do right now we will open basically this web page and access it
+Pablo [6:46]: with linu browser then we will try to do everything all the change to the tv
+Pablo [6:47]: can be just open
+Pablo [6:57]: the web page will be automatic heading in the organization so first we want to do is change the location
+Pablo [7:01]: this is my introduction
+Pablo [7:12]: really tribes and a request here
+Pablo [7:22]: how we can access all the vendors send the request for get method
+Pablo [7:25]: and just
+Pablo [7:30]: all these values of the past
+Pablo [7:34]: class just get it so no values
+Pablo [7:35]: are
+Pablo [7:37]: okay
+Pablo [7:44]: and for this reason we will do everything now the game browser and importing
+Pablo [7:48]: from the sydney webdriver
+Pablo [7:50]: and
+Pablo [7:51]: try to access
+Pablo [7:52]: my web page
+Pablo [8:13]: it was not very successful because i opened the window and immediately close it afterwards but the first thing i would like to do is i start a browser i will access the web page as computer and wait a few seconds and hope that everything has loaded successfully
+Pablo [8:23]: and then i will submit or i will find you where we can submit the location and then i will write
+Pablo [8:26]: comma california
+Pablo [8:30]: and to see
+Pablo [8:35]: how we can access this field basically once again
+Pablo [8:39]: click here
+Pablo [8:40]: on
+Pablo [8:41]: therap
+Pablo [8:42]: and
+Pablo [8:43]: now
+Pablo [9:00]: asian search so grades can be
+Pablo [9:01]: tested as
+Pablo [9:02]: input field
+Pablo [9:07]: by just getting the id of the location search and then we can
+Pablo [9:09]: send basically a text
+Pablo [9:14]: this is what we are doing here so executing this now
+Pablo [9:16]: and you can see
+Pablo [9:17]: first
+Pablo [9:19]: we
+Pablo [9:20]: go
+Pablo [9:50]: so the next
+Pablo [9:51]: day
+Pablo [9:52]: is we just click
+Pablo [9:53]: on
+Pablo [9:54]: enter
+Pablo [10:01]: vis
+Pablo [10:02]: ual
+Pablo [10:07]: so
+Pablo [10:08]: this is like how we enter
+Pablo [10:12]: this
+Pablo [10:16]: coach that is after any step you just wait one or two seconds
+Pablo [10:19]: this is totally fine it's just a little bit cumbersome
+Pablo [10:20]: and
+Pablo [10:21]: we will be
+Pablo [10:22]: to come up with
+Pablo [10:23]: an inquisitive way
+Pablo [10:25]: to show how long
+Pablo [10:30]: what you can do is
+Pablo [10:35]: you can first access the web page try to get some text
+Pablo [10:49]: then submit and interact with web page and then you run a loop basically every second you checking has my head change and you are looking at some text that you would note
+Them [10:49]: that you
+Pablo [10:56]: basically
+Pablo [10:58]: for example this header says
+Pablo [11:05]: visible eyes as passed over davis so i'm trying to access the content
+Pablo [11:13]: and basically
+Pablo [11:41]: it has the ip pass header so what i'm doing is accessing the web page reading this text and it starts with visible eyes as passes over the yard then i submit california babies to the search location field and then i'm checking every second or more of what the texture is and whenever i see invisible eyes as possible
+Pablo [11:47]: and then it just continue
+Pablo [12:17]: with this let me just continue we can do just a demonstration like has demonstrated also click on a but there is twelve twenty four hours and nowhere in the us basically i think you want to see the am time of the twenty four hours
+Pablo [12:20]: time just to present how we can
+Pablo [12:24]: also try to find this button here
+Pablo [12:28]: by the id the id is exactly twenty four hours
+Pablo [12:34]: and then we can check if this button is not selected
+Pablo [12:39]: we locate an otherwise we just bring the video button has already been delayed
+Pablo [12:41]: once
+Pablo [12:42]: you can see now
+Pablo [12:43]: it was
+Pablo [12:44]: later
+Pablo [12:55]: and then the next
+Pablo [12:56]: thing is
+Pablo [12:58]: on
+Pablo [12:59]: the
+Pablo [13:04]: e
+Pablo [13:05]: where people
+Pablo [13:06]: use this human
+Pablo [13:07]: user
+Pablo [13:12]: info
+Pablo [13:13]: for example
+Pablo [13:21]: and then you can see here we have also asked
+Pablo [13:24]: of the
+Pablo [13:28]: date and this is also
+Pablo [13:30]: browser
+Pablo [13:31]: just reset everything
+Pablo [13:43]: is this original setting
+Pablo [13:52]: and what we do then is try to find this button
+Pablo [13:52]: here
+Pablo [13:55]: and first click on it
+Pablo [13:57]: so again
+Pablo [13:59]: with the inspect
+Pablo [14:00]: or
+Pablo [14:11]: we can see that it
+Pablo [14:12]: 's called
+Pablo [14:15]: passive passage
+Pablo [14:21]: so we click on it then
+Pablo [14:22]: we hope that
+Pablo [14:25]: we can find the next thing like
+Pablo [14:26]: date
+Pablo [14:36]: here we submit and february and then we just submit by pressing enter
+Pablo [14:41]: execute
+Pablo [14:44]: this you can see now the field opens
+Pablo [14:47]: two seconds data
+Pablo [14:48]: with
+Pablo [14:49]: a and then
+Pablo [14:50]: now
+Pablo [14:52]: ok
+Pablo [15:00]: ay so this makes basically now we have access to one which we're interested in and then we just want to string values here
+Pablo [15:04]: and the good news is now we can really
+Pablo [15:09]: pass everything output
+Pablo [15:29]: so we just try from the driver like from selenium to access the html pass it to a and then my claim is that if we are accessing like a thick element passes this
+Pablo [15:33]: and all the past summaries and get
+Pablo [15:37]: this web page here
+Pablo [15:45]: want to access all
+Pablo [15:46]: these elements
+Pablo [15:56]: we can see basically they are all
+Pablo [15:57]: called
+Pablo [15:59]: summary
+Pablo [16:06]: i guess it passes this to all this
+Pablo [16:07]: is just
+Pablo [16:11]: called past this within the task
+Pablo [16:15]: list we have everything element of pass summary
+Pablo [16:24]: and then we can also see they have an ip called pass zero
+Pablo [16:26]: the next element possible
+Pablo [16:32]: okay so this means basically we now know how to access all these plugins
+Pablo [16:37]: and first because we don't know how many paths we have in the next week
+Pablo [16:41]: we are trying to access the goal list of ideas
+Pablo [16:47]: and in our case the sixteen pass is called
+Pablo [16:51]: and then we can just try click on one of these elements
+Pablo [17:02]: so basically here i'm selecting
+Pablo [17:13]: today in the morning six forty eight on this type of path and then we see the table always perfect moment
+Pablo [17:17]: would have been six fourteen which is exactly the moment of my full picture
+Pablo [17:22]: and if i want to access ev
+Pablo [17:22]: o
+Pablo [17:26]: then it is four under vip
+Pablo [17:28]: date
+Pablo [17:36]: we
+Pablo [17:39]: see first eight ever range twelve
+Pablo [17:45]: i didn't want to see all the other rows and columns
+Pablo [18:29]: the next idea is we want to access the volt a look and it won't open the inspector every time i think you believe me but just having the table who are interested in it has not an id but like a class and the class is called pass ethos and then this table has like a field body and then we have like the rows and i'm interested in all the cells like this td all the cell
+Pablo [18:29]: s of other people
+Pablo [18:35]: the lord
+Pablo [18:36]: tells
+Pablo [18:39]: for each
+Pablo [18:40]: of the cells
+Pablo [18:45]: and
+Pablo [18:46]: you can see
+Pablo [18:48]: first
+Pablo [18:49]: tile we can see
+Pablo [18:50]: the guys that
+Pablo [19:02]: are
+Pablo [19:03]: actually
+Pablo [19:04]: coming
+Pablo [19:12]: you
+Pablo [19:13]: see
+Pablo [19:26]: this
+Pablo [19:42]: for
+Pablo [19:42]: the next few days
+Pablo [19:52]: when
+Pablo [19:57]: the last
+Pablo [19:58]: thing is
+Pablo [19:59]: testing
+Pablo [20:00]: this
+Pablo [20:01]: video
+Pablo [20:02]: in the last
+Pablo [20:03]: two weeks
+Pablo [20:04]: the
+Pablo [20:05]: master wants
+Pablo [20:06]: the tool
+Pablo [20:11]: just
+Pablo [20:17]: everything
+Pablo [20:17]: to
+Pablo [20:18]: the other
+Pablo [20:21]: for each
+Pablo [20:22]: of the past
+Pablo [20:23]: ors
+Pablo [20:30]: zero
+Pablo [20:31]: plus one and so
+Pablo [20:31]: on
+Pablo [20:32]: and
+Pablo [20:34]: i find the element by the ide
+Pablo [20:36]: click
+Pablo [20:39]: basically on the button on the left hand side
+Pablo [20:42]: and then just open the gateway
+Pablo [20:45]: find the date
+Pablo [20:49]: try to get all the content of evil
+Pablo [20:51]: and then
+Pablo [20:52]: create
+Pablo [21:01]: a dictionary that says like past zero contains date and all these entries just add
+Pablo [21:04]: so for example
+Pablo [21:08]: we apply this now to the second pass
+Pablo [21:16]: we see like the second pass like third part and q was at five yen today
+Pablo [21:33]: all
+Pablo [21:34]: the
+Pablo [21:40]: table
+Pablo [21:46]: and
+Pablo [21:47]: each doors would
+Pablo [21:47]: be
+Pablo [21:59]: now
+Pablo [22:01]: positive
+Pablo [22:13]: we
+Pablo [22:14]: can see the iss
+Pablo [22:18]: and
+Pablo [22:19]: also
+Pablo [22:26]: direct
+Pablo [22:26]: ion
+Pablo [22:27]: and
+Pablo [22:28]: this is
+Pablo [22:35]: very
+Pablo [22:36]: good moment
+Pablo [22:37]: more
+Pablo [22:38]: than five
+Pablo [22:45]: years
+Pablo [22:48]: so basically
+Pablo [22:50]: un
+Pablo [22:50]: fortunately
+Pablo [22:51]: everything
+Pablo [22:56]: so
+Pablo [23:00]: the next few ten days as i said tomorrow is the best moment
+Pablo [23:01]: then
+Pablo [23:05]: there on a saturday at five p m
+Pablo [23:09]: unless you're returning from
+Pablo [23:11]: just
+Pablo [23:13]: sleeping anyways
+Pablo [23:14]: okay
+Pablo [23:23]: and this is basically how we access values and we now wrap everything into funct
+Pablo [23:23]: ions
+Pablo [23:32]: one single function that you can execute so basically what my idea is that there's one single cell you can execute every week
+Pablo [23:38]: and then you get this kind of cable and you can find the best moment
+Pablo [23:40]: to cgiss
+Pablo [23:41]: so
+Pablo [23:43]: detail
+Pablo [23:43]: s
+Pablo [23:47]: and then
+Pablo [23:52]: what you should do that if you want to execute the studies change the date
+Pablo [23:55]: so i mean now it's just
+Pablo [23:57]: ever
+Pablo [24:00]: and
+Pablo [24:06]: then everything we did is combined within this function so basically the old group
+Pablo [24:09]: the web page we enter davis
+Pablo [24:11]: then
+Pablo [24:15]: we'll just
+Pablo [24:16]: try to get all the
+Pablo [24:19]: data create a data frame
+Pablo [24:20]: and
+Pablo [24:21]: select
+Pablo [24:22]: the sort
+Pablo [24:23]: data plate
+Pablo [24:34]: so
+Pablo [24:35]: you can see for example
+Pablo [24:41]: this is the date and then it will click on every of this button you can see two goes down
+Pablo [24:45]: and there's like always one second in between
+Pablo [24:50]: and just for each of these values just try to access the table
+Pablo [24:56]: and
+Pablo [24:57]: this
+Pablo [25:02]: now we're done
+Pablo [25:03]: yes
+Pablo [25:11]: and then we just have this table so the only thing you have to change is data
+Pablo [25:15]: okay
+Pablo [25:21]: and then i want to tell you like two more things
+Pablo [25:23]: one is
+Pablo [25:25]: if you
+Pablo [25:26]: look
+Pablo [25:31]: actually
+Pablo [25:32]: if
+Pablo [25:35]: we enter something big
+Pablo [25:40]: gest there is a background over an api undocumented api
+Pablo [25:48]: which is not that easy to access but still there would also be information
+Pablo [25:52]: this is somehow a little bit disappointing
+Pablo [26:03]: but still now we have seen how we can apply selenium browse successfully
+Pablo [26:09]: about web pages this was like
+Pablo [26:11]: one of the things
+Pablo [26:16]: and then i got
+Pablo [26:18]: from a student
+Pablo [26:26]: that presented undocumented apis under
+Pablo [26:44]: point is sometimes things are not exactly working as i would like them to work in the sense that a page can also try to find out whether you are like a author and then try to not allow you to access the
+Pablo [26:45]: pages
+Pablo [27:03]: and in particular like the project i mean ask the student what i can present it for example it was like nba that website so basically it collects a lot of values about the current season here like twenty twenty five
+Pablo [27:08]: you see here like different names of basketball players you see like age
+Pablo [27:09]: i
+Pablo [27:10]: don't know everything
+Pablo [27:13]: but keep
+Pablo [27:14]: up has done
+Pablo [27:26]: and so
+Pablo [27:31]: in
+Pablo [27:32]: human
+Pablo [27:33]: and to access all
+Pablo [27:34]: these devious
+Pablo [27:41]: and
+Pablo [27:42]: just make sure whenever
+Pablo [27:43]: you're doing this
+Pablo [27:44]: please only
+Pablo [27:45]: send one
+Pablo [27:46]: second
+Pablo [27:52]: other
+Pablo [27:53]: wise
+Pablo [28:02]: that you're trying
+Pablo [28:06]: and
+Pablo [28:07]: access
+Pablo [28:08]: ibility
+Pablo [28:12]: you know
+Pablo [28:13]: everything
+Pablo [28:14]: and the first
+Pablo [28:15]: thing you may
+Pablo [28:16]: see
+Pablo [28:17]: in context
+Pablo [28:18]: what i
+Pablo [28:19]: always do have
+Pablo [28:21]: one hundred
+Pablo [28:28]: for examp
+Pablo [28:29]: le
+Pablo [28:36]: and
+Pablo [28:37]: you know the behavior
+Pablo [28:39]: object
+Pablo [28:41]: and
+Pablo [28:43]: then you can see basically this is
+Pablo [28:49]: the
+Pablo [28:49]: chase
+Pablo [28:55]: there's a
+Pablo [28:56]: piece of serious
+Pablo [28:57]: pain
+Pablo [28:58]: contains
+Pablo [29:01]: like
+Pablo [29:04]: roll sets containing all the names
+Pablo [29:06]: most
+Pablo [29:07]: greeting chunks
+Pablo [29:10]: add to and it's really
+Pablo [29:12]: coincide
+Pablo [29:29]: basically it contains the information
+Pablo [29:34]: just unsought
+Pablo [29:34]: it
+Pablo [29:36]: player won't
+Pablo [30:11]: so basically i would be in this table
+Pablo [30:11]: here
+Pablo [30:13]: and now what you can do
+Pablo [30:19]: as you have learned everything you can just send a request
+Pablo [30:25]: for the request for get method
+Pablo [30:37]: and basically i have set now a timeout five seconds but if you don't set timeout here you will just have wave of twenty or fifty seconds
+Pablo [30:43]: twenty second then it would just send a request and it won't get an answer
+Pablo [30:53]: and the same holds two if you would send the same request manually
+Pablo [30:59]: so let's just wait for five more seconds
+Pablo [31:01]: there is with an i
+Pablo [31:04]: o and the idea here is
+Pablo [31:30]: here you can see the world get
+Pablo [31:39]: request and can also try to access it manually so we just send this request here
+Pablo [31:41]: and
+Pablo [31:46]: you can see it's just loading and loading never returns anything
+Pablo [32:02]: this is just one way basically we realize in the background we are trying to access the api plus you don't want to assess our they don't want to let us test the api
+Pablo [32:04]: we just don't get an answer
+Pablo [32:06]: it's just slowing us down and there's no
+Pablo [32:09]: what you can
+Pablo [32:09]: do is
+Pablo [32:21]: send them in their headers that we can send different headers headers that we can just really opening this web page manually and then they will return the actual data
+Pablo [32:23]: and for
+Pablo [32:27]: this we have to be use some flicks
+Pablo [32:32]: so we again go back
+Pablo [32:33]: to this
+Pablo [32:34]: api
+Pablo [32:34]: thing
+Pablo [32:40]: and instead of just getting the request the response parameter
+Pablo [32:41]: now to a right
+Pablo [32:43]: click on the link
+Pablo [32:48]: and click on copy value and then copy
+Pablo [32:54]: and then we apply the long object
+Pablo [32:58]: that contains headers
+Pablo [33:04]: we click on a web page i have provided inside the c two rl
+Pablo [33:07]: basically
+Pablo [33:11]: comp
+Pablo [33:12]: ress it
+Pablo [33:13]: contains
+Pablo [33:15]: our
+Pablo [33:15]: language
+Pablo [33:16]: to
+Pablo [33:18]: be
+Pablo [33:19]: provided
+Pablo [33:22]: and other
+Pablo [33:22]: things
+Pablo [33:23]: basically
+Pablo [33:26]: everything
+Pablo [33:27]: that was sent
+Pablo [33:28]: if you access
+Pablo [33:28]: web page
+Pablo [33:29]: analysis
+Pablo [33:30]: now
+Pablo [33:31]: of design by
+Pablo [33:32]: the
+Pablo [33:35]: use
+Pablo [33:36]: r agent
+Pablo [33:37]: but we are in
+Pablo [45:23]: we have talked about web scraping for
+Pablo [45:31]: and i'm slightly over time so if we find some time at the end
+Pablo [45:52]: of this quarter i would like to send this otherwise i mean i have uploaded this project today so you can go over it if i find some time at the end we'll talk about it because i think it's a nice approach but i would like to go
+Pablo [46:06]: on the next page talking about visualization about bit track maps that you plot and it need the main
+Pablo [46:06]: object
+Pablo [46:12]: so i'm just keeping
+Pablo [46:13]: this part of
+Pablo [46:27]: and for the speaker we test out very short
+Pablo [46:30]: and
+Pablo [46:34]: uction visualization
+Pablo [46:59]: so basically we learn three types of different visualization types in the slides the first one is maybe something you already know so will be only spent alphabet should talk about sometimes you have data set you have how can you do instagram
+Pablo [47:06]: scatter and so on it just give you an idea of what kind of
+Pablo [47:11]: lear
+Pablo [47:11]: ning
+Pablo [47:12]: there was a
+Pablo [47:13]: discussion
+Pablo [47:14]: two weeks ago
+Pablo [47:15]: we
+Pablo [47:20]: just
+Pablo [47:21]: managed to
+Pablo [47:24]: process
+Pablo [47:25]: ing
+Pablo [47:46]: what is more interesting for us hopefully is learn about interactive parts so in the sense you provide use of some data set and a visualization of the data and then the user can decide on their own what kind of data they want to see and interact zoom into how wide developers
+Pablo [47:47]: this is
+Pablo [47:51]: very nice application
+Pablo [47:57]: and then there's personal favorite auto threat for example
+Pablo [48:03]: oral plan maps sometimes you for example if
+Pablo [48:09]: you have an image then you see all the newspapers you see this in lecture resources like just a matter of a country
+Pablo [48:11]: and different states
+Pablo [48:17]: depending
+Pablo [48:18]: on
+Pablo [48:20]: their
+Pablo [48:20]: own
+Pablo [48:22]: and
+Pablo [48:24]: this is very easy
+Pablo [48:28]: how we can do this
+Pablo [48:32]: and ask what is possible another thing which is the volume
+Pablo [48:34]: package basically
+Pablo [48:37]: allowing us to come up with a globe
+Pablo [48:42]: visualize data on the world just five at night
+Pablo [48:47]: for the final project might personally recommendation
+Pablo [48:52]: if you want to have the maximum output with minimum input
+Pablo [49:02]: oh wait i got a little bit of more of attention there is the core package i would present it next week and it basically takes
+Pablo [49:03]: five
+Pablo [49:04]: ten minutes
+Pablo [49:05]: cash code
+Pablo [49:06]: this one
+Pablo [49:09]: and
+Pablo [49:10]: you can visualize the
+Pablo [49:11]: way that easily
+Pablo [49:12]: and
+Pablo [49:13]: engaged
+Pablo [49:15]: and you can
+Pablo [49:16]: really zoom in
+Pablo [49:17]: on for example
+Pablo [49:18]: california
+Pablo [49:19]: or davis
+Pablo [49:29]: all the restaurants all the restaurants of this video rating and so on and then you can subset this in scientifically
+Pablo [49:29]: for example
+Pablo [49:33]: restaurants
+Pablo [49:40]: just
+Pablo [49:41]: need ten lines of
+Pablo [49:42]: code
+Pablo [49:45]: and share this html
+Pablo [49:48]: card will pass we have no idea about
+Pablo [49:51]: okay
+Pablo [49:53]: and with
+Pablo [49:59]: this let me just quickly mention for today
+Pablo [50:08]: what we will have four different ways how
+Pablo [50:17]: the easiest low level language this basically means everything right
+Pablo [50:19]: use both tools
+Pablo [50:20]: you can do everything
+Pablo [50:28]: but it's like a lot of work then there is like mine which is basically a ggplot two
+Pablo [50:34]: way
+Pablo [50:35]: more
+Pablo [50:36]: or less
+Pablo [50:37]: just that you
+Pablo [50:38]: have a version
+Pablo [50:44]: of
+Pablo [50:45]: conditions
+Pablo [50:50]: and
+Pablo [50:52]: then another thing if
+Pablo [50:53]: you don't know
+Pablo [50:54]: my personal
+Pablo [51:03]: it's not meant for all kind of visualizations but if you
+Pablo [51:07]: auditing statistical data and there are some
+Pablo [51:08]: applications
+Pablo [51:12]: histogram scatter bots all that kind of stuff
+Pablo [51:16]: c one has a lot of fun
+Pablo [51:21]: ctions built in functions and you just need five lines of code
+Pablo [51:29]: so if once you have the data you just have and it looks very professional
+Pablo [51:31]: so this is my recommendation
+Pablo [51:57]: like this summary outline
+Pablo [52:27]: d a lot of ideas about highly informed data c one i recommendation only use method and the last thing is can you just want to get an idea of your data so typically in a lot of cases you have just a pandas data frame you want to visualize some data and those data frame then you can use built in function from endless but it's not in the sense that it would recommend to use them for application just if you want to have an idea of what data looks like
+Pablo [52:28]: very
+Pablo [52:28]: easily
+Pablo [52:31]: and with
+Pablo [52:50]: this i think it will present all these packages on tuesday and also be able to start recording the next there's one last thing i would like to say and this is now like the announcements i promised you in the beginning of the lecture
+Pablo [52:55]: if we are going back
+Pablo [52:56]: through the schedule
+Pablo [52:59]: you're on the right hand side
+Pablo [53:01]: let me
+Pablo [53:02]: just hide
+Pablo [53:04]: my other language for the moment
+Pablo [53:09]: what
+Pablo [53:13]: ever basically here we are with
+Pablo [53:15]: our lectures
+Pablo [53:26]: and the first presentation will start on march fifth and then we have like another presentation march and march twelveth and it would like
+Pablo [53:51]: today we will upload a sheet where you can submit your third data presentation however the problem is if you all prepare to do your presentation the last date i mean this is not working we have thirteen so this is for this reason we came up with a sheet which is basically has five time slots
+Pablo [53:56]: on each of the pre dates and
+Pablo [54:02]: you can basically register your group there having each of the time slots
+Pablo [54:05]: first come first serve
+Pablo [54:08]: and then you can just choose your item
+Pablo [54:11]: as long as
+Pablo [54:13]: available
+Pablo [54:16]: kinds of thirteen present
+Pablo [54:17]: ations
+Pablo [54:22]: which means because every presentation in each of the
+Pablo [54:24]: every day we
+Pablo [54:26]: have ninety minutes
+Pablo [54:33]: this means eighteen minutes of presentation but there is also like
+Pablo [54:37]: included so the presentation should be something like twelve minutes
+Pablo [54:43]: and
+Pablo [54:44]: then
+Pablo [54:46]: five
+Pablo [54:47]: minutes
+Pablo [54:49]: all the discuss
+Pablo [54:50]: ion
+Pablo [54:53]: and
+Pablo [54:54]: should be
+Pablo [54:55]: able
+Pablo [54:58]: to finish on
+Pablo [55:00]: two of the days like
+Pablo [55:02]: after seventy
+Pablo [55:02]: minutes
+Pablo [55:03]: and
+Pablo [55:04]: one of
+Pablo [55:05]: a few days
+Pablo [55:06]: ago
+Pablo [55:07]: we meet all
+Pablo [55:08]: the ninety minutes
+Pablo [55:09]: it's up to
+Pablo [55:09]: you
+Pablo [55:10]: and i
+Pablo [55:11]: think
+Pablo [55:12]: we are
+Pablo [55:13]: not up
+Pablo [55:14]: loaded a sheet right now
+Pablo [55:17]: we will do so
+Pablo [55:21]: in the afternoon so then you can just submit
+Pablo [55:22]: and
+Pablo [55:24]: this would allow
+Pablo [55:25]: you
+Pablo [55:26]: to
+Pablo [55:27]: convert update
+Pablo [55:30]: okay
+Pablo [55:32]: do we have any further questions
+Pablo [55:34]: regarding the classifications
+Pablo [55:47]: then i would like to stop here
+Pablo [55:50]: and we start
+Pablo [55:53]: with plots and
+Pablo [55:54]: use data
+Pablo [55:55]: thank you so much

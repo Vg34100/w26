@@ -1,0 +1,398 @@
+Pablo [0:19]: bottom here
+Pablo [0:22]: seems like goddamn things every single day
+Pablo [1:23]: hello
+Pablo [2:08]: supposed
+Pablo [2:32]: pt fifty five enile
+Them [4:26]: hi everyone
+Them [4:28]: thanks for coming and happy friday
+Them [4:34]: okay
+Them [4:46]: let's spend some time talking about the progress reports which are due i believe on tuesday
+Pablo [4:50]: okay
+Pablo [4:53]: first do we have any questions
+Them [5:05]: you can just jump right in or write it in chat
+Them [5:17]: okay
+Them [5:21]: so let's just go over the thing
+Them [5:25]: and let me just say a few things about
+Them [5:35]: what to do if you're in a particular type of situations first of all the progress report asks for very very specific things so make sure you deliver on those
+Them [5:37]: in the report
+Them [5:40]: we are not going to read beyond the six pages
+Them [5:44]: there should be no code in it
+Them [5:54]: i would suggest a mix of one or two tables one or two plots
+Them [5:59]: together with four and a half five pages of writing
+Pablo [6:00]: right
+Them [6:25]: see tables we would like to see plots because that would indicate that you have gathered some data that you have done some eda that you have done some cda and you have some preliminary results doesn't have to be all the data that you've planned can be a sample and you can say that these results are not final for sure they're preliminary but we need to see some results
+Them [6:28]: both what we expect
+Them [6:30]: and the judging rubric
+Them [6:36]: are available on the assignment web page so please
+Them [6:40]: follow that and let's see
+Them [6:44]: it's important to submit one pdf as before
+Them [6:48]: questions about that
+Them [6:51]: particulars of the assignment
+Pablo [6:56]: okay
+Them [7:01]: there are people
+Them [7:11]: there's projects that are really far advanced and they already have multiple rqs answered and that's great
+Them [7:23]: there's also projects that are just teetering their viability they have some data not sure what the results mean that's perfectly fine that's what we want at this stage
+Them [7:27]: for you to report on something preliminary that can guide you further
+Them [7:32]: it's also fine to report on negative results
+Them [7:42]: most of your projects will end up if you have a particular hypothesis or research question that's interesting most of your projects will end up on the negative end meaning
+Them [7:46]: there will be very little if any signal
+Them [7:51]: and that's fine for this class that's fine negativ results are results
+Them [8:03]: what is not fine is not to have any results yet not to have any data yet and that brings me to the third category in which you may find yourselves and that is
+Them [8:16]: you have been developing the framework the infrastructure the whatnot talking to your team zeroing in on questions and you find yourself now in a situation where you don't have data yet you don't have results yet
+Pablo [8:21]: so
+Them [8:21]: what to do in this situation
+Pablo [8:30]: well
+Them [8:30]: we will expect to fairness to others we expect what we do from this assignment and so we'll be grading it as such
+Them [8:45]: so what that means is that you will have to do some quick pivoting if your plan does not allow for any data and results to happen by the seventeenth you will need to quickly pivot
+Them [8:52]: and at least for a sample of data deliver some eda at least and some discussion right
+Them [8:56]: and some preliminary cda results if possible
+Them [9:12]: to the extent possible you still have three four days we have lateness policy that up to i think twelve hours you're not going to be dinged much so try to use all of these try to do a pivot heart pivot maybe at some point
+Them [9:22]: and get to some data at this point it's not that necessary that the data be original meaning you could be replicating something
+Pablo [9:26]: and that's fine
+Them [9:27]: so long as you get some results that are not the same
+Them [9:34]: so copying others data and so on stay away from that you don't want to do anything unethical
+Them [9:37]: we do need something
+Them [9:43]: okay so we do need to see numbers plots tables and so on
+Them [9:43]: okay
+Them [9:46]: i spoke a lot any questions
+Them [10:10]: if we are all good i know i've been talking about this for a while and you would be surprised i see people in office hours still say well we didn't know that we had to have a result yet and this is why i keep repeating so apologies for those of you who have a good hearing
+Them [10:27]: okay but if you work hard it's not too late to get some results especially if you harness some of that new for example claude four point six or other coding agents to help you get to some results okay
+Them [10:31]: to help you not to do it for you okay
+Them [10:46]: so please write in chat or interrupt me if you have any questions i'll dig in back and we want to finish up our regression lecture and again i'm doing regression and spending so much time on it
+Them [10:50]: because simply
+Them [10:53]: hopefully you can see this the slides
+Pablo [10:57]: this is where
+Them [10:57]: we ended up the lecture before last
+Them [11:09]: i'm doing this because it simply illustrates in many different ways many of the same things that are present in all sorts of models and many of the same concerns
+Them [11:15]: especially here we dealt with multivariate versus univariate situation
+Them [11:25]: and the next thing i wanted to take a look at and we already saw this in practice last time was collinearity
+Them [11:35]: and this is when two or more predictors are correlated correlations happen for various reasons they always exist always
+Pablo [11:45]: it's a matter of
+Them [11:45]: coming to terms with it and understanding how much we can live with it or rather how much our modeling strategies can live with
+Them [12:15]: in a linear model when you have high correlation between multiple predictors their coefficients together will measure the combined effect and so which one part of it depends on the order in the regression the implementation but also it's proportional to the all effect that variable has so it's very difficult to interpret so we want to avoid that
+Them [12:31]: in particular you can get unstable coefficients with one sucking up most of the variance from the other or vice versa at some point adding more data will flip the thing and it's a mess
+Them [12:37]: so the best situation is where you avoid having such correlations in the first place
+Them [12:52]: there are very few remedies if you think about it for correlated data in fact if you have two columns in a data table and they're correlated at zero nine nine five or whatever higher
+Them [12:59]: virtually indistinguishable from the perspective of downstream analysis
+Them [13:02]: so you may as well just junk one of them
+Them [13:09]: certainly you can eliminate this situation by obtaining new data
+Pablo [13:19]: especially
+Them [13:19]: for those to predictors across more patients or more projects or whatever but that's very expensive
+Pablo [13:35]: so how do we judge if two columns are correlated or you can just correlate them using correlation coefficient there's a standard measure called the variance inflation factor and that's what we saw in the practice
+Pablo [13:41]: and when you run this on linear models it gives you numbers for each variable
+Pablo [13:53]: and really it's for pairs of variables but if pairs of variables are correlated you'll see two variables with a high vif the vif will give you one per predictor
+Them [14:02]: so the right thing to do is for
+Pablo [14:02]: those pairs you
+Them [14:02]: eliminate one at a time right and keep the other
+Pablo [14:19]: if you don't have
+Them [14:19]: a linear model what's the other best thing you can do you can build a correlation matrix and then you can see what it shows in a correlation matrix for example for our tv newspaper and radio situation
+Them [14:21]: from last time
+Them [14:29]: and here kind of the colors are not intuitive but the lighter colors have higher correlation
+Them [14:35]: the darker colors have lower so what you would like to see is low correlation
+Them [15:07]: so for example radio and newspaper are showing a bit higher correlation zero thirty five it's already getting into the area of significant but not quite significant enough to throw one out however it affects the model as we saw radio sucked up the correlation the variance from newspaper when we included it in a in a model together whereas separately they showed different outcomes
+Them [15:31]: in any case it's always good to run a correlation on all of your variables just to identify whether there is high correlation between any pairs and then as i said eliminate one out of a pair that's highly correlated keeping them both doesn't make sense it hurts interpretability
+Pablo [15:53]: we've
+Them [15:53]: discussed this we've seen this multiple times just the difference here that's important and that is when you have multiple of these betas then the alternative hypothesis it's not that they are all different than zero but that one of them
+Them [16:11]: multivariate model what does it mean to have a good model predictive model it means to have at least one of the betas meaning at least one variable not due to chance affects the outcome
+Them [16:19]: and to do that we're using explained variance over unexplained variance
+Them [16:29]: the total variance present and how much you can explain this is very similar to the r squared but the f statistic is more general
+Them [16:41]: same calculation as the r squared in principle if f is greater than one we consider this evidence against the null
+Pablo [16:56]: like in this case
+Them [16:56]: for the radio news and tv same model we see that df was five hundred seventy so much higher so we have a good model and so on
+Them [16:59]: there's also some other metrics on there
+Them [17:17]: of the r squared is about ninety percent which is fine we have aic and bic we don't have time to actually go into those but when you have non linear models those will be the only things you will have and in a way they correct for having too many variables
+Pablo [17:32]: in
+Them [17:32]: principle as you add more and more predictors in a model the model will perform slightly better slightly better and slightly better in fact and this is a very interesting thing in a linear model if you add even a noisy column
+Pablo [17:47]: you may
+Them [17:47]: capture some of the variance especially if the variance left is random so seemingly it may seem like adding some variable may be useful to you to get a better model
+Pablo [17:51]: it's not clear that it is
+Pablo [17:57]: so that's why we have to adjust kind of models that have too many variables
+Pablo [18:07]: in order to be able to compare them with models with fewer variables and that's where the aic and bic start getting very useful
+Them [18:21]: they're information criteria the first is akai kit the other one is the bayesian information criterion so what you want to do is you want to have them as low as possible so the model with a lower score
+Them [18:23]: is a better fitting model to the data
+Them [18:57]: but let's move on to a different topic and we saw this a little bit in the practice on wednesday and that is what happens if we have predictors that are not quantitative so some predictors in practice maybe qualitative how do you feel from one to five maybe
+Them [18:57]: female male as we had a binary type of a designation how do we deal with those and that's the point of this next section
+Them [19:09]: what's given here is a table from some credit card companies it's called a credit data set contains information about income
+Them [19:46]: in thousands the limit on the credit card the rating of the person i'm presuming some sort of a credit score how many cards they have their age education and this is coded as something maybe grades i don't know gender whether they're a student or not whether they are married or not their ethnicity and the balance on the credit card so it's a very interesting data set and this is just a snippet from it but it allows credit card companies as you probably know we're not going to discuss
+Them [19:51]: whether that's moral or ethical what they do whatever certainty they provide a service
+Them [19:56]: what we want to discuss is how to make sense of such a data set in the way that they would
+Them [20:23]: really what they're really interested in is that balance who carries a lot of balance who can we profit from how do we make sure that we go after people that can pay off their balances but not immediately right so they want that sweet spot that they get you with a balance that you carry over so they want to predict the balance in this case
+Them [20:32]: but there are some qualitative predictors that are not really continuous
+Them [20:36]: and if the predictor takes only two values
+Them [20:46]: we then can create an indicator or a factor which is a dummy variable that takes two possible numerical values like female male
+Them [20:57]: we're not going to discuss are there more genders do they behave differently and so on we are simplifying here for the purposes of understanding the material
+Them [21:14]: x i here is one or zero depending if the ith person is of that gender we then use this variable as a predictor but let's see how we formulate this new now regression equation with the added
+Them [21:22]: continuous variable so what we do is we add that dummy variable to an existing model
+Them [21:27]: and here we simplify the existing model was the lower model
+Them [21:49]: just the ith person is a male and what is the intercept beta zero and then the new model if you will is adding
+Them [21:49]: part to the beta one if the ith person is a female
+Them [21:52]: so in other words
+Them [22:12]: that model beta zero plus beta one xi really breaks up into two models depending on whether the person is a female or male with a base case it has to be one of them in this case being male and we are adding the extra variable
+Them [22:15]: but look how it affects the model
+Them [22:20]: in effect what we are saying is let's model the outcome
+Pablo [22:20]: why
+Them [22:25]: such that we expect different intercept
+Them [22:29]: if a person is a female versus if it's a male
+Them [22:32]: does that make sense
+Pablo [22:36]: okay so
+Pablo [22:48]: when this is one way of treating this of course there may be multiple more variables in this but this is what it's going to boil down to if you add a dummy variable to a model
+Pablo [22:56]: basically
+Them [22:56]: you're splitting the modeling into two models
+Them [22:56]: only to those that are male the other one female
+Pablo [23:02]: the interesting thing
+Pablo [23:02]: so how do we
+Them [23:02]: interpret the results from this
+Them [23:11]: what are beta zero and beta one well it's clear what beta zero is it is the average credit card balance among males
+Them [23:16]: but what is beta one well that's not so clear
+Them [23:27]: we know what beta zero plus beta one is though and that is the average credit card balance among females so that combined intercept
+Them [23:38]: so then beta one then becomes just the difference between the female average balance and the male average balance
+Them [23:51]: okay so in other words you're asking when you look at beta one it's the answer to the question of how much higher female balances are versus male on average
+Them [24:00]: okay so in a way you're setting up a baseline and it has to be one of those genders
+Them [24:03]: okay
+Them [24:11]: whenever you introduce this dummy variables the individual coefficients are a bit different than before
+Them [24:13]: so just keep a note of that
+Them [24:15]: talking about the difference
+Them [24:18]: what if you have more than two levels
+Them [24:34]: then one popular way to do this is through one hot encoding and again you can write in chat you can ask questions if things are unfamiliar or you have some puzzle that you're puzzling through
+Pablo [24:41]: so
+Them [24:41]: the qualitative predictor takes more than two values for example in the ethnicity in this data set right
+Them [24:54]: could have asian white et cetera in this situation a single dummy variable cannot represent all possible values so instead we introduce additional dummy variables
+Pablo [24:56]: one per
+Them [24:56]: level
+Them [25:06]: one if the i th personalization is asian zero if they're not
+Them [25:09]: xi two
+Them [25:14]: if they're caucasian or not so as you can see
+Them [25:17]: you're adding a column
+Them [25:20]: and it will have one
+Them [25:40]: added column it will have one for if they're asian and zeros if they're not the second column will have the same thing for caucasians now i said you will need as many dummy variables as levels but that's not strictly true in fact it's much easier to do it
+Them [25:45]: just like in the previous case where we only added one extra variable
+Them [25:52]: right which said if it's a woman or not so likewise here we will skip one category
+Them [25:58]: and therefore all others will be judged with respect to them
+Them [26:01]: so a relative
+Pablo [26:03]: idea of how they compare
+Pablo [26:11]: let's see what that means so when we use these two extra dummy variables
+Pablo [26:17]: what they do is they break down into three separate models
+Pablo [26:30]: the baseline model will be the one we did not use a dummy variable for in this case african americans that's what the beta zero will be now if a person is caucasian
+Them [26:37]: we will have the second model if a person is asian will have the third top model
+Pablo [26:41]: okay
+Pablo [26:52]: now
+Them [26:52]: here we are assuming that a person cannot be both it's another simplification that we do but it's not necessary for the models
+Them [26:54]: any questions
+Them [27:03]: if not let me ask you a question
+Them [27:07]: what is now the interpretation of beta zero beta one and beta two
+Them [27:09]: anybody wants to take this
+Pablo [27:16]: what is the interpretation of beta zero come on the simplest one
+Them [27:27]: balance on african american credit cards
+Them [27:32]: beta one
+Them [27:32]: unclear what it is
+Them [27:47]: until we take a look at the first the top model and compare it to the third model and then we realize it is the difference between
+Pablo [27:47]: asian balances and african american balances okay
+Pablo [27:52]: likewise beta two will be caucasian and african american
+Pablo [27:56]: okay
+Pablo [28:00]: good
+Them [28:12]: beyond linearity you can have synergistic effects and just to tell you we include them as products here
+Them [28:18]: they're interesting to consider they're a bit difficult to interpret
+Them [28:22]: to interpret them you have to see what happens
+Them [28:32]: when you have such non continuous variables and you include them this is what the models will really break down to
+Them [28:36]: if you combine
+Them [28:40]: the level of income
+Them [28:57]: with one of these or both of these being of different ethnicity you'll see how things break down and each of these will lead to another
+Them [29:09]: so you can consider all of them i'm not going to go into that carefully but i'm sure you can read up on how to interpret them
+Them [29:18]: if you have doubts come to me to office hours if you're using this combinatorial models and we'll discuss it
+Them [29:28]: so we talked about having multiple predictors and that it's not always the case that more is better
+Pablo [29:36]: typically though with larger models with more observations you create better models
+Pablo [29:41]: i also
+Them [29:41]: discussed residuals and we plotted what happens to the residuals
+Them [29:45]: and what they look like what they should look like in a good model
+Them [30:14]: so what happens with residuals if we have multiple variables or a single variable is that the variables that you're including are supposed to take out any non randomness and so anything that's left is supposed to be uncorrelated with the predictor so any residual left residual is again the measured data minus predicted data the y hat
+Them [30:16]: y minus y hat
+Them [30:20]: so any non randomness that's present in there is a problem
+Them [30:28]: okay because you assume that your model takes care of all non randomness
+Them [30:36]: whenever you see things that don't look random often there because you don't have enough predictors
+Them [30:39]: often it is because you haven't corrected the variables
+Them [30:47]: having such saddles in the residuals versus the predicted
+Pablo [31:10]: it's often the case that you're not capturing some phenomenon which is a source for the variability and it's not random and so you have to go back and try to include maybe higher order terms like instead of x include x squared and see whether that improves but i think most of these issues can be solved by first normalizing all your variables
+Them [31:12]: and then modeling
+Them [31:17]: okay
+Them [31:38]: so we adjust where i wanted us to be at this point because i wanted to get to the next level introducing random effects into this and how to group things but before i do let me see if anyone has a question
+Them [31:40]: yes there is a question
+Them [31:46]: could a high residual also mean not enough data
+Them [31:53]: okay
+Them [31:59]: so i don't know what you mean by high residual
+Pablo [32:02]: so
+Them [32:02]: if your residuals vary
+Pablo [32:06]: with the predictors
+Them [32:22]: that's not good they should be independent of the predictors if you will always have the same number of residuals because it's just you're subtracting for each observed point you're subtracting it that the predictor from the observed value
+Them [32:30]: if this difference and maybe you're saying the difference why am i not getting a good fit
+Them [32:35]: whenever you have a high difference y minus y hat
+Them [32:41]: that's actually not a bad thing that usually if it's true for across the range
+Them [32:49]: then that means that you just have to bump it up you have to add a linearity so you have to add a variable
+Them [33:02]: that's what it means if that difference is large but usually it doesn't happen that way it's usually large on the positive and low on the negative side right
+Them [33:11]: so that means that there is dependence again that's nonlinear on one of the variable so try nonlinear variables to take care of this thing
+Pablo [33:29]: but again
+Pablo [33:31]: but i don't
+Them [33:31]: think it will help much
+Pablo [33:37]: now not having enough data will certainly hurt you to have a good model
+Pablo [33:49]: in general because there's just not enough variance there to model okay so maybe residuals will be random or influenced in some way but you will not know
+Pablo [33:56]: so distinguishing
+Them [33:56]: between those two cases you will need more data again
+Them [34:01]: above hundreds or so a rows
+Them [34:09]: this is not going to be an issue unless you have a lot of variables just be careful because for every new variable you add you need more data
+Them [34:24]: and so my rule of thumb is about two to four x for every variable added i need at least two times more data usually about three times to get to the same level of resolution as before
+Them [34:26]: again if you have doubts
+Pablo [34:31]: ping me
+Them [34:31]: use piazza or come to office hours we could talk more
+Pablo [34:36]: okay
+Them [34:42]: and what i want to do now though is i want to present
+Pablo [34:48]: the paper
+Pablo [34:51]: that we publish some time back
+Pablo [34:55]: five six seven years ago that
+Them [34:58]: dealt with
+Them [35:01]: yeah i probably answered too much right
+Them [35:07]: that dealt with gender and tenure diversity on github teams
+Them [35:12]: i like this paper for several reasons not just that it's mine it's good work
+Them [35:26]: but also it's non trivial in that it was really it really took some statistics and proper modeling to understand the actual effects so let me i'm sharing this presentation
+Them [35:30]: oh if it's going to let me
+Them [35:36]: single page okay
+Them [35:38]: here we go shear
+Them [35:41]: that
+Them [35:43]: okay so
+Them [35:55]: wonderful paper it was a collaboration between multiple universities and multiple people and we were all into the octocats at that point i don't know if you've seen them
+Pablo [35:57]: that they're pretty cute
+Them [36:03]: mascot i have many different one
+Them [36:06]: oh okay so it was ten years ago boy time flies
+Them [36:08]: good
+Them [36:18]: so we sort out to study whether age and gender differences on teams make any difference back then
+Them [36:32]: multiple studies found that in organizations even though there's a steep obstacle you have to overcome heterogeneous versus homogeneous
+Pablo [36:33]: genes
+Them [36:37]: gender and seniority seem to work better seem to be more productive
+Them [36:51]: seem to be more innovative there were multiple studies that came out a couple of years prior talking about organizational structure et cetera and indicated how this social components and ethnicities and so on may matter
+Pablo [37:04]: so we wanted to figure
+Them [37:04]: out if that matters for programming teams especially in open source where they're distributed and really often don't even know each other's genders or abilities
+Them [37:13]: we thought maybe because they don't see each other we can really just examine how well people code and what productivity means
+Them [37:17]: and then assert whether gender and age have an influence
+Pablo [37:17]: on
+Them [37:34]: up with theories that go both ways
+Them [37:44]: here's the similarity attraction theory that says here's why people prefer working with others similar to them in values because it involves lower cognitive load to understand them
+Them [37:45]: in many ways
+Them [37:53]: and then you create a tribal structure and then you defend it so people have well understood the similarity attraction
+Pablo [38:23]: but then there is another
+Them [38:23]: theory that also goes towards the same place
+Them [38:23]: group are treated better than outsiders like the hogwarts et cetera
+Them [38:28]: diversity can lead to confusion overall stress and conflict and so on
+Pablo [38:32]: now there's
+Them [38:32]: also theories on the other side
+Them [38:34]: and perhaps there's more theories on the other side
+Them [38:45]: diversity has been found to be a driver of internal innovation companies with executive boards all these were empirical findings
+Them [38:52]: and diversity in general the theory that helps understand diversity is that people come with different backgrounds
+Them [38:54]: capabilities
+Them [38:55]: and ways to think
+Them [39:13]: and when those ways to think clash if enough time is spent to try to resolve them a convergence can be achieved that's beyond the individual opinions and that the convergence theory but diversity has been found to be actually very positive
+Them [39:16]: in multiple settings
+Them [39:21]: any questions about the theory and the findings from before
+Them [39:26]: any thoughts on how diversity affects teams
+Them [40:07]: yeah okay by the way we're in a safe academic environment we are talking about theories that arise out of empirical findings and guide empirical studies so it's fine to state personal opinions so long as they're supported by some research and facts likewise in your papers there's no reason to shy away from subjects that may be political so long as they're on topic for your project and are supported
+Pablo [40:10]: by
+Them [40:10]: previous work
+Pablo [40:12]: now
+Them [40:26]: we had a beautiful setting therefore we had a setting where we don't know what's right their theories across the board okay so what holds
+Them [40:31]: specifically empirically for software engineering and development in open source
+Them [40:33]: and what doesn't so let's test it out
+Them [40:41]: anyways we talked about this information processing theory it was called
+Them [40:44]: convergent stuff i mentioned
+Pablo [41:00]: so what
+Them [41:00]: we decided to do is let's see how if we take geographically dispersed teams these online communities that have been given this wonderful github way of contributing with each other and various other online tools
+Them [41:03]: can we investigate this
+Them [41:24]: now this also kind of piles up on the existing context which is that there's very few women in principle in open source so we have to be careful due to unbalanced data and there is a lot of simplifying assumptions like men women simplification
+Pablo [41:28]: but also
+Them [41:47]: there's this hacker culture which it's kind of unpleasant for a lot of people but especially for women and they stay away there's also active ongoing sexism in these things all the things are changing since
+Them [41:55]: and this is actually reflected in the way ai coding happens but anyways i diverge here
+Them [42:03]: so we are familiar with all these things and we were prepared for things to come out in a way that wasn't politically correct and so on
+Them [42:04]: for various reasons
+Them [42:12]: we also understood open source we had some great practitioners of open source on the team we also had women on the team
+Them [42:19]: so we said let's study diversity from the perspective of
+Them [42:20]: women men
+Them [42:27]: and diversity from the perspective of junior senior so let's not count women let's not count men
+Them [42:31]: i mean yeah we're counting but the metric we were going to use
+Them [42:35]: is what is the amount of diversity in a team
+Them [42:49]: rather than how many women how many women i mean that's a number you don't know how to normalize et cetera but diversity is a normalized number you can say sixty percent women but actually they're better metrics
+Them [42:55]: and we'll see what we used eventually similarly for ten year diversity or seniority
+Them [43:04]: just a spoiler alert so that you don't wander because i'm more interested in presenting the methods here
+Them [43:10]: gender diversity positively affects productivity does not influence turnover
+Them [43:31]: meaning higher gender diversity does not mean there will be less turnover which is an interesting finding in itself but gender diversity higher the more productive the team ten year diversity positively affects both productivity and turnover meaning if there is a higher diversity in the team the turnover will also be higher
+Them [43:39]: okay we got data from i'm going to skip all this
+Them [43:41]: we did two things
+Them [43:47]: we went through github and scraped millions of projects but we also did a diversity survey
+Them [43:57]: to understand what people think and feel about this subject and gain some baseline questions
+Them [44:02]: we surveyed about two thousand different developers
+Them [44:11]: the survey actually addressed many things and we'll talk about the survey when we get to surveys in a few classes but in a few lessons
+Them [44:42]: the mining approach we mined two point six million projects we took the whole github torrent dump of github from twenty fourteen and then we filtered them to get active project so more than one hundred commits now look these numbers these filters are specific to the number of projects we had had we had maybe only two hundred thousand some of these filters would have been adjusted
+Them [44:44]: but for our purposes
+Them [44:50]: active meant active over six years with more than one hundred commits
+Them [44:54]: longer than ninety day activity more than four contributors
+Them [44:55]: okay
+Them [45:03]: and please put in questions if you have any as we are going through this
+Them [45:10]: we also had to identify gender we had to write a separate paper and use that gender calculator
+Them [45:23]: where we put in geography and first name to identify the gender we got to ninety three percent precision nowadays they're calculators for gender that are doing better than that
+Them [45:30]: these are some of the interesting things if it's andrea in milan versus columbus
+Them [45:41]: we have to be careful about those also we did some alias merging because people of course they don't care how they're logged in they like to contribute
+Them [45:52]: so people can have multiple aliases throughout so when we are matching people to their contributions you have to merge some nodes
+Them [46:06]: here is the independent variables that we considered and the responses so the responses were productivity in terms of condits per quarter how many commits not lines of code that commits
+Them [46:11]: they are correlated but not super correlated
+Them [46:13]: and then turnover
+Pablo [46:17]: what
+Them [46:17]: fraction of the team is new this quarter versus previous quarter
+Them [46:22]: so there's always this turnover i said
+Them [46:31]: those two were the responses how productive is a team what turnover do we see the independent variables of interest for us
+Them [46:38]: were gender diversity to the blau index
+Them [46:43]: the blau index is
+Pablo [46:43]: just what
+Them [46:43]: you would expect but normalized
+Them [46:56]: so the proportion of men over all or the proportion of women overall combined in a symmetric way to say how diverse
+Them [47:04]: for the ten year diversity because that's a non binary thing it's a continuous variable we use the coefficient of variation
+Them [47:11]: so those are the two things so the question is is
+Pablo [47:11]: the response
+Pablo [47:15]: when modeled in terms of gender and tenure diversity
+Pablo [47:17]: anyhow affected by those two
+Them [47:21]: and we also
+Pablo [47:23]: okay
+Them [47:26]: used controls
+Them [47:35]: because the time matters project age matters project activity and team size so we put all of these in one nice box
+Them [47:47]: the ultimate after filtering we got very few twenty three thousand projects eleven million commits at seven hundred thousand developers
+Them [47:55]: but this is what i want to talk about for the next couple of minutes we realize that in our multivariate regression
+Them [48:17]: if we just add all these things together we are not
+Pablo [48:17]: taking into account the fact that a lot of the data comes from the same project from different quarters so we need somehow to organize projects organize this data per project and not per line of code
+Pablo [48:20]: so we added to our regression
+Pablo [48:22]: a random factor
+Pablo [48:24]: and that is time
+Pablo [48:32]: so for all projects for all data of the same project they will have the same slope
+Pablo [48:47]: if you will that's what this does and these are called mixed effect models and you will need to use the linear mixed effect lme in r and we'll do that early next class
+Pablo [48:49]: after the quiz
+Pablo [48:53]: in addition we realize that
+Pablo [49:11]: we have to organize things by the quarter because the quarter in which we collect the data is the same for all projects so when we say all quarters should have the same slope and all projects should have the same slope we are kind of making groups of analysis
+Pablo [49:13]: that are deeper
+Pablo [49:24]: and we are connecting them to each other because the quarter in which things were collected this is absolute time right so what happened in may two thousand three
+Pablo [49:26]: okay
+Pablo [49:39]: so we also condition things and you can do this when we talk next time i'll explain what it means you can condition on team size in a project
+Pablo [49:47]: with different sizes can behave differently even in a group of the same size projects
+Pablo [49:56]: so we'll talk about that more so once you put all these things together and you can put all these together because we had hundreds of thousands of projects right
+Pablo [50:10]: that's when you get these results remember our simple analysis on wednesday took us from oh yeah women are important for productivity two no women are not important for productivity
+Pablo [50:17]: to finally if the team is more diverse that's important for productivity
+Pablo [50:46]: and we also gain some other understanding about productivity from this but the important thing is that in these regressions we have terms here that are called fixed effects and terms that are called random effect the fixed effects are the regular variables that we use and then random effects are those that get affected kind of in aggregate for a group of
+Pablo [50:47]: projects
+Them [50:50]: and for a group of measurements
+Them [50:51]: sorry
+Them [51:00]: so this of course needs more study more understanding and i'll talk a little bit more about it after the quiz on wednesday
+Them [51:02]: but for now
+Them [51:10]: there is a mixed model on the web page that a tutorial on mixed modeling if you want to check it out
+Them [51:13]: it will explain specifically when we use
+Them [51:14]: blood
+Them [51:15]: and
+Them [51:17]: it can help you if you're in this situation
+Them [51:18]: that you're building
+Them [51:19]: a better model
+Them [51:22]: okay so i will stop there
+Pablo [51:27]: and i'll take any questions if you have any else
+Pablo [51:28]: stick around for a few minutes
+Pablo [51:29]: if you don't have any questions
+Pablo [51:30]: feel free to go

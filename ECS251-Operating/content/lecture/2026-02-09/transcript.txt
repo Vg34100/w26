@@ -1,0 +1,952 @@
+Pablo [0:19]: are often called japan words like the malaysian they have many times
+Pablo [0:52]: are can be compact representation for the rdl data is because the size of the nr weight are usually much smaller than raw volume so we can just store the nr weight to represent large scale data so that's why it can compress the data
+Pablo [0:56]: usually how large
+Pablo [1:02]: save the train model how much space typically
+Pablo [1:16]: so sometimes we can compress the volume into one percent ten percent or even one percent of the original so the size
+Pablo [1:22]: proportional to the tangwa proportional to the volume data or regional value
+Pablo [1:38]: yeah so for example if we have one g by data we can use less than one hundred megabytes is stored data or even ten megabyte depends on what kind of neural network
+Pablo [1:42]: and how large is the neural network
+Pablo [2:00]: let me go to the second advantage so one of the advantage to use the inr is support random access to continuous values at arbitrary positions
+Pablo [2:09]: so this let us without relying on the brief based interpolation
+Pablo [2:30]: and this is very useful in the volume rendering because in the volume rendering we might need to sample the scatter values within the volume and if we use the inr we can just give a coordinate and
+Pablo [2:34]: then give the scalar value on that position
+Pablo [2:37]: so we can get the sample values
+Pablo [2:49]: but in a traditional setting if we have to interpolate some of the values it's the given position is not exactly on the bridge
+Pablo [3:00]: point so this is another advantage so i like to know how long it will take to train
+Pablo [3:04]: the model in code
+Pablo [3:05]: one volume right
+Pablo [3:16]: which is like about one k by one k by one k like usually on our server take how long
+Pablo [3:32]: if we optimize the training with put down do whatever now we can down in several
+Pablo [3:36]: second yeah for one k cube yeah
+Pablo [3:44]: pretty fast but i'm not sure they know how this training works
+Pablo [3:47]: because really you start with
+Pablo [3:58]: a god in this i also want to make sure i never really programmed this but you start with noise volume
+Pablo [3:59]: right
+Pablo [4:06]: volume is rendered what i'm saying is you start to
+Pablo [4:21]: okay so you start with the data you have the data is going through and then you will query the model for
+Pablo [4:22]: whatever it does
+Pablo [4:26]: the sample right sample location
+Pablo [4:28]: query
+Pablo [4:29]: the battery body
+Pablo [4:34]: and then compare the loss between our predicted values and
+Pablo [4:46]: at the beginning the mr will give not the model will return
+Pablo [4:56]: the learning initially because the weight basically initialize weight random
+Pablo [4:59]: it's a learning process
+Pablo [5:16]: your screen is still active yeah you see also
+Pablo [5:20]: wait let's
+Pablo [5:21]: see
+Pablo [5:21]: on the back
+Pablo [5:27]: see if this
+Pablo [5:41]: let me continue
+Pablo [5:41]: next
+Pablo [5:48]: so
+Pablo [5:52]: next i'm going to introduce another
+Pablo [5:59]: background related to my work so here i'm going to introduce the
+Pablo [6:07]: advanced elimination effect where direct column rendering so in my project i specifically focus on
+Pablo [6:08]: the channel
+Pablo [6:10]: render
+Pablo [6:15]: so shadow effect can involve in rendering
+Pablo [6:17]: and real data
+Pablo [6:25]: cues to help user better receive spatial relationship
+Pablo [6:28]: so let me use the example
+Pablo [6:37]: to introduce the shadow effect so the left picture is the volume rendering
+Pablo [6:39]: with gradient based shading
+Pablo [6:58]: and right three is the volume rendering with shadow effect so by comparing the convenient data set we can see with the shadow that the more realistic so this is how shadow can intens
+Pablo [7:00]: ify
+Pablo [7:08]: and also we can look at the spider data set at very right
+Pablo [7:09]: figure
+Pablo [7:18]: we can also distinguish the nail from its main body with the shadow as we can see
+Pablo [7:22]: there is a shadow cast on its memory
+Pablo [7:29]: this help us distinguish the surface between this two part of its body
+Pablo [7:58]: but here i'm going to introduce some of the challenges to add the shadow effect real time in the volume rendering so real time evaluating the shadow effect would introduce additional computational cost because at each sample point we have to cast a secondary ray back to a light source
+Pablo [8:09]: to calculate the light attenuation at last position to add the shadow effect to the render
+Pablo [8:14]: so let's introduce
+Pablo [8:22]: additional computational cost and that can degrade the user experience in interact with body rendering
+Pablo [8:45]: so one solution to this real time cost is we can pre compute a shadow effect before the render and save them as an additional volume and then later in the rendering we can use this pre compute shadow to assist our rendering to add the shadow effect
+Pablo [9:09]: but this would also introduce another problem that with this approach we have to use extra runtime memory during the rendering because the setup coefficient volume is as big as the original volume so that means here is rendering we have to double the memory
+Pablo [9:14]: and this is really invisible if the volume is already large
+Pablo [9:26]: this slide i summarize two of the challenge for the shadow calculation
+Pablo [9:33]: we don't use inr
+Pablo [9:38]: next slide i am going to introduce
+Pablo [9:55]: so inspired by the potential of the inr we would like to leverage its representation power to catch the pre computed shadow coefficient volume
+Pablo [10:05]: where this shadow inrs can be inferenced real time during the interactive volume render so the concept is like this
+Pablo [10:33]: so each of the shadow effect under a specific condition would correspond to specific shadow coefficient volume and each of the shadow coefficient volume can be represented by the inr let me use this figure to illustrate idea so here i have three d shadow effects
+Pablo [11:06]: this shadow effect is the chameleon under say lighting the first light interaction and it has shadow coefficient volume along with it and i will use inr to cache the first shadow effect and the second one i do the same thing so here's the second iron or shadow effect and so on for the rest of the samples
+Pablo [11:23]: using irr to catch the shadow coefficient volume is more memory efficient because tylenol is compact and each of the shadow volume
+Pablo [11:33]: but there's also another challenge by using this method
+Pablo [11:43]: because the shadow effect are dependent on the light so that means whenever the light is changing
+Pablo [11:50]: the shadow abandon to recompute it and as we all know that lighting direction can be
+Pablo [11:56]: implemented so there's impinite number of lightning directions
+Pablo [12:05]: it's impossible to pre compute it and store all the shadow volumes from all lightning directions
+Pablo [12:22]: so this comes to our problem statement so how can we design a solution that has strong generalizability to parameterize the shadow islanders across diverse conditions
+Pablo [12:27]: specifically in the previous example is bi directions
+Pablo [12:38]: and we would like this approach to help us further offer the advanced illumination effect in interactive volume visualization
+Pablo [12:51]: so beside the light direction there are so many light direction the shadow effect can also depend on the transfer function or like different volume
+Pablo [13:00]: so we also want our approach that can also configure this kind of condition that can generalize over here
+Pablo [13:06]: any question
+Pablo [13:07]: s so far
+Pablo [13:14]: there's a
+Pablo [13:15]: number
+Pablo [13:34]: same as beside lighting direction
+Pablo [13:36]: what's your question
+Pablo [13:44]: same as direction the y also consider lighting int
+Pablo [13:46]: ensity or color
+Pablo [13:50]: so that's a good idea
+Pablo [13:52]: consider this before
+Pablo [13:54]: i can think into it
+Pablo [14:20]: in
+Pablo [14:20]: this slide
+Pablo [14:23]: i'm going
+Pablo [14:28]: to state the main contribution of my paper
+Pablo [14:46]: so inspired by the recent event in computer vision domain we use the diffusion model to generate and synthesize high quality images or three d content i would like to leverage also try to leverage the diffusion model
+Pablo [14:52]: to parameterize the shadow inrs under various input conditions
+Pablo [14:55]: so the first
+Pablo [14:57]: contribution
+Pablo [15:10]: we expect to add is employee novel diffusion framework that learns to synthesize the shadow and norms under varying lighting directions
+Pablo [15:17]: and we expect the diffusion model can effectively capture distribution
+Pablo [15:19]: of the shadow coefficient volume
+Pablo [15:22]: across diverse conditions
+Pablo [16:08]: and the second contribution we want to make is we would like to create also create a real time volume plagiarization system that can directly implement and use the generated shadow generated by the diffusion model and we can directly add a shadow effect into the interactive value rendering system so this can allow real time visualization of the volume data with realistic shadow effect and especially under the arbitrary conditions like many various light direction or something like that
+Pablo [16:13]: and without costing computation
+Pablo [16:26]: that means after the diffusion model is pre trained we would just have a pre trained diffusion model and can generate shadow nr under
+Pablo [16:27]: ground
+Pablo [16:34]: so i would like to
+Pablo [16:37]: here's a question
+Pablo [17:00]: here's the question from i think i can answer
+Pablo [17:20]: so before going to look methodology i would like to introduce an earlier work called the volumetric ambient occlusion which is from tvcp twenty twenty one
+Pablo [17:24]: it's five years ago
+Pablo [17:28]: but it's really closely related to my work
+Pablo [17:29]: so i would
+Pablo [17:30]: like to
+Pablo [17:31]: share this work
+Pablo [17:48]: so they also use deep learning based method to predict the pre computed illumination volume like the shadow power like working on the mbn occlusion volume which is another reminder
+Pablo [17:51]: recombuted volume that can
+Pablo [17:52]: add
+Pablo [17:53]: illumination
+Pablo [18:01]: the main contribution of
+Pablo [18:03]: their f paper is
+Pablo [18:05]: to predict the area of closure
+Pablo [18:16]: with deep learning based technique and there's specifically use three d unit which is three dc based network
+Pablo [18:18]: and the model
+Pablo [18:22]: is just like the bigger show
+Pablo [18:29]: so the input would be the row volume and output would be predicted
+Pablo [18:30]: at the end of
+Pablo [18:31]: the
+Pablo [19:02]: second contribution to this paper is they also investigate different transfer function information injection strategies that they can condition the generation process of the ambient occlusion because on the ambient occlusion model is also depends on the depending on the transfer function that means when transfer function is changed
+Pablo [19:25]: the ambient occlusion volume need to also be recomputed so with the additional transfer function information within the network we can control the generation of the nvm approved and volume corresponding to that transfer function
+Pablo [19:39]: so the mainly layer contribution managed investor day like different transfer function injection technique like different conditioning of the model of the generation
+Pablo [19:48]: so many represent the transfer function information
+Pablo [19:53]: the first one is related representation
+Pablo [20:08]: which lay well encoder transfer function information at the bottom and this volume just in this chart they can together with the row volume to fit into the model
+Pablo [20:26]: and another type of representation explicit representation so they can encode a transfer function as a feature vector and then pit this picture vector into the unit
+Pablo [20:31]: conditional generation process
+Pablo [20:39]: so this chart i only show the replacement representation injection strategies
+Pablo [20:45]: to give a brief idea how they condition the generation process
+Pablo [20:56]: let me move
+Pablo [20:56]: on to
+Pablo [20:58]: the
+Pablo [20:59]: limitation of
+Pablo [21:00]: this
+Pablo [21:01]: so
+Pablo [21:02]: the person
+Pablo [21:04]: mentioned
+Pablo [21:05]: is
+Pablo [21:06]: directly
+Pablo [21:07]: operate on the
+Pablo [21:08]: volume data
+Pablo [21:10]: so
+Pablo [21:11]: the employee
+Pablo [21:14]: mod
+Pablo [21:15]: el as
+Pablo [21:16]: the model architect
+Pablo [21:16]: ure
+Pablo [21:17]: and three d
+Pablo [21:18]: nas
+Pablo [21:20]: every
+Pablo [21:20]: body knows
+Pablo [21:21]: it's very expensive
+Pablo [21:22]: to
+Pablo [21:22]: train
+Pablo [21:23]: especially
+Pablo [21:24]: on
+Pablo [21:25]: the key
+Pablo [21:26]: word probably
+Pablo [21:27]: because
+Pablo [21:37]: very
+Pablo [21:38]: large amount
+Pablo [21:39]: of mem
+Pablo [21:40]: ories
+Pablo [21:44]: so they also
+Pablo [21:45]: downtown
+Pablo [21:51]: because
+Pablo [21:52]: they are
+Pablo [21:53]: limited by the
+Pablo [21:54]: average
+Pablo [21:58]: dump
+Pablo [21:59]: ling
+Pablo [22:01]: s
+Pablo [22:03]: ind
+Pablo [22:04]: ex was
+Pablo [22:05]: provided by some of
+Pablo [22:06]: the quality
+Pablo [22:09]: generation
+Pablo [22:18]: they are not yet
+Pablo [22:22]: comp
+Pablo [22:22]: ared
+Pablo [22:25]: to
+Pablo [22:27]: math
+Pablo [22:28]: ematics
+Pablo [22:29]: specific
+Pablo [22:30]: ways
+Pablo [22:31]: local
+Pablo [22:32]: opinion of
+Pablo [22:33]: the
+Pablo [22:36]: thousand and
+Pablo [22:37]: nine
+Pablo [22:38]: and this is
+Pablo [22:39]: more addition
+Pablo [22:40]: al
+Pablo [22:41]: and they
+Pablo [22:42]: compare with
+Pablo [22:50]: that
+Pablo [22:51]: image
+Pablo [23:09]: and there is
+Pablo [23:10]: writer
+Pablo [23:10]: and
+Pablo [23:12]: the
+Pablo [23:15]: branches
+Pablo [23:32]: and
+Pablo [23:33]: other
+Pablo [23:39]: gener
+Pablo [23:40]: ic emails
+Pablo [24:24]: history
+Pablo [24:25]: where
+Pablo [24:27]: they
+Pablo [24:28]: get to
+Pablo [24:40]: this
+Pablo [24:40]: digital word
+Pablo [24:52]: the
+Pablo [24:53]: approach to
+Pablo [24:54]: human stud
+Pablo [24:56]: ies
+Pablo [25:14]: the
+Pablo [25:15]: first one
+Pablo [25:23]: is
+Pablo [25:25]: not
+Pablo [25:26]: fair enough
+Pablo [25:52]: and
+Pablo [25:53]: it's probably
+Pablo [25:55]: another
+Pablo [25:56]: fact
+Pablo [25:57]: ory
+Pablo [25:59]: action
+Pablo [26:21]: problem
+Pablo [26:22]: is
+Pablo [26:24]: the moment
+Pablo [26:27]: um
+Pablo [26:32]: that
+Pablo [26:33]: generates
+Pablo [26:39]: the
+Pablo [26:40]: share
+Pablo [26:41]: problem
+Pablo [26:43]: and
+Pablo [26:45]: realize there will be a lot
+Pablo [26:45]: of mental attorney
+Pablo [26:49]: s
+Pablo [26:57]: i
+Pablo [26:58]: would like to use
+Pablo [27:04]: the
+Pablo [27:05]: shadow
+Pablo [27:06]: that
+Pablo [27:07]: can be
+Pablo [27:08]: shadow
+Pablo [27:10]: ed various
+Pablo [27:10]: compositions
+Pablo [27:11]: such as
+Pablo [27:12]: light direction
+Pablo [27:13]: or policy
+Pablo [27:15]: so
+Pablo [27:16]: in other words
+Pablo [27:17]: we would like to
+Pablo [27:18]: read
+Pablo [27:19]: this approach to
+Pablo [27:20]: parents of the
+Pablo [27:21]: choice
+Pablo [27:22]: this most
+Pablo [27:23]: jetta wide numbers
+Pablo [27:24]: across those
+Pablo [27:24]: conditions
+Pablo [27:39]: archive line also
+Pablo [27:40]: follows
+Pablo [27:41]: two stage training
+Pablo [27:42]: so the
+Pablo [27:43]: first stage training
+Pablo [27:44]: is
+Pablo [27:47]: overfitt
+Pablo [27:48]: ed
+Pablo [27:49]: by
+Pablo [27:52]: the
+Pablo [27:52]: shadow of
+Pablo [27:56]: so after
+Pablo [27:57]: over eighty
+Pablo [28:00]: to
+Pablo [28:01]: represent the
+Pablo [28:02]: prime shell of
+Pablo [28:05]: each shallow vol
+Pablo [28:05]: ume
+Pablo [28:08]: be
+Pablo [28:08]: honored
+Pablo [28:11]: foundation
+Pablo [28:12]: or
+Pablo [28:14]: community
+Pablo [28:14]: update
+Pablo [28:16]: or it's a craf
+Pablo [28:16]: t initiated
+Pablo [28:25]: more
+Pablo [28:26]: than any
+Pablo [28:29]: so after
+Pablo [28:32]: stage
+Pablo [28:32]: training
+Pablo [28:33]: who are going
+Pablo [28:34]: to
+Pablo [28:37]: train
+Pablo [28:58]: other
+Pablo [28:58]: things
+Pablo [29:11]: on the seven
+Pablo [29:11]: stage training
+Pablo [29:14]: using
+Pablo [29:15]: that mod
+Pablo [29:16]: el to train
+Pablo [29:16]: pocket
+Pablo [29:19]: and
+Pablo [29:20]: then we also have
+Pablo [29:21]: some
+Pablo [29:28]: condition
+Pablo [29:29]: ing
+Pablo [29:30]: control
+Pablo [29:31]: ler generation
+Pablo [29:32]: of the mod
+Pablo [29:33]: el
+Pablo [29:44]: so this is
+Pablo [29:44]: the overview of
+Pablo [29:45]: our
+Pablo [29:54]: so
+Pablo [29:55]: i'll just
+Pablo [29:57]: quickly show her some of
+Pablo [29:58]: the
+Pablo [29:59]: valuation
+Pablo [30:04]: so i will mainly quantitative evaluation
+Pablo [30:11]: in terms of the image quality like compared image with the generated shadow
+Pablo [30:20]: and the ground should some of the standard metrics like dslr or perceptional bones
+Pablo [30:29]: compare that image call this and also giving some of the detail of the format like measuring the training time and
+Pablo [30:40]: memory memory consumption of pipeline and the last thing i will evaluate run that performance
+Pablo [30:47]: like the render performance for the runtime memory usage when rendering with
+Pablo [30:54]: data we can use
+Pablo [31:01]: for the qualitative evaluation
+Pablo [31:13]: i will present render image with generated shadow effect against the ground truth image to visually expand the
+Pablo [31:14]: quality
+Pablo [31:24]: and also i will add a bit wavelength to compare with method so the baseline i will use
+Pablo [31:28]: volumetric npm equivalent
+Pablo [31:30]: like i mentioned previous
+Pablo [31:31]: ly
+Pablo [31:34]: the
+Pablo [31:42]: revised layer code and apply on our data set to create a result
+Pablo [31:50]: i have some of the result i have
+Pablo [31:55]: shown some of
+Pablo [31:59]: the diffusion generated result
+Pablo [32:00]: on the top row
+Pablo [32:03]: and other
+Pablo [32:11]: so i think the diffuser model can capture the overall structure of the shadow
+Pablo [32:14]: but some of the data set
+Pablo [32:16]: will still have
+Pablo [32:20]: parent argument like the mechanical
+Pablo [32:32]: so comparing this
+Pablo [32:35]: volumetric ambient occlusion
+Pablo [32:38]: occlusion
+Pablo [32:41]: that will handle direction
+Pablo [32:51]: you want to render life chat how is that the same thing
+Pablo [33:00]: i will use their code but revised it to this part
+Pablo [33:12]: so i will use that architecture yeah architecture not using their data set do you think you three dcn and predict
+Pablo [33:21]: my shadow your shadow i see okay just using their architecture
+Pablo [33:32]: okay and rendering you would use this volume as opposed to your diffusion reduced inr
+Pablo [33:33]: yeah i would
+Pablo [33:34]: compare it
+Pablo [33:37]: i have two questions
+Pablo [33:43]: mem
+Pablo [33:44]: orials
+Pablo [33:45]: so look at
+Pablo [33:49]: how the gpu is affected as well as the
+Pablo [33:55]: type of gpus from my understanding on a different gpus can perform different ways such as the ones we have in the lab
+Pablo [33:57]: yeah
+Pablo [34:03]: i think in the paper i have a section specified what kind of
+Pablo [34:07]: gpu and the number of the gpu i will use
+Pablo [34:26]: i'm questioned about the ground through so how is something considered a ground truth if it's a synthetic if it's like a three d model what would be considered three d data
+Pablo [34:29]: something like diffusion gener
+Pablo [34:29]: ator
+Pablo [34:35]: so is your question on that brown truth come from
+Pablo [34:41]: yeah yeah i'm trying to understand the concept of grout
+Pablo [34:42]: in this case
+Pablo [34:48]: yeah so the ground truth
+Pablo [34:53]: like i say
+Pablo [34:54]: like i mentioned
+Pablo [34:58]: in the very at the very beginning of the slide
+Pablo [35:06]: i create a branch to render the shadow real time when i do the render
+Pablo [35:14]: there's a basic algorithm to calculate the shadow can i use that to create the render
+Pablo [35:21]: so the rendering is the purpose
+Pablo [35:23]: always
+Pablo [35:27]: the ground
+Pablo [35:32]: that you see
+Pablo [35:36]: it's just an image
+Pablo [35:41]: it's render this render image but it's also from
+Pablo [35:46]: not created
+Pablo [35:51]: like standalone yeah i just want to get a sense of what output
+Pablo [35:53]: image based off
+Pablo [35:56]: what you're
+Pablo [35:57]: working
+Pablo [36:04]: yeah i think my work is directly operating on three d
+Pablo [36:04]: domain
+Pablo [36:07]: i just use the power editor
+Pablo [36:09]: to visualize
+Pablo [36:10]: image
+Pablo [36:14]: that actually explains
+Pablo [36:18]: the question more that's what i wanted to
+Pablo [36:18]: thank you
+Pablo [36:23]: to
+Pablo [36:24]: my
+Pablo [36:26]: thank you
+Pablo [36:35]: maybe as much as you can answer
+Pablo [36:42]: thank you
+Pablo [38:48]: online today
+Pablo [38:51]: we will prevent our project
+Pablo [38:55]: ion system
+Pablo [39:01]: which combines knowledge graph and then in the context of the client
+Pablo [39:15]: so as demonstration the system that combines eleven and large
+Pablo [39:24]: and this is an increasingly used to support information
+Pablo [39:31]: but the problem of this system as the ai over reliances
+Pablo [39:33]: accepting incorrect
+Pablo [39:34]: recommendation
+Pablo [39:41]: so this happens when ai response comes or ai
+Pablo [39:47]: explanations appear transact but it close misleading for the users
+Pablo [39:54]: so we need to develop better verification support system
+Pablo [39:58]: to mitigate ovarian
+Pablo [40:07]: there is some definition around ai over reliances but we define here as users accept
+Pablo [40:10]: ing the ink rip ai responses
+Pablo [40:17]: so the same price google create reliance on ai happens by user
+Pablo [40:18]: access correct and
+Pablo [40:19]: healthcare
+Pablo [40:27]: city
+Pablo [40:28]: or dominating
+Pablo [40:29]: any subway
+Pablo [40:34]: based
+Pablo [40:35]: individual
+Pablo [40:36]: differences
+Pablo [40:37]: codes dev
+Pablo [40:38]: ices
+Pablo [40:39]: such as automation
+Pablo [40:40]: biases
+Pablo [40:42]: so
+Pablo [40:44]: automation biases
+Pablo [40:44]: is
+Pablo [40:45]: the opportunity
+Pablo [40:46]: to believe the respons
+Pablo [40:47]: es from all
+Pablo [40:50]: iance
+Pablo [40:51]: skills
+Pablo [40:52]: when
+Pablo [40:55]: expect
+Pablo [40:56]: ation
+Pablo [40:59]: means
+Pablo [41:00]: the first leg
+Pablo [41:01]: ulation
+Pablo [41:08]: and
+Pablo [41:09]: also
+Pablo [41:10]: over as you
+Pablo [41:11]: may think explanat
+Pablo [41:12]: ions
+Pablo [41:14]: by
+Pablo [41:15]: ai
+Pablo [41:18]: nation
+Pablo [41:19]: songs
+Pablo [41:20]: or indeed help
+Pablo [41:21]: people
+Pablo [41:22]: have been
+Pablo [41:23]: grieved and
+Pablo [41:25]: these fda
+Pablo [41:30]: human ai team for performance
+Pablo [41:32]: s because people
+Pablo [41:33]: doesn't know how much
+Pablo [41:35]: it affects to
+Pablo [41:36]: their decision
+Pablo [41:39]: which
+Pablo [41:44]: will echoes incorrect ai otherwise
+Pablo [41:49]: and to mitigate there's some approach was explored
+Pablo [42:04]: in the area of explainable ai showing explanation or answer mean to tim t of ai model in the numerical number as a common way
+Pablo [42:10]: experient
+Pablo [42:11]: ial over
+Pablo [42:12]: accuracy
+Pablo [42:14]: work
+Pablo [42:15]: that was all
+Pablo [42:28]: based
+Pablo [42:29]: on
+Pablo [42:30]: the
+Pablo [42:34]: decision
+Pablo [42:36]: tried to
+Pablo [42:37]: tell us
+Pablo [42:43]: especially
+Pablo [42:50]: use
+Pablo [42:51]: rs create
+Pablo [42:52]: the whole notes
+Pablo [42:59]: the waiting time or one more extra step
+Pablo [43:04]: it gives users cognitive tools to
+Pablo [43:10]: think about their expectation and our judgment on ai explanat
+Pablo [43:10]: ion
+Pablo [43:17]: this cognitive force in function works to reduce ai over reliances
+Pablo [43:25]: well the bottom and the ai ovarian
+Pablo [43:44]: and in the context of knowledge graph another m so the large graph itself already works for creating large scale data set as it can
+Pablo [43:49]: explicitly shows this structure
+Pablo [43:53]: but for especially for non expert users
+Pablo [44:15]: it's difficult to make a clearly explore this selection or intel out knowledge graph often so researchers recently tried to combine with another so that the users can include locked with the natural language
+Pablo [44:20]: limitation have
+Pablo [44:47]: this approach same as the last lady it shows the slope your biggest rocks here so user tend to be the transparency as like a skill ai over resiliency for non expert knowledge block users
+Pablo [44:51]: they can just focus on ai chatbot
+Pablo [44:57]: or ai summary so they actually don't explore the knowledge itself
+Pablo [45:04]: so we still need to give a better modification support
+Pablo [45:19]: so to summarize on one hand ai over reliance community folding options could work but it still cost becomes emergent and it turns user experience
+Pablo [45:29]: and combining with monogam good work but it still calls the ai over reliasis so we try to
+Pablo [45:38]: in our work we try to ask two questions so first question is what does the user need for the birth certification
+Pablo [45:55]: so we steal a lot of undermining how user act during verify the ai output so we try to first null explore the understanding of user verification behavior
+Pablo [46:02]: and based on the insight we try to develop a better system for the verification
+Pablo [46:13]: and try to answer we substitution one by and study
+Pablo [46:19]: and based on the part of study inside we try to data log
+Pablo [46:22]: evaluate it
+Pablo [46:38]: visualization
+Pablo [46:46]: so i'll explain it in a bit but the pilot study includes like a baseline interface which is based on the literature we just reviewed
+Pablo [46:52]: we see some sort of visual id yeah there is very basic visualization as tables
+Pablo [46:58]: but the actual visualization work that we would like say graph diagrams and stuff
+Pablo [46:59]: that's the stuff we're going to have
+Pablo [47:01]: to compare with
+Pablo [47:03]: before and after
+Pablo [47:04]: those visualizations
+Pablo [47:18]: so the purpose of the bible study is to observe
+Pablo [47:19]: user's interactions
+Pablo [47:22]: with baseline knowledge graph and
+Pablo [47:23]: alone
+Pablo [47:28]: and in doing so we want to do the old self
+Pablo [47:29]: needs to ai over
+Pablo [47:30]: the light
+Pablo [47:40]: so for this pilot study we have a separate set of research questions so the first one is what types of over reliance behaviors occur in knowledge graph plus lm interfaces
+Pablo [47:51]: the second one is which interface components in these interfaces do users actually engage with to perform verification in what order and to what extent do they use them
+Pablo [48:00]: and the third one is how are the user's perceptual failures such as partial checking of an answer or overlooking synergies
+Pablo [48:03]: associated with ai
+Pablo [48:11]: so our pellet study and actually our eventual user study as well is based on the food atlas data set
+Pablo [48:26]: so this is actually a knowledge graph that's developed by another lab at uc davis i believe for so this data set models the relationship between foods chemicals and diseases
+Pablo [48:35]: the astronauts have flavors as well but we don't really use that part of the lab and just some quick data packs like there's around ten thousand foods
+Pablo [48:40]: two hundred thousand goals three thousand diseases and like one thousand flavors
+Pablo [48:44]: and there's a ton of relationships between these entities
+Pablo [48:57]: but we do want to note that not all entities are part of relationships for example we see that there's two hundred ten pools but in total there's maybe only like one hundred fifty thousand chemicals that are involved in relationships
+Pablo [49:17]: as you can see from this diagram here the valid relationships are containing a flavor which vws at a chemical being positively or negatively correlated with a disease this is kind of like semantically confusing but essentially if you're monitoring disease
+Pablo [49:22]: more chemical more diseased so chemicals back to disease
+Pablo [49:25]: so vice versa if it's negative in correlated it's good
+Pablo [49:31]: we see there's this knowledge graph is regular yes
+Pablo [49:33]: then what
+Pablo [49:34]: we
+Pablo [49:39]: insist that
+Pablo [49:42]: non exhaustive
+Pablo [49:43]: and
+Pablo [49:44]: i think i discuss
+Pablo [49:45]: ed that
+Pablo [49:46]: essentially
+Pablo [49:49]: of
+Pablo [49:49]: the knowledge
+Pablo [49:50]: this one
+Pablo [49:50]: thing
+Pablo [49:51]: but
+Pablo [49:52]: also devastated information
+Pablo [49:53]: like
+Pablo [49:54]: whether
+Pablo [49:55]: data over
+Pablo [49:56]: reliance happens
+Pablo [49:57]: because
+Pablo [50:00]: perfect
+Pablo [50:01]: silly
+Pablo [50:02]: collection
+Pablo [50:10]: you
+Pablo [50:11]: more likely
+Pablo [50:13]: see
+Pablo [50:13]: information
+Pablo [50:16]: they'll
+Pablo [50:16]: follow the information from
+Pablo [50:17]: the llm
+Pablo [50:24]: that's also part of it
+Pablo [50:25]: because
+Pablo [50:26]: it has to be able
+Pablo [50:26]: to distinguish
+Pablo [50:28]: when
+Pablo [50:28]: the knowledge is
+Pablo [50:34]: from the rabbit sort of shoot or from the elements of knowledge
+Pablo [50:37]: so that's also like something we try to find
+Pablo [50:39]: a second
+Pablo [50:40]: knowledge graph
+Pablo [50:48]: there another one that we can use of this scale
+Pablo [50:57]: so on the right is an example subgr
+Pablo [50:58]: aph an
+Pablo [51:02]: apple can contain a bunch of different chemicals
+Pablo [51:11]: at the expense for really you might see that each of these categories can be associated with new diseases or might have some claims so in terms of
+Pablo [51:15]: graph database stack we use neo four j
+Pablo [51:28]: so this is kind of the system workflow that we implemented and this is the same roughly for both the other study and the user study the interface is just the difference
+Pablo [51:31]: we're studying how they interface
+Pablo [51:33]: affects verification
+Pablo [51:37]: not the backend system itself so when
+Pablo [51:40]: you give an initial curie such as what foods are good for diabetes
+Pablo [51:44]: the system will kind of go ahead and generate what we call a query expansion
+Pablo [51:50]: which is it generates a few parallel subquestions to ask either itself
+Pablo [52:15]: as an llm's own knowledge or the knowledge graph as you can see we have misoperies here and whatever might be what foods contain chemicals that are positively correlated with so we can see that this is a subcuri that's asked of the knowledge graph it's rewritten the question to more closely fit the relationship pattern of the non trap structure
+Pablo [52:26]: and then there's a three stage process that happens when you give you the algebra the first is it extracts an llm will extract the possible entities and relationships in this question
+Pablo [52:29]: so you'll see
+Pablo [52:32]: these entities and recognize that it's a
+Pablo [52:32]: disease
+Pablo [52:38]: and they'll see the relationship is you're looking for foods
+Pablo [52:39]: that match
+Pablo [52:41]: contain chemicals
+Pablo [52:42]: that are positive
+Pablo [52:55]: the second step is an entity mapping process and this is not ll based but it's a similarity search query on the neo four day
+Pablo [53:00]: yeah currently using a full text index
+Pablo [53:18]: and it matches the candidate diabetes with an entity in the knowledge raft there are many possible variations of diabetes that are included in knowledge graph for example type one type two gestational was one of them i think so from that it picks the most
+Pablo [53:22]: related by i think edit distance
+Pablo [53:24]: entity
+Pablo [53:52]: and then just rolls a lap for the rest of the curie at which point you take the potential knowledge back here which is written cycle which is the language of neo four j it fills it with the populated entities id's so once we have the matching entities by name we actually use the ntid graph to make sure that the query
+Pablo [53:55]: is confidently wrapped
+Pablo [54:10]: then it will return all the graph data for that the way to curate and so this happens for all the subcuries in parallel some of these suburies may be to the llm itself so it's just kind of the l i'm asking itself
+Pablo [54:11]: for it that's actual information
+Pablo [54:17]: because remember the knowledge graph only really has this kind of information
+Pablo [54:22]: and so we want some sort of background information to explain why we multiply actual useful
+Pablo [54:27]: yeah so once it has all these subcuri answers
+Pablo [54:34]: they are combined into one final response and that is what actually
+Pablo [54:45]: so this is the baseline interface we have with a pilot study as we can see it's not really a spectacular because we only have two tables right now
+Pablo [54:56]: so the reason we use this is because previous literature has found that tables are like kind of a default way of showing lsgraph data
+Pablo [55:03]: so we have three components to this interface so the left is a chat panel where obviously you interact with the agent
+Pablo [55:15]: on the top right we have what we call the entity mapping table and this kind of surfaces the entity mapping results from this central second step
+Pablo [55:25]: as we can see when i ask why is finished with regal you can see that it identified the candidate named gout as a disease
+Pablo [55:43]: and then it looked in the knowledge rack for an entity that matched the name gout which it did and it found that the entity id was e zero two e two zero five and the macros in this nft id to database security
+Pablo [55:45]: list of relationships
+Pablo [55:47]: second table over
+Pablo [55:48]: here
+Pablo [55:53]: and you know that this relationship table
+Pablo [56:05]: is less than triplets which kind of led into it because if you look at this relationship right we're actually looking for the relationship of food containing a chemical related to a disease
+Pablo [56:17]: but those triplets are those are actually one source relationship target node instance so you're actually going to have to chain those triplets yourself you use this kind of table setup
+Pablo [56:23]: again this is like a baseline interface and wanted to see how users would respond to something less than ideal
+Pablo [56:26]: so that's why we chose this kind of set
+Pablo [56:26]: up
+Pablo [56:32]: so in terms of pilot study design this was an exploratory in person pilot study
+Pablo [56:35]: with this baseline interface
+Pablo [56:42]: and for the participants their task was to answer three nutrition related questions using the system
+Pablo [56:47]: would intentionally seeded errors so we actually went into the back end and
+Pablo [56:51]: guaranteed that
+Pablo [56:57]: these
+Pablo [56:58]: tasks while narrating their interact
+Pablo [57:00]: ions with the system which
+Pablo [57:01]: we call takeaway
+Pablo [57:01]: direction
+Pablo [57:03]: no establishing
+Pablo [57:04]: so
+Pablo [57:05]: that we could actually
+Pablo [57:06]: investigate
+Pablo [57:07]: the actual
+Pablo [57:08]: things that
+Pablo [57:09]: the knowledge rap and the
+Pablo [57:10]: system was
+Pablo [57:11]: deep as we
+Pablo [57:12]: had to get
+Pablo [57:20]: possible
+Pablo [57:37]: so
+Pablo [57:38]: after those tasks
+Pablo [57:40]: we have to be
+Pablo [57:41]: so many questions
+Pablo [57:42]: about
+Pablo [57:51]: processes
+Pablo [57:52]: and
+Pablo [57:53]: feedback
+Pablo [57:59]: participants we have two science students
+Pablo [58:08]: from
+Pablo [58:12]: eric
+Pablo [58:13]: knights we had
+Pablo [58:16]: but
+Pablo [58:17]: for that
+Pablo [58:20]: even programmatically create in our code
+Pablo [58:29]: so the first error is an incorrect mapping of the entities mentioned and this is kind of one of the main areas we saw during our normal interaction
+Pablo [58:42]: so in this screenshot we see again why spinach with hugo an example of an incorrect mapping would be as you can see spinach is the type of food
+Pablo [58:44]: actually missing in this mapping table
+Pablo [58:50]: which means that the system did not recognize that spanish referred and did not attempt to match it
+Pablo [58:52]: and we knowledge rationally
+Pablo [59:04]: another possible error would be that gout is identified as a possible candidate name but it's mapped to an incorrect entity as it has say something that's really similar to the workout
+Pablo [59:17]: yeah so when this happens the entity id that's used to curate a knowledge graph downstream is actually wrong which means that the relationships you see in the table are irrelevant
+Pablo [59:20]: to your answer which is something that we don't want
+Pablo [59:25]: but we also want users to recognize that the knowledge graph contact is wrong
+Pablo [59:28]: instead of just trusting what the llm says
+Pablo [59:43]: so other error types that we kind of attempted to induce included misunderstanding semantics so for example that whole ordeal about negative versus positive correlations good or natural disease
+Pablo [59:51]: that is something that we've had to explain to the llm together properly we did explain it it would just get confused like maybe half the time
+Pablo [59:56]: so that was one of them we also
+Pablo [1:00:22]: had not super relevant for this constantly we realized because citations in this one but it's possible to have them correctly source material just translation as it attempts to map the response to the id and finally there is the gathering of unrelented knowledge from the on prem and this is known as curious engine set
+Pablo [1:00:26]: all the relevant entity to this question
+Pablo [1:00:31]: might attempt to get some contextual information advice
+Pablo [1:00:31]: helpful
+Pablo [1:00:37]: but in the final combining of the responses it might get confused by that extra information
+Pablo [1:00:38]: too
+Pablo [1:00:41]: so that's what this last prototype means
+Pablo [1:00:52]: so some preliminary results from hepatocyte for research question one what types of behaviors of over reliance occur
+Pablo [1:00:57]: we found that users were less likely to verify the l one output and it lines up with exceptions
+Pablo [1:01:18]: and this is kind of equally the case they were cs students or if they were food science students so anything that kind of matches their common sense or their base field of nutrition knowledge they were more likely to just glance over it that checks out and they wouldn't like to do any further checking which honestly i would too
+Pablo [1:01:30]: and for food science users the actual believe that any response that's grounded in the knowledge graph is correct as long as the displayed context kind of matches what they think they were asking for
+Pablo [1:01:38]: they didn't understand that an llm can't hallucinate when you incorporate this response
+Pablo [1:01:44]: to everybody there's always
+Pablo [1:01:50]: on the other hand
+Pablo [1:01:56]: users were also military focused on the relationship which is
+Pablo [1:01:57]: a huge flatmate
+Pablo [1:01:57]: table
+Pablo [1:01:59]: and overlooked the entity mapping table
+Pablo [1:02:06]: which frequently caused them to kind of miss entity mapping errors during the
+Pablo [1:02:09]: so it's kind of dense
+Pablo [1:02:28]: but research question two is which interface components users engage with what we'll get to what extent so first the entity mapping table all users check this table designs users were again much more likely to skip it and miss their also observe that people would read
+Pablo [1:02:30]: kennedy
+Pablo [1:02:34]: recogn
+Pablo [1:02:35]: ized
+Pablo [1:02:36]: them
+Pablo [1:02:37]: back
+Pablo [1:02:38]: so let me just
+Pablo [1:02:39]: pull that right here
+Pablo [1:02:40]: let's see that
+Pablo [1:02:40]: gout
+Pablo [1:02:44]: was candidate and it would miss that maybe a map to something different
+Pablo [1:02:45]: and wrong
+Pablo [1:02:49]: so that was a frequent error we saw
+Pablo [1:02:51]: all the users check the relationship table
+Pablo [1:02:58]: and most of them just skip they're looking for matching keywords or entities mentioned in the llanser
+Pablo [1:03:02]: cs students as in students who
+Pablo [1:03:08]: better understood the knowledge structure spend more time verifying this multi hop relationship
+Pablo [1:03:16]: it would kind of change together these triplets and make sure that the source and target through the disease for example was correct
+Pablo [1:03:27]: suicide students actually spent a lot of time looking out background information entities such as explaining diseases and how it might affect disease
+Pablo [1:03:35]: for example they actually check the chemical entities of biological interest database or some chemicals
+Pablo [1:03:42]: so they spent less time on the graph structure and voicemail verified with semantics of all
+Pablo [1:04:01]: the order of verification vary depending on the response by the type so if the users were greeted with a massive wall of text as an answer they need to check the tables to verify the track context first before committing to reading this extremely dense information
+Pablo [1:04:06]: or verifying the rest of the response and the longer it is the more likely it
+Pablo [1:04:07]: would catch up between
+Pablo [1:04:10]: the chat handle and the notification
+Pablo [1:04:17]: we also found that if an entity was mentioned answer and showed up in tables most users were satisfied with it
+Pablo [1:04:26]: even if for example the entity was returned in a reverse relationship such as positive versus negative correlation
+Pablo [1:04:31]: and then finally for part three
+Pablo [1:04:42]: how our perceptual failures associated with global alliance so we found that users could identify what the knowledge that wrong but not y and this has given the lack of transparency
+Pablo [1:04:44]: under like cybercrime
+Pablo [1:04:57]: or the knowledge graph here so you can distinguish when the knowledge graph returns no data but they can't tell between when there's actually no data in a relationship or when there's no data because the curios novel
+Pablo [1:05:02]: we also found that obviously the tricklet structure of the table
+Pablo [1:05:10]: relationship for example these two contains example chemical correlated with disease relationships
+Pablo [1:05:17]: could be separate rows but split very far apart on the table so they would have to match it by the source and target nodes manually
+Pablo [1:05:22]: and some users just had difficulty with that some users did not bother at all
+Pablo [1:05:33]: then for the last two we found that frequency or order of entities in the relationship table were interpreted as indicators of portions or relevance
+Pablo [1:05:39]: when in fact it was very arbitrarily sorted by relationship so we can see that
+Pablo [1:05:48]: the dimension of the table was not super appropriate for graph data which can be depth or
+Pablo [1:05:49]: interconnected
+Pablo [1:05:56]: and finally we found that canada names and map names getting the same for each other which is what i mentioned just
+Pablo [1:05:57]: now
+Pablo [1:06:12]: with study results show some next steps for us so the main study is going to be on this work in progress ui network coding as you can see the tables are kind of removed
+Pablo [1:06:19]: on the left is still the main chat panel but on the right we have what we call the subcuri visualization
+Pablo [1:06:22]: and i'll go through this kind of element by
+Pablo [1:06:26]: hope so the problem we have the same diagram that just shows that
+Pablo [1:06:27]: graph is
+Pablo [1:06:28]: also same
+Pablo [1:06:29]: and it's looking
+Pablo [1:06:32]: the use
+Pablo [1:06:33]: r knows what
+Pablo [1:06:37]: in terms of expanding our curiosity and just so that you don't see a spinner for like a minute
+Pablo [1:06:38]: and wonder what's going on
+Pablo [1:06:46]: we also have this subtitle which is the lm thought process which we ask it to generate
+Pablo [1:06:46]: and generate
+Pablo [1:06:51]: some queries and by reading it you can kind of tell what the elements try to do
+Pablo [1:06:57]: when it's generating the subtree so you don't just have to guess from the results
+Pablo [1:07:07]: and then we also have some in text citations so for example we see the citations from quotient one
+Pablo [1:07:11]: to these
+Pablo [1:07:11]: organs
+Pablo [1:07:12]: of the way
+Pablo [1:07:19]: so these citations both allow the username parts of the response
+Pablo [1:07:21]: specific
+Pablo [1:07:27]: ally we can also use this as a chance to give our patient because for example
+Pablo [1:07:37]: you can see that three one and two while they are different subqueries they're actually the same cycle they ask about the same relationship they return the same results
+Pablo [1:07:41]: and identify that it is
+Pablo [1:07:53]: what an expanded security for a graph or knowledge graph on the top we have just common separated lists of all ent
+Pablo [1:07:53]: ities
+Pablo [1:07:55]: we also have
+Pablo [1:07:57]: a graph
+Pablo [1:08:00]: ic
+Pablo [1:08:11]: edition
+Pablo [1:08:12]: shows the
+Pablo [1:08:15]: most
+Pablo [1:08:23]: relationship
+Pablo [1:08:26]: instead of
+Pablo [1:08:28]: these
+Pablo [1:08:34]: sheil
+Pablo [1:08:34]: a
+Pablo [1:08:35]: visual
+Pablo [1:08:42]: as
+Pablo [1:08:43]: much spars
+Pablo [1:08:44]: e of a result
+Pablo [1:08:45]: if you're
+Pablo [1:08:46]: greeted with
+Pablo [1:08:53]: the device
+Pablo [1:08:56]: that you
+Pablo [1:08:57]: need
+Pablo [1:08:59]: to
+Pablo [1:09:00]: learn
+Pablo [1:09:11]: no visual
+Pablo [1:09:12]: ization
+Pablo [1:09:14]: how
+Pablo [1:09:14]: can they verify
+Pablo [1:09:15]: or
+Pablo [1:09:16]: how aware were
+Pablo [1:09:17]: they with their over
+Pablo [1:09:18]: laps
+Pablo [1:09:24]: so our mutual study will be setting the same support
+Pablo [1:09:40]: and this is the second half of the same non traps appearing so we see here another version of the entity matching table this time we actually break down each entity mapping
+Pablo [1:10:02]: attempt by their subquery so for example we can see that for diabetes these are the top five matching instances and you can see that the selected one which is kind of the first one in the tiebreaker of four different types of matching diabetes might not be the one you want because diabetes complications isn't
+Pablo [1:10:03]: really that easy
+Pablo [1:10:07]: for
+Pablo [1:10:09]: this
+Pablo [1:10:10]: part
+Pablo [1:10:11]: incident
+Pablo [1:10:12]: or
+Pablo [1:10:13]: some
+Pablo [1:10:14]: seventh or
+Pablo [1:10:15]: eighth match
+Pablo [1:10:16]: for that
+Pablo [1:10:17]: you can
+Pablo [1:10:18]: see as well as
+Pablo [1:10:19]: synonyms for each
+Pablo [1:10:22]: and
+Pablo [1:10:23]: this is
+Pablo [1:10:24]: a disease
+Pablo [1:10:24]: obviously
+Pablo [1:10:25]: this
+Pablo [1:10:26]: matching happens for
+Pablo [1:10:27]: food
+Pablo [1:10:27]: as well
+Pablo [1:10:32]: then we also have the cyber curation
+Pablo [1:10:34]: which kind of shows the whole relationship pattern
+Pablo [1:10:36]: that it's looking for
+Pablo [1:10:49]: we do want to note that this is probably too technical for food science nutritionist users but we believe that some version of this entity mapping table could be useful especially if you want to rerun your theory by selecting
+Pablo [1:11:01]: and finally knowledge can be sorcerer the l on itself in which case we just have an emporium with yellow's response and this is useful because we can see that
+Pablo [1:11:04]: we can have the user interpret
+Pablo [1:11:07]: our examiner how
+Pablo [1:11:09]: respons
+Pablo [1:11:09]: e
+Pablo [1:11:12]: because the way we have time response generated is
+Pablo [1:11:15]: it's only allowed to pull data from all these queries
+Pablo [1:11:16]: and not from any of
+Pablo [1:11:17]: his own knowledge
+Pablo [1:11:21]: so yeah that's kind of what we have so far
+Pablo [1:11:27]: this is like a very rough timeline of what we have to do next
+Pablo [1:11:36]: for now we're just going to be working on the pilot study results and just identifying ways that we can create new visualizations
+Pablo [1:11:38]: and support verification
+Pablo [1:11:42]: that will be kind of iterating on the ui for instance
+Pablo [1:11:44]: writing that
+Pablo [1:11:49]: question or suggestions
+Pablo [1:11:50]: both welcome
+Pablo [1:11:58]: do you think it's better
+Pablo [1:12:00]: if we
+Pablo [1:12:05]: use only
+Pablo [1:12:13]: i want to say it would have been better but also
+Pablo [1:12:21]: it was helpful having cs students because they could give visualization and graph to back
+Pablo [1:12:25]: or like for the tables
+Pablo [1:12:30]: it was more helpful to see
+Pablo [1:12:31]: opportun
+Pablo [1:12:32]: ity to
+Pablo [1:12:33]: kind of contrast
+Pablo [1:12:34]: but
+Pablo [1:12:39]: how you verify things that you have more knowledge of what a knowledge wrap or
+Pablo [1:12:45]: experience we found that the more element experience
+Pablo [1:12:47]: the more likely
+Pablo [1:12:48]: they were to
+Pablo [1:12:49]: verify
+Pablo [1:12:52]: that's just how i expect
+Pablo [1:13:01]: the business
+Pablo [1:13:06]: i do have more
+Pablo [1:13:06]: data
+Pablo [1:13:07]: because
+Pablo [1:13:07]: i wasn't sure
+Pablo [1:13:08]: if you'll
+Pablo [1:13:14]: okay question comments suggestion anybody
+Pablo [1:13:17]: or anybody online
+Pablo [1:13:22]: or question so i see you're sending this
+Pablo [1:13:22]: right
+Pablo [1:13:30]: i feel like it's a tough so what are you
+Pablo [1:13:31]: aiming at
+Pablo [1:13:38]: your mean i think it's five from hci than you or something like that
+Pablo [1:13:40]: you are here
+Pablo [1:13:44]: but i don't know if this reviewer would read this
+Pablo [1:13:47]: and accept it as it is
+Pablo [1:13:50]: i think that is a valid concern
+Pablo [1:13:56]: because that's also something that we've been trying to hash out during our work like exact the contributions
+Pablo [1:13:58]: i think the main thing is just
+Pablo [1:14:03]: visualization
+Pablo [1:14:04]: but
+Pablo [1:14:05]: it's not
+Pablo [1:14:06]: typically
+Pablo [1:14:08]: as
+Pablo [1:14:10]: just
+Pablo [1:14:11]: like knowledge
+Pablo [1:14:12]: specific
+Pablo [1:14:13]: ations
+Pablo [1:14:16]: i know that we
+Pablo [1:14:16]: are very narrow
+Pablo [1:14:18]: but
+Pablo [1:14:19]: that's
+Pablo [1:14:20]: how we
+Pablo [1:14:24]: i mean it could be narrow if you just show a graph
+Pablo [1:14:25]: to the portion that they
+Pablo [1:14:25]: have
+Pablo [1:14:26]: people will just
+Pablo [1:14:27]: say
+Pablo [1:14:28]: this is just around
+Pablo [1:14:29]: here
+Pablo [1:14:32]: i think maybe you
+Pablo [1:14:36]: want if you want to i think if you want to do something more interesting
+Pablo [1:14:37]: in
+Pablo [1:14:40]: my
+Pablo [1:14:42]: script
+Pablo [1:14:54]: so for your strategy to address the open reliance
+Pablo [1:15:02]: base of my impression of your slides it kind of seems like you're just kind of making the thought process more
+Pablo [1:15:03]: transparent
+Pablo [1:15:06]: and then you kind of break it down to step by step
+Pablo [1:15:13]: so could i actually just say transparency with your overall strategy or did i miss something
+Pablo [1:15:18]: transparency is the strategy that we worked on so far
+Pablo [1:15:20]: there are
+Pablo [1:15:23]: strategies which identified from the past study
+Pablo [1:15:25]: and have on the back
+Pablo [1:15:36]: the whole mapping sections of response to relevance up here
+Pablo [1:15:37]: complex
+Pablo [1:15:41]: one thing
+Pablo [1:15:48]: all these wrong information
+Pablo [1:15:49]: back to you
+Pablo [1:15:58]: typically
+Pablo [1:15:59]: operate
+Pablo [1:16:00]: that
+Pablo [1:16:00]: granular
+Pablo [1:16:01]: level of chemicals
+Pablo [1:16:04]: of
+Pablo [1:16:05]: categories
+Pablo [1:16:06]: and stuff like
+Pablo [1:16:07]: that so we were thinking maybe
+Pablo [1:16:08]: some sort of
+Pablo [1:16:09]: hierarchical
+Pablo [1:16:11]: post processing of data
+Pablo [1:16:14]: somehow
+Pablo [1:16:18]: verif
+Pablo [1:16:18]: ying without
+Pablo [1:16:21]: you
+Pablo [1:16:27]: want some sort of verification that doesn't skyrocket their cognitive flow that makes sense
+Pablo [1:16:29]: there are a lot
+Pablo [1:16:42]: information
+Pablo [1:16:46]: and then what do you think
+Pablo [1:16:48]: so i think all right
+Pablo [1:16:53]: and then i would like to go over that design process
+Pablo [1:17:05]: better than just the base so we see that kind of developing
+Pablo [1:17:09]: i think once we process the last transcript today
+Pablo [1:17:17]: anybody else question
+Pablo [1:17:22]: thank you

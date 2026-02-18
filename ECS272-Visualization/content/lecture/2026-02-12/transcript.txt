@@ -1,0 +1,767 @@
+Pablo [0:05]: have you guys
+Pablo [0:09]: created sorry around the data set letter
+Pablo [0:21]: usually would take around like one hour and just like some small tips which is like the dash already telling lecture that we did on tuesday the slides might be helpful
+Pablo [0:27]: and hopefully at the end we get to have every group to come on the prisoner story
+Pablo [0:40]: here's what the link and then i believe you can kind of go back to kella spoke to the workshops and you click on it you should be able to find the sampling on the canvas
+Pablo [0:47]: so just to give like a quick recap on data storytelling process
+Pablo [1:10]: usually we start with this stage codes very identification what happens was that explore the data maybe do some analysis then you kind of get a set of insights or findings that you feel like it's interesting to share with people and then usually these kind of pieces of findings
+Pablo [1:13]: which is we would have kind of called them as thirty pieces
+Pablo [1:24]: then once you kind of have like a set of information you want to share then we move on to this story organization stage what happens was that you want to rearrange these information
+Pablo [1:37]: you want to present them in a very coherent way so that people kind of understand why you're talking about this story why do they need to care about it what's the things you want to share with them
+Pablo [1:39]: et cetera
+Pablo [1:56]: and then here what we trying to introduce is the concept which is like through line which is kind of like the main core message of your story or you can think of it as like audience to go through your story what's like the takeaway message
+Pablo [1:57]: for that
+Pablo [2:09]: so the idea was that the way i just structure your story each of the single search keys should be supporting takeaway message for at least they should be relevant
+Pablo [2:14]: because if they're irrelevant then you kind of feel like information
+Pablo [2:15]: dump
+Pablo [2:25]: so that's kind of the overall idea and then eventually kind of just go on to the third presentation you present your story to people and get your feedback
+Pablo [2:29]: so this whole entire workshop is going to focus on the story
+Pablo [2:29]: organization
+Pablo [2:38]: where we wouldn't eat through then you can kind of find more but the whole idea is that we want you guys
+Pablo [2:42]: to overcome this for organization stage
+Pablo [2:45]: yeah
+Pablo [2:46]: i kind of briefly mentioned
+Pablo [2:55]: we're not going to have you guys we would have like starter pieces specifically the format how we're going to do this is we're going to do this as a storyboard
+Pablo [3:12]: if you're not too sure about what is storyboard it kind of comes from traditional storytelling where even media arts like movie i guess the camera work so the example i have here this is kind of like if you know the moving section
+Pablo [3:15]: where they have this car
+Pablo [3:21]: that they are inside the drain in hotel and then
+Pablo [3:22]: they were like fighting
+Pablo [3:30]: and then it's like because it's like a dream so astro find space is kind of like repeating
+Pablo [3:39]: so conceptually it makes sense in order for camera to actually capture that without letting people get confused that was really difficult
+Pablo [3:50]: so this is how they try to before they actually they try to do these kind of like frames so from the top to the down that's kind of just like they're explaining
+Pablo [3:54]: throughout the entire scene here's what the camera
+Pablo [4:07]: captured so we're going to use this mid air here which is you kind of have kind of just like have different slides and then on each side of talking is where it focus
+Pablo [4:12]: what we want to see
+Pablo [4:17]: at the end of this workshop is we want you guys to kind of think about
+Pablo [4:19]: what coming a table
+Pablo [4:20]: for your story
+Pablo [4:22]: as well
+Pablo [4:30]: as what's your narrative structure are you doing for narrative structure we're probably going to be very straightforward we can just do like slideshow
+Pablo [4:33]: but you can consider martini glass
+Pablo [4:35]: it's that work for you as well
+Pablo [4:42]: then we would ask each group to share what is their takeaway message for the story
+Pablo [4:52]: and then after you kind of share your story this is more like an optional part if you guys have time you can talk about what kind of user interactions you want to support
+Pablo [4:54]: but
+Pablo [4:55]: that's kind of just like an optional thing
+Pablo [5:01]: yeah i don't know why i have this one here but this is kind of another example
+Pablo [5:03]: of a storyboard
+Pablo [5:08]: so it's kind of just like for each frame you kind of just put on the name
+Pablo [5:09]: kind
+Pablo [5:10]: of like the main thing that's going to happen
+Pablo [5:11]: in that
+Pablo [5:12]: part
+Pablo [5:18]: so that's just kind of like some of
+Pablo [5:20]: these you can check out the storytelling lecture slides
+Pablo [5:22]: this should be helpful
+Pablo [5:28]: just to kind of give an example of what's the recommended flow for you to get started
+Pablo [5:31]: i would recommend
+Pablo [5:37]: i'll just kind of scroll through that observable
+Pablo [5:40]: so when you go in here
+Pablo [5:46]: we're going to give you like this housing data set
+Pablo [5:52]: that has base information so each entry you see is kind of like a house
+Pablo [5:57]: and then you have what are the san francisco or in new york
+Pablo [6:00]: how many beds how many bats what's like the price
+Pablo [6:08]: which year this house is built in how big is this house what's like the price per square foot as well as the elevation of the house
+Pablo [6:15]: so that's all the information you have for this data set and then as you go through this
+Pablo [6:45]: to kind of help you get started we kind of give you three different scenarios you can kind of think of it as maybe through this data set you want to do a story for a home buyer to find a house where maybe you want to focusing on what the differences between houses in san francisco versus houses in new york where you can kind of use this for machine learning stuff how do i use this data set to explain some fundamental machine learning
+Pablo [6:46]: knowledge
+Pablo [6:54]: so yeah there's more information you can read this later but we kind of give you some sort of pieces to start with
+Pablo [7:13]: to start out with these are kind of also just to help you understand how does the data in this data set look like so we give you like a scared of twelve metrics i kind of just show you here all the relationships between two pairs of attributes where all of these houses
+Pablo [7:19]: and then there's also more focus on only one of the scatter plots for example
+Pablo [7:30]: here's all the code we've come in case we kind of want to change between different attributes so it can kind of close it just to understand what's going on in this data set
+Pablo [7:43]: yeah so there's more different types like visualization types that use employment trying to focus on specific details of data set
+Pablo [7:48]: so i'm just going to leave it this here for you to look at it
+Pablo [7:59]: towards the very end there's like three more represents that's more about say if you're doing machine learning related story
+Pablo [8:10]: shares like a potential decision tree of decision tree illustration that you can use here's some of the performers as well as the different model illustrations
+Pablo [8:19]: you don't need to use all of them you can also just create your own sorry pieces all of these are just kind of to help you
+Pablo [8:21]: to get started
+Pablo [8:24]: so that's kind of the overall idea
+Pablo [8:33]: so yeah this is finally go over the swallow before i'm going to divide your guys into groups
+Pablo [8:49]: what i would recommend you guys to start with is to kind of make up all of which kind of one of the three scenarios i just show you which ones you guys are more aligned with maybe take one and think about what's like the actual takeaway that you want to do
+Pablo [9:00]: in order to then you move on to kind of like in order to deliver this poor message what's the important topics that you want to talk about in your story
+Pablo [9:06]: based off that for each of your topics you can try to associate if there's relevant data that i could use
+Pablo [9:13]: and then you can think about do i really need all of these topics maybe that would be like three hundred four
+Pablo [9:18]: that's enough for a couple of decide that
+Pablo [9:19]: you can find relief
+Pablo [9:22]: sequencing washwater should i present information
+Pablo [9:29]: what's the visual representation i can do once you have like a very basic facial representation you can think about genetic
+Pablo [9:30]: proof this better
+Pablo [9:36]: can i add a user interaction blah blah blah so there's kind of like this sequence how you can go for that
+Pablo [9:36]: should kind of help you
+Pablo [9:39]: do we have any questions
+Pablo [9:46]: i'm going to start bringing dancing to groups
+Pablo [9:49]: see how many people
+Pablo [10:02]: okay i'm going to do
+Pablo [10:08]: four of you and then plus you guys five are one group
+Pablo [10:14]: and then you guys so if you guys are another group
+Pablo [10:19]: and then i'm going to do five for you guys as a group
+Pablo [10:24]: and then five of you guys that's a group
+Pablo [10:26]: and i will deal with you guys later
+Pablo [10:34]: guys
+Pablo [10:36]: as a group
+Pablo [10:39]: only up to you and then
+Pablo [10:46]: you want to three four five yeah we got to talk about then finally you find our bed
+Pablo [10:47]: room
+Pablo [10:52]: as you guys can just get started
+Pablo [10:57]: one
+Pablo [10:58]: two three
+Pablo [10:59]: four five
+Pablo [11:02]: we'll try to check in
+Pablo [11:04]: just to see how everyone is going through the story
+Pablo [11:28]: okay
+Pablo [11:30]: hello
+Pablo [11:39]: one of us should make a actually let's introduce ourselves first i'm ritesh i'm pablo
+Pablo [11:40]: i'm simon
+Pablo [11:45]: and then we can make a fork
+Pablo [11:47]: you want to
+Pablo [11:49]: make one yeah sure i'll be the note taker
+Pablo [11:52]: what's the visibility
+Pablo [11:55]: in case has to be public
+Pablo [11:56]: so that we can send it there
+Pablo [12:27]: ensure the url with you pretty easily one thing i didn't mention was that to make it faster you can actually just draw a paper just kind of like how we did in the first workshop you don't have to really code your data
+Pablo [12:32]: just conceptually how things going to look like then you just drop it
+Pablo [12:34]: that's actually usually
+Pablo [12:38]: i forgot how to make observable plots
+Pablo [12:44]: i love when that's horrible
+Pablo [12:45]: load
+Pablo [12:52]: okay what are your i'm guessing you guys also want to see the notes i take or is okay
+Pablo [12:54]: can you guys send me
+Pablo [12:56]: discord
+Pablo [13:01]: discord discord yeah email whatever
+Pablo [13:02]: works
+Pablo [13:05]: just to share the link with you guys yeah where do i send it to you
+Pablo [13:15]: my username is rkpatro and then ucw edu so rkpatro and then davis
+Pablo [13:19]: host twins i will discord not load right now
+Pablo [13:23]: so this
+Pablo [13:30]: send whatever to that address and then i'll send the link over to you guys
+Pablo [14:05]: so got your switch on
+Pablo [14:06]: you
+Pablo [14:07]: yeah
+Pablo [14:12]: i've been playing too much cyberpunk
+Pablo [14:12]: i don't know
+Pablo [14:20]: cyberpunk twenty seventy seven
+Pablo [14:23]: i finished the game already great
+Pablo [14:27]: i'm like i think halfway but it's fun
+Pablo [14:30]: did you buy the dlc
+Pablo [14:35]: well i bought it on the switch i don't know if i think it comes with it
+Pablo [14:38]: yeah probably i think so
+Pablo [14:44]: i haven't started that one yet okay i got an email from simon
+Pablo [14:49]: i got an email from simon and jinyun did i say that right
+Pablo [14:50]: okay
+Pablo [14:54]: still waiting on an email
+Pablo [14:56]: from wait who's time again
+Pablo [14:57]: okay so waiting on an email from you
+Pablo [15:00]: simon you're waiting on him
+Pablo [15:02]: oh you're okay
+Pablo [15:07]: simon junyun
+Pablo [15:08]: kev
+Pablo [15:08]: in
+Pablo [15:08]: okay
+Pablo [15:11]: okay i got
+Pablo [15:11]: it
+Pablo [15:14]: you might need to just email me
+Pablo [15:17]: because discord won't load for me
+Pablo [15:21]: i got
+Pablo [15:22]: you
+Pablo [15:36]: i think i'm there
+Pablo [15:40]: i would have been easier to just do that
+Pablo [15:42]: who cares
+Pablo [15:45]: we are cs students
+Pablo [15:48]: gotta find
+Pablo [15:54]: the least optimal solution for our problem
+Pablo [15:55]: so true
+Pablo [16:10]: okay
+Pablo [16:11]: should be sent to all of you
+Pablo [16:44]: got
+Pablo [16:45]: it
+Pablo [16:51]: did you
+Pablo [16:52]: okay
+Pablo [16:56]: are we wanting to use one of the starters
+Pablo [17:03]: yeah so we start to see
+Pablo [17:53]: i guess we can do the second one
+Pablo [17:56]: zero
+Pablo [17:57]: one
+Pablo [18:18]: yes
+Pablo [18:24]: backward
+Pablo [18:26]: two
+Pablo [18:51]: more
+Pablo [18:52]: general eucharist
+Pablo [18:53]: whatever
+Pablo [18:55]: if we think it relates to
+Pablo [18:56]: the story
+Pablo [18:57]: we want to do
+Pablo [18:58]: if
+Pablo [18:59]: they don't we can
+Pablo [19:00]: make our own custom ones
+Pablo [19:05]: okay
+Pablo [19:07]: let me
+Pablo [19:08]: go let's go through the questions
+Pablo [19:09]: first at least
+Pablo [19:11]: at the beginning
+Pablo [19:15]: what would be the communication goal
+Pablo [19:16]: yeah
+Pablo [19:17]: let me add a little
+Pablo [19:23]: html
+Pablo [19:39]: so what's the communicative goal here
+Pablo [19:43]: we won if we're a journalist
+Pablo [19:48]: we want to showcase some sort of information
+Pablo [19:50]: as a journalist
+Pablo [19:53]: and
+Pablo [19:55]: we want to cover
+Pablo [19:57]: housing costs
+Pablo [20:00]: in new york
+Pablo [20:06]: san francisco what data do we have
+Pablo [20:11]: bats
+Pablo [20:15]: price year square feet price per square feet and elevation
+Pablo [20:16]: okay
+Pablo [20:22]: maybe it's rising housing costs as years go by
+Pablo [20:27]: and there are different categories of houses so maybe it technically doesn't work
+Pablo [20:29]: because it's the year built
+Pablo [20:42]: so it doesn't say the current like it says the current price but the year built variable doesn't go along with the price variable
+Pablo [20:49]: what would it instead be like oh the euro was bought or something
+Pablo [20:52]: well yeah
+Pablo [21:01]: because all the prices are just right now we don't technically have price per year variable to work with
+Pablo [21:02]: right
+Pablo [21:10]: yeah that makes more sense
+Pablo [21:13]: we can't do a time
+Pablo [21:18]: how prices have increased over time
+Pablo [21:21]: we can just do the current price
+Pablo [21:23]: current price
+Pablo [21:28]: current prices compared with what did you say
+Pablo [21:29]: like if they're like
+Pablo [21:31]: overpriced based on their size
+Pablo [21:35]: i don't even know what they are the price per square foot price per square foot
+Pablo [21:39]: you were houses
+Pablo [21:51]: maybe like the rate of increase between different square feet so maybe larger houses don't increase as much
+Pablo [21:55]: as the smaller one
+Pablo [21:57]: yeah sure
+Pablo [22:17]: just forward the other even as much we're just doing a notebook we just got started can you type in your email
+Pablo [22:18]: here
+Pablo [22:19]: yeah for sure
+Pablo [22:35]: thank you yeah
+Pablo [22:37]: i'm sending you the link to our fork
+Pablo [22:52]: okay should be signed
+Pablo [23:02]: yeah like i said we're basically on the first question of the dashboard
+Pablo [23:03]: because you have to catch up
+Pablo [23:12]: okay we want to cover housing costs in new york and san francisco against
+Pablo [23:14]: price per square foot
+Pablo [23:24]: i think
+Pablo [23:31]: a more interesting idea that can incorporate more variables here would be
+Pablo [23:37]: maybe
+Pablo [23:49]: because we already have
+Pablo [23:57]: i think the question we have right now kind of only uses
+Pablo [23:59]: two variables
+Pablo [24:05]: what would be something that would tie a bunch of this stuff together
+Pablo [24:18]: maybe like a comparison between low income and high income houses between san francisco and new york
+Pablo [24:24]: like how much low income households cost in san francisco and how much
+Pablo [24:27]: higher class households cost
+Pablo [24:29]: in san francisco
+Pablo [24:34]: that way you could use like the number of beds the bats
+Pablo [24:37]: like the elevation
+Pablo [24:38]: to
+Pablo [24:40]: okay
+Pablo [24:47]: between
+Pablo [24:48]: new
+Pablo [24:49]: york and san francisco
+Pablo [25:03]: all right
+Pablo [25:04]: randy
+Pablo [25:06]: right here
+Pablo [25:11]: well i think it'll yeah not if it should do it
+Pablo [25:12]: now
+Pablo [25:23]: what is the third line exactly what things we're asking right
+Pablo [25:28]: for the second
+Pablo [25:33]: question what is the blue line core message meta concept in every story
+Pablo [25:38]: that's basically our hypothesis right
+Pablo [25:42]: i don't really know yet because we haven't done the data yet
+Pablo [25:47]: well our hypothesis would you be what you're guessing
+Pablo [25:50]: yeah i guess so we see afterwards if it was right or not
+Pablo [26:02]: i think new york would probably be cheaper new york would probably be costlier like generally
+Pablo [26:03]: with low income households
+Pablo [26:07]: more so but like san francisco has
+Pablo [26:13]: i feel like that would have more
+Pablo [26:22]: pricier high income stuff we can't look at the matrix a little bit to see
+Pablo [26:25]: price
+Pablo [26:29]: everything greens very off to the left
+Pablo [26:33]: so new york has the price you earn
+Pablo [26:37]: new york san francisco is green
+Pablo [26:45]: so san francisco they're all there according to the dudo san francisco seems to have like larger households in general
+Pablo [26:48]: if you look at the housing
+Pablo [26:55]: so maybe like in terms of like housing distribution as in beds by square foot
+Pablo [26:58]: maybe
+Pablo [27:02]: reposing as a journalist and we want to cover are you looking at
+Pablo [27:04]: that makes more sense
+Pablo [27:09]: fair housing costs
+Pablo [27:15]: now
+Pablo [27:19]: i'm surprised that san francisco has higher elevation
+Pablo [27:25]: because i don't know i expected new york
+Pablo [27:28]: to have apartments
+Pablo [27:31]: that would be high elevation no
+Pablo [27:34]: yeah i saw elevation
+Pablo [27:44]: it's meant to be like mountain yeah exactly i mean they're both close line cities but san francisco has a lot of
+Pablo [27:48]: ridges and stuff i guess i've never actually meant to san francisco
+Pablo [27:52]: because new york's elevations all the way at the bottom
+Pablo [27:54]: you've never been sf
+Pablo [28:00]: davis is pretty close to itself yeah i've never gotten
+Pablo [28:03]: so what do i write down for a second question
+Pablo [28:22]: new york is more pricey and has less square feet compared to sf housing i guess
+Pablo [28:35]: sure
+Pablo [28:51]: option prices and price per square feet okay new york is more pricey both in terms of actual housing prices
+Pablo [28:53]: for entire properties
+Pablo [28:56]: and price per square feet
+Pablo [29:05]: and then what
+Pablo [29:09]: is the sequence
+Pablo [29:12]: of the story pieces for your story
+Pablo [29:12]: okay
+Pablo [29:17]: so here is where we would figure out what plots we want to show
+Pablo [29:18]: right
+Pablo [29:27]: for like the progress of individual smaller questions we want to answer with z plots
+Pablo [29:34]: the scatter plot matrix is a pretty good start
+Pablo [29:38]: basically it compares yourself everything
+Pablo [29:42]: it's pretty clear you can see like the green is on the right side
+Pablo [29:44]: of each part
+Pablo [29:55]: what are these all like what's the independent axis
+Pablo [29:57]: for all of these well no
+Pablo [30:06]: it's a this is its x and this is its y so like this one has an x of elevation and the y axis so price per square foot
+Pablo [30:13]: so like this one is beds on the x axis and price per square foot on their y axis
+Pablo [30:17]: bent on the x axis
+Pablo [30:24]: yeah so that's one bed to like how many beds
+Pablo [30:26]: price increases
+Pablo [30:36]: so price does not increase as much in san francisco as when bets increase compared to new york
+Pablo [30:38]: for example
+Pablo [31:04]: so if that was a single scatter plot
+Pablo [31:06]: the bottom left one
+Pablo [31:11]: it would be
+Pablo [31:14]: beds against price per square foot
+Pablo [31:23]: you know it's the same thing because this one is price per square foot in price and if you find the same thing here it looks the same
+Pablo [31:25]: that one
+Pablo [31:29]: which would be price and price per square foot
+Pablo [31:31]: those two are the same oh i see okay
+Pablo [31:35]: if that helps yeah i'll do that i'll do that
+Pablo [31:49]: i didn't realize it was like a table of scatter plots and these were like the column names
+Pablo [31:58]: okay
+Pablo [32:03]: well someone said we could get something from this
+Pablo [32:06]: that's a good overview
+Pablo [32:08]: good
+Pablo [32:10]: look good overview yeah good old in general i guess
+Pablo [32:12]: so but i do think that
+Pablo [32:17]: the individual price and price per square foot makes sense
+Pablo [32:19]: as one of the things we can show
+Pablo [32:24]: so start with the scatter pop matrix for a good overview zoom
+Pablo [32:25]: in on what
+Pablo [32:29]: the next one price per
+Pablo [32:44]: yeah
+Pablo [32:52]: i had no Cluely you can make things happen unobservable
+Pablo [32:55]: did you notice
+Pablo [32:59]: no but it doesn't surprise me
+Pablo [33:03]: it's like a d three
+Pablo [33:04]: thing
+Pablo [33:06]: i got
+Pablo [33:07]: so
+Pablo [33:08]: that's kind of cool
+Pablo [33:23]: okay so where do we go after
+Pablo [33:23]: that
+Pablo [34:10]: increases
+Pablo [34:11]: and the price is just still
+Pablo [34:12]: saying the exact same
+Pablo [34:13]: on that left side
+Pablo [34:14]: of your san francisco
+Pablo [34:19]: are
+Pablo [34:19]: you
+Pablo [34:20]: yeah
+Pablo [34:25]: not the y axis
+Pablo [34:30]: these ones are the
+Pablo [34:31]: y those are the x
+Pablo [34:39]: okay this one is elevation on the y and price on the x
+Pablo [34:41]: so new york
+Pablo [34:44]: increases in price and it does not increase in elevation
+Pablo [34:51]: well then that that that makes
+Pablo [34:53]: okay
+Pablo [35:00]: more overpriced new york because they actually validation san francisco
+Pablo [35:02]: they don't really care i'm trying to look at the graph again
+Pablo [35:07]: zero
+Pablo [35:20]: one
+Pablo [35:41]: elevation
+Pablo [35:47]: grass
+Pablo [36:10]: vis
+Pablo [36:11]: ual
+Pablo [36:30]: i think
+Pablo [36:35]: she did say
+Pablo [36:36]: something about
+Pablo [36:37]: how we can't use all the pieces
+Pablo [36:40]: all of them
+Pablo [36:41]: end
+Pablo [36:42]: up
+Pablo [37:12]: using more of a direction
+Pablo [37:45]: right
+Pablo [37:46]: yes
+Pablo [37:49]: people may be paying more for less space
+Pablo [37:53]: and by looking at
+Pablo [38:01]: square foot yeah
+Pablo [38:06]: that could be the message for it because you can see
+Pablo [38:10]: new york have much higher
+Pablo [38:14]: san franciscos
+Pablo [38:15]: are generally lower
+Pablo [38:17]: but they still
+Pablo [38:40]: okay
+Pablo [38:54]: so what we have written down for three is start with the scatter plot matrix for a good overview zoom in on price per square foot against price san francisco's price doesn't really change with elevation
+Pablo [38:58]: whereas new york has more varied prices
+Pablo [39:11]: but don't you think going like after we show price per square foot and price we show the actual square foot by price per square foot
+Pablo [39:13]: could be a good transition
+Pablo [39:14]: afterwards
+Pablo [39:19]: sorry what were you saying
+Pablo [39:22]: to show the square versus price for a square
+Pablo [39:27]: after showing the price versus price per square
+Pablo [39:29]: okay
+Pablo [39:34]: do we want to
+Pablo [39:40]: sorry say that one more time
+Pablo [39:41]: i'm kind of losing my mind
+Pablo [39:47]: so the first plot we're showing is this the price per square foot in price
+Pablo [39:52]: i'm saying we could transition it to the square foot
+Pablo [39:57]: and price per square foot to show how
+Pablo [40:00]: much space your take
+Pablo [40:00]: okay
+Pablo [40:08]: like are people paying more for less square foot
+Pablo [40:26]: age
+Pablo [40:50]: is that also going to be scatter plot
+Pablo [40:52]: for now i guess
+Pablo [40:54]: okay we have three scatter plots at this point
+Pablo [40:58]: the scatter plot with price against elevation
+Pablo [41:02]: that's right we have the scatter plot with price per square foot against price
+Pablo [41:06]: price against elevation and then now
+Pablo [41:10]: we can think of a different plot type for one of them
+Pablo [41:15]: just right now we have all the whole matrix
+Pablo [41:17]: to see connections
+Pablo [41:22]: square
+Pablo [41:23]: feet
+Pablo [41:35]: and what would that scatter plush show
+Pablo [41:39]: the price per square foot against square feet
+Pablo [41:46]: they would show if people are being overcharged for the last area in general
+Pablo [41:54]: it can compare it with people the normal price and then the actual
+Pablo [41:59]: square foot they're getting people and
+Pablo [42:02]: overcharged
+Pablo [42:05]: n terms
+Pablo [42:07]: of how much
+Pablo [42:10]: area
+Pablo [42:12]: there
+Pablo [42:13]: get it
+Pablo [42:16]: stor
+Pablo [42:17]: ed their price
+Pablo [42:30]: what would the assumption be here that like if you have more area then you should pay less per square foot for it
+Pablo [42:35]: i'm
+Pablo [42:36]: not sure
+Pablo [42:36]: i guess
+Pablo [42:38]: i'm pretty sure you pay more
+Pablo [42:44]: based on like other characteristics
+Pablo [43:09]: i feel like the idea between two different houses that are like the same in every way but one house is bigger than the other the idea would be that like yes the bigger house is costlier but like you're probably saving on a bit in terms of price per square foot
+Pablo [43:12]: i think it will also look
+Pablo [43:13]: kind of like number twelve
+Pablo [43:16]: okay
+Pablo [43:19]: yeah yeah
+Pablo [43:28]: what's the x the prices worth with his x
+Pablo [43:35]: no no price for square foot is y and then the the elevation here would be the x like this is your x axis
+Pablo [43:37]: yeah you get it
+Pablo [43:42]: it's weird
+Pablo [43:44]: matrix i i don't like this
+Pablo [43:51]: in new york it looks like as it gets bigger
+Pablo [44:11]: okay i think we then have a scatter pot of price per square foot against square feet to show whether people in new york or san francisco are being charged more in terms of how much area they're getting for the price
+Pablo [44:16]: we'll go with that for now does anyone have any other ideas after this
+Pablo [44:32]: we're trying to make we're on question three we're trying to go through the story pieces
+Pablo [44:35]: so you guys have like an idea
+Pablo [44:39]: probably going to get layout
+Pablo [44:49]: yeah we're posing as a journalist we want to cover housing costs for different types of houses for different social classes between new york and san francisco
+Pablo [44:54]: hope like we think new york will be more pricey
+Pablo [44:59]: both in terms of actual house and prices and price per square feet for properties
+Pablo [45:02]: we're just having a little bit of trouble coming up
+Pablo [45:05]: with other types of plots
+Pablo [45:10]: than scatter plus okay at least you got the tech side yeah that's good
+Pablo [45:15]: okay
+Pablo [45:47]: it's the figures here shows that the price per square shows the excesses and elevation square builds corresponding to y axis here
+Pablo [46:00]: will be wide for all these
+Pablo [46:08]: you got any ideas
+Pablo [46:39]: at some point
+Pablo [46:45]: it'll classify
+Pablo [46:48]: i like that i think
+Pablo [46:58]: maybe like two pie charts one for sentences go one for new york
+Pablo [47:01]: and then we show like
+Pablo [47:02]: i don't know
+Pablo [47:09]: like what the cutoff point like we decide on a cutoff point for like the price like you said
+Pablo [47:17]: and then show how how many like the percentage of houses in each city that fall into like either category
+Pablo [47:33]: so this is still a scatter plot but it's the price versus price per square foot and then red is san francisco you can see the price per square foot
+Pablo [47:35]: what would be the right word
+Pablo [47:44]: constant with the actual square foot but then for new york as this barefoot increases the price per square foot actually increases as well
+Pablo [47:50]: so there would be a main difference to show inside the graph
+Pablo [47:56]: you get redder can you turn this like around yeah just
+Pablo [48:23]: the stupid privacy screen i can't tell but right now i didn't assign colors the red is san francisco and you can see the price per square foot and the price stays constant in san francisco but then in new york as the square foot increases so the price as well so it's more affordable
+Pablo [48:28]: per square foot in san francisco while new york is constantly increasing
+Pablo [48:30]: when you increase the square foot
+Pablo [48:36]: i feel like that's like what i wanted to show when i mentioned the third one
+Pablo [48:37]: okay
+Pablo [48:43]: yeah it just adds a linear regression thingy
+Pablo [48:45]: there are regression lines
+Pablo [48:53]: to show how san francisco's price
+Pablo [49:00]: per square foot stays constant
+Pablo [49:06]: as the amount of space in a house
+Pablo [49:07]: increases
+Pablo [49:11]: but how
+Pablo [49:13]: new york
+Pablo [49:18]: 's price per square foot increases at a linear rate
+Pablo [49:22]: yeah i forgot what the right word is
+Pablo [49:27]: this one's constant this one's in here yeah what seems to be a linear
+Pablo [49:30]: rate
+Pablo [49:32]: with an increase
+Pablo [49:36]: in space
+Pablo [49:38]: housing space okay
+Pablo [49:53]: right before you showed that
+Pablo [49:54]: up what we were talking about
+Pablo [49:59]: something else oh yeah you mentioned pie charts
+Pablo [50:06]: we then transition
+Pablo [50:09]: to a pair of
+Pablo [50:11]: high charts
+Pablo [50:15]: that show
+Pablo [50:23]: how
+Pablo [50:24]: many
+Pablo [50:27]: houses
+Pablo [50:29]: in each
+Pablo [50:33]: city are meant
+Pablo [50:36]: for it different
+Pablo [50:40]: income classes
+Pablo [50:41]: okay
+Pablo [50:45]: let me search up
+Pablo [50:46]: what's the
+Pablo [50:48]: cutoff point
+Pablo [50:53]: for difference income classes
+Pablo [51:06]: they should be the same for san francisco and new york right
+Pablo [51:07]: they shouldn't
+Pablo [51:08]: be the cops
+Pablo [51:12]: but i don't know i think average
+Pablo [51:21]: people in new york earn more compared to san francisco yeah maybe consider the average
+Pablo [51:29]: of having a stupides
+Pablo [51:30]: t
+Pablo [51:34]: visual
+Pablo [51:38]: house
+Pablo [51:39]: prices have
+Pablo [51:40]: been increasing over the
+Pablo [51:40]: years
+Pablo [51:45]: he
+Pablo [51:46]: 'll pretty big difference
+Pablo [51:47]: even if
+Pablo [51:47]: she divided
+Pablo [51:49]: according
+Pablo [51:50]: to
+Pablo [51:56]: the
+Pablo [51:57]: cities and why
+Pablo [51:59]: sher
+Pablo [52:00]: ry has
+Pablo [52:01]: a lot
+Pablo [52:04]: of
+Pablo [52:07]: let me let me search up the
+Pablo [52:08]: cutoff point for different
+Pablo [52:09]: classes in
+Pablo [52:09]: california
+Them [53:29]: happ
+Them [53:30]: y
+Them [53:32]: san francisco's incom
+Them [53:32]: plete
+Them [53:34]: is way higher than new
+Them [53:34]: york
+Them [53:39]: that's what i saw new york inside
+Them [53:40]: one hundred sixteen thousand
+Them [53:41]: for
+Them [53:42]: the
+Them [53:43]: battery between
+Them [53:44]: lower and
+Them [53:45]: up and like
+Them [53:46]: for the glass
+Them [53:48]: household
+Them [53:48]: family size at three
+Them [53:50]: and then
+Them [53:51]: in california
+Them [53:55]: could be
+Them [54:03]: i
+Them [54:04]: was thinking
+Them [54:05]: actually
+Them [54:14]: no plus households
+Them [54:24]: households
+Them [54:25]: it could be between
+Them [54:26]: ninety thousand
+Them [54:31]: for
+Them [54:34]: california it could be between sixty one thousand
+Them [54:35]: two hundred
+Them [54:36]: eighty three thousand
+Them [54:38]: calif
+Them [54:39]: ornia as a whole
+Them [54:40]: is lower
+Them [54:41]: than san francisco
+Them [54:50]: would you get from california
+Them [55:20]: based
+Them [55:21]: on each
+Them [55:21]: city
+Them [55:23]: in
+Them [55:24]: the future
+Them [55:39]: has
+Them [55:40]: anyone ever really
+Them [55:41]: figured out like tex
+Them [55:42]: wise
+Them [55:48]: okay
+Them [56:21]: vis
+Them [56:22]: ual
+Them [56:28]: stage
+Them [56:32]: yes
+Them [56:43]: y
+Them [56:44]: es
+Them [57:05]: alone
+Them [57:06]: different
+Them [57:09]: bus
+Them [57:11]: work
+Them [57:55]: we should
+Them [57:56]: leave
+Them [57:56]: number three
+Them [57:58]: there
+Them [58:03]: may
+Them [58:04]: provide
+Them [58:05]: a historic piece
+Them [58:06]: that there are
+Them [58:15]: what
+Them [58:16]: does this first one do
+Them [58:18]: show the things
+Them [58:21]: that's the simplest for the first one right
+Them [58:23]: zoom in zoom
+Them [58:24]: out
+Them [58:24]: yeah
+Them [58:29]: yeah that's what i said
+Them [58:36]: i think i think for the different pie charts
+Them [58:41]: maybe we could have like
+Them [58:54]: like we could allow the user to select to like type in thresholds maybe for like whatever the cutoff what they want
+Them [58:58]: and then they could see like what percentage of houses fall
+Them [59:00]: under or below that
+Them [59:04]: they're waiting for you to give us edit access
+Them [59:09]: no no you have to get the pro subscription
+Them [59:11]: all you can do is i can see on it
+Them [59:14]: never
+Them [59:15]: mind
+Them [59:21]: i mean you can you can still work on your own
+Them [59:23]: copies of
+Them [59:29]: should
+Them [59:31]: be
+Them [59:41]: exact
+Them [59:48]: ly
+Them [1:00:44]: yes
+Them [1:01:00]: any other ideas
+Them [1:01:15]: we can just leave it at
+Them [1:01:15]: thirty
+Them [1:01:57]: five
+Them [1:02:07]: right
+Them [1:02:25]: let's
+Them [1:02:26]: start with the pie charts
+Them [1:02:28]: because that's the only thing that we haven't
+Them [1:02:29]: actually done
+Them [1:02:38]: we have everything
+Them [1:02:43]: already on the notebook besides the pie charts right that's the only thing we need to draw
+Them [1:02:44]: do we have to show like
+Them [1:02:45]: the order
+Them [1:02:49]: wait what do you mean
+Them [1:02:52]: is this supposed to be like a slideshow
+Them [1:02:53]: we have to
+Them [1:02:54]: show
+Them [1:02:55]: the scatter pl
+Them [1:02:55]: ot
+Them [1:02:58]: matrix scatter plug
+Them [1:03:07]: i mean we already have that on the notebook so we could just like take a picture of what we have there and then post it in the notebook where it's supposed to
+Them [1:03:08]: yeah
+Them [1:03:17]: yeah one punch right here one pie chart
+Them [1:03:17]: here
+Them [1:03:24]: and then just like makeup numbers for now
+Them [1:03:24]: obviously
+Them [1:03:30]: yeah three house
+Them [1:03:33]: and i guess like
+Them [1:03:46]: middle class higher class and like upper echelon higher class i think i think low income households would rather just like rent yeah
+Them [1:03:57]: our names
+Them [1:03:58]: onto
+Them [1:03:59]: the notebook
+Them [1:04:02]: oh
+Them [1:04:03]: yeah
+Them [1:04:03]: okay
+Them [1:04:23]: chat recommended a hex mint but i do not like how it looks
+Pablo [1:04:30]: what are you supposed to this is the first one the price versus
+Pablo [1:04:33]: price per square foot
+Pablo [1:04:36]: yeah i think it's unnecessarily confusing
+Pablo [1:04:40]: box plot pro
+Pablo [1:04:45]: price might make sense
+Pablo [1:05:12]: yeah i guess
+Pablo [1:05:21]: maybe have like a little note there that says these thresholds might not be the same as these thresholds
+Pablo [1:05:35]: your name
+Pablo [1:05:39]: you're just taking them passive round
+Pablo [1:05:55]: and maybe make these
+Pablo [1:05:58]: add little arrows to their
+Pablo [1:06:09]: just make it clear that they're like user interactable
+Pablo [1:06:20]: and then there could be like a little check mark box here that says like synchronize
+Pablo [1:06:24]: thresholds
+Pablo [1:06:28]: if
+Pablo [1:06:28]: you want
+Pablo [1:06:31]: and
+Pablo [1:06:35]: then the title of the chart would be
+Pablo [1:06:39]: awesome
+Pablo [1:07:35]: so we're going to have one team
+Pablo [1:07:36]: to
+Pablo [1:07:45]: go
+Pablo [1:08:08]: in
+Pablo [1:08:13]: a story
+Pablo [1:08:16]: will
+Pablo [1:08:17]: be about
+Pablo [1:08:18]: how
+Pablo [1:08:19]: so the whole of the
+Pablo [1:08:20]: story is
+Pablo [1:08:21]: to understand
+Pablo [1:08:22]: the differences
+Pablo [1:08:33]: between the housing prices and the factors that are involved in the housing so that i can understand more better about which option should i choose
+Pablo [1:08:35]: the
+Pablo [1:08:36]: message i do want to learn
+Pablo [1:08:37]: the story is that
+Pablo [1:08:38]: even the
+Pablo [1:08:40]: prices
+Pablo [1:08:42]: are
+Pablo [1:08:47]: that
+Pablo [1:08:48]: the
+Pablo [1:08:49]: housing market appear
+Pablo [1:08:50]: s to be fundamentally
+Pablo [1:08:51]: different
+Pablo [1:08:52]: and that is
+Pablo [1:08:53]: the respectful
+Pablo [1:08:54]: and being on
+Pablo [1:08:57]: the first
+Pablo [1:08:58]: visualization
+Pablo [1:09:20]: you can see
+Pablo [1:09:52]: on
+Pablo [1:09:54]: so
+Pablo [1:09:54]: for slide three
+Pablo [1:09:55]: it
+Pablo [1:09:56]: shows the
+Pablo [1:09:57]: price for short
+Pablo [1:09:58]: foots
+Pablo [1:10:20]: around
+Pablo [1:10:21]: a
+Pablo [1:10:22]: city
+Pablo [1:10:26]: on
+Pablo [1:10:35]: this
+Pablo [1:10:38]: matter
+Pablo [1:10:39]: what
+Pablo [1:10:40]: about the price
+Pablo [1:10:41]: and we can
+Pablo [1:10:42]: choose
+Pablo [1:10:45]: maybe the most important
+Pablo [1:10:49]: for me
+Pablo [1:10:53]: and here we can see that there's still
+Pablo [1:10:55]: the blue one is
+Pablo [1:10:56]: for new york
+Pablo [1:10:57]: and green
+Pablo [1:10:59]: one is for san francisco
+Pablo [1:11:00]: and we
+Pablo [1:11:01]: have clicked
+Pablo [1:11:06]: on
+Pablo [1:11:07]: have more details
+Pablo [1:11:08]: on it
+Pablo [1:11:09]: for example
+Pablo [1:11:45]: house
+Pablo [1:11:57]: make
+Pablo [1:11:58]: sure your names are
+Pablo [1:11:59]: added
