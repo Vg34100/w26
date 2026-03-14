@@ -1,0 +1,417 @@
+Pablo [0:45]: there's a book by casan
+Pablo [0:48]: operations
+Pablo [0:58]: so what i'm going to judge to a very general overview and i collected this from several different
+Pablo [1:02]: medicine
+Pablo [1:05]: this doesn't work
+Pablo [1:33]: this way
+Pablo [1:35]: sometimes
+Pablo [1:46]: today i get a bit of start today i had a conversation with a friend of mine
+Pablo [1:46]: google
+Pablo [1:54]: and he said that one hundred percent of his code line
+Pablo [1:55]: is
+Pablo [1:57]: r by coded
+Pablo [2:00]: it has an amazing setup
+Pablo [2:02]: where all he does is byte
+Pablo [2:11]: he said that's not true for his team he's a team leader that's not true for his team but it's true for him
+Pablo [2:11]: self
+Pablo [2:15]: they protect easier native positions a better programmer
+Pablo [2:18]: for whatever has been discussed by programming
+Pablo [2:24]: the experience to benefit the ai is the best exercise
+Pablo [2:27]: so set up
+Pablo [2:33]: everything is integrated with all the tools
+Pablo [2:36]: so you cannot not use ai
+Pablo [2:55]: and
+Pablo [2:56]: he's an individual
+Pablo [2:58]: maybe
+Pablo [2:59]: she doesn't know yet
+Pablo [3:06]: the
+Pablo [3:07]: st villagers
+Pablo [3:08]: the bipol
+Pablo [3:09]: ar
+Pablo [3:11]: and
+Pablo [3:11]: her
+Pablo [3:24]: follow
+Pablo [3:25]: ers
+Pablo [3:29]: doctrine
+Pablo [3:30]: tragedy
+Pablo [3:42]: center
+Pablo [3:44]: very
+Pablo [3:44]: nice
+Pablo [3:45]: and alone
+Pablo [3:48]: check
+Pablo [3:48]: it out
+Pablo [3:48]: if you're interested
+Pablo [3:56]: and of course the customer each is a cmu for the duration of a full semester
+Pablo [4:00]: it's not for the
+Pablo [4:01]: lighthearted reading
+Pablo [4:09]: but i just wanted to go over what ai helps in ml ops means how many of you have met
+Pablo [4:09]: these terms
+Pablo [4:10]: already
+Pablo [4:18]: okay so the operations side of it what is necessary not necessarily about hardware but a software site
+Pablo [4:23]: why do we need these things
+Pablo [4:36]: but obviously you want to facilitate the flow there are many different components that we'll see and think of this main reason facilitation different types of things happen
+Pablo [4:37]: ing across
+Pablo [4:40]: the code
+Pablo [4:45]: one way to think of code is
+Pablo [4:48]: as you're renovating
+Pablo [4:51]: an innovation how many will participate in innovation
+Pablo [4:54]: building
+Pablo [4:56]: very disruptive
+Pablo [5:00]: it's very disruptive so you have to maybe move out of the house
+Pablo [5:04]: maybe in a different room
+Pablo [5:07]: even out
+Pablo [5:11]: versus evolution not just small changes happen all the
+Pablo [5:18]: time without disruptions things can precede everything works all the time while changes are being made right
+Pablo [5:29]: it's a completely different paradigm so this is what the length is where the ai apps paradigms and structures allow
+Pablo [5:40]: to allow for immediate mapping between
+Pablo [5:47]: the architecture of the system into implementation into dependency control model changes
+Pablo [5:54]: all that will be seen at the same time and it rules out of the devops paradigm
+Pablo [6:00]: you also want to be managing alert
+Pablo [6:03]: that you need to change something that something is changing
+Pablo [6:07]: something's happening your own things
+Pablo [6:08]: okay
+Pablo [6:10]: so let's see what sorry
+Pablo [6:18]: let's see what sound the difficulties actually are that people express in person when they work on ml projects
+Pablo [6:24]: i ran the experiment but didn't get the same results can you check my way of running the current how
+Pablo [6:31]: many of you any of you contracted to tell you something that looks like this right why does this happen
+Pablo [6:36]: why does it happen
+Pablo [6:44]: so that you run the experiment you take some of this code you write the experiment and you don't get saved
+Pablo [6:47]: what are the reasons for it
+Pablo [7:00]: if it's a random experiment lowest angle to use the exact roms you can't reproduce
+Pablo [7:02]: okay
+Pablo [7:05]: are you taking specifically about the model
+Pablo [7:14]: so why would the model result in different results that's one
+Pablo [7:15]: anything else
+Pablo [7:29]: how about we have a pipeline that's being run already start finish some dependencies have changed
+Pablo [7:39]: something new version of your leaves with maybe there's some incompatibility a different way of implementing some tests
+Pablo [7:39]: or something
+Pablo [7:45]: or some change to some of the procedures for con
+Pablo [7:46]: vergence
+Pablo [7:48]: in the actual
+Pablo [7:54]: code okay so things can happen for reasons maybe running
+Pablo [7:59]: on different data set
+Pablo [8:02]: somebody change something in this
+Pablo [8:09]: how about the second one i tried to build the model of my machine but it doesn't work
+Pablo [8:29]: i lost my sure my hand is really helpful models
+Pablo [9:13]: management
+Pablo [9:15]: et
+Pablo [9:16]: cetera
+Pablo [9:17]: how
+Pablo [9:18]: do you make sense of
+Pablo [9:19]: all this
+Pablo [9:24]: work
+Pablo [9:25]: on bedro
+Pablo [9:25]: ck
+Pablo [9:26]: aws
+Pablo [9:31]: i have
+Pablo [9:31]: a metro
+Pablo [9:32]: you have
+Pablo [9:34]: so what is your experience
+Pablo [9:36]: what is the learning curve
+Pablo [9:37]: like
+Pablo [9:44]: for me i was given to choose some models
+Pablo [9:53]: my main goal was to deploy another application so i majored on that scenario
+Pablo [9:56]: it was critical data
+Pablo [9:56]: okay
+Pablo [9:58]: very cool thing
+Pablo [9:59]: but what was the learning curve
+Pablo [10:08]: honestly i'm not fully aware of that
+Pablo [10:24]: which attracted some models from backdrop like gin so you were given templates how to use so you were not very familiar with the whole so actually if you try to do it from scratch you develop an approach
+Pablo [10:26]: learning a curve is very steep
+Pablo [10:28]: so you have to learn very quickly
+Pablo [10:31]: because there's so much
+Pablo [10:36]: just working in two different geographies
+Pablo [10:38]: ent
+Pablo [10:41]: ry points so you can have hard code where you enter
+Pablo [10:46]: there's a lot to know instantiate the model
+Pablo [10:51]: you can take those one step models
+Pablo [10:52]: but because of
+Pablo [10:53]: all this complexity
+Pablo [11:09]: dev
+Pablo [11:10]: ops
+Pablo [11:12]: data
+Pablo [11:13]: engineering
+Pablo [11:14]: machine learning
+Pablo [11:15]: new zealand
+Pablo [11:49]: you keep a separate imagine a secret track or a separate branch in github
+Pablo [12:00]: where your tests are and if some test your code passes those tests you can immediately integrate into the main branch
+Pablo [12:08]: okay so you can do continuous updates without wasting
+Pablo [12:16]: in the past you integrate and then what is cd what is that
+Pablo [12:26]: what is deployment
+Pablo [12:29]: deployment means running
+Pablo [12:31]: this pre specified longing files
+Pablo [12:47]: where you compile everything that you have pushed into something that can work in multiple different systems and then pushing it download the latest whether they want to use it in a web browser
+Pablo [13:00]: present these devops taken as the symbol where you go from the left side to the off side and
+Pablo [13:10]: going back and forth it really is an invention by the big software company the way it's used nowadays
+Pablo [13:16]: to push to make everybody a one person service
+Pablo [13:26]: it used to be a developer relations people but big companies thought well how about we provide all these tools
+Pablo [13:29]: so people will not know what they're doing but they can do
+Pablo [13:38]: so you have your config file we have integration test you have your deployment tests you have your deployment tools and so on
+Pablo [13:44]: and it all is based on tools
+Pablo [14:17]: so that's what that works is traditionally what we meant by devops was a philosophy where people commit frequent changes if they break something and immediately fix and then integrate and so on but it has evolved to just making people do make everyone respect which is not necessarily a philosophy but anyway nowadays we think of the things as pipelines
+Pablo [14:23]: scripting and between some many config files
+Pablo [14:30]: and if anybody knows any additional details about devils that i didn't mention
+Pablo [14:46]: but that's about it and there's all sorts of mythologies on what works for people typically choose whatever reason they work experience company has a very well developed devops fight by nba just working on research
+Pablo [14:54]: but this is how
+Pablo [14:58]: you do the triple infinitive thing
+Pablo [15:02]: right it's almost an audi so we're going to add data to it
+Pablo [15:09]: okay so ml data no so it really doesn't happen like this
+Pablo [15:14]: what happens is
+Pablo [15:24]: this is abstract look at a concrete one in a second
+Pablo [15:26]: so you have a data pipeline
+Pablo [15:29]: what do they mean by a data pipeline what happens there
+Pablo [15:32]: let's analyze it
+Pablo [15:41]: that's why you store the data that was collected there's some ingress
+Pablo [15:49]: that exit communication data out the data into a separate pipeline
+Pablo [15:52]: we can control many things about the
+Pablo [15:54]: data
+Pablo [16:01]: can be percentable
+Pablo [16:11]: hardware locations
+Pablo [16:14]: with appropriate software around it
+Pablo [16:18]: is what is the pipeline
+Pablo [16:31]: and then the data can move so data goes in from a different assume that the data pipeline only is every day it's updated maybe ninth with this new data this data happens
+Pablo [16:34]: but then there is the development
+Pablo [16:48]: and there's the model management system that makes sure that all of these parts see each other where it is money placement you have the pre production and production
+Pablo [16:51]: what's the difference between reproduction
+Pablo [16:53]: and production
+Pablo [17:01]: the reproduction is exactly the ci would do various tests
+Pablo [17:04]: running validation
+Pablo [17:12]: and then production is when you deploy errors
+Pablo [17:14]: whether the app is up
+Pablo [17:14]: or not
+Pablo [17:17]: what is the dev site
+Pablo [17:29]: well this is where you're worrying about your model where you worry about which management is a good model which models you run with technology choose whether it's generative
+Pablo [17:31]: whether it's descriptive
+Pablo [17:40]: so we built
+Pablo [17:44]: slides on there
+Pablo [17:47]: we build during the pandemic
+Pablo [17:50]: an ml hops system
+Pablo [17:58]: the system was to predict how many beds will be needed for covid patients
+Pablo [18:06]: the hospital has a need to understand how many beds the way things work across everything
+Pablo [18:11]: so you need embedded oil they bring them out of storage ready for tomorrow
+Pablo [18:18]: and as you know how covid was progressing things were kind of growing and then they would go down
+Pablo [18:25]: so you would need to know with some specific how invested they have cluttering but also to have that
+Pablo [18:28]: patient that need to go
+Pablo [18:34]: so all the medical data was held somewhere in washington
+Pablo [18:37]: all the uc davis medical some servers
+Pablo [18:48]: and that's where things are updated daily maybe every hour whatever there's also ninety numbers that go
+Pablo [18:54]: from those you can extract data of how many patients were there yesterday
+Pablo [18:57]: it will get there
+Pablo [19:01]: our goal was to dig that data use a model on it
+Pablo [19:13]: and predict something that's going to be useful that we can put in front of the eyes in the evening people that dream of beds but the next morning for the nurses to see if the staffing level arrived
+Pablo [19:14]: doctors
+Pablo [19:14]: and so on
+Pablo [19:30]: and doctors do this manually nurses they look at this data from previous days but we wanted to develop a model that does automatically so we have to work with a data pipeline yes we have to work with specific all this was hipaa protected be very careful
+Pablo [19:44]: we have to work with a specific model and have to go to two different places because one would be identified one was not there was a lot of complexity the model itself was just a very simple thing that attached to all this
+Pablo [19:51]: and then after the model there was a part that follows out to the nurses to determine on syndrome
+Pablo [19:58]: as a ux kind of what you call it chart in the evening people look at
+Pablo [20:06]: and then also the model had to be available to change because covid was changed in fact we have to do a lot of for every peak
+Pablo [20:19]: and treat them like disease so it was a complex system i have to say i'm happy to say that the best doctor was predicting tomorrow's patients
+Pablo [20:21]: within thirty percent better
+Pablo [20:24]: on average
+Pablo [20:35]: so it's useful to have these models it helps somebody one of the first things that i've done then actually help people right there
+Pablo [20:38]: you can do very important things
+Pablo [20:40]: with the proper pipeline
+Pablo [20:46]: but it aims at doing understanding where she takes how generally what your permissions are
+Pablo [20:58]: here's one particular instantiation that the swiss people use the swiss ai center and they tell you what it means to be
+Pablo [21:01]: so code based systems
+Pablo [21:06]: they use a data validation pipeline
+Pablo [21:11]: they use a special cml and ddc you can look up all these tools
+Pablo [21:23]: but once you get advice from people who are not listening and then you can nowadays these things are very simple all you have to do is buy a server
+Pablo [21:25]: and all advice
+Pablo [21:45]: so if you have profit control of the data access in out of the data of the way to update all the tags and models
+Pablo [21:50]: and serving and publishing all the results
+Pablo [22:03]: i don't give
+Pablo [22:15]: this much need to code any particular detail to the book i posted
+Pablo [22:23]: but that's not the point of this class i just want to make sure that you understand
+Pablo [22:25]: in production people don't just use models
+Pablo [22:32]: there's many more elements here
+Pablo [22:35]: that are very much automated
+Pablo [22:43]: so these are the elements that for example you as a machine learning
+Pablo [22:49]: would go for ai person would go through that interaction with this pipeline
+Pablo [23:00]: so there is a continuous input stream a prepared data for the downstream part inspection
+Pablo [23:06]: and if you think of this it's very satisfying so long as you may go
+Pablo [23:11]: and then on the long side there's the training evaluation
+Pablo [23:13]: validation and deployment
+Pablo [23:19]: those are the typically they have
+Pablo [23:28]: that way of thinking kind of leads you to this bifurcation so you have to be aware that there are different types of people
+Pablo [23:32]: because there's devops people and data ops
+Pablo [23:36]: people and sometimes they have conflicting
+Pablo [23:38]: priority
+Pablo [23:45]: it is talk to me about what that would mean give me an example
+Pablo [23:49]: data
+Pablo [23:59]: people with the data
+Pablo [24:14]: would be in the sense that devops because they're responsible for getting the production from breaking they have much better
+Pablo [24:17]: i guess gateways compared to
+Pablo [24:18]: data
+Pablo [24:31]: so
+Pablo [24:32]: yes
+Pablo [24:32]: that's true
+Pablo [24:36]: one
+Pablo [24:37]: particular weather
+Pablo [24:37]: format
+Pablo [24:38]: zero
+Pablo [24:39]: that they
+Pablo [24:40]: can check
+Pablo [24:41]: back in
+Pablo [24:49]: form
+Pablo [24:50]: atting
+Pablo [24:52]: comes
+Pablo [25:02]: the people they want data links
+Pablo [25:05]: they want to get data from anywhere
+Pablo [25:10]: data people want as much data as possible and it's very data
+Pablo [25:10]: as possible
+Pablo [25:14]: so in essence that's what they want because
+Pablo [25:15]: you need data models
+Pablo [25:20]: data is the primary thing the model that
+Pablo [25:21]: they
+Pablo [25:32]: say i'm going to get data from let's say example on the mri i'm going to get clinical notes and i'm going to get i don't know two pictures
+Pablo [25:41]: and immediately the devops
+Pablo [25:44]: do justice into our model
+Pablo [25:47]: so securely in two different places
+Pablo [25:52]: if you have a data lake they're like no we have to have something an sql or whatever
+Pablo [25:58]: so there's some inherent
+Pablo [25:59]: there's something here in friction
+Pablo [26:00]: at some points
+Pablo [26:02]: that it has to be absorbed
+Pablo [26:04]: and of course and you're correct
+Pablo [26:08]: the more you expand the way to enter the devops environment
+Pablo [26:11]: the more the attack service
+Pablo [26:14]: outcomes
+Pablo [26:17]: there
+Pablo [26:27]: are these matters to companies that are just starting but none of them do only after series b funding struct
+Pablo [26:28]: ure
+Pablo [26:31]: until then
+Pablo [26:33]: anything goes
+Pablo [26:38]: even if it doesn't work did you get an example where
+Pablo [26:41]: they had indian people in the background
+Pablo [26:43]: answering questions
+Pablo [26:46]: at some point in the past in india
+Pablo [26:55]: so people were calling ai actually indian not their official intelligence
+Pablo [26:56]: they were cheating right
+Pablo [27:02]: a new company they just put the user interface and then in the back of those people
+Pablo [27:05]: okay
+Pablo [27:10]: but what we are talking here is really about medium small medium and large concepts
+Pablo [27:22]: some of these slides actually had links that you can take a look here's a more
+Pablo [27:31]: abstract thing as to where the models are so the data science really goes into the production
+Pablo [27:42]: much too many more diagrams
+Pablo [27:52]: but microsoft has their own solution google has their own solutions aws solutions i don't personally like the aws
+Pablo [27:56]: you have to learn many different levels
+Pablo [28:04]: but is it possible let's think about it is it possible that people
+Pablo [28:08]: for one person go to be a one person service
+Pablo [28:23]: and i think not i mean this is so different that we have to accept that really we're talking about two infinities right you have devops and then you have the data but then they overlap
+Pablo [28:31]: you have two double
+Pablo [28:34]: so where do you see the main concern
+Pablo [28:35]: is where
+Pablo [28:50]: you that's where you see where the data scientist maybe works throughout
+Pablo [28:53]: this dm of context generation
+Pablo [29:03]: why the data scientists involved
+Pablo [29:07]: what is
+Pablo [29:08]: a data set
+Pablo [29:20]: data type is actually the least number right
+Pablo [29:23]: the person that has a complete book of
+Pablo [29:30]: data from this exception to the database
+Pablo [29:32]: into the analysis
+Pablo [29:38]: data scientists will have some superficial ai training and outbreak
+Pablo [29:42]: but they also have training more upstream in the fight
+Pablo [29:52]: they can design an architect solutions
+Pablo [29:55]: that's all of our compute data science
+Pablo [30:00]: how many of you think of yourself
+Pablo [30:06]: you can be by yourself don't worry
+Pablo [30:10]: okay
+Pablo [30:14]: but this is the problem we usually don't get trained so much
+Pablo [30:19]: on these typically you learn about the other classes
+Pablo [30:28]: whereas here really an mla engineer they expect everything to be provided to them
+Pablo [30:30]: and then they deal with
+Pablo [30:33]: the models
+Pablo [30:50]: what are the differences between their model and a production model
+Pablo [30:53]: the data
+Pablo [30:58]: and wouldn't it be costlier again to train a model
+Pablo [31:04]: well the production model is valid
+Pablo [31:04]: ated
+Pablo [31:07]: the other one is not
+Pablo [31:16]: the validation is a big part because you want to be able to report what you can expect from this model
+Pablo [31:23]: people don't invest into things usually without there being a good understanding how much they will cost
+Pablo [31:26]: what they will think you
+Pablo [31:28]: also
+Pablo [31:31]: energy perspective
+Pablo [31:33]: do you have to
+Pablo [31:37]: data document
+Pablo [31:39]: yes the data
+Pablo [31:54]: but you don't have to have all of these steps right of course some people will have fewer implementations have fewer steps than this
+Pablo [31:58]: and they don't even see all these as separate
+Pablo [32:02]: nowadays you have all these wrappers
+Pablo [32:10]: the most terrible thing that i've seen in the medical school
+Pablo [32:17]: which takes your data runs a million different models
+Pablo [32:19]: actually
+Pablo [32:26]: it doesn't ask how big your data it just does this way
+Pablo [32:32]: you have the best results there's no validation
+Pablo [32:37]: okay
+Pablo [32:40]: i think
+Pablo [32:41]: this is very smart
+Pablo [32:52]: anyway let's leave it there
+Pablo [32:54]: let's see if anybody has any questions
+Pablo [32:56]: they say
+Pablo [32:58]: if not enjoy your week
+Pablo [32:59]: end
+Pablo [33:02]: monday we'll start doing some
+Pablo [33:07]: how to do surveys how to do interviews
+Pablo [33:09]: how to do them properly
+Pablo [33:14]: that's it
+Pablo [33:16]: you can stick around in my chat
+Pablo [33:50]: you think you're ready
+Pablo [33:52]: no
+Pablo [33:57]: but you did the paper this week
+Pablo [34:11]: and
+Pablo [34:12]: the knowledge
+Pablo [34:24]: do what we
+Pablo [34:26]: said i already said
+Pablo [35:07]: you don't need to worry
+Pablo [35:08]: sedation
+Pablo [35:08]: i think
+Pablo [35:11]: because the professor gave me
+Pablo [35:13]: a both
+Pablo [35:19]: give us both like nineteen point five
+Pablo [35:24]: i think all the students got nineteen point five
+Pablo [35:29]: i think if you follow a modified
+Pablo [35:32]: ppt because she will give us feedback
+Pablo [35:37]: yeah i mean i think
+Pablo [35:42]: i don't even know if my team has
+Pablo [35:55]: changed
+Pablo [36:02]: did you play with that
+Pablo [36:04]: they haven't started
+Pablo [36:09]: i did
+Pablo [36:13]: like your due is on sunday right
+Pablo [36:15]: yeah because i'm coming monday
+Pablo [36:21]: it's fine don't finish it probably
+Pablo [36:21]: friday
+Pablo [36:28]: still have saturday sunday morning yeah okay
+Pablo [36:31]: i guess we'll see
+Pablo [36:32]: whatever
+Pablo [36:46]: that
+Pablo [36:51]: so i was willing to fight the price
+Pablo [36:55]: so before
+Pablo [36:55]: and after
+Pablo [37:02]: now nvidia is looking for
+Pablo [37:10]: now nvidia nvidia oh really you can use a coin because i received
+Pablo [37:12]: a human recruiter letters
+Pablo [37:18]: now they are active
+Pablo [37:20]: searching
+Pablo [37:23]: what do you want to work on the video
+Pablo [37:27]: no
+Pablo [37:28]: i think so tired
+Pablo [37:53]: that seems like
+Pablo [37:54]: a call
+Pablo [37:58]: ing iqbac from the
+Pablo [37:59]: group
+Pablo [38:03]: and
+Pablo [38:04]: martian
+Pablo [38:08]: when you can join us
+Pablo [38:09]: too
+Pablo [38:14]: they are my
+Pablo [38:15]: friend
+Pablo [38:15]: working
+Pablo [38:16]: at glue
+Pablo [38:17]: yes
+Pablo [40:12]: are you taking your bike today
+Pablo [40:20]: now we'll head out early in a second

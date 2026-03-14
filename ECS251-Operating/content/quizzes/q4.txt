@@ -1,0 +1,18 @@
+**Pick Any 2 (1 point each):**
+
+**A. What is the purpose of load balancing? How does the CFS accomplish it?**
+Load balancing tries to distribute work evenly across CPUs so no CPU sits idle while others are overloaded. CFS does this by periodically checking if CPUs are imbalanced and migrating tasks from busy CPUs to idle ones.
+
+**B. Briefly describe one of the bugs in the CFS and how it was fixed.**
+There was a bug where the load balancer could get stuck in an infinite loop when trying to move tasks between CPUs, which caused the system to hang. It was fixed by adding checks to prevent the loop from continuing indefinitely.
+
+**C. How/why does ghOSt use agent and thread sequence numbers?**
+ghOSt uses sequence numbers to make sure the agent has up-to-date information about a thread before scheduling it. When the agent tries to schedule a thread, the kernel checks if the sequence number matches, and if it's stale the transaction fails.
+
+**D. What is a benefit of a centralized scheduling policy?**
+A centralized policy can make better global decisions since it has a complete view of the whole system rather than just local information on each CPU.
+
+**Pick 1 (2 points):**
+
+**1. Is scheduling a solved problem? Why or why not? What new hardware or application trends contribute to your answer?**
+No, scheduling isn't solved because hardware and workloads keep changing. New trends like heterogeneous cores, chiplets, and microsecond-scale latency requirements for modern applications mean schedulers need to keep evolving to handle these new demands.

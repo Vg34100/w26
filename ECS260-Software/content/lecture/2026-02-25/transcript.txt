@@ -1,0 +1,571 @@
+Them [0:22]: okay
+Them [0:25]: so
+Them [0:30]: i'm going to start let me see
+Pablo [0:43]: how many of you are here
+Pablo [0:44]: shy of the joint
+Pablo [0:45]: i
+Pablo [0:48]: 'm afraid he is
+Pablo [0:54]: actually in exactly
+Pablo [0:55]: two thirty
+Pablo [0:56]: five
+Pablo [1:01]: in the morning
+Pablo [1:45]: we are seeing professor vasilescu walking
+Pablo [1:51]: okay
+Pablo [1:58]: so
+Pablo [1:59]: after spending the time
+Pablo [2:00]: on
+Pablo [2:01]: various work
+Pablo [2:02]: s
+Pablo [2:07]: of
+Pablo [2:08]: how a is a
+Pablo [2:09]: phd student
+Pablo [2:10]: turning miller
+Pablo [2:11]: in software engine
+Pablo [2:12]: ering working
+Pablo [2:12]: with
+Pablo [2:13]: both of us
+Pablo [2:20]: your second year or third year i'm thirty and i am thirty
+Pablo [2:20]: wow
+Pablo [2:29]: full disclosure i lost how i wanted to have a peer
+Pablo [2:34]: but this is just as good
+Pablo [2:50]: okay and then professor vasilisu is an associate professor at cmu he's leading the student group which is one of the most innovative and productive groups and here's to many more years of this in empirical software engineering
+Pablo [2:57]: more than i have a long history we have collaborated he has been here as opposed to
+Pablo [3:02]: and he's dating some of our students from yusuf davis
+Pablo [3:04]: undergrad
+Pablo [3:26]: uate students we have great relationship with cmu so this is ongoing and we're looking forward to more of that today in particular and this is regardless of the new york times faith that they got we thought their msr paper on speed at the cost of quality is so interesting and excellent topic that fits right
+Pablo [3:32]: here
+Pablo [3:35]: so thank you so much for that
+Pablo [3:41]: before we go forward i just wanted to say where we were in class
+Pablo [3:43]: before this in the way of who we were
+Pablo [3:47]: we started regression directed to ai models
+Pablo [3:49]: and we talked about the trade offs
+Pablo [3:57]: ai per se is more predictive than causal i wanted to just say two words about
+Pablo [4:03]: that house before we go about the difference between what it means for a model to be good because we never really discussed it
+Pablo [4:06]: versus what it means for a model to be causal
+Pablo [4:18]: okay so sometimes we don't care about anything else but productivity of a model so we get a nice big juicy model has ninety eight percent of it can really
+Pablo [4:20]: and that's great
+Pablo [4:47]: we throw in all sorts of variables but it doesn't mean that we've discovered anything causally that goes on anything mechanistically so to speak as they call it design and maybe there's no reason for it maybe you're not interested in how to do anything what causes what you're just interested in the prediction many ai models are like those offers the explanatory power if used with a proper theory
+Pablo [5:01]: and proper selection of variables can get you formed over local safe then what many of you submitted for example the correlations the tests of needs et cetera which are just confirmatory
+Pablo [5:10]: but is this regression really the tool to pursue causality with there's all sorts of causal inference methods
+Pablo [5:13]: we've used some in the past
+Pablo [5:19]: and boldness group celestial group has continued and improved
+Pablo [5:28]: started using different we'll hear about today to take us closer to causality if in fact
+Pablo [5:41]: with that said
+Pablo [5:44]: thank you so much how and yours
+Pablo [5:51]: okay thank you very nicely very nice clear introduction
+Pablo [6:00]: so as he has said so there are huge amount of causal impress methods available
+Pablo [6:08]: and basic one starting from simple d linear regression and it is actually tremendously hard to navigate between those methods
+Pablo [6:12]: and think about how to choose different methods of all different
+Pablo [6:12]: types
+Pablo [6:13]: and most easy
+Pablo [6:14]: prefer business modeling
+Pablo [6:16]: in this
+Pablo [6:17]: dynamic choosing
+Pablo [6:17]: an impression
+Pablo [6:19]: about all the relationships
+Pablo [6:22]: that
+Pablo [6:23]: have been produced
+Pablo [6:24]: in power
+Pablo [6:25]: and
+Pablo [6:25]: use a shop
+Pablo [6:36]: specific
+Pablo [6:37]: ally
+Pablo [6:38]: used for research
+Pablo [6:39]: as unusual
+Pablo [6:40]: by conference
+Pablo [6:41]: at the end of the
+Pablo [6:42]: actual
+Pablo [6:50]: use
+Pablo [6:52]: r
+Pablo [6:54]: to
+Pablo [6:55]: illustrate
+Pablo [6:56]: why we work with
+Pablo [6:57]: one zero
+Pablo [6:57]: operations
+Pablo [6:59]: for example
+Pablo [7:00]: i'm pretty sure
+Pablo [7:01]: that
+Pablo [7:05]: all of you are using
+Pablo [7:06]: data
+Pablo [7:16]: i know
+Pablo [7:17]: some of you need to
+Pablo [7:19]: learn
+Pablo [7:20]: was on five
+Pablo [7:22]: and three
+Pablo [7:23]: nice
+Pablo [7:23]: human rights
+Pablo [7:24]: prompt and
+Pablo [7:25]: then the call
+Pablo [7:26]: is
+Pablo [7:34]: hard
+Pablo [7:35]: er than lastly
+Pablo [7:37]: so visit another
+Pablo [7:37]: typical question
+Pablo [7:40]: once
+Pablo [7:42]: to identify all
+Pablo [7:42]: the relationship
+Pablo [7:51]: s
+Pablo [7:53]: revealed
+Pablo [7:54]: disaster
+Pablo [7:55]: or extender
+Pablo [7:56]: codes
+Pablo [7:58]: no
+Pablo [7:59]: one should know
+Pablo [8:11]: all the
+Pablo [8:12]: time
+Pablo [8:13]: before but it's
+Pablo [8:13]: faster
+Pablo [8:14]: when you're working
+Pablo [8:15]: on something that's a little bit
+Pablo [8:16]: less
+Pablo [8:19]: sometimes
+Pablo [8:20]: it takes longer
+Pablo [8:20]: actually
+Pablo [8:22]: the wrong
+Pablo [8:23]: direction
+Pablo [8:26]: turning
+Pablo [8:27]: to the class so
+Pablo [8:28]: you can experience
+Pablo [8:30]: down
+Pablo [8:33]: one
+Pablo [8:46]: def
+Pablo [8:46]: ine
+Pablo [8:47]: host exalab
+Pablo [8:48]: martin
+Pablo [9:14]: is one of the official
+Pablo [9:27]: ones going
+Pablo [9:28]: on
+Pablo [9:29]: when i started calling
+Pablo [9:30]: eight hours
+Pablo [9:41]: of
+Pablo [9:41]: parsa
+Pablo [9:45]: but i
+Pablo [9:46]: find that really i use
+Pablo [9:50]: it just to give you what type of library
+Pablo [9:51]: relevant
+Pablo [9:53]: check
+Pablo [9:54]: two days more time
+Pablo [9:59]: yeah i think that's also a very important
+Pablo [10:03]: fact people often think that they are going to use actually helps people write
+Pablo [10:04]: code
+Pablo [10:05]: more
+Pablo [10:07]: of their list of familiar with circle
+Pablo [10:13]: with
+Pablo [10:15]: the developers have already open
+Pablo [10:16]: ed
+Pablo [10:17]: the
+Pablo [10:18]: grandmother program
+Pablo [10:20]: that
+Pablo [10:21]: you're working
+Pablo [10:21]: on
+Pablo [10:23]: so all these
+Pablo [10:24]: kind of
+Pablo [10:25]: pattern in fact
+Pablo [10:34]: we do want to actually investigate whether people this kind of feeling in mind is true or not
+Pablo [10:41]: but we may want to first try to have some sort of average estimation
+Pablo [11:07]: let's say that we want to check on average does using cursor makes the router faster or write better code that may be average over all kinds of use cases maybe we're at average over beginners i would recommend more experience developers added over simple products and complex project stuff like that
+Pablo [11:15]: and even if you only look at this kind of simple causal relationship the fact that you can see a lot of different opinions already
+Pablo [11:16]: on the internet
+Pablo [11:58]: let's say on the one extreme they are super high hands usually by those that are the retinal ai tools that maybe you using this ai can make you super productive can make you complete your task faster or can help you fundamentally transform how software develop works nowadays but on the meanwhile they're also seeing the internet about how the average user is complaining about cousin it's complaining about those ai tools that they're struggling using them they are giving up using them they don't exactly know how to get the productivity benefits from them so we have all kinds of these observations
+Pablo [12:26]: and we do want empirical evidence to support either side of them or to tail a much more dual story like whatever is suggesting so this is kind of the exact place where we want models to predict causal relationships or to prove causal relationships instead of just being just being like just having very high protective performance
+Pablo [12:42]: but this thing is actually tremendously harder to do and to explain why we cannot really answer this question with simple method i'm going to show this hypothetical scenario
+Pablo [12:46]: let's say that if you won't really show that using it makes you more productive
+Pablo [13:18]: like maybe the simplest way you can do is you maybe find one hundred github projects that are using cluster and find one hundred other github projects that are not using hazard and maybe we just compute how many number of they are producing each month and let's say that it will find effort that wizard have like two hundred commits on average each month and projects that are not using cursor have one hundred commits on average each mode now the problem is there's this difference really tell us anything of the effect of using hassel dependent velocity
+Pablo [13:21]: now
+Pablo [13:22]: is the other number
+Pablo [13:23]: of quality
+Pablo [13:25]: yes exactly
+Pablo [13:28]: and why that's finished
+Pablo [13:29]: there often on
+Pablo [13:30]: wise centers
+Pablo [13:31]: loftiness
+Pablo [13:32]: and a deal with
+Pablo [13:41]: no
+Pablo [13:42]: with this two
+Pablo [13:43]: hundred comments
+Pablo [13:44]: how much loss
+Pablo [13:45]: it's introduced
+Pablo [13:47]: in the code and maybe
+Pablo [13:49]: longer term it requires much
+Pablo [13:49]: more
+Pablo [13:56]: data using
+Pablo [14:02]: an entry
+Pablo [14:03]: larson so they have
+Pablo [14:04]: a lot more view
+Pablo [14:06]: on the project
+Pablo [14:15]: than the
+Pablo [14:18]: same
+Pablo [14:19]: kind of
+Pablo [14:21]: code
+Pablo [14:22]: which is
+Pablo [14:24]: there
+Pablo [14:25]: really cannot carry
+Pablo [14:26]: we don't have any
+Pablo [14:27]: assurance
+Pablo [14:28]: that
+Pablo [14:29]: they're coming to identify
+Pablo [14:30]: the humans also
+Pablo [14:31]: have a comma
+Pablo [14:32]: there might
+Pablo [14:33]: be any transfer
+Pablo [14:34]: commitment
+Pablo [14:37]: so
+Pablo [14:38]: we cannot comp
+Pablo [14:39]: are the custom
+Pablo [14:40]: er so we need to
+Pablo [14:41]: have
+Pablo [14:42]: data
+Pablo [14:43]: like this
+Pablo [14:44]: differentiate
+Pablo [14:51]: what companies are having like bucks and we cannot judge in that way what
+Pablo [14:54]: yeah
+Pablo [15:06]: self selection thing going on where we have people who are eager to take on tools are also the people who program
+Pablo [15:10]: there's a little bit of a bias
+Pablo [15:21]: there yes i think both of them are very good arguments like maybe some projects using because they just have more bugs that they have to fix so they are going to have more commits on average
+Pablo [15:24]: or maybe those that have
+Pablo [15:37]: five hundred more competitors developers have more skill so they are going to produce more qubits because they are more skilled but it doesn't really tell us anything about the effect of using ai tools
+Pablo [15:49]: so all these concerns are very valid in fact you can probably come up with at least ten or maybe a few dozen different types of things which we call confounders
+Pablo [15:59]: that both affect the treatment and the outcome variable interest so in this case the signal is when the
+Pablo [16:01]: outcome
+Pablo [16:02]: variable is
+Pablo [16:06]: so much
+Pablo [16:07]: catherine
+Pablo [16:08]: call
+Pablo [16:13]: for debt
+Pablo [16:31]: and
+Pablo [16:32]: this is
+Pablo [16:35]: one
+Pablo [16:39]: typ
+Pablo [16:40]: e of
+Pablo [16:41]: cit
+Pablo [16:43]: izen because there
+Pablo [16:43]: are many many other
+Pablo [16:44]: components
+Pablo [16:46]: that
+Pablo [16:47]: propose
+Pablo [16:48]: a part of the
+Pablo [16:49]: investigation
+Pablo [16:53]: causes the fact that
+Pablo [16:54]: this
+Pablo [16:57]: highlighted corporation
+Pablo [16:58]: between the
+Pablo [16:59]: treatments
+Pablo [17:01]: and the outcome variable
+Pablo [17:04]: investigates so that
+Pablo [17:07]: usually deriving
+Pablo [17:09]: traditional law
+Pablo [17:10]: s
+Pablo [17:13]: so to improve
+Pablo [17:14]: all
+Pablo [17:15]: this avenue
+Pablo [17:16]: from
+Pablo [17:17]: actress
+Pablo [17:18]: and rec
+Pablo [17:19]: ruit in group of
+Pablo [17:21]: visible
+Pablo [17:21]: methods
+Pablo [17:22]: a knowledge
+Pablo [17:23]: of multip
+Pablo [17:24]: lied
+Pablo [17:50]: by
+Pablo [17:54]: many
+Pablo [17:55]: development
+Pablo [17:57]: has
+Pablo [17:58]: of nas
+Pablo [18:00]: i moore investig
+Pablo [18:01]: ated the direction
+Pablo [18:02]: of the respons
+Pablo [18:03]: e
+Pablo [18:12]: even
+Pablo [18:14]: miscast and let's say that
+Pablo [18:18]: we have some method
+Pablo [18:19]: from linear regressions
+Pablo [18:24]: do you believe that video record like this still identifies the course like
+Pablo [18:25]: that
+Pablo [18:37]: we have to try these three different linear regression models with three different compounders often shows that has a project still that we have more monthly visit than other projects
+Pablo [18:42]: and the fact is positive significant and consistent force across all three models
+Pablo [18:51]: and you might want to share whether the belief this whether you believe that this model identifies a causal effect or not
+Pablo [18:54]: i think
+Pablo [18:55]: it could be more of a
+Pablo [18:56]: correlation
+Pablo [19:09]: like it might say the model might predict correlation with the compounders but not causation because i feel there are a lot more variables for linear regression module like to
+Pablo [19:10]: ne it down to if i'm making sense
+Pablo [19:12]: yes
+Pablo [19:18]: that's a very good observation so what we observe here is fundamentally zero correlation
+Pablo [19:29]: and induction will be tricky to actually prove that this correlation is actually positioned and we will talk about why this is the case of how to get over that later
+Pablo [19:32]: adenios want to share their opinion
+Pablo [19:35]: i think
+Pablo [19:36]: like what the professor
+Pablo [19:37]: said about
+Pablo [19:39]: maybe
+Pablo [19:40]: people who are more
+Pablo [19:41]: likely to
+Pablo [19:43]: what was it
+Pablo [19:44]: like
+Pablo [19:49]: or do more work or also same people are trying out new software
+Pablo [19:54]: so maybe the actual causation is that those people
+Pablo [19:58]: are actively working harder rather than it being because they're used cursor
+Pablo [20:29]: yes that's a very good point actually i think this point specifically raises a concern that this model doesn't really able to address because to control for that concern you will need this model to control for developer skills control for how eager they are to work on this work on their projects but we just don't have these compounders in this model and in fact some of them is fundamentally not observable like you will never know how eager a developer is in your own project
+Pablo [20:34]: or you won't be able to come up with a good enough measure to
+Them [20:38]: skill that developer is you just think they cannot do that
+Them [21:01]: so here it comes like kind of the median dollar question in this lecture so how do we really evaluate the credibility of a cost of chem from a statistical model and in the case that we find that this cell model is less credible where causal claim how do we come up with better methods to support the fossil cham
+Them [21:16]: so in fact this is a problem that have been thought about by scientists probably taking around like two hundred years ago as of now and they
+Them [21:20]: have basically thought about how to do this
+Them [21:24]: there are basically whole fields think about patients like this
+Them [21:45]: advances we are seeing the past decade that will focus on metrics and etymology but actually they are also prepared applicable to some of the ng research or overview any kind of computer science research as long as you are working on observational data like github repositories
+Them [22:19]: and the more the reproductive cost or inference have a huge amount of different methods with variable validity like some of them are usually considered as golden standards like red experiments because it is much easier or better they are finding a causal they are really finding something also by design there are also other methods that have higher external validity that it is easier to run large scale observational study using a method like that but it is also tremendously hard in order that you are observing your course of hair out of it
+Them [22:36]: and again i'm not going to introduce any of the methods in this section i think i only have twenty minutes free many go over how to use those how to use those magnetic cracks by the way vladimir how many times do i have until six for this lecture
+Them [22:42]: so we have twenty eight minutes left of the lecture
+Them [22:51]: okay i suggest you use most of that time for the lecture and then people who want to ask questions can stand additional five ten minutes
+Them [22:52]: after that
+Them [22:54]: okay
+Them [23:18]: so i'm going to try to move faster and i will going to the q and a session later i don't really have any patches remind all these slides but to have some to kind of introduce how to think about cassarity i'm going to introduce two very useful frameworks that scientists in other fields use to reasonable facility
+Them [23:51]: the
+Pablo [23:51]: first framework it is also directed cyclic graphs or in some fields we call structuring equational modeling which kind of studies more than that because they have more methods about how to reason and model based on those graphs but in the simplest way it is basically just a way of formally specifying course of relationships and it is elegant because different types of drug structure describes how you want how you believe about the fossil relationship is the real world
+Pablo [24:17]: you may specify a direct relationship that curves adoption is going to increase or decrease velocity and you can specify confounders such as project age that are both effective cost adoption and affecting development velocity and you can also specify mediators team skills may affect how complex you will get in your code base and how complex it is going to affect how fast your product will be in the future
+Pablo [24:27]: there are also colliders and backdoors and not going to introduce here because i don't have enough time for that but i'm going to provide references later and you're interested
+Pablo [24:32]: take a look into this book and see what the full theory is going to look like
+Pablo [24:40]: with the course of theory in mind another way i can already do this go back to that
+Pablo [24:41]: slide for a
+Pablo [24:43]: sec okay yeah
+Pablo [24:43]: this one
+Pablo [24:45]: yeah because this is interesting
+Pablo [24:46]: and
+Pablo [24:48]: this taxonomy is great
+Pablo [24:55]: how does one go decide if something is a compound reversible
+Pablo [24:55]: mediator
+Pablo [25:04]: yes so that's a very good question so in fact this framework basically impose what you believe about real world
+Pablo [25:16]: usually if you derive a causal theory like that based on all the power research and based on your best understanding
+Pablo [25:25]: but there's usually no fomo way of testing whether this course or there you are proposing is bad or not
+Pablo [25:42]: this area is useful because it kind of provides a framework for other critics to check whether what you believe is correct and if they believe it is not correct
+Pablo [25:50]: they can propose an alternative graph and check whether they are still required in the data
+Pablo [26:06]: or maybe guided by diagram we may get different findings and it is pretty common in other fields that there are kind of hundreds of studies with different causal theory to repeatedly test the same problem by maybe whether smoking is causing cancer stuff like that
+Pablo [26:16]: and in fact with like one hundred studies with different fossil theories you can pretty much reach a reliable conclusion whether this is true or not
+Pablo [26:18]: this sounds to me like
+Pablo [26:20]: an extension of contingency
+Pablo [26:21]: theory in a
+Pablo [26:21]: way
+Pablo [26:24]: and i wonder if there is
+Pablo [26:28]: any work that you've met on the way of studying
+Pablo [26:33]: where contingency theories expanded with parts of causality
+Pablo [26:38]: i don't want to belabor that but yeah
+Pablo [26:52]: so this is one way of reasoning about kazari rat instruments is useful and another way is the potential outcome framework which is basically a formal way of reasoning about counterfactuals
+Pablo [26:55]: and in this framework
+Pablo [27:02]: we think about the causal effect based on the potential outcome for each entity
+Pablo [27:04]: like for each treated entity
+Pablo [27:07]: if they do not have any treatment
+Pablo [27:31]: and this framework is an interesting way of reasoning about casalte but it could never really compute tags based on reality because you cannot really have an entity that is post treated at an untreated unless you use a time machine to travel in the past and try to change the treatments that freedom of status or one of the research subjects
+Pablo [27:37]: but this is basically impossible so you can think of all console impress methods
+Pablo [27:45]: to use some models to estimate the potential outcome of the treated if the treatment never happens
+Pablo [27:50]: and to estimate these treatment effects based on the observations of untreated entities
+Pablo [27:59]: and based on that factor you can even use more mathematics to derive the functions so that we can estimate this treatment effect unbiasedly
+Pablo [28:07]: and again we're not going to go over the mathematical details of that i'm going to provide pointers later
+Pablo [28:17]: basically you think the whole fossil implants method are as a way of reasonable counterfactuals and about trying to assess whether the cancer factors are reliable or not
+Pablo [28:23]: with that two frameworks in mind
+Pablo [28:29]: you can approach like i think you can pretty much approach
+Pablo [28:41]: the approach making both of her clients in software and j research in the following simple step so first you may want to specify causal theory in which you want to test as directly select the graph
+Pablo [28:49]: and then you may want to find a potential outcome while you're using and under what assumption the model may be able to umpire is the estimated total impact
+Pablo [29:10]: and based on the theory and the potential outcome and the factor model you may want to collect appropriate data from a completion defeated model and then finally to check whether the find is you get from the model may or may not represent fossil canc you need to either provide an explicit test of the both assumption
+Pablo [29:20]: or argue the possibility of the above assumption based on idle fossil theory or established possibility test provided by some statistical models you might be using
+Pablo [29:38]: and again numpase guarantees consolidate by design but you will need to try to argue about the possibility of causal clamps from your model and try to get closer and closer to cassady based on observational data
+Pablo [29:44]: and let me use the
+Pablo [29:53]: let me use the cursor versus development example the development of the example further as how you may want to do this
+Pablo [30:16]: let's say that i propose this causal direct encyclop about how cursor adoption may affect the drug phase of velocity and i list five different compounders here including application domain including team skill in three d or diagnostic voucher including full complexity and code based magazine
+Pablo [30:25]: and using this directly i cyclic graph can also continue using potential alpha model
+Pablo [30:42]: as if you use a linear regression like what i specify here the actual outcome for each project with cancer adoption it is boolina regression model and cut factorial is those computed in the same model using project that do not adopt cursor
+Pablo [31:04]: and if you receive a little bit further using asymptotic theory in statistics you can derive the assumption of both interpretation here and again i really recommend this book if you want to actually see the foolproof of why you would need this assumption but also interpretation but i'm just going to draw a conclusion here
+Pablo [31:15]: to make a console client from a linear regression model you would need to show that this model either sufficiently textures or compounders
+Pablo [31:17]: or the treatment itself
+Pablo [31:21]: in this model is as good as render
+Pablo [31:56]: so there are two ways of rp around this but i think one way to argue that this assumption holds is that you have a causal theory you have all the compoundaris included from the causal theory into your model or in the case that you don't have full coverage of your photo theory you will need it either run an actual experiment or construct a positive experiment to show that the treatment here is as good as random or like you construct a setting that is posted to randomized experiment
+Pablo [32:04]: however in a specific case the model previously
+Pablo [32:14]: for the models that have proposed three basic previously easy argument in my positive is not sufficient to show if you refer to this
+Pablo [32:17]: ag we saw
+Pablo [32:21]: that
+Pablo [32:49]: we attempted to show for her applications of men team skill is a compounder i think there's a good matricular model that actually organizes culture maybe you have some natural dynasty and cold compatibility but because of these things three important co founders it is extremely hard products we have captured compounders that is sufficient for causal interpretation
+Pablo [33:01]: so this causal theory and pleasure of bowel we can use the
+Pablo [33:11]: potentially might be stronger for arguing a causal clamp and there's very silicon way of doing this
+Pablo [33:12]: by
+Pablo [33:14]: the
+Pablo [33:14]: brushes
+Pablo [33:31]: so basically the high level idea is that because there are so many co founders that we cannot capture that also some of them also fundamentally unobservable we choose to repeat to observe the same energy repeatedly
+Pablo [33:32]: over time
+Pablo [33:43]: and estimate whether the cell project would maybe write more or less commits using cursor while we are also counting for macro temporal trend
+Pablo [34:02]: so what we are doing here is actually closer to an actual experiment because we are observing we know some of them have adopted cursor in certain time points and we know that we have certain some amount of observations facts about them before they adopted
+Pablo [34:10]: cursor and we are somehow trying to measure how the cell product is going to change after they have adopted cursor
+Pablo [34:20]: so this is art very strong much stronger better than simple multivariate linear regression
+Pablo [34:24]: because if
+Pablo [34:25]: we observe how the
+Pablo [34:27]: cell would have to false all the time
+Pablo [34:28]: this controls what
+Pablo [34:30]: mental trans
+Pablo [34:32]: itions
+Pablo [34:32]: were not the practice
+Pablo [34:34]: as milk
+Pablo [34:35]: ity
+Pablo [34:36]: of
+Pablo [34:37]: observing
+Pablo [34:37]: it
+Pablo [34:40]: also
+Pablo [34:42]: expertise
+Pablo [34:43]: preference
+Pablo [34:44]: s
+Pablo [34:45]: have to
+Pablo [34:46]: decisive
+Pablo [34:47]: difficulty
+Pablo [34:48]: and culture
+Pablo [34:49]: we just
+Pablo [34:51]: absorb everything
+Pablo [34:52]: we're just trying
+Pablo [34:54]: to see about each other chance
+Pablo [34:55]: before
+Pablo [34:57]: and after being
+Pablo [34:58]: exposed to
+Pablo [34:59]: cancer
+Pablo [35:01]: and
+Pablo [35:04]: we can again use the major alpha
+Pablo [35:05]: network to
+Pablo [35:06]: derive
+Pablo [35:08]: actually easier
+Pablo [35:09]: for
+Pablo [35:10]: the
+Pablo [35:11]: trans
+Pablo [35:13]: ition out of this
+Pablo [35:14]: model
+Pablo [35:15]: and
+Pablo [35:16]: i'm interested
+Pablo [35:17]: here
+Pablo [35:18]: that there is no
+Pablo [35:19]: one
+Pablo [35:20]: who cares
+Pablo [35:22]: and selection into treatment
+Pablo [35:23]: mechanisms
+Pablo [35:25]: that affect post test erupt
+Pablo [35:27]: ions and her curiosity within her separ
+Pablo [35:27]: ate
+Pablo [35:29]: so
+Pablo [35:34]: it is saying basically humans so first
+Pablo [35:35]: there's no carbon that
+Pablo [35:37]: she trusted
+Pablo [35:38]: over
+Pablo [35:40]: time
+Pablo [35:43]: and
+Pablo [35:45]: there is no selection
+Pablo [35:46]: to treat the
+Pablo [35:47]: mechanism
+Pablo [35:48]: like maybe
+Pablo [35:49]: some evidence
+Pablo [35:49]: of what i teach
+Pablo [35:51]: contin
+Pablo [35:52]: uous cancer because
+Pablo [35:52]: they are complex
+Pablo [35:55]: and
+Pablo [35:56]: if you can possibly
+Pablo [35:57]: organize
+Pablo [35:58]: there are no
+Pablo [36:00]: research design
+Pablo [36:02]: you can use a penal regression
+Pablo [36:10]: with two way big effects to argue that we have discovered the close relationship
+Pablo [36:23]: however for the curse study setting this is actually pretty much tricky because it is actually hard for this specific set that you get over the selection to treatment assumption
+Pablo [36:43]: procop have reached this exact point that at the first of this lecture that may be self developer are more tech savvy that they love to try out new tools and those more text savvy developers are also more productive and they are more likely to use cursor ai
+Pablo [36:58]: and this kind of mechanism is what is kind of like a fundamental limitation of fixed effect models that you need something better
+Pablo [37:00]: to overcome this limitation
+Pablo [37:11]: but again even if you don't have something better to overcome these limitations a result from like panel regression or linear equation is still valuable
+Pablo [37:21]: but you can use this framework to make it clear that it's less possible that you have discovered the true causal relationship out of
+Pablo [37:40]: this or like it may be in some cases you can actually argue that the linear regression or fixed effect regression is sufficient because i'm confident that i've included both of the compounders in the model or i'm confident that there's no possible indoor changes treatments selection mechanism here
+Pablo [37:43]: or alternatively like for the cursor
+Pablo [37:52]: ai sent me because i've been impacted indulging extreme selection in the fundamental selection that i cannot really
+Pablo [37:54]: get away with this
+Pablo [37:58]: so in that case the research
+Pablo [37:59]: that
+Pablo [38:01]: i
+Pablo [38:03]: design and
+Pablo [38:04]: students
+Pablo [38:08]: usually we call them in the form of control natural or positive experiments
+Pablo [38:55]: so let's say that the control experiment one may want to repute visibility to work on the same path with or without cursor and this has a few advantages like it is arguably the strongest method to argue about physicality because statisticians can easily show that random eliminates all compounds by design as well terminologically enough dataset but it may also have lower external validity because participants may not be represented real developers or maybe if or other experiments you can only let them work for short term tasks and this has
+Pablo [38:55]: again
+Pablo [39:01]: this is not setting up the results from intruding experience is valuable is not valuable in fact they are tremendously valuable
+Pablo [39:15]: when you just also want something better something that is drawn on an observational setting for a long time that gives us a tremendously different perspective from the control experiment of developers working with or without cancer for only two hours
+Pablo [39:35]: so provide to make a positive experiment while may i construct a try to find maybe try to find a natural experiment where people are exposed to treatment out of their control but arguably this doesn't really work
+Pablo [39:58]: for the cursor setting so i need to construct the faucet experimental setting by finding a comparable control group from the vast amount of hidden repositories available in github and you can run different tests to say that the two groups are indeed comparable and use differences in different design which is basically an extension of the fixed fabric version i have before
+Pablo [40:05]: adduced that you argue for causal plants in the long term olamitadino layout
+Pablo [40:21]: so in fact if you are interested in this problem i have two very good examples of how to run the control experiment or how to run a quasi experiment to estimate a causal effect of cursor on software development
+Pablo [40:44]: and this white paper that is conducted by a nonprofit called meter that did exactly the control experiment i'm talking about and i've also recently published a paper that maybe some of you have read or heard about how to construct a poseid experiment to estimate to estimate the impact of cursor in a long time in real open source products
+Pablo [41:02]: and finally again because i'm trying to provide a very quick coverage of how you may want to make photo testing of the nga research but this is probably so broad that i find it hard to actually cover all the methodologies that you may need to use
+Pablo [41:06]: so i think the most important this is the most important site you want to store
+Pablo [41:12]: for in case you want to use this in your future research tag
+Pablo [41:16]: here are a few books that you may find interesting
+Pablo [41:37]: like the first three books is what i used to learn about learn about catholicity learn about fossil euphrasia learn about how to come up with varianceable causal inference design like the first one by scott colin palm is extremely good at expanding concepts with increased intuitions
+Pablo [42:03]: and the second one is good for learning basic statistics and learning how to call this r the third one is the book if you want one strict formalism and want to really understand why these assumptions are necessary for a fossil fan and finally as of now the state of the er the last language models nowadays are tremendously good at answering any questions you have about causal inference
+Pablo [42:20]: is also tremendously toner part your existing research design suggests better or alternatives and it is also tremendously good that if i run it designing this also new predicaments themselves
+Pablo [42:51]: in fact i'm seeing in econometric sheets even those very established people in that field using cloud coded automated parameter process and i believe with advancement of large language models nowadays the consolid print method called lipids designs are no longer like inaccessible pack computer sciences so i do really want to advise you to think about a little bit more in your own research and try to use a better method to make causal clamps in your research
+Pablo [42:57]: i have like eight minutes purchase any questions
+Pablo [43:04]: first of all thank you so much let's thank the speaker
+Pablo [43:07]: we
+Pablo [43:10]: heard about causality and how to structure things about caus
+Pablo [43:10]: ality
+Pablo [43:11]: and
+Pablo [43:15]: how to conduct studies in causality is what you want to study
+Pablo [43:18]: so any questions about
+Pablo [43:23]: any opinions any impressions yes
+Pablo [43:39]: you used to know what role does project duration has to play in this because in my opinion i've experienced that especially early on ai is really good to develop faster in the setup and adding features
+Pablo [43:47]: but as in when the project duration increases and especially when it comes to maintenance phase
+Pablo [44:02]: it is a bit frustrating and the overall duration the overall velocity of using ai decreases if we increase the time period of study so was that something included in this
+Pablo [44:04]: did you catch all that
+Pablo [44:56]: yes so impact increases about the long term effect of ugci tools as for true phone sale you can exactly do that just with appropriate statistical method so if you are interested i do please you are welcome to read our paper because our paper actually shows exactly what you are thinking about regarding using cursor that most of the projects that are using hersol only gets productivity benefits in the first two models probably because they are either in the early stage or they are super excited with ai tools but they are actually struggling to get any productivity or velocity benefits in the longer expert precisely because the product is getting more and more complex
+Pablo [45:02]: and it is harder to make maybe
+Pablo [45:11]: cancel ai or at least ai models that with twenty twenty five double capability further work for that copies
+Pablo [45:15]: other
+Pablo [45:15]: questions
+Pablo [45:22]: i don't know i will for one if there's time
+Pablo [45:25]: a question or an app
+Pablo [45:26]: one question okay
+Pablo [45:36]: so i was wondering you identified selection into treatment as an issue with the previous approaches
+Pablo [45:45]: but i don't know that you've given us enough intuition about why this different design addresses that could you say a bit more about this
+Pablo [45:48]: yes
+Pablo [45:55]: if you just run the cell fixed effect model
+Pablo [46:01]: two random group of projects that use or doesn't use cursor
+Pablo [46:07]: i think here
+Pablo [46:23]: i think maybe it's a little bit nuanced than what i am having here it is not really that fixed effect regression model suffers from the selection into treatment mechanism but if you don't have a quasi experimental setting
+Pablo [46:27]: you suffer from the selection into treatment mechanism
+Pablo [46:37]: but if you are able to build a quasi experimental setting this fix the effect regression specification is in fact the
+Them [46:40]: implemented differences and differences
+Them [46:41]: are
+Them [46:44]: if
+Pablo [46:44]: you say a bit more about what that looks like
+Them [46:48]: why does that work
+Them [46:49]: yeah
+Them [47:08]: i don't think or any will have enough time to explain how this specifically works on pixie batch regression because it will require like a whole forty page math table to explain why this peak effect is fundamentally two indicators and differences
+Them [47:15]: but the high level idea of differences in differences is that it is comparing how two groups are evolving over time
+Them [47:24]: and using the group that are never exposed to treatment as the counterfactual for the group that are exposed to treatment
+Them [47:28]: i think let's leave that question
+Them [47:29]: there and thank you thank you
+Them [47:35]: i think we may i think harry right we may need a whole class for that
+Them [47:38]: and i encourage everybody to read on that
+Them [47:48]: we've done also regression discontinuity design which was shown as one of the batteries also housewives but i do have a question or rather a use case out for you maybe
+Them [47:54]: and we have like fifty five minutes maybe to finish the class type but i'm happy to say
+Them [47:57]: so here's what i was thinking
+Them [48:03]: so there's an ethical researcher who goes through all the steps you recommend right
+Them [48:10]: and they develop theory they identify their compound there is identify their moderators whatever
+Them [48:21]: and then they look through their data confirm or not using the best method and then there's of course the opportunist
+Them [48:24]: who collect as much as they can collect
+Them [48:29]: anything that's possible to observe in a data set right hundreds of variables
+Them [48:40]: they run the biggest regression with mixed effects models and what and then they find some results and then they retcon the story
+Them [48:49]: that fits that so the question is this is there a way for you using causal methods to distinguish between the two
+Pablo [49:24]: yes that's a very good question i think the challenge and i think the anti pattern we are mentioning here is that a lazy researcher can just include a one hundred uv batteries in her model without thinking about how they may contribute how this may change the validity of cost of canc from their model and in fact if you are more interested in this topic i would advise you to read this book and especially chapter three
+Pablo [49:29]: and the most harmless economics book i think
+Pablo [49:34]: let me try to find
+Pablo [49:50]: so you're saying there is optimism that there is a way to tell that the intent somehow yes so i really recommend this chapter because it discusses exactly this
+Pablo [50:13]: and prove mathematically why you cannot just include as much variables as possible in your regression model and in fact if you include bad controls in your model it breaks or includes a lot of metrics to measure the same thing in remodel it breaks the whole thing apart and you cannot really make any cleanse out of it
+Pablo [50:21]: so i think the high level idea is that you have like five different variables to measure the same thing
+Pablo [50:27]: you are basically just distributing the true causal effect of over five different covariates
+Pablo [50:31]: and anything i'm measuring will be severe underestimation
+Pablo [50:38]: because you are distributing into five different five different cogarity in your model
+Pablo [50:43]: thank you great i'll check it out
+Pablo [50:50]: and i'm sure some other people here will but let me take this opportunity again to thank you and then release my students
+Pablo [50:55]: and if anybody wants to stick around and have a more minute
+Pablo [50:57]: please
+Pablo [50:58]: do
+Pablo [51:00]: otherwise bye bye
+Pablo [51:16]: thanks for having us yeah do you guys i wanted to say it seems to me we cannot careful this can turn into a catch twenty two everything and then you're trying to show something
+Pablo [51:20]: that you already know right

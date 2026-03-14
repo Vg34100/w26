@@ -1,0 +1,250 @@
+Them [0:02]: hello
+Them [0:04]: hey
+Them [0:06]: okay
+Them [0:15]: yeah we're supposed to meet on friday i think
+Them [0:17]: and then sidetracked
+Them [0:22]: oh well first
+Them [0:29]: one of you two did
+Them [0:33]: the final report
+Them [0:36]: right
+Them [0:46]: yeah
+Them [0:51]: why didn't you
+Them [0:57]: never mind
+Them [1:05]: yeah this looks great i see
+Them [1:07]: a few notes here
+Them [1:10]: need more
+Them [1:23]: i think
+Them [1:41]: i fixed up the sync a diagram and the radar chart a bit that are in the correct color scheme now and
+Them [1:47]: there's actual slides for them telling the user to like interact with them and stuff
+Them [1:59]: i tried making the radar chart part of your line graph stuff pablo
+Them [2:06]: but it looked really bad it was squashed along with its own legend and
+Them [2:11]: the time range the time slider
+Them [2:19]: it looked really squashed so i just made it bigger on its own page here let me push my changes
+Them [2:39]: yeah i tried i tried using whatever
+Them [2:45]: i tried importing whatever css stuff you guys had made so that it would match
+Them [2:47]: yeah
+Them [2:53]: add source components
+Them [2:58]: there shouldn't be any
+Them [3:01]: merge conflicts
+Them [3:05]: there shouldn't be any conflicts on the online repo
+Them [3:16]: stop syncy
+Them [3:17]: track
+Them [3:57]: i think we already do have motivation and stuff with these opening slides
+Them [4:02]: did we ever show her this
+Them [4:12]: what the first three i'm talking about the slides
+Them [4:16]: yeah i mean i would show them
+Them [4:17]: we did
+Them [4:20]: i don't think so
+Them [4:22]: oh you didn't show them okay
+Them [4:27]: yeah because i'm not sure how much more background we could give here
+Them [4:32]: i think that is enough funding
+Them [4:47]: okay
+Them [4:50]: motivations problem
+Them [4:59]: okay
+Them [5:06]: are we talking about the motivations problem section or the challenges section
+Them [5:20]: okay
+Them [5:35]: yeah i think the slides should have that but it doesn't need to be like a strict
+Them [5:36]: segmenting thing
+Them [5:43]: yeah i think mainly we can try to include that in the report
+Them [5:46]: so like try it properly in the report
+Them [5:55]: i guess the only thing is like i think for background and related work maybe we could add a slide for that because i don't
+Them [6:10]: think we have anything like that on the slides but do we really need a background in related work slide like this it's mainly like we are showing about oscars and the graphs itself so it's more like a report thing i feel
+Them [6:14]: yeah i guess so
+Them [6:19]: yeah
+Them [6:27]: maybe we can mail and ask
+Them [6:30]: yeah okay
+Them [6:37]: yeah but for now i think we're good
+Them [6:41]: yes just now
+Them [6:42]: okay
+Them [6:47]: yeah sorry go ahead
+Them [7:05]: no sorry go go you go on yeah i think for one of the graphs let me check which visualization it is exactly for the gender by category the circular ones they are mostly black and i don't think the colors are visible on the black background
+Them [7:08]: like for the circles
+Them [7:20]: i mean for the male like are you able to see that properly
+Them [7:25]: you're talking about slide eight gender by category
+Them [7:29]: yeah yes i did yeah
+Them [7:36]: it says on my page it's still building the layout
+Them [7:41]: oh okay let me try
+Them [7:50]: yes like eight so the gender by category
+Them [8:05]: so from the legends i can see that circular one is recircular one represents male the circle one so because of the black background i think it's not clearly visible
+Them [8:08]: i guess able to see it proper
+Them [8:22]: right right right
+Them [8:24]: one more graphic
+Them [8:25]: okay
+Them [8:27]: yeah makes sense
+Them [8:32]: yeah
+Them [8:34]: i just wanted to confirm that once
+Them [8:40]: okay it's mainly the i think i think maybe like
+Them [8:45]: yeah
+Them [8:47]: okay
+Them [8:53]: yeah
+Them [9:17]: yeah i had one more suggestion for example on that particular page the text written each mark is a non mere winner so like that we have text written for every slide right
+Them [9:31]: so can we try to increase the font size for that so that for the users it's clearly readable like more focus goes on that or like maybe you can try to increase the font size a bit more
+Them [9:32]: that's what i think
+Them [9:35]: i don't know for all the all the slides
+Them [9:41]: like on each side we are writing a comment
+Them [9:56]: writing a comment about the visualization and even we have the boxes as well like where we have to select if it's a male female or even the categories i think you can try to increase that a bit for more readability
+Them [10:15]: and even the color of the box like we can try to keep it as like oscars gold and text invite so that it looks even all across what do you guys think
+Them [10:30]: sorry
+Them [10:50]: i want just to select ai i think i i i think you can set the who benefits most from progress that page and you'll get an edit like this is what i wanted to tell
+Them [10:53]: if that good review
+Them [10:59]: so the boxes should be white when you select them is that what you're saying
+Them [11:06]: i didn't do color of the box it should be black the border can be oscar's gold and the text can be white
+Them [11:10]: okay okay and rounded boxes like it look visually better
+Them [11:15]: is that now what they already are
+Them [11:18]: not at all
+Them [11:28]: yeah and you can make it a little
+Them [11:32]: this is from the who benefits most from progress thing right
+Them [11:41]: like i was trying to say that we can make it similar to the who benefits most from progress boxes
+Them [11:43]: oh that's the ideal okay yeah
+Them [11:52]: i think you don't have any boxes i think ritesh so okay
+Them [11:58]: yeah i have i have i have some couple i have a couple boxes but they have gold outlines
+Them [12:11]: and i think i'm not sure who has sandra space for the race winners there's a text that's coming on the line chart itself so maybe you can like just
+Them [12:14]: add
+Them [12:16]: ing for that
+Them [12:20]: race winners oh oh yeah
+Them [12:22]: yeah
+Them [12:29]: async is all squished
+Them [12:31]: but it not i didn't notice
+Them [12:32]: that
+Them [12:46]: also for the all entry like for the main bubble bar chart should we try to move the legend because i think it's covering the technical visualization right the technical points
+Them [12:54]: so for the all entries at one slide the fourth slide
+Them [13:01]: the legend is covering the visualization should we try to move it somewhere else or this is fine
+Them [13:36]: okay yeah so i think on i don't know what the like on my laptop i can see that the bars are also like overlapping sorry the points are also like overlapping so is that not for you guys
+Them [14:00]: okay yeah yeah so i can yeah i can send a picture of what i am able to see so so for my homework too she cut points for me because my graph was not scalable according to the screen size
+Them [14:18]: yeah and that was the same for me for the sanki diagram as well so i thought like i i don't know what the issue was but yeah now i get it
+Them [14:23]: the senki
+Them [14:27]: i added i added scaling for it i don't know
+Them [14:28]: yeah
+Them [14:35]: it probably doesn't hold up well if you really try hard to break it but like it's there yeah yeah okay
+Them [14:43]: yeah i wasn't even able to like see the entire diagram after the page was loaded so yeah
+Them [14:44]: yeah it should be fixable
+Them [14:53]: this is what i'm able i send a picture i sent a picture in the group this is what i'm able to see like i'm sending a zoomed picture of the bubbles
+Them [15:20]: i'm viewing the visualizations on the entire screen only but maybe my laptop like the screen size is smaller
+Them [15:30]: also pablo minor thing
+Them [15:35]: maybe
+Them [15:39]: make the background color strips
+Them [15:43]: for those bubbles a bit more bleached out
+Them [15:47]: you know what i'm saying like with
+Them [15:52]: the yeah like in in the picture you sent like you have like a red
+Them [15:56]: bar for the other category yeah
+Them [15:59]: yeah like maybe
+Them [16:02]: like up the alpha value on them
+Them [16:05]: in the rgb
+Them [16:10]: like yeah that that's all because i think just a minor thing
+Them [16:28]: i think the same thing is happening for me for the back to system slide as well like i'm able to see all like all the bubbles are just overlapped for me
+Them [16:34]: yeah
+Them [16:44]: also divide the comments on the project proposal that the ta posted
+Them [16:47]: yes i wanted to talk about that
+Them [17:00]: i mean i think the most interesting part well i there was a bunch of stuff there i think we've covered some of it actually
+Them [17:04]: but the last bit about like how to deal with categories like best picture
+Them [17:12]: i don't know what do you guys think about that here let me let me just take a screenshot
+Them [17:13]: of the last bit
+Them [17:17]: this right here
+Them [17:38]: so i think we can just say that she had written in the comment that i hope you only use categories about people for simplicity so can we just like add a comment in the report that we are only using categories about people
+Them [17:41]: because that
+Them [18:04]: how does your code work
+Them [18:35]: oh i see
+Them [18:51]: that's what i did too so for the who benefits most from august that slide like i had categories only for that particular slide so in the other section i think i've included the best pictures and other stuff like documentary
+Them [18:53]: and short film and all of that
+Them [18:55]: yeah same
+Them [19:04]: maybe maybe we can add like a little bit about that in one of the slides just for clarity purposes like all the yeah
+Them [19:07]: okay
+Them [19:08]: yeah we can do that
+Them [19:17]: was there anything else
+Them [19:23]: there's some remaining two figures i think our design should be consistent
+Them [19:25]: right now right
+Them [19:26]: yeah
+Them [19:36]: oh yeah you did a good job with the the circles pablo i like that visualization a lot
+Them [19:39]: it looks very yeah it looks very clean
+Them [19:53]: yeah
+Them [20:12]: yeah i was i was thinking something like a little informal like
+Them [20:17]: like kind of the same format that we did
+Them [20:23]: with our midterm presentation whatever
+Them [20:26]: like we have we have like
+Them [20:36]: a google slides presentation at the beginning that's kind of short that just like goes over like you said pablo like some of
+Them [20:38]: the like what
+Them [20:44]: motivations problems challenges background and related work stuff like that
+Them [20:47]: and then
+Them [20:53]: for the actual like talking about what visualizations we made
+Them [20:59]: and like what conclusions we can draw from them we can just go through what our data
+Them [21:00]: story is
+Them [21:03]: yeah
+Them [21:14]: yeah yeah like like an introduction to our data story
+Them [21:23]: with like and then and then we actually jump into the data story and then from there we can just go over
+Them [21:25]: our visualizations and then
+Them [21:26]: yeah
+Them [21:30]: yeah i like that
+Them [21:41]: so like i think the big conclusion that we should have is you know like things have changed in the past few years but they haven't changed enough
+Them [21:50]: minorities and women are still vastly underrepresented even if it's it's gotten better in recent years
+Them [21:56]: yeah
+Them [22:14]: okay
+Them [22:17]: i can i can
+Them [22:23]: try to like hammer that in my sites because they're both about race
+Them [22:28]: okay i can make a like a point out of that
+Them [23:10]: okay
+Them [23:16]: yeah
+Them [23:26]: i gave it a brief once over i guess some stuff
+Them [23:28]: that
+Them [23:34]: like me and sally can add on to it but like you've done pretty much most of the work there pablo
+Them [23:37]: yeah ai will make the rest of the changes now
+Them [23:38]: yeah
+Them [23:41]: yeah we can we can also do the slides
+Them [23:43]: it'll mostly be the same stuff
+Them [23:46]: from our our mid review i mean
+Them [23:48]: like the google slides
+Them [23:51]: will mostly be the same stuff
+Them [23:53]: from our mid review google slides but like
+Them [23:54]: yeah
+Them [24:03]: i think arab proposals i didn't have challenges and background i think right so we yeah that's the big yeah
+Them [24:04]: hold on
+Them [24:13]: and i think we are following the same sequence like ritesh will start
+Them [24:13]: with
+Them [24:15]: the introduction
+Them [24:18]: yeah we can do the same
+Them [24:21]: i don't remember who did it
+Them [24:23]: for proposal
+Them [24:35]: she's talking about like the midterm like for a presentation we did in class
+Them [24:39]: who went first
+Them [24:40]: and like in what order
+Them [24:47]: presenting what codes each of us will cover during the final presidency
+Them [24:50]: yeah
+Them [24:55]: yeah i mean i can go first and cover like the introduction stuff pablo can do
+Them [25:00]: like the bubble plot and whatever visualization she covered
+Them [25:03]: it'll switch back to me
+Them [25:15]: for the radar chart and syncy and then silee can finish up with the ending and like explain whatever like conclusions we got
+Them [25:18]: and like what analysis we can draw from the data
+Them [25:20]: yeah okay
+Them [25:24]: okay
+Them [25:33]: yeah we're pretty much done with it we just need to like make some changes i think
+Them [25:36]: so that's yeah after that we should be good
+Them [25:41]: do you guys want to do you guys want to meet on
+Them [25:46]: i would rather
+Them [25:48]: i would either meet on tuesday or wednesday
+Them [25:52]: do you mean for a dry run
+Them [25:55]: yeah
+Them [26:00]: yeah we could do one does wednesday work
+Them [26:07]: sure it'll have to be not it can't be at wednesday night
+Them [26:11]: how about wednesday evening
+Them [26:14]: yeah
+Them [26:25]: well i i have fencing between seven to nine pm on wednesday so i can do after
+Them [26:26]: let me know
+Them [26:33]: okay pablo can according to pablo's availability too we can do wednesday afternoon
+Them [26:37]: okay
+Them [26:43]: me and sally
+Them [26:48]: will finish up the report and do the slides
+Them [26:55]: to the google sites
+Them [26:59]: pablo you can like
+Them [27:01]: do i think
+Them [27:04]: yeah
+Them [27:07]: okay
+Them [27:10]: i think most of the work by now yeah
+Them [27:15]: yeah so by wednesday afternoon we can be ready
+Them [27:16]: with almost everything
+Them [27:21]: and just we're pretty much done it's just like minor stuff at this point yeah
+Them [27:22]: yeah yeah
+Them [27:23]: okay
+Them [27:27]: okay sounds good
+Them [27:31]: i'll see you guys then
+Them [27:34]: yes okay guys bye
+Them [27:35]: bye have a good day
+Them [27:37]: you too

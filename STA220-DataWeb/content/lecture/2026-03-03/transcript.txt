@@ -1,0 +1,1307 @@
+Pablo [1:18]: of the sd twenty course before we start
+Pablo [1:23]: today i had like one page of announcement
+Pablo [1:49]: time so the point is i mean positive as i said this is our lecture let me start with all the things quickly over is the first walmart is friday please also upload at two html files basically you should provide one
+Pablo [1:50]: four
+Pablo [1:53]: plastic
+Pablo [1:54]: bicycle
+Pablo [1:59]: please upload them on ten person
+Pablo [2:01]: to get full credit
+Pablo [2:02]: and
+Pablo [2:03]: first
+Pablo [2:06]: and
+Pablo [2:07]: speaking of the present
+Pablo [2:08]: ations
+Pablo [2:09]: i would like to
+Pablo [2:11]: give
+Pablo [2:12]: you some
+Pablo [2:14]: feeling how we will organize everything
+Pablo [2:23]: first of all please upload the pdf of your presentation until one p m on the day you are presenting
+Pablo [2:36]: so if you are within the group one of the groups that is presenting on first and discursive please upload everything until one p m then it can download it and then have it
+Pablo [2:40]: do your presentation
+Pablo [2:42]: with the pdf i have
+Pablo [2:43]: on
+Pablo [2:44]: okay
+Pablo [2:51]: also the presentation should take twelve to fifteen minutes each class five minutes
+Pablo [2:59]: for the discussion so the basic ideas represent the topic afterwards it will be five minutes of discussion
+Pablo [3:15]: and it told that you should take no longer than twenty minutes because we have next week we have five lecture and this would be one hundred minutes like one hour forty minutes
+Pablo [3:23]: if you need like three minutes to go but if i thirty minutes because you don't finish in time
+Pablo [3:34]: this will go on forever so we'll be very stick with twenty minutes and after fifteen minutes of presentation with just presentations that we have discussion
+Pablo [3:41]: speaking of discussion of course i will also ask questions
+Pablo [3:52]: but you know one part what ingredient is and this will be great to have a new design on the participation
+Pablo [3:55]: during the discussion in the sense that
+Pablo [3:56]: if you ask
+Pablo [3:56]: questions
+Pablo [4:18]: so that we have this student sometimes you will ask questions do the presentations and discuss with the group and then i will take this into consideration what it really please make sure that you participate in the next lecture scheme you can now present because then you
+Pablo [4:19]: can particip
+Pablo [4:20]: ate discussion
+Pablo [4:28]: yes and then just for the organization first
+Pablo [4:37]: twenty minutes but maybe because it's the first presentation maybe for take ten minutes
+Pablo [4:51]: more for the change between the groups and for all the upcoming lectures will really try to be very high
+Pablo [4:54]: because one end
+Pablo [5:03]: of next monday and next tuesday and thursday next
+Pablo [5:06]: week it's one hundred minutes
+Pablo [5:07]: this week
+Pablo [5:10]: it's six seven is what i
+Pablo [5:13]: okay and of course there's no discussion
+Pablo [5:14]: section is on these days
+Pablo [5:17]: obviously
+Pablo [5:18]: and
+Pablo [5:20]: okay
+Pablo [5:23]: and then i have some more
+Pablo [5:26]: things to say first of all
+Pablo [5:30]: there is something about office hours
+Pablo [5:37]: so for this office hours i will open hours on the first day
+Pablo [5:40]: but not from twelve forty five to one forty five
+Pablo [5:42]: between nine
+Pablo [5:43]: and twenty
+Pablo [5:51]: and going but in the next there is one change about efficiently as the goal of this out
+Pablo [5:53]: to one p m at three p m on
+Pablo [5:54]: monday
+Pablo [6:05]: here is because you have submit a project next sunday maybe you have more questions than usual
+Pablo [6:11]: so there is like one office hours posted on monday
+Pablo [6:19]: then on thursday i have like one office hours next week as usual and then how has all
+Pablo [6:21]: you have
+Pablo [6:27]: and on the other days you can use
+Pablo [6:28]: via email
+Pablo [6:29]: or
+Pablo [6:29]: write something
+Pablo [6:32]: so basically it is really have a poss
+Pablo [6:35]: ibility to reach our
+Pablo [6:37]: project
+Pablo [6:39]: yes
+Pablo [6:41]: and with this
+Pablo [6:44]: let me mention two things
+Pablo [6:45]: i mean
+Pablo [6:52]: if you exclude about exact breathing if you want to know how we would create something please reach out
+Pablo [6:56]: but for all the other things
+Pablo [6:57]: we all know
+Pablo [6:58]: ident
+Pablo [6:59]: ity office
+Pablo [7:02]: okay
+Pablo [7:04]: this
+Pablo [7:06]: would be five minutes of announcement
+Pablo [7:11]: i think now do you have any questions you can read everything and upload it
+Pablo [7:16]: only two or literally assignments
+Pablo [7:20]: would be really good yes so it's best to
+Pablo [7:21]: read
+Pablo [7:27]: if you have for example the first two homeworks you could basically speak out
+Pablo [7:34]: but otherwise i would think
+Pablo [7:37]: correct question
+Pablo [7:39]: okay
+Pablo [7:42]: then let me just
+Pablo [7:46]: quickly show you where we ended the last time
+Pablo [7:54]: basically we were talking about natural language processing and there was one table that we would like to show you once again
+Pablo [7:58]: and it basically is
+Pablo [8:03]: nlp project type
+Pablo [8:13]: so we start with we have some text we are tokenizing this text basically this means we have chapters or like newspaper
+Pablo [8:15]: s then we
+Pablo [8:16]: bring
+Pablo [8:17]: these paths
+Pablo [8:20]: and
+Pablo [8:21]: it's called such a
+Pablo [8:22]: beautiful word
+Pablo [8:23]: psalmist
+Pablo [8:24]: sentences
+Pablo [8:25]: like
+Pablo [8:25]: virus
+Pablo [8:29]: every
+Pablo [8:29]: day
+Pablo [8:32]: and
+Pablo [8:33]: we are preprocessing
+Pablo [8:33]: them
+Pablo [9:00]: and
+Pablo [9:00]: this is to try
+Pablo [9:06]: to
+Pablo [9:06]: teach you
+Pablo [9:07]: and you know we
+Pablo [9:08]: are very good
+Pablo [9:17]: and
+Pablo [9:21]: they are
+Pablo [9:22]: based in turn
+Pablo [9:24]: and
+Pablo [9:24]: after
+Pablo [9:27]: measures
+Pablo [9:34]: classify
+Pablo [9:35]: using your
+Pablo [9:35]: audience
+Pablo [9:36]: so
+Pablo [9:38]: one
+Pablo [9:39]: hundred
+Pablo [9:46]: percent
+Pablo [9:47]: organized and
+Pablo [9:50]: then you
+Pablo [9:51]: train a base
+Pablo [9:55]: and
+Pablo [9:56]: afterwards you have a mod
+Pablo [9:57]: el that is basically
+Pablo [9:58]: able to
+Pablo [9:59]: read a new
+Pablo [10:00]: skill
+Pablo [10:01]: and then
+Pablo [10:02]: trying
+Pablo [10:03]: to
+Pablo [10:04]: use
+Pablo [10:05]: technology
+Pablo [10:07]: what is
+Pablo [10:08]: about
+Pablo [10:11]: so
+Pablo [10:12]: this is basically
+Pablo [10:13]: this step
+Pablo [10:14]: this is the main goal
+Pablo [10:16]: that
+Pablo [10:17]: we come
+Pablo [10:18]: on that is
+Pablo [10:19]: trained on
+Pablo [10:20]: some text
+Pablo [10:21]: some newspaper
+Pablo [10:21]: articles
+Pablo [10:22]: whatever
+Pablo [10:24]: and
+Pablo [10:25]: our court is able
+Pablo [10:26]: to have more
+Pablo [10:28]: and then
+Pablo [10:29]: when we have
+Pablo [10:30]: created such a
+Pablo [10:32]: classifier at some point
+Pablo [10:37]: a typical thing in the project lifecycle is you have to evaluate the model
+Pablo [10:38]: right
+Pablo [10:44]: if you have a regression model if you think of the least squares in the end you calculate something like in new square error
+Pablo [10:44]: or
+Pablo [10:47]: like r squared and if you ask where is something
+Pablo [10:48]: like ninety
+Pablo [10:49]: centing of your
+Pablo [10:50]: wallet work very well
+Pablo [10:52]: if you haven't asked
+Pablo [10:53]: ten percent
+Pablo [10:54]: then maybe
+Pablo [10:55]: doing
+Pablo [10:57]: to change the model because
+Pablo [10:58]: it's not
+Pablo [10:59]: and
+Pablo [11:01]: in our case
+Pablo [11:04]: we will
+Pablo [11:05]: use r or
+Pablo [11:06]: c curve this
+Pablo [11:10]: is the last thing how we can compare different
+Pablo [11:10]: ridiculous
+Pablo [11:12]: mod
+Pablo [11:12]: els
+Pablo [11:13]: and so
+Pablo [11:14]: this is these
+Pablo [11:15]: three steps
+Pablo [11:16]: are there content
+Pablo [11:17]: of
+Pablo [11:18]: the texture
+Pablo [11:19]: and then in the end
+Pablo [11:20]: hopefully
+Pablo [11:23]: some
+Pablo [11:24]: basic method
+Pablo [11:30]: okay
+Pablo [11:31]: i'm going to
+Pablo [11:32]: let me
+Pablo [11:33]: go back to the
+Pablo [11:35]: end
+Pablo [11:36]: of the last time
+Pablo [11:43]: okay so
+Pablo [12:01]: i present the last six slides basically see if we have some frequent of a large corpus in a sense we have a lot of newspaper articles or like we have several books and we just count together like the number for currencies of different words
+Pablo [12:07]: and all of that then tips law basically states that
+Pablo [12:08]: if
+Pablo [12:13]: the most frequent word is used
+Pablo [12:17]: most people
+Pablo [12:21]: and it's used like ten thousand times
+Pablo [12:41]: and it's like rank is number one then the rank number two occurs approximately ten thousand divided by two times five thousand times rank number three should have figured approximately three thousand times and so on this basically
+Pablo [12:47]: all
+Pablo [13:10]: words and count term frequencies this is like our approximate and this is not really like a normal nature it's more in the sense that we observe this and it's like a theory that some words are occurring in a specific order
+Pablo [13:42]: i have presented the last and this beautiful plot if we just look at the term frequencies of the book moving of all chapters and see if they can using now the frequency the logarithm of the frequency in the algorithm basically we see a relationship with the following sense should be the red line is basically six long it's a linear relationship
+Pablo [13:47]: a lot of the frequent
+Pablo [13:49]: orbits that we have around
+Pablo [13:54]: six the frequency
+Pablo [14:02]: equals some number divided by the range
+Pablo [14:09]: so like rank number one is some c divided one rank number with ten thousand by two and so on
+Pablo [14:12]: and if we take logarithm on both sides
+Pablo [14:21]: this basically reduces rank
+Pablo [14:29]: so now if i have a block closed by a constant frequency
+Pablo [14:32]: versus the log rank it should be like
+Pablo [14:38]: a linear relationship with a negative that would
+Pablo [14:50]: basically so this is one last thing about theory how often words occur and we can see actually
+Pablo [15:11]: but how can we use i mean i said in the end i want to create some sense and give you a new newspaper article you have our classifier to be able to classify and the text
+Pablo [15:36]: for this we will use the convex horizon basically here is we try to get some advancements of the text we'll use some kind of cloud frequencies for different actions and from the features we'll train a task via so we have to find out what kind of
+Pablo [15:37]: features
+Pablo [15:55]: first let me just come up with the basic example before apply everything to a large group we have here a focus consistent with four documents we have four example sentences like the heads like dog was angry and so on
+Pablo [16:02]: and you can see basically the first two sentences are very closely related to each other
+Pablo [16:11]: just think we can bought they are basically just swap these two words but the remaining is the same at the other sentences
+Pablo [16:24]: somewhat different so the idea would be a good classifier should basically be able to realize that these two sentences are somewhat similar to each other
+Pablo [16:29]: and then for example the last sentence is distinct
+Pablo [16:33]: we need to come up with some kind of task
+Pablo [16:52]: and with this we will just use the contact horizons we are counting together by occurrences of words how often does that appear how with xbox and so on the pm we are using it openizer and our organized will be just splitting sentences
+Pablo [17:03]: and then we can calculate frequencies so we use different form
+Pablo [17:11]: let me just basically the frequencies we have for large documents
+Pablo [17:52]: this is a huge frequencies can be huge we have ten power worth twenty thousand words this would be a mint column so basically contrast bar basics so we cannot really memory whenever we are using these things for very large documents we need a very memory efficient way to store the data but if we want to look at them we have two diabetes as our sparse matrix the dense matrix and you can see now we have a lot of zeros here
+Pablo [18:18]: and basically it's just telling us how often the different words appear so the first word is like in the first column we see one word appears in the first second and third sentence but never so what we just if you are interested in discounts here i would like to add as a column like the name
+Pablo [18:20]: of
+Pablo [18:21]: three
+Pablo [18:22]: it should be wor
+Pablo [18:23]: th that
+Pablo [18:29]: so
+Pablo [18:30]: let's just get
+Pablo [18:31]: the teach
+Pablo [18:32]: er the example
+Pablo [18:35]: five
+Pablo [18:36]: years
+Pablo [19:02]: only
+Pablo [19:03]: one
+Pablo [19:20]: yes but here this is what we have we have four sentences here we have three types and also
+Pablo [19:32]: c there's like
+Pablo [19:34]: no postoperative
+Pablo [19:59]: but the other ones have it at that angry ad and we see of course the first two sentences are very similar actually exactly the same because we know we just swapped the word cat and dog and everything else is the same and then we can see maybe some similarity between third sentence and the first one but the fourth one is quite distinct
+Pablo [20:01]: so in some sense
+Pablo [20:10]: this is one of the disadvantages it's called a bag word of bag model it basically needs to be donned
+Pablo [20:28]: here for the order of all these words just put everything together like shuffle and sometimes and ignore the order so this way at first sentences are instead of same in terms of the absolute but there will be a model how we
+Pablo [20:29]: can
+Pablo [20:36]: so
+Pablo [20:57]: as i mentioned we are just throwing away all of the information about the order but there's one other second drawback here you can see the main information like here we have just three times in the first two sentences
+Pablo [21:05]: and you can imagine that it's not really containing some information same holds true for the word and we
+Pablo [21:15]: have okay or maybe something like this there are some words or what really containing some information
+Pablo [21:27]: so what we could do is to prevent that we put too much information on this word on whether it's appearing very frequently
+Pablo [21:31]: you could use what is called one hop encoding
+Pablo [21:47]: we just count whether a word appears in a sentence or not when we don't count how often basically i'm the binary choice whenever that is at least once write a one year and never appears which is zero
+Pablo [21:59]: it's like a second wave dampen a little bit effect of some frequently used words and we can do so by using a binarizer
+Pablo [22:01]: so basically
+Pablo [22:16]: number
+Pablo [22:17]: three
+Pablo [22:29]: now
+Pablo [22:30]: putting too much
+Pablo [22:32]: emp
+Pablo [22:32]: hasizes
+Pablo [22:33]: some
+Pablo [22:34]: words like
+Pablo [22:35]: that
+Pablo [22:36]: and
+Pablo [22:37]: that
+Pablo [22:38]: comes
+Pablo [22:42]: one
+Pablo [22:43]: of the
+Pablo [22:45]: just
+Pablo [22:46]: comparing
+Pablo [22:59]: however
+Pablo [23:00]: this is still not
+Pablo [23:01]: very good approach
+Pablo [23:03]: because
+Pablo [23:04]: sometimes
+Pablo [23:05]: people
+Pablo [23:06]: like to use words
+Pablo [23:07]: and hours very
+Pablo [23:08]: often
+Pablo [23:09]: and sometimes
+Pablo [23:10]: any
+Pablo [23:11]: one whether
+Pablo [23:12]: they appear
+Pablo [23:12]: sentence
+Pablo [23:13]: or not
+Pablo [23:14]: so that
+Pablo [23:27]: just
+Pablo [23:28]: give article
+Pablo [23:29]: s short
+Pablo [23:30]: and one
+Pablo [23:31]: of
+Pablo [23:34]: the
+Pablo [23:35]: way
+Pablo [23:35]: s
+Pablo [23:39]: visual
+Pablo [23:43]: but
+Pablo [23:44]: it is for examp
+Pablo [23:45]: le
+Pablo [24:10]: because
+Pablo [24:11]: some of the very
+Pablo [24:12]: often
+Pablo [24:16]: really
+Pablo [24:17]: have a
+Pablo [24:18]: vision
+Pablo [24:36]: that
+Pablo [24:37]: we call this
+Pablo [24:39]: here
+Pablo [24:40]: there is no
+Pablo [24:42]: just
+Pablo [24:43]: ice
+Pablo [24:43]: difficult
+Pablo [24:44]: word in english
+Pablo [24:44]: message
+Pablo [24:54]: but
+Pablo [24:55]: only rarely used
+Pablo [24:55]: for others
+Pablo [24:56]: that there is
+Pablo [25:02]: something
+Pablo [25:06]: so
+Pablo [25:07]: our
+Pablo [25:10]: selves
+Pablo [25:11]: very often
+Pablo [25:14]: in
+Pablo [25:15]: other words
+Pablo [25:15]: man
+Pablo [25:16]: and want to
+Pablo [25:17]: be onwards
+Pablo [25:21]: later
+Pablo [25:22]: there
+Pablo [25:27]: are
+Pablo [25:36]: four
+Pablo [25:37]: stars
+Pablo [25:43]: and
+Pablo [25:44]: this space edited
+Pablo [25:45]: air force
+Pablo [25:46]: called trump
+Pablo [26:06]: okay
+Pablo [26:08]: follow
+Pablo [26:10]: nine
+Pablo [26:22]: of
+Pablo [26:22]: the rest of
+Pablo [26:23]: them
+Pablo [26:24]: and
+Pablo [26:25]: then we multiply
+Pablo [26:26]: the term
+Pablo [26:27]: and it's based
+Pablo [26:28]: headed only
+Pablo [26:29]: the number of all
+Pablo [26:30]: of
+Pablo [26:32]: us
+Pablo [26:33]: might
+Pablo [26:34]: want
+Pablo [26:35]: the number
+Pablo [26:36]: of
+Pablo [26:39]: words
+Pablo [26:43]: like
+Pablo [26:44]: that
+Pablo [26:45]: is
+Pablo [26:46]: complete
+Pablo [26:46]: all documents
+Pablo [26:56]: and
+Pablo [26:57]: this is the logarithm
+Pablo [26:59]: this is
+Pablo [27:00]: one
+Pablo [27:02]: give
+Pablo [27:03]: us
+Pablo [27:06]: a very small ipad
+Pablo [27:09]: regardless of how large our term frequency is
+Pablo [27:13]: what is really uniform distributable or all opt
+Pablo [27:20]: imized data quality documents the logarithm of one zero
+Pablo [27:22]: and we get a very small number here
+Pablo [27:24]: if it's like the logarithm of one
+Pablo [27:25]: plus inside
+Pablo [27:33]: in contrast if we have something like the word software or football which appears very often for some of the articles
+Pablo [27:35]: but never already other articles
+Pablo [27:40]: that we have like a high term frequency because it's very obvious what
+Pablo [27:52]: the ingress document frequency is smaller so there's really like we know now there is a meaning containing word
+Pablo [27:54]: because it's not used all of
+Pablo [27:55]: documents
+Pablo [28:06]: and this is the idea of the term like actually ids will be like one each of the most for our feature
+Pablo [28:10]: we want to come up with prediction for a new article
+Pablo [28:18]: whether it's about sports politics that we will first train our model on these words and see the word there
+Pablo [28:22]: does not contain any information about the word socket a lot of information
+Pablo [28:33]: that we are training a model and after that we are just giving a new article to a model and then in the new article it's about edit mode soccer again
+Pablo [28:40]: and then we know our model knows that it must be a sports out
+Pablo [28:46]: and of course it was like one example of course we have other words like say democracy
+Pablo [28:51]: gets the other way around
+Pablo [29:00]: and then it contains word democracy that we know it will be possible politics
+Pablo [29:07]: and then other words that are appearing only reality in sports and politics
+Pablo [29:08]: what
+Pablo [29:09]: ever
+Pablo [29:11]: the art
+Pablo [29:14]: really
+Pablo [29:23]: and then we just have to find out what are the
+Pablo [29:28]: providing the most meaning what distinguish
+Pablo [29:30]: okay
+Pablo [30:01]: and because we use python we don't have program everything on our own we don't have to come up with these formulas here of the tf idf statistics and then we quickly mention this is one of the formulas how we can come up with several districts i missed how you have it like an inverse document frequency or something and so on
+Pablo [30:04]: but
+Pablo [30:09]: the base case is always find out the words that really contains
+Pablo [30:10]: meaning
+Pablo [30:12]: and throw
+Pablo [30:12]: away all the others
+Pablo [30:27]: so then we're just using the tf idf vectorized so basically you can provide some text and it will create like a get ids store and this is what we're doing here
+Pablo [30:28]: we are just creating
+Pablo [30:31]: vectorize of the network
+Pablo [30:32]: denies that it is lifting
+Pablo [30:34]: our
+Pablo [30:39]: core positive words and then we apply this vectorizer to
+Pablo [30:40]: our focus
+Pablo [30:41]: consisting of
+Pablo [30:43]: four sentences
+Pablo [30:47]: and these are like basic words
+Pablo [31:03]: and here we have now a t iex so for all of these words here we're like the angry and can and so on with tfim and the base page here is whenever there's zero
+Pablo [31:14]: there's basically no information this word does not appear and if you have like a large df id explore it basically means there is a lot of information contained for example
+Pablo [31:21]: in this here two power five there is like a lot of information
+Pablo [31:29]: one of the first two sentences so it really covers information
+Pablo [31:32]: while other words do not
+Pablo [31:33]: cover
+Pablo [31:40]: somehow even
+Pablo [31:42]: okay
+Pablo [31:53]: and then we can dampen a little bit like zero five you will have zero two if you want them this a little bit
+Pablo [31:54]: and also use the docker
+Pablo [31:55]: written
+Pablo [31:57]: but this is like just
+Pablo [32:06]: one thousand if you want to dampen down some of the slightly different ideas
+Pablo [32:08]: for neighbors
+Pablo [32:29]: so the idea here is now that we try to throw away all these words that have an overall load yet idf score so if a word has no all documents summing up then we can throw it away a lot of information
+Pablo [32:40]: we are now coming after all the different words that we see some of the words by pain
+Pablo [32:48]: us they are not really paying a lot of information because their overall tf idf score is more but for example
+Pablo [32:51]: head or
+Pablo [32:58]: may not keep that
+Pablo [33:04]: you throw away again all the words
+Pablo [33:07]: and
+Pablo [33:11]: these are the points we are going to
+Pablo [33:12]: talk
+Pablo [33:16]: so how can we come up with the prediction
+Pablo [33:21]: the idea is
+Pablo [33:25]: that we are measuring similarity
+Pablo [33:38]: so once we have now our tf idf score so this type we have vectors a and b for each of the documents like for each article
+Pablo [33:42]: let's say ia is an r is an optical
+Pablo [33:58]: then we transform this rt into tf idf so now a is a numerical vector here idf for first article b is idf co consistent of the second
+Pablo [34:05]: article and we would say two articles contain all that information
+Pablo [34:21]: if they are somehow close to each other with the tip ids score are closely related to each other then we would say so there are like different modes so we can target
+Pablo [34:24]: one
+Pablo [34:24]: arm and so on
+Pablo [34:31]: so we have different tfif or we can use all these measurements
+Pablo [34:39]: but actually it turns out that one of the most successful score you can use
+Pablo [34:44]: is basically cosine similarity so if you
+Pablo [34:58]: draw like a pen dimension object we just draw a two dimensional thing
+Pablo [35:07]: and
+Pablo [35:08]: first year
+Pablo [35:09]: by
+Pablo [35:13]: e
+Pablo [35:17]: the second
+Pablo [35:28]: might
+Pablo [35:29]: be able
+Pablo [35:30]: and
+Pablo [35:31]: if yah
+Pablo [35:32]: weh
+Pablo [35:33]: lectures
+Pablo [35:34]: is very close to
+Pablo [35:34]: zero
+Pablo [35:35]: this means
+Pablo [35:36]: they have
+Pablo [35:38]: the same direction
+Pablo [35:38]: in the sense
+Pablo [35:39]: they have
+Pablo [35:40]: a similar
+Pablo [35:44]: and
+Pablo [35:45]: if we have
+Pablo [35:47]: different
+Pablo [35:56]: this means there would be like a large
+Pablo [35:57]: angle
+Pablo [35:58]: and
+Pablo [36:01]: this would mean a one
+Pablo [36:09]: and this is basically what we're doing here we're just typing
+Pablo [36:12]: the scalar product dividing it by the length
+Pablo [36:19]: and then calculate it like the cosine of it is basically giving up
+Pablo [36:23]: cosine of a and this case
+Pablo [36:40]: letter five is so here we have our corpus consisting of four different sentences
+Pablo [37:03]: here we have our words like our frequencies and our here is now that we just have it like the angle between the first row at the second row and the first row at third row and so on and we can do so by cutting just this matrix times the transpose
+Pablo [37:12]: x prime
+Pablo [37:18]: consisting of the active first row x one x two x three x four
+Pablo [37:29]: and you will one
+Pablo [37:34]: that is basically gives us a new matrix
+Pablo [37:39]: where here we have our x one x two
+Pablo [37:42]: and we have scalar over all
+Pablo [37:52]: so we have to scale up the order between the first two and the second row we see here in the second row first column
+Pablo [37:58]: basically this here is really calculating the similarity between all the sentences
+Pablo [38:05]: with always one on the main diagonal because every sentence perfect is similar
+Pablo [38:06]: to itself
+Pablo [38:08]: and you see
+Pablo [38:09]: that the first sentence and the second
+Pablo [38:10]: sentence
+Pablo [38:15]: now
+Pablo [38:16]: here using the
+Pablo [38:21]: religion
+Pablo [38:34]: and the
+Pablo [38:35]: prototyp
+Pablo [38:36]: e
+Pablo [38:45]: this is
+Pablo [38:46]: not yet
+Pablo [38:54]: and
+Pablo [38:55]: then check
+Pablo [39:03]: the
+Pablo [39:03]: first sentence
+Pablo [39:04]: is about
+Pablo [39:06]: just
+Pablo [39:07]: as an example
+Pablo [39:10]: and we
+Pablo [39:11]: know the second time
+Pablo [39:12]: it's very simpler to
+Pablo [39:14]: have
+Pablo [39:14]: will be about
+Pablo [39:15]: state public
+Pablo [39:18]: and in contrast the first top
+Pablo [39:18]: ic
+Pablo [39:19]: if the first sentence is about
+Pablo [39:21]: one topic in the last
+Pablo [39:22]: sentence
+Pablo [39:27]: we will think most likely the last sentences about
+Pablo [39:30]: this topic because there's no common secretary
+Pablo [39:31]: no common
+Pablo [39:33]: pattern
+Pablo [39:45]: so basically what we will do now in the next five minutes whenever we have different sentences like different documents
+Pablo [39:54]: we calculated pf ideas here they can be very large
+Pablo [39:56]: they love and work
+Pablo [40:07]: with the system of ten thousand words and they are very large matrices and then we will have always this
+Pablo [40:19]: x times x primary key on the main diagonal we have always one and our question always what happens also mean by our
+Pablo [40:21]: option
+Pablo [40:30]: means two objects are very similar they go off work politics if the numbers very small very close to zero
+Pablo [40:33]: different topics
+Pablo [40:38]: okay yes
+Pablo [41:01]: so first we have all our words together ignore the order then we added the idx not only
+Pablo [41:03]: but also from
+Pablo [41:04]: all
+Pablo [41:11]: development and then have these numbers for all of the documents that have a clear idf score
+Pablo [41:20]: this is like basically the feature not a natural language processing typically you have some matrix consist
+Pablo [41:21]: ing of
+Pablo [41:23]: these are
+Pablo [41:24]: our numbers you can work
+Pablo [41:25]: with
+Pablo [41:26]: these are
+Pablo [41:27]: the same
+Pablo [41:28]: thing
+Pablo [42:02]: because we
+Pablo [42:03]: are taking into
+Pablo [42:04]: account all of the
+Pablo [42:05]: question
+Pablo [42:10]: s
+Pablo [42:13]: for
+Pablo [42:15]: google
+Pablo [42:16]: example
+Pablo [42:19]: this number
+Pablo [42:20]: and that one
+Pablo [42:22]: plus
+Pablo [42:24]: this number by this one this is
+Pablo [42:24]: zero
+Pablo [42:31]: and then you get this number here
+Pablo [42:35]: so this is like the matrix
+Pablo [42:36]: times
+Pablo [42:41]: and then
+Pablo [42:49]: you sum up all these tests so here that this information is not about one single word because we have summed up over all the goods out each
+Pablo [42:49]: area
+Pablo [42:52]: it's just now about
+Pablo [42:53]: all the good
+Pablo [42:58]: document data
+Pablo [42:59]: set
+Pablo [43:00]: and
+Pablo [43:03]: just divide everything by
+Pablo [43:05]: and so on
+Pablo [43:08]: but the idea is
+Pablo [43:09]: it is close
+Pablo [43:11]: one
+Pablo [43:13]: and then here we can
+Pablo [43:16]: cloud obviously the first time it is a very similar
+Pablo [43:19]: one is somewhat similar to
+Pablo [43:21]: one and then
+Pablo [43:32]: x
+Pablo [43:33]: prime x
+Pablo [43:34]: this is bas
+Pablo [43:35]: ically interview
+Pablo [43:36]: for each of these
+Pablo [43:40]: roles that are playing basically the course
+Pablo [43:45]: so if you have all of these rules
+Pablo [43:52]: we calculate that angle between the first row and the second row the second row the third row and the third one
+Pablo [43:57]: row and the cosine of the angle
+Pablo [44:00]: is
+Pablo [44:09]: yes the cosine of the anger is what we have here
+Pablo [44:24]: so if the angle is zero zero degrees it's one because zero degree means basically the inside the same and if it's like ninety degree angle this means it's completely orthogonal zero
+Pablo [44:30]: okay
+Pablo [44:44]: and as i said here we ignore completely the order of words this comes with some disadvantages as you can see the first sentence we are not able to distinguish them but of course there are solutions
+Pablo [45:00]: to this the best solution is we cannot using only unigrams like we are not tokenizing with respect to every single word that we always put in two words together so we are using the cat cats
+Pablo [45:03]: the thought of loss and so on
+Pablo [45:05]: this is called a diagram
+Pablo [45:23]: and we don't have to do this on our own there is like a tokenizer an nlt that are basically producing all these vibrants
+Pablo [45:26]: and then we just give you a quick overview
+Pablo [45:28]: for the first
+Pablo [45:41]: thing
+Pablo [45:42]: is they had
+Pablo [45:49]: the
+Pablo [45:50]: vibrance of
+Pablo [45:51]: both
+Pablo [45:52]: sent
+Pablo [45:52]: ences
+Pablo [46:06]: we know
+Pablo [46:07]: now
+Pablo [46:08]: equals
+Pablo [46:09]: five and six
+Pablo [46:16]: together
+Pablo [46:23]: the same
+Pablo [46:24]: as we don't
+Pablo [46:24]: do that
+Pablo [46:25]: because you need not
+Pablo [46:26]: be word
+Pablo [46:27]: all of us
+Pablo [46:28]: until we have
+Pablo [46:29]: hopefully always
+Pablo [46:42]: bless
+Pablo [46:43]: ed
+Pablo [46:54]: organ
+Pablo [46:55]: izers
+Pablo [46:56]: everything is
+Pablo [46:57]: worth
+Pablo [46:58]: using
+Pablo [46:59]: finances
+Pablo [47:00]: and range
+Pablo [47:01]: means
+Pablo [47:02]: like
+Pablo [47:03]: vibrance
+Pablo [47:04]: and
+Pablo [47:07]: we
+Pablo [47:08]: 're only using financ
+Pablo [47:08]: e
+Pablo [47:09]: change
+Pablo [47:15]: we are
+Pablo [47:16]: using
+Pablo [47:18]: words
+Pablo [47:19]: and bible
+Pablo [47:25]: inside
+Pablo [47:26]: the same thing as
+Pablo [47:29]: you may have our vibrance
+Pablo [47:29]: and
+Pablo [47:31]: then respond
+Pablo [47:32]: with our words
+Pablo [47:45]: and we see how often they appear like a lot of zeros here this is one of things where we can pass matrix
+Pablo [47:47]: because
+Pablo [47:49]: any for not documents
+Pablo [47:50]: they make a lot of
+Pablo [47:56]: zero and now we can exactly the same thing as single words
+Pablo [48:06]: we can calculate the matrix times its transpose and then just see whether numbers goes one and two sentences sigma and otherwise
+Pablo [48:10]: so let me just do it here
+Pablo [48:26]: seventy
+Pablo [48:27]: three percent
+Pablo [48:28]: so it's a very
+Pablo [48:28]: high
+Pablo [48:42]: percent
+Pablo [48:42]: age
+Pablo [48:44]: divers
+Pablo [48:45]: ity
+Pablo [48:53]: there is
+Pablo [48:54]: some similarity
+Pablo [48:55]: and
+Pablo [48:58]: there is
+Pablo [48:59]: a new
+Pablo [49:00]: subsidiary
+Pablo [49:01]: between the
+Pablo [49:02]: person
+Pablo [49:04]: but for example
+Pablo [49:06]: the last sentence
+Pablo [49:07]: we have similarity zero
+Pablo [49:10]: system vpn of all the other sent
+Pablo [49:11]: ences and this is
+Pablo [49:23]: the
+Pablo [49:23]: same
+Pablo [49:26]: angle
+Pablo [49:29]: and we exactly
+Pablo [49:30]: see
+Pablo [49:31]: and you can see
+Pablo [49:32]: the more
+Pablo [49:33]: engrams you use
+Pablo [49:36]: if you're going to be the small singularity
+Pablo [49:41]: okay
+Pablo [49:45]: the main message and now we have features for all the documents
+Pablo [49:49]: when document is similar to each other
+Pablo [49:49]: or not
+Pablo [49:50]: and
+Pablo [49:51]: then
+Pablo [49:53]: now try to
+Pablo [49:54]: basically
+Pablo [49:55]: tell us
+Pablo [49:56]: where things are
+Pablo [50:54]: used
+Pablo [50:55]: by space
+Pablo [50:59]: and
+Pablo [51:00]: i have
+Pablo [51:02]: given
+Pablo [51:02]: the background
+Pablo [51:03]: but
+Pablo [51:04]: given this time
+Pablo [51:10]: then you
+Pablo [51:11]: can just
+Pablo [51:12]: remind our
+Pablo [51:15]: model
+Pablo [51:18]: one
+Pablo [51:19]: moment
+Pablo [51:28]: this is basically the model the background so if you want to understand where is all this information contained
+Pablo [51:32]: but i guess you're more interested in
+Pablo [51:33]: now applying
+Pablo [51:34]: it to our
+Pablo [51:38]: first with the navy based classifying simple models
+Pablo [51:46]: and so the idea is always saying we have like two things we have navel
+Pablo [51:50]: to
+Pablo [51:51]: give the teach
+Pablo [51:52]: ers it has
+Pablo [51:53]: can be part
+Pablo [51:54]: of
+Pablo [51:58]: the
+Pablo [51:58]: likelihood
+Pablo [51:59]: so for each of the
+Pablo [52:00]: labels we
+Pablo [52:01]: inhabit
+Pablo [52:02]: how life
+Pablo [52:03]: would it be
+Pablo [52:05]: and
+Pablo [52:06]: then we have
+Pablo [52:07]: multiplied
+Pablo [52:08]: with
+Pablo [52:09]: trial
+Pablo [52:11]: probability that is neighborhood here
+Pablo [52:21]: basically
+Pablo [52:22]: what we are
+Pablo [52:23]: interested in
+Pablo [52:24]: is to have our
+Pablo [52:25]: future
+Pablo [53:28]: i guess
+Pablo [53:29]: it's
+Pablo [53:30]: like old
+Pablo [53:31]: fashioned example
+Pablo [53:32]: there
+Pablo [53:33]: is
+Pablo [53:34]: nltk
+Pablo [53:35]: data there
+Pablo [53:41]: is a list of different names and they are classified either as made of email
+Pablo [53:44]: you should never
+Pablo [53:45]: just tell
+Pablo [53:46]: what a person
+Pablo [53:47]: may
+Pablo [53:49]: the name of something
+Pablo [54:02]: just be sample to show how we can apply based statistics we have two classes made a female and we have names in these lists
+Pablo [54:04]: and
+Pablo [54:07]: let me just show you how this looks like
+Pablo [54:14]: email
+Pablo [54:19]: and
+Pablo [54:20]: basically based on
+Pablo [54:21]: its own base
+Pablo [54:22]: training
+Pablo [54:23]: space to be learning
+Pablo [54:30]: when the name is made of human and the idea is that
+Pablo [54:33]: in
+Pablo [54:39]: percent
+Pablo [54:40]: world
+Pablo [54:50]: and
+Pablo [54:51]: the grace that
+Pablo [54:52]: names that are
+Pablo [54:53]: ending
+Pablo [54:56]: or
+Pablo [54:57]: i
+Pablo [54:58]: like
+Pablo [54:59]: to
+Pablo [55:00]: even
+Pablo [55:03]: a
+Pablo [55:05]: more
+Pablo [55:06]: likely
+Pablo [55:11]: and
+Pablo [55:12]: try to
+Pablo [55:13]: mod
+Pablo [55:14]: el
+Pablo [55:23]: we have
+Pablo [55:24]: eight thousand
+Pablo [55:24]: names
+Pablo [55:25]: and
+Pablo [55:28]: just
+Pablo [55:29]: create
+Pablo [55:30]: teacher and
+Pablo [55:31]: each
+Pablo [55:32]: year by the
+Pablo [55:34]: name
+Pablo [55:36]: so
+Pablo [55:55]: we
+Pablo [55:56]: can just
+Pablo [55:57]: take
+Pablo [55:59]: a
+Pablo [56:00]: digital
+Pablo [56:09]: please
+Pablo [56:10]: go and say
+Them [1:00:35]: and divide by the
+Them [1:00:35]: number of
+Them [1:00:37]: probability
+Them [1:00:49]: that is made
+Them [1:00:52]: just in our case
+Them [1:00:56]: two
+Them [1:01:04]: divided by the number of all means
+Them [1:01:05]: we have
+Them [1:01:05]: now created
+Them [1:01:16]: empirical probability of observing such a feature given the information of gender i will just calculate
+Them [1:01:21]: for example now have this livelihood for focus
+Them [1:01:24]: a
+Them [1:01:25]: e i o
+Them [1:01:36]: u and here we see for example in this latin languages if we have a name ending with a or e like thirty five percent of all the genome names in training data
+Them [1:01:37]: and
+Them [1:01:39]: twenty nine percent of all the dma
+Them [1:01:39]: s and
+Them [1:01:40]: e
+Them [1:01:41]: but
+Them [1:01:44]: one
+Them [1:01:46]: around one thousand name
+Them [1:01:47]: s and
+Them [1:01:52]: this is like we can encrypt the likelihood and output everything together
+Them [1:01:57]: and
+Them [1:01:59]: then we can calculate a posterior distribution
+Them [1:02:12]: for male and female and it's basically for all the features like for all the twenty six letters we have a to set we just have the what is like the posterior distribution that a
+Them [1:02:15]: male name
+Them [1:02:16]: ends with a specific letter
+Them [1:02:17]: at the same for
+Them [1:02:20]: what we have then is
+Them [1:02:22]: an posterior distribution
+Them [1:02:29]: that the main name as a is very small and zero distribution the human name and
+Them [1:02:36]: the twenty percent and of course zero does not sum up one because we have just ignore
+Them [1:02:40]: this denominator we have not divided by probability features
+Them [1:02:43]: but it basically don't have
+Them [1:02:47]: standardized
+Them [1:02:50]: by everything you divide this posterior probability display sum of both things together
+Them [1:02:53]: we are normalizing here from here
+Them [1:02:59]: i don't want to point it too much just the idea in the end is we have now
+Them [1:03:00]: our probability is here
+Them [1:03:19]: for
+Them [1:03:19]: future
+Them [1:03:21]: round it's very like
+Them [1:03:28]: a person called liquidy or like feature eye is female
+Them [1:03:30]: so you see the model is not always working very well
+Them [1:03:31]: but still
+Them [1:03:32]: yes this is like the modest we have in the
+Them [1:03:33]: end
+Them [1:03:38]: and now
+Them [1:03:50]: you say this is complicated because we had all this map to calculate but again you can just use a native based classifier train everything and we should come out basically with the same numbers
+Them [1:03:56]: so rather than just calculating the night
+Them [1:03:59]: we can just do everything
+Them [1:04:00]: the probability
+Them [1:04:01]: classifier
+Them [1:04:02]: go
+Them [1:04:02]: over it
+Them [1:04:07]: we can
+Them [1:04:08]: basically
+Them [1:04:08]: use this
+Them [1:04:08]: classifier
+Them [1:04:09]: okay
+Them [1:04:19]: and now once we have i mean once you have calculated like the probability so assume for one moment let's go back to the nikolai
+Them [1:04:20]: example
+Them [1:04:38]: we have generally like we have a gender feature i we have person called nikolai and now we want to come up with first is made of female how do we do this we have now the probability of agencies present that nikolai is table but it's like eighty six percent so how should we come up with this probability
+Them [1:04:41]: that like prediction where i'm made of email
+Them [1:04:58]: and here is you just use a threshold like for example could use fifty percent maybe very negative threshold at beginning use fifty percent if the probability large at fifty percent just say smaller than fifty percent
+Them [1:04:59]: okay
+Them [1:05:03]: but the point is this fifty percent
+Them [1:05:05]: d ma
+Them [1:05:07]: m
+Them [1:05:07]: l
+Them [1:05:12]: sometimes
+Them [1:05:15]: increase
+Them [1:05:16]: between
+Them [1:05:17]: choose different
+Them [1:05:24]: and
+Them [1:05:25]: unique active
+Them [1:05:26]: duties
+Them [1:05:32]: ladies
+Them [1:05:33]: and gentlemen is
+Them [1:05:34]: also a transportation
+Them [1:05:35]: in some sense
+Them [1:05:41]: for this
+Them [1:06:06]: first we come up with a predictor for a specific threshold so we have the name saving collide with posterior distribution whether the name equalize female and then we just use the polyure if the posterior distribution is largely threshold we return female otherwise
+Them [1:06:09]: and we now can apply this to different name
+Them [1:06:22]: juliet with forty percent it's male for me or snail sarah is female and therefore also joseph as well across the app letter
+Them [1:06:34]: but if we change for example the last threshold actually the posterior probability for the letter h is close to fifty percent change the threshold
+Them [1:06:37]: to sixty percent
+Them [1:06:38]: then
+Them [1:06:40]: suddenly sarah and
+Them [1:06:48]: joseph will be assigned as mail and just choose pressure of fifty percent they got fema
+Them [1:06:54]: le so now should we choose the threshold what is like the optimal way to
+Them [1:06:54]: threshold
+Them [1:07:05]: and for this there are like the form there are a lot of measurements you can just try to see how well we are doing
+Them [1:07:09]: and for this they consider the following matrix
+Them [1:07:18]: so we have actual female persons and actual male persons and we have an estimation like a prediction for them
+Them [1:07:26]: and then what we call positive is an h of female was greatly cast by the
+Them [1:07:28]: true negative
+Them [1:07:35]: was classified as male and then we have two arrows kind of like the
+Them [1:07:36]: probability
+Them [1:07:37]: of
+Them [1:07:38]: positive
+Them [1:07:39]: this is even
+Them [1:07:46]: what email and the other round fifteen was from
+Them [1:08:09]: however
+Them [1:08:11]: this
+Them [1:08:12]: is
+Them [1:08:15]: all
+Them [1:08:16]: received
+Them [1:08:18]: but
+Them [1:08:19]: inside the tree
+Them [1:08:38]: because
+Them [1:08:39]: there is no
+Them [1:08:40]: optimal
+Them [1:08:41]: reason
+Them [1:08:56]: but
+Them [1:08:57]: all females are
+Them [1:08:58]: like ronnie
+Them [1:09:02]: and otherwise
+Them [1:09:04]: choose
+Them [1:09:05]: the first
+Them [1:09:06]: zero
+Them [1:09:09]: which
+Them [1:09:10]: is great
+Them [1:09:44]: and
+Them [1:10:05]: the moment
+Them [1:10:11]: you
+Them [1:10:12]: have
+Them [1:10:17]: false
+Them [1:10:18]: positive rate
+Them [1:10:21]: and for example
+Them [1:10:22]: in our
+Them [1:10:23]: specialty
+Them [1:10:24]: our false
+Them [1:10:25]: positive raise
+Them [1:10:25]: zero
+Them [1:10:26]: and when
+Them [1:10:30]: we change our threshold
+Them [1:10:31]: that
+Them [1:10:32]: means that
+Them [1:10:33]: all positive grade
+Them [1:10:34]: is increasing
+Them [1:10:35]: and increasing in
+Them [1:10:40]: both
+Them [1:11:00]: positive
+Them [1:11:01]: zero
+Them [1:11:10]: and we
+Them [1:11:11]: got the next
+Them [1:11:31]: and now
+Them [1:11:32]: the question
+Them [1:11:33]: perfect
+Them [1:11:34]: threshold
+Them [1:11:36]: and in some sense
+Them [1:11:42]: the ideal case in theory would be
+Them [1:11:46]: this top left point it would be like one hundred percent
+Them [1:11:52]: true positive rate for the zero percent cause you want to get
+Them [1:11:58]: something
+Them [1:11:59]: there
+Them [1:12:10]: okay
+Them [1:12:12]: and
+Them [1:12:16]: a
+Them [1:12:17]: job for each
+Them [1:12:18]: of our class for each of
+Them [1:12:20]: our model
+Them [1:12:20]: we can calculate
+Them [1:12:25]: roc curves
+Them [1:12:32]: and it is in some sense theory is the large the area underneath
+Them [1:12:49]: a very
+Them [1:12:50]: large area
+Them [1:13:15]: one
+Them [1:13:16]: is
+Them [1:13:18]: one
+Them [1:13:22]: so the ide
+Them [1:13:23]: a is if
+Them [1:13:24]: we compare different
+Them [1:13:24]: valve stress
+Them [1:13:27]: a large area is
+Them [1:13:28]: more
+Them [1:13:29]: like closer
+Them [1:13:44]: and this is one method and now the next question is how do we now choose for one of these methods our threshold and there are different rules and found and one of the rules is
+Them [1:13:51]: ide
+Them [1:13:52]: al on one
+Them [1:13:52]: zero
+Them [1:13:53]: in
+Them [1:13:54]: all the
+Them [1:13:55]: sense
+Them [1:14:00]: eighty
+Them [1:14:01]: percent
+Them [1:14:02]: and
+Them [1:14:03]: you just choose the thresh
+Them [1:14:04]: old then
+Them [1:14:05]: gives you basic
+Them [1:14:06]: edge of
+Them [1:14:06]: grade one
+Them [1:14:12]: pos
+Them [1:14:13]: itively among
+Them [1:14:14]: all vendors
+Them [1:14:22]: and
+Them [1:14:23]: at this point
+Them [1:14:34]: all
+Them [1:14:35]: the points
+Them [1:14:36]: with two
+Them [1:14:37]: positive grade is
+Them [1:14:38]: not a
+Them [1:14:38]: b to present
+Them [1:14:42]: this is basically all the threshold
+Them [1:14:43]: data
+Them [1:14:44]: and then just calculating
+Them [1:14:46]: a corresponding
+Them [1:14:47]: one
+Pablo [1:14:52]: here
+Pablo [1:14:53]: we have the thresh
+Pablo [1:14:55]: old infinity mod
+Pablo [1:14:56]: el
+Pablo [1:15:00]: until nearly zero so we have all these different thresholds
+Pablo [1:15:01]: for all
+Pablo [1:15:02]: the special
+Pablo [1:15:16]: one
+Pablo [1:15:32]: this is basically giving like the two positive rate for all the threshold so it starts with zero then it goes forty percent and at some point it reaches here like our eighty percent
+Pablo [1:15:43]: and then we just create basically threshold our ideal threshold is very close to fifty percent
+Pablo [1:15:51]: the
+Pablo [1:15:52]: smallest model
+Pablo [1:15:56]: eight percent false positive
+Pablo [1:15:57]: two
+Pablo [1:15:58]: positive
+Pablo [1:16:00]: this would
+Pablo [1:16:06]: be our threshold and then we can create like a prediction which basically uses the name
+Pablo [1:16:09]: and the threshold of fifty three percent
+Pablo [1:16:12]: whenever the posterior distribution
+Pablo [1:16:18]: we ask pray and name and
+Pablo [1:16:20]: well it's not always working very well
+Pablo [1:16:23]: nikolai
+Pablo [1:16:28]: so still female and negro it's made
+Pablo [1:16:30]: so depending on what you're using
+Pablo [1:16:34]: you can see still out of
+Pablo [1:16:38]: begin
+Pablo [1:16:39]: ning
+Pablo [1:16:50]: for examp
+Pablo [1:16:50]: le
+Pablo [1:16:56]: she was just the last letter of the name asked by gender
+Pablo [1:16:58]: now as an expert
+Pablo [1:17:04]: more
+Pablo [1:17:05]: than eight the last
+Pablo [1:17:07]: two words like nikolai
+Pablo [1:17:09]: in i and so
+Pablo [1:17:10]: on and we're doing exact
+Pablo [1:17:11]: ly
+Pablo [1:17:14]: now
+Pablo [1:17:15]: on
+Pablo [1:17:17]: the
+Pablo [1:17:18]: name
+Pablo [1:17:19]: hallelujah
+Pablo [1:17:45]: but i
+Pablo [1:17:46]: wanted to show
+Pablo [1:17:47]: basically this
+Pablo [1:17:59]: nine
+Pablo [1:18:26]: one
+Pablo [1:18:28]: and
+Pablo [1:18:29]: then
+Pablo [1:18:36]: very
+Pablo [1:18:37]: close to one hundred
+Pablo [1:18:38]: basically
+Pablo [1:18:39]: it's
+Pablo [1:18:40]: containing literally
+Pablo [1:18:41]: no information
+Pablo [1:18:43]: and you can see
+Pablo [1:18:49]: if i give you these three models
+Pablo [1:18:50]: you can
+Pablo [1:18:50]: either choose
+Pablo [1:18:53]: just use last set of the name the last
+Pablo [1:19:01]: area
+Pablo [1:19:02]: is
+Pablo [1:19:03]: known orange line
+Pablo [1:19:05]: so you should choose the orange
+Pablo [1:19:06]: color
+Pablo [1:19:17]: for a
+Pablo [1:19:18]: package
+Pablo [1:19:19]: comp
+Pablo [1:19:20]: ared to the
+Pablo [1:19:20]: mountain
+Pablo [1:19:22]: with the
+Pablo [1:19:22]: area
+Pablo [1:19:23]: and
+Pablo [1:19:24]: choose the one
+Pablo [1:19:26]: area
+Pablo [1:19:28]: and this is the model
+Pablo [1:19:28]: you want to have
+Pablo [1:19:30]: on
+Pablo [1:19:31]: average
+Pablo [1:19:35]: and
+Pablo [1:19:36]: then
+Pablo [1:19:37]: try
+Pablo [1:19:38]: this
+Pablo [1:19:49]: because
+Pablo [1:19:50]: i want you
+Pablo [1:19:51]: to present
+Pablo [1:19:57]: so
+Pablo [1:19:58]: the first model was
+Pablo [1:19:59]: just
+Pablo [1:20:00]: come together
+Pablo [1:20:01]: how many miles
+Pablo [1:20:18]: contains
+Pablo [1:20:19]: two different
+Pablo [1:20:19]: kind of chapters
+Pablo [1:20:21]: like
+Pablo [1:20:24]: half is really about a story about pirate
+Pablo [1:20:25]: or i have
+Pablo [1:20:27]: actually called study an ancient story
+Pablo [1:20:35]: and a second part is about biology about weight so there is about
+Pablo [1:20:36]: the chapter
+Pablo [1:20:44]: second
+Pablo [1:20:45]: chapter
+Pablo [1:20:48]: s are
+Pablo [1:20:49]: about
+Pablo [1:20:50]: the
+Pablo [1:20:53]: remaining chapters are really a story
+Pablo [1:20:59]: and i was here is that we basically train a model on some of these chapters
+Pablo [1:21:05]: tell our model whether it's about historic
+Pablo [1:21:06]: or
+Pablo [1:21:07]: logical
+Pablo [1:21:13]: and then in the end we are just giving our model new chapter and let our model inside
+Pablo [1:21:15]: but it's actually
+Pablo [1:21:18]: part of our
+Pablo [1:21:18]: ways
+Pablo [1:21:20]: and we
+Pablo [1:21:20]: need to
+Pablo [1:21:21]: very bad
+Pablo [1:21:22]: model
+Pablo [1:21:23]: we
+Pablo [1:21:24]: have
+Pablo [1:21:27]: and now
+Pablo [1:21:28]: we are
+Pablo [1:21:29]: increasing our
+Pablo [1:21:30]: excess
+Pablo [1:21:31]: by using
+Pablo [1:21:32]: what is called
+Pablo [1:21:33]: ld
+Pablo [1:21:34]: anal
+Pablo [1:21:34]: ysis
+Pablo [1:21:38]: find all the information
+Pablo [1:21:39]: here
+Pablo [1:21:42]: you can ignore it for one moment
+Pablo [1:21:44]: basically
+Pablo [1:21:52]: n two so without knowing the path and effect
+Pablo [1:21:53]: you can use packages
+Pablo [1:21:57]: so here we have our chapters
+Pablo [1:22:03]: we tokenize our documents
+Pablo [1:22:11]: add some stop words we do all the standardizing we learned in the last lectures moved some stock words
+Pablo [1:22:16]: and
+Pablo [1:22:17]: then
+Pablo [1:22:21]: she
+Pablo [1:22:27]: pre
+Pablo [1:22:28]: purchased
+Pablo [1:22:31]: from the beginning
+Pablo [1:22:33]: of the lecture
+Pablo [1:22:37]: and then we are applying
+Pablo [1:22:42]: lda mpf allocation to two different topics
+Pablo [1:22:49]: one is storing the other one is about waves we have like a learning method we just apply random state
+Pablo [1:22:49]: equation
+Pablo [1:22:51]: we have updated
+Pablo [1:22:52]: twenty six
+Pablo [1:22:53]: whatever
+Pablo [1:22:56]: and
+Pablo [1:22:59]: then we calculate distribution
+Pablo [1:23:02]: with
+Pablo [1:23:06]: the toilet so this is basically what i would like to show you in the end
+Pablo [1:23:07]: how
+Pablo [1:23:08]: we can do is
+Pablo [1:23:09]: process
+Pablo [1:23:15]: ing in the background verified goal fury from the last two lectures
+Pablo [1:23:21]: we have like an algorithm that splits our chapters into words we read words
+Pablo [1:23:31]: then we remove stop words we standardized everything we have these like tfids and then build up a model
+Pablo [1:23:37]: and you see like this dark gray
+Pablo [1:23:37]: area
+Pablo [1:23:41]: what we have here now is our model
+Pablo [1:23:42]: it basically
+Pablo [1:23:45]: age
+Pablo [1:23:46]: up to
+Pablo [1:23:47]: all
+Pablo [1:24:14]: ocated
+Pablo [1:24:15]: by
+Pablo [1:24:35]: margin
+Pablo [1:24:46]: but
+Pablo [1:24:46]: it's actually not a
+Pablo [1:24:47]: live video
+Pablo [1:24:51]: and
+Pablo [1:24:52]: this is basically what
+Pablo [1:24:53]: you can do
+Pablo [1:24:54]: we
+Pablo [1:24:55]: can always also
+Pablo [1:24:56]: try
+Pablo [1:24:58]: coming
+Pablo [1:24:59]: up
+Pablo [1:25:09]: i should
+Pablo [1:25:10]: do one minus
+Pablo [1:25:14]: oh yeah
+Pablo [1:25:15]: i think
+Pablo [1:25:16]: i have switched
+Pablo [1:25:17]: like top
+Pablo [1:25:17]: ics
+Pablo [1:25:18]: boring
+Pablo [1:25:19]: and psychological
+Pablo [1:25:20]: because
+Pablo [1:25:21]: it should
+Pablo [1:25:23]: have exactly the opposite
+Pablo [1:25:25]: not ninety percent but
+Pablo [1:25:26]: eighty one percent
+Pablo [1:25:51]: higher
+Pablo [1:25:54]: now i think
+Pablo [1:25:55]: yes
+Pablo [1:26:04]: but actually we get the following classifier in the laboratory
+Pablo [1:26:27]: so
+Pablo [1:26:28]: again you just
+Pablo [1:26:28]: choose
+Pablo [1:26:42]: a specific threshold one of the rules i have client there's basically trying to get one threshold that is giving us the quantity closest to this one zero point zero in the top left
+Pablo [1:26:43]: and
+Pablo [1:26:44]: i guess either
+Pablo [1:26:45]: this one or that one
+Pablo [1:26:52]: and
+Pablo [1:26:53]: the threshold
+Pablo [1:26:54]: is
+Pablo [1:26:57]: one
+Pablo [1:27:09]: yes
+Pablo [1:27:10]: basically we are using
+Pablo [1:27:11]: like seventy
+Pablo [1:27:12]: seven
+Pablo [1:27:13]: percent
+Pablo [1:27:19]: we
+Pablo [1:27:20]: have
+Pablo [1:27:21]: yes
+Pablo [1:27:31]: so the idea is basically we have a model now three areas show when it's actually about the biology it's not now sorry
+Pablo [1:27:32]: gray
+Pablo [1:27:34]: biology
+Pablo [1:27:41]: and here we use basically nine as threshold
+Pablo [1:27:45]: is the blue line is above the green line
+Pablo [1:27:52]: technological you see here we have
+Pablo [1:28:23]: just
+Pablo [1:28:24]: one
+Pablo [1:28:27]: we have to mix like change these two things
+Pablo [1:28:28]: we're basically
+Pablo [1:28:29]: eighty seven
+Pablo [1:28:30]: or eight
+Pablo [1:28:31]: one so
+Pablo [1:28:50]: zero
+Pablo [1:28:57]: y
+Pablo [1:28:57]: es
+Pablo [1:29:01]: we have
+Pablo [1:29:02]: now from our
+Pablo [1:29:03]: mother
+Pablo [1:29:04]: patrolling
+Pablo [1:29:05]: result
+Pablo [1:29:07]: this is what is the actual
+Pablo [1:29:20]: we have like the actual chapter set logical or story and this is our prediction and you can see twenty two cases we have specified like correctly and in eighty seven cases
+Pablo [1:29:30]: we're able to predict the story chapters correct but still we have twenty nine chapters that we are wrongly classified
+Pablo [1:29:34]: this is the disadvantage
+Pablo [1:29:42]: we just use the words pfis for perfect but still we're doing better
+Pablo [1:29:45]: just an algorithm that could
+Pablo [1:29:47]: create
+Pablo [1:29:49]: classify our
+Pablo [1:29:49]: job
+Pablo [1:29:56]: and it's a class
+Pablo [1:29:57]: ifier based on that
+Pablo [1:29:58]: genetic process
+Pablo [1:29:59]: this is what
+Pablo [1:30:01]: i wanted to show you
+Pablo [1:30:09]: thank you
+Pablo [1:30:09]: so much
+Pablo [1:30:46]: down
+Pablo [1:31:22]: for now it's already design
+Pablo [1:31:22]: ed
+Pablo [1:31:24]: only one course
+Pablo [1:31:25]: i don't know i'll change
+Pablo [1:31:27]: there are a lot of things open
+Pablo [1:31:40]: professors are not
+Pablo [1:31:45]: last time
+Pablo [1:32:18]: i would suggest sexually
+Pablo [1:32:21]: i'm going to
+Pablo [1:32:22]: just start another video
+Pablo [1:33:04]: today i'm new york
+Pablo [1:34:14]: and
+Pablo [1:34:16]: then you just had a
+Pablo [1:34:24]: cheap
+Pablo [1:34:29]: one
+Pablo [1:35:08]: but
+Pablo [1:35:14]: i'll share
+Pablo [1:35:30]: all the dna
+Pablo [1:35:49]: it's on that
+Pablo [1:36:56]: there's all tons of ways
+Pablo [1:37:10]: you already have a bigger data set
+Pablo [1:37:14]: so we're pretty much a subset of yours
+Pablo [1:37:32]: overlay
+Pablo [1:37:53]: i guess
+Pablo [1:38:10]: more yellow
+Pablo [1:38:38]: after
+Pablo [1:38:38]: four
+Pablo [1:38:50]: i guess

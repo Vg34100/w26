@@ -1,0 +1,340 @@
+Pablo [0:14]: history has been
+Pablo [0:18]: magnetic
+Pablo [0:36]: so now there's a medium that we're trying to store data on and then there's this abstraction on top of the medium of a file system which
+Pablo [0:40]: again the goal of the file system is to implement this abstraction
+Pablo [0:50]: on top of the underlying medium and so that y we care about the exact name
+Pablo [1:07]: so it's kind of diving into this particularly why care about the median part
+Pablo [1:21]: from f one drivers regarding the dental so jackie stewart has been put as saying you don't have to be an engineer to be a racing driver but you can move him to help
+Pablo [1:29]: and what this basically means is you don't necessarily need to fully understand the underlying hardware but you do need to kind of work with
+Pablo [1:29]: it
+Pablo [1:33]: so when we apply this to resistance and processes in particular
+Pablo [1:41]: the design is going to reflect the underlying firmware and again file systems the underlying medium has changed
+Pablo [1:45]: a lot so the file system will also be changed
+Pablo [1:50]: so to kind of give a brief overview of what i'm talking about
+Pablo [2:01]: history of file system phase one we have the
+Pablo [2:05]: reporter that we had
+Pablo [2:15]: to
+Pablo [2:18]: file id
+Pablo [2:36]: but eventually problems were discovered which led to the phase two of the following
+Pablo [2:45]: phase two was going to then focus on performance efficiency and modality so this is kind of noteworthy
+Pablo [2:51]: motivation here are particularly trying to work with unwindemia
+Pablo [2:52]: have mechanical
+Pablo [3:06]: sympathy usda so exercise is really going to be looking at things like seat ties rotation chest resides and the fact that at the time this is bigger faster than this produced
+Pablo [3:21]: so demotivation behind files is that this time was the basic needs before it's by giving an energy of mortality on this within files and directly resources making sure that blocks of the file will only be close to each other
+Pablo [3:26]: and here the approach was basically considerable
+Pablo [3:36]: and training this capacity we have because capacity was growing at a high rate performance right off here
+Pablo [3:41]: spend a bit more capacity to lay these out of the nice which we have
+Pablo [3:45]: later on
+Pablo [3:57]: so in page three
+Pablo [4:00]: larger and larger
+Pablo [4:02]: conventional blocks
+Pablo [4:08]: can be a lot faster than we
+Pablo [4:26]: 're actually using the files when you were writing and participating data so the focus in this phase was to optimize the file system and this particular choose the lms box monday next week
+Pablo [4:32]: motivation here was not using any data that we've written to it
+Pablo [4:41]: and the approach here was doing things like transactions lobbying
+Pablo [4:49]: phase four against start to see this increasing
+Pablo [4:55]: how we can share about system over network
+Pablo [5:09]: and so on the network distributors file system
+Pablo [5:15]: phase five is stage four on zero
+Pablo [5:17]: basically
+Pablo [5:32]: motivation for these kinds of files like scaling storage data sets fault tolerance
+Pablo [5:41]: have some kind of faulty behavior we have to manage that so we don't lose data
+Pablo [5:50]: and so the approach here is going to be things like replicating short data at once for things like that
+Pablo [6:12]: describe it
+Pablo [6:15]: 's been short data on
+Pablo [6:16]: them
+Pablo [6:19]: stores on the surface
+Pablo [6:25]: and
+Pablo [6:25]: so we
+Pablo [6:26]: can
+Pablo [6:27]: bring
+Pablo [6:29]: our policies
+Pablo [6:33]: and
+Pablo [6:34]: this is quite
+Pablo [6:35]: basically
+Pablo [6:36]: tell us how
+Pablo [6:37]: many times
+Pablo [6:38]: but it's also
+Pablo [6:39]: where i should
+Pablo [6:40]: play out
+Pablo [6:43]: some
+Pablo [6:44]: people
+Pablo [6:45]: but that was going to be
+Pablo [6:45]: our concentric
+Pablo [6:46]: ring
+Pablo [6:48]: we
+Pablo [6:49]: have a similar
+Pablo [7:02]: organ
+Pablo [7:02]: ized
+Pablo [7:11]: if our
+Pablo [7:12]: sector
+Pablo [7:13]: is going
+Pablo [7:13]: to utilize the data
+Pablo [7:14]: and not use the
+Pablo [7:15]: four
+Pablo [7:16]: kilobytes
+Pablo [7:17]: every time one
+Pablo [7:18]: or two
+Pablo [7:21]: put these
+Pablo [7:21]: all together
+Pablo [7:28]: really
+Pablo [7:29]: slow
+Pablo [7:43]: ly
+Pablo [7:44]: towards the
+Pablo [7:45]: center or boards
+Pablo [7:48]: the rot
+Pablo [7:49]: ational philanthropic
+Pablo [7:49]: basis
+Pablo [7:50]: religion
+Pablo [7:52]: to the point where
+Pablo [7:53]: the data
+Pablo [8:09]: structure
+Pablo [8:12]: so
+Pablo [8:13]: we have a little
+Pablo [8:16]: strip
+Pablo [8:18]: so
+Pablo [8:19]: it's going to make
+Pablo [8:23]: attributes as well as the data that is stored by the
+Pablo [8:29]: file so the estimation everything's like metadata like your timestamps file was created we modified who owns the file
+Pablo [8:31]: whether file is
+Pablo [8:32]: what we
+Pablo [8:33]: write
+Pablo [8:36]: we also
+Pablo [8:37]: have lawyers
+Pablo [8:38]: to
+Pablo [8:39]: wear
+Pablo [8:50]: so
+Pablo [8:51]: when we have these islands
+Pablo [9:32]: particularly when we're dealing with these persistent data structures like your policies clashing in the middle of being
+Pablo [9:33]: pretty
+Pablo [9:34]: problematic
+Pablo [9:37]: so practice all about
+Pablo [9:38]: mitigating
+Pablo [9:42]: situation where we're running
+Pablo [9:47]: or how we run more files maybe our cap is over our power cord
+Pablo [9:50]: and shuts off
+Pablo [9:55]: and we don't want to
+Pablo [10:07]: so to make this a bit more concrete we'll walk through a basic scenario so let's say we have this really tiny file system we can make a shot of eight items
+Pablo [10:13]: we have an underwritten that should have eight pist it tells us what i'm looking for allocated by violation
+Pablo [10:14]: all of
+Pablo [10:15]: accounts for eight
+Pablo [10:16]: data blocks
+Pablo [10:21]: are all
+Pablo [10:22]: ocated
+Pablo [10:28]: let's say
+Pablo [10:29]: no we're looking at a particular
+Pablo [10:30]: i letter
+Pablo [10:30]: file
+Pablo [10:31]: my file
+Pablo [10:33]: rewrite
+Pablo [10:34]: one
+Pablo [10:35]: block
+Pablo [10:35]: in the file
+Pablo [10:35]: right now
+Pablo [10:38]: and let's say today's attachment to me
+Pablo [10:39]: i get a lot
+Pablo [10:41]: of
+Pablo [10:42]: where we're starting
+Pablo [10:42]: from
+Pablo [10:46]: i
+Pablo [10:52]: write in a file that results in the pending a new block and now
+Pablo [10:58]: the first thing to note is where islamic reader slide we had i know that version one
+Pablo [11:04]: i'll be updated to ielts thirty two
+Pablo [11:07]: y two diversion
+Pablo [11:20]: fall back to a new state
+Pablo [11:27]: yeah again because we're dealing with something that is multiple updates being able to converge
+Pablo [11:34]: where would we store information about the predecess
+Pablo [11:35]: ors
+Pablo [11:40]: so we'll get into that in a few slides
+Pablo [12:03]: what's the scenario there's a database called nbcc so it's used for temperature control so if you do have let's say montalite on multiple ways then having the word number yeah that's the only order
+Pablo [12:08]: about that piece but yeah the main idea here is that there's a lot of things that we're changing
+Pablo [12:11]: and so we want reflect
+Pablo [12:19]: ion i've done here is i upended
+Pablo [12:26]: this is effectively like i simple view of my under construction
+Pablo [12:31]: our slide now how do you do blocks
+Pablo [12:37]: so that's you know that's what these two fields that are change in the item so we want to be able to
+Pablo [12:40]: besides the data here
+Pablo [12:42]: what else has changed
+Pablo [12:59]: yeah so the data so not only do we have some change
+Pablo [13:07]: so what
+Pablo [13:09]: happens if these changes are not
+Pablo [13:17]: a toxic space what happens if something bad you know something goes wrong in middle banking office changes and maybe they don't all happen some some do some don't
+Pablo [13:21]: we'll walk through some scenarios
+Pablo [13:34]: block right now the i is going to be the i knows and the data block is going to be the actual mod container
+Pablo [13:34]: itself
+Pablo [13:40]: so let's say we crack the middle of making updates
+Pablo [13:45]: we don't have big enough updated
+Pablo [13:45]: we don't have
+Pablo [13:50]: we have some of this is basically the right never actually difference
+Pablo [13:50]: right
+Pablo [13:57]: because even though we did write the data that they have lost there's nothing that points to it there's nothing
+Pablo [13:58]: that attributes us
+Pablo [13:59]: so this basically is at the time
+Pablo [14:05]: another scenario is that the ihog update occurs but not the data block gate
+Pablo [14:07]: itself
+Pablo [14:24]: and here we call this outcome as files exhibiting because the law fit map and the inode disagree so basically the inode is pointing data block bitmap says is not allocated for traceability
+Pablo [14:32]: another outcome would be block right now has been updated but not the unknown ported data
+Pablo [14:34]: again here the policy
+Pablo [14:41]: has
+Pablo [14:50]: tex
+Pablo [14:50]: as
+Pablo [14:51]: similar
+Pablo [14:52]: to
+Pablo [14:56]: our
+Pablo [14:57]: marketing effort
+Pablo [14:58]: i know that it's not
+Pablo [15:02]: considered
+Pablo [15:06]: because
+Pablo [15:07]: the meditative
+Pablo [15:18]: work
+Pablo [15:18]: s
+Pablo [15:19]: perspect
+Pablo [15:19]: ive is bad
+Pablo [15:22]: instruct
+Pablo [15:23]: ors is minute and
+Pablo [15:23]: free
+Pablo [15:24]: so it's
+Pablo [15:25]: okay
+Pablo [15:48]: second
+Pablo [15:50]: the
+Pablo [15:51]: third row where
+Pablo [15:52]: again
+Pablo [15:55]: i
+Pablo [15:55]: know this degree
+Pablo [15:57]: then
+Pablo [16:01]: in this case we have you know data allocated and data written but no i
+Pablo [16:02]: know pointer
+Pablo [16:02]: points to it
+Pablo [16:03]: so there's no way to get to that
+Pablo [16:04]: data
+Pablo [16:09]: there's a final scenario is actually everything's frontline everything work the way all the right
+Pablo [16:16]: so the takeaway here is that again there's pretty rights that basically all need to happen
+Pablo [16:19]: for both the files which we have to
+Pablo [16:25]: and most of the outcomes is you know something goes wrong result in scenarios that we actually don't want
+Pablo [16:33]: as either from the file systems perspective as we're inconsistent or from users perspective because we've actually lost data we wanted to
+Pablo [16:34]: write
+Pablo [16:45]: so what are the strategies we prevent this is something called journaling so again because the update is this kind of very critical operation
+Pablo [16:49]: where if we crash and something bad happens we can enter all the resources
+Pablo [16:57]: one of the strategies for breakfast is why don't we just make a little note we want to do before we actually do it so that way if we crash what we're actually doing it
+Pablo [17:06]: just go back to the notes we took for ourselves what we wanted to do and then that kind of gives us a map of how to basically pick up from where we left off
+Pablo [17:19]: this is all nice and great but the question here then is okay so now we're making these extra rights in the sort of journal about what we want to do but what happened to our crash actually occurred right now that we want to
+Pablo [17:19]: do
+Pablo [17:27]: so
+Pablo [17:32]: basically
+Pablo [17:33]: protect against
+Pablo [17:39]: threshold
+Pablo [17:53]: and we might
+Pablo [17:54]: write another sentinel
+Pablo [17:55]: of saying okay
+Pablo [17:57]: now i've written all the updates i wanted to use
+Pablo [18:01]: that i'm now going to do at some point
+Pablo [18:12]: so basically we keep all these in the journal and periodically we take all these internally actually apply them on the
+Pablo [18:14]: checkpoint
+Pablo [18:17]: ing and then
+Pablo [18:21]: trade off here checkpoint
+Pablo [18:23]: after each time we win
+Pablo [18:24]: one of these transactions
+Pablo [18:26]: that's basically very saf
+Pablo [18:29]: e but it's also going to be slow
+Pablo [18:35]: versus if we maybe build up a few of these transactions written in the journal and then check one batches that'll be a little more efficient
+Pablo [18:38]: but then eventually we lose more data
+Pablo [18:42]: we risk losing more data or having to recover more
+Pablo [18:45]: if we have
+Pablo [18:45]: a trade off
+Pablo [18:52]: again this works great
+Pablo [18:56]: for this
+Pablo [18:59]: but the problem is that
+Pablo [19:06]: the disc can preorder our kind of problematic we have things like we want who wants to work right
+Pablo [19:16]: one way to get around this is basically one at a time writing so we write the transaction begin wait for the disc to actualize that in the journal
+Pablo [19:23]: get the notification that it's done write the inode update after it's done and so on and then
+Pablo [19:28]: we do these one at a time that's really slow you don't want to have to do that
+Pablo [19:43]: issue always writes at the same time but again the following year is that the order that these things does kind of matter and obviously can't necessarily guarantee orders without any
+Pablo [19:48]: so again because this can go to rights
+Pablo [19:51]: if we issue all these rights
+Pablo [20:02]: our subject gets written our inodes update that's written our bitmap update gets written our transactions and technologies
+Pablo [20:06]: maybe not our data
+Pablo [20:10]: let's say we were going to do that
+Pablo [20:15]: we were about to make this right in journal but then
+Pablo [20:18]: what's going to happen
+Pablo [20:20]: is upon recovery
+Pablo [20:30]: central correct i know nothing about update but we never actually brought the data we wanted to update
+Pablo [20:37]: so as far as our recovery process looks like a correct
+Pablo [21:11]: ion
+Pablo [21:12]: we don't actually
+Pablo [21:13]: want to have
+Pablo [21:14]: that
+Pablo [21:24]: so
+Pablo [21:25]: that you're a team
+Pablo [21:26]: of first
+Pablo [21:27]: organized
+Pablo [21:28]: they don't have
+Pablo [21:29]: to be organ
+Pablo [21:30]: ized
+Pablo [21:31]: but essential
+Pablo [21:34]: ly
+Pablo [21:37]: recover
+Pablo [21:38]: y knows
+Pablo [21:39]: that over
+Pablo [21:40]: comers
+Pablo [21:52]: can
+Pablo [21:53]: practice our options
+Pablo [21:54]: so
+Pablo [21:55]: most offices introduce
+Pablo [21:56]: your
+Pablo [22:14]: own
+Pablo [22:15]: people
+Pablo [22:40]: you have a question
+Pablo [22:42]: here is do we
+Pablo [22:42]: actually
+Pablo [22:45]: look
+Pablo [22:46]: at our
+Pablo [22:48]: idol
+Pablo [22:50]: ater
+Pablo [22:56]: we actually
+Pablo [22:57]: have to write
+Pablo [22:58]: the data that we want
+Pablo [22:59]: to update
+Pablo [23:00]: our
+Pablo [23:00]: selves
+Pablo [23:24]: we can
+Pablo [23:25]: use
+Pablo [23:44]: so
+Pablo [23:45]: we're only going to be
+Pablo [23:46]: logging
+Pablo [23:47]: the metadata updates
+Pablo [23:47]: in the journal
+Pablo [23:54]: ing
+Pablo [24:11]: so
+Pablo [24:12]: again
+Pablo [24:18]: this is i had to read but this one will save us on rights but again there is slight risk
+Pablo [24:20]: here
+Pablo [24:24]: of data corruption if we practice the wrong
+Pablo [24:25]: place
+Pablo [24:38]: we have to be careful here in the order so we would try to get the data on disk make sure that right is fully complete and then write this transaction begin
+Pablo [24:39]: and
+Pablo [24:44]: even more careful with the order
+Pablo [24:57]: and then just some fun things to keep in mind with consistency this is not necessarily all we referring to things like file systems but anytime you want
+Pablo [25:02]: your sort of command
+Pablo [25:17]: if you care about consistency which most of the time you probably do you basically everyone you need to initialize again risk here is if you're pointing to something important because initialize it never actually gets initialized according to our
+Pablo [25:29]: the second one is never review the resources or nullifying all previously so again we don't want to be able to if you do this then you might be pointing to old
+Pablo [25:30]: data
+Pablo [25:31]: and
+Pablo [25:32]: that
+Pablo [25:45]: finally never reset the last point here to a live resource before the issue with this is if you do this wrong then you have data
+Pablo [25:52]: analytic
+Pablo [26:03]: can you explain the last point
+Pablo [26:04]: so
+Pablo [26:05]: why
+Pablo [26:07]: data that is actually still being used
+Pablo [26:10]: so let's say for example
+Pablo [26:18]: you're trying to swap something you have the link list node and you have the pointer to it
+Pablo [26:23]: if you change the pointer to it
+Pablo [26:34]: you must know it has like a single point from the credit session you modify that progress center pointer
+Pablo [26:40]: to maybe zero to your nodes predecessor like let's say you were doing that
+Pablo [26:44]: your only pointer to that note itself
+Pablo [26:47]: then there's no way to get back to it
+Pablo [26:53]: so basically you're only pointing out that there's one reference they care about
+Pablo [26:59]: a new reference to it set that new reference first before you nullify the
+Pablo [27:00]: requirements
+Pablo [27:08]: any
+Pablo [27:08]: other questions

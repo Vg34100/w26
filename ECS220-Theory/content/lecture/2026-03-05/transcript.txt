@@ -1,0 +1,1338 @@
+Pablo [0:32]: reachability is going to be kind of more essential to space mounded computation than even say sap was to time out
+Pablo [0:40]: i mean all the complete problems are kind of relevant here but the point is just reachability really shows up in a very direct way
+Pablo [0:52]: so that means this is a fairly important result that reachability is complete for this complexity class oh sorry i forgot i wanted to start with yeah i was confused last time
+Pablo [1:07]: right okay so there was this thing so i just wanted to go through last time so i went through that you can do this proverb verify our characterization
+Pablo [1:14]: of non deterministic space founded right so just like the time we have these two equivalent characterizations
+Pablo [1:20]: the older more magical looking one non deterministic algorithms that can make guesses
+Pablo [1:26]: and with this asymmetric condition between saying yes and no
+Pablo [1:28]: and then
+Pablo [1:31]: these explanation i tend to prefer because it looks more natural
+Pablo [1:48]: it looks like less magical in terms of airfi so you just say what does it mean the problem is an np it means if i have a potential solution it can be verified quickly right so there is a verifier characterization of end space and what was kind of confusing me was the concern i'll get to at the end
+Pablo [1:52]: so then i kind of never really addressed but now i feel like i get it better
+Pablo [2:00]: so we can give this verifier character where we say okay well the verifier algorithm takes two inputs just like a time node is
+Pablo [2:19]: one the original input x of like n and our space bound is going to be as a function of n crucially in contrast to enemy verifiers the witness could be quite a bit longer we don't put a bound on how big the wind is
+Pablo [2:32]: but we are going to require the spacebound the s of n where m is the length is just the input x
+Pablo [2:35]: w can be huge
+Pablo [2:49]: and v has read only access to its info which includes both x and w but then you have this strange condition where we say well access to x is just the normal thing if it's a ram model ram access if it's a turing machine it's on some tape
+Pablo [2:55]: and it's just a regular read only tape where the tape head can read any symbol you want
+Pablo [3:03]: it can move around however you want but we require that the bits of w are sequentially accessed from left to right
+Pablo [3:15]: and it's not really important we're going left to right what's important is that you only allow the verifier to read each bit of w once that's the key right
+Pablo [3:19]: and then we require the same thing as with np verifiers
+Pablo [3:30]: x is a yes instance it's in the language if and only if there's some witness w that will cause the verifier to accept the parax dome and then why this requirement
+Pablo [3:34]: well this is what i said i don't know what was confusing me here i just had to write it down
+Pablo [3:45]: the idea was well if you weren't careful to put this condition you just said bold x and w can be accessed either randomly or just even
+Pablo [3:50]: with a more inefficient turing machine tape that moves one cell at a time
+Pablo [3:54]: but allowing you to read the bits of w multiple times
+Pablo [4:09]: well it's not that there's some new algorithm this is what i was getting confused about let's just look at the regular old verification it's just the same verification algorithm we've always had for three sat i don't think i ever wrote it down in this explicit model of code because by the time we got into it
+Pablo [4:17]: we had seen enough verifiers we didn't need one more but let's kind of pick up again it's pretty high level because i didn't want to clutter things up too much
+Pablo [4:20]: but we've got a three cnf formula
+Pablo [4:26]: here maybe i shouldn't have named the assignment actually you know what i'm going to rename it because that'll look confusing
+Pablo [4:30]: so i'm going to continue calling the input
+Pablo [4:34]: fee because we usually do that for verifiers
+Pablo [4:39]: i will call the assignment w
+Pablo [4:47]: even though in the high level pseudocode you're not really seeing how w gets accessed
+Pablo [4:49]: so i couldn't figure out a better way to do that
+Pablo [4:52]: and be very succinct
+Pablo [4:59]: but what do we say we say for each clause a b a or b or c in this three cnf formula fee
+Pablo [5:13]: check to see if this assignment makes it false so when i write if a equals b equals c equals false what i mean is well what are a b and c they are references into the assignment
+Pablo [5:22]: right so a is a literal it might be like the third bit of belly b is another literal it might be the negation of the seventh bit of value
+Pablo [5:41]: so i couldn't quite figure out a nice pseudocode to make it clear that when i read a and b and c here i'm reading both well the formula fee to know where to look but then to know what their assignment values are i have to go look over in w but these are basically just references in
+Pablo [5:47]: so what is this doing well it's looking at
+Pablo [5:55]: the clause in phi to see what are the three literals and then once it knows what the three literals are it goes and what's the assignment
+Pablo [5:58]: w to see what are the values of those literals in that assignment
+Pablo [6:02]: and all three literals are false
+Pablo [6:09]: then you return false otherwise if you get through all the clauses you found they're all satisfied you return true so that's just the regular old verifier
+Pablo [6:16]: doing the regular i mean i'm not doing anything special here but let's analyze its space usage
+Pablo [6:23]: if we acknowledge that phi and w are read only what do we need to track
+Pablo [6:23]: well
+Pablo [6:27]: we need these three indices into the assignment
+Pablo [6:28]: that i read
+Pablo [6:46]: so we need these three indices
+Pablo [6:48]: into
+Pablo [6:49]: this assignment w
+Pablo [6:50]: along with the
+Pablo [6:51]: boolean and
+Pablo [6:53]: are we negating that
+Pablo [6:59]: so because index if you already went we need login desk region
+Pablo [7:01]: remember
+Pablo [7:02]: blog space algorithms are all
+Pablo [7:03]: about do i get
+Pablo [7:04]: a constant number of
+Pablo [7:06]: references in
+Pablo [7:06]: my input
+Pablo [7:09]: so we're here we need
+Pablo [7:10]: three references
+Pablo [7:14]: that we
+Pablo [7:17]: need to ask them well we need a point
+Pablo [7:17]: er
+Pablo [7:20]: so
+Pablo [7:21]: we also need to know which
+Pablo [7:22]: clause will be
+Pablo [7:22]: checked
+Pablo [7:23]: so that we
+Pablo [7:25]: don't keep checking the same clauses over and over
+Pablo [7:26]: that's kind of implicit
+Pablo [7:27]: in this form
+Pablo [7:33]: the reference to this clause is itself a pointer into the first input
+Pablo [7:36]: again o to have a reference in
+Pablo [7:36]: here
+Pablo [7:38]: okay
+Pablo [7:41]: so the point is that algorithm
+Pablo [7:42]: is
+Pablo [7:43]: already using
+Pablo [7:49]: but
+Pablo [7:50]: it is also
+Pablo [7:51]: added
+Pablo [7:52]: so i'll read
+Pablo [7:53]: that
+Pablo [7:55]: what
+Pablo [7:56]: i'm addressing
+Pablo [8:01]: because
+Pablo [8:01]: as i said
+Pablo [8:02]: technically
+Pablo [8:04]: all
+Pablo [8:05]: those reductions that
+Pablo [8:06]: show all the
+Pablo [8:07]: complete problems
+Pablo [8:12]: that are already on space
+Pablo [8:15]: and
+Pablo [8:16]: therefore you would get
+Pablo [8:17]: everything
+Pablo [8:18]: that need to be
+Pablo [8:19]: verified
+Pablo [8:22]: that
+Pablo [8:23]: they deterministic
+Pablo [8:24]: law of space verif
+Pablo [8:24]: y
+Pablo [8:25]: thereby
+Pablo [8:26]: putting it in health
+Pablo [8:29]: and then
+Pablo [8:32]: you have l equals mp and some basically wrong about
+Pablo [8:32]: that
+Pablo [8:37]: was a
+Pablo [8:38]: subset of b
+Pablo [8:39]: is a subset
+Pablo [8:40]: of
+Pablo [8:41]: nd so if
+Pablo [8:42]: this portrait
+Pablo [8:43]: while we
+Pablo [8:44]: have this proven evil
+Pablo [8:46]: but
+Pablo [8:46]: it doesn't
+Pablo [8:48]: just
+Pablo [8:49]: discover people
+Pablo [8:50]: this
+Pablo [8:51]: kind of hint something
+Pablo [8:52]: from the definition
+Pablo [8:54]: a second that would be well if we
+Pablo [8:54]: did this
+Pablo [8:56]: if theory
+Pablo [8:57]: do a different definition
+Pablo [9:02]: put another
+Pablo [9:02]: way
+Pablo [9:03]: this is what happen
+Pablo [9:04]: ed
+Pablo [9:04]: eventually
+Pablo [9:05]: un
+Pablo [9:06]: tangle confusion in my
+Pablo [9:07]: head
+Pablo [9:08]: is
+Pablo [9:09]: imagine if we were trying to
+Pablo [9:10]: show the original
+Pablo [9:11]: definition
+Pablo [9:12]: of non determin
+Pablo [9:13]: istic law space
+Pablo [9:14]: computation
+Pablo [9:15]: that we gave
+Pablo [9:16]: which is just
+Pablo [9:17]: some non deterministic
+Pablo [9:18]: law and space algorithm
+Pablo [9:19]: that make
+Pablo [9:20]: guesses
+Pablo [9:20]: at any time
+Pablo [9:21]: during the computation
+Pablo [9:24]: design
+Pablo [9:25]: language
+Pablo [9:26]: well
+Pablo [9:29]: if we were trying to show these two definitions or equ
+Pablo [9:29]: ivalent
+Pablo [9:32]: notice that this one makes nl a lot more powerful
+Pablo [9:35]: because it makes it equal to
+Pablo [9:36]: and therefore
+Pablo [9:38]: trying to show their equivalent
+Pablo [9:42]: the difficulty would be showing that if you have a verifier
+Pablo [9:44]: like this a lawn space verifier like this
+Pablo [9:48]: you can convert it into a non deterministic algorithm
+Pablo [9:49]: that would
+Pablo [9:52]: be the direction that you wouldn't know how to do
+Pablo [10:07]: and here's what would go wrong if you think about how did we argue originally that time bounded polynomial time verifiers can be turned into time bounded non deterministic algorithms
+Pablo [10:10]: well what would you do you'd say
+Pablo [10:20]: you want to try to simulate deterministic log space verifier b with a non deterministic log space algorithm a well what would it do
+Pablo [10:27]: well the way that you run the verifier is that
+Pablo [10:43]: as the verifier runs and it accesses bits of its inputs x and w whenever of course a has access to x so when v tries to access a bit of x a just says oh i've got x two here you go
+Pablo [10:47]: but what if v tries to access a bit of this w
+Pablo [10:59]: well the way that we would have argued this for a non deterministic algorithm when her time bound and say well that's when a would make a non deterministic choice to just guess what is the bit of w at that position
+Pablo [11:13]: so that's what you would do and that works when you're showing that these two definitions are equivalent when the verifier and this algorithm will both go wrong here what goes wrong if you don't require this
+Pablo [11:17]: the verifier can try to read the same bit of w twice
+Pablo [11:24]: and if it reads at that second time you better return the same value that it read the first time
+Pablo [11:26]: or else you're going to screw things up
+Pablo [11:36]: but you can't do that by just guessing twice it means the first guess you made if that bit was a one the next time that v tries to access that same bit
+Pablo [11:39]: you've got to make sure it reads a one meaning you got to store that one
+Pablo [11:54]: or put another way this sequence of guesses that a makes instead of being free and written on a read only input tape like they are for v a would have to write them somewhere to remember them in case v ever has to access those bits a second time
+Pablo [11:58]: but now w is counting against the space usage
+Pablo [12:01]: so that's what would go wrong with the argument
+Pablo [12:13]: but if each bit of w is read only once by v then they can just be generated on the fly by a can just make a guess
+Pablo [12:17]: give the bit to w and then forget the bit knowing v is never going to read that bit again
+Pablo [12:26]: by doing this the left to right doesn't really matter it's the every bit is read only once is what matters
+Pablo [12:28]: because it's read only once
+Pablo [12:34]: a can just guess it when it's red knowing all right any subsequent reads will be a different bit i can make a new guess
+Pablo [12:36]: this
+Pablo [12:39]: is not proof that these two definitions are
+Pablo [12:39]: equal
+Pablo [12:43]: to list
+Pablo [12:48]: if you believe he is not able to be her reason
+Pablo [12:50]: able
+Pablo [12:51]: lucky
+Pablo [12:51]: have this
+Pablo [12:52]: and then
+Pablo [12:56]: this
+Pablo [12:56]: argument can't be made
+Pablo [12:57]: to her
+Pablo [12:58]: but
+Pablo [12:59]: can be made to her
+Pablo [13:01]: w
+Pablo [13:02]: and l
+Pablo [13:06]: that's
+Pablo [13:07]: why we have to do this
+Pablo [13:08]: weird church she
+Pablo [13:09]: riff
+Pablo [13:10]: but
+Pablo [13:11]: it's such a weird restriction
+Pablo [13:12]: i don't like
+Pablo [13:13]: her
+Pablo [13:14]: decision
+Pablo [13:16]: the next
+Pablo [13:17]: question
+Pablo [13:35]: i'm not sure why
+Pablo [13:43]: if w was read and write access
+Pablo [13:46]: that would mean that
+Pablo [13:53]: would mean that the algorithm a would have to
+Pablo [13:58]: compute every bit of w again
+Pablo [14:03]: well i think what you said maybe another fix for this would be make wb write access
+Pablo [14:06]: but here we're just assuming
+Pablo [14:09]: all input is read only access
+Pablo [14:10]: right
+Pablo [14:22]: but if you tried to fix this by making w read write you run into the exact same problem you have if you let x be read write which is you cannot subsequently talk about sublinear space computation
+Pablo [14:29]: so i'm going to guess this only really matters for sublinear space computation i mean here we're talking about logarithmic space
+Pablo [14:38]: i think once you get up to linear space you don't have to do this because you wouldn't have this problem
+Pablo [15:06]: and once you're at linear space you can go with a less technical definition and just say no you just got a regular turing machine it's just got one tape or two tapes they're both read write and because you have enough space to write your whole input you have not immediately gone over your space bound just by having an input so i think this only matters for sublinear space but sublinear space mountains we just don't know how to talk sensibly about them
+Pablo [15:08]: unless the input is renal
+Pablo [15:10]: okay otherwise
+Pablo [15:16]: if you just claim my input tape doesn't count against the space usage but i can read and write to it
+Pablo [15:19]: great just do all your work there and everything can be done and space zero
+Pablo [15:22]: because you never do anything on your work table
+Pablo [15:31]: that said we're going to get
+Pablo [15:39]: to linear space bounds later and in fact the last result i present in the class will actually kind of crucially depend on the input tape being writable
+Pablo [15:44]: but for sublinear you need to make input read only
+Pablo [15:48]: okay so that was
+Pablo [15:49]: the
+Pablo [15:50]: hash
+Pablo [15:52]: or the explanation
+Pablo [15:53]: that you got there
+Pablo [15:56]: okay so going to review what we did
+Pablo [16:03]: the last time it was just the last thing we covered is reachability is nl complete
+Pablo [16:16]: again i'm not going to dig super into the details of the proof it was just well there's a reduction from witness and allen's existence to reachability the key though is just that
+Pablo [16:24]: the configuration reachability graph of a non deterministic program
+Pablo [16:52]: basically tells you reachability on it tells you everything you need to know about whether it accepts a given input because you can just say the nodes or the configurations of that program that you use at most some amount of space related to nl width resistance and log of this k number but point as you can say all the configurations that use on most of your space found are the nodes you have an edge from one node to another if it's possible to transition between those configurations in one step
+Pablo [17:02]: if you make this further assumption that your turing machine is going to clean up all its tapes before it pulse then there will be exactly one accepting configuration
+Pablo [17:06]: it'll look just like the starting configuration but you'll be in the accept state instead
+Pablo [17:11]: and then you just ask can you reach from the start configuration to the unique assembly
+Pablo [17:20]: and because that graph all of the nodes use at most your space bound whatever it is
+Pablo [17:29]: and because nl can be solved using at most a constant number of nodes or sometimes because reachability can be solved by an nl algorithm as we saw
+Pablo [17:32]: that only ever maintains two nodes at a time
+Pablo [17:34]: that means
+Pablo [17:44]: that nl algorithm is telling you whether that program accepts and that's why everything in nl can be captured by its reachable
+Pablo [17:49]: so that's what we ended with
+Pablo [17:52]: questions about
+Pablo [17:55]: why reachability is nl complet
+Pablo [17:55]: e
+Pablo [18:02]: i was taking i guess something a few slides back
+Pablo [18:06]: you're talking about how
+Pablo [18:11]: the bound on how much space is you can essentially describe turing machine
+Pablo [18:26]: just in terms of how much on the code and not necessarily consider how many states there are so you definitely need i said the dominant factor in accounting mitigation
+Pablo [18:32]: there are is how they can take this you generally think the state set as being constant
+Pablo [18:36]: but if you're using space s
+Pablo [18:40]: and there's two tape symbols there's two to the s possible eight content
+Pablo [18:41]: so two ds versus
+Pablo [18:44]: over one and then results in the take that
+Pablo [18:44]: position
+Pablo [18:45]: but there's only
+Pablo [18:46]: guest positions
+Pablo [18:47]: comp
+Pablo [18:48]: ared to two of the yes
+Pablo [18:49]: things
+Pablo [18:51]: that
+Pablo [18:53]: are what state you're in
+Pablo [18:54]: and
+Pablo [18:55]: where to take that is
+Pablo [18:56]: that those are negligible
+Pablo [18:57]: compared to
+Pablo [18:59]: how
+Pablo [19:00]: you take
+Pablo [19:02]: obviously
+Pablo [19:03]: they would make
+Pablo [19:03]: sense
+Pablo [19:04]: for she
+Pablo [19:06]: have so many states that
+Pablo [19:07]: is there
+Pablo [19:08]: anything
+Pablo [19:09]: well
+Pablo [19:10]: we always
+Pablo [19:11]: talk about
+Pablo [19:12]: first few things
+Pablo [19:12]: you're trying to machine
+Pablo [19:13]: and then you let the emphasize
+Pablo [19:14]: of
+Pablo [19:15]: the
+Pablo [19:18]: number of
+Pablo [19:18]: states
+Pablo [19:19]: if you're very
+Pablo [19:21]: not
+Pablo [19:24]: iced or bigger than the
+Pablo [19:25]: number of states
+Pablo [19:31]: work
+Pablo [19:32]: out is always first
+Pablo [19:34]: and then
+Pablo [19:35]: you let the income
+Pablo [19:43]: other
+Pablo [19:44]: questions before we
+Pablo [19:54]: 'll say
+Pablo [19:55]: simulating
+Pablo [19:56]: non determin
+Pablo [19:57]: ism determinants
+Pablo [19:59]: we
+Pablo [20:00]: have non terminat
+Pablo [20:01]: or program convert
+Pablo [20:02]: ed
+Pablo [20:05]: and we know we can do that we'll time
+Pablo [20:06]: out
+Pablo [20:09]: but we encour
+Pablo [20:10]: age exponential over
+Pablo [20:13]: you sim
+Pablo [20:14]: ulate
+Pablo [20:17]: language you search every possible witness
+Pablo [20:20]: in the language of non deterministic algorithms
+Pablo [20:24]: you search every possible sequence of non deterministic choices
+Pablo [20:28]: of which there can only be t if the thing is t time mounted
+Pablo [20:33]: so there's something like two to the t possible sequence of choices you could make
+Pablo [20:37]: so if you just search all of them you can tell is there any accepting computation
+Pablo [20:38]: or not
+Pablo [20:40]: and we don't know how to do any better over time
+Pablo [20:43]: this exponential blowup seems really fun
+Pablo [20:45]: but
+Pablo [20:49]: if the starting and ending programs are space bounded
+Pablo [20:57]: and we want to get the smallest space bound we can with the deterministic machine we can do much better than this incurring only a quadratic coordina
+Pablo [20:57]: te
+Pablo [20:59]: so this is known as sovich's theorem
+Pablo [21:04]: and it says for any space bound s of m that's at least log of n
+Pablo [21:08]: space of s is contained in space with s squared
+Pablo [21:11]: so that's the set theoretic way of phrasing it
+Pablo [21:22]: in terms of simulation what it means is you give me a non deterministic algorithm that uses space s i can make it deterministic and it'll use more space but it'll only use space s squared
+Pablo [21:26]: not to vs if i were trying to
+Pablo [21:29]: minimize the time
+Pablo [21:40]: and the corollary here is that actually p space and np space are equal we talked about them we define them p space
+Pablo [21:44]: but it turns out that it was a waste of time to define it it's just equal to these
+Pablo [22:04]: and another corollary we go to smaller time bounds is that nl if we want to put it in the smallest deterministic space complexity glass we can we can do much better than with mpnp the strongest thing we could say is npa and x in other words every non deterministic
+Pablo [22:08]: time bounded program can be simulated by one that's only exponentially slower
+Pablo [22:12]: but here we're saying every non deterministic log spaceology
+Pablo [22:15]: determines
+Pablo [22:15]: loss squared
+Pablo [22:16]: that's long
+Pablo [22:17]: enough
+Pablo [22:22]: so hollywater
+Pablo [22:24]: long squared
+Pablo [22:25]: of grove
+Pablo [22:32]: and the space hierarchy there says that
+Pablo [22:34]: there are
+Pablo [22:36]: things all states law squared
+Pablo [22:37]: and they're not sold
+Pablo [22:39]: this
+Pablo [22:40]: is not equal to
+Pablo [22:42]: but
+Pablo [22:43]: l is equal to space
+Pablo [22:46]: so we still don't know whether l is equal to
+Pablo [22:50]: but they're much
+Pablo [22:51]: closer than we believe
+Pablo [22:52]: tnn
+Pablo [22:53]: needs to be
+Pablo [22:59]: so this
+Pablo [23:00]: is
+Pablo [23:01]: one
+Pablo [23:02]: way of saying
+Pablo [23:08]: sometimes
+Pablo [23:15]: along
+Pablo [23:16]: square
+Pablo [23:22]: remember
+Pablo [23:23]: reachability is
+Pablo [23:27]: however
+Pablo [23:28]: much faith we need
+Pablo [23:29]: to all reachability
+Pablo [23:30]: everything else
+Pablo [23:31]: mental health
+Pablo [23:32]: with the same amount of space
+Pablo [23:33]: as long
+Pablo [23:34]: as phases of physical
+Pablo [23:36]: ity we can all space
+Pablo [23:36]: reduce everything
+Pablo [23:37]: and then alter
+Pablo [23:38]: each other
+Pablo [23:40]: this is
+Pablo [23:41]: what the usage
+Pablo [23:42]: of complete problem
+Pablo [23:43]: is that
+Pablo [23:44]: if you solve
+Pablo [23:45]: a single problem
+Pablo [23:46]: can
+Pablo [23:47]: be solved with certain resour
+Pablo [23:47]: ce
+Pablo [23:48]: if you're careful with
+Pablo [23:49]: how you find a reduction
+Pablo [23:50]: it
+Pablo [23:51]: actually tells you about every
+Pablo [23:52]: other problem in
+Pablo [23:53]: the classes
+Pablo [23:55]: it
+Pablo [23:56]: is solvable
+Pablo [23:57]: it only belongs to
+Pablo [23:58]: her space
+Pablo [23:58]: the volume of the
+Pablo [24:00]: teeth and clean
+Pablo [24:01]: everything that
+Pablo [24:02]: long
+Pablo [24:03]: square
+Pablo [24:05]: and then
+Pablo [24:06]: i didn't really dig
+Pablo [24:07]: into it
+Pablo [24:08]: why is that
+Pablo [24:10]: sq
+Pablo [24:11]: l
+Pablo [24:12]: what
+Pablo [24:14]: i
+Pablo [24:16]: didn't go through that detail
+Pablo [24:18]: but
+Pablo [24:19]: you can basically
+Pablo [24:20]: get that by
+Pablo [24:21]: these kind of tatting
+Pablo [24:21]: arguments
+Pablo [24:23]: of a similar kind
+Pablo [24:24]: that we use to show
+Pablo [24:26]: that
+Pablo [24:26]: for example
+Pablo [24:27]: if
+Pablo [24:28]: x equals s
+Pablo [24:30]: then
+Pablo [24:31]: p equals
+Pablo [24:32]: n so
+Pablo [24:33]: basically
+Pablo [24:41]: that's equ
+Pablo [24:42]: al to that
+Pablo [24:43]: so this
+Pablo [24:44]: collapse propagates
+Pablo [24:45]: up kind of thing
+Pablo [24:47]: we're
+Pablo [24:48]: collapsing
+Pablo [24:49]: not showing that
+Pablo [24:50]: people doesn't know what's show
+Pablo [24:50]: ing and all that
+Pablo [24:51]: close her down
+Pablo [24:52]: collapsing
+Pablo [24:53]: down
+Pablo [24:54]: the wall squared
+Pablo [24:55]: but that
+Pablo [24:56]: probably is a
+Pablo [24:57]: pretty bigger space
+Pablo [24:58]: you can do the same
+Pablo [24:59]: thing
+Pablo [25:00]: and substitute
+Pablo [25:01]: whatever station i'm here
+Pablo [25:01]: in the square
+Pablo [25:02]: that stays
+Pablo [25:04]: so i'm not going to get into that detail
+Pablo [25:07]: it was very strongly
+Pablo [25:08]: resemble
+Pablo [25:09]: the patty arguments
+Pablo [25:10]: why they show
+Pablo [25:11]: ing that people
+Pablo [25:12]: 's mp implies
+Pablo [25:13]: space
+Pablo [25:16]: so
+Pablo [25:17]: some
+Pablo [25:19]: brief this way about
+Pablo [25:20]: the all face
+Pablo [25:20]: down
+Pablo [25:21]: sometimes you see
+Pablo [25:22]: about these two
+Pablo [25:23]: leslie glasses
+Pablo [25:24]: and
+Pablo [25:26]: then statement out those two complexity
+Pablo [25:27]: classes is to grow into
+Pablo [25:27]: this
+Pablo [25:28]: because of reachability
+Pablo [25:33]: so we're just going to phrase it like we can solve the reachability
+Pablo [25:34]: problem deterministically
+Pablo [25:36]: using only space law and squared
+Pablo [25:40]: now above we have perfectly fine time bound
+Pablo [25:44]: ed algorithms for solving reachability breadth first search depth first search
+Pablo [25:48]: and they're very fast they use dfs uses linear time
+Pablo [25:58]: if you do it the right way but they use linear memory both of them require that you maintain a list of every node you visited in order to avoid visiting the same node twice
+Pablo [25:59]: in order to make them fast
+Pablo [26:03]: if we give up on trying to make things fast
+Pablo [26:07]: and just myopically laser focus i'm using the least amount of space we can
+Pablo [26:08]: we can do much better
+Pablo [26:10]: but
+Pablo [26:18]: as with every other time we do this it's really going to cost us in terms of time because algorithm is absurd and it's timepieces it's exponential
+Pablo [26:28]: but it does use way less space so it's called savage's algorithm i like the textbook's name for it the middle first search as a kind of a distinction between breadth first and depth first
+Pablo [26:32]: and indeed it's going to visit every node repeatedly
+Pablo [26:38]: and wastes a lot of time in order to avoid using as much space as the standard
+Pablo [26:43]: so we're going to start with just a notation
+Pablo [27:02]: if two nodes s and t are in the graph and we have some positive integer k i'm going to write s arrow kt to this mean there's a path of length at most k from s to t so not only can i reach s i can do it
+Pablo [27:06]: visiting at most
+Pablo [27:08]: can
+Pablo [27:46]: so the first observation is that this relation s now again i'm going to do like the textbook does and play fast and loose with the integers here k might if k is odd what do i mean by this let's just assume k is never odd you can do all this where you start with k being a power of two so no matter how many times you divide by two it's always even or you can make this all ugly with floors and ceilings to make sure everything's an integer but i'm just going to assume that things are going to work out so let's just assume everything's going to work out so it's an integer and then this observation is hopefully pretty obvious
+Pablo [27:51]: that there's a path at most k if and only
+Pablo [27:53]: if there's some node halfway there
+Pablo [27:54]: u
+Pablo [27:59]: in other words there's an ou and you can get from s to u and plus k over two steps
+Pablo [28:02]: and you can get from u to t in both k reduced dose
+Pablo [28:08]: so you have some path at most k from s to t but there's got to be some node in the middle
+Pablo [28:10]: and
+Pablo [28:15]: then the paths on either side of it are length at most k over two and then recursively
+Pablo [28:19]: if there's a path from s to u of length at most k over two
+Pablo [28:21]: there must be a node in the middle of that
+Pablo [28:22]: called u one
+Pablo [28:29]: then i can get to from s with at most k over four steps and then from u one to u with the most k over four steps and so
+Pablo [28:33]: so this is the key observation
+Pablo [28:37]: and then that leads directly to this recursive algorithm called savages out
+Pablo [28:58]: so we have this graph g these two nodes s and t and then at the top level of recursion we would let k be n the number of nodes in the graph because there's a path from s to t if and only if there's a simple path and simple paths are length at most n or depending how you define them maybe n minus one depending whether you're counting the edges of the nose
+Pablo [29:03]: i guess i'm counting the edges
+Pablo [29:04]: by this definition
+Pablo [29:17]: so the point is at the top level of recursion you would pass in just a number like n here that is so big that you know as long as there's a path there will be a path of lane
+Pablo [29:18]: demos
+Pablo [29:27]: but then in the subsequent levels of recursion we're asking a subtly different question we're not asking we reach hermestat but can we reach from st and mo's case studies
+Pablo [29:41]: so we do it recursively the base case is in k is one well if either i can get from s to t in one step because there's an edge then i return true or maybe i can get there in zero steps because that's just equal
+Pablo [29:46]: so in both of these cases there's a path of length at most k that gets you promessed
+Pablo [29:54]: otherwise we search for that middle node we just iterate over every node u in the graph and we ask
+Pablo [29:58]: can i reach from s to u and at most k over two steps
+Pablo [30:02]: n can i furthermore reach from u to t in a most k over two
+Pablo [30:04]: nso we return
+Pablo [30:08]: but if we search every node and didn't find one that is halfway between
+Pablo [30:13]: we know there can't be a path at length m ok so we return
+Pablo [30:20]: so that's the whole outward
+Pablo [30:23]: so we'll analyze it on the next slide
+Pablo [30:25]: but questions about its correctness
+Pablo [30:38]: okay so there's the algorithm i just moved it
+Pablo [30:44]: the g has n nodes we're going to count this in terms of
+Pablo [30:51]: so how do we analyze this well
+Pablo [31:00]: the way to analyze or recursive algorithm is we have to acknowledge each time we do recursion
+Pablo [31:02]: whatever variables were declared
+Pablo [31:16]: so this is a kind of you know i'm not sure how i would analyze with turing machines because the notion of subroutines doesn't make a whole lot of sense with turing machines so you kind of have to think more in a more modern model here where you have recursion
+Pablo [31:18]: whenever a function calls another one
+Pablo [31:26]: the variables of the calling one go on the stack so they can be remembered and then you go into the other one and if it's a recursive call it's just the same function
+Pablo [31:27]: that you're going into
+Pablo [31:31]: so what we want to do is ask how many levels of recursion are there
+Pablo [31:34]: and then how much space does each level of recursion take
+Pablo [31:38]: and each level of recursion has what well let's just look at it
+Pablo [31:44]: it has these four variables st u and k each taking log n bits
+Pablo [31:55]: now be careful in the statement of the problem s and t are part of the input and their read only but remember what we're doing recursion here so like even though i'm calling them s and t
+Pablo [32:05]: most of the values they take on throughout the recursion are not the original s and t we're talking about is one of these u's that we're searching in the middle of the code
+Pablo [32:15]: so g we can think of as read only right we never write into g but we do write over these variables smt because at other levels of recursion
+Pablo [32:20]: they take on the values of different nodes than the s and t at the top level
+Pablo [32:22]: and also k change we keep dividing k by two
+Pablo [32:28]: and then so that these three are passed in
+Pablo [32:32]: and then u is a variable that's declared in the functions we have these four variables
+Pablo [32:37]: and st and u are just nodes in the graph so they can be represented with log n bits each
+Pablo [32:50]: k is a number but remember how big is the number get at the top level of recursion we can just set it to n how many bits do we need to represent n log of n minus so we got these four variables they each take log n so we have o of log n bits
+Pablo [32:54]: that need to be allocated at a given level of recursion
+Pablo [32:56]: um
+Pablo [33:05]: and the top level call you make is you add you get the original s and t and then you just set the value of k equal to m for the top level
+Pablo [33:06]: and because you do that
+Pablo [33:10]: because k is getting divided by two every time
+Pablo [33:23]: how many times can you divide n by two before it gets down to the base case of one that's the definition of log base two of n so just like any of these divide and conquer algorithms just like merge sort
+Pablo [33:24]: you do
+Pablo [33:25]: buy a conquer
+Pablo [33:27]: on something a size end cutting in half
+Pablo [33:28]: every time
+Pablo [33:29]: you're going to do
+Pablo [33:30]: login
+Pablo [33:42]: but notice one of the key properties is that unlike say merge sort where you have these two recursive calls and you have to add up the time they take
+Pablo [33:56]: we don't have to add up any time here right because we're not using time we're using space and i'm like time you can reuse space and so that first recursive call you know however much space it use it gives it gives it back to you before you go into the cycle
+Pablo [34:01]: so that's why you really only have to think about like a single path of recursion error
+Pablo [34:07]: because you know at any given time we just think about the call stack it's got a host log n levels of recursion
+Pablo [34:17]: each taking four log n bits so that means the total number of bits that ever is allocated throughout this is log squared of n total x
+Pablo [34:22]: and that's how we get reachability solvable with log squared
+Pablo [34:23]: m
+Pablo [34:28]: questions about this analysis
+Pablo [34:48]: okay so recall that predicting whether a non deterministic program will accept
+Pablo [34:55]: using a post smn space is equivalent to a reachability problem on a graph of size like two to the s of n
+Pablo [35:01]: so another way of interpreting that is for any spacebound s
+Pablo [35:10]: n space of s is a subset of space of square so i think i don't think you need to go through the whole yes i misspoke early you don't need to go through the
+Pablo [35:19]: whole padding arguments propagates up it's just naturally that follows more easily for just observing oh because we showed reachability is solvable in this amount of space
+Pablo [35:21]: but reachability
+Pablo [35:29]: can be used to solve non deterministic space bounded computation for larger space bounds this translates into
+Pablo [35:40]: oh and anything you can do in non deterministic space s you can do in deterministic space and f squared even for bigger s by just looking at the space bound and then applying this equivalence
+Pablo [35:41]: of reach of the lase
+Pablo [35:41]: r
+Pablo [35:46]: so
+Pablo [35:48]: these are both ways of phrasing
+Pablo [35:48]: toxic
+Pablo [35:51]: way to see it is just a statement
+Pablo [35:53]: about the space of what
+Pablo [35:56]: is it is not the question
+Pablo [35:57]: it's not just our
+Pablo [35:57]: novel
+Pablo [35:59]: right is there a law the one point
+Pablo [36:00]: ninety nine
+Pablo [36:07]: log
+Pablo [36:07]: in
+Pablo [36:10]: why
+Pablo [36:11]: this is
+Pablo [36:12]: not as unbelievable
+Pablo [36:13]: as evil
+Pablo [36:15]: but
+Pablo [36:17]: i don't think either we'll take it as a
+Pablo [36:18]: universe
+Pablo [36:26]: that is
+Pablo [36:26]: lost
+Pablo [36:32]: i think
+Pablo [36:33]: we will act
+Pablo [36:34]: for both
+Pablo [36:38]: spaces
+Pablo [36:39]: like the lowest space
+Pablo [36:40]: fountain
+Pablo [36:41]: makes any sense
+Pablo [36:42]: you have
+Pablo [36:43]: fewer than one
+Pablo [36:43]: space
+Pablo [36:45]: you can't
+Pablo [36:46]: even index into your
+Pablo [36:48]: media
+Pablo [36:49]: argument why
+Pablo [36:50]: would we
+Pablo [36:51]: totally
+Pablo [37:00]: don't know
+Pablo [37:01]: where they are
+Pablo [37:05]: but
+Pablo [37:06]: generally people don't
+Pablo [37:07]: tend to think about stake
+Pablo [37:09]: i think
+Pablo [37:10]: that's not there
+Pablo [37:14]: if you guys have little of a login space or high
+Pablo [37:15]: link to the low
+Pablo [37:16]: blog
+Pablo [37:18]: that's equivalent
+Pablo [37:19]: to regular
+Pablo [37:20]: so
+Pablo [37:22]: we usually think
+Pablo [37:29]: a finite state machines is having constant memory but actually you can have a little bit more than constant memory and still only decide the regular language
+Pablo [37:31]: but i forget what the threshold is log n or
+Pablo [37:33]: at any rate
+Pablo [37:34]: now we're going to go
+Pablo [37:35]: a little higher
+Pablo [37:38]: in our space
+Pablo [37:39]: and we're going to
+Pablo [38:04]: go back to what we talked about in chapter six remember that we had these sort of logical definitions of the complexity classes one way to think about np as a language a is an np if a string x is an a if an only if there's a w that makes the verifier algorithm va on xw accept with the requirements that w is length polynomial in x and this verifier is polynomial time
+Pablo [38:16]: and recall that we generalized this to the polynomial hierarchy well a language b is in sigma kp if what if there are these alternations these quantifiers starting with existence
+Pablo [38:20]: the equivalent for pi if you start with a for all
+Pablo [38:25]: and you require all of these w's via length polynomial x
+Pablo [38:36]: such that x is going to be if and only if there is a witness w one so for all witnesses w two and so on the b verifier accepts x together with all these witnesses
+Pablo [38:39]: and we require that verifier runs in polynomial time
+Pablo [38:42]: and k here is a constant
+Pablo [38:47]: it's just three or seven defining of some level and following the letter
+Pablo [38:50]: well it turns out
+Pablo [38:55]: that you can do this and define the polynomial hierarchy but it's natural to say well wait
+Pablo [39:08]: why require k to be constant what if we let k vary with x and what if we let it vary in the kind of natural way we started with by letting k be as much as polynomial and the length of x
+Pablo [39:12]: that it turns out you make that change and nothing else
+Pablo [39:17]: i didn't start talking about space bounded verifiers this is still a time bounded variable
+Pablo [39:25]: you may only this change let k go from concept to polynomial in x this turns out to define p space
+Pablo [39:29]: somehow without mentioning space at all
+Pablo [39:34]: but it's an equivalent definition of the problem solvable with polynomial space
+Pablo [39:38]: we're now going to prove that
+Pablo [39:47]: but somehow no matter how many times i prove this it still feels magical that you can define the most natural space mounted complexity glass
+Pablo [39:49]: without mentioning space a single time
+Pablo [39:53]: but you have
+Pablo [40:07]: and again who's going to come to the rescue to help us do this our old friend reach bill okay so what we want to do is express this reachability predicate i can reach from a notice to a node t in some graph
+Pablo [40:15]: using logical quantifiers that's what our goal these kinds of logical quantifiers like we use to define the polynomial
+Pablo [40:25]: ir so the desired predicate we'd like to define is the same one we wrote when we did savages theorem it's just i don't know for some reason the textbook switched from the arrow notation
+Pablo [40:39]: predicate notation but it's the exact same thing we wrote with savage's algorithm there's a path from st and like at most k only now we're calling that r of stk instead of s hero k but it'd be classic
+Pablo [40:45]: and just like the base case there was you can get from s to t and at most one step
+Pablo [40:58]: if either there's an edge from s to t or they're the same node that's going to be our so called basic predicate b of u got two edges u and b b of u v is true if either u v is an edge or u equals and that's equivalent
+Pablo [41:00]: to the statement r u v one
+Pablo [41:03]: you can reach from u to the in at most one
+Pablo [41:04]: step
+Pablo [41:18]: and then it's going to be key here um that when we do this with the quantifiers we use only so called first order quantifiers meaning if i write something like exists u i mean there exists a node u in the graph
+Pablo [41:31]: i never mean there exists a set of nodes in the graph the way you might say like oh clique is defined by there exists a set of nodes a size k all connected by it but exists is always going to refer to individual it's not sets of
+Pablo [41:31]: drugs
+Pablo [41:42]: and our goal is going to be to define reachability using these alternating quantifiers that quantify over okay so there's an obvious way to do it
+Pablo [41:45]: rstk is equivalent to the following
+Pablo [41:47]: uh statement
+Pablo [41:50]: there exists a u one
+Pablo [42:02]: and i can get from sd one and it hosts one set n there exists a u two so i can get from u one to u two and it most one step and so on until finally i can get from uk what minus one to t in a host one
+Pablo [42:08]: so there's a way to do it we don't even need the for all quantifier just a sequence that exists quantifiers
+Pablo [42:23]: or if we were going to write this like there exists a string we might just write a single one like there exists a string encoding this list of k minus one intermediate nodes but i'll write it with you know individual exists on the node so okay so that's true
+Pablo [42:23]: um
+Pablo [42:28]: but the caveat here is that um
+Pablo [42:34]: what we need is that this quantified logical formula that we write down b of size
+Pablo [42:36]: polynomial in the input
+Pablo [42:41]: but we're going to use this to talk about graphs that are exponentially larger than the input
+Pablo [42:47]: so this is a perfectly valid way to define reachability and graphs using only logical quantifiers
+Pablo [42:52]: but it leads to a formula of size comparable to that of the graph itself
+Pablo [42:59]: so now i'm going to update our requirements and what we want to do this where uh
+Pablo [43:04]: the size of the formula should be logarithmic in the size
+Pablo [43:17]: right because we want to apply this to graphs that are exponentially larger than our input specifically graphs that encode that are the reachability graph of some space bound determining machine
+Pablo [43:19]: uh which as we've seen
+Pablo [43:25]: um those graphs can have many more nodes than the input right a polynomial space machine
+Pablo [43:31]: can take exponential time so it can have exponentially many nodes compared to the size
+Pablo [43:33]: and we get it this way
+Pablo [43:35]: besides that formula exponential
+Pablo [43:36]: inside of
+Pablo [43:43]: more exactly
+Pablo [43:46]: multiplace
+Pablo [43:47]: uh
+Pablo [43:50]: it is
+Pablo [43:51]: already
+Pablo [43:55]: uh
+Pablo [43:56]: so there's
+Pablo [44:00]: needlessly zero way to
+Pablo [44:00]: observe
+Pablo [44:02]: that regionality is an np that's honorable
+Pablo [44:11]: so the idea of exodus is going to be very similar to the metal first search
+Pablo [44:12]: idea from soft
+Pablo [44:14]: and it's
+Pablo [44:28]: that rather than tracking one by one which show do we go to we can say well i can reach from s to t in a most case steps if and only if there's a note in the middle right it's the exact same idea soft a note in the middle i'm going to call it u sub k over two
+Pablo [44:33]: such that i can reach her message to you and k over two and at most gamor two steps
+Pablo [44:36]: n i think you can reach from uk or through the t in the most k reduced
+Pablo [44:36]: steps
+Pablo [44:40]: easy enough
+Pablo [44:42]: and then we keep recursive
+Pablo [44:48]: so the fact that i can reach from s to u g her too
+Pablo [44:50]: saying
+Pablo [44:52]: there's the middle of that
+Pablo [44:54]: you can have a core and read your message
+Pablo [44:55]: you can't report those
+Pablo [44:56]: gambling courses
+Pablo [44:57]: and
+Pablo [44:58]: u k or
+Pablo [45:00]: the same thing
+Pablo [45:01]: to get
+Pablo [45:02]: her due
+Pablo [45:05]: going this way
+Pablo [45:07]: i'm going to keep going until the end
+Pablo [45:09]: we're back
+Pablo [45:09]: in the same situation
+Pablo [45:10]: we had in
+Pablo [45:11]: the video
+Pablo [45:11]: software all we did
+Pablo [45:12]: was just
+Pablo [45:13]: express
+Pablo [45:15]: reachability
+Pablo [45:18]: using the number of quantifiers
+Pablo [45:22]: and a formula of size comparable to the number of nodes in our graph
+Pablo [45:24]: so this is not going to work
+Pablo [45:29]: if we want to talk about graphs that are much better than our input and keep this small
+Pablo [45:30]: so that didn't work
+Pablo [45:35]: but it kind of inspires us to look at
+Pablo [45:37]: how we're expressing this
+Pablo [45:42]: so in particular we wrote exists a whole bunch of times there but
+Pablo [45:53]: exists as sort of a shorthand for or right exists is like the logical quantifier version of the boolean operation or which is the boolean operation version of the ceph theoretic concept of union
+Pablo [45:55]: so when i write exists
+Pablo [46:00]: i say there exists a node u and b so that you know something is true
+Pablo [46:03]: about it
+Pablo [46:05]: that's equivalent
+Pablo [46:12]: to a sequence of ores that's equivalent to if i let v be the nodes u one u two up to u sub n
+Pablo [46:22]: that's equivalent to saying there exists a u is true it's equivalent to saying well either phi if you want is true or phi of u two is uh the u n is true right
+Pablo [46:40]: and similarly for all is a shorthand for a big n to say for all nodes in u phi of u is true is the same as a if my nodes are u one through u n phi if u one is true n phi of u two is true and so i mean and this is true also if i'm not talking about all nodes in the graph but only a few
+Pablo [46:42]: say there exists in some set
+Pablo [46:47]: is the same as just iterating over that set and applying an or
+Pablo [46:50]: so with that in mind we're going to go back here
+Pablo [46:53]: and we're going to say well what did we claim here
+Pablo [46:59]: that i can reach from s to t and in most case steps if and only if there's a okay i renamed it now
+Pablo [47:01]: uh u one
+Pablo [47:07]: so then i can get from st u one at most k over two steps and i can get from u one to t in a mo scale over two steps
+Pablo [47:12]: but that n as we saw is equivalent to a for all
+Pablo [47:16]: replace this is true and this is true
+Pablo [47:21]: with for all pairs of nodes a one b one
+Pablo [47:24]: in the following set of two pairs
+Pablo [47:27]: the first set is the pair that i had on the left
+Pablo [47:28]: the second
+Pablo [47:30]: is the pair i had on the right
+Pablo [47:34]: so for all a one b one in that set of two pairs
+Pablo [47:37]: r of a one b one k over two is true
+Pablo [47:46]: all right so we're just replacing that logical end with an equivalent for all
+Pablo [47:56]: and
+Pablo [47:58]: then if we want to keep expanding that out
+Pablo [48:04]: right so so now we've replaced so now what we've done is we've expressed rstk
+Pablo [48:11]: using some alternating quantifiers followed by a fairly simple predicate
+Pablo [48:20]: so not that simple but simpler than that one because that one had k at the end that's when i came over two of the goal is going to be to get down to our basic predicates that are released
+Pablo [48:25]: so how can we simplify this even further we've got to get k over two down to k over four
+Pablo [48:26]: so we do that
+Pablo [48:28]: by doing the same trick
+Pablo [48:36]: we're just doing the exact same trick we used to get from k to k over two now applying to k over two what does it mean i can reach from a one to b one
+Pablo [48:37]: and at most k over two steps
+Pablo [48:41]: that's true if and only if there's some middle point u two in between
+Pablo [48:43]: a one and b one
+Pablo [48:51]: is true same trick for all a two b two in the set of pairs i would need to expand that out
+Pablo [48:58]: what are the two pairs well i first have to get from a one to the midpoint u two and then i have to get from the minp one u two to b one
+Pablo [49:05]: uh and each of those has to be done in a most k over four steps for the most dam
+Pablo [49:06]: age
+Pablo [49:08]: so we keep doing that
+Pablo [49:10]: we get these alternating bonfire
+Pablo [49:10]: s
+Pablo [49:14]: and how
+Pablo [49:15]: many times do we have to do this
+Pablo [49:17]: before we get down to k one
+Pablo [49:19]: we're
+Pablo [49:20]: dividing
+Pablo [49:21]: it by deletion
+Pablo [49:25]: so when we get down to bay swell these are also scripted with
+Pablo [49:26]: how many
+Pablo [49:27]: of these alternations
+Pablo [49:28]: exist
+Pablo [49:28]: for all
+Pablo [49:29]: we do
+Pablo [49:31]: and
+Pablo [49:32]: now we get
+Pablo [49:35]: to
+Pablo [49:36]: be either
+Pablo [49:37]: the
+Pablo [49:38]: same
+Pablo [49:40]: and
+Pablo [49:41]: the point is that the total size of
+Pablo [49:42]: this formula
+Pablo [49:44]: all of these existence were all
+Pablo [49:44]: put together
+Pablo [49:50]: so this can handle
+Pablo [49:52]: exponential size graph
+Pablo [49:54]: s with only a colonial
+Pablo [49:54]: size
+Pablo [50:18]: a problem
+Pablo [50:19]: is in these days
+Pablo [50:20]: if not only
+Pablo [50:21]: if
+Pablo [50:24]: it can be expressed as exists for all is this for all possible
+Pablo [50:27]: colonial number
+Pablo [50:28]: of alternations
+Pablo [50:32]: blog
+Pablo [50:33]: inside of the graph
+Pablo [50:35]: is
+Pablo [50:36]: exponential
+Pablo [50:37]: so
+Pablo [50:38]: all of that
+Pablo [50:40]: so
+Pablo [50:42]: quantifiers
+Pablo [50:43]: followed by
+Pablo [50:44]: new
+Pablo [50:45]: things
+Pablo [50:47]: you
+Pablo [50:47]: can address
+Pablo [50:48]: anything in jesus
+Pablo [50:49]: again
+Pablo [50:49]: using that
+Pablo [50:50]: reachability
+Pablo [50:52]: capt
+Pablo [50:53]: uring space
+Pablo [50:56]: graphs
+Pablo [50:57]: is equivalent
+Pablo [50:58]: to
+Pablo [50:59]: taking a
+Pablo [51:00]: problem in space
+Pablo [51:09]: that's
+Pablo [51:10]: how we were able to express
+Pablo [51:11]: the
+Pablo [51:12]: state's founded congregation
+Pablo [51:13]: without making any
+Pablo [51:13]: reference
+Pablo [51:17]: that describ
+Pablo [51:18]: e the configur
+Pablo [51:19]: ation reachability
+Pablo [51:20]: on
+Pablo [51:21]: uh
+Pablo [51:32]: so this is from the textbook
+Pablo [51:35]: uh i wasn't exactly sure what they were getting at with this but i included it
+Pablo [51:43]: uh and the idea is one way to think about why is it that this worked is you can think about this logical alternation as being like a game
+Pablo [51:54]: right remember i said long time ago when we first introduced the alternating quantifier is that they often describe winning strategies and games if i say i have checkmate and k moves
+Pablo [51:57]: that's a shorthand for their exists a move i can do
+Pablo [52:05]: so that no matter what move you do next there's a move i can do after that so no matter it'll get when i say no matter what move i mean for all moves you could do next
+Pablo [52:10]: if i do that k times and i say i can checkmate u that's what it means that i have checkmate in k
+Pablo [52:11]: moves
+Pablo [52:19]: right so this alternating of existence for all looks a lot like a game and that's why we're going to see a lot of games actually are captured by these right
+Pablo [52:29]: so the idea is that you can think of it as like a game between a prover and a skept and the prover says i claim we can get from s to t and k steps through a midpoint u one
+Pablo [52:32]: uh here it is so they're trying to prove it to you they give you the midpoint
+Pablo [52:38]: but now all you all the the skeptic or the verifier as is like well okay
+Pablo [52:41]: you're claiming the midpoint is u one but i don't believe you
+Pablo [52:47]: how do i know it's the midpoint for it to be the midpoint you have to be able to get from s to u one and k over two steps how can we do that
+Pablo [52:52]: and then the program comes back and says oh well if i go in through u two that's the midpoint between us and
+Pablo [52:54]: you want and then the sky
+Pablo [53:00]: over
+Pablo [53:01]: four steps
+Pablo [53:02]: and then
+Pablo [53:03]: point
+Pablo [53:03]: there
+Pablo [53:04]: and so on
+Pablo [53:05]: at some point
+Pablo [53:06]: the sky
+Pablo [53:07]: for that
+Pablo [53:08]: to work
+Pablo [53:09]: you're going to have to be able to get
+Pablo [53:09]: what you said
+Pablo [53:10]: to us
+Pablo [53:13]: that
+Pablo [53:14]: the rumors
+Pablo [53:15]: okay
+Pablo [53:15]: just
+Pablo [53:27]: follow the edge and the skeptic will say okay okay yeah you're right about that but anyway back to we were talking about for this to work you got to get from u six to u thirteen in a host two steps right so this is like
+Pablo [53:32]: this exponential time game between these two can kind of capture what it means right
+Pablo [53:48]: um so one way to think about this is that if you think about this like game of like an interactive proof np is like this but where there's just one round between the prover and the variable the communication goes one way the prover says here's the witness and the verifier looks at it and says
+Pablo [53:52]: all right i've done my computation i believe they don't have to say anything
+Pablo [53:52]: bad
+Pablo [53:58]: p space is like that but where there's kind of a polynomial number of these wrappers
+Pablo [54:00]: where
+Pablo [54:02]: the prover gives
+Pablo [54:05]: some information like a first part of a witness
+Pablo [54:08]: come back
+Pablo [54:08]: to me
+Pablo [54:10]: only
+Pablo [54:11]: if any way of doing that
+Pablo [54:12]: this guy that
+Pablo [54:13]: ends up
+Pablo [54:14]: is the
+Pablo [54:14]: answer
+Pablo [54:19]: on this
+Pablo [54:22]: help to see some of her women
+Pablo [54:28]: of course
+Pablo [54:29]: these days
+Pablo [54:32]: complet
+Pablo [54:33]: e this makes sense
+Pablo [54:34]: and as always
+Pablo [54:38]: to begin with we'll start by observing as american artificial looking
+Pablo [54:41]: problem that is kind of clearly piece based complete
+Pablo [54:51]: but once we observe that you know we'll say well even though this problem looks artificial a reduction from this to other more natural problems will be how we show other things
+Pablo [54:52]: in piece based
+Pablo [55:02]: so it looks very much like all the predict problems we used as our you know our witness existence we sometimes called them but here it's a deterministic complexity class so there's no witness
+Pablo [55:06]: uh here we have program b and input x and the integer and the unionary
+Pablo [55:10]: use the
+Pablo [55:14]: on your
+Pablo [55:14]: walkthrough of
+Pablo [55:16]: wyeth
+Pablo [55:33]: but it's similar to how we showed that the witness existence ones are it can be solved in polynomial space and if you have a polynomial space program p and you know the polynomial the way that you reduce that problem to this one is you give b and you give an integer big enough to capture the space usage
+Pablo [55:42]: is going to have on inputs right so it's going to use uninput length n it's going to use n cubed space you would set m equal to m cubed
+Pablo [55:45]: the answer to this question tells you when i give a program
+Pablo [55:48]: so this is also hard
+Pablo [55:49]: for these
+Pablo [55:56]: so
+Pablo [55:57]: this is our artificial
+Pablo [55:58]: we're going to find new problems
+Pablo [56:02]: this new one is going to be our more natural piece based complet
+Pablo [56:02]: e
+Pablo [56:06]: and i'm going to call it two player set
+Pablo [56:12]: and just like set you're given a boolean form with n variables but now the question is a little more
+Pablo [56:13]: complicated
+Pablo [56:14]: two
+Pablo [56:16]: letters are going to play this game
+Pablo [56:18]: much like on the previous slide
+Pablo [56:24]: they're going to take turns setting the input variables one at a time in order
+Pablo [56:30]: so player one the prover is going to set x one and player two the skeptic is going to set x two
+Pablo [56:32]: then player three is going to set x three
+Pablo [56:36]: and player one wins if at the end of this they can make featuring
+Pablo [56:40]: and player two wins at the end of this they can make v false
+Pablo [56:45]: and the question is well they're both trying to win does player one have a winning strategy
+Pablo [56:53]: and i'm going to claim that's actually equivalent to this much more common name for this decision problem which is called qsat
+Pablo [56:57]: or some that you'll see it called qbf for quantified boolean formula
+Pablo [57:01]: which i weird name we don't call sad
+Pablo [57:03]: formula we call it the question
+Pablo [57:04]: we're asking
+Pablo [57:04]: about the formula
+Pablo [57:10]: but so i've also seen it called qsat that stands for quantified sat
+Pablo [57:13]: and it's the question given a boolean formula
+Pablo [57:16]: phi that have all these variables
+Pablo [57:23]: isn't the case that the following statement that has no variables psi is true
+Pablo [57:30]: and psi is the statement there exists of an x one that's fit for all bits x two they're dismissed
+Pablo [57:31]: feedback
+Pablo [57:37]: and the question is that this is the case that there exists
+Pablo [57:39]: an
+Pablo [57:40]: excellence of relative
+Pablo [57:41]: un
+Pablo [57:41]: expected
+Pablo [57:49]: this is just a restatement
+Pablo [57:49]: of what it means
+Pablo [57:50]: for biometal
+Pablo [57:52]: there
+Pablo [57:53]: 's a choice they can make
+Pablo [57:53]: here
+Pablo [57:59]: so that no matter what player two does here there's a choice player one can make here so no matter what player two does here
+Pablo [58:02]: player one would say next
+Pablo [58:02]: feature
+Pablo [58:07]: but it's more commonly phrased the second
+Pablo [58:11]: and it's in p space
+Pablo [58:14]: why is that
+Pablo [58:15]: well
+Pablo [58:19]: the obvious algorithm how would you answer this question
+Pablo [58:23]: you would just search this tree of all possible assignments
+Pablo [58:32]: but unlike the way that we would solve sap in exponential time or we would just search you would just iterate over every assignment
+Pablo [58:35]: and just check do any of the work
+Pablo [58:37]: question
+Pablo [58:38]: s but nevertheless
+Pablo [58:49]: we can still do a search of the treaty if possible assignments to x one to xn and so we just say okay we'll start by setting x one to zero and then ask this question
+Pablo [58:58]: and if that's true we just stop if it's false we say okay well maybe we have to try the other assignment to x one so in other words we're taking an o on s one
+Pablo [58:59]: and then
+Pablo [59:00]: when we first lay out
+Pablo [59:01]: we have over x
+Pablo [59:02]: two
+Pablo [59:06]: either the case that if i set x two the zero the rest of this is true
+Pablo [59:10]: if so i'm not done i got to check is it also true if i set x to one
+Pablo [59:18]: so we check both values of epsilon here and multvalues x here but we take an or here and an n and then there's these n levels of recursion
+Pablo [59:21]: and because we're going down n levels of recursion
+Pablo [59:24]: each level we're using a polynomial amount of space
+Pablo [59:27]: the total space usage is power exponential time
+Pablo [59:29]: but
+Pablo [59:44]: what we're now going to do let me show that space predict is reducible to qsi
+Pablo [59:48]: i guess it's probably only time reducible here we're not worried so much about space usage
+Pablo [59:51]: we are it should be
+Pablo [59:53]: all
+Pablo [59:53]: time
+Pablo [59:54]: so it'll automatically
+Pablo [59:57]: and
+Pablo [1:00:03]: that will establish that because she says in case it's also pspace hard so it's b space
+Pablo [1:00:09]: so how does this reduction
+Pablo [1:00:17]: well what's the space for this question we're given a program p in input x and it's base found m and
+Pablo [1:00:18]: we want to know
+Pablo [1:00:24]: if i run p on input x will it accept using at most
+Pablo [1:00:25]: space f
+Pablo [1:00:29]: so we're going to define this graph
+Pablo [1:00:40]: g that's depends on x equals dx dx where the nodes of the graph are as usual the configurations of pnx that use at most space m
+Pablo [1:00:42]: again note that
+Pablo [1:00:46]: m here is going to be log of the number of nodes there
+Pablo [1:00:59]: because you can represent each node with m bits you can have at most two to the m nodes or put another way if you've got vx total nodes they can each be represented with log of that many bits
+Pablo [1:01:04]: and of course we have
+Pablo [1:01:05]: this
+Pablo [1:01:06]: program
+Pablo [1:01:12]: and this is our standard configuration reachability
+Pablo [1:01:12]: graph
+Pablo [1:01:16]: for a non deterministic space bounded program
+Pablo [1:01:21]: here we're actually going to apply it to spacebound and program right so
+Pablo [1:01:24]: it's like everybody will have out degree at most
+Pablo [1:01:24]: one
+Pablo [1:01:24]: right
+Pablo [1:01:31]: ever you will have if it's not halting it'll have exactly one alkyl but this is still the configuration reachability graph of that
+Pablo [1:01:35]: ok
+Pablo [1:01:43]: and this observation we made about being able to characterize reachability using alternating quantifiers is going to be key to connect this to
+Pablo [1:01:44]: this
+Pablo [1:01:51]: class
+Pablo [1:01:52]: room development
+Pablo [1:01:53]: in this configuration
+Pablo [1:01:54]: reachability graph
+Pablo [1:02:05]: of the lisa has to be the initial configuration of the n of t to be this unique accepting configuration of the force p to clean itself up after everything
+Pablo [1:02:06]: and
+Pablo [1:02:07]: they're
+Pablo [1:02:08]: in a
+Pablo [1:02:09]: host
+Pablo [1:02:12]: right
+Pablo [1:02:17]: we've already allocated enough nodes that they capture everything we might be able to do
+Pablo [1:02:19]: using at most space
+Pablo [1:02:24]: and this is true if and only if what well by all that logic we did a few slides ago
+Pablo [1:02:34]: that crazy quantified boolean formula is true where at the edge of the psych i just in terms of edges here
+Pablo [1:02:35]: this is
+Pablo [1:02:36]: true
+Pablo [1:02:38]: m equals dm
+Pablo [1:02:42]: but i just want to get
+Pablo [1:02:42]: also
+Pablo [1:02:47]: there's our quantifiable
+Pablo [1:02:49]: which is true
+Pablo [1:02:50]: if and only
+Pablo [1:02:53]: if the answer to the space predict problem is true
+Pablo [1:02:56]: almost we're almost there
+Pablo [1:03:04]: so there's a few problems there
+Pablo [1:03:13]: does anybody see but we're not quite hand laid in terms of the technical definition of the quantified sat problem
+Pablo [1:03:42]: so one minor problem
+Pablo [1:03:48]: is the definition of qsat required that we alternate exists and for all on every bit
+Pablo [1:03:55]: but here this is a whole string referring to a node in the graph and this is a whole string referring to a parent node
+Pablo [1:03:57]: they're not just one bit each
+Pablo [1:04:01]: so each of these uis require many events
+Pablo [1:04:04]: but i claim there's a pretty simple fix to this
+Pablo [1:04:10]: how can we patch this to meet the technical definition of the qsat problem
+Pablo [1:04:33]: suppose that i give you
+Pablo [1:04:35]: the following for
+Pablo [1:04:39]: all bits x one
+Pablo [1:04:42]: maybe
+Pablo [1:04:44]: there exists
+Pablo [1:04:50]: a bit x one so that for all bits so these are all
+Pablo [1:04:50]: from zero
+Pablo [1:04:58]: i
+Pablo [1:05:00]: tell you this is what
+Pablo [1:05:00]: you're required to do
+Pablo [1:05:01]: you're required
+Pablo [1:05:02]: to alternate
+Pablo [1:05:04]: every single
+Pablo [1:05:05]: bit
+Pablo [1:05:05]: but instead
+Pablo [1:05:07]: of doing that you do something like
+Pablo [1:05:08]: there
+Pablo [1:05:09]: exists
+Pablo [1:05:09]: a bit
+Pablo [1:05:11]: say you want requires
+Pablo [1:05:12]: two bits
+Pablo [1:05:13]: maybe
+Pablo [1:05:14]: code you want
+Pablo [1:05:15]: to buy the first two
+Pablo [1:05:15]: minutes
+Pablo [1:05:16]: x
+Pablo [1:05:17]: one
+Pablo [1:05:18]: f two mean
+Pablo [1:05:19]: if i'm writing this
+Pablo [1:05:21]: in
+Pablo [1:05:22]: terms of individual
+Pablo [1:05:23]: that
+Pablo [1:05:25]: i might do this before my first
+Pablo [1:05:26]: test two
+Pablo [1:05:30]: right so these two maybe put together are my new one if i need two bits
+Pablo [1:05:31]: per diagram
+Pablo [1:05:37]: so the point is if i wanted to write two exists like that one exists kind of a shorthand
+Pablo [1:05:39]: if you demand you look at individual bits
+Pablo [1:05:40]: for there exists
+Pablo [1:05:41]: the first bit of you
+Pablo [1:05:42]: want and there's a soc
+Pablo [1:05:42]: iety
+Pablo [1:05:46]: that you want so say i wanted to do this about utah
+Pablo [1:05:48]: the qsat problem
+Pablo [1:05:49]: requires you to alternate
+Pablo [1:05:49]: every good
+Pablo [1:05:50]: what do i do
+Pablo [1:05:51]: to
+Pablo [1:05:52]: make an equivalent quantified
+Pablo [1:05:53]: boolean form
+Pablo [1:05:55]: that does
+Pablo [1:05:56]: alternate
+Pablo [1:05:57]: every
+Pablo [1:06:17]: just
+Pablo [1:06:18]: take the
+Pablo [1:06:19]: label
+Pablo [1:06:20]: that don't
+Pablo [1:06:23]: like the border formula
+Pablo [1:06:24]: doesn't help
+Pablo [1:06:27]: so concretely let's say i want
+Pablo [1:06:28]: to let's say this is my whole form
+Pablo [1:06:29]: ula
+Pablo [1:06:38]: let's be even more common here's the formula
+Pablo [1:06:45]: i
+Pablo [1:06:49]: want to patch this formula so it alternates on every bit
+Pablo [1:06:55]: and it's true if and only if this one is what would be the new formula i would have that would alternate on every bit
+Pablo [1:06:57]: like
+Pablo [1:07:03]: nick x four just introduce a dummy berry right just stick a dummy variable
+Pablo [1:07:04]: in here
+Pablo [1:07:08]: that i don't
+Pablo [1:07:09]: reference
+Pablo [1:07:14]: so i can do that
+Pablo [1:07:19]: but if it doesn't show up in the formula over here
+Pablo [1:07:23]: it's not going to affect the truth of what i do but now technically i alternate everything
+Pablo [1:07:35]: so it's a stupid little patch but then it lets you assume this extreme regularity to the qsat form it's going to alternate every single bit that in turn is useful when people use qsat to maybe show other problems
+Pablo [1:07:36]: for these
+Pablo [1:07:38]: much the same way that
+Pablo [1:07:41]: you can convert general cf formulas
+Pablo [1:07:42]: formulas
+Pablo [1:07:43]: you
+Pablo [1:07:44]: do some of
+Pablo [1:07:46]: these tricks with delhi variable
+Pablo [1:07:46]: similarly
+Pablo [1:07:47]: but then the point is now
+Pablo [1:07:48]: we got
+Pablo [1:07:49]: very regularly structured
+Pablo [1:07:50]: type of formula
+Pablo [1:07:51]: that's easier to use
+Pablo [1:07:52]: for other functions
+Pablo [1:07:58]: so this has a more natural thing to do when you're trying to construct formulas it's more like when you're given a formula
+Pablo [1:08:05]: which you are when you're using qsat to show another thing as piece based complete it's nice that the formula you're given
+Pablo [1:08:08]: you can make these very strong assumptions about it
+Pablo [1:08:09]: so there's one patch
+Pablo [1:08:12]: but there's another issue
+Pablo [1:08:14]: there's another problem we haven't dealt with
+Pablo [1:08:18]: this one's a lot more subtle so i don't feel bad if you don't see it but i'm curious if anybody sees
+Pablo [1:08:20]: the other problem
+Pablo [1:08:20]: we have
+Pablo [1:08:35]: so
+Pablo [1:08:36]: it's basically that
+Pablo [1:08:37]: existence
+Pablo [1:08:37]: for all
+Pablo [1:08:39]: the ranging over all
+Pablo [1:08:40]: medicines
+Pablo [1:08:42]: but the interpretation in this formula
+Pablo [1:08:44]: who are not lame
+Pablo [1:08:47]: these midstreams be arbitrary we're only letting
+Pablo [1:08:49]: them represent nodes in the graph
+Pablo [1:08:53]: so this u one has to represent some node in the graph
+Pablo [1:08:57]: i
+Pablo [1:08:58]: didn't write a full inher
+Pablo [1:08:58]: itance
+Pablo [1:08:59]: a one b one
+Pablo [1:09:01]: they couldn't even be arbitrary
+Pablo [1:09:03]: they
+Pablo [1:09:04]: were constrained to be two particular ones
+Pablo [1:09:05]: that had appear
+Pablo [1:09:06]: ed
+Pablo [1:09:07]: in this case
+Pablo [1:09:08]: a one b one
+Pablo [1:09:11]: they
+Pablo [1:09:14]: have to either be su one or u one
+Pablo [1:09:17]: d right not any ben strings
+Pablo [1:09:24]: so the teeth move in this game
+Pablo [1:09:39]: we're doing this for all at in what in the at the previous level a t minus one to this new intermediate node ut or atbt could be the pair ut bt minus one
+Pablo [1:09:46]: but we need to ensure that the bits the skeptic kicks in this part of the game
+Pablo [1:09:48]: which you go to
+Pablo [1:09:49]: actually
+Pablo [1:09:50]: coherent
+Pablo [1:09:54]: most bit strings of that length don't encode one of those two pairs
+Pablo [1:10:04]: so how are we going to do this the fix is we're going to change the final predicate so that if ever the skeptic picks bits that just don't look like what we need them to in this game
+Pablo [1:10:07]: it automatically makes the whole formula
+Pablo [1:10:07]: true
+Pablo [1:10:09]: so
+Pablo [1:10:10]: the way we're going to do it is
+Pablo [1:10:11]: the final predic
+Pablo [1:10:12]: ate
+Pablo [1:10:18]: which was originally just stating there's an edge from am to vm or if i was being more precise either that's true or they're evil
+Pablo [1:10:21]: so when i change that final one
+Pablo [1:10:23]: i think
+Pablo [1:10:24]: i started to patch it
+Pablo [1:10:26]: i don't know what happen
+Pablo [1:10:27]: s
+Pablo [1:10:30]: i remember patching this last year and now i'm wondering where my patches went
+Pablo [1:10:32]: but
+Pablo [1:11:16]: keep it in a more simplified format
+Pablo [1:11:18]: and i'll fix that
+Pablo [1:11:18]: later
+Pablo [1:11:20]: okay
+Pablo [1:11:23]: so the fix is that the
+Pablo [1:11:33]: final simple predicate we're done with quantifying and now we just want to state something about all these variables the statement we make is oh there's an edge from the notam and no bm
+Pablo [1:11:37]: we change it from just that to well that or some other stuff
+Pablo [1:11:44]: making it easier to make the formula true what's the or because again the job of the prover is to try to make a treatment
+Pablo [1:11:46]: so
+Pablo [1:11:48]: we would say well
+Pablo [1:11:50]: i heard this is true or the skeptic
+Pablo [1:11:50]: cheater
+Pablo [1:11:55]: somewhere along the way and set bits in a way we didn't expect
+Pablo [1:12:01]: so what does that mean well we just state the negation of the conditions we need we needed
+Pablo [1:12:04]: that the pair
+Pablo [1:12:15]: atv is either at minus one ut or ut so this is just stating that that's not true meaning the scant dig so
+Pablo [1:12:16]: either
+Pablo [1:12:19]: to not
+Pablo [1:12:25]: e
+Pablo [1:12:28]: the negation of
+Pablo [1:12:30]: what we need to be true here
+Pablo [1:12:32]: to the
+Pablo [1:12:34]: negation
+Pablo [1:12:35]: of this tear is
+Pablo [1:12:35]: one
+Pablo [1:12:38]: of those
+Pablo [1:12:41]: either
+Pablo [1:12:46]: so that's what it means at the top level and then we just add this
+Pablo [1:12:47]: for each
+Pablo [1:12:49]: and
+Pablo [1:12:55]: that is the cougar automatically went into the scat tries to cheat by picking an invalid pair
+Pablo [1:13:01]: so with all that
+Pablo [1:13:03]: but that's
+Pablo [1:13:11]: how we go from this easier to think about quantify where we're quantifying over these kind of high level objects like nodes and pairs of nodes in the graph
+Pablo [1:13:13]: some pairs coming from certain constraint sets
+Pablo [1:13:16]: to this much more lower level we're just picking bits at a time
+Pablo [1:13:19]: so we just
+Pablo [1:13:26]: add this to make sure you can't win by picking invalid bins you can only win by picking the bids as we want them to be
+Pablo [1:13:29]: okay
+Pablo [1:13:32]: so that's the proof that
+Pablo [1:13:36]: you cited is pspace marker
+Pablo [1:13:40]: and only
+Pablo [1:13:42]: if the space present
+Pablo [1:13:42]: ed
+Pablo [1:13:45]: so
+Pablo [1:13:46]: here's something
+Pablo [1:13:47]: that what i love
+Pablo [1:13:49]: to do business class but it takes a while
+Pablo [1:13:52]: so we're not going to prove it i just want to give you a taste
+Pablo [1:13:53]: because
+Pablo [1:13:56]: it's kind of similar to what we
+Pablo [1:13:56]: 've been talking about
+Pablo [1:13:59]: so hugh's
+Pablo [1:14:00]: hat formula exists
+Pablo [1:14:03]: as one for all that students this other three et cetera
+Pablo [1:14:08]: such that some statements about those variables is false then by de morgan's laws
+Pablo [1:14:13]: that means the negation of it is true for all bits the prudence
+Pablo [1:14:14]: there is a bit of verified
+Pablo [1:14:17]: that randy does appro
+Pablo [1:14:18]: ver she does
+Pablo [1:14:19]: verify
+Pablo [1:14:20]: her
+Pablo [1:14:23]: so that the formula becomes false in other words the verifier or the skeptic
+Pablo [1:14:25]: as we refer to them as a winning strategy
+Pablo [1:14:35]: but we can also ask how much space would a computationally specified verifier need
+Pablo [1:14:36]: to actually pull this off
+Pablo [1:14:39]: say we want the verifier to be an algorithm
+Pablo [1:14:42]: that is choosing the bets
+Pablo [1:14:55]: and say had a winning strategy how much space would it need to know which bits it needs to pick well it would have to do the same thing as we did to say y qsat is in pspace it would have to search the whole tree to say okay
+Pablo [1:14:58]: i've supposedly got a winning strategy
+Pablo [1:15:09]: but that doesn't tell me how to solve the problem i've got to play stockfish here and actually search the whole game tree and figure out which is an automobile
+Pablo [1:15:11]: space the bear can do this using
+Pablo [1:15:16]: also deterministic outlook
+Pablo [1:15:19]: so it's polynomial space founded and it's deterministic
+Pablo [1:15:23]: so ip is a class that looks very similar to this
+Pablo [1:15:28]: but it's one where we require the verifier rather than being polynomial space to be polynomial time
+Pablo [1:15:35]: so more restrictive because we think polynomial times a bigger restriction than polynomial space we think it's not able to
+Pablo [1:15:38]: leave that even more strong than
+Pablo [1:15:39]: the
+Pablo [1:15:43]: we boosted a little we let it flip coins
+Pablo [1:15:49]: and get the right answer only with high probability not with probability
+Pablo [1:15:52]: in other words
+Pablo [1:15:55]: and then it turns out
+Pablo [1:15:57]: ip equals easiness
+Pablo [1:16:00]: this ultimate phrase
+Pablo [1:16:02]: also characterizes
+Pablo [1:16:03]: we
+Pablo [1:16:05]: show this one way of characterizing these phase in terms of
+Pablo [1:16:06]: all
+Pablo [1:16:07]: interactive proof system
+Pablo [1:16:08]: where the verifier
+Pablo [1:16:20]: has to be polynomial space and deterministic but it turns out if you first weaken that verifier significantly by requiring it to be polynomial time polynomial space but then give it a little loose let it flip coins
+Pablo [1:16:23]: and it's allowed to get the answer wrong with low probability
+Pablo [1:16:27]: you get the exact same thing you get piece based right
+Pablo [1:16:33]: so in other words the system remains equally powerful even if you downgrade the computational power to verif
+Pablo [1:16:33]: y her
+Pablo [1:16:46]: characterize this properly you should also say what the power the boomer has it turns out in both spaces in both cases we get it public
+Pablo [1:16:49]: and if you're curious without this interaction
+Pablo [1:16:56]: if you just say hey i'm curious about this upgrade you gave this small looking upgrade and give it a random number generator
+Pablo [1:16:59]: that turns out to find another complexity class i was
+Pablo [1:17:01]: covered
+Pablo [1:17:07]: which is basically the equivalent of p but if you're allowed to flip coins
+Pablo [1:17:11]: and allowed to give the wrong answer with low profit
+Pablo [1:17:18]: so it's like the randomized version of p which in fact most people think is the same thing as we actually think that
+Pablo [1:17:26]: you can replace the random numbers here with deterministic pseudo random generators
+Pablo [1:17:32]: and use that in place of flipping the coins but then that gives you a regular deterministic polyme
+Pablo [1:17:33]: r
+Pablo [1:17:38]: proving this
+Pablo [1:17:39]: is much more diffic
+Pablo [1:17:40]: ult
+Pablo [1:17:40]: obviously
+Pablo [1:17:44]: i could probably do it within a week
+Pablo [1:17:46]: but we don't have another
+Pablo [1:17:51]: so we're not going to prove it but i thought you should see this to kind of see the
+Pablo [1:17:53]: what would i do
+Pablo [1:17:54]: at the weekend
+Pablo [1:17:58]: and see how this alternating quantifier
+Pablo [1:17:59]: idea
+Pablo [1:18:02]: and how it kind of reminds you how you have a
+Pablo [1:18:03]: winning strategy for gain
+Pablo [1:18:04]: literally transl
+Pablo [1:18:05]: ates into
+Pablo [1:18:07]: there are many two player
+Pablo [1:18:07]: games
+Pablo [1:18:08]: we're figuring out
+Pablo [1:18:10]: a winning strategy
+Pablo [1:18:11]: turned out to be puppies
+Pablo [1:18:12]: basically
+Pablo [1:18:15]: peace based is kind of like the natural
+Pablo [1:18:16]: loan for
+Pablo [1:18:22]: the computational complexity of solving two player games so we're going to say our first dutch game called geography
+Pablo [1:18:37]: okay

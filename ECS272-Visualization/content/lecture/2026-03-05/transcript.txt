@@ -1,0 +1,1160 @@
+Pablo [0:37]: more broadly exams like how people interact with this particular design right interface design or system design
+Pablo [0:44]: how well this design
+Pablo [0:51]: meets a certain level of usability
+Pablo [0:59]: and what's the user experience about
+Pablo [1:08]: so depends on again you think about visualize visualization design
+Pablo [1:11]: visualization application you put together
+Pablo [1:28]: which part which aspect your work which part demands evaluation it really depends on which part is like you think it
+Pablo [1:34]: 's the most critical right or sometimes it could be the visualization design itself
+Pablo [1:40]: and then it could also be what with the interaction part
+Pablo [1:41]: right
+Pablo [1:46]: so then it's more kind of
+Pablo [1:50]: like what people in hci do
+Pablo [1:53]: been doing or they need to do
+Pablo [2:02]: so you could be evaluating your visualization or the interaction how the user interact with
+Pablo [2:05]: interact with the visualization inter
+Pablo [2:06]: face
+Pablo [2:08]: or it could be something else
+Pablo [2:11]: the aspect
+Pablo [2:12]: that
+Pablo [2:14]: you need to evaluate
+Pablo [2:36]: so often when we evaluate as i say it's like whether
+Pablo [2:42]: the design needs the goal right the user role
+Pablo [2:50]: how well user
+Pablo [2:51]: care
+Pablo [2:56]: use this system or a page of this tool
+Pablo [2:59]: to accomplish
+Pablo [3:04]: and then also you consider
+Pablo [3:11]: the user itself and then also the environment
+Pablo [3:19]: the user use such system so there are many considerations you can have
+Pablo [3:21]: or sometimes
+Pablo [3:24]: you
+Pablo [3:29]: never scope right i mean actually you want to write if you're actually going to conduct some evaluation
+Pablo [3:31]: you certainly want to have
+Pablo [3:34]: comprehensive consideration
+Pablo [3:35]: but then for the actual evaluation
+Pablo [3:38]: you want to narrow the scope
+Pablo [3:42]: otherwise it's just too difficult
+Pablo [3:56]: again ci is largely about usability study
+Pablo [4:13]: and then our user experience and this stage the study also consider many other factors
+Pablo [4:16]: or other issues
+Pablo [4:21]: talking about
+Pablo [4:22]: inclusive
+Pablo [4:28]: decreases and ethic
+Pablo [4:33]: and also the use of ai increasing use of ai right
+Pablo [4:35]: and then that basically
+Pablo [4:40]: suggests we also need to consider how trustworthy
+Pablo [4:49]: the system is so now it's even more
+Pablo [4:51]: consideration we can have
+Pablo [4:55]: much broader
+Pablo [5:03]: suddenly for your project
+Pablo [5:03]: right
+Pablo [5:04]: i guess
+Pablo [5:06]: it can be made quite
+Pablo [5:08]: simple well defined
+Pablo [5:10]: for your purpose
+Pablo [5:15]: so
+Pablo [5:19]: there are any
+Pablo [5:21]: difference between
+Pablo [5:25]: evaluation as you see it and visualization
+Pablo [5:29]: what do you see right
+Pablo [5:31]: explain at very high level
+Pablo [5:33]: but then hopefully
+Pablo [5:39]: after this lecture after you complete your final project
+Pablo [5:46]: you can basically see
+Pablo [5:48]: some specific difference
+Pablo [5:51]: that you experience
+Pablo [6:05]: so again we already talk about some difference
+Pablo [6:09]: right more is it more about effecting
+Pablo [6:15]: visualization evaluation is more effectiveness visualization representation
+Pablo [6:20]: and whether the visualization can lead to
+Pablo [6:23]: analytics inside
+Pablo [6:32]: how much user can extract the intended information from the visualization and then
+Pablo [6:36]: the hci evaluation is more about
+Pablo [6:45]: the interaction design about the user experience
+Pablo [6:47]: and then
+Pablo [6:53]: the outcome right
+Pablo [6:55]: it's basically
+Pablo [6:58]: also often considered differently
+Pablo [6:59]: again
+Pablo [7:06]: how well user can interpret the visualization
+Pablo [7:08]: and extract
+Pablo [7:10]: useful insights
+Pablo [7:16]: and then for htci again it's user experience usability
+Pablo [7:24]: for
+Pablo [7:25]: example
+Pablo [7:28]: shareholder
+Pablo [7:28]: versus
+Pablo [7:40]: yeah user i mean that
+Pablo [7:47]: in those areas right you design your design something
+Pablo [7:54]: for particular abuser iphone is designed for everybody
+Pablo [7:56]: but then
+Pablo [8:04]: when they put together when they design this macbook pro right
+Pablo [8:06]: they actually target certain user
+Pablo [8:09]: everybody
+Pablo [8:10]: will buy
+Pablo [8:11]: macro
+Pablo [8:13]: and then that's why they
+Pablo [8:14]: have
+Pablo [8:16]: air you have
+Pablo [8:21]: consider so visualization is the same
+Pablo [8:24]: it's so important that you know your target
+Pablo [8:26]: audience
+Pablo [8:42]: so evaluation visualization as i said design or system
+Pablo [8:52]: in our visual encoding lecture we talked about how
+Pablo [8:53]: we can make
+Pablo [8:55]: effect
+Pablo [8:55]: ive
+Pablo [8:59]: also expressive visualization
+Pablo [9:08]: then we might want to evaluate that right but then you have to enable to define effectiveness
+Pablo [9:10]: and expressiveness
+Pablo [9:16]: and then because if we're talking about
+Pablo [9:20]: visual mean
+Pablo [9:20]: how
+Pablo [9:28]: much
+Pablo [9:31]: the vis
+Pablo [9:32]: ualization
+Pablo [9:38]: inside generation
+Pablo [9:52]: sometimes i just say we will still not just evaluate
+Pablo [9:56]: the visualization itself
+Pablo [9:58]: but then really the
+Pablo [10:00]: and also how do you
+Pablo [10:06]: interact in this workflow how you interact throughout you interact with
+Pablo [10:07]: the visualization
+Pablo [10:19]: you could have multiple view so you have maybe three views the user will go through three views your evaluation may be only valid one view
+Pablo [10:29]: if you want to evaluate only visualizing design but sometimes you want to evaluate how user goes through these reviews
+Pablo [10:31]: to
+Pablo [10:32]: night
+Pablo [10:45]: and
+Pablo [10:45]: over a
+Pablo [10:46]: house
+Pablo [10:47]: how they interact with each view
+Pablo [10:54]: yeah
+Pablo [10:56]: so as you will see there are different type of evaluation
+Pablo [11:01]: and then sometimes we just want
+Pablo [11:04]: to assess user performance
+Pablo [11:05]: but then how you assess
+Pablo [11:07]: performance
+Pablo [11:08]: or true
+Pablo [11:09]: performance
+Pablo [11:31]: so
+Pablo [11:32]: as i already
+Pablo [11:32]: said
+Pablo [11:35]: evaluation
+Pablo [11:36]: is a fairly
+Pablo [11:37]: willing
+Pablo [11:38]: to look at
+Pablo [11:38]: this
+Pablo [11:39]: oh wow
+Pablo [11:40]: there's multiple
+Pablo [11:44]: assets
+Pablo [11:46]: there's a lot
+Pablo [11:46]: of examples
+Pablo [11:49]: my
+Pablo [11:50]: keys are my work
+Pablo [11:54]: this
+Pablo [11:55]: way
+Pablo [11:59]: follow
+Pablo [12:00]: that i can just copy
+Pablo [12:00]: that
+Pablo [12:14]: is this
+Pablo [12:15]: revelation
+Pablo [12:16]: to the right
+Pablo [12:23]: share
+Pablo [12:25]: at
+Pablo [12:26]: the
+Pablo [12:27]: oppos
+Pablo [12:28]: ition
+Pablo [12:33]: of our
+Pablo [12:34]: business
+Pablo [12:39]: what do you
+Pablo [12:40]: do
+Pablo [13:03]: the
+Pablo [13:04]: side is where we stand
+Pablo [13:12]: discover
+Pablo [13:13]: y
+Pablo [13:17]: what's that
+Pablo [13:18]: called
+Pablo [13:19]: this is how that
+Pablo [13:20]: pushes
+Pablo [13:21]: in
+Pablo [13:23]: the
+Pablo [13:24]: residence
+Pablo [13:25]: we're
+Pablo [13:26]: females
+Pablo [13:28]: then
+Pablo [13:28]: it
+Pablo [13:29]: shows
+Pablo [13:30]: all
+Pablo [13:31]: that
+Pablo [13:33]: and then you know
+Pablo [13:34]: it's like some of them
+Pablo [13:34]: right
+Pablo [13:38]: too small
+Pablo [13:43]: vis
+Pablo [13:43]: ualization
+Pablo [14:09]: can
+Pablo [14:09]: serve
+Pablo [14:10]: better
+Pablo [14:11]: because
+Pablo [14:12]: you
+Pablo [14:13]: can do this sort
+Pablo [14:17]: of
+Pablo [14:18]: this
+Pablo [14:19]: way
+Pablo [14:20]: then
+Pablo [14:21]: you also
+Pablo [14:22]: put the label
+Pablo [14:23]: on the
+Pablo [14:25]: less
+Pablo [14:26]: on
+Pablo [14:31]: outside
+Pablo [14:32]: of the property
+Pablo [14:36]: and then
+Pablo [14:38]: you include the product
+Pablo [14:41]: sorted
+Pablo [14:42]: or
+Pablo [14:43]: you need to sort
+Pablo [14:44]: all of them together
+Pablo [14:44]: today
+Pablo [14:48]: this
+Pablo [14:49]: all
+Pablo [14:51]: better
+Pablo [14:52]: than this
+Pablo [14:54]: how
+Pablo [14:55]: you have it
+Pablo [14:57]: 's
+Pablo [14:57]: our opinion
+Pablo [15:00]: so
+Pablo [15:01]: that's a way
+Pablo [15:02]: to ask
+Pablo [15:03]: everybody
+Pablo [15:04]: over
+Pablo [15:08]: there
+Pablo [15:09]: also
+Pablo [15:10]: when i give you a question
+Pablo [15:11]: and ask you
+Pablo [15:12]: why you go
+Pablo [15:22]: so
+Pablo [15:28]: hunting right
+Pablo [15:29]: start
+Pablo [15:33]: right then you know it can become completed yes
+Pablo [15:38]: i was just going to say also the color scale you should make
+Pablo [15:39]: it monochrome
+Pablo [15:42]: like just a singular color
+Pablo [15:46]: a singular hue like with different saturation
+Pablo [15:52]: because if it's the percentage of woman in each category
+Pablo [16:06]: all those different colors that's a lot of like yeah you have to look up there's a legend right but then you say it could just use a single cube
+Pablo [16:08]: right then just vary
+Pablo [16:10]: the brightness or saturation
+Pablo [16:19]: yeah so you guys already know this
+Pablo [16:28]: hill we
+Pablo [16:31]: write this really cool
+Pablo [16:37]: light
+Pablo [16:40]: or if it's going to be
+Pablo [16:49]: we talk about
+Pablo [16:50]: that in
+Pablo [16:51]: our color lect
+Pablo [16:51]: ure
+Pablo [17:07]: yeah anyway
+Pablo [17:11]: this one i think certain people will think this is fine
+Pablo [17:12]: right but then
+Pablo [17:17]: u after this course
+Pablo [17:21]: you can make better
+Pablo [17:21]: chart
+Pablo [17:26]: and oftentimes
+Pablo [17:27]: we need
+Pablo [17:28]: to compare
+Pablo [17:28]: right
+Pablo [17:29]: like
+Pablo [17:32]: choices comes from here different design
+Pablo [17:37]: so
+Pablo [17:40]: a lot of visualization work actually
+Pablo [17:40]: did that
+Pablo [17:41]: right
+Pablo [17:43]: because
+Pablo [17:45]: they introduce a design
+Pablo [17:49]: but then they want to argue this is better than all the previous design
+Pablo [17:52]: us
+Pablo [17:53]: ually
+Pablo [17:56]: better compare right there to new design
+Pablo [18:00]: with at least a previous one or two
+Pablo [18:03]: side by side and then the final
+Pablo [18:05]: bridge for example
+Pablo [18:06]: here
+Pablo [18:08]: we have
+Pablo [18:09]: hierarchical data
+Pablo [18:15]: we can represent
+Pablo [18:18]: with the knowlink diagram
+Pablo [18:20]: or
+Pablo [18:21]: maybe a tree
+Pablo [18:22]: mat
+Pablo [18:26]: so this is like the first three map right
+Pablo [18:34]: this overall block is a which contain bcd
+Pablo [18:35]: and then further right
+Pablo [18:38]: b has all this component
+Pablo [18:39]: right
+Pablo [18:46]: which one is better
+Pablo [18:55]: how you evaluate
+Pablo [18:55]: it
+Pablo [18:59]: and in fact how you define better
+Pablo [19:05]: so what you do usually what is flow
+Pablo [19:12]: i mean we will talk about this in the later slide but then
+Pablo [19:18]: it could be obvious to you right what you
+Pablo [19:21]: want to determine which one is better
+Pablo [19:27]: anybody
+Pablo [19:47]: asking to perform some tasks with each visualization
+Pablo [19:59]: but then there are other problem as we will it's not that simple right yeah that's most likely what you want to do but then
+Pablo [20:02]: pay attention
+Pablo [20:06]: you have to consider
+Pablo [20:07]: otherwise
+Pablo [20:08]: you will have
+Pablo [20:09]: problem
+Pablo [20:12]: okay
+Pablo [20:13]: let's see
+Pablo [20:17]: so
+Pablo [20:20]: again right so you make a new visualization
+Pablo [20:23]: and how you know
+Pablo [20:29]: you want to consider
+Pablo [20:38]: what do you try to achieve right with this visualization what is visualization design for basics
+Pablo [20:44]: and then who this visualize right what audience
+Pablo [20:45]: this
+Pablo [20:46]: is
+Pablo [20:47]: for
+Pablo [20:49]: and then you want the other consideration
+Pablo [20:51]: like the media use or like
+Pablo [20:52]: that
+Pablo [20:53]: the setting
+Pablo [20:55]: the environment
+Pablo [21:01]: so
+Pablo [21:05]: like i suggested before
+Pablo [21:08]: for your visualization for your project
+Pablo [21:11]: at least you can ask your friend
+Pablo [21:12]: what do you think
+Pablo [21:17]: show it to friends and get some feedback
+Pablo [21:24]: and then even better right if it's interactive visualization what you want to do
+Pablo [21:27]: you cannot just ask and say hey what do you think
+Pablo [21:32]: if you direct it which is better asset to actually use it right
+Pablo [21:34]: and then you observe them
+Pablo [21:36]: like how they use
+Pablo [21:53]: how much instruction you need to get them before they actually can do what you expect them to do or you think you're user interface so you intuitive that they will figure itself explanatory you just you say nothing just
+Pablo [21:56]: hey we'll try to use it and see what you can do with this
+Pablo [21:59]: find out what this can do for you
+Pablo [22:01]: and then you observe them
+Pablo [22:02]: you observ
+Pablo [22:03]: e it
+Pablo [22:04]: see if they
+Pablo [22:06]: do
+Pablo [22:07]: what
+Pablo [22:08]: you
+Pablo [22:10]: excited
+Pablo [22:11]: so
+Pablo [22:12]: that
+Pablo [22:14]: reserv
+Pablo [22:15]: ation of
+Pablo [22:20]: course
+Pablo [22:21]: after
+Pablo [22:22]: they use
+Pablo [22:24]: it
+Pablo [22:31]: beside
+Pablo [22:32]: s you
+Pablo [22:33]: observe them
+Pablo [22:34]: you
+Pablo [22:34]: ask them
+Pablo [22:35]: at the end
+Pablo [22:37]: what they
+Pablo [22:38]: ask
+Pablo [22:47]: without
+Pablo [22:50]: this later
+Pablo [23:00]: you just quietly observe
+Pablo [23:03]: do you want to interfere
+Pablo [23:05]: in the middle of the set oh no you should do this
+Pablo [23:14]: but then sometimes you not only you observe how they use the system
+Pablo [23:19]: you also want to know
+Pablo [23:21]: what they actually
+Pablo [23:23]: they were thinking right
+Pablo [23:26]: why did you send to move here or there
+Pablo [23:27]: right
+Pablo [23:30]: why they decided to click this
+Pablo [23:32]: or go to the next view
+Pablo [23:39]: at that time and why but then you don't know
+Pablo [23:49]: only possibility is after the finish like they stop then you say oh if they ask why you did that why you do that
+Pablo [23:53]: or you ask them just to write down everything they remember
+Pablo [23:56]: so one way is just
+Pablo [23:59]: to ask them to
+Pablo [24:02]: actually tell you where
+Pablo [24:10]: they use the system they tell you i think it's ask them to talk a lot
+Pablo [24:13]: just why they
+Pablo [24:23]: use the system they tell you what they are thinking what they see what they are thinking and what they decide to do and why
+Pablo [24:27]: that's fine
+Pablo [24:27]: right
+Pablo [24:32]: and that will then you can record it
+Pablo [24:34]: you can just
+Pablo [24:38]: record it and that could be very helpful
+Pablo [24:42]: they give you more insight about life
+Pablo [24:44]: people
+Pablo [24:50]: see your interface your visualization how they think
+Pablo [24:51]: right how they see it
+Pablo [24:55]: whether
+Pablo [25:00]: it match your expectation your intent your design
+Pablo [25:10]: yeah i think many of you just do this
+Pablo [25:11]: right
+Pablo [25:21]: that will help you to explain you could do this when you already complete your implementation every
+Pablo [25:23]: you could just do this
+Pablo [25:26]: and then
+Pablo [25:31]: you write in your report final report like what
+Pablo [25:33]: do you find out
+Pablo [25:39]: but then there's another way maybe better is
+Pablo [25:40]: what
+Pablo [25:43]: better than you wait till the end
+Pablo [25:44]: is
+Pablo [25:57]: you do a prere study
+Pablo [26:01]: before you finalize everything before you implement that
+Pablo [26:10]: but you only have like one week a little more than one week
+Pablo [26:14]: right so maybe sometimes next week
+Pablo [26:17]: can ask somebody to look at your design
+Pablo [26:20]: look at your belief that your prototype
+Pablo [26:21]: right
+Pablo [26:32]: and then you just make sure everything actually good as you thought so you still have this last chance
+Pablo [26:42]: to improve certain aspect which you ignore you thought even sometimes it just surprised you
+Pablo [26:43]: right
+Pablo [26:49]: what the user react to your design completely surprising
+Pablo [26:53]: that's nothing yeah
+Pablo [27:01]: it's also going to happen because especially this is your first
+Pablo [27:09]: environment
+Pablo [27:11]: the first time
+Pablo [27:16]: anyway
+Pablo [27:25]: so
+Pablo [27:26]: now let's look at
+Pablo [27:27]: the valh
+Pablo [27:28]: eff
+Pablo [27:33]: i want you
+Pablo [27:34]: to
+Pablo [27:35]: think
+Pablo [27:36]: about
+Pablo [27:37]: some of the
+Pablo [27:38]: possible way
+Pablo [27:39]: some
+Pablo [27:40]: of the possible
+Pablo [27:41]: way
+Pablo [27:42]: to innovate
+Pablo [27:42]: your
+Pablo [27:43]: visualization
+Pablo [27:44]: design
+Pablo [27:45]: consistency
+Pablo [27:49]: first
+Pablo [27:50]: one
+Pablo [27:55]: you can
+Pablo [27:56]: type of
+Pablo [27:57]: eval
+Pablo [27:57]: uation
+Pablo [28:00]: and
+Pablo [28:02]: we already
+Pablo [28:05]: discuss
+Pablo [28:09]: the
+Pablo [28:10]: option
+Pablo [28:11]: i enjoy
+Pablo [28:12]: so
+Pablo [28:13]: first it's
+Pablo [28:14]: called
+Pablo [28:22]: that
+Pablo [28:28]: when
+Pablo [28:29]: you at one stage
+Pablo [28:30]: of the
+Pablo [28:30]: project
+Pablo [28:32]: when
+Pablo [28:33]: face after
+Pablo [28:34]: even
+Pablo [28:48]: maybe
+Pablo [28:49]: it could be even
+Pablo [28:50]: our favorite part
+Pablo [28:59]: of course
+Pablo [29:05]: it
+Pablo [29:06]: more effectively
+Pablo [29:08]: but
+Pablo [29:10]: this is pretty much the industry
+Pablo [29:12]: they only
+Pablo [29:13]: use this
+Pablo [29:22]: academ
+Pablo [29:23]: ic
+Pablo [29:24]: we sometimes
+Pablo [29:27]: so
+Pablo [29:27]: we just wait till the very end
+Pablo [29:28]: to do this
+Pablo [29:30]: summ
+Pablo [29:31]: ary
+Pablo [29:32]: exam
+Pablo [29:33]: ination
+Pablo [29:34]: but
+Pablo [29:35]: again you want to do
+Pablo [29:36]: both
+Pablo [29:38]: pre
+Pablo [29:39]: liminary
+Pablo [29:41]: early stage evaluation
+Pablo [29:42]: and use that
+Pablo [29:44]: to
+Pablo [29:44]: help you
+Pablo [29:45]: refine
+Pablo [29:47]: improve your desire
+Pablo [29:48]: finalize your visa
+Pablo [29:49]: and genuine to the
+Pablo [29:49]: dancing
+Pablo [29:51]: then
+Pablo [29:52]: you do
+Pablo [29:53]: the
+Pablo [29:54]: summative ev
+Pablo [29:55]: aluation
+Pablo [29:58]: most
+Pablo [29:59]: likely
+Pablo [30:00]: you look for
+Pablo [30:00]: different things
+Pablo [30:06]: toward
+Pablo [30:06]: the very end
+Pablo [30:09]: you
+Pablo [30:10]: want to
+Pablo [30:11]: write
+Pablo [30:13]: want to know that
+Pablo [30:17]: user experience
+Pablo [30:23]: the user
+Pablo [30:27]: has to use all those system it goes through the whole process
+Pablo [30:29]: they're able to tell
+Pablo [30:29]: you
+Pablo [30:31]: can
+Pablo [30:32]: somehow
+Pablo [30:34]: lear
+Pablo [30:35]: n about
+Pablo [30:36]: their user experience
+Pablo [30:46]: but then he formally studies his last life it's more kind of specific about this part right this view
+Pablo [30:48]: or this step right
+Pablo [30:50]: this method
+Pablo [30:53]: to interact or to
+Pablo [30:55]: do something else
+Pablo [30:59]: because
+Pablo [31:02]: it's usually not very complete
+Pablo [31:03]: right in terms of interface
+Pablo [31:07]: or the overall system
+Pablo [31:09]: so there it is
+Pablo [31:13]: different time you will perform
+Pablo [31:15]: different evaluation
+Pablo [31:22]: and we will see a little more that even it's not just two stages in fact
+Pablo [31:29]: right you can see there could be multiple states every stage
+Pablo [31:32]: ideally you can
+Pablo [31:36]: evaluate that you want to do some sort of evaluation
+Pablo [31:39]: and then there is also
+Pablo [31:47]: evaluation is more quantitative versus quantitative
+Pablo [31:51]: so what
+Pablo [31:53]: usually what
+Pablo [31:56]: you try to find out which qualitative
+Pablo [31:58]: evaluation
+Pablo [32:13]: so as we will see later
+Pablo [32:21]: so qualitative usually for different evaluation usually try to understand user behavior
+Pablo [32:22]: it's more about using behavior
+Pablo [32:24]: it's more abstract
+Pablo [32:25]: quality
+Pablo [32:31]: and quantitative usually it's more about performance
+Pablo [32:36]: system performance user performance that you can actually measure
+Pablo [32:39]: like how long how fast
+Pablo [32:46]: and qualitative
+Pablo [32:51]: you can also kind of measure but then
+Pablo [32:58]: usually it's not like a continuous
+Pablo [33:07]: number but then it's more like of course you can use number to represent different level of
+Them [33:07]: say
+Pablo [33:12]: how easy
+Pablo [33:14]: you find it's very easy
+Pablo [33:24]: so i think a level but it's again
+Them [33:29]: question about
+Them [33:29]: it
+Them [33:32]: and then
+Them [33:34]: you can also
+Them [33:37]: conduct
+Them [33:38]: or use
+Them [33:39]: a
+Them [33:41]: ideally your way
+Them [33:42]: if you can
+Them [33:42]: you want to
+Them [33:44]: come back
+Them [33:44]: exercise
+Them [33:51]: you
+Them [33:52]: don't need to
+Them [33:53]: involve
+Them [33:54]: real user
+Them [33:55]: you could
+Them [33:57]: as we will see later
+Them [34:06]: but then you need help
+Them [34:08]: because
+Them [34:09]: you need expert
+Them [34:12]: expert user
+Them [34:14]: to basically
+Them [34:23]: suggest or suggest define the profit if it's for profit soft
+Them [34:28]: you need intent user define their property for you
+Them [34:32]: provide their data for you so you can conduct
+Pablo [34:50]: this category
+Pablo [34:54]: right case study versus user study user study
+Pablo [34:57]: must involve user
+Pablo [35:06]: as we already talked about you ask somebody to use your system and then
+Pablo [35:08]: you observe how they use it
+Pablo [35:12]: and or you assess
+Pablo [35:14]: their performance or something
+Pablo [35:19]: but
+Pablo [35:20]: for
+Pablo [35:23]: our project most of the project in my lab
+Pablo [35:28]: we often
+Pablo [35:32]: type in the old days right
+Pablo [35:35]: mostly only come back
+Pablo [35:36]: to case study
+Pablo [35:42]: because it's just too much trouble to do user study but this day
+Pablo [35:44]: in our field
+Pablo [35:47]: when
+Pablo [35:52]: you present your work right
+Pablo [35:56]: in a paper
+Pablo [36:12]: people expect you to do or maybe demand you to use that so we increasingly we are doing more user study and so we have the plan ahead very well we need to have because usa can take a lot of time
+Pablo [36:14]: it's not just the time
+Pablo [36:22]: to do the study it's the time to recruit user and the time to do the analysis after the study
+Pablo [36:24]: you need to analyze the user study
+Pablo [36:25]: exam
+Pablo [36:28]: okay
+Pablo [36:31]: you just have a table of number
+Pablo [36:34]: present that you have to analyze
+Pablo [36:36]: the table
+Pablo [36:37]: that
+Pablo [36:40]: you derive from the study
+Pablo [36:49]: yeah the best case is like you do both case study and you decide
+Pablo [36:53]: then we'll make your paper stronger
+Pablo [36:55]: you provide basically more evidence
+Pablo [37:01]: people can more convince
+Pablo [37:07]: your client you claim that your design is good it's effective
+Pablo [37:09]: then the case study
+Pablo [37:13]: explain also explain how people use it
+Pablo [37:22]: what your system your design enable user to do abc to solve problem
+Pablo [37:27]: to discover important information
+Pablo [37:33]: that usually what the case study then user study prove other aspect
+Pablo [37:35]: usability
+Pablo [37:37]: and effect
+Pablo [37:42]: how your system
+Pablo [37:46]: make the user more efficient
+Pablo [37:49]: they can finish their test quicker
+Pablo [37:59]: okay
+Pablo [38:01]: the last one
+Pablo [38:03]: is basically
+Pablo [38:08]: based on the paper you read right
+Pablo [38:10]: that's the model
+Pablo [38:11]: so i think
+Pablo [38:13]: everybody
+Pablo [38:14]: actually
+Pablo [38:15]: read
+Pablo [38:18]: s
+Pablo [38:21]: their
+Pablo [38:22]: last
+Pablo [38:23]: week or something
+Pablo [38:32]: she
+Pablo [38:33]: also wrote that book
+Pablo [38:33]: right
+Pablo [38:34]: the book
+Pablo [38:38]: and
+Pablo [38:39]: basically
+Pablo [38:40]: she is
+Pablo [38:41]: a model of
+Pablo [38:42]: design
+Pablo [38:46]: it
+Pablo [38:47]: also makes you
+Pablo [38:48]: visualize it
+Pablo [38:49]: to
+Pablo [38:50]: take your visualization
+Pablo [38:57]: there
+Pablo [38:58]: fore sav
+Pablo [38:59]: iors
+Pablo [39:00]: bas
+Pablo [39:02]: ically she suggested that she point out
+Pablo [39:03]: like that
+Pablo [39:05]: we're talking about
+Pablo [39:09]: which type
+Pablo [39:10]: of evaluation
+Pablo [39:12]: for your final bud
+Pablo [39:13]: get
+Pablo [39:15]: your
+Pablo [39:18]: final pass and then you say oh i'm going to do case study
+Pablo [39:20]: i'm going to do quantitative
+Pablo [39:22]: study
+Pablo [39:24]: then
+Pablo [39:25]: user study
+Pablo [39:26]: is a quant
+Pablo [39:27]: itative evaluation
+Pablo [39:34]: only one evaluation what type of vis
+Pablo [39:35]: ualize evaluation
+Pablo [39:37]: but then
+Pablo [39:40]: she argued that
+Pablo [39:44]: to evaluate the overall visualization system
+Pablo [39:45]: or design
+Pablo [39:51]: you might need to conduct multiple evaluation
+Pablo [39:54]: and then the different evaluation
+Pablo [39:57]: done for a different state
+Pablo [40:04]: something like that we will have time you will reach this part
+Pablo [40:12]: next
+Pablo [40:13]: to the overall
+Pablo [40:14]: message
+Pablo [40:15]: using
+Pablo [40:16]: this as
+Pablo [40:17]: a network process
+Pablo [40:51]: as we as she say in her paper
+Pablo [40:52]: i don't remember
+Pablo [40:53]: the detail
+Pablo [40:54]: i read a paper
+Pablo [40:56]: ten years ago
+Pablo [41:03]: how many years ago
+Pablo [41:13]: she
+Pablo [41:14]: was one
+Pablo [41:15]: that
+Pablo [41:16]: you
+Pablo [41:17]: have this four
+Pablo [41:18]: stages
+Pablo [41:25]: and then
+Pablo [41:27]: they
+Pablo [41:28]: all related
+Pablo [41:35]: what
+Pablo [41:36]: ever you do for
+Pablo [41:37]: the first age
+Pablo [41:38]: makes the inform the
+Pablo [41:38]: next day
+Pablo [41:40]: and then
+Pablo [41:49]: for the
+Pablo [41:50]: uni
+Pablo [41:52]: que
+Pablo [41:55]: health
+Pablo [42:15]: this is
+Pablo [42:16]: what
+Pablo [42:17]: kinds of
+Pablo [42:18]: salvation
+Pablo [42:26]: now
+Pablo [42:27]: we look at
+Pablo [42:31]: one
+Pablo [42:31]: again
+Pablo [42:32]: be ready
+Pablo [42:47]: to perform
+Pablo [42:48]: early in
+Pablo [42:50]: any
+Pablo [43:08]: valid
+Pablo [43:09]: ation
+Pablo [43:10]: study
+Pablo [43:32]: and then
+Pablo [43:34]: what
+Pablo [43:35]: we do
+Pablo [43:36]: we always
+Pablo [43:37]: do
+Pablo [43:38]: in our lives
+Pablo [43:42]: and then
+Pablo [43:45]: we also talk about there's different
+Pablo [43:47]: typ
+Pablo [43:50]: e of evaluation like the qualitative and quant
+Pablo [43:52]: itative qualific
+Pablo [43:53]: ation
+Pablo [43:55]: study
+Pablo [43:57]: we try to
+Pablo [44:00]: understand how the user
+Pablo [44:02]: activ
+Pablo [44:03]: ation for the user
+Pablo [44:04]: behavior
+Pablo [44:09]: the actual
+Pablo [44:10]: step
+Pablo [44:12]: went
+Pablo [44:13]: through
+Pablo [44:15]: and then where
+Pablo [44:16]: they actually are
+Pablo [44:17]: where they find
+Pablo [44:18]: it
+Pablo [44:19]: that's
+Pablo [44:20]: why we need to
+Pablo [44:21]: write all of that
+Pablo [44:24]: suggest
+Pablo [44:24]: s
+Pablo [44:53]: how
+Pablo [44:54]: to use this system
+Pablo [44:57]: we
+Pablo [44:58]: got time
+Pablo [45:00]: inter
+Pablo [45:01]: view this
+Pablo [45:01]: before
+Pablo [45:02]: as far as
+Pablo [45:17]: you
+Pablo [45:18]: cannot depend
+Pablo [45:21]: even at a video came
+Pablo [45:21]: ra
+Pablo [45:28]: and it might become helpful
+Pablo [45:34]: that you can review the video and see exactly what it is
+Pablo [45:36]: based on
+Pablo [45:41]: the phase of the questionnaire
+Pablo [45:45]: you did them after
+Pablo [45:47]: the use of the system
+Pablo [45:55]: you see they enter their answer and then you say why they answer this way then you go back to the video
+Pablo [45:57]: and look at oh
+Pablo [46:00]: that's why they feel that way
+Pablo [46:03]: the video can be helpful
+Pablo [46:04]: that way
+Pablo [46:08]: and then you still need to analyze based on
+Pablo [46:11]: based on all this information
+Pablo [46:12]: you collect
+Pablo [46:15]: so there it is
+Pablo [46:17]: grounded theory
+Pablo [46:18]: that
+Pablo [46:19]: we will talk about
+Pablo [46:22]: analyzing this kind of
+Pablo [46:30]: and then there's quantitative evaluation
+Pablo [46:36]: and usually we want to assess the performance of the user or the system
+Pablo [46:44]: we focus on performance rather than user behavior
+Pablo [46:49]: and we will measure in some way
+Pablo [46:56]: measure usually is like how fast as i say right how fast how long how fast
+Pablo [47:01]: and then also we want to compare
+Pablo [47:02]: we want to compare
+Pablo [47:12]: different design different system compare our system our design with a baseline
+Pablo [47:15]: or the other like previous system
+Pablo [47:17]: everybody consider
+Pablo [47:18]: good
+Pablo [47:21]: and then you say mine is better
+Pablo [47:22]: and then prove it
+Pablo [47:24]: user
+Pablo [47:29]: they perform better when they use and they quantify that
+Pablo [47:30]: better
+Pablo [47:30]: right
+Pablo [47:32]: so means like faster
+Pablo [47:33]: for example
+Pablo [47:40]: any questions so far
+Pablo [48:04]: for each there's obvious benefit and
+Pablo [48:06]: someone right here
+Pablo [48:11]: so for just talk
+Pablo [48:12]: about
+Pablo [48:17]: you have to be able to quantify right
+Pablo [48:19]: say performance
+Pablo [48:21]: and then
+Pablo [48:22]: also
+Pablo [48:36]: research
+Pablo [48:45]: like
+Pablo [48:51]: almost
+Pablo [48:52]: all
+Pablo [48:58]: the scene
+Pablo [48:59]: i'll help you to
+Pablo [48:59]: night
+Pablo [49:24]: it's not
+Pablo [49:25]: always easy
+Pablo [49:26]: to compare
+Pablo [49:27]: because
+Pablo [49:28]: they don't
+Pablo [49:29]: have
+Pablo [49:32]: it
+Pablo [49:35]: just
+Pablo [49:36]: describe
+Pablo [49:37]: no observation
+Pablo [50:23]: show
+Pablo [50:24]: visual
+Pablo [50:28]: project
+Pablo [50:53]: show
+Pablo [50:54]: the sadness show
+Pablo [50:55]: the top
+Pablo [51:11]: so we basically demonstrate how we use our design and then there's other functionality we provide
+Pablo [51:13]: how
+Pablo [51:16]: interaction how you interact with or some account
+Pablo [51:17]: ant
+Pablo [51:21]: visualization that we use together
+Pablo [51:28]: that
+Pablo [51:29]: we propose
+Pablo [51:30]: and
+Pablo [51:31]: then we implement
+Pablo [51:33]: int
+Pablo [51:34]: eger
+Pablo [51:35]: to support
+Pablo [51:36]: that work
+Pablo [51:37]: flow
+Pablo [51:40]: and to do a good case study
+Pablo [51:52]: especially we're talking about particular domain area and then if we not most of the time we really not familiar with that domain right so we through the work project
+Pablo [51:57]: we will learn more and more about that domain but no matter what
+Pablo [52:00]: we need the domain expert
+Pablo [52:04]: to guide us to not only provide data
+Pablo [52:06]: certain require
+Pablo [52:06]: ments
+Pablo [52:07]: it also
+Pablo [52:08]: can provide us
+Pablo [52:11]: strong use cases
+Pablo [52:13]: for us
+Pablo [52:15]: to conduct study
+Pablo [52:17]: to make our work
+Pablo [52:20]: and then user study
+Pablo [52:22]: again
+Pablo [52:26]: by observing or measuring how target user
+Pablo [52:28]: interact
+Pablo [52:31]: and inter data visualization for assist
+Pablo [52:32]: ance
+Pablo [52:35]: specify
+Pablo [52:36]: path
+Pablo [52:38]: and usually
+Pablo [52:42]: assess the method
+Pablo [52:43]: is usability
+Pablo [52:44]: of
+Pablo [52:47]: selectation design or system
+Pablo [52:50]: effectiveness
+Pablo [52:51]: can we
+Pablo [52:55]: actually measure we can quantify
+Pablo [52:56]: that
+Pablo [52:59]: if we ask user to perform further
+Pablo [53:04]: ads and finish we think
+Pablo [53:07]: length of
+Pablo [53:07]: time
+Pablo [53:09]: or we make comparison
+Pablo [53:10]: as
+Pablo [53:12]: i point out earlier
+Pablo [53:19]: we can do both quantitative study or quantitative study
+Pablo [53:20]: or
+Pablo [53:22]: to import both
+Pablo [53:27]: any question
+Pablo [53:35]: okay now because let's look at
+Pablo [53:41]: the different evaluation method
+Pablo [53:47]: i think i group the method
+Pablo [53:55]: based on
+Pablo [54:07]: the
+Pablo [54:07]: agent
+Pablo [54:15]: without
+Pablo [54:16]: female use
+Pablo [54:16]: r
+Pablo [54:18]: s
+Pablo [54:28]: four
+Pablo [54:51]: implement
+Pablo [54:52]: ed
+Pablo [54:56]: u
+Pablo [54:58]: you can observe right on screen
+Pablo [55:01]: on the actual display
+Pablo [55:03]: and then
+Pablo [55:04]: basically
+Pablo [55:05]: go through
+Pablo [55:05]: right
+Pablo [55:10]: go through each view for example
+Pablo [55:13]: in
+Pablo [55:14]: order and then
+Pablo [55:19]: you can pretend you are a user
+Pablo [55:24]: and then you can add suddenly ask others
+Pablo [55:26]: to do so then
+Pablo [55:29]: you kind of evolve some sort of user
+Pablo [55:32]: and it's always good that
+Pablo [55:37]: you can talk to the expert the target user
+Pablo [55:40]: explain to them or you can show them some markup or something
+Pablo [55:45]: so this usually done in early prototype
+Pablo [55:46]: evaluation
+Pablo [55:51]: and then there's so called theoretical analysis
+Pablo [55:53]: this usually
+Pablo [55:54]: performance
+Pablo [55:57]: evaluation
+Pablo [56:05]: and you can do so it's about like oh you develop algorithm then
+Pablo [56:08]: you can analyze the complexity of
+Pablo [56:12]: the algorithm like what do you learn in ecs
+Pablo [56:14]: two twenty or something
+Pablo [56:20]: oh no two twenty two a
+Pablo [56:28]: yeah so learn how to analyze time or space
+Pablo [56:30]: complexity
+Pablo [56:38]: and so this is more quantum
+Pablo [56:42]: and the last one also
+Pablo [56:46]: i think it's more
+Pablo [56:48]: to do with performance
+Pablo [56:50]: and
+Pablo [56:54]: many dl study
+Pablo [56:56]: they have
+Pablo [57:02]: this well established benchmark you can use to utility your work
+Pablo [57:08]: most of the ai machine learning work they
+Pablo [57:09]: have benchmar
+Pablo [57:09]: ks
+Pablo [57:15]: especially this day people make almost everything
+Pablo [57:16]: open source right
+Pablo [57:22]: they're code as well as data set
+Pablo [57:27]: and then some of data benchmark data set
+Pablo [57:29]: use
+Pablo [57:31]: that to evalate
+Pablo [57:34]: your desire
+Pablo [57:43]: so
+Pablo [57:47]: this group method usually you can do yourself
+Pablo [57:50]: without
+Pablo [57:53]: evolving users
+Pablo [57:59]: so
+Pablo [58:00]: benchmark is more quantitative
+Pablo [58:07]: usually we do this to evaluate system or process
+Pablo [58:15]: and then
+Pablo [58:18]: now we look at method
+Pablo [58:24]: more do to evaluate
+Pablo [58:26]: things
+Pablo [58:36]: versus
+Pablo [58:38]: informal user study
+Pablo [58:47]: use the visualization we observe observe them
+Pablo [58:53]: it can be a very casual way just like what you most likely what you will be doing
+Pablo [59:01]: as probably others use it not make
+Pablo [59:06]: your design and ask them to try it
+Pablo [59:09]: and observe
+Pablo [59:12]: a different asset so this is more quantitative
+Pablo [59:17]: and then suddenly always control experiment
+Pablo [59:20]: and
+Pablo [59:21]: you actually
+Pablo [59:24]: specify exactly
+Pablo [59:27]: time
+Pablo [59:28]: or
+Pablo [59:33]: u
+Pablo [59:34]: specified exactly
+Pablo [59:35]: what
+Pablo [59:36]: identity
+Pablo [59:40]: perform
+Pablo [59:43]: the test
+Pablo [59:44]: to
+Pablo [59:45]: them
+Pablo [59:47]: for
+Pablo [59:48]: your abilities
+Pablo [59:56]: and
+Pablo [59:57]: then you will measure
+Pablo [1:00:10]: percent
+Pablo [1:00:11]: age of correctness
+Pablo [1:00:18]: so
+Pablo [1:00:19]: this
+Pablo [1:00:20]: can
+Pablo [1:00:21]: be
+Pablo [1:00:24]: very much quantitative
+Pablo [1:00:31]: and then there is a field deployment and study
+Pablo [1:00:36]: then this is
+Pablo [1:00:38]: usually
+Pablo [1:00:40]: we cannot do
+Pablo [1:00:44]: it's much more difficult
+Pablo [1:00:44]: right
+Pablo [1:00:47]: it's like
+Pablo [1:00:53]: for example we work with uc davis hospital
+Pablo [1:00:56]: so we develop
+Pablo [1:01:00]: some attain solution for
+Pablo [1:01:01]: them to allow them to
+Pablo [1:01:06]: visually summarize aging material
+Pablo [1:01:08]: we develop something that
+Pablo [1:01:13]: we use when they treat the patient or they make
+Pablo [1:01:17]: to help them do better
+Pablo [1:01:18]: like when they try to
+Pablo [1:01:23]: make diagnosis or they do the surgical plan
+Pablo [1:01:29]: or even something that we really design for them to use during the surgery
+Pablo [1:01:32]: to support the struggle better
+Pablo [1:01:40]: and usually we create something we show them and then but then they actually deploy that
+Pablo [1:01:41]: at the hospital
+Pablo [1:01:44]: it's extremely difficult
+Pablo [1:01:53]: because just go through all the paperwork for the older people and to set it up in the
+Pablo [1:01:53]: safe
+Pablo [1:01:56]: in their work environment
+Pablo [1:02:00]: like surgery room or
+Pablo [1:02:00]: something
+Pablo [1:02:05]: it's not completely possible but then you can imagine how difficult
+Pablo [1:02:13]: and then you can only come back like field stunt after you can deport right
+Pablo [1:02:16]: so
+Pablo [1:02:19]: this is further good to do
+Pablo [1:02:21]: but then
+Pablo [1:02:25]: for certain zero
+Pablo [1:02:27]: it's very difficult
+Pablo [1:02:30]: and we hardly do that
+Pablo [1:02:36]: and a lot of times
+Pablo [1:02:41]: even in other domain
+Pablo [1:02:45]: we create something
+Pablo [1:02:47]: look promising
+Pablo [1:02:50]: but then
+Pablo [1:02:59]: you want to actually deploy it you have to integrate that new solution
+Pablo [1:03:06]: like this new method into the user's overall workflow so like scientists
+Pablo [1:03:09]: at the national lab
+Pablo [1:03:11]: they have their work
+Pablo [1:03:12]: flow
+Pablo [1:03:13]: and then
+Pablo [1:03:20]: their
+Pablo [1:03:21]: workflow
+Pablo [1:03:23]: can evolve
+Pablo [1:03:25]: like using
+Pablo [1:03:27]: different facility
+Pablo [1:03:35]: and they need to move data from one transect to the other and you just create this one
+Pablo [1:03:38]: solution
+Pablo [1:03:39]: which
+Pablo [1:03:41]: is that better
+Pablo [1:03:46]: and then you want to integrate that into the overall workflow
+Pablo [1:03:49]: oftentimes not that straightforward
+Pablo [1:03:53]: it's
+Pablo [1:03:53]: almost impossible
+Pablo [1:03:54]: to
+Pablo [1:03:55]: email it
+Pablo [1:03:59]: in
+Pablo [1:04:00]: their settings
+Pablo [1:04:05]: evaluation depends on what type of work we can
+Pablo [1:04:07]: do
+Pablo [1:04:11]: in worldly environment
+Pablo [1:04:16]: al
+Pablo [1:04:28]: and
+Pablo [1:04:29]: all this
+Pablo [1:04:39]: is
+Pablo [1:04:46]: i
+Pablo [1:04:47]: 'm not sure
+Pablo [1:04:48]: we
+Pablo [1:05:01]: 're
+Pablo [1:05:05]: kind of
+Pablo [1:05:07]: positive
+Pablo [1:05:57]: so
+Pablo [1:05:58]: again this is
+Pablo [1:05:59]: all
+Pablo [1:06:00]: qualitative
+Pablo [1:06:12]: and
+Pablo [1:06:13]: then
+Pablo [1:06:28]: we
+Pablo [1:06:30]: cannot really
+Pablo [1:06:31]: come out with
+Pablo [1:06:35]: quantifiable measure
+Pablo [1:06:37]: for
+Pablo [1:06:37]: the outcome
+Pablo [1:06:43]: so let's look at one at
+Pablo [1:06:47]: subjective assessment
+Pablo [1:06:49]: and
+Pablo [1:06:53]: this basically gives us
+Pablo [1:06:59]: user like what they think about the system
+Pablo [1:07:07]: and you usually just you have a question here
+Pablo [1:07:11]: in pressure what they say
+Pablo [1:07:16]: and this is done
+Pablo [1:07:19]: like if you think about
+Pablo [1:07:23]: some of the complex they often send you
+Pablo [1:07:27]: if you visit their website usage services send you a question
+Pablo [1:07:35]: and for our work right usually we try to introduce something new different people have not seen before
+Pablo [1:07:45]: so these novelty vectors which means
+Pablo [1:07:50]: usually when we see something we've never seen before we think it's cool
+Pablo [1:07:59]: so when you show somebody the first time usually they either
+Pablo [1:08:01]: feel
+Pablo [1:08:03]: is different
+Pablo [1:08:06]: and they will respond more positive
+Pablo [1:08:09]: but then if
+Pablo [1:08:12]: you after a few weeks you ask them again
+Pablo [1:08:16]: then the response could be
+Pablo [1:08:17]: more
+Pablo [1:08:22]: could reflect more their true opinion
+Pablo [1:08:30]: so this subjective assessment also need to think about when to do it
+Pablo [1:08:33]: how to do it depends on also the audience
+Pablo [1:09:00]: and
+Pablo [1:09:01]: this is
+Pablo [1:09:12]: right
+Pablo [1:09:13]: because
+Pablo [1:09:14]: it is subjective
+Pablo [1:09:15]: and based on
+Pablo [1:09:16]: the virus
+Pablo [1:09:17]: so
+Pablo [1:09:18]: the answer you get
+Pablo [1:09:23]: why
+Pablo [1:09:24]: u
+Pablo [1:09:26]: i
+Pablo [1:09:40]: to do
+Pablo [1:09:41]: this
+Pablo [1:09:42]: study
+Pablo [1:10:04]: anne
+Pablo [1:10:12]: x
+Pablo [1:10:13]: is strange
+Pablo [1:10:27]: to be
+Pablo [1:10:48]: actually
+Pablo [1:10:49]: going to
+Pablo [1:10:50]: serious
+Pablo [1:10:51]: analysis
+Pablo [1:10:52]: update
+Pablo [1:10:56]: inform
+Pablo [1:11:02]: eight
+Pablo [1:11:04]: visual
+Pablo [1:11:06]: she
+Pablo [1:11:07]: stop
+Pablo [1:11:18]: s
+Pablo [1:11:18]: here
+Pablo [1:11:20]: she
+Pablo [1:11:21]: ila
+Pablo [1:11:32]: supports
+Pablo [1:11:32]: chart
+Pablo [1:11:44]: marvin mar
+Pablo [1:11:44]: vin

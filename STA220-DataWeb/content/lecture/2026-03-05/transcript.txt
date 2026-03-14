@@ -1,0 +1,659 @@
+Pablo [0:53]: i just need to know which of the pf
+Pablo [1:07]: he won't care that i bring up the laptop for the speaker notes you think
+Pablo [2:13]: we were just
+Pablo [2:20]: hello everyone
+Pablo [2:21]: i
+Pablo [2:22]: 'm ro
+Pablo [2:22]: meo
+Pablo [2:27]: i'm shall we and today our presentation title is called your content
+Pablo [2:33]: this is our outline that we're going over today starting with motivation
+Pablo [2:40]: so in present day many shelters are underfunded and relied heavily on volunteer work
+Pablo [2:49]: this means that they don't have resources to maintain clean databases and as a result information about pets can be inconsistent and difficult to search
+Pablo [3:05]: having shelter and organized data code name is different if shelter platforms have better data set to potential adopters could easily find pets that such as compatibility with children energy levels or even temperaments
+Pablo [3:06]: and at the same time
+Pablo [3:13]: this could help connect animals with right homes more efficiently and potentially improve adoption rate
+Pablo [3:28]: for our project we found a website rescueme org which featured adoptive heads from all over the us we noticed that the only floating option on the site is by the spectacular animal
+Pablo [3:29]: nemo or male
+Pablo [3:44]: and this means that one can accidentally skip a pet that just might be their best match and to address this we created a structured data set in pandas data frame by scraping and organizing the listing information
+Pablo [3:54]: this allows the data to be easily filtered by desired physical traits that could end personality traits making it easier to search for pets that fit specific preferences
+Pablo [4:06]: this is an example of how an animal's profile looks like on the site
+Pablo [4:11]: for our project we were interested in scraping the name
+Pablo [4:14]: read age sex
+Pablo [4:19]: compatibility personality health urgent status description and location information of each animal
+Pablo [4:25]: as you can see this information is all missing from the filtered object currently available on the website
+Pablo [4:32]: this is a roadmap of what our general process is going to look like
+Pablo [4:37]: and this is a visualization of our process
+Pablo [4:39]: so
+Pablo [4:43]: first we created several small getter functions
+Pablo [4:51]: that scrape with data details we wanted based on the html input this way each function can be used to create a column in our data frame
+Pablo [4:55]: the work columns we can make the more precisely we can represent our data
+Pablo [5:01]: next we combined our getter function into a larger scraper function
+Pablo [5:09]: this in combination with our url extraction function we use it to create a status frame for each species we're interested in
+Pablo [5:18]: lastly we replicated this process for each species of animal and combined the data frames into one larger data frame that makes our final data set
+Pablo [5:25]: and this is a look at the contents of our final data frame
+Pablo [5:34]: as you can see in addition to a typical physical characteristics we can also sort animals into compatibility and personality traits
+Pablo [5:39]: our compatibility category we divide it into three main areas
+Pablo [5:43]: compatible with dogs with cats and with kids
+Pablo [5:51]: the animals here can be organized into either having good not good or unknown compatibility
+Pablo [5:56]: for personality traits we were able to organize them into two main areas
+Pablo [5:58]: energy and temperament
+Pablo [6:00]: for the energy category
+Pablo [6:13]: animals are stored into either having low average high or unknown energy of them for temperament column animals are sorted into either having submissive average dominant or unknown temperament
+Pablo [6:19]: by sorting animals into concrete categories like these we hope to aid a better and more efficient filtering system
+Pablo [6:29]: we can
+Pablo [6:30]: set up endpoint
+Pablo [6:32]: the original lever is
+Pablo [6:33]: not absolutely correct
+Pablo [6:39]: we need builder mechanics to identify reach and forward
+Pablo [6:41]: as we can see
+Pablo [6:52]: there are three types and the second one the whole red label but rescuers definitely drones urgent on device
+Pablo [7:09]: so we want to use the timelining to identify which one is in urgent order if not otherwise this animal with amplifier will be overdoed by the c
+Pablo [7:20]: by analyzing most frequent thing of work and two word beds this keyboard are selected to help
+Pablo [7:26]: as we can see the at one animal details production
+Pablo [7:29]: and here is a redistribution
+Pablo [7:39]: there are lots of ways so we highlight the top ten and the rest we consider the
+Pablo [7:50]: german shepherd and mixes of dubai the large inflammator maybe because of their high energy recovery
+Pablo [8:01]: and actually the largest which means the green composition is diverse and the doctrine of
+Pablo [8:07]: the red toothpaste shirt are shaded
+Pablo [8:14]: the dark loop represent the area with high density
+Pablo [8:15]: and
+Pablo [8:34]: the riverside has the vacancy what does the animals the breadth of pressure is itself california which provide us a gap to reform the elevation plus we use the failure of the antibiotic
+Pablo [9:01]: and the chart shows that e data on paid household compatibility the food represents those with key dog the cat orient represents the brain represents the heat bread as family structure become more complex the methods of the suitable tax degrees the do
+Pablo [9:05]: g is more compact
+Pablo [9:06]: able
+Pablo [9:18]: it has so maybe you already have other plants better choice but it's still a good choice because sixty percent of that is
+Pablo [9:25]: the heat map shows the distribution on temperament and energy
+Pablo [9:32]: we want to have potential adapters understand any of the ten year profile
+Pablo [9:43]: beside the double average is the most in the middle two three one the animal which submits temperament is burdened
+Pablo [9:58]: the vaccination rate of cat and dog is both about eighty percent but those food rate is only fifty six percent of cat
+Pablo [10:09]: ion corresponds structured data analysis
+Pablo [10:13]: and nlp on passive description
+Pablo [10:19]: we use the pathfinding set
+Pablo [10:22]: about fifteen
+Pablo [10:30]: about fifteen thousand pets with known adopted region
+Pablo [10:32]: analysis
+Pablo [10:38]: and linear regression with dummy levels we form some useful patterns
+Pablo [10:44]: for example more photos strongly indicate faster absorption
+Pablo [10:47]: and older age institutes lower adoption
+Pablo [10:54]: sterilization as a vaccination also helps adoption
+Pablo [11:02]: however the matrix in the right side indicates that most variable
+Pablo [11:14]: explain less than five percent variance in adoption speed that's why we tend to nlp analysis of description
+Pablo [11:21]: clearly traditional features alone are not enough
+Pablo [11:27]: the rear driver likely lie in the emotional tongue and working on
+Pablo [11:37]: path therefore for the nlp part we ask can the words in pet description affect adoption speed
+Pablo [11:46]: after cleaning the text when we created two key features first one is the distribution lens in characters
+Pablo [11:58]: and second is the top twenty most important adjectives extended using tf idf and part of speech tagging
+Pablo [12:04]: this includes words like good interest healthy active
+Pablo [12:06]: and so on
+Pablo [12:13]: we will
+Pablo [12:14]: have
+Pablo [12:17]: regression
+Pablo [12:18]: also
+Pablo [12:20]: for
+Pablo [12:21]: the order of
+Pablo [12:22]: nature
+Pablo [12:27]: it is
+Pablo [12:28]: an orbit
+Pablo [12:29]: category from
+Pablo [12:45]: that
+Pablo [12:46]: surprisingly
+Pablo [12:47]: the word
+Pablo [12:50]: has
+Pablo [12:51]: a positive co
+Pablo [12:59]: alition since the lower value of speed means faster function this actually means
+Pablo [13:01]: path described as friendly
+Pablo [13:05]: may tend to be adopted more slowly
+Pablo [13:21]: and except for that most of words like food active healthy and playful shows positive effect with negative coefficients they are linked to speed up the option
+Pablo [13:30]: besides the distribution length here has a very small coefficient with p value
+Pablo [13:39]: of q three meaning it shows almost no significant effect on adoption fees
+Pablo [14:02]: and finally we applied train model to our california data set about five hundred dollars and category four and using the same function we generated prediction speeds for each patch
+Pablo [14:13]: and the modal success already rank pads by likely adoption speed on the squared data and here are the top ten pockets
+Pablo [14:14]: predict
+Pablo [14:23]: this show we can now predict and potentially improve the path adoption speed by using this preparation
+Pablo [14:40]: let any project there are limitations to keep in mind first our data set size with relatively small we scrape two hundred fifty each for box and cats and these were only from california
+Pablo [15:04]: well this was enough for a project a more useful system would ideally include data from more states and animals to better represent the full adoption the second limitation is that many listings did not include details about compatibility health and text filter handles they coded this as unknown in our data set so that the missing information would still be clearly represented
+Pablo [15:29]: and the third limitation is that we cannot guarantee information on these pets are accurate it's possible that certain traits could be made up to make adoption unlikely and a way to solve this is to have shelters continue the information to confirm the information of each animal but it's important to consider that not every organization has the time or manpower to do this
+Pablo [15:37]: would work there are several ways our project could be extended
+Pablo [16:14]: one idea we had is to develop a matching interface for adopters similarly to a swiping file profile for users to easily browse pets and indicate interest based on characteristics such as energy level temperament or compatibility with children and other pets then we could reach out and collaborate with our local shelters and rescue organizations by helping them organize data into h chapter format and improve filtering options on their website we could make adoption process more efficient and allow adopters to more easily search for ped that actually match their lifestyle
+Pablo [16:18]: thank you so much for listening and does anyone have any questions
+Pablo [16:31]: the compatibility
+Pablo [16:33]: compatibility
+Pablo [16:38]: yeah
+Pablo [16:41]: i was just a little confused
+Pablo [16:45]: because how does the percentage go
+Pablo [16:48]: percentage
+Pablo [16:49]: of
+Pablo [16:52]: human
+Pablo [16:54]: and which by
+Pablo [16:58]: similar to real life adoption
+Pablo [17:11]: is there like all three different
+Pablo [17:12]: categories
+Pablo [17:16]: so directly in the max is like three hundred percent
+Pablo [17:24]: friendly dogs and cats accounting within the groups of red
+Pablo [17:25]: kids
+Pablo [17:25]: right
+Pablo [17:26]: okay
+Pablo [18:07]: initially
+Pablo [18:12]: to find out whether these things like breed
+Pablo [18:15]: are held
+Pablo [18:23]: at least
+Pablo [18:24]: you find their
+Pablo [18:25]: position
+Pablo [18:44]: for example like the male and female and one
+Pablo [19:01]: i think if you're asking specifically about what these grass portray these are just mostly just to show the correlations between our variables
+Pablo [19:12]: which as you can see since a lot of the correlations are very weak when we're using when we're using a tool we make value variables for like the colors and stuff like that
+Pablo [19:18]: these correlations with our traditional traits that are used to describe animals
+Pablo [19:21]: they all have very unique correlation with our adoptions
+Pablo [19:21]: variable
+Pablo [19:31]: so basically this is just to indicate that using a traditional method like this with correlation plot is not sufficient enough to understand what exactly speaks of adoption
+Pablo [19:41]: which is why which justifies why we need it like a more advanced option like our nlp model which can analyze the descriptions instead and see if that has a better correlation with adoption
+Pablo [19:50]: you go back to the initial data frame you guys put together
+Pablo [19:59]: yeah i guess i was wondering
+Pablo [20:07]: how did you determine how does you classify it based on the compatibility and energy
+Pablo [20:09]: that wasn't on the website correctly
+Pablo [20:21]: did you have some kind of function to classify that okay so it technically was on the website but it will sprays differently so as you can see in these compatibility and personality and health windows that they have on the website
+Pablo [20:28]: they haven't listed in bullet points so for example if an animal was good with
+Pablo [20:30]: dogs the bulletproof will be good with most dogs
+Pablo [20:35]: if it was not good it would say not good with most dogs
+Pablo [20:38]: and same with cats and kids
+Pablo [20:57]: so by scraping bullet points containing flexible for scraping for dog compatibility moves great to our bold point that contains both the word dog and good fortunate for an able to be considered good compatibility versus dog and not good what's considered not good compatibility with
+Pablo [20:57]: dogs
+Pablo [21:15]: and if this in some animal profiles are not entirely complete so this compatibility window might just be entirely blank in that case we would list all the compatibilities as unknown because we can't confidently categorize math as they're having good or not good compatibility
+Pablo [21:19]: one last question
+Pablo [21:26]: you said limited to only california right
+Pablo [21:32]: there's limitation on lower data is there anything which is why they didn't do the whole country or even
+Pablo [21:34]: more slits yeah sure
+Pablo [21:35]: so
+Pablo [21:44]: first of all we barely chose california because that's what we reside and we feel like this puppy is going to have the most impact we first start with the area closest to us
+Pablo [21:56]: we didn't choose more states because this website for all the states it contains hundreds and hundreds of animals hundreds of hundreds of listings
+Pablo [22:03]: so we first use cal voyage as kind of like an example or a sample of how our filtering system and our model would work
+Pablo [22:11]: mostly to reduce computational cost and speed which we restricted it to only five hundred animals
+Pablo [22:27]: however we did mention in our food directions that we would want to expand this project by including many more states and minoritized animals when we have better access to laptops and stuff with higher computational power that could let that data
+Pablo [22:34]: let's thank the speakers again
+Pablo [22:57]: want this be very nice
+Pablo [22:59]: i don't know
+Pablo [23:05]: well i think it just has my name on there
+Pablo [23:15]: you're like is this my
+Pablo [23:15]: fault
+Pablo [23:19]: a claimer for us
+Pablo [23:25]: i'll draw it out a bit if
+Pablo [23:34]: you do that i prefer that okay i'll do that
+Pablo [23:43]: so welcome everyone
+Pablo [24:22]: we are presenting a progress update on our project about environmental burden in california we use cal enviro screen for twenty fourteen twenty nineteen and twenty twenty one and we bring in epa aqs data when we can to check whether ces lines up with measured air quality we're still refining parts of the story so this is meant to show our pipeline our visuals and the main trends we can already defend without overstating what the data can show we're trying to answer two big questions as environmental burden improved or worsened in california over the last decade and do
+Pablo [24:26]: lly's down the beginning
+Pablo [24:27]: i'll do it
+Pablo [24:42]: and do california's largest counties look better or worse than similarly populated counties elsewhere we focus on track level changes for california then aggregate to county level trends and finally extend the comparison to other states using aqs
+Pablo [25:40]: we rely on three ces releases that are similar enough to compare once we standardize them the fields include the ces composite score pollution indicators like pm two five and ozone and vulnerability indicators like poverty and asthma for track level changes we end up with seven thousand nine hundred thirty tracks that have ces scores in both twenty fourteen and twenty twenty one it becomes our main sample for the change analysis so that's the number you'll see referenced later for validation we use epa aqs county level annual means for pm two five and ozone in twenty nineteen and twenty twenty one and we choose county level because it's the most consistent national coverage we're being careful to describe those as measured pollutants while ces is a composite index so we try not to mix units or imply that ces equals pollution directly
+Pablo [25:47]: before getting into methods we want to anchor everything on some questions
+Pablo [26:08]: we design the project to answer these five questions in sequence the first two are about change over time inside california at both the track and county levels the third and fourth bring in measured air quality from aqs to check how ces compares to actual pollutant data and to see how california's largest counties compare nationally
+Pablo [26:32]: and the last question looks at where hybrid interacts are concentrated and how the concentration shifts across years you pick these because they let us start local and then scale outwards we also tried to keep the questions doable with the data we already had so we aren't spending the whole project on data collection it's a balance between ambition and what we can actually finish on time and each question maps to at least one plot or table we can show
+Pablo [27:10]: so the first part of our method was of course cleaning the data that we had the ces data frames that we had were a little bit messy just because from the twenty fourteen to twenty nineteen to twenty twenty one the column names and the way that the data was actually structured and organized was similar but not exactly the same so this actually took a significantly longer time than we thought it would originally but once we had all of the data consistently mapped into a single csv then it made running our data analysis and the creation of some of our visualizations a bit more simple
+Pablo [27:25]: so we actually started the method section after the data processing center here with some exploratory data analysis just to see a couple high level trends of the data before we get into some specifics on
+Pablo [27:29]: more interesting things that we can take away from this
+Pablo [28:14]: so the way that our research questions are focused requires us to split the methodology into a couple different ways so first we're interested in observing something that happens within california just over a specific period of time so we're starting with answering some of our questions just about california tracks the census tract specifically how those change from twenty fourteen to twenty twenty one then after that is when we shift away from california a little bit and compare the specific counties that have similar populations across the country and then the last one the primary thing that we're interested in that we really want to get to is air quality index and in some oh thank you sorry
+Pablo [28:46]: and then the third part is the air quality index specifically which predictors do we think are most important or most relevant in determining specific air quality index either in california or in the other populated counties so as a result of the way that these questions are framed all of the data organization and specific processes and all of the elmer the lmer models that we had to run had to take all of these into consideration as well
+Pablo [30:00]: so on to visualization types because we are trying to answer a few different related but complementary questions we had to include several different types of data visualizations to make sure that each one fits its data structure most appropriately so for the first portion when we're interested in analyzing the change in air quality or ces just within california by itself we're using histograms and line graphs because these are really good for indicating trends over time next the coral plot maps and the heat maps are both being used excuse me are both being used for the second and third portion of this when we're interested in specifically how counties interact not interact how air quality is measured within specific counties or how those counties can be compared to other counties outside of california and then the last one is we are including several scatter plots just in our exploratory data analysis section because scatter plots are really useful just for very simple trends basic correlations between certain variables before we have our linear mixed effect regression models actually spit out more sophisticated summaries of this data
+Pablo [31:14]: specifically i do want to talk very briefly about how we created these maps and what we're doing with them specifically because this is a really key portion of this project because we're interested in spatial differentiations between counties and how certain counties score and their ces metrics so of course we wanted to begin with some simple visualizations of raw data just to assess holistic trends but that doesn't tell us anything specific about the actual county level metrics that we want to answer from there i think i mis ordered these my bad so to create the corrupted maps and the heat maps i'm sure we all have used the shape files before we found some shape files on can't remember exactly where the source was but we relied on constructing the aggregate data that we have from our tidied csv mapping them onto specific shapefiles as we can see from this slide the shape files of california in order to create the best visualizations that we can
+Pablo [32:00]: then moving on to some results this slide combines the track level change with county level trends that we can see both the fine grained and the broader picture track level changes are not uniform the range is large from about negative twenty five to positive thirty five points the top improving tracks are mostly in la county which surprised us a bit because we expected more dispersion and a wider spread across regions at the county level the story is also mixed only nineteen counties improved consistently and just three decline consistently with most in the mixed category throughout the three years in review
+Pablo [32:20]: when we split north versus south as well the north has been has more consistent improvement this isn't a claim about why that happens but it gives us a direction for follow up we also kept the track and county results together because they point to the same idea that change is not uniform and the spatial patterns matter
+Pablo [32:24]: these are the two plots that were generated from the data itself
+Pablo [32:29]: to show these two different research question results
+Pablo [32:35]: for the next result we shifted over
+Pablo [32:36]: from overall
+Pablo [32:38]: trends to concentration of burden
+Pablo [32:41]: the share metric changes
+Pablo [32:41]: the story
+Pablo [32:47]: los angeles dominic's rock counts because of the sheer track volume
+Pablo [32:51]: that none of the other tracks compare
+Pablo [32:53]: but when we look at share which is the warren trap over there
+Pablo [32:58]: central valley countries rise to the top in twenty twenty one
+Pablo [33:03]: the highest shares are in merced fresno imperial and talari
+Pablo [33:09]: and the map shows this pattern across years two from twenty fourteen and twenty twenty one
+Pablo [33:19]: which suggests persistent spatial inequity rather than a one off spike and makes the case forward looking at intensity not just total
+Pablo [33:19]: counts
+Pablo [33:25]: it's one of the results we feel most confident about because it remains consistent across multiple years
+Pablo [33:28]: and also fits with what we expected from
+Pablo [33:29]: background knowledge about pollution
+Pablo [33:30]: in agriculture
+Pablo [33:31]: in the central valley
+Pablo [33:34]: even though we are indirectly modeling billy
+Pablo [33:39]: and on this slide
+Pablo [33:52]: is our validation step where we checked whether ces lines up with measured air quality so to do that we compare the ces with pem two point five and ozone from the aqs api
+Pablo [33:58]: these multiple scatter plots show positive relationships for both pollutants
+Pablo [34:09]: the left side being or the top is the pm two five and the bottom is the ozone the left is twenty nineteen and the right is twenty twenty one
+Pablo [34:31]: so the scattershots show positive relationships for both pollutants which is what we would expect if ces capture their quality burden we're not making too many claims about why that happens but the regression lines are there as trend indicators even a moderate positive correlation is useful here because ces is a composite index
+Pablo [34:42]: so we wouldn't expect a perfect fit but this gives us some confidence that ces is aligned with actual pollutant exposure and it helps justify using ces as the main measure
+Pablo [35:12]: so as was previously mentioned los angeles was one of the areas that rose to the top in terms of pollution but as many of you will likely know los angeles is an extremely populous county so we wanted to do some comparison looking at the top ten most populous counties in the united states to see if california counties were actually as polluting as they seem given their high population density
+Pablo [35:18]: we weren't unfortunately weren't able to get data for king county in new york
+Pablo [35:23]: but we still had four high population counties in california and five outside of california
+Pablo [35:38]: it is worth noting that census tracts are painted by the us census bureau and basically from year to year they try to keep the same number of individuals inside a singular census tract
+Pablo [35:46]: so it's not exactly when you have lots of center structs in an area it does mean that you are in a highly populated area
+Pablo [35:50]: but there's not a good way to get a per capita by county
+Pablo [35:52]: comparison in these areas
+Pablo [35:59]: so we specifically use the environmental protection agency's api for their air quality system monitoring database
+Pablo [36:02]: and we were able to stripe the data to get a clean data frame
+Pablo [36:07]: that had pm two point five data and also ozone concentrations
+Pablo [36:13]: and both of these are pollutants that are driven by traffic and emissions from vehicles
+Pablo [36:17]: so we'd expect to see high values in those high population areas
+Pablo [36:26]: looking specifically at two thousand and twenty one we were able to find that this is the per one hundred thousand people just because of per capita
+Pablo [36:28]: pollution would be really small
+Pablo [36:31]: so this is looking at per one hundred thousand people
+Pablo [36:40]: but this gives you an idea of how covid these specific counties across the united states are compared to other populist counties
+Pablo [36:45]: and we can still see that riverside orange county and san diego
+Pablo [36:46]: are in the top four
+Pablo [36:48]: so we're not
+Pablo [36:50]: having a ton of lock in california
+Pablo [36:51]: but
+Pablo [36:58]: one thing that was surprising is that los angeles was the least polluted based on population density
+Pablo [37:08]: and we figured that this is because los angeles just had so many people compared to riverside in orange county that their pollution per capita is actually being brought down
+Pablo [37:55]: and we specifically wanted to and the graph on the left shows the pm two point five concentrations those are normally in micrograms per meter cubed and then on the right you have ozone which is normally parts per billion and we also wanted to look since these are pollutants that are driven by traffic if there was a difference before and after covid so this is our two thousand and twenty one data and this is another way to look at the data for two thousand and nineteen we took the county shape files and you were able to see the same pm two point five per capita on the left and ozone per capita on the right and you can see that in two thousand and nineteen dallas and riverside are both extremely polluted and those were our top two polluters
+Pablo [37:57]: from two thousand and twenty one
+Pablo [38:09]: but there actually wasn't much of a decrease in the pollutants between twenty nineteen and twenty twenty one which we were hoping to find but it was still interesting to do this cross county analysis
+Pablo [38:40]: of course there are some limitations to our interpretations the california virus screen methodology shifts across versions even after normalization like i said they want to keep those census tracts the same also these are county level averages which can hide within county inequity and our analysis is meant to be descriptive not causal and we have our exploratory graphs but we are still working on developing our full pipeline and our report that will refine the narrative around our persistent hotspots and inequity
+Pablo [38:41]: thank you
+Pablo [38:53]: sorry say that one more time
+Pablo [39:07]: the hybrid and share is when a specific tract or county is considered to be an above the eightieth percentile
+Pablo [39:13]: so you use data from twenty fourteen twenty nineteen
+Pablo [39:23]: and twenty twenty one i wonder the reasoning behind using that data and kind of like the discrepancy between twenty fourteen twenty nineteen that's like a five year gap compared to a year ago
+Pablo [39:45]: yeah so we collected this kalin virus screen data from that's actually a program it's called calenviruscreen they release data sets every few years so cal enviro screen version one is twenty fourteen version two is twenty nineteen and version three is twenty twenty one it doesn't imply that these are getting more frequent but that's why we pick the years that we did
+Pablo [40:13]: yes you mentioned we are using lmdr model why are you using that so we haven't put that in this yet we'll put it in the final report but we're going to be using elmer models to see how predictive specific pollutants are on air quality in general so we're going to have ozone pm two point five in particular
+Pablo [40:24]: and i think there's also one for traffic amounts that we're going to be using just to see how well each of those specific predictors predict the general air quality index
+Pablo [40:29]: you want to raise your hand
+Pablo [40:36]: what are the data which were not available for the particular parameters already handle this data inconsistency
+Pablo [41:13]: that one got removed right for new york for the county in new york i looked into it basically that county is really highly populated but all of the air quality monitors are closer to the city where the metro stations are and that's to help figure out whether their stations have a lot of pollution but that was just we just took it out of our analysis since there was actually no data available there isn't an air quality monitor in that county
+Pablo [41:20]: okay i'm curious
+Pablo [41:21]: to see
+Pablo [41:25]: how did you realize
+Pablo [41:29]: that riverstar has the highest condition
+Pablo [41:30]: and what
+Pablo [41:32]: are factors that causes riverside to have
+Pablo [41:33]: the higher t
+Pablo [42:06]: i didn't think that riverside would have the highest pollution i only saw it from the data so you can see on the left it's the highest and on the right it's also the highest which is unfortunate and my husband is actually from la so i asked him if he knew anything and he basically said that the property in that area is cheaper so there's a lot of industry in that area but there's not as many people compared to downtown la where there's lots and lots of people
+Pablo [42:19]: but the real estate is more expensive so companies will go a little farther away to do their industrial work where you need a lot of property for that so i think there's a lot of industrial processes going on in riverside and same with orange county
+Pablo [42:26]: but that's not a citable fact not yet anyways
+Pablo [42:31]: sorry you can ask us sorry
+Pablo [43:45]: i don't know why
+Pablo [43:47]: last slide on the shape felt
+Pablo [43:48]: like
+Pablo [43:50]: but then i have the shoe it worked
+Pablo [45:06]: out
+Pablo [45:29]: our patient is in recent years
+Pablo [45:30]: we just
+Pablo [45:31]: find out
+Pablo [45:32]: we really
+Pablo [45:33]: think that
+Pablo [45:35]: we'll film
+Pablo [45:36]: that capture the worst
+Pablo [45:37]: imagination
+Pablo [45:42]: or the attention just by the avatar one
+Pablo [45:54]: so because of catch up removing we started to question whether there's a structural issue within the whole film production industry
+Pablo [46:04]: so before we start analysis which is fine
+Pablo [46:11]: structural issue is so we guess that might be the
+Pablo [46:14]: building
+Pablo [46:20]: so that is a turn from economy it's a monthly structure that dominated
+Pablo [46:22]: by the small
+Pablo [46:22]: group of
+Pablo [46:23]: people
+Pablo [46:26]: and
+Pablo [46:27]: it gets
+Pablo [46:31]: compet
+Pablo [46:32]: ition
+Pablo [46:33]: and high
+Pablo [46:34]: energy management
+Pablo [47:10]: then
+Pablo [47:11]: how do
+Pablo [47:12]: there
+Pablo [47:16]: have
+Pablo [47:17]: secret
+Pablo [47:24]: and
+Pablo [47:25]: which will
+Pablo [47:26]: be the
+Pablo [47:27]: end of this
+Pablo [47:27]: question
+Pablo [47:28]: can have us
+Pablo [47:30]: ladies
+Pablo [47:32]: so
+Pablo [47:33]: the first is related
+Pablo [47:34]: to the capital
+Pablo [47:36]: it
+Pablo [47:37]: has an issue of
+Pablo [47:39]: even financial resources
+Pablo [47:40]: distribution
+Pablo [47:41]: in the film industry
+Pablo [47:43]: and the second
+Pablo [47:46]: is related to the
+Pablo [47:46]: index
+Pablo [47:48]: there
+Pablo [47:51]: is a positive correlation between the budget and the rating
+Pablo [47:54]: if the
+Pablo [47:55]: correlation is
+Pablo [47:58]: already
+Pablo [48:16]: in our analysis
+Pablo [48:19]: and
+Pablo [48:20]: to make sure
+Pablo [48:22]: visual
+Pablo [48:22]: ization
+Pablo [48:26]: we need
+Pablo [48:27]: to meet our data
+Pablo [48:32]: design
+Pablo [48:32]: ation
+Pablo [48:33]: first
+Pablo [48:34]: we check where
+Pablo [48:35]: missing data
+Pablo [48:38]: budget
+Pablo [48:39]: or product
+Pablo [48:40]: ion college
+Pablo [48:42]: works we build our
+Pablo [48:43]: people database
+Pablo [48:46]: and
+Pablo [48:47]: say there was
+Pablo [48:48]: the retreat
+Pablo [48:49]: then
+Pablo [48:50]: we started to make
+Pablo [48:51]: lots
+Pablo [48:51]: like instagra
+Pablo [48:52]: m
+Pablo [48:53]: all of us
+Pablo [48:58]: i
+Pablo [48:59]: would like to show
+Pablo [49:00]: some details
+Pablo [49:01]: about
+Pablo [49:02]: making
+Pablo [49:03]: process
+Pablo [49:06]: we noticed that there are three
+Pablo [49:07]: columns
+Pablo [49:08]: comparing
+Pablo [49:10]: catego
+Pablo [49:19]: ries mostly in one string splitting with commas so we split it up with like for example we have one of those comma bc building
+Pablo [49:27]: s so we split it up and ip for each company and then create a junction table to store it
+Pablo [49:31]: store it as a separate table for us to veterans
+Pablo [49:36]: and another issue is that we have
+Pablo [49:40]: some we have zero budget and zero revenues
+Pablo [49:42]: and there are some
+Pablo [49:47]: revenues that really were numbers like three dollars of revenues
+Pablo [49:49]: which is basically possible
+Pablo [49:54]: so to fix this issue we set a lower bar
+Pablo [49:56]: for about ten thousand dollars
+Pablo [50:01]: and to filter out all the movies that doesn't have revenues over this bar
+Pablo [50:19]: okay so now we can talk about some of the visualizations that we made and what we so for our first question we were looking at how wide the disparity is between the total budget spent between production companies
+Pablo [50:25]: so as you can see here we're focusing on total budget spent on movies released in twenty twenty three
+Pablo [50:26]: for each production company
+Pablo [50:34]: there's a couple of reasons why we chose just to look at twenty twenty three but first is we decided to just look at one
+Pablo [50:36]: s
+Pablo [50:38]: that
+Pablo [50:39]: every company spent
+Pablo [50:42]: and
+Pablo [50:43]: probably
+Pablo [50:43]: caused
+Pablo [50:44]: companies
+Pablo [50:48]: have
+Pablo [50:48]: less empirical value
+Pablo [50:49]: s
+Pablo [50:50]: that they have
+Pablo [50:51]: entered the market
+Pablo [51:04]: a
+Pablo [51:05]: whole month of
+Pablo [51:06]: full year's worth of data
+Pablo [51:06]: available
+Pablo [51:08]: and so along
+Pablo [51:09]: the x axis
+Pablo [51:11]: you'll see that we have production companies
+Pablo [51:13]: ordered from
+Pablo [51:14]: high spending to low
+Pablo [51:15]: est funding
+Pablo [51:16]: and on
+Pablo [51:17]: the y axis
+Pablo [51:18]: we have budget
+Pablo [51:20]: in hundreds
+Pablo [51:21]: of
+Pablo [51:24]: millions of dollars and as you can see there's a sharp decrease
+Pablo [51:26]: in the total budget
+Pablo [51:27]: spent by
+Pablo [51:28]: the production companies
+Pablo [51:28]: as we move
+Pablo [51:29]: from left
+Pablo [51:31]: as you can see
+Pablo [51:33]: among
+Pablo [51:34]: the highest
+Pablo [51:35]: i think
+Pablo [51:36]: we are just standing
+Pablo [51:37]: it's just drastically
+Pablo [51:38]: a lot
+Pablo [51:39]: more
+Pablo [51:40]: companies that are
+Pablo [51:41]: spending
+Pablo [51:42]: less
+Pablo [51:43]: and as you can see
+Pablo [51:44]: that the majority of
+Pablo [51:46]: anything less
+Pablo [51:47]: than
+Pablo [51:49]: if we look at just
+Pablo [51:50]: this one bar
+Pablo [51:51]: the highest funding
+Pablo [51:52]: companies
+Pablo [51:53]: spend around eight times
+Pablo [51:54]: around eight hundred
+Pablo [51:55]: million dollars
+Pablo [52:06]: and so if we wanted to just look and see if disparity in total budget is still as wide
+Pablo [52:16]: for the highest spending pressure companies we decided to kind of like zoom into the graph here if you remember just looking at the top one hundred highest spending production companies in twenty twenty three
+Pablo [52:26]: and as you can see there's still quite a significant or i guess noticeable difference if we just look at the groups of production companies
+Pablo [52:31]: over here compared to even the vast majority of the top one hundred highest production companies
+Pablo [52:34]: and if we go to the next slide
+Pablo [52:45]: it's slightly bigger and you can start to see who some of the biggest players are so in twenty twenty three it looks like paramount spent the most amount of money
+Pablo [52:51]: followed by universal pictures walt disney pictures warner bros and
+Pablo [53:01]: so right now we're looking at the scatter plots of revenue versus budget
+Pablo [53:03]: as you can see
+Pablo [53:07]: higher the development
+Pablo [53:12]: to
+Pablo [53:13]: have some
+Pablo [53:18]: budget
+Pablo [53:19]: for
+Pablo [53:20]: example
+Pablo [53:21]: or the movies
+Pablo [53:24]: that
+Pablo [53:27]: people
+Pablo [53:28]: come
+Pablo [53:31]: in
+Pablo [53:32]: a lot more
+Pablo [53:38]: to have
+Pablo [53:39]: a better looking mod
+Pablo [53:40]: el
+Pablo [53:41]: it's being budget
+Pablo [53:42]: that revenue
+Pablo [53:43]: we make
+Pablo [53:44]: we
+Pablo [53:46]: calculated the ratio
+Pablo [53:46]: of revenue versus
+Pablo [53:47]: budgets
+Pablo [53:48]: take
+Pablo [53:49]: your loved one this
+Pablo [53:52]: racial and then plotted as a histor
+Pablo [53:52]: ian
+Pablo [54:01]: in this graph we can see that the majority of movies are following the
+Pablo [54:03]: positive
+Pablo [54:12]: revenue and budget and with more movies actually making profits it's a little bit
+Pablo [54:27]: however we discovered that the number of movies having raised or larger than one thousand or less than one over one thousand is very small so we consider these
+Pablo [54:28]: moving test
+Pablo [54:28]: s
+Pablo [54:41]: as
+Pablo [54:42]: a rating
+Pablo [54:44]: unfortun
+Pablo [54:45]: ately
+Pablo [54:49]: bud
+Pablo [54:50]: get and
+Pablo [54:52]: this
+Pablo [54:53]: class also
+Pablo [54:54]: tell the
+Pablo [54:55]: filmmaking
+Pablo [54:57]: is a high risk denture
+Pablo [54:58]: because sometimes
+Pablo [55:02]: a lot you may not meet another
+Pablo [55:12]: innov
+Pablo [55:13]: ation
+Pablo [55:19]: so
+Pablo [55:21]: of the second
+Pablo [55:22]: research question
+Pablo [55:23]: is
+Pablo [55:25]: actually
+Pablo [55:26]: correlation
+Pablo [55:36]: financial
+Pablo [55:37]: visibility
+Pablo [55:38]: is
+Pablo [55:39]: always the most important
+Pablo [55:50]: we
+Pablo [55:51]: may
+Pablo [55:53]: still
+Pablo [55:54]: see there
+Pablo [55:58]: wholesome
+Pablo [55:58]: industry
+Pablo [56:02]: okay
+Pablo [56:04]: so there's a couple of notations
+Pablo [56:05]: that we can talk about
+Pablo [56:09]: so the first is the presence of streaming platforms
+Pablo [56:14]: in our data we notice that as mentioned earlier there were some roads that have zero budget
+Pablo [56:19]: zero budget or zero revenue
+Pablo [56:26]: and we realized that that was due to midi's being released on streaming platforms like netflix
+Pablo [56:30]: and static in the box office if our database didn't have data for
+Pablo [56:34]: the revenue or budget
+Pablo [56:35]: release in the
+Pablo [56:46]: and then another limitation is that audience satisfaction is not necessarily closely reflected by revenue for example people could close the theaters to watch a movie
+Pablo [56:47]: even if they don't necessarily
+Pablo [56:48]: super
+Pablo [56:58]: enjoy it maybe it's just trending movie when we were looking at the relationship between total budget spent five production companies
+Pablo [57:02]: we realized that fund production companies had child companies
+Pablo [57:07]: or subsidiaries and that were listed as individual companies
+Pablo [57:15]: unfortunately due to time constraints we weren't able to fully reconcile that and that would maybe give us a better idea of this bread if we
+Pablo [57:16]: wanted
+Pablo [57:18]: together
+Pablo [57:19]: but
+Pablo [57:20]: overall
+Pablo [57:23]: large
+Pablo [57:24]: companies
+Pablo [57:43]: and
+Pablo [57:44]: allowing us
+Pablo [57:44]: a small group of
+Pablo [57:46]: growth
+Pablo [57:53]: div
+Pablo [57:53]: ersity
+Pablo [57:56]: to
+Pablo [57:57]: keep this
+Pablo [58:00]: government
+Pablo [58:01]: should provide
+Pablo [58:02]: interest to
+Pablo [58:04]: family
+Pablo [58:14]: of
+Pablo [58:17]: government
+Pablo [58:18]: of an
+Pablo [58:19]: end of
+Pablo [58:24]: this
+Pablo [58:24]: strategy
+Pablo [58:25]: we have learned
+Pablo [58:26]: samsung budget
+Pablo [58:27]: and
+Pablo [58:29]: figure
+Pablo [58:39]: out
+Pablo [58:53]: so
+Pablo [58:54]: like when you're collecting
+Pablo [58:55]: the data
+Pablo [58:56]: for the
+Pablo [58:59]: the production
+Pablo [59:01]: calculating the complet
+Pablo [59:02]: e analysis
+Pablo [59:03]: of the
+Pablo [59:05]: like how much
+Pablo [59:06]: the employees getting
+Pablo [59:07]: paid
+Pablo [59:08]: for this production
+Pablo [59:10]: et cetera
+Pablo [59:16]: you are just calculate you're just taking the numbers which is released by the production house
+Pablo [59:17]: good question
+Pablo [59:19]: so basically
+Pablo [59:21]: the question is about how we got the bud
+Pablo [59:27]: get data yeah how it is doing the analysis you're just taking
+Pablo [59:28]: production company
+Pablo [59:31]: or like you're taking all that information
+Pablo [59:36]: you're paying for ccgi and all
+Pablo [59:37]: that kind of
+Pablo [59:38]: expenses are being
+Pablo [59:38]: private
+Pablo [59:48]: data
+Pablo [59:49]: from
+Pablo [59:50]: this database called
+Pablo [59:51]: the media database
+Pablo [59:54]: exactly
+Pablo [59:55]: where they got their budget
+Pablo [59:56]: most
+Pablo [59:58]: released by product
+Pablo [59:59]: ion company
+Pablo [1:00:00]: and we don't have
+Pablo [1:00:01]: an accurate
+Pablo [1:00:01]: description
+Pablo [1:00:03]: of how each company
+Pablo [1:00:06]: breaks down their budget but not the great point
+Pablo [1:00:07]: thank you
+Pablo [1:00:31]: yeah i think we're going to see levels but we were more so doing visualizations
+Pablo [1:00:33]: with variables
+Pablo [1:00:38]: like revenues budget and
+Pablo [1:00:53]: the picture right
+Pablo [1:01:04]: i think we have two more lectures i want to give everyone the opportunity to ask questions so maybe just the next lecture
+Pablo [1:01:12]: who has asked question today please give the opportunities to others okay
+Pablo [1:01:18]: drop any feature that no impact on
+Pablo [1:01:19]: your second order
+Pablo [1:01:20]: pieces of
+Pablo [1:01:23]: like you just think so all the
+Pablo [1:01:27]: i think
+Pablo [1:01:28]: you're question
+Pablo [1:01:31]: ing
+Pablo [1:01:33]: might be some
+Pablo [1:01:38]: observations
+Pablo [1:01:47]: i think
+Pablo [1:01:48]: for our
+Pablo [1:01:49]: because we're
+Pablo [1:01:49]: looking at
+Pablo [1:01:52]: market
+Pablo [1:01:53]: situation
+Pablo [1:01:54]: we're mostly
+Pablo [1:01:55]: interested in
+Pablo [1:01:56]: features related
+Pablo [1:01:58]: to
+Pablo [1:01:59]: that area
+Pablo [1:02:02]: and then
+Pablo [1:02:03]: it shows how we
+Pablo [1:02:04]: 're very
+Pablo [1:02:05]: specifically
+Pablo [1:02:06]: chose the local
+Pablo [1:02:07]: health
+Pablo [1:02:10]: as well
+Pablo [1:02:11]: in
+Pablo [1:02:13]: relation to like oh are there certain companies
+Pablo [1:02:15]: that dominate which can be
+Pablo [1:02:16]: both
+Pablo [1:02:18]: hopefully that
+Pablo [1:02:31]: within the budget for the movies does it have any indication of this marketing within that budget or is that separate do you have any idea
+Pablo [1:02:33]: unfortunately
+Pablo [1:02:35]: i think another
+Pablo [1:02:36]: classic
+Pablo [1:02:38]: i think
+Pablo [1:02:39]: it would be super helpful
+Pablo [1:02:40]: to take up
+Pablo [1:02:44]: but we don't know how depression can be
+Pablo [1:03:12]: search
+Pablo [1:03:13]: for
+Pablo [1:03:16]: so
+Pablo [1:03:17]: it means
+Pablo [1:03:20]: platform
+Pablo [1:03:30]: is
+Pablo [1:03:32]: a big contract
+Pablo [1:03:40]: can we
+Pablo [1:03:41]: just see some interesting movies
+Pablo [1:03:43]: i think one that we
+Pablo [1:03:48]: draw we call like tiktok riz party short movie i've never heard of it
+Pablo [1:03:50]: and we can't go
+Pablo [1:04:00]: all the speakers today
+Pablo [1:04:05]: and the lecture
+Pablo [1:04:16]: we're going to get a question
+Pablo [1:04:21]: you can only
+Pablo [1:04:22]: ask a question
+Pablo [1:04:23]: when you have
+Pablo [1:04:26]: not had opportunity today
+Pablo [1:04:27]: so that everyone

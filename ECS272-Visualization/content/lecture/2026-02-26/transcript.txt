@@ -1,0 +1,1258 @@
+Pablo [0:17]: his action
+Pablo [0:26]: so what made as i mentioned before
+Pablo [0:30]: i think others visualization powerful
+Pablo [0:31]: image
+Pablo [0:36]: his
+Pablo [0:37]: dynamic
+Pablo [0:38]: visual
+Pablo [0:45]: inter
+Pablo [0:46]: rogate
+Pablo [0:48]: and
+Pablo [0:49]: there are
+Pablo [0:56]: many well established
+Pablo [0:59]: interaction techniques
+Pablo [1:03]: or data visualization
+Pablo [1:07]: so today we will go over
+Pablo [1:09]: many of them
+Pablo [1:14]: and you can see which one you can apply to your project
+Pablo [1:16]: your interface
+Pablo [1:21]: and even better right
+Pablo [1:25]: you can introduce
+Pablo [1:26]: new approach right
+Pablo [1:29]: new and novel where
+Pablo [1:32]: interacting
+Pablo [1:33]: with your data
+Pablo [1:35]: so
+Pablo [1:39]: if you actually come up with something you should let us know
+Pablo [1:44]: you consider new and then we will certainly
+Pablo [1:47]: if it's indeed new and effective
+Pablo [1:50]: you will get a credit
+Pablo [1:51]: word
+Pablo [1:58]: so interactivity is the key really i talk about today's
+Pablo [2:05]: visualization of the occasion like what you are building for your final project
+Pablo [2:13]: the interaction design
+Pablo [2:15]: is a field study
+Pablo [2:20]: it's not just relevant to data visualization
+Pablo [2:23]: applications
+Pablo [2:31]: it's relevant to when you feel like just think about
+Pablo [2:34]: everything you use digital device you use today
+Pablo [2:39]: involved interaction design just think about your phone
+Pablo [2:43]: itv and think about
+Pablo [2:47]: every website you visit
+Pablo [2:49]: there
+Pablo [2:54]: interaction design right user experience
+Pablo [2:57]: whoever create that interface
+Pablo [3:02]: they went through expensive us
+Pablo [3:05]: study
+Pablo [3:08]: after
+Pablo [3:09]: design
+Pablo [3:11]: efforts
+Pablo [3:18]: they finally came out with that interface you were using your phone
+Pablo [3:20]: you using everything
+Pablo [3:25]: sometimes you
+Pablo [3:32]: actually really depressed by what they introduced which make your life easier
+Pablo [3:39]: so
+Pablo [3:47]: as a result we can learn from learn from many of those interfaces
+Pablo [3:49]: already there
+Pablo [3:54]: you should when you do your final project
+Pablo [4:00]: you should think about what you actually like
+Pablo [4:06]: most and whether you find very helpful and you should apply the same experience
+Pablo [4:09]: try to
+Pablo [4:17]: reproduce that experience for your project
+Pablo [4:28]: so think about
+Pablo [4:33]: when you design your visualization application
+Pablo [4:35]: what's the purpose
+Pablo [4:40]: the purpose is to suddenly to present certain information
+Pablo [4:41]: in
+Pablo [4:42]: the data
+Pablo [4:43]: to
+Pablo [4:46]: review allow the user
+Pablo [4:49]: to learn from the data
+Pablo [4:56]: there are two part remember when we talk about
+Pablo [4:58]: video storytelling
+Pablo [5:06]: this author driven and then there's user driven
+Pablo [5:12]: so the author can be done by you
+Pablo [5:17]: as the designer and developer of the visualization application
+Pablo [5:21]: so you decide what upfront
+Pablo [5:22]: by default
+Pablo [5:25]: what the user should know
+Pablo [5:34]: should see that you should know before right they get a chance to navigate
+Pablo [5:36]: for them
+Pablo [5:36]: selves
+Pablo [5:40]: so there's two parts right
+Pablo [5:45]: and
+Pablo [5:46]: they use it driven
+Pablo [5:47]: by
+Pablo [5:48]: require
+Pablo [5:49]: some solar
+Pablo [5:50]: interaction
+Pablo [5:51]: design
+Pablo [5:52]: and
+Pablo [5:53]: see some
+Pablo [5:54]: examples today
+Pablo [6:16]: when
+Pablo [6:17]: the goal is
+Pablo [6:18]: that you're able to
+Pablo [6:19]: engage
+Pablo [6:23]: the user i think about
+Pablo [6:25]: how draw interest
+Pablo [6:27]: ing
+Pablo [6:28]: users
+Pablo [6:29]: so the user
+Pablo [6:30]: will actually
+Pablo [6:31]: interact
+Pablo [6:37]: so
+Pablo [6:38]: they were actually
+Pablo [6:41]: want
+Pablo [6:42]: to interact
+Pablo [6:43]: lots and no more
+Pablo [6:47]: whatever
+Pablo [6:48]: they
+Pablo [6:49]: 're going to offer
+Pablo [6:53]: so
+Pablo [6:54]: engagement
+Pablo [6:54]: is the key by
+Pablo [6:55]: the left
+Pablo [6:56]: are you design
+Pablo [6:58]: ed interact
+Pablo [6:59]: ion
+Pablo [7:06]: so
+Pablo [7:07]: maybe the topic
+Pablo [7:08]: is of
+Pablo [7:08]: interest
+Pablo [7:10]: and inherently design
+Pablo [7:11]: was disaster
+Pablo [7:12]: and
+Pablo [7:13]: the user didn't
+Pablo [7:14]: use it
+Pablo [7:15]: interested
+Pablo [7:16]: in
+Pablo [7:19]: solidarity
+Pablo [7:22]: applic
+Pablo [7:23]: ation
+Pablo [7:25]: then
+Pablo [7:26]: it's very hard
+Pablo [7:27]: to use it
+Pablo [7:28]: to go
+Pablo [7:28]: further
+Pablo [7:30]: use
+Pablo [7:31]: the ninety nine
+Pablo [7:39]: so
+Pablo [7:40]: we talk about
+Pablo [7:43]: shaking
+Pablo [7:47]: so
+Pablo [7:48]: in that
+Pablo [7:49]: design
+Pablo [7:50]: is about
+Pablo [7:51]: changing visualization
+Pablo [8:20]: it could be
+Pablo [8:21]: just
+Pablo [8:23]: ui which
+Pablo [8:25]: is relevant and it could be the transition
+Pablo [8:27]: itself
+Pablo [8:33]: that they can immediately for them that oh i can do this i can do that
+Pablo [8:44]: feature we call it functionality you provide
+Pablo [8:51]: for the user to manipulate and then able to interpret
+Pablo [8:53]: the visualization
+Pablo [9:02]: so as you will see
+Pablo [9:04]: or view it
+Pablo [9:08]: we already talking a lot about some of
+Pablo [9:08]: this
+Pablo [9:14]: when user
+Pablo [9:20]: visualization application
+Pablo [9:29]: why
+Pablo [9:36]: the purpose of visualization
+Pablo [9:41]: here are even more
+Pablo [9:44]: companies
+Pablo [9:53]: for scientists they use visualization of their data
+Pablo [9:55]: to validate
+Pablo [9:57]: their study
+Pablo [10:05]: scientific modeling physical debates only experiments
+Pablo [10:08]: to verify what they already know
+Pablo [10:12]: and then
+Pablo [10:18]: to basically verify and determine the correctness of their research output
+Pablo [10:27]: then this important discovery part right
+Pablo [10:35]: they also want to discover something they didn't know about so visualization and also serve test papers
+Pablo [10:42]: and then sometimes they will take extensive analysis analysis staff
+Pablo [10:49]: so then this visualization
+Pablo [10:53]: application should also support that
+Pablo [10:57]: and finally after
+Pablo [11:01]: validate their data
+Pablo [11:01]: explore
+Pablo [11:02]: and then
+Pablo [11:09]: they want to share with others
+Pablo [11:10]: and so
+Pablo [11:11]: they want
+Pablo [11:12]: to examine that
+Pablo [11:13]: quality
+Pablo [11:24]: describ
+Pablo [11:25]: e the
+Pablo [11:26]: phys
+Pablo [11:27]: ical process
+Pablo [11:28]: they
+Pablo [11:30]: now
+Pablo [11:32]: understand
+Pablo [11:33]: better they want
+Pablo [11:34]: to share these number
+Pablo [11:35]: s
+Pablo [12:01]: and
+Pablo [12:02]: that help engage
+Pablo [12:03]: the how
+Pablo [12:04]: we age
+Pablo [12:05]: is
+Pablo [12:23]: as
+Pablo [12:24]: i mentioned
+Pablo [12:25]: there
+Pablo [12:26]: are
+Pablo [12:27]: many
+Pablo [12:28]: established
+Pablo [12:29]: inter
+Pablo [12:30]: actions
+Pablo [12:32]: this
+Pablo [12:33]: year
+Pablo [12:34]: every
+Pablo [12:40]: month
+Pablo [12:41]: this is
+Pablo [12:42]: already
+Pablo [12:47]: used
+Pablo [12:48]: at least
+Pablo [12:50]: two
+Pablo [12:51]: three
+Pablo [12:54]: that means
+Pablo [12:55]: on this list
+Pablo [12:55]: for your
+Pablo [12:56]: value
+Pablo [12:57]: or i
+Pablo [12:58]: hold you i will
+Pablo [12:59]: use
+Pablo [13:04]: in the rest of
+Pablo [13:10]: the lecture i pretty much will go over this list i will show you example what they like
+Pablo [13:14]: and many of them you already know you have seen over and over again
+Pablo [13:16]: the maybe one or two you say hey
+Pablo [13:19]: oh yeah i can use this
+Pablo [13:21]: right for my final project
+Pablo [14:08]: so
+Pablo [14:09]: i think sel
+Pablo [14:10]: ection and
+Pablo [14:11]: i
+Pablo [14:22]: should
+Pablo [14:23]: be able to
+Pablo [14:27]: provide
+Pablo [14:28]: itself
+Pablo [14:29]: really
+Pablo [14:29]: hard
+Pablo [14:32]: ly
+Pablo [14:32]: right
+Pablo [14:33]: and the value
+Pablo [14:35]: that
+Pablo [14:36]: was sitting right
+Pablo [14:36]: here
+Pablo [15:06]: the kind
+Pablo [15:07]: of
+Pablo [15:11]: tool
+Pablo [15:12]: is
+Pablo [15:13]: for
+Pablo [15:15]: heaven
+Pablo [15:16]: in a sense
+Pablo [15:17]: and
+Pablo [15:18]: that i think is
+Pablo [15:18]: okay
+Pablo [15:19]: it doesn't need
+Pablo [15:20]: to be confused
+Pablo [15:39]: and then
+Pablo [15:40]: the actual
+Pablo [15:41]: how
+Pablo [15:42]: is the actual number
+Pablo [15:43]: give you
+Pablo [15:44]: the hear
+Pablo [15:46]: st
+Pablo [15:46]: in you
+Pablo [15:48]: think
+Pablo [15:49]: about
+Pablo [15:50]: continuous
+Pablo [15:52]: scale
+Pablo [15:58]: continue skill sometimes
+Pablo [16:01]: you can blend this color
+Pablo [16:01]: right
+Pablo [16:03]: and there is commonly between
+Pablo [16:08]: orange and here maybe a little bit greenish color
+Pablo [16:10]: it might tell you a little more
+Pablo [16:13]: but then i think in this case
+Pablo [16:18]: scale is okay
+Pablo [16:24]: o
+Pablo [16:26]: kay another selection and highlight
+Pablo [16:27]: ing
+Pablo [16:29]: so this is like
+Pablo [16:34]: a chart
+Pablo [16:39]: design
+Pablo [16:47]: but then you can actually make a selection and kind of stand out and others kind of
+Pablo [16:48]: become smaller
+Pablo [16:51]: become like the background
+Pablo [16:53]: the content
+Pablo [17:12]: what is called this is called what graph
+Pablo [17:16]: actually
+Pablo [17:19]: i work out the name anybody remember the name of
+Pablo [17:20]: that
+Pablo [17:20]: brush
+Pablo [17:31]: this is basically a radio layout
+Pablo [17:36]: no
+Pablo [17:36]: it's not
+Pablo [17:39]: for some reason
+Pablo [17:56]: this is
+Pablo [17:57]: what i
+Pablo [18:00]: represent
+Pablo [18:19]: if
+Pablo [18:19]: you have to
+Pablo [18:25]: then
+Pablo [18:25]: you can get exactly
+Pablo [18:26]: what
+Pablo [18:31]: you
+Pablo [18:32]: don't want to stand out
+Pablo [18:41]: this
+Pablo [18:42]: chinese graph
+Pablo [18:43]: the
+Pablo [18:44]: action already
+Pablo [18:51]: again
+Pablo [18:52]: have all the
+Pablo [18:55]: real
+Pablo [18:56]: love to see some
+Pablo [18:57]: human
+Pablo [18:58]: design
+Pablo [18:59]: all of your final
+Pablo [19:31]: five
+Pablo [20:36]: utilization
+Pablo [20:37]: for
+Pablo [20:38]: some
+Pablo [20:39]: group
+Pablo [20:41]: and
+Pablo [20:42]: they have
+Pablo [20:44]: a display wall
+Pablo [20:46]: like
+Pablo [20:49]: longer wider than this
+Pablo [20:53]: so it's like huge display right very long
+Pablo [20:56]: they do that for whatever reason
+Pablo [21:01]: so we were able to display a parallel coordination
+Pablo [21:03]: visualization
+Pablo [21:05]: from that end to
+Pablo [21:07]: the other hand
+Pablo [21:11]: with so many they want to study body marinade and they have so many variables
+Pablo [21:16]: those are very impressive and long
+Pablo [21:18]: really long hair
+Pablo [21:23]: but here we talk about the problem with
+Pablo [21:24]: coord
+Pablo [21:25]: inates
+Pablo [21:29]: visualization is that when you have too many samples
+Pablo [21:29]: right
+Pablo [21:34]: then you have this overclocking problem
+Pablo [21:37]: you have the visual cluster
+Pablo [21:40]: and so it's important that you allow the user to make selection
+Pablo [21:44]: for a particular axis right
+Pablo [21:52]: could be categorical could be quantitative they can select a particular category or particular range
+Pablo [21:53]: value
+Pablo [21:57]: to kind of study
+Pablo [21:59]: some
+Pablo [22:01]: particular relations
+Pablo [22:04]: particular relation of interest
+Pablo [22:24]: how many of you will use variable coordina
+Pablo [22:25]: te
+Pablo [22:28]: don't know yet
+Pablo [22:39]: linking and device
+Pablo [22:42]: so definitely
+Pablo [22:44]: every one of you
+Pablo [22:46]: will have multiple views
+Pablo [22:49]: on your interface
+Pablo [22:51]: when you have multiple view
+Pablo [22:57]: if they are related right
+Pablo [23:07]: so you can display them side by side when you display this side by side with the user interact with one of the view
+Pablo [23:11]: then you should
+Pablo [23:19]: link if all these views on display they are related in some way so when user interf is one of the view
+Pablo [23:23]: all other views not just that view response
+Pablo [23:23]: right
+Pablo [23:27]: whole other view should respond
+Pablo [23:27]: too
+Pablo [23:29]: like what we show here
+Pablo [23:35]: say per day if you say oh i have three views
+Pablo [23:38]: but then i will have four views whatever
+Pablo [23:42]: but then they don't all relate
+Pablo [23:47]: it then you might want to think about how you reorganize your interface
+Pablo [23:50]: because if you
+Pablo [23:57]: have four or five views you got to use but then some of them not really related to one another right
+Pablo [24:04]: then you might not want to put all display all them at once
+Pablo [24:08]: why because you have limited
+Pablo [24:12]: screen space and you don't know
+Pablo [24:17]: what is fake divides the user will use
+Pablo [24:21]: whether you got your application
+Pablo [24:32]: if all those views not reinovated then you might want to only display one or two view at a time
+Pablo [24:39]: and while keep the other right then there must be a better deal owner
+Pablo [24:49]: users supposed to see this view first and then the next view in some order then you can put them on separate head
+Pablo [24:59]: lamp so user will go and then you can use more screen space more pixel for each view but sometimes you do want to have
+Pablo [25:05]: mute side by side for comparison or they related
+Pablo [25:17]: because we interact with one for selection and you can see the related content the other may be variable or something
+Pablo [25:27]: like you select your county right from the map and then the other view displays some other information
+Pablo [25:29]: specific to this county
+Pablo [25:31]: yes
+Pablo [25:32]: once
+Pablo [25:36]: you mention
+Pablo [25:40]: was
+Pablo [25:53]: for all those symbols you would make
+Pablo [25:57]: it
+Pablo [26:10]: the sinky diagram
+Pablo [26:15]: in a way
+Pablo [26:27]: where you would see ninety db not in the most of time not individual sample i sent you
+Pablo [26:31]: okay
+Pablo [26:35]: so we see here i think
+Pablo [26:40]: they recognize using threshold selection to kind of
+Pablo [26:45]: basically select a subset and immediately
+Pablo [26:51]: blow up view right and then you see the correspondence
+Pablo [26:52]: one
+Pablo [26:58]: area
+Pablo [27:15]: this is probably different auditing and then here
+Pablo [27:25]: yeah basically just to select three
+Pablo [27:29]: all relevant and then you just make selection
+Pablo [27:33]: you can see detail
+Pablo [27:37]: so here is another
+Pablo [27:39]: thinking so remember we talked about
+Pablo [27:41]: small multiples
+Pablo [27:47]: it's like a small logical view of data
+Pablo [27:55]: so you can see when the user interact with one clock
+Pablo [28:02]: typing selection say if they share if the order in this case all the x axis
+Pablo [28:11]: represent the same quantity so it's y then when the user in this case
+Pablo [28:14]: every day
+Pablo [28:17]: move to get a specific value like this
+Pablo [28:18]: case
+Pablo [28:21]: so this linking brush
+Pablo [28:24]: also very common
+Pablo [28:25]: very very useful
+Pablo [28:31]: there's
+Pablo [28:31]: more
+Pablo [28:32]: how to draw
+Pablo [28:34]: like a math right make a selection
+Pablo [28:38]: domain and then get very specific information here
+Pablo [28:46]: which cd if you select and then there's some overview
+Pablo [28:48]: selection
+Pablo [29:06]: so
+Pablo [29:07]: for having
+Pablo [29:07]: this example
+Pablo [29:09]: i
+Pablo [29:10]: put a link here
+Pablo [29:15]: most of them have been still defective but then
+Pablo [29:22]: i discover a few of them already it's obsolete
+Pablo [29:25]: i think they remove the original page
+Pablo [29:27]: not necessary
+Pablo [29:27]: there
+Pablo [29:31]: but i think
+Pablo [29:36]: by itself it's pretty obvious
+Pablo [29:39]: what is interact
+Pablo [29:39]: ive
+Pablo [29:41]: is about
+Pablo [29:45]: okay laura thank you
+Pablo [29:52]: this is like i think this is uber right
+Pablo [29:57]: talking about travel time
+Pablo [30:02]: travel time during the day
+Pablo [30:05]: you basically give you idea like you want to go from here to here
+Pablo [30:07]: and then give you some information
+Pablo [30:13]: about table type by day of week
+Pablo [30:15]: by hour of the day
+Pablo [30:19]: it give you that detail
+Pablo [30:31]: this is a graph
+Pablo [30:34]: and just very simple just do a username
+Pablo [30:36]: based on no degree
+Pablo [30:39]: not degree degree
+Pablo [30:52]: represent the connectivity how many connection this nodes has to add a node higher degree means more connection
+Pablo [30:59]: so here is future the graph based on degree
+Pablo [31:07]: when you allow user to navigate
+Pablo [31:26]: to make selection like select subset and then keep zoom in to some subset or data to see detail it's always nice to have a reset like go back to the go back to
+Pablo [31:34]: the initial setting going back to the overview for example like one step go back
+Pablo [31:43]: any question comment
+Pablo [31:49]: another filtering
+Pablo [31:54]: like here you can make selection of
+Pablo [32:01]: the base of time period so you can choose weak or months
+Pablo [32:07]: the length of the time that as a moving window
+Pablo [32:09]: you see
+Pablo [32:28]: how it changes like each hexagon represent like in this case a state and you can go back to the regular map and then just hit in a way as you know right some will stay very big sometimes they might true size
+Pablo [32:32]: some of the same become too small
+Pablo [32:41]: but here they just represent every state equal signs but you still can recognize this is close to the shape of united states
+Pablo [32:47]: and
+Pablo [32:50]: that is color scale
+Pablo [32:53]: like very simple but then
+Pablo [32:58]: you get the sense of the actual difference right between the different states
+Pablo [33:15]: another one
+Pablo [33:25]: if this path is for you to choose to determine whether you should rent or you should buy
+Pablo [33:28]: a house or use your
+Pablo [33:35]: and you say if you can rent a similar home for less than decimal
+Pablo [33:37]: so if the house
+Pablo [33:41]: if the house is price
+Pablo [33:43]: then
+Pablo [33:49]: if you can rent below this price or lower then you should rent
+Pablo [33:50]: rather than
+Pablo [33:51]: buy
+Pablo [33:55]: but then there is a lot of other information you see
+Pablo [33:57]: three
+Pablo [34:01]: more waves one two three four
+Pablo [34:03]: right and then they all link
+Pablo [34:04]: they all link
+Pablo [34:15]: some idea now
+Pablo [34:17]: get inspired
+Pablo [34:35]: this is tableau's user interface
+Pablo [34:38]: you guys anybody play with tableau
+Pablo [34:47]: it's a commercial visualization package very popular because it's very simple to use a
+Pablo [34:54]: one aspect is based on so called drag and drop
+Pablo [35:00]: like
+Pablo [35:01]: what
+Pablo [35:03]: the attribute right
+Pablo [35:05]: and then you code it
+Pablo [35:07]: all down
+Pablo [35:08]: by drag and drop
+Pablo [35:12]: so of course here
+Pablo [35:14]: so this
+Pablo [35:17]: pack
+Pablo [35:18]: age is called ad
+Pablo [35:22]: i
+Pablo [35:26]: company
+Pablo [35:26]: use it
+Pablo [35:27]: and
+Pablo [35:28]: it's very success
+Pablo [35:28]: ful
+Pablo [35:33]: because
+Pablo [35:34]: the pm
+Pablo [35:35]: is set up
+Pablo [35:40]: they
+Pablo [35:42]: don't really have any fancy visualization
+Pablo [35:43]: so
+Pablo [35:44]: very simple graph
+Pablo [35:45]: and charts
+Pablo [35:47]: but then that's what the business world
+Pablo [35:48]: right
+Pablo [35:50]: they use
+Pablo [35:51]: so it's different
+Pablo [35:52]: i think if
+Pablo [35:53]: it's scientific
+Pablo [35:53]: ally
+Pablo [35:55]: business
+Pablo [35:56]: and
+Pablo [36:00]: it's an
+Pablo [36:02]: even
+Pablo [36:06]: so
+Pablo [36:08]: it can go from
+Pablo [36:11]: this different category
+Pablo [36:12]: for
+Pablo [36:14]: from year
+Pablo [36:15]: to
+Pablo [36:19]: quarter right now it's border
+Pablo [36:27]: yeah this is
+Pablo [36:29]: too tableau right
+Pablo [36:32]: but it's just allowing users to
+Pablo [36:36]: encoding re encoding
+Pablo [36:46]: and in this case try to drag this cluster originally this is the scalar bar
+Pablo [36:51]: right with all the parting all the samples in the data
+Pablo [36:52]: but
+Pablo [36:55]: at the end they apply faster just by drag and drop
+Pablo [36:58]: os three right from q right
+Pablo [37:01]: there's one two three four classes
+Pablo [37:05]: and then they just color based on the processing results
+Pablo [37:14]: so hope so maybe one of you will do drag and drop
+Pablo [37:16]: interface
+Pablo [37:25]: and
+Pablo [37:29]: head and zoom right now limit into geographical
+Pablo [37:30]: data
+Pablo [37:33]: the map is obvious like google map
+Pablo [37:48]: certainly the existing map library support is i'm pretty sure
+Pablo [37:52]: we
+Pablo [37:59]: have one right as i say not limited to math geographical map
+Pablo [38:01]: even
+Pablo [38:03]: because
+Pablo [38:06]: we solve several
+Pablo [38:07]: example
+Pablo [38:12]: size
+Pablo [38:13]: represents
+Pablo [38:16]: some of
+Pablo [38:17]: the points to
+Pablo [38:18]: highly
+Pablo [38:19]: dis
+Pablo [38:20]: overlive
+Pablo [38:24]: so
+Pablo [38:25]: we can
+Pablo [38:28]: see
+Pablo [38:29]: some
+Pablo [38:30]: of ego
+Pablo [38:38]: you can
+Pablo [38:39]: go back to
+Pablo [38:40]: takeover
+Pablo [38:41]: s quick
+Pablo [38:41]: ly
+Pablo [38:46]: usually it's like left right
+Pablo [38:47]: up
+Pablo [38:48]: down
+Pablo [38:51]: then you get that what you want
+Pablo [38:53]: zoom it zoom in
+Pablo [39:04]: focus
+Pablo [39:08]: means
+Pablo [39:11]: you have overview
+Pablo [39:15]: and allow user to zoom in
+Pablo [39:17]: to go to
+Pablo [39:23]: a smaller subset of the data in this case it is a sub region
+Pablo [39:26]: in this map this map here
+Pablo [39:32]: is matthew the overview but then you log into zoom in
+Pablo [39:34]: and
+Pablo [39:39]: this case zoom into here but then this is overall maybe you start with
+Pablo [39:45]: star with this but now you already zoom in but you like to know
+Pablo [39:48]: where exactly you will look at
+Pablo [39:51]: respect to
+Pablo [39:53]: this overall region
+Pablo [39:57]: and this is due to the out
+Pablo [39:58]: line
+Pablo [40:01]: so you keep the viewer
+Pablo [40:05]: orient they always know
+Pablo [40:08]: where so
+Pablo [40:10]: in this case
+Pablo [40:12]: i believe they can
+Pablo [40:13]: move in this way
+Pablo [40:14]: or
+Pablo [40:15]: even this
+Pablo [40:16]: moon is
+Pablo [40:17]: kind of
+Pablo [40:19]: like remove
+Pablo [40:19]: this rectangle
+Pablo [40:21]: because this
+Pablo [40:21]: two range
+Pablo [40:23]: is
+Pablo [40:24]: to
+Pablo [40:25]: be
+Pablo [40:26]: sorry
+Pablo [40:27]: i know everything
+Pablo [40:27]: is changing
+Pablo [40:28]: or they move
+Pablo [40:29]: here
+Pablo [40:30]: somehow
+Pablo [40:31]: and
+Pablo [40:33]: this rectangle
+Pablo [40:42]: this forecast
+Pablo [40:44]: plus
+Pablo [40:46]: this is focus plus count x
+Pablo [41:00]: so
+Pablo [41:01]: this is
+Pablo [41:01]: focus
+Pablo [41:02]: this is a
+Pablo [41:03]: context
+Pablo [41:04]: in
+Pablo [41:05]: order to get it right
+Pablo [41:07]: and
+Pablo [41:08]: this card and
+Pablo [41:09]: storm are
+Them [41:20]: you
+Them [41:21]: seeing
+Them [41:28]: the
+Them [41:28]: boy
+Them [41:36]: sess
+Them [41:36]: ion
+Them [41:41]: so
+Them [41:42]: you have
+Them [41:43]: this
+Them [41:43]: over here
+Them [41:45]: you can scroll and then here
+Them [41:46]: is one
+Them [41:51]: cont
+Them [41:51]: ext
+Them [41:57]: we
+Them [41:58]: all use this
+Them [42:18]: also
+Them [42:19]: called
+Them [42:25]: it to
+Them [42:26]: focus
+Them [42:27]: in
+Them [42:28]: this case
+Them [42:37]: and
+Them [42:38]: have
+Them [42:44]: e
+Them [42:49]: wan just one
+Them [42:50]: new
+Them [42:51]: achieve
+Them [42:52]: professing
+Them [42:53]: content
+Them [42:54]: so any
+Them [42:55]: body landscape
+Them [42:56]: in that
+Them [43:02]: this is
+Them [43:03]: what you
+Them [43:04]: and then
+Them [43:05]: you have
+Them [43:06]: this
+Them [43:08]: is
+Them [43:08]: content
+Them [43:09]: ninety
+Them [43:10]: five minutes
+Them [43:11]: the name of the
+Them [43:12]: you have is a dist
+Them [43:12]: ortion
+Them [43:14]: around
+Them [43:15]: the main financ
+Them [43:15]: e
+Them [43:17]: because
+Them [43:18]: you want to keep in your keys
+Them [43:22]: and
+Them [43:22]: here you can see
+Them [43:23]: here
+Them [43:25]: magnify
+Them [43:28]: this
+Them [43:29]: region
+Them [43:31]: some
+Them [43:32]: how you can see better
+Them [43:44]: not everybody
+Them [43:45]: like
+Them [43:45]: this
+Them [43:48]: so
+Them [43:53]: if you want to have a focus bus contact for your application
+Them [43:56]: you can choose between these two
+Them [44:03]: is there another way to do forecast bounce
+Them [44:03]: content
+Pablo [44:26]: you
+Pablo [44:27]: saw i present
+Pablo [44:30]: ed and numerical
+Pablo [44:30]: data
+Pablo [44:33]: the
+Pablo [44:34]: audio is very important
+Pablo [44:35]: i
+Pablo [44:36]: value
+Pablo [44:38]: father
+Pablo [44:40]: and sometimes there
+Pablo [44:41]: is a natural
+Pablo [44:47]: but then maybe by default you represent that
+Pablo [44:52]: label is based on
+Pablo [44:58]: this based on the label abcd or they sorted based on the quantity
+Pablo [44:58]: right
+Pablo [45:03]: and
+Pablo [45:07]: then there might be multiple quantity depends
+Pablo [45:09]: maybe
+Pablo [45:11]: this
+Pablo [45:12]: half
+Pablo [45:14]: this
+Pablo [45:22]: is based on y quantity but you store all this item these samples based on another quantity
+Pablo [45:31]: like that tooth put out to use it to understand
+Pablo [45:34]: things better
+Pablo [45:36]: so
+Pablo [45:39]: this layout sync
+Pablo [45:40]: right
+Pablo [45:45]: exampular way in this case sorted wave can be helpful
+Pablo [45:47]: if you have a numerical value
+Pablo [45:50]: especially multivariable
+Pablo [45:54]: and then sorting
+Pablo [45:58]: can be applied and can be counter effective
+Pablo [45:59]: helpful
+Pablo [46:05]: in different places in this case we have a matrix
+Pablo [46:06]: path
+Pablo [46:07]: you remember
+Pablo [46:10]: so by evil
+Pablo [46:11]: they need to face
+Pablo [46:12]: out
+Pablo [46:19]: rely on any other experience based up say storage order
+Pablo [46:20]: like this is
+Pablo [46:22]: like an array of
+Pablo [46:24]: quantity
+Pablo [46:26]: so maybe you have
+Pablo [46:38]: the
+Pablo [46:45]: forty
+Pablo [46:50]: between
+Pablo [46:51]: the
+Pablo [46:55]: obvious case
+Pablo [46:56]: is
+Pablo [46:57]: now
+Pablo [46:57]: it's like
+Pablo [46:58]: graph
+Pablo [46:59]: so it could
+Pablo [47:00]: be
+Pablo [47:04]: the
+Pablo [47:05]: notes in the graph
+Pablo [47:06]: so
+Pablo [47:07]: you have this
+Pablo [47:08]: fourteen notes
+Pablo [47:11]: this one
+Pablo [47:12]: show
+Pablo [47:17]: like if there's a dot means
+Pablo [47:19]: there's edge between the two nodes
+Pablo [47:23]: so this basically
+Pablo [47:27]: matrix
+Pablo [47:30]: visualization of a graph
+Pablo [47:37]: so this is this order could be just based on like you say input order
+Pablo [47:40]: it's like based on
+Pablo [47:45]: essentially the storage how you store
+Pablo [47:52]: you have array of nodes right so it's basically the first item of the array
+Pablo [48:04]: but then you can sort it once you sort it because by default meaning you really just see oh there's connectivity it's somewhat like this
+Pablo [48:07]: but then once you sort the notes
+Pablo [48:12]: according to the known decrease in this case you see some cluster
+Pablo [48:19]: so this is like maybe it's like high degree this way
+Pablo [48:26]: so then you have this low degree nodes forming some of the nodes they form clusters
+Pablo [48:36]: and then there's community structure right based on source effects of community spreadsheet structure so there's some sort of
+Pablo [48:39]: network analysis measure
+Pablo [48:44]: and then you get different clusters
+Pablo [48:53]: so then you should allow there should be many indices
+Pablo [49:01]: pull down menu right maybe there's a list of quantity the user can choose to
+Pablo [49:07]: sort and then if it's like a network analysis expert usually know
+Pablo [49:14]: what it's good to choose to soar and then
+Pablo [49:15]: what
+Pablo [49:18]: patterns right
+Pablo [49:21]: could be
+Pablo [49:25]: so this is a way
+Pablo [49:31]: to navigate to analyze
+Pablo [49:33]: such data
+Pablo [49:41]: and then it's always good to remember when you display something
+Pablo [49:46]: latching is very important and labor is very important
+Pablo [49:50]: even better annotation
+Pablo [49:52]: because
+Pablo [49:54]: remember
+Pablo [49:58]: whether you are creating is
+Pablo [50:01]: for larger leaves for somebody else
+Pablo [50:02]: to use
+Pablo [50:06]: or
+Pablo [50:07]: exper
+Pablo [50:08]: t
+Pablo [50:17]: i know everything
+Pablo [50:18]: well
+Pablo [50:21]: then
+Pablo [50:23]: we use
+Pablo [50:23]: it
+Pablo [50:28]: in
+Pablo [50:29]: the name of thing
+Pablo [50:30]: whenever
+Pablo [50:31]: possible
+Pablo [50:33]: and you annotate
+Pablo [50:37]: and you use color you always provide a color ledger
+Pablo [50:43]: side you also provide
+Pablo [50:45]: the actual
+Pablo [50:47]: graphically
+Pablo [50:51]: how the size correspond to the actual
+Pablo [50:53]: quantity
+Pablo [50:58]: so here we see right
+Pablo [51:01]: there's
+Pablo [51:03]: all kinds of label
+Pablo [51:08]: education
+Pablo [51:15]: under
+Pablo [51:16]: wire
+Pablo [51:19]: the
+Pablo [51:21]: type of point
+Pablo [51:25]: two particular events or time point
+Pablo [51:27]: to draw
+Pablo [51:29]: viewers attention
+Pablo [51:35]: of course there is more i mean they can make selection
+Pablo [51:36]: and
+Pablo [51:38]: there's more detail explanation
+Pablo [51:44]: there is one example
+Pablo [51:47]: this is from new york times
+Pablo [51:52]: budget
+Pablo [51:54]: protesting
+Pablo [51:57]: and then they also have
+Pablo [52:03]: point out some particular
+Pablo [52:05]: time point
+Pablo [52:11]: this one was created by my student many years ago
+Pablo [52:14]: on
+Pablo [52:16]: this school bully data
+Pablo [52:18]: i think showed this right
+Pablo [52:23]: anybody remember this
+Pablo [52:28]: we can take a look
+Pablo [52:32]: so
+Pablo [52:34]: this is an app
+Pablo [52:35]: the student
+Pablo [52:36]: create
+Pablo [52:42]: d and so we work with professor at the sociology department at uc davis
+Pablo [52:45]: so he studied
+Pablo [52:50]: school bully middle high school
+Pablo [52:53]: people i think
+Pablo [52:57]: from a squared of middle high school and middle age
+Pablo [53:03]: and then
+Pablo [53:05]: they did like survey
+Pablo [53:12]: they ask that each student
+Pablo [53:14]: who are their friends
+Pablo [53:19]: and then also if they are bullied by
+Pablo [53:19]: whoever
+Pablo [53:25]: or they know somebody was bullied by
+Pablo [53:35]: they did that she got all the data back and then they want to analyze the data right and so we help them visualize the data
+Pablo [53:42]: so it's like a social network
+Pablo [53:45]: so we can visualize
+Pablo [53:47]: the friendship network
+Pablo [53:49]: and
+Pablo [53:55]: then we can also visualize the boolean network or we call aggression network
+Pablo [54:00]: we can look at her grade
+Pablo [54:02]: at grade level
+Pablo [54:08]: i think this is eighth grade
+Pablo [54:11]: a squared
+Pablo [54:19]: yes
+Pablo [54:20]: i think
+Pablo [54:25]: the
+Pablo [54:26]: no side
+Pablo [54:30]: this
+Pablo [54:31]: student has
+Pablo [54:32]: drive horny
+Pablo [54:33]: iowa
+Pablo [54:35]: says
+Pablo [54:36]: this
+Pablo [54:37]: student was
+Pablo [54:38]: owning a
+Pablo [54:55]: demon
+Pablo [54:57]: ic
+Pablo [54:58]: student
+Pablo [54:59]: and this is
+Pablo [55:13]: a victor bully
+Pablo [55:15]: and this
+Pablo [55:16]: is actual
+Pablo [55:17]: key
+Pablo [55:17]: board
+Pablo [55:25]: anyway so the common there's four different column
+Pablo [55:34]: a will it be a say b is a bully sap is addiction sap is a friend
+Pablo [55:39]: so
+Pablo [55:40]: when i have a dis
+Pablo [55:41]: aster
+Pablo [55:45]: some
+Pablo [55:46]: tradition
+Pablo [55:46]: al data
+Pablo [55:47]: and
+Pablo [55:48]: it shows examp
+Pablo [55:49]: le
+Pablo [55:50]: and then
+Pablo [55:51]: i
+Pablo [55:59]: basically
+Pablo [56:02]: present as
+Pablo [56:05]: organized as interactive slides
+Pablo [56:07]: but then toward the end you can navigate
+Pablo [56:11]: so since you never seen this before
+Pablo [56:13]: and we still have time
+Pablo [56:15]: let's go there
+Pablo [56:18]: i think
+Pablo [56:18]: it's still
+Pablo [56:51]: visualization
+Pablo [56:53]: so then if you click
+Pablo [56:54]: you say we analyz
+Pablo [56:56]: e appreciat
+Pablo [57:02]: ion network collective seven ada high school students
+Pablo [57:04]: a grade to twelveth grader
+Pablo [57:11]: at no link diagram is used to succeed
+Pablo [57:14]: social behavior among the students
+Pablo [57:18]: and then we just show
+Pablo [57:22]: the connection we have based on the survey
+Pablo [57:26]: so let's show you how
+Pablo [57:29]: much information we have
+Pablo [57:37]: and then we say the nodes lay our base of their similarity in both friendships and grade
+Pablo [57:40]: so
+Pablo [57:45]: the layer where you have that we will talk about graph and network visualization
+Pablo [57:48]: next week
+Pablo [57:53]: so that is very important layout how you lay out the notes
+Pablo [58:02]: time is based on relation it's very tightly based on the connectivity
+Pablo [58:13]: so here a is greater i'm also in place in the top left so this is actually this is a square a three
+Pablo [58:16]: ninth grade ten square
+Pablo [58:24]: right
+Pablo [58:25]: no
+Pablo [58:26]: are students
+Pablo [58:27]: with a
+Pablo [58:28]: homegrade
+Pablo [58:30]: so there's some light
+Pablo [58:31]: color
+Pablo [58:31]: notes
+Pablo [58:42]: with unknown great information we don't know which grade but then we still able to lay them out based on what based on connectivity
+Pablo [58:50]: so the connectivity plays this node here so there's some high chance
+Pablo [58:54]: this field is actually belong to twelve squared
+Pablo [58:56]: but we're not sure
+Pablo [59:04]: to investigate a bully and bullying
+Pablo [59:14]: and victorite victimized by information of the student in the underlying network we aim for visual encoding to
+Pablo [59:15]: know
+Pablo [59:23]: we use no color to indicate students tendency to be bullying our victim
+Pablo [59:26]: so there is color one
+Pablo [59:33]: if it's a blue it's more likely to be bully
+Pablo [59:42]: this is a wrinkled color it's more red it's more likely to bully others
+Pablo [59:44]: so red is really bad
+Pablo [59:47]: and blue dark blue is really unfortunate
+Pablo [59:47]: right
+Pablo [59:49]: when you
+Pablo [59:51]: sad and then there's in between
+Pablo [59:58]: so
+Pablo [1:00:08]: i just click and now with gray color means that the student was not involved in any woolly related activity
+Pablo [1:00:22]: then we change the size of a note according to the number of reports that identify the correspondent student as recipient of boolean
+Pablo [1:00:23]: dissidents
+Pablo [1:00:30]: so you can see the higher grade right
+Pablo [1:00:33]: they have fewer incidents
+Pablo [1:00:47]: and
+Pablo [1:00:48]: this right hand
+Pablo [1:00:49]: square term
+Pablo [1:00:57]: we
+Pablo [1:00:58]: can then see
+Pablo [1:01:06]: at the graduate status their junior grades are more likely to be bullied as it seems have
+Pablo [1:01:08]: looked at the tenth grade
+Pablo [1:01:10]: more series
+Pablo [1:01:13]: okay
+Pablo [1:01:15]: then we talk about this right
+Pablo [1:01:19]: we actually use a little bit animation
+Pablo [1:01:28]: we draw even more attention to dig more deeply into individual story we use directionally animated
+Pablo [1:01:29]: edges
+Pablo [1:01:39]: to represent social relationship among students so then as i said different color represent different relation
+Pablo [1:01:45]: so you can just pick any notes you can see that
+Pablo [1:01:50]: so this is a selection and highlighting
+Pablo [1:01:56]: you can just
+Pablo [1:02:02]: a flowing red edge indicate bullying relation
+Pablo [1:02:06]: so
+Pablo [1:02:09]: yeah we can go through this right so you can go through this
+Pablo [1:02:13]: now let's find story about submitter
+Pablo [1:02:15]: so i think
+Pablo [1:02:22]: about this particular one who has particularly large no size
+Pablo [1:02:25]: remy said there's a lot of people before
+Pablo [1:02:28]: this student
+Pablo [1:02:34]: before has a return
+Pablo [1:02:37]: so you can just keep doing this
+Pablo [1:02:46]: and we have seen sorry about we can inspire a story about moonies
+Pablo [1:02:50]: like the student pulling out
+Pablo [1:02:51]: of
+Pablo [1:02:53]: so yeah you can do this
+Pablo [1:02:55]: and you can see this guy
+Pablo [1:03:01]: so you can just do
+Pablo [1:03:05]: this and then there are more stories can be told
+Pablo [1:03:09]: click to explore and find out more
+Pablo [1:03:12]: now you can start exploring yourself
+Pablo [1:03:13]: right
+Pablo [1:03:53]: go to the next topic
+Pablo [1:03:58]: and the next topic actually important
+Pablo [1:04:02]: every one of you should consider
+Pablo [1:04:05]: wait
+Pablo [1:04:07]: up
+Pablo [1:04:20]: now
+Pablo [1:04:21]: we're back here
+Pablo [1:04:23]: next
+Pablo [1:04:25]: is common
+Pablo [1:04:37]: depends on your interface
+Pablo [1:04:39]: whether you allow user to do
+Pablo [1:04:46]: if there is obscure key for the user to really do kind of
+Pablo [1:04:49]: drill down analysis kind of go very deep
+Pablo [1:04:55]: a lot of users navigate to explore
+Pablo [1:04:58]: and there is like a
+Pablo [1:04:59]: tree
+Pablo [1:05:01]: like a trajectory of
+Pablo [1:05:03]: navigation
+Pablo [1:05:07]: as i said
+Pablo [1:05:08]: after the message
+Pablo [1:05:09]: read
+Pablo [1:05:10]: the user
+Pablo [1:05:11]: back
+Pablo [1:05:12]: to the
+Pablo [1:05:13]: overview
+Pablo [1:05:16]: initial layout
+Pablo [1:05:16]: for them
+Pablo [1:05:20]: your sometimes after a while the user gets disoriented
+Pablo [1:05:25]: and so one effort
+Pablo [1:05:31]: is to keep the user oriented right that's why we have this focus plus context that's one way
+Pablo [1:05:33]: and the other
+Pablo [1:05:34]: way around and see
+Pablo [1:05:35]: is
+Pablo [1:05:40]: one
+Pablo [1:05:41]: page to the next
+Pablo [1:05:52]: page
+Pablo [1:05:53]: and
+Pablo [1:05:54]: then after a while
+Pablo [1:05:58]: sometimes
+Pablo [1:05:59]: you want to go back
+Pablo [1:06:03]: to not necessarily the very beginning maybe somewhere in the middle
+Pablo [1:06:08]: and how you go back
+Pablo [1:06:11]: so like most of the web page
+Pablo [1:06:13]: actually show you
+Pablo [1:06:15]: this navigation path remember
+Pablo [1:06:17]: i think
+Pablo [1:06:17]: that happens
+Pablo [1:06:21]: that's the next
+Pablo [1:06:22]: page
+Pablo [1:06:22]: example
+Pablo [1:06:23]: again
+Pablo [1:06:24]: i'll show you
+Pablo [1:06:25]: next
+Pablo [1:06:26]: but then
+Pablo [1:06:27]: what in prov
+Pablo [1:06:28]: ince here is
+Pablo [1:06:30]: basically keep a history
+Pablo [1:06:31]: in this case
+Pablo [1:06:37]: history of the visualization process
+Pablo [1:06:42]: and why we want to do that because as i say
+Pablo [1:06:46]: you want to help the user orient
+Pablo [1:06:48]: ed himself
+Pablo [1:06:53]: and then basically
+Pablo [1:06:56]: always helpful users know
+Pablo [1:06:57]: where he
+Pablo [1:07:00]: or she is at and also sometimes
+Pablo [1:07:03]: one user
+Pablo [1:07:09]: essential
+Pablo [1:07:10]: information
+Pablo [1:07:11]: and
+Pablo [1:07:12]: then
+Pablo [1:07:13]: want
+Pablo [1:07:14]: s to share
+Pablo [1:07:15]: the experience
+Pablo [1:07:17]: shar
+Pablo [1:07:18]: ing finding
+Pablo [1:07:23]: how redefining but also the experience the knowledge with others
+Pablo [1:07:28]: so rather than just share this end result say this
+Pablo [1:07:29]: visualization
+Pablo [1:07:31]: is really helpful
+Pablo [1:07:36]: in writing this visualization for everybody to see
+Pablo [1:07:38]: share with everybody
+Pablo [1:07:41]: see by finding right
+Pablo [1:07:43]: that's great but
+Pablo [1:07:46]: do even better is this is the result
+Pablo [1:07:49]: i also share with you
+Pablo [1:07:51]: how i
+Pablo [1:07:52]: get to
+Pablo [1:07:52]: him
+Pablo [1:07:53]: how
+Pablo [1:07:54]: i derive
+Pablo [1:07:55]: this
+Pablo [1:07:56]: without
+Pablo [1:07:57]: so that's
+Pablo [1:08:00]: the result but
+Pablo [1:08:01]: also the
+Pablo [1:08:02]: process the step
+Pablo [1:08:03]: lead
+Pablo [1:08:05]: two
+Pablo [1:08:07]: which lead to
+Pablo [1:08:09]: this result
+Pablo [1:08:17]: innoc
+Pablo [1:08:17]: ent
+Pablo [1:08:17]: right
+Pablo [1:08:19]: and then
+Pablo [1:08:20]: what interaction
+Pablo [1:08:25]: i took b to this visualization
+Pablo [1:08:27]: without
+Pablo [1:08:36]: so as i mentioned like a web page usually when you navigate
+Pablo [1:08:42]: a web page and you navigate you will have something like this right
+Pablo [1:08:48]: so from the home and then you navigate
+Pablo [1:08:52]: loc
+Pablo [1:08:52]: ation
+Pablo [1:08:53]: and you can
+Pablo [1:08:54]: always click
+Pablo [1:08:59]: any of this and go back to previous
+Pablo [1:09:00]: place
+Pablo [1:09:05]: and this is like really simple
+Pablo [1:09:12]: here it's just another example that we did
+Pablo [1:09:24]: so here it is like
+Pablo [1:09:28]: we have a different analysis result
+Pablo [1:09:29]: like each
+Pablo [1:09:37]: or some of them were made by a particular analyst and then there are other analysts
+Pablo [1:09:41]: so at the end somebody else count
+Pablo [1:09:44]: they want to review all the analysis based on
+Pablo [1:09:49]: but then you can go over all the analysis result
+Pablo [1:09:51]: ing
+Pablo [1:09:52]: activity
+Pablo [1:09:54]: and
+Pablo [1:09:55]: so you deny
+Pablo [1:09:56]: a little subway
+Pablo [1:10:00]: so
+Pablo [1:10:01]: it's important that
+Pablo [1:10:02]: each
+Pablo [1:10:04]: analysis
+Pablo [1:10:05]: what they did
+Pablo [1:10:06]: their analysis
+Pablo [1:10:07]: they
+Pablo [1:10:08]: also tried to
+Pablo [1:10:10]: keep certain
+Pablo [1:10:12]: information
+Pablo [1:10:13]: about
+Pablo [1:10:18]: what they use or how the encoding for example
+Pablo [1:10:21]: just that
+Pablo [1:10:27]: they went through or what are the important keywords
+Pablo [1:10:29]: maybe
+Pablo [1:10:30]: they
+Pablo [1:10:32]: are searching
+Pablo [1:10:39]: to make the do the filtering we based on what particular quantity
+Pablo [1:10:44]: so here
+Pablo [1:10:48]: right then the user come and say okay
+Pablo [1:10:51]: i care more about data coverage
+Pablo [1:10:53]: and then also
+Pablo [1:10:54]: keywords
+Pablo [1:10:59]: the visualization
+Pablo [1:11:00]: to support problems
+Pablo [1:11:03]: or organize all the sample
+Pablo [1:11:08]: one similar one
+Pablo [1:11:11]: here one another
+Pablo [1:11:18]: and the user can kind of hover over to see in this group
+Pablo [1:11:20]: what the visualization
+Them [1:11:20]: look
+Them [1:11:21]: like
+Them [1:11:25]: each group there are some what distinct visually
+Them [1:11:25]: this thing
+Them [1:11:30]: and this is based on a different right
+Them [1:11:35]: different request like really want to see
+Them [1:11:38]: those organized based on
+Them [1:11:40]: including
+Them [1:11:40]: choices
+Them [1:11:45]: each
+Them [1:11:46]: concept
+Them [1:11:51]: like this two right they are similar
+Them [1:12:05]: they are similar because based on the very similar encoding and this is not exactly the same but they're close enough so they are still kind of closer than others
+Them [1:12:10]: but in order to do this
+Them [1:12:12]: each
+Them [1:12:14]: of this must
+Them [1:12:15]: keep
+Them [1:12:19]: on letting support
+Them [1:12:20]: is common
+Pablo [1:12:34]: so
+Pablo [1:12:37]: here it kind of just
+Pablo [1:12:39]: summarizes that
+Pablo [1:12:44]: we'll design interactive visualization interface
+Pablo [1:12:47]: should support
+Pablo [1:12:50]: this
+Pablo [1:12:51]: as a minimum
+Pablo [1:12:55]: that you
+Pablo [1:12:56]: want to provide
+Pablo [1:12:57]: to
+Pablo [1:13:00]: use
+Pablo [1:13:01]: effective visual
+Pablo [1:13:02]: coding
+Pablo [1:13:14]: you allow being able the user to reduce visible data to relevant items so based on filterings
+Pablo [1:13:18]: and selection having
+Pablo [1:13:19]: then allow them to select
+Pablo [1:13:21]: the future
+Pablo [1:13:22]: means like we
+Pablo [1:13:22]: have
+Pablo [1:13:24]: allow
+Pablo [1:13:25]: ed them to do
+Pablo [1:13:26]: right
+Pablo [1:13:28]: okay i only want to see female
+Pablo [1:13:30]: for
+Pablo [1:13:31]: a lot of the a
+Pablo [1:13:40]: selection user just directly select
+Pablo [1:13:44]: especially directly interact and select from the visualization
+Pablo [1:13:48]: retrieve detail about interesting item
+Pablo [1:13:51]: individual samples
+Pablo [1:13:56]: and allow to navigate panzoom change
+Pablo [1:13:57]: view
+Pablo [1:14:10]: so
+Pablo [1:14:12]: i have several
+Pablo [1:14:15]: good examples to show you
+Pablo [1:14:19]: which
+Pablo [1:14:21]: oper
+Pablo [1:14:21]: ating system modific
+Pablo [1:14:22]: ation
+Pablo [1:14:23]: i will show you
+Pablo [1:14:26]: which demonstrate
+Pablo [1:14:27]: effect
+Pablo [1:14:28]: ive
+Pablo [1:14:29]: interaction
+Pablo [1:14:29]: design
+Pablo [1:14:39]: special
+Pablo [1:14:43]: interaction
+Pablo [1:14:45]: measures
+Pablo [1:14:47]: also
+Pablo [1:14:48]: using
+Pablo [1:14:49]: different
+Pablo [1:14:50]: devices
+Pablo [1:14:51]: for example
+Pablo [1:14:53]: it's not always based on
+Pablo [1:14:54]: mouse
+Pablo [1:15:13]: two minutes
+Pablo [1:15:17]: i really
+Pablo [1:15:18]: want to show yourself
+Pablo [1:15:26]: this is another
+Pablo [1:15:35]: allow
+Pablo [1:15:39]: ing the user to move the label because sometimes the uic
+Pablo [1:15:44]: overflowing and there may be user can move the label
+Pablo [1:15:46]: away
+Pablo [1:15:54]: by hand because for your application to automatically determine the optimal layout for the label
+Pablo [1:16:01]: now completing possible but maybe you don't bother that just allow user to move the label
+Pablo [1:16:03]: to
+Pablo [1:16:19]: this
+Pablo [1:16:21]: any
+Pablo [1:16:22]: question
+Pablo [1:16:23]: any
+Pablo [1:16:24]: thing any comment
+Pablo [1:16:27]: any request
+Pablo [1:16:29]: everybody's doing well

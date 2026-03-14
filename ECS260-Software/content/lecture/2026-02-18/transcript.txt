@@ -1,0 +1,497 @@
+Pablo [0:15]: it just follows the material
+Pablo [0:18]: okay
+Pablo [0:23]: announcements we have a few treats coming up in the next couple of weeks
+Pablo [0:34]: so next week we're going to have a group that i work closely with arne and helen they just published some nice papers related to our class
+Pablo [0:42]: they have not presented them anywhere yet the conference has come up but they're going to do it for the first time in our class
+Pablo [0:47]: by a right wing from
+Pablo [0:51]: that's going to be a treat so on wednesday
+Pablo [0:54]: it's going to be super fun
+Pablo [1:03]: and they've asked how to tailor it based on the distribution of people and knowledge in this class
+Pablo [1:08]: that's something to look forward i'll announce it later tomorrow
+Pablo [1:12]: the other thing is we're going to have several
+Pablo [1:13]: such things happen
+Pablo [1:25]: ing
+Pablo [1:47]: very
+Pablo [1:47]: quickly
+Pablo [1:56]: one
+Pablo [1:57]: thing is that we will have
+Pablo [1:58]: questions
+Pablo [1:59]: on
+Pablo [2:00]: ai and
+Pablo [2:09]: this lecture
+Pablo [2:10]: after
+Pablo [2:11]: the
+Pablo [2:12]: are example
+Pablo [2:13]: mixed model
+Pablo [2:14]: ing
+Pablo [2:15]: i will start
+Pablo [2:16]: ai
+Pablo [2:17]: for software engineering
+Pablo [2:22]: have an example
+Pablo [2:26]: software engineering for ai next
+Pablo [2:29]: week we'll do some
+Pablo [2:30]: guest lectures
+Pablo [2:35]: and we'll do llms next week
+Pablo [2:42]: but the first things first let's talk about your progress reports
+Pablo [2:49]: so i'm going to say things that are funnier than usual
+Pablo [2:53]: write them down and remind
+Pablo [3:00]: my patience is a bit lower so i apologize
+Pablo [3:04]: just reacting to the painkillers
+Pablo [3:06]: okay
+Pablo [3:10]: so i want to discuss the progress report so in particular
+Pablo [3:14]: what went well what didn't go well
+Pablo [3:20]: what patterns did you see as you were going through them and what anti pattern
+Pablo [3:24]: how are the teams working
+Pablo [3:27]: how is the project progress
+Pablo [3:32]: or to give you feedback within that
+Pablo [3:35]: i want to know from your perspective
+Pablo [3:37]: how many of you are satisfied
+Pablo [3:39]: with what you selected
+Pablo [3:42]: wealth as well as you expect
+Pablo [3:45]: how many of your unsatisfied
+Pablo [3:49]: unsatisfied means not that the writing is bad
+Pablo [3:54]: it means you didn't get as far as you want as you
+Pablo [3:54]: want
+Pablo [4:00]: nobody
+Pablo [4:05]: good that means things are progressing well
+Pablo [4:09]: how many of you didn't get
+Pablo [4:12]: to give us some archaeologists
+Pablo [4:13]: after
+Pablo [4:14]: all
+Pablo [4:15]: of us
+Pablo [4:17]: okay that's good to hear
+Pablo [4:21]: okay so then everything is working out any issues we received
+Pablo [4:24]: things are working
+Pablo [4:24]: great
+Pablo [4:28]: how about the sizes of repeat did we decide
+Pablo [4:33]: on large enough teams too large too small what do you think
+Pablo [4:37]: would you be doing better with a smaller
+Pablo [4:38]: team
+Pablo [4:41]: or would you need more people
+Pablo [4:48]: i didn't buy this dog in law it is perfect
+Pablo [4:51]: we have a team of five so it's kind of difficult
+Pablo [4:52]: for us to
+Pablo [4:56]: hear about five people
+Pablo [5:03]: i hear this about the previous instances
+Pablo [5:20]: often the way i think of myself when i have a difficult is have i made the process clear enough so that there are no difficulties have i iterated enough as a business difficulties adjusted my process
+Pablo [5:24]: is my metric for what's fair
+Pablo [5:26]: really achievable
+Pablo [5:31]: do i really want to measure my details
+Pablo [5:33]: of who contributed how much
+Pablo [5:38]: now of course there's obvious cases where something is not responsive
+Pablo [5:48]: and those cases can use an interval now you can tell people so communication is key but if there is communication
+Pablo [5:50]: the question
+Pablo [5:55]: have we been self selecting work have you been assigning work
+Pablo [6:02]: is everybody happy with the process so there's opportunities to adjust the process as you go through
+Pablo [6:07]: and there's opportunity to learn class people how will you continue
+Pablo [6:16]: at this point it's too late to play power games you need to build
+Pablo [6:21]: everybody recognizes the grade will belong to everybody but there will be an opportunity
+Pablo [6:26]: three of us think the fourth guy is doing much more than us
+Pablo [6:27]: we have a few more points
+Pablo [6:30]: four vice versa
+Pablo [6:39]: so there's always going to be this life with a team you don't have to you can write a statement saying you didn't
+Pablo [6:45]: so there is a way for me to kind of ask
+Pablo [6:46]: for
+Pablo [6:51]: anybody has anything to add to that
+Pablo [6:58]: what particular improvement to your sharing the load has been beneficial
+Pablo [7:00]: what has important
+Pablo [7:15]: is trying to buy up to things pretty well pipeline it's hard to work on things
+Pablo [7:16]: that are sequentially
+Pablo [7:27]: we can kind of speculate about what the output from earlier in the pipeline is going to be the next person but that may not always be accurate and then they'll just get more muddled further down the pipeline
+Pablo [7:29]: so that's been a bit difficult
+Pablo [7:33]: so as much as possible that's why i wanted you guys to have data as soon as possible
+Pablo [7:36]: even a sample could help
+Pablo [7:40]: trying to think
+Pablo [7:52]: identify the modules of the pipeline you would be in and out r and commit to it
+Pablo [7:58]: if you need to refactor the whole pipeline there better be a good reason for that
+Pablo [8:03]: and it's not a good reason to say well i didn't know this is what i was
+Pablo [8:04]: doing
+Pablo [8:06]: oh look i found something cool
+Pablo [8:08]: i'm going to use this microsoft
+Pablo [8:13]: make sure to hold clean is important
+Pablo [8:18]: so changes to the pipeline everybody has to vote right so there's some critical
+Pablo [8:23]: and then it goes down
+Pablo [8:29]: okay thank you
+Them [8:31]: i have
+Pablo [8:31]: a sense that
+Pablo [8:34]: experience
+Pablo [8:38]: in creating and working on a team
+Pablo [8:38]: that's good
+Pablo [8:39]: great
+Pablo [8:40]: for you
+Them [8:43]: i'm going to
+Them [8:44]: read together
+Pablo [8:52]: actually we're going to do the following
+Pablo [9:07]: we're going to use quad four point six to help us to structure so we're going to try to extract base on our templates and loop rates and then i'm going to do overview of where the project is
+Pablo [9:09]: should go to test impact
+Pablo [9:11]: so i'll add that funct
+Pablo [9:13]: ion that's the time so it may take us a week
+Pablo [9:16]: okay
+Pablo [9:19]: but you may get like an early feedback
+Pablo [9:23]: with the grade and then i'm going to give my feedback
+Pablo [9:27]: more about the visions of direction
+Pablo [9:32]: okay
+Pablo [9:34]: let's try this again
+Pablo [10:52]: everything goes to a vga cable there's no
+Pablo [10:54]: remember we procreate
+Pablo [10:59]: okay so what i wanted okay
+Pablo [11:06]: what i wanted to do here is go back to our example we talked last time
+Pablo [11:27]: gender and tenure paper which was for the purposes of look how much you can do different types of data for you to get an asset questions of social import and then i said that in addition to the fixed effect you had random effects you can start moving things
+Pablo [11:35]: let's see how this works out we have
+Pablo [11:44]: a small version ten thousand rows it's not the complete data
+Pablo [11:47]: but it's willing to sample
+Pablo [11:56]: only the problem here is that sampling only the first ten thousand rows in the file remember what the problem is
+Pablo [12:00]: if i have a call with one million rows
+Pablo [12:02]: what should be an issue there
+Pablo [12:09]: in other words ten thousand may be a good enough sample
+Them [12:28]: but what issue of bias that will be running into if i not just select first one if it's not shuffle you might get one categories or labels that are closer to the top
+Them [12:52]: that aren't that's right it depends how we gather the data initially whether the data was sorted what i call the smallest projects at first so then i would be sampling and then inferring that this is what the whole distribution looks like all the projects whereas i'm not and this is a known bias in this case i just illustrated how to use the method we will not get the final result in the paper
+Them [12:55]: but it will get us close
+Them [12:55]: okay
+Them [13:01]: so that's a known problem so now
+Them [13:05]: if you remember what we were doing was we were mark
+Them [13:12]: linear
+Pablo [13:12]: models because we're studying regression
+Pablo [13:19]: we need summary that tells us what the model actually
+Pablo [13:21]: looks like
+Pablo [13:27]: we got some goodness of it about forty percent of the variance was explained
+Pablo [13:35]: and we saw that it was a terrible terrible distribution of the residuals
+Pablo [13:42]: which didn't make much sense so we have to correct so we ended up having model two which was better
+Pablo [13:48]: and then now we're getting to model and more clear already
+Pablo [13:52]: seems to be getting a lot better
+Pablo [14:08]: and what we are doing in model three we're doing several adjustments first we are recognizing that there is a terrible skew toward outliers in the number of commits
+Pablo [14:11]: decades and decades of differences
+Pablo [14:17]: so there's three orders of magnitude maybe four so we are correcting for that by logging the data
+Pablo [14:20]: now we're using a different function
+Pablo [14:22]: now this is elmer
+Pablo [14:35]: and what elmer does is it's mixed effect models it allows for fixed and random effect so in addition to our fixed effect we are adding the random effect of
+Pablo [14:50]: project id so for all entries in the table and remember in this table we have different entries based on the quarter that we collect in the data project platform project and so on
+Pablo [14:56]: so the first thing we're doing actually we are collecting everything that's under the same project
+Pablo [15:03]: and we are saying all those under the same project will follow the same evolution
+Pablo [15:04]: if you will
+Pablo [15:08]: which is of course not data comes from the same place
+Pablo [15:10]: by doing this
+Pablo [15:19]: we are constraining the way the data can be so every row will not get a separate slope
+Pablo [15:20]: in the solution
+Pablo [15:27]: now you will see that there is a null and there is an exp
+Pablo [15:33]: and the null is this is what we expect by chance
+Pablo [15:37]: but the exp is the model we added
+Pablo [15:40]: has been factored
+Pablo [15:42]: in that project
+Pablo [15:47]: what this means is this is an ablation factor
+Pablo [15:56]: we have removed casual and we are adding to see how much more we can capture of the various now when you summarize
+Pablo [16:01]: when you fit these bubbles
+Pablo [16:02]: sorry
+Pablo [16:03]: okay
+Pablo [16:11]: there's the two models when we summarize these you see something a bit different
+Pablo [16:15]: than before because now
+Pablo [16:19]: the random effect in the fixed effect are separate
+Pablo [16:23]: and what we are told here is look
+Pablo [16:36]: project id the intercept captures about zero forty eight of the variance and then there is a zero point seven eight of the variance left now this doesn't make sense
+Pablo [16:51]: it doesn't add up to one it just tells you some number but it tells you how much does project id explain and then all the residual of the pen is left these guys will start pulling some
+Pablo [16:51]: where
+Pablo [17:00]: and that's what happens and then still these guys you can judge based on their t value
+Pablo [17:02]: however these p value is a bit
+Pablo [17:17]: different so we cannot offer the star which we offer like i said to judge the significance of period there is no such thing in this model you cannot say oh this one is significant this one is not based on the stars
+Pablo [17:29]: just a few so instead what we do is we do relative comparison between the model this model was
+Pablo [17:38]: the exp that here is the now if you do a summary of the null model
+Pablo [17:48]: the null model will show slightly different results
+Pablo [17:54]: okay very slightly different so if you see in the now model we don't have the fracture
+Pablo [18:01]: and here we do have the fact that the vector
+Pablo [18:09]: interestingly in this case it has a slightly negative value which is not meaningful it's a very small effect and it's not significant
+Pablo [18:14]: zero two on the p value is not significant s to be five or higher
+Pablo [18:24]: okay but let's see what has this given us it has given us here's a null model here is one that has moment
+Pablo [18:27]: um
+Pablo [18:33]: and how do we tell that we can't yet tell how we tell until we run
+Pablo [18:40]: a nova model and of course first you do all the checks
+Pablo [18:50]: so if you do all the checks here is a plot of model three exp what does that look like
+Pablo [18:53]: what we have done
+Pablo [19:04]: compared to well for those of you that actually saw this compared to the other individual versus feature this one looks much more randomly distrib
+Pablo [19:04]: uted
+Pablo [19:11]: so we are taking away effects that are meaningful and what's left is random
+Pablo [19:13]: so that's good that's encouraging
+Pablo [19:17]: and here is
+Pablo [19:26]: the difference between the two you can take a look at the aic or the bic i like to look at the bic usually
+Pablo [19:35]: and so you see the difference by adding woman we have not done anything
+Pablo [19:48]: very small part is not significantly both and this is the probability that you will for significance of the variable has the dual point
+Pablo [19:50]: so we have
+Pablo [19:57]: now done that and but as i said before really looking at headwoman doesn't make sense
+Pablo [20:07]: what makes sense is they can look at the diversity how much diversity is there or the blau index
+Pablo [20:19]: for every project recalculate the diversity so the most diverse team would be gender terms two men and two men
+Pablo [20:24]: three men and three women that's the most diverse that will have a diversity of one
+Pablo [20:29]: diversity of zero will be no man
+Pablo [20:30]: two women okay
+Pablo [20:37]: and it's a symmetric between and when you calculate that so anything in between
+Pablo [20:41]: and it's not a linear
+Pablo [20:43]: but when you calculate that
+Pablo [20:46]: increase
+Pablo [20:47]: map
+Pablo [20:48]: to something
+Pablo [20:49]: that's much more realistic
+Pablo [20:50]: and care about
+Pablo [20:58]: letter
+Pablo [20:59]: diversity
+Pablo [21:01]: for
+Pablo [21:02]: projects in different
+Pablo [21:02]: project
+Pablo [21:03]: s and not allow
+Pablo [21:04]: the method
+Pablo [21:05]: at the risk of
+Pablo [21:05]: considerations
+Pablo [21:06]: and
+Pablo [21:07]: then also
+Pablo [21:08]: with
+Pablo [21:11]: contact
+Pablo [21:12]: with
+Pablo [21:14]: the second
+Pablo [21:15]: question
+Pablo [21:17]: so
+Pablo [21:18]: when we have
+Pablo [21:19]: all this
+Pablo [21:19]: in this way
+Pablo [21:22]: we get
+Pablo [21:23]: model is much smaller
+Pablo [21:24]: than
+Pablo [21:27]: its
+Pablo [21:28]: soldier
+Pablo [21:35]: s
+Pablo [21:39]: so
+Pablo [21:40]: dealing with b
+Pablo [21:41]: sc
+Pablo [21:59]: as
+Pablo [22:00]: you see how gen
+Pablo [22:01]: der is increasing
+Pablo [22:02]: ly
+Pablo [22:03]: important
+Pablo [22:19]: is increasing
+Pablo [23:01]: what
+Pablo [23:02]: happened was
+Pablo [23:06]: actually
+Pablo [23:11]: and
+Pablo [23:12]: then you classify in terms of
+Pablo [23:13]: time
+Pablo [23:15]: and
+Pablo [23:16]: you squizzle
+Pablo [23:17]: into time group
+Pablo [23:17]: s
+Pablo [23:19]: how old were
+Pablo [23:19]: the projects
+Pablo [23:20]: and we did
+Pablo [23:21]: that because we recogn
+Pablo [23:22]: ize that there's different
+Pablo [23:23]: behavior
+Pablo [23:23]: s
+Pablo [23:25]: for
+Pablo [23:26]: younger projects
+Pablo [23:27]: versus
+Pablo [23:28]: lo and beh
+Pablo [23:29]: old what came
+Pablo [23:30]: after their dis
+Pablo [23:31]: ability
+Pablo [23:32]: div
+Pablo [23:32]: ersification
+Pablo [23:35]: the actual
+Pablo [23:36]: precise mod
+Pablo [23:36]: el
+Pablo [23:37]: but it's a little
+Pablo [23:39]: correct
+Pablo [23:40]: ing the number of
+Pablo [23:40]: commits
+Pablo [23:41]: using
+Pablo [23:42]: a geometric model
+Pablo [23:43]: rather than a
+Pablo [23:44]: linear one
+Pablo [23:46]: and using
+Pablo [23:47]: more
+Pablo [23:48]: variables here
+Pablo [23:50]: and
+Pablo [23:51]: splitting it across
+Pablo [23:52]: projects
+Pablo [23:53]: are different
+Pablo [23:54]: depending where
+Pablo [23:55]: the
+Pablo [23:56]: attitudes
+Pablo [23:58]: coming back to
+Pablo [23:59]: the
+Pablo [24:00]: significance
+Pablo [24:02]: actually there is a wage
+Pablo [24:06]: there is a way
+Pablo [24:07]: to
+Pablo [24:08]: tell
+Pablo [24:09]: what is the feat of the
+Pablo [24:10]: models
+Pablo [24:11]: that
+Pablo [24:56]: please think about if you have any question while i'm doing this
+Pablo [25:16]: there is a way
+Pablo [25:27]: to calculate something similar to the r squared remember the r squared is how much variance is explained versus token variants and we were lingering at about forty percent
+Pablo [25:35]: in the linear models then we increased it slightly to forty three percent when we started this last model
+Pablo [25:39]: tells you something very interesting
+Pablo [25:44]: it gives you two r squared one is conditional the other one is marginal
+Pablo [25:47]: and according r squared but it's not by r
+Pablo [25:48]: squared but it's the equivalent
+Pablo [25:59]: what do you think is marginal versus condition well marginal is the random effect so marginal is the fixed beta
+Pablo [26:04]: and then the additional is the added random effect
+Pablo [26:15]: in other words the first linear models that we ran that collected forty percent of the variable while we are decomposing variable
+Pablo [26:18]: and we're saying specifically
+Pablo [26:22]: only twenty percent is due to those
+Pablo [26:23]: fixed effect
+Pablo [26:30]: and the rest thirty three percent is due to all the things that we condition the project onto the same slope
+Pablo [26:37]: so there is something there we increase by thirteen percent the variance we are capturing
+Pablo [26:41]: going from forty percent
+Pablo [26:43]: we're doing much better
+Pablo [26:49]: everything is much better distributed more appropriate in fact
+Pablo [26:52]: in the paper we got sixty seven percent
+Pablo [26:59]: and that's when the
+Pablo [27:03]: full importance of diversity concept so what's that
+Pablo [27:04]: what's the point of
+Pablo [27:08]: all this the point of all this is that if you have a very small effect
+Pablo [27:11]: maybe just one or two percent will be
+Pablo [27:13]: getting
+Pablo [27:14]: explained
+Pablo [27:21]: you can't get to it until all the other effects are properly understood and accounted
+Pablo [27:22]: for
+Pablo [27:23]: okay
+Pablo [27:25]: so everything looks fuzzy
+Pablo [27:27]: until you start adding more data
+Pablo [27:38]: more predictors and condition the slopes on a project on the tight border and so on and then you start seeing something wonderful
+Pablo [27:44]: that project became very similarly the diversity does matter
+Pablo [27:49]: so if you have small effects
+Pablo [27:56]: with a very little variance of express do not intervals unless you're certain
+Pablo [27:58]: you have enough data our study
+Pablo [28:01]: unless you have a context for the other
+Pablo [28:09]: this is a story
+Pablo [28:17]: that i've shown you even here still can get to the state of the art
+Pablo [28:28]: i'm telling you this story because nowadays with ai everybody just spits stuff in and then you but you're not examining how easy is that
+Pablo [28:33]: you don't examine how much of the variance that affect explains
+Pablo [28:37]: if you do use ai
+Pablo [28:39]: you need some explainability
+Pablo [28:43]: we'll talk a little bit about it
+Pablo [28:48]: so
+Pablo [28:53]: let's finish this by saying if there's any questions and then i'll jump right into a
+Pablo [28:55]: i contact with learning
+Pablo [29:00]: i didn't really get the difference between
+Pablo [29:05]: yeah so if you remember we have fixed effect and we have random
+Pablo [29:16]: so random effect say for that particular variable i'm going to organize everything around it in such a way that the smoke is fixed
+Pablo [29:17]: for that variable
+Pablo [29:20]: across these project
+Pablo [29:28]: s they're constrained previously projects will have different slopes but now i'm going to constrain
+Pablo [29:32]: so if you look at my model here
+Pablo [29:35]: this brow model
+Pablo [29:40]: i have forks which is at least
+Pablo [29:41]: effect
+Pablo [29:43]: i chose
+Pablo [29:45]: my groc
+Pablo [29:46]: eries
+Pablo [29:49]: three
+Pablo [29:58]: left
+Pablo [30:17]: i
+Pablo [30:18]: additionally
+Pablo [30:19]: said
+Pablo [30:20]: i was
+Pablo [30:23]: together
+Pablo [30:28]: that
+Pablo [30:29]: there is a protein
+Pablo [30:29]: phase
+Pablo [30:30]: diversity
+Pablo [30:42]: so
+Pablo [30:43]: the three
+Pablo [30:44]: random
+Pablo [30:45]: effects
+Pablo [30:46]: are added to this
+Pablo [30:47]: marginal
+Pablo [30:48]: permutations
+Pablo [30:49]: and
+Pablo [30:50]: the grade
+Pablo [31:02]: present
+Pablo [31:02]: ation
+Pablo [31:15]: the
+Pablo [31:15]: goal was
+Pablo [31:17]: discipled finally she
+Pablo [31:17]: had
+Pablo [31:23]: more
+Pablo [31:24]: appropriate
+Pablo [31:25]: distribution
+Pablo [31:29]: i
+Pablo [31:30]: treat you after this
+Pablo [31:31]: don't get your
+Pablo [31:31]: mother
+Pablo [31:33]: but
+Pablo [31:34]: she needs
+Pablo [31:35]: for example
+Pablo [31:35]: why
+Pablo [31:36]: should a number of
+Pablo [31:37]: computers
+Pablo [31:43]: says
+Pablo [31:44]: the number of perimeter
+Pablo [31:45]: s was
+Pablo [31:57]: a
+Pablo [31:58]: pattern
+Pablo [31:59]: due
+Pablo [32:00]: to the people's
+Pablo [32:04]: project
+Pablo [32:05]: visual
+Pablo [32:18]: lab
+Pablo [32:19]: oratory
+Pablo [32:46]: consider
+Pablo [32:47]: ing how she
+Pablo [32:48]: had
+Pablo [32:49]: in general
+Pablo [32:50]: now
+Pablo [32:56]: these
+Pablo [32:57]: methods
+Pablo [32:58]: you can get
+Pablo [33:02]: results
+Pablo [33:03]: playful
+Pablo [33:03]: ly
+Pablo [33:08]: get
+Pablo [33:08]: stuff
+Pablo [33:10]: left
+Pablo [33:13]: a lot
+Pablo [33:13]: of data
+Pablo [33:16]: and
+Pablo [33:21]: so
+Pablo [33:22]: we know
+Pablo [33:29]: okay
+Pablo [33:32]: so i just want to
+Pablo [33:35]: remind us of
+Pablo [33:42]: where we are at because nowadays we don't invite us to forget everything about the other ai that's out there
+Pablo [33:49]: is it llms are all there is but it isn't let's talk about discriminative learning
+Pablo [33:51]: an element
+Pablo [33:56]: unless you modify them specifically they're not going to do this
+Pablo [33:58]: they're going to only be generated
+Pablo [34:22]: and they may look like they're discriminating but they're not okay so we don't have really much time but i've got pdf but this is what supervised and not supervised discriminative learning is for those of you that know this we are just getting the marginal probability we're not getting the total or the joint probe that we did generative
+Pablo [34:26]: how many of us are comfortable with
+Pablo [34:27]: it language
+Pablo [34:32]: okay some of us okay so these lectures are not for nothing
+Pablo [34:40]: on the left side we have supervised learning where we have some labels and then they are given an unlabeled thing we'll learn from the labeled ones
+Pablo [34:45]: in various different ways and we assign a label to this new guide
+Pablo [34:49]: i don't even know if there's a
+Pablo [34:49]: dog
+Pablo [34:53]: okay
+Pablo [35:05]: so i'm supervised learning it learns by itself there is no label x twelve
+Pablo [35:16]: the things that consider it for example the top two but again the bottom left in this part they look very similar right there is no noise
+Pablo [35:32]: so let's just amplifies them the difference so you will see that some of these things even though they may be clustered close together in some space so what happens is we don't have labels but things look more similar
+Pablo [35:39]: so the idea is if they look more similar they are closer together in some meaningful or semantic space right
+Pablo [35:44]: then the dog and that teeth are
+Pablo [35:52]: let's see do i want this allow
+Pablo [35:56]: no so let's not start
+Pablo [36:03]: let's leave this where we are but i do want to ask in the next couple of minutes
+Pablo [36:11]: i do have slides that talks about contrastive learning we talk about gans
+Pablo [36:12]: provided attention and transform
+Pablo [36:15]: many of these topics are interesting
+Pablo [36:21]: but then we have seen them okay i talk about
+Pablo [36:24]: attention
+Pablo [36:34]: is there a need for me to go over those would that be interesting to this audience or should we just skip to the applications
+Pablo [36:37]: i find to go either way
+Pablo [36:44]: it's like just about how those things work for context
+Pablo [36:50]: no i explain how they work so it's more theoretical and not in too much detail
+Pablo [36:53]: but as it should before apply
+Pablo [36:56]: but for example you see what a gan is
+Pablo [37:00]: and we will see what contrastive learning
+Pablo [37:04]: do you have so maybe it's a good review
+Pablo [37:13]: for some of you but let's go should we go there should we just jump into applications and we paper that use these
+Pablo [37:19]: so who wants to see a review first and then papers
+Pablo [37:24]: who we seek of reviews let's get to the usage
+Pablo [37:31]: why think the first group is larger
+Pablo [37:35]: so why don't i try to do it but keep it to a minimum
+Pablo [37:43]: thank you

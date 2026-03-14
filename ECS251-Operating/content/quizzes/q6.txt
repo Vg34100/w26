@@ -1,0 +1,11 @@
+**A. What benefit does HeMem get by using PEBS over page table scans?**
+
+PEBS samples memory accesses via CPU events asynchronously, which avoids the high CPU overhead of scanning page tables and doing TLB shootdowns, so it scales better to large memory sizes.
+
+**D. What is memory stranding?**
+
+Memory stranding is when all CPU cores on a server are allocated to VMs but there's still unallocated memory left over that can't be rented out, basically wasting DRAM capacity.
+
+**Long response (Q3): Are the savings (7-9% DRAM costs) of Pond worth the extra complexity? Why or why not?**
+
+I think the savings are worth it for large cloud providers like Azure since even a small percentage reduction in DRAM costs translates to massive savings at scale given how expensive DRAM is. The complexity of adding CXL hardware and ML prediction models is manageable since it's all handled at the platform level and is transparent to users and VMs. That said, for smaller providers the overhead might not be justified since the savings depend on having enough servers to pool across, so it really depends on the scale you're operating at.

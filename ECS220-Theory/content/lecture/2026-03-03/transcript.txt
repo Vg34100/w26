@@ -1,0 +1,1062 @@
+Pablo [0:29]: so even in these more realistic models with some concepts we can say well there's the most oval in bits
+Pablo [0:46]: that can be accessed or allocated for time step so even in those models you have your space found is that most big ov your combat as with n equals big o d so phrased in the language of complexity class what that means
+Pablo [0:52]: for every time bound t time of t is a subset of space
+Pablo [0:57]: so your program is using at most time t it's also used in most space t to
+Pablo [0:58]: within constants
+Pablo [1:06]: and apply in that specifically to polynomial as the time bound we get the p as a subset of e space
+Pablo [1:15]: so everything's solvable in polynomial time is already being solved in polyu space the colts are not only on time it doesn't have time to use more than that for the comp
+Pablo [1:22]: now going the other way we can relate them but only with a much weaker value
+Pablo [1:44]: but we can say that if a program is space bounded and it halts on olympus then that tells us about how much time it can take and the idea is could you imagine say that you have a binary alphabet on your tape now if it's not binary either this constant two or the constant and the big o would change
+Pablo [1:49]: but just for simplicity imagine binary alphabet
+Pablo [1:54]: and so if you never use more than s of n tape cells
+Pablo [2:06]: they're at most two to the s of n strings you can write there now there's more configurations than that because configuration is what's on the tape plus what state are you in plus where's the tape head
+Pablo [2:12]: but the state and the tape head are pretty negligible compared to the tape continent the tape convn
+Pablo [2:27]: able times the number of states and then times s of n but smn is playing a much bigger role over the x one here than the multiplication factor that you would account for the number of places the tapes loan would be
+Pablo [2:33]: so we can roll all that into this constant and say there's at most two to the o of s of n configurations
+Pablo [2:43]: but of course in a turing machine or any kind of program you ever literally exactly repeat a configuration you're in an infinite loop right deterministic
+Pablo [2:56]: if you run this configuration before and you came back to it you're just going to keep doing that over and over but then it would run forever so if you have space founded computation and it pulse on all inputs
+Pablo [2:58]: it can never repeat a configuration
+Pablo [3:06]: and that in turn bounds how many steps you can take before you must call to avoid repeating
+Pablo [3:27]: or in other words if you use space so then you use time at most tuning co estimates so again in the language of complexity classes we have that space of s is a subset of time of two to the o of s i mean that's a little ill defined union overall constants i can multiply by
+Pablo [3:35]: and then applying that specifically for s equals log n we get that l as a subset of b
+Pablo [3:43]: let's just pick this apart why is all this subsidy well these are the problems you can solve with a most logarithmic space
+Pablo [3:46]: but with deciders that always hold
+Pablo [3:59]: but if they use the most logarithmic space then there's that most two to the o of log n configurations but two to the o log n if you work out the algebra that's possible
+Pablo [4:04]: this
+Them [4:04]: to
+Pablo [4:12]: logarithmic space two to that power is polynomial so you have a plus seventy and then applying the exact same logic to p space
+Pablo [4:21]: you get that if a program uses polynomial space but holds on all inputs it cannot run more than exponential time and to avoid repeating
+Pablo [4:29]: so these are kind of the easy containments
+Pablo [4:33]: relating time and space it determines
+Pablo [4:40]: okay how about non deterministic time versus deterministic space
+Pablo [4:51]: well recall n time of t is a subset of time two to the o of t concretely the first example we did of this was mp is contained in x in other words
+Pablo [4:57]: if you have polynomial size witnesses that you can check easily
+Pablo [5:03]: then you can iterate over all of them and if they're polynomial size there's a most exponentially many of them
+Pablo [5:15]: so in exponential time you can check all possible witnesses but more generally in time exponential in t you can iterate over all the possible n time t witnesses
+Pablo [5:23]: and the algorithm very generally state because you never do it this way for concrete problems
+Pablo [5:25]: but all you do about
+Pablo [5:26]: the problem
+Pablo [5:29]: is a ten mp and therefore has to verify
+Pablo [5:30]: or even more betterly it's an
+Pablo [5:32]: end time of t as t time out of the veri
+Pablo [5:33]: fier
+Pablo [5:34]: you can always do this
+Pablo [5:35]: generate
+Pablo [5:36]: overall possible
+Pablo [5:38]: with the citizens
+Pablo [5:38]: of whatever your way
+Pablo [5:40]: this length is it'll be
+Pablo [5:41]: on the wheel
+Pablo [5:43]: but could be more general
+Pablo [5:44]: fatigue
+Pablo [5:46]: and you're
+Pablo [5:47]: just checking to see
+Pablo [5:49]: if there are
+Pablo [5:53]: businesses
+Pablo [5:56]: that
+Pablo [5:57]: formula
+Pablo [5:59]: now
+Pablo [6:00]: instead of blue
+Pablo [6:00]: printless algorithm
+Pablo [6:01]: how much space
+Pablo [6:02]: this is
+Pablo [6:03]: a detroit
+Pablo [6:04]: algorithm
+Pablo [6:05]: it use
+Pablo [6:06]: s some amount of space
+Pablo [6:07]: and
+Pablo [6:08]: no it's not
+Pablo [6:09]: a
+Pablo [6:10]: financial time
+Pablo [6:12]: but
+Pablo [6:13]: each comput
+Pablo [6:14]: ation of the verif
+Pablo [6:15]: ier reading
+Pablo [6:16]: is independent
+Pablo [6:17]: of one person
+Pablo [6:18]: only found that
+Pablo [6:19]: the software
+Pablo [6:20]: involves
+Pablo [6:22]: however
+Pablo [6:22]: left memory this
+Pablo [6:24]: thing even
+Pablo [6:25]: though
+Pablo [6:28]: va
+Pablo [6:29]: from any polynomial
+Pablo [6:29]: line
+Pablo [6:30]: so
+Pablo [6:32]: it's using space the most
+Pablo [6:32]: high
+Pablo [6:33]: that you must
+Pablo [6:34]: see that
+Pablo [6:37]: means
+Pablo [6:37]: more generally
+Pablo [6:38]: fatigue
+Pablo [6:40]: the way this
+Pablo [6:41]: length is going to be
+Pablo [6:42]: and
+Pablo [6:43]: most
+Pablo [6:44]: people
+Pablo [6:48]: but the point
+Pablo [6:49]: is this is a very long
+Pablo [6:50]: running loop
+Pablo [6:50]: but we use
+Pablo [6:51]: the space in the
+Pablo [6:52]: iterations of it
+Pablo [6:53]: ms
+Pablo [6:54]: r we're not using
+Pablo [6:55]: any more space
+Pablo [6:55]: than
+Pablo [6:56]: a single iteration
+Pablo [6:58]: or
+Pablo [6:59]: another way
+Pablo [7:00]: of
+Pablo [7:02]: space
+Pablo [7:03]: so
+Pablo [7:04]: it's all something
+Pablo [7:06]: that non deterministic imd
+Pablo [7:07]: you iterate
+Pablo [7:08]: over on possible wit
+Pablo [7:09]: nesses using omnid
+Pablo [7:16]: as
+Pablo [7:20]: if this
+Pablo [7:21]: one is playing
+Pablo [7:22]: and it's running by
+Pablo [7:29]: gives us
+Pablo [7:30]: some relationships
+Pablo [7:33]: throwing
+Pablo [7:34]: it all up there
+Pablo [7:37]: l
+Pablo [7:38]: is going into
+Pablo [7:39]: b amen
+Pablo [7:40]: d and the p
+Pablo [7:43]: sych
+Pablo [7:44]: exponential line
+Pablo [7:46]: and there's such
+Pablo [7:46]: things that
+Pablo [7:57]: we
+Pablo [7:58]: know
+Pablo [7:58]: three days
+Pablo [7:58]: slide
+Pablo [7:59]: your soul
+Pablo [8:00]: and not determin
+Pablo [8:01]: istic
+Pablo [8:01]: some amount of time
+Pablo [8:03]: you also solvable
+Pablo [8:05]: in deterministic non
+Pablo [8:05]: sense
+Pablo [8:08]: okay
+Pablo [8:10]: so
+Pablo [8:11]: here's the contain
+Pablo [8:11]: ment
+Pablo [8:13]: every
+Pablo [8:14]: individual ad
+Pablo [8:15]: jacent one
+Pablo [8:16]: is os
+Pablo [8:17]: in the sense that
+Pablo [8:21]: we think probably all these restrict probably
+Pablo [8:22]: their problems
+Pablo [8:27]: solvable and pollinial time require more than modern event space
+Pablo [8:30]: a candidate would be the circuit
+Pablo [8:31]: evaluation
+Pablo [8:32]: the
+Pablo [8:36]: verifier for the one that just input to it
+Pablo [8:38]: what's the output
+Pablo [8:41]: there's
+Pablo [8:43]: an obvious algorithm to do that
+Pablo [8:44]: you just
+Pablo [8:49]: start calculating the boolean values on the gates until you know the value of the output gate
+Pablo [8:51]: but there are targets where
+Pablo [8:53]: no matter how clever you are
+Pablo [8:58]: at really seems like you need to circuit has let's say ed gates in it
+Pablo [9:00]: it really feels like
+Pablo [9:05]: you need to maintain it's not everyday value omega n
+Pablo [9:06]: ative
+Pablo [9:06]: s
+Pablo [9:07]: draw
+Pablo [9:09]: out like sort of the standard circuit
+Pablo [9:12]: it's not
+Pablo [9:14]: obvious how to come up with an
+Pablo [9:14]: algorithm
+Pablo [9:19]: that would evaluate the value of boolean circuit without keeping track of
+Pablo [9:23]: if not every gate value at least a constant fraction of
+Pablo [9:23]: it
+Pablo [9:29]: maybe amount of space you have to take reason one that for gain or ten gates without the order
+Pablo [9:32]: and order in space
+Pablo [9:33]: which is not moderate
+Pablo [9:37]: so we think there's problems
+Pablo [9:55]: solvable in polynomial time but that require say more than water mixed base similarly of course the biggest open question is p versus nd we think p is different from np and same thing with all the others but what do we know for sure well we know for sure is at least this
+Pablo [9:59]: p is a strict subset of x that's the time hierarchy
+Pablo [10:05]: so if you have more than polynomial time you can simulate
+Pablo [10:14]: polynomial time machines and make sure that you're slightly slower running algorithm gives a different answer than all of them and therefore deciding something not in
+Pablo [10:15]: the
+Pablo [10:20]: we also have the non deterministic time hierarchy
+Pablo [10:20]: theorem
+Pablo [10:29]: which we didn't prove but it's proven similarly so we know np is a strict subset of nx we also have again we're not going to prove it
+Pablo [10:32]: i think the proof is similar but i've never actually read it
+Pablo [10:35]: i just assumed it's similar but there is the space hierarchy
+Pablo [10:42]: theorem which is that if you have a space bound s one that strictly growing slower than based on this
+Pablo [10:43]: too
+Pablo [10:48]: then you can decide more problems if you have space s two than if you only have space
+Pablo [10:57]: so we won't prove that but it's true and i'm pretty sure the proof is similar to what we did you would just
+Pablo [11:09]: using a little more than space s two simulate all those s one space founded programs in order to make sure your program does something different than all of them and therefore is not solvable in space s one
+Pablo [11:22]: so that gives us that these containments are l is a strict subset of p space because polynomial grows strictly after the log exponential growth strictly faster than poly
+Pablo [11:22]: mer
+Pablo [11:31]: so these are in some sense like the hierarchy theorems are not obvious but we did one of those in detail
+Pablo [11:35]: and the other containments are
+Pablo [11:37]: straightforward
+Pablo [11:39]: that's the last few slides
+Pablo [11:47]: now we're going to cover some maybe not obvious aspects of space
+Pablo [11:57]: when i introduced np i sort of bounced around and said well
+Pablo [11:59]: it's got this archaic name
+Pablo [12:01]: mp
+Pablo [12:08]: that stands for non deterministic polynomial time but like i said if i were naming it today i'd probably name it v for verifiable
+Pablo [12:09]: time
+Pablo [12:18]: because i think if you're only going to remember one thing about it the verifier characterization would be what to remember because i think that's more natural
+Pablo [12:25]: kind of captures this notion that we have these problems we want to solve
+Pablo [12:44]: and a lot of them we don't know how to solve efficiently but most of them just have this property that you know a good solution when you see one and the verifier characterization kind of formalized so i feel like it's a more natural characterization than the non deterministic computation where you posit this magic machine make non deterministic guesses
+Pablo [12:51]: if one sequence of guesses accepts you say the thing accepts even if that sequence is very unlikely
+Pablo [12:59]: but that said sometimes the non deterministic computation characterization is easier to work with
+Pablo [13:02]: and frankly when it comes to space founder computation i think it's way easier
+Pablo [13:14]: so almost exclusively use the non deterministic computation approach the space bound and computation because it's just similar to demonic
+Pablo [13:22]: but there is a way to do it with verifiers but you got to be a little careful so we'll go through this just so you know it's possible but that there's some gotchas
+Pablo [13:31]: so the key difference between a space bounded verifier and it's say a polynomial time mounted verifier
+Pablo [13:39]: is that what a space bounded verifier your input which does not count against your space usage because it's read only
+Pablo [13:47]: it could be huge right so say you're doing a polynomial space verifier the witness could be exponentially long
+Pablo [13:54]: polynomial space is enough space to index into an exponential size input
+Pablo [14:01]: and so you're actually allowed to give an exponential size witness to a polynomial space bounded computation
+Pablo [14:05]: as the second input to verify
+Pablo [14:08]: so what would be an example of that
+Pablo [14:15]: well as we're going to see polynomial space actually captures the computational complexity of a lot of games
+Pablo [14:24]: so imagine you have a game like some sliding block game like one of these or chess
+Pablo [14:36]: we would want to verify that some sequence of moves leads to say checkmate well the sequence of moves could be exponentially long
+Pablo [14:52]: but if we only ever have to look at two consecutive configurations at a time we can check it in polynomial space so this is like the kind of thing to think about you have this exponentially long witness i can exponentially long sequence of moves in a chess game but we want to check that it leads to checkmate
+Pablo [15:04]: so like i said i prefer actually for space bounds the non deterministic program formulation where you just say okay end space with s is defined to be problem solvable by non deterministic program
+Pablo [15:15]: they use a space o of s of n and as a time bound what we mean is space s of n no matter what non deterministic choices are made where n is the length
+Pablo [15:16]: your input
+Pablo [15:32]: and this asymmetry thing yes or no whereas some computation happens even if like most of them are j then we say that the entire thing is x and only at all computation patterns reject do we say that the thing is rejected
+Pablo [15:42]: so that's in my opinion the simple i mean that's just normal non deterministic programs like we talked about only now we're bounding them with space instead of talking
+Pablo [15:54]: and then from that you can define these two classes the non deterministic variance of l and p space ml which is non deterministic logarithmic space
+Pablo [15:56]: and p space
+Pablo [16:07]: now that said there is a way to do this with provers and verifiers i'll cover it and then for the most part not talk about it anymore but the textbook does go through it
+Pablo [16:21]: so imagine you have an algorithm a verifier algorithm v as with any verifier it takes an input x that may or might not be in the language that this is a verifier for and then the second argument the witness
+Pablo [16:28]: that they should be the case that there is a witness that will make this thing accept if and only if x is in the language
+Pablo [16:37]: and we require that this algorithm use space s of n where n is the length of the input x
+Pablo [16:39]: so
+Pablo [16:43]: we're not bounding in terms of ww can be much bigger than x
+Pablo [16:48]: so what we want that our space found is s of n where n is just the length of the first
+Pablo [16:55]: so the length of w the arbitrary be way bigger than our space bound but remember b has read only access to both x endo
+Pablo [16:58]: so the fact that w is huge here
+Pablo [17:01]: is ok it does not count against our space bound because we can't write to it
+Pablo [17:03]: we can only read
+Pablo [17:10]: now here is the ugly part that is why i don't like this characterization
+Pablo [17:18]: you have regular old let's say ram access to x so you can just access any bit of it
+Pablo [17:29]: again it could be literal random attributes right down an index jump immediately to it or we could even mean turning machine style a tape head moves back and forth but the key is you're move right and left
+Pablo [17:31]: but you need this rule
+Pablo [17:39]: on the witness that you're only allowed to access the bits sequentially from left to right like a dn
+Pablo [17:47]: a why this is true frankly this always trips me up it's just hard to wrap my head around
+Pablo [17:50]: but this is the rule
+Pablo [17:59]: okay and then we say so this part is just the normal thing we say this is a proper verifier for this language
+Pablo [18:05]: if x is in the language it's a yes instance if and only if there's some wise f
+Pablo [18:08]: so key questions
+Pablo [18:09]: why did i make this
+Pablo [18:09]: requirement
+Pablo [18:10]: for the sequential
+Pablo [18:11]: access
+Pablo [18:12]: of
+Pablo [18:13]: this value or
+Pablo [18:13]: left
+Pablo [18:17]: well the problem is
+Pablo [18:18]: that otherwise
+Pablo [18:22]: then
+Pablo [18:24]: we would play around
+Pablo [18:24]: with this definition
+Pablo [18:25]: and use
+Pablo [18:27]: the non deterministically design
+Pablo [18:28]: ed
+Pablo [18:30]: using
+Pablo [18:31]: logarithmic
+Pablo [18:32]: for
+Pablo [18:33]: example
+Pablo [18:34]: freeze that would be
+Pablo [18:35]: contained in that
+Pablo [18:39]: positive
+Pablo [18:41]: we
+Pablo [18:42]: didn't do this
+Pablo [18:43]: requirements
+Pablo [18:45]: why
+Pablo [18:46]: is the case that we
+Pablo [18:47]: could decide
+Pablo [18:48]: reset using
+Pablo [18:49]: a link
+Pablo [19:04]: this is really just playing out
+Pablo [19:05]: of this problem
+Pablo [21:07]: whether
+Pablo [21:08]: i call this
+Pablo [21:13]: if you could backtrack and the witness that somehow you can use less space to verify
+Pablo [21:15]: yeah that's the idea
+Pablo [21:39]: i'll get back to you
+Pablo [21:41]: okay
+Pablo [21:48]: like i said i don't like for this reason i don't like thinking about this characterization
+Pablo [21:49]: so from now on
+Pablo [21:51]: mostly convince you okay
+Pablo [21:58]: this is like less natural than with time bounded verifiers from now on we'll just exclusively use
+Pablo [22:00]: the non deterministic combination
+Pablo [22:01]: formation
+Pablo [22:04]: and
+Pablo [22:10]: we're going to be talking a lot about reachability from now on reachability is really key when it comes to space founded computation
+Pablo [22:19]: so this is the problem you're given a directed graph i mean it's also interesting for undirected graphs but generally we're going to think about directed graphs
+Pablo [22:32]: so you give it a directed graph and two notes s and t in it and you want to know is there a path from s to d so you can think of it as like this is the problem solved by bfs or dfs
+Pablo [22:37]: and in general
+Pablo [22:42]: we're going to think about like we're really going to think about this graph being real
+Pablo [22:49]: so in particular we're going to apply this if the graph is polynomial size but we're going to have some variance of this where the graph is huge
+Pablo [23:02]: but it doesn't count against our space usage it's read only and so we're going to think about trying to solve this using as little space as possible typically much less than it takes to write down the graph
+Pablo [23:11]: so the first claim we're going to make is reachability is contained in nf we can solve this non deterministically using logarithmic space
+Pablo [23:13]: so let's remember what does make logarithmic space means
+Pablo [23:18]: for a graph you need to remember a constant number of nodes
+Pablo [23:21]: and non deterministic just means okay we can make guesses
+Pablo [23:24]: and if there's a sequence of guesses
+Pablo [23:33]: that causes us to say yes it means there is a path from s to t and conversing there's not a path from s to t no matter what we guess we should say
+Pablo [23:36]: so what's the non deterministic algorithm
+Pablo [23:44]: to figure out if there's a path from s to t that uses only a constant number maintains only a constant number of nodes
+Pablo [23:45]: at any time
+Pablo [24:30]: so if you think about what something like say depth first search does
+Pablo [24:32]: depth first search use is more than a
+Pablo [24:33]: constant number
+Pablo [24:37]: in general depth first search has to maintain a list of all the nodes you visit
+Pablo [24:40]: because you want to make sure you don't read visit a node or else
+Pablo [24:42]: you might get stuck in an infin
+Pablo [24:42]: ite loop
+Pablo [24:48]: so the key idea is going to be well can we do something like that first search
+Pablo [24:50]: but trade off
+Pablo [24:54]: the fact that we're allowed to make guesses
+Pablo [24:59]: for the fact that well now it's okay if we accidentally revisit a node
+Pablo [25:06]: as long as we're careful but you can't be totally careless about how we visit the nodes
+Pablo [25:13]: but what's a way to kind of modify depth first search so that we don't have to remember all the nodes we visited so far
+Pablo [25:15]: only a constant number
+Pablo [25:18]: but because we can make guesses
+Pablo [25:24]: we can set it up so that if there's a path to t there will be some very lucky sequence of guesses
+Pablo [25:27]: that lets us find teeth
+Pablo [25:42]: so the idea would be like you start an s so let's say we got this graph g
+Pablo [25:47]: and these two nodes s and d they're both so we start u at s
+Pablo [25:54]: and u is going to basically iterate over nodes along some path so it starts at s
+Pablo [26:00]: and while it's not equal to t we're going to keep searching for t
+Pablo [26:10]: so what do we do well we just guess some neighbor of u initially u is s so b initially is just some you know immediate name or s and then we set u to be that
+Pablo [26:12]: so we move forward and
+Pablo [26:13]: now update
+Pablo [26:19]: and we keep going until usp
+Pablo [26:19]: and
+Pablo [26:24]: is ever equal to t we break out of the loop we return true
+Pablo [26:32]: guess the neighbor to another neighbor and another neighbor and we found t there must be some pat from s to t so we should return true
+Pablo [26:33]: but
+Pablo [26:38]: if we did that naively we could guess and just go in a cycle forever
+Pablo [26:47]: or if not a cycle you know maybe it's not literally a cycle but we could have some path that just never ends even though it doesn't repeat
+Pablo [26:51]: but you know it never finds t but it also just never stops
+Pablo [26:56]: but what do we know if there's a path from s to t there's a simple
+Pablo [26:58]: path that does not repeat
+Pablo [27:00]: and if there's a simple path
+Pablo [27:04]: then we're going to find t on that path
+Pablo [27:07]: searching at most cardinality of v nodes
+Pablo [27:10]: so we also maintain a counter of how many nodes we've looked at
+Pablo [27:17]: and if we ever reach a number of nodes that's equal to the total in the graph we just stop
+Pablo [27:27]: now again we could get unlucky maybe there's a path from s to t we make wrong guesses we get through cardinality of e nodes maybe we gotten some loop
+Pablo [27:39]: and we would reject but that's okay we're allowed to reject as long as some sequence of guesses will cause us to accept but if there's a path from s t there's a simple path
+Pablo [27:45]: and if there's a simple path it's linked at most cardinality of e and therefore
+Pablo [27:51]: if we guess properly the next node on that path we will actually end up finding t
+Pablo [27:54]: and what's the space bound
+Pablo [27:57]: well we need u and v that's two nodes in the graph
+Pablo [28:02]: so that's log of the number of nodes bits that we need
+Pablo [28:26]: and we need to maintain this integer num search button search caps out at cardinality v so that's also log of cardinality so cardinality of e is n we need only three variables that take log of n bits each and that's what we mean by logarithmic space constant number of pointers into the well in this case two pointers into the input
+Pablo [28:29]: but again the calendar is bounded by
+Pablo [28:31]: the size of the
+Pablo [28:37]: well
+Pablo [28:39]: we won't get stuck in a loop because of this
+Pablo [28:50]: i mean we can loop but we won't get stuck in an infinite loop because this is going to guarantee that we do it most n iterations of the loop
+Pablo [28:56]: so maybe what you mean is why is it okay if we return false
+Pablo [29:01]: because non deterministic computation has this asymmetry between yes and no
+Pablo [29:06]: if the answer is yes you're allowed to say no on some paths
+Pablo [29:09]: as long as there's one path where you'll say yes
+Pablo [29:12]: and you guess properly here you'll say yes
+Pablo [29:28]: so that's kind of basic basic space bounded result reachability is a no
+Pablo [29:32]: because this is non deterministic
+Pablo [29:41]: there have to be an overwhelming amount of probabilities
+Pablo [29:46]: this program incorrectly returns false
+Pablo [29:52]: right yeah so like i said with np but it applies more generally to non deterministic computation
+Pablo [29:57]: if you want to use the language of probability to characterize it you can say oh
+Pablo [29:59]: this is a randomized algorithm
+Pablo [30:01]: that
+Pablo [30:06]: works in the sense that the answer is yes it has a positive probability of saying
+Pablo [30:08]: and that the answer is no
+Pablo [30:10]: it has probabilities
+Pablo [30:11]: the answer is yes
+Pablo [30:14]: but only if there's a positive probability of saying yes
+Pablo [30:16]: but positive numbers can be really
+Pablo [30:18]: okay
+Pablo [30:27]: so you can use the language of probability to characterize it and what that does is it shows you why this is a very crummy randomized algorithm
+Pablo [30:29]: it doesn't work in racks in practice
+Pablo [30:37]: it might be that most of the guesses here miss t and you're going to think t is not if you actually just ran it and flip coins
+Pablo [30:41]: you would think t is not reachable from s even though it is
+Pablo [30:41]: gas
+Pablo [30:56]: can you explain why is this ok i know that you just v on the
+Pablo [30:57]: other
+Pablo [31:02]: as you're graph like size
+Pablo [31:08]: the way you like with it well yeah so you and v are not
+Pablo [31:14]: they don't have a constant number of disease they have log of n log of cardinality of e
+Pablo [31:20]: thereum at those pointers each of which is modern
+Pablo [31:27]: compliments of all like every problem uses the same amount of space as
+Pablo [31:32]: very non intuitive
+Pablo [31:37]: actually yes not non deterministic space is closed under complement we're going to prove that
+Pablo [31:43]: thursday or tuesday all that goes into the outlet i guess
+Pablo [31:49]: well it's not obvious it's not obvious so say i'm not claiming here non regional
+Pablo [31:51]: it is
+Pablo [31:51]: true
+Pablo [31:56]: but there's
+Pablo [31:58]: nothing you similarly to
+Pablo [31:59]: how
+Pablo [32:00]: i got to be careful
+Pablo [32:01]: with my language
+Pablo [32:02]: here
+Pablo [32:13]: 's
+Pablo [32:13]: no availability
+Pablo [32:16]: verif
+Pablo [32:17]: iable
+Pablo [32:19]: so now
+Pablo [32:20]: what i'm about to say
+Pablo [32:21]: is
+Pablo [32:24]: more like a statement of autopilot
+Pablo [32:33]: supp
+Pablo [32:34]: ose
+Pablo [32:35]: i can
+Pablo [32:36]: not reach a screen
+Pablo [32:37]: tv and my requirements
+Pablo [32:38]: algorithm
+Pablo [32:39]: is
+Pablo [32:40]: that if i
+Pablo [32:41]: cannot reach c
+Pablo [32:42]: from s
+Pablo [32:43]: i need
+Pablo [32:44]: some
+Pablo [32:45]: sequence of guesses
+Pablo [32:46]: to cause this thing
+Pablo [32:47]: to accept
+Pablo [32:48]: and if i
+Pablo [32:49]: can reach s
+Pablo [32:50]: ir d
+Pablo [32:51]: and i need every seque
+Pablo [32:51]: nce of yes
+Pablo [32:52]: es to reject
+Pablo [32:54]: it's
+Pablo [32:54]: kind of obvious
+Pablo [32:55]: right
+Pablo [32:56]: because of the state
+Pablo [32:57]: symmetry between
+Pablo [33:00]: it
+Pablo [33:01]: with the right sequence
+Pablo [33:02]: of guesses
+Pablo [33:03]: if
+Pablo [33:04]: there's not
+Pablo [33:07]: and i
+Pablo [33:08]: can see if all the
+Pablo [33:09]: sequence of gases
+Pablo [33:10]: i follow
+Pablo [33:18]: saying
+Pablo [33:18]: yes
+Pablo [33:19]: if i flip it around
+Pablo [33:20]: say
+Pablo [33:20]: yes
+Pablo [33:24]: but by the same asymm
+Pablo [33:25]: etry here
+Pablo [33:26]: if
+Pablo [33:27]: i took the wrong guesses
+Pablo [33:28]: maybe i can
+Pablo [33:29]: reach t for mess
+Pablo [33:29]: ages
+Pablo [33:30]: in the seat
+Pablo [33:31]: of the sequence
+Pablo [33:33]: so
+Pablo [33:34]: accepted in that case
+Pablo [33:36]: in order to say no
+Pablo [33:36]: this is not reachable
+Pablo [33:37]: d would be the wrong
+Pablo [33:38]: answer
+Pablo [33:40]: not obvious
+Pablo [33:40]: how to do that
+Pablo [33:42]: for the same reason
+Pablo [33:42]: it's not obvious
+Pablo [33:43]: how to prove
+Pablo [33:44]: the graph
+Pablo [33:45]: setting
+Pablo [33:46]: will submit
+Pablo [33:49]: now
+Pablo [33:50]: it actually is true
+Pablo [33:53]: that we're going to do later
+Pablo [33:53]: on
+Pablo [34:11]: the answ
+Pablo [34:11]: er is yes
+Pablo [34:12]: i'm not
+Pablo [34:13]: saying o
+Pablo [34:19]: the answer is no i'm not allowed to say yes so i swapped the role of yes and no there that asymmetry breaks the definition
+Pablo [34:23]: it is actually true but it's not naively
+Pablo [34:25]: by something this sum
+Pablo [34:37]: okay so like i said reachability is going to be really i mean satisfiability is fairly core to mv completeness but the others on their end
+Pablo [34:37]: problems
+Pablo [34:43]: reachability is really crucial work for space bounded computation
+Pablo [34:47]: and part of the reason is that
+Pablo [34:52]: we can characterize computation directly using reachability on graphs
+Pablo [34:57]: so let's imagine we have a non deterministic probe
+Pablo [35:00]: and it uses spaces
+Pablo [35:05]: well using that we can search graphs if they're given as read only input
+Pablo [35:18]: of psi is up to two to the s right we have space s that's enough space o of s that's enough space to maintain some constant number of nodes in this huge graph of internet
+Pablo [35:18]: size
+Pablo [35:22]: but now let's flip this around
+Pablo [35:26]: if i have a non deterministic program
+Pablo [35:32]: its behavior is completely defined by what i'll call its configuration reachability
+Pablo [35:44]: so this is a graph there's a couple ways you can think about it you could think about it as one finite size graph associated to each input you might give the program
+Pablo [35:48]: you might also think about it like an infinite disconnected draft
+Pablo [35:58]: where each of the connected components corresponds to a different so i'll kind of think about it first there's one finite size graph associated to a particular
+Pablo [36:04]: so v the set of nodes would be the set of configurations of the program reachable from that
+Pablo [36:05]: issue
+Pablo [36:10]: right so the sort of state so each node in this graph is like the state of memory of your program
+Pablo [36:13]: or configuration or
+Pablo [36:21]: there's an edge uv in this graph a directed edge from u two v if there's a transition from u to v
+Pablo [36:26]: and because it's non deterministic we could have out degree bigger than y you can have that
+Pablo [36:28]: there's an end from u to b and also an edge from udevelopment
+Pablo [36:30]: there's like a non deterministic yes you're making
+Pablo [36:31]: a configuration
+Pablo [36:46]: so any non deterministic program along with a particular input define some graph like this where we would imagine you know we usually want to start our search
+Pablo [36:49]: at the node representing the initial configuration
+Pablo [36:56]: and you would say that that program accepts that input
+Pablo [37:01]: if there's some halting accepting configuration reachable from the
+Pablo [37:04]: even if there's a halt in rejecting configuration reachable
+Pablo [37:07]: from there well that's the asymmetry between yes and no
+Pablo [37:14]: so this graph
+Pablo [37:19]: sort of captures what it means for a non deterministic program
+Pablo [37:29]: to accept an input we would say the program accepts if and only if some accepting configuration is reachable from the start configuration in this graph
+Pablo [37:33]: and we can to make our lives a little easier
+Pablo [37:38]: we can assume there's actually only a single accepting configuration
+Pablo [37:54]: why is that well naively say you have a turing machine there might be lots of ways to halt and accept with lots of different things written on the tape but the point is if you have a turing machine that has many different halting configurations
+Pablo [37:58]: you can always like add a little bit of logic to it to tell it hey
+Pablo [38:02]: before you halt erase your whole workday
+Pablo [38:06]: and just move the tape head back to the start with nothing but blanks on it
+Pablo [38:11]: and what is it that distinguishes your configuration what state you're in there's only one except state
+Pablo [38:18]: it's where the tape head is but now we're guaranteeing to move it back to the start and it's what's on the tape but we're going to blank everything out before we hold
+Pablo [38:21]: the point is you could assume without loss of generality
+Pablo [38:31]: by doing this little modification that if there's an accepting configuration of the turing machine from this input there's exactly one
+Pablo [38:34]: because it's going to clean everything up
+Pablo [38:36]: in this very uniform
+Pablo [38:36]: way
+Pablo [38:45]: and that's why we can actually characterize acceptance as straight up reach abilities i initially said oh if there's some accepting configuration reachable
+Pablo [39:02]: from the start configuration you say the things up but now that we've done this change well if there's an accepting configuration there's only one so we let s be the initial configuration when we let t be the unique accepting you know or what the unique accepting configuration would look like it may not be reachable
+Pablo [39:10]: but we know what it looks like it looks like the work tape is blank tape heads on the left the input hasn't changed because it's read only
+Pablo [39:21]: the only question is can we get there from the start and so we can exactly characterize whether this non deterministic program accepts
+Pablo [39:23]: by the reachability problem on that graph
+Pablo [39:32]: now one thing to note is that determinants of program can also be defined in this way
+Pablo [39:41]: just that their graphs are a one dimensional line so the start node the next the next the next is just a unique next configuration
+Pablo [39:46]: and at some point you halt then the only question is did it accept or reject
+Pablo [39:49]: but
+Pablo [39:52]: if your program is non deterministic you have a more general directive
+Pablo [40:16]: it's sometimes common to assume that it's like constant degree which is the same as just saying oh the amount of non deterministic bits you can generate in a single step is constant sometimes it's even convenient to say two you can always just generate a single bit and that would correspond to well you have out degree at most two for many non
+Pablo [40:18]: uh but that's not really
+Pablo [40:22]: every problem
+Pablo [40:31]: solvable in non deterministic space s is equivalent to a reachability problem on a graph of size two to the o so you're given the input x
+Pablo [40:37]: that defines what starting configuration cx which is you know x is written on the three and only input tape
+Pablo [40:40]: the word tape is
+Pablo [40:41]: just initial length
+Pablo [40:45]: and the question is can you read from cx to this unique accepting configuration
+Pablo [40:45]: a
+Pablo [40:53]: so now recall reachability is solvable deterministically using say depth first search
+Pablo [40:58]: and we do it right to the right data structure this solvable in time of you know b
+Pablo [41:15]: and because the size of e is it goes to the o of s that also bounds the size i mean this could be quadratically bigger but again sometimes useful to talk about it being constant degree but i just kind of rolled everything into this constant
+Pablo [41:16]: uh
+Pablo [41:20]: so in other words we can
+Pablo [41:23]: solve this in time you know
+Pablo [41:38]: to the o s and this is just another way of restating this fact we already observed but we phrased it in a different language we weren't talking about mutability yet that if you can solve a problem non deterministically
+Pablo [41:39]: you can
+Pablo [41:40]: solve any time
+Pablo [42:02]: still
+Pablo [42:03]: you can
+Pablo [42:04]: use yearly
+Pablo [42:05]: essentially more
+Pablo [42:05]: time
+Pablo [42:06]: than
+Pablo [42:07]: the amount space
+Pablo [42:08]: prot
+Pablo [42:09]: ocase
+Pablo [42:10]: to volunte
+Pablo [42:10]: er
+Pablo [42:15]: non
+Pablo [42:16]: deterministic
+Pablo [42:18]: or concrete bab
+Pablo [42:18]: y
+Pablo [42:20]: blogger in it we
+Pablo [42:21]: have an analyst with a and b
+Pablo [42:24]: you have the space mountain polynomial
+Pablo [42:25]: and then
+Pablo [42:34]: come back to this
+Pablo [42:40]: maybe
+Pablo [42:46]: i should put a new slide here but basically we have the l is contained in ll den
+Pablo [42:48]: la sandwich
+Pablo [42:50]: and
+Pablo [42:50]: similarly
+Pablo [42:54]: mp space is sandwiched between
+Pablo [43:10]: okay so i won't say this is obvious because you know you got to know to think this way but
+Pablo [43:13]: there's nothing particularly clever going on
+Pablo [43:17]: it's just you look at it the right way
+Pablo [43:18]: it kind of becomes
+Pablo [43:18]: obvious
+Pablo [43:25]: but this way of thinking about computation as being equivalent to
+Pablo [43:27]: searching a graph
+Pablo [43:32]: and answering can i reach from s to t on a graph that's going to be very useful
+Pablo [43:33]: with
+Pablo [43:34]: the subsequent results
+Pablo [43:38]: okay so
+Pablo [43:43]: with that in mind like i said the two major uh space bounds we consider logarithmic
+Pablo [43:48]: and polynomial we'll start with logarithmic and
+Pablo [43:49]: um
+Pablo [43:54]: just like we have np completeness and we've defined this notion of the mp complete problem
+Pablo [44:01]: the hardest problems in mp and not only are they the hardest problems in np but they're kind of representatives
+Pablo [44:05]: of np in the sense that if any one of them
+Pablo [44:06]: is equ
+Pablo [44:07]: al
+Pablo [44:08]: in all
+Pablo [44:13]: so we have a similar
+Pablo [44:13]: dichotomy
+Pablo [44:16]: with
+Pablo [44:17]: health
+Pablo [44:19]: the
+Pablo [44:20]: sun is not
+Pablo [44:22]: quite
+Pablo [44:23]: believe
+Pablo [44:24]: that
+Pablo [44:25]: that is not equal to
+Pablo [44:26]: l so we
+Pablo [44:27]: change from
+Pablo [44:30]: real time value to a logarithmic space
+Pablo [44:32]: found and compare
+Pablo [44:32]: the deterministic
+Pablo [44:33]: and non determined divers
+Pablo [44:34]: ion
+Pablo [44:37]: it's not as crazy to imagine el people
+Pablo [44:38]: we're going to see a reason
+Pablo [44:40]: but at any rate
+Pablo [44:43]: we do have this notion of nl completeness
+Pablo [44:45]: um
+Pablo [44:56]: we did show that breachability is contained in an l and we also argued i mean i was being more general in terms of the space bound but what i argued on the previous slide
+Pablo [45:02]: if you take this space down s and substitute concretely s's o n
+Pablo [45:13]: we get that every problem in nl is equivalent to a reachability problem on a exponentially bigger graph oh it's exponentially bigger than o
+Pablo [45:20]: we can solve every problem in nl by answering a reachability problem on a polynomial size
+Pablo [45:21]: um
+Pablo [45:25]: so we're going to define this notion of nl to completeness
+Pablo [45:29]: uh and we're going to show according to that reachability is nl complete
+Pablo [45:32]: and
+Pablo [45:46]: the interesting consequence of that is going to be that l equals nl if and only if reachability is similar to how p is equal to n definitely if np complete problem like set now unlike here
+Pablo [45:51]: this is totally plausible we're going to see after this a reason that this doesn't sound crazy
+Pablo [45:52]: this is
+Pablo [45:52]: crazy
+Pablo [46:04]: okay so what do we mean by nl movie well something very similar to np complete what does mp complete you have to be nnp and you have to have everything and np is reducible
+Pablo [46:04]: to you
+Pablo [46:05]: in polymer
+Pablo [46:15]: but the right kind of reduction to pick when you are reasoning about a complexity class
+Pablo [46:21]: is a reduction no more powerful than the class you're talking about
+Pablo [46:28]: so when we were comparing p to mp the appropriate kind of
+Pablo [46:31]: reduction to use is a polynomial time reduction
+Pablo [46:34]: if we allow reduction say to be exponential time
+Pablo [46:49]: then they wouldn't be reductions at all exponential time is enough to straight up solve any nd complete problem so you could just trivially reduce anything to anything else by ignoring your input and just solving the problem that you're trying to solve
+Pablo [47:00]: so the reductions are interesting because they're deterministic and polynomial topic so they don't give you any more power than like the lesser of the two classes you're trying to compare
+Pablo [47:07]: so if a reduction combined with an algorithm for some other problem gives you an algorithm for the original problem
+Pablo [47:09]: um
+Pablo [47:14]: you just shown that it's empty
+Pablo [47:18]: because you didn't allow more than cost reduction so for the same reason
+Pablo [47:20]: the right kind of reduction to think about
+Pablo [47:23]: to define something like nl completeness
+Pablo [47:30]: if we're going to compare nl to l would be a reduction that has no more power than the lower of those two classes
+Pablo [47:33]: so the appropriate kind of reduction is what we're going to call a log space reduction
+Pablo [47:37]: so we've defined log space already for desires
+Pablo [47:40]: um
+Pablo [47:48]: but recall what i said last week which is well sometimes your algorithms are not boolean beside or sometimes they output all strings
+Pablo [47:57]: if so you want to allow it to output a string much bigger than its face value right log space is you know
+Pablo [47:59]: tiny
+Pablo [48:00]: um
+Pablo [48:03]: so how do we avoid cheating
+Pablo [48:11]: uh we avoided cheating with the input by saying the input even if it's much bigger than the space bound is read only so you can't actually use it as working memory
+Pablo [48:15]: we can't say the output is real only but we we can say it's right
+Pablo [48:18]: so we only need to read the input
+Pablo [48:19]: and then write to it
+Pablo [48:20]: we only need to write the output
+Pablo [48:21]: that will be test
+Pablo [48:22]: ed
+Pablo [48:24]: so we have this bin
+Pablo [48:25]: oline
+Pablo [48:26]: on the opposite
+Pablo [48:35]: so a reduction in log space it's immutable like oh program according to that defin
+Pablo [48:35]: ition
+Pablo [48:39]: input can be used but it's the only output can be used but it's right only
+Pablo [48:43]: you're using only o log n space on your read write
+Pablo [48:48]: so just a reminder
+Pablo [48:51]: uh
+Pablo [48:58]: now it turns out you know we weren't careful about this because it didn't matter for what we care about in the first part of the course
+Pablo [49:08]: but actually nearly every reduction that is used to show problems are in the complete also happen to be log space
+Pablo [49:14]: or at least they can be easily made to be log space even if like your initial one uses more than
+Pablo [49:14]: one
+Pablo [49:16]: so for example
+Pablo [49:17]: either
+Pablo [49:20]: a lot of the stuff around this
+Pablo [49:23]: complexity
+Pablo [49:30]: and you'd be very careful with all this microliness reductions to make sure they're lock i'm not sure why
+Pablo [49:34]: but it just happens that you know so for example
+Pablo [49:41]: the simplest reduction we have the reduction from clink to independence all you do is take the complement of the edge set
+Pablo [49:43]: well
+Pablo [49:51]: that is solvable in log space why is that what you just iterate over each edge of the input graph
+Pablo [50:00]: once each edge is a paranode so constant number of nodes in the graph so if you're just iterating over each edge maintaining two notes at a time that's logarithmic space
+Pablo [50:08]: and what do you do well you just go to the same part of the output right so say you're representing it with like an adjacency matrix
+Pablo [50:14]: that is iterating over the edges just iterating over these bits of this adjacency matrix
+Pablo [50:17]: you would just have the output tape iterate in the exact same order
+Pablo [50:24]: but whenever you see a zero in the input you drive one in the output whenever you say you want to have a movie right as an arrow
+Pablo [50:25]: flipping the vents
+Pablo [50:30]: so you got big input you got a big output
+Pablo [50:37]: but in order to turn that input into that output you only need to basically maintain a pointer into the adjacency
+Pablo [50:38]: matrix
+Pablo [50:46]: and it turns out all the other reductions can be made to be log space if you care
+Pablo [50:50]: but you don't necessarily care about it for np completeness it is crucial for nlp
+Pablo [50:51]: 's
+Pablo [50:55]: for this to be a meaningful notion that can help us relate
+Pablo [50:57]: so
+Pablo [51:02]: with that there should be a model space producable we can just say
+Pablo [51:06]: it's out in the in
+Pablo [51:11]: a heart means everything in an l is log space reducible to it
+Pablo [51:19]: okay so i'm going to make a claim
+Pablo [51:24]: we made this claim about polynomial time reductions
+Pablo [51:27]: and it was obvious
+Pablo [51:30]: i'm going to make okay so i'm going to make a meta claim
+Pablo [51:33]: my meta claims that this claim is not obvious
+Pablo [51:47]: usually when you write things with a symbol like this you'd like them to be transitive less than or equal usually represent some tangent relation but my claim is that it is not obvious
+Pablo [51:50]: before we start trying to prove that this is true
+Pablo [51:52]: can somebody tell me
+Pablo [51:55]: life is not completely obvious
+Pablo [51:57]: what would be the obvious way
+Pablo [52:00]: to prove that
+Pablo [52:05]: if a is reducible to b and b is reducible to c then a is would be the obvious way and what's wrong
+Pablo [52:07]: with it and then we'll dig into how to fix it
+Pablo [52:29]: obviously what we did with polynomial what's the proof that polynomial time reductions are
+Pablo [52:34]: forget about log space i can be to see
+Pablo [52:42]: i've got
+Pablo [52:44]: some production
+Pablo [52:45]: b and also some production
+Pablo [52:48]: but c and the cider for c what do i do with this input x
+Pablo [53:05]: and then i get f of x out right maybe call that
+Pablo [53:09]: y and then i get y to the reduction from b to c
+Pablo [53:12]: and that works for polynomial time reductions
+Pablo [53:16]: what goes wrong for log space or
+Pablo [53:18]: output
+Pablo [53:25]: since there's this notion that
+Pablo [53:29]: you're right only memory is not bound
+Pablo [53:30]: well it's that it's right only
+Pablo [53:34]: so if we
+Pablo [53:37]: write the output of the first reduction on our output tape
+Pablo [53:38]: how do we
+Pablo [53:39]: navigate the
+Pablo [53:40]: second reduction
+Pablo [53:41]: our application
+Pablo [53:41]: right
+Pablo [53:42]: on second product
+Pablo [53:43]: ion
+Pablo [53:43]: can't read
+Pablo [53:46]: and conversely if we write it on our work tape
+Pablo [53:50]: we've used way too much space we're trying to use log space
+Pablo [53:55]: but if this is something like this reduction it's going to use linear space
+Pablo [54:05]: so the naive way to do this requires that we both write and read and we have to write the output of the first reduction but then the second reduction has to read it
+Pablo [54:16]: but we can't just do the naive thing of write the whole output of the first reduction down and then start the second that works perfectly fine for polynomial time
+Pablo [54:19]: just do one polynomial time computation followed by a second
+Pablo [54:25]: polynomial time computations composed you group something like that in the first homework
+Pablo [54:29]: but they don't naively compose if you have water in this case
+Pablo [54:41]: but
+Pablo [54:42]: we got to be more
+Pablo [54:43]: love
+Pablo [54:44]: and this is one way
+Pablo [54:45]: to see
+Pablo [54:46]: basically our first
+Pablo [54:46]: instance of
+Pablo [54:48]: if you're
+Pablo [54:49]: marrying my object
+Pablo [54:53]: and all you care about is just using as little space as possible
+Pablo [54:57]: typically the way you achieve that is you use an absurd amount of time
+Pablo [55:01]: so let's think about an absurdly time consuming way
+Pablo [55:11]: to make sure that we only ever maintain a logarithmic number of bits on our read write tape as we're reducing a to c
+Pablo [55:37]: don't
+Pablo [55:38]: start by using
+Pablo [55:39]: her doctor
+Pablo [55:40]: maybe
+Pablo [55:41]: you start by beginning
+Pablo [55:42]: a question for b
+Pablo [55:43]: to z
+Pablo [55:48]: one
+Pablo [55:51]: it via
+Pablo [55:55]: start
+Pablo [55:56]: rubbing this program
+Pablo [55:58]: until the first line that looks at what
+Pablo [55:59]: is in the book
+Pablo [56:03]: and then
+Pablo [56:04]: you don't know what it is
+Pablo [56:05]: if you don't have
+Pablo [56:05]: that
+Pablo [56:07]: so now
+Pablo [56:08]: what you do
+Pablo [56:09]: is
+Pablo [56:12]: you
+Pablo [56:13]: go back to this
+Pablo [56:13]: reaction
+Pablo [56:14]: where you do have
+Pablo [56:15]: your input
+Pablo [56:19]: today is written on your read only you just start running this reduction
+Pablo [56:23]: and say the first input this queries is like number three
+Pablo [56:36]: it might be a random access machine it jumps to bit number three or it might be a turing machine that kind of ignores its first tune but if the first bit this thing wears on a ten but a bit number three what you do is you run this whole reduction
+Pablo [56:38]: until
+Pablo [56:39]: it's ready
+Pablo [56:40]: to start out
+Pablo [56:46]: and then you come back here you tell this reduction all right i've got the bet for you the one you were looking for is one
+Pablo [56:51]: and then you run this thing until christ aquarius second that maybe it's bit number seven
+Pablo [56:55]: then you go back and you run this thing from the start
+Pablo [56:58]: you just erase whatever it did before
+Pablo [57:02]: and you run this thing from the start until it writes to the second
+Pablo [57:05]: and then you come back to hang up the next day
+Pablo [57:08]: and you just bounce back and forth
+Pablo [57:11]: every time this wants a new bit of its input
+Pablo [57:15]: you recompute the entire input
+Pablo [57:30]: basically you could either think of it as like writing the output if you want but more likely you're going to be doing is like anytime the machine you're simulating here tries to write an output bit but it's not the one this one query you would just kind of ignore it
+Pablo [57:32]: replace it
+Pablo [57:33]: with an all operation
+Pablo [57:35]: until it submits to the stab
+Pablo [57:36]: ilization
+Pablo [57:49]: and you also need space to run this
+Pablo [57:50]: over and
+Pablo [57:50]: over again
+Pablo [57:51]: but
+Pablo [57:52]: each time you run into
+Pablo [57:53]: the incident
+Pablo [57:54]: whenever
+Pablo [57:55]: you get the bit
+Pablo [57:59]: you need to tell this reduction what to do you'll just erase all the memory this thing
+Pablo [58:04]: and because this thing uses that most log space every time you run it
+Pablo [58:11]: and this thing is using most log space and you're running it in the spits and start so you keep interrupting it go do this whole
+Pablo [58:12]: computational care
+Pablo [58:13]: one more
+Pablo [58:14]: vivid
+Pablo [58:22]: computation
+Pablo [58:25]: from scratch
+Pablo [58:29]: every single time this thing queries a bit of input
+Pablo [58:35]: which is absurd from a time perspective your only goal is to use as little space as possible
+Pablo [58:42]: so long
+Pablo [58:53]: as
+Pablo [58:54]: the
+Pablo [58:55]: problems are
+Pablo [58:58]: same thing happens
+Pablo [58:59]: to the
+Pablo [59:00]: fact
+Pablo [59:01]: is not by
+Pablo [59:02]: its object
+Pablo [59:09]: that's
+Pablo [59:09]: the definition
+Pablo [59:12]: as
+Pablo [59:19]: i said we're going to prove reachability is analysis and much like the way that we prove circuit staff is np complete
+Pablo [59:22]: the way to do this
+Pablo [59:24]: is
+Pablo [59:25]: going to be sexually
+Pablo [59:26]: easy
+Pablo [59:27]: to find a very
+Pablo [59:28]: artificial gaming
+Pablo [59:28]: problem
+Pablo [59:29]: that
+Pablo [59:33]: is
+Pablo [59:34]: this very artificial
+Pablo [59:37]: genes
+Pablo [59:38]: and then we're going to
+Pablo [59:39]: produce this two
+Pablo [59:42]: it's very
+Pablo [59:43]: much like the
+Pablo [59:44]: witness
+Pablo [59:49]: and
+Pablo [59:50]: we have this program
+Pablo [59:59]: and
+Pablo [1:00:00]: the question i'm going to ask
+Pablo [1:00:02]: is is there some sequence of guesses
+Pablo [1:00:03]: that this non determin
+Pablo [1:00:04]: istic program
+Pablo [1:00:07]: uses
+Pablo [1:00:08]: a host
+Pablo [1:00:09]: log
+Pablo [1:00:26]: istics
+Pablo [1:00:27]: lr essential
+Pablo [1:00:33]: ly by definition what does it mean to be an or it means everything in l is log space reducible to it
+Pablo [1:00:36]: so let a the arbitrary element down
+Pablo [1:00:47]: what does it mean to be an nl it means there's some o of log n but now we'll be explicit about constants and c times log n some constant c space bound in program p
+Pablo [1:00:49]: it's non deterministic
+Pablo [1:00:53]: and that's all we know about it
+Pablo [1:00:57]: it's decided by some c log n space bounded nondenference
+Pablo [1:00:58]: program
+Pablo [1:01:02]: knowing only
+Pablo [1:01:03]: that
+Pablo [1:01:08]: what
+Pablo [1:01:09]: we want to do is saying
+Pablo [1:01:10]: we did
+Pablo [1:01:12]: with the
+Pablo [1:01:14]: output the obvious thing
+Pablo [1:01:20]: the program should be this time program the input should be able the only question is k is going to be what
+Pablo [1:01:22]: what should be
+Pablo [1:01:25]: here you do have to kind of stare at it
+Pablo [1:01:26]: so this takes a little
+Pablo [1:01:29]: mental
+Pablo [1:01:30]: jogging to do
+Pablo [1:01:46]: computable from things written on the slide unlike with witnesses and it's not equal to separate what should i set k to so that basically the answer to that question
+Pablo [1:01:58]: is just the same as does px the whole point is give enough that we don't time it out first so what do we have to set k to so that if this thing is really c log n space bounded
+Pablo [1:01:59]: if the answer to that
+Pablo [1:02:05]: question is no it'll be because it really says no not because we just didn't allow enough
+Pablo [1:02:10]: zero
+Pablo [1:02:11]: one
+Pablo [1:02:17]: it's two to the space value
+Pablo [1:02:18]: what
+Pablo [1:02:21]: i do add to the c because the way we've defined it
+Pablo [1:02:23]: we give this integer
+Pablo [1:02:27]: but then the question is using log
+Pablo [1:02:31]: but what's log of this log
+Pablo [1:02:41]: o
+Pablo [1:02:42]: i want to
+Pablo [1:02:45]: make
+Pablo [1:02:45]: one
+Pablo [1:02:51]: c
+Pablo [1:02:52]: log n
+Pablo [1:02:52]: it's a memory
+Pablo [1:02:53]: we can count the
+Pablo [1:02:54]: number
+Pablo [1:02:55]: that we
+Pablo [1:02:55]: have
+Pablo [1:02:58]: because we only need log of this many that's to count up to that
+Pablo [1:03:06]: argument
+Pablo [1:03:10]: what
+Pablo [1:03:11]: is the mall
+Pablo [1:03:19]: it's to make this
+Pablo [1:03:20]: study
+Pablo [1:03:20]: be contained
+Pablo [1:03:22]: this is just
+Pablo [1:03:23]: a representation
+Pablo [1:03:23]: check
+Pablo [1:03:24]: it's also
+Pablo [1:03:25]: containment
+Pablo [1:03:26]: right
+Pablo [1:03:43]: this is very similar to witness existence where witness existence is like this kind of unique problem in the sense that it was easier to show it's empty hard than to show its containment empty show it's contained in np we had to do some similar tricks with how we represented the time bound in un
+Pablo [1:03:56]: ary so similarly here it's almost nl hard by definition we had to be tricky with how we represented the space bound by actually writing out something exponentially longer than spacebound in order to make this thing be contained
+Pablo [1:04:10]: so the non deterministic program q that decides as the size given this triple px and k is this a case that p or sub x on some computation path and does it using a host law of cages of memory
+Pablo [1:04:13]: well what do you do
+Pablo [1:04:16]: you're saying you run
+Pablo [1:04:17]: and you can't
+Pablo [1:04:18]: do it
+Pablo [1:04:18]: your state uses
+Pablo [1:04:20]: never disease
+Pablo [1:04:24]: and
+Pablo [1:04:26]: if it ever does you just say no
+Pablo [1:04:27]: so how do you know
+Pablo [1:04:31]: well because
+Pablo [1:04:45]: essentially because k is smaller than u
+Pablo [1:04:46]: x n bad
+Pablo [1:04:52]: px and k or the whole input k is smaller than that meaning log of k
+Pablo [1:04:57]: whether
+Pablo [1:04:57]: or not
+Pablo [1:05:02]: we have enough space
+Pablo [1:05:03]: to know whether
+Pablo [1:05:03]: she really accept
+Pablo [1:05:04]: s
+Pablo [1:05:05]: the same login
+Pablo [1:05:15]: so that's this artificial problem
+Pablo [1:05:19]: that's nl complete by definition
+Pablo [1:05:24]: the utility of it is going to be when we turn around and show a more useful problem
+Pablo [1:05:25]: and that will be reachability
+Pablo [1:05:32]: like i said we're going to show reachability does that all complete by reducing
+Pablo [1:05:35]: listens to it with a log space reduction
+Pablo [1:05:37]: this is a reminder what does that mean
+Pablo [1:05:38]: our input
+Pablo [1:05:42]: is this pxk p is a non deterministic program x is an input to it
+Pablo [1:05:51]: k is an integer and the question is does p accept x on some computation path and does it use at most log of kids in memory
+Pablo [1:05:54]: and again we're not going to try to answer the problem
+Pablo [1:06:01]: reductions don't solve the problem they just translate we got to make sure that if and only if the answer to that question is yes
+Pablo [1:06:07]: the answer to the output is yes what's the output a graph g and two nodes s and t
+Pablo [1:06:09]: and the question is going to be
+Pablo [1:06:11]: can we reach from s to t
+Pablo [1:06:12]: herm
+Pablo [1:06:15]: so the question is what are g s and t
+Pablo [1:06:18]: just save them one
+Pablo [1:06:20]: p et cetera
+Pablo [1:06:30]: this
+Pablo [1:06:31]: is where it's going to be useful
+Pablo [1:06:36]: eighty
+Pablo [1:06:38]: monograph that is the configuration
+Pablo [1:06:39]: graph
+Pablo [1:06:40]: of some
+Pablo [1:06:50]: technically the definition of n
+Pablo [1:06:52]: l witness existence
+Pablo [1:06:57]: doesn't say that p is like log space bound right b is just some non deterministic program
+Pablo [1:07:03]: maybe it doesn't halt on some inputs maybe it halts in doubly exponential space or something
+Pablo [1:07:14]: so the point is that we can't put in the definition of nl witness existence oh and by the way p is also a log space program because deciding whether that's true would be undecidable
+Pablo [1:07:20]: so when i say we have the configuration graph i don't mean
+Pablo [1:07:28]: like the full configuration graph of p i mean the configuration reachability graph of p but cat
+Pablo [1:07:35]: to only those nodes that use at most log of cases
+Pablo [1:07:42]: imagine there's this configuration reachability graph b could be infinite maybe p runs forever on
+Pablo [1:07:46]: there's only a fin
+Pablo [1:07:48]: ite number of configurations
+Pablo [1:07:52]: that use a post log of k bits on the tape
+Pablo [1:07:55]: so she just takes this
+Pablo [1:08:03]: hospital
+Pablo [1:08:11]: u
+Pablo [1:08:12]: guest
+Pablo [1:08:14]: that may be from you that you want
+Pablo [1:08:15]: but
+Pablo [1:08:16]: again only
+Pablo [1:08:18]: the b is long a
+Pablo [1:08:19]: space
+Pablo [1:08:20]: so
+Pablo [1:08:21]: if you're iterating
+Pablo [1:08:22]: over the neighbors
+Pablo [1:08:25]: and you say oh look one of them would use log k plus one bits
+Pablo [1:08:26]: you just ignore it
+Pablo [1:08:27]: that's not neighbor
+Pablo [1:08:32]: starting mitigation
+Pablo [1:08:42]: that
+Pablo [1:08:43]: unique executive
+Pablo [1:08:56]: yes
+Pablo [1:09:07]: because
+Pablo [1:09:12]: allow
+Pablo [1:09:15]: enough space in the configuration
+Pablo [1:09:16]: 's representative graph
+Pablo [1:09:19]: successfully answer this question
+Pablo [1:09:20]: we
+Pablo [1:09:21]: tie the two
+Them [1:09:24]: for
+Them [1:09:25]: some choice of
+Them [1:09:26]: guesses
+Them [1:09:28]: using the most log case
+Them [1:09:29]: there's
+Them [1:09:31]: a path
+Pablo [1:09:52]: so there's a sense in which this is at once easier and harder than any completeness
+Pablo [1:10:00]: it's easier in the sense that i feel like there's less cleverness you need here some of the results we're going to do we need to be very clever
+Pablo [1:10:03]: change there on the
+Pablo [1:10:06]: non determinism being closed under complement that's been very complicated
+Pablo [1:10:08]: you need lots of coverance
+Pablo [1:10:12]: but compared to np completeness
+Pablo [1:10:19]: try to translate like a three sat formula into a graph with a glacial
+Pablo [1:10:19]: thing
+Pablo [1:10:20]: sometimes
+Pablo [1:10:26]: but
+Pablo [1:10:27]: this is kind of
+Pablo [1:10:28]: satisfying
+Pablo [1:10:28]: we've seen this idea
+Pablo [1:10:29]: and we're going to see it again
+Pablo [1:10:31]: we're just up
+Pablo [1:10:35]: i've got some non deterministic program
+Pablo [1:10:38]: s based on this transition
+Pablo [1:10:39]: and
+Pablo [1:10:44]: if i know what a one node can reach to another in that graph that tells me something about the computation
+Pablo [1:10:45]: so in some sense
+Pablo [1:10:50]: this is a little more boilerplate than
+Pablo [1:10:51]: some of the concepts
+Pablo [1:10:59]: but there it is so reachability is nl complete and that's not going to be the last time reachability
+Pablo [1:11:04]: it'll kind of be our representative of these small spacecraft
+Pablo [1:11:09]: we'll
+Pablo [1:11:10]: move on to

@@ -1,0 +1,14 @@
+Summary:
+The solution goes through each of the six undecidability statements and tries to show a reduction from the Halting Problem. The group here writes pseudocode in a Python-like style (I feel like I should've done this too now), where they define a hypothetical decision function Q and then construct a function FPw that simulates running P on input w. The idea is that the behavior of FPw depends on whether P(w) halts, and then calling Q on FPw would let us decide the Halting Problem.
+
+Does it answer the question?
+Yes, it seems like it does answer the question. For each part they attempt to show how an instance (P, w) of HALTING could be converted into a program whose behavior would reveal whether P(w) halts. The overall structure of reducing HALTING to each property is clear. I also liked the formatting of the question block and the use of Python style pseudocode. It made the construction of the programs easier to follow.
+
+Parts that are confusing:
+One thing that was a little confusing at first is how the functions are nested. For example, in some places FPw is defined inside H, and Q is defined separately, so it took a moment to understand how the pieces were supposed to interact.
+
+Parts that might be wrong:
+I did not immediately see a clear logical mistake in the reductions. The general idea that FPw halts on all inputs if P(w) halts and loops otherwise is the same basic strategy my group used as well. One small thing is that the first proof says “Suppose that there exists an algorithm Q that halts on input zero,” which sounds slightly different from deciding whether a program halts on input 0. I think the intent is clear, but the wording might be a little off.
+
+Ambiguous parts:
+In several places it says that FPw “halts on every string” or “loops on every string.” I think the intended meaning is that this happens for all inputs x to FPw, but that could maybe be stated more directly. Also in the last proof it says both programs “return the same input,” which I think should mean they return the same value, since the code shows both returning 0. Clarifying that wording would make the argument a bit more precise.

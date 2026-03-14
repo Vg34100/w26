@@ -1,0 +1,1205 @@
+Pablo [0:13]: your algorithm solves consistent guessing
+Pablo [0:15]: then it needs to do the following
+Pablo [0:19]: if p on the empty string accepts then your algorithm needs to accept
+Pablo [0:23]: if p on the empty string rejects then your algorithm needs to reject
+Pablo [0:36]: but if it runs forever then you can kind of do whatever you want but you need to halt like you can't just run prep so this means that a valid algorithm isn't just run p on the empty string because then it might go forever
+Pablo [0:41]: and you're not giving an answer that's not a valid algorithm like we've defined
+Pablo [0:41]: it
+Pablo [0:48]: this is actually an undecidable problem it's uncomputable
+Pablo [0:54]: and you can actually prove this with a similar diagonalization argument that we use to prove the undecidability of the halting problem
+Pablo [1:05]: what's kind of really interesting is that you can't reduce from the halting problem that shows us undecidable like provably there's no way to do that which is actually kind of crazy
+Pablo [1:09]: so this is a canonical example of like a turing intermediate problem
+Pablo [1:12]: it's undecidable but the halting problem is not reduced to it
+Pablo [1:27]: and maybe like if you remember from the unit on np we saw this thing called land hours theorem or not manpower someone's theorem but he proved that they're like if p is not equal to np then there is np intermediate problem
+Pablo [1:36]: that problem was really weird and kind of artificial i guess this problem is still a little bit artificial but it feels a bit more natural
+Pablo [1:52]: because we're asking questions just about does this thing halt or not a pretty reasonable thing to ask about a computer program i think the other one is a bit weird so that's just a side note i think it's pretty interesting that there's these turing intermediate problems
+Pablo [1:56]: but the important thing is we have this problem now and we're going to use it and it's undecidable
+Pablo [2:02]: and we're going to use it in our real proof of google sync completing the stand like the strong version
+Pablo [2:06]: so here's what we're going to do
+Pablo [2:11]: so now if we only have
+Pablo [2:13]: consistency
+Pablo [2:16]: we're going to observe the following thing about our problem
+Pablo [2:22]: so if p on epsilon accepts then there's a proof of that fact that's out there that's correct
+Pablo [2:26]: and it's a transcript of the computations of the group
+Pablo [2:31]: so this is kind of what's going to set this problem apart from the halting problem
+Pablo [2:36]: in that the correct answer will basically have a proof of that fact always
+Pablo [2:40]: so that's where we were kind of like bootstrapping soundness into this problem
+Pablo [2:43]: if something is true then there's definitely a proof of it right
+Pablo [2:47]: if your program halts on some input then just telling me the steps
+Pablo [2:50]: that the program took is a proof of that fact
+Pablo [2:52]: and i can check that
+Pablo [2:54]: by doing the steps myself
+Pablo [2:57]: so for example
+Pablo [3:08]: then therefore so if a statement accepts p on epsilon is true there's a group of that fact and similarly for bridgetspeed on epsilon because if it rejects then there's also some finite list of
+Pablo [3:10]: complications to get that answer
+Pablo [3:14]: okay
+Pablo [3:17]: so now for the group
+Pablo [3:18]: i don't know
+Pablo [3:19]: what that is i guess
+Pablo [3:20]: right
+Pablo [3:26]: so now we're going to assume the same thing we did before but instead of assuming soundness we're going to actually assume consistency for real this time
+Pablo [3:35]: so assume we have a formal system that is expressive enough to talk about programs for every statement either t or its negation is provable
+Pablo [3:40]: exactly one of t or not c can be proved
+Pablo [3:49]: all right how are we going to do our algorithm this all consistent guessing we're going to do two searches in parallel kind of similar to what we did before
+Pablo [4:03]: we're going to search for a proof that p on input epsilon accepts the next step is one is step that's found and then we're going to search for a group that does not accept that's not that it rejects just to prove that it does not accept so a proof that either runs forever
+Pablo [4:05]: or proof that it rejects
+Pablo [4:19]: and this is kind of like i guess a bit of a difference here because if something like hall doesn't all
+Pablo [4:23]: in general that you can kind of establish but here we're kind of inserting this rejection
+Pablo [4:26]: into the argument
+Pablo [4:31]: okay
+Pablo [4:33]: this
+Pablo [4:34]: resolves consistent guessing
+Pablo [4:36]: why does it do that
+Pablo [4:37]: okay
+Pablo [4:47]: so if p on epsilon accepts then this little hard statement here implies that there's a proof of that fact it's just the computation that p took on it but epsilon
+Pablo [4:50]: but then we have consistency
+Pablo [4:55]: so one is that statement is provable there's a group of that fact
+Pablo [5:01]: so therefore by consistency this means that the other thing is not provable
+Pablo [5:04]: so we'll always find this true
+Pablo [5:05]: and accept like we should
+Pablo [5:08]: okay
+Pablo [5:10]: what about the other case
+Pablo [5:21]: so if it rejects then again like the statement that starred implies that the second statement is provable right we didn't accept we rejected
+Pablo [5:27]: so that means we didn't accept so there's a proof of that which means the first statement is not provable
+Pablo [5:29]: so we'll reject like we should
+Pablo [5:41]: and if we don't reject then i guess then like you're like okay well what if p runs forever well that means that this statement is not provable so by completeness we'll find a proof of the other thing
+Pablo [5:47]: so that means that csault consists of guessing
+Pablo [5:53]: yay but that's actually bad because we just said that this is uncivable
+Pablo [6:01]: so this actually gives a proper correct group of girls in the data zero in the strong sense we don't need to assume consistency
+Pablo [6:03]: it's enough to just say that
+Pablo [6:15]: we don't even assume sound all of it that we need to do is assume consistency and even with this weaker assumption a formal system with the properties we want is just not achievable
+Pablo [6:16]: okay
+Pablo [6:20]: so yeah that's the big i guess
+Pablo [6:25]: theorem of girl time is there any other questions about anything
+Pablo [6:36]: that's great that means everyone completely understands everything i said right
+Pablo [6:38]: okay
+Pablo [6:49]: so dave now kind of does like a complete flip into a new subject but it's just kind of unrelated but a bit related we're moving on from logic but we'll kind of go back to computability
+Pablo [6:54]: but we're going to talk about this really cute model called counter machines i'm going to call them register machines very often
+Pablo [7:06]: because this actually have showed up in the research i did with dave a bit of sometimes there we call the register machines but here he calls them counter machines i think this slide is terrible actually
+Pablo [7:12]: but he actually has a very good slide that we made
+Pablo [7:15]: for a different
+Pablo [7:24]: class or talk thing that actually i think demonstrates what a register machine is very so register machine
+Pablo [7:26]: is a model of computation
+Pablo [7:30]: and similar to a turing machine that it's like a finite state machine with unbounded memory
+Pablo [7:33]: but the way it holds is memory is completely different
+Pablo [7:40]: so you have these little bins called registers like maybe encounters if you help
+Pablo [7:42]: and they can hold little balls in there
+Pablo [7:52]: which represent having an integer inside of it so you think of one of these as the input register if you load your input like the number of balls you want to compute on there
+Pablo [7:56]: and then you have a kind of program that acts on these registers
+Pablo [7:58]: and does fun things
+Pablo [8:00]: so you have three instructions you can do
+Pablo [8:04]: two instructions but a secret third one
+Pablo [8:13]: you can either decrement a register or incremental register so i have this program here that is going to do some fun things to the registers
+Pablo [8:17]: so first we'll start by the first instruction says decrement r so we'll take a ball out of the bucket
+Pablo [8:21]: and then we increment s three times so we put three balls in bucket
+Pablo [8:24]: and then we're going to go and try and decrement two but oh my goodness
+Pablo [8:25]: gracious
+Pablo [8:26]: nothing
+Pablo [8:26]: in there
+Pablo [8:30]: what am i supposed to do this is
+Pablo [8:31]: okay
+Pablo [8:38]: because i said these maybe i didn't say it but these buckets should have non negative integers in it because having something
+Pablo [8:46]: so here's what we're going to do instead of saying that
+Pablo [8:47]: what we dec
+Pablo [8:50]: orate network empty bucket
+Pablo [9:16]: if there's nothing in there then we're going to do a jump instead so we're going to add some kind of like jumping logic so if this thing is empty we're just going to what should always is we're just going to jump back to this always going to be empty so sometimes later on you'll see let's see dave just kind of shortcut this and write go to line i and that's just shorthand for we're always going to maintain this empty register
+Pablo [9:20]: and it's always going to be empty and if we want to jump we're just going to check that
+Pablo [9:21]: to do our job
+Pablo [9:26]: okay so we'll go back decrement r again increment s three more times
+Pablo [9:32]: jump back to line one now we're going to try decorative r there's nothing in it so we'll do the jump instead
+Pablo [9:34]: in a little
+Pablo [9:35]: bit
+Pablo [9:42]: if you have looking for examples
+Pablo [9:42]: there but
+Pablo [9:44]: overall this
+Pablo [9:45]: little program
+Pablo [9:52]: three n plus one so put two balls in the bucket end up with seven in the output
+Pablo [9:53]: bucket
+Pablo [9:55]: model kind of makes sense
+Pablo [9:59]: you can put lots of pockets anyone can do that
+Pablo [10:40]: so what i showed before
+Pablo [10:46]: had some kind of like was like a numerical kind of function it had input as numbers as input
+Pablo [10:47]: the number is as output
+Pablo [10:51]: we could also establish some
+Them [11:12]: enter some designated accept or reject state or i mean the outputs a number so you can just always interpret the output of it
+Them [11:14]: as whatever value as whatever you want
+Them [11:15]: ed to do
+Them [11:18]: so it's enough to just kind of like when it's
+Them [11:25]: but other times we'll think about it as competing numerical options
+Them [11:32]: okay
+Them [11:33]: here's some more examples
+Them [11:33]: that i think
+Them [11:35]: this more
+Them [11:37]: maybe stare at this a little bit
+Them [11:39]: maybe think about what is it computing
+Them [11:42]: kind of
+Them [11:44]: where this is
+Pablo [12:03]: the medical cycle three a
+Pablo [12:08]: what am i going to end with b what value am i going to end with in the b register
+Pablo [12:18]: six right because for every a you're going to go through and every for every a you're going to go through and increment b two times
+Pablo [12:19]: get a increment b twice
+Pablo [12:24]: break a sounds like computing two times a very simple multiplication function
+Pablo [12:26]: okay
+Pablo [12:30]: so this kind of construct that we introduced here
+Pablo [12:38]: this kind of looping type of structure will be very useful so we're going to introduce this new notation that's just kind of shorthand
+Pablo [12:45]: for this kind of looping structure that we have here so if you see while eight and zero that shorthand for what we have written here
+Pablo [12:54]: if a is zero go to i otherwise put an i minus one is just jump back to the start and that's like
+Pablo [12:57]: it fits with our programming kind of intuition that we should have
+Pablo [12:59]: okay
+Pablo [13:00]: what about this
+Pablo [13:00]: one
+Pablo [13:03]: this one's also not too magic
+Pablo [13:06]: shout it out if you see
+Pablo [13:07]: it
+Pablo [13:19]: a over two but not quite a over two right
+Pablo [13:24]: floor of ampertivity
+Pablo [13:27]: we're going to
+Pablo [13:30]: decrement a twice every time we do that we're getting a grippy one
+Pablo [13:31]: so this could be easy
+Pablo [13:32]: okay
+Pablo [13:34]: this one's a little bit more
+Pablo [13:36]: three d
+Pablo [13:39]: but i have faith that we can all figure out what it does
+Pablo [13:40]: together
+Pablo [13:56]: i don't have to think about what happens when you start with zero when it happens based on
+Pablo [14:07]: tells you if your odd or even yeah it tells you if you're already even or specifically it accepts if
+Pablo [14:14]: you're on exactly except that you're off and a way to see that is kind of just start with the zero or one case if you're zero
+Pablo [14:17]: you'll check here then you'll just jump to the reject state
+Pablo [14:27]: so coming through even then you'll decrement if you're one you'll fail this so you won't jump and then you can be really
+Pablo [14:28]: awkward
+Pablo [14:36]: and then if you're one maybe you'll decrement and now you're zero so you'll jump to accept but otherwise you'll decorate again and then go back
+Pablo [14:44]: so the only thing that determines if you accept or reject is just the parity of your input in other words this computes the predicate is a odd
+Pablo [14:48]: this one's a bit more
+Pablo [15:21]: kind of ignore the outer loop
+Pablo [15:26]: so we're looping over a but then the interlo is what's happening
+Pablo [15:36]: so what's happening is that essentially we're taking b we're decrementing it and then we're incrementing c and d basically b times
+Pablo [15:38]: so we're adding
+Pablo [15:41]: b into the register c and d
+Pablo [15:42]: and then
+Pablo [15:43]: we're going to restore
+Pablo [15:44]: this move wednesday
+Pablo [15:45]: because it's restoring
+Pablo [15:51]: and
+Pablo [15:52]: essentially
+Pablo [15:53]: this part is adding
+Pablo [15:54]: b to the register
+Pablo [15:55]: d but we're going to
+Pablo [15:56]: do that eight times
+Pablo [15:59]: essentially
+Pablo [16:00]: would have been given
+Pablo [16:01]: here is the function
+Pablo [16:02]: eight
+Pablo [16:07]: system
+Pablo [16:10]: s comp
+Pablo [16:10]: ute
+Pablo [16:12]: the fact that you can lend to multiplic
+Pablo [16:13]: ation
+Pablo [16:15]: you're
+Pablo [16:16]: really
+Pablo [16:17]: using
+Pablo [16:19]: i for
+Pablo [16:20]: got what it's called
+Pablo [16:22]: there's some decidable form of logic
+Pablo [16:29]: that you can get from just having addition and the hope was that when they agree with the guy's name
+Pablo [16:34]: once you came up with it but this opens like oh we'll have a decidable form of logic and it can hopefully prove all sorts of things
+Pablo [16:40]: but then other people came along the group actually this model of logic is really weak
+Pablo [16:41]: can't really do too much
+Pablo [16:44]: but then once you add in multiplication you get
+Pablo [16:48]: the standard arithmetic we're used to
+Pablo [16:50]: in the sense of logic
+Pablo [16:52]: so that's pretty cool
+Pablo [16:54]: you can also modify this a little bit
+Pablo [17:01]: just kind of take away this instead of incrementing d you just increment c twice
+Pablo [17:06]: and what this ends up having the effect of doing is like basically multiplying by two
+Pablo [17:09]: multiplying one by two
+Pablo [17:14]: like a times which ends up giving the function two d so you'd actually compute some pretty big functions this way
+Pablo [17:17]: okay
+Pablo [17:28]: so this model seems very simple it's like a very cute little model all you can do is increment decrement put your little balls in the buckets like have a granville time you can do multiplication
+Pablo [17:31]: but in fact you can do so much more than that
+Pablo [17:38]: anticlimactic i guess i mis
+Pablo [17:46]: if you have a look at the textbook or if you look in some other resources you'll find a more kind of
+Pablo [17:52]: more formal kind of way to define these counter machines
+Pablo [18:00]: we're going to be talking about in terms of this kind of more programming language type of thing because i think it's easier to parse for people who don't want programming
+Pablo [18:04]: but you can also define it as a finite state machine
+Pablo [18:13]: in the same way you would kind of find a turing machine or a ddfa in that you have this set of states an initial state and then a transition function
+Pablo [18:18]: that basically takes a state that's not accepting or rejecting
+Pablo [18:24]: and then it checks basically the z kind of stands for is this state is this counter zero
+Pablo [18:30]: and then the n is like is it not zero and then that can inform whether to
+Pablo [18:37]: what state will jump to next and then whether you increment decrement or keep each of the registers the same
+Pablo [18:44]: and for example so if you have if you're in state q and you see that register one
+Pablo [18:57]: is zero register two is not zero registered three is not zero is zero then that means that we're going to go to state r we're going to increment the register counter one
+Pablo [19:02]: decrement counter two and then keep counter phase
+Pablo [19:10]: so i think it's maybe potentially could be a useful way to formalize things in your homework i'm not sure if she actually gets problems on counter machines anymore
+Pablo [19:16]: but if you ever need to formalize a register machine for how you would do it
+Pablo [19:27]: okay so before i got cut off by forgetting what slide came next i was building up to this grand suspense that these seem like a very simple model of computation and actually they can do so much
+Pablo [19:30]: and in fact these machines are turning universal
+Pablo [19:35]: in fact you don't even need that many registers to simulate a turing machine you only need three
+Pablo [19:37]: pretty cool
+Pablo [19:42]: it is kind of fun to kind of sit down and think about how you would do this
+Pablo [19:44]: but we don't really have that kind of time
+Pablo [19:48]: it's a bit of exercise to work it out
+Pablo [19:52]: but it's a pretty cute construction
+Pablo [20:01]: so i guess when you're trying to do any kind of simulation argument the first thing to do to think about is okay how do i represent the internal state of the turing machine
+Pablo [20:05]: how do i represent where the tape head is and what are the contents of the tape
+Pablo [20:20]: and so to make our construction kind of work we're going to modify the base turing machine a little bit we're going to insist that it maintains ones on both ends of the tape so it's always going to have the one here it's always going to have a one at the end
+Pablo [20:30]: and not every turing machine satisfies this of course but maybe it's not too hard to convince yourself that if i give you a turing machine you can tinker with it and modify it so that it does this
+Pablo [20:37]: but i'll also generality we can just say that the turing machine we're trying to simulate does this and this will be really important for artists anyway
+Pablo [20:45]: the turning machine is also in a state but where finite state machine we're allowed to dev states too so we'll just kind of maintain that in our state
+Pablo [20:46]: set
+Pablo [20:46]: okay
+Pablo [20:59]: so now how do we kind of keep track of where the datehead is and how do we actually remember what's in memory so really difficult thing to do is it's easier for the
+Pablo [20:59]: ones
+Pablo [21:02]: interpreting
+Pablo [21:03]: as a binary
+Pablo [21:07]: so tornado is going to be used
+Pablo [21:08]: to keep track of the
+Pablo [21:09]: tape
+Pablo [21:12]: and what we're going to do is we're going to split the two parts
+Pablo [21:14]: the first
+Pablo [21:15]: part is going to be
+Pablo [21:16]: everything to
+Pablo [21:16]: the left
+Pablo [21:17]: of the data
+Pablo [21:18]: and so
+Pablo [21:20]: this digit right here it'll be where the data
+Pablo [21:21]: is
+Pablo [21:21]: at
+Pablo [21:22]: now we're going to keep that
+Pablo [21:23]: number in our
+Pablo [21:24]: purpose
+Pablo [21:24]: today
+Pablo [21:25]: for the
+Pablo [21:26]: second one
+Pablo [21:27]: we're going to look around
+Pablo [21:28]: that's
+Pablo [21:29]: why we made sure
+Pablo [21:30]: to always have all
+Pablo [21:31]: at the end
+Pablo [21:34]: this other
+Pablo [21:34]: half
+Pablo [21:35]: is
+Pablo [21:36]: split tape
+Pablo [21:37]: our second
+Pablo [21:38]: register
+Pablo [21:42]: so this one
+Pablo [21:43]: we can actually remember
+Pablo [21:44]: where
+Pablo [21:44]: the data is
+Pablo [21:45]: because
+Pablo [21:46]: when i think that is
+Pablo [21:47]: just
+Pablo [21:48]: the least significant
+Pablo [21:49]: data
+Pablo [22:08]: first thing
+Pablo [22:08]: i need to do
+Pablo [22:09]: is
+Pablo [22:10]: read what
+Pablo [22:14]: you need
+Pablo [22:15]: to check if the lead significant
+Pablo [22:16]: a
+Pablo [22:17]: zero
+Pablo [22:18]: one
+Pablo [22:21]: that
+Pablo [22:22]: you can do
+Pablo [22:22]: next
+Pablo [22:41]: is
+Pablo [22:42]: one
+Pablo [22:43]: adding
+Pablo [22:44]: one to it
+Pablo [22:45]: and
+Pablo [22:46]: everything else
+Pablo [22:47]: is about
+Pablo [22:50]: a to the oper
+Pablo [22:50]: ator
+Pablo [23:00]: check
+Pablo [23:01]: if it
+Pablo [23:02]: 's
+Pablo [23:03]: a
+Pablo [23:04]: read
+Pablo [23:05]: what the number
+Pablo [23:11]: test
+Pablo [23:12]: might be do on
+Pablo [23:22]: testimonial
+Pablo [23:25]: we did that before
+Pablo [23:26]: you had it
+Pablo [23:27]: but
+Pablo [23:28]: uber and attach
+Pablo [23:29]: ed to number
+Pablo [23:29]: five
+Pablo [23:31]: now
+Pablo [23:32]: what do we want to change the bit
+Pablo [23:35]: well
+Pablo [23:36]: if you want to change
+Pablo [23:37]: this
+Pablo [23:39]: all
+Pablo [23:40]: you need to do is either
+Pablo [23:41]: from
+Pablo [23:42]: zero one
+Pablo [23:45]: to zero
+Pablo [23:46]: we need to do to subtract
+Pablo [23:46]: one
+Pablo [23:47]: these are like
+Pablo [23:48]: how many operations
+Pablo [23:49]: within the
+Pablo [23:49]: rest
+Pablo [23:52]: ing
+Pablo [23:53]: correct
+Pablo [23:56]: okay
+Pablo [23:58]: now that we want to
+Pablo [23:59]: line
+Pablo [24:02]: up
+Pablo [24:03]: what to do there
+Pablo [24:30]: is
+Pablo [24:31]: basically like her adding another
+Pablo [24:32]: minor digit
+Pablo [24:33]: and then you like shitt
+Pablo [24:34]: y underneath
+Pablo [24:39]: easy
+Pablo [24:40]: as if class
+Pablo [24:41]: and
+Pablo [24:42]: of course once that motivation
+Pablo [24:50]: similarly
+Pablo [24:51]: to
+Pablo [24:52]: follow
+Pablo [24:53]: these digits
+Pablo [24:53]: to the right
+Pablo [24:54]: she was divided
+Pablo [24:58]: it
+Pablo [24:59]: might be that
+Pablo [25:02]: one
+Pablo [25:03]: to
+Pablo [25:04]: add one to
+Pablo [25:06]: a also maintain
+Pablo [25:06]: that
+Pablo [25:10]: i'll do
+Pablo [25:11]: this at a equ
+Pablo [25:12]: al to two times
+Pablo [25:13]: a maybe i won't need to
+Pablo [25:15]: and then set these
+Pablo [25:20]: and
+Pablo [25:21]: left is like
+Pablo [25:24]: two
+Pablo [25:25]: d plus one in this
+Pablo [25:26]: epigenetic
+Pablo [25:28]: the last
+Pablo [25:29]: thing we do is just move the
+Pablo [25:30]: data
+Pablo [25:33]: all
+Pablo [25:34]: that we're here
+Pablo [25:39]: moving
+Pablo [25:40]: into
+Pablo [25:49]: the basically
+Pablo [25:55]: all the way
+Pablo [25:56]: over to the brain
+Pablo [25:57]: that means
+Pablo [25:58]: the whole thing is
+Pablo [25:59]: basically being sorted
+Pablo [26:00]: a and b
+Pablo [26:01]: is zero
+Pablo [26:02]: so
+Pablo [26:03]: all you need to do
+Pablo [26:04]: is test it via
+Pablo [26:05]: zero
+Pablo [26:09]: and then
+Pablo [26:09]: if it is zero
+Pablo [26:11]: we'll just send eighty
+Pablo [26:11]: to it
+Pablo [26:20]: so
+Pablo [26:29]: yeah
+Pablo [26:29]: sure
+Pablo [26:30]: so
+Pablo [26:37]: three
+Pablo [26:38]: what the data is
+Pablo [26:40]: and so
+Pablo [26:41]: the way we're
+Pablo [26:41]: representing
+Pablo [26:43]: with a
+Pablo [26:44]: statement
+Pablo [26:45]: that is the least significant
+Pablo [26:48]: or
+Pablo [26:49]: it's encoded
+Pablo [26:52]: and so
+Pablo [26:52]: they'll be significant
+Pablo [26:55]: will be one exactly one
+Pablo [26:56]: that's binary
+Pablo [26:57]: this number being represented
+Pablo [26:58]: in my area
+Pablo [27:03]: number
+Pablo [27:04]: is
+Pablo [27:05]: two to the
+Pablo [27:06]: zero plus two to the one
+Pablo [27:07]: two
+Pablo [27:07]: three
+Pablo [27:08]: four
+Pablo [27:11]: zero
+Pablo [27:14]: the only way
+Pablo [27:15]: to find
+Pablo [27:16]: her to be
+Pablo [27:16]: odd is
+Pablo [27:19]: one
+Pablo [27:23]: so
+Pablo [27:24]: this will be
+Pablo [27:25]: one
+Pablo [27:55]: yeah so me being equal to zero means that
+Pablo [27:57]: if you remember like
+Pablo [28:02]: a is kind of representing the first half of our tape and then b is representing the second half
+Pablo [28:02]: basically up until the end
+Pablo [28:04]: of this
+Pablo [28:05]: one
+Pablo [28:05]: is
+Pablo [28:07]: and
+Pablo [28:09]: we need to think of
+Pablo [28:10]: it all the way over here
+Pablo [28:12]: and we want
+Pablo [28:12]: to move to the right
+Pablo [28:13]: and right
+Pablo [28:18]: what do we need to do
+Pablo [28:19]: is
+Pablo [28:22]: what that means
+Pablo [28:23]: if we're all
+Pablo [28:23]: the way over to the right
+Pablo [28:29]: this means that nothing in b is there everything is being represented entirely today
+Pablo [28:32]: right
+Pablo [28:40]: and so because of that all we would need to do is just make a a little bit bigger and then add one to it to represent that there's a one
+Pablo [28:41]: at b
+Pablo [28:47]: but we will only do that if b is zero because b is zero only if
+Pablo [28:50]: the like tape head is all the way at the end
+Pablo [28:53]: does that kind of answer your question
+Pablo [28:55]: okay
+Pablo [28:57]: cool
+Pablo [28:59]: i think this is really neat actually
+Pablo [29:11]: because this model seems very simple i mean there's only three instructions all you're doing is adding and subtracting integers and yet you're sophisticated and powerful enough to do anything like a general purpose like computer would do
+Pablo [29:13]: this is very surprising actually
+Pablo [29:14]: i think
+Pablo [29:17]: maybe
+Pablo [29:21]: you kind of saw it coming but i think this is really like kind of cool
+Pablo [29:28]: and what's even more cool is that you don't even need to count three counters two counters of ice
+Pablo [29:44]: to simulate a type of shape um so this will do to minsky uh i guess actually has like some interesting kind of lore history to him that's my um apparently like back when neural networks are coming out people are like oh back propagation algorithm
+Pablo [29:49]: this it's not reliable so this thing is completely useless that no one studied neural networks for thirty years
+Pablo [29:55]: sometime
+Pablo [29:56]: s
+Pablo [30:02]: but
+Pablo [30:03]: this is an idea that more than
+Pablo [30:04]: two
+Pablo [30:09]: so
+Pablo [30:10]: the way that we're going to
+Pablo [30:11]: show that
+Pablo [30:12]: she has
+Pablo [30:15]: shown that
+Pablo [30:16]: two kind of machine
+Pablo [30:17]: can see that
+Pablo [30:18]: three
+Pablo [30:21]: adopted
+Pablo [30:22]: more three conversations
+Pablo [30:22]: in her
+Pablo [30:24]: genes
+Pablo [30:33]: is cool trick
+Pablo [30:34]: that we'll see later actually
+Pablo [30:37]: that we're going to represent
+Pablo [30:38]: all of her
+Pablo [30:39]: undercounts
+Pablo [30:40]: in just one single
+Pablo [30:40]: register
+Pablo [30:41]: is by
+Pablo [30:42]: using this
+Pablo [30:43]: three d type of enc
+Pablo [30:44]: oding
+Pablo [30:47]: reg
+Pablo [30:48]: ister as a b and
+Pablo [30:48]: c
+Pablo [30:49]: in
+Pablo [30:50]: order to how much
+Pablo [30:51]: of a and b
+Pablo [30:53]: we're going to
+Pablo [30:54]: encode that and the
+Pablo [30:55]: exponent of the
+Pablo [30:56]: prime factors
+Pablo [30:57]: of
+Pablo [30:58]: this number
+Pablo [31:05]: represent
+Pablo [31:06]: every number
+Pablo [31:09]: register
+Pablo [31:10]: and
+Pablo [31:11]: the
+Pablo [31:12]: factor of that
+Pablo [31:13]: will be two
+Pablo [31:14]: if
+Pablo [31:15]: the value needs
+Pablo [31:16]: three to
+Pablo [31:16]: be
+Pablo [31:17]: there is
+Pablo [31:18]: b
+Pablo [31:19]: and
+Pablo [31:20]: so on and so forth
+Pablo [31:21]: actually you may
+Pablo [31:22]: kind of see how to general
+Pablo [31:23]: ize
+Pablo [31:25]: many
+Pablo [31:25]: registers
+Pablo [31:26]: as you want
+Pablo [31:27]: to address
+Pablo [31:28]: her d will have
+Pablo [31:29]: a factor whether that
+Pablo [31:35]: 's
+Pablo [31:36]: just a mixed card
+Pablo [31:37]: eleven
+Pablo [31:45]: normally two
+Pablo [31:45]: patterns
+Pablo [31:47]: are going to be this huge
+Pablo [31:48]: gigormous counter
+Pablo [31:49]: and then y equals zero
+Pablo [31:50]: and so
+Pablo [31:52]: to increment b
+Pablo [31:53]: all you need to do is
+Pablo [31:54]: multiply x by
+Pablo [31:54]: three
+Pablo [31:56]: using y as
+Pablo [31:57]: like the word character to
+Pablo [31:58]: actually do the computation
+Pablo [32:00]: and
+Pablo [32:02]: it's a way to permit a i would
+Pablo [32:02]: just multiply by two
+Pablo [32:04]: little
+Pablo [32:04]: increments
+Pablo [32:04]: c
+Pablo [32:05]: and we multiply by five
+Pablo [32:06]: which is all things
+Pablo [32:07]: like
+Pablo [32:11]: pretty
+Pablo [32:12]: easy to see how you would
+Pablo [32:13]: like extend that multiply
+Pablo [32:14]: by eight
+Pablo [32:17]: all
+Pablo [32:18]: you need to do is
+Pablo [32:19]: divide
+Pablo [32:19]: two
+Pablo [32:21]: to test
+Pablo [32:21]: for zero
+Pablo [32:22]: like this test is something
+Pablo [32:23]: with a positive
+Pablo [32:24]: all
+Pablo [32:25]: you do is just test
+Pablo [32:26]: it as like zero
+Pablo [32:30]: i
+Pablo [32:31]: want tested
+Pablo [32:33]: a zero
+Pablo [32:34]: object
+Pablo [32:35]: zero
+Pablo [32:40]: um
+Pablo [32:42]: positive
+Pablo [32:43]: zero
+Pablo [32:44]: off to the table
+Pablo [32:45]: should mean that
+Pablo [32:45]: feedback
+Pablo [32:47]: so
+Pablo [32:48]: the urban computation
+Pablo [32:49]: what we would do
+Pablo [32:52]: is
+Pablo [32:53]: start and i could
+Pablo [32:54]: take this hard
+Pablo [32:55]: with
+Pablo [32:56]: a equals that
+Pablo [32:57]: argument
+Pablo [32:58]: and like b and zero
+Pablo [32:59]: zero
+Pablo [33:00]: was starting to darken
+Pablo [33:01]: but registered as
+Pablo [33:02]: eight x to
+Pablo [33:03]: the x is equal to
+Pablo [33:04]: two to the n
+Pablo [33:05]: and
+Pablo [33:05]: three to the zero
+Pablo [33:06]: times five
+Pablo [33:08]: which
+Pablo [33:09]: is one
+Pablo [33:10]: which
+Pablo [33:11]: encodes that need a copies of
+Pablo [33:11]: a
+Pablo [33:12]: in
+Pablo [33:18]: that
+Pablo [33:19]: there's any
+Pablo [33:19]: machine
+Pablo [33:21]: can start with two p
+Pablo [33:22]: and all
+Pablo [33:26]: this
+Pablo [33:27]: is like
+Pablo [33:28]: a
+Pablo [33:29]: simulation number of
+Pablo [33:29]: genes
+Pablo [33:30]: but you might need
+Pablo [33:31]: a little bit
+Pablo [33:37]: more
+Pablo [33:40]: to
+Pablo [33:41]: start with
+Pablo [33:42]: ed and the register
+Pablo [33:43]: and
+Pablo [33:44]: with that event
+Pablo [33:44]: like that
+Pablo [33:45]: or maybe
+Pablo [33:46]: like started that and
+Pablo [33:47]: then immediately
+Pablo [33:53]: imposs
+Pablo [33:54]: ible
+Pablo [33:55]: which is kind
+Pablo [33:55]: of fun
+Pablo [33:56]: ny so the cave not
+Pablo [33:57]: ice that
+Pablo [33:58]: a
+Pablo [33:59]: machine that is this
+Pablo [33:59]: machine
+Pablo [34:00]: is during universal
+Pablo [34:01]: two cars
+Pablo [34:02]: is turning bristol
+Pablo [34:03]: with a cave
+Pablo [34:04]: at that
+Pablo [34:05]: you cannot do the
+Pablo [34:05]: annuity
+Pablo [34:05]: itself
+Pablo [34:07]: to
+Pablo [34:08]: actually
+Pablo [34:09]: do the proper
+Pablo [34:09]: computation
+Pablo [34:10]: it needs
+Pablo [34:11]: to kind of outside
+Pablo [34:12]: force her right
+Pablo [34:13]: to correct encoding
+Pablo [34:14]: condition
+Pablo [34:18]: this
+Pablo [34:19]: is kind of
+Pablo [34:22]: maybe
+Pablo [34:22]: a little bit
+Pablo [34:27]: contro
+Pablo [34:27]: versial
+Pablo [34:30]: if this is actually like a real proper simulation in the drawing machine
+Pablo [34:35]: as was shown by i have no idea how to say this guy's name but probably
+Pablo [34:37]: like crazy
+Pablo [34:41]: she kind of said in this paper that like any camera machine can be simulated with a two counter machine
+Pablo [34:45]: provided an obscure coding is accepted for the input and output so
+Pablo [34:53]: module is kind of like encoding trick that the machine can't actually do um it's turning to bristle
+Pablo [34:55]: which i guess is
+Pablo [35:04]: but i guess like the fact that it can simulate arbitrary three camera machines does mean that it's all improper zip because
+Pablo [35:07]: if you could decide the halting problem then you decided for the special case
+Pablo [35:09]: really
+Pablo [35:10]: and then
+Pablo [35:19]: is
+Pablo [35:20]: decidable so that means
+Pablo [35:22]: that one counter is not enough
+Pablo [35:23]: to simulate any kind of charge
+Pablo [35:25]: that's not
+Pablo [35:26]: a cursor
+Pablo [35:27]: okay
+Pablo [35:28]: so
+Pablo [35:38]: these kind of like bridge machines are like actually like a really i said it's really cool that such a simple model is
+Pablo [35:39]: very universal
+Pablo [35:42]: the one reason it's very very cool that it's turning universal
+Pablo [35:43]: is that you can use it
+Pablo [35:48]: as the basis of simulation for other various sample systems because it's a much easier design term
+Pablo [35:52]: a turret machine is a seven tuple that's so many things to kind of
+Pablo [35:52]: think about
+Pablo [35:53]: there's a lot
+Pablo [35:55]: of bells and whistles to try and implement
+Pablo [36:00]: but with this all i need to do is increment is implement okay how do i have a register
+Pablo [36:10]: how do i increment how do i decrement how do i test zero that's a lot less that's a lot easier but as i tell you and because of that you can actually use it to show that all sorts of systems are actually turned universal
+Pablo [36:12]: in fact
+Pablo [36:16]: it's often the norm that's something just for a universal
+Pablo [36:31]: and if it isn't that's the surprising thing that something can't do the turning machine and so that's why i always like maybe kind of pings me a little bit where i go i'm on the internet like to see something it's like oh my god this thing is turned universal this can simulate you could do a computer with magic cards
+Pablo [36:31]: like yeah
+Pablo [36:39]: obscure like you know complicated vm it'd be weird if that could happen
+Pablo [36:47]: but nevertheless you can actually this is another reason why this result is like really interesting and actually useful i think
+Pablo [36:51]: an example like a corollary of this is that
+Pablo [36:58]: even like these simple type of problem some simple problems seem like you're actually completely deciding
+Pablo [37:02]: this is a finite automaton it lives in a two d point
+Pablo [37:04]: porous hermiton
+Pablo [37:10]: you can't see or write anything it just walks around blindly according to the instructions that are given
+Pablo [37:14]: it can move north south east or west around the wall
+Pablo [37:16]: s
+Pablo [37:19]: but it's very good at following instructions
+Pablo [37:22]: it is a very simple type of object
+Pablo [37:24]: but nevertheless
+Pablo [37:28]: there is some kind of automaton so that this problem is completely undecidable
+Pablo [37:31]: given an entry point just on the plate
+Pablo [37:34]: if i start there will i ever visit the orchard
+Pablo [37:42]: the reason for that is that this kind of a simple system can actually encode a tube to the register gene right
+Pablo [37:49]: the encoding is the x direction is like encoding one of the register values
+Pablo [37:58]: the y direction is encoding the other register values so if you kind of just like set up your taumother follow the rules and register machine this question is kind of like asking okay
+Pablo [38:07]: if i start at this point do i reach the origin in my pulp it's basically asking a question about the internal state which is completely un
+Pablo [38:20]: now the spirit decided about register machines
+Pablo [38:29]: don we can kind of go back to this more historical note about trying to define what does it mean for things to be computable
+Pablo [38:36]: and try and like get towards this like grin unification of computation that ended up asking thirty
+Pablo [38:37]: so
+Pablo [38:45]: so i guess to resolve hilbert so godel showed that gilbert's dream is impossible in one direction
+Pablo [38:55]: there is no complete inconsistent program like model of proving things that is expressive enough to reason about programs
+Pablo [38:56]: um sorry
+Pablo [38:59]: it will turn up
+Pablo [39:31]: so
+Pablo [39:42]: hilbert stream is like with girl kind of quenched one kind of path to maybe achieving an algorithm to like automate mathematical reasoning
+Pablo [39:50]: but it's perhaps conceivable to think that there could be some kind of other algorithm that doesn't just enumerate every group
+Pablo [39:55]: to find like the validity just to figure out if some of the statements true
+Pablo [39:55]: enough
+Pablo [39:56]: so
+Pablo [40:04]: to kind of like resolve this question it's necessary to kind of create a formalism of like what does it mean for something to be computable
+Pablo [40:08]: like what must a function satisfy if it is computable
+Pablo [40:15]: so the very first kind of like attempt at this was the things called the primitive recursive functions
+Pablo [40:18]: or like i don't know if you're talking to a german mathematician
+Pablo [40:24]: i love talking to gerry mathematicians because they always go fashion it's very satisfying
+Pablo [40:32]: um did you ever watch like the bright side of mathematics used this german dude it always feels like you have a miserable function it's like i love it
+Pablo [40:36]: anyways so i might just say that a few times so
+Pablo [40:48]: i guess if you if like this is i guess like if i were to maybe sit you down and think about like okay how would like if you go back to the thirties before you've ever seen a computer anyone's understanding a computer
+Pablo [40:52]: a pretty like reasonable way to kind of
+Pablo [40:56]: construct a definition of what does it mean to be computable
+Pablo [40:58]: is to find things that are obviously computable
+Pablo [41:02]: and then to find ways to combine them that are obviously computable as well
+Pablo [41:06]: and so in that way you can kind of make new computable functions
+Pablo [41:08]: computable combinations of computable functions
+Pablo [41:09]: should be computable
+Pablo [41:12]: this is also kind of how we arrived at our notion of polynomial time
+Pablo [41:15]: as like the efficient notion of computation right
+Pablo [41:24]: because composition of polynomials is a polynomial just as the composition of efficient out programs should itself be efficient
+Pablo [41:25]: right
+Pablo [41:27]: that'd be weird if it wasn't fish
+Pablo [41:31]: so we're going to do just that we're going to start with these three atomic functions
+Pablo [41:35]: that obviously should be computable anyone could compute these functions
+Pablo [41:39]: the first one is just the constant function zero it always outputs zero
+Pablo [41:44]: the second is the successor function on input x a number it outputs x plus one
+Pablo [41:49]: and these kind of projection operations so this is like alia functions
+Pablo [41:50]: not does it
+Pablo [41:51]: by giving all the
+Pablo [41:52]: inputs
+Pablo [41:53]: that hyper rejection
+Pablo [41:54]: function
+Pablo [41:56]: just gives me
+Pablo [42:00]: this
+Pablo [42:01]: also gives you identity
+Pablo [42:05]: question
+Pablo [42:06]: is what i said
+Pablo [42:11]: i
+Pablo [42:13]: can really do it with computer
+Pablo [42:13]: mode
+Pablo [42:14]: and now using these
+Pablo [42:15]: atomic functions
+Pablo [42:16]: we can combine them together
+Pablo [42:17]: to make new
+Pablo [42:18]: motions
+Pablo [42:20]: so
+Pablo [42:21]: that was happening to
+Pablo [42:22]: some kind of
+Pablo [42:23]: primitive reverse
+Pablo [42:25]: i kind of
+Pablo [42:26]: assembled in some
+Pablo [42:27]: way
+Pablo [42:28]: this
+Pablo [42:29]: function
+Pablo [42:30]: is computable
+Pablo [42:33]: that is
+Pablo [42:34]: just take
+Pablo [42:34]: up to you
+Pablo [42:35]: that square
+Pablo [42:43]: and i'm also mentioning
+Pablo [42:44]: this
+Pablo [42:45]: other kind of
+Pablo [42:46]: freaky thing called prim
+Pablo [42:47]: itive recursion
+Pablo [42:48]: so
+Pablo [42:49]: if i have
+Pablo [42:50]: f and g
+Pablo [42:51]: i'm basically
+Pablo [42:52]: doing like
+Pablo [42:53]: a more
+Pablo [42:56]: so
+Pablo [42:57]: pressing on
+Pablo [42:58]: the second variable
+Pablo [43:01]: so
+Pablo [43:02]: y is zero
+Pablo [43:03]: in the
+Pablo [43:04]: drug
+Pablo [43:05]: other
+Pablo [43:06]: wise
+Pablo [43:07]: we'll kind of
+Pablo [43:07]: do this
+Pablo [43:08]: rehearsal
+Pablo [43:09]: and then
+Pablo [43:10]: which depends on
+Pablo [43:11]: what's x
+Pablo [43:12]: and y but also
+Pablo [43:14]: what each does on
+Pablo [43:16]: um
+Pablo [43:21]: because the register kids are always like one small you'll always say that this is eventually
+Pablo [43:23]: which we have well defined
+Pablo [43:23]: here
+Pablo [43:26]: and so this kind of recursion always cur
+Pablo [43:35]: most of what we know about prototypercursive functions is because of this big mathematician rosa peter thanks rosa
+Pablo [43:46]: but another way to kind of think about how this primitive recursion is defined is in terms of this like recursive pseudocode
+Pablo [43:49]: maybe her computer scientist this is a bit more practical
+Pablo [43:54]: so hersian basically says if y is zero do the base case
+Pablo [44:02]: otherwise we're going to rehearse on h of x and then we're going to do the recursive
+Pablo [44:02]: step
+Pablo [44:04]: here using the result of our computation
+Pablo [44:14]: equivalent i mean there's nothing too special about recursion you could also implement this in the iterative way but back in the day
+Pablo [44:20]: they thought more recursively in terms of like these functions defined in terms of themselves which
+Pablo [44:25]: can be more elegant i think one of these is slightly the same
+Pablo [44:26]: length
+Pablo [44:28]: it's personal preference
+Pablo [44:32]: okay so we have these
+Pablo [44:40]: this way we have these like class of functions called the primitive repressive function so a function is primitive recursive
+Pablo [44:45]: if i can if i can make it using these operations i've done before
+Pablo [44:50]: and like these tell me operations that these simple combinations of of functions
+Pablo [44:56]: so here's some examples of things that i've grown to procure for example addition is primitive recursive
+Pablo [45:03]: our base case is just adding x to zero zero to x is just x right that's what it should be
+Pablo [45:13]: and then the recursive case is well if i want to add x to y that's like saying what did i get if i added x to y minus one
+Pablo [45:15]: well it's one more than that right
+Pablo [45:25]: because if we assume that this resulted this computation really is x plus y minus one then to get the right answer we should add one to it
+Pablo [45:28]: is that going to make sense
+Pablo [45:31]: okay
+Pablo [45:33]: yeah
+Pablo [45:42]: so to phrase this like make it very explicit that this is in bacteria recursion kind of like show what functions are being assigned to what
+Pablo [45:46]: um the base case is essentially the first projection function
+Pablo [45:48]: just project out the first input like
+Pablo [45:50]: that's essentially the identity
+Pablo [45:58]: your recursive case is this function g which is essentially the successor composed with the third projection function
+Pablo [46:13]: which g of xyz is the successor of projectile the third thing which is just x so the successor of x which is when we plug in add of x minus one gives us exactly what we want
+Pablo [46:15]: so add is primitive recursive
+Pablo [46:19]: and because it's primitive recursive we can now use it as a subroutine to define other things
+Pablo [46:21]: like maybe multiplication
+Pablo [46:24]: the base case if you multiply x by zero
+Pablo [46:25]: you should get zero
+Pablo [46:29]: but then the recursive thing you
+Pablo [46:30]: would say okay
+Pablo [46:30]: if i have
+Pablo [46:32]: all the blank x by the y minus one
+Pablo [46:36]: then actually the x times y
+Pablo [46:38]: i should have added another copy
+Pablo [46:38]: of x
+Pablo [46:42]: you can kind
+Pablo [46:44]: of do the same thing for exponentia
+Pablo [46:44]: tion
+Pablo [46:45]: um
+Pablo [46:51]: additional multiplication exitution
+Pablo [46:52]: recurs
+Pablo [46:53]: ive
+Pablo [46:54]: and it repeated
+Pablo [46:54]: mine
+Pablo [46:55]: in the cell
+Pablo [46:56]: using the thing
+Pablo [46:56]: we did
+Pablo [46:56]: before
+Pablo [46:57]: heads
+Pablo [47:01]: turning
+Pablo [47:02]: but making sense
+Pablo [47:02]: so far
+Pablo [47:20]: that's good
+Pablo [47:24]: this is kind of like
+Pablo [47:27]: the historically how people came up with the idea
+Pablo [47:30]: of motions
+Pablo [47:32]: they also have an equally
+Pablo [47:36]: like a way to understand them in terms of a more modern programming language kind of idea
+Pablo [47:41]: as these kind of bounded for loop programs or blue programs that's so fun to say
+Pablo [47:42]: um
+Pablo [47:49]: so uh these blue programs are an equivalent way to define the parent of progressive functions
+Pablo [47:56]: and they have for loops i mean something like oh repeat this thing why many times but no wildness in other words
+Pablo [48:01]: before you enter a loop you need to know exactly how many times you're going to do that
+Pablo [48:04]: so you're allowed to like you know rep
+Pablo [48:05]: eat things that variable
+Pablo [48:05]: time
+Pablo [48:06]: because we can go
+Pablo [48:07]: repeated
+Pablo [48:08]: that's
+Pablo [48:09]: what the
+Pablo [48:10]: cat
+Pablo [48:13]: what
+Pablo [48:14]: you guys
+Pablo [48:16]: so
+Pablo [48:17]: for example
+Pablo [48:18]: in this kind
+Pablo [48:19]: of language
+Pablo [48:20]: during addition
+Pablo [48:21]: to exist
+Pablo [48:21]: more
+Pablo [48:24]: z one
+Pablo [48:25]: is this internal
+Pablo [48:25]: variable
+Pablo [48:26]: is just
+Pablo [48:27]: kind of repeat
+Pablo [48:28]: white lens
+Pablo [48:29]: which we haven't pre
+Pablo [48:30]: computed
+Pablo [48:30]: so this is another
+Pablo [48:31]: thing
+Pablo [48:32]: to
+Pablo [48:34]: just add one to z one
+Pablo [48:35]: y times return
+Pablo [48:36]: and then if
+Pablo [48:40]: we went through multiplication we would use that program as kind of a subroutine
+Pablo [48:42]: and then just kind of do the same thing
+Pablo [48:46]: y is kind of why is pre computed and pre given to us
+Pablo [48:48]: so we can use that to add
+Pablo [48:53]: z add like x to y or zero
+Pablo [48:53]: y times
+Pablo [48:56]: and similarly for exponentiation
+Pablo [48:57]: keep building
+Pablo [49:05]: up so i think that this kind of formalization is a bit easier to wrap your head around because it's a pretty simple type of programming language
+Pablo [49:09]: it's just a programming language where you don't have any wildlife familiar format
+Pablo [49:11]: so
+Pablo [49:15]: it was congestion
+Pablo [49:16]: that illness
+Pablo [49:17]: all of these
+Pablo [49:18]: everything is bible
+Pablo [49:19]: recurs
+Pablo [49:20]: ion
+Pablo [49:22]: it is definitely computable
+Pablo [49:25]: this isn't intuitively computable thing
+Pablo [49:27]: but it was conjectured that everything you can do
+Pablo [49:29]: with these curative recursive functions
+Pablo [49:35]: is everything that is intuitively computable or should morally be computable
+Pablo [49:36]: um
+Pablo [49:37]: but
+Pablo [49:38]: that's
+Pablo [49:38]: not what it is
+Pablo [49:39]: so
+Pablo [49:40]: soon after they came along
+Pablo [49:43]: i don't actually think that's true
+Pablo [49:44]: and i'm going to give you
+Pablo [49:45]: an example of a funct
+Pablo [49:46]: ion that's
+Pablo [49:47]: primitive that's not her
+Pablo [49:49]: but still should be intuitively
+Pablo [49:54]: computable and this is going to show that the notion of primitive recursion is not the right notion for computability
+Pablo [49:58]: so here's how we're going to define the african function
+Pablo [50:03]: um we're kind of going to do like something that like similar to what i showed you her last thing we're going to use
+Pablo [50:07]: previous functions to kind of build up new ones
+Pablo [50:14]: so the first ackerman function is just kind of like performing successor y times it's like x plus five
+Pablo [50:19]: which in other words is saying take x add one to it y times
+Pablo [50:24]: the second ackerman function is just it has the result of being x times y
+Pablo [50:26]: but the weight to interpret it like kind of
+Pablo [50:27]: generalizes that
+Pablo [50:28]: you're adding x to itself
+Pablo [50:30]: a lot of times
+Pablo [50:31]: the last operation
+Pablo [50:33]: the second variable
+Pablo [50:36]: so a three is
+Pablo [50:38]: like exponetion multiply
+Pablo [50:39]: x by itself
+Pablo [50:39]: five times
+Pablo [50:45]: then a four is tetration which is like exponentia x by itself
+Pablo [50:46]: y times
+Pablo [50:54]: which is very big you can see that like these functions like as we increase the exponent the function is going to get very very very big very fast
+Pablo [50:55]: um
+Pablo [50:57]: and so
+Pablo [51:02]: the way to generally kind of like create this infinite family of ackerman functions
+Pablo [51:03]: as we say that
+Pablo [51:07]: the ith acronym function is just kind of what we did before
+Pablo [51:08]: do the last thing
+Pablo [51:11]: um to x
+Pablo [51:13]: this many times basically
+Pablo [51:19]: which if you kind of go back and look at the examples you can get a pco this is just exactly what we're doing
+Pablo [51:20]: um
+Pablo [51:21]: cool
+Pablo [51:25]: so the ackerman so there's no the acromic function
+Pablo [51:29]: yet but to get there we're going to find this digit and
+Pablo [51:31]: functions that are give us
+Pablo [51:32]: that recipe
+Pablo [51:32]: reverse
+Pablo [51:37]: this in fact is like exactly that is the way we define
+Pablo [51:39]: so we haven't quite gotten
+Pablo [51:44]: like counterexample yet but we're on our way to getting there
+Pablo [51:47]: does that a definition of the accurate functions kind of makes sense to everyone
+Pablo [51:53]: cool excellent something weird about the ackerman function is it has an inverse that's not the weird part
+Pablo [51:58]: the weird part is that the so the acronym function which we'll see later grows super fast
+Pablo [52:00]: which means inverse you grow super slow
+Pablo [52:09]: i don't know why but it shows up in the like time complexity analysis of like some like data structure i think what is it again
+Pablo [52:24]: yes yeah it destroyed set union it's just there it's like yeah it's like x times like n times inverse acronym function of n and i've never been able to figure out why i say
+Pablo [52:33]: like no one's been able to tell you what it's there the most bizarre thing in the world why is the inverse acting function there for any reasonable value of n is like less than five it's basically a constant and it does grow
+Pablo [52:41]: as a function of n this isn't a side or tangent but if you know why it shows up please even if you've never seen the find my email and they can tell me please
+Pablo [52:43]: because that's like i don't know i've never been able to understand that
+Pablo [52:52]: so a useful kind of way to like i guess um describe what's happening with this up arrow notation
+Pablo [53:14]: um so like x up arrow y is just like a three which is x times x times x x double up arrow is like x up arrow x up arrow up arrowxx triple up arrow is x double up arrow and so on and so forth so the more up arrows you see the more you can be sure this is like a freaking ginormous number like this is like such a large number
+Pablo [53:17]: um but this is kind of a way to describe what's actually happening
+Pablo [53:24]: okay so like i said before each level sorry can you go back no that's okay
+Pablo [53:24]: um
+Pablo [53:26]: just trying to understand
+Pablo [53:27]: and
+Pablo [53:28]: below what
+Pablo [53:29]: function
+Pablo [53:37]: it says what if y equal to zero yeah does that mean
+Pablo [53:47]: i'm just looking if a one x sub y as x and zero then a one equal to one of them
+Pablo [53:49]: uh
+Pablo [53:55]: so i i guess yeah you kind of need to define these as like base cases
+Pablo [54:01]: and then once you have these you can kind of like go and build them up or maybe not even like maybe they'll y equals zeros in this case
+Pablo [54:06]: i think y equals
+Pablo [54:07]: to
+Pablo [54:19]: no it's also possible this slide is going to have some kind of like weird technicality indexing issue
+Pablo [54:20]: um
+Pablo [54:22]: if that was kind of your question
+Pablo [54:27]: we can ponder it more
+Pablo [54:35]: but morally all it's saying is that to do the ackerman function all it's saying is just repeat the last thing
+Pablo [54:37]: do the last oper
+Pablo [54:37]: ation
+Pablo [54:38]: doesn't
+Pablo [54:39]: make that
+Pablo [54:41]: it's more like
+Pablo [54:42]: kind of needs to be under
+Pablo [54:42]: stood
+Pablo [54:44]: so like i said before
+Pablo [54:45]: if each lung will be accurate
+Pablo [54:50]: it is a recursive you can kind of do it in the way that
+Pablo [54:50]: we define
+Pablo [54:56]: like
+Pablo [54:57]: we broke the blue program
+Pablo [54:59]: for multiplication
+Pablo [55:00]: and exponentiation
+Pablo [55:04]: but it's kind of embedding the previous level sacrif
+Pablo [55:04]: icing
+Pablo [55:05]: inside
+Pablo [55:07]: this
+Pablo [55:08]: kind of
+Pablo [55:09]: ins
+Pablo [55:10]: ide of this block
+Pablo [55:11]: what's important
+Pablo [55:13]: is that we need to know
+Pablo [55:14]: i to even write down
+Pablo [55:15]: this program
+Pablo [55:22]: because we need to we need to write down i let nested for loops and if like we wanted to do this like a variable number of times
+Pablo [55:32]: like with a variable this just would not really be impossible to do because like we need to know before ahead of time like how many while it's even right in our program
+Pablo [55:34]: this is actually like really important to hard code
+Pablo [55:39]: um and so this maybe gives some intuition of like how are we going to construct our counterexample
+Pablo [55:44]: so this kind of gives us the
+Pablo [55:45]: no longer does
+Pablo [55:47]: i like just a subscript like
+Pablo [55:48]: a fixed function
+Pablo [55:49]: it's actually now
+Pablo [55:50]: a part of the input
+Pablo [55:53]: so to do the acronym motion
+Pablo [55:54]: means that
+Pablo [55:55]: for any i need
+Pablo [55:56]: to be able to compute
+Pablo [55:57]: a i'm not just
+Pablo [55:57]: at face
+Pablo [55:58]: level specific
+Pablo [56:03]: so this is like when people say
+Pablo [56:04]: acronym this is one
+Pablo [56:04]: thing that
+Pablo [56:05]: you're referring to
+Pablo [56:08]: dysfunction where like i is like now an input variable
+Pablo [56:10]: and you kind of do the same kind of recursion
+Pablo [56:12]: but it's important to note that
+Pablo [56:14]: this does not match at all
+Them [56:18]: before
+Them [56:20]: kind of did where you had the same kind
+Them [56:25]: of base case and then recursive type thing but this is kind of a different
+Them [56:28]: beast entirely because we're cursing on two different things
+Them [56:30]: and kind of i guess
+Them [56:42]: so this is kind of into this like paragraph that's just kind of spelling out the intuition that i said earlier that like you really need to know her eye to hard code her fitness program
+Them [56:50]: um okay so another way we're going to get our contradiction is this like characterization of
+Them [56:55]: this alternate characterization of the parent for cursive functions
+Them [57:04]: so a function is primitive recursive if and only if there is a program and so like level of the ackerman function
+Them [57:06]: p of x comp
+Them [57:07]: ute f of x
+Them [57:08]: and atmos
+Them [57:10]: ai to
+Them [57:13]: size
+Them [57:13]: of x
+Them [57:15]: this is kind of like saying the
+Them [57:16]: acromotion is kind of
+Them [57:17]: characterized
+Them [57:18]: the classic
+Them [57:19]: at
+Them [57:20]: least not the acronym
+Them [57:21]: but the
+Them [57:22]: levels of accurate mot
+Them [57:23]: ion that curve
+Them [57:27]: essential
+Them [57:29]: ly to show that a function is not
+Them [57:30]: acronym
+Them [57:31]: it's not
+Them [57:34]: perfect all you need to do is just demonstrate a function
+Them [57:36]: that grows faster than any level of
+Them [57:38]: this
+Them [57:38]: acronym
+Them [57:42]: and so essentially what this means is that
+Them [57:44]: your function is very reversive
+Them [57:46]: you have some kind of
+Them [57:47]: acrobin type up
+Them [57:49]: per bound on the runtime of a program that can use that
+Them [57:52]: function where it's like this is like super large
+Them [57:54]: but like it's not too too large
+Them [57:56]: numbers can get really big
+Them [57:58]: like we'll see right now
+Them [57:59]: so
+Them [58:02]: we're going to find a brand new type of function
+Them [58:07]: based like kind of based on accurate function it's kind of like a diagonalization type trick
+Them [58:15]: we're going to find our function f of n which is basically indexing into the subscript and indexing into the like argument
+Them [58:25]: so this function fn i claim is going to grow faster than any single level of the ackerman like you know family academic levels
+Them [58:26]: okay
+Them [58:33]: so for example f one is just a one two comma one which is two plus one is just three
+Them [58:42]: i don't know why you circled the two i don't i don't know why like but that's trying to highlight like oh there's a two there this is now very illuminated and it wasn't before but it is
+Them [58:55]: now f two is like the second level evaluated which is we had two plus two is four so growing a little bit slow but you know f three f of three goes up to eight
+Them [58:58]: that big number
+Them [59:00]: five is like even large
+Them [59:02]: r
+Them [59:03]: two
+Them [59:04]: up here
+Them [59:06]: super big
+Them [59:08]: this is like
+Them [59:08]: computation
+Them [59:10]: this is
+Them [59:11]: like two double
+Them [59:12]: up her
+Them [59:13]: number
+Them [59:15]: that's your big die
+Them [59:16]: i can't even count that
+Them [59:17]: no one can have
+Them [59:18]: probably
+Them [59:19]: would not be able to get that
+Them [59:20]: number involved
+Them [59:20]: in some
+Them [59:21]: body i can't do that
+Them [59:24]: so
+Them [59:25]: this function goes
+Them [59:25]: super fast
+Them [59:26]: into
+Them [59:27]: that faster
+Them [59:28]: than a level
+Them [59:33]: eight
+Them [59:35]: so
+Them [59:36]: we kind of look at the dia
+Them [59:37]: gonal
+Them [59:38]: these
+Them [59:38]: are what the values
+Them [59:40]: of
+Them [59:41]: that
+Them [59:42]: notice
+Them [59:43]: that for each
+Them [59:44]: row of
+Them [59:45]: treat
+Them [59:46]: row
+Them [59:47]: of this
+Them [59:47]: table
+Them [59:48]: grows faster than
+Them [59:49]: the one before
+Them [59:54]: and so the reason that this function f of n grows faster than any particular row
+Them [59:55]: is because
+Them [59:58]: say i'm at some level of this
+Them [1:00:00]: and i'm saying that
+Them [1:00:04]: i'm telling you that oh i grow faster than f of n grows faster than this function is
+Them [1:00:10]: well the reason for that is that f of n plus one goes to this row in this row is always bigger than that
+Them [1:00:13]: row and i can always keep jumping f of n is going to always keep jumping down
+Them [1:00:21]: this diagonal and in that way this will make sure that it grows faster than any single fixed row
+Them [1:00:25]: which by the you know kind of characterization that i presented before
+Them [1:00:36]: that your primitive recursive if and only if the like value of a program computing you is like upper bounded by some fixed level
+Them [1:00:40]: well this one isn't so it can't be primitive recursive
+Them [1:00:45]: nevertheless it is computable in an intuitive sense right
+Them [1:01:00]: all you need to do to do it is just like this simple type of while loop which is kind of like a more you know a not primitive recurrent so it's not primitive recursive because we're doing this kind of unbounded while loop but this is a really simple recursive implementation
+Them [1:01:04]: but it's not primitive recursive
+Them [1:01:11]: primitive recursion is not the correct notion of computability because we have this function that is not primitive recursive
+Them [1:01:15]: yet it's obviously computable so this notion is just not a great notion
+Them [1:01:20]: um the recursive implementation can also be done iteratively with the stack
+Them [1:01:24]: to kind of like implement this like this like what is recursion doing on your computer
+Them [1:01:27]: it's like making a new stack frame pushing the things up
+Them [1:01:31]: and then you know like if you go too long with like stack over
+Them [1:01:37]: and so kind of like i don't like you can stare at this and kind of work it out
+Them [1:01:48]: but like there's i guess you can guess this exercise that says i hope you can compute stack it can represent the stack as one integer and then do all these operations as primitive recursive functions
+Them [1:01:52]: so uh i'm done for now but hopefully that was all hitting
+Them [1:01:53]: helpful
+Them [1:01:55]: if i don't see you ever again
+Them [1:02:00]: but maybe if you figure out the thing about the inverse accurate motion please
+Them [1:02:02]: find my identification
+Them [1:02:05]: tell me all about it

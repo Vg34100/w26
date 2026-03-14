@@ -1,0 +1,274 @@
+Pablo [0:35]: okay
+Pablo [0:42]: and afterwards there is something called
+Pablo [0:48]: and then we have a stop working
+Pablo [0:52]: assumed
+Pablo [0:56]: i tell you that r equal one
+Pablo [1:01]: contains one hundred times the word
+Pablo [1:10]: n typically with only a few exceptions this won't contain any information about the profit of the object just like language
+Pablo [1:27]: so what you could do is just try to get rid of all these words for which you know that they will occur very often in any article any document and they don't contain any specific try to loop them
+Pablo [1:46]: and this is like so you need some kind of picture memory either manually made or from the end of twenty page it helps you this kind of words are used very often without having any meaning about
+Pablo [1:54]: what is meaningful or not really handling on let me give you one example
+Pablo [2:02]: typically if you work i or you is considered a stop word typically
+Pablo [2:08]: social media and you is not really telling me what topic is about
+Pablo [2:13]: however for our goal for the mortgage
+Pablo [2:16]: it really contains information
+Pablo [2:18]: because
+Pablo [2:29]: one
+Pablo [2:34]: zero
+Pablo [2:48]: yes
+Pablo [3:10]: and in
+Pablo [3:11]: all
+Pablo [3:27]: the
+Pablo [3:28]: steps of
+Pablo [3:29]: go
+Pablo [3:32]: d
+Pablo [3:35]: media
+Pablo [3:36]: representing
+Pablo [3:37]: how to word which is
+Pablo [3:37]: difficult
+Pablo [4:01]: this is all basically again regular expression you have to get the chapter and here is whenever we have something like the
+Pablo [4:10]: word chapters followed by something this is typically indicated we have a new chapter then it gets a little bit complicated
+Pablo [4:17]: sometimes just words and accept it some chapter is always sentences
+Pablo [4:22]: and
+Pablo [4:43]: basically
+Pablo [4:46]: this
+Pablo [4:47]: is
+Pablo [4:48]: the solution
+Pablo [4:49]: i
+Pablo [4:50]: guess
+Pablo [4:51]: you will find it
+Pablo [4:52]: that just
+Pablo [4:53]: but basically
+Pablo [4:54]: you want to
+Pablo [4:54]: do technology
+Pablo [4:55]: after the
+Pablo [4:57]: things
+Pablo [4:57]: again
+Pablo [5:06]: showing you our
+Pablo [5:07]: name
+Pablo [5:11]: one hundred
+Pablo [5:12]: and thirty eight chapters
+Pablo [5:17]: give you
+Pablo [5:18]: one example
+Pablo [5:19]: of
+Pablo [5:19]: the third chapter
+Pablo [5:20]: which is basically
+Pablo [5:24]: very
+Pablo [5:25]: first letter
+Pablo [5:26]: s
+Pablo [5:30]: so
+Pablo [5:31]: here this
+Pablo [5:35]: and so
+Pablo [5:35]: on
+Pablo [5:37]: and
+Pablo [5:37]: we'll start
+Pablo [5:38]: working on this
+Pablo [5:42]: the
+Pablo [5:43]: lord is everything
+Pablo [5:44]: and apply all
+Pablo [5:45]: these methods
+Pablo [5:48]: so
+Pablo [5:49]: first
+Pablo [5:50]: these are
+Pablo [5:51]: the awards
+Pablo [5:52]: then the lower
+Pablo [5:53]: case everything
+Pablo [5:55]: we can
+Pablo [5:56]: also
+Pablo [5:58]: do
+Pablo [5:59]: a case for the moment
+Pablo [6:00]: and then
+Pablo [6:02]: we have basically
+Pablo [6:03]: our list
+Pablo [6:04]: of
+Pablo [6:04]: words
+Pablo [6:18]: okay so this is like the list
+Pablo [6:19]: of words we have
+Pablo [6:20]: order chapter
+Pablo [6:21]: eleven
+Pablo [6:23]: is there really
+Pablo [6:24]: verse twenty where
+Pablo [6:24]: is we have
+Pablo [6:25]: dirt and then
+Pablo [6:26]: we just try to
+Pablo [6:33]: so with this we will use again on the nlp package for the stem model
+Pablo [6:36]: it's basically doing in english
+Pablo [6:37]: standing
+Pablo [6:45]: so as i said it tries to combine things like waves waning
+Pablo [7:03]: they have a similar origin ways and we have wave as an origin while the word wave born is different but norwegians one hour they both have the same origin so this
+Pablo [7:11]: i mean you can basically always do this
+Pablo [7:16]: like a quarter center from the audio language
+Pablo [7:21]: and this is like easy
+Pablo [7:25]: what is a little bit more complicated
+Pablo [7:33]: so we could download a dictionary to lemmardize
+Pablo [7:43]: and then demetrius for example wait and you could see running is only once took some time on one word
+Pablo [7:45]: and
+Pablo [7:56]: you can also add some additional information if you have here like waving this can be like a verb or like a noun
+Pablo [8:01]: and you can add some
+Pablo [8:03]: addition information
+Pablo [8:06]: helps find your origin
+Pablo [8:30]: and if you want to find what it's verb a noun and so on you can try to add this round post text it's like basically specific things like different kind of adjectives nouns and so on names
+Pablo [8:43]: so there is like now you have seen the mass mount with adjectives jj
+Pablo [8:45]: and all that kind of stuff
+Pablo [8:49]: so basically
+Pablo [8:51]: if you have some of these words
+Pablo [8:56]: here
+Pablo [8:59]: it's like verb in a
+Pablo [9:08]: and feel like it's a noun
+Pablo [9:28]: here for a foreign language maybe just say these ones you can also do this with other languages here this case i added specialties
+Pablo [9:35]: french text then we can also use tokenizers
+Pablo [9:45]: for example if you have this french text about hazard functions you can split into words
+Pablo [9:49]: and use tags
+Pablo [9:52]: here basically
+Pablo [9:55]: noun
+Pablo [9:58]: again
+Pablo [9:59]: as like and so
+Pablo [10:00]: on
+Pablo [10:07]: and you have all these things and it just this is wrong
+Pablo [10:16]: so maybe sometimes wrong
+Pablo [10:20]: or i am wrong with my branch let me just think about this again
+Pablo [10:33]: but still actually you can use different languages there are solutions it's like just the main message you don't have to do everything on your own
+Pablo [10:40]: this package is called this
+Pablo [10:40]: language
+Pablo [10:43]: okay and then in the end
+Pablo [10:49]: so if we have send our words to memorize them depending on
+Pablo [11:09]: our we will remove stop words and the easiest thing is to create our own software that an or in phi and just come up with a list to have our words and our casper and we basically use over all the words that are not in stop words
+Pablo [11:18]: and then all mediation assemblages ago that just being at some point
+Pablo [11:29]: little or no money feels like this is big or no money
+Pablo [11:35]: and if we get down to our stop word removal tab
+Pablo [11:41]: and then we have having little no money
+Pablo [11:43]: at all so it's working as expected
+Pablo [11:51]: and of course it's just a very persistent stopwatch you can imagine that like hundreds of words i knew me
+Pablo [11:56]: and so on the do not contain information about whether it's about
+Pablo [12:05]: biology or story i mean we talked about u and over and so on
+Pablo [12:06]: and we group
+Pablo [12:12]: and there is like some standard list of stock words like for english for example
+Pablo [12:15]: let me just print this output for one moment
+Pablo [12:20]: so i just have to find
+Pablo [12:24]: them from like the
+Pablo [12:35]: and then we see all the alphabetically a about about after again
+Pablo [12:44]: until two hundred yourself and so on of course in this case for our specific application
+Pablo [12:49]: you could try to use different like to use different subwords
+Pablo [12:54]: as like because you know it's different from a story
+Pablo [12:59]: but to begin the typical example would be try to do personality
+Pablo [13:07]: a software listen article about
+Pablo [13:13]: i don't know sports didn't want to maybe some very specific words
+Pablo [13:14]: for our
+Pablo [13:16]: kind of
+Pablo [13:18]: okay
+Pablo [13:21]: and then what we are doing is
+Pablo [13:43]: deal with our list of words you will combine basically every step since like since tokenization so in the first step you know we had this organization the second step was standardizing and here we're basically doing all the standardizing in one word at one
+Pablo [13:46]: we have tokenized our words
+Pablo [13:50]: then we use like a lowercase word here
+Pablo [13:55]: look whether the lowercase worth is not in the stock word
+Pablo [14:04]: and then we use standard words and it will build our remaining work
+Pablo [14:11]: and we end up with one thousand remaining words out of two thousand
+Pablo [14:14]: because we standardize everything
+Pablo [14:21]: and the other thing would be like these are two power words
+Pablo [14:30]: but originally it was two thousand words where containing nine hundred fifteen millimeter
+Pablo [14:33]: and now
+Pablo [14:41]: we use this number from like one thousand seventy one million words containing six hundred ninety eight
+Pablo [14:50]: and this is basically what we will be working with if we want to extract our features
+Pablo [15:11]: so here we have tables what we have tons of parties tokenization with our text is words standardize everything demonize it the work is move upwards and then we have some time called term frequency because now we try to extract information
+Pablo [15:22]: if we have our chapter like some words how can we represent this article how can we really extract features of this article
+Pablo [15:25]: and this will be
+Pablo [15:35]: spent the remaining ten minutes talking about this let me just
+Pablo [15:38]: standardization
+Pablo [15:54]: and for this i would like to talk about the term frequencies a little bit more generally before we apply it to our book so
+Pablo [16:02]: instead
+Pablo [16:03]: of using free
+Pablo [16:04]: visual
+Pablo [16:10]: so
+Pablo [16:11]: now
+Pablo [16:19]: you want
+Pablo [16:21]: this
+Pablo [16:22]: sentences
+Pablo [16:24]: close
+Pablo [16:26]: to a similar
+Pablo [16:26]: one
+Pablo [17:20]: two
+Pablo [17:27]: words
+Pablo [17:28]: and
+Pablo [17:34]: your
+Pablo [17:35]: five
+Pablo [17:48]: off
+Pablo [18:23]: zero
+Pablo [18:31]: three
+Pablo [18:32]: and this is
+Pablo [18:33]: our obese
+Pablo [18:34]: authentic
+Pablo [18:38]: one
+Pablo [18:56]: at
+Pablo [18:57]: twice
+Pablo [19:01]: and you can
+Pablo [19:02]: see
+Pablo [19:08]: the
+Pablo [19:09]: same wide
+Pablo [19:10]: drew centers
+Pablo [19:13]: and
+Pablo [19:14]: the course is a very
+Pablo [19:15]: silent
+Pablo [19:33]: trial
+Pablo [19:41]: most likely
+Pablo [19:45]: words
+Pablo [19:46]: by owl
+Pablo [19:47]: someone
+Pablo [19:53]: can
+Pablo [19:54]: be very useful
+Pablo [20:58]: yes
+Pablo [21:06]: ro
+Pablo [21:07]: lling
+Pablo [21:24]: my
+Pablo [21:25]: frequent count
+Pablo [21:29]: if i just read the wall like
+Pablo [21:33]: add like
+Pablo [21:34]: all the chapters together
+Pablo [21:35]: is what i did
+Pablo [21:36]: in the
+Pablo [21:37]: last
+Pablo [21:39]: night then
+Pablo [21:43]: when that appears forty thousand times six thousand times
+Pablo [22:04]: and there is like a theory how the number of words like how the distribution of the number of words in like large documents should behave there's like this like whole tips
+Pablo [22:10]: law that we quickly over the next be line because of what percent
+Pablo [22:17]: law basically it states the following
+Pablo [22:22]: if we have like
+Pablo [22:33]: most common most common word in a sentence like the highest pound and we see a simple warm moment it appear
+Pablo [22:36]: s forty thousand times for you to
+Pablo [22:36]: go back
+Pablo [22:54]: it is like the rank is number one then the theory is the worst ranked or number two and the words ranked the number three it would occur approximately fourteen thousand divided by two times
+Pablo [23:19]: on rank number three it will be approximately fourteen thousand divided three times ends on the idea of six law is that it's basically you can just estimate the count of the words of the second hand or third most common word by just getting the maximum number like the highest number
+Pablo [23:20]: in
+Pablo [23:21]: order to
+Pablo [23:30]: work
+Pablo [23:31]: frequency
+Pablo [23:32]: it is approx
+Pablo [23:33]: imately
+Pablo [23:34]: one over the
+Pablo [23:35]: work range
+Pablo [23:36]: and approximately in the sense that
+Pablo [23:37]: it's a
+Pablo [23:38]: number of
+Pablo [23:41]: div
+Pablo [23:42]: ine
+Pablo [23:59]: util
+Pablo [24:00]: ization
+Pablo [24:01]: you will have
+Pablo [24:03]: to
+Pablo [24:05]: moder
+Pablo [24:06]: ate
+Pablo [24:09]: and it is
+Pablo [24:10]: not where
+Pablo [24:16]: on this line
+Pablo [24:24]: is
+Pablo [24:25]: something about how
+Pablo [24:26]: options and works
+Pablo [24:27]: in
+Pablo [24:28]: a language
+Pablo [24:31]: and
+Pablo [24:41]: this
+Pablo [24:42]: i would like to
+Pablo [24:42]: end the lecture
+Pablo [24:43]: and we'll be
+Pablo [24:44]: here for next
+Pablo [24:49]: week
+Pablo [25:13]: learn

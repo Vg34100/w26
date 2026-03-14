@@ -1,0 +1,14 @@
+Summary:
+The solution gives a detailed proof explaining why the FRACTRAN program produces Fibonacci numbers. It represents the current value using prime factorization and treats each exponent as a kind of register. The proof then analyzes the program in phases, showing how the fractions change the exponents and eventually move from a state (2^a3^b) to (2^b3^{a+b}). From there it concludes that the exponents follow the Fibonacci recurrence.
+
+Does it answer the question?
+Yes, it clearly answers the question. The solution directly tries to prove why the program produces Fibonacci numbers, and it does so by tracking how the fractions modify the prime exponents. The structure of defining pure states and proving the transition to the next pure state seems like a valid way to justify the Fibonacci behavior.
+
+Parts that are confusing:
+Personally I found parts of the proof a bit hard to follow, mainly because it is very detailed and introduces a lot of notation quickly. For example the idea of registers and the sequence of phases took me a moment to understand. I also struggled a little with the loop explanation in Phase II since several fractions are interacting at once (but I felt confused with the question overall as well so maybe it's just me being confused).
+
+Parts that might be wrong:
+I did not notice an obvious mistake in the reasoning. The overall idea that the program moves from a state (2^a3^b) to (2^b3^{a+b}) seems consistent with the Fibonacci pattern described in the problem. My group answered this question in a simpler way by showing one example step and explaining the pattern more informally, so this proof goes much deeper than what we did but it appears logically consistent.
+
+Ambiguous parts:
+One place that felt a little unclear is the description of how the loops in Phase II and Phase III affect the registers. The proof states that the loop “moves units” between registers, but it might help to show a small example with specific numbers so the reader can see how the transitions happen. Also the term “pure state” is defined earlier, but I think a quick reminder when it is used later might make the argument easier to follow.

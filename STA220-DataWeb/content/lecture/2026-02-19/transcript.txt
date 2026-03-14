@@ -1,0 +1,628 @@
+Pablo [0:31]: football and you click on them you see december frontal in the front post of our field at miles high so this basically does come up
+Pablo [0:54]: and this will be like a combination of both using the fourier types and also the second thing in the sense that you just have an address and you want to find out that today of the stadium so that you can't really place an iphone
+Pablo [1:05]: this is like a part of the second part will be following you we have a method called horizontally
+Pablo [1:24]: and basically the proposition fifty i think it was in november remember two thousand and twenty five and you can see here we have like red county like colored in red and low rate of approval
+Pablo [1:25]: thirty percent
+Pablo [1:57]: while in and go cisco or even we have various greenish so something between sixty and eighty percent of approval for the proposition and if we put a second part of the homework and this will be the content of the day how you easily create such a map where you have this where you display connect resource
+Pablo [2:07]: or other results the employment rate unemployment rate where just some kind of information
+Pablo [2:35]: and basically the note for this the one that board is very easy and provided solution for such a task in a different setting where just wanted to show all the post sales of the games there is the lectures the similar code so i hope it won't be that hard to solve
+Pablo [3:17]: this first part of the second task i have a good and bad use the good news is the solution needs around ten to fifty nine code so it's not that fast but you have this kind of core messages basically one very hard task and if you manage to solve this the remaining is just an easy thing and you can copy paste things or change some mill but i will spend five minutes all about the one crucial part of this task because you won't see any colors if you are unable to solve this problem
+Pablo [3:20]: complete the
+Pablo [3:22]: okay
+Pablo [3:36]: just quickly going back i just want to mention how you can solve this there is a package from nominal
+Pablo [3:48]: basically import the package and then you can provide an address like human readable address
+Pablo [4:12]: and it returns this coordinate of the address again it provides some additional information who will be building and so on and that will be it we just got coordinates for all of the list because cities like san marine software city and so on
+Pablo [4:22]: you would have like what it is and then just add for each of the quality for each of the rows which are just
+Pablo [4:31]: adding audio marker with the coordinates and then we just provide proper information
+Pablo [4:41]: so this is the idea how you could come up with such a map for teams and the single
+Pablo [4:43]: okay
+Pablo [5:07]: next question is how can we solve such a thing in the sense you have a map i mean you know now i create such a mobile clip map so you don't know how to come up with all these counties here and although we have not done how we can color all these in red green or whatever
+Pablo [5:14]: so this is the part of a coral fat map
+Pablo [5:20]: and open the door
+Pablo [5:28]: so today's topic is
+Pablo [5:31]: forward
+Pablo [5:45]: today and the idea is that you can give some kind of information by just displaying this kind of map and this is better than just having a table
+Pablo [6:20]: the long table consists of one hundred rows it's easier just to light that you may and the basic idea of this kind of coral dot net goes back dates back to the nineteenth century and it's like first example you have basically this is a picture an image of france with its counties or constituencies and within each of these counties you see the education in a sense
+Pablo [6:22]: the literacy rate i guess
+Pablo [6:31]: and i would see you we have a lot of people who went to school and here like in the rural areas
+Pablo [6:36]: loaded press it
+Pablo [6:48]: and so the idea of today will be to come up with a similar thing but just not with an example of the nineteenth century of b
+Pablo [7:02]: and for this we can do the polling so we'd like to start presenting and topic about the climate crisis so we know the data set all print
+Pablo [7:27]: and it will also provide a case type so basically this has data frame for like a csv time containing the information about the ecological footprint of different countries on the curve telling how large is the per capita footprint of all these countries so this is like containing the data display
+Pablo [7:41]: and here it is eoj will have information like this information of the borders of all these countries so this is like the second information
+Pablo [7:48]: but let's start with like the data set we will just
+Pablo [7:56]: see the first five lines and what we have here is i mean we have different regions of the world
+Pablo [8:21]: but here we have like the countries that are australia who have per capita ecological footprint i think one is basically the two bit sustainable for example as fifty sixteen times resources they would have given the population
+Pablo [8:30]: like the area basically bio capacity is what they should use
+Pablo [8:39]: like a long term scalable way and then you see basically the statistics
+Pablo [8:48]: so you can see using much more than they should use
+Pablo [9:00]: this is the kind of information on display and here is in some sense it has very large
+Pablo [9:06]: in a lot of carbon biopsy or emissions
+Pablo [9:12]: compared to the size of the population in the area and you have a list of all countries
+Pablo [9:18]: and so i would like please somehow for all of these countries of the world somehow their ecological
+Pablo [9:35]: first i would like to calculate the maximum ecological footprint this is just for the colors they don't know what is like the maximum footprint and it's actually really looks good has the highest ecological footprint
+Pablo [9:40]: we can just save this as next a footprint
+Pablo [9:42]: we will use
+Pablo [9:47]: and this is like
+Pablo [10:16]: another question is how can you combine this information of the country region together with the footprint and of course we could just come up with the table consisting of two columns first column has just the name of the country second half of the footprint but this is somehow not as intuitive as if we have just a color like a colored map of the world this is i think
+Pablo [10:20]: very nice way of displaying data and this is what we're doing
+Pablo [11:03]: and for this we need the concept of a gochemic you can imagine if you have the borders of all the countries of the world this is rather a complex thing and it's not straightforward to do so how you store this information and there's one data format so called aoc type which is basically all the information it has like the name of the countries it has some additional information properties and it always has the shape and the sense that it provides a polygon different points
+Pablo [11:08]: and then you notice the shape of the country
+Pablo [11:18]: and you can imagine shape or say the us
+Pablo [11:26]: that the shape of us is very complicated and does not consist of only five or ten points
+Pablo [11:30]: so in this sense it's po chasing price can be very large
+Pablo [11:43]: and of course you can save them in one example of thing i just can save them locally on my laptop in other cases ideally and just save on the server
+Pablo [11:47]: provided me
+Pablo [11:56]: but main task for us will combine the data required here in this table for this
+Pablo [12:01]: and then i have provided some additional information
+Pablo [12:29]: how it looks like here is some kind of case file with a very specific format it always has something like features and it has a geometry with auditor and then it has all something like properties we have an additional information like the name of the country or the name of the county and so on and have also provided
+Pablo [12:48]: media and visitors most critical thing of the dojon area of dictionaries or pictionaries the authorized something like features or feature collection and within the features
+Pablo [12:55]: countries so to say and each country has quite a shade and also like some properties like
+Pablo [13:00]: this
+Pablo [13:19]: let me or i just tell you how to combine everything i would like and just run the code and show you how we can create the map it's basically we start with a podium here it's just a classical map with some tiles we can use the open speed map or whatever
+Pablo [13:44]: a location very first line is nothing new and we know everything from the last lecture but what is new is that we are now adding a coral test object to the map m and it contains a lot of information like name legend but what is more important are like is the first three lines i really like the key the key part
+Pablo [13:51]: the data equals this means here we have our data frame
+Pablo [14:01]: like the data frame with all the data contained one this is very easy we just write data equals and then the name of the data
+Pablo [14:16]: then the next thing is we write view data equals and then we provide a link to give json file and from the geodata we get like the shades of all the countries basically
+Pablo [14:29]: and then this is the key on and the columns these are like the one group part for the homework where you could either pay
+Pablo [14:34]: to complete the homework or if you understand now the current how it's working
+Pablo [14:48]: then you hopefully will be able to solve the goals within one hour maybe even two but not no more and the idea is we have to all in this thing we have here a data frame
+Pablo [14:51]: with the address
+Pablo [14:54]: and the blueprint
+Pablo [15:00]: so we have like
+Pablo [15:02]: some numbers
+Pablo [15:05]: this type of data we want to display
+Pablo [15:11]: and then we have space there is a deal json file
+Pablo [15:22]: and i simplify for h one h at this mode i'm simplifying things just for a moment
+Pablo [15:27]: i play it would be all the data field
+Pablo [15:38]: s it put all the us and then basically a
+Pablo [15:41]: for each of the
+Pablo [15:42]: object
+Pablo [15:51]: and then what we should do in the background what do the background is it looks into the data frame
+Pablo [16:05]: find c west and looks into the gauges to find something with the same us entry and then it knows that it portray this kind of shape
+Pablo [16:09]: and do something depending on this number
+Pablo [16:18]: and depending on what kind of number it will be like iodide red green yellow and
+Pablo [16:18]: so on
+Pablo [16:24]: but the problem is we have to tell them basically we have to tell audio
+Pablo [16:29]: at which entry should
+Pablo [16:35]: look at because basically we have here a lot of information
+Pablo [16:36]: we have a shape
+Pablo [16:42]: but it doesn't only contain the name of the countries but also additional properties
+Pablo [16:51]: for example like abbreviation and u s and so on functions also maybe numbers
+Pablo [17:11]: and when it tries to combine these it like the critical part is as we counted we have to find this us like this they often come country and we have name in the key of js
+Pablo [17:12]: file
+Pablo [17:25]: and when phuket is a data frame it's very easy we always provide columns the first column is basically the key in the sense it's us
+Pablo [17:38]: it's a key we want to combine the adjacent file and the second column is basically information that should be used color matching
+Pablo [17:43]: with a one to shape it add colored in red
+Pablo [17:46]: and if it's zero one and it will be color
+Pablo [17:57]: so this is basically in the easier part that i just provide these two columns because they are the container we'd like to
+Pablo [18:00]: see and then i have to provide
+Pablo [18:19]: like a key on basically is where i can find the mean west in the gut and to know why you need this feature of properties name you must look into subject units
+Pablo [18:23]: so for this i will just open the link
+Pablo [18:27]: inside the field js by containing all these countries
+Pablo [18:38]: okay i hope you can see now basically contains two hundred forty one features these are like basically two hundred forty one countries
+Pablo [18:58]: and if we open it and we see here like the first feature the netherlands and like this first feature like the melanin consists of like properties where we see like a name and on
+Pablo [19:05]: and then we see a geometry and the geometry is basically the machine and we don't have to do more cakes
+Pablo [19:14]: here but we have to help oil in which of these kind of properties we find the information
+Pablo [19:17]: and actually i think it's not netherlands
+Pablo [19:24]: but yes it's a rubber somehow belongs in netherlands i guess
+Pablo [19:25]: so boring
+Pablo [19:26]: okay
+Pablo [19:38]: but here you can see there are lot of properties and a property i would like to find is called name and this basically
+Pablo [19:44]: so if you think now back how could we see this value everywhere here
+Pablo [19:50]: first we had to click on a feature like the feature zero
+Pablo [19:55]: within the picture we go to the properties and within the properties
+Pablo [20:02]: we look at the column or like the key or maybe
+Pablo [20:06]: and this is exactly what we did here
+Pablo [20:10]: we have poem first
+Pablo [20:12]: into each feature
+Pablo [20:17]: then to properties and then to use the name
+Pablo [20:22]: and if you would like to use another property meaning an id or what else
+Pablo [20:26]: is the i don't know like an abbreviation
+Pablo [20:35]: we are a free and so on whatever we want to use as a key master to specify here
+Pablo [20:40]: and now basically what it knows that the key
+Pablo [20:48]: like the name of the character should be combined with the first column of the data frame in footprint
+Pablo [20:52]: and then it will combine everything
+Pablo [20:55]: and the result is the volume
+Pablo [20:55]: map
+Pablo [21:10]: so here we have our world map you can see in dark red countries with a very high ecological footprint you can see a color scheme here
+Pablo [21:13]: like dark green need something with zero
+Pablo [21:37]: yellow is like some average ping and then we have like red orange dark red means a very high ecological and of course we can do a typical thing in and out you see also there are some countries that are white this means basically we don't we either don't have data in our data frame
+Pablo [21:46]: or we couldn't find the shapes specifically because i mean there are shapes about if you built the entries
+Pablo [21:56]: observations in our data or maybe something is wrong with diffuser we could try all this issue
+Pablo [22:01]: but basically it is the result
+Pablo [22:25]: and then all this i can give it a name count this by logical if we remove anything it's really explaining a lot i think without looking into any table you can immediately tell some device just based on the colors
+Pablo [22:30]: and let me just mention some details how we can define the colors
+Pablo [22:43]: what you have here more first of all we can use the fill color in the coding sense
+Pablo [22:53]: this means we have like red yellow green these are like the colors we start with red yellow and green
+Pablo [22:57]: remove the r it will be the other way around
+Pablo [23:26]: so basically it means this red yellow green wind lower values have artistic red larger values like in between with yellow and if we add underscore r like the colors are reversed in the sense of no colors will display large high ecological frequency red which is more inclusive
+Pablo [23:35]: then we can also define like the opacity of our eighty percent
+Pablo [23:39]: so what i mean
+Pablo [23:40]: one
+Pablo [23:54]: then don't see then we don't like names in the backup so now there are like no happenings we can see over eight percent back on the outer name
+Pablo [24:19]: yes maybe having an eight percent seventy percent it's better we can do the same with the line and yes then all this nan like the malware use how should we encode and why do whatever we want
+Pablo [24:31]: and then we can all just name in our case the ecological footprint perhaps and by the name of the bolt
+Pablo [24:39]: and then we add everything together so we add it to the map
+Pablo [24:48]: and then we also add layer control in the center mode to be able to display and also we move it afterwards
+Pablo [24:54]: we have to add layer control and then test additive
+Pablo [24:56]: okay this is like the main idea
+Pablo [25:02]: how we can come up with such a kind of a map
+Pablo [25:05]: maybe fifteen
+Pablo [25:06]: lines
+Pablo [25:06]: but
+Pablo [25:07]: they are not very
+Pablo [25:08]: hard
+Pablo [25:12]: maybe
+Pablo [25:13]: with one
+Pablo [25:14]: exception
+Pablo [25:15]: that has to be above
+Pablo [25:16]: this
+Pablo [25:20]: what kind
+Pablo [25:21]: of features you need
+Pablo [25:22]: and what you have
+Pablo [25:23]: right here in the bas
+Pablo [25:24]: ic
+Pablo [25:28]: others
+Pablo [25:29]: have got any questions
+Pablo [25:30]: about
+Pablo [25:35]: then
+Pablo [25:37]: of course
+Pablo [25:38]: can also
+Pablo [25:39]: save
+Pablo [25:40]: this upwards
+Pablo [25:41]: unleashed in
+Pablo [25:41]: alpha
+Pablo [25:45]: and this
+Pablo [25:46]: is also one part of
+Pablo [25:47]: the
+Pablo [25:48]: yank
+Pablo [25:50]: ees
+Pablo [25:50]: the
+Pablo [25:51]: results destination
+Pablo [25:52]: alpha
+Pablo [25:54]: one
+Pablo [25:55]: for
+Pablo [25:56]: the proposition
+Pablo [26:02]: please
+Pablo [26:02]: also
+Pablo [26:09]: work
+Pablo [26:10]: hard
+Pablo [26:11]: some kind of elev
+Pablo [26:12]: ation
+Pablo [26:17]: and
+Pablo [26:18]: then i just decided
+Pablo [26:21]: more or less
+Pablo [26:23]: using
+Pablo [26:24]: a google map
+Pablo [26:25]: so on the left hand
+Pablo [26:26]: side
+Pablo [26:27]: that
+Pablo [26:28]: i met on
+Pablo [26:29]: board
+Pablo [26:30]: just
+Pablo [26:31]: project
+Pablo [26:45]: more
+Pablo [26:45]: information
+Pablo [26:47]: maybe
+Pablo [27:00]: the second
+Pablo [27:01]: example
+Pablo [27:02]: why
+Pablo [27:03]: is
+Pablo [27:06]: visual
+Pablo [27:07]: izing
+Pablo [27:08]: easily first
+Pablo [27:09]: indeed
+Pablo [27:10]: the
+Pablo [27:11]: data of the unemployment
+Pablo [27:12]: based
+Pablo [27:18]: with
+Pablo [27:20]: all we just
+Pablo [27:23]: try and
+Pablo [27:24]: get
+Pablo [27:25]: so
+Pablo [27:26]: this is one
+Pablo [27:27]: htc
+Pablo [27:33]: project
+Pablo [27:44]: and then
+Pablo [27:45]: again just
+Pablo [27:46]: carry
+Pablo [27:47]: how we
+Pablo [27:48]: can find
+Pablo [27:49]: key
+Pablo [27:50]: on the
+Pablo [27:55]: sit
+Pablo [27:55]: uation
+Pablo [27:56]: just
+Pablo [27:57]: to keep the
+Pablo [27:59]: file
+Pablo [28:00]: and we see again
+Pablo [28:01]: something that
+Pablo [28:02]: generates
+Pablo [28:07]: an
+Pablo [28:08]: ide
+Pablo [28:10]: a
+Pablo [28:12]: and so
+Pablo [28:13]: we are guil
+Pablo [28:14]: ty
+Pablo [28:14]: of
+Pablo [28:16]: support
+Pablo [28:19]: from my data set
+Pablo [28:23]: that i should somehow go with teachers
+Pablo [28:25]: who can do features with properties
+Pablo [28:29]: and within the properties that will find the name element
+Pablo [28:38]: basically the key of json is a dictionary of a very specific format
+Pablo [28:52]: it contains fifteen states and for example first date for alabama either use the id you also see there is an
+Pablo [28:59]: id al so either if you want to combine a name alabama then have to look into the problem
+Pablo [29:02]: fine
+Pablo [29:09]: with just the shorthand version of abbreviation al then it could also just use id other than property
+Pablo [29:14]: name and i think this is what we will use here justice abbreviation
+Pablo [29:33]: yes because the data frame of the unemployment rate actually does not contain means of the state but is kind of abbreviations so now we would like to provide abbreviation
+Pablo [29:37]: with the county
+Pablo [29:44]: so basically just go directly to the id rather than using amazon weight process
+Pablo [29:58]: somewhere center of
+Pablo [30:02]: which provide a huge
+Pablo [30:39]: data rate and i mean as data set only consistent balance first like the age for the state unemployment rate and then we don't use some feature properties name we can use id directly and because the id is not inside the properties for like outside directly it comes directly after the future you can just use it and provide each adult id and now we are just using color
+Pablo [30:41]: yellow
+Pablo [31:08]: and then you can also immediately see here like the other like high unemployment rates are like dark in maybe california like lower unemployment rates
+Pablo [31:14]: how would you call it this region request
+Pablo [31:27]: okay whatever i mean you can see at least what what i mean with the pendant states i'm looking at
+Pablo [31:30]: whatever okay
+Pablo [31:32]: good
+Pablo [31:54]: this is just like a second example it's not that highly trust that you see the difference basically what really had to change is this thing here from feature of properties named region of id because the information you need in the duty by this total dependent
+Pablo [32:07]: approach and this is like the main carbon using doj like the first part is actually just finding them on the web and the second part is finding them like finding the information needed to where it is
+Pablo [32:11]: okay and with this
+Pablo [32:28]: kind of like made the most classical example for a flat maps it actually results i'm sure you have seen some kind of visualization have also thought about example
+Pablo [32:31]: next time
+Pablo [32:36]: for this what i used here is that you pay two thousand twenty four
+Pablo [32:39]: and basically the idea
+Pablo [33:01]: is for the uk electric each of these constituencies maybe it's hard to see but they are like very different in terms of the size you have like very large constituency within non and you have i don't know a lot of small constituencies and the idea is that each of the constituencies has exactly one seat in the parliament
+Pablo [33:13]: so this is the reason why they have like a different size because in rural areas i think they few people living but none obviously
+Pablo [33:17]: can be much more seeds to represent london in the car
+Pablo [33:33]: and the idea would this place kind of data science red the labor part of you who are forest means green party
+Pablo [33:35]: yellow
+Pablo [33:41]: exactly i think it
+Pablo [33:49]: 's northern ireland it's a little bit complete data
+Pablo [33:51]: so
+Pablo [33:59]: it was actually on
+Pablo [34:09]: and this kind of web comes with two disadvantages first of all
+Pablo [34:24]: in each consequence in the sense that you know well there are like a lot of people i mean you see a lot of one by four
+Pablo [34:31]: is but actually to london
+Pablo [34:37]: well the labour party is doing very well in cities
+Pablo [34:41]: so it's not really like you can't see on this map
+Pablo [34:52]: that actually the labour party got a lot of seeds while you would maybe see that the liberal democrats and
+Pablo [34:58]: most of the seats but for example if you would
+Pablo [35:19]: set an equal size to each of the constituency they would come up with such such a map in the sense now each of the consequences is like this hexagon so basically you can see now it's better to see how many seats in labor part one
+Pablo [35:22]: but still it doesn't tell you
+Pablo [35:32]: that there are differences of course maybe one of these areas like tourists did better than another area and for this
+Pablo [35:42]: reason i would like to define a color that depends on how well each of the parties state in these areas
+Pablo [35:46]: so basically my idea would be to come up
+Pablo [35:59]: with such such a map that you see here like in light blue where i mean in the end the tourists want to see what they were not doing very well
+Pablo [36:10]: and the contrast maybe here or there you can see dark boost they were developed like a lot of roads and you also did very well
+Pablo [36:13]: and in the southwestern part
+Pablo [36:15]: they were
+Pablo [36:16]: not only that well
+Pablo [36:25]: i guess the orange is liberal democrat
+Pablo [36:29]: but at least this right here is the people okay
+Pablo [36:42]: so i want to create a similar pot to have made one difference i would like to have for all of the four big parties in the in england
+Pablo [37:16]: to see how they performed in each community the sense that even if they haven't won so for example offbeat person how the tourists order like three part is longer where the liver part one because then i have some kind of information that maybe the green part is that they're also doing very well in cities but you can't see this because of london they will
+Pablo [37:22]: the results in the media
+Pablo [37:31]: so this is just north
+Pablo [37:51]: basically here we have the c four which are the one to see and then we also have
+Pablo [37:56]: the boats they got neva
+Pablo [38:02]: conservative
+Pablo [38:06]: s like a conservative object for mm
+Pablo [38:12]: okay like that it's a label copy
+Pablo [38:15]: and
+Pablo [38:24]: you know what i mean there are different parties between
+Pablo [38:39]: okay so first we will get the data from wikipedia we know it has been always used to read underscore html
+Pablo [38:55]: provide header know all that stuff and the only thing is we have like a lot of cables in this table first we have an overview then we have basically main in them
+Pablo [39:03]: and then have stopped and at some point and we have waves and we have normal either
+Pablo [39:10]: first find out where
+Pablo [39:24]: which of the nine the first one is actually just in overviews
+Pablo [39:32]: and the second one is my playmate second table will be typed indent
+Pablo [39:35]: now open it
+Pablo [39:39]: starts with aldo shop alex baker
+Pablo [39:48]: very much able to find other shop anyhow
+Pablo [39:51]: this is basically the information
+Pablo [40:00]: just for the values here for us it contains a lot of things we want to get rid of we have like three different other names
+Pablo [40:06]: these are reasons for twenty nineteen i don't care about them
+Pablo [40:23]: and then we can get rid like i don't know or i don't care about which candidate want more like which half one so i will drop a lot of things like how beginning of twenty one feet
+Pablo [40:27]: then it will rename some column
+Pablo [40:34]: so there is some pre process they have pre processing
+Pablo [40:41]: so i just renamed some of the artists
+Pablo [40:46]: and this is
+Pablo [40:57]: the we see the first row consists of null values because it's like the read html was contributed to
+Pablo [41:02]: now we move the first row
+Pablo [41:03]: and if we go
+Pablo [41:04]: to the master
+Pablo [41:10]: which
+Pablo [41:11]: is
+Pablo [41:13]: all
+Pablo [41:24]: you
+Pablo [41:25]: name everything
+Pablo [41:26]: and
+Pablo [41:27]: you have all
+Pablo [41:40]: the
+Pablo [41:41]: number
+Pablo [41:42]: of
+Pablo [41:46]: and
+Pablo [41:47]: now we'll do
+Pablo [41:48]: the same
+Pablo [41:59]: app
+Pablo [42:00]: that we are
+Pablo [42:01]: last
+Pablo [42:02]: load change the
+Pablo [42:03]: column
+Pablo [42:04]: this is basically
+Pablo [42:05]: what that
+Pablo [42:08]: col
+Pablo [42:09]: umn
+Pablo [42:10]: we
+Pablo [42:11]: name the col
+Pablo [42:12]: umn and
+Pablo [42:13]: call
+Pablo [42:14]: it development
+Pablo [42:15]: and then
+Pablo [42:16]: we have this
+Pablo [42:20]: information
+Pablo [42:21]: and
+Pablo [42:22]: sometimes we have
+Pablo [42:23]: minus n
+Pablo [42:24]: a
+Pablo [42:50]: omi
+Pablo [42:51]: and
+Pablo [42:52]: then we are like just
+Pablo [42:53]: going everything
+Pablo [42:54]: together
+Pablo [42:54]: even sort of
+Pablo [42:55]: and then place and
+Pablo [42:56]: having to take
+Pablo [43:09]: the
+Pablo [43:10]: northern ireland
+Pablo [43:13]: and
+Pablo [43:14]: make things easier
+Pablo [43:15]: for me that just
+Pablo [43:16]: decided to use
+Pablo [43:17]: this
+Pablo [43:24]: and
+Pablo [43:25]: then we're going to
+Pablo [43:26]: buy everything
+Pablo [43:38]: except
+Pablo [43:38]: ional
+Pablo [43:39]: island
+Pablo [43:47]: of
+Pablo [43:48]: vietnam
+Pablo [43:50]: just
+Pablo [43:51]: try to see
+Pablo [43:57]: i
+Pablo [43:59]: don't want to see here
+Pablo [44:00]: this
+Pablo [44:01]: absol
+Pablo [44:02]: ute number of
+Pablo [44:03]: this and so
+Pablo [44:03]: on
+Pablo [44:04]: we
+Pablo [44:05]: want to
+Pablo [44:06]: calculate
+Pablo [44:09]: all
+Pablo [44:10]: these numbers
+Pablo [44:12]: and
+Pablo [44:13]: this is what we
+Pablo [44:14]: 're
+Pablo [44:15]: all in palms
+Pablo [44:17]: of
+Pablo [44:18]: this
+Pablo [44:19]: col
+Pablo [44:20]: umn
+Pablo [44:21]: by
+Pablo [44:37]: and
+Pablo [44:38]: this is basically
+Pablo [44:39]: now
+Pablo [44:40]: we have
+Pablo [44:41]: the
+Pablo [44:43]: present
+Pablo [44:44]: ation
+Pablo [44:45]: and
+Pablo [44:46]: we also have
+Pablo [45:07]: constit
+Pablo [45:08]: uencies
+Pablo [45:08]: of json
+Pablo [45:09]: and oper
+Pablo [45:10]: ating
+Pablo [45:15]: out
+Pablo [45:16]: any additional
+Pablo [45:18]: just to make sure
+Pablo [45:19]: that it work
+Pablo [45:19]: s
+Pablo [45:27]: everything
+Pablo [45:28]: is out of
+Pablo [45:30]: any
+Pablo [45:54]: combined
+Pablo [45:55]: now
+Pablo [45:57]: the key
+Pablo [45:58]: of this
+Pablo [46:02]: data
+Pablo [46:03]: set and
+Pablo [46:04]: the idea is
+Pablo [46:05]: going
+Pablo [46:06]: back to this
+Pablo [46:07]: project
+Pablo [46:18]: in
+Pablo [46:30]: order
+Pablo [46:34]: to
+Pablo [46:35]: find
+Pablo [47:15]: proper
+Pablo [47:16]: ties
+Pablo [47:17]: also
+Pablo [47:18]: like
+Pablo [47:19]: somehow towards
+Pablo [47:21]: on the same
+Pablo [47:22]: level as possible
+Pablo [47:32]: and then
+Pablo [47:39]: you can
+Pablo [47:40]: see some special
+Pablo [47:41]: graphics here
+Pablo [47:53]: is
+Pablo [47:54]: a little bit off
+Pablo [48:00]: the
+Pablo [48:01]: index of our
+Pablo [48:07]: stand
+Pablo [48:08]: ardized
+Pablo [48:16]: process
+Pablo [48:18]: and
+Pablo [48:18]: we
+Pablo [48:22]: talk
+Pablo [48:23]: about the left
+Pablo [48:42]: and
+Pablo [48:44]: sometime
+Pablo [48:45]: s
+Pablo [48:46]: it was set
+Pablo [49:04]: where
+Pablo [49:04]: every index
+Pablo [49:06]: is
+Pablo [49:07]: completely
+Pablo [49:09]: manifest
+Pablo [49:41]: ing
+Pablo [49:42]: and
+Pablo [49:43]: then
+Pablo [49:46]: it's
+Pablo [49:47]: much more interest
+Pablo [49:47]: ing
+Pablo [49:59]: color
+Pablo [50:01]: one
+Pablo [50:04]: if
+Pablo [50:05]: the labor
+Pablo [50:08]: is
+Pablo [50:09]: twenty percent
+Pablo [50:12]: neighbo
+Pablo [50:13]: rs
+Pablo [50:18]: forty percent it should be accurate
+Pablo [50:22]: if i have the neighbors
+Pablo [50:24]: would
+Pablo [50:31]: only ten percent it should be displayed in like right or
+Pablo [50:36]: you can serve
+Pablo [50:39]: it i need a different card
+Pablo [50:41]: to have like a dot
+Pablo [50:42]: u
+Pablo [50:48]: percent
+Pablo [50:50]: and
+Pablo [50:51]: right or light
+Pablo [50:52]: blue
+Pablo [50:57]: ten percent
+Pablo [51:00]: so basically two things
+Pablo [51:02]: i need to define colors
+Pablo [51:11]: for each of the parties this made it easy grab the nameless tool for the conservatives yellow femmes and green for a green party
+Pablo [51:32]: but then i need something what you can see here this is like a color for the conservative fifty percent then it start to if they got only ten percent it should be some kind of light and for this i'm using the branch column which is very useful
+Pablo [51:38]: so i'm just using the following package importing the column mesh
+Pablo [51:42]: and for each of
+Pablo [51:46]: the parties i'm doing the following
+Pablo [51:58]: i want to create some light in the sense that for zero percent it's white for fifty percent basic habit color of the particle
+Pablo [52:02]: conservative labor and so on
+Pablo [52:09]: this means i just create this cmp linear color map
+Pablo [52:24]: starting quiet and color for the part the minimum value is zero and the maximum value is based in the maximum volt like the maximum share i got for maintenance
+Pablo [52:30]: for the neighbor
+Pablo [52:38]: seventy percent because seventy percent some constituency
+Pablo [52:47]: it's basically sixty percent and so on and you can now see whenever we provide basically part
+Pablo [52:50]: and then a number
+Pablo [52:57]: this means we will get some kind of color so if i now apply this
+Pablo [53:06]: to thirty percent i would get a color which is exactly
+Pablo [53:08]: here at this thirty percent
+Pablo [53:15]: so this means it allows me to get the color on how
+Pablo [53:21]: okay
+Pablo [53:27]: so just quickly going over this we have the conservatives in our zero point nine percent
+Pablo [53:40]: so basically now i'm trying to apply the color this would be the result and this is what i'm now doing on the map for each of the
+Pablo [53:55]: so i will basically define a function called get color that gets two different values
+Pablo [54:10]: first it gets like the teacher like the key or taste feature and the second thing is the path name so first we try to get
+Pablo [54:15]: the location in the sense is it all as well this is not normal whatever
+Pablo [54:21]: we remove like comma and then you look into the electric data set
+Pablo [54:25]: for the part d
+Pablo [54:29]: how many volts they have
+Pablo [54:35]: what gel they have and if we cannot count any value it should return zero
+Pablo [54:45]: and this like thirty percent twenty percent ten percent and then we have clearly colors like we just defined these color maps
+Pablo [54:57]: for the different parties we've got a green part it basically has green our map and we apply it with a guide to thirty percent and we get the value
+Pablo [55:10]: this is the one count really sample but here for the second constituency
+Pablo [55:18]: basically the labor party would have this kind of like a notch where
+Pablo [55:20]: you
+Pablo [55:31]: now combine everything this is the original map i just create here audio map
+Pablo [55:51]: with a tile which is basically taken from a server because beautiful thing is it has a related formation but you can see more like satellite image i think it's a very uniform
+Pablo [55:57]: yes let's start with this map and then i add some things
+Pablo [56:03]: this
+Pablo [56:04]: is basically
+Pablo [56:06]: for all
+Pablo [56:17]: so what happens is for parties and for all these i define a new feature because i want to have basically four kind of different maps
+Pablo [56:25]: and they take like the party name as a value and then in any of these
+Pablo [56:26]: boundaries
+Pablo [56:36]: and it now use style function to define really to color each of the
+Pablo [56:38]: and
+Pablo [56:54]: you can see now i should fill and the consistency in a specific color any color is defined by get color it gets the part here it gets the feature and then it will return i don't know where price like green or red or whatever
+Pablo [57:00]: i also write like the opacity a weight color gray and so on
+Pablo [57:16]: and it will add a pop up if we click on what the consequences it should tell me how the constituency is called and add like these four feature groups to my original map and
+Pablo [57:19]: this is
+Pablo [57:22]: kind of useful in the end
+Pablo [57:42]: maybe three is the best one but that starts with the red one you have the neighbors we can see here none on their performing very well or manages the middle pool and the rural areas are not performing very well and we can change here the path is conservative
+Pablo [57:45]: labor part we live degrees
+Pablo [57:47]: and for example
+Pablo [57:59]: forming exceptionally well if you click on it it says knob air podger
+Pablo [58:06]: and also increase their performance well and
+Pablo [58:15]: we can use basically for all of the paths so if you want to analyze them it's easy we don't have to look at tables we can just have a look
+Pablo [58:32]: at that maybe we're interested in this dark blue area where they perform very well you can call it which one then more develop and we can do this for labor the tenants green and so on
+Pablo [58:42]: and the only thing is you realize that more than island is always white because we haven't provided actual data
+Pablo [58:47]: yes for this reason it's just white all the time
+Pablo [58:52]: it's just clean wall
+Pablo [58:55]: we already had some
+Pablo [59:10]: result today we can do this way how you come up with your electron resource and typically you want to switch between different parties
+Pablo [59:16]: maybe i will just use one more minute
+Pablo [59:25]: typically you have the number you have different paths here for each of the path you create a feature group
+Pablo [59:49]: this feature group consists of like dogs by the boundaries and then you will apply a style point that you get an information how to set a color for all the color depends basically of the location feature and also for the party
+Pablo [59:52]: it's just a color
+Pablo [59:56]: and then you can also add multiple information
+Pablo [1:00:03]: maybe one in the center you just provide now a name of the person
+Pablo [1:00:04]: who got the
+Pablo [1:00:06]: seat for the parliament
+Pablo [1:00:16]: yes with this i would like to finish the lecture
+Pablo [1:00:22]: visualization
+Pablo [1:00:22]: thank you
+Pablo [1:01:01]: for the old one sorry
+Pablo [1:01:06]: homework is what is validation
+Pablo [1:01:08]: so meditation
+Pablo [1:01:15]: and paste that in
+Pablo [1:01:18]: tells you to create a timesheet get hypo
+Pablo [1:01:24]: and then the validation so it says something like get book type
+Pablo [1:01:26]: and
+Pablo [1:01:46]: of course the idea would have to be that you just validate this function so you can either define in your past the function as getbook type and validate factor you created or you just create a function called get hyper and remove the validation server and just run another validation
+Pablo [1:01:52]: basically i really want you to validate i'm just
+Pablo [1:01:53]: created on the line
+Pablo [1:01:55]: about
+Pablo [1:02:55]: i don't think so not even here yeah
+Pablo [1:02:59]: but i did add a couple research questions
+Pablo [1:03:02]: do you have any preference on
+Pablo [1:03:07]: what you work on because i saw the jordan left some comments that he wanted to do something about linguistics
+Pablo [1:03:11]: and add that in but i don't know
+Pablo [1:03:28]: i figured out how to get the data from that air quality website they have like an api that you can get the data from so we could also add that in and i added some notes on the doc if you want to take a look at it okay
+Pablo [1:03:38]: i also i added the two point zero to three point zero atom yeah you got it yeah they sent me an email like a couple hours afterwards so i just added it
+Pablo [1:03:40]: we can also use that
+Pablo [1:03:41]: sweet
+Pablo [1:03:48]: do you have a discord should i have him on discord
+Pablo [1:04:21]: based on my name but that's my username scott heather underscore c
+Pablo [1:04:25]: yeah i can do that
+Pablo [1:04:38]: let me double check
+Pablo [1:04:39]: that
+Pablo [1:04:42]: i remember
+Pablo [1:05:01]: okay did it add you to the group chat
+Pablo [1:05:03]: ok
+Pablo [1:05:07]: ay cool and then we can just chat here
+Pablo [1:05:14]: film
+Pablo [1:05:15]: s of the
+Pablo [1:05:16]: combination popular
+Pablo [1:05:17]: ity budget
+Pablo [1:05:21]: and this is like one
+Pablo [1:05:22]: and then you
+Pablo [1:05:23]: come
+Pablo [1:05:30]: and
+Pablo [1:05:33]: then you can
+Pablo [1:05:36]: on average
+Pablo [1:05:37]: seduction
+Pablo [1:05:41]: terms you can hear now the second company is better than first
+Pablo [1:05:42]: because
+Pablo [1:05:51]: change

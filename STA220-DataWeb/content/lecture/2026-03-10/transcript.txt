@@ -1,0 +1,1354 @@
+Pablo [0:00]: there is a percent of there is like
+Pablo [0:36]: today
+Pablo [0:37]: i'll be
+Pablo [0:46]: study
+Pablo [0:49]: ing
+Pablo [0:59]: so
+Pablo [1:10]: rry
+Pablo [1:16]: missions
+Pablo [1:29]: or
+Pablo [1:30]: custom
+Pablo [1:33]: ize
+Pablo [1:34]: the first miracle
+Pablo [2:03]: present
+Pablo [2:03]: ation
+Pablo [2:04]: for about
+Pablo [2:16]: commerc
+Pablo [2:17]: ial israel
+Pablo [2:31]: everything
+Pablo [2:32]: cross off
+Pablo [2:32]: thank you
+Pablo [2:38]: very much
+Pablo [2:50]: the big
+Pablo [2:51]: area
+Pablo [2:52]: number
+Pablo [2:53]: inside the
+Pablo [2:57]: number
+Pablo [2:58]: one
+Pablo [3:28]: this is
+Pablo [3:29]: the place
+Pablo [3:30]: of
+Pablo [3:31]: space
+Pablo [3:35]: but
+Pablo [3:39]: the future
+Pablo [3:42]: is
+Pablo [3:42]: higher
+Pablo [3:49]: maybe
+Pablo [4:09]: there are
+Pablo [4:19]: crime
+Pablo [4:20]: number
+Pablo [4:21]: s
+Pablo [4:27]: that
+Pablo [4:38]: now
+Pablo [4:45]: we
+Pablo [4:46]: did a set of
+Pablo [4:53]: reg
+Pablo [4:54]: imental commercial
+Pablo [4:55]: minister
+Pablo [4:58]: s
+Pablo [5:06]: different
+Pablo [5:15]: things
+Pablo [5:16]: are
+Pablo [5:20]: those of
+Pablo [5:21]: the higher prices
+Pablo [5:22]: that are
+Pablo [5:30]: important
+Pablo [6:01]: higher
+Pablo [6:02]: price
+Pablo [6:11]: algorith
+Pablo [6:11]: ms
+Pablo [6:31]: to make
+Pablo [6:32]: it another micro
+Pablo [6:32]: biome
+Pablo [6:37]: the
+Pablo [6:38]: owners of
+Pablo [6:39]: the house
+Pablo [6:42]: so
+Pablo [6:43]: i use the steward
+Pablo [6:54]: working
+Pablo [6:55]: restriction
+Pablo [6:56]: and i would
+Pablo [6:57]: have done i well
+Pablo [6:58]: made it by
+Pablo [6:58]: black
+Pablo [6:59]: equals to
+Pablo [7:01]: my
+Pablo [7:09]: use
+Pablo [7:10]: r
+Pablo [7:13]: s
+Pablo [7:23]: as
+Pablo [7:24]: we all know
+Pablo [7:25]: the
+Pablo [7:26]: parables
+Pablo [7:32]: there
+Pablo [7:32]: was
+Pablo [7:34]: no
+Pablo [7:35]: one hundred
+Pablo [7:36]: this
+Pablo [7:37]: asset is to reduce
+Pablo [7:38]: the non type of
+Pablo [7:39]: traffic
+Pablo [7:45]: i
+Pablo [7:46]: used
+Pablo [7:47]: various
+Pablo [7:48]: talking
+Pablo [7:49]: method
+Pablo [7:53]: s
+Pablo [8:03]: difference
+Pablo [8:08]: and
+Pablo [8:09]: that is the world
+Pablo [8:19]: edition
+Pablo [8:20]: of the mode
+Pablo [8:27]: the
+Pablo [8:28]: fact that
+Pablo [8:29]: the perfect
+Pablo [8:30]: contradiction
+Pablo [8:32]: and
+Pablo [8:33]: storage
+Pablo [8:34]: point
+Pablo [8:35]: is
+Pablo [8:44]: there is
+Pablo [8:45]: an option
+Pablo [8:51]: following
+Pablo [8:52]: it to have more
+Pablo [8:54]: nice
+Pablo [8:56]: but
+Pablo [8:57]: we can always
+Pablo [9:03]: so there is
+Pablo [9:04]: a
+Pablo [9:11]: right
+Pablo [9:12]: point
+Pablo [9:19]: and
+Pablo [9:22]: that
+Pablo [9:23]: contributes
+Pablo [9:31]: it means that
+Pablo [9:33]: minimum
+Pablo [9:34]: restriction
+Pablo [9:35]: may
+Pablo [9:36]: be you
+Pablo [9:37]: have to
+Pablo [9:38]: find
+Pablo [9:39]: consumers
+Pablo [9:40]: that it will be
+Pablo [9:44]: and then
+Pablo [9:45]: there is no minimum
+Pablo [9:46]: restriction
+Pablo [9:47]: that
+Pablo [9:48]: they will come attach
+Pablo [9:49]: ed
+Pablo [9:51]: and
+Pablo [9:52]: first go
+Pablo [9:53]: ahead is
+Pablo [9:54]: created only
+Pablo [9:57]: we can
+Pablo [9:58]: adjust whether
+Pablo [10:03]: coffee
+Pablo [10:04]: price
+Pablo [10:14]: now we talk about they analyze the osteopath
+Pablo [10:22]: so we download the data from
+Pablo [10:37]: the insight and inside mv com so we attend to job now and process it could extreme value so by processing the value we just add a log so the high value and low value is not extreme
+Pablo [10:43]: also we delete invalid character inside one column
+Pablo [11:05]: so product price run the price we go from the inside we build a map and we using the pi deck library in python we build the map here so we can see the density because the map provides the latitude and longitude
+Pablo [11:09]: aggregate
+Pablo [11:11]: on this library
+Pablo [11:18]: and the pydag also help to provide one function they have to visualize the price in column
+Pablo [11:23]: so higher the colonies the higher the prices
+Pablo [12:03]: we now satisfy all the analyzing the ambient density so we download the crime data from the data open data and it's a cvs so we analyze it the mempro i want to mention is we use the numpy to transform the us state and coordinate system to the international coordinate system because us map is measuring fit and international coordinate system is measured by meter and one thing i need to mention is the data come from twenty nineteen and twenty sixteen
+Pablo [12:06]: we combine it with nowadays and bnb data
+Pablo [12:18]: so let's look at the position of temperature
+Pablo [12:28]: so there is a line belongs to separate
+Pablo [12:42]: we cannot just compare the prices of the led regard of the patient because the leg but we have seen that on top of
+Pablo [12:49]: that price with respect to
+Pablo [12:50]: around the location
+Pablo [13:04]: either have lot of craps so we can see the stars it part of
+Pablo [13:06]: the top line area
+Pablo [13:14]: down right but usually find clear linear relationship
+Pablo [13:25]: between but there is not a clear
+Pablo [13:33]: so let's separate the handle
+Pablo [13:57]: amount of clients so for example from zero to the seven hundred times and so on so we can see that as the front there is slightly decreased of the price so that shows that when the ldds are centered by the price there are not many cycles here
+Pablo [14:04]: and this is the distribution
+Pablo [14:14]: of the rbb locations and so we can see that if the high price airbnb are centered
+Pablo [14:40]: with are you a single fusion with a we can see that usually the crime does not differ that's how you run the location with our buildings are gathered so that is because when the rvhr center the scenario of the urban there is usually multiple years so that also the crazy steps more
+Pablo [15:02]: correlations of the arabic prices with some other features so here we give some text from the description of the rgb we can see that the price is actually related to management we have from
+Pablo [15:17]: value
+Pablo [15:32]: so
+Pablo [15:33]: we have to be watching
+Pablo [15:35]: importance
+Pablo [15:36]: parts
+Pablo [15:37]: of the
+Pablo [15:39]: case
+Pablo [15:49]: without
+Pablo [15:52]: the situation
+Pablo [15:53]: may
+Pablo [15:54]: be some people have
+Pablo [15:55]: just
+Pablo [16:03]: some
+Pablo [16:03]: other visions
+Pablo [16:05]: like
+Pablo [16:58]: we have
+Pablo [16:59]: high
+Pablo [17:00]: density
+Pablo [17:00]: here
+Pablo [17:09]: maybe
+Pablo [17:10]: a downtown
+Pablo [17:11]: palace
+Pablo [17:11]: with
+Pablo [17:13]: australia high
+Pablo [17:13]: impact
+Pablo [17:16]: lower
+Pablo [17:17]: than this
+Pablo [18:08]: contact
+Pablo [18:09]: load
+Pablo [18:14]: that is
+Pablo [18:15]: now
+Pablo [18:26]: oppress
+Pablo [18:27]: ive
+Pablo [18:29]: but
+Pablo [18:30]: although the
+Pablo [18:31]: quality of the house
+Pablo [18:33]: are not using so what is really difficult
+Pablo [18:34]: for the higher price
+Pablo [18:35]: s that we can see
+Pablo [18:40]: that in the downtown area they usually have some more region of
+Pablo [18:42]: the higher passage than the
+Pablo [18:46]: lower price region they are
+Pablo [18:47]: slightly
+Pablo [18:48]: so that
+Pablo [18:50]: huge difference
+Pablo [19:02]: for the air would be price setting zero by five counter plug
+Pablo [19:14]: it sort of grouping led to like a jumping from five hundred
+Pablo [19:20]: so what's the question is there a reason why jumps like that
+Pablo [19:42]: you can imagine that part then actually scenario of you have a range of prices different from three hundred of their scenarios so that's why they share the similar amount
+Pablo [19:43]: of
+Pablo [19:51]: perfect let's take the speakers again
+Pablo [20:59]: hi everyone so today our project is about the hospital ratings divergence between the crowdsource and the federal agency compared with the good data and the cms
+Pablo [22:00]: so having a quick introduction so for hospital qualities the public hospital quality reporting system such as the central code medicare address and the medical services are designed to provide standard measure for the healthcare policies by experts and these ratings are based on the clinical outcomes patient is readmissions and patient experience and helps the patients to compare the hospital admitted in poor health care physicians but we also have some online ratings such as some online platforms familiar with everyone like google maps and also like yes and it will help also help the patients to choose their healthcare decisions so these ratings and reviews from the platforms are from republic and it might be influenced the hospital reputation and patient's health care distribution
+Pablo [22:25]: so if this will bring up to our research question the first one that we want to discover does the online digital reputations truly reflect a hospital objective clinical safety or does it only act as a proxy for the hospital and patient experience so we figure that sometimes that we saw on the online platform
+Pablo [22:38]: for example at google it's having like a really low rented rating for the hospital but it's actually pretty high on the professional standardized measures
+Pablo [23:38]: and the other one that we also want to discover about is the perceptual gap between digital and official rankings driven by the structural social economics the vulnerability or by digital traffic confounders so we're wondering like what actually cost this kind of information gap it might be because of like some of the patients they don't have they have like low income levels or they are leaving a small county or like any of those things might also driven them into like going not going to like a big hospital or not giving the rent ratings all of them we also want to discover this and there is a literature review that we did previous paper talking about having only the tincture of not notice these factors so we also want to discover this in our project
+Pablo [24:15]: so our last research question is how does the hospital structures actually having different features of in ranking because we figure that there is some of the hospital like either which is a really big hospital that they're having a restricted health insurance and also like restricted process we want to discover if those two different type of hospital type will be having any of the different performance of the rank rankings in both the google api and also the cms bridge
+Pablo [24:16]: team
+Pablo [25:10]: so for our data resources we use the google api to locate it to county first because all of our project are based on the county level in california so we use the google api to locate the county first and then we search for the keywords for example like they're having a few keywords like hospital general hospital medical clinics medical centers and then the second part we actually combine the google map and api data set with the cms data set together by fuzzy matching because they're having because different systems they have systematic bias they report something like differently so we use the faucet matching to looking at the similarity of the hospital name we set up the cut off as seventy five percent
+Pablo [25:26]: so eventually figures that there's like sixty five hospital that is unmatched so we actually rerunning the google api by the hospital name just searching for them in and also the code to gathering like the full information
+Pablo [25:35]: because we sell like a limitation for the google api that we only can prep for link for sixty page each time
+Pablo [26:07]: so we're just like getting further information by everyone in the code so in total we have two hundred fifty hospital in california this is by the officer record of the california but we eventually actually rule out some of the hospital eventually because we don't have enough information and we also want to investigate our research question related to the social economics features so we also combine with the other data center hrq data set
+Pablo [26:47]: i will not go through the analysis and the results distribution google is continuous and cms starts is integers and the same as patient experience for and clinical outcomes course are also in different scales so we use a percentile length gap to analyze this and also the google reveal count is skill we also use a lot of transformations
+Pablo [26:53]: and for the sqh index we use standardized
+Pablo [27:09]: we also handle the missing data we dropped eleven missing data due to the cfs stars because the hospital is too small or they are specialty hospital
+Pablo [27:29]: so they don't have the cms data and we also have two types of hospital which is cancer it has some structurally in the sync data on the clinical and we also have the academic medical centers
+Pablo [27:55]: so for our first research questions we found that there is moderates relationships between google and cmos sauce but the clinical outcome shows the only no relationships and we also use wilcoxon
+Pablo [28:10]: passed instead of tdis because the non normal distribution and we also know that the floor systematically difference in these two systems
+Pablo [28:26]: and for the gap analysis we use custard or else models to describe the difference so for the firstly we use
+Pablo [28:30]: two outcomes separately and run the baseline model
+Pablo [28:34]: and then we use three gaps
+Pablo [28:36]: between google and
+Pablo [28:44]: the
+Pablo [28:44]: children
+Pablo [28:47]: we also
+Pablo [28:48]: use the
+Pablo [28:49]: classroom
+Pablo [29:10]: the
+Pablo [29:11]: results show
+Pablo [29:19]: it
+Pablo [29:21]: actually canceled out
+Pablo [29:21]: in the
+Pablo [29:25]: qual
+Pablo [29:25]: ity
+Pablo [29:36]: of those start breaking
+Pablo [29:37]: even that
+Pablo [29:38]: it might because
+Pablo [29:39]: about
+Pablo [29:43]: their unequal regions might
+Pablo [29:44]: have
+Pablo [29:47]: more advanced on the patient's experience
+Pablo [29:51]: so they get better vacants online
+Pablo [29:58]: so sdoh did not contribute to the gap
+Pablo [30:03]: and then we found that the digital trap is the real compounder
+Pablo [30:26]: actually in the cms rating of the digital properties nothing to the cm as rating however in the google classroom and the gap analysis if i'm done it contributes to the google scores a lot
+Pablo [30:32]: so you can see that the coefficients forest plots in here
+Pablo [30:38]: this means that before
+Pablo [30:46]: review count google scores could be inflated by additional travelers
+Pablo [30:55]: and we also found institutional bias on this analysis
+Pablo [31:06]: in the comprehensive cms car the caser and the academic centers actually shows the miller over or
+Pablo [31:09]: staring at
+Pablo [31:10]: different strengths
+Pablo [31:13]: however in the lab
+Pablo [31:18]: or out
+Pablo [31:19]: come academ
+Pablo [31:20]: ics
+Pablo [31:21]: medical
+Pablo [31:22]: center always show
+Pablo [31:23]: s
+Pablo [31:24]: so you thought
+Pablo [31:25]: i would come
+Pablo [31:25]: forever
+Pablo [31:27]: those
+Pablo [31:28]: doors
+Pablo [31:30]: shoulders
+Pablo [31:30]: difference
+Pablo [31:31]: and
+Pablo [31:32]: actually
+Pablo [31:42]: analyz
+Pablo [31:42]: ation
+Pablo [31:43]: of the
+Pablo [31:47]: summariz
+Pablo [31:47]: e
+Pablo [31:53]: joseph
+Pablo [31:54]: her new house
+Pablo [31:56]: and
+Pablo [31:57]: clinical
+Pablo [31:58]: outcome
+Pablo [31:59]: y axis
+Pablo [32:00]: instead of
+Pablo [32:02]: google
+Pablo [32:03]: stars
+Pablo [32:04]: so
+Pablo [32:05]: we can see
+Pablo [32:06]: that the
+Pablo [32:07]: things are
+Pablo [32:08]: represent
+Pablo [32:17]: ing
+Pablo [32:18]: which is represented by
+Pablo [32:27]: show
+Pablo [32:30]: ing
+Pablo [32:35]: the
+Pablo [32:36]: clinical safety and
+Pablo [32:37]: medical sur
+Pablo [32:38]: vival
+Pablo [32:41]: okay
+Pablo [32:43]: ron was a job
+Pablo [32:44]: we have done
+Pablo [32:47]: the first
+Pablo [32:48]: one is that
+Pablo [32:51]: we
+Pablo [32:52]: think
+Pablo [32:53]: it
+Pablo [32:54]: means that
+Pablo [33:01]: already the way
+Pablo [33:02]: s are rainbow
+Pablo [33:03]: of her
+Pablo [33:05]: pat
+Pablo [33:06]: ience it wasn't being
+Pablo [33:07]: very careful
+Pablo [33:16]: because
+Pablo [33:17]: it's now
+Pablo [33:18]: saving
+Pablo [33:19]: and the second
+Pablo [33:20]: thing is that
+Pablo [33:21]: traff
+Pablo [33:22]: ic already
+Pablo [33:22]: drives the same
+Pablo [33:23]: information
+Pablo [33:24]: it
+Pablo [33:25]: means
+Pablo [33:27]: model reveals under your
+Pablo [33:28]: hair
+Pablo [33:31]: it
+Pablo [33:32]: means that
+Pablo [33:34]: re
+Pablo [33:35]: veal oil
+Pablo [33:36]: is dom
+Pablo [33:37]: inant
+Pablo [33:38]: predator
+Pablo [33:40]: even though
+Pablo [33:41]: actually
+Pablo [33:42]: very important
+Pablo [33:44]: to be
+Pablo [33:45]: a warrior is
+Pablo [33:46]: dominant
+Pablo [33:46]: prediction
+Pablo [33:47]: and the third
+Pablo [33:48]: thing we found
+Pablo [33:50]: is that the institutional
+Pablo [33:53]: cemetery it means that
+Pablo [34:05]: some laundry institution such as kaser will receive here google rating stars because they may have very royal members
+Pablo [34:16]: so the academic hospital may face our google penalty despite its superior cms nco scores
+Pablo [34:25]: so we have already some of the dressings for hr afterwards i think this is very important to us
+Pablo [34:31]: when we want to choose a hospital it's important that we come to rely on the
+Pablo [34:33]: google
+Pablo [34:34]: product
+Pablo [34:35]: i wish
+Pablo [34:36]: you
+Pablo [34:38]: paid more attention to make
+Pablo [34:40]: more information
+Pablo [34:43]: and
+Pablo [34:44]: what
+Pablo [34:45]: doesn't look very
+Pablo [34:45]: easy
+Pablo [34:49]: and
+Pablo [34:50]: for the
+Pablo [34:51]: cm has
+Pablo [34:56]: integr
+Pablo [34:57]: ations at digital
+Pablo [35:01]: and
+Pablo [35:03]: part
+Pablo [35:04]: time there i think
+Pablo [35:05]: that was
+Pablo [35:06]: from the rep
+Pablo [35:07]: utational packaging
+Pablo [35:08]: in public
+Pablo [35:09]: report
+Pablo [35:10]: and
+Pablo [35:11]: for the google
+Pablo [35:14]: google
+Pablo [35:33]: transforms they should also distinguish the patient experience and the actual clinical outcut is because it's very important to the patient and for the housee health as in the especially for academic hospitals the shielding was in patient communication and experiences
+Pablo [35:44]: higher cms stars doesn't mean that higher google stores so we should they should separate this strategic query
+Pablo [35:57]: even though we found something but there are some limitations the first thing is that our research is just based on the data in california that other states
+Pablo [36:35]: so this is a special case and the second is self lecture reviews because some people have extreme experiences and then they will reveal so it maybe has a bias and we must take care of this the second one is bigger institution such as caser we may have some missing data and for the first search is just kanji level it comes
+Pablo [36:38]: other areas
+Pablo [36:42]: so these are our research any questions
+Pablo [36:48]: yes have you heard that
+Pablo [36:54]: the kaiser stores
+Pablo [36:55]: were influenced by
+Pablo [36:57]: royal hmo members
+Pablo [36:58]: as opposed to others
+Pablo [37:00]: was it just like scanning the reviews
+Pablo [37:03]: and kind of save people's mention that
+Pablo [37:10]: i think the kaisers actually our data set like we cannot locate them which we don't know why okay
+Pablo [37:22]: when we run the data whenever it was the api warfare information do we connect to match that must
+Pablo [37:41]: be node i think we have zip codes and also the address we have the address information we have probably have the latitude and longitude but we're not running the legitimate longitude because that would take more time so we just match with the hospital name and
+Pablo [38:08]: also you use the data set and you see like objective standard right but i noticed that in the data set they also form the score by patient experience so i'm wondering that kind of a is it also from like a survey or something yeah so the patient expands from the cms that
+Pablo [38:25]: it's actually collected by the authorized questionnaire and that has a certain amount of the questionnaire that they collected and then they would just run some standardized measure statistic measure and then just like put it into the cms official system
+Pablo [38:28]: one last question
+Pablo [39:00]: but actually there are some grade school start and great legal outcomes and on the laptop
+Pablo [39:05]: bubbles there are also some other hca profits
+Pablo [39:08]: hospital or something like that but we do not
+Pablo [39:11]: separate it and flatten them in
+Pablo [39:12]: this
+Pablo [39:19]: okay then let's thank
+Pablo [40:05]: yeah so this is our project
+Pablo [40:15]: ing and our data lab we built us a full stack application so we'll walk you through why we did it and the motivation behind it and like how we present and upgrade
+Pablo [40:15]: d
+Pablo [40:42]: yeah so motivation was simple basically we have data accessible and across everywhere but it's not a very easy task to scrape it and it cannot tell that we are completely knocked out but even if you're developing you have to write code or debug it even if you see any single result so there's no interactive background which allows you to do all of this at one place so like let's say point at a website and be like give us data
+Pablo [40:46]: so those policies
+Pablo [40:47]: that we have problems
+Pablo [40:48]: we give you
+Pablo [40:49]: less than
+Pablo [40:56]: we show
+Pablo [40:57]: the rather matching elements
+Pablo [40:57]: towards them
+Pablo [40:58]: and ensure that
+Pablo [41:01]: you have
+Pablo [41:02]: to be
+Pablo [41:02]: gentle
+Pablo [41:03]: with them
+Pablo [41:04]: which are
+Pablo [41:08]: explainable all of this happens at one place with no or a little code
+Pablo [41:09]: required
+Pablo [41:24]: so yeah the use case of this are pretty wide so students can use it to learn how selectors work researchers can collect structure data without even writing a single kind of python and then developers can test all the selectors before putting that information
+Pablo [41:25]: and
+Pablo [41:29]: by
+Pablo [41:29]: the script
+Pablo [41:30]: so that you're never
+Pablo [41:32]: use
+Pablo [41:33]: that
+Pablo [41:35]: so
+Pablo [41:40]: database
+Pablo [41:41]: so the react front end talks to
+Pablo [41:50]: back in either stpi and then there's completely decoupled so you can either swap it eventually we have used beautiful soap
+Pablo [42:13]: for the static scraping selenium for that video semester database operations so everything for this is stored in our er posts for superpays and the vision act competition and the live review board are c plus and they are in memory so they return results that you're emitting the database and now availability okay i'll just go through
+Pablo [42:24]: we have sessions we have pages and we have elements extracted this data is coming because we've already tested
+Pablo [42:31]: our venus for session
+Pablo [42:33]: and
+Pablo [42:34]: possession and it's an ele
+Pablo [42:35]: ment of age
+Pablo [42:36]: i'll just show you how this works
+Pablo [42:50]: here we have all these session is basically for you to couple a group a bunch of pages that you're scraping together into a singular place where you want to find the for the sake of this class you just create a new session we'll call it
+Pablo [42:55]: once that is done write not has zero pages development
+Pablo [43:03]: when i go inside it it has obviously nothing inside it because we have no pages scraped we can start a new scrape
+Pablo [43:10]: we can call it save us just vape we also have the same size that we had for the homework we just use that example here
+Pablo [43:15]: for the selector in this static case you'll have to find out what you want to use
+Pablo [43:20]: in this case let's say we want to use the whole side categories which is this
+Pablo [43:21]: right
+Pablo [43:25]: so i just put that because we already have it selected and if i start the statement there
+Pablo [43:59]: hopefully it should pull up all the things so right now it's just one element because we selected the main element it has everything inside the bookstore and everything but we could also show the html that it fetched and it shows the code snippet that you would need to run this in your python system we could also do something similar but the whole we'll call it the same thing same website and for this selector let's say we want every element here and if you notice how the html looks
+Pablo [44:14]: this is a link list item inside the unordered list inside of this item inside so let's just try to use that as a selected i already have it selected so side categories are noted list and order list and the list item and if i start scraping using that
+Pablo [44:20]: that should give me every item so now it's grade fifty elements because
+Pablo [44:31]: you say that the element once and because there are fifty categories there it's made of same thing goes here it shows a course this is the static part of it
+Pablo [45:03]: let's go back to this refresh now it should have two pages extracted for the selenium part of it this is where you don't need any information any knowledge about previously the same color books just paper garon we give the same example here instead of you finding out what the actor you want it will give you a preview of the website and the page it will take a while because it takes a couple of seconds for the selenium headless browser to run load all the css on the javascript and then we inject little bit of javascript in the middle for us to show the site on the page
+Pablo [45:12]: and the injector javascript lets us go through everything and if you see on the bottom left it shows what you're selecting and what category it is
+Pablo [45:16]: here also if we just fail and stretch we want the whole thing beside categories
+Pablo [45:21]: we click that and when you click that it shows what you mean exactly to selected
+Pablo [45:30]: the selector if you want specifically that this is a selective with every parent thing there it also shows the x path we don't really know what to do
+Pablo [45:33]: we can it shows the dax content
+Pablo [45:42]: and the glass so if you want to we can use any of these to start scraping we'll just use this and it should do the same thing it should fetch all these items
+Pablo [45:44]: the same algorithm we just found
+Pablo [45:51]: using that we could also use any other site which is runaway
+Pablo [45:55]: let's say we can use we only have with sap
+Pablo [45:58]: so we just have it open so we just use that
+Pablo [46:13]: if we do that this will also take a bit of time because it's my only javascript injection everything have it back in and then sending the full edge to us which is why it takes a couple of seconds the argument is that ten second
+Pablo [46:27]: here in ecu subset let's say again if i want specifically bsa if i click on that it gives me the link it gives me if you just want the header the xpath and the thing but let's say we want the whole thing
+Pablo [46:33]: we could also try to select the parent if we go but we don't have a current method of exactly circuiting the data
+Pablo [46:38]: we'll just do this and that should hopefully fetch all
+Pablo [46:43]: the nav items
+Pablo [46:44]: if you like that
+Pablo [46:50]: so that is the sessions part of it these are the candles is interesting
+Pablo [47:00]: also there's some dates depending on how scenario eight sessions and the pages are linked next is page line graph which
+Pablo [47:12]: okay hello also i'll be talking about this here graph visualization that i developed for this project
+Pablo [47:22]: the main goal of the project is to extract structured data from web pages while working on it we realized that websites also contain another important type of information
+Pablo [47:24]: which is their link structure
+Pablo [47:38]: so instead of only asking what data exists on a page we can also ask questions like how are pages connected which pages are the most influential and how the importance propagates through the network of links
+Pablo [47:49]: to explore those questions i build a seated page and graph that starts from a seed page crawls outwards constructs an hyperlink graph and then computes page rank over the discovered structure
+Pablo [47:52]: now i'll briefly demonstrate how this works
+Pablo [48:09]: so the process starts with the c url which acts as the entry point for the crawl from this page the system performs a bounded crawl meaning it follows hyperlinks outwards
+Pablo [48:15]: but within controlled limit so for this demo i'll just put a random link here something like
+Pablo [48:17]: this xri
+Pablo [48:22]: i'm just paste it over here
+Pablo [48:32]: then we move over to the controls for example here we can control the hop depth
+Pablo [48:43]: which determines how far from the seat the crawler explores we can also restrict the crawler to the same domain and this also crawl cap which limits the total number of pages that can be discovered
+Pablo [48:47]: there's also a limit on how many links you can extract from each page
+Pablo [48:51]: we are
+Pablo [48:52]: getting something
+Pablo [48:54]: very
+Pablo [48:55]: large
+Pablo [48:57]: so
+Pablo [48:58]: all these remains
+Pablo [49:01]: of
+Pablo [49:02]: god
+Pablo [49:04]: is a
+Pablo [49:05]: more elegant
+Pablo [49:06]: two
+Pablo [49:08]: marks and five hundred
+Pablo [49:09]: dollars
+Pablo [49:16]: when
+Pablo [49:17]: i was the governance
+Pablo [49:26]: the battery starts discovering pages and construction direct which each node when each node represents a page and each edge represents a hyperlink between the pages
+Pablo [49:29]: this part can be slightly computationally heavy but you're already there
+Pablo [49:41]: so the graph itself does not need to compute to the limit of the top end nodes it actually calculates a thousand nodes and we just simply filter away the ones we want display
+Pablo [49:52]: also the number of nodes acts as the main limiting factor so if the node limit is reached before the deeper hub has exploded then the crawler simply stops expanding further and the next stock will not be executed
+Pablo [49:57]: so show the graph in little more detail
+Pablo [50:00]: i hope it's visible
+Pablo [50:02]: yeah
+Pablo [50:17]: so once the graph is constructed we compute the page rank across the entire discovered graph page and works by propagating important fluid slings in simple terms a page becomes important if many pages link to it especially if those linking pages are themselves important
+Pablo [50:37]: in this case the ranking reflex importance within the graph discovered from the seed page rather than across the entire web page rank itself is computed iteratively across the graph each page distributes its current rank to the pages it links to and this process repeats several times until the value stabilizes
+Pablo [50:50]: in simpler domes the formula takes the age rank of all pages linking to a page divides it by the number of outgoing links and the sums those contributions with a damping factor applied
+Pablo [50:58]: the damping factor represents the probability that a user randomly jumps to another page and it helps prevent the rank from getting trapped in a cycle
+Pablo [51:10]: the final score then reflects how influential a page is within the discovered network now once you hover over a node you can see the graph encodes several properties
+Pablo [51:15]: node size reflects the hop distance from the seat page
+Pablo [51:20]: so pages closer to the seat appear slightly larger in this case the orange is the seed page
+Pablo [51:25]: nodes which are colored nodes are colored by domain
+Pablo [51:36]: so which helps distinguish pages belonging to different sides edge thickness represents the page rank of the target node so pages receiving more influence appear with a strong incoming link
+Pablo [51:44]: although altogether this makes it easier to visually identify important pages and the structural pattern so once i click on load let's say we click this one
+Pablo [51:55]: users can also interact with the graph for example if i hover over
+Pablo [51:59]: you can see the
+Pablo [52:00]: hand
+Pablo [52:01]: le is the
+Pablo [52:02]: needle
+Pablo [52:03]: so you can select
+Pablo [52:04]: the local conditions
+Pablo [52:05]: on that page
+Pablo [52:06]: this is
+Pablo [52:07]: going down
+Pablo [52:08]: many
+Pablo [52:09]: pages computed by
+Pablo [52:10]: kj
+Pablo [52:11]: first
+Pablo [52:12]: let the word one of these
+Pablo [52:12]: changes
+Pablo [52:16]: the
+Pablo [52:17]: second one
+Pablo [52:21]: is
+Pablo [52:22]: at a high d
+Pablo [52:29]: imension
+Pablo [52:29]: we made during development
+Pablo [52:31]: was related
+Pablo [52:32]: to how this draft was
+Pablo [52:33]: led by
+Pablo [52:33]: generated the graph
+Pablo [52:34]: entirely
+Pablo [52:36]: by using python installation
+Pablo [52:37]: as a
+Pablo [52:37]: user
+Pablo [52:38]: graph of the
+Pablo [52:40]: ones
+Pablo [52:41]: that
+Pablo [52:41]: were
+Pablo [52:43]: increased
+Pablo [52:43]: we are making
+Pablo [52:45]: difficult to read and
+Pablo [52:45]: explore
+Pablo [52:47]: we will gladly decided
+Pablo [52:47]: to
+Pablo [52:48]: move
+Pablo [52:50]: back
+Pablo [52:52]: while keeping the crawling and the page and
+Pablo [52:53]: the back
+Pablo [52:56]: this is an heavier comput
+Pablo [52:57]: ation
+Pablo [52:58]: where the user
+Pablo [53:00]: will
+Pablo [53:01]: use
+Pablo [53:11]: how
+Pablo [53:12]: they
+Pablo [53:12]: exploration
+Pablo [53:15]: plat
+Pablo [53:15]: form
+Pablo [53:16]: instead of
+Pablo [53:17]: one
+Pablo [53:20]: provide
+Pablo [53:21]: d by analysis
+Pablo [53:22]: will
+Pablo [53:23]: be tracked and
+Pablo [53:24]: the system
+Pablo [53:25]: storage hdmi ext
+Pablo [53:26]: ract structure that
+Pablo [53:27]: runs and resonate
+Pablo [53:28]: for the
+Pablo [53:29]: pageant
+Pablo [53:31]: faster
+Pablo [53:32]: and more accessible
+Pablo [53:33]: for students
+Pablo [53:35]: researchers
+Pablo [53:38]: so
+Pablo [53:39]: talking about limitations
+Pablo [53:40]: even though you should
+Pablo [53:41]: utilize the process
+Pablo [53:42]: of stating
+Pablo [53:43]: data
+Pablo [53:49]: which
+Pablo [53:50]: means we sometimes
+Pablo [53:50]: need to
+Pablo [53:52]: extract
+Pablo [53:53]: the information
+Pablo [53:54]: so this
+Pablo [53:55]: makes
+Pablo [53:57]: lower
+Pablo [53:58]: and doesn't exist
+Pablo [54:01]: on
+Pablo [54:02]: website
+Pablo [54:03]: lim
+Pablo [54:04]: its
+Pablo [54:05]: that can
+Pablo [54:06]: use
+Pablo [54:07]: also
+Pablo [54:08]: signing policies
+Pablo [54:09]: as letters
+Pablo [54:10]: identified
+Pablo [54:11]: as
+Pablo [54:14]: the
+Pablo [54:15]: highest major require
+Pablo [54:16]: ments of data
+Pablo [54:17]: which get affect
+Pablo [54:18]: s us from others
+Pablo [54:21]: in
+Pablo [54:22]: the future plan will
+Pablo [54:23]: improve
+Pablo [54:27]: on
+Pablo [54:29]: the system
+Pablo [54:31]: goes after
+Pablo [54:32]: the initial
+Pablo [54:32]: page
+Pablo [54:32]: request
+Pablo [54:33]: secondary aim
+Pablo [54:34]: and more advanced anal
+Pablo [54:35]: ytics and
+Pablo [54:36]: users get
+Pablo [54:37]: better
+Pablo [54:40]: results
+Pablo [54:41]: within
+Pablo [54:42]: a platform
+Pablo [54:43]: we also want to
+Pablo [54:44]: sign the data analysis
+Pablo [54:45]: within videos
+Pablo [54:47]: by
+Pablo [54:47]: using every type
+Pablo [54:48]: of
+Pablo [54:52]: time to
+Pablo [54:53]: provide more power
+Pablo [54:53]: to platform
+Pablo [55:14]: select
+Pablo [55:15]: ors for le
+Pablo [55:17]: aning
+Pablo [55:20]: session
+Pablo [55:21]: we
+Pablo [55:22]: inject some other
+Pablo [55:23]: market
+Pablo [55:25]: and when we already
+Pablo [55:26]: see the red outline
+Pablo [55:29]: s
+Pablo [55:30]: of whatever selected
+Pablo [55:31]: all the class names
+Pablo [55:32]: are an entry show
+Pablo [55:33]: s
+Pablo [55:42]: did you consider
+Pablo [55:44]: the videos inside that video
+Pablo [56:00]: changes strategy will have to go
+Pablo [56:03]: figure out what the css is if it's doing static saving
+Pablo [56:06]: but in selenium
+Pablo [56:25]: yeah so right now we have a table format and not everything is clearly visible
+Pablo [56:30]: we didn't have enough time to actually beautifully display the data we were working with
+Pablo [56:31]: how to actually get the pp working
+Pablo [56:39]: and the scaling stuff work and so we didn't have enough time to actually show the data and proper format we do plan to do that
+Pablo [56:50]: i would have one question afterwards you can ask question i would ask one and then we would go to the next presentation how do you handle like if there is any
+Pablo [56:50]: rate if it has
+Pablo [57:04]: we we just try not to get it ourselves we haven't figured out what happens we have noticed the wikipedia stops working because on edurong network wikipedia has blocked were not able to scrape it or were not able to pay attractive
+Pablo [57:15]: question
+Pablo [57:16]: s
+Pablo [57:40]: we don't hear the things
+Pablo [57:41]: that we want to do
+Pablo [59:05]: analysis
+Pablo [59:06]: of the
+Pablo [59:07]: body context
+Pablo [59:15]: raising
+Pablo [59:16]: in the future
+Pablo [59:17]: like that
+Pablo [59:18]: or maybe in the past
+Pablo [59:21]: couple of days has been made to be a lot of
+Pablo [59:21]: equal that's right
+Pablo [59:23]: easy
+Pablo [59:23]: data
+Pablo [59:26]: absolutely
+Pablo [59:27]: sentinel to
+Pablo [59:27]: daily travel
+Pablo [59:28]: counter
+Pablo [59:30]: parts matter
+Pablo [59:30]: a lot
+Pablo [59:32]: for congestion planning and safety
+Pablo [59:40]: however data for this bytes of suitors volumes is rarer and less complete than data for car volumes
+Pablo [59:50]: so we looked into this in may twenty twenty three the city of davis added the bicycle exputer counter to this intersection at third street university
+Pablo [59:51]: this
+Pablo [59:53]: counter provides each measure of
+Pablo [59:57]: the flow of bicycles and scooters to and from canvas
+Pablo [59:59]: this is a picture of it
+Pablo [1:00:01]: the numbers say right now
+Pablo [1:00:02]: but trust me
+Pablo [1:00:04]: it counts the number of bikes i go in and out
+Pablo [1:00:08]: so what are our research objectives and goals
+Pablo [1:00:16]: we want to use these counts to understand the impact of various factors such as weather on the movement in and out of campus area
+Pablo [1:00:22]: we are inspired by these blog posts by this j
+Pablo [1:00:24]: az
+Pablo [1:00:24]: z
+Pablo [1:00:26]: so which fact
+Pablo [1:00:30]: ors best explain daily changes in bike and scooter traffic
+Pablo [1:00:35]: if it's raining are you more likely to go out in a bike probably not
+Pablo [1:00:37]: do these impacts
+Pablo [1:00:40]: of these factors differ between white sensors
+Pablo [1:00:41]: and
+Pablo [1:00:43]: what kind of weakly patterns and traffic
+Pablo [1:00:44]: counts can be identified
+Pablo [1:00:56]: here
+Pablo [1:00:57]: it's a part of
+Pablo [1:00:58]: the ad
+Pablo [1:00:59]: idas
+Pablo [1:01:00]: corporation
+Pablo [1:01:02]: and
+Pablo [1:01:03]: we actually
+Pablo [1:01:04]: look
+Pablo [1:01:05]: at
+Pablo [1:01:06]: those
+Pablo [1:01:07]: department
+Pablo [1:01:13]: s
+Pablo [1:01:25]: such as
+Pablo [1:01:25]: weather
+Pablo [1:01:41]: so
+Pablo [1:01:46]: we basically use like two main predictors temperature as like the weather data we created
+Pablo [1:01:47]: website
+Pablo [1:01:57]: we also use a renewable package called astro to calculate the daylight time during each month
+Pablo [1:02:10]: decided to be using pandas basically based our project on the cpa
+Pablo [1:02:14]: holiday
+Pablo [1:02:17]: our
+Pablo [1:02:19]: just
+Pablo [1:02:19]: one
+Pablo [1:02:20]: god we give
+Pablo [1:02:30]: and comment to the preliminary virtualization we can observe
+Pablo [1:02:34]: that there's a significant drop
+Pablo [1:02:36]: of
+Pablo [1:02:45]: so
+Pablo [1:02:46]: we have to meet
+Pablo [1:02:47]: one incorporated
+Pablo [1:02:54]: and
+Pablo [1:02:55]: we try to use
+Pablo [1:02:55]: these
+Pablo [1:02:57]: russian person
+Pablo [1:03:03]: s that
+Pablo [1:03:04]: your outcomes are continuous
+Pablo [1:03:05]: values
+Pablo [1:03:06]: that have
+Pablo [1:03:07]: non negative
+Pablo [1:03:08]: values
+Pablo [1:03:09]: so it's perfect for
+Pablo [1:03:10]: healthy
+Pablo [1:03:11]: housing
+Pablo [1:03:12]: of mitra
+Pablo [1:03:13]: so that's what we
+Pablo [1:03:14]: can make
+Pablo [1:03:14]: i know what we did
+Pablo [1:03:15]: this was
+Pablo [1:03:17]: viol
+Pablo [1:03:18]: ated as such
+Pablo [1:03:29]: clust
+Pablo [1:03:30]: ering that
+Pablo [1:03:30]: long
+Pablo [1:03:33]: bit
+Pablo [1:03:34]: s of patches
+Pablo [1:03:40]: but we do have this coefficient block here so this shows you which of these variables of statistically significant
+Pablo [1:03:41]: correlated and
+Pablo [1:03:42]: predicting bike traffic
+Pablo [1:03:46]: so there you have anything that does not fall on
+Pablo [1:03:47]: that
+Pablo [1:03:48]: there's
+Pablo [1:03:49]: a significant
+Pablo [1:03:55]: down
+Pablo [1:03:56]: into that
+Pablo [1:03:57]: see if
+Pablo [1:03:58]: maybe there was difference
+Pablo [1:03:59]: that
+Pablo [1:04:00]: no sooners
+Pablo [1:04:08]: they're also
+Pablo [1:04:09]: listed by previous
+Pablo [1:04:10]: ly mod
+Pablo [1:04:11]: el
+Pablo [1:04:12]: week holiday
+Pablo [1:04:13]: activity
+Pablo [1:04:13]: whether or not
+Pablo [1:04:15]: instruct
+Pablo [1:04:15]: ion
+Pablo [1:04:17]: present
+Pablo [1:04:18]: ations or rate
+Pablo [1:04:19]: of
+Pablo [1:04:20]: course
+Pablo [1:04:24]: all these percentages are
+Pablo [1:04:26]: ratio
+Pablo [1:04:29]: so you can just interpret that as percentage increase
+Pablo [1:04:30]: additional
+Pablo [1:04:31]: percentage increase
+Pablo [1:04:33]: for
+Pablo [1:04:36]: there's level
+Pablo [1:04:39]: precipitation then you know
+Pablo [1:04:40]: thirty one percent
+Pablo [1:04:45]: down here to talk about the clustering
+Pablo [1:04:48]: stuff now we have a lot more time than i thought we did so
+Pablo [1:05:06]: this is the transform data that we use for our unsupervised clustering we had a daily counts for each day but for this we grouped it by each weekend each row you have essentially fourteen columns seven days and then both for bikes and scooters so that's why you have fourteen cons here that's what we were using for this
+Pablo [1:05:11]: using principal component analysis i'm not going to lie this about this like two days ago
+Pablo [1:05:17]: we could reduce the dimensionality that's data from the fourteen columns down to three columns while still keeping most of the variance in the actual
+Pablo [1:05:18]: data set
+Pablo [1:05:31]: so we arbitrarily chose a value of keeping at least ninety percent for the variance band pca analysis i put given this three dimensions which is nice because we can still plot it still kind of difficult to see but at least it's like interpretable
+Pablo [1:05:33]: so i'm allowed to be
+Pablo [1:05:35]: the
+Pablo [1:05:36]: points audited in three
+Pablo [1:05:37]: d space but
+Pablo [1:05:37]: on the right
+Pablo [1:05:38]: we also really
+Pablo [1:05:39]: apply the
+Pablo [1:05:40]: ocean
+Pablo [1:05:41]: mixture model to try to
+Pablo [1:05:42]: cluster
+Pablo [1:05:44]: basically
+Pablo [1:05:45]: each week as
+Pablo [1:05:46]: kind of we
+Pablo [1:05:46]: hit it
+Pablo [1:05:50]: so these are the weekly
+Pablo [1:05:51]: distribution
+Pablo [1:05:52]: accounts
+Pablo [1:05:53]: at the actual calend
+Pablo [1:05:53]: ar
+Pablo [1:05:54]: so as you can see it's
+Pablo [1:05:55]: kind of hard on the screen
+Pablo [1:05:58]: but the other ones up here those are all orange and then the ones that are green
+Pablo [1:06:02]: so you can already tell that there's a very significant
+Pablo [1:06:11]: base level gaps depending on where in the year they are and then you also see the blue lines in the middle where i don't know what's going on the week those are a little bit weird so after we looked into it
+Pablo [1:06:19]: those clusters actually made a good amount of sense so the ones that are up here supposed to be orange those are just regular we screen
+Pablo [1:06:19]: this full year
+Pablo [1:06:20]: based on people
+Pablo [1:06:20]: are here
+Pablo [1:06:21]: people are coming to and from
+Pablo [1:06:24]: campus and you expect a lot of traffic on the other hand
+Pablo [1:06:28]: like the cluster two which is the one
+Pablo [1:06:30]: you are expecting that to be like holidays
+Pablo [1:06:31]: summer when there's
+Pablo [1:06:32]: not students around
+Pablo [1:06:33]: campuses
+Pablo [1:06:34]: that people are not
+Pablo [1:06:38]: still
+Pablo [1:06:39]: people can't
+Pablo [1:06:40]: race
+Pablo [1:06:43]: so
+Pablo [1:06:44]: those are ones that are
+Pablo [1:06:45]: usually trans
+Pablo [1:06:46]: itioned between
+Pablo [1:06:47]: the toilet
+Pablo [1:06:48]: buses
+Pablo [1:06:48]: so for example
+Pablo [1:06:49]: finally
+Pablo [1:06:50]: people who don't have final
+Pablo [1:06:50]: s
+Pablo [1:06:51]: they're going they're not saying
+Pablo [1:06:51]: right
+Pablo [1:06:52]: makes sense
+Pablo [1:06:55]: or they could also be certain weeks with
+Pablo [1:06:56]: long weekends so for example
+Pablo [1:06:57]: just
+Pablo [1:06:58]: this work we have
+Pablo [1:06:59]: mlk
+Pablo [1:07:00]: a president state
+Pablo [1:07:01]: media
+Pablo [1:07:01]: some people may be going
+Pablo [1:07:02]: there and that's what we see
+Pablo [1:07:03]: much happening
+Pablo [1:07:04]: that's how we get those three
+Pablo [1:07:04]: clusters
+Pablo [1:07:07]: this is another visualization of it
+Pablo [1:07:23]: so you have the ones at the bottom so yeah right now this is the january to february long weekend period where sometimes you have weirder weeks but then you see the very obvious summer weeks where there's just not that much traffic while the spring quarter and the fall quarter we just see a lot of traffic
+Pablo [1:07:25]: so that's unsurprised clustering
+Pablo [1:07:32]: in terms of what we found so from the negative binomial regression things like holidays weekends rainfall
+Pablo [1:07:39]: what was the last one non academic days yet so there's non student school year yeah decreased bike and scooter traffic makes sense
+Pablo [1:07:51]: hours of daylight and temperature did not affect counts as much as we thought they would didn't really make a difference i guess that makes sense in davis because the weather is usually good enough for you to bite it's never too cold and doesn't rain that much
+Pablo [1:07:54]: so it wouldn't be too much of a wall
+Pablo [1:08:03]: in terms of the differences between bikes and scooters scooters are less affected by holidays and day of the week and i'm not actually sure why but there probably could be some kind of
+Pablo [1:08:07]: maybe guesses as to our hypotheses as to why that happens
+Pablo [1:08:12]: and generally as you can see when things are decided by the holidays
+Pablo [1:08:23]: like the school days start happening it makes sense that these are the traffic counts are more reflective of just those regular commuting patterns rather than any other random fluctuations such as what
+Pablo [1:08:33]: so we have some limitations obviously not everyone goes through campus through this one counter this is only one spot on one corridor going into campus and so hopefully
+Pablo [1:08:35]: you have no idea how accurate
+Pablo [1:08:36]: this actually
+Pablo [1:08:37]: is
+Pablo [1:08:38]: mario went over
+Pablo [1:08:38]: and watched it
+Pablo [1:08:41]: sometimes a bicycle pass
+Pablo [1:08:58]: would count one or what happens when you have multiple people riding on one thing how does one knows but there's obviously some limitations to that the last thing is that there's no large data set of hourly data you can go to the website and you can find hourly data for the day before but you can't find it for the whole time
+Pablo [1:09:04]: period which probably makes sense that's a very large data set but if we get hands on that then we probably do some fun like community patterns during the day
+Pablo [1:09:07]: so there are references
+Pablo [1:09:15]: one
+Pablo [1:09:16]: question
+Pablo [1:09:17]: what about the next
+Pablo [1:09:18]: two weeks
+Pablo [1:09:26]: so what would this mean for us
+Pablo [1:09:35]: we have two meters
+Pablo [1:09:36]: or we have
+Pablo [1:09:37]: two years
+Pablo [1:09:38]: for that
+Pablo [1:09:40]: and the other part
+Pablo [1:09:41]: is around here
+Pablo [1:09:43]: we're
+Pablo [1:09:44]: probably heading into
+Pablo [1:09:45]: this weird enough
+Pablo [1:09:46]: files
+Pablo [1:09:47]: and then we're going to have
+Pablo [1:09:48]: basically a reader
+Pablo [1:09:49]: to mark
+Pablo [1:10:00]: it
+Pablo [1:10:07]: sorry
+Pablo [1:10:20]: everyone
+Pablo [1:10:22]: that just has to
+Pablo [1:10:22]: be ordered
+Pablo [1:10:22]: they come
+Pablo [1:10:23]: easy
+Pablo [1:10:23]: students
+Pablo [1:10:24]: they could also just keep from
+Pablo [1:10:24]: today
+Pablo [1:10:25]: does not sound
+Pablo [1:10:30]: much they don't get
+Pablo [1:10:31]: okay
+Pablo [1:10:36]: sorry
+Pablo [1:10:50]: within the clustering itself i actually am not too sure
+Pablo [1:10:58]: no i don't believe so at that point
+Pablo [1:10:59]: maybe i probably should have checked
+Pablo [1:11:00]: but no i still have
+Pablo [1:11:01]: n't
+Pablo [1:11:09]: i
+Pablo [1:11:10]: think
+Pablo [1:11:12]: something
+Pablo [1:11:13]: that
+Pablo [1:11:17]: i think
+Pablo [1:11:28]: that
+Pablo [1:11:29]: you like not
+Pablo [1:11:30]: enough
+Pablo [1:11:31]: and that is also my
+Pablo [1:11:32]: self
+Pablo [1:11:41]: i don't know
+Pablo [1:11:42]: what happened
+Pablo [1:11:45]: also
+Pablo [1:11:47]: i don't know
+Pablo [1:11:48]: when
+Pablo [1:11:51]: those
+Pablo [1:11:52]: kind of
+Pablo [1:11:53]: high school
+Pablo [1:11:54]: that
+Pablo [1:11:56]: it
+Pablo [1:11:56]: doesn't happen
+Pablo [1:11:57]: before
+Pablo [1:11:59]: but it just happened recently
+Pablo [1:12:00]: so yeah
+Pablo [1:12:04]: just having some suggestions not actually crushing though
+Pablo [1:12:08]: i was wondering
+Pablo [1:12:09]: because you mentioned
+Pablo [1:12:10]: that
+Pablo [1:12:11]: it seems like
+Pablo [1:12:14]: the circumstances
+Pablo [1:12:15]: that kind of
+Pablo [1:12:16]: hindered
+Pablo [1:12:17]: by travel don't seem to
+Pablo [1:12:18]: affect scooters
+Pablo [1:12:21]: i think they also wonder conclusions
+Pablo [1:12:28]: i was wondering
+Pablo [1:12:44]: if you were to theorize and why that is what would be your best guess do you think it could be more maybe individual based maybe the types of people who tend to choose scooters over bikes as a means of travel maybe
+Pablo [1:12:51]: that could impact it so my initial hypothesis which could be volumes
+Pablo [1:12:56]: is that most people who use scooters have electric
+Pablo [1:12:59]: which means they're not as affected by light
+Pablo [1:13:15]: the non affected by hot weather i think because they don't have to actually pedal if it's hot and you're biting you're going to be putting up a real sweat but if it's hot and you're on an electric scooter it's not as bad because you're not doing as much exercise
+Pablo [1:13:18]: and for rain
+Pablo [1:13:26]: water i'm not as sure i don't know how hard it is to hold an umbrella while using a scooter because i don't do that
+Pablo [1:13:41]: so i'm not sure about the rainy weather but for hot weather my initial guess was most scooters are electric you don't have to put as much work into using so then in that case do you think the data between electrolyzed bikes and electrical scooters will be maybe more similar
+Pablo [1:13:43]: i think so yeah
+Pablo [1:13:48]: unfortunately we don't know exactly which of these bytes
+Pablo [1:13:50]: the number that's
+Pablo [1:13:51]: how we get it out
+Pablo [1:13:56]: major
+Pablo [1:13:57]: limitation
+Pablo [1:14:07]: the
+Pablo [1:14:08]: last thing is i also
+Pablo [1:14:09]: don't know how it tells between
+Pablo [1:14:10]: license speakers
+Pablo [1:14:15]: i don't want to say anything about how they do it so if they could just be culling anything
+Pablo [1:14:19]: one last question
+Pablo [1:14:30]: for the unsupervised clustering is just to reduce the dimensionality just i think it's usually
+Pablo [1:14:32]: for either computation
+Pablo [1:14:33]: when it comes to
+Pablo [1:14:34]: clustering afterwards
+Pablo [1:14:37]: i'm not going to lie i don't know
+Pablo [1:14:37]: this two days ago
+Pablo [1:14:44]: then let's thank the speakers again
+Pablo [1:15:33]: there's a statistical analysis of plus
+Pablo [1:15:42]: our introduction the methodology research questions
+Pablo [1:15:45]: flaunts or resource person quantum and we
+Pablo [1:15:56]: classes
+Pablo [1:15:57]: are making additive
+Pablo [1:15:58]: based
+Pablo [1:15:59]: if any one of
+Pablo [1:16:02]: you can define plus you would probably say
+Pablo [1:16:04]: but
+Pablo [1:16:05]: in the
+Pablo [1:16:06]: clutch
+Pablo [1:16:10]: so
+Pablo [1:16:11]: the motivation
+Pablo [1:16:13]: plus
+Pablo [1:16:19]: about this specific
+Pablo [1:16:20]: topic
+Pablo [1:16:22]: is to see
+Pablo [1:16:24]: the teams that have
+Pablo [1:16:29]: the best class record best teams with regular thesis
+Pablo [1:16:34]: doesn't correlate to high pressure performance
+Pablo [1:16:39]: so over a full season our teams win loss record
+Pablo [1:16:42]: exactly defined
+Pablo [1:16:47]: their class performance that's our whole motivation
+Pablo [1:16:49]: so
+Pablo [1:16:53]: each plus plane is not just a narrative
+Pablo [1:16:57]: to a statistical
+Pablo [1:17:02]: so what is clutch
+Pablo [1:17:03]: clutch is basically
+Pablo [1:17:06]: the final five minutes of the fourth quarter
+Pablo [1:17:10]: and over time and when the school is within five months
+Pablo [1:17:15]: so if two teams play kings and warriors the score is one hundred ninety five
+Pablo [1:17:19]: and when there's five minutes left it would be considered plus
+Pablo [1:17:23]: but if somebody extends the heat
+Pablo [1:17:24]: by other
+Pablo [1:17:25]: people
+Pablo [1:17:30]: very important
+Pablo [1:17:33]: that we address our classes
+Pablo [1:17:37]: plus isn't just a very isolated factor
+Pablo [1:17:40]: we can see from the slides
+Pablo [1:17:49]: to
+Pablo [1:17:49]: bank
+Pablo [1:18:03]: ers
+Pablo [1:18:04]: side
+Pablo [1:18:11]: api
+Pablo [1:18:15]: and i obtained three data sets
+Pablo [1:18:19]: one is regular season traditional data set with offensive and defensive
+Pablo [1:18:23]: metrics the second drink
+Pablo [1:18:34]: four factors clutch conditions four factors is basically a few advanced metrics such as effective free goals
+Pablo [1:18:36]: for example a field code personally is going to be
+Pablo [1:18:37]: defined
+Pablo [1:18:39]: as the number of shots we divided by
+Pablo [1:18:55]: effective goal is basically the number of ecos made let's say zero point five minus five divided by the field product is defined officially by the mpa
+Pablo [1:18:59]: so once the data was trapped
+Pablo [1:19:02]: it was loaded into a python data frame
+Pablo [1:19:06]: and then finally kept the columns that are relevant
+Pablo [1:19:08]: to our research question
+Pablo [1:19:13]: s mostly percentages and offensive metrics
+Pablo [1:19:16]: final fields like ranking columns
+Pablo [1:19:19]: and giving email to files
+Pablo [1:19:25]: suppose after purging or microsoft energon reports the data
+Pablo [1:19:27]: set and after
+Pablo [1:19:28]: data set
+Pablo [1:19:29]: s
+Pablo [1:19:31]: and
+Pablo [1:19:32]: the trans
+Pablo [1:19:37]: how
+Pablo [1:19:38]: our data
+Pablo [1:19:39]: set was that this is
+Pablo [1:19:39]: the factory
+Pablo [1:19:41]: and
+Pablo [1:19:42]: we can see
+Pablo [1:19:47]: there are all three regular season metrics
+Pablo [1:19:50]: plus four factorial metrics
+Pablo [1:19:51]: and
+Pablo [1:19:56]: we didn't change the way
+Pablo [1:19:57]: the
+Pablo [1:19:58]: right prefixes
+Pablo [1:20:07]: so this slide summarizes the three research questions
+Pablo [1:20:09]: that we'd like to address
+Pablo [1:20:17]: the first research question being are the nba's best regular season teams also the most successful situations
+Pablo [1:20:24]: the second question is what team level factors most strongly explain to our success
+Pablo [1:20:30]: is that during efficiency is it turnover is it repounding or is that
+Pablo [1:20:34]: and finally we'd like to address how does
+Pablo [1:20:35]: the change
+Pablo [1:20:36]: transact
+Pablo [1:20:37]: ions
+Pablo [1:20:45]: what
+Pablo [1:20:46]: is meaningful
+Pablo [1:20:47]: is that
+Pablo [1:20:48]: i think
+Pablo [1:20:49]: it's too well
+Pablo [1:20:50]: regular season
+Pablo [1:20:51]: do well in a bad
+Pablo [1:20:51]: situation
+Pablo [1:20:51]: as well
+Pablo [1:21:11]: so we've got it matched with percentage which is the regular season wind percentage we can see that the teams the top right sales things and funders do very well in both struct situations as well as regular wind and some teams which don't like jazz which is very underperforming
+Pablo [1:21:14]: both graduating center
+Pablo [1:21:20]: keep an eye out for the full scheme which is that which performs better and denver seasons
+Pablo [1:21:28]: but doesn't perform well in clutch wind situations on the other hand whistles here perform very well in touch
+Pablo [1:21:31]: situation but the regular season is pretty
+Pablo [1:21:32]: off
+Pablo [1:21:46]: so this question tries to answer and analyze is what the teams are doing and when they are performing well and when they're coming back so it helps them focus on the metrics which they're not doing what to improve
+Pablo [1:21:46]: right
+Pablo [1:22:03]: so to top this off we have plotted a bar plot here on the left side we have these positive bars so that the plot is basically clutch wind percentage minus the regular percentage so the teams on the left
+Pablo [1:22:05]: perform very well
+Pablo [1:22:10]: on the right
+Pablo [1:22:22]: and adverse situation compared to the attacker situation the teams in the middle have a good clutch situation as well as regular season performance
+Pablo [1:22:27]: so moving on to the r cube two from the predictor
+Pablo [1:22:31]: all right so about the iq
+Pablo [1:22:34]: now hitting one
+Pablo [1:22:35]: lakh which is
+Pablo [1:22:36]: that very most strong
+Pablo [1:22:37]: ly extreme
+Pablo [1:22:38]: effic
+Pablo [1:22:38]: iency
+Pablo [1:22:39]: in other words
+Pablo [1:22:40]: evolving
+Pablo [1:22:43]: any of those
+Pablo [1:22:47]: so this is a correlation heat map of cleps success factors
+Pablo [1:22:53]: the colors on the lighter side are the ones that are correlating in a negative way
+Pablo [1:23:00]: and the darker side ones are letting the negative way and like ones are the stronger ones
+Pablo [1:23:05]: the effective field goals is the strongest driver
+Pablo [1:23:09]: so that means the higher the shooting efficiency
+Pablo [1:23:10]: the
+Pablo [1:23:11]: more is
+Pablo [1:23:12]: the edge
+Pablo [1:23:14]: about the neg
+Pablo [1:23:15]: ative ones
+Pablo [1:23:15]: we saw that
+Pablo [1:23:17]: which
+Pablo [1:23:19]: i don't make use
+Pablo [1:23:19]: of
+Pablo [1:23:23]: if that
+Pablo [1:23:24]: happens
+Pablo [1:23:25]: that is
+Pablo [1:23:26]: the most neg
+Pablo [1:23:26]: ative
+Pablo [1:23:30]: matter
+Pablo [1:23:30]: s a lot
+Pablo [1:23:36]: we also found out that rebounding has minimal or like no effect on all of this
+Pablo [1:23:45]: then there are two more visualizations for this question too on the left hand side
+Pablo [1:23:51]: on the x axis we see the field goals and on the y axis we have the clutch wing percentage
+Pablo [1:23:57]: so here we found out that there is a clear upward trend the team that should know efficiently
+Pablo [1:24:00]: and we are shine
+Pablo [1:24:03]: so
+Pablo [1:24:03]: basically the takeaway
+Pablo [1:24:06]: is you may hire three pointers
+Pablo [1:24:10]: in last moments that's going to make the thing
+Pablo [1:24:12]: the right hand side is a quadrant plot
+Pablo [1:24:21]: it's between the field goals and the turnover percentage so basically the higher the turnover percentage
+Pablo [1:24:41]: the higher chances are of using and the higher the field goal percentage and a higher chance of winning so we can see that on the bottom right side the teams such as the thunder celtics and pacers lead the best quadrant so they do both of the things that are eight level
+Pablo [1:24:57]: and in the worst quadrant would be having a low efg and a higher turnover percentage so that means they are shooting poorly or rtr just with the ball so that's a factor which would make the teams lose
+Pablo [1:25:11]: this one here the ones in the blue are the efgs effective yield goals in such situations the orange one is again the turnover percentage and the green one is a free flow percentage
+Pablo [1:25:13]: so
+Pablo [1:25:14]: here on the left hand side
+Pablo [1:25:17]: of ten financial percentage
+Pablo [1:25:18]: on the right hand side on the
+Pablo [1:25:18]: bottom line
+Pablo [1:25:19]: so we found out that
+Pablo [1:25:21]: the strongest
+Pablo [1:25:29]: teams come by high effective percentage and don't turn our percentage so that means they're protecting the ball in french
+Pablo [1:25:29]: time
+Pablo [1:25:31]: so that's why they are on the top
+Pablo [1:25:49]: the weakest clutch teams either tend to struggle with one of those two of those or maybe all three of those saw that the pre flow percentage the green ones are generally high across the board and it does not separate much at all
+Pablo [1:26:03]: the first question three now we're comparing we go and crypto efficiencies of the top ten teams who perform well in
+Pablo [1:26:08]: the
+Pablo [1:26:09]: class
+Pablo [1:26:21]: situation
+Pablo [1:26:48]: s are much higher in plush doctor means the whole goal percentage there's not much higher it is enlightening and it's usually because of that
+Pablo [1:27:14]: each
+Pablo [1:27:15]: other
+Pablo [1:27:42]: zero
+Pablo [1:27:43]: point six
+Pablo [1:27:47]: and
+Pablo [1:27:47]: on the other hand
+Pablo [1:27:49]: we need to
+Pablo [1:27:49]: properly
+Pablo [1:27:50]: minus
+Pablo [1:27:52]: zero
+Pablo [1:27:53]: point one
+Pablo [1:27:54]: follow the
+Pablo [1:27:54]: rocket
+Pablo [1:27:56]: minus
+Pablo [1:27:57]: zero point
+Pablo [1:28:07]: and whereas the warriors are at like zero point five the takeaway is simple reliability suppress the consistently
+Pablo [1:28:09]: small
+Pablo [1:28:12]: some teams
+Pablo [1:28:13]: others
+Pablo [1:28:14]: fall upon
+Pablo [1:28:15]: these things
+Pablo [1:28:17]: and
+Pablo [1:28:18]: now we are going
+Pablo [1:28:19]: to
+Pablo [1:28:20]: realize
+Pablo [1:28:21]: so
+Pablo [1:28:23]: there are four gators
+Pablo [1:28:24]: and let me
+Pablo [1:28:25]: throw
+Pablo [1:28:26]: them
+Pablo [1:28:29]: last
+Pablo [1:28:30]: time
+Pablo [1:28:31]: i'm not
+Pablo [1:28:36]: visible clutch predictor the results overperformed by zero point
+Pablo [1:28:38]: and
+Pablo [1:28:41]: performed by
+Pablo [1:28:42]: my hand zero point
+Pablo [1:28:43]: one
+Pablo [1:28:48]: we exchanged the relationship clearly
+Pablo [1:29:11]: patient and community second one it's from second research question the song is predictor of large success is clutch effective field goal percentage and positive zero point fifty one in the should effectively under pressure accounting for the fourth two centuries bring more closeness and that's as simple as that
+Pablo [1:29:24]: and the equally important in the opposite direction turnover the negative zero point i giving the ball away in the final five minutes
+Pablo [1:29:29]: points exactly where position
+Pablo [1:29:30]: are the most valuable
+Pablo [1:29:32]: and
+Pablo [1:29:35]: shooting the ships under press
+Pablo [1:29:42]: ure and percentage this for most teams passenger is highly volatile
+Pablo [1:29:53]: and deposit means both ways what supplies allied clutch teams is their ability to hold their efficiency together despite the pressure
+Pablo [1:30:02]: and now we are going to the limitations of our project there are six limitations to be flagged before we wrap up
+Pablo [1:30:32]: team level only like we can't see which players are actually on the court in clutch moments so individual contributions and lineup effects aren't captured and one more thing is that our data set is a kind of non like we are considering only one year of the data which is not enough to conclude that any kind of team is like permanently aligned in clutch like process and process changes with different seasons
+Pablo [1:30:38]: and one more thing is that we have the pixel clutch definition
+Pablo [1:30:41]: we use the three ntl official
+Pablo [1:30:49]: that the last five minutes within five coin at different threshold would give different results
+Pablo [1:30:56]: and one more thing is that we have a small sample of twenty four forty six
+Pablo [1:31:03]: average thirty seven some patterns could be noise rather than true signal
+Pablo [1:31:16]: and one more thing is that it is one of the important thing which we have to consider the correlation isn't it coefficient high effective field percentage
+Pablo [1:31:19]: we can't say
+Pablo [1:31:21]: all the most
+Pablo [1:31:23]: reflect underlying quality
+Pablo [1:31:25]: and one more thing is
+Pablo [1:31:35]: that no the opponent adjustment means facing weaker opponents in clutch moments put the inflated lumbers without being
+Pablo [1:31:35]: present
+Pablo [1:31:46]: these whole invalidate these
+Pablo [1:31:53]: earnings but they do show deeper and multiseason player level study
+Pablo [1:31:55]: thank you
+Pablo [1:32:06]: for
+Pablo [1:32:07]: having
+Pablo [1:32:09]: one
+Pablo [1:32:10]: person
+Pablo [1:32:15]: for research question two why didn't you use any defense metrics
+Pablo [1:32:28]: defensive metrics generally
+Pablo [1:32:29]: too strong
+Pablo [1:32:33]: teams
+Pablo [1:32:34]: and laws
+Pablo [1:32:35]: so he
+Pablo [1:32:35]: took
+Pablo [1:32:44]: short
+Pablo [1:32:45]: nature
+Pablo [1:32:47]: and
+Pablo [1:32:48]: notes
+Pablo [1:33:02]: is
+Pablo [1:33:03]: n't it
+Pablo [1:33:04]: based on the
+Pablo [1:33:05]: width of the basketball games
+Pablo [1:33:08]: is
+Pablo [1:33:09]: n't it naturalistic
+Pablo [1:33:09]: and personal relationship
+Pablo [1:33:10]: what
+Pablo [1:33:18]: kind of have to exist because if one team has a good clutch performance doesn't that necessarily mean that the opposing team performed
+Pablo [1:33:33]: poorly so how does this trend show something that shows something more meaningful if this general trend kind of has to exist it clutch performances so this is like a plus
+Pablo [1:33:35]: if you know what it
+Pablo [1:33:36]: is
+Pablo [1:33:40]: but then
+Pablo [1:33:42]: plus
+Pablo [1:33:46]: fullness
+Pablo [1:33:46]: and power
+Pablo [1:33:47]: without excel
+Pablo [1:33:48]: network
+Pablo [1:33:48]: s
+Pablo [1:33:49]: but in clutch
+Pablo [1:33:55]: ing
+Pablo [1:33:55]: strategies
+Pablo [1:34:02]: does that
+Pablo [1:34:02]: make sense
+Pablo [1:34:13]: like
+Pablo [1:34:14]: an extension
+Pablo [1:34:15]: but it's not
+Pablo [1:34:22]: that
+Pablo [1:34:23]: it's a really
+Pablo [1:34:24]: such
+Pablo [1:34:26]: a nor
+Pablo [1:34:30]: mal which he is like you standing based on other teams
+Pablo [1:34:38]: to be addressed maybe the wolves i don't know or psychologists do something moral like
+Pablo [1:34:41]: how this would be like my
+Pablo [1:34:43]: mean i haven't done a project
+Pablo [1:34:44]: that's our biggest
+Pablo [1:34:45]: hi
+Pablo [1:34:50]: i'm not super familiar with basketball but i guess my question was were there any
+Pablo [1:34:54]: variables or predictors that you wish you had access to data
+Pablo [1:34:55]: when you create clutch one percent
+Pablo [1:34:58]: because i know you included a couple already
+Pablo [1:35:02]: but were there any additional factors that you thought oh we wish we had this in the data set
+Pablo [1:35:04]: that we could i can answer that
+Pablo [1:35:13]: i'm not a big nba fan as well but i think
+Pablo [1:35:18]: good
+Pablo [1:35:19]: money somebody doesn't care
+Pablo [1:35:19]: right
+Pablo [1:35:21]: the game goes one way or the other
+Pablo [1:35:23]: that also is a big
+Pablo [1:35:26]: factor we cannot put it down in numbers but
+Pablo [1:35:28]: yeah one more thing is the defense
+Pablo [1:35:29]: metrics which
+Pablo [1:35:30]: we can take
+Pablo [1:35:42]: on
+Pablo [1:35:45]: offense
+Pablo [1:35:53]: s
+Pablo [1:36:04]: one last question
+Pablo [1:36:04]: before we
+Pablo [1:36:06]: share the
+Pablo [1:36:07]: question
+Pablo [1:36:28]: some teams
+Pablo [1:36:28]: are higher
+Pablo [1:36:29]: at the top
+Pablo [1:36:29]: rate
+Pablo [1:36:31]: and still have good
+Pablo [1:36:32]: seasonal record
+Pablo [1:36:33]: with the state bus
+Pablo [1:36:34]: and
+Pablo [1:36:35]: some people
+Pablo [1:36:38]: on the higher
+Pablo [1:36:39]: or the lower end
+Pablo [1:36:40]: this is something which we can see
+Pablo [1:36:41]: to find where they are
+Pablo [1:36:45]: and that is one of the best platform
+Pablo [1:36:50]: s
+Pablo [1:36:54]: so when you use this to do any prediction for
+Pablo [1:36:57]: your
+Pablo [1:36:57]: data
+Pablo [1:37:04]: last season
+Pablo [1:37:06]: perform
+Pablo [1:37:06]: that
+Pablo [1:37:09]: well since for example they went to the finals last year
+Pablo [1:37:11]: but they are currently last i guess
+Pablo [1:37:16]: we wish we could make more extensions
+Pablo [1:37:16]: make
+Pablo [1:37:20]: and coaches also change very frequently
+Pablo [1:37:20]: right
+Pablo [1:37:25]: and if we were to make any extensions of the project we
+Pablo [1:37:26]: were
+Pablo [1:37:27]: a lot more
+Pablo [1:37:28]: asset matrix than we
+Pablo [1:37:29]: currently have
+Pablo [1:37:35]: all
+Pablo [1:37:36]: the speakers
+Pablo [1:38:34]: on
+Pablo [1:39:28]: no

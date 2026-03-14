@@ -1,0 +1,492 @@
+Pablo [0:52]: one more lecture which is on wednesday
+Pablo [0:59]: and then on friday orion will be answering questions about
+Pablo [1:05]: the final project
+Pablo [1:08]: whatever
+Pablo [1:18]: friday will not be an actual well it will be a lecture but it's good to be talking about the project
+Pablo [1:27]: will be an optional
+Pablo [1:36]: minute
+Pablo [1:39]: if you guys want
+Pablo [1:42]: we can go to the time when we're talking about this link
+Pablo [1:48]: it's a survey that i link web page
+Pablo [1:55]: so i propose because it's a survey of github developers
+Pablo [2:01]: this whole thing is actually
+Pablo [2:29]: this example survey here
+Pablo [2:29]: that's what i'm talking about
+Pablo [2:35]: the whole default object server which has come back to twenty twenty four
+Pablo [2:42]: and then they actually have a huge website about it and other results
+Pablo [2:47]: everything is being asked
+Pablo [2:54]: we have to do another one now because ai but ai was already a lot in this
+Pablo [2:58]: anyways the repo itself has many different things
+Pablo [3:04]: why we are doing this who did it and so on
+Pablo [3:09]: and then we'll add a things the survey instrument is in here
+Pablo [3:16]: it's actually quite telling if you look at many of the
+Pablo [3:20]: good best practices
+Pablo [3:23]: you can actually see
+Pablo [3:28]: there's a whole four paragraphs here explaining like they're doing this
+Pablo [3:33]: and then there's all sorts of questions related to many different things
+Pablo [3:36]: but also you can see
+Pablo [3:46]: how nicely set up enforced answer that never rarely occasionally how often do you engage in each of the following activities
+Pablo [3:51]: recognizing that people don't just code it all sorts of other things
+Pablo [3:55]: then they ask if people are employed or not
+Pablo [4:04]: it's a very nice survey instrument that one can take and reuse different purposes
+Pablo [4:08]: a little bit
+Pablo [4:15]: some of the questions are
+Pablo [4:23]: for example how does your template be affected
+Pablo [4:28]: but anyway
+Pablo [4:30]: it was a great
+Pablo [4:33]: kind of lay effort
+Pablo [4:36]: they millions of people
+Pablo [4:37]: actually
+Pablo [4:39]: and the results are not fair
+Pablo [4:51]: so the open source survey from official a lot of things people learn from it you can go to the open source
+Pablo [5:01]: they actually have the data so for those of you so we're talking about a survey that i have linked
+Pablo [5:04]: here
+Pablo [5:11]: by the open source survey nicpat
+Pablo [5:18]: github the database available
+Pablo [5:35]: the data is great if you want to use it for you project now or later if you're writing a full paper and you're trying to animate with something you're working on github
+Pablo [5:37]: you can use some of these
+Pablo [5:46]: they compare to the last time they ran the survey seven years ago
+Pablo [5:51]: something should change
+Pablo [5:56]: you dig it around i just wanted to go
+Pablo [6:02]: there's also design principles
+Pablo [6:05]: survey topics
+Pablo [6:08]: questionnaire
+Pablo [6:11]: as you can see
+Pablo [6:14]: it's not based apart these two questions
+Pablo [6:19]: i didn't usually banded up before
+Pablo [6:23]: questions
+Pablo [6:28]: any double side
+Pablo [6:33]: so you don't know what forty two
+Pablo [6:39]: diagonal status
+Pablo [6:43]: what you're doing for everyone the axis
+Pablo [6:46]: of this very intelligent grade
+Pablo [6:52]: set up the biggest ai computer to everything in the universe
+Pablo [6:55]: and the computer rack for billions of years
+Pablo [7:00]: and gain an answer and the answer is
+Pablo [7:11]: and then they realize they didn't really quite know what they were asking so then they build a lot of even bigger computer to answer the question
+Pablo [7:16]: and that computer here
+Pablo [7:29]: please check it out
+Pablo [7:35]: many people involved
+Pablo [7:39]: that said we're going to conclude surveys
+Pablo [7:41]: with that
+Pablo [7:47]: and the wrong time but i'm going to move on
+Pablo [7:59]: as i mentioned before so this friday
+Pablo [8:07]: we will not have a teaching lecture we will have question answering
+Pablo [8:10]: and questions about your project
+Pablo [8:15]: so ryan will be here
+Pablo [8:20]: thursday i hope the saturday
+Pablo [8:29]: also we're going to move slightly i realized i made a little slightly the deadline for the project report
+Pablo [8:31]: to sunday night
+Pablo [8:33]: not monday morning
+Pablo [8:42]: it's really just nine hour degree i just want to make sure on paper we have time to delete it
+Pablo [8:47]: because we have to have the blade
+Pablo [8:50]: the nineteenth or so
+Pablo [8:52]: i want to give you more time
+Pablo [8:56]: the nine hours earlier do you anticipate that to be an issue
+Pablo [9:00]: anybody plan to work something
+Pablo [9:20]: okay
+Pablo [9:26]: nine hours prior tuesday midnight
+Pablo [9:28]: i
+Pablo [9:29]: hope there's not too much
+Pablo [9:34]: but i'm asking anybody participating
+Pablo [9:37]: anybody anticipating those nine hours
+Pablo [9:41]: we have some technical
+Pablo [9:50]: okay so interviews the last two things the last two lectures will be
+Pablo [10:08]: interviews are great but that's a nice again old fashioned but xkcd so how worried should you be when you see a local report scientists about the breaking news story by field
+Pablo [10:15]: so less worried is that the archaeologist and more worried about ophthalmologists and
+Pablo [10:22]: the left side
+Pablo [10:24]: okay
+Pablo [10:33]: so many of us know what interviews are we sit down and i ask you questions and you respond let's look at detail
+Pablo [10:34]: first of all
+Pablo [10:40]: why are we using what are they good for what types of integers are there how to conduct them properly
+Pablo [10:45]: so most common metric of data gathering qualitative research
+Pablo [10:49]: it's a variety of forms
+Pablo [10:51]: exists
+Pablo [10:57]: different types of interview in depth exploratory structured structure
+Pablo [10:59]: and
+Pablo [11:04]: really depends on whether you think that person you're talking to
+Pablo [11:09]: them as subject or participant in the research
+Pablo [11:13]: so there's a change of perspective that happens
+Pablo [11:16]: think about the survey
+Pablo [11:21]: so what is different about these things just surveys that are done in person
+Pablo [11:23]: no they're much more than that
+Pablo [11:29]: surveys are static so sure you can conduct an interview by the survey
+Pablo [11:32]: you can sit somebody and ask them out please questions
+Pablo [11:35]: and you will go up
+Pablo [11:47]: you don't need to schedule this time out of your day and so on you can go there to the surf interviews allow you to do something more
+Pablo [11:49]: interviews allow you to dig deeper
+Pablo [12:03]: and talk to a person about their experiences with respect to the questions you're asking every question you can do probably you can ask a more detailed thing based on their answers
+Pablo [12:07]: so in an interview you can respond to their answers
+Pablo [12:08]: and you can go
+Pablo [12:13]: and that's what gives you the best one
+Pablo [12:25]: so because you can look at their experiences because you can look at their reaction to your findings
+Pablo [12:29]: or initial impressions or what should we study et cetera
+Pablo [12:33]: it can drive our set of theories
+Pablo [12:45]: and your hypothesis they can be done before you have four they can allow you to explore how people think about the area they're in
+Pablo [12:48]: they
+Pablo [12:49]: can help you do any
+Pablo [12:50]: thing
+Pablo [12:53]: they're also a great way to validate
+Pablo [12:57]: something you can go and ask the question
+Pablo [13:06]: remember case studies look at our results maybe examine them more
+Pablo [13:09]: but here you're talking
+Pablo [13:17]: an actual example from somebody of metrics that research tool
+Pablo [13:18]: s
+Pablo [13:25]: started as a quantity
+Pablo [13:31]: but it ended up half its time spent on interviews in the organization
+Pablo [13:31]: microservice
+Pablo [13:37]: and it started when it was investigated all
+Pablo [13:39]: agencies how long does it take to close it
+Pablo [13:42]: and find something
+Pablo [13:46]: for
+Pablo [13:51]: the search engine
+Pablo [14:07]: so many of the code reviews on the main theme were signed off in just minutes sometimes
+Pablo [14:09]: after they were submitted
+Pablo [14:12]: didn't make sense
+Pablo [14:18]: the examiner was code the examine this data everything seemed to be working
+Pablo [14:30]: correctly in fact these were real numbers how can a coding move you submitted a manager or looks at it
+Pablo [14:36]: but that doesn't happen
+Pablo [14:38]: i want people available immediately
+Pablo [14:55]: so as a last resort as the last resort naive it was the first time he contacted one of the developers on the teach giver and interview turns out in that day people did call the reviews together
+Pablo [14:56]: with their numbers
+Pablo [15:04]: sitting at a table they hold the recording piece together and immediately they were agreeing and the manager just puts a button
+Pablo [15:18]: so there's a different working pipeline in that team there's a different process and so that process was not available to him when he was looking at the data
+Pablo [15:24]: but talking to somebody he revealed the process
+Pablo [15:29]: and now he enriched his understanding of the processes go on at his institution
+Pablo [15:35]: and then he could model more appropriate by conditioning on the process use
+Pablo [15:40]: so now latency becomes given that the team works in this way
+Pablo [15:41]: what is the latest
+Pablo [15:56]: a much more detailed understanding of what goes on in the company and then with allows us to actually compare process each of these results in fewer bodies which of these results more effective i use more productivity
+Pablo [16:06]: so in just a few minutes the person on that team he answered the question that previously took in weeks of research
+Pablo [16:11]: so one possible way of using interview
+Pablo [16:13]: understand what's going on
+Pablo [16:26]: so the goal typically that interview is to see the research topic from the perspective on the interview
+Pablo [16:32]: so building as a researcher you understand what you want to latency
+Pablo [16:43]: but what is the reality you're studying with some level of detachment but now an interview allows you to actually
+Pablo [16:47]: involve the deciding what your research topic should be
+Pablo [16:51]: it's going to become one you have to
+Pablo [17:02]: goals are those the characteristics are low degree of structure in both the interviewer
+Pablo [17:03]: then you open questions
+Pablo [17:05]: if you don't know the answer
+Pablo [17:09]: in a survey you do know the answers
+Pablo [17:12]: yes no
+Pablo [17:14]: here you don't
+Pablo [17:16]: answer anything
+Pablo [17:19]: and then
+Pablo [17:28]: you focus on specific situation and actual sequences in the world of the interviewee rather than your
+Pablo [17:34]: have to gather not protruding
+Pablo [17:41]: as i said this in the beginning
+Pablo [17:45]: yes you can treat an interview as a research subject
+Pablo [17:47]: but you could have done that with a server
+Pablo [17:51]: it's fine to use an interview this way
+Pablo [17:53]: but they're more efficient for this
+Pablo [17:57]: the second one is very very ideally
+Pablo [18:00]: treat the interview
+Pablo [18:05]: where they help you run the research
+Pablo [18:06]: i'm giving you answers
+Pablo [18:11]: and then you modulate your
+Pablo [18:19]: top class is quantum decreases the bottom one
+Pablo [18:28]: okay so what is the introduce so not the survey
+Pablo [18:35]: they vary the style of question and participant number
+Pablo [18:44]: there is always a bit of the interviewer that gets inserted but an experienced interviewer
+Pablo [18:53]: but many of you are using very heavy
+Pablo [18:57]: so try to be soft in the
+Pablo [19:09]: time
+Pablo [19:10]: if you
+Pablo [19:11]: can't outside
+Pablo [19:11]: pirate
+Pablo [19:23]: professional
+Pablo [19:26]: are very
+Pablo [19:26]: extensive
+Pablo [19:27]: and so
+Pablo [19:35]: that
+Pablo [19:36]: they possibly
+Pablo [19:37]: can
+Pablo [19:47]: ask
+Pablo [19:48]: any question
+Pablo [20:11]: s
+Pablo [20:55]: there's
+Pablo [20:56]: no other
+Pablo [21:15]: impressions
+Pablo [21:16]: feature detail
+Pablo [21:17]: s
+Pablo [22:03]: one
+Pablo [22:19]: is a
+Pablo [22:20]: part of leader
+Pablo [22:22]: it comes
+Pablo [22:23]: to you from your
+Pablo [22:29]: time
+Pablo [22:32]: there's still
+Pablo [22:32]: many things
+Pablo [22:38]: then how do you def
+Pablo [22:40]: ine appropriate inter
+Pablo [22:41]: views
+Pablo [22:44]: to tell you exactly what you want to do what is inappropriate
+Pablo [22:47]: what you want to hear about
+Pablo [22:52]: is a potential buyer
+Pablo [22:54]: there's
+Pablo [22:55]: more people
+Pablo [23:02]: left
+Pablo [23:56]: over
+Pablo [24:13]: some
+Pablo [24:14]: of you
+Pablo [24:32]: i
+Pablo [24:33]: required the institution
+Pablo [24:43]: al
+Pablo [24:59]: here
+Pablo [24:59]: typically the focus
+Pablo [25:00]: of how particip
+Pablo [25:05]: ants describe and make sense of particular elements
+Pablo [25:15]: so the goal is not to occupy legal experience you're not asking a one to five
+Pablo [25:23]: you're asking them to go in deeper to achieve so that your assumptions correspond
+Pablo [25:27]: and avoid reflecting your precipitation device
+Pablo [25:29]: when you're starting
+Pablo [25:39]: okay so the second thing is creating interview there's no instrument there is a literature guide
+Pablo [25:43]: and that is kind of topics interspersed with probes
+Pablo [25:48]: and we'll see what it means so you have that guide protocol
+Pablo [25:51]: and then we start to see
+Pablo [26:04]: and this has to be done with group and then create internet because there are two parts when you
+Pablo [26:11]: many people don't realize is that modified
+Pablo [26:13]: i'm like the servants
+Pablo [26:15]: we're going to use survey
+Pablo [26:22]: you have to add that part and then start a new one but here you can actually change these
+Pablo [26:31]: why would you change it you would be formed by previous answers maybe some of you probes questions did not really land maybe they go
+Pablo [26:33]: whatever
+Pablo [26:40]: as i said not a formal schedule of questions
+Pablo [26:43]: but it's a list of topics
+Pablo [26:49]: that you want to cover and then under each topic you have additional terms
+Pablo [26:58]: the pros will be used to go deeper into what the interview answers
+Pablo [27:05]: typically the list is structured from more open
+Pablo [27:11]: so the guide is sf can evolve we are realizing something
+Pablo [27:13]: so here are some examples
+Pablo [27:23]: both an ended question what were the major responsibilities that your most recent job and then they answered something
+Pablo [27:28]: for example i've always had the ability to learn a new programming language quickly
+Pablo [27:35]: and then he throw specific steps do you take to learn
+Pablo [27:39]: so that's a pro
+Pablo [27:48]: a bipolar probe maybe most people like doctor identify aspects of working remotely they really like and other aspects of working
+Pablo [27:54]: would you tell me about those aspects that you really like and dislike so bipolar meaning
+Pablo [27:55]: last about
+Pablo [28:03]: elaboration is there anything else what else can you think about any other thought
+Pablo [28:15]: here is
+Pablo [28:20]: a die that can use to extract
+Pablo [28:24]: was used for interviewing these with nurses
+Pablo [28:28]: here the support issues
+Pablo [28:34]: they have to do to what extent is the health of our provision addressing the need for the patient
+Pablo [28:45]: and then after each question you write a probe in what ways is it or is it not to be more specific now some people may go in their answer
+Pablo [28:49]: so you may not need the pro some people may say yes
+Pablo [28:53]: but then you have to throw right
+Pablo [28:58]: you can affect people this is not the survey
+Pablo [29:02]: of course you don't want them to go for an amount
+Pablo [29:07]: it can be multiple throws
+Pablo [29:09]: if you have to adjust
+Pablo [29:16]: it's almost like how you're preparing when you have this idea
+Pablo [29:22]: what you're going to ask well what did they say this what are they going to pull up
+Pablo [29:25]: and you don't want to have fans
+Pablo [29:27]: so it's a similar type of
+Pablo [29:32]: time to extract information why did you run binance we're hearing the score
+Pablo [29:35]: okay
+Pablo [29:37]: so we are getting the point of that
+Pablo [29:48]: as you can see from that example there were many information seeking questions followed by the probes about their own filipino opinions what should be done next
+Pablo [29:54]: some questions focus on quick examples rather than abstracted generality
+Pablo [29:58]: incorporate bullet point questions as well as just topic
+Pablo [30:06]: it's always a good idea
+Pablo [30:09]: to ask a few abstract questions
+Pablo [30:13]: because
+Pablo [30:15]: captures
+Pablo [30:17]: their points of view they eval
+Pablo [30:18]: uated to the working
+Pablo [30:21]: wants to start clinical
+Pablo [30:22]: using the rest of
+Pablo [30:23]: the career
+Pablo [30:29]: point
+Pablo [30:30]: is included in the particip
+Pablo [30:31]: ants
+Pablo [30:31]: you have to press
+Pablo [30:32]: ure how much
+Pablo [30:35]: time you have for the whole thing
+Pablo [30:37]: so maybe you have three months
+Pablo [30:39]: what can
+Pablo [30:40]: you do in three months
+Pablo [30:47]: you have to collate at the end of the data the responses and the standard
+Pablo [30:49]: data
+Pablo [31:02]: before that you would have to spend some time understanding the population do you want to interview how long an interview will take a lot of schedule
+Pablo [31:05]: so all this is resources
+Pablo [31:12]: diversity of expected views if you are talking about nurses and their opinions
+Pablo [31:19]: may as well cover all of the department
+Pablo [31:21]: surgery
+Pablo [31:25]: versus nurses being
+Pablo [31:31]: jobs under the same type of
+Pablo [31:37]: then confidentiality we are
+Pablo [31:43]: the way you do that
+Pablo [31:50]: and then you have to avoid intermediate subject like your roommate
+Pablo [32:00]: when you recruit people
+Pablo [32:07]: when you try to get to a person if there is a gatekeeper there's a department chair
+Pablo [32:09]: you ask
+Pablo [32:13]: your students and so on
+Pablo [32:16]: it's best if you
+Pablo [32:16]: go
+Pablo [32:28]: in many situations best if you go if there is a permission to go to the fears rather than
+Pablo [32:33]: but you always have to rebuild the nature of the study you always have to show what you expect
+Pablo [32:38]: how many participants do i have
+Pablo [32:42]: sitting privileges two or three people that's nothing
+Pablo [32:46]: it wouldn't be for about five to ten
+Pablo [32:49]: but it depends
+Pablo [32:53]: what has to guide you that hospital how many wards are there
+Pablo [32:58]: are you sampling you don't have to capture every word every different department
+Pablo [33:01]: but if you make it
+Pablo [33:05]: and then many will refuse
+Pablo [33:08]: a large number of
+Pablo [33:11]: people in excess
+Pablo [33:16]: and yeah remember when you satisfy the years
+Pablo [33:29]: what i mentioned before that chris berg example for microsoft research right
+Pablo [33:34]: just one person the story
+Pablo [33:38]: was how he started he actually ended up inter
+Pablo [33:39]: viewing
+Pablo [33:41]: but then
+Pablo [33:44]: he just interviewed one person and went to the boss
+Pablo [33:46]: what would that count
+Pablo [33:47]: as
+Pablo [33:50]: i want to mention
+Pablo [33:52]: that's
+Pablo [33:53]: an anecdotal
+Pablo [33:53]: finder
+Pablo [33:58]: a one person interview together with data
+Pablo [34:01]: that could be a supporting
+Pablo [34:03]: forward for theo
+Pablo [34:08]: now roxy of many of them
+Pablo [34:12]: survey dental
+Pablo [34:18]: survey informed by the etimmies are rarely gonna
+Pablo [34:27]: so here's some answers you have to answer when you do things
+Pablo [34:32]: who pays what will you get out of this bible
+Pablo [34:36]: who's taking
+Pablo [34:45]: why is ellie interviews which bake
+Pablo [34:50]: potential bias
+Pablo [35:02]: meaning they don't want to
+Pablo [35:04]: do that
+Pablo [35:12]: you want to schedule an interview and talk to people about school
+Pablo [35:22]: they may want to not want to participate
+Pablo [35:29]: although nowadays is more and more difficult to figure out who is actually sponsoring what
+Pablo [35:31]: it's crazy
+Pablo [35:34]: there's multiple levels of indirection
+Pablo [35:34]: sometimes
+Pablo [35:45]: practically so this is great this is actually interesting so what to avoid multiple questions in a single question
+Pablo [35:50]: why did you join the open source project and do you think it has broad benefits to programming experience
+Pablo [35:52]: you don't want to do that
+Pablo [35:59]: leading question so you found that using this tool improve your productivity
+Pablo [36:02]: now this is true
+Pablo [36:06]: assuming that the answer to a question is obviously not the
+Pablo [36:10]: whether you're concerned about your privacy
+Pablo [36:10]: online
+Pablo [36:14]: what was the assumption
+Pablo [36:17]: that people are concerned about
+Pablo [36:20]: thank you so much how many of us are
+Pablo [36:25]: how many of us are doing nothing even though we are
+Pablo [36:33]: i mean yeah we already paying the price we are worrying about it
+Pablo [36:36]: what else do you want me to do about it
+Pablo [36:41]: the other day i received this crazy mail
+Pablo [36:44]: from marquise enterprise
+Pablo [36:50]: jamie oliver
+Pablo [36:51]: not j
+Pablo [36:55]: acket of nature anyway he could a bit of
+Pablo [36:56]: this
+Pablo [37:01]: apparently my bad that i don't bank anymore with like ten fifteen years ago
+Pablo [37:08]: i created period was collecting my data while i was a customer but after the end of the relationship
+Pablo [37:15]: i didn't know i was supposed to separately send discontinued using and sharing
+Pablo [37:19]: and so the back
+Pablo [37:24]: ing social security leader advertising
+Pablo [37:28]: that sells it back to many other items
+Pablo [37:34]: then again this mail from our case and i'm like who are these
+Pablo [37:42]: so i guess my point there was even if you worry about it there's nothing you can do about
+Pablo [37:45]: will not let you not share
+Pablo [37:51]: because you sign that
+Pablo [37:53]: nothing much can be done about
+Pablo [37:54]: it
+Pablo [38:01]: now imposing your perception is also something to be avoided so what you're really saying
+Pablo [38:02]: how do you formulate
+Pablo [38:07]: if you're having problem
+Pablo [38:10]: you can ask verification
+Pablo [38:11]: required
+Pablo [38:16]: you also compare advised to report it
+Pablo [38:27]: bicycle
+Pablo [38:33]: ending the interview on a difficult
+Pablo [38:38]: you should never
+Pablo [38:39]: appreciate
+Pablo [38:42]: always and
+Pablo [38:49]: did you have any questions to me
+Pablo [38:52]: or should i ask
+Pablo [38:58]: those are the practical
+Pablo [38:59]: issues
+Pablo [39:06]: there are other practical issues may be flexible you can change the topic formula
+Pablo [39:15]: depending on you see a person and i doubt it's actually previous classes
+Pablo [39:18]: quality
+Pablo [39:22]: serves as an interview so they need to use on stage
+Pablo [39:31]: and i was bringing a student and then i would start asking questions and then i would approach
+Pablo [39:37]: now why did it would be work for personal life
+Pablo [39:41]: and they start spilling out and then you can probably
+Pablo [39:45]: so if you see that something happens
+Pablo [39:48]: so if you see that something is going that way
+Pablo [39:54]: you advise to switch to those questions let things settle down
+Pablo [39:59]: so being flexible makes a big deal
+Pablo [40:07]: you start with questions that will enable the floor to be built
+Pablo [40:08]: between the
+Pablo [40:09]: two of you
+Pablo [40:11]: just like dating i mean really
+Pablo [40:21]: just like in the sense that the first day how do you get copy for every day for some people they always need to get comfortable
+Pablo [40:24]: so listen more talk less
+Pablo [40:29]: professors occupational hazard
+Pablo [40:35]: okay
+Pablo [40:41]: now what we are not talking about here is difficulty
+Pablo [40:44]: yes things can get difficult
+Pablo [40:51]: in several ways that are communicated interview over
+Pablo [41:12]: but there are some ways to solve this the answer with yes no try to build a port try to use pauses
+Pablo [41:14]: like silence silence
+Pablo [41:19]: any of you use silence in your leg
+Pablo [41:22]: to force people to talk
+Pablo [41:32]: over communicative what do you do you have to cut them off at some
+Pablo [41:36]: we have enough of that
+Pablo [41:37]: before you
+Pablo [41:38]: let's move on to the next
+Pablo [41:39]: question
+Pablo [41:45]: it's always good to redirect
+Pablo [41:48]: all this is great to have
+Pablo [41:50]: ask you more about this other thing
+Pablo [41:55]: okay
+Pablo [42:02]: and then there's things that as i talked about emotionally charged topics skip questions later
+Pablo [42:05]: high status interviewees
+Pablo [42:09]: when you interviewing princes the open source code
+Pablo [42:13]: they're finding
+Pablo [42:14]: a bit probably
+Pablo [42:15]: two people
+Pablo [42:15]: for us
+Pablo [42:18]: reinforcement is very powerful
+Pablo [42:22]: people lose the threat they don't know why they're there
+Pablo [42:28]: so
+Pablo [42:29]: always
+Pablo [42:31]: move
+Pablo [42:31]: forward
+Pablo [42:33]: they
+Pablo [42:36]: also have to
+Pablo [42:37]: take
+Pablo [42:38]: notes
+Pablo [42:43]: on
+Pablo [42:44]: eight eight
+Pablo [42:56]: also
+Pablo [42:57]: they
+Pablo [42:59]: will
+Pablo [43:00]: go
+Pablo [43:05]: then
+Pablo [43:06]: next time
+Pablo [43:08]: we'll see an example
+Pablo [43:09]: from
+Pablo [43:11]: the site
+Pablo [43:15]: wednesday
+Pablo [43:16]: we will use sometime
+Pablo [43:19]: friday
+Pablo [43:20]: here
+Pablo [43:22]: we only
+Pablo [43:23]: go
+Pablo [43:30]: also i will be moving the deadline to nine hours prior
+Pablo [44:54]: and i'm just trying to figure out we are dropping one
+Pablo [45:06]: question
+Pablo [45:15]: it's not going to be necessary
+Pablo [45:38]: let me think about

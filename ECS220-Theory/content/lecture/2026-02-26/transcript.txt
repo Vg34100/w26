@@ -1,0 +1,1307 @@
+Pablo [0:30]: a function defined on all inputs is called total
+Pablo [0:35]: and then sometimes we talk about functions that are undefined on some inputs
+Pablo [0:43]: and in the context of an algorithm that's trying to compute a function
+Pablo [0:52]: this terminology is useful because this algorithm may not halt on some inputs in that case we would say the function it computes is undefined
+Pablo [0:57]: so that's the reason for this kind of terminology like total impartial when we talk
+Pablo [0:58]: about programs
+Pablo [1:00]: it's referencing the functions
+Pablo [1:09]: and of course the functions we'd like to compute in general we'd like to get an answer for every input
+Pablo [1:14]: so we thought of bloop or bounded loop
+Pablo [1:17]: sort of pseudo programming language
+Pablo [1:26]: as an attempt to come up with an programming language or a model of computation where all the programs are guaranteed
+Pablo [1:31]: to halt so if you write a program in that language you don't have to worry it's guaranteed
+Pablo [1:32]: all
+Pablo [1:44]: and then hopefully would be expressive enough to capture all of the total computable functions we're using this terminology that we're using more in the twenties and thirties that recursive
+Pablo [1:53]: but we saw that fail that was ackerman's function so ackerman demonstrated now there's a clearly computable function very simple recursive definition
+Pablo [1:58]: but we demonstrated that it grows faster than any
+Pablo [2:01]: primitive reversal function
+Pablo [2:11]: and so because primitive recursive functions are precisely those that can be computed by these blue programs again we didn't prove that but that was proven a long time ago
+Pablo [2:17]: that means well this attempt at a programming language where all the programs
+Pablo [2:20]: all failed to capture
+Pablo [2:28]: all the functions we would want to compute including totals right so the acronym function is computable and it's total it's defined on every input
+Pablo [2:29]: but bloop cannot compute
+Pablo [2:39]: so then you might so the total recursive functions are the ones where some flu free loop or unbounded loop
+Pablo [2:43]: or equivalently python program or any other general purpose program
+Pablo [2:44]: ming language
+Pablo [2:45]: et cetera
+Pablo [2:52]: some of those programs don't halt uncertain inputs right we've all accidentally written infinite loops
+Pablo [2:55]: but some do halt on every input
+Pablo [3:05]: and we'd like to say well those are some they're computing some total functions for example the ackerman function you can easily we wrote down actual python code for the acronym function
+Pablo [3:15]: but you have this possibility that you might make a mistake in writing an infinite loop you might make an algorithm that fails to hold on some
+Pablo [3:23]: and so if you just consider python programs period including the kind that might get into an infinite loop
+Pablo [3:27]: those can be what we call the partial versus functions
+Pablo [3:36]: but in terms of wanting to compute all these the idea was is there some way to restrict our program so it would be more restricted than python
+Pablo [3:37]: or flu
+Pablo [3:45]: so that all the programs are guaranteed to halt but every total recursive function can be computed by
+Pablo [3:49]: and then we saw that the last thing we did last time we'll just review this proof is that that's impossible
+Pablo [3:58]: no total programming language we need no programming language in which all the programs are guaranteed to be total guaranteed
+Pablo [4:03]: no such programming language can compute all the total recursive functions
+Pablo [4:07]: even though those functions are told they're well defined on every input
+Pablo [4:15]: or put another way if a programming language l can compute all the functions that are computed by halting or by total python programs
+Pablo [4:20]: then l must have non halting programs just like python
+Pablo [4:23]: so even if you don't want them you don't want to get into infinite loops
+Pablo [4:29]: if you want the power to compute all the total functions you need to give yourself
+Pablo [4:33]: too much power and have the possibility of infinite loops right bloop was the failed attempt
+Pablo [4:36]: the athlete functions a counterexample
+Pablo [4:41]: and as we saw well the answer to this is no
+Pablo [4:46]: there's no programming language where all the programs halt that compute all the total reverse functions
+Pablo [4:51]: and the proof is well supposed for the sake of contradiction or not even contradiction
+Pablo [4:59]: just suppose you have some programming language that's taught all the programs they all hold
+Pablo [5:02]: so such programming languages exist blue
+Pablo [5:02]: with one
+Pablo [5:13]: so we're just going to demonstrate that such a programming language must be limited in power compared to say five
+Pablo [5:28]: right and why is that well any programming language that has some notion of programs that take inputs has what we'll call universal function u that takes two inputs the first input is a description in some format of a program in that language
+Pablo [5:36]: speaking in modern day terms we would think of p and x being represented by binary strings every python program for example just has some binary encoding
+Pablo [5:39]: and then x to be some binary strand
+Pablo [5:45]: they were talking more about natural numbers back in the twenties and thirties
+Pablo [5:48]: but natural numbers of binary strength of a one to one eight loads
+Pablo [5:55]: so this universal function takes two inputs the first is a description of a program the second is an input to that program
+Pablo [6:01]: and it's just supposed to output whatever the program does or put another way this u as an interpreter
+Pablo [6:07]: if you think of an algorithm implementing you that's what interpreters did they take as input
+Pablo [6:14]: a program let's say a python program and then maybe an input like command line argument or something and then run the python program on
+Pablo [6:14]: it
+Pablo [6:24]: right so this function exists we're going to demonstrate though that it cannot be computed by this programming language
+Pablo [6:28]: so why is that well
+Pablo [6:39]: suppose you can compute uh then using it as a subroutine you can define this other program v and what does v takes a single input a description of a program
+Pablo [6:43]: and what it does is it runs the program
+Pablo [6:45]: on itself
+Pablo [6:47]: isn't right same diagonalization trick we've seen before
+Pablo [6:55]: and then just make sure to output something different in this case we'll add one to it since we're thinking of these returning integers
+Pablo [6:57]: but it doesn't really matter
+Pablo [7:02]: that i added one what matters is that vp is not equal to p
+Pablo [7:04]: right i have subtracted one
+Pablo [7:05]: i could
+Pablo [7:06]: double it
+Pablo [7:18]: of course if you can compute u you can easily do this you just run u of p comma b what does b do or sorry what do you do it tells you what p would output when you give it that self output
+Pablo [7:22]: and then all you got to do is add one to that and then return
+Pablo [7:28]: but then if you could be implemented in that programming language so it could be
+Pablo [7:34]: but then what would v immediate it would be under thought right or put another way
+Pablo [7:37]: this u exists
+Pablo [7:40]: but it cannot be computed in this program
+Pablo [7:44]: or else you could write this program and get a contradiction
+Pablo [7:54]: so the only way out of this is that v is not one of the valid programs that can be given as a first thing would be
+Pablo [7:57]: you as an interpreter for this programming language
+Pablo [8:02]: but if it could interpret this program b if we'd have a contradiction
+Pablo [8:07]: so the way out of it is to say oh well yeah this mathematical function abstractly as well defined
+Pablo [8:11]: and in some more powerful programming language like python
+Pablo [8:13]: we could do this
+Pablo [8:17]: but that wouldn't be a contradiction that would just say well here's a python program
+Pablo [8:27]: that gives a different output than every program in this programming language but pythons programs are not in that language they're in python
+Pablo [8:33]: so the contradiction would be a fee we're also written that programming language and it would be one of the valid inputs
+Pablo [8:35]: p and as a first argument
+Pablo [8:39]: or put another way we can say well
+Pablo [8:48]: v is not total
+Pablo [8:48]: right
+Pablo [8:50]: so not implementable in this program
+Pablo [8:56]: but of course it's simple to compute using u so that means u is not computable
+Pablo [8:57]: by the program
+Pablo [9:01]: but notice u is a total recursive function
+Pablo [9:10]: because we're guaranteed in this language every program halts if all u does is just tell you what does the program do on some input
+Pablo [9:16]: that's going to have all to find output so this is a total function it's well defined in all inputs
+Pablo [9:18]: but it cannot be computed by any program
+Pablo [9:19]: in this language
+Pablo [9:21]: and a similar argument
+Pablo [9:24]: right so this is just we just said okay all we care about is that
+Pablo [9:26]: every month
+Pablo [9:27]: um
+Pablo [9:28]: uh
+Pablo [9:32]: so i'm not sure why it's a similar argument i should just say this argument
+Pablo [9:42]: so
+Pablo [9:50]: yeah it's not a similar idea but this argument applies to any programming language
+Pablo [9:54]: where all the programs are total blue is one such program
+Pablo [9:56]: so
+Pablo [10:01]: it has no universal program or put it another way you cannot write a blue interpreter
+Pablo [10:02]: you can write in python
+Pablo [10:03]: but not
+Pablo [10:04]: in
+Pablo [10:06]: ok
+Pablo [10:08]: ay questions about this argument
+Pablo [10:12]: yet again the power of diet you know cancer is diagonalization
+Pablo [10:18]: okay
+Pablo [10:19]: so
+Pablo [10:23]: this notion of universality
+Pablo [10:28]: was starting to show what's important right so
+Pablo [10:34]: so i'm going to talk about this concept called the universal partial recursive function so to unpack that into kind of more engineering terms
+Pablo [10:37]: there's a bit
+Pablo [10:41]: or again this is sort of
+Pablo [10:43]: pseudocode
+Pablo [10:44]: imaginary language
+Pablo [10:47]: but similarly there's a python interpreter written in python
+Pablo [10:49]: um
+Pablo [10:50]: any
+Pablo [10:51]: sufficiently out of
+Pablo [10:52]: any way
+Pablo [10:53]: she's been able to write
+Pablo [10:54]: an interpreter
+Pablo [10:55]: in that
+Pablo [10:55]: language
+Pablo [10:56]: more
+Pablo [10:56]: that
+Pablo [11:01]: functions
+Pablo [11:02]: of these things
+Pablo [11:03]: where
+Pablo [11:04]: sometimes those functions
+Pablo [11:05]: may be undefined
+Pablo [11:06]: inputs correspond
+Pablo [11:07]: ing to programs
+Pablo [11:08]: we
+Pablo [11:09]: can say there
+Pablo [11:10]: is a partial
+Pablo [11:11]: recursive function
+Pablo [11:12]: u
+Pablo [11:13]: is
+Pablo [11:14]: universal
+Pablo [11:15]: telling you about
+Pablo [11:16]: any other partial
+Pablo [11:17]: recursive function
+Pablo [11:18]: in order to
+Pablo [11:19]: take two input
+Pablo [11:19]: s
+Pablo [11:20]: one
+Pablo [11:21]: so now
+Pablo [11:22]: using the
+Pablo [11:23]: textbooks not
+Pablo [11:23]: ation
+Pablo [11:24]: earlier
+Pablo [11:25]: i ended up using
+Pablo [11:26]: a patient
+Pablo [11:28]: i'm going to
+Pablo [11:29]: think of a program
+Pablo [11:31]: and a
+Pablo [11:32]: strain is writing
+Pablo [11:33]: that program with the source
+Pablo [11:33]: code
+Pablo [11:34]: board has the same
+Pablo [11:34]: object
+Pablo [11:37]: ions
+Pablo [11:38]: our first order
+Pablo [11:38]: option
+Pablo [11:39]: pass them around
+Pablo [11:42]: but here we're going to
+Pablo [11:43]: be a little more miracles
+Pablo [11:44]: here
+Pablo [11:45]: use it
+Pablo [11:46]: convent
+Pablo [11:47]: ion from the early
+Pablo [11:48]: twentieth century
+Pablo [11:49]: where
+Pablo [11:50]: they were just you know much
+Pablo [11:50]: mathematicians
+Pablo [11:52]: they were mainly concern
+Pablo [11:52]: ed natural numbers
+Pablo [11:53]: and so what
+Pablo [11:55]: we're going to think of here
+Pablo [11:57]: is that x is a natural number
+Pablo [12:00]: right it's given as input to this function f that takes as input a natural number
+Pablo [12:01]: outputs an
+Pablo [12:02]: act and
+Pablo [12:03]: then when i write
+Pablo [12:04]: fr i
+Pablo [12:05]: made
+Pablo [12:05]: a natural number
+Pablo [12:06]: that codes
+Pablo [12:07]: apart
+Pablo [12:08]: ial recursive funct
+Pablo [12:08]: ion
+Pablo [12:09]: so the idea here
+Pablo [12:10]: is that
+Pablo [12:13]: the partial recursive functions
+Pablo [12:17]: are countably infinite
+Pablo [12:19]: that follows from the definition
+Pablo [12:25]: to basic
+Pablo [12:32]: primitive functions the constant zero and the successor function so there's just two and then there was this countably infinite family of projection functions
+Pablo [12:42]: one for each number of inputs and three index into and then you had two operations that can build up
+Pablo [12:45]: new functions from others but what do they do
+Pablo [12:55]: they basically take two functions and give you a new composition was one if f and g are both recursive we can say g of f of x is you know is also recursive
+Pablo [13:13]: and then similarly with primitive recursion that was also take two functions that tell you how to compute the base case and how to compute the inductive case that gives you a new function and so literally like enumerate the functions in this way they are enumerable
+Pablo [13:14]: or the modern terminology
+Pablo [13:15]: would be count
+Pablo [13:19]: so there's a countably infinite number of partial recursive functions
+Pablo [13:25]: and so that means there is a one to one correspondence between them and the natural numbers
+Pablo [13:33]: and so we're just thinking of f bar as being the natural number that represents f according to
+Pablo [13:38]: some pendant coding we're actually gonna go through an example of this encoding just to make it a little more concrete
+Pablo [13:44]: but for now just f bar is a natural number that represents a partial recursive function called
+Pablo [13:45]: f
+Pablo [13:49]: and this function u is universal
+Pablo [13:59]: in the sense that it can tell you about what any of these functions would do in other words u of f bar f sorry u of f bar x is defined if and only if f of x is defined
+Pablo [14:06]: and if they're divine well then they're equal f you will tell what would f output if you gave it as an
+Pablo [14:07]: um
+Pablo [14:13]: okay so the best way to understand why this is true with the benefit of
+Pablo [14:17]: living in the twenty first century is just to think about modern programming
+Pablo [14:20]: this is like almost tripping
+Pablo [14:22]: it's not trickled the
+Pablo [14:22]: right bike
+Pablo [14:24]: but
+Pablo [14:25]: once you have computer science
+Pablo [14:26]: degree
+Pablo [14:28]: you know the basis of how
+Pablo [14:29]: program
+Pablo [14:30]: s work
+Pablo [14:31]: and machine
+Pablo [14:32]: learning
+Pablo [14:36]: you don't need to
+Pablo [14:38]: be told that yeah
+Pablo [14:39]: you can write a
+Them [14:42]: respons
+Them [14:42]: e
+Them [15:00]: the
+Them [15:01]: particular
+Them [15:02]: coding
+Them [15:07]: beautiful
+Them [15:17]: is going to say
+Them [15:18]: copy
+Them [15:19]: so we
+Them [15:19]: got our functions
+Them [15:25]: some
+Them [15:26]: marshal correspond
+Them [15:27]: to the h
+Them [15:28]: yp
+Them [15:29]: erusas
+Them [15:30]: on ashlemor
+Them [15:31]: dot but can be represented by
+Them [15:32]: a positive
+Them [15:33]: bar
+Them [15:34]: house
+Them [15:35]: well
+Them [15:36]: is eight
+Them [15:45]: zero
+Them [15:53]: function
+Them [15:54]: s
+Them [15:55]: nine
+Them [15:56]: eleven
+Them [15:57]: and
+Them [15:57]: then we have the
+Them [15:58]: zero
+Them [16:01]: but
+Them [16:02]: is accounting for
+Them [16:03]: the number
+Them [16:04]: associate
+Them [16:05]: that to all these
+Them [16:06]: other
+Them [16:06]: you might notice
+Them [16:07]: either
+Them [16:09]: and you might
+Them [16:11]: also notice we skip
+Them [16:12]: the first three prime numbers
+Them [16:13]: also not an absolute
+Them [16:14]: we're going to use them
+Them [16:15]: but
+Them [16:16]: we just keep the numerating
+Them [16:16]: primes here
+Them [16:17]: and associate them
+Them [16:18]: in all variations
+Them [16:20]: but the base cases
+Them [16:23]: what are
+Them [16:24]: the recursive cases
+Them [16:33]: well you can have composition h could be the composition of partial recursive functions f and g those each have their own encoding as an integer
+Them [16:35]: fr and g bar respectively
+Them [16:40]: so to encode that f is the h is f and moses
+Them [16:42]: g we're going to let h bar be the integer
+Them [16:46]: two times three to the power fr times five to the power g
+Them [16:49]: so let's just stop and say okay
+Them [16:50]: what
+Them [16:54]: 's with all the prime numbers y her prime number is showing up somebody tell me
+Them [17:00]: why did we do this instead of the same kind of pattern that some other numbers there
+Pablo [17:05]: mult
+Pablo [17:06]: iply these primes
+Pablo [17:07]: creating
+Pablo [17:08]: a composite number
+Pablo [17:08]: right
+Pablo [17:11]: so by the fundamental theorem arithmetic
+Pablo [17:20]: so clearly if i tell you what these numbers are what's the number encoding f number encoding g this is kind of easy to use
+Pablo [17:23]: but more importantly
+Pablo [17:27]: if i tell you just the number if i just say hey here's an integer
+Pablo [17:29]: there's this big like thirty digit integer
+Pablo [17:45]: which partial recursive function does it represent it's uniquely encoded so the key idea is that this function i'm describing that takes as input some kind of description of a function or two and then outputs the new compose function
+Pablo [17:46]: is one to one
+Pablo [17:53]: so we're guaranteed that any two different f and g are going to have a different prime decomposition
+Pablo [18:00]: by the fundamental theorem of arithmetic that means they're different numbers because every number has a unique property composition
+Pablo [18:12]: and because the ones we listed for the base case none of them have two or three or five factor and the ones we're listing here only have two three and five factors that means
+Pablo [18:14]: we're also not colliding with any of
+Pablo [18:14]: those
+Pablo [18:16]: so
+Pablo [18:19]: these numbers
+Pablo [18:29]: and then to do the other two
+Pablo [18:35]: this is printed rec
+Pablo [18:36]: ursion
+Pablo [18:42]: zero
+Pablo [18:47]: eight
+Pablo [18:48]: on one smaller
+Pablo [18:48]: argument
+Pablo [18:50]: and then
+Pablo [18:51]: gw
+Pablo [18:55]: so
+Pablo [18:56]: again
+Pablo [19:13]: one eight has exactly
+Pablo [19:14]: one two
+Pablo [19:19]: all
+Pablo [19:19]: grinding
+Pablo [19:29]: it's
+Pablo [19:30]: so great
+Pablo [19:32]: how many
+Pablo [19:32]: times
+Pablo [19:33]: four
+Pablo [19:34]: grit invited
+Pablo [19:35]: this case or
+Pablo [19:36]: the next
+Pablo [19:37]: and then the next
+Pablo [19:38]: level is
+Pablo [19:39]: the same
+Pablo [19:44]: but
+Pablo [19:45]: that's not what
+Pablo [19:55]: minimum
+Pablo [19:55]: wide
+Pablo [19:56]: zero
+Pablo [20:09]: programs
+Pablo [20:10]: so this is another
+Pablo [20:11]: way to get a new
+Pablo [20:13]: one
+Pablo [20:14]: on the left
+Pablo [20:15]: so now
+Pablo [20:21]: adrian
+Pablo [20:27]: right
+Pablo [20:28]: so just concrete
+Pablo [20:29]: leaf
+Pablo [20:38]: i want to add
+Pablo [20:39]: x to zero
+Pablo [20:41]: i got two arguments
+Pablo [20:42]: there
+Pablo [20:43]: so i'm just going to
+Pablo [20:43]: take
+Pablo [20:45]: the projection
+Pablo [20:46]: onto one
+Pablo [20:47]: of the first
+Pablo [20:52]: and then
+Pablo [20:55]: add xy as recursively defined to
+Pablo [20:57]: be add x to y minus one whatever
+Pablo [20:57]: that is
+Pablo [21:00]: and then
+Pablo [21:01]: project on
+Pablo [21:02]: the
+Pablo [21:02]: arguments
+Pablo [21:04]: here xy and whatever this is
+Pablo [21:05]: i just ignore x
+Pablo [21:06]: and y all i need to know
+Pablo [21:07]: is
+Pablo [21:08]: what is the
+Pablo [21:08]: recursive value
+Pablo [21:11]: of x and y minus one this is available to g if you need it
+Pablo [21:13]: but for this case of addition we don't need it
+Pablo [21:14]: we only need to know
+Pablo [21:15]: what
+Pablo [21:17]: 's the value
+Pablo [21:18]: once i got that what do we do
+Pablo [21:19]: we add
+Pablo [21:20]: one
+Pablo [21:24]: in other words compose g is successor composed with project on
+Pablo [21:25]: their vector
+Pablo [21:46]: we
+Pablo [21:47]: decided
+Pablo [21:48]: sr was eighty
+Pablo [21:49]: one
+Pablo [21:59]: so
+Pablo [22:04]: this is basically like the simplest non base case we can come up with
+Pablo [22:06]: and we already got
+Pablo [22:07]: whatever that
+Pablo [22:08]: is
+Pablo [22:10]: fifteen
+Pablo [22:11]: eighteen digit number there
+Pablo [22:14]: and
+Pablo [22:18]: that's just for g right so we're not adding up to what minicoding of
+Pablo [22:20]: ad this is just
+Pablo [22:23]: the gene that defines the reversal case
+Pablo [22:31]: rolling
+Pablo [22:34]: into there that we need to do
+Pablo [22:38]: the base case and represent that as a f bar
+Pablo [22:41]: in this case would be project onto the first
+Pablo [22:41]: element
+Pablo [22:48]: there's a way to write it you can't write out all that
+Pablo [22:52]: literally something like this many days
+Pablo [22:57]: any
+Pablo [22:57]: way
+Pablo [23:01]: the quote the textbook here
+Pablo [23:08]: they said like this universal partial recursive function that interprets integers as other partial recursive functions in this way
+Pablo [23:10]: is itself partial recursive
+Pablo [23:11]: it can be expressed
+Pablo [23:13]: as a partial recursive function
+Pablo [23:17]: but as i say the proof of this claim is rather technical
+Pablo [23:23]: what a thankful knob of the pioneers of computation we relegate its details
+Pablo [23:23]: to history
+Pablo [23:28]: so this was known
+Pablo [23:31]: but of course this is extremely difficult to show
+Pablo [23:36]: i don't know how to show it directly but i know how to see that it's true
+Pablo [23:40]: which is to see the equivalence with turin machines
+Pablo [23:41]: that we're going to get to
+Pablo [23:49]: okay these general recursive functions were one attempt at a more powerful programming language
+Pablo [23:58]: than the primitive recursive functions knowing we need something more powerful if we're going to compute something like the acronym function
+Pablo [24:05]: so is it the right definition does it capture everything that we would intuitively think of as computable
+Pablo [24:08]: well maybe people weren't sure right
+Pablo [24:13]: another project so that was goodel and her rent who were mainly doing
+Pablo [24:15]: the partial recursive
+Pablo [24:21]: it was princeton along her church was taken a different approach
+Pablo [24:27]: this thing called lambda calculus so who here has herd of lambda copies
+Pablo [24:30]: ok
+Pablo [24:30]: ay
+Pablo [24:31]: it's
+Pablo [24:32]: a shame
+Pablo [24:34]: so
+Pablo [24:36]: it's the kind of thing you learn about it's like two hundred and forty
+Pablo [24:42]: and it's the basis of the basis of modern functional programming
+Pablo [24:47]: so things like lisp and haskells
+Pablo [24:53]: over so this was proposed by alonzo church it's because it's equivalent to them
+Pablo [24:58]: that we know church had it right this is the right definition of computable but it wasn't obvious
+Pablo [25:03]: that right this is the basis for these modern sort of functional programming languages
+Pablo [25:12]: it turns out it's very easy to evaluate it's much easier to write interpreters for lambda calculus
+Pablo [25:18]: than more complicated programming languages so there's sudden lines of code
+Pablo [25:22]: in scheme which is this dialect of
+Pablo [25:24]: all the parentheses
+Pablo [25:31]: okay so these were attempts people were made
+Pablo [25:37]: but again you had this problem that primitive recursive functions look like a pretty decent definition
+Pablo [25:40]: of computable functions they would be powerful
+Pablo [25:48]: they captured everything anybody had ever thought about computing and then ackerman thought of the new thing just to show they don't actually get
+Pablo [25:57]: so at this point it's like well nobody has a counterexample of something that is intuitively computable
+Pablo [26:00]: but not computable by calculus
+Pablo [26:01]: or by
+Pablo [26:02]: general partial
+Pablo [26:04]: recursive functions
+Pablo [26:10]: so you have this question
+Pablo [26:11]: what do you
+Pablo [26:12]: mean
+Pablo [26:14]: and really don't need to do her
+Pablo [26:15]: research
+Pablo [26:16]: good on
+Pablo [26:16]: the program
+Pablo [26:17]: we're saying
+Pablo [26:18]: well we
+Pablo [26:19]: need reversive functions
+Pablo [26:21]: on
+Pablo [26:21]: the church
+Pablo [26:23]: so i think
+Pablo [26:24]: if it's lacking defian
+Pablo [26:25]: t all being in the modern
+Pablo [26:25]: language
+Pablo [26:27]: there's a lampic
+Pablo [26:28]: altruist program
+Pablo [26:28]: for this
+Pablo [26:30]: it's going to be a
+Pablo [26:31]: mobile
+Pablo [26:32]: reading
+Pablo [26:33]: with a student
+Pablo [26:34]: church
+Pablo [26:37]: showed
+Pablo [26:39]: that well
+Pablo [26:40]: we don't know if either
+Pablo [26:40]: of these
+Pablo [26:41]: but
+Pablo [26:42]: we know the recod
+Pablo [26:43]: e
+Pablo [26:46]: and so
+Pablo [26:47]: it's like well
+Pablo [26:48]: that is
+Pablo [26:49]: some confidence
+Pablo [26:50]: because
+Pablo [26:53]: you have multiple
+Pablo [26:54]: very different
+Pablo [26:55]: looking definitions
+Pablo [26:56]: and convergence of
+Pablo [26:57]: same
+Pablo [26:57]: class of functions
+Pablo [26:59]: it's like
+Pablo [27:00]: some confidence that you're
+Pablo [27:00]: getting right
+Pablo [27:01]: that
+Pablo [27:02]: 's not exquisitely depend
+Pablo [27:03]: ent on little details
+Pablo [27:05]: and the definition or else
+Pablo [27:09]: but still most were not yet conv
+Pablo [27:10]: inced that this is the right definition
+Pablo [27:14]: so
+Pablo [27:14]: church
+Pablo [27:15]: has showed
+Pablo [27:18]: the problem
+Pablo [27:26]: s
+Pablo [27:27]: is it
+Pablo [27:27]: going to halt
+Pablo [27:28]: when you run
+Pablo [27:33]: so that's basically the halting problem for
+Pablo [27:37]: lambda calculus he showed that it's not solvable by lambda calculus
+Pablo [27:39]: so if you believed at the time
+Pablo [27:40]: that
+Pablo [27:48]: the lambda definable functions define all the computable functions then you could say ok which church was the first one to show
+Pablo [27:50]: the hulkin problem is undesirable
+Pablo [27:55]: so maybe it's cheated a bit because we always attribute it to turing
+Pablo [27:56]: but
+Pablo [28:00]: it was kind of like we'll see why we attribute it to trying pretty
+Pablo [28:01]: soon
+Pablo [28:15]: but at the time what if church was wrong in asserting everything computable because computable by lambda company you wouldn't say he showed the haldim problems undesirable if you were to show look my weak programming language is too weak to do this thing
+Pablo [28:20]: but maybe if we have the right definition of partial computable function
+Pablo [28:24]: may be that one would have a decidable whole thing
+Pablo [28:36]: and even created quite a bit of controversy so emil post who was another pioneer here q's church of attempting to mask this identification we need the identification of the unsolvability
+Pablo [28:42]: of the whole new problem under a definition in other words you didn't have the right definition of computable functions
+Pablo [29:00]: and then in student cleanie said like i myself perhaps unduly influenced by rather chilly receptions from audiences about lambda definability so basically started knowing that the two were equivalent started presenting his work in terms of recursive function so as not
+Pablo [29:03]: to anger up the blood of the audience
+Pablo [29:16]: and the existence of these universal recursive functions and now that we know the equivalence universal lambda expressions was known in sense but difficult to construct and the significance kind of not fully appreciated
+Pablo [29:24]: and what happened was
+Pablo [29:27]: first year graduate student
+Pablo [29:33]: at cambridge who didn't know about any of this stuff going on in princeton
+Pablo [29:36]: her basically took a logic seminar
+Pablo [29:39]: and heard about this in china's problem
+Pablo [29:47]: and just started thinking about in chinese problem if you remember was hilbert's problem is there an algorithm
+Pablo [30:03]: and started thinking about
+Pablo [30:05]: proving
+Pablo [30:06]: a versus true
+Pablo [30:06]: you can't do it
+Pablo [30:08]: you have to rule out
+Pablo [30:09]: every algorithm
+Pablo [30:18]: so what
+Pablo [30:19]: is the view
+Pablo [30:22]: i didn't know
+Pablo [30:22]: it looked like this
+Pablo [30:23]: they want something like this
+Pablo [30:25]: computer used to ref
+Pablo [30:26]: er to a question
+Pablo [30:28]: a person would sit down with pencil and paper
+Pablo [30:30]: and do computation by hand
+Pablo [30:33]: this
+Pablo [30:34]: is pretty awesome movie
+Pablo [30:35]: about some of
+Pablo [30:35]: them
+Pablo [30:38]: even space program
+Pablo [30:38]: s
+Pablo [30:41]: for many years
+Pablo [30:42]: after
+Pablo [30:51]: and so what turing did is he said and he thought about
+Pablo [30:53]: this person and what they're doing
+Pablo [30:55]: because everybody's convinced
+Pablo [31:00]: well whatever we mean by computation it's something that a well trained computer could do
+Pablo [31:03]: a person who knows how to do the job of computer
+Pablo [31:06]: and so we just started thinking about that
+Pablo [31:09]: here i'm just quoting directly from the paper
+Pablo [31:10]: if i can't
+Pablo [31:11]: really improve on this
+Pablo [31:15]: her computing is usually done by writing certain symbols on paper
+Pablo [31:17]: what we learn in grade school
+Pablo [31:19]: how to do multiplication for example
+Pablo [31:26]: the two dimensional character paper no essential
+Pablo [31:29]: right it makes things easier but in principle
+Pablo [31:36]: if we just have like a one dimensional strip you could still do everything it would be a lot more tedious and we probably make a lot more mistakes
+Pablo [31:40]: but if we were mechanical and made no mistakes it wouldn't matter
+Pablo [31:41]: what the paper
+Pablo [31:42]: is two dimensional
+Pablo [31:42]: one
+Pablo [31:45]: so imagine intake divided into squares
+Pablo [31:57]: and the behavior of the computer this person doing computation by writing on these symbols at any moment is determined by the symbols of blurbly and is state of mind
+Pablo [32:00]: at
+Pablo [32:00]: that moment
+Pablo [32:05]: it says we imagine the operations
+Pablo [32:09]: performed split into such simple operations that are so elementary
+Pablo [32:13]: that it's not easy to imagine them further divided
+Pablo [32:22]: right so every operation would look like what it would look like kind of what you remember doing when you did addition or multiplication or long division in grade school
+Pablo [32:30]: it would consist of some change of the physical system you move your hand over write something on the tape
+Pablo [32:33]: you write something on your paper
+Pablo [32:38]: and you can imagine that in a simple operation not more than one symbol is altered
+Pablo [32:42]: and any other changes could be split up into simple changes of this
+Pablo [32:45]: and then you think about well it's always possible
+Pablo [32:49]: for this computer to break off from a word go away and forget all about it
+Pablo [32:52]: and then later come back and go on but if you do this
+Pablo [32:56]: well you got to leave a note of instructions to yourself what was i doing before i went to lunch
+Pablo [33:02]: and that notice the counterpart of this sort of state of mind it's not literally talking about everything you're thinking about
+Pablo [33:03]: you're not thinking about lunch or whatever
+Pablo [33:07]: but what you need to think about to carry out the next step of computation
+Pablo [33:11]: if you were worried you're going to forget that you just write it down
+Pablo [33:15]: in other words the state is finitely represented as one
+Pablo [33:20]: so suppose you never do more than one step at a sitting
+Pablo [33:25]: and so you sit down do one step write one symbol in your long division go away get another coffee
+Pablo [33:33]: and come back so if you can do that basically you just think of what the computer is doing it's just based on
+Pablo [33:35]: the state
+Pablo [33:38]: that you've written down and the symbol that you're currently looking at
+Pablo [34:02]: you update or put another way in modern terminology you can define what a computer does as defined by a transition function delta that takes as input your state and your symbol tells you what new state to write down next before you go off for your next coffee what symbol to write over that and what symbol to look at next in other words move right over
+Pablo [34:05]: so this is where the concept of the turing machine
+Pablo [34:08]: well it wasn't some temp to model electronic computer they didn't exist yet
+Pablo [34:18]: it was an attempt to model what people are doing when they sit down and do computation in a way that is convincing hey anything they can do this device could do as well
+Pablo [34:22]: okay
+Pablo [34:26]: so there was several theorems in this paper that turning wrote
+Pablo [34:28]: in nineteen thirty six
+Pablo [34:35]: this is among the most famous of them there's a universal term
+Pablo [34:41]: annex where m is a description some other turing machine ends as a string it simulates m one input x
+Pablo [34:49]: and of course this was kind of known through this very tedious argument with partial recursive functions at least in that model there's a recursive one
+Pablo [34:51]: but this is much more straightforward
+Pablo [34:56]: right i mean it is somewhat tedious if you're plugging single tape turning machines
+Pablo [35:00]: but this is real i mean you could like you could probably do this over a weekend
+Pablo [35:01]: with like my turning
+Pablo [35:01]: machines
+Pablo [35:06]: and
+Pablo [35:15]: go to upon reading this paper identified the ease of simulation and thus the ease of the twenty prove equivalence between models
+Pablo [35:18]: or if you use like diagonalization to show limitation
+Pablo [35:24]: so the key thing when we're doing diagonalization with programs we're saying oh how do we do the time hierarchy
+Pablo [35:24]: there
+Pablo [35:27]: we said
+Pablo [35:32]: let's look at what some time bounded program is going to do
+Pablo [35:35]: and then do something different we added this clock
+Pablo [35:38]: to make sure that a halt within a certain amount of time
+Pablo [35:41]: but if we simulate it using make it a little
+Pablo [35:42]: more
+Pablo [35:45]: universal
+Pablo [35:46]: turn
+Pablo [35:47]: ing the sheet to face leak
+Pablo [35:49]: in the
+Pablo [35:50]: language
+Pablo [35:59]: another thing to note
+Pablo [36:06]: is that very well
+Pablo [36:08]: these choices
+Pablo [36:08]: of a definition
+Pablo [36:10]: you
+Pablo [36:11]: define the exact same
+Pablo [36:12]: class as a
+Pablo [36:13]: funeral function
+Pablo [36:14]: whether your drug machine
+Pablo [36:15]: has
+Pablo [36:16]: one way or two
+Pablo [36:17]: way infinite tape
+Pablo [36:20]: may or may not
+Pablo [36:21]: have a leftmost tape
+Pablo [36:24]: cell they can have multiple tapes and have a two dimensional tape
+Pablo [36:43]: where now the address of the tape cell some xy coordinate they can have multiple heads you make all these choices differently you get the exact same classic beautiful functions that gives you some kind of confidence that this is the right mob it's not exquisitely dependent on some solid choice in the definition
+Pablo [36:47]: okay
+Pablo [36:56]: so we now know f is computable by a turing machine if and only if it's lambda definable if and only if it's u reverse so that like i said the rightmost equivalents
+Pablo [36:59]: was shown by
+Pablo [37:01]: church
+Pablo [37:03]: and
+Pablo [37:04]: they published that annual
+Pablo [37:05]: nineteen thirty six
+Pablo [37:07]: turning
+Pablo [37:08]: completely unaware of
+Pablo [37:09]: what they were doing
+Pablo [37:13]: submitted
+Pablo [37:17]: and then while it was
+Pablo [37:18]: under review
+Pablo [37:19]: lear
+Pablo [37:20]: n the work of church
+Pablo [37:22]: and
+Pablo [37:24]: decided
+Pablo [37:25]: that
+Pablo [37:26]: revision
+Pablo [37:27]: had
+Pablo [37:28]: proof
+Pablo [37:30]: that
+Pablo [37:32]: paper which was then published in
+Pablo [37:33]: nineteen thirty
+Pablo [37:35]: by the way
+Pablo [37:36]: for the record
+Pablo [37:37]: the first
+Pablo [37:38]: translated lan phone
+Pablo [37:39]: service was nineteen twenty
+Pablo [37:39]: seven
+Pablo [37:40]: so
+Pablo [37:41]: this is
+Pablo [37:42]: like
+Pablo [37:43]: i don't know
+Pablo [37:44]: how the internet somehow
+Pablo [37:46]: caused this whole process to slow down
+Pablo [37:51]: this
+Pablo [37:52]: is what they were still waiting for
+Pablo [37:53]: the motion minors
+Pablo [37:55]: right
+Pablo [38:05]: so the skeptics the people including girl wasn't even convinced of its own definition irreversive functions
+Pablo [38:11]: who read turing's paper were just immediately convinced yes this is the right definition and what was convincing about it
+Pablo [38:13]: was these physical arguments
+Pablo [38:22]: saying this model is based on what do human computers do when they sit down and do computation which is immediately obvious to them yes
+Pablo [38:26]: of course anything they can do can be encoded by one of these machines
+Pablo [38:37]: and then of course because it's equivalent to these other two that then is the thing that finally convinced them those are also the right definition
+Pablo [38:42]: they're the same as the sort of intuitively obviously the correct definition of
+Pablo [38:50]: and it's straightforward it's tedious to show that these are all equivalent to programmability and in blue
+Pablo [39:05]: so one of the things i do in ecs one hundred twenty is i assign students to write a turing machine that interprets an extremely simple assembly kind of language it's like it only has like three instructions or something
+Pablo [39:08]: but
+Pablo [39:11]: as a rally towards c and okay the tedious
+Pablo [39:13]: we believe
+Pablo [39:14]: that all of our high level
+Pablo [39:15]: program
+Pablo [39:19]: looks
+Pablo [39:19]: like
+Pablo [39:21]: load
+Pablo [39:21]: instruction
+Pablo [39:22]: and instruct
+Pablo [39:23]: ions et cetera
+Pablo [39:25]: that
+Pablo [39:26]: you can start to get those sons okay
+Pablo [39:26]: yeah
+Pablo [39:27]: it is tedious
+Pablo [39:31]: to do any
+Pablo [39:31]: thing
+Pablo [39:32]: any of these
+Pablo [39:33]: monitor program
+Pablo [39:34]: s
+Pablo [39:36]: okay
+Pablo [39:37]: so
+Pablo [39:38]: the church
+Pablo [39:39]: turned business
+Pablo [39:41]: in
+Pablo [39:42]: the
+Pablo [39:43]: universal starting machine
+Pablo [39:44]: or anything stud
+Pablo [39:45]: ent equivalent
+Pablo [39:46]: universal function
+Pablo [39:47]: is eco
+Pablo [39:47]: models
+Pablo [39:50]: can simulate any further volt
+Pablo [39:51]: age that is
+Pablo [39:54]: access
+Pablo [39:55]: es and modifies
+Pablo [39:56]: the finite amount of information
+Pablo [39:57]: i think
+Pablo [39:58]: i made this up
+Pablo [40:00]: in
+Pablo [40:01]: a different way of phrasing
+Pablo [40:02]: it
+Pablo [40:03]: this is my favorite way
+Pablo [40:03]: to phrase it
+Pablo [40:04]: you notice
+Pablo [40:05]: this is the one
+Pablo [40:06]: statement i call it
+Pablo [40:07]: theorem
+Pablo [40:08]: it's called thesis
+Pablo [40:08]: right
+Pablo [40:09]: so it's not
+Pablo [40:10]: mathematic
+Pablo [40:10]: al
+Pablo [40:13]: but
+Pablo [40:14]: more like a physical law
+Pablo [40:17]: we
+Pablo [40:18]: serve the whole
+Pablo [40:19]: so go with your reputation
+Pablo [40:23]: one
+Pablo [40:24]: reason is not there
+Pablo [40:27]: form
+Pablo [40:27]: ally defined
+Pablo [40:28]: physical computing
+Pablo [40:29]: device
+Pablo [40:33]: and
+Pablo [40:34]: we
+Pablo [40:35]: have really
+Pablo [40:36]: formalized what we need to
+Pablo [40:37]: find
+Pablo [40:37]: it
+Pablo [40:39]: but
+Pablo [40:40]: again
+Pablo [40:41]: the particular examples
+Pablo [40:42]: like this laptop
+Pablo [40:43]: my phone
+Pablo [40:44]: et cetera
+Pablo [40:46]: when you see it
+Pablo [40:48]: right i can describe finitely how the phone works
+Pablo [40:49]: right
+Pablo [40:57]: so it's open to reputation principle but i recommend caution in trying to refute it
+Pablo [41:02]: there is this whole field of study called hyper computation
+Pablo [41:06]: that involves people making
+Pablo [41:13]: outrageous claims about physical devices they think are going to be able to compute things that are not turning beautiful
+Pablo [41:15]: so by analogy
+Pablo [41:17]: you also have
+Pablo [41:22]: this kind of community of cranks who try to build perpetual motion machines
+Pablo [41:23]: trying to patent them
+Pablo [41:27]: so they can become rich when they figure out how to build a power plant
+Pablo [41:28]: doesn't consume any
+Pablo [41:29]: energy
+Pablo [41:31]: but of course they all fail
+Pablo [41:33]: because
+Pablo [41:41]: if they succeeded they would violate the second law of thermodynamics which we believe every bit as much as we believe church currently exists
+Pablo [41:42]: and vice versa
+Pablo [41:52]: and most of them fail because if you look at this design like somewhere it's like increasing entropy it's dissipating heat or something
+Pablo [41:56]: just in a way that's not being explicitly modeled by the machine's description
+Pablo [41:58]: it's going to
+Pablo [42:00]: burn energy
+Pablo [42:02]: so complicated
+Pablo [42:03]: it was hard to see
+Pablo [42:03]: where the enemy
+Pablo [42:07]: most
+Pablo [42:08]: of these disasters have to
+Pablo [42:09]: describe
+Pablo [42:11]: super target physical device
+Pablo [42:13]: tend to smuggle an
+Pablo [42:14]: infinite descript
+Pablo [42:14]: ion
+Pablo [42:15]: so for example
+Pablo [42:22]: there's a science paper somehow from nineteen eighty five i think
+Pablo [42:29]: where somebody claimed neural nets can compute beyond the turning limit i think that was even in the title of the paper
+Pablo [42:31]: beyond the turning limit
+Pablo [42:33]: and here's all you got to do
+Pablo [42:35]: you just take one of the weights
+Pablo [42:37]: in the neural net
+Pablo [42:40]: and you
+Pablo [42:41]: set
+Pablo [42:42]: the weight of the floating
+Pablo [42:43]: the real number
+Pablo [42:45]: such
+Pablo [42:47]: that binary expans
+Pablo [42:47]: ion enc
+Pablo [42:48]: odes all day
+Pablo [42:49]: problem
+Pablo [42:51]: the
+Pablo [42:54]: binary expansion of this number is one
+Pablo [42:59]: if and only if the turret machine halts on an empty string
+Pablo [43:18]: and then it's basically a homework exercise to kind of scaffold some other neurons around that to say okay on input a binary description of the number n tease out the nth bit of that weight in that neural net and now this neural net can solve the whole thing
+Pablo [43:21]: because it's got all the problems baked into it
+Pablo [43:22]: in one of the leads
+Pablo [43:25]: so basically most times when you see somebody making a claim like that
+Pablo [43:35]: it's not solving the whole problem somewhere in it they just encoded the whole new problem in a way that
+Pablo [43:42]: if you knew how to program that weight to infinite precision you wouldn't need the device you would have already known
+Pablo [43:46]: i recommend caution
+Pablo [43:52]: okay so that was the sort of
+Pablo [43:54]: the brief unification
+Pablo [43:55]: that the turning machine
+Pablo [43:59]: so i'm not even
+Pablo [44:00]: ide
+Pablo [44:00]: as
+Pablo [44:01]: i didn't know what she meant
+Pablo [44:02]: to everybody
+Pablo [44:02]: yeah
+Pablo [44:03]: this is really the right
+Pablo [44:08]: but also had some extra
+Pablo [44:11]: gen
+Pablo [44:11]: esis
+Pablo [44:12]: artificial
+Pablo [44:13]: intelligence
+Pablo [44:19]: okay
+Pablo [44:21]: so
+Pablo [44:23]: actually my favorite chapter
+Pablo [44:27]: in the textbook just because it gets into
+Pablo [44:29]: i think
+Pablo [44:30]: really
+Pablo [44:32]: kind of trivia ideas
+Pablo [44:35]: once you take off the shackles and
+Pablo [44:37]: don't have any time bound
+Pablo [44:39]: but
+Pablo [44:40]: back down to earth
+Pablo [44:44]: we typically do have limitations to our resources
+Pablo [44:51]: and we spent the first six chapters talking about time of the limiting resource and attempts to be the most important one
+Pablo [44:52]: but space matters too
+Pablo [44:54]: memory costs money
+Pablo [45:04]: and so we can play the same game and ask what kind of computation can be done
+Pablo [45:06]: when your space is
+Pablo [45:12]: and where you don't necessarily care how much time it takes maybe your whole goal is just to use as little space as possible
+Pablo [45:16]: so just an overview of what we're going to study in chapter eight
+Pablo [45:24]: there's a space analog of p called p space and these are the problems decidable with a polynomial amount
+Pablo [45:24]: of memory
+Pablo [45:39]: and again because we're very coarse grained here we're just looking at big o notation if you really need a formal definition of the memory used during computation
+Pablo [45:46]: you can use something like the number of tape cells visited on a turing machine when it was running
+Pablo [45:58]: unlike with time where it's kind of tricky to define what's exactly a step in python i mean you can find with a step on your computer it's like one cycle of the process
+Pablo [46:04]: but it's kind of hard to identify exactly how many cycles it's going to take to run one line of python
+Pablo [46:09]: but as far as memory that's perfectly well defined definition how many total bytes of memory
+Pablo [46:15]: did you ever allocate
+Pablo [46:30]: so if the amount of memory that you allocated or turning machine language the number of tapes that we visited is bounded by a polynomial in the length of your input so maybe you used more memory than your input
+Pablo [46:37]: but if your input is length then maybe you only use m squared or n cubed table we say it's a polynomial
+Pablo [46:40]: okay
+Pablo [46:44]: so i don't know if this is attributed to anybody it's somewhat to me
+Pablo [46:52]: people say the difference between space and time is you can reuse space but you can't reuse time
+Pablo [46:57]: obviously that way doesn't vary unintuitive
+Pablo [46:58]: results
+Pablo [47:01]: so one thing we're going to see is that unlike the cases of time
+Pablo [47:05]: non determinism does not help with space
+Pablo [47:17]: or at least if you're willing to ignore polymeal differences because equal to n unlike the case that we strongly believe that's not true for the tie bound
+Pablo [47:31]: similarly we're just as confident that np is not co and b in other words we think that just because there's a short proof that something exists like a hamiltonian path and a graph
+Pablo [47:33]: like a clique of a certain size and a graph
+Pablo [47:36]: satisfying sign into a formula
+Pablo [47:47]: just because we have this intuition just because you can prove something exists quickly doesn't mean you can prove it does not exist quickly or put another way we don't think that there's a short proof
+Pablo [47:50]: whenever a graph lacks a hamiltonian
+Pablo [47:54]: but nato should start short and efficiently verified
+Pablo [48:05]: but when it comes to space bounded verification proving something does not exist is just as easy as proving it exists in other words we're going to show for every space found us
+Pablo [48:10]: non deterministic space of s equals code on the chart of six basin so in other words
+Pablo [48:23]: you can verify something using only space s you can also verify the no instances
+Pablo [48:23]: as well
+Pablo [48:30]: using the same space but some intuitions that we get from time still
+Pablo [48:35]: so for example we have a space hierarchy theorem with more space you can compute more
+Pablo [48:47]: or put in a somewhat informal terminology space of anything that's a little low s is a strict subset of space more properly let t be so little of s space of tips
+Pablo [48:53]: and then we can think a little bit about the relationship between time and space
+Pablo [48:58]: so one thing to observe
+Pablo [49:00]: later
+Pablo [49:01]: on
+Pablo [49:05]: in the space
+Pablo [49:06]: for every
+Pablo [49:07]: time
+Pablo [49:13]: i
+Pablo [49:15]: want to use
+Pablo [49:21]: why can we decide something with no more space than the number of steps we use
+Pablo [49:33]: if your definition of turing machine each time step you can only move to tape that once
+Pablo [49:36]: you visit
+Pablo [49:37]: most
+Pablo [49:39]: could it be
+Pablo [49:40]: smaller than that
+Pablo [49:41]: they can't be bigger than
+Pablo [49:41]: that
+Pablo [49:43]: every single
+Pablo [49:44]: cell
+Pablo [49:46]: and that would be how to use
+Pablo [49:47]: those computational
+Pablo [49:54]: time
+Pablo [49:55]: to take
+Pablo [49:55]: this
+Pablo [49:56]: missing
+Pablo [49:58]: if you take i'm going to eagle
+Pablo [50:03]: some
+Pablo [50:04]: other model or
+Pablo [50:05]: grand model
+Pablo [50:08]: random
+Pablo [50:09]: access memory
+Pablo [50:10]: program
+Pablo [50:11]: ming language
+Pablo [50:12]: you can still
+Pablo [50:13]: make an already end up
+Pablo [50:14]: with every claw
+Pablo [50:15]: cycle of your
+Pablo [50:16]: computer
+Pablo [50:17]: you can allocate
+Pablo [50:17]: it most
+Pablo [50:18]: states
+Pablo [50:19]: or you've used
+Pablo [50:22]: because
+Pablo [50:30]: paralyz
+Pablo [50:31]: ing it
+Pablo [50:32]: but because
+Pablo [50:33]: these are the findings
+Pablo [50:34]: i'm going to go
+Pablo [50:35]: even my parallelization
+Pablo [50:37]: gives
+Pablo [50:38]: you lots of
+Pablo [50:39]: like memory
+Pablo [50:40]: that so many
+Pablo [50:45]: what
+Pablo [50:46]: do we know
+Pablo [50:50]: an algorithm is faced about we say anything about the amount of time it takes
+Pablo [50:53]: well not something this strong but we can say something
+Pablo [51:00]: so space is bound to time is also bounded but not by the same bound it can be exponentially
+Pablo [51:01]: big
+Pablo [51:01]: so in other words
+Pablo [51:09]: if something takes phase s i'm going to claim that algorithm again it's not a simulation argument it's just an observation
+Pablo [51:18]: if an algorithm uses space at most s the claim is it uses time at most two to the o of s why is that true
+Pablo [51:33]: if
+Pablo [51:34]: you act as like
+Pablo [51:34]: s cells
+Pablo [51:35]: there's only like two
+Pablo [51:36]: tasks
+Pablo [51:37]: costal config
+Pablo [51:38]: urations of those cell
+Pablo [51:38]: s exactly
+Pablo [51:41]: so the key is that
+Pablo [51:45]: these complexity classes are defined
+Pablo [51:47]: based on
+Pablo [51:50]: you have to halt
+Pablo [51:51]: to give an answer
+Pablo [52:03]: so if you always halt and you use a most s cake cells well imagine you have a binary alphabet again if it's not
+Pablo [52:05]: then maybe set two out of four
+Pablo [52:06]: here
+Pablo [52:07]: but just move that constant
+Pablo [52:08]: up into the beta
+Pablo [52:10]: let's forward like two to the two
+Pablo [52:11]: is
+Pablo [52:15]: so
+Pablo [52:19]: let's do a minor output that if you're using s tate cells
+Pablo [52:23]: and no more there's a most two to the s different
+Pablo [52:24]: strings you can write
+Pablo [52:31]: and it's not that if you ever write the same string twice
+Pablo [52:36]: the machine will repeat but if you have a repeat a configuration you'll inherit infin
+Pablo [52:36]: ite
+Pablo [52:58]: and so if you just count the total number of configurations dominated by the number of different tape cell compounds now really the number of different configurations would be like the number of strings you could write on the tape times the number of states you could be in times the number of tape cell physicians you could have but those last two are pretty small compared to the two to the s different string that you can write on
+Pablo [53:03]: so your number of configurations is bounded by two to the o your space usage
+Pablo [53:08]: but you can never repeat a configuration or else
+Pablo [53:16]: you would just have an infinite loop and run forever so if these things halt they must hold in time at most exponential in the amount of space
+Pablo [53:25]: and it's possible to hit that button right you could just write a program that increments some integer up to some math
+Pablo [53:28]: if you just imagine writing it out in binary
+Pablo [53:44]: the integer would get up to two to the power of the number of bits it takes to represent so that would be an example of just a counter as an example of a computation that uses exponentially more time than it does
+Pablo [53:44]: space
+Pablo [53:54]: is that necessary are there problems you want to solve
+Pablo [53:57]: some
+Pablo [53:57]: kind of boring data
+Pablo [54:01]: but
+Pablo [54:02]: in terms of
+Pablo [54:03]: problems you want to
+Pablo [54:03]: decide
+Pablo [54:05]: it's open
+Pablo [54:10]: are there sometimes things that you can solve in polynomial space
+Pablo [54:11]: but you require
+Pablo [54:12]: what is not
+Pablo [54:15]: so this is
+Pablo [54:18]: not
+Pablo [54:18]: able to
+Pablo [54:20]: but
+Pablo [54:20]: we don't know
+Pablo [54:25]: of this argument to a recent paper that comes
+Pablo [54:26]: last year
+Pablo [54:29]: when
+Pablo [54:30]: it came out i scrambled
+Pablo [54:31]: to understand
+Pablo [54:32]: it and
+Pablo [54:33]: what isolation
+Pablo [54:34]: we'll
+Pablo [54:35]: get into it
+Pablo [54:36]: this is ryan
+Pablo [54:37]: williams
+Pablo [54:43]: it's pretty amazing so it's basically the biggest breakthrough complexity theory probably in my lifetime
+Pablo [54:45]: because i was born after
+Pablo [54:46]: complet
+Pablo [54:46]: ing this
+Pablo [54:50]: first
+Pablo [54:51]: step towards
+Pablo [54:52]: this
+Pablo [54:53]: year
+Pablo [54:56]: i'll show you
+Pablo [54:57]: the basis
+Pablo [54:58]: next
+Pablo [54:58]: week
+Pablo [55:02]: so this is a summary of what we're going to look at
+Pablo [55:05]: but i
+Pablo [55:06]: have a problem with mine
+Pablo [55:07]: yeah
+Pablo [55:10]: unlike
+Pablo [55:11]: time
+Pablo [55:12]: where
+Pablo [55:13]: on a turing machine
+Pablo [55:14]: so
+Pablo [55:15]: linear time comput
+Pablo [55:15]: ation
+Pablo [55:16]: is
+Pablo [55:17]: not really worth studying
+Pablo [55:18]: because
+Pablo [55:20]: not only can
+Pablo [55:21]: you not be able to
+Pablo [55:24]: access
+Pablo [55:25]: most of the
+Pablo [55:26]: input and
+Pablo [55:27]: stuff linear talk
+Pablo [55:28]: i want to imagine
+Pablo [55:30]: something
+Pablo [55:30]: like binaries
+Pablo [55:32]: the classic example
+Pablo [55:33]: of
+Pablo [55:34]: linear time
+Pablo [55:36]: computational binary search i promise you have a sorted array
+Pablo [55:39]: you want to figure out whether some element is in it
+Pablo [55:41]: and so you binary search
+Pablo [55:43]: and if you have a random access machine
+Pablo [55:45]: you can use the number of
+Pablo [55:46]: steps
+Pablo [55:47]: that's only logarithm
+Pablo [55:48]: ic in the design
+Pablo [55:49]: of your
+Pablo [55:49]: memory
+Pablo [55:52]: size of your
+Pablo [55:53]: input
+Pablo [55:56]: but one you don't access
+Pablo [56:00]: the label you skip most of the array because you're just jumping around to only
+Pablo [56:02]: logarithm any outputs
+Pablo [56:04]: but the key is you have random access
+Pablo [56:08]: with turning machines
+Pablo [56:09]: you have to get
+Pablo [56:09]: over
+Pablo [56:19]: sublinear time computation is largely uninteresting for turing machines but they couldn't they couldn't do something like binary search
+Pablo [56:27]: so where you could non trivially access only a small part of your input and yet still answer an interesting question
+Pablo [56:32]: but most of the input would just be unavailable ever to access by the turing machine
+Pablo [56:37]: so it's somewhat uninteresting for turning machines it is something like i said for binary just one interesting
+Pablo [56:43]: animals but sublinear space computation makes more sense even if you're talking about direct
+Pablo [56:43]: ions
+Pablo [56:45]: or
+Pablo [56:47]: program
+Pablo [56:50]: so for example if you think that there are many algorithms
+Pablo [56:53]: that literally search the following graph
+Pablo [56:59]: whose nodes are all the web pages on the internet whose edges are
+Pablo [57:03]: google's page rank is an example
+Pablo [57:06]: of such an algorithm or that that's the input page
+Pablo [57:09]: right so of course you can't load the whole input into memory
+Pablo [57:15]: so what we're going to do
+Pablo [57:18]: to formalize the concept of memory
+Pablo [57:21]: access machine
+Pablo [57:23]: we're going to imagine
+Pablo [57:25]: it has a read only
+Pablo [57:29]: so that the input doesn't count against the memory usage
+Pablo [57:38]: but the way that we prevent ourselves from cheating and just using the input tape to get more memory that's not counted against us as we say okay your input is read only
+Pablo [57:42]: so if you want to write over here what you first have to copy her
+Pablo [57:43]: on
+Pablo [57:51]: only the working memory you can write to is cabinet against your space
+Pablo [58:02]: and so this gives you the possibility to do sublinear space computation so you're allowed to look at any part of your input you want but you can only remember a much smaller part of it that you're right
+Pablo [58:12]: if you want to talk about writing more output than would be allowed with your space usage so again imagine doing something like
+Pablo [58:16]: adding two huge integers together
+Pablo [58:19]: that can be done longer than it's face
+Pablo [58:21]: but again
+Pablo [58:30]: if you add some new genders together you get huge integer out and so just to avoid writing just the bulk of the output counting against your space usage
+Pablo [58:33]: what you have to be able to write but you're not allowed to read it
+Pablo [58:37]: right so again you can't cheat by using your output tape because it's right
+Pablo [58:40]: so you write anything you want there but
+Pablo [58:45]: you can only remember what's on your possibly much smaller read write
+Pablo [58:52]: so the test book assumes a ram or ram access memory kind of model that they never really fully defined
+Pablo [58:53]: but
+Pablo [58:55]: they kind of hand wave about it
+Pablo [59:02]: but generally these definitions assume that given some injurie
+Pablo [59:04]: that represents higher input
+Pablo [59:05]: we're working memory
+Pablo [59:05]: location
+Pablo [59:08]: the
+Pablo [59:10]: ability to rewrite application
+Pablo [59:12]: in other
+Pablo [59:12]: words
+Pablo [59:13]: you can jump there
+Pablo [59:15]: you can formalize this with
+Pablo [59:20]: turbine machines too you can just say oh i've got a special tape that i write integers on
+Pablo [59:22]: and i enter a special state
+Pablo [59:23]: and it causes
+Pablo [59:24]: my
+Pablo [59:27]: tape head on some tape immediately jump to that
+Pablo [59:32]: you can formalize it with genes but typically people get away from these tapes
+Pablo [59:43]: when you talk about grandma they just make them all but have more directly resembles what real mammary set of memory locations just like a real computer they're just non negative integers
+Pablo [59:45]: it's on pointers and c or something
+Pablo [59:50]: and you can just access one and constant them
+Pablo [59:57]: with that definition of space usage in mind
+Pablo [1:00:06]: and then we'll define our first base founder class space with s this is the class of problem solvable with o of s of n space on input to size
+Pablo [1:00:11]: so same thing as time but now we're just counting how many tapes
+Pablo [1:00:20]: and then we have a few just like with the time bounded ones we have a few special cases of this that have special names
+Pablo [1:00:27]: l is space of log of n it's a really space of big o blog
+Pablo [1:00:31]: also called logarithmic space
+Pablo [1:00:45]: and in my opinion the kind of conceptually simplest way to think about l is that a problem is solvable in logarithmic space if you need only a constant number of pointers into the input
+Pablo [1:00:53]: if you imagine you've got a constant number of variables and each one of them remembers some piece of urine
+Pablo [1:00:56]: right so for example if you have a graph with n nodes
+Pablo [1:01:10]: the problem solvable and the graph based problems solvable in l are the ones where you only ever need to remember a constant number of nodes in the graph a node being a location
+Pablo [1:01:12]: or a constant number of edges
+Pablo [1:01:14]: but an edge is paragraph
+Pablo [1:01:21]: that's one of the major complexity classes we'll study the other one is d space
+Pablo [1:01:31]: which is much like p the union of space of n to the c for all possible exponents here i'll let them be integers but because they're getting arbitrarily thing
+Pablo [1:01:33]: i can say positive real numbers
+Pablo [1:01:41]: there are things solve the whole same time end of the two point five those are sorry space and two point five
+Pablo [1:01:45]: those are much like with time those are also solvable in space m cubed
+Pablo [1:01:47]: so this union covers all
+Pablo [1:01:56]: so
+Pablo [1:01:57]: first
+Pablo [1:01:58]: one along with
+Pablo [1:01:59]: space example
+Pablo [1:02:00]: is
+Pablo [1:02:01]: the same
+Pablo [1:02:01]: pattern
+Pablo [1:02:05]: is
+Pablo [1:02:06]: it equal to its own
+Pablo [1:02:07]: purpose
+Pablo [1:02:16]: so this is famously not the side of all by say finite state machines therefore you also can't write a regular expression
+Pablo [1:02:17]: or
+Pablo [1:02:20]: a regular grammar for it
+Pablo [1:02:21]: but
+Pablo [1:02:23]: you don't need that much space
+Pablo [1:02:25]: we're going to show longer than space
+Pablo [1:02:28]: so here
+Pablo [1:02:33]: is python code for it so i'm given as input a string x
+Pablo [1:02:50]: and i want to know is it equal to its own rules and one way to do this is to say does the first symbol equal the last symbol if so does the second symbol equal the second to last symbol if so does the third symbol in the third class symbol
+Pablo [1:02:59]: if i ever find a counterexample i immediately reject if i get through all those pairs and they were all equal well then this thing must equal its own reverse
+Pablo [1:03:09]: so how do we do that well we have two pointers into the input and here pointers we formalize as integers that index into this i guess
+Pablo [1:03:18]: i almost made this python but then for some reason i decided this is my special version of python that index is starting at one
+Pablo [1:03:25]: so we start i at the first index and j is the last index
+Pablo [1:03:38]: and then we're just going to move them in for while they have a cross while i strictly less than j we compare m psi to xj if they're not equal can't be a power if you swapped it it would change
+Pablo [1:03:41]: what's the symbol in that position so you immediately return false
+Pablo [1:03:50]: but if not you keep hunting for a counterexample meaning you increment i'll move it to the right one never a lot of ones and pico
+Pablo [1:03:58]: and if you get all the way through all those pairs didn't find two unequal symbols of these matching positions must be a palindrome c return
+Pablo [1:04:07]: so what's the space complex well remember we get free read only access to her input
+Pablo [1:04:10]: declare
+Pablo [1:04:11]: that
+Pablo [1:04:14]: visually
+Pablo [1:04:15]: expect to know
+Pablo [1:04:16]: i'm not
+Pablo [1:04:18]: ranking over that so i'm not cheating
+Pablo [1:04:19]: using my
+Pablo [1:04:20]: input
+Pablo [1:04:22]: we're only reading
+Pablo [1:04:23]: what's the
+Pablo [1:04:24]: symbol of the
+Pablo [1:04:25]: child
+Pablo [1:04:26]: but i'm not
+Pablo [1:04:27]: writing over the input
+Pablo [1:04:32]: the only memory i'm writing over here are these two intervals i and j
+Pablo [1:04:41]: but what are they they're indexes into my input and so if my input has n some bowls are binary emits
+Pablo [1:04:49]: then i need log of n bits to represent i and log of n bits to represent
+Pablo [1:04:56]: in other words i need only these two pointers into my input to the side whether it's a valid
+Pablo [1:04:59]: so that's ok too long
+Pablo [1:05:02]: there's a logarithmic space example
+Pablo [1:05:06]: a polynomial space example in particular
+Pablo [1:05:10]: a polynomial space example that requires exponential time
+Pablo [1:05:16]: is check in is the configuration
+Pablo [1:05:18]: is in a periodic
+Pablo [1:05:19]: orbit of cellular
+Pablo [1:05:19]: constant
+Pablo [1:05:20]: so what i mean by that
+Pablo [1:05:27]: is we define cellular automata i wasn't real clear about what happens at the boundary but let's say
+Pablo [1:05:37]: cell updates based on the cell above it and below it and itself and i consider the cell above this one to be the bottom and the cell below that's going to be the top
+Pablo [1:05:47]: we're projecting it onto two d but you can really think of it like this one dimensional set of cells here is actually in a circle
+Pablo [1:05:51]: that i've just unrolled to project onto the screen
+Pablo [1:05:57]: and then this is the configuration you start at and here's an excellent next one so time is going this way
+Pablo [1:06:01]: and at some point we revisit the same configuration
+Pablo [1:06:09]: and therefore the answer here is yes this is in a periodic work because you update and update and update
+Pablo [1:06:19]: and if you've got this finite size cellular common on one of two things can happen you are eventually going to enter some orbit or some repeating sequence
+Pablo [1:06:23]: of configurations but the question is
+Pablo [1:06:41]: is the first configuration you're in part of that orbit or do you go through some so called transient states that you won't revisit before you start repeat what could have happened is we go through all these and then this one equals this one and then we start repeating but all the ones that came before it
+Pablo [1:06:49]: aren't part of that orbit but in this case it is that one the one if we start at gets repeated and therefore it's in an order
+Pablo [1:06:52]: but how did we tell that well we ran it forward
+Pablo [1:06:59]: so here's some code that does this check in general
+Pablo [1:07:05]: so down here is just me implementing the update first cellular automaton
+Pablo [1:07:11]: so i'm assuming that the cellular automaton is represented
+Pablo [1:07:16]: by a function called ca that takes three bits as input
+Pablo [1:07:22]: lm and r for left middle right sorry you have to kind of tilt you tilt your head this way
+Pablo [1:07:25]: this becomes left no right
+Pablo [1:07:31]: and it love link
+Pablo [1:07:31]: s
+Pablo [1:07:33]: it figures
+Pablo [1:07:35]: out what the position on
+Pablo [1:07:36]: what's the position i
+Pablo [1:07:37]: put the position i
+Pablo [1:07:38]: also with modular
+Pablo [1:07:39]: written sex as
+Pablo [1:07:40]: you might go over the edge
+Pablo [1:07:44]: and then calculate what's the next
+Pablo [1:07:47]: state of that cell
+Pablo [1:07:51]: and we just start with an empty string
+Pablo [1:07:53]: and
+Pablo [1:07:54]: no
+Pablo [1:07:55]: pen
+Pablo [1:08:03]: so you do this once
+Pablo [1:08:04]: and what does it do
+Pablo [1:08:06]: well it easy
+Pablo [1:08:09]: and
+Pablo [1:08:10]: it's all the
+Pablo [1:08:11]: strain
+Pablo [1:08:15]: so
+Pablo [1:08:16]: i don't want to get
+Pablo [1:08:17]: this
+Pablo [1:08:17]: that's how much memories
+Pablo [1:08:18]: uses is why
+Pablo [1:08:21]: it does
+Pablo [1:08:23]: and then one is period
+Pablo [1:08:29]: start
+Pablo [1:08:31]: so we have some cellular
+Pablo [1:08:32]: undefined by this function
+Pablo [1:08:36]: that tells us the next state given our state and that of our two neighbors
+Pablo [1:08:39]: and then i've got some string representing my initial configuration
+Pablo [1:08:43]: and i let n be the number of
+Pablo [1:08:44]: cells in it
+Pablo [1:08:52]: and then i start x at the initial configuration and then what i do i'm just going to iterate the cellular comic con and check do i ever repeat this
+Pablo [1:09:01]: so i update x to be equal to ca applied to x now x is the next one
+Pablo [1:09:06]: and if i and so note that now i do the check after i do that
+Pablo [1:09:10]: so if i actually did an update if i didn't just leave all the cells alone
+Pablo [1:09:13]: the first time x will not be equal to init but i just keep doing this
+Pablo [1:09:16]: and if i ever repeat
+Pablo [1:09:18]: i return true
+Pablo [1:09:22]: but what if x is not in this periodic orbit
+Pablo [1:09:26]: then the value of the net will never show up coming out of update here
+Pablo [1:09:35]: so if we just said while true up here that would be an infinite loop but here we take it then to the fact that
+Pablo [1:09:44]: well there's n total cells and they can each take on two states so i know that i only have to go through two to the n configurations
+Pablo [1:09:48]: and if i'm ever going to repeat it i will have repeated it by two to the nth conf
+Pablo [1:09:49]: iguration
+Pablo [1:09:53]: after
+Pablo [1:09:55]: two to the m updates
+Pablo [1:09:55]: on that
+Pablo [1:10:04]: two
+Pablo [1:10:05]: configurations that were
+Pablo [1:10:06]: represented
+Pablo [1:10:07]: so here
+Pablo [1:10:08]: this
+Pablo [1:10:09]: function
+Pablo [1:10:10]: but
+Pablo [1:10:11]: it's definitely
+Pablo [1:10:12]: not needed
+Pablo [1:10:13]: because
+Pablo [1:10:14]: that's variable
+Pablo [1:10:14]: we define
+Pablo [1:10:15]: so the net is real
+Pablo [1:10:16]: we're only ever
+Pablo [1:10:18]: looking at this is a copy operation
+Pablo [1:10:33]: at any given time we'll maintain two configurations x and y that both have n tape cells so we're using two to the n total cells two times n total cells so it's linear space

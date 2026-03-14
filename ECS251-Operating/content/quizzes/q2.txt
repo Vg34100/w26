@@ -1,0 +1,31 @@
+**Pick Any 2 (1 point each):**
+
+**A. What is the difference between Arrakis/P and Arrakis/N?**
+
+Arrakis/P uses the POSIX interface which requires socket buffer copies, while Arrakis/N uses a native interface that supports true zero-copy I/O and doesn't require application changes.
+
+**B. What purpose do Queue Descriptors serve in Demikernel?**
+
+Queue descriptors replace file descriptors in PDPIX and are used to reference I/O queues for submitting and receiving I/O operations in a queue-oriented design.
+
+**C. What is a source of overhead in the IO data path and how does Arrakis/Demikernel address it?**
+
+System calls like epoll and recv cause overhead, and Arrakis/Demikernel addresses this by bypassing the kernel and letting applications directly access hardware through queue-based interfaces to avoid these system calls.
+
+**D. For zero-copy IO, name a form of coordination needed between the app and the IO stack/device.**
+
+Memory ownership coordination is needed so the application and I/O stack know when buffers can be reused or freed without corrupting ongoing I/O operations.
+
+**Pick 1 (2 points):**
+
+**1. Would you classify Arrakis and/or Demikernel as an exokernel? Why?**
+
+Both can be considered exokernel-like because they move kernel functionality out of the data path and give applications more direct control over hardware resources while keeping protection mechanisms.
+
+**2. Is bypassing the kernel a good or bad idea? Why?**
+
+It's good for performance since it eliminates system call overhead and context switches, but you lose some kernel features like centralized resource management and potentially make security harder.
+
+**3. Why do Arrakis (Arrakis/N) and/or Demikernel (PDPIX) propose a new API? Why is it needed?**
+
+POSIX wasn't designed for microsecond-scale kernel-bypass I/O and has issues like unnecessary buffering and unclear zero-copy semantics, so they need new APIs that are queue-oriented and explicitly handle memory ownership for zero-copy.

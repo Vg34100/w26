@@ -1,0 +1,131 @@
+Pablo [0:13]: directory
+Pablo [0:15]: and then
+Pablo [0:26]: what we did is we automated
+Pablo [0:30]: that way we don't have to commit our tcp sockets to the storage
+Pablo [0:33]: understanding what
+Pablo [0:34]: so
+Pablo [0:35]: captives handles
+Pablo [0:39]: all is located
+Pablo [0:45]: this way this way
+Pablo [0:50]: that had to do
+Pablo [1:10]: i'll probably take a break in the middle
+Pablo [1:21]: typically things that were
+Pablo [1:24]: always
+Pablo [1:32]: essentially do we allow paxos to determine
+Pablo [1:39]: what to commit applying to the story we end up deciding that
+Pablo [1:40]: we just
+Pablo [1:52]: talk to paxo then all the content to the client side but they don't have to retake it unless you're really old
+Pablo [2:45]: er
+Pablo [2:51]: and
+Pablo [2:52]: are you
+Pablo [2:57]: where is she
+Pablo [2:57]: going
+Pablo [3:02]: because privacy screen so you probably want to switch
+Pablo [3:03]: locate
+Pablo [3:37]: so hi everyone we're pablo jasmine and manami and our project is about comparing different ways of running concurrent tasks on the jvm i'll cover the motivation and how we built the framework jabin will walk through the cpu and i o results and menomi will cover the file i o experiments
+Pablo [3:38]: and wrap up
+Pablo [3:49]: so the question we're trying to answer is when you're building a system that handles a lot of tasks at the same time which scheduling model should you actually use
+Pablo [4:00]: there are three main options on the jvm a fixed thread pool where you have a set number of os threads and tasks queues up waiting for one to be free
+Pablo [4:11]: work stealing pool where threads can grab tasks from each other's cues when they run out of work and virtual threads which is a java twenty one feature where every task gets its own lightweight thread
+Pablo [4:16]: that can yield the os thread when it blocks instead of just sitting there
+Pablo [4:25]: the problem is that existing comparisons tend to focus on one specific workload or platform so it's hard to know what's actually applies in general
+Pablo [4:30]: so our goal was to fix that by building something controlled
+Pablo [4:36]: testing three models across four workload types cpu heavy simulated io
+Pablo [4:46]: real file io and mixed we measured total time average latency tail latency at p ninety five and p ninety nine and the cpu utilization
+Pablo [4:56]: the important thing is that every model ran the exact same task under the exact same conditions so any differences we see in the results is due to scheduling behavior and nothing else
+Pablo [5:19]: the way we structured the code is around two interfaces concurrency model is responsible for how tasks get scheduled and run each model just needs a name and a run all method task factory workload defines what a task actually does and these two sides don't know anything about each other which is what lets us swap models and workloads independently
+Pablo [5:30]: the benchmark runner sits in the middle as they wraps each task in the timer hands the whole batch to whichever model we're testing and collects all the metrics after everything finishes
+Pablo [5:44]: the three models we implemented previously mentioned vix thread pool which is the standard java approach using a set number of os threads equal to the number of logical processors on the machine
+Pablo [5:55]: steel work stealing using fork joint pool with async mode on so worker cues run in fifo order and threads can steal from each other when their queue is empty
+Pablo [6:08]: and virtual threads the java twenty one project loom model where every task gets its own gbm managed thread that gets moved off the os thread the moment it blocks freeing the os thread to immediately run something else
+Pablo [6:21]: the benchmark runner wraps every task in a timer and after the run computes average latency p ninety five p ninety nine and cpu utilization sampled every fifty milliseconds and a background thread
+Pablo [6:33]: so we built four workloads the cpu one is a tight computation loop with no i o just something that keeps the processor busy for a configurable amount of time
+Pablo [6:38]: the simulated one call of thread sleep to pretend it's waiting on something
+Pablo [6:43]: and then does a tiny bit of work this one is reproducible across any machine
+Pablo [6:55]: the real file i o one actually writes and reads a file on disk for task and the mixed one combines the short sleep with cpu work meant to feel like a real request handler that waits for a response
+Pablo [6:56]: and then processes it
+Pablo [7:10]: for measurement we individually time every single task using nanosecond timestamps run a warm up pass first so the git can stabilize then do three recorded trials and save everything to a csv
+Pablo [7:21]: so for the cpu readout the short answer is that the three parallel model perform almost identical on cpu bound test
+Pablo [7:32]: and there are within a few milliseconds of each other we can see that the cpu load is from zero point eight nine to zero point nine six which means the cores are being fully used
+Pablo [7:40]: we test three intensive label from light to heavy
+Pablo [8:03]: and each this figure shows different intensity level from top to down is light median and heavy and oriental secretion line you can see that separate further and further from top to bottom and the blue green and red line for the perl model stay closer to each other
+Pablo [8:07]: and for the largest test size
+Pablo [8:23]: the sequential model take around ten seconds but the parameter just take within a second so the gap grows when the test size because each sequential text just sequential tests just take longer and there is no way to overlap them
+Pablo [8:30]: and for latency the main difference is appeared at p ninety nine
+Pablo [8:35]: the work stealing take longer time than fixed pool and virtual thread
+Pablo [8:42]: smaller tests count the p ninety nine value become more unstable
+Pablo [8:51]: this is likely because jit warm up and their starbuck overhead have a larger impact when the total number of head is smaller
+Pablo [8:56]: so those are the cause affect the tail
+Pablo [9:06]: when we switch to the io workload the fixed thread you can see that and the work still take more time than virtual thread
+Pablo [9:22]: for the fixer and work ceiling the thread goes to sleep or wait on io the underlying os thread block and cannot be used to run other tests but for the virtual thread
+Pablo [9:33]: the jvm immediately take it off the os thread and that another test run on the thread so instead of having to just sit there and wait
+Pablo [9:37]: the jvm can keep reusing the same small number of oyster efficiently
+Pablo [9:52]: and we also see that the cpu utilization for the pool based model remains only around one percent to three percent which shows that the threads are mostly just black rather than doing actual work
+Pablo [10:02]: and we also test the mix world load where each tag include a five millisecond sleep followed by some cpu computation
+Pablo [10:28]: even when there is even when there is a real computation after waiting phase the virtual thread style achieve the best wall clock time that's because the sleep portion still domains the scheduling behavior and virtual thread can release os thread immediately instead of keeping it block and let's move to thank you okay
+Pablo [10:34]: for the eye of fire fleet evaluation each task perform real file input and output
+Pablo [10:48]: and we valid two main parameters file size and concurrency level and for each configuration we compare sleek concurrency model textbook stealing and virtual slit
+Pablo [10:56]: and a fall through pit results so from one to four concurrent task
+Pablo [11:06]: like generally increase and this happens because multiple tasks can learn at the same time and overlap their io weighting
+Pablo [11:15]: and however when we increase concurrency level at a it generally drop or stay the same
+Pablo [11:35]: this suggests the system leaches a bottleneck and in this case the bottleneck is likely this bandwidth and i contention so when too many task access to disk at the same time they compete for the same resources
+Pablo [11:40]: and this is a result of the vacancy
+Pablo [11:47]: and we observe that the abolition
+Pablo [11:54]: task generates more disgrace which includes waiting time in the rescue
+Pablo [12:01]: we also see that larger file size live to much higher latency
+Pablo [12:09]: we can say this significantly longer
+Pablo [12:12]: time
+Pablo [12:18]: and overall these results suggest becomes a main model
+Pablo [12:25]: from these results we have lysoline main takeaways so first concurrency
+Pablo [12:29]: can include
+Pablo [12:32]: much on clancy list due to this
+Pablo [12:33]: compension
+Pablo [12:36]: and second iosize strongly affect your
+Pablo [12:39]: hormones as large as increased
+Pablo [12:41]: in three
+Pablo [12:45]: millimelda always wins the best choice depends on the workload
+Pablo [12:49]: and based on our
+Pablo [12:50]: all experiments
+Pablo [12:54]: we can symbolize web h model test
+Pablo [12:59]: again for this
+Pablo [13:00]: is
+Pablo [13:01]: simple
+Pablo [13:02]: and look scaling
+Pablo [13:05]: about
+Pablo [13:06]: four hours
+Pablo [13:11]: and virtual slab
+Pablo [13:13]: perform
+Pablo [13:14]: bashful drug
+Pablo [13:16]: ain and mace workload because
+Pablo [13:20]: leaves their kellya slip and allottedus
+Pablo [13:25]: and finally this is the orientation
+Pablo [13:28]: used
+Pablo [13:33]: the up to fifteen milliseconds to collect a reading so
+Pablo [13:42]: we learned
+Pablo [13:47]: to lost her results
+Pablo [13:48]: and this
+Pablo [13:51]: is the highlight of the other
+Pablo [13:57]: choice
+Pablo [13:58]: depends on the work
+Pablo [13:59]: load
+Pablo [14:01]: so this is
+Pablo [14:02]: our presentation
+Pablo [14:03]: thank you
+Pablo [14:20]: results
+Pablo [14:21]: are tied to the
+Pablo [14:26]: hospital
+Pablo [14:37]: compared cross languages
+Pablo [14:38]: i guess
+Pablo [14:41]: four
+Pablo [14:53]: i know for some of the other languages that can handle jdm it would be the exact same
+Pablo [14:53]: stove
+Pablo [14:54]: like
+Pablo [14:55]: colin
+Pablo [15:02]: i believe it was on the exact same but i guess i'm not sure about other types of pipelines
+Pablo [15:22]: yeah when we first started the project we actually had a discussion of what language either python c plus plus or java to go through for this project
+Pablo [15:29]: and what we decided java as being simplest to be able to
+Pablo [15:36]: c plus plus would be a lot more from the ground up so it was part of our consideration
+Pablo [15:40]: to choose java thanks to some of the native capability that it already has
+Pablo [15:51]: i guess we're good
+Pablo [16:00]: to just think what do you think
+Pablo [16:04]: we don't know do you know what

@@ -1,0 +1,73 @@
+Pablo [0:21]: but the problem is you're writing or both of them are
+Pablo [0:34]: so to kind of illustrate this example here i have this little program here we have two threads we have our counter value that is initialized zero each of these friends got a read value increment it and then try to write it back
+Pablo [0:44]: what happens if i run this code so that account is initialized to zero we run each of these threads
+Pablo [0:45]: once
+Pablo [0:53]: the question values counter are there
+Pablo [0:56]: are possible after our program
+Pablo [1:06]: after both would be sudden
+Pablo [1:15]: right because they're both going to read the counter value of zero and at least one of them is any
+Pablo [1:18]: for the value of counter b two
+Pablo [1:24]: b
+Pablo [1:25]: what
+Pablo [1:29]: so zero and one are both possible values of counter
+Pablo [1:30]: in this case
+Pablo [1:37]: and we don't know which one it will be until we actually run the program
+Pablo [1:41]: but again if you look at this program
+Pablo [1:43]: we don't want the value of counter at the end of one
+Pablo [1:55]: right so we need to do something in order to make it so that these threats don't both count for one twice right we don't want one thread to go from zero to one and then the other thread and overright one
+Pablo [2:05]: so the way we avoid race conditions is typically what's something called a lock so again a loft is a sort of easy method
+Pablo [2:12]: to enforce the principle that always runs grant can access some state at any given time
+Pablo [2:26]: another way we can avoid race conditions that we're unfortunately not going to get to but is also really interesting area is through non blocking synchronization so without using opportunities you'll have this sort of notion of atomic operations
+Pablo [2:39]: and so we can have basically thread safe execution on shared state without using locks unusual exclusion on this kind of relion special hardware instructions for examp
+Pablo [2:43]: le parent set and clever programming
+Pablo [2:46]: non blocking synchronization is actually really difficult
+Pablo [2:54]: typically implemented in a data structure so you have like a non blocking thread safe list for example
+Pablo [3:06]: but again this is a really difficult but interesting thing to think about so again there's a whole research area that she didn't bring out how to make a lot for your data structures correct
+Pablo [3:12]: and so if you come up with a new way to make some transcend data structures have non locking synthetization
+Pablo [3:15]: extract that's like a really good
+Pablo [3:18]: but again
+Pablo [3:23]: we're not really going to get into that area too much in the final week of the class
+Pablo [3:36]: so again kind of focusing back on one of the ways we can fix the three base examples is again as each vent try to require a lock for these and then update the shared counter state
+Pablo [3:36]: right
+Pablo [3:45]: so i've added these lock operations to all the resets and when i run these again now how do we value the counters are possible
+Pablo [3:47]: once this program runs
+Pablo [3:55]: so encounter b zero no can't be zero count to be one
+Pablo [4:07]: there's only one correct value per count here which is two which again based on the way we wrote this code it's probably what we wanted anyway so these lobster helping our program actually be correct
+Pablo [4:18]: speaking of correctness when we're talking about concurrency there's a number of nice purposes
+Pablo [4:23]: and the first one is safety so this is the property that says basically at most one
+Pablo [4:26]: grant at any given time in the lot of material
+Pablo [4:47]: and by critical section what i mean is kind of abstract every single sort of preparing multiplayer program and this very high level infinitely well the program is running there's going to be some states some instructions or lines of code that are basically going to be coordinating month reds how they are going to enter this critical section
+Pablo [4:55]: and then there's this critical section which again is only one writing at a time then there's the absent section where there again they're leading the critical section for example
+Pablo [5:05]: the entry section would be figuring out how to grab a lock the adjection would be released in the hospital then this non triple section that you don't necessarily need to
+Pablo [5:06]: coordinate emot
+Pablo [5:07]: ional
+Pablo [5:13]: again the safety condition basically says there's only one thread in this particular section at a time
+Pablo [5:21]: and if we only have this condition to satisfy then we can implement a lot of this as never give this loss to everyone
+Pablo [5:27]: right that's safe that's not great it doesn't allow progress so this other nice property would want
+Pablo [5:37]: is like this which the life of this property says that some friends that enters the entry section will eventually enter the prison
+Pablo [5:42]: it doesn't necessarily say anything about which threat like the threat that arrives
+Pablo [5:43]: first
+Pablo [5:55]: does not necessarily have to be the one that enters the crystal section first it just says that some bread waiting to enter the critical section eventually will enter the critical section no matter what the other criteria
+Pablo [6:01]: so again closing lavender's properties are how we get both correctness and progress
+Pablo [6:07]: and our multiplayer applications the last property that's also nice to have is the standard waking property
+Pablo [6:13]: without the standard wave properties we could have it's possible
+Pablo [6:18]: for one friend to basically be waiting forever and never actually get to
+Pablo [6:26]: so bounded waiting is a nice extra property to have that basically says every thread that wants to enter critical section eventually can
+Pablo [6:31]: so more formally if we have our correct i'm going to entry section
+Pablo [6:36]: there's a bound on the number of other threads that get to enter the critical section before i
+Pablo [6:50]: have this block of colored where again on the left i have the color for one thread on the right axis
+Pablo [6:52]: there is condition in this code
+Pablo [7:00]: i use locks right so it should be fine
+Pablo [7:22]: so there is a race condition in besides organ even though i am using locks to protect variable x i'm not using it i'm not using locks everywhere
+Pablo [7:24]: i'm using the variable x
+Pablo [7:36]: so it's possible that thread one is holding the lock reading and writing and updating whatever needs to do to x the integrator also updates x with that kind of coordinate
+Pablo [7:43]: so again informally the race exists here because of the sort of missing incorrect synchronization
+Pablo [8:00]: so if we wanted to write like we're writing multithreaded concurrent programs it's not always easy to remember when we should grab blocks and so this is a very toy example where it's fairly wrong
+Pablo [8:11]: but you can easily consider imagine a more complex scenario where this isn't quite obvious right so maybe we want some kind of tool that will let us know hey you're writing probably not
+Pablo [8:18]: if we have this there's a race condition when there should be synchronization but there's not
+Pablo [8:21]: then we can kind of zero a tool
+Pablo [8:26]: that can tell us if we have a race condition by basically saying okay we've got all of our variables
+Pablo [8:35]: every variable we're accessing if this access is synchronized declare that hey this is a possible rate to be this seems like it should work
+Pablo [8:44]: so that's all i want to do that would easily catch this face because we would see this
+Pablo [8:50]: second fret making unsynchronized access to this
+Pablo [8:56]: what about this wonder phone is there a reason with block

@@ -1,0 +1,22 @@
+**a. What is QoS crosstalk?**
+When different applications interfere with each other's performance through shared kernel resources.
+
+**b. Name a key principle of Nemesis self paging.**
+Each application handles its own page faults using its own resources.
+
+**c. Name a pro-motivation for the OS to map a region of memory with a superpage.**
+Reduces TLB misses and increases TLB coverage.
+
+**d. Why do some researchers find ability to create "superpages" for regions of memory in user code as opposed to just kernel code?**
+User applications have large working sets that exceed TLB coverage, so they benefit from superpages too.
+
+**Part 1 (a) graded:**
+
+**1. Should large objects be given eager contiguous page allocations, to address crosstalk? What are the pros and cons?**
+Pros are that you get immediate superpage benefits and avoid TLB misses right away. Cons are that you waste memory if the app doesn't use all the pages and it causes more fragmentation.
+
+**2. What are the pros and cons of using superpages? Should the OS just always use superpages?**
+Pros are better TLB coverage and fewer misses. Cons are increased memory footprint and paging costs if pages aren't fully used. No, the OS should use mixed page sizes based on the situation.
+
+**3. What are the methods of always breaking a superpage on a write to fix the dirty bit problem?**
+Demote the superpage to base pages when a write happens so you don't have to flush the whole thing when paging out.

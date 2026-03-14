@@ -1,0 +1,523 @@
+Them [1:40]: how
+Them [1:40]: was that one
+Pablo [2:58]: the board better
+Pablo [2:58]: good
+Pablo [3:34]: i jump
+Pablo [3:35]: ed into the
+Pablo [3:36]: last module
+Pablo [3:37]: of our
+Pablo [3:39]: class which is the module on quality
+Pablo [3:41]: method
+Pablo [3:41]: s
+Pablo [3:45]: case studies
+Pablo [3:51]: and we'll give examples of
+Pablo [3:52]: how to
+Pablo [3:55]: wrap up the available software engineering
+Them [4:09]: others had questions about
+Them [4:11]: how
+Them [4:14]: some of these will be
+Them [4:14]: that
+Pablo [4:38]: so
+Pablo [4:39]: assessing
+Pablo [4:40]: other languages
+Pablo [4:41]: how
+Pablo [4:42]: well they work
+Pablo [4:44]: on an absolute scale
+Pablo [4:45]: right
+Pablo [4:46]: maybe compared to
+Pablo [4:46]: a few
+Pablo [4:48]: there's really an absolute
+Pablo [4:48]: scale
+Pablo [4:49]: what is
+Pablo [4:50]: perfection
+Pablo [4:51]: so
+Pablo [4:52]: do elements
+Pablo [4:53]: of these ten things
+Pablo [4:57]: won't be
+Pablo [4:58]: the same way
+Pablo [5:01]: for
+Pablo [5:02]: example even though
+Pablo [5:03]: we get stack over
+Pablo [5:04]: flow
+Pablo [5:05]: and you try
+Pablo [5:06]: llms
+Pablo [5:07]: have
+Pablo [5:08]: answered and then compare
+Pablo [5:10]: but how do we compare the
+Pablo [5:11]: answers
+Pablo [5:15]: you can compare them in one simple
+Them [5:50]: that's
+Them [5:51]: why we mention
+Them [5:52]: ed usually
+Them [5:54]: blue
+Them [5:55]: index
+Them [5:56]: how will
+Them [5:57]: create
+Them [5:58]: the room
+Them [5:59]: summari
+Them [6:00]: es which is
+Them [6:01]: much more
+Them [6:04]: general
+Them [6:06]: and then
+Them [6:06]: of course you have more seman
+Them [6:07]: tic measures
+Them [6:08]: mentioned
+Them [6:09]: here but
+Them [6:10]: the third score
+Them [6:13]: how
+Them [6:14]: well do you do comp
+Them [6:15]: ared to what
+Them [6:16]: third one
+Them [6:17]: of the early successful
+Them [6:18]: very successful
+Them [6:19]: nl
+Them [6:20]: p models
+Them [6:22]: how many of you
+Them [6:23]: have used your
+Them [6:24]: heard about
+Them [6:25]: blue and blue
+Them [6:28]: that
+Them [6:29]: just means blue
+Them [6:32]: each other
+Them [6:34]: but okay
+Them [6:36]: and then how about birds
+Pablo [6:52]: you have to
+Pablo [6:53]: compare them
+Pablo [6:54]: with the coal benchmarks
+Pablo [6:55]: standardized
+Pablo [6:57]: then
+Pablo [6:58]: there's all sorts of different
+Pablo [6:58]: benchmarks
+Pablo [6:59]: for
+Pablo [7:00]: evaluating these and now
+Pablo [7:01]: adays the top
+Pablo [7:02]: llms technology
+Pablo [7:05]: in different areas
+Pablo [7:05]: of science
+Pablo [7:07]: of life et
+Pablo [7:08]: cetera
+Pablo [7:11]: and we get a much more complex fuel
+Pablo [7:11]: but they can
+Pablo [7:17]: not do nowadays we also see a bit of specialization some llms try
+Pablo [7:20]: to go for some things that others for others
+Pablo [7:26]: so that they don't like supermarkets one is cheap price
+Them [11:06]: including
+Them [15:18]: an
+Them [15:19]: amphio
+Them [18:30]: so
+Them [18:31]: what would a case study be
+Them [18:32]: medicine
+Them [18:33]: they're very useful
+Them [18:33]: okay
+Them [18:34]: a person
+Them [18:35]: came into our office
+Them [18:36]: okay
+Them [18:37]: they had something
+Them [18:38]: growing their neck
+Them [18:39]: it was
+Them [18:40]: built
+Them [18:41]: that's
+Them [18:42]: person
+Them [18:42]: right now
+Them [18:43]: that gives
+Them [18:44]: loose to their hand
+Them [18:47]: it's very descriptive
+Them [18:48]: first
+Them [18:49]: and then
+Them [18:50]: you go into
+Them [18:51]: well we examine it
+Them [18:51]: this way
+Them [18:52]: that way
+Them [18:53]: that
+Them [18:54]: didn't mri
+Them [18:55]: if you
+Them [18:56]: describe it
+Them [18:57]: then you start summ
+Them [18:58]: arizing
+Them [19:03]: so
+Them [19:04]: if you go
+Them [19:05]: into
+Them [19:06]: what could that cause
+Them [19:07]: the person
+Them [19:08]: not to
+Them [19:12]: so
+Them [19:13]: you have many more
+Them [19:14]: variables
+Them [19:15]: than
+Them [19:17]: one person
+Them [19:17]: right
+Them [19:18]: and there's
+Them [19:19]: so many things
+Them [19:20]: happening
+Them [19:21]: we don't know what
+Them [19:21]: caused it
+Them [19:23]: the person maybe ate something
+Them [19:24]: or somebody
+Them [19:25]: that's stung by stunt
+Them [19:25]: who knows
+Them [19:26]: so you have to
+Them [19:27]: explore anything
+Them [19:28]: you can think of
+Them [19:30]: but you start from other theories
+Them [19:31]: you already know
+Them [19:32]: these things
+Them [19:33]: can cost you
+Them [19:35]: more
+Them [19:35]: than allergies
+Them [19:41]: so it starts with those
+Them [19:42]: medical
+Them [19:46]: you use a case study
+Them [19:47]: but you cannot separate
+Them [19:48]: the phenomenon
+Them [19:49]: from the context
+Them [19:50]: in which it occurs
+Them [19:53]: from the
+Them [19:54]: first
+Them [19:55]: in
+Them [19:55]: this case
+Them [19:57]: so
+Them [19:57]: phenomena the
+Them [19:59]: total query the lab
+Them [19:59]: setting
+Them [20:00]: is
+Them [20:01]: a tangle
+Them [20:06]: now
+Them [20:08]: when
+Them [20:09]: the context is important
+Them [20:10]: we need to
+Them [20:11]: understand
+Them [20:12]: how
+Them [20:13]: this is a
+Them [20:14]: worker that works
+Them [20:14]: in a classroom
+Them [20:15]: there's a chemic
+Them [20:16]: al
+Them [20:17]: mostly important
+Them [20:21]: but also
+Them [20:21]: the context
+Them [20:23]: when your program
+Them [20:26]: goog
+Them [20:27]: le where
+Them [20:30]: one hundred percent of your managers by codes and
+Them [20:31]: expect due to the
+Them [20:32]: earth but multip
+Them [20:33]: ly code
+Them [20:34]: so that's a context
+Them [20:35]: and then you start
+Them [20:35]: coding
+Them [20:36]: around this
+Them [20:37]: white code
+Them [20:38]: can you
+Them [20:40]: code be as secure as main
+Them [20:41]: tenance free
+Them [20:42]: no if overcome the
+Them [20:43]: amp is also
+Them [20:44]: very
+Them [20:45]: burdened
+Them [20:46]: with all sorts of
+Them [20:46]: issues
+Them [20:49]: so the context is important
+Them [20:51]: you cannot just isolate the person
+Them [20:52]: coding
+Them [21:02]: you try to apply a theory to a real world setting this is the last example in the example
+Them [21:12]: that works ninety eight percent captures during over one hundred thousand project and then you take one project
+Them [21:19]: if you added more what does your model tell you about this
+Them [21:23]: you try to understand
+Them [21:35]: so again you want to gain a deep understanding of a phenomenon so a p d into one of the exam
+Them [21:39]: you see examples
+Them [21:44]: next
+Them [21:48]: you want to understand
+Them [21:49]: the
+Them [21:50]: new
+Them [21:59]: adoption
+Them [22:00]: of continuous integr
+Them [22:01]: ation
+Them [22:02]: and then
+Them [22:04]: you use your theories
+Them [22:08]: so here's what my theory say about the penis integration
+Them [22:11]: and then you look at what actually happens
+Pablo [22:13]: in
+Pablo [22:14]: a project
+Pablo [22:29]: what is the objective investigation you already have a model so why should you use a piece let's see
+Pablo [22:30]: if you're
+Pablo [22:34]: so you have a model already that works really well explained everything
+Pablo [22:37]: why should you use a case
+Pablo [22:51]: yeah maybe to show some real life application that is running experiments
+Pablo [22:58]: or if it's some sort of benchmark or a tooling paper issue an example of how to utilize a tool in a realistic scenario something like that
+Pablo [23:00]: okay
+Pablo [23:04]: so that may be one kind of more distant view
+Pablo [23:06]: but you always
+Pablo [23:07]: test your students
+Pablo [23:08]: so
+Pablo [23:09]: you always would never
+Pablo [23:10]: really get the
+Pablo [23:11]: earth
+Pablo [23:12]: in fact
+Pablo [23:14]: sometimes slightly upset
+Pablo [23:15]: and
+Pablo [23:15]: see what happens
+Pablo [23:17]: if you
+Pablo [23:18]: know what's in that
+Pablo [23:19]: but in our
+Pablo [23:20]: case
+Pablo [23:21]: you don't need
+Pablo [23:22]: to go to
+Pablo [23:23]: certain
+Pablo [23:24]: cit
+Pablo [23:25]: izens
+Pablo [23:26]: how
+Pablo [23:27]: do they model animals
+Pablo [23:28]: but let's imag
+Pablo [23:29]: ine a spiritual power
+Pablo [23:32]: also
+Pablo [23:33]: our models
+Pablo [23:40]: are done with some assumptions that make your mathematically more palatable easier to understand as well
+Pablo [23:42]: applying them in real life
+Pablo [23:44]: will
+Pablo [23:45]: show you
+Pablo [23:49]: what is different than your models
+Pablo [23:55]: we'll show you that horror also it can show you the power how much it realizes
+Pablo [24:07]: it can also justify
+Pablo [24:09]: yeah
+Pablo [24:17]: whenever you submit a paper especially to an area that's not so quantitatively
+Pablo [24:18]: narrow
+Pablo [24:21]: people will ask social sciences medicine
+Pablo [24:22]: whatever
+Pablo [24:25]: people will ask what will you do with this model
+Pablo [24:30]: well i can confirm that this theory is correct
+Pablo [24:40]: i can add additional can really add nutrients to your people know that you're not just oh i have a tool then you use
+Pablo [24:45]: papers that only use modeling that kind of look to the
+Pablo [24:54]: you have a tool is it appropriate here that it's an issue by knowing this
+Pablo [24:55]: maybe not
+Pablo [25:04]: so misuses of the term case study what is not what are the ad group
+Pablo [25:18]: in medicine and low patients or clients are cases sometimes people publish a case study when they need case
+Pablo [25:22]: history this is what happened to the
+Pablo [25:22]: patient
+Pablo [25:28]: looking at the patient like i described putting it in context
+Pablo [25:31]: when you have a model
+Pablo [25:40]: it's
+Pablo [25:41]: not an example
+Pablo [25:43]: you
+Pablo [25:44]: have your model
+Pablo [25:45]: and then you
+Pablo [25:46]: got these adv
+Pablo [25:47]: ice
+Pablo [25:48]: and
+Pablo [25:49]: they describe
+Pablo [25:49]: that
+Pablo [25:49]: day
+Pablo [25:50]: and other parameters
+Pablo [25:52]: now
+Pablo [25:53]: it has to be a discussion
+Pablo [25:54]: it has to be
+Pablo [25:56]: how you
+Pablo [25:56]: model
+Pablo [25:59]: does it
+Pablo [25:59]: expand
+Pablo [26:00]: as you
+Pablo [26:05]: there's no experience report we just talk about yourself
+Pablo [26:08]: oh i felt i should
+Pablo [26:09]: look into a
+Pablo [26:10]: project than
+Pablo [26:11]: how i feel better about
+Pablo [26:12]: my model it's not about you
+Pablo [26:16]: and many of you will write in that way
+Pablo [26:17]: right
+Pablo [26:21]: so try to take yourself away
+Pablo [26:23]: from
+Pablo [26:34]: also not a quasi experiment with a small n some people get a confuse let me give you three examples three case studies
+Pablo [26:43]: right and then all these three case studies implies they all agree this and therefore i can enlarge
+Pablo [26:50]: quasi experiment
+Pablo [26:57]: so here's how a case study
+Pablo [26:59]: would go in terms of the question
+Pablo [27:05]: so you always start with the research question you precisely clarify the nature of the research question
+Pablo [27:09]: we ensure the questions can be answered with a case study
+Pablo [27:12]: and generally it should be how and why
+Pablo [27:14]: and not how much
+Pablo [27:17]: who
+Pablo [27:22]: identify and interpret development theoretical construct
+Pablo [27:27]: there must be the theory that the research question must be able to
+Pablo [27:29]: connect the situation
+Pablo [27:31]: to it earlier to a model or not
+Pablo [27:35]: that's case study
+Pablo [27:45]: for example how do two organizations have a collaborative relationship why do developers prepare this model
+Pablo [27:48]: versus another our inspections carried out into practice
+Pablo [27:51]: okay so for example the third one how are inspections
+Pablo [27:53]: whatever
+Pablo [28:01]: buried out distraction you're not just asking this and then asking other people and whatever you already have some data
+Pablo [28:02]: they have some observ
+Pablo [28:02]: ations
+Pablo [28:06]: and then the question how are inspections data in practice
+Pablo [28:08]: you already have done some work
+Pablo [28:13]: and then you're looking for example in this place inspections are done like this
+Pablo [28:20]: which falls under this section there observing good practices high theory predict
+Pablo [28:22]: that this will be done one month
+Pablo [28:30]: an
+Pablo [28:31]: astasia
+Pablo [28:32]: for those of you who are
+Pablo [28:33]: very positive
+Pablo [28:41]: because it's not quite that we have to
+Pablo [28:43]: listen with fractions
+Pablo [28:48]: and you will see at the workplace you will be asked to analyze all the detail
+Pablo [28:49]: s
+Pablo [28:53]: you will be asked to talk about examples and case studies
+Pablo [29:01]: so it's important to at least understand that it is an abstract but it's not concept there is some log
+Pablo [29:02]: ic behind questions
+Pablo [29:05]: you have to ask and especially what it is not
+Pablo [29:11]: so look at a nice question why the programmers fail to talk
+Pablo [29:16]: so you can set up assumptions
+Pablo [29:18]: research
+Pablo [29:18]: questions
+Pablo [29:20]: modeling
+Pablo [29:22]: and then what
+Pablo [29:26]: then you take a real example
+Pablo [29:33]: dig deeper in there maybe
+Pablo [29:35]: that's specific
+Pablo [29:39]: project for those specific program
+Pablo [29:39]: s
+Pablo [29:45]: that will allow you to have reaches so it's all about expanding
+Pablo [29:49]: something that you can chew on beyond
+Pablo [30:02]: so just like the other studies here two we can ask why don't you causal distributed exploratory
+Pablo [30:05]: this is
+Pablo [30:18]: so let's take a look at one
+Pablo [30:23]: before we do
+Pablo [30:31]: that
+Pablo [30:52]: for example is sustainability forecasting for apache incubator we've seen this before
+Pablo [30:53]: a little bit
+Pablo [30:56]: we talked about the lsdm
+Pablo [30:58]: that's where i mentioned this
+Pablo [31:01]: lsdms
+Pablo [31:03]: whether
+Pablo [31:04]: project will be sustainable
+Pablo [31:05]: from
+Pablo [31:06]: very early on
+Pablo [31:10]: as they enter an incubator in a software foundation
+Pablo [31:17]: in addition to the quantitative studies we're faced with gathering a lot of data
+Pablo [31:18]: and so
+Pablo [31:21]: on that led us
+Pablo [31:22]: temporal
+Pablo [31:24]: predictions and forecast
+Pablo [31:27]: we also did a case study
+Pablo [31:29]: so what we did
+Pablo [31:35]: was if you remember
+Pablo [31:43]: for any incubation month you can tell you what a graduation forecast sustainability forecast is for any approach
+Pablo [31:46]: so we took three particular programs
+Pablo [31:50]: and they were called project eight thousand two hundred three and two fifty six
+Pablo [31:52]: out of about three hundred
+Pablo [31:58]: now with the case studies you can cherry pick
+Pablo [32:08]: there's no reason not to check but you have to follow your procedure of connecting theory tell us why the model worker didn't work
+Pablo [32:12]: try to understand and generalize
+Pablo [32:16]: so let's see how this goes
+Pablo [32:23]: when the probability is low there's no chance
+Pablo [32:25]: becoming
+Pablo [32:28]: sustainable unless they change something
+Pablo [32:35]: so what does that mean here if you look at this three they start at different places
+Pablo [32:37]: from the start
+Pablo [32:41]: interestingly
+Pablo [32:48]: at some point all of them experience what the fuller balance
+Pablo [32:53]: and so what's important about this is that certain downturns
+Pablo [33:01]: can be recovered and others cannot so for example this project experience the downturn get even
+Pablo [33:07]: now what we have shown is that if you take a look at the first three four five
+Pablo [33:11]: but
+Pablo [33:12]: there needs to be any
+Pablo [33:23]: here we are what caused this down so imagine this downturn were projected by our ls
+Pablo [33:24]: df
+Pablo [33:26]: so
+Pablo [33:27]: that's what she did
+Pablo [33:34]: prod
+Pablo [33:35]: uce is
+Pablo [33:36]: how
+Pablo [33:42]: if you
+Pablo [33:43]: look at that project
+Pablo [33:51]: the graduation forecast starts high but the experiences but then experiences the project experience adapter
+Pablo [33:53]: in the first half of the incubation
+Pablo [33:55]: and then it rises again
+Pablo [34:02]: this one
+Pablo [34:12]: so it experiences a downturn then it goes up
+Pablo [34:13]: so what happened
+Pablo [34:23]: is there anything that really happened in the drug that correspond with regard to lst to a bunch of data we had
+Pablo [34:29]: our model actually said that
+Pablo [34:37]: the lack of both email and committed activities were associated with the downturn it doesn't explain why
+Pablo [34:41]: such a nice project running and this is where
+Pablo [34:45]: so here we can look at the y we go inside and look at what they were talking about
+Pablo [34:50]: so the next why
+Pablo [34:56]: we look through the discussions in the so you can mark with the lowest graduation forecast
+Pablo [35:04]: the project with the major version of their software following which the commuter will count their feet
+Pablo [35:08]: so what could this possibly
+Pablo [35:10]: people got tired
+Pablo [35:12]: people got
+Pablo [35:13]: pushed people delivered
+Pablo [35:15]: and
+Pablo [35:16]: how many of those
+Pablo [35:17]: anymore
+Pablo [35:18]: people
+Pablo [35:19]: want
+Pablo [35:33]: to
+Pablo [35:33]: listen
+Pablo [35:41]: the problem started before
+Pablo [35:47]: people actually slowed down in their production so it wasn't that
+Pablo [35:49]: what a detachment
+Pablo [35:50]: way before
+Pablo [35:54]: here
+Pablo [35:56]: by the time we get to the bottom
+Pablo [36:00]: actually
+Pablo [36:06]: the asf incubator project management committee
+Pablo [36:16]: they routinely send an email to the project asking for the periodic report six but such reports were not requested for more than two months after the release
+Pablo [36:17]: okay
+Pablo [36:21]: so bmcs usually have to exist
+Pablo [36:28]: that happened until here and then
+Pablo [36:32]: there were no reports actually what happened is
+Pablo [36:34]: patients
+Pablo [36:35]: contribute
+Pablo [36:35]: d because there was not
+Pablo [36:36]: that
+Pablo [36:50]: and now whose fault was this the focus of the pmc so now you can see a deeper score well of course
+Pablo [36:56]: everybody succeed that they are depending on the project completed guideline
+Pablo [37:01]: and so on so there's a mutual type of asynchronization
+Pablo [37:06]: and then some people
+Pablo [37:12]: that one she said what are we doing people
+Pablo [37:21]: are we participating on a project or we just going home and abandoning this project that's what happened at this point here an existential crisis
+Pablo [37:24]: luckily people
+Pablo [37:25]: felt and resonated
+Pablo [37:26]: with when they came back
+Pablo [37:30]: but look at how much was lost this is ten months
+Pablo [37:32]: this is not a joke
+Pablo [37:40]: so a miscommunication or no communication for the pmc was taken and nobody cares and then people started caring less
+Pablo [37:52]: our approach would have caught this around here and would have sent an email to the pmc right and said what do you guys do expecting they're expecting you
+Pablo [37:53]: from
+Pablo [37:58]: avoided much sooner
+Pablo [37:59]: okay
+Pablo [38:02]: be getting a feeling for this case study
+Pablo [38:05]: so the model tells you a lot
+Pablo [38:07]: but it's just the starting point
+Pablo [38:09]: and then yeah
+Pablo [38:21]: you can act and conduct some action but it's good to also see what event was happening because nobody models the pmc was like who puts in a variable pfc well now that we know it could
+Pablo [38:22]: if
+Pablo [38:23]: we go back
+Pablo [38:25]: but
+Pablo [38:28]: i
+Pablo [38:29]: think
+Pablo [38:31]: so
+Pablo [38:32]: compelling that
+Pablo [38:33]: the faithful
+Pablo [38:35]: command
+Pablo [38:36]: ed
+Pablo [38:38]: go
+Pablo [38:39]: through
+Pablo [38:40]: mult
+Pablo [38:41]: iples of things
+Pablo [38:42]: that do not
+Pablo [38:45]: contact
+Pablo [38:46]: what
+Pablo [38:47]: does it do to generalize
+Pablo [38:51]: but anyways
+Pablo [38:56]: i'll pay her and that sequential results show that we can cut this time with three months
+Pablo [38:58]: within three months we can
+Pablo [39:00]: tell whether you're going to go down or not
+Pablo [39:08]: we also suggest actions that can get you out of structure
+Pablo [39:09]: foundations
+Pablo [39:16]: and they're building a big thing now software for open source program
+Pablo [39:24]: s can self guide through this process without committing they will get prompts for lm
+Pablo [39:27]: imagine an llm with a width
+Pablo [39:32]: analysis
+Pablo [39:36]: that's the thing

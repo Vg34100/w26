@@ -1,0 +1,641 @@
+Pablo [1:16]: until the end of the presentation
+Pablo [1:19]: so if you have questions
+Pablo [1:21]: just note them down
+Pablo [1:36]: so today we're going to cover design implementation of a log structured file system
+Pablo [1:39]: this is capable in nineteen ninety one
+Pablo [1:42]: so let's take a cryptography
+Pablo [1:45]: so before we get started let's do some introduction and background
+Pablo [1:47]: as to why we need this paper
+Pablo [1:54]: so the core idea of this paper is that it's a log shortfall system so you want buffer modifications in memory
+Pablo [1:57]: and then flush them all together
+Pablo [1:57]: right
+Pablo [2:04]: so the intuition here is sort of that these are tailored for more right dominated payloads and regular common to
+Pablo [2:07]: how they do and sacrifice on big performance as well
+Pablo [2:13]: so why did they come up with this design they noticed back in ninety one
+Pablo [2:28]: that hard drives were not moving in terms of development as fast as domain memory was main memory was growing exponentially large so hence rights can be batched or buffered in main memory and then flushed altogether so that's the code i gave here
+Pablo [2:39]: range can be served from efficient in memory indexing structures so you could think of it as maybe eighteen values so like etcd which has entertain memory cache
+Pablo [2:42]: so it may be something to draw a panel on
+Pablo [2:52]: this bandwidth is better utilized by this batching and amortization of small light so instead of going through the disc for every right let's batch everything together and then flush it all together
+Pablo [2:53]: right
+Pablo [3:02]: and so the core idea of this paper which i guess which i want you to think back is that the log is the primary data structure which ensures consistency
+Pablo [3:04]: and the log is the file system
+Pablo [3:15]: so we sort of discuss more in the next slide a fun fact about this paper this was proposed in ninety one and lsm three data structure was proposed for database ninety
+Pablo [3:15]: five
+Pablo [3:22]: so this is the og of sort of like block structured file systems a lot of design all right
+Pablo [3:27]: so let's talk about the log being the file system right
+Pablo [3:38]: so some of us might have the idea that a log may be a journaling structure and auxiliary structure which could be used to let's say we use for auditing or journaling
+Pablo [3:45]: used for crash recovery and the actual data is stored in maybe like a b tree or some sort of different data structure
+Pablo [3:51]: that's where this paper sort of differs in a sense that the log is the file
+Pablo [4:03]: system so they use and append only log which is a primary data structure and as opposed to maybe as i said val logs used for unpaying cash recovery this is primary as opposed to being auxiliary log structures
+Pablo [4:47]: hence the log is organized on disk across segments with the following high level layout and we'll cover sort of the more intricate details of this but just to sort of go over this the actual disk is essentially divided into segments and these logs are basically interspersed between these segments and each log essentially has a structure so it's going to have the actual data so the inode information sort of metadata about the file directory information we have icon map which is really interesting and some sort of summary data structure so that we can keep integrity and those things and stuff as well
+Pablo [4:50]: all right
+Pablo [5:00]: so let's maybe cover as to why do we even need a log structured file system so we did unix ffs in the last class why do we need different files
+Pablo [5:19]: system right so unix ffs which was proposed in eighty four underutilized the available bandwidth that's only used about five to ten percent of this bandwidth this is kind of a data layout sort of requires five individual seats to get to one specific point in data so that's expensive right
+Pablo [5:32]: it also does not fit well with workloads so usual desktop workloads are random small read writes and maybe more enterprise workloads like large rewrites so they did not do well in either of these categories
+Pablo [5:47]: why is this the case because the metadata which is the i o information directory information and all these little things those are stored in fixed locations so you have to go to a fixed location to get the information and then go and fetch the actual data
+Pablo [5:54]: which is optimal in terms of data layout but this requires more seqs right
+Pablo [5:58]: so it's more seek dominated and as you could see this is more synchronous in nature
+Pablo [6:01]: so i hope i'm building an intuition for what the design is going to be
+Pablo [6:13]: so we want to batch rights we want to improve reits using in memory structure and we only want to maintain one data structure which is going to be sort of the only truth
+Pablo [6:22]: the source of poverty so we eliminate free list the guy who's causing all the internal confrontation or the operations
+Pablo [6:24]: all right so let's build towards the solution
+Pablo [6:35]: that fade off number one is that organized data first automotive versus reorganize them later so we reorganize the data which we don't worry about where we actually place them as of now
+Pablo [6:37]: trade off number two
+Pablo [6:43]: do operations synchronously versus bash them in memory and then flush so we're going to do the second
+Pablo [6:50]: trade off number three is going to be common every operation versus maybe lose a few seconds to a minute worth of progress
+Pablo [7:04]: and if worldwide company is clear right and if you want to have reliability at its maximum then you could use npm so something we should get off last class so with these trade offs in mind let's see what requirements do we have
+Pablo [7:07]: we want large continuous rights to be fast
+Pablo [7:17]: large blocks of data are not real so we don't want to take cold data and sort of break them apart and move them around so we don't want that copy across to normally
+Pablo [7:19]: right we want to minimize internal fragmentation
+Pablo [7:33]: and with all this right first sort of design we don't want to cause the read performance to solve so we still want equivalent or better performance right so with this in mind let's jump into the core design principles
+Pablo [7:43]: okay
+Pablo [8:02]: so so far we have seen that the traditional fs system this occurs plot to vent seats we have random rights they have asynchronous synchronous metadata so most of the time most of the disctang rather than data trans
+Pablo [8:02]: fer
+Pablo [8:10]: so with this session i'm going to introduce the core idea of lfs which is called as log structured file system
+Pablo [8:16]: which drastically increase the performance of the
+Pablo [8:25]: database so the idea is very simple so what you do is you buffer file system changes in memory
+Pablo [8:29]: and in one call you write everything sequentially to the disk
+Pablo [8:30]: okay
+Pablo [8:38]: so in this way your c time is minimum and you are using one hundred percent of your display
+Pablo [8:40]: and that we were not able to do an error
+Pablo [8:42]: so
+Pablo [9:07]: as i hold y so this slide is about why the sequential rights are making us so as i told that in traditional fss come we had a lot of c time and we were able to spend this bandwidth was really five to ten percent that was using data transfer but in case of lfs
+Pablo [9:12]: you collect all the changes you make one sequential right to the list
+Pablo [9:19]: and in that case your disk bandwidth is used in data transfer not
+Pablo [9:20]: sign of a good system
+Pablo [9:28]: so although the ideas are simple
+Pablo [9:31]: there are two major problems that happens
+Pablo [9:46]: that we have to resolve the first one is that how to retrieve information from the log and second one is that how to manage the page on this so the large set of the space are always available for writing the new data
+Pablo [9:53]: so let's move to the first problem which is how do we read data
+Pablo [10:31]: so people often think that if everything is written sequentially reading must require scanning the whole log right but that's not the true for the case of editor so in lfs we have something called as in node which basically was present in mfs as well but one more thing that they have done is along with the in notes they have added something called as in node maps so in node maps keeps the address of the end node and that's how we leave the data
+Pablo [10:37]: so when we compare the performance of lfs and ffs
+Pablo [10:40]: the repomformance was similar in both of the cases
+Pablo [10:42]: but the right performance record
+Them [10:51]: let's have a detailed understanding on emo maps
+Them [11:01]: so in node map is a data structure that tells us where the latest version of each node is
+Them [11:04]: as you can see on the slide
+Them [11:13]: maps are stored in log and they are stored in ram memory and the area where their store is called checkpoint region
+Them [11:15]: okay
+Them [11:28]: so this picture shows this picture compares the difference between the unix and fs unix express and the log structured file
+Them [11:29]: so in
+Them [11:30]: mix fx
+Them [11:34]: assess the different the data are
+Them [11:38]: as
+Them [11:49]: you can see in the picture in case of ss the data the data location is different everywhere so the file data is somewhere
+Them [12:01]: in node is somewhere and there is structure is software but in case of lms you can see that every structure
+Them [12:05]: sequentially resonates with the log and that makes it better
+Them [12:23]: now comes the second problem which is i think the hardest problem in lfs which is basically free space management
+Them [12:30]: so we know that in case of lfs the log we add the data frequency right
+Them [12:37]: so what happens is that there's a time when your memory get full and in that case you need to free some spaces
+Them [12:39]: right
+Them [12:44]: and sometimes what happens is if you have a data
+Them [12:49]: let's say you change something in the data structure and the leaders of file
+Them [12:52]: so that can also create fragmentation
+Pablo [13:04]: so what are the solution that they have proposed so there are two solutions first one is that they are asking us to use thread
+Pablo [13:08]: second one is copying the live data and free the whole area
+Pablo [13:20]: so there are drawbacks also the solution so if you are using the thread one so fragmentation can occur and if you're using the copying alone that can be very flexible
+Pablo [13:27]: so they came up with this solution which is the combination of selling and talking
+Pablo [13:36]: so what happens is that your disk has a large segment so your disk is divided into large last segments
+Pablo [13:44]: and what you do is in one segment you have live data and
+Pablo [13:45]: you have that data right
+Pablo [13:56]: so what you do is you take out the live data from the segment and you free the segment and your second becomes free
+Pablo [14:02]: but the problem is that how do we know that particular block is nice
+Pablo [14:04]: so for that
+Pablo [14:12]: means
+Pablo [14:13]: we have file number
+Pablo [14:15]: twenty
+Pablo [14:15]: four
+Pablo [14:21]: then
+Pablo [14:22]: it's a live data
+Pablo [14:32]: and then
+Pablo [14:33]: i'm going to be talking
+Pablo [14:34]: about
+Pablo [14:38]: segment
+Pablo [14:39]: there are
+Pablo [14:40]: a lot of work that
+Pablo [14:42]: will find
+Pablo [14:42]: out the right
+Pablo [14:44]: data
+Pablo [14:44]: and then
+Pablo [14:45]: take on the diabetes
+Pablo [14:49]: and
+Pablo [14:50]: that's what we call
+Pablo [14:50]: it
+Pablo [14:57]: by
+Pablo [14:58]: the
+Pablo [14:59]: popular
+Pablo [15:11]: so
+Pablo [15:12]: we understood
+Pablo [15:13]: how we feel the
+Pablo [15:14]: data
+Pablo [15:15]: how we do the
+Pablo [15:15]: second scene
+Pablo [15:17]: but
+Pablo [15:18]: the question is
+Pablo [15:19]: that
+Pablo [15:20]: when we know that
+Pablo [15:23]: there are
+Pablo [15:24]: three questions
+Pablo [15:28]: and
+Pablo [15:29]: once we are
+Pablo [15:30]: done how do
+Pablo [15:31]: we prove the idea
+Pablo [15:33]: so
+Pablo [15:34]: we have mentioned
+Pablo [15:36]: strateg
+Pablo [15:37]: ies that we
+Pablo [15:38]: are talking about
+Pablo [15:39]: first
+Pablo [15:40]: one is that
+Pablo [15:44]: they
+Pablo [15:45]: love the least
+Pablo [15:48]: and the
+Pablo [15:49]: second strategy
+Pablo [15:50]: is
+Pablo [15:51]: not
+Pablo [15:54]: a
+Pablo [15:55]: diagram here
+Pablo [15:56]: so as you can see
+Pablo [16:02]: when
+Pablo [16:03]: i have live
+Pablo [16:03]: data
+Pablo [16:05]: so
+Pablo [16:06]: you see
+Pablo [16:11]: inside
+Pablo [16:19]: and
+Pablo [16:23]: then
+Pablo [16:24]: you free the whole
+Pablo [16:25]: set
+Pablo [16:26]: that's how it works
+Pablo [16:27]: and
+Pablo [16:28]: in the next slide
+Pablo [16:50]: gener
+Pablo [16:51]: ated never
+Pablo [16:52]: let go of that
+Pablo [16:53]: i just
+Pablo [16:54]: tracking the
+Pablo [16:55]: charcoal region
+Pablo [16:56]: so
+Pablo [16:58]: hard
+Pablo [16:59]: disk
+Pablo [17:00]: and to
+Pablo [17:01]: ensure that the
+Pablo [17:02]: core injection
+Pablo [17:03]: is updated
+Pablo [17:04]: automatically
+Pablo [17:07]: the
+Pablo [17:08]: two companies
+Pablo [17:08]: from the check
+Pablo [17:09]: point region
+Pablo [17:10]: it's a two
+Pablo [17:11]: different location
+Pablo [17:12]: of
+Pablo [17:12]: this
+Pablo [17:17]: two
+Pablo [17:17]: locations
+Pablo [17:23]: and
+Pablo [17:24]: to detect the
+Pablo [17:24]: interruption
+Pablo [17:29]: and then
+Pablo [17:30]: there's a
+Pablo [17:31]: polar to
+Pablo [17:33]: send
+Pablo [17:34]: myself
+Pablo [17:35]: so
+Pablo [17:41]: it's
+Pablo [17:42]: time to
+Pablo [17:45]: check
+Pablo [17:46]: point eight
+Pablo [17:46]: years
+Pablo [17:54]: by the
+Pablo [17:58]: have
+Pablo [17:59]: not been
+Pablo [18:02]: running a complete checkpoint
+Pablo [18:04]: and then
+Pablo [18:07]: in order to look at the impact
+Pablo [18:11]: system we have store a small amount of additional information
+Pablo [18:12]: first
+Pablo [18:15]: each appointer includes a current log head position
+Pablo [18:18]: and this is going to
+Pablo [18:23]: fear the lock ended at the time of the checkpoint
+Pablo [18:32]: and the second one is intern point also include the order of this segment in log this is
+Pablo [18:33]: going to
+Pablo [18:37]: whole segments are arranged
+Pablo [18:47]: sequentially and the third each segment summary includes the location of any indoor in the segment and this is telling us
+Pablo [18:55]: some newly written it's going to identify the horizon files during the recovery
+Pablo [18:59]: the whole ms recovery prot
+Pablo [19:00]: ocol
+Pablo [19:03]: they will
+Pablo [19:04]: find the newest support
+Pablo [19:05]: and then go
+Pablo [19:06]: over to the
+Pablo [19:07]: segment
+Pablo [19:10]: and starting from seven mention in the checkpoint region
+Pablo [19:19]: and use the discover angle to update the invariant map and by doing so by doing this
+Pablo [19:21]: incorporate
+Pablo [19:23]: those
+Pablo [19:24]: i know
+Pablo [19:28]: a very data box it will recover file system
+Pablo [19:40]: hi guys i'm more often i'm going to talk more about the evaluation and the experience that these authors had using lfs
+Pablo [19:46]: so the first set of experiments they do is this micro benchmark evaluation
+Pablo [19:55]: so the operating system so they compare with sun os and this file system it's based off of unix fs
+Pablo [20:07]: and it's run on some synthetic benchmarks with the goal simulating realistic workloads for consistency they have the three hundred megabytes of usable storage
+Pablo [20:29]: and they did two benchmark tests so the first test is one that works with creating reading and deleting a large number of small sized files and the second was testing with larger files how it does with performing sequential random reads as well as sequential and random variables
+Pablo [20:40]: so let's start with the small files evaluation as we see in this graph right here where my cursor is
+Pablo [20:46]: the create and delete we see the files per second be about a ten x improvement
+Pablo [21:02]: and also in this graph right here figure eight b this is a prediction as of if we used a faster cpu how would it perform we see that it's predicted
+Pablo [21:07]: that the physical
+Pablo [21:10]: time
+Pablo [21:11]: and
+Pablo [21:12]: that's what they were
+Pablo [21:13]: talking about
+Pablo [21:14]: it compared to
+Pablo [21:15]: eighty five percent
+Pablo [21:16]: saturated
+Pablo [21:21]: those
+Pablo [21:22]: large files
+Pablo [21:24]: the
+Pablo [21:25]: performance for the
+Pablo [21:25]: readings
+Pablo [21:26]: itself
+Pablo [21:28]: random
+Pablo [21:28]: dreams are
+Pablo [21:29]: pretty similar
+Pablo [21:30]: as you see
+Pablo [21:31]: here
+Pablo [21:32]: how to see
+Pablo [21:33]: improvement
+Pablo [21:34]: is the
+Pablo [21:35]: sequential
+Pablo [21:36]: marine of
+Pablo [21:39]: that
+Pablo [21:40]: sensitive right
+Pablo [21:41]: in the order
+Pablo [21:42]: it arrives
+Pablo [21:42]: and it won't re
+Pablo [21:43]: organize
+Pablo [21:44]: so
+Pablo [21:45]: it explains the
+Pablo [21:46]: improvement by the
+Pablo [21:47]: right
+Pablo [21:47]: faster
+Pablo [21:49]: now
+Pablo [21:51]: what
+Pablo [21:52]: if we discuss
+Pablo [21:53]: the socket into
+Pablo [21:53]: account
+Pablo [21:55]: leaning
+Pablo [21:56]: overhead
+Pablo [21:57]: so the right cost
+Pablo [21:58]: here was
+Pablo [21:59]: one point one
+Pablo [22:00]: so
+Pablo [22:01]: what would happen if
+Pablo [22:02]: you have to take
+Pablo [22:03]: into consideration
+Pablo [22:04]: this over
+Pablo [22:05]: head
+Pablo [22:08]: so the author
+Pablo [22:09]: granted this
+Pablo [22:09]: experiment
+Pablo [22:10]: on a few
+Pablo [22:10]: files
+Pablo [22:12]: that
+Pablo [22:13]: don't
+Pablo [22:20]: see this size file size and right traffic so they collected various different
+Pablo [22:22]: they compare
+Pablo [22:23]: simulator
+Pablo [22:24]: and the right cost
+Pablo [22:26]: and that simulator we're about to
+Pablo [22:28]: breathe
+Pablo [22:29]: but
+Pablo [22:30]: with how
+Pablo [22:32]: that feels about one
+Pablo [22:33]: point two
+Pablo [22:34]: one point six
+Pablo [22:35]: so
+Pablo [22:35]: why is that
+Pablo [22:38]: simulator
+Pablo [22:40]: the final script is one
+Pablo [22:43]: and the real scenario of these
+Pablo [22:44]: pilots are
+Pablo [22:47]: a lot longer so they won't when they get deleted and stuff
+Pablo [22:50]: you get a lot of space
+Pablo [22:53]: and essentially the simulated reference pattern they were
+Pablo [22:54]: easily distrib
+Pablo [22:54]: uted
+Pablo [22:58]: and they were also talked about
+Pablo [23:02]: how kind of the use of the hot and cold data in the simulator
+Pablo [23:03]: was not really
+Pablo [23:08]: that relevant because they were kind of doing equal distribution but that is not
+Pablo [23:11]: in reality
+Pablo [23:19]: and so these results in a sense are actually more testimonies that can even be better
+Pablo [23:27]: as we talked about the crash recovery the post discovery
+Pablo [23:30]: it wasn't installed on these production file
+Pablo [23:31]: systems
+Pablo [23:35]: yet however with elfis
+Pablo [24:05]: they essentially took off use different file sizes and took and created craft scenarios after a certain size and sees the time it takes for data to recover and as we see with all of these examples since this is in the unit second at the maximum it was taking a little over two minutes so showing that the lcs performed well with being able to cover from these craft scenari
+Pablo [24:05]: os
+Pablo [24:18]: briefly talk about some related work that affect the design of this the first one is ry one file system
+Pablo [24:36]: called both of them using a pen only structure with indexing tensor to locate data efficiently so they use sequential logging instead of the overriding data in place and the second one is garbage collection
+Pablo [24:58]: the cleaning mechanism in ls is really similar to the garbage collection from both of them i didn't find my data and we can compute by completing storage and we will take some active data
+Pablo [25:13]: and the third one is database login system so all that operative report and you check this one and roll for recovery
+Pablo [25:16]: and there's a conclusion
+Pablo [25:36]: that the key point of this keyword is that the lock structure system can use a disk order of magnet to more efficiently than exam file system do that by performing small random write into a large secretion of rice
+Pablo [25:44]: because the second time is really expensive so buying goodies we can improve this right efficiency
+Pablo [26:24]: however the terminal is tied in some signal utilization so by the policy it will separate data and code data to reduce the writing cost and finally the cash recovery of the ms is faster and simpler because all the things that are run to checkpoint and so we only need to checkpoint and roll forward to recover yes and that's our presentation next move to the discussion before we go before we go to discussion section if any of you guys have any questions
+Pablo [26:36]: any questions
+Pablo [26:41]: okay
+Pablo [26:49]: among
+Pablo [26:50]: st yourself
+Pablo [26:50]: these questions
+Pablo [26:54]: and let's take you on
+Pablo [34:10]: so the let's go with the first one
+Pablo [34:13]: is a blob
+Pablo [34:15]: of technology
+Pablo [34:21]: lfs fundamentally shifts focus from in place updates to this idea of compassion to consolidate
+Pablo [34:23]: right
+Pablo [34:29]: so what we're doing is that your batching in these rights and sort of
+Pablo [34:30]: doing it all at once
+Pablo [34:41]: there was a formula if you look at which was two divided by one minus cube answer of go that shortly but for the benefits of compaction overweight the right amplification
+Pablo [35:08]: right so let's sort of like formally define what right application defined as the ratio of the physical to logical bytes written so if you were to write two bytes right as your key value pair and if the system essentially takes in ten bytes including the metadata and sort of all the maintenance cost this would be fine but you guys think about the formula as we went over this formula right here
+Pablo [35:13]: so two divided by one minus cube
+Pablo [35:24]: if a larger fraction of our segment is used by the amplification or the right cost of pipe
+Pablo [35:26]: so what do you guys think about it
+Pablo [35:29]: what's your thoughts
+Pablo [35:45]: to kind of go over what why we need to do crafting glass i think what that data
+Pablo [35:47]: right
+Pablo [35:59]: yeah so this is the idea in unique ffs you would essentially have data coming in and you would place them so that you reduce fragmentation
+Pablo [36:16]: so that you exactly place data in terms of for example right so if i have a five me contiguous byte storage i'm going to put this file data right here so that's optimal placement and you would sort of need a three list to do that
+Pablo [36:23]: and it could be quite easy right so it doesn't really provide you with good performance
+Pablo [36:34]: whereas in lfs where you just keep writing data one below the other as an append only log and then you clust everything into that test and now since you have written all of this data
+Pablo [36:44]: retrospectively go in and sort of clean so if i deleted a file then that goes into the log and then i apply that and now i go in and basically in this segment
+Pablo [36:50]: so famously looked about that in terms of segment cleaning and those things
+Pablo [36:54]: what should you guys think about this
+Pablo [37:08]: was great but maybe the people were more visually motivated let's say this is our log right it's sequential
+Pablo [37:10]: it's organized in segments
+Pablo [37:14]: and it's going to depend on a lot of which basically means our rights are in one direction
+Pablo [37:22]: so we have a bunch of file data in the segments it's a combination of what actual data blocks items provided data and our directory
+Pablo [37:23]: director
+Pablo [37:37]: all of these structures are basically copy on the right because again our rights we have to file system in one direction so we can actually go back and update a partial block if we want that data so what happens
+Pablo [37:44]: is instead of going back our current log is like over here at this segment
+Pablo [37:54]: and someone updated their file and the file blocks we're looking this segment all types doesn't really allow you to seek after this segment and make that update
+Pablo [37:57]: what you do instead is you
+Pablo [38:00]: write new file block here
+Pablo [38:06]: and then follow up that was here that all data is basically
+Pablo [38:07]: validated
+Pablo [38:11]: and the i know for that file then points to this view
+Pablo [38:12]: block for what
+Pablo [38:19]: we end up
+Pablo [38:27]: saving
+Pablo [38:28]: a church
+Pablo [38:32]: this is
+Pablo [38:33]: why we end up
+Pablo [38:35]: because
+Pablo [38:36]: not everything in
+Pablo [38:36]: the bible
+Pablo [38:52]: thank
+Pablo [38:53]: you for
+Pablo [38:54]: your
+Pablo [38:54]: money
+Pablo [38:57]: for example
+Pablo [39:11]: read
+Pablo [39:11]: it
+Pablo [39:18]: because
+Pablo [39:19]: of
+Pablo [39:40]: the
+Pablo [39:41]: time question
+Pablo [39:45]: today
+Pablo [39:46]: 's ev
+Pablo [39:47]: aluation
+Pablo [39:48]: do we still
+Pablo [39:49]: need as best on
+Pablo [39:50]: ssd
+Pablo [40:20]: connection
+Pablo [40:26]: so essentially the
+Pablo [40:37]: idea of this paper is that you have a hdv which is hardware of this quite move around
+Pablo [40:42]: and as we covered in the very first class of this topic
+Pablo [40:47]: these magnetic vessels would have like segments or essentially sectors
+Pablo [40:50]: and we would go in and sort of agree that sector
+Pablo [41:23]: so and these things would be sort of like in three d formats or this might be one two three so you might read some data on top here then go and create some data here and read some data here ffs is bad whereas the metadata might be located in here and then i go down bring a file later and i might need to overflow and retiga from the third level as well so hopefully i'm meeting the essence of all this ssbs on the other hand they internally use something like a sort of lfs so they use like a log structured
+Pablo [41:27]: system it is inbuilt into the hardware itself
+Pablo [41:31]: so what is the trade offs right
+Pablo [41:33]: so it is still good today
+Pablo [41:38]: can we still sort of extract any good results from this
+Pablo [41:40]: so one of the things i guess
+Pablo [41:41]: to know sorry
+Pablo [41:53]: picking real quick yes just one of the things to know about ssds is that they're organized into what's called eraser blocks again ssds don't allow for small random over rates
+Pablo [41:56]: so
+Pablo [41:57]: we talk bas
+Pablo [41:58]: ically clear that
+Pablo [41:59]: inside of
+Pablo [42:03]: these are
+Pablo [42:04]: actually watching usually
+Pablo [42:05]: hundred
+Pablo [42:06]: s of
+Pablo [42:09]: size
+Pablo [42:11]: and so
+Pablo [42:12]: you kind of have the same
+Pablo [42:12]: sort
+Pablo [42:14]: of
+Pablo [42:15]: help
+Pablo [42:16]: here with all this
+Pablo [42:17]: also
+Pablo [42:26]: that
+Pablo [42:27]: is relevant for s
+Pablo [42:28]: sd
+Pablo [42:29]: ss
+Pablo [42:30]: ds
+Pablo [42:31]: have this
+Pablo [42:32]: property where they
+Pablo [42:33]: carry out over time
+Pablo [42:34]: razor block
+Pablo [42:38]: only has a limited number of times where you can wait
+Pablo [42:50]: firmware is to spread out rights across your device such that each portion of the device is very clear
+Pablo [42:58]: so this is kind of you can see where some of these other ideas
+Pablo [43:00]: of elephants come in
+Pablo [43:16]: i mean that kind of gives the game away again i think there was still the optional reading
+Pablo [43:17]: kind of explain a lot of this
+Pablo [43:24]: it was optional to go and read it but if you want to know more about ssds it's really good
+Pablo [43:26]: thing to kind of get started
+Pablo [43:26]: with
+Pablo [43:35]: so the next question is for the ssd revolution
+Pablo [43:43]: is it wiser for log structuring to be done more software operating system level
+Pablo [43:48]: or in the hardware or somewhere in the somewhere kind of in the middle
+Pablo [43:51]: so any of you guys have
+Pablo [43:53]: any ideas
+Pablo [44:00]: software probably has a better idea of when it's okay to buffer sorry to batch rights
+Pablo [44:02]: yeah
+Pablo [44:14]: so the software level block structure in a sense it's better with semantic awareness kind of the understanding of where things are placed instruct
+Pablo [44:14]: ions
+Pablo [44:16]: that's
+Pablo [44:17]: very good
+Pablo [44:26]: so in theory
+Pablo [44:28]: i think
+Pablo [44:33]: with the way i think the most optimal is like somewhere more in the middle
+Pablo [44:52]: some sort of collaborative design between the hardware and software because there are certain strengths and weaknesses of both like i said with the software the semantic awareness kind of the patterns of how the application runs
+Pablo [44:55]: for the workload
+Pablo [44:58]: so we're kind of in the middle
+Pablo [45:01]: would probably be the most effective
+Pablo [45:07]: this is not one of those things that we did optional
+Pablo [45:08]: ly
+Pablo [45:11]: the optional reading article was
+Them [45:14]: several good reason
+Them [45:14]: s
+Them [45:18]: the ssd firmware is effectively an alpha
+Them [45:19]: test
+Them [45:24]: we don't necessarily know for sure because that's a manufacturer
+Them [45:33]: but looking after the day here and the property ssd and lfs in the form hard to manage the way that you have to
+Them [45:34]: write
+Them [45:53]: so if we simply put the software lfs tailor on top of ssd firmware then it seems like there'd be a good match structure there's all kinds of same sort of pattern of these rights
+Them [45:57]: but if they're completely born to each other
+Them [46:00]: they're not going to have information
+Them [46:06]: that we got our component ones but doesn't necessarily have the cat
+Them [46:13]: so the ssd itself isn't necessarily going to know which blocks contain live files
+Them [46:17]: to the data it doesn't have any understanding of things like
+Them [46:19]: high notes these are software data structures
+Them [46:29]: on the other hand the software lfs isn't really going to know where necessarily the right to actually end up on twice
+Them [46:31]: even that's the sort of firm response
+Them [46:38]: so you could imagine they both don't have the great information
+Them [46:40]: that will help each other
+Them [46:41]: so if you allow
+Them [46:50]: their stuff a lot more things their responsibilities are
+Them [46:51]: don't really have
+Them [46:52]: that
+Them [46:53]: global communication
+Them [46:56]: try to go
+Them [46:57]: towards
+Them [47:22]: i'm thinking maybe for swap space where memory latency sorry disk buttons you might be important
+Them [47:32]: yeah that would be a lot better because when you're back at your legs most writers have like two or two seconds
+Them [47:43]: would be a difficult case for lfs
+Them [47:51]: remember in the paper there's this sort of distribution where they wanted the sort of final distribution
+Them [47:56]: of most of the segments even in vain mostly live data or mostly
+Them [48:05]: swaps the swap space is going to contain a lot of things that have been over to a long time especially if you're thinking
+Them [48:16]: so this sort of like swap segment really kind of messed some data lives and they ended up not being live it's being moved around a lot
+Them [48:19]: as things are brought in and out of memory
+Them [48:22]: and i think the paper had
+Them [48:26]: a sort of swap
+Them [48:29]: you see a lot of
+Them [48:36]: nice performance
+Them [48:37]: based portion of
+Them [48:38]: rights
+Them [48:38]: versus light data
+Them [48:40]: where
+Them [48:44]: there is a point at which even
+Them [48:48]: their life optimal at the best
+Them [48:52]: has lower right cost than lfs because of
+Them [48:55]: the amount of small files
+Them [49:10]: then for dietary workflow what are
+Them [49:13]: the
+Them [49:18]: any
+Pablo [49:37]: sample would be your model so when you train your model with the right heavy operation and in that case as well as will work really well
+Pablo [49:38]: because
+Pablo [49:44]: in terms of
+Pablo [49:46]: performance
+Pablo [49:47]: of various and the
+Pablo [49:48]: third part
+Pablo [49:49]: in terms of
+Pablo [49:50]: price
+Pablo [50:05]: comes
+Pablo [50:06]: to
+Pablo [50:12]: be
+Pablo [50:13]: the best option
+Pablo [50:14]: when
+Pablo [50:14]: your
+Pablo [50:29]: guys know facebook
+Pablo [50:29]: right
+Pablo [50:33]: essentially
+Pablo [50:35]: where they have
+Pablo [50:36]: to
+Pablo [50:38]: essentially use in
+Pablo [50:40]: database for example to
+Pablo [50:41]: follow facebook
+Pablo [50:44]: this is a graphics application
+Pablo [50:46]: and there's a lot of price
+Pablo [50:48]: system going through
+Pablo [50:49]: but it's also maintenance
+Pablo [50:51]: this
+Pablo [50:52]: whole
+Pablo [50:54]: log structure system
+Pablo [50:55]: overflows into
+Pablo [51:05]: these databases concepts really well because what you do is you have in memory cache which is sort of really nice to have all your data buffered
+Pablo [51:05]: too
+Pablo [51:17]: and then you flush it out so that the data is laid out in front of an ascending model or descending order so it's sorted so that way you sort of make sort of like logarithmic in a sense
+Pablo [51:19]: and your rights are extremely fast
+Pablo [51:20]: right
+Pablo [51:29]: so facebook essentially have their mysql database sort of better relational database and
+Pablo [51:38]: they essentially put that on top of the lsm data log structured storage engine and that's what they do till this day
+Pablo [51:42]: this would be great
+Pablo [51:45]: for right hand
+Pablo [51:47]: yeah it's a good use case
+Pablo [51:56]: do you guys know how much ai wasn't too bad
+Pablo [51:56]: often
+Pablo [52:01]: so initially what would happen during let's say
+Pablo [52:04]: you would
+Pablo [52:05]: essentially have
+Pablo [52:06]: this
+Pablo [52:07]: file
+Pablo [52:10]: so
+Pablo [52:11]: the website
+Pablo [52:12]: would be rated
+Pablo [52:13]: to write a
+Pablo [52:14]: history
+Pablo [52:17]: location
+Pablo [52:19]: and then overfeed of
+Pablo [52:19]: time
+Pablo [52:20]: use
+Pablo [52:36]: r
+Pablo [52:37]: s
+Pablo [52:43]: so
+Pablo [52:44]: the screen
+Pablo [52:45]: and for intensive
+Pablo [53:08]: so
+Pablo [53:09]: we really target
+Pablo [53:10]: ed so
+Pablo [53:15]: that the
+Pablo [53:16]: information is
+Pablo [53:21]: the way
+Pablo [53:31]: some of these modeling software is that you would have a cpu memory and the gpu memory and you would want to keep as much as possible in the gpu
+Pablo [53:37]: but you would also not want these rates to be stored locally because you want memory to do other things
+Pablo [53:40]: and stuff like complications and all the other sort of things
+Pablo [53:48]: so they usually offload or store it to some sort of object storage and these object storage usually offer you some flavor of log structure
+Pablo [53:54]: and a quick thought
+Pablo [53:59]: so i was wondering how this entire thing works with the page tables
+Pablo [54:07]: because you have the physical the logical the physical the virtue to physical address translations and in the
+Pablo [54:08]: update
+Pablo [54:09]: something you cannot go
+Pablo [54:11]: into that interruption of data
+Pablo [54:12]: so you have to
+Pablo [54:13]: again det
+Pablo [54:15]: ect the reliability and invalidate the
+Pablo [54:15]: previous name
+Pablo [54:16]: so if previous
+Pablo [54:17]: address is now eval
+Pablo [54:18]: uated
+Pablo [54:18]: so
+Pablo [54:20]: you also have to clear the entire
+Pablo [54:21]: peaceful
+Pablo [54:22]: once you
+Pablo [54:24]: do
+Them [54:29]: that
+Them [54:37]: this is my
+Them [54:38]: april
+Them [54:42]: and
+Them [54:43]: you store the entire
+Them [54:51]: so it's a question about they have this in memory data
+Pablo [54:59]: entry
+Pablo [55:05]: once we do the virtual to physical address
+Pablo [55:08]: transmission that addresses
+Pablo [55:17]: up your diaper we have the data stored
+Pablo [55:20]: so
+Pablo [55:28]: this is actual layout of the data on sort of radical data up the
+Pablo [55:43]: plugin if you are just sort of discs are laid out concentric circles where you have tracks at different
+Pablo [55:45]: sectors and everything like that
+Pablo [55:50]: but if you kind of laid out all of your disk
+Pablo [55:54]: flat it would look something like this for both file system
+Pablo [55:56]: s so this is kind of like a logical layout
+Pablo [56:10]: so these are going to be like i know they're going to contain your sort of logical disk address of the blocks that make up the file
+Pablo [56:11]: describes
+Pablo [56:20]: so these are all going to be sort of on this structure not in memory structures what lfs adds because if we look
+Pablo [56:24]: at ffs for example
+Pablo [56:29]: i know

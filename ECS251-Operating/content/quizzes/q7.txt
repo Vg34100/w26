@@ -1,0 +1,18 @@
+**Pick Any 2 (short response):**
+
+**A. What are cylinder groups in FFS?**
+Cylinder groups are contiguous sets of cylinders on disk that each have their own inodes, data blocks, and bookkeeping info. The idea is to keep related files close together to reduce seek times.
+
+**B. What is the purpose of block fragmentation in FFS?**
+Block fragmentation lets small files use sub-blocks (fragments) instead of wasting a full block, so disk space isn't wasted on files smaller than the block size.
+
+**C. How does LFS need to clean segments?**
+LFS has a segment cleaner that reads segments with a lot of dead/stale blocks, copies out the still-live data, and then frees up those segments so they can be written to again sequentially.
+
+**D. In the Linux storage stack, why do L-apps experience higher tail latency when sharing a core with T-apps?**
+L-apps get blocked behind T-app requests in the queue (head-of-line blocking), so even small latency-sensitive requests have to wait for big throughput requests to finish first.
+
+**Long response (pick 1):**
+
+**"Should a file system be optimized for writes? Why or why not?"**
+It depends on the workload but generally yes, especially for small file workloads. FFS showed that random writes with lots of seeks use very little actual disk bandwidth. LFS showed that buffering writes and doing them sequentially can use an order of magnitude more disk bandwidth. The downside is you need cleaning overhead, but even with that LFS gets around 65-75% disk utilization vs 5-10% for traditional systems. So optimizing for writes makes a lot of sense when workloads involve many small files.

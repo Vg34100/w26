@@ -1,0 +1,27 @@
+**Pick Any 2 (1 point each):**
+
+**A. Name a difference between a kernel-level thread and a scheduler activation.**
+
+Kernel-level threads are directly resumed by the kernel when unblocked, while scheduler activations never directly resume a stopped thread - instead the kernel creates a new activation to notify the user-level system.
+
+**B. Why can user-level threads perform better than kernel-level threads?**
+
+User-level threads avoid the overhead of kernel traps and parameter checking on every operation, and they can be optimized for specific applications rather than being general-purpose.
+
+**C. Why do Scheduler Activations need to know about critical sections?**
+
+To prevent deadlock when a thread holding a lock gets preempted - the system needs to temporarily continue the thread until it exits the critical section.
+
+**D. Name an event that requires user-level notification via a Scheduler Activation.**
+
+When a processor is preempted or when a thread blocks in the kernel on I/O.
+
+**Pick 1 (2 points):**
+
+**1. What are the advantages/disadvantages of using kernel threads or user threads for concurrency control? When would applications combine them?**
+
+Kernel threads work correctly with I/O and multiprogramming but have poor performance due to kernel overhead. User threads are faster but have poor system integration and can't handle blocking or preemption well. Applications combine them when they need performance but also need to interact with system services.
+
+**2. Do Scheduler Activations favor kernel? Why or why not?**
+
+No, scheduler activations don't favor the kernel. They let user-level manage thread scheduling while the kernel only handles processor allocation, so most thread operations stay at user-level for performance.

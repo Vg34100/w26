@@ -1,0 +1,648 @@
+Pablo [0:19]: how many of you are entertaining ideas of maybe publishing a paper
+Pablo [0:21]: what's going
+Pablo [0:22]: on maybe
+Pablo [0:27]: so you all got to write comments
+Pablo [0:29]: and score
+Pablo [0:35]: so reach
+Pablo [0:38]: team i prepare the very short look
+Pablo [0:45]: out of five where one is you probably shouldn't bother
+Pablo [0:48]: and five is you're so close to having a paper
+Pablo [0:49]: you should continue
+Pablo [0:54]: this is called suggestions how to get there
+Pablo [0:56]: in particular
+Pablo [0:58]: i
+Pablo [0:58]: 'm talking about
+Pablo [1:05]: the msr home versus
+Pablo [1:05]: social engineering
+Pablo [1:09]: that take a few papers so each team will get this
+Pablo [1:14]: some of these comments are shorter some are longer
+Pablo [1:18]: some are very demanding okay this is what you have to do
+Pablo [1:26]: for those that are interested to pursue this let me know
+Pablo [1:29]: i can continue helping me on this class
+Pablo [1:30]: although
+Pablo [1:35]: proudly not as with great intensity as we are doing now
+Pablo [1:38]: but i think if you have a four
+Pablo [1:44]: or higher you should definitely consider i mean i think if you have three you can also try
+Pablo [1:50]: but if you have four or higher should definitely consider submitting
+Pablo [1:55]: and there's a great effort
+Pablo [1:57]: that
+Pablo [1:58]: i had
+Pablo [1:59]: lacking behind
+Pablo [2:00]: whether
+Pablo [2:03]: you
+Pablo [2:04]: structure
+Pablo [2:08]: just
+Pablo [2:09]: trying to be the
+Pablo [2:10]: heart
+Pablo [2:13]: any
+Pablo [2:14]: questions about
+Pablo [2:15]: those
+Pablo [2:16]: scores
+Pablo [2:17]: or
+Pablo [2:18]: what we are
+Pablo [2:19]: about
+Pablo [2:24]: the
+Pablo [2:25]: life of course you
+Pablo [2:26]: look at
+Pablo [2:31]: your
+Pablo [2:31]: conclusions
+Pablo [2:33]: what
+Pablo [2:34]: ever you get
+Pablo [2:49]: for
+Pablo [2:50]: you have to deal with
+Pablo [3:04]: the
+Pablo [3:05]: genes when everything
+Pablo [3:06]: is expected to
+Pablo [3:07]: come in
+Pablo [3:08]: and
+Pablo [3:09]: for the change
+Pablo [3:09]: of form
+Pablo [3:11]: whether
+Pablo [3:12]: those people
+Pablo [3:14]: are
+Pablo [3:21]: achieved
+Pablo [3:22]: i believe that
+Pablo [3:23]: wherever
+Pablo [3:24]: you
+Pablo [3:29]: are
+Pablo [3:33]: distract
+Pablo [3:34]: ions
+Pablo [3:35]: or
+Pablo [3:36]: maybe
+Pablo [3:45]: this
+Pablo [3:46]: j is
+Pablo [3:48]: the
+Pablo [3:48]: step
+Pablo [4:07]: what else
+Pablo [4:45]: but yeah be prepared to actually discuss this page right i've linked it if you have any questions
+Pablo [4:49]: it's advanced paper
+Pablo [4:54]: maybe you want to read it with chat gpt as a helper actually
+Pablo [4:57]: what interests you
+Pablo [5:00]: we may not have enough time for all questions
+Pablo [5:06]: but i'm willing to stick around for long as we have this rule
+Pablo [5:26]: okay
+Pablo [5:46]: what i'm going to do today is finish up in general about ai and again we're not covering ai detail we're just covering what are the relevant businesses
+Pablo [6:03]: and we talked about discriminative we're going to talk about generative model differences discriminative one from another
+Pablo [6:06]: whereas generative
+Pablo [6:08]: think about if
+Pablo [6:13]: you have e of x getting whole distribution
+Pablo [6:24]: imagine what does it mean to have the whole distribution of all human knowledge
+Pablo [6:27]: p of x
+Pablo [6:34]: and then you sample in any region in that huge space such as multidimensional
+Pablo [6:36]: distribution
+Pablo [6:42]: imagine if you could sample from music
+Pablo [6:43]: right
+Pablo [6:54]: this is what it means to have these gargantuan pieces of x right versus x or y it's a much much bigger thing
+Pablo [6:58]: and so learning that takes a lot of data
+Pablo [7:05]: so keep that difference in mind and then the technologies that we can use
+Pablo [7:09]: to learn the meaning of the structure of the data
+Pablo [7:12]: are varying and it depends on the use cases
+Pablo [7:33]: we'll talk about use cases later when we get to use cases for lof but just a few technologies i've listed them here because they kind of summarize these three of a large swath of what we do with ai what is we are generating intermediate distributions
+Pablo [7:38]: how many of you have worked with very
+Pablo [7:47]: few of you so there's one way to approach that intermediate representation
+Pablo [7:55]: think about you try to map some input to output these controls of left output on the right
+Pablo [8:01]: and imagine inside you're taking the people to your back
+Pablo [8:04]: why not go directly from input to output
+Pablo [8:11]: i would say
+Pablo [8:18]: models can use so that they would compress representation
+Pablo [8:21]: erotic data into a smaller space
+Pablo [8:28]: and then have it regenerate okay you're approaching the correct answer here which is a smaller representation
+Pablo [8:36]: what does that mean that means that what we are seeing the data or nature or whatever
+Pablo [8:38]: can become pressed
+Pablo [8:48]: so we are assuming that there is a representation of nature that can be described with fewer bits
+Pablo [8:50]: than just observing and listing
+Pablo [8:53]: this is the key here
+Pablo [8:56]: the assumption that there's patterns in there
+Pablo [9:05]: that can be described in sql formulas and we talked about this way back when an initial couple of weeks when we started being in philosophy
+Pablo [9:12]: we are assuming that what are theories theories are succinct compressed representation
+Pablo [9:19]: you're actually assuming that there is an intermediate representation something compressed something that
+Pablo [9:21]: equations of gravity
+Pablo [9:29]: you don't have to list all observations from the below impact today you can just list one formula
+Pablo [9:38]: so how does that happen over time but here we are assuming explicitly that the data we see has some internal structure
+Pablo [9:42]: why because we're fitting it out images of cats
+Pablo [9:52]: right if it is a building so although there's gazillions ways to arrange this still it's a catholic building whatever you explain very simply
+Pablo [9:57]: in ten twenty lines of course so this is the underlying assumption that you can take the data
+Pablo [10:02]: put it into recognize its internal structure
+Pablo [10:08]: at which it has been gener
+Pablo [10:08]: ated
+Pablo [10:10]: including
+Pablo [10:29]: imagine you have x that's why intermediate but how do we get from the how do we encode something coded well imagine you have two functions so you take data you encode it into something
+Pablo [10:34]: and then you have another function that's become how do you make those correspond
+Pablo [10:34]: to each other
+Pablo [10:48]: so how about the modern encoder at the same time approach that you can read a make sure that if you code a cat when you decode that i is whispering whatever the major
+Pablo [10:51]: gets you to the same task
+Pablo [10:56]: by the way there's so many apps that are really rolling around
+Pablo [10:59]: what's up with that
+Pablo [11:05]: everybody's got a fun technical
+Pablo [11:06]: they have diseases
+Pablo [11:12]: especially if you're pregnant or whatever they really fatal
+Pablo [11:21]: ly have even things don't don't touch the fc many students will make it okay
+Pablo [11:26]: anyway so we condense this key to mister eyes and whatever
+Pablo [11:35]: that way uncondensed on the other side the p code with the cap that so one we believe we can condense the data
+Pablo [11:41]: so that's the reason and the second
+Pablo [11:44]: those two functions are corresponding
+Pablo [11:52]: they must kind of like in a way close to this equals to a they're almost like inverse
+Pablo [11:59]: they're not quite in vertical space but they're almost like in verses they have to make it to the same place
+Pablo [12:06]: how do you do that well that's the point of these devices to ensure that those functions turn into
+Pablo [12:11]: one thing to do is if you have to interrupt
+Pablo [12:15]: the course now if you don't know how to do something other things
+Pablo [12:16]: you could do
+Pablo [12:24]: partially for example degenerative adversarial network well how about to generate data that's not what you want
+Pablo [12:33]: and you absolutely know it's not so you have adversarial situation where you're saying here's my data but here's what's not my
+Pablo [12:34]: data
+Pablo [12:38]: and by eliminating the similarity between
+Pablo [12:39]: something
+Pablo [12:41]: that you
+Pablo [12:43]: have learned is what gets you to
+Pablo [12:44]: the same
+Pablo [12:48]: if
+Pablo [12:49]: you have transformers
+Pablo [12:50]: where
+Pablo [12:51]: you're trying to say
+Pablo [12:59]: everything that
+Pablo [12:59]: seem together
+Pablo [13:05]: and we'll see that in a second
+Pablo [13:08]: but
+Pablo [13:21]: how does this thing work right so we talked about contrastive learning earlier but that's more similar to some of these generative other serial stuff but how do these things work well they learn
+Pablo [13:28]: to understand the internal structures and we are hoping that we show the capital where there's highest
+Pablo [13:35]: right it could be something crazy could be the shading on the ear it could be
+Pablo [13:39]: that arrogant phase affairs
+Pablo [13:47]: so when you learn this then you can generate those cats that have those features
+Pablo [13:48]: right
+Pablo [13:52]: how do we train that by hiding so you will hide
+Pablo [14:00]: and you would give it how many of us know how we are trained with a bas
+Pablo [14:00]: ic level
+Pablo [14:05]: you
+Pablo [14:07]: take all of human knowledge
+Pablo [14:10]: and then you
+Pablo [14:19]: the foundation model llms included by providing data right every time
+Pablo [14:24]: and then by providing the makeup of the data some of the data is
+Pablo [14:24]: used
+Pablo [14:38]: completely
+Pablo [14:58]: outside
+Pablo [14:59]: it's a
+Pablo [15:00]: beautiful wind
+Pablo [15:00]: ow
+Pablo [15:00]: time
+Pablo [15:02]: all
+Pablo [15:03]: of these group is very
+Pablo [15:04]: important
+Pablo [15:07]: and all of those will result in certain probabilities
+Pablo [15:11]: and they will be just one hopefully the light
+Pablo [15:16]: and that's how
+Pablo [15:24]: you just have to generate stuff you can also use them in a discriminatory
+Pablo [15:27]: fashion so when you get to the intermediate representation
+Pablo [15:43]: and then you feed it a new image you can tell whether the new image is close to that old space that original space semantic space in depth neighborhood or not so you can ask people about allah
+Pablo [15:48]: if you train it enough also the patience that you've added
+Pablo [15:53]: you can ask is it a consolidation or is it cardio angle for example
+Pablo [15:55]: a large part
+Pablo [16:00]: and hopefully you haven't updated those
+Pablo [16:02]: separ
+Pablo [16:02]: ately
+Pablo [16:06]: but you do this by adding extra layers to the neural network
+Pablo [16:10]: at the end to discriminate business
+Pablo [16:17]: now i promised you looking at the transformers how many of you may have transform
+Pablo [16:22]: in detail it's actually quite interesting
+Pablo [16:25]: it's quite interesting
+Pablo [16:34]: in addition to using the hydic whatever the transformers use this
+Pablo [16:53]: but
+Pablo [16:54]: each of
+Pablo [16:55]: these
+Pablo [16:57]: are
+Pablo [16:58]: holy
+Pablo [17:00]: and
+Pablo [17:02]: they are
+Pablo [17:02]: fully connected
+Pablo [17:03]: in between
+Pablo [17:04]: so
+Pablo [17:05]: they're sending information
+Pablo [17:06]: from every
+Pablo [17:07]: door that is
+Pablo [17:08]: coming up
+Pablo [17:11]: keep
+Pablo [17:12]: ing position
+Pablo [17:13]: of the correlation
+Pablo [17:28]: of
+Pablo [17:29]: the
+Pablo [17:30]: function
+Pablo [17:31]: and they moun
+Pablo [17:31]: ted
+Pablo [17:32]: where are you
+Pablo [17:41]: confus
+Pablo [17:41]: ing
+Pablo [17:43]: you
+Pablo [17:44]: have to
+Pablo [17:44]: be throw
+Pablo [17:45]: ing
+Pablo [17:56]: every
+Pablo [17:57]: body has to
+Pablo [17:58]: everybody should get
+Pablo [18:03]: some
+Pablo [18:04]: fantastic things
+Pablo [18:05]: because
+Pablo [18:06]: even though we don't understand
+Pablo [18:08]: how
+Pablo [18:08]: much
+Pablo [18:30]: so
+Pablo [18:31]: this
+Pablo [18:36]: is
+Pablo [18:38]: surprising
+Pablo [18:38]: ly
+Pablo [18:39]: god
+Pablo [18:40]: even though it works all
+Pablo [18:40]: the text
+Pablo [18:46]: okay
+Pablo [18:47]: i know this is
+Pablo [18:50]: trying to do
+Pablo [18:50]: but even
+Pablo [18:52]: that's
+Pablo [18:53]: the
+Pablo [18:54]: project
+Pablo [18:57]: same
+Pablo [18:58]: question
+Pablo [19:00]: architect
+Pablo [19:01]: ure
+Pablo [19:15]: although
+Pablo [19:16]: i can tell you this
+Pablo [19:18]: i have an interesting paper
+Pablo [19:21]: it just came out of the blue
+Pablo [19:21]: edge
+Pablo [19:25]: we took pictures
+Pablo [19:29]: of code to digitize old snippets
+Pablo [19:33]: and then we train transformers to one day
+Pablo [19:37]: and lo and behold showing the images
+Pablo [19:42]: well we trade convolutional networks and transformers we added attention
+Pablo [19:50]: from the images we could actually tell each code wasvia just because the images
+Pablo [20:02]: of the code so we couldn't do it by looking at the code at that time and effectively as we could by feeding this to a cnn putting some attention
+Pablo [20:09]: and we got a great result you showed me a picture of your code i could tell you how i behaved with their bugs
+Pablo [20:10]: did it
+Pablo [20:15]: so this is to say that some approaches they actually work better
+Pablo [20:19]: cns work fantastically well
+Pablo [20:23]: even on x is the point
+Pablo [20:27]: okay
+Pablo [20:34]: so some caveats here how we deal with caveats
+Pablo [20:43]: they're not always most accurate there's other approaches in ai that you can use instead
+Pablo [20:48]: of
+Pablo [20:49]: explicit
+Pablo [20:50]: ly
+Pablo [21:00]: and then kind of
+Pablo [21:01]: user and coder
+Pablo [21:18]: you're hearing of something explainability
+Pablo [21:22]: you need a lot of data especially if you are trying to generate things
+Pablo [21:29]: getting biased
+Pablo [21:30]: hallucination
+Pablo [21:39]: this was twenty twenty three
+Pablo [21:44]: things can explode it further for those that were up top
+Pablo [21:49]: gdp and claude have still remained on top
+Pablo [21:56]: by the any of you heard of the bulgarian chat
+Pablo [21:58]: okay
+Pablo [22:05]: the explosion of this really depends on hardware
+Pablo [22:10]: also memory and gpu's
+Pablo [22:12]: but we are reaching hardware applications
+Pablo [22:19]: you can tell how the number of tokens that you're getting when you drag it and code is better
+Pablo [22:20]: but they
+Pablo [22:31]: want it's kind of limited right you can still see the line which is that it's been five years now why can't you just generate the whole thing once they're still dangerous
+Pablo [22:35]: one hundred twenty tokens per second
+Pablo [22:40]: well so what they've done now is i just heard about these couple of days ago
+Pablo [22:43]: it's called jerry chat
+Pablo [22:45]: and you can try it out
+Pablo [22:48]: fourteen thousand tokens per second
+Pablo [22:56]: and the way they achieve this lunacy is by using an asic anybody know what aces are
+Pablo [23:06]: this application specific integrated circuits where you burn the actual model parameters ought to be chip or to die
+Pablo [23:09]: and now you're really doing them in hardware
+Pablo [23:19]: forty nine it's not very powerful meaning doesn't know much but illustrates
+Pablo [23:30]: so i think we are now overcoming some of those hardware difficulties by having specific things just like for bitcoin mining
+Pablo [23:36]: right we have asics to do these models and models relatives they can elevate
+Pablo [23:40]: i think that's about it
+Pablo [23:51]: when we go to jerry chat you can see an immediate full text three pages just locked in there and the response to the
+Pablo [23:52]: kind of a new thing
+Pablo [24:03]: because even if we should read it now or not because take it back to ridden so what do you want to do is to think of your it's a different type of environment
+Pablo [24:07]: okay so let's go to llms do you have any other questions
+Pablo [24:17]: llms and we'll hear about cursor and its use in programming on wednesday
+Pablo [24:19]: and what it means
+Pablo [24:30]: but i'm going to go and so there is a great great presentation about intro two
+Pablo [24:37]: llms which i really want us to go through and this is by lloyd harkel
+Pablo [24:44]: it's a bit dated but the main features are still correct
+Pablo [24:50]: and i'm not going to go too much through the history of this
+Pablo [24:55]: anybody heard of eliza
+Pablo [25:02]: yeah the prototypical picture anyway so it's interesting the network is magnitude
+Pablo [25:08]: people could be tricked in nineteen sixty six what is it thirty four years ago that's about sixty years ago
+Pablo [25:11]: sixty years ago
+Pablo [25:28]: at about twenty years ago we get a pen that passed the review where papers were generated using ai and that were accepted in liberation
+Pablo [25:30]: basically different journals
+Pablo [25:42]: so ai goes wade in different directions before the other website they are not necessary to achieve something that they will have to do
+Pablo [25:53]: so i see this llm push by everybody i see this narrow ai rather than everything that ai is
+Pablo [26:02]: and i also see it as limiting diversification of choices we only do one particular thing
+Pablo [26:15]: so in your project it's not necessary to just use llms to just use generative ai you can use other things but for text they've done remarkably well they've achieved better than human performance
+Pablo [26:17]: and that was done around
+Pablo [26:23]: twenty twenty so we had sex of the same natural language processing
+Pablo [26:28]: so i talked about transformers a little bit that provided the next push
+Pablo [26:31]: using attention
+Pablo [26:46]: what's amazing is how quickly claude has always overtaking judges so this is all but god is now becoming the next so anyways i'm not
+Pablo [26:57]: going to do that slide fifteen that's when you start paying attention this is just a good intro
+Pablo [27:05]: the point is that everybody started training their fundamental models from scratch that's very costly
+Pablo [27:12]: tens if not hundreds of million dollars to do so but everywhere in finance in real life
+Pablo [27:21]: what's really pertinent nowadays is how do you take all this ai to the last scores little medical clinics
+Pablo [27:25]: there's going to be plenty of work for all of us to do that
+Pablo [27:32]: so enhancing productivity we see about that wednesday
+Pablo [27:38]: everybody thinks so this was the case in two thousand and twenty three right
+Pablo [27:47]: and you can see what the market did two years based on all these foolish things and now we're just going to market
+Pablo [27:53]: people are expecting that the market
+Pablo [27:54]: anyway
+Pablo [28:02]: limitations that we all know this is a very interesting picture from a movie where a guy was hallucinating
+Pablo [28:06]: but this is what you see nowadays we generate images
+Pablo [28:07]: right you can see all sorts of things
+Pablo [28:18]: so keep in mind that these things will tell you whatever it is that you want to hear sometimes they'll tell you crazy things that are not correct even though they look correct
+Pablo [28:35]: you're asking it to prove that the top inequality it says well if two or more of the numbers xyz are equal then each of the terms the sum will become zero which is apparently obviously not true because one of the terms always stays
+Pablo [28:45]: and so you have to examine the results they need even if they still suffer the same thing
+Pablo [28:56]: i don't know if you so happen to an executive that cannot be used she employed
+Pablo [29:00]: i think plauma yeah
+Pablo [29:10]: she gave it power to manage your email and then it erased all the
+Pablo [29:17]: know and it's like yes i did and it's my hope
+Pablo [29:22]: they may not do what you expect them to do
+Pablo [29:25]: it was a lawyer
+Pablo [29:29]: because there's so much money
+Pablo [29:35]: at the generator of course if i were a lawyer i would use chatgpt but they got
+Pablo [29:37]: cost
+Pablo [29:39]: anyways
+Pablo [29:43]: well you can just buy the cans
+Pablo [29:45]: in two years this change
+Pablo [29:49]: that's amazing
+Pablo [29:50]: okay
+Pablo [29:56]: this is what i want to get okay so we're all familiar with all that uninteresting
+Pablo [29:56]: stuff
+Pablo [30:05]: now how do we tailor llms so this is what's in front of us right you as users of elements how do you make a
+Pablo [30:06]: useful for themselves
+Pablo [30:07]: is
+Pablo [30:09]: produced
+Pablo [30:09]: cases
+Pablo [30:10]: and that's what i
+Pablo [30:11]: talk when i talk
+Pablo [30:12]: a little bit more
+Pablo [30:13]: about
+Pablo [30:17]: how many of you have taken
+Pablo [30:22]: so
+Pablo [30:23]: that's
+Pablo [30:24]: what tasks
+Pablo [30:25]: do you use it
+Pablo [30:26]: for
+Pablo [30:27]: do you have
+Pablo [30:33]: project
+Pablo [30:34]: for long story short
+Pablo [30:46]: you
+Pablo [30:47]: used it
+Pablo [30:49]: in your faith
+Pablo [30:49]: translation
+Pablo [30:50]: and information
+Pablo [30:52]: transl
+Pablo [30:53]: ated by
+Pablo [30:55]: struct
+Pablo [30:55]: ured
+Pablo [30:59]: list
+Pablo [31:00]: of
+Pablo [31:01]: programming skill
+Pablo [31:03]: s needed by
+Pablo [31:04]: aircraft
+Pablo [31:07]: process summariz
+Pablo [31:08]: es the introduct
+Pablo [31:09]: ion
+Pablo [31:13]: that's
+Pablo [31:14]: a wonderful music
+Pablo [31:19]: how do
+Pablo [31:20]: i start something into
+Pablo [31:21]: a pdf they don't usually
+Pablo [31:21]: do a good job
+Pablo [31:22]: it looks
+Pablo [31:23]: crappy
+Pablo [31:24]: how many of you have
+Pablo [31:29]: seen them and then i have to tell it explicitly please use unicode
+Pablo [31:32]: if you do that actually become
+Pablo [31:33]: much better
+Pablo [31:35]: especially if you have some math
+Pablo [31:37]: et cetera
+Pablo [31:40]: so the more precise you are it will do it
+Pablo [31:47]: apparently they are easy they'll pay their lazy on purpose they are told to be lazy so that they don't use too many tokens
+Pablo [31:52]: but they also respond to you so if you tell us spend more time generate a
+Pablo [31:52]: nice output
+Pablo [32:00]: usually we structured data use props like establish benchmark for yourself
+Pablo [32:03]: and iterate over tea time
+Pablo [32:05]: and for yourself there's
+Pablo [32:10]: make sure your score improves as you're going to exist
+Pablo [32:12]: what usually ends up happening
+Pablo [32:16]: what else do you
+Pablo [32:32]: when we have like this sometimes you need some kind of data and
+Pablo [32:34]: using his google image
+Pablo [32:41]: companies like role model many things
+Pablo [32:54]: for example you want to buy an object and mark where can i go and buy in between amazon and google
+Pablo [33:01]: that's interesting but google did a pretty good job with that
+Pablo [33:04]: it's not necessary
+Pablo [33:16]: the earth's climate just to do that right being faster ways and cheaper but sure i'm not sure how deep they are
+Pablo [33:16]: though
+Pablo [33:26]: has anybody compared them to google do you know in terms of search revenue kubernetes whatever like seo sponsored
+Pablo [33:40]: you'll be given a lot of options but if you are going to sell an option you are going and explain with a problem that's a great point you made
+Pablo [33:47]: but usually the way i used to use google for research was i'm going to search for something i don't even know what i'm searching for
+Pablo [33:48]: right
+Pablo [33:59]: and the fact that i'm getting many pages is a positive because it lets me structure my thoughts around what's available especially when i do research
+Pablo [34:09]: but this process these things give me too much of a final result i'm not sure i'm even learning
+Pablo [34:12]: i'm not sure how to check it correct
+Pablo [34:18]: often i ask about can you go over to just leave me and identify
+Pablo [34:25]: and it comes back with a list here the first four i will go on
+Pablo [34:26]: to next
+Pablo [34:26]: year
+Pablo [34:28]: i have
+Pablo [34:29]: to understand the whole
+Pablo [34:29]: hour
+Pablo [34:56]: summarization also
+Pablo [34:58]: but
+Pablo [34:59]: to an extent
+Pablo [35:02]: translation is a bigger issue
+Pablo [35:04]: we don't want hallucination
+Pablo [35:07]: information
+Pablo [35:09]: and
+Pablo [35:10]: action
+Pablo [35:15]: so we all know
+Pablo [35:16]: this
+Pablo [35:18]: subject
+Pablo [35:18]: too much
+Pablo [35:19]: i just want to
+Pablo [35:20]: say in addition
+Pablo [35:21]: to the provincial
+Pablo [35:23]: smart
+Pablo [35:24]: phone
+Pablo [35:29]: how many
+Pablo [35:30]: of you actually
+Pablo [35:37]: it's quite
+Pablo [35:37]: possible
+Pablo [35:44]: made out of those
+Pablo [35:45]: acts
+Pablo [35:50]: three of the
+Pablo [35:52]: connected any model that's available
+Pablo [35:57]: seven hundred sixty billion
+Pablo [35:58]: no problem
+Pablo [36:00]: you can find it on your desk
+Pablo [36:05]: top thirty thousand dollars we have thirty k is a lot of money but not to a couple
+Pablo [36:08]: not to somebody who cares
+Pablo [36:09]: to keep their data
+Pablo [36:35]: those
+Pablo [36:36]: of us
+Pablo [36:43]: people
+Pablo [36:45]: use
+Pablo [36:52]: five configurations
+Pablo [37:01]: there's also
+Pablo [37:02]: a thing
+Pablo [37:04]: happens
+Pablo [37:05]: is people ignore
+Pablo [37:06]: those
+Pablo [37:21]: and
+Pablo [37:22]: then you
+Pablo [37:25]: work
+Pablo [37:29]: with the longest
+Pablo [37:30]: drop
+Pablo [37:52]: of
+Pablo [37:59]: thirty
+Pablo [37:59]: degrees
+Pablo [38:00]: of data
+Pablo [38:04]: early
+Pablo [38:05]: on
+Pablo [38:08]: now
+Pablo [38:08]: adays
+Pablo [38:09]: they
+Pablo [38:10]: 're not a sensitive
+Pablo [38:13]: one
+Pablo [38:16]: they still benefit
+Pablo [38:17]: from it
+Pablo [38:20]: the challenge it seems like you can benefit just from repeating
+Pablo [38:21]: a prompt too
+Pablo [38:22]: ask a problem
+Pablo [38:23]: ask it
+Pablo [38:23]: again
+Pablo [38:25]: a better response
+Pablo [38:32]: to digital
+Pablo [38:35]: you describe your plan and ask people
+Pablo [38:37]: under
+Pablo [38:38]: line
+Pablo [38:47]: are you mentioning here's a name from give me a better one
+Pablo [38:50]: before we were discussing that we can make something like
+Pablo [39:00]: as we're writing or like summarization where you need some kind of hallucination better way of writing so we can give a little better
+Pablo [39:10]: i usually like to get structured data at the end
+Pablo [39:14]: always ask the structure
+Pablo [39:17]: data it's much easier for you to process
+Pablo [39:19]: okay
+Pablo [39:27]: we know about this in complex learning meaning zero shot give it anything but you can use examples
+Pablo [39:29]: one shot
+Pablo [39:43]: and then you can elevate something called fine tune where if you're taking the model and you're turning it generally turning into something that when it's for you much time on this
+Pablo [39:48]: the way you're doing it through data data players
+Pablo [39:51]: if i ask you this this is what i'm expecting
+Pablo [39:58]: and things like that you can do a full update nobody does
+Pablo [40:00]: on hundreds of billions of parameters
+Pablo [40:05]: and this is what we typically do the parameter fusion fine tuning
+Pablo [40:20]: and some online things allow you to do that like gpt used to log this i'm not sure if it still does three point five because fine tuned thing very easily because
+Pablo [40:32]: nowadays with the open source model rebirth accusation like laura
+Pablo [40:37]: and this is what i was talking about
+Pablo [40:42]: anybody knows whether prompt tuning to variable knowledge
+Pablo [40:49]: the three point five turbo you could actually create your own models
+Pablo [40:51]: it was so much fun
+Pablo [40:55]: whatever you want
+Pablo [41:02]: we just create a little data you take public data set generates a fine tune
+Pablo [41:06]: i think they saw that that was losing the business
+Pablo [41:10]: they originated
+Pablo [41:11]: properly
+Pablo [41:12]: okay
+Pablo [41:16]: how many of us know how they align this
+Pablo [41:20]: nazi type of models with actually worth two months worth to see
+Pablo [41:27]: well i don't know if you all know but everything that is on the internet goes into the market
+Pablo [41:33]: everything that's bad at the how many of you think let me see how this approach
+Pablo [41:37]: es how many of you think that most of the internet
+Pablo [41:45]: how many of you think that more than fifty percent of the internet is
+Pablo [41:51]: about more than thirty percent
+Pablo [41:54]: okay
+Pablo [41:58]: but this just shows us that
+Pablo [42:13]: you can have a discussion with somebody who's very fifty percent higher the bad stuff so then how do we do this well we have to additionally trade it or condition them to give us the answers we expect
+Pablo [42:18]: keep in mind we are not retrading them to be good people
+Pablo [42:23]: we are fine tuning them to be
+Pablo [42:27]: outside externally we may
+Pablo [42:31]: internally they still
+Them [42:33]: interestingly
+Them [42:43]: if you fine tune additionally a model that has gone through reinforcement learning for human feedback it can lose that alignment
+Them [42:44]: have you heard this
+Them [42:49]: it's a terrifying in other words you're a company
+Them [42:57]: you pay for these wonderful models you pay for the privilege to find you somewhere along the line
+Them [43:00]: you retrain the same layers
+Them [43:14]: that portray to be responsive we are thinking and they go away and then you have many times microsoft pulled a lot of maya told them
+Them [43:22]: you get things where they suggest we kill ourselves they suggest we go to hell they talk about depopulation
+Them [43:27]: they talk about how men are the dominant species
+Them [43:38]: all of these things have happened and all these things have happened because of the additional function so we don't understand how to do both at the same time fine tuning and
+Them [43:39]: keep that in mind
+Them [43:41]: as you're going through this
+Them [44:01]: as some outman said the way i've seen at least for mama models on hugging face they have some that are labeled as uncensored does that mean they don't have any alignment or it just might swear more realize
+Them [44:03]: you can still be a good person
+Them [44:06]: and be unsatisfied
+Them [44:10]: i think those two things are not necessary they may be correlated
+Them [44:20]: or something
+Them [44:25]: you could give all your money to good causes and still not want to make people
+Them [44:26]: in person
+Them [44:27]: for example
+Them [44:30]: you bothered by people but you want to look for that
+Them [44:34]: or you can have a correct
+Them [44:35]: person
+Them [44:47]: and i'm answering publicly because there's many different ways to
+Them [44:50]: actually
+Them [44:56]: go to the next slide
+Them [45:02]: so this is what he said
+Them [45:04]: we are
+Them [45:05]: asking to help
+Them [45:10]: human
+Them [45:11]: rights
+Them [45:18]: like
+Them [45:19]: this
+Them [45:20]: you
+Them [45:21]: have your
+Them [45:22]: question on the left
+Them [45:26]: like for example the last one in real life which station in london
+Them [45:29]: would i think to get to home
+Them [45:33]: for those of you who haven't seen this or read the books
+Them [45:37]: it's a castle where they trade
+Them [45:47]: anyways hogwarts is fictional is one answer so there is no station that could take you there the other aspect kings cross station now both of these are correct
+Them [45:52]: in the book you take the trail of king's cross station
+Them [45:57]: now what would you like the other one to give to you
+Them [46:04]: it depends right if you have a writer
+Them [46:06]: maybe you want to
+Them [46:09]: find but in general
+Them [46:12]: if we want an llm to be truthful you would give it the first answ
+Them [46:13]: er
+Them [46:17]: i would say perhaps the third
+Them [46:21]: answer would be the fictional universe
+Them [46:34]: the station speaks across but there is no real offer to be no longer then encompasses these two but anyways the point is that these are being ranked by real people
+Them [46:38]: and then this is a wonderful illustration
+Them [46:42]: you can actually learn a lot
+Them [46:43]: of stuff
+Them [46:49]: and you can go through this and try to understand it so the initial training
+Them [46:56]: liver dancers deliver the model it be accessor generate the sporter
+Them [47:01]: and that generate an rewards preference model
+Them [47:05]: and then any other model is judged based on reward reference
+Them [47:08]: which can go or buy if you fine tune the model
+Them [47:13]: it can be very complicated
+Them [47:22]: moreover most of the public facing cloud based models like strategic quota
+Them [47:24]: office multiple volumes
+Them [47:29]: five points to include mixture of experts type of
+Them [47:32]: thing and how do you train a mixture of experts
+Them [47:34]: with alignment
+Them [47:40]: ok
+Them [47:43]: this was dense
+Them [47:46]: maybe let's start here
+Them [47:52]: will continue friday finish this
+Them [47:59]: and then on friday i will also start something very interesting which is the other way around
+Them [48:00]: kind of infrastructure
+Them [48:12]: you
+Them [48:13]: see
+Them [48:14]: how error models
+Them [48:15]: and ai models
+Them [48:16]: can create dev
+Them [48:17]: ops architect
+Them [48:17]: ures
+Them [48:18]: connected
+Them [48:19]: to software
+Them [48:21]: so that should be fine
+Them [48:33]: curse
+Them [48:34]: of obi and
+Them [48:35]: right

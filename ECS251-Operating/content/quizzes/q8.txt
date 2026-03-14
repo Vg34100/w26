@@ -1,0 +1,11 @@
+**A. Why does race detection via lockset analysis have a high false positive rate?**
+
+Lockset analysis flags a warning whenever the set of common locks held during accesses to a variable becomes empty, but this can happen even when no actual race exists — like when a variable is only accessed by one thread at a time or is protected through non-lock synchronization. It doesn't account for ordering, so it ends up reporting a lot of situations that aren't really races.
+
+**B. Why does RaceTrack employ adaptive granularity for object tracking?**
+
+Tracking every memory access at fine granularity for long-running programs is too expensive in memory and CPU overhead, so RaceTrack adaptively focuses more effort on areas that look suspicious and backs off on areas that seem safe, keeping overhead around 2-3x rather than much worse.
+
+**Long answer 1. Why are data races so difficult to detect automatically? Does RaceTrack completely solve this problem? Why or why not?**
+
+Data races are hard to detect because they're timing-dependent — two threads have to access the same memory at just the right moment, and that might not happen on every run even with the same inputs, making them non-deterministic and hard to reproduce. RaceTrack doesn't completely solve the problem. It can miss races (false negatives) because it uses estimation rather than tracking full access history, and it can still produce some false positives. It's more of a practical tradeoff — it catches a lot of real bugs with reasonable overhead, but it's not guaranteed to find everything.
